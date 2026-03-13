@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Printable pool maintenance checklist: daily, weekly, and monthly tasks. Free PDF download.">
+  <title>Pool Maintenance Checklist (Printable) | WaterBalanceTools</title>
+  <meta property="og:title" content="Pool Maintenance Checklist | WaterBalanceTools">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="calc-page">
+  <header class="site-header no-print">
+    <a href="../index.html" class="logo-link"><img src="../assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36"></a>
+    <nav class="nav">
+      <a href="../tools/index.html">All Tools</a>
+      <a href="../calculators/pool-chlorine-calculator.html">Chlorine Calculator</a>
+      <a href="../maintenance/how-to-balance-pool-water.html">Maintenance Guide</a>
+    </nav>
+  </header>
+  <main class="container guide-content printable-content">
+    <div class="printable-actions no-print">
+      <button type="button" class="btn btn-primary" onclick="window.print()">Print checklist</button>
+      <button type="button" class="btn btn-secondary" id="pdf-download">Download PDF</button>
+    </div>
+    <h1>Pool Maintenance Checklist</h1>
+    <p>Use our <a href="../calculators/pool-chlorine-calculator.html">Pool Chlorine Calculator</a> and <a href="../calculators/pool-ph-calculator.html">pH Calculator</a> when adjusting chemicals.</p>
+
+    <h2>Daily</h2>
+    <ul>
+      <li>□ Check chlorine (target 1–3 ppm)</li>
+      <li>□ Check pH (target 7.2–7.6)</li>
+      <li>□ Skim debris if needed</li>
+    </ul>
+
+    <h2>Weekly</h2>
+    <ul>
+      <li>□ Clean skimmer basket</li>
+      <li>□ Test alkalinity</li>
+      <li>□ Adjust chemicals as needed</li>
+      <li>□ Brush walls if needed</li>
+    </ul>
+
+    <h2>Monthly</h2>
+    <ul>
+      <li>□ Clean or backwash filter</li>
+      <li>□ Full water test (chlorine, pH, alkalinity, CYA)</li>
+      <li>□ Balance water; shock if needed</li>
+    </ul>
+
+    <p><strong>Notes:</strong></p>
+    <p style="border:1px solid #ddd; padding:1rem; min-height:4rem;"> </p>
+    <p class="no-print"><a href="../charts/pool-chemical-levels-chart.html">Pool Chemical Levels Chart</a> | <a href="../maintenance/how-to-balance-pool-water.html">How to Balance Pool Water</a></p>
+  </main>
+  <footer class="site-footer no-print">
+    <nav class="footer-nav">
+      <a href="../calculators/pool-volume-calculator.html">Pool Volume Calculator</a>
+      <a href="../calculators/pool-chlorine-calculator.html">Pool Chlorine Calculator</a>
+      <a href="../calculators/pool-shock-calculator.html">Pool Shock Calculator</a>
+      <a href="../calculators/pool-ph-calculator.html">Pool pH Calculator</a>
+      <a href="../charts/pool-chemical-levels-chart.html">Pool Chemical Levels Chart</a>
+      <a href="../maintenance/how-to-balance-pool-water.html">Pool Maintenance Guide</a>
+    </nav>
+    <p class="footer-copy">&copy; WaterBalanceTools.com</p>
+  </footer>
+  <script src="../js/pdf-printable.js"></script>
+  <script>
+    document.getElementById('pdf-download') && document.getElementById('pdf-download').addEventListener('click', function() {
+      if (window.WaterBalance && window.WaterBalance.printableToPdf) window.WaterBalance.printableToPdf();
+      else window.print();
+    });
+  </script>
+</body>
+</html>

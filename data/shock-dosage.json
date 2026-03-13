@@ -1,0 +1,7 @@
+{
+  "_comment": "Granular shock: oz = (gallons * ppm) / 10000. Standard shock = 10 ppm.",
+  "formula": {
+    "oz_per_ppm_per_10k_gallons": 1,
+    "standard_shock_ppm": 10
+  }
+}

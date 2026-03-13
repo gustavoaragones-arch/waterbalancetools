@@ -1,0 +1,7 @@
+{
+  "_comment": "Liquid 10%: oz = (gallons * ppm) / 128000. Granular: oz = (gallons * ppm) / 10000. Generated for programmatic pages.",
+  "formula": {
+    "liquid_oz_per_ppm_per_10k": 0.078125,
+    "granular_oz_per_ppm_per_10k": 1
+  }
+}

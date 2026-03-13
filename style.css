@@ -61,6 +61,40 @@ a:hover { text-decoration: underline; }
 .ring-links { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; }
 .ring-links a { font-weight: 500; }
 .form-group small { display: block; margin-top: 0.25rem; font-size: 0.85rem; color: var(--gray-600); }
+.dosage-table { width: 100%; max-width: 28rem; border-collapse: collapse; margin: 0.75rem 0; }
+.dosage-table th, .dosage-table td { padding: 0.5rem 0.75rem; text-align: left; border: 1px solid var(--gray-200); }
+.dosage-table th { background: var(--gray-100); font-weight: 600; }
+.quick-calc { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--gray-200); }
+.quick-calc h2 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+.tools-grid { display: grid; gap: 1rem; }
+.tools-grid section h2 { margin: 0 0 0.75rem; font-size: 1.2rem; }
+.tools-grid ul { list-style: none; padding: 0; margin: 0; }
+.tools-grid li { margin-bottom: 0.35rem; }
+.tools-grid a { font-weight: 500; }
+@media (min-width: 640px) {
+  .tools-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .tools-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.chart-table { width: 100%; max-width: 28rem; border-collapse: collapse; margin: 1rem 0; }
+.chart-table th, .chart-table td { padding: 0.5rem 0.75rem; text-align: left; border: 1px solid var(--gray-200); }
+.chart-table th { background: var(--gray-100); }
+.range-ok { color: #198754; font-weight: 600; }
+.range-high { color: #dc3545; }
+.range-low { color: #fd7e14; }
+.balance-diagram { padding: 1rem; background: var(--blue-light); border-radius: var(--radius); margin: 1rem 0; border: 1px solid var(--blue); }
+.printable-actions { margin: 1rem 0; }
+.printable-actions .btn { margin-right: 0.5rem; }
+@media print {
+  .printable-actions, .no-print { display: none !important; }
+}
+.log-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+.log-table th, .log-table td { padding: 0.4rem 0.6rem; border: 1px solid var(--gray-200); text-align: left; }
+.log-table th { background: var(--gray-100); }
+.comparison-table { width: 100%; max-width: 36rem; border-collapse: collapse; margin: 1rem 0; }
+.comparison-table th, .comparison-table td { padding: 0.5rem 0.75rem; border: 1px solid var(--gray-200); }
+.comparison-table th { background: var(--gray-100); }
 
 /* Buttons */
 .btn {

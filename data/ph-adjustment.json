@@ -1,0 +1,7 @@
+{
+  "_comment": "pH increaser: oz = (gallons/10000) * phDiff * 6. pH reducer: oz = (gallons/10000) * phDiff * 5.",
+  "formula": {
+    "increaser_oz_per_0_1_ph_per_10k": 0.6,
+    "reducer_oz_per_0_1_ph_per_10k": 0.5
+  }
+}

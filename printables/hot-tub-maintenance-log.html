@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Printable hot tub maintenance log: track chlorine, pH, and notes. Free download.">
+  <title>Hot Tub Maintenance Log (Printable) | WaterBalanceTools</title>
+  <meta property="og:title" content="Hot Tub Maintenance Log | WaterBalanceTools">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="calc-page">
+  <header class="site-header no-print">
+    <a href="../index.html" class="logo-link"><img src="../assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36"></a>
+    <nav class="nav">
+      <a href="../tools/index.html">All Tools</a>
+      <a href="../calculators/hot-tub-chlorine-calculator.html">Hot Tub Calculator</a>
+      <a href="../guides/hot-tub-maintenance.html">Hot Tub Guide</a>
+    </nav>
+  </header>
+  <main class="container guide-content printable-content">
+    <div class="printable-actions no-print">
+      <button type="button" class="btn btn-primary" onclick="window.print()">Print log</button>
+      <button type="button" class="btn btn-secondary" id="pdf-download">Download PDF</button>
+    </div>
+    <h1>Hot Tub Maintenance Log</h1>
+    <p>Target: Chlorine 3–5 ppm, pH 7.2–7.8. Use our <a href="../calculators/hot-tub-chlorine-calculator.html">Hot Tub Chlorine Calculator</a>.</p>
+
+    <table class="log-table">
+      <thead>
+        <tr><th>Date</th><th>Chlorine (ppm)</th><th>pH</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <p class="no-print"><a href="../charts/hot-tub-chemical-levels-chart.html">Hot Tub Chemical Chart</a></p>
+  </main>
+  <footer class="site-footer no-print">
+    <nav class="footer-nav">
+      <a href="../calculators/pool-volume-calculator.html">Pool Volume Calculator</a>
+      <a href="../calculators/pool-chlorine-calculator.html">Pool Chlorine Calculator</a>
+      <a href="../calculators/pool-shock-calculator.html">Pool Shock Calculator</a>
+      <a href="../calculators/pool-ph-calculator.html">Pool pH Calculator</a>
+      <a href="../charts/pool-chemical-levels-chart.html">Pool Chemical Levels Chart</a>
+      <a href="../maintenance/how-to-balance-pool-water.html">Pool Maintenance Guide</a>
+    </nav>
+    <p class="footer-copy">&copy; WaterBalanceTools.com</p>
+  </footer>
+  <script src="../js/pdf-printable.js"></script>
+  <script>
+    document.getElementById('pdf-download') && document.getElementById('pdf-download').addEventListener('click', function() {
+      if (window.WaterBalance && window.WaterBalance.printableToPdf) window.WaterBalance.printableToPdf();
+      else window.print();
+    });
+  </script>
+</body>
+</html>
