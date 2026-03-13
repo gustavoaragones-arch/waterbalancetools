@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate chlorine and pH adjustments for your pool or hot tub. Enter volume and test results for instant chemical dosing.">
+  <title>Pool Chlorine Calculator | WaterBalanceTools</title>
+  <meta property="og:title" content="Pool Chlorine Calculator | WaterBalanceTools">
+  <meta property="og:description" content="Calculate chlorine and pH adjustments for pools and hot tubs.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="calc-page">
+  <header class="site-header">
+    <a href="../index.html" class="logo-link">
+      <img src="../assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36">
+    </a>
+    <nav class="nav">
+      <a href="chemical-calculator.html">Chemical Calculator</a>
+      <a href="volume-calculator.html">Volume Calculator</a>
+      <a href="../guides/pool-chemistry-basics.html">Chemistry Guide</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Pool & Hot Tub Chemical Calculator</h1>
+    <p>Enter your water volume and test results to get chlorine and pH adjustment amounts.</p>
+
+    <form id="chemical-form" class="chemical-form">
+      <h2>Water Type</h2>
+      <div class="form-group">
+        <label for="water-type">Type</label>
+        <select id="water-type" name="waterType">
+          <option value="pool">Swimming Pool</option>
+          <option value="hotTub">Hot Tub / Spa</option>
+        </select>
+      </div>
+
+      <h2>Water Volume</h2>
+      <div class="form-group">
+        <label for="volume-gallons">Volume (US gallons)</label>
+        <input type="number" id="volume-gallons" name="volumeGallons" min="1" step="1" placeholder="e.g. 10000">
+        <small>Don't know? Use the <a href="volume-calculator.html">Volume Calculator</a>.</small>
+      </div>
+
+      <h2>Water Test Results</h2>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="current-chlorine">Current chlorine (ppm)</label>
+          <input type="number" id="current-chlorine" name="currentChlorine" min="0" step="0.1" placeholder="e.g. 1.0">
+        </div>
+        <div class="form-group">
+          <label for="current-ph">Current pH</label>
+          <input type="number" id="current-ph" name="currentPh" min="0" max="14" step="0.1" placeholder="e.g. 7.4">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="alkalinity">Total alkalinity (optional, ppm)</label>
+        <input type="number" id="alkalinity" name="alkalinity" min="0" step="10" placeholder="e.g. 80">
+      </div>
+
+      <h2>Target Levels</h2>
+      <p class="target-hint" id="target-hint">Pools: Chlorine 1–3 ppm, pH 7.2–7.6. You can override below.</p>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="target-chlorine-min">Target chlorine min (ppm)</label>
+          <input type="number" id="target-chlorine-min" name="targetChlorineMin" min="0" step="0.5" value="1">
+        </div>
+        <div class="form-group">
+          <label for="target-chlorine-max">Target chlorine max (ppm)</label>
+          <input type="number" id="target-chlorine-max" name="targetChlorineMax" min="0" step="0.5" value="3">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="target-ph-min">Target pH min</label>
+          <input type="number" id="target-ph-min" name="targetPhMin" min="6.8" max="8" step="0.1" value="7.2">
+        </div>
+        <div class="form-group">
+          <label for="target-ph-max">Target pH max</label>
+          <input type="number" id="target-ph-max" name="targetPhMax" min="6.8" max="8" step="0.1" value="7.6">
+        </div>
+      </div>
+
+      <h2 id="ph">Chemical Type</h2>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="chlorine-type">Chlorine type</label>
+          <select id="chlorine-type" name="chlorineType">
+            <option value="liquid">Liquid chlorine (10%)</option>
+            <option value="granular">Granular shock</option>
+            <option value="tablets">Chlorine tablets</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="ph-chemical">pH adjustment</label>
+          <select id="ph-chemical" name="phChemical">
+            <option value="increaser">pH increaser</option>
+            <option value="reducer">pH reducer</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Calculate</button>
+      </div>
+    </form>
+
+    <div id="output-panel" class="output-panel hidden">
+      <h3>Recommendations</h3>
+      <div id="output-content"></div>
+      <p class="re-test">Re-test water after 20–30 minutes with pump running.</p>
+    </div>
+
+    <section class="maintenance-section">
+      <h2>Maintenance Schedule</h2>
+      <div class="form-group">
+        <label for="usage-level">Usage level</label>
+        <select id="usage-level" name="usageLevel">
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="heavy">Heavy</option>
+        </select>
+      </div>
+      <div id="schedule-output" class="output-panel">
+        <h3>Schedule</h3>
+        <ul id="schedule-list" class="schedule-list"></ul>
+      </div>
+      <div class="form-group no-print">
+        <button type="button" id="download-pdf" class="btn btn-primary">Download Maintenance Plan (PDF)</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="pool-volume-calculator.html">Pool Volume Calculator</a>
+      <a href="pool-chlorine-calculator.html">Pool Chlorine Calculator</a>
+      <a href="pool-shock-calculator.html">Pool Shock Calculator</a>
+      <a href="pool-ph-calculator.html">Pool pH Calculator</a>
+      <a href="../guides/pool-chemistry-basics.html">Pool Chemistry Guide</a>
+    </nav>
+    <p class="footer-copy">&copy; WaterBalanceTools.com</p>
+  </footer>
+
+  <script src="../js/calculator.js"></script>
+  <script src="../js/pdf-generator.js"></script>
+  <script>
+    (function () {
+      var form = document.getElementById('chemical-form');
+      var outputPanel = document.getElementById('output-panel');
+      var outputContent = document.getElementById('output-content');
+      var waterType = document.getElementById('water-type');
+      var targetChlorineMin = document.getElementById('target-chlorine-min');
+      var targetChlorineMax = document.getElementById('target-chlorine-max');
+      var targetPhMin = document.getElementById('target-ph-min');
+      var targetPhMax = document.getElementById('target-ph-max');
+      var targetHint = document.getElementById('target-hint');
+      var usageLevel = document.getElementById('usage-level');
+      var scheduleList = document.getElementById('schedule-list');
+      var downloadPdf = document.getElementById('download-pdf');
+
+      function setTargetDefaults() {
+        var type = waterType.value;
+        var def = window.WaterBalance.calculator.getDefaults(type);
+        targetChlorineMin.value = def.chlorine.min;
+        targetChlorineMax.value = def.chlorine.max;
+        targetPhMin.value = def.ph.min;
+        targetPhMax.value = def.ph.max;
+        targetHint.textContent = type === 'hotTub'
+          ? 'Hot tubs: Chlorine 3–5 ppm, pH 7.2–7.8. You can override below.'
+          : 'Pools: Chlorine 1–3 ppm, pH 7.2–7.6. You can override below.';
+      }
+      waterType.addEventListener('change', setTargetDefaults);
+
+      function renderSchedule() {
+        var level = usageLevel.value;
+        var daily = ['Check chlorine', 'Check pH'];
+        var weekly = ['Clean skimmer', 'Test alkalinity', 'Adjust chemicals as needed'];
+        var monthly = ['Clean filter', 'Full water test', 'Balance water'];
+        if (level === 'heavy') {
+          daily.push('Add chlorine if needed');
+          weekly.push('Backwash/clean filter');
+        }
+        if (level === 'low') {
+          weekly = ['Clean skimmer', 'Test alkalinity'];
+        }
+        var html = '';
+        html += '<li><strong>Daily</strong> ' + daily.join('; ') + '</li>';
+        html += '<li><strong>Weekly</strong> ' + weekly.join('; ') + '</li>';
+        html += '<li><strong>Monthly</strong> ' + monthly.join('; ') + '</li>';
+        scheduleList.innerHTML = html;
+      }
+      usageLevel.addEventListener('change', renderSchedule);
+      renderSchedule();
+
+      (function setVolumeFromUrl() {
+        var params = new URLSearchParams(window.location.search);
+        var gallons = params.get('gallons');
+        if (gallons) document.getElementById('volume-gallons').value = gallons;
+      })();
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var gallons = parseFloat(document.getElementById('volume-gallons').value) || 0;
+        var currentCl = parseFloat(document.getElementById('current-chlorine').value) || 0;
+        var currentPh = parseFloat(document.getElementById('current-ph').value) || 0;
+        var targetClMin = parseFloat(targetChlorineMin.value) || 1;
+        var targetClMax = parseFloat(targetChlorineMax.value) || 3;
+        var targetPhMinVal = parseFloat(targetPhMin.value) || 7.2;
+        var targetPhMaxVal = parseFloat(targetPhMax.value) || 7.6;
+        var chlorineType = document.getElementById('chlorine-type').value;
+        var phChemical = document.getElementById('ph-chemical').value;
+        var type = waterType.value;
+
+        if (gallons <= 0) {
+          outputContent.innerHTML = '<p>Please enter a valid volume in gallons.</p>';
+          outputPanel.classList.remove('hidden');
+          return;
+        }
+
+        var targetMid = (targetClMin + targetClMax) / 2;
+        var ppmNeeded = window.WaterBalance.calculator.chlorineNeededPpm(currentCl, targetMid);
+        var chlorineOz = window.WaterBalance.calculator.chlorineOuncesForType(gallons, ppmNeeded, chlorineType);
+
+        var phMid = (targetPhMinVal + targetPhMaxVal) / 2;
+        var phDiff = 0;
+        var phOz = 0;
+        var phDirection = '';
+        if (currentPh < targetPhMinVal) {
+          phDiff = targetPhMinVal - currentPh;
+          phOz = window.WaterBalance.calculator.phIncreaserOunces(gallons, phDiff);
+          phDirection = 'increaser';
+        } else if (currentPh > targetPhMaxVal) {
+          phDiff = currentPh - targetPhMaxVal;
+          phOz = window.WaterBalance.calculator.phReducerOunces(gallons, phDiff);
+          phDirection = 'reducer';
+        }
+
+        var label = type === 'hotTub' ? 'hot tub' : 'pool';
+        var lines = [];
+        lines.push('For a ' + Math.round(gallons).toLocaleString() + ' gallon ' + label + ':');
+        lines.push('');
+        if (chlorineOz > 0) {
+          if (chlorineType === 'tablets') {
+            var tablets = Math.max(0.5, Math.round(chlorineOz / 3 * 2) / 2);
+            lines.push('Add: ' + tablets + ' chlorine tablet(s) (approx ' + chlorineOz.toFixed(1) + ' oz equivalent)');
+          } else {
+            lines.push('Add: ' + chlorineOz.toFixed(1) + ' oz ' + (chlorineType === 'liquid' ? 'liquid chlorine' : 'granular shock'));
+          }
+        } else {
+          lines.push('Chlorine is in range. No chlorine addition needed.');
+        }
+        if (phDirection === 'increaser' && phOz > 0) {
+          lines.push(phOz.toFixed(1) + ' oz pH increaser');
+        } else if (phDirection === 'reducer' && phOz > 0) {
+          lines.push(phOz.toFixed(1) + ' oz pH reducer');
+        }
+        lines.push('');
+        if (type === 'hotTub') lines.push('Run jets for 20 minutes.');
+        lines.push('Re-test water after 20–30 minutes.');
+        outputContent.innerHTML = lines.map(function (s) {
+          if (s === '') return '<br>';
+          return '<p>' + s + '</p>';
+        }).join('');
+        outputPanel.classList.remove('hidden');
+      });
+
+      downloadPdf.addEventListener('click', function () {
+        var gallons = document.getElementById('volume-gallons').value || '—';
+        var type = waterType.value === 'hotTub' ? 'Hot Tub / Spa' : 'Swimming Pool';
+        var scheduleItems = [];
+        scheduleList.querySelectorAll('li').forEach(function (li) {
+          scheduleItems.push(li.textContent.trim());
+        });
+        var recHtml = outputContent.innerHTML;
+        window.WaterBalance.pdfGenerator.downloadMaintenancePlan({
+          waterType: type,
+          volumeGallons: gallons,
+          recommendations: recHtml || 'Complete the calculator for chemical recommendations.',
+          schedule: scheduleItems,
+          usageLevel: usageLevel.value
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pool cyanuric acid (CYA) calculator. Enter pool gallons and current CYA to get stabilizer amount. Free and fast.">
+  <title>Pool Cyanuric Acid Calculator | WaterBalanceTools</title>
+  <meta property="og:title" content="Pool Cyanuric Acid Calculator | WaterBalanceTools">
+  <meta property="og:description" content="Calculate how much cyanuric acid (stabilizer) your pool needs.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"HowTo","name":"Raise Pool CYA","step":[{"@type":"HowToStep","name":"Enter pool volume"},{"@type":"HowToStep","name":"Enter current and target CYA (ppm)"},{"@type":"HowToStep","name":"Add stabilizer per label instructions"}]}
+  </script>
+</head>
+<body class="calc-page">
+  <header class="site-header">
+    <a href="../index.html" class="logo-link"><img src="../assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36"></a>
+    <nav class="nav">
+      <a href="chemical-calculator.html">Chemical Calculator</a>
+      <a href="volume-calculator.html">Volume Calculator</a>
+      <a href="../guides/pool-chemistry-basics.html">Chemistry Guide</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="hero hero-compact">
+      <h1>Pool Cyanuric Acid Calculator</h1>
+      <p class="hero-sub">Calculate how much stabilizer (cyanuric acid) your pool needs to reach target CYA.</p>
+    </section>
+    <form id="calc-form" class="calc-form">
+      <div class="form-group">
+        <label for="volume">Pool gallons</label>
+        <input type="number" id="volume" min="1" step="1" placeholder="e.g. 15000">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="current">Current CYA (ppm)</label>
+          <input type="number" id="current" min="0" step="5" placeholder="e.g. 30">
+        </div>
+        <div class="form-group">
+          <label for="target">Target CYA (ppm)</label>
+          <input type="number" id="target" min="0" step="5" value="50" placeholder="e.g. 50">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Calculate</button>
+    </form>
+    <div id="result" class="output-panel hidden">
+      <h3>Result</h3>
+      <p id="result-text"></p>
+    </div>
+    <section class="quick-tips">
+      <h2>Quick tips</h2>
+      <p><strong>Ideal CYA:</strong> 30–50 ppm for outdoor pools. Too high reduces chlorine effectiveness; too low lets chlorine burn off quickly. Add stabilizer slowly and re-test after a few days.</p>
+    </section>
+    <section class="related-tools">
+      <h2>Related tools</h2>
+      <ul class="ring-links">
+        <li><a href="pool-volume-calculator.html">Pool Volume Calculator</a></li>
+        <li><a href="pool-chlorine-calculator.html">Pool Chlorine Calculator</a></li>
+        <li><a href="pool-shock-calculator.html">Pool Shock Calculator</a></li>
+        <li><a href="../guides/pool-chemistry-basics.html">Pool Chemistry Guide</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="pool-volume-calculator.html">Pool Volume Calculator</a>
+      <a href="pool-chlorine-calculator.html">Pool Chlorine Calculator</a>
+      <a href="pool-shock-calculator.html">Pool Shock Calculator</a>
+      <a href="pool-ph-calculator.html">Pool pH Calculator</a>
+      <a href="../guides/pool-chemistry-basics.html">Pool Chemistry Guide</a>
+    </nav>
+    <p class="footer-copy">&copy; WaterBalanceTools.com</p>
+  </footer>
+  <script src="../js/calc-utils.js"></script>
+  <script>
+    (function(){
+      document.getElementById('calc-form').onsubmit = function(e) {
+        e.preventDefault();
+        var r = window.WaterBalance.calcUtils.calculateCYA(
+          document.getElementById('volume').value,
+          document.getElementById('current').value,
+          document.getElementById('target').value
+        );
+        var el = document.getElementById('result');
+        var text = document.getElementById('result-text');
+        var g = document.getElementById('volume').value;
+        if (!g || parseFloat(g) <= 0) { text.textContent = 'Enter valid pool gallons.'; el.classList.remove('hidden'); return; }
+        if (r.ppm <= 0) { text.textContent = 'Target should be higher than current CYA. No addition needed.'; el.classList.remove('hidden'); return; }
+        text.textContent = 'Add ' + r.ounces.toFixed(0) + ' oz stabilizer (cyanuric acid). Dissolve in a sock or add to skimmer. Re-test in a few days.';
+        el.classList.remove('hidden');
+      };
+    })();
+  </script>
+</body>
+</html>

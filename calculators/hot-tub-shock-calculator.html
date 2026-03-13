@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hot tub shock calculator. Enter spa gallons and shock type to get shock dosage. Free and fast.">
+  <title>Hot Tub Shock Calculator | WaterBalanceTools</title>
+  <meta property="og:title" content="Hot Tub Shock Calculator | WaterBalanceTools">
+  <meta property="og:description" content="Calculate shock dosage for your hot tub or spa.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"HowTo","name":"Shock a Hot Tub","step":[{"@type":"HowToStep","name":"Enter hot tub volume"},{"@type":"HowToStep","name":"Select shock type"},{"@type":"HowToStep","name":"Add shock and run jets"}]}
+  </script>
+</head>
+<body class="calc-page">
+  <header class="site-header">
+    <a href="../index.html" class="logo-link"><img src="../assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36"></a>
+    <nav class="nav">
+      <a href="chemical-calculator.html">Chemical Calculator</a>
+      <a href="volume-calculator.html">Volume Calculator</a>
+      <a href="../guides/pool-chemistry-basics.html">Chemistry Guide</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="hero hero-compact">
+      <h1>Hot Tub Shock Calculator</h1>
+      <p class="hero-sub">Calculate shock dosage for your hot tub based on volume and shock type.</p>
+    </section>
+    <form id="calc-form" class="calc-form">
+      <div class="form-group">
+        <label for="volume">Hot tub gallons</label>
+        <input type="number" id="volume" min="1" step="1" placeholder="e.g. 400">
+      </div>
+      <div class="form-group">
+        <label for="strength">Shock type / strength</label>
+        <select id="strength">
+          <option value="5">Light (5 ppm)</option>
+          <option value="10" selected>Standard (10 ppm)</option>
+          <option value="15">Heavy (15 ppm)</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Calculate</button>
+    </form>
+    <div id="result" class="output-panel hidden">
+      <h3>Result</h3>
+      <p id="result-text"></p>
+    </div>
+    <section class="quick-tips">
+      <h2>Quick tips</h2>
+      <p><strong>When to shock a hot tub:</strong> Weekly or after heavy use. Use spa shock (MPS or chlorine). Run jets 15–20 minutes. Wait until chlorine drops to 3–5 ppm before using.</p>
+    </section>
+    <section class="related-tools">
+      <h2>Related tools</h2>
+      <ul class="ring-links">
+        <li><a href="spa-volume-calculator.html">Spa Volume Calculator</a></li>
+        <li><a href="hot-tub-chlorine-calculator.html">Hot Tub Chlorine Calculator</a></li>
+        <li><a href="hot-tub-ph-calculator.html">Hot Tub pH Calculator</a></li>
+        <li><a href="pool-shock-calculator.html">Pool Shock Calculator</a></li>
+        <li><a href="../guides/hot-tub-maintenance.html">Hot Tub Maintenance Guide</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="pool-volume-calculator.html">Pool Volume Calculator</a>
+      <a href="pool-chlorine-calculator.html">Pool Chlorine Calculator</a>
+      <a href="pool-shock-calculator.html">Pool Shock Calculator</a>
+      <a href="pool-ph-calculator.html">Pool pH Calculator</a>
+      <a href="../guides/pool-chemistry-basics.html">Pool Chemistry Guide</a>
+    </nav>
+    <p class="footer-copy">&copy; WaterBalanceTools.com</p>
+  </footer>
+  <script src="../js/calc-utils.js"></script>
+  <script>
+    (function(){
+      document.getElementById('calc-form').onsubmit = function(e) {
+        e.preventDefault();
+        var vol = document.getElementById('volume').value;
+        var ppm = document.getElementById('strength').value;
+        var r = window.WaterBalance.calcUtils.calculateShock(vol, ppm);
+        var el = document.getElementById('result');
+        var text = document.getElementById('result-text');
+        if (!vol || parseFloat(vol) <= 0) { text.textContent = 'Enter valid hot tub gallons.'; el.classList.remove('hidden'); return; }
+        text.textContent = 'Add ' + r.ounces.toFixed(1) + ' oz shock. Run jets 15–20 min. Re-test before using tub.';
+        el.classList.remove('hidden');
+      };
+    })();
+  </script>
+</body>
+</html>

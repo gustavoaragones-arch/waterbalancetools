@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate your pool or hot tub volume in gallons. Supports rectangular and circular shapes.">
+  <title>Pool Volume Calculator | WaterBalanceTools</title>
+  <meta property="og:title" content="Pool Volume Calculator | WaterBalanceTools">
+  <meta property="og:description" content="Calculate pool and hot tub volume in gallons. Rectangular and circular shapes.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="calc-page">
+  <header class="site-header">
+    <a href="../index.html" class="logo-link">
+      <img src="../assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36">
+    </a>
+    <nav class="nav">
+      <a href="chemical-calculator.html">Chemical Calculator</a>
+      <a href="volume-calculator.html">Volume Calculator</a>
+      <a href="../guides/pool-chemistry-basics.html">Chemistry Guide</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Pool Volume Calculator</h1>
+    <p>Enter dimensions in feet. We'll calculate volume in US gallons.</p>
+
+    <form id="volume-form">
+      <div class="form-group">
+        <label for="shape">Shape</label>
+        <select id="shape" name="shape">
+          <option value="rectangular">Rectangular</option>
+          <option value="circular">Circular</option>
+        </select>
+      </div>
+
+      <div id="rect-fields">
+        <h2>Rectangular pool</h2>
+        <p>Volume = length × width × average depth</p>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="length">Length (ft)</label>
+            <input type="number" id="length" name="length" min="0" step="0.1" placeholder="e.g. 30">
+          </div>
+          <div class="form-group">
+            <label for="width">Width (ft)</label>
+            <input type="number" id="width" name="width" min="0" step="0.1" placeholder="e.g. 15">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="shallow-depth">Shallow depth (ft)</label>
+            <input type="number" id="shallow-depth" name="shallowDepth" min="0" step="0.1" placeholder="e.g. 3">
+          </div>
+          <div class="form-group">
+            <label for="deep-depth">Deep depth (ft)</label>
+            <input type="number" id="deep-depth" name="deepDepth" min="0" step="0.1" placeholder="e.g. 6">
+          </div>
+        </div>
+      </div>
+
+      <div id="circ-fields" class="hidden">
+        <h2>Circular pool</h2>
+        <p>Volume = π × radius² × average depth</p>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="diameter">Diameter (ft)</label>
+            <input type="number" id="diameter" name="diameter" min="0" step="0.1" placeholder="e.g. 24">
+          </div>
+          <div class="form-group">
+            <label for="circ-shallow">Shallow depth (ft)</label>
+            <input type="number" id="circ-shallow" name="circShallow" min="0" step="0.1" placeholder="e.g. 4">
+          </div>
+          <div class="form-group">
+            <label for="circ-deep">Deep depth (ft)</label>
+            <input type="number" id="circ-deep" name="circDeep" min="0" step="0.1" placeholder="e.g. 4">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Calculate volume</button>
+      </div>
+    </form>
+
+    <div id="volume-output" class="output-panel hidden">
+      <h3>Volume</h3>
+      <p id="volume-result"></p>
+      <p id="volume-cubic-meters" class="muted"></p>
+      <a id="use-in-chemical" href="chemical-calculator.html" class="btn btn-secondary">Use this volume in Chemical Calculator</a>
+    </div>
+
+    <div class="form-group" style="margin-top:1.5rem;">
+      <h2>Or enter volume directly</h2>
+      <p>If you already know volume in cubic meters:</p>
+      <label for="cubic-meters">Cubic meters (m³)</label>
+      <input type="number" id="cubic-meters" name="cubicMeters" min="0" step="0.01" placeholder="e.g. 37.85">
+      <button type="button" id="convert-m3" class="btn btn-secondary">Convert to gallons</button>
+      <p id="m3-result" class="muted"></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="pool-volume-calculator.html">Pool Volume Calculator</a>
+      <a href="pool-chlorine-calculator.html">Pool Chlorine Calculator</a>
+      <a href="pool-shock-calculator.html">Pool Shock Calculator</a>
+      <a href="pool-ph-calculator.html">Pool pH Calculator</a>
+      <a href="../guides/pool-chemistry-basics.html">Pool Chemistry Guide</a>
+    </nav>
+    <p class="footer-copy">&copy; WaterBalanceTools.com</p>
+  </footer>
+
+  <script src="../js/volume.js"></script>
+  <script>
+    (function () {
+      var form = document.getElementById('volume-form');
+      var shape = document.getElementById('shape');
+      var rectFields = document.getElementById('rect-fields');
+      var circFields = document.getElementById('circ-fields');
+      var volumeOutput = document.getElementById('volume-output');
+      var volumeResult = document.getElementById('volume-result');
+      var volumeCubicM = document.getElementById('volume-cubic-meters');
+      var useInChemical = document.getElementById('use-in-chemical');
+      var cubicMetersInput = document.getElementById('cubic-meters');
+      var convertM3 = document.getElementById('convert-m3');
+      var m3Result = document.getElementById('m3-result');
+
+      function toggleShape() {
+        var isRect = shape.value === 'rectangular';
+        rectFields.classList.toggle('hidden', !isRect);
+        circFields.classList.toggle('hidden', isRect);
+      }
+      shape.addEventListener('change', toggleShape);
+      toggleShape();
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var gallons = 0;
+        if (shape.value === 'rectangular') {
+          gallons = window.WaterBalance.volume.rectangularGallons(
+            document.getElementById('length').value,
+            document.getElementById('width').value,
+            document.getElementById('shallow-depth').value,
+            document.getElementById('deep-depth').value
+          );
+        } else {
+          gallons = window.WaterBalance.volume.circularGallons(
+            document.getElementById('diameter').value,
+            document.getElementById('circ-shallow').value,
+            document.getElementById('circ-deep').value
+          );
+        }
+        if (gallons <= 0) {
+          volumeResult.textContent = 'Please enter valid dimensions.';
+          volumeOutput.classList.remove('hidden');
+          return;
+        }
+        var cubicM = gallons / window.WaterBalance.volume.GALLONS_PER_CUBIC_METER;
+        volumeResult.textContent = 'Approximate volume: ' + Math.round(gallons).toLocaleString() + ' US gallons';
+        volumeCubicM.textContent = '≈ ' + cubicM.toFixed(2) + ' m³';
+        volumeCubicM.style.display = 'block';
+        useInChemical.href = 'chemical-calculator.html?gallons=' + Math.round(gallons);
+        volumeOutput.classList.remove('hidden');
+      });
+
+      convertM3.addEventListener('click', function () {
+        var m3 = parseFloat(cubicMetersInput.value) || 0;
+        if (m3 <= 0) {
+          m3Result.textContent = 'Enter a valid number of cubic meters.';
+          return;
+        }
+        var gal = window.WaterBalance.volume.cubicMetersToGallons(m3);
+        m3Result.textContent = Math.round(gal).toLocaleString() + ' US gallons. Use in Chemical Calculator: chemical-calculator.html?gallons=' + Math.round(gal);
+        m3Result.innerHTML = Math.round(gal).toLocaleString() + ' US gallons. <a href="chemical-calculator.html?gallons=' + Math.round(gal) + '">Use in Chemical Calculator</a>';
+      });
+    })();
+  </script>
+</body>
+</html>

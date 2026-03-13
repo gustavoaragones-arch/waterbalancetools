@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pool shock calculator. Enter pool gallons and shock strength to get the amount of shock required. Free and fast.">
+  <title>Pool Shock Calculator | WaterBalanceTools</title>
+  <meta property="og:title" content="Pool Shock Calculator | WaterBalanceTools">
+  <meta property="og:description" content="Calculate how much shock your pool needs.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"HowTo","name":"Shock a Pool","step":[{"@type":"HowToStep","name":"Enter pool volume"},{"@type":"HowToStep","name":"Select shock strength (target ppm)"},{"@type":"HowToStep","name":"Add granular shock and run pump"}]}
+  </script>
+</head>
+<body class="calc-page">
+  <header class="site-header">
+    <a href="../index.html" class="logo-link"><img src="../assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36"></a>
+    <nav class="nav">
+      <a href="chemical-calculator.html">Chemical Calculator</a>
+      <a href="volume-calculator.html">Volume Calculator</a>
+      <a href="../guides/pool-chemistry-basics.html">Chemistry Guide</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="hero hero-compact">
+      <h1>Pool Shock Calculator</h1>
+      <p class="hero-sub">Calculate how much shock your pool needs based on volume and shock strength.</p>
+    </section>
+    <form id="calc-form" class="calc-form">
+      <div class="form-group">
+        <label for="volume">Pool gallons</label>
+        <input type="number" id="volume" min="1" step="1" placeholder="e.g. 15000">
+      </div>
+      <div class="form-group">
+        <label for="strength">Shock strength (target ppm)</label>
+        <select id="strength">
+          <option value="5">Light (5 ppm)</option>
+          <option value="10" selected>Standard (10 ppm)</option>
+          <option value="15">Heavy (15 ppm)</option>
+          <option value="20">Double shock (20 ppm)</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Calculate</button>
+    </form>
+    <div id="result" class="output-panel hidden">
+      <h3>Result</h3>
+      <p id="result-text"></p>
+    </div>
+    <section class="quick-tips">
+      <h2>Quick tips</h2>
+      <p><strong>When to shock:</strong> After heavy use, rain, or if chlorine is low. Run pump for several hours after adding shock. Avoid swimming until chlorine returns to normal (1–3 ppm).</p>
+    </section>
+    <section class="related-tools">
+      <h2>Related tools</h2>
+      <ul class="ring-links">
+        <li><a href="pool-volume-calculator.html">Pool Volume Calculator</a></li>
+        <li><a href="pool-chlorine-calculator.html">Pool Chlorine Calculator</a></li>
+        <li><a href="pool-ph-calculator.html">Pool pH Calculator</a></li>
+        <li><a href="../guides/pool-chemistry-basics.html">Pool Chemistry Guide</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="pool-volume-calculator.html">Pool Volume Calculator</a>
+      <a href="pool-chlorine-calculator.html">Pool Chlorine Calculator</a>
+      <a href="pool-shock-calculator.html">Pool Shock Calculator</a>
+      <a href="pool-ph-calculator.html">Pool pH Calculator</a>
+      <a href="../guides/pool-chemistry-basics.html">Pool Chemistry Guide</a>
+    </nav>
+    <p class="footer-copy">&copy; WaterBalanceTools.com</p>
+  </footer>
+  <script src="../js/calc-utils.js"></script>
+  <script>
+    (function(){
+      document.getElementById('calc-form').onsubmit = function(e) {
+        e.preventDefault();
+        var vol = document.getElementById('volume').value;
+        var ppm = document.getElementById('strength').value;
+        var r = window.WaterBalance.calcUtils.calculateShock(vol, ppm);
+        var el = document.getElementById('result');
+        var text = document.getElementById('result-text');
+        if (!vol || parseFloat(vol) <= 0) { text.textContent = 'Enter valid pool gallons.'; el.classList.remove('hidden'); return; }
+        text.textContent = 'Add ' + r.ounces.toFixed(1) + ' oz (' + r.pounds.toFixed(2) + ' lb) granular shock. Run pump 4–6 hours. Re-test before swimming.';
+        el.classList.remove('hidden');
+      };
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pool turnover rate calculator. Enter pool volume and pump flow rate to get hours for full turnover. Free and fast.">
+  <title>Pool Turnover Rate Calculator | WaterBalanceTools</title>
+  <meta property="og:title" content="Pool Turnover Rate Calculator | WaterBalanceTools">
+  <meta property="og:description" content="Calculate how many hours your pump needs for one full pool turnover.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"HowTo","name":"Calculate Pool Turnover","step":[{"@type":"HowToStep","name":"Enter pool volume in gallons"},{"@type":"HowToStep","name":"Enter pump flow rate (GPH)"},{"@type":"HowToStep","name":"Get hours for one full turnover"}]}
+  </script>
+</head>
+<body class="calc-page">
+  <header class="site-header">
+    <a href="../index.html" class="logo-link"><img src="../assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36"></a>
+    <nav class="nav">
+      <a href="chemical-calculator.html">Chemical Calculator</a>
+      <a href="volume-calculator.html">Volume Calculator</a>
+      <a href="../guides/pool-chemistry-basics.html">Chemistry Guide</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="hero hero-compact">
+      <h1>Pool Turnover Rate Calculator</h1>
+      <p class="hero-sub">Calculate hours required for one full pool turnover (volume ÷ flow rate).</p>
+    </section>
+    <form id="calc-form" class="calc-form">
+      <div class="form-group">
+        <label for="volume">Pool volume (gallons)</label>
+        <input type="number" id="volume" min="1" step="1" placeholder="e.g. 15000">
+      </div>
+      <div class="form-group">
+        <label for="flow">Pump flow rate (GPH)</label>
+        <input type="number" id="flow" min="1" step="100" placeholder="e.g. 3000">
+        <small>If you have GPM, multiply by 60 to get GPH.</small>
+      </div>
+      <button type="submit" class="btn btn-primary">Calculate</button>
+    </form>
+    <div id="result" class="output-panel hidden">
+      <h3>Result</h3>
+      <p id="result-text"></p>
+    </div>
+    <section class="quick-tips">
+      <h2>Quick tips</h2>
+      <p><strong>Turnover:</strong> One full turnover = all pool water passing through the filter once. Many pools aim for 1–2 turnovers per day. Check your pump’s flow rate on the label or manual.</p>
+    </section>
+    <section class="related-tools">
+      <h2>Related tools</h2>
+      <ul class="ring-links">
+        <li><a href="pool-volume-calculator.html">Pool Volume Calculator</a></li>
+        <li><a href="pool-chlorine-calculator.html">Pool Chlorine Calculator</a></li>
+        <li><a href="pool-shock-calculator.html">Pool Shock Calculator</a></li>
+        <li><a href="../guides/pool-chemistry-basics.html">Pool Chemistry Guide</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="pool-volume-calculator.html">Pool Volume Calculator</a>
+      <a href="pool-chlorine-calculator.html">Pool Chlorine Calculator</a>
+      <a href="pool-shock-calculator.html">Pool Shock Calculator</a>
+      <a href="pool-ph-calculator.html">Pool pH Calculator</a>
+      <a href="../guides/pool-chemistry-basics.html">Pool Chemistry Guide</a>
+    </nav>
+    <p class="footer-copy">&copy; WaterBalanceTools.com</p>
+  </footer>
+  <script src="../js/calc-utils.js"></script>
+  <script>
+    (function(){
+      document.getElementById('calc-form').onsubmit = function(e) {
+        e.preventDefault();
+        var hours = window.WaterBalance.calcUtils.calculateTurnover(
+          document.getElementById('volume').value,
+          document.getElementById('flow').value
+        );
+        var el = document.getElementById('result');
+        var text = document.getElementById('result-text');
+        if (!hours || hours <= 0) { text.textContent = 'Enter valid volume and flow rate (GPH).'; el.classList.remove('hidden'); return; }
+        text.textContent = 'One full turnover: ' + hours.toFixed(1) + ' hours.';
+        el.classList.remove('hidden');
+      };
+    })();
+  </script>
+</body>
+</html>
