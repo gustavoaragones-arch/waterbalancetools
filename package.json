@@ -1,0 +1,8 @@
+{
+  "name": "waterbalancetools",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/run-all-generators.js",
+    "sitemap": "node scripts/generate-sitemap.js"
+  }
+}

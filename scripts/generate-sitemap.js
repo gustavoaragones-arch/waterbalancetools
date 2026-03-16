@@ -1,14 +1,15 @@
 /**
- * Generate sitemap.xml from all static and programmatic pages.
+ * Generate sitemap.xml from homepage, calculators, and programmatic (and other) HTML pages.
+ * URLs are built without .html (e.g. /calculators/pool-chlorine-calculator).
  * Run from project root: node scripts/generate-sitemap.js
  */
 const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const BASE = 'https://waterbalancetools.com/';
+const BASE_URL = 'https://waterbalancetools.com';
 
-function listFiles(dir, baseDir, ext) {
+function listHtmlFiles(dir, baseDir) {
   if (!fs.existsSync(dir)) return [];
   const out = [];
   const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -16,47 +17,89 @@ function listFiles(dir, baseDir, ext) {
     const full = path.join(dir, e.name);
     const rel = path.relative(baseDir, full).replace(/\\/g, '/');
     if (e.isDirectory()) {
-      out.push(...listFiles(full, baseDir, ext));
-    } else if (e.isFile() && (!ext || e.name.endsWith(ext))) {
+      out.push(...listHtmlFiles(full, baseDir));
+    } else if (e.isFile() && e.name.endsWith('.html')) {
       out.push(rel);
     }
   }
   return out;
 }
 
+/** path/to/page.html -> path/to/page (no .html) */
+function toCleanPath(relPath) {
+  return relPath.replace(/\.html$/i, '').replace(/\/index$/i, '') || '';
+}
+
 const urls = [];
 
-urls.push({ loc: '', priority: '1.0', changefreq: 'weekly' });
+// 1. Homepage
+urls.push({
+  loc: BASE_URL + '/',
+  changefreq: 'weekly',
+  priority: '1.0'
+});
 
-['calculators', 'guides', 'printable', 'printables', 'tools', 'charts', 'comparisons', 'maintenance', 'reference'].forEach(folder => {
-  const dir = path.join(ROOT, folder);
-  listFiles(dir, ROOT, '.html').forEach(rel => {
-    const loc = rel.replace(/\/index\.html$/, '/') || folder + '/';
-    const priority = folder === 'calculators' ? '0.9' : folder === 'tools' ? '0.85' : '0.7';
-    urls.push({ loc, priority, changefreq: 'monthly' });
+// 2. All calculators
+const calcDir = path.join(ROOT, 'calculators');
+listHtmlFiles(calcDir, ROOT).forEach(rel => {
+  const pathNoExt = toCleanPath(rel);
+  urls.push({
+    loc: BASE_URL + '/' + pathNoExt,
+    changefreq: 'monthly',
+    priority: '0.8'
   });
 });
 
-['programmatic/chlorine', 'programmatic/shock', 'programmatic/ph', 'programmatic/hot-tubs'].forEach(subDir => {
+// 3. Future programmatic pages (and existing programmatic dirs)
+const programmaticDirs = [
+  'programmatic',
+  'programmatic/chlorine',
+  'programmatic/shock',
+  'programmatic/ph',
+  'programmatic/hot-tubs',
+  'programmatic/pool-sizes'
+];
+const seen = new Set();
+programmaticDirs.forEach(subDir => {
   const dir = path.join(ROOT, subDir);
   if (!fs.existsSync(dir)) return;
   fs.readdirSync(dir).filter(f => f.endsWith('.html')).forEach(f => {
-    urls.push({ loc: subDir + '/' + f, priority: '0.6', changefreq: 'monthly' });
+    const rel = subDir + '/' + f;
+    if (seen.has(rel)) return;
+    seen.add(rel);
+    const pathNoExt = toCleanPath(rel);
+    urls.push({
+      loc: BASE_URL + '/' + pathNoExt,
+      changefreq: 'monthly',
+      priority: '0.8'
+    });
   });
 });
 
-// Legacy programmatic root pages
-const progRoot = path.join(ROOT, 'programmatic');
-if (fs.existsSync(progRoot)) {
-  fs.readdirSync(progRoot).filter(f => f.endsWith('.html')).forEach(f => {
-    urls.push({ loc: 'programmatic/' + f, priority: '0.6', changefreq: 'monthly' });
+// Other key sections (guides, tools, charts, etc.) so sitemap stays complete
+['guides', 'printable', 'printables', 'tools', 'charts', 'comparisons', 'maintenance', 'reference'].forEach(folder => {
+  const dir = path.join(ROOT, folder);
+  listHtmlFiles(dir, ROOT).forEach(rel => {
+    const pathNoExt = toCleanPath(rel);
+    if (!pathNoExt) return;
+    const loc = pathNoExt ? BASE_URL + '/' + pathNoExt : BASE_URL + '/' + folder + '/';
+    urls.push({
+      loc,
+      changefreq: 'monthly',
+      priority: folder === 'tools' ? '0.85' : '0.7'
+    });
   });
-}
+});
 
-let xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
-urls.forEach(({ loc, priority, changefreq }) => {
-  const full = (loc === '' ? BASE : BASE + loc).replace(/\/$/, '') + (loc && !path.extname(loc) ? '/' : '');
-  xml += '  <url>\n    <loc>' + full + '</loc>\n    <changefreq>' + changefreq + '</changefreq>\n    <priority>' + priority + '</priority>\n  </url>\n';
+// Build XML
+let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+urls.forEach(({ loc, changefreq, priority }) => {
+  xml += '  <url>\n';
+  xml += '    <loc>' + loc + '</loc>\n';
+  xml += '    <changefreq>' + changefreq + '</changefreq>\n';
+  xml += '    <priority>' + priority + '</priority>\n';
+  xml += '  </url>\n';
 });
 xml += '</urlset>';
 
