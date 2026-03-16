@@ -45,11 +45,8 @@ function buildFaqSchema() {
 }
 
 function buildFaqHtml() {
-  return '<div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">' + FAQ_ITEMS.map(({ q, a }) =>
-    '<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">' +
-    '<h3 itemprop="name">' + q + '</h3>' +
-    '<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">' +
-    '<p itemprop="text">' + a + '</p></div></div>'
+  return '<div class="faq-list">' + FAQ_ITEMS.map(({ q, a }) =>
+    '<div class="faq-item"><h3>' + q + '</h3><p>' + a + '</p></div>'
   ).join('') + '</div>';
 }
 

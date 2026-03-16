@@ -9,8 +9,32 @@
   <meta property="og:description" content="Calculate exactly how much chlorine your pool needs.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="../style.css">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"HowTo","name":"Calculate Pool Chlorine","step":[{"@type":"HowToStep","name":"Enter pool volume in gallons"},{"@type":"HowToStep","name":"Enter current and target chlorine (ppm)"},{"@type":"HowToStep","name":"Get ounces of chlorine required"}]}
+  <script src="../lib/schemaEngine.js"></script>
+  <script>
+  (function(){
+    var S = window.WaterBalanceSchema;
+    var html = S.renderAllSchemas({
+      webApplication: S.generateWebApplicationSchema({
+        name: "Pool Chlorine Calculator",
+        description: "Calculate the exact chlorine dose required for your swimming pool.",
+        url: S.BASE_URL + "/calculators/pool-chlorine-calculator.html"
+      }),
+      faq: [
+        { question: "How much chlorine should I add to my pool?", answer: "Most pools should maintain 1 to 3 ppm chlorine. Test 2–3 times per week." },
+        { question: "What is the ideal chlorine level?", answer: "For pools aim for 1–3 ppm; for hot tubs 3–5 ppm." }
+      ],
+      breadcrumb: [
+        { name: "Home", url: "/" },
+        { name: "Calculators", url: "/calculators/" },
+        { name: "Pool Chlorine Calculator", url: "/calculators/pool-chlorine-calculator.html" }
+      ],
+      howTo: {
+        title: "Calculate Pool Chlorine",
+        steps: ["Enter pool volume in gallons", "Enter current and target chlorine (ppm)", "Get ounces of chlorine required"]
+      }
+    });
+    document.head.insertAdjacentHTML("beforeend", html);
+  })();
   </script>
 </head>
 <body class="calc-page">
