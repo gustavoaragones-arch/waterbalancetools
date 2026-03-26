@@ -76,6 +76,116 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://waterbalancetools.com/programmatic/behavior/how-often-to-shock-pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/behavior/how-often-to-test-pool-water</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/behavior/when-to-add-chlorine</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/explanations/what-is-pool-alkalinity</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/explanations/why-ph-affects-chlorine</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/explanations/why-shower-before-pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://waterbalancetools.com/programmatic/how-much-chlorine-for-10000-gallon-pool</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -96,754 +206,134 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-10500-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-11000-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-to-7-4</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-11500-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-8-to-7-5</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/programmatic/problems/cloudy-pool-fix</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-12500-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/programmatic/problems/green-pool-how-much-chlorine</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-13000-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/programmatic/problems/high-chlorine-how-to-lower</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-13500-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/programmatic/problems/low-alkalinity-symptoms</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-14000-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/programmatic/shock/how-much-shock-for-10000-gallon-pool</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-14500-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/programmatic/shock/how-much-shock-for-15000-gallon-pool</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/programmatic/shock/how-much-shock-for-20000-gallon-pool</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-15500-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/programmatic/shock/how-much-shock-for-25000-gallon-pool</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-16000-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/programmatic/shock/how-much-shock-for-30000-gallon-pool</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-16500-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/programmatic/shock/how-much-shock-for-5000-gallon-pool</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-17000-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/guides/advanced/chlorine-breakdown-sunlight</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-17500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-18500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-19000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-19500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-20500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-21000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-21500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-22000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-22500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-23000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-23500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-24000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-24500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-25500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-26000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-26500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-27000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-27500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-28000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-28500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-29000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-29500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-5500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-6000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-6500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-7500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-8500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-9500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-10250-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-11000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-11750-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-12500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-13250-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-14000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-14750-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-15500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-16250-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-17000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-17750-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-18500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-19250-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-20000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-20750-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-21500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-22250-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-23000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-23750-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-24500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-25250-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-26000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-26750-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-27500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-28250-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-29000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-29750-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-5000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-5750-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-6500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-7250-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-8000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-8750-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/shock/shock-for-9500-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-10000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-11000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-12000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-13000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-14000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-15000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-16000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-17000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-18000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-19000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-20000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-21000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-22000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-23000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-24000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-25000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-26000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-27000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-28000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-29000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-30000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-5000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-6000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-7000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-8000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/lower-ph-in-9000-gallon-pool</loc>
+    <loc>https://waterbalancetools.com/guides/advanced/chlorine-vs-saltwater</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-10000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-11000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-12000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-13000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-14000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-15000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-16000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-17000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-18000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-19000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-20000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-21000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-22000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-23000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-24000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-25000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-26000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-27000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-28000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-29000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-30000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-5000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-6000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-7000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-8000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/ph/raise-ph-in-9000-gallon-pool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/hot-tubs/how-much-chlorine-for-200-gallon-hot-tub</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/hot-tubs/how-much-chlorine-for-225-gallon-hot-tub</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/programmatic/hot-tubs/how-much-chlorine-for-250-gallon-hot-tub</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/hot-tubs/how-much-chlorine-for-275-gallon-hot-tub</loc>
+    <loc>https://waterbalancetools.com/guides/advanced/cya-stabilizer-explained</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/hot-tubs/how-much-chlorine-for-300-gallon-hot-tub</loc>
+    <loc>https://waterbalancetools.com/guides/advanced/pool-chemistry-balance-explained</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/hot-tubs/how-much-chlorine-for-325-gallon-hot-tub</loc>
+    <loc>https://waterbalancetools.com/guides/alkalinity-guide</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/hot-tubs/how-much-chlorine-for-350-gallon-hot-tub</loc>
+    <loc>https://waterbalancetools.com/guides/chlorine-guide</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/hot-tubs/how-much-chlorine-for-375-gallon-hot-tub</loc>
+    <loc>https://waterbalancetools.com/guides/edge-cases/high-cya-chlorine-lock</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/hot-tubs/how-much-chlorine-for-400-gallon-hot-tub</loc>
+    <loc>https://waterbalancetools.com/guides/edge-cases/over-shocking-pool-effects</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/hot-tubs/how-much-chlorine-for-425-gallon-hot-tub</loc>
+    <loc>https://waterbalancetools.com/guides/edge-cases/pool-temperature-effect-chlorine</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/hot-tubs/how-much-chlorine-for-450-gallon-hot-tub</loc>
+    <loc>https://waterbalancetools.com/guides/edge-cases/rain-effect-on-pool-chemistry</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/hot-tubs/how-much-chlorine-for-475-gallon-hot-tub</loc>
+    <loc>https://waterbalancetools.com/guides/edge-cases/swimming-after-shocking-pool</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/programmatic/hot-tubs/how-much-chlorine-for-500-gallon-hot-tub</loc>
+    <loc>https://waterbalancetools.com/guides/hot-tub-chemistry</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://waterbalancetools.com/guides/hot-tub-maintenance</loc>
@@ -851,7 +341,42 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://waterbalancetools.com/guides/ph-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://waterbalancetools.com/guides/pool-chemistry-basics</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/seasonal/closing-pool-chemistry-winter</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/seasonal/opening-pool-chemistry-checklist</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/seasonal/summer-high-chlorine-demand</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/seasonal/winter-pool-maintenance-chemistry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/legal/legal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/legal/ownership</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

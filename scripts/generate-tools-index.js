@@ -64,9 +64,15 @@ function friendlyTitle(filename) {
   const mTub = filename.match(/for-(\d+)-gallon-hot-tub/);
   const mPh = filename.match(/(raise|lower)-ph-in-(\d+)-gallon/);
   const mShock = filename.match(/shock-for-(\d+)-gallon/);
+  const mHowShock = filename.match(/how-much-shock-for-(\d+)-gallon-pool/);
+  const mHowPh = filename.match(/how-to-adjust-ph-from-([\d-]+)-to-([\d-]+)\.html/);
+  const mHtChem = filename.match(/hot-tub-chemicals-for-(\d+)-gallons/);
   if (mTub) return 'Chlorine for ' + parseInt(mTub[1], 10).toLocaleString() + ' gal hot tub';
   if (mPh) return (mPh[1] === 'raise' ? 'Raise pH' : 'Lower pH') + ' — ' + parseInt(mPh[2], 10).toLocaleString() + ' gal pool';
   if (mShock) return 'Shock for ' + parseInt(mShock[1], 10).toLocaleString() + ' gal pool';
+  if (mHowShock) return 'How much shock — ' + parseInt(mHowShock[1], 10).toLocaleString() + ' gal';
+  if (mHowPh) return 'Adjust pH ' + mHowPh[1].replace(/-/g, '.') + ' → ' + mHowPh[2].replace(/-/g, '.');
+  if (mHtChem) return 'Hot tub chemicals — ' + parseInt(mHtChem[1], 10) + ' gal';
   if (mPool) return 'Chlorine for ' + parseInt(mPool[1], 10).toLocaleString() + ' gal pool';
   const name = filename.replace(/-/g, ' ').replace('.html', '');
   return name.replace(/\b\w/g, c => c.toUpperCase());
@@ -80,11 +86,17 @@ const chlorineFiles = listHtml(path.join(ROOT, 'programmatic', 'chlorine'));
 const shockFiles = listHtml(path.join(ROOT, 'programmatic', 'shock'));
 const phFiles = listHtml(path.join(ROOT, 'programmatic', 'ph'));
 const hotTubFiles = listHtml(path.join(ROOT, 'programmatic', 'hot-tubs'));
+const problemFiles = listHtml(path.join(ROOT, 'programmatic', 'problems'));
+const explanationFiles = listHtml(path.join(ROOT, 'programmatic', 'explanations'));
+const behaviorFiles = listHtml(path.join(ROOT, 'programmatic', 'behavior'));
 
 const chlorineLinks = linkList('../programmatic/chlorine/', chlorineFiles);
 const shockLinks = linkList('../programmatic/shock/', shockFiles);
 const phLinks = linkList('../programmatic/ph/', phFiles);
 const hotTubLinks = linkList('../programmatic/hot-tubs/', hotTubFiles);
+const problemLinks = linkList('../programmatic/problems/', problemFiles);
+const explanationLinks = linkList('../programmatic/explanations/', explanationFiles);
+const behaviorLinks = linkList('../programmatic/behavior/', behaviorFiles);
 
 const calcList = CALCULATORS.map(c => '<li><a href="' + c.url + '">' + c.name + '</a></li>').join('\n        ');
 const chartsList = CHARTS.map(c => '<li><a href="' + c.url + '">' + c.name + '</a></li>').join('\n        ');
@@ -150,6 +162,24 @@ const html = `<!DOCTYPE html>
         </ul>
       </section>
       <section>
+        <h2>Problem-solving guides</h2>
+        <ul>
+        ${problemLinks || '<li>Run generate-problem-pages.js to generate.</li>'}
+        </ul>
+      </section>
+      <section>
+        <h2>Explanations (why / what)</h2>
+        <ul>
+        ${explanationLinks || '<li>Run generate-explanation-pages.js to generate.</li>'}
+        </ul>
+      </section>
+      <section>
+        <h2>Schedules &amp; behavior</h2>
+        <ul>
+        ${behaviorLinks || '<li>Run generate-behavior-pages.js to generate.</li>'}
+        </ul>
+      </section>
+      <section>
         <h2>Maintenance guides</h2>
         <ul>
         ${maintenanceList}
@@ -198,4 +228,20 @@ const html = `<!DOCTYPE html>
 
 if (!fs.existsSync(path.join(ROOT, 'tools'))) fs.mkdirSync(path.join(ROOT, 'tools'), { recursive: true });
 fs.writeFileSync(OUT_FILE, html, 'utf8');
-console.log('Tools index: wrote tools/index.html (chlorine: ' + chlorineFiles.length + ', shock: ' + shockFiles.length + ', ph: ' + phFiles.length + ', hot-tub: ' + hotTubFiles.length + ')');
+console.log(
+  'Tools index: wrote tools/index.html (chlorine: ' +
+    chlorineFiles.length +
+    ', shock: ' +
+    shockFiles.length +
+    ', ph: ' +
+    phFiles.length +
+    ', hot-tub: ' +
+    hotTubFiles.length +
+    ', problems: ' +
+    problemFiles.length +
+    ', explanations: ' +
+    explanationFiles.length +
+    ', behavior: ' +
+    behaviorFiles.length +
+    ')'
+);

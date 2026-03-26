@@ -1,19 +1,33 @@
 /**
  * Run all programmatic page generators, then tools index and sitemap.
+ * Order: … → hub pages → link matrix → authority layer → ads → terminology → tools index → sitemap
  * Usage: node scripts/run-all-generators.js
  */
 const { execSync } = require('child_process');
 const path = require('path');
 const root = path.join(__dirname, '..');
 
-const scripts = [
-  'generate-chlorine-pages.js',
-  'generate-shock-pages.js',
-  'generate-ph-pages.js',
-  'generate-hot-tub-pages.js',
-  'generate-tools-index.js',
-  'generate-sitemap.js'
-];
+const g = path.join(__dirname, 'generators');
+
+require(path.join(g, 'generate-chlorine-pages.js'));
+require(path.join(g, 'build-chlorine-links.js'));
+require(path.join(g, 'generate-shock-pages.js'));
+require(path.join(g, 'build-shock-links.js'));
+require(path.join(g, 'generate-ph-pages.js'));
+require(path.join(g, 'build-ph-links.js'));
+require(path.join(g, 'generate-hot-tub-pages.js'));
+require(path.join(g, 'build-hot-tub-links.js'));
+require(path.join(g, 'generate-problem-pages.js'));
+require(path.join(g, 'generate-explanation-pages.js'));
+require(path.join(g, 'generate-behavior-pages.js'));
+
+require(path.join(__dirname, 'generate-hub-pages.js'));
+require(path.join(__dirname, 'build-link-matrix.js'));
+require(path.join(__dirname, 'inject-authority-layer.js'));
+require(path.join(__dirname, 'inject-ads.js'));
+require(path.join(__dirname, 'enforce-terminology.js'));
+
+const scripts = ['generate-tools-index.js', 'generate-sitemap.js'];
 
 scripts.forEach(script => {
   console.log('Running ' + script + '...');

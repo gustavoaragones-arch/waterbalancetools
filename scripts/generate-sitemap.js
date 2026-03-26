@@ -50,23 +50,10 @@ listHtmlFiles(calcDir, ROOT).forEach(rel => {
   });
 });
 
-// 3. Future programmatic pages (and existing programmatic dirs)
-const programmaticDirs = [
-  'programmatic',
-  'programmatic/chlorine',
-  'programmatic/shock',
-  'programmatic/ph',
-  'programmatic/hot-tubs',
-  'programmatic/pool-sizes'
-];
-const seen = new Set();
-programmaticDirs.forEach(subDir => {
-  const dir = path.join(ROOT, subDir);
-  if (!fs.existsSync(dir)) return;
-  fs.readdirSync(dir).filter(f => f.endsWith('.html')).forEach(f => {
-    const rel = subDir + '/' + f;
-    if (seen.has(rel)) return;
-    seen.add(rel);
+// 3. All programmatic pages (recursive: chlorine, shock, ph, hot-tubs, problems, explanations, behavior, …)
+const progRoot = path.join(ROOT, 'programmatic');
+if (fs.existsSync(progRoot)) {
+  listHtmlFiles(progRoot, ROOT).forEach(rel => {
     const pathNoExt = toCleanPath(rel);
     urls.push({
       loc: BASE_URL + '/' + pathNoExt,
@@ -74,10 +61,10 @@ programmaticDirs.forEach(subDir => {
       priority: '0.8'
     });
   });
-});
+}
 
 // Other key sections (guides, tools, charts, etc.) so sitemap stays complete
-['guides', 'printable', 'printables', 'tools', 'charts', 'comparisons', 'maintenance', 'reference'].forEach(folder => {
+['guides', 'legal', 'printable', 'printables', 'tools', 'charts', 'comparisons', 'maintenance', 'reference'].forEach(folder => {
   const dir = path.join(ROOT, folder);
   listHtmlFiles(dir, ROOT).forEach(rel => {
     const pathNoExt = toCleanPath(rel);
