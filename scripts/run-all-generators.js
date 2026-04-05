@@ -26,6 +26,9 @@ require(path.join(__dirname, 'build-link-matrix.js'));
 require(path.join(__dirname, 'inject-authority-layer.js'));
 require(path.join(__dirname, 'inject-ads.js'));
 require(path.join(__dirname, 'enforce-terminology.js'));
+require(path.join(__dirname, 'generate-all-pages.js'));
+require(path.join(__dirname, 'inject-seo-metadata.js'));
+require(path.join(__dirname, 'inject-last-updated.js'));
 
 const scripts = ['generate-tools-index.js', 'generate-sitemap.js'];
 

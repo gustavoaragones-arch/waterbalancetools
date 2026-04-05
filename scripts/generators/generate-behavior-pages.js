@@ -71,15 +71,23 @@ function buildPage(t) {
     '    </section>\n' +
     H.stepsSection(steps) +
     '\n' +
-    H.whatThisMeansSection(
-      '<strong>Typical frequency:</strong> ' + escHtml(t.frequency) + ' <span class="serp-sep-inline">·</span> <strong>When it changes:</strong> ' + escHtml(t.conditions)
-    ) +
+    H.whatThisMeansSection([
+      '<strong>Typical frequency:</strong> ' +
+        escHtml(t.frequency) +
+        ' <span class="serp-sep-inline">·</span> <strong>When it changes:</strong> ' +
+        escHtml(t.conditions),
+      escHtml(t.frequencyExtra)
+    ]) +
     '\n' +
     H.recommendedLevelsSection([
       { html: 'Free chlorine: <strong>1–3 ppm</strong> (pools)' },
       { html: 'pH balance: <strong>7.2–7.6</strong>' },
       { html: 'Test cadence: <strong>2–3× weekly</strong> (busy pools)' }
     ]) +
+    '\n' +
+    H.whatHappensIfIncorrectSection(t.riskParagraphs) +
+    '\n' +
+    H.quickTipsSection(t.quickTips) +
     '\n' +
     H.commonQuestionsSection(t.faq) +
     '\n</main>';

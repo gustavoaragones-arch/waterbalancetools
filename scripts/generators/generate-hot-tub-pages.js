@@ -157,9 +157,12 @@ function buildPage(size) {
       'Circulate jets; retest before the next soak.'
     ]) +
     '\n' +
-    H.whatThisMeansSection(
-      'Hot tubs need tighter <strong>chlorine levels</strong> control than pools because heat and volume make chemistry swing faster. Always prioritize test results over tables.'
-    ) +
+    H.whatThisMeansSection([
+      'A <strong>' +
+        g +
+        '-gallon hot tub</strong> holds far less water than a pool, so each bather, product, and top-off changes sanitizer and pH much faster. The reference table on this page estimates chlorine from 0 ppm at your volume; real dosing must follow your latest test strip or meter reading.',
+      'Warm water increases chemical activity and evaporation concentrates dissolved solids over time. Many spas target higher free chlorine than pools while in use, but exact targets depend on whether you use chlorine, bromine, or a mineral system—always follow equipment and chemical labels for your setup.'
+    ]) +
     '\n' +
     H.recommendedLevelsSection([
       {
@@ -168,6 +171,21 @@ function buildPage(size) {
       },
       { html: 'pH: <strong>7.2–7.8</strong> (check label/equipment)' },
       { html: 'Total alkalinity: follow spa manufacturer guidance' }
+    ]) +
+    '\n' +
+    H.whatHappensIfIncorrectSection([
+      'Too little sanitizer in a spa allows bacteria and biofilm risk in pipes and surfaces—often before water looks bad. That is why frequent testing matters more in hot tubs than in large pools.',
+      'Too much chlorine or mis-dosed shock can damage covers, irritate skin, and create unsafe soak conditions. Small volumes mean overdosing happens easily if you confuse pool and spa strengths.',
+      'Ignoring pH while chasing sanitizer leads to uncomfortable water and can damage heaters and seals. Imbalance also makes readings harder to interpret when you switch products mid-season.'
+    ]) +
+    '\n' +
+    H.quickTipsSection([
+      'Test before every use when the spa is active; at minimum several times per week.',
+      'Rinse swimsuits (no fabric softener) and shower to reduce oils and products that consume sanitizer.',
+      'Leave the cover open briefly after dosing if the label recommends it—off-gassing matters in small spaces.',
+      'Drain and refill on a schedule appropriate for your usage and local water—stale water is harder to balance.',
+      'Use calculators and labels written for spa volume; do not scale pool doses down without verifying product instructions.',
+      'Keep spare test strips stored dry and in date; bad tests cause bad adds.'
     ]) +
     '\n' +
     buildTable(size) +

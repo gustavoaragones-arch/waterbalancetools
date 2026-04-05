@@ -167,9 +167,12 @@ function buildPage(volume) {
       'Adjust toward the recommended 1–3 ppm range for most pools.'
     ]) +
     '\n' +
-    H.whatThisMeansSection(
-      'Free chlorine sanitizes your pool water. The right dose depends on <strong>volume</strong>, <strong>current ppm</strong>, target, and <strong>CYA</strong>—use the calculator and label directions.'
-    ) +
+    H.whatThisMeansSection([
+      'Free chlorine exists mainly as hypochlorous acid and hypochlorite—those forms kill bacteria, viruses, and algae while oxidizing sweat, oils, and debris. For a <strong>' +
+        g +
+        '-gallon pool</strong>, label dosing and reference tables assume known volume, known product strength, and a clear starting point for ppm.',
+      'Real pools rarely match every assumption: <strong>cyanuric acid (CYA)</strong> buffers UV loss but changes how much measured chlorine is immediately active; bather load, leaves, pollen, and warm water all raise sanitizer demand. Always measure current <strong>free chlorine</strong> before adding, then use the Pool Chlorine Calculator so ounces match your readings—not pool size alone.'
+    ]) +
     '\n' +
     H.recommendedLevelsSection([
       {
@@ -178,6 +181,21 @@ function buildPage(volume) {
       },
       { html: 'pH: <strong>7.2–7.6</strong>' },
       { html: 'Total alkalinity: <strong>80–120 ppm</strong> (typical)' }
+    ]) +
+    '\n' +
+    H.whatHappensIfIncorrectSection([
+      'Running too little free chlorine leaves water vulnerable to bacteria, algae, and murky conditions. You may notice green or cloudy water, slippery walls, or a strong “chlorine smell” from chloramines when sanitizer cannot keep up with organic load.',
+      'Adding too much chlorine can irritate skin and eyes, damage liners or covers, and keep swimmers out until levels drop. Repeated overdosing wastes chemicals and can throw off pH if you never retest between adds.',
+      'Misjudging pool volume leads to systematic under- or overdosing all season. Combine an accurate gallon estimate (dimensions or a volume calculator) with testing after storms, parties, or when switching between liquid, granular, and tablet products.'
+    ]) +
+    '\n' +
+    H.quickTipsSection([
+      'Test free chlorine and pH at least twice weekly during swim season; test more often after storms or heavy use.',
+      'Add chlorine with the pump running; brush walls and steps so chemicals mix evenly through the body of water.',
+      'Wait 30–60 minutes after each adjustment, then retest before stacking another large dose.',
+      'Log your pool volume once and reuse it—small errors in gallons compound every time you dose.',
+      'Keep CYA in a managed range; very high stabilizer makes real sanitation harder even when tests look acceptable.',
+      'Store chlorine in a cool, dry place and never mix incompatible chemicals in the same bucket or vessel.'
     ]) +
     '\n' +
     explanationBlock +

@@ -162,9 +162,12 @@ function buildPage(volume) {
       'Retest before swimming—target safe free chlorine in range.'
     ]) +
     '\n' +
-    H.whatThisMeansSection(
-      'Shock is a large dose of sanitizer to raise chlorine quickly and oxidize contaminants. The right amount depends on <strong>volume</strong>, <strong>starting ppm</strong>, and product strength.'
-    ) +
+    H.whatThisMeansSection([
+      'Shock treatment temporarily raises free chlorine well above daily maintenance so the water can oxidize sweat, oils, algae, and other organic load. For a <strong>' +
+        g +
+        '-gallon pool</strong>, the ounces on this page scale with volume; your starting sanitizer level and how “dirty” the water is still determine whether you need a standard or stronger dose.',
+      'Granular shock products vary in strength and required handling—always read the label, pre-dissolve when instructed, and broadcast with the pump running. Afterward, filtration time matters as much as the initial dose: dead algae and debris must be captured by the filter or vacuumed out.'
+    ]) +
     '\n' +
     H.recommendedLevelsSection([
       {
@@ -173,6 +176,21 @@ function buildPage(volume) {
       },
       { html: 'pH: <strong>7.2–7.6</strong> before/after treatment' },
       { html: 'Total alkalinity: <strong>80–120 ppm</strong> (typical)' }
+    ]) +
+    '\n' +
+    H.whatHappensIfIncorrectSection([
+      'Under-shocking during an algae bloom or after heavy contamination often wastes time: chlorine may rise briefly but not long enough to oxidize everything, and the pool can slide back to cloudy or green water.',
+      'Over-shocking can keep swimmers out for an extended period, stress vinyl or equipment finishes, and mask other problems if you never verify pH, alkalinity, and filtration.',
+      'Shocking without circulation or with a clogged filter leaves dead organics suspended—water can look worse before it looks better. Clean baskets, watch filter pressure, and run the pump as recommended during recovery.'
+    ]) +
+    '\n' +
+    H.quickTipsSection([
+      'Shock in the evening when practical—less immediate UV loss than midday, and you can run the pump overnight.',
+      'Brush walls and floor after dosing to expose algae to treated water.',
+      'Backwash or clean the filter when pressure rises; a loaded filter slows recovery.',
+      'Retest before swimming; follow label wait times and local health guidance.',
+      'Do not mix different shock types or add through the skimmer unless the label allows it.',
+      'Pair shock with good pH—extreme pH reduces how effective the sanitizer is during the treatment window.'
     ]) +
     '\n' +
     explanationBlock +

@@ -43,14 +43,17 @@ function stepsSection(items) {
   );
 }
 
-function whatThisMeansSection(htmlParagraph) {
+/** One or more HTML paragraphs (trusted — may include <strong> from generators). */
+function whatThisMeansSection(htmlParagraphOrParts) {
+  const parts = Array.isArray(htmlParagraphOrParts)
+    ? htmlParagraphOrParts
+    : [htmlParagraphOrParts];
+  const ps = parts.map(html => '      <p>' + html + '</p>').join('\n');
   return (
     '    <section class="serp-block serp-definition">\n' +
     '      <h2>What This Means</h2>\n' +
-    '      <p>' +
-    htmlParagraph +
-    '</p>\n' +
-    '    </section>'
+    ps +
+    '\n    </section>'
   );
 }
 
@@ -97,6 +100,31 @@ function commonQuestionsSection(faqItems) {
 /**
  * Insert internal cluster section before FAQ (SERP order: explanation → cluster → FAQ).
  */
+/** Plain-text paragraphs (escaped). */
+function whatHappensIfIncorrectSection(paragraphs) {
+  const ps = paragraphs
+    .map(t => '      <p>' + escHtml(t) + '</p>')
+    .join('\n');
+  return (
+    '    <section class="serp-block serp-risk">\n' +
+    '      <h2>What happens if levels are incorrect</h2>\n' +
+    ps +
+    '\n    </section>'
+  );
+}
+
+function quickTipsSection(items) {
+  const lis = items.map(t => '        <li>' + escHtml(t) + '</li>').join('\n');
+  return (
+    '    <section class="serp-block serp-quick-tips">\n' +
+    '      <h2>Quick tips</h2>\n' +
+    '      <ul>\n' +
+    lis +
+    '\n      </ul>\n' +
+    '    </section>'
+  );
+}
+
 function insertBeforeCommonQuestions(html, sectionHtml) {
   if (html.includes('class="faq-section common-questions"')) {
     return html.replace(
@@ -118,6 +146,8 @@ module.exports = {
   stepsSection,
   whatThisMeansSection,
   recommendedLevelsSection,
+  whatHappensIfIncorrectSection,
+  quickTipsSection,
   commonQuestionsSection,
   insertBeforeCommonQuestions
 };

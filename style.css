@@ -280,6 +280,21 @@ main > section:not(:first-child) {
   font-weight: var(--font-weight-bold);
   margin: 0 0 0.5rem;
 }
+.serp-definition p + p {
+  margin-top: 0.65rem;
+}
+.serp-quick-tips ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.serp-quick-tips li {
+  margin-bottom: 0.35rem;
+}
+p.updated {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin: 1.5rem 0 0;
+}
 .serp-steps ul,
 .serp-levels ul {
   margin: 0;

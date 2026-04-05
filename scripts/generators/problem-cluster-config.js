@@ -18,6 +18,21 @@ const PROBLEMS = [
       'To fix a green pool, you typically need shock treatment with about 2–3× normal chlorine levels. In most pools, you temporarily hold free chlorine above 5 ppm while running filtration until the water clears.',
     description:
       'Green water usually means algae. Chlorine and filtration work together—you need enough sanitizer and enough circulation time.',
+    whatThisMeansExtra:
+      'Algae often clings to walls and hides in corners, so brushing is not optional. Cyanuric acid, phosphate levels, and how long the pump runs all change how much chlorine you need and how fast the water clears. Expect the process to take at least one full filter turnover cycle and often longer for severe blooms.',
+    riskParagraphs: [
+      'Stopping treatment too soon leaves live algae that regrow overnight—water can turn green again after looking briefly better.',
+      'Shocking without cleaning filtration leaves dead algae recirculating; pressure rises, flow drops, and clarity stalls.',
+      'Guessing gallons or shock strength risks under-dosing (no kill) or over-dosing (long no-swim windows and equipment stress).'
+    ],
+    quickTips: [
+      'Run the pump continuously until water is clear and chemistry is stable.',
+      'Brush daily during recovery; vacuum to waste only if your setup and regulations allow.',
+      'Clean or backwash the filter whenever pressure climbs into the manufacturer’s caution range.',
+      'Test morning and evening while recovering; log readings so you see trends, not single points.',
+      'Balance pH into a normal range before relying on shock alone—extremes blunt effectiveness.',
+      'Use the shock calculator with your volume instead of copying a neighbor’s bag count.'
+    ],
     solution:
       'Shock the pool, brush walls, run the pump continuously, clean or backwash the filter, and re-test daily until water is clear and chlorine is back in a safe swim range.',
     steps: [
@@ -63,6 +78,21 @@ const PROBLEMS = [
       'Cloudy pool water is usually fixed by fixing filtration and balance: run the filter longer, verify pH and alkalinity, and rule out algae or fine debris. For best results, test before adding large chemical doses.',
     description:
       'Cloudiness comes from particles, poor circulation, or chemistry drift—not always “more chlorine.”',
+    whatThisMeansExtra:
+      'Fine particles stay suspended when the filter cannot catch them or when sanitizer and pH are fighting your equipment. Sometimes the first sign of early algae is dull or hazy water before it turns green. Addressing filtration hours, skimmer flow, and chemical balance together clears water faster than random chemical dumps.',
+    riskParagraphs: [
+      'Dumping shock or clarifier without fixing circulation often wastes money—the cloud returns when the pump slows or the filter loads up.',
+      'Swimming in cloudy water is risky because you cannot see the bottom and sanitizer may be out of range for actual disinfection.',
+      'Ignoring rising filter pressure can burn a pump or rupture a cartridge when flow is restricted for too long.'
+    ],
+    quickTips: [
+      'Run the filter longer (often 24 hours) during recovery while monitoring pressure.',
+      'Empty skimmer and pump baskets; verify return eyeballs are aimed for good surface turnover.',
+      'Test pH, alkalinity, and sanitizer together before choosing the next chemical.',
+      'Brush and vacuum if debris is visible—physical removal supports chemistry.',
+      'If you use clarifier, follow the label for your filter type (sand vs cartridge vs DE).',
+      'Re-test after each change; cloudy water fixes are iterative, not one-shot.'
+    ],
     solution:
       'Balance pH (typically 7.2–7.6), keep alkalinity in range, run the pump continuously, clean/backwash the filter, and use clarifier only if appropriate for your situation.',
     steps: [
@@ -108,6 +138,21 @@ const PROBLEMS = [
       'To lower high chlorine, you typically wait for natural decay, dilute with fresh water, or (in some cases) use a reducer labeled for pools. In most pools, sunlight and time bring high chlorine down—avoid swimming until levels are safe.',
     description:
       'Very high chlorine can irritate skin and eyes and stress equipment.',
+    whatThisMeansExtra:
+      'Test strips and drops can read differently at the top of the range—confirm extreme readings before acting. Sunlight, CYA, and temperature all change how quickly chlorine falls. Partial drain-and-refill is sometimes the fastest path when local rules allow and water balance supports it.',
+    riskParagraphs: [
+      'Swimming while chlorine is very high can cause respiratory irritation, red eyes, and damaged swimwear.',
+      'Sustained high sanitizer can fade liners, weaken automatic cover fabric, and accelerate metal corrosion.',
+      'Adding “chlorine reducer” without testing can crash sanitizer to zero and leave the pool unprotected.'
+    ],
+    quickTips: [
+      'Stop all automatic chlorination until levels are confirmed back in range.',
+      'Run circulation to mix water evenly before trusting a spot sample.',
+      'If dilution is an option, replace water gradually and retest total dissolved solids if you maintain them.',
+      'Do not add pH chemicals blindly—extreme sanitizer can interact badly with large acid or base doses.',
+      'Log time-of-day and weather; UV often accelerates drop-off in outdoor pools.',
+      'Use the chlorine calculator to understand volume so future doses stay proportional.'
+    ],
     solution:
       'Stop adding chlorine, run circulation, test daily, and partially drain/refill if levels are extreme and dilution is appropriate for your water balance.',
     steps: [
@@ -153,6 +198,21 @@ const PROBLEMS = [
       'Low total alkalinity usually causes pH to swing quickly, etching or corrosion risk, and sometimes eye or skin irritation. Typically, total alkalinity should stay roughly 80–120 ppm in many pools—confirm with your test kit and surface type.',
     description:
       'Alkalinity buffers pH. When it is too low, pH becomes unstable.',
+    whatThisMeansExtra:
+      'Raising alkalinity usually moves pH slightly as well, so pool owners should plan adjustments in order: stabilize alkalinity first, then fine-tune pH. Salt systems, waterfalls, and frequent acid additions can pull alkalinity down over time. Tracking trends weekly prevents emergency corrections.',
+    riskParagraphs: [
+      'Low alkalinity lets pH crash or spike within hours, which can etch plaster, corrode heaters, and irritate swimmers.',
+      'Chasing pH with acid or base while alkalinity is very low often creates a yo-yo that never stabilizes.',
+      'Some sanitizers and fill water pull alkalinity down faster—ignoring TA makes chlorine and pH both harder to manage.'
+    ],
+    quickTips: [
+      'Dose alkalinity increaser in thirds or quarters of the label’s total suggestion, circulating between adds.',
+      'Retest alkalinity and pH after each waiting period—usually several hours with good flow.',
+      'Record starting ppm and dose so you learn how your pool responds over the season.',
+      'If you use muriatic acid for pH, expect alkalinity to drift down over time; test TA regularly.',
+      'Do not dump large soda ash and bicarb on the same day without a plan—overshoot is common.',
+      'Use the alkalinity calculator with accurate gallons for predictable movement toward 80–120 ppm.'
+    ],
     solution:
       'Raise alkalinity with an alkalinity increaser (often sodium bicarbonate) in smaller doses, circulate, and re-test before large pH moves.',
     steps: [

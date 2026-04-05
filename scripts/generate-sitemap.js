@@ -1,6 +1,6 @@
 /**
- * Generate sitemap.xml from homepage, calculators, and programmatic (and other) HTML pages.
- * URLs are built without .html (e.g. /calculators/pool-chlorine-calculator).
+ * Sitemap with tiered priority/changefreq and crawl-friendly ordering.
+ * Order: homepage → calculators → problem pages → other programmatic → rest.
  * Run from project root: node scripts/generate-sitemap.js
  */
 const fs = require('fs');
@@ -25,60 +25,98 @@ function listHtmlFiles(dir, baseDir) {
   return out;
 }
 
-/** path/to/page.html -> path/to/page (no .html) */
 function toCleanPath(relPath) {
   return relPath.replace(/\.html$/i, '').replace(/\/index$/i, '') || '';
 }
 
 const urls = [];
 
-// 1. Homepage
+// 1. Homepage (highest)
 urls.push({
   loc: BASE_URL + '/',
-  changefreq: 'weekly',
+  changefreq: 'daily',
   priority: '1.0'
 });
 
-// 2. All calculators
+// 2. All calculators — high value
 const calcDir = path.join(ROOT, 'calculators');
-listHtmlFiles(calcDir, ROOT).forEach(rel => {
-  const pathNoExt = toCleanPath(rel);
+listHtmlFiles(calcDir, ROOT)
+  .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+  .forEach(rel => {
+    urls.push({
+      loc: BASE_URL + '/' + toCleanPath(rel),
+      changefreq: 'daily',
+      priority: '1.0'
+    });
+  });
+
+// 3. Problem pages — high urgency / RPM
+const progRoot = path.join(ROOT, 'programmatic');
+const problemsDir = path.join(progRoot, 'problems');
+const problemRels = fs.existsSync(problemsDir)
+  ? listHtmlFiles(problemsDir, ROOT).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+  : [];
+const problemSet = new Set(problemRels);
+problemRels.forEach(rel => {
   urls.push({
-    loc: BASE_URL + '/' + pathNoExt,
-    changefreq: 'monthly',
-    priority: '0.8'
+    loc: BASE_URL + '/' + toCleanPath(rel),
+    changefreq: 'daily',
+    priority: '1.0'
   });
 });
 
-// 3. All programmatic pages (recursive: chlorine, shock, ph, hot-tubs, problems, explanations, behavior, …)
-const progRoot = path.join(ROOT, 'programmatic');
+// 4. Remaining programmatic (standard long-tail)
 if (fs.existsSync(progRoot)) {
-  listHtmlFiles(progRoot, ROOT).forEach(rel => {
-    const pathNoExt = toCleanPath(rel);
-    urls.push({
-      loc: BASE_URL + '/' + pathNoExt,
-      changefreq: 'monthly',
-      priority: '0.8'
+  listHtmlFiles(progRoot, ROOT)
+    .filter(rel => !problemSet.has(rel))
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+    .forEach(rel => {
+      urls.push({
+        loc: BASE_URL + '/' + toCleanPath(rel),
+        changefreq: 'monthly',
+        priority: '0.7'
+      });
     });
-  });
 }
 
-// Other key sections (guides, tools, charts, etc.) so sitemap stays complete
-['guides', 'legal', 'printable', 'printables', 'tools', 'charts', 'comparisons', 'maintenance', 'reference'].forEach(folder => {
-  const dir = path.join(ROOT, folder);
-  listHtmlFiles(dir, ROOT).forEach(rel => {
-    const pathNoExt = toCleanPath(rel);
-    if (!pathNoExt) return;
-    const loc = pathNoExt ? BASE_URL + '/' + pathNoExt : BASE_URL + '/' + folder + '/';
-    urls.push({
-      loc,
-      changefreq: 'monthly',
-      priority: folder === 'tools' ? '0.85' : '0.7'
-    });
+// 5. Crawl hub + other sections
+const rootExtras = ['all-pages.html'].filter(f => fs.existsSync(path.join(ROOT, f)));
+rootExtras.forEach(rel => {
+  urls.push({
+    loc: BASE_URL + '/' + toCleanPath(rel),
+    changefreq: 'weekly',
+    priority: '0.85'
   });
 });
 
-// Build XML
+const otherFolders = [
+  'guides',
+  'legal',
+  'printable',
+  'printables',
+  'tools',
+  'charts',
+  'comparisons',
+  'maintenance',
+  'reference'
+];
+otherFolders.forEach(folder => {
+  const dir = path.join(ROOT, folder);
+  listHtmlFiles(dir, ROOT)
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+    .forEach(rel => {
+      const pathNoExt = toCleanPath(rel);
+      if (!pathNoExt) return;
+      const loc = BASE_URL + '/' + pathNoExt;
+      urls.push({
+        loc,
+        changefreq: 'monthly',
+        priority: folder === 'tools' ? '0.85' : '0.65'
+      });
+    });
+});
+
+// Build XML (order preserved)
 let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
 xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 urls.forEach(({ loc, changefreq, priority }) => {

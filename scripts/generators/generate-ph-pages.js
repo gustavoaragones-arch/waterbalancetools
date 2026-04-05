@@ -164,14 +164,34 @@ function buildPage(lvl) {
       'Target stable pH balance in the recommended range.'
     ]) +
     '\n' +
-    H.whatThisMeansSection(
-      'pH measures acidity or basicity. For pools, <strong>pH balance</strong> near 7.2–7.6 helps sanitizer work and protects equipment—large swings are harder to fix than small corrections.'
-    ) +
+    H.whatThisMeansSection([
+      'pH measures how acidic or basic the water is. Moving from <strong>' +
+        fromS +
+        '</strong> to <strong>' +
+        toS +
+        '</strong> changes how much of your sanitizer exists in its most active forms and how comfortable the water feels on skin and eyes.',
+      'Large single-dose corrections often overshoot because test kits have lag and water needs time to mix. Total alkalinity acts as a buffer—if alkalinity is far out of range, pH may drift back quickly after you dose. That is why this page emphasizes small steps, circulation, and retesting rather than one aggressive pour.'
+    ]) +
     '\n' +
     H.recommendedLevelsSection([
       { html: 'pH: <strong>7.2–7.6</strong> <span class="badge">Recommended</span>' },
       { html: 'Total alkalinity: <strong>80–120 ppm</strong> (typical)' },
       { html: 'Free chlorine: <strong>1–3 ppm</strong> (pools)' }
+    ]) +
+    '\n' +
+    H.whatHappensIfIncorrectSection([
+      'Letting pH run high for long periods can reduce chlorine effectiveness, contribute to scale on surfaces and heaters, and make water feel slippery or irritating.',
+      'Very low pH increases corrosion risk for metal fixtures, heater elements, and pool surfaces, and can cause eye or skin discomfort even when sanitizer readings look fine.',
+      'Swinging pH wildly with big acid or base adds wastes chemicals and can throw alkalinity off balance—fixing the rebound then takes more time and testing than steady incremental moves.'
+    ]) +
+    '\n' +
+    H.quickTipsSection([
+      'Always add pH increaser or reducer in portions, with the pump running, across the deep end or per label.',
+      'Wait 30–60 minutes, then retest before the next adjustment—especially on large pools.',
+      'If alkalinity is very low or very high, address it alongside pH using your kit and manufacturer guidance.',
+      'Record your pool volume; the Pool pH Calculator scales doses beyond the 10,000-gallon reference on this page.',
+      'Wear appropriate protection when handling strong acids or bases and rinse spills per label.',
+      'After heavy rain or top-offs, retest pH—source water can shift chemistry more than you expect.'
     ]) +
     '\n' +
     buildTable(lvl) +

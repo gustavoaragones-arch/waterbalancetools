@@ -76,13 +76,20 @@ function buildPage(p) {
     ctaBlock +
     H.stepsSection(p.steps) +
     '\n' +
-    H.whatThisMeansSection(escHtml(p.description)) +
+    H.whatThisMeansSection([
+      escHtml(p.description),
+      escHtml(p.whatThisMeansExtra)
+    ]) +
     '\n' +
     H.recommendedLevelsSection([
       { html: 'Free chlorine (pools): <strong>1–3 ppm</strong>' },
       { html: 'pH balance: <strong>7.2–7.6</strong>' },
       { html: 'Total alkalinity: <strong>80–120 ppm</strong> (typical)' }
     ]) +
+    '\n' +
+    H.whatHappensIfIncorrectSection(p.riskParagraphs) +
+    '\n' +
+    H.quickTipsSection(p.quickTips) +
     '\n' +
     '    <section class="serp-block serp-explanation-text">\n' +
     '      <h2>What to do next</h2>\n' +

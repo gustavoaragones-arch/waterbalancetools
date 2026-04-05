@@ -119,13 +119,17 @@ function buildPage(t) {
     '    </section>\n' +
     H.stepsSection(steps) +
     '\n' +
-    H.whatThisMeansSection(escHtml(t.body)) +
+    H.whatThisMeansSection([escHtml(t.body), escHtml(t.bodyExtra)]) +
     '\n' +
     H.recommendedLevelsSection([
       { html: 'Free chlorine: <strong>1–3 ppm</strong> (pools)' },
       { html: 'pH balance: <strong>7.2–7.6</strong>' },
       { html: 'Total alkalinity: <strong>80–120 ppm</strong> (typical)' }
     ]) +
+    '\n' +
+    H.whatHappensIfIncorrectSection(t.riskParagraphs) +
+    '\n' +
+    H.quickTipsSection(t.quickTips) +
     '\n' +
     '    <section class="serp-block">\n' +
     '      <h2>Practical impact</h2>\n' +
