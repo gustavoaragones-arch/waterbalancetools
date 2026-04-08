@@ -107,7 +107,7 @@ function whatHappensIfIncorrectSection(paragraphs) {
     .join('\n');
   return (
     '    <section class="serp-block serp-risk">\n' +
-    '      <h2>What happens if levels are incorrect</h2>\n' +
+    '      <h2>What Happens If Levels Are Off</h2>\n' +
     ps +
     '\n    </section>'
   );

@@ -1,6 +1,6 @@
 /**
- * Sitemap with tiered priority/changefreq and crawl-friendly ordering.
- * Order: homepage → calculators → problem pages → other programmatic → rest.
+ * Sitemap: priorities and crawl-friendly ordering.
+ * Order: homepage → calculators → problem pages → programmatic → guides → crawl hub → other.
  * Run from project root: node scripts/generate-sitemap.js
  */
 const fs = require('fs');
@@ -31,14 +31,14 @@ function toCleanPath(relPath) {
 
 const urls = [];
 
-// 1. Homepage (highest)
+// 1. Homepage
 urls.push({
   loc: BASE_URL + '/',
   changefreq: 'daily',
   priority: '1.0'
 });
 
-// 2. All calculators — high value
+// 2. Calculators — priority 1.0
 const calcDir = path.join(ROOT, 'calculators');
 listHtmlFiles(calcDir, ROOT)
   .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
@@ -50,7 +50,7 @@ listHtmlFiles(calcDir, ROOT)
     });
   });
 
-// 3. Problem pages — high urgency / RPM
+// 3. Problem pages — priority 0.9
 const progRoot = path.join(ROOT, 'programmatic');
 const problemsDir = path.join(progRoot, 'problems');
 const problemRels = fs.existsSync(problemsDir)
@@ -61,11 +61,11 @@ problemRels.forEach(rel => {
   urls.push({
     loc: BASE_URL + '/' + toCleanPath(rel),
     changefreq: 'daily',
-    priority: '1.0'
+    priority: '0.9'
   });
 });
 
-// 4. Remaining programmatic (standard long-tail)
+// 4. Remaining programmatic — priority 0.7
 if (fs.existsSync(progRoot)) {
   listHtmlFiles(progRoot, ROOT)
     .filter(rel => !problemSet.has(rel))
@@ -79,18 +79,33 @@ if (fs.existsSync(progRoot)) {
     });
 }
 
-// 5. Crawl hub + other sections
-const rootExtras = ['all-pages.html'].filter(f => fs.existsSync(path.join(ROOT, f)));
-rootExtras.forEach(rel => {
-  urls.push({
-    loc: BASE_URL + '/' + toCleanPath(rel),
-    changefreq: 'weekly',
-    priority: '0.85'
-  });
-});
+// 5. Guides — priority 0.8
+const guidesDir = path.join(ROOT, 'guides');
+if (fs.existsSync(guidesDir)) {
+  listHtmlFiles(guidesDir, ROOT)
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+    .forEach(rel => {
+      urls.push({
+        loc: BASE_URL + '/' + toCleanPath(rel),
+        changefreq: 'monthly',
+        priority: '0.8'
+      });
+    });
+}
 
+// 6. Crawl hub
+const hubPage = path.join(ROOT, 'all-pages.html');
+if (fs.existsSync(hubPage)) {
+  urls.push({
+    loc: BASE_URL + '/' + toCleanPath('all-pages.html'),
+    changefreq: 'weekly',
+    priority: '0.9'
+  });
+}
+
+// 7. Everything else (no duplicates)
+const emitted = new Set(urls.map(u => u.loc));
 const otherFolders = [
-  'guides',
   'legal',
   'printable',
   'printables',
@@ -108,6 +123,8 @@ otherFolders.forEach(folder => {
       const pathNoExt = toCleanPath(rel);
       if (!pathNoExt) return;
       const loc = BASE_URL + '/' + pathNoExt;
+      if (emitted.has(loc)) return;
+      emitted.add(loc);
       urls.push({
         loc,
         changefreq: 'monthly',
@@ -116,7 +133,6 @@ otherFolders.forEach(folder => {
     });
 });
 
-// Build XML (order preserved)
 let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
 xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 urls.forEach(({ loc, changefreq, priority }) => {

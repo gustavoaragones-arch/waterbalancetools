@@ -1,6 +1,6 @@
 /**
  * Credibility block (includes publisher) + footer legal on programmatic, calculators, and guides.
- * Idempotent. Run after build-link-matrix.js
+ * Idempotent. Run before build-link-matrix.js (matrix inserts mid-main).
  */
 const fs = require('fs');
 const path = require('path');

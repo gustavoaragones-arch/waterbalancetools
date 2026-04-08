@@ -14,6 +14,14 @@ const {
   SILO_KEYS
 } = require('./silo-map');
 
+function hubAnchorLabel(silo) {
+  if (silo === 'chlorine') return 'Chlorine guide (hub)';
+  if (silo === 'ph') return 'pH guide (hub)';
+  if (silo === 'alkalinity') return 'Alkalinity guide (hub)';
+  if (silo === 'hotTubs') return 'Hot tub chemistry (hub)';
+  return 'Pool chemistry basics (hub)';
+}
+
 const ROOT = path.join(__dirname, '..');
 const PROG = path.join(ROOT, 'programmatic');
 const CALC = path.join(ROOT, 'calculators');
@@ -264,6 +272,9 @@ function buildMatrixSection(fromRel, pool) {
   cross = cross.filter(x => !sameHrefSet.has(hrefTo(fromRel, x.relPath)));
   const calcHref = hrefTo(fromRel, calcRel);
   const calcLabel = primaryCalcAnchor(silo, calcRel);
+  const hubRel = getHubRel(silo);
+  const hubHref = hrefTo(fromRel, hubRel);
+  const hubLabel = hubAnchorLabel(silo);
 
   const sameItems = same
     .map(
@@ -294,8 +305,15 @@ function buildMatrixSection(fromRel, pool) {
     esc(calcLabel) +
     '</a></li>';
 
+  const hubItem =
+    '        <li><a href="' +
+    esc(hubHref) +
+    '">' +
+    esc(hubLabel) +
+    '</a></li>';
+
   return (
-    '\n    <section class="link-matrix card">\n' +
+    '\n    <section class="link-matrix link-matrix--mid card">\n' +
     '      <h2>Related Pool Chemistry Guides</h2>\n' +
     '      <div class="matrix-group">\n' +
     '        <h3>Related in this topic</h3>\n' +
@@ -309,6 +327,10 @@ function buildMatrixSection(fromRel, pool) {
     '        <h3>Tools</h3>\n' +
     '        <ul class="ring-links">\n' +
     toolsItems +
+    '\n        </ul>\n' +
+    '        <h3>Hub guide</h3>\n' +
+    '        <ul class="ring-links">\n' +
+    hubItem +
     '\n        </ul>\n' +
     '      </div>\n' +
     '    </section>\n  '
@@ -336,12 +358,32 @@ function stripLegacySections(html) {
   return h;
 }
 
-/** Keep order: … → depth (programmatic) → link-matrix → credibility → </main> */
+/** Fallback: before credibility or end of main */
 function insertBeforeCredibilityOrMain(html, block) {
   if (html.includes('class="credibility"')) {
     return html.replace(/(\s*)(<section class="credibility">)/i, block + '$1$2');
   }
   return html.replace('</main>', block + '</main>');
+}
+
+/**
+ * Prefer mid-content: after serp-cta, else after hero, else before credibility.
+ * Keeps 5+2+calculator+hub links in the upper half of the page when possible.
+ */
+function insertMatrixMidContent(html, block) {
+  const ctaRe = /<section class="card serp-cta">[\s\S]*?<\/section>/i;
+  const mCta = html.match(ctaRe);
+  if (mCta) {
+    const end = html.indexOf(mCta[0]) + mCta[0].length;
+    return html.slice(0, end) + block + html.slice(end);
+  }
+  const heroRe = /<section class="hero[^"]*"[^>]*>[\s\S]*?<\/section>/i;
+  const mHero = html.match(heroRe);
+  if (mHero && /<main[\s\S]*class="container"/i.test(html)) {
+    const end = html.indexOf(mHero[0]) + mHero[0].length;
+    return html.slice(0, end) + block + html.slice(end);
+  }
+  return insertBeforeCredibilityOrMain(html, block);
 }
 
 function processFile(rel, pool) {
@@ -364,7 +406,7 @@ function processFile(rel, pool) {
     block += depthAuthoritySection(rel);
   }
   block += buildMatrixSection(rel, pool);
-  html = insertBeforeCredibilityOrMain(html, block);
+  html = insertMatrixMidContent(html, block);
   fs.writeFileSync(full, html, 'utf8');
   return true;
 }
