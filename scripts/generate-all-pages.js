@@ -1,6 +1,6 @@
 /**
  * Global crawl hub: static HTML, clean URLs (no .html), no duplicates.
- * Sections: Calculators, Chlorine, pH, Problems, Guides only.
+ * Sections: Calculators → Reference Charts → Chlorine, pH, Problems, Guides.
  * Run: node scripts/generate-all-pages.js
  */
 const fs = require('fs');
@@ -57,6 +57,18 @@ function ulLinks(paths) {
   return lines.join('\n');
 }
 
+function sectionBlock(h2, paths) {
+  if (!paths.length) return '';
+  return (
+    '    <h2>' +
+    h2 +
+    '</h2>\n' +
+    '    <ul class="ring-links all-pages-list">\n' +
+    ulLinks(paths) +
+    '\n    </ul>\n'
+  );
+}
+
 const calculators = listSortedHtml(path.join(ROOT, 'calculators')).map(f => 'calculators/' + f);
 const chlorine = listSortedHtml(path.join(ROOT, 'programmatic/chlorine')).map(
   f => 'programmatic/chlorine/' + f
@@ -69,24 +81,26 @@ const problems = listSortedHtml(path.join(ROOT, 'programmatic/problems')).map(
 );
 const guides = walkGuides(path.join(ROOT, 'guides'), 'guides');
 
-const bodySections = [
-  { h2: 'Calculators', paths: calculators },
-  { h2: 'Chlorine', paths: chlorine },
-  { h2: 'pH', paths: phPages },
-  { h2: 'Problems', paths: problems },
-  { h2: 'Guides', paths: guides }
-]
-  .filter(s => s.paths.length)
-  .map(
-    s =>
-      '    <h2>' +
-      s.h2 +
-      '</h2>\n' +
-      '    <ul class="ring-links all-pages-list">\n' +
-      ulLinks(s.paths) +
-      '\n    </ul>\n'
-  )
-  .join('\n');
+const referenceChartsBlock =
+  '    <h2>Reference Charts</h2>\n' +
+  '    <ul class="ring-links all-pages-list">\n' +
+  '        <li><a href="/pool-chemical-levels-chart">Pool Chemical Levels Chart</a></li>\n' +
+  '        <li><a href="/pool-chlorine-levels-chart">Chlorine Levels Chart</a></li>\n' +
+  '        <li><a href="/pool-ph-levels-chart">pH Levels Chart</a></li>\n' +
+  '    </ul>\n';
+
+const bodySections =
+  sectionBlock('Calculators', calculators) +
+  referenceChartsBlock +
+  [
+    { h2: 'Chlorine', paths: chlorine },
+    { h2: 'pH', paths: phPages },
+    { h2: 'Problems', paths: problems },
+    { h2: 'Guides', paths: guides }
+  ]
+    .filter(s => s.paths.length)
+    .map(s => sectionBlock(s.h2, s.paths))
+    .join('');
 
 const html = `<!DOCTYPE html>
 <html lang="en">

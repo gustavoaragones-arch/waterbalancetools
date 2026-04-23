@@ -222,6 +222,30 @@ main > section:not(:first-child) {
 .chart-calc-crosslinks li {
   margin-bottom: 0.35rem;
 }
+p.context {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin: 0.5rem 0 0;
+  max-width: 42rem;
+  line-height: 1.5;
+}
+p.context a {
+  font-weight: var(--font-weight-bold);
+}
+.chart-answer-snippet {
+  margin: 0 0 1rem;
+}
+.chart-answer-snippet h2 {
+  font-size: var(--text-md);
+  font-weight: var(--font-weight-bold);
+  margin: 0 0 0.35rem;
+}
+.chart-answer-snippet p {
+  margin: 0;
+  font-size: var(--text-md);
+  line-height: 1.55;
+  max-width: 40rem;
+}
 .silo-hub-cta {
   margin: 0 0 1rem;
   font-size: var(--text-md);
