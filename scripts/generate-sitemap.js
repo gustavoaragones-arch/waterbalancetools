@@ -50,6 +50,22 @@ listHtmlFiles(calcDir, ROOT)
     });
   });
 
+// 2b. Root authority chart pages (informational queries)
+const rootCharts = [
+  'pool-chemical-levels-chart.html',
+  'pool-chlorine-levels-chart.html',
+  'pool-ph-levels-chart.html'
+];
+rootCharts.forEach(f => {
+  if (fs.existsSync(path.join(ROOT, f))) {
+    urls.push({
+      loc: BASE_URL + '/' + toCleanPath(f),
+      changefreq: 'weekly',
+      priority: '0.9'
+    });
+  }
+});
+
 // 3. Problem pages — priority 0.9
 const progRoot = path.join(ROOT, 'programmatic');
 const problemsDir = path.join(progRoot, 'problems');

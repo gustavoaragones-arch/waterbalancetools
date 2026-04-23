@@ -1,6 +1,6 @@
 /**
  * Run all programmatic page generators, then tools index and sitemap.
- * Order: … → hub pages → authority layer → ads → link matrix → terminology → …
+ * Order: … → hub pages → authority → ads → link matrix → calculator related tools → terminology → …
  * Usage: node scripts/run-all-generators.js
  */
 const { execSync } = require('child_process');
@@ -25,7 +25,9 @@ require(path.join(__dirname, 'generate-hub-pages.js'));
 require(path.join(__dirname, 'inject-authority-layer.js'));
 require(path.join(__dirname, 'inject-ads.js'));
 require(path.join(__dirname, 'build-link-matrix.js'));
+require(path.join(__dirname, 'inject-calculator-related-tools.js'));
 require(path.join(__dirname, 'enforce-terminology.js'));
+require(path.join(__dirname, 'inject-authority-chart-loop.js'));
 require(path.join(__dirname, 'generate-all-pages.js'));
 require(path.join(__dirname, 'inject-seo-metadata.js'));
 require(path.join(__dirname, 'inject-last-updated.js'));

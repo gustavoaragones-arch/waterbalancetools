@@ -46,6 +46,13 @@ function collectFiles() {
   if (fs.existsSync(rootIndex)) out.push('index.html');
   const allPages = path.join(ROOT, 'all-pages.html');
   if (fs.existsSync(allPages)) out.push('all-pages.html');
+  for (const f of [
+    'pool-chemical-levels-chart.html',
+    'pool-chlorine-levels-chart.html',
+    'pool-ph-levels-chart.html'
+  ]) {
+    if (fs.existsSync(path.join(ROOT, f))) out.push(f);
+  }
 
   const topDirs = [
     'calculators',

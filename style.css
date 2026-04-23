@@ -182,6 +182,46 @@ main > section:not(:first-child) {
 .link-matrix--mid {
   margin: 1.25rem 0 1.5rem;
 }
+.calc-related-tools {
+  margin: 0.75rem 0 1.25rem;
+}
+.calc-related-tools h2 {
+  font-size: var(--text-md);
+  font-weight: var(--font-weight-bold);
+  margin: 0 0 0.5rem;
+}
+.calc-related-tools .ring-links {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.calc-related-tools li {
+  margin-bottom: 0.35rem;
+}
+.calc-chart-crosslinks,
+.chart-calc-crosslinks {
+  margin: 1.25rem 0;
+}
+.calc-chart-crosslinks h2,
+.chart-calc-crosslinks h2 {
+  font-size: var(--text-md);
+  font-weight: var(--font-weight-bold);
+  margin: 0 0 0.5rem;
+}
+.calc-chart-crosslinks p,
+.chart-calc-crosslinks p {
+  margin: 0 0 0.5rem;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+.calc-chart-crosslinks .ring-links,
+.chart-calc-crosslinks .ring-links {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.calc-chart-crosslinks li,
+.chart-calc-crosslinks li {
+  margin-bottom: 0.35rem;
+}
 .silo-hub-cta {
   margin: 0 0 1rem;
   font-size: var(--text-md);

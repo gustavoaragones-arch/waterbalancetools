@@ -6,10 +6,10 @@
   <link rel="canonical" href="https://waterbalancetools.com/calculators/pool-shock-calculator">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pool shock calculator. Enter pool gallons and shock strength to get the amount of shock required. Free and fast.">
-  <title>Pool Shock Calculator | WaterBalanceTools</title>
-  <meta property="og:title" content="Pool Shock Calculator | WaterBalanceTools">
-  <meta property="og:description" content="Calculate how much shock your pool needs.">
+  <meta name="description" content="Enter gallons + target shock strength (10–30 ppm) for granular shock ounces in 1 step. Clear algae faster, avoid guesswork, and shorten no-swim windows.">
+  <title>Pool Shock Calculator (10–30 ppm Dose in 30 Seconds) | WaterBalanceTools</title>
+  <meta property="og:title" content="Pool Shock Calculator (10–30 ppm Dose in 30 Seconds) | WaterBalanceTools">
+  <meta property="og:description" content="Granular shock ounces from volume + ppm target—clear water faster with label-smart, test-based dosing.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="../style.css">
   <script type="application/ld+json">
@@ -31,6 +31,17 @@
       <h1>Pool Shock Calculator</h1>
     <p class="hero-sub">Calculate how much shock your pool needs based on volume and shock strength.</p>
     </section>
+    <section class="calc-related-tools card">
+      <h2>Related Pool Chemistry Tools</h2>
+      <ul class="ring-links">
+        <li><a href="../programmatic/shock/how-much-shock-for-10000-gallon-pool.html">Shock ounces for 10,000 gal</a></li>
+        <li><a href="../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html">Chlorine dose for 10,000 gal</a></li>
+        <li><a href="../programmatic/behavior/when-to-add-chlorine.html">When to add chlorine</a></li>
+        <li><a href="../programmatic/problems/green-pool-how-much-chlorine.html">Green pool: chlorine &amp; shock</a></li>
+        <li><a href="../programmatic/problems/cloudy-pool-fix.html">Cloudy pool fix</a></li>
+      </ul>
+    </section>
+
     <section class="link-matrix link-matrix--mid card">
       <h2>Related Pool Chemistry Guides</h2>
       <div class="matrix-group">
@@ -58,8 +69,7 @@
       </div>
     </section>
   
-    <p class="silo-hub-cta"><a href="../guides/chlorine-guide.html">See full guide →</a></p>
-<form id="calc-form" class="calc-form">
+    <p class="silo-hub-cta"><a href="../guides/chlorine-guide.html">See full guide →</a></p><form id="calc-form" class="calc-form">
       <div class="form-group">
         <label for="volume">Pool gallons</label>
         <input type="number" id="volume" min="1" step="1" placeholder="e.g. 15000">
@@ -75,7 +85,16 @@
       </div>
       <button type="submit" class="btn btn-primary">Calculate</button>
     </form>
-    <div id="result" class="output-panel hidden">
+    <section class="calc-chart-crosslinks card">
+      <h2>Recommended Levels</h2>
+      <p>See the full reference chart:</p>
+      <ul class="ring-links">
+        <li><a href="/pool-chemical-levels-chart">Pool Chemical Levels Chart</a></li>
+        <li><a href="/pool-chlorine-levels-chart">Chlorine Levels Chart</a></li>
+        <li><a href="/pool-ph-levels-chart">pH Levels Chart</a></li>
+      </ul>
+    </section>
+<div id="result" class="output-panel hidden">
       <h3>Result</h3>
       <p id="result-text"></p>
     </div>
