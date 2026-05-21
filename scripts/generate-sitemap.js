@@ -5,6 +5,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const { isLegacyProgrammaticChlorine } = require('./legacy-programmatic-paths');
 
 const ROOT = path.join(__dirname, '..');
 const BASE_URL = 'https://waterbalancetools.com';
@@ -19,7 +20,7 @@ function listHtmlFiles(dir, baseDir) {
     if (e.isDirectory()) {
       out.push(...listHtmlFiles(full, baseDir));
     } else if (e.isFile() && e.name.endsWith('.html')) {
-      out.push(rel);
+      if (!isLegacyProgrammaticChlorine(rel)) out.push(rel);
     }
   }
   return out;

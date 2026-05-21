@@ -13,6 +13,7 @@ const {
   getCalculatorRel,
   SILO_KEYS
 } = require('./silo-map');
+const { isLegacyProgrammaticChlorine } = require('./legacy-programmatic-paths');
 
 function hubAnchorLabel(silo) {
   if (silo === 'chlorine') return 'Chlorine guide (hub)';
@@ -160,7 +161,10 @@ function walkHtmlFiles(dir, out) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, e.name);
     if (e.isDirectory()) walkHtmlFiles(full, out);
-    else if (e.name.endsWith('.html')) out.push(path.relative(ROOT, full).replace(/\\/g, '/'));
+    else if (e.name.endsWith('.html')) {
+      const rel = path.relative(ROOT, full).replace(/\\/g, '/');
+      if (!isLegacyProgrammaticChlorine(rel)) out.push(rel);
+    }
   }
 }
 

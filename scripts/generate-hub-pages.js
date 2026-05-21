@@ -5,6 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 const { getSiloForPath, getCalculatorRel } = require('./silo-map');
+const { isLegacyProgrammaticChlorine } = require('./legacy-programmatic-paths');
 
 const ROOT = path.join(__dirname, '..');
 const PROG = path.join(ROOT, 'programmatic');
@@ -17,7 +18,10 @@ function walkHtmlFiles(dir, out) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, e.name);
     if (e.isDirectory()) walkHtmlFiles(full, out);
-    else if (e.name.endsWith('.html')) out.push(path.relative(ROOT, full).replace(/\\/g, '/'));
+    else if (e.name.endsWith('.html')) {
+      const rel = path.relative(ROOT, full).replace(/\\/g, '/');
+      if (!isLegacyProgrammaticChlorine(rel)) out.push(rel);
+    }
   }
 }
 

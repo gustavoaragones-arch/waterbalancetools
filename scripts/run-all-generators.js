@@ -30,11 +30,14 @@ require(path.join(__dirname, 'inject-secondary-canonical-context.js'));
 require(path.join(__dirname, 'enforce-terminology.js'));
 require(path.join(__dirname, 'inject-authority-chart-loop.js'));
 require(path.join(__dirname, 'inject-chart-answer-snippet.js'));
+require(path.join(__dirname, 'inject-winner-amplification.js'));
 require(path.join(__dirname, 'generate-all-pages.js'));
 require(path.join(__dirname, 'inject-seo-metadata.js'));
 require(path.join(__dirname, 'inject-last-updated.js'));
 
 const scripts = ['generate-tools-index.js', 'generate-sitemap.js'];
+
+require(path.join(__dirname, 'generate-redirects.js'));
 
 scripts.forEach(script => {
   console.log('Running ' + script + '...');
