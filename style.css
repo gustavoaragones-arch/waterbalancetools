@@ -777,6 +777,48 @@ p.updated {
   text-align: left;
   border: 1px solid var(--border-soft);
 }
+.chem-ref-page .chem-ref-lead {
+  margin: 0 0 1.25rem;
+  max-width: 42rem;
+  line-height: 1.6;
+}
+.chem-ref-quick {
+  margin-bottom: 1.5rem;
+}
+.chem-ref-table {
+  width: 100%;
+  font-size: var(--text-sm);
+}
+.chem-ref-table th[scope="row"] {
+  font-weight: var(--font-weight-bold);
+  text-align: left;
+}
+.chem-ref-section {
+  margin: 0 0 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-soft);
+}
+.chem-ref-section:last-of-type {
+  border-bottom: none;
+}
+.chem-ref-section h2 {
+  font-size: var(--text-md);
+  margin: 0 0 0.65rem;
+}
+.chem-ref-section p {
+  margin: 0.35rem 0;
+  line-height: 1.6;
+  max-width: 42rem;
+}
+.chem-ref-mistakes ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  max-width: 42rem;
+}
+.chem-ref-mistakes li {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
 .chart-table th {
   background: var(--bg-soft);
 }

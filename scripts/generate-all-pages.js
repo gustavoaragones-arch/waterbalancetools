@@ -37,7 +37,12 @@ function toCleanHref(relFromRoot) {
   return '/' + noExt;
 }
 
+const LABEL_OVERRIDES = {
+  'pool-chemistry-reference.html': 'Pool Chemistry Reference Guide'
+};
+
 function titleFromFile(name) {
+  if (LABEL_OVERRIDES[name]) return LABEL_OVERRIDES[name];
   return name
     .replace(/\.html$/i, '')
     .replace(/-/g, ' ')
@@ -89,9 +94,12 @@ const referenceChartsBlock =
   '        <li><a href="/pool-ph-levels-chart">pH Levels Chart</a></li>\n' +
   '    </ul>\n';
 
+const referenceGuides = listSortedHtml(path.join(ROOT, 'reference')).map(f => 'reference/' + f);
+
 const bodySections =
   sectionBlock('Calculators', calculators) +
   referenceChartsBlock +
+  sectionBlock('Reference Guides', referenceGuides) +
   [
     { h2: 'Chlorine', paths: chlorine },
     { h2: 'pH', paths: phPages },

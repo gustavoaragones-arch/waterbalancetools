@@ -12,6 +12,8 @@ const CALC_DIR = path.join(ROOT, 'calculators');
 const STRIP_RE =
   /\s*<section class="calc-related-tools[^"]*"[^>]*>[\s\S]*?<\/section>\s*/gi;
 
+const REF = ['/reference/pool-chemistry-reference', 'Pool chemistry reference'];
+
 const P = {
   ch10: ['../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html', 'Chlorine dose for 10,000 gal'],
   ch15: ['../programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html', 'Chlorine dose for 15,000 gal'],
@@ -34,15 +36,15 @@ const PROB = {
 
 /** Per priority calculator + sensible defaults for other calc pages */
 const BY_FILE = {
-  'chemical-calculator.html': { prog: [P.ch10, P.sh10, P.ph80], prob: [PROB.green, PROB.cloudy] },
+  'chemical-calculator.html': { prog: [REF, P.ch10, P.sh10], prob: [PROB.green, PROB.cloudy] },
   'hot-tub-chlorine-calculator.html': {
-    prog: [P.ht400, P.ch10, P.test],
+    prog: [REF, P.ht400, P.test],
     prob: [PROB.highCl, PROB.cloudy]
   },
-  'pool-ph-calculator.html': { prog: [P.ph78, P.ch10, P.whyPh], prob: [PROB.cloudy, PROB.lowAlk] },
-  'pool-shock-calculator.html': { prog: [P.sh10, P.ch10, P.when], prob: [PROB.green, PROB.cloudy] },
-  'pool-chlorine-calculator.html': { prog: [P.ch15, P.sh10, P.ph78], prob: [PROB.green, PROB.highCl] },
-  'pool-alkalinity-calculator.html': { prog: [P.alkExp, P.ph80, P.ch10], prob: [PROB.lowAlk, PROB.cloudy] },
+  'pool-ph-calculator.html': { prog: [REF, P.ph78, P.whyPh], prob: [PROB.cloudy, PROB.lowAlk] },
+  'pool-shock-calculator.html': { prog: [REF, P.sh10, P.when], prob: [PROB.green, PROB.cloudy] },
+  'pool-chlorine-calculator.html': { prog: [REF, P.ch15, P.sh10], prob: [PROB.green, PROB.highCl] },
+  'pool-alkalinity-calculator.html': { prog: [REF, P.alkExp, P.ph80], prob: [PROB.lowAlk, PROB.cloudy] },
   'hot-tub-shock-calculator.html': { prog: [P.sh10, P.ht400, P.when], prob: [PROB.green, PROB.cloudy] },
   'hot-tub-ph-calculator.html': { prog: [P.ph78, P.ht400, P.whyPh], prob: [PROB.cloudy, PROB.lowAlk] },
   'pool-cyanuric-acid-calculator.html': { prog: [P.ch10, P.sh10, P.whyPh], prob: [PROB.green, PROB.highCl] },
@@ -105,7 +107,7 @@ function processFile(name) {
   let html = fs.readFileSync(full, 'utf8');
   if (!html.includes('</main>')) return false;
   const cfg = BY_FILE[name] || {
-    prog: [P.ch10, P.sh10, P.ph80],
+    prog: [REF, P.ch10, P.sh10],
     prob: [PROB.green, PROB.cloudy]
   };
   const block = buildSection(cfg);
