@@ -1,5 +1,3 @@
-# Legacy programmatic chlorine (root) → canonical cluster
-
 /programmatic/how-much-chlorine-for-5000-gallon-pool /programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool 301
 /programmatic/how-much-chlorine-for-5000-gallon-pool.html /programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool 301
 /programmatic/how-much-chlorine-for-10000-gallon-pool /programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool 301
@@ -8,9 +6,6 @@
 /programmatic/how-much-chlorine-for-15000-gallon-pool.html /programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool 301
 /programmatic/how-much-chlorine-for-20000-gallon-pool /programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool 301
 /programmatic/how-much-chlorine-for-20000-gallon-pool.html /programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool 301
-
-# Explanation path typos → canonical folder
-
 /programmatic/explanation/why-ph-affects-chlorine /programmatic/explanations/why-ph-affects-chlorine 301
 /programmatic/explanation/why-ph-affects-chlorine.html /programmatic/explanations/why-ph-affects-chlorine 301
 /explanations/why-ph-affects-chlorine /programmatic/explanations/why-ph-affects-chlorine 301
@@ -23,6 +18,5 @@
 /programmatic/explanation/why-shower-before-pool.html /programmatic/explanations/why-shower-before-pool 301
 /explanations/why-shower-before-pool /programmatic/explanations/why-shower-before-pool 301
 /explanations/why-shower-before-pool.html /programmatic/explanations/why-shower-before-pool 301
-
 /programmatic/explanation/* /programmatic/explanations/:splat 301
 /explanations/* /programmatic/explanations/:splat 301

@@ -5,7 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 const { getSiloForPath, getCalculatorRel } = require('./silo-map');
-const { isLegacyProgrammaticChlorine } = require('./legacy-programmatic-paths');
+const { isLegacyProgrammaticChlorine } = require('./redirect-rules');
 
 const ROOT = path.join(__dirname, '..');
 const PROG = path.join(ROOT, 'programmatic');

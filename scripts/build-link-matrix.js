@@ -13,7 +13,7 @@ const {
   getCalculatorRel,
   SILO_KEYS
 } = require('./silo-map');
-const { isLegacyProgrammaticChlorine } = require('./legacy-programmatic-paths');
+const { isLegacyProgrammaticChlorine } = require('./redirect-rules');
 
 function hubAnchorLabel(silo) {
   if (silo === 'chlorine') return 'Chlorine guide (hub)';
