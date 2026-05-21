@@ -290,6 +290,54 @@ p.context a {
 .quick-answers .faq-item:last-child {
   margin-bottom: 0;
 }
+.people-also-ask {
+  margin: 0 0 1.5rem;
+  max-width: 42rem;
+}
+.people-also-ask > h2 {
+  font-size: var(--text-md);
+  font-weight: var(--font-weight-bold);
+  margin: 0 0 0.75rem;
+}
+.paa-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.paa-item {
+  background: var(--card-bg);
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  padding: 0;
+  box-shadow: 0 1px 3px rgba(0, 40, 60, 0.04);
+}
+.paa-item summary {
+  padding: 0.85rem 1rem;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  list-style: none;
+  line-height: 1.45;
+}
+.paa-item summary::-webkit-details-marker {
+  display: none;
+}
+.paa-item summary::after {
+  content: "+";
+  float: right;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-secondary);
+}
+.paa-item[open] summary::after {
+  content: "−";
+}
+.paa-item p {
+  margin: 0;
+  padding: 0 1rem 1rem;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
 .silo-hub-cta {
   margin: 0 0 1rem;
   font-size: var(--text-md);

@@ -31,6 +31,7 @@ require(path.join(__dirname, 'enforce-terminology.js'));
 require(path.join(__dirname, 'inject-authority-chart-loop.js'));
 require(path.join(__dirname, 'inject-chart-answer-snippet.js'));
 require(path.join(__dirname, 'inject-winner-amplification.js'));
+require(path.join(__dirname, 'inject-query-expansion.js'));
 require(path.join(__dirname, 'generate-all-pages.js'));
 require(path.join(__dirname, 'inject-seo-metadata.js'));
 require(path.join(__dirname, 'inject-last-updated.js'));
