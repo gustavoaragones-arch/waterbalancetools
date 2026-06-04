@@ -40,6 +40,10 @@ const scripts = ['generate-tools-index.js', 'generate-sitemap.js'];
 
 require(path.join(__dirname, 'generate-redirects.js'));
 
+// Validate all internal links before sitemap generation — fail fast on broken hrefs
+console.log('Running check-broken-links.js...');
+execSync('node scripts/check-broken-links.js', { cwd: root, stdio: 'inherit' });
+
 scripts.forEach(script => {
   console.log('Running ' + script + '...');
   execSync('node scripts/' + script, { cwd: root, stdio: 'inherit' });
