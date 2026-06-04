@@ -301,6 +301,31 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://waterbalancetools.com/guides/chlorine/chlorine-too-high-after-shocking</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/chlorine/free-chlorine-vs-total-chlorine</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/chlorine/how-often-should-i-shock-my-pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/chlorine/why-pool-chlorine-disappears-overnight</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/chlorine/why-pool-wont-hold-chlorine</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://waterbalancetools.com/guides/edge-cases/high-cya-chlorine-lock</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -336,7 +361,57 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://waterbalancetools.com/guides/hot-tub/hot-tub-alkalinity-too-high</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/hot-tub/hot-tub-chlorine-too-high</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/hot-tub/hot-tub-chlorine-too-low</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/hot-tub/hot-tub-ph-too-low</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/hot-tub/how-often-to-shock-a-hot-tub</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://waterbalancetools.com/guides/ph-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/ph/can-you-swim-in-high-ph-water</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/ph/does-rain-lower-pool-ph</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/ph/how-to-lower-pool-ph</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/ph/what-causes-high-pool-ph</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/ph/why-pool-ph-keeps-rising</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -26,9 +26,13 @@ function hubAnchorLabel(silo) {
 const ROOT = path.join(__dirname, '..');
 const PROG = path.join(ROOT, 'programmatic');
 const CALC = path.join(ROOT, 'calculators');
-const GUIDES_ADV = path.join(ROOT, 'guides/advanced');
-const GUIDES_EDGE = path.join(ROOT, 'guides/edge-cases');
+const GUIDES_ADV    = path.join(ROOT, 'guides/advanced');
+const GUIDES_EDGE   = path.join(ROOT, 'guides/edge-cases');
 const GUIDES_SEASON = path.join(ROOT, 'guides/seasonal');
+// Phase 6 authority clusters
+const GUIDES_CHL  = path.join(ROOT, 'guides/chlorine');
+const GUIDES_PH   = path.join(ROOT, 'guides/ph');
+const GUIDES_HTUB = path.join(ROOT, 'guides/hot-tub');
 
 /** Explicit silos for depth guides (folder-aware overrides). */
 const DEPTH_SILO = {
@@ -44,14 +48,40 @@ const DEPTH_SILO = {
   'guides/seasonal/opening-pool-chemistry-checklist.html': 'general',
   'guides/seasonal/closing-pool-chemistry-winter.html': 'general',
   'guides/seasonal/summer-high-chlorine-demand.html': 'chlorine',
-  'guides/seasonal/winter-pool-maintenance-chemistry.html': 'general'
+  'guides/seasonal/winter-pool-maintenance-chemistry.html': 'general',
+  // Phase 6 authority guides — folders handled by getSiloForPath but listed
+  // here for explicit reference by the "Go deeper" depth-authority section
+  'guides/chlorine/how-often-should-i-shock-my-pool.html': 'chlorine',
+  'guides/chlorine/why-pool-chlorine-disappears-overnight.html': 'chlorine',
+  'guides/chlorine/chlorine-too-high-after-shocking.html': 'chlorine',
+  'guides/chlorine/why-pool-wont-hold-chlorine.html': 'chlorine',
+  'guides/chlorine/free-chlorine-vs-total-chlorine.html': 'chlorine',
+  'guides/ph/why-pool-ph-keeps-rising.html': 'ph',
+  'guides/ph/how-to-lower-pool-ph.html': 'ph',
+  'guides/ph/does-rain-lower-pool-ph.html': 'ph',
+  'guides/ph/can-you-swim-in-high-ph-water.html': 'ph',
+  'guides/ph/what-causes-high-pool-ph.html': 'ph',
+  'guides/hot-tub/hot-tub-chlorine-too-high.html': 'hotTubs',
+  'guides/hot-tub/hot-tub-chlorine-too-low.html': 'hotTubs',
+  'guides/hot-tub/how-often-to-shock-a-hot-tub.html': 'hotTubs',
+  'guides/hot-tub/hot-tub-ph-too-low.html': 'hotTubs',
+  'guides/hot-tub/hot-tub-alkalinity-too-high.html': 'hotTubs'
 };
 
 const ADVANCED_PAGES = [
   { rel: 'guides/advanced/chlorine-vs-saltwater.html', label: 'Chlorine vs saltwater pools' },
   { rel: 'guides/advanced/pool-chemistry-balance-explained.html', label: 'Pool chemistry balance explained' },
   { rel: 'guides/advanced/chlorine-breakdown-sunlight.html', label: 'Chlorine breakdown in sunlight' },
-  { rel: 'guides/advanced/cya-stabilizer-explained.html', label: 'CYA stabilizer explained' }
+  { rel: 'guides/advanced/cya-stabilizer-explained.html', label: 'CYA stabilizer explained' },
+  // Phase 6 chlorine cluster
+  { rel: 'guides/chlorine/free-chlorine-vs-total-chlorine.html', label: 'Free vs total chlorine explained' },
+  { rel: 'guides/chlorine/why-pool-wont-hold-chlorine.html', label: 'Why pool won\'t hold chlorine' },
+  // Phase 6 pH cluster
+  { rel: 'guides/ph/what-causes-high-pool-ph.html', label: 'What causes high pool pH' },
+  { rel: 'guides/ph/how-to-lower-pool-ph.html', label: 'How to lower pool pH' },
+  // Phase 6 hot tub cluster
+  { rel: 'guides/hot-tub/how-often-to-shock-a-hot-tub.html', label: 'How often to shock a hot tub' },
+  { rel: 'guides/hot-tub/hot-tub-alkalinity-too-high.html', label: 'Hot tub alkalinity too high' }
 ];
 
 const EDGE_PAGES = [
@@ -59,7 +89,17 @@ const EDGE_PAGES = [
   { rel: 'guides/edge-cases/swimming-after-shocking-pool.html', label: 'Swimming after shocking' },
   { rel: 'guides/edge-cases/rain-effect-on-pool-chemistry.html', label: 'Rain & pool chemistry' },
   { rel: 'guides/edge-cases/high-cya-chlorine-lock.html', label: 'High CYA chlorine lock' },
-  { rel: 'guides/edge-cases/over-shocking-pool-effects.html', label: 'Over-shocking effects' }
+  { rel: 'guides/edge-cases/over-shocking-pool-effects.html', label: 'Over-shocking effects' },
+  // Phase 6 — practical troubleshooting guides
+  { rel: 'guides/chlorine/how-often-should-i-shock-my-pool.html', label: 'How often to shock a pool' },
+  { rel: 'guides/chlorine/why-pool-chlorine-disappears-overnight.html', label: 'Chlorine disappears overnight' },
+  { rel: 'guides/chlorine/chlorine-too-high-after-shocking.html', label: 'Chlorine too high after shocking' },
+  { rel: 'guides/ph/why-pool-ph-keeps-rising.html', label: 'Why pool pH keeps rising' },
+  { rel: 'guides/ph/does-rain-lower-pool-ph.html', label: 'Does rain lower pool pH' },
+  { rel: 'guides/ph/can-you-swim-in-high-ph-water.html', label: 'Can you swim in high pH water' },
+  { rel: 'guides/hot-tub/hot-tub-chlorine-too-high.html', label: 'Hot tub chlorine too high' },
+  { rel: 'guides/hot-tub/hot-tub-chlorine-too-low.html', label: 'Hot tub chlorine too low' },
+  { rel: 'guides/hot-tub/hot-tub-ph-too-low.html', label: 'Hot tub pH too low' }
 ];
 
 /** Allow `class="link-matrix card"` etc. */
@@ -422,6 +462,10 @@ function buildPool() {
   walkHtmlFiles(GUIDES_ADV, files);
   walkHtmlFiles(GUIDES_EDGE, files);
   walkHtmlFiles(GUIDES_SEASON, files);
+  // Phase 6 authority clusters
+  walkHtmlFiles(GUIDES_CHL, files);
+  walkHtmlFiles(GUIDES_PH, files);
+  walkHtmlFiles(GUIDES_HTUB, files);
   return files.map(relPath => ({
     relPath,
     silo: DEPTH_SILO[relPath] ?? getSiloForPath(relPath)

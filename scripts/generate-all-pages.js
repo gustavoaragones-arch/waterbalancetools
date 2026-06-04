@@ -97,6 +97,11 @@ const referenceChartsBlock =
   '        <li><a href="/pool-chemical-levels-chart">Pool Chemical Levels Chart</a></li>\n' +
   '        <li><a href="/pool-chlorine-levels-chart">Chlorine Levels Chart</a></li>\n' +
   '        <li><a href="/pool-ph-levels-chart">pH Levels Chart</a></li>\n' +
+  '        <li><a href="/pool-cya-levels-chart">Pool CYA Levels Chart</a></li>\n' +
+  '        <li><a href="/pool-alkalinity-levels-chart">Pool Alkalinity Levels Chart</a></li>\n' +
+  '        <li><a href="/hot-tub-chlorine-levels-chart">Hot Tub Chlorine Levels Chart</a></li>\n' +
+  '        <li><a href="/hot-tub-chemical-levels-chart">Hot Tub Chemical Levels Chart</a></li>\n' +
+  '        <li><a href="/salt-water-pool-chemical-levels-chart">Salt Water Pool Chemical Levels Chart</a></li>\n' +
   '    </ul>\n';
 
 const referenceGuides = listSortedHtml(path.join(ROOT, 'reference')).map(f => 'reference/' + f);

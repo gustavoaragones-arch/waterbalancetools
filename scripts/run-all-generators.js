@@ -21,6 +21,10 @@ require(path.join(g, 'generate-problem-pages.js'));
 require(path.join(g, 'generate-explanation-pages.js'));
 require(path.join(g, 'generate-behavior-pages.js'));
 
+// Phase 6 authority content — run before link matrix so new pages enter the pool
+require(path.join(__dirname, 'generate-authority-guides.js'));
+require(path.join(__dirname, 'generate-authority-charts.js'));
+
 require(path.join(__dirname, 'generate-hub-pages.js'));
 require(path.join(__dirname, 'inject-authority-layer.js'));
 require(path.join(__dirname, 'inject-ads.js'));

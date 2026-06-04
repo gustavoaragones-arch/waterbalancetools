@@ -58,10 +58,16 @@ function getSilo(slug) {
  */
 function getSiloForPath(relPath) {
   const p = String(relPath).replace(/\\/g, '/').toLowerCase();
+  // Programmatic subdirs
   if (p.includes('/programmatic/chlorine/') || p.includes('/programmatic/shock/')) return 'chlorine';
   if (p.includes('/programmatic/ph/')) return 'ph';
   if (p.includes('/programmatic/alkalinity/')) return 'alkalinity';
   if (p.includes('/programmatic/hot-tubs/')) return 'hotTubs';
+  // Phase 6 authority guide subdirs — explicit folder mapping avoids ambiguous keyword matches
+  // e.g. "hot-tub/hot-tub-ph-too-low" contains both "hot-tub" and "ph"; folder wins
+  if (p.includes('guides/chlorine/')) return 'chlorine';
+  if (p.includes('guides/ph/')) return 'ph';
+  if (p.includes('guides/hot-tub/')) return 'hotTubs';
   return getSilo(path.basename(relPath));
 }
 
