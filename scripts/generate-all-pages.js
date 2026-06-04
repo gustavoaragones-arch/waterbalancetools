@@ -1,6 +1,6 @@
 /**
  * Global crawl hub: static HTML, clean URLs (no .html), no duplicates.
- * Sections: Calculators → Reference Charts → Chlorine, pH, Problems, Guides.
+ * Sections: Calculators → Reference Charts → all programmatic clusters → Guides.
  * Run: node scripts/generate-all-pages.js
  */
 const fs = require('fs');
@@ -75,15 +75,20 @@ function sectionBlock(h2, paths) {
 }
 
 const calculators = listSortedHtml(path.join(ROOT, 'calculators')).map(f => 'calculators/' + f);
-const chlorine = listSortedHtml(path.join(ROOT, 'programmatic/chlorine')).map(
-  f => 'programmatic/chlorine/' + f
-);
-const phPages = listSortedHtml(path.join(ROOT, 'programmatic/ph')).map(
-  f => 'programmatic/ph/' + f
-);
-const problems = listSortedHtml(path.join(ROOT, 'programmatic/problems')).map(
-  f => 'programmatic/problems/' + f
-);
+
+function progPages(subdir) {
+  return listSortedHtml(path.join(ROOT, 'programmatic', subdir)).map(
+    f => 'programmatic/' + subdir + '/' + f
+  );
+}
+
+const chlorine      = progPages('chlorine');
+const shockPages    = progPages('shock');
+const phPages       = progPages('ph');
+const hotTubPages   = progPages('hot-tubs');
+const problems      = progPages('problems');
+const behavior      = progPages('behavior');
+const explanations  = progPages('explanations');
 const guides = walkGuides(path.join(ROOT, 'guides'), 'guides');
 
 const referenceChartsBlock =
@@ -101,10 +106,14 @@ const bodySections =
   referenceChartsBlock +
   sectionBlock('Reference Guides', referenceGuides) +
   [
-    { h2: 'Chlorine', paths: chlorine },
-    { h2: 'pH', paths: phPages },
-    { h2: 'Problems', paths: problems },
-    { h2: 'Guides', paths: guides }
+    { h2: 'Chlorine',      paths: chlorine },
+    { h2: 'Shock',         paths: shockPages },
+    { h2: 'pH',            paths: phPages },
+    { h2: 'Hot Tubs',      paths: hotTubPages },
+    { h2: 'Problems',      paths: problems },
+    { h2: 'Behavior',      paths: behavior },
+    { h2: 'Explanations',  paths: explanations },
+    { h2: 'Guides',        paths: guides }
   ]
     .filter(s => s.paths.length)
     .map(s => sectionBlock(s.h2, s.paths))
@@ -118,7 +127,7 @@ const html = `<!DOCTYPE html>
   <meta name="description" content="Complete list of WaterBalanceTools pool chemistry calculators, guides, and topic pages—flat crawl hub.">
   <title>All Pool Chemistry Pages | WaterBalanceTools</title>
   <meta property="og:title" content="All Pool Chemistry Pages | WaterBalanceTools">
-  <meta property="og:description" content="Every calculator, chlorine, pH, problem, and guide URL in one place.">
+  <meta property="og:description" content="Every calculator, chlorine, shock, pH, hot tub, problem, behavior, explanation, and guide URL in one place.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="style.css">
 </head>
