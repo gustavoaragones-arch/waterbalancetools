@@ -74,7 +74,9 @@ function sectionBlock(h2, paths) {
   );
 }
 
-const calculators = listSortedHtml(path.join(ROOT, 'calculators')).map(f => 'calculators/' + f);
+const calculators   = listSortedHtml(path.join(ROOT, 'calculators')).map(f => 'calculators/' + f);
+const comparisons   = listSortedHtml(path.join(ROOT, 'comparisons')).map(f => 'comparisons/' + f);
+const questions     = listSortedHtml(path.join(ROOT, 'guides/questions')).map(f => 'guides/questions/' + f);
 
 function progPages(subdir) {
   return listSortedHtml(path.join(ROOT, 'programmatic', subdir)).map(
@@ -106,10 +108,19 @@ const referenceChartsBlock =
 
 const referenceGuides = listSortedHtml(path.join(ROOT, 'reference')).map(f => 'reference/' + f);
 
+// System Hub block (Phase 7)
+const systemHubBlock =
+  '    <h2>System Hub</h2>\n' +
+  '    <ul class="ring-links all-pages-list">\n' +
+  '        <li><a href="/pool-chemistry-system">Pool Chemistry System: How All Parameters Work Together</a></li>\n' +
+  '    </ul>\n';
+
 const bodySections =
+  systemHubBlock +
   sectionBlock('Calculators', calculators) +
   referenceChartsBlock +
-  sectionBlock('Reference Guides', referenceGuides) +
+  sectionBlock('Reference Library', referenceGuides) +
+  sectionBlock('Comparisons', comparisons) +
   [
     { h2: 'Chlorine',      paths: chlorine },
     { h2: 'Shock',         paths: shockPages },
@@ -118,7 +129,8 @@ const bodySections =
     { h2: 'Problems',      paths: problems },
     { h2: 'Behavior',      paths: behavior },
     { h2: 'Explanations',  paths: explanations },
-    { h2: 'Guides',        paths: guides }
+    { h2: 'Guides',        paths: guides },
+    { h2: 'Water Chemistry Questions', paths: questions }
   ]
     .filter(s => s.paths.length)
     .map(s => sectionBlock(s.h2, s.paths))

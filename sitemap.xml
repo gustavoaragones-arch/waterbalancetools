@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://waterbalancetools.com/pool-chemistry-system</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://waterbalancetools.com/calculators/chemical-calculator</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -421,6 +426,36 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://waterbalancetools.com/guides/questions/can-rain-affect-pool-chemistry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/questions/can-you-swim-after-shocking-a-pool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/questions/why-does-hot-tub-water-smell</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/questions/why-does-pool-water-turn-cloudy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/questions/why-is-my-hot-tub-foamy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/guides/questions/why-is-my-pool-green-but-chlorine-is-high</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://waterbalancetools.com/guides/seasonal/closing-pool-chemistry-winter</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -444,6 +479,96 @@
     <loc>https://waterbalancetools.com/all-pages</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/reference/calcium-hardness-explained</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/reference/chlorine-explained</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/reference/combined-chlorine-explained</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/reference/common-pool-chemistry-mistakes</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/reference/cyanuric-acid-explained</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/reference/free-chlorine-explained</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/reference/pool-chemicals-explained</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/reference/pool-chemistry-reference</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/reference/salt-water-generator-explained</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/reference/shock-treatment-explained</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/reference/total-alkalinity-explained</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/comparisons/chlorine-vs-bromine-hot-tub</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/comparisons/chlorine-vs-bromine</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/comparisons/free-chlorine-vs-total-chlorine</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/comparisons/liquid-chlorine-vs-tablets</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/comparisons/pool-shock-vs-chlorine</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/comparisons/salt-water-pool-vs-chlorine-pool</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/comparisons/saltwater-pool-vs-chlorine</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://waterbalancetools.com/legal/legal</loc>
@@ -496,21 +621,6 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/comparisons/chlorine-vs-bromine-hot-tub</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/comparisons/liquid-chlorine-vs-tablets</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/comparisons/saltwater-pool-vs-chlorine</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://waterbalancetools.com/maintenance/how-often-add-chlorine-pool</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -522,21 +632,6 @@
   </url>
   <url>
     <loc>https://waterbalancetools.com/maintenance/how-to-fix-cloudy-hot-tub</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/reference/common-pool-chemistry-mistakes</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/reference/pool-chemicals-explained</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://waterbalancetools.com/reference/pool-chemistry-reference</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>

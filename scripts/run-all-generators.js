@@ -25,6 +25,13 @@ require(path.join(g, 'generate-behavior-pages.js'));
 require(path.join(__dirname, 'generate-authority-guides.js'));
 require(path.join(__dirname, 'generate-authority-charts.js'));
 
+// Phase 7 entity + question + comparison + hub pages
+require(path.join(__dirname, 'generate-entity-pages.js'));
+require(path.join(__dirname, 'inject-entity-schema.js'));
+require(path.join(__dirname, 'generate-question-pages.js'));
+require(path.join(__dirname, 'generate-comparison-pages.js'));
+require(path.join(__dirname, 'generate-pool-system-hub.js'));
+
 require(path.join(__dirname, 'generate-hub-pages.js'));
 require(path.join(__dirname, 'inject-authority-layer.js'));
 require(path.join(__dirname, 'inject-ads.js'));

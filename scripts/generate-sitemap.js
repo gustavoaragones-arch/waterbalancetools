@@ -39,6 +39,16 @@ urls.push({
   priority: '1.0'
 });
 
+// 1b. Pool Chemistry System hub — priority 1.0 (Phase 7)
+const hubSystemPage = path.join(ROOT, 'pool-chemistry-system.html');
+if (fs.existsSync(hubSystemPage)) {
+  urls.push({
+    loc: BASE_URL + '/pool-chemistry-system',
+    changefreq: 'weekly',
+    priority: '1.0'
+  });
+}
+
 // 2. Calculators — priority 1.0
 const calcDir = path.join(ROOT, 'calculators');
 listHtmlFiles(calcDir, ROOT)
@@ -96,7 +106,7 @@ if (fs.existsSync(progRoot)) {
     });
 }
 
-// 5. Guides — priority 0.8
+// 5. Guides — priority 0.8 (questions subfolder included automatically via recursive walk)
 const guidesDir = path.join(ROOT, 'guides');
 if (fs.existsSync(guidesDir)) {
   listHtmlFiles(guidesDir, ROOT)
@@ -122,15 +132,40 @@ if (fs.existsSync(hubPage)) {
 
 // 7. Everything else (no duplicates)
 const emitted = new Set(urls.map(u => u.loc));
+
+// Phase 7: reference/ pages — priority 0.9 weekly
+const refDir = path.join(ROOT, 'reference');
+listHtmlFiles(refDir, ROOT)
+  .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+  .forEach(rel => {
+    const pathNoExt = toCleanPath(rel);
+    if (!pathNoExt) return;
+    const loc = BASE_URL + '/' + pathNoExt;
+    if (emitted.has(loc)) return;
+    emitted.add(loc);
+    urls.push({ loc, changefreq: 'weekly', priority: '0.9' });
+  });
+
+// Phase 7: comparisons/ pages — priority 0.8 weekly
+const compDir = path.join(ROOT, 'comparisons');
+listHtmlFiles(compDir, ROOT)
+  .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+  .forEach(rel => {
+    const pathNoExt = toCleanPath(rel);
+    if (!pathNoExt) return;
+    const loc = BASE_URL + '/' + pathNoExt;
+    if (emitted.has(loc)) return;
+    emitted.add(loc);
+    urls.push({ loc, changefreq: 'weekly', priority: '0.8' });
+  });
+
 const otherFolders = [
   'legal',
   'printable',
   'printables',
   'tools',
   'charts',
-  'comparisons',
-  'maintenance',
-  'reference'
+  'maintenance'
 ];
 otherFolders.forEach(folder => {
   const dir = path.join(ROOT, folder);

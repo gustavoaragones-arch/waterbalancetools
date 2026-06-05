@@ -33,6 +33,10 @@ const GUIDES_SEASON = path.join(ROOT, 'guides/seasonal');
 const GUIDES_CHL  = path.join(ROOT, 'guides/chlorine');
 const GUIDES_PH   = path.join(ROOT, 'guides/ph');
 const GUIDES_HTUB = path.join(ROOT, 'guides/hot-tub');
+// Phase 7 new directories
+const REFS        = path.join(ROOT, 'reference');
+const COMPARISONS = path.join(ROOT, 'comparisons');
+const GUIDES_Q    = path.join(ROOT, 'guides/questions');
 
 /** Explicit silos for depth guides (folder-aware overrides). */
 const DEPTH_SILO = {
@@ -65,7 +69,16 @@ const DEPTH_SILO = {
   'guides/hot-tub/hot-tub-chlorine-too-low.html': 'hotTubs',
   'guides/hot-tub/how-often-to-shock-a-hot-tub.html': 'hotTubs',
   'guides/hot-tub/hot-tub-ph-too-low.html': 'hotTubs',
-  'guides/hot-tub/hot-tub-alkalinity-too-high.html': 'hotTubs'
+  'guides/hot-tub/hot-tub-alkalinity-too-high.html': 'hotTubs',
+  // Phase 7 entity reference pages
+  'reference/chlorine-explained.html': 'chlorine',
+  'reference/free-chlorine-explained.html': 'chlorine',
+  'reference/combined-chlorine-explained.html': 'chlorine',
+  'reference/cyanuric-acid-explained.html': 'chlorine',
+  'reference/total-alkalinity-explained.html': 'alkalinity',
+  'reference/calcium-hardness-explained.html': 'general',
+  'reference/shock-treatment-explained.html': 'chlorine',
+  'reference/salt-water-generator-explained.html': 'chlorine'
 };
 
 const ADVANCED_PAGES = [
@@ -81,7 +94,11 @@ const ADVANCED_PAGES = [
   { rel: 'guides/ph/how-to-lower-pool-ph.html', label: 'How to lower pool pH' },
   // Phase 6 hot tub cluster
   { rel: 'guides/hot-tub/how-often-to-shock-a-hot-tub.html', label: 'How often to shock a hot tub' },
-  { rel: 'guides/hot-tub/hot-tub-alkalinity-too-high.html', label: 'Hot tub alkalinity too high' }
+  { rel: 'guides/hot-tub/hot-tub-alkalinity-too-high.html', label: 'Hot tub alkalinity too high' },
+  // Phase 7 comparison pages
+  { rel: 'comparisons/chlorine-vs-bromine.html', label: 'Chlorine vs bromine comparison' },
+  { rel: 'comparisons/pool-shock-vs-chlorine.html', label: 'Pool shock vs regular chlorine' },
+  { rel: 'comparisons/salt-water-pool-vs-chlorine-pool.html', label: 'Salt water vs chlorine pool' }
 ];
 
 const EDGE_PAGES = [
@@ -466,6 +483,10 @@ function buildPool() {
   walkHtmlFiles(GUIDES_CHL, files);
   walkHtmlFiles(GUIDES_PH, files);
   walkHtmlFiles(GUIDES_HTUB, files);
+  // Phase 7 new directories
+  walkHtmlFiles(REFS, files);
+  walkHtmlFiles(COMPARISONS, files);
+  walkHtmlFiles(GUIDES_Q, files);
   return files.map(relPath => ({
     relPath,
     silo: DEPTH_SILO[relPath] ?? getSiloForPath(relPath)
