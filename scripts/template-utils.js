@@ -228,6 +228,246 @@ function writeFile(filePath, content) {
   fs.writeFileSync(filePath, content, 'utf8');
 }
 
+// ── Content rendering helpers ─────────────────────────────────────────────────
+
+/**
+ * Render plain-text body into HTML.
+ * - Double newlines → paragraph breaks.
+ * - Blocks where every non-empty line starts with "- " → <ul><li>.
+ */
+function renderBody(text) {
+  if (!text) return '';
+  return text.trim()
+    .split(/\n\n+/)
+    .map(block => {
+      block = block.trim();
+      if (!block) return '';
+      const lines = block.split('\n').map(l => l.trim()).filter(Boolean);
+      if (lines.every(l => l.startsWith('- '))) {
+        return '<ul>\n' + lines.map(l => `<li>${esc(l.slice(2))}</li>`).join('\n') + '\n</ul>';
+      }
+      return `<p>${esc(lines.join(' '))}</p>`;
+    })
+    .filter(Boolean)
+    .join('\n');
+}
+
+/**
+ * Build the main content HTML for an Academy article from structured fields.
+ * Order: overview → key facts box → h2 sections → examples → common mistakes → sources.
+ */
+function buildArticleContent(article) {
+  let html = '';
+
+  // Overview paragraph
+  if (article.overview) {
+    html += `<div id="overview">\n${renderBody(article.overview)}\n</div>\n\n`;
+  }
+
+  // Key facts box
+  if ((article.keyFacts || []).length > 0) {
+    html += `<section class="knowledge-takeaways" id="key-facts">\n`;
+    html += `  <h2>Key Facts</h2>\n  <ul>\n`;
+    for (const f of article.keyFacts) html += `    <li>${esc(f)}</li>\n`;
+    html += `  </ul>\n</section>\n\n`;
+  }
+
+  // Sections
+  for (const sec of (article.sections || [])) {
+    const id = sec.id || (sec.h2 || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    html += `<section id="${id}">\n<h2>${esc(sec.h2)}</h2>\n${renderBody(sec.body)}\n</section>\n\n`;
+  }
+
+  // Examples
+  if ((article.examples || []).length > 0) {
+    html += `<section id="examples">\n<h2>Examples</h2>\n`;
+    for (const ex of article.examples) {
+      html += `<div class="knowledge-example">\n<strong>${esc(ex.title)}</strong>\n${renderBody(ex.body)}\n</div>\n`;
+    }
+    html += `</section>\n\n`;
+  }
+
+  // Common mistakes
+  if ((article.commonMistakes || []).length > 0) {
+    html += `<section id="common-mistakes">\n<h2>Common Mistakes to Avoid</h2>\n`;
+    html += `<div class="knowledge-warning"><span class="knowledge-warning-icon">&#9888;</span>\n<ul>\n`;
+    for (const m of article.commonMistakes) html += `<li>${esc(m)}</li>\n`;
+    html += `</ul></div>\n</section>\n\n`;
+  }
+
+  // Sources
+  if ((article.sources || []).length > 0) {
+    html += `<div class="knowledge-sources"><strong>Sources:</strong><ol>`;
+    for (const s of article.sources) html += `<li>${esc(s)}</li>`;
+    html += `</ol></div>\n`;
+  }
+
+  return html;
+}
+
+/**
+ * Build formula explanation/limitations HTML.
+ */
+function buildFormulaContent(formula) {
+  let html = '';
+  if (formula.explanation) {
+    html += `<section id="explanation">\n<h2>How This Formula Works</h2>\n${renderBody(formula.explanation)}\n</section>\n\n`;
+  }
+  if (formula.limitations) {
+    html += `<section id="limitations">\n<h2>Limitations &amp; Notes</h2>\n${renderBody(formula.limitations)}\n</section>\n\n`;
+  }
+  if ((formula.sources || []).length > 0) {
+    html += `<div class="knowledge-sources"><strong>Sources:</strong><ol>`;
+    for (const s of formula.sources) html += `<li>${esc(s)}</li>`;
+    html += `</ol></div>\n`;
+  }
+  return html;
+}
+
+/**
+ * Build glossary term detail HTML.
+ */
+function buildTermContent(term) {
+  let html = '';
+  if (term.explanation) {
+    html += `<section id="details">\n<h2>In Plain Language</h2>\n${renderBody(term.explanation)}\n</section>\n\n`;
+  }
+  if (term.whyItMatters) {
+    html += `<section id="why-it-matters">\n<h2>Why It Matters</h2>\n${renderBody(term.whyItMatters)}\n</section>\n\n`;
+  }
+  if (term.typicalValues) {
+    html += `<section id="typical-values">\n<h2>Typical Values</h2>\n<div class="knowledge-callout"><span class="knowledge-callout-icon">&#127919;</span><div>${esc(term.typicalValues)}</div></div>\n</section>\n\n`;
+  }
+
+  // Related article links
+  const relatedItems = [
+    ...(term.relatedCalculators || []).map(href => ({ href, label: titleCase(href.split('/').pop()) })),
+    ...(term.relatedArticles || []).map(slug => ({ href: '/' + slug, label: titleCase(slug.split('/').pop()) })),
+    ...(term.relatedFormulas || []).map(slug => ({ href: '/' + slug, label: titleCase(slug.split('/').pop()) })),
+  ];
+  if (relatedItems.length > 0) {
+    const cards = relatedItems.slice(0, 6).map(item =>
+      `<a href="${item.href}" class="knowledge-card"><div class="knowledge-card-title">${esc(item.label)}</div></a>`
+    ).join('\n');
+    html += `<section class="related-topics">\n<h2>Related Resources</h2>\n<div class="knowledge-grid knowledge-grid--2col">\n${cards}\n</div>\n</section>\n\n`;
+  }
+  return html;
+}
+
+/**
+ * Build reference page content from tables / checklists / notes.
+ */
+function buildRefContent(page) {
+  let html = '';
+  if (page.overview) {
+    html += `<section id="overview">\n${renderBody(page.overview)}\n</section>\n\n`;
+  }
+  for (const tbl of (page.tables || [])) {
+    const tblId = (tbl.title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    html += `<section id="${tblId}">\n`;
+    if (tbl.title) html += `<h2>${esc(tbl.title)}</h2>\n`;
+    html += `<div class="knowledge-table-wrap"><table class="knowledge-table"><thead><tr>`;
+    for (const h of (tbl.headers || [])) html += `<th>${esc(h)}</th>`;
+    html += `</tr></thead><tbody>`;
+    for (const row of (tbl.rows || [])) {
+      html += `<tr>`;
+      for (const cell of row) html += `<td>${esc(String(cell))}</td>`;
+      html += `</tr>`;
+    }
+    html += `</tbody></table></div>\n</section>\n\n`;
+  }
+  for (const cl of (page.checklists || [])) {
+    const clId = (cl.title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    html += `<section id="${clId}">\n<h2>${esc(cl.title)}</h2>\n<ul class="knowledge-checklist">\n`;
+    for (const item of (cl.items || [])) html += `<li>${esc(item)}</li>\n`;
+    html += `</ul>\n</section>\n\n`;
+  }
+  if ((page.notes || []).length > 0) {
+    html += `<section id="notes">\n<h2>Notes</h2>\n<ul>\n`;
+    for (const n of page.notes) html += `<li>${esc(n)}</li>\n`;
+    html += `</ul>\n</section>\n\n`;
+  }
+  // Related
+  const relCalcs = (page.relatedCalculators || []);
+  if (relCalcs.length > 0) {
+    const cards = relCalcs.map(href =>
+      `<a href="${href}" class="knowledge-card"><div class="knowledge-card-title">${esc(titleCase(href.split('/').pop()))}</div></a>`
+    ).join('\n');
+    html += `<section class="related-calculators">\n<h2>Related Calculators</h2>\n<div class="related-calcs-cards">\n${cards}\n</div>\n</section>\n\n`;
+  }
+  if ((page.sources || []).length > 0) {
+    html += `<div class="knowledge-sources"><strong>Sources:</strong><ol>`;
+    for (const s of page.sources) html += `<li>${esc(s)}</li>`;
+    html += `</ol></div>\n`;
+  }
+  return html;
+}
+
+/**
+ * Build a Related Calculators / Resources section from an article's relationship arrays.
+ */
+function buildRelatedTools(article) {
+  const all = [
+    ...(article.relatedCalculators || []).map(href => ({ href, label: titleCase(href.split('/').pop()) })),
+    ...(article.relatedCharts || []).map(href => ({ href, label: titleCase(href.split('/').pop()) })),
+    ...(article.relatedResources || []).map(href => ({ href, label: titleCase(href.split('/').pop()) })),
+  ];
+  if (all.length === 0) return '';
+  const cards = all.slice(0, 6).map(item =>
+    `<a href="${item.href}" class="knowledge-card"><div class="knowledge-card-title">${esc(item.label)}</div></a>`
+  ).join('\n');
+  return `<section id="related-tools" class="related-calculators">\n<h2>Related Calculators &amp; Resources</h2>\n<div class="related-calcs-cards">\n${cards}\n</div>\n</section>\n`;
+}
+
+/**
+ * Build a Related Topics section from an array of article slugs.
+ * @param {string[]} slugs
+ * @param {object[]} allArticles  — full articles array for label/summary lookup
+ */
+function buildRelatedTopics(slugs, allArticles) {
+  if (!slugs || slugs.length === 0) return '';
+  const cards = slugs.slice(0, 6).map(slug => {
+    const href = '/' + slug;
+    const art = (allArticles || []).find(a => a.slug === slug);
+    const label = art ? art.title : titleCase(slug.split('/').pop());
+    const desc = art ? ((art.summary || '').split('.')[0] + '.') : '';
+    return `<a href="${href}" class="knowledge-card">` +
+      `<div class="knowledge-card-title">${esc(label)}</div>` +
+      (desc ? `<p class="knowledge-card-desc">${esc(desc)}</p>` : '') +
+      `</a>`;
+  }).join('\n');
+  return `<section class="related-topics">\n<h2>Related Topics</h2>\n<div class="knowledge-grid knowledge-grid--2col">\n${cards}\n</div>\n</section>\n`;
+}
+
+/**
+ * Build the sidebar for an Academy article page.
+ */
+function buildAcademySidebar(article, categoryArticles) {
+  const tocItems = (article.sections || []).map(sec => {
+    const id = sec.id || (sec.h2 || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    return `<li><a href="#${id}">${esc(sec.h2)}</a></li>`;
+  }).join('\n');
+
+  const catLinks = (categoryArticles || []).slice(0, 8).map(a => {
+    const active = a.slug === article.slug;
+    return `<li><a href="/${a.slug}"${active ? ' class="active"' : ''}>${esc(a.title)}</a></li>`;
+  }).join('\n');
+
+  const calcLinks = (article.relatedCalculators || []).slice(0, 4).map(href =>
+    `<li><a href="${href}">${esc(titleCase(href.split('/').pop()))}</a></li>`
+  ).join('\n');
+
+  return `<aside class="knowledge-sidebar">` +
+    (catLinks ? `<div class="knowledge-sidebar-section"><h3>In This Category</h3><ul>${catLinks}</ul></div>` : '') +
+    `<div class="knowledge-sidebar-section"><h3>On This Page</h3><ul>` +
+    `<li><a href="#key-facts">Key Facts</a></li>` + tocItems +
+    ((article.examples || []).length ? '<li><a href="#examples">Examples</a></li>' : '') +
+    ((article.commonMistakes || []).length ? '<li><a href="#common-mistakes">Common Mistakes</a></li>' : '') +
+    `</ul></div>` +
+    (calcLinks ? `<div class="knowledge-sidebar-section"><h3>Calculators</h3><ul>${calcLinks}</ul></div>` : '') +
+    `</aside>`;
+}
+
 // ── Exports ───────────────────────────────────────────────────────────────────
 
 module.exports = {
@@ -240,6 +480,14 @@ module.exports = {
   buildBreadcrumb,
   renderCards,
   renderSidebarLinks,
+  renderBody,
+  buildArticleContent,
+  buildFormulaContent,
+  buildTermContent,
+  buildRefContent,
+  buildRelatedTools,
+  buildRelatedTopics,
+  buildAcademySidebar,
   titleCase,
   esc,
   slugToTitle,

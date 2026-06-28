@@ -16,7 +16,7 @@ const fs   = require('fs');
 const path = require('path');
 const {
   fill, template, partial, SITE_HEADER, SITE_FOOTER, esc,
-  buildBreadcrumb, writeFile, ROOT,
+  buildBreadcrumb, buildRefContent, writeFile, ROOT,
 } = require('./template-utils');
 
 const data = require(path.join(ROOT, 'data', 'reference.json'));
@@ -109,28 +109,28 @@ function generateRefPage(page) {
   const bc = buildBreadcrumb(page.slug, page.title);
 
   return fill(tpl, {
-    SLUG:             page.slug,
-    PAGE_TITLE:       `${page.title} | Reference | WaterBalanceTools`,
-    H1_TITLE:         page.title,
-    META_DESCRIPTION: page.description,
-    LAST_REVIEWED:    page.lastReviewed || '2026-01-01',
-    BREADCRUMB:       bc.nav,
+    SLUG:              page.slug,
+    PAGE_TITLE:        `${page.title} | Reference | WaterBalanceTools`,
+    H1_TITLE:          page.title,
+    META_DESCRIPTION:  page.description,
+    LAST_REVIEWED:     page.lastReviewed || '2026-06-01',
+    BREADCRUMB:        bc.nav,
     BREADCRUMB_SCHEMA: bc.schema,
     HERO: fill(partial('knowledge-hero.html'), {
-      BADGE:       'Reference',
-      BADGE_CLASS: 'knowledge-badge--reference',
-      READING_TIME: page.readingTime || '2 min read',
-      LAST_REVIEWED: page.lastReviewed || '2026-01-01',
-      TITLE:       esc(page.title),
-      SUMMARY:     esc(page.summary || ''),
-      CHIPS: '',
+      BADGE:         'Reference',
+      BADGE_CLASS:   'knowledge-badge--reference',
+      READING_TIME:  page.readingTime || '2 min read',
+      LAST_REVIEWED: page.lastReviewed || '2026-06-01',
+      TITLE:         esc(page.title),
+      SUMMARY:       esc(page.summary || ''),
+      CHIPS:         '<a href="#overview" class="knowledge-chip">Overview</a>',
     }),
-    CONTENT:       page.content || '',
-    SIDEBAR:       '',
-    RELATED_TOOLS: '',
-    RELATED_TOPICS: '',
-    KNOWLEDGE_FOOTER: '',
-    SITE_FOOTER:   SITE_FOOTER,
+    CONTENT:           buildRefContent(page),
+    SIDEBAR:           '',
+    RELATED_TOOLS:     '',
+    RELATED_TOPICS:    '',
+    KNOWLEDGE_FOOTER:  '',
+    SITE_FOOTER:       SITE_FOOTER,
   });
 }
 

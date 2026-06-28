@@ -13,7 +13,7 @@
 const path = require('path');
 const {
   fill, template, partial, SITE_HEADER, SITE_FOOTER, esc,
-  buildBreadcrumb, writeFile, ROOT,
+  buildBreadcrumb, buildTermContent, writeFile, ROOT,
 } = require('./template-utils');
 
 const data = require(path.join(ROOT, 'data', 'glossary.json'));
@@ -99,35 +99,37 @@ function generateTerm(term) {
   const tpl = template('glossary-template.html');
   const bc = buildBreadcrumb(term.slug, term.term || term.title);
 
-  const targetRangeBlock = term.targetRange
-    ? `<div class="knowledge-callout"><span class="knowledge-callout-icon">&#127919;</span><div><strong>Target Range:</strong> ${esc(term.targetRange)}</div></div>`
+  const targetRangeBlock = (term.typicalValues || term.targetRange)
+    ? `<div class="knowledge-callout"><span class="knowledge-callout-icon">&#127919;</span><div><strong>Typical Values:</strong> ${esc(term.typicalValues || term.targetRange)}</div></div>`
     : '';
 
+  const defFirstSentence = (term.definition || '').split('.')[0];
+
   return fill(tpl, {
-    SLUG:             term.slug,
-    PAGE_TITLE:       `${term.term || term.title}: Definition | Glossary | WaterBalanceTools`,
-    H1_TITLE:         term.term || term.title,
-    META_DESCRIPTION: `Definition of ${term.term || term.title} in pool and hot tub water chemistry. ${(term.definition || '').split('.')[0]}.`,
-    LAST_REVIEWED:    term.lastReviewed || '2026-01-01',
-    BREADCRUMB:       bc.nav,
+    SLUG:              term.slug,
+    PAGE_TITLE:        `${term.term || term.title}: Definition | Glossary | WaterBalanceTools`,
+    H1_TITLE:          term.term || term.title,
+    META_DESCRIPTION:  `${defFirstSentence}. Plain-language definition with target values and related pool chemistry resources.`,
+    LAST_REVIEWED:     term.lastReviewed || '2026-06-01',
+    BREADCRUMB:        bc.nav,
     BREADCRUMB_SCHEMA: bc.schema,
     HERO: fill(partial('knowledge-hero.html'), {
-      BADGE:       'Glossary',
-      BADGE_CLASS: 'knowledge-badge--glossary',
-      READING_TIME: '2 min read',
-      LAST_REVIEWED: term.lastReviewed || '2026-01-01',
-      TITLE:       esc(term.term || term.title),
-      SUMMARY:     esc((term.definition || '').split('.')[0] + '.'),
-      CHIPS: '<a href="#definition" class="knowledge-chip">Definition</a><a href="#details" class="knowledge-chip">Details</a>',
+      BADGE:         'Glossary',
+      BADGE_CLASS:   'knowledge-badge--glossary',
+      READING_TIME:  '2 min read',
+      LAST_REVIEWED: term.lastReviewed || '2026-06-01',
+      TITLE:         esc(term.term || term.title),
+      SUMMARY:       esc(defFirstSentence + '.'),
+      CHIPS:         '<a href="#definition" class="knowledge-chip">Definition</a><a href="#details" class="knowledge-chip">Details</a><a href="#typical-values" class="knowledge-chip">Values</a>',
     }),
-    DEFINITION:        esc(term.definition || ''),
+    DEFINITION:         esc(term.definition || ''),
     TARGET_RANGE_BLOCK: targetRangeBlock,
-    CONTENT:           term.content || '',
-    SIDEBAR:           '',
-    RELATED_TOOLS:     '',
-    RELATED_TOPICS:    '',
-    KNOWLEDGE_FOOTER:  '',
-    SITE_FOOTER:       SITE_FOOTER,
+    CONTENT:            buildTermContent(term),
+    SIDEBAR:            '',
+    RELATED_TOOLS:      '',
+    RELATED_TOPICS:     '',
+    KNOWLEDGE_FOOTER:   '',
+    SITE_FOOTER:        SITE_FOOTER,
   });
 }
 

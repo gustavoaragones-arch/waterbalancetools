@@ -13,7 +13,8 @@
 const path = require('path');
 const {
   fill, template, partial, SITE_HEADER, SITE_FOOTER, esc,
-  buildBreadcrumb, writeFile, ROOT,
+  buildBreadcrumb, buildFormulaContent, buildRelatedTools,
+  buildRelatedTopics, renderBody, writeFile, ROOT,
 } = require('./template-utils');
 
 const data = require(path.join(ROOT, 'data', 'formulas.json'));
@@ -88,35 +89,44 @@ function generateFormula(formula) {
   const bc = buildBreadcrumb(formula.slug, formula.title);
 
   const variableRows = (formula.variables || [])
-    .map(v => `<tr><td>${esc(v.symbol)}</td><td>${esc(v.description)}</td></tr>`)
+    .map(v =>
+      `<tr><td><code>${esc(v.symbol)}</code></td>` +
+      `<td>${esc(v.description)}</td>` +
+      `<td>${esc(v.unit || '')}</td></tr>`
+    )
     .join('\n              ');
 
+  const relatedFormulas = (data.formulas || []).filter(f => f.slug !== formula.slug);
+
   return fill(tpl, {
-    SLUG:             formula.slug,
-    PAGE_TITLE:       `${formula.title} | Formula Library | WaterBalanceTools`,
-    H1_TITLE:         formula.title,
-    META_DESCRIPTION: formula.description,
-    LAST_REVIEWED:    formula.lastReviewed || '2026-01-01',
-    BREADCRUMB:       bc.nav,
+    SLUG:              formula.slug,
+    PAGE_TITLE:        `${formula.title} | Formula Library | WaterBalanceTools`,
+    H1_TITLE:          formula.title,
+    META_DESCRIPTION:  formula.description,
+    LAST_REVIEWED:     formula.lastReviewed || '2026-01-01',
+    BREADCRUMB:        bc.nav,
     BREADCRUMB_SCHEMA: bc.schema,
     HERO: fill(partial('knowledge-hero.html'), {
-      BADGE:       'Formula Library',
-      BADGE_CLASS: 'knowledge-badge--formula',
-      READING_TIME: formula.readingTime || '3 min read',
+      BADGE:         'Formula Library',
+      BADGE_CLASS:   'knowledge-badge--formula',
+      READING_TIME:  formula.readingTime || '3 min read',
       LAST_REVIEWED: formula.lastReviewed || '2026-01-01',
-      TITLE:       esc(formula.title),
-      SUMMARY:     esc(formula.summary || ''),
-      CHIPS: '<a href="#formula" class="knowledge-chip">Formula</a><a href="#example" class="knowledge-chip">Example</a>',
+      TITLE:         esc(formula.title),
+      SUMMARY:       esc(formula.summary || ''),
+      CHIPS:         '<a href="#formula" class="knowledge-chip">Formula</a><a href="#example" class="knowledge-chip">Example</a><a href="#explanation" class="knowledge-chip">Explanation</a>',
     }),
-    EQUATION:      esc(formula.equation || ''),
-    VARIABLE_ROWS: variableRows,
-    EXAMPLE:       formula.example || '',
-    CONTENT:       formula.content || '',
-    SIDEBAR:       '',
-    RELATED_TOOLS: '',
-    RELATED_TOPICS: '',
-    KNOWLEDGE_FOOTER: '',
-    SITE_FOOTER:   SITE_FOOTER,
+    EQUATION:          esc(formula.equation || ''),
+    VARIABLE_ROWS:     variableRows,
+    EXAMPLE:           formula.workedExample ? renderBody(formula.workedExample) : (formula.example || ''),
+    CONTENT:           buildFormulaContent(formula),
+    SIDEBAR:           '',
+    RELATED_TOOLS:     buildRelatedTools(formula),
+    RELATED_TOPICS:    buildRelatedTopics(
+      (formula.relatedFormulas || []),
+      relatedFormulas.map(f => ({ slug: f.slug, title: f.title, summary: f.summary }))
+    ),
+    KNOWLEDGE_FOOTER:  '',
+    SITE_FOOTER:       SITE_FOOTER,
   });
 }
 

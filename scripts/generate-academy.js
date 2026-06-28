@@ -15,7 +15,8 @@
 const path = require('path');
 const {
   fill, SITE_HEADER, SITE_FOOTER, esc, titleCase,
-  buildBreadcrumb, writeFile, ROOT,
+  buildBreadcrumb, buildArticleContent, buildRelatedTools,
+  buildRelatedTopics, buildAcademySidebar, writeFile, ROOT,
 } = require('./template-utils');
 
 const data = require(path.join(ROOT, 'data', 'academy.json'));
@@ -177,43 +178,40 @@ ${articleCards}
 function generateArticle(article) {
   const tpl = require('./template-utils').template('academy-template.html');
   const bc = buildBreadcrumb(article.slug, article.title);
-
-  const takeawayItems = (article.takeaways || [])
-    .map(t => `<li>${esc(t)}</li>`)
-    .join('\n');
+  const allArticles = data.articles || [];
+  const catArticles = allArticles.filter(a => a.category === article.category);
 
   const heroChips = [
-    '<a href="#overview" class="knowledge-chip">Overview</a>',
     '<a href="#key-facts" class="knowledge-chip">Key Facts</a>',
-    '<a href="#details" class="knowledge-chip">Details</a>',
+    '<a href="#examples" class="knowledge-chip">Examples</a>',
     article.relatedCalculators?.length ? '<a href="#related-tools" class="knowledge-chip">Calculator</a>' : '',
-    article.relatedResources?.length ? '<a href="#related-resources" class="knowledge-chip">Downloads</a>' : '',
+    article.relatedTopics?.length ? '<a href=".knowledge-related-topics" class="knowledge-chip">Related</a>' : '',
   ].filter(Boolean).join('\n    ');
 
   return fill(tpl, {
-    SLUG:             article.slug,
-    PAGE_TITLE:       `${article.title} | Academy | WaterBalanceTools`,
-    H1_TITLE:         article.title,
-    META_DESCRIPTION: article.description,
-    LAST_REVIEWED:    article.lastReviewed || '2026-01-01',
-    BREADCRUMB:       bc.nav,
+    SLUG:              article.slug,
+    PAGE_TITLE:        `${article.title} | Academy | WaterBalanceTools`,
+    H1_TITLE:          article.title,
+    META_DESCRIPTION:  article.description,
+    LAST_REVIEWED:     article.lastReviewed || '2026-01-01',
+    BREADCRUMB:        bc.nav,
     BREADCRUMB_SCHEMA: bc.schema,
     HERO: fill(require('./template-utils').partial('knowledge-hero.html'), {
-      BADGE:       titleCase(article.category),
-      BADGE_CLASS: `knowledge-badge--${article.category}`,
-      READING_TIME: article.readingTime || '5 min read',
+      BADGE:         titleCase(article.category.replace(/-/g, ' ')),
+      BADGE_CLASS:   `knowledge-badge--${article.category}`,
+      READING_TIME:  article.readingTime || '5 min read',
       LAST_REVIEWED: article.lastReviewed || '2026-01-01',
-      TITLE:       esc(article.title),
-      SUMMARY:     esc(article.summary || ''),
-      CHIPS:       heroChips,
+      TITLE:         esc(article.title),
+      SUMMARY:       esc(article.summary || ''),
+      CHIPS:         heroChips,
     }),
-    CONTENT:    article.content || '',
-    TAKEAWAYS:  takeawayItems,
-    SIDEBAR:    '', // populated by generate-breadcrumbs.js in a later phase
-    RELATED_TOOLS: '',
-    RELATED_TOPICS: '',
-    KNOWLEDGE_FOOTER: '',
-    SITE_FOOTER: SITE_FOOTER,
+    CONTENT:           buildArticleContent(article),
+    TAKEAWAYS:         '',
+    SIDEBAR:           buildAcademySidebar(article, catArticles),
+    RELATED_TOOLS:     buildRelatedTools(article),
+    RELATED_TOPICS:    buildRelatedTopics(article.relatedTopics || [], allArticles),
+    KNOWLEDGE_FOOTER:  '',
+    SITE_FOOTER:       SITE_FOOTER,
   });
 }
 

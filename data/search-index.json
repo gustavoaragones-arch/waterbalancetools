@@ -280,6 +280,66 @@
     "keywords": "equipment"
   },
   {
+    "url": "/academy/equipment/automatic-chlorinators",
+    "title": "Automatic Chlorinators",
+    "description": "Learn how automatic chlorine feeders work, the difference between inline and offline feeders, how to set the feed rate, and compatibility considerations.",
+    "h1": "Automatic Chlorinators",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "automatic chlorinators"
+  },
+  {
+    "url": "/academy/equipment/pool-filters",
+    "title": "Pool Filters: How They Work",
+    "description": "Learn how pool filters work, the three main filter types, what they remove from water, and how to maintain them correctly.",
+    "h1": "Pool Filters: How They Work",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool filters how they work"
+  },
+  {
+    "url": "/academy/equipment/pool-pumps",
+    "title": "Pool Pumps: Sizing and Turnover",
+    "description": "Learn how to size a pool pump correctly, calculate turnover rate, and understand why variable speed pumps save energy while improving water quality.",
+    "h1": "Pool Pumps: Sizing and Turnover",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool pumps sizing and turnover"
+  },
+  {
+    "url": "/academy/equipment/pool-skimmers",
+    "title": "Pool Skimmers",
+    "description": "Learn how pool skimmers work, why correct water level is essential for skimmer performance, and how to maintain them.",
+    "h1": "Pool Skimmers",
+    "category": "Academy",
+    "readingTime": "4 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool skimmers"
+  },
+  {
+    "url": "/academy/equipment/salt-systems",
+    "title": "Salt Chlorinator Systems",
+    "description": "Learn how salt chlorinator systems generate chlorine from dissolved salt, what they require in terms of water chemistry, and how to maintain the salt cell.",
+    "h1": "Salt Chlorinator Systems",
+    "category": "Academy",
+    "readingTime": "6 min read",
+    "updated": "2026-06-01",
+    "keywords": "salt chlorinator systems"
+  },
+  {
+    "url": "/academy/equipment/sand-vs-cartridge-filters",
+    "title": "Sand Filters vs. Cartridge Filters",
+    "description": "Compare sand and cartridge pool filters on filtration quality, water usage, maintenance requirements, and which is the better choice for your pool.",
+    "h1": "Sand Filters vs. Cartridge Filters",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "sand filters cartridge"
+  },
+  {
     "url": "/academy/fundamentals",
     "title": "Fundamentals",
     "description": "Core water chemistry concepts every pool owner needs to understand.",
@@ -288,6 +348,66 @@
     "readingTime": null,
     "updated": null,
     "keywords": "fundamentals"
+  },
+  {
+    "url": "/academy/fundamentals/how-temperature-changes-water-chemistry",
+    "title": "How Temperature Changes Water Chemistry",
+    "description": "Learn how rising water temperature affects chlorine demand, pH stability, calcium solubility, and the Langelier Saturation Index.",
+    "h1": "How Temperature Changes Water Chemistry",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "how temperature changes water chemistry"
+  },
+  {
+    "url": "/academy/fundamentals/how-water-balance-works",
+    "title": "How Water Balance Works",
+    "description": "Understand what balanced pool water means, how the Langelier Saturation Index works, and why balance protects your pool surfaces and equipment.",
+    "h1": "How Water Balance Works",
+    "category": "Academy",
+    "readingTime": "6 min read",
+    "updated": "2026-06-01",
+    "keywords": "how water balance works"
+  },
+  {
+    "url": "/academy/fundamentals/pool-vs-hot-tub-chemistry",
+    "title": "Pool vs. Hot Tub Chemistry",
+    "description": "Understand how hot tub water chemistry differs from pool chemistry, including tighter target ranges, faster depletion, and more frequent testing.",
+    "h1": "Pool vs. Hot Tub Chemistry",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool hot tub chemistry"
+  },
+  {
+    "url": "/academy/fundamentals/the-four-core-water-tests",
+    "title": "The Four Core Water Tests",
+    "description": "Learn which four water tests every pool owner must run, what each measures, and the target ranges for pools and hot tubs.",
+    "h1": "The Four Core Water Tests",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "the four core water tests"
+  },
+  {
+    "url": "/academy/fundamentals/understanding-pool-water-chemistry",
+    "title": "Understanding Pool Water Chemistry",
+    "description": "Learn the four core water chemistry parameters that every pool owner needs to maintain safe, clear water.",
+    "h1": "Understanding Pool Water Chemistry",
+    "category": "Academy",
+    "readingTime": "7 min read",
+    "updated": "2026-06-01",
+    "keywords": "understanding pool water chemistry"
+  },
+  {
+    "url": "/academy/fundamentals/why-water-testing-matters",
+    "title": "Why Water Testing Matters",
+    "description": "Understand why regular water testing is the most cost-effective pool maintenance habit and what happens when testing is skipped.",
+    "h1": "Why Water Testing Matters",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "why water testing matters"
   },
   {
     "url": "/academy/hot-tubs",
@@ -300,6 +420,66 @@
     "keywords": "hot tubs amp spas"
   },
   {
+    "url": "/academy/hot-tubs/daily-spa-maintenance",
+    "title": "Daily Spa Maintenance",
+    "description": "Learn the five-minute daily hot tub maintenance routine that prevents chemistry problems and keeps the water safe for every soak.",
+    "h1": "Daily Spa Maintenance",
+    "category": "Academy",
+    "readingTime": "4 min read",
+    "updated": "2026-06-01",
+    "keywords": "daily spa maintenance"
+  },
+  {
+    "url": "/academy/hot-tubs/monthly-spa-maintenance",
+    "title": "Monthly Spa Maintenance",
+    "description": "Learn the monthly hot tub maintenance tasks including deep filter cleaning, full water test, and what to check to keep the system running efficiently.",
+    "h1": "Monthly Spa Maintenance",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "monthly spa maintenance"
+  },
+  {
+    "url": "/academy/hot-tubs/refilling-your-hot-tub",
+    "title": "Refilling Your Hot Tub",
+    "description": "Learn how to drain, clean, and refill a hot tub correctly, and how to set up the chemistry of fresh water before the first soak.",
+    "h1": "Refilling Your Hot Tub",
+    "category": "Academy",
+    "readingTime": "6 min read",
+    "updated": "2026-06-01",
+    "keywords": "refilling your hot tub"
+  },
+  {
+    "url": "/academy/hot-tubs/shock-after-heavy-use",
+    "title": "Shocking a Hot Tub After Heavy Use",
+    "description": "Learn when and how to shock a hot tub after parties, heavy bather load, or other events that rapidly deplete sanitiser and create combined chlorine.",
+    "h1": "Shocking a Hot Tub After Heavy Use",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "shocking hot tub after heavy use"
+  },
+  {
+    "url": "/academy/hot-tubs/weekly-spa-maintenance",
+    "title": "Weekly Spa Maintenance",
+    "description": "Learn the complete weekly hot tub maintenance routine including full water testing, filter rinse, and chemical balancing.",
+    "h1": "Weekly Spa Maintenance",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "weekly spa maintenance"
+  },
+  {
+    "url": "/academy/hot-tubs/winter-spa-care",
+    "title": "Winter Spa Care",
+    "description": "Learn how to care for a hot tub during winter, whether you keep it running or winterize it, including chemical adjustments and freeze protection.",
+    "h1": "Winter Spa Care",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "winter spa care"
+  },
+  {
     "url": "/academy/sanitizers",
     "title": "Sanitizers",
     "description": "Chlorine, bromine, salt, and alternative sanitization methods.",
@@ -308,6 +488,66 @@
     "readingTime": null,
     "updated": null,
     "keywords": "sanitizers"
+  },
+  {
+    "url": "/academy/sanitizers/breakpoint-chlorination",
+    "title": "Breakpoint Chlorination",
+    "description": "Learn what breakpoint chlorination is, how to calculate the dose needed to destroy combined chlorine, and how to execute it correctly.",
+    "h1": "Breakpoint Chlorination",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "breakpoint chlorination"
+  },
+  {
+    "url": "/academy/sanitizers/bromine-vs-chlorine",
+    "title": "Bromine vs. Chlorine",
+    "description": "Compare bromine and chlorine as pool and hot tub sanitizers, including effectiveness, cost, pH effects, and when each is the better choice.",
+    "h1": "Bromine vs. Chlorine",
+    "category": "Academy",
+    "readingTime": "6 min read",
+    "updated": "2026-06-01",
+    "keywords": "bromine chlorine"
+  },
+  {
+    "url": "/academy/sanitizers/combined-chlorine-explained",
+    "title": "Combined Chlorine Explained",
+    "description": "Learn what combined chlorine is, why it forms in pools, how to measure it, and why it causes the irritating pool smell many people mistake for too much chlorine.",
+    "h1": "Combined Chlorine Explained",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "combined chlorine explained"
+  },
+  {
+    "url": "/academy/sanitizers/liquid-chlorine-vs-tablets",
+    "title": "Liquid Chlorine vs. Tablets",
+    "description": "Compare liquid chlorine (sodium hypochlorite) and chlorine tablets (trichlor/dichlor) to decide which is right for your pool.",
+    "h1": "Liquid Chlorine vs. Tablets",
+    "category": "Academy",
+    "readingTime": "6 min read",
+    "updated": "2026-06-01",
+    "keywords": "liquid chlorine tablets"
+  },
+  {
+    "url": "/academy/sanitizers/shock-treatments-explained",
+    "title": "Shock Treatments Explained",
+    "description": "Learn what pool shock is, when to shock your pool, which shock product to use, and how to do it correctly.",
+    "h1": "Shock Treatments Explained",
+    "category": "Academy",
+    "readingTime": "6 min read",
+    "updated": "2026-06-01",
+    "keywords": "shock treatments explained"
+  },
+  {
+    "url": "/academy/sanitizers/understanding-free-chlorine",
+    "title": "Understanding Free Chlorine",
+    "description": "Learn what free chlorine is, how it kills pathogens, why pH controls its effectiveness, and how to maintain the right level in your pool.",
+    "h1": "Understanding Free Chlorine",
+    "category": "Academy",
+    "readingTime": "6 min read",
+    "updated": "2026-06-01",
+    "keywords": "understanding free chlorine"
   },
   {
     "url": "/academy/testing",
@@ -320,6 +560,66 @@
     "keywords": "testing"
   },
   {
+    "url": "/academy/testing/common-testing-mistakes",
+    "title": "Common Pool Water Testing Mistakes",
+    "description": "Avoid the most common pool water testing errors that lead to incorrect results, unnecessary chemical additions, and ongoing chemistry problems.",
+    "h1": "Common Pool Water Testing Mistakes",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "common pool water testing mistakes"
+  },
+  {
+    "url": "/academy/testing/digital-pool-testers",
+    "title": "Digital Pool Testers",
+    "description": "Learn about digital pool testing devices, including photometers and ORP/pH probes, their accuracy, maintenance requirements, and which are worth buying.",
+    "h1": "Digital Pool Testers",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "digital pool testers"
+  },
+  {
+    "url": "/academy/testing/how-often-to-test-water",
+    "title": "How Often to Test Pool Water",
+    "description": "Learn the recommended pool water testing frequency for pools and hot tubs, and which parameters need to be tested daily, weekly, or monthly.",
+    "h1": "How Often to Test Pool Water",
+    "category": "Academy",
+    "readingTime": "4 min read",
+    "updated": "2026-06-01",
+    "keywords": "how often test pool water"
+  },
+  {
+    "url": "/academy/testing/understanding-test-results",
+    "title": "Understanding Test Results",
+    "description": "Learn how to interpret pool water test results, prioritise which parameters to address first, and decide when results require immediate action.",
+    "h1": "Understanding Test Results",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "understanding test results"
+  },
+  {
+    "url": "/academy/testing/using-liquid-test-kits",
+    "title": "Using Liquid Test Kits",
+    "description": "Learn how to use a liquid drop test kit for pool water, the difference between DPD and OTO tests, and how to get accurate results.",
+    "h1": "Using Liquid Test Kits",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "using liquid test kits"
+  },
+  {
+    "url": "/academy/testing/using-test-strips",
+    "title": "Using Test Strips",
+    "description": "Learn how to use pool test strips correctly, what each pad measures, and how to read results accurately to avoid common errors.",
+    "h1": "Using Test Strips",
+    "category": "Academy",
+    "readingTime": "4 min read",
+    "updated": "2026-06-01",
+    "keywords": "using test strips"
+  },
+  {
     "url": "/academy/troubleshooting",
     "title": "Troubleshooting",
     "description": "Diagnosing and fixing cloudy water, algae, staining, and more.",
@@ -328,6 +628,66 @@
     "readingTime": null,
     "updated": null,
     "keywords": "troubleshooting"
+  },
+  {
+    "url": "/academy/troubleshooting/cloudy-water",
+    "title": "Cloudy Pool Water: Causes and Solutions",
+    "description": "Learn the four main causes of cloudy pool water and the step-by-step process to diagnose and clear it correctly.",
+    "h1": "Cloudy Pool Water: Causes and Solutions",
+    "category": "Academy",
+    "readingTime": "6 min read",
+    "updated": "2026-06-01",
+    "keywords": "cloudy pool water causes and solutions"
+  },
+  {
+    "url": "/academy/troubleshooting/corrosion",
+    "title": "Pool Corrosion: Causes and Prevention",
+    "description": "Learn what causes corrosion in pools and hot tubs, how to identify it, and how to stop it by correcting water chemistry.",
+    "h1": "Pool Corrosion: Causes and Prevention",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool corrosion causes and prevention"
+  },
+  {
+    "url": "/academy/troubleshooting/foaming-hot-tubs",
+    "title": "Foaming Hot Tubs: Causes and Solutions",
+    "description": "Learn what causes hot tub foam, how to identify whether it is from chemistry or organics, and how to eliminate it permanently.",
+    "h1": "Foaming Hot Tubs: Causes and Solutions",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "foaming hot tubs causes and solutions"
+  },
+  {
+    "url": "/academy/troubleshooting/green-water",
+    "title": "Green Pool Water: How to Fix It",
+    "description": "Learn what causes green pool water, how to tell different types of algae apart, and the step-by-step protocol to restore clear, safe water.",
+    "h1": "Green Pool Water: How to Fix It",
+    "category": "Academy",
+    "readingTime": "7 min read",
+    "updated": "2026-06-01",
+    "keywords": "green pool water how fix"
+  },
+  {
+    "url": "/academy/troubleshooting/scaling",
+    "title": "Pool Scaling: Causes and Prevention",
+    "description": "Learn what causes calcium scale deposits in pools and hot tubs, where scaling typically appears, and how to prevent and remove it.",
+    "h1": "Pool Scaling: Causes and Prevention",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool scaling causes and prevention"
+  },
+  {
+    "url": "/academy/troubleshooting/strong-chlorine-smell",
+    "title": "Strong Chlorine Smell: What It Really Means",
+    "description": "Understand why a strong chlorine smell in a pool or hot tub indicates combined chlorine (chloramines), not excess free chlorine, and how to fix it.",
+    "h1": "Strong Chlorine Smell: What It Really Means",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "strong chlorine smell what really means"
   },
   {
     "url": "/academy/vacation-rentals",
@@ -340,6 +700,66 @@
     "keywords": "vacation rentals"
   },
   {
+    "url": "/academy/vacation-rentals/chemical-log-sheets",
+    "title": "Chemical Log Sheets for Vacation Rentals",
+    "description": "Learn what a pool chemical log should record, why documentation protects vacation rental owners, and how to set up an effective logging system.",
+    "h1": "Chemical Log Sheets for Vacation Rentals",
+    "category": "Academy",
+    "readingTime": "4 min read",
+    "updated": "2026-06-01",
+    "keywords": "chemical log sheets for vacation rentals"
+  },
+  {
+    "url": "/academy/vacation-rentals/emergency-water-recovery",
+    "title": "Emergency Water Recovery for Vacation Rentals",
+    "description": "Learn the step-by-step emergency protocol for recovering a pool or hot tub that has gone critically out of range between guest stays.",
+    "h1": "Emergency Water Recovery for Vacation Rentals",
+    "category": "Academy",
+    "readingTime": "6 min read",
+    "updated": "2026-06-01",
+    "keywords": "emergency water recovery for vacation rentals"
+  },
+  {
+    "url": "/academy/vacation-rentals/guest-safety",
+    "title": "Pool Guest Safety for Vacation Rentals",
+    "description": "Learn the safety requirements, equipment, signage, and communication steps that protect vacation rental guests and limit owner liability.",
+    "h1": "Pool Guest Safety for Vacation Rentals",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool guest safety for vacation rentals"
+  },
+  {
+    "url": "/academy/vacation-rentals/maintenance-schedule",
+    "title": "Pool Maintenance Schedule for Vacation Rentals",
+    "description": "Build a structured maintenance schedule for a vacation rental pool or hot tub that accounts for variable guest occupancy and seasonal chemistry changes.",
+    "h1": "Pool Maintenance Schedule for Vacation Rentals",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool maintenance schedule for vacation rentals"
+  },
+  {
+    "url": "/academy/vacation-rentals/turnover-checklist",
+    "title": "Pool Turnover Checklist for Vacation Rentals",
+    "description": "A step-by-step turnover checklist for Airbnb and vacation rental pool and hot tub management between guest stays.",
+    "h1": "Pool Turnover Checklist for Vacation Rentals",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool turnover checklist for vacation rentals"
+  },
+  {
+    "url": "/academy/vacation-rentals/weekly-inspection",
+    "title": "Weekly Pool Inspection for Vacation Rentals",
+    "description": "Learn the comprehensive weekly inspection protocol for vacation rental pools that catches chemistry, equipment, and safety problems before guests experience them.",
+    "h1": "Weekly Pool Inspection for Vacation Rentals",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "weekly pool inspection for vacation rentals"
+  },
+  {
     "url": "/academy/water-balance",
     "title": "Water Balance",
     "description": "Balancing pH, alkalinity, hardness, and stabilizer for clear water.",
@@ -348,6 +768,66 @@
     "readingTime": null,
     "updated": null,
     "keywords": "water balance"
+  },
+  {
+    "url": "/academy/water-balance/understanding-calcium-hardness",
+    "title": "Understanding Calcium Hardness",
+    "description": "Learn what calcium hardness is, why it matters for pool surfaces and equipment, and how to adjust it correctly.",
+    "h1": "Understanding Calcium Hardness",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "understanding calcium hardness"
+  },
+  {
+    "url": "/academy/water-balance/understanding-cyanuric-acid",
+    "title": "Understanding Cyanuric Acid",
+    "description": "Learn what cyanuric acid (CYA) does in pool water, the ideal CYA range, and how to manage buildup over time.",
+    "h1": "Understanding Cyanuric Acid",
+    "category": "Academy",
+    "readingTime": "6 min read",
+    "updated": "2026-06-01",
+    "keywords": "understanding cyanuric acid"
+  },
+  {
+    "url": "/academy/water-balance/understanding-lsi",
+    "title": "Understanding the Langelier Saturation Index",
+    "description": "Learn how the Langelier Saturation Index (LSI) measures water balance and why it is the most complete indicator of whether pool water is corrosive or scaling.",
+    "h1": "Understanding the Langelier Saturation Index",
+    "category": "Academy",
+    "readingTime": "6 min read",
+    "updated": "2026-06-01",
+    "keywords": "understanding the langelier saturation index"
+  },
+  {
+    "url": "/academy/water-balance/understanding-ph",
+    "title": "Understanding pH in Pool Water",
+    "description": "Learn what pH measures, why pool water pH must be between 7.2 and 7.6, and how to raise or lower it correctly.",
+    "h1": "Understanding pH in Pool Water",
+    "category": "Academy",
+    "readingTime": "6 min read",
+    "updated": "2026-06-01",
+    "keywords": "understanding pool water"
+  },
+  {
+    "url": "/academy/water-balance/understanding-total-alkalinity",
+    "title": "Understanding Total Alkalinity",
+    "description": "Learn what total alkalinity is, why it acts as a pH buffer, and how to raise or lower alkalinity in your pool.",
+    "h1": "Understanding Total Alkalinity",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "understanding total alkalinity"
+  },
+  {
+    "url": "/academy/water-balance/water-balance-order",
+    "title": "Water Balance Order: The Correct Sequence",
+    "description": "Learn the correct order for adjusting pool water chemistry parameters, and why adding chemicals in the wrong sequence creates more problems than it solves.",
+    "h1": "Water Balance Order: The Correct Sequence",
+    "category": "Academy",
+    "readingTime": "5 min read",
+    "updated": "2026-06-01",
+    "keywords": "water balance order the correct sequence"
   },
   {
     "url": "/formulas",
@@ -360,6 +840,96 @@
     "keywords": "pool chemistry formula library"
   },
   {
+    "url": "/formulas/alkalinity-formula",
+    "title": "Total Alkalinity Adjustment Formula",
+    "description": "undefined",
+    "h1": "Total Alkalinity Adjustment Formula",
+    "category": "Formula Library",
+    "readingTime": "3 min read",
+    "updated": "2026-06-01",
+    "keywords": "total alkalinity adjustment formula"
+  },
+  {
+    "url": "/formulas/cya-formula",
+    "title": "CYA (Cyanuric Acid) Dose Formula",
+    "description": "undefined",
+    "h1": "CYA (Cyanuric Acid) Dose Formula",
+    "category": "Formula Library",
+    "readingTime": "3 min read",
+    "updated": "2026-06-01",
+    "keywords": "cya cyanuric acid dose formula"
+  },
+  {
+    "url": "/formulas/liquid-chlorine-formula",
+    "title": "Liquid Chlorine Dose Formula",
+    "description": "undefined",
+    "h1": "Liquid Chlorine Dose Formula",
+    "category": "Formula Library",
+    "readingTime": "3 min read",
+    "updated": "2026-06-01",
+    "keywords": "liquid chlorine dose formula"
+  },
+  {
+    "url": "/formulas/lsi-formula",
+    "title": "Langelier Saturation Index (LSI) Formula",
+    "description": "undefined",
+    "h1": "Langelier Saturation Index (LSI) Formula",
+    "category": "Formula Library",
+    "readingTime": "4 min read",
+    "updated": "2026-06-01",
+    "keywords": "langelier saturation index lsi formula"
+  },
+  {
+    "url": "/formulas/ph-adjustment-formula",
+    "title": "pH Adjustment Formula",
+    "description": "undefined",
+    "h1": "pH Adjustment Formula",
+    "category": "Formula Library",
+    "readingTime": "3 min read",
+    "updated": "2026-06-01",
+    "keywords": "adjustment formula"
+  },
+  {
+    "url": "/formulas/pool-volume-formula",
+    "title": "Pool Volume Formula",
+    "description": "undefined",
+    "h1": "Pool Volume Formula",
+    "category": "Formula Library",
+    "readingTime": "3 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool volume formula"
+  },
+  {
+    "url": "/formulas/salt-formula",
+    "title": "Salt Pool Formula",
+    "description": "undefined",
+    "h1": "Salt Pool Formula",
+    "category": "Formula Library",
+    "readingTime": "3 min read",
+    "updated": "2026-06-01",
+    "keywords": "salt pool formula"
+  },
+  {
+    "url": "/formulas/shock-formula",
+    "title": "Pool Shock Formula",
+    "description": "undefined",
+    "h1": "Pool Shock Formula",
+    "category": "Formula Library",
+    "readingTime": "3 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool shock formula"
+  },
+  {
+    "url": "/formulas/turnover-formula",
+    "title": "Pool Turnover Rate Formula",
+    "description": "undefined",
+    "h1": "Pool Turnover Rate Formula",
+    "category": "Formula Library",
+    "readingTime": "3 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool turnover rate formula"
+  },
+  {
     "url": "/glossary",
     "title": "Pool Chemistry Glossary",
     "description": "Definitions for pool and hot tub water chemistry terms — free chlorine, pH, total alkalinity, CYA, calcium hardness, LSI, and more.",
@@ -368,6 +938,1006 @@
     "readingTime": null,
     "updated": null,
     "keywords": "pool chemistry glossary hot tub water"
+  },
+  {
+    "url": "/glossary/aggressive-water",
+    "title": "Aggressive Water: Definition",
+    "description": "Aggressive (corrosive) water has an LSI below -0. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Aggressive Water",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "aggressive water definition"
+  },
+  {
+    "url": "/glossary/algae-bloom",
+    "title": "Algae Bloom: Definition",
+    "description": "An algae bloom is the rapid, visible multiplication of algae in pool water, resulting in green, cloudy, or discolored water. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Algae Bloom",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "algae bloom definition"
+  },
+  {
+    "url": "/glossary/algaecide",
+    "title": "Algaecide: Definition",
+    "description": "An algaecide is a chemical product that prevents algae growth or assists in killing established algae in pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Algaecide",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "algaecide definition"
+  },
+  {
+    "url": "/glossary/ammonia",
+    "title": "Ammonia (Pool Water): Definition",
+    "description": "Ammonia in pool water is the primary nitrogen source for chloramine formation, introduced by bather waste including sweat and urine. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Ammonia (Pool Water)",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "ammonia pool water definition"
+  },
+  {
+    "url": "/glossary/backwashing",
+    "title": "Backwashing: Definition",
+    "description": "Backwashing is the process of reversing water flow through a sand or DE filter to flush accumulated debris out of the filter media to waste. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Backwashing",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "backwashing definition"
+  },
+  {
+    "url": "/glossary/bather-load",
+    "title": "Bather Load: Definition",
+    "description": "Bather load refers to the number and duration of swimmers in a pool, which affects chlorine consumption and organic contamination levels. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Bather Load",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "bather load definition"
+  },
+  {
+    "url": "/glossary/bcdmh",
+    "title": "BCDMH: Definition",
+    "description": "BCDMH (1-bromo-3-chloro-5,5-dimethylhydantoin) is the most common active ingredient in bromine tablets for hot tubs and spas. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "BCDMH",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "bcdmh definition"
+  },
+  {
+    "url": "/glossary/bicarbonate-alkalinity",
+    "title": "Bicarbonate Alkalinity: Definition",
+    "description": "Bicarbonate alkalinity is the portion of total alkalinity contributed by bicarbonate ions (HCO3-), which is the dominant form in properly maintained pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Bicarbonate Alkalinity",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "bicarbonate alkalinity definition"
+  },
+  {
+    "url": "/glossary/biofilm",
+    "title": "Biofilm: Definition",
+    "description": "Biofilm is a protective matrix of bacteria and organic material that establishes on pool and spa plumbing surfaces. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Biofilm",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "biofilm definition"
+  },
+  {
+    "url": "/glossary/black-algae",
+    "title": "Black Algae: Definition",
+    "description": "Black algae is a stubborn, deeply rooted algae species that forms black or dark blue-green spots on pool plaster surfaces. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Black Algae",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "black algae definition"
+  },
+  {
+    "url": "/glossary/breakpoint-chlorination",
+    "title": "Breakpoint Chlorination: Definition",
+    "description": "Breakpoint chlorination is the process of adding enough free chlorine to destroy all combined chlorine (chloramines) in pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Breakpoint Chlorination",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "breakpoint chlorination definition"
+  },
+  {
+    "url": "/glossary/breakpoint-dose",
+    "title": "Breakpoint Dose: Definition",
+    "description": "The breakpoint dose is the specific amount of free chlorine that must be added to destroy all combined chlorine in pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Breakpoint Dose",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "breakpoint dose definition"
+  },
+  {
+    "url": "/glossary/bromine",
+    "title": "Bromine: Definition",
+    "description": "Bromine is a halogen sanitiser used in pool and spa water that forms hypobromous acid (HOBr) as its active disinfectant form. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Bromine",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "bromine definition"
+  },
+  {
+    "url": "/glossary/calcium-hardness",
+    "title": "Calcium Hardness: Definition",
+    "description": "Calcium hardness measures the concentration of dissolved calcium ions in pool water, expressed in ppm. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Calcium Hardness",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "calcium hardness definition"
+  },
+  {
+    "url": "/glossary/calcium-hypochlorite",
+    "title": "Calcium Hypochlorite: Definition",
+    "description": "Calcium hypochlorite is a granular chlorine compound used primarily as pool shock, with approximately 65–73% available chlorine. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Calcium Hypochlorite",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "calcium hypochlorite definition"
+  },
+  {
+    "url": "/glossary/carbon-dioxide",
+    "title": "Carbon Dioxide: Definition",
+    "description": "Carbon dioxide (CO2) in pool water forms carbonic acid, which influences pH and contributes to the natural downward pH drift in some systems. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Carbon Dioxide",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "carbon dioxide definition"
+  },
+  {
+    "url": "/glossary/cartridge-filter",
+    "title": "Cartridge Filter: Definition",
+    "description": "A cartridge filter is a pool filter type that uses a pleated polyester element to capture particles as water passes from outside to inside the element. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Cartridge Filter",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "cartridge filter definition"
+  },
+  {
+    "url": "/glossary/chemical-compatibility",
+    "title": "Chemical Compatibility: Definition",
+    "description": "Chemical compatibility refers to the safety of mixing or sequentially adding pool chemicals to water without dangerous reactions. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Chemical Compatibility",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "chemical compatibility definition"
+  },
+  {
+    "url": "/glossary/chemical-log",
+    "title": "Chemical Log: Definition",
+    "description": "A chemical log is a written or digital record of every pool water test result and chemical addition, used for maintenance tracking and liability documentation. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Chemical Log",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "chemical log definition"
+  },
+  {
+    "url": "/glossary/chemical-storage",
+    "title": "Chemical Storage: Definition",
+    "description": "Chemical storage refers to the safe storage of pool and spa chemicals to prevent degradation, accidents, and dangerous reactions. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Chemical Storage",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "chemical storage definition"
+  },
+  {
+    "url": "/glossary/chloramine",
+    "title": "Chloramine: Definition",
+    "description": "Chloramines are compounds formed when free chlorine reacts with nitrogen-containing compounds in pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Chloramine",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "chloramine definition"
+  },
+  {
+    "url": "/glossary/chlorine-demand",
+    "title": "Chlorine Demand: Definition",
+    "description": "Chlorine demand is the total amount of chlorine consumed by all reactions in pool water before a free chlorine residual can be established. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Chlorine Demand",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "chlorine demand definition"
+  },
+  {
+    "url": "/glossary/chlorine-stabilizer",
+    "title": "Chlorine Stabilizer: Definition",
+    "description": "Chlorine stabilizer is another name for cyanuric acid (CYA), used as a synonym especially in product marketing. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Chlorine Stabilizer",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "chlorine stabilizer definition"
+  },
+  {
+    "url": "/glossary/clarifier",
+    "title": "Clarifier: Definition",
+    "description": "A pool clarifier is a coagulant product that causes fine suspended particles to clump together into larger particles that the filter can capture. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Clarifier",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "clarifier definition"
+  },
+  {
+    "url": "/glossary/closing-chemical-kit",
+    "title": "Closing Chemical Kit: Definition",
+    "description": "A pool closing chemical kit contains the chemicals needed to balance and protect pool water during winter dormancy. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Closing Chemical Kit",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "closing chemical kit definition"
+  },
+  {
+    "url": "/glossary/colorimetric-test",
+    "title": "Colorimetric Test: Definition",
+    "description": "A colorimetric test measures water chemistry by observing the colour change of a reagent added to a water sample. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Colorimetric Test",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "colorimetric test definition"
+  },
+  {
+    "url": "/glossary/combined-chlorine",
+    "title": "Combined Chlorine: Definition",
+    "description": "Combined chlorine is the portion of total chlorine that has reacted with nitrogen compounds and is no longer an effective sanitiser. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Combined Chlorine",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "combined chlorine definition"
+  },
+  {
+    "url": "/glossary/conductivity",
+    "title": "Conductivity: Definition",
+    "description": "Conductivity is a measure of water's ability to conduct electricity, which increases with the concentration of dissolved ions. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Conductivity",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "conductivity definition"
+  },
+  {
+    "url": "/glossary/copper",
+    "title": "Copper (Pool Water): Definition",
+    "description": "Copper is a dissolved metal found in some pool water that causes blue-green staining when oxidised. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Copper (Pool Water)",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "copper pool water definition"
+  },
+  {
+    "url": "/glossary/cyanuric-acid",
+    "title": "Cyanuric Acid: Definition",
+    "description": "Cyanuric acid is a stabilizing compound that forms a reversible bond with free chlorine in pool water, protecting it from UV degradation. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Cyanuric Acid",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "cyanuric acid definition"
+  },
+  {
+    "url": "/glossary/de-filter",
+    "title": "DE Filter: Definition",
+    "description": "A DE (diatomaceous earth) filter uses diatomaceous earth powder coated on internal grids to filter pool water to 3–5 micron fineness. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "DE Filter",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "filter definition"
+  },
+  {
+    "url": "/glossary/dead-algae",
+    "title": "Dead Algae: Definition",
+    "description": "Dead algae is killed algae cells that remain suspended or settled in pool water after shock treatment, causing grey or white cloudiness. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Dead Algae",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "dead algae definition"
+  },
+  {
+    "url": "/glossary/dichlor",
+    "title": "Dichlor: Definition",
+    "description": "Dichlor (sodium dichloroisocyanurate) is a fast-dissolving stabilised chlorine product that adds both free chlorine and cyanuric acid to pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Dichlor",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "dichlor definition"
+  },
+  {
+    "url": "/glossary/dilution",
+    "title": "Dilution: Definition",
+    "description": "Dilution refers to the reduction in chemical concentration in pool water caused by adding water (rain, refill, splash-out). Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Dilution",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "dilution definition"
+  },
+  {
+    "url": "/glossary/dpd-test",
+    "title": "DPD Test: Definition",
+    "description": "DPD (N,N-diethyl-p-phenylenediamine) is the standard reagent used in liquid test kits to measure free chlorine and total chlorine. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "DPD Test",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "dpd test definition"
+  },
+  {
+    "url": "/glossary/evaporation",
+    "title": "Evaporation: Definition",
+    "description": "Evaporation is the loss of water from a pool's surface as water molecules escape into the air, which concentrates dissolved chemicals and raises TDS. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Evaporation",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "evaporation definition"
+  },
+  {
+    "url": "/glossary/filter-pressure",
+    "title": "Filter Pressure: Definition",
+    "description": "Filter pressure is the water pressure reading on the filter pressure gauge, measured in psi (pounds per square inch). Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Filter Pressure",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "filter pressure definition"
+  },
+  {
+    "url": "/glossary/flocculant",
+    "title": "Flocculant: Definition",
+    "description": "A pool flocculant is a coagulating agent that causes all suspended particles to clump and sink to the pool floor for vacuuming to waste. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Flocculant",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "flocculant definition"
+  },
+  {
+    "url": "/glossary/free-chlorine",
+    "title": "Free Chlorine: Definition",
+    "description": "Free chlorine is the concentration of active, unsaturated chlorine available in pool water to sanitise and disinfect. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Free Chlorine",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "free chlorine definition"
+  },
+  {
+    "url": "/glossary/gpm",
+    "title": "GPM (Gallons Per Minute): Definition",
+    "description": "GPM is the unit measuring the flow rate of water through a pool pump or other equipment. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "GPM (Gallons Per Minute)",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "gpm gallons per minute definition"
+  },
+  {
+    "url": "/glossary/green-algae",
+    "title": "Green Algae: Definition",
+    "description": "Green algae is the most common pool algae species, causing water to turn green or teal and surfaces to become slippery. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Green Algae",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "green algae definition"
+  },
+  {
+    "url": "/glossary/hypochlorous-acid",
+    "title": "Hypochlorous Acid: Definition",
+    "description": "Hypochlorous acid (HOCl) is the active, bactericidal form of chlorine in pool water, responsible for killing pathogens. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Hypochlorous Acid",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "hypochlorous acid definition"
+  },
+  {
+    "url": "/glossary/iron",
+    "title": "Iron (Pool Water): Definition",
+    "description": "Iron in pool water is a dissolved metal that can cause reddish-brown staining when oxidised by chlorine or shock treatment. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Iron (Pool Water)",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "iron pool water definition"
+  },
+  {
+    "url": "/glossary/langelier-saturation-index",
+    "title": "Langelier Saturation Index: Definition",
+    "description": "The Langelier Saturation Index is a calculated number that predicts whether pool water is in equilibrium with calcium carbonate, tending to corrode, or tending to deposit scale. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Langelier Saturation Index",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "langelier saturation index definition"
+  },
+  {
+    "url": "/glossary/main-drain",
+    "title": "Main Drain: Definition",
+    "description": "The main drain is the fitting at the lowest point of a pool that allows the pool to be completely drained and provides a second suction point for the pump. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Main Drain",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "main drain definition"
+  },
+  {
+    "url": "/glossary/metal-sequestrant",
+    "title": "Metal Sequestrant: Definition",
+    "description": "A metal sequestrant is a pool chemical that binds dissolved metals (iron, copper, manganese) to prevent them from staining pool surfaces. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Metal Sequestrant",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "metal sequestrant definition"
+  },
+  {
+    "url": "/glossary/multiport-valve",
+    "title": "Multiport Valve: Definition",
+    "description": "A multiport valve is the control valve on a sand or DE filter that selects between filter, backwash, rinse, waste, and other operational modes. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Multiport Valve",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "multiport valve definition"
+  },
+  {
+    "url": "/glossary/muriatic-acid",
+    "title": "Muriatic Acid: Definition",
+    "description": "Muriatic acid (dilute hydrochloric acid) is the most commonly used chemical for lowering pool pH and total alkalinity. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Muriatic Acid",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "muriatic acid definition"
+  },
+  {
+    "url": "/glossary/mustard-algae",
+    "title": "Mustard Algae: Definition",
+    "description": "Mustard algae is a yellow-brown pool algae species that brushes off easily but quickly returns, caused by a chlorine-resistant strain. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Mustard Algae",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "mustard algae definition"
+  },
+  {
+    "url": "/glossary/opening-chemical-kit",
+    "title": "Opening Chemical Kit: Definition",
+    "description": "A pool opening chemical kit is a package of chemicals assembled for spring pool opening, typically including shock, algaecide, and stain prevention. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Opening Chemical Kit",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "opening chemical kit definition"
+  },
+  {
+    "url": "/glossary/orp",
+    "title": "ORP (Oxidation-Reduction Potential): Definition",
+    "description": "ORP is the electrical potential of water measured in millivolts that indicates the overall oxidising capacity of the water. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "ORP (Oxidation-Reduction Potential)",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "orp oxidation reduction potential definition"
+  },
+  {
+    "url": "/glossary/oto-test",
+    "title": "OTO Test: Definition",
+    "description": "OTO (orthotolidine) is an older test reagent that measures total chlorine by producing a yellow colour in chlorinated water. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "OTO Test",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "oto test definition"
+  },
+  {
+    "url": "/glossary/oxidizer",
+    "title": "Oxidizer: Definition",
+    "description": "An oxidizer is a chemical that destroys organic contaminants in pool water through oxidation, without necessarily adding sanitiser residual. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Oxidizer",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "oxidizer definition"
+  },
+  {
+    "url": "/glossary/ozone",
+    "title": "Ozone: Definition",
+    "description": "Ozone (O3) is a powerful oxidiser used in pool systems to reduce organic contamination, chlorine demand, and chloramine formation. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Ozone",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "ozone definition"
+  },
+  {
+    "url": "/glossary/partial-drain",
+    "title": "Partial Drain: Definition",
+    "description": "A partial drain is the process of removing a portion of pool water and replacing it with fresh water to dilute accumulated dissolved compounds. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Partial Drain",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "partial drain definition"
+  },
+  {
+    "url": "/glossary/parts-per-million",
+    "title": "Parts Per Million: Definition",
+    "description": "Parts per million (ppm) is the unit used to express the concentration of dissolved substances in pool water, equivalent to milligrams per liter (mg/L). Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Parts Per Million",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "parts per million definition"
+  },
+  {
+    "url": "/glossary/ph",
+    "title": "pH: Definition",
+    "description": "pH measures the concentration of hydrogen ions in water on a logarithmic scale from 0 (most acidic) to 14 (most alkaline), with 7. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "pH",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "definition"
+  },
+  {
+    "url": "/glossary/ph-bounce",
+    "title": "pH Bounce: Definition",
+    "description": "pH bounce is the condition where pool water pH swings rapidly and unpredictably, typically caused by insufficient total alkalinity. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "pH Bounce",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "bounce definition"
+  },
+  {
+    "url": "/glossary/ph-increaser",
+    "title": "pH Increaser: Definition",
+    "description": "pH increaser is a pool product that raises water pH, typically sodium carbonate (soda ash) or sodium bicarbonate. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "pH Increaser",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "increaser definition"
+  },
+  {
+    "url": "/glossary/phosphates",
+    "title": "Phosphates: Definition",
+    "description": "Phosphates are nutrients present in pool water that can promote algae growth when free chlorine is inadequate. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Phosphates",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "phosphates definition"
+  },
+  {
+    "url": "/glossary/pink-slime",
+    "title": "Pink Slime: Definition",
+    "description": "Pink slime is a pink or orange bacterial growth caused by Serratia marcescens or Methylobacterium species, commonly seen in hot tubs and pool fittings. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Pink Slime",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "pink slime definition"
+  },
+  {
+    "url": "/glossary/pool-chemistry-reference",
+    "title": "Pool Chemistry Reference: Definition",
+    "description": "A pool chemistry reference is a compiled table of target ranges, typical values, and adjustment guides for all major pool water parameters. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Pool Chemistry Reference",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "pool chemistry reference definition"
+  },
+  {
+    "url": "/glossary/pool-maintenance-schedule",
+    "title": "Pool Maintenance Schedule: Definition",
+    "description": "A pool maintenance schedule is a written plan covering daily, weekly, monthly, and seasonal maintenance tasks for pool chemistry and equipment. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Pool Maintenance Schedule",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "pool maintenance schedule definition"
+  },
+  {
+    "url": "/glossary/pool-pump",
+    "title": "Pool Pump: Definition",
+    "description": "A pool pump is the mechanical device that circulates water through the filter, heater, and chlorinator, maintaining water movement and filtration. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Pool Pump",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "pool pump definition"
+  },
+  {
+    "url": "/glossary/pool-safety-equipment",
+    "title": "Pool Safety Equipment: Definition",
+    "description": "Pool safety equipment includes the physical devices required to assist in pool emergency response: life ring, reaching pole, first aid kit, and emergency signage. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Pool Safety Equipment",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "pool safety equipment definition"
+  },
+  {
+    "url": "/glossary/pool-shock-schedule",
+    "title": "Pool Shock Schedule: Definition",
+    "description": "A pool shock schedule is the planned frequency and timing of pool shock treatments throughout the swimming season. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Pool Shock Schedule",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "pool shock schedule definition"
+  },
+  {
+    "url": "/glossary/pool-turnover-rate",
+    "title": "Pool Turnover Rate: Definition",
+    "description": "Pool turnover rate is the time required for the pool pump to circulate the entire pool volume through the filtration system once. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Pool Turnover Rate",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "pool turnover rate definition"
+  },
+  {
+    "url": "/glossary/pool-volume",
+    "title": "Pool Volume: Definition",
+    "description": "Pool volume is the total capacity of a pool in gallons, used as the basis for all chemical dose calculations. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Pool Volume",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "pool volume definition"
+  },
+  {
+    "url": "/glossary/pool-volume-reference",
+    "title": "Pool Volume Reference: Definition",
+    "description": "A pool volume reference is a pre-calculated table of approximate volumes for common pool dimensions, used for quick dose estimation. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Pool Volume Reference",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "pool volume reference definition"
+  },
+  {
+    "url": "/glossary/pressure-gauge",
+    "title": "Pressure Gauge: Definition",
+    "description": "A pressure gauge on the pool filter measures water pressure inside the filter housing in psi, indicating filter cleanliness and flow resistance. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Pressure Gauge",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "pressure gauge definition"
+  },
+  {
+    "url": "/glossary/pump-turnover",
+    "title": "Pump Turnover: Definition",
+    "description": "Pump turnover is the number of times the entire pool volume passes through the filter in a 24-hour period. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Pump Turnover",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "pump turnover definition"
+  },
+  {
+    "url": "/glossary/reagent",
+    "title": "Reagent: Definition",
+    "description": "A reagent is a chemical used in a water test kit that reacts with the parameter being measured to produce a measurable colour change. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Reagent",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "reagent definition"
+  },
+  {
+    "url": "/glossary/return-jet",
+    "title": "Return Jet: Definition",
+    "description": "Return jets are the fittings in a pool wall through which filtered and treated water is returned to the pool. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Return Jet",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "return jet definition"
+  },
+  {
+    "url": "/glossary/salt-chlorination",
+    "title": "Salt Chlorination: Definition",
+    "description": "Salt chlorination (salt water generation) is a system that produces free chlorine continuously by electrolyzing dissolved sodium chloride in pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Salt Chlorination",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "salt chlorination definition"
+  },
+  {
+    "url": "/glossary/sand-filter",
+    "title": "Sand Filter: Definition",
+    "description": "A sand filter is a pool filter type that passes water through a bed of specially graded silica sand to capture particles. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Sand Filter",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "sand filter definition"
+  },
+  {
+    "url": "/glossary/sanitizer",
+    "title": "Sanitizer: Definition",
+    "description": "A sanitizer is a chemical agent that reduces microbial contamination in pool water to safe levels for human contact. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Sanitizer",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "sanitizer definition"
+  },
+  {
+    "url": "/glossary/saturated-ph",
+    "title": "Saturated pH: Definition",
+    "description": "Saturated pH (pHs) is the theoretical pH at which pool water would be exactly in equilibrium with calcium carbonate, used in LSI calculation. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Saturated pH",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "saturated definition"
+  },
+  {
+    "url": "/glossary/saturation-index",
+    "title": "Saturation Index: Definition",
+    "description": "A saturation index is a calculated value predicting whether pool water will dissolve minerals (negative index) or deposit them as scale (positive index). Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Saturation Index",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "saturation index definition"
+  },
+  {
+    "url": "/glossary/scale-inhibitor",
+    "title": "Scale Inhibitor: Definition",
+    "description": "A scale inhibitor is a pool product that prevents calcium carbonate from precipitating onto pool surfaces, tile, and equipment. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Scale Inhibitor",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "scale inhibitor definition"
+  },
+  {
+    "url": "/glossary/scaling-water",
+    "title": "Scaling Water: Definition",
+    "description": "Scaling water has an LSI above +0. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Scaling Water",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "scaling water definition"
+  },
+  {
+    "url": "/glossary/shock",
+    "title": "Shock: Definition",
+    "description": "Shock is the practice of adding a large dose of chlorine or oxidizer to pool water to reach breakpoint chlorination, kill algae, or reset water clarity. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Shock",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "shock definition"
+  },
+  {
+    "url": "/glossary/shock-dosage",
+    "title": "Shock Dosage: Definition",
+    "description": "Shock dosage refers to the amount of shock product required to raise free chlorine to the target level for the pool volume and treatment goal. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Shock Dosage",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "shock dosage definition"
+  },
+  {
+    "url": "/glossary/skimmer",
+    "title": "Skimmer: Definition",
+    "description": "A skimmer is a pool fitting built into the pool wall at the water surface that draws in surface water and floating debris for filtration. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Skimmer",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "skimmer definition"
+  },
+  {
+    "url": "/glossary/sodium-bicarbonate",
+    "title": "Sodium Bicarbonate: Definition",
+    "description": "Sodium bicarbonate (baking soda) is the standard chemical for raising total alkalinity in pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Sodium Bicarbonate",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "sodium bicarbonate definition"
+  },
+  {
+    "url": "/glossary/sodium-bisulfate",
+    "title": "Sodium Bisulfate: Definition",
+    "description": "Sodium bisulfate (dry acid) is a granular acid used to lower pool pH and total alkalinity as a safer alternative to liquid muriatic acid. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Sodium Bisulfate",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "sodium bisulfate definition"
+  },
+  {
+    "url": "/glossary/sodium-carbonate",
+    "title": "Sodium Carbonate: Definition",
+    "description": "Sodium carbonate (soda ash) is used to raise pool water pH with minimal effect on total alkalinity. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Sodium Carbonate",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "sodium carbonate definition"
+  },
+  {
+    "url": "/glossary/sodium-hypochlorite",
+    "title": "Sodium Hypochlorite: Definition",
+    "description": "Sodium hypochlorite is liquid chlorine — a solution of sodium and hypochlorite ions used to sanitise and shock pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Sodium Hypochlorite",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "sodium hypochlorite definition"
+  },
+  {
+    "url": "/glossary/superchlorination",
+    "title": "Superchlorination: Definition",
+    "description": "Superchlorination is the practice of raising free chlorine to 10 ppm or higher to destroy chloramines, kill algae, or clear severely compromised water. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Superchlorination",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "superchlorination definition"
+  },
+  {
+    "url": "/glossary/test-strip",
+    "title": "Test Strip: Definition",
+    "description": "A test strip is a plastic strip with reagent-impregnated pads that produce colour changes when dipped in pool water, indicating chemical concentrations. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Test Strip",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "test strip definition"
+  },
+  {
+    "url": "/glossary/total-alkalinity",
+    "title": "Total Alkalinity: Definition",
+    "description": "Total alkalinity measures the water's ability to resist changes in pH, expressed as the total concentration of alkaline compounds (bicarbonate, carbonate, hydroxide) in ppm. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Total Alkalinity",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "total alkalinity definition"
+  },
+  {
+    "url": "/glossary/total-chlorine",
+    "title": "Total Chlorine: Definition",
+    "description": "Total chlorine is the sum of free chlorine and combined chlorine in pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Total Chlorine",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "total chlorine definition"
+  },
+  {
+    "url": "/glossary/total-dissolved-solids",
+    "title": "Total Dissolved Solids: Definition",
+    "description": "Total dissolved solids measures the total concentration of all dissolved substances in pool water, expressed in ppm. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Total Dissolved Solids",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "total dissolved solids definition"
+  },
+  {
+    "url": "/glossary/total-hardness",
+    "title": "Total Hardness: Definition",
+    "description": "Total hardness measures all divalent mineral ions in water (calcium and magnesium), while pool chemistry specifically uses only calcium hardness. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Total Hardness",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "total hardness definition"
+  },
+  {
+    "url": "/glossary/trichlor",
+    "title": "Trichlor: Definition",
+    "description": "Trichlor (trichloroisocyanuric acid) is a slow-dissolving stabilised chlorine tablet that delivers free chlorine and cyanuric acid simultaneously. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Trichlor",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "trichlor definition"
+  },
+  {
+    "url": "/glossary/turbidity",
+    "title": "Turbidity: Definition",
+    "description": "Turbidity is the cloudiness or haziness of pool water caused by suspended fine particles that scatter light. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Turbidity",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "turbidity definition"
+  },
+  {
+    "url": "/glossary/uv-sanitization",
+    "title": "UV Sanitization: Definition",
+    "description": "UV sanitization uses ultraviolet light to inactivate microorganisms in pool water as it passes through a UV chamber in the equipment line. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "UV Sanitization",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "sanitization definition"
+  },
+  {
+    "url": "/glossary/water-balance-checklist",
+    "title": "Water Balance Checklist: Definition",
+    "description": "A water balance checklist is a sequential list of tests and adjustments that ensures all pool chemistry parameters are brought into range in the correct order. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Water Balance Checklist",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "water balance checklist definition"
+  },
+  {
+    "url": "/glossary/water-temperature",
+    "title": "Water Temperature: Definition",
+    "description": "Water temperature affects chlorine demand, chemical reaction rates, calcium solubility, and the Langelier Saturation Index. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Water Temperature",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "water temperature definition"
+  },
+  {
+    "url": "/glossary/water-test-log",
+    "title": "Water Test Log: Definition",
+    "description": "A water test log is a record sheet for documenting pool or hot tub water test results over time. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Water Test Log",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "water test log definition"
+  },
+  {
+    "url": "/glossary/winterization",
+    "title": "Winterization: Definition",
+    "description": "Winterization is the process of preparing a pool or hot tub for winter shutdown, including draining, blowing out plumbing lines, and protecting equipment from freeze damage. Plain-language definition with target values and related pool chemistry resources.",
+    "h1": "Winterization",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": "2026-06-01",
+    "keywords": "winterization definition"
   },
   {
     "url": "/reference",
@@ -380,6 +1950,16 @@
     "keywords": "pool chemistry reference"
   },
   {
+    "url": "/reference/alkalinity-table",
+    "title": "Pool Alkalinity Adjustment Table",
+    "description": "Reference table for how much sodium bicarbonate to add to raise total alkalinity and how much acid to add to lower it.",
+    "h1": "Pool Alkalinity Adjustment Table",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool alkalinity adjustment table"
+  },
+  {
     "url": "/reference/calcium-hardness-explained",
     "title": "Calcium Hardness in Pools Explained",
     "description": "Calcium hardness in pools explained: ideal range 200–400 ppm, what low and high calcium does to surfaces and water, and how to adjust it safely.",
@@ -388,6 +1968,66 @@
     "readingTime": null,
     "updated": null,
     "keywords": "calcium hardness pools explained"
+  },
+  {
+    "url": "/reference/calculator-directory",
+    "title": "Pool & Spa Calculator Directory",
+    "description": "Complete directory of all pool and spa calculators on WaterBalanceTools, organized by category.",
+    "h1": "Pool & Spa Calculator Directory",
+    "category": "Reference",
+    "readingTime": "1 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool spa calculator directory"
+  },
+  {
+    "url": "/reference/chemical-compatibility",
+    "title": "Pool Chemical Compatibility Guide",
+    "description": "Reference guide for which pool chemicals are compatible and which combinations must never be mixed.",
+    "h1": "Pool Chemical Compatibility Guide",
+    "category": "Reference",
+    "readingTime": "3 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool chemical compatibility guide"
+  },
+  {
+    "url": "/reference/chemical-conversion-tables",
+    "title": "Pool Chemical Conversion Tables",
+    "description": "Conversion tables for common pool chemistry measurements including ounces to grams, gallons to liters, and ppm conversions.",
+    "h1": "Pool Chemical Conversion Tables",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool chemical conversion tables"
+  },
+  {
+    "url": "/reference/chemical-safety",
+    "title": "Pool Chemical Safety Guide",
+    "description": "Essential safety guidelines for handling, adding, and storing pool chemicals — including what to do in case of exposure.",
+    "h1": "Pool Chemical Safety Guide",
+    "category": "Reference",
+    "readingTime": "3 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool chemical safety guide"
+  },
+  {
+    "url": "/reference/chemical-storage-guide",
+    "title": "Pool Chemical Storage Guide",
+    "description": "Safe storage requirements for pool and spa chemicals, including temperature limits, separation rules, and container requirements.",
+    "h1": "Pool Chemical Storage Guide",
+    "category": "Reference",
+    "readingTime": "3 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool chemical storage guide"
+  },
+  {
+    "url": "/reference/chlorine-effectiveness-chart",
+    "title": "Chlorine Effectiveness vs. pH",
+    "description": "Reference chart showing the percentage of free chlorine in its active form (hypochlorous acid) at different pH levels.",
+    "h1": "Chlorine Effectiveness vs. pH",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "chlorine effectiveness"
   },
   {
     "url": "/reference/chlorine-explained",
@@ -420,6 +2060,16 @@
     "keywords": "common pool chemistry mistakes"
   },
   {
+    "url": "/reference/cya-matrix",
+    "title": "CYA Level and Minimum Free Chlorine Matrix",
+    "description": "Reference table showing the minimum free chlorine required at each CYA level to maintain effective sanitisation.",
+    "h1": "CYA Level and Minimum Free Chlorine Matrix",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "cya level and minimum free chlorine matrix"
+  },
+  {
     "url": "/reference/cyanuric-acid-explained",
     "title": "Cyanuric Acid (CYA / Stabilizer) Explained",
     "description": "Cyanuric acid (CYA) explained: how pool stabilizer protects chlorine from UV, ideal range 30–50 ppm, what chlorine lock is, and how to lower CYA.",
@@ -430,6 +2080,26 @@
     "keywords": "cyanuric acid cya stabilizer explained"
   },
   {
+    "url": "/reference/emergency-recovery",
+    "title": "Emergency Pool Recovery Protocol",
+    "description": "Step-by-step emergency recovery protocol for pools and hot tubs discovered with severely compromised water chemistry.",
+    "h1": "Emergency Pool Recovery Protocol",
+    "category": "Reference",
+    "readingTime": "3 min read",
+    "updated": "2026-06-01",
+    "keywords": "emergency pool recovery protocol"
+  },
+  {
+    "url": "/reference/filter-comparison",
+    "title": "Pool Filter Type Comparison",
+    "description": "Side-by-side comparison of sand, cartridge, and DE pool filters across filtration quality, maintenance, cost, and best use cases.",
+    "h1": "Pool Filter Type Comparison",
+    "category": "Reference",
+    "readingTime": "3 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool filter type comparison"
+  },
+  {
     "url": "/reference/free-chlorine-explained",
     "title": "Free Chlorine Explained",
     "description": "Free chlorine explained: what it is, why it's the only active sanitizer, how pH affects it, target range 1–3 ppm, and how to test and maintain it.",
@@ -438,6 +2108,46 @@
     "readingTime": null,
     "updated": null,
     "keywords": "free chlorine explained"
+  },
+  {
+    "url": "/reference/ideal-pool-levels",
+    "title": "Ideal Pool Chemical Levels",
+    "description": "Complete reference table for target ranges of all pool water chemistry parameters — chlorine, pH, alkalinity, hardness, CYA, salt, and ORP.",
+    "h1": "Ideal Pool Chemical Levels",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "ideal pool chemical levels"
+  },
+  {
+    "url": "/reference/ideal-spa-levels",
+    "title": "Ideal Spa & Hot Tub Chemical Levels",
+    "description": "Target ranges for all hot tub and spa water chemistry parameters — chlorine, bromine, pH, alkalinity, hardness, and TDS.",
+    "h1": "Ideal Spa & Hot Tub Chemical Levels",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "ideal spa hot tub chemical levels"
+  },
+  {
+    "url": "/reference/ph-table",
+    "title": "Pool pH Adjustment Reference Table",
+    "description": "Reference table for how much muriatic acid or soda ash to add to adjust pool pH by common increments.",
+    "h1": "Pool pH Adjustment Reference Table",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool adjustment reference table"
+  },
+  {
+    "url": "/reference/pool-chemical-timeline",
+    "title": "Pool Chemical Timeline",
+    "description": "Reference guide for how long to wait between chemical additions and before retesting or allowing swimming.",
+    "h1": "Pool Chemical Timeline",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool chemical timeline"
   },
   {
     "url": "/reference/pool-chemicals-explained",
@@ -460,6 +2170,66 @@
     "keywords": "pool chemistry reference guide"
   },
   {
+    "url": "/reference/pool-shape-guide",
+    "title": "Pool Shape & Volume Calculation Guide",
+    "description": "How to calculate pool volume for different pool shapes: rectangular, L-shaped, oval, kidney, and freeform.",
+    "h1": "Pool Shape & Volume Calculation Guide",
+    "category": "Reference",
+    "readingTime": "3 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool shape volume calculation guide"
+  },
+  {
+    "url": "/reference/pool-volume-reference",
+    "title": "Pool Volume Quick Reference",
+    "description": "Pre-calculated pool volumes for common rectangular, oval, and round pool dimensions.",
+    "h1": "Pool Volume Quick Reference",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool volume quick reference"
+  },
+  {
+    "url": "/reference/printable-resources-index",
+    "title": "Printable Pool Resources Index",
+    "description": "Index of all free printable pool and spa maintenance resources available for download on WaterBalanceTools.",
+    "h1": "Printable Pool Resources Index",
+    "category": "Reference",
+    "readingTime": "1 min read",
+    "updated": "2026-06-01",
+    "keywords": "printable pool resources index"
+  },
+  {
+    "url": "/reference/pump-sizing",
+    "title": "Pool Pump Sizing Guide",
+    "description": "Reference guide for calculating the required GPM and selecting the correct pump size for any pool volume and turnover target.",
+    "h1": "Pool Pump Sizing Guide",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool pump sizing guide"
+  },
+  {
+    "url": "/reference/recommended-water-temperature",
+    "title": "Recommended Pool & Spa Water Temperature",
+    "description": "Recommended temperature ranges for pools, hot tubs, and therapy spas, with safety guidelines and the effect of temperature on water chemistry.",
+    "h1": "Recommended Pool & Spa Water Temperature",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "recommended pool spa water temperature"
+  },
+  {
+    "url": "/reference/salt-matrix",
+    "title": "Salt Pool Level Reference Matrix",
+    "description": "Reference table for how many pounds of pool salt are needed to raise salt level by any increment for common pool volumes.",
+    "h1": "Salt Pool Level Reference Matrix",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "salt pool level reference matrix"
+  },
+  {
     "url": "/reference/salt-water-generator-explained",
     "title": "Salt Water Generator (SWG) Explained",
     "description": "Salt water generator explained: how electrolytic chlorine generation works, salt levels 2700–3400 ppm, chemistry management, pros and cons vs traditional chlorine.",
@@ -468,6 +2238,16 @@
     "readingTime": null,
     "updated": null,
     "keywords": "salt water generator swg explained"
+  },
+  {
+    "url": "/reference/shock-dosage-matrix",
+    "title": "Shock Dosage Matrix",
+    "description": "Reference matrix for pool shock dosage by pool volume and treatment goal — maintenance, breakpoint, and algae recovery.",
+    "h1": "Shock Dosage Matrix",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "shock dosage matrix"
   },
   {
     "url": "/reference/shock-treatment-explained",
@@ -480,6 +2260,16 @@
     "keywords": "pool shock treatment explained"
   },
   {
+    "url": "/reference/testing-frequency",
+    "title": "Pool & Spa Testing Frequency Guide",
+    "description": "Reference guide for how often to test each pool and spa water chemistry parameter.",
+    "h1": "Pool & Spa Testing Frequency Guide",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool spa testing frequency guide"
+  },
+  {
     "url": "/reference/total-alkalinity-explained",
     "title": "Total Alkalinity Explained",
     "description": "Total alkalinity explained: how it buffers pH, ideal range 80–120 ppm, symptoms of low and high TA, and how to raise or lower it correctly.",
@@ -488,6 +2278,36 @@
     "readingTime": null,
     "updated": null,
     "keywords": "total alkalinity explained"
+  },
+  {
+    "url": "/reference/vacation-rental-maintenance-schedule",
+    "title": "Vacation Rental Pool Maintenance Schedule",
+    "description": "Complete maintenance schedule for vacation rental pool and hot tub management, covering daily, turnover, weekly, and monthly tasks.",
+    "h1": "Vacation Rental Pool Maintenance Schedule",
+    "category": "Reference",
+    "readingTime": "3 min read",
+    "updated": "2026-06-01",
+    "keywords": "vacation rental pool maintenance schedule"
+  },
+  {
+    "url": "/reference/water-balance-checklist",
+    "title": "Complete Water Balance Checklist",
+    "description": "Step-by-step checklist for balancing pool or hot tub water chemistry from scratch or after a significant chemistry event.",
+    "h1": "Complete Water Balance Checklist",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "complete water balance checklist"
+  },
+  {
+    "url": "/reference/water-replacement-guidelines",
+    "title": "Pool Water Replacement Guidelines",
+    "description": "Reference guide for when to replace pool or hot tub water, including CYA, TDS, hardness, and other trigger conditions.",
+    "h1": "Pool Water Replacement Guidelines",
+    "category": "Reference",
+    "readingTime": "2 min read",
+    "updated": "2026-06-01",
+    "keywords": "pool water replacement guidelines"
   },
   {
     "url": "/guides/advanced/chlorine-breakdown-sunlight",
