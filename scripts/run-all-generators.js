@@ -51,6 +51,9 @@ const scripts = ['generate-tools-index.js', 'generate-sitemap.js'];
 
 require(path.join(__dirname, 'generate-redirects.js'));
 
+// Normalise footer across all pages — must run after all content generators
+require(path.join(__dirname, 'inject-footer.js'));
+
 // Validate all internal links before sitemap generation — fail fast on broken hrefs
 console.log('Running check-broken-links.js...');
 execSync('node scripts/check-broken-links.js', { cwd: root, stdio: 'inherit' });
