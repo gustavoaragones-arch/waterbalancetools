@@ -574,10 +574,13 @@ p.updated {
 .site-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1.5rem;
+  gap: 1rem;
+  padding: 0.85rem 1.5rem;
   background: var(--white);
   border-bottom: 1px solid var(--border-soft);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 .logo {
   height: 32px;
@@ -587,16 +590,91 @@ p.updated {
   display: flex;
   gap: 1.25rem;
   flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
 }
 .nav a {
   font-weight: var(--font-weight-regular);
   font-size: 13px;
   letter-spacing: 0.01em;
   color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.2rem 0;
 }
 .nav a:hover {
   color: var(--blue);
   text-decoration: none;
+}
+/* Hamburger button — hidden on desktop */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  padding: 0 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.nav-hamburger:hover { background: var(--bg-soft); }
+.nav-hamburger span {
+  display: block;
+  height: 2px;
+  background: var(--text-primary);
+  border-radius: 2px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+/* Animate to X when open */
+.nav-hamburger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── Mobile nav ─────────────────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .site-header {
+    padding: 0.75rem 1rem;
+  }
+  .nav {
+    display: none;
+    position: fixed;
+    inset: 0;
+    top: 0;
+    background: var(--white);
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    margin: 0;
+    padding: 4.5rem 1.5rem 2rem;
+    z-index: 99;
+    overflow-y: auto;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  }
+  .nav.nav--open {
+    display: flex;
+  }
+  .nav a {
+    font-size: 18px;
+    font-weight: var(--font-weight-medium);
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--border-soft);
+    color: var(--text-primary);
+  }
+  .nav a:last-child { border-bottom: none; }
+  .nav-hamburger {
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    z-index: 101;
+  }
+  .nav-end {
+    position: relative;
+    z-index: 101;
+  }
 }
 
 /* Hero */

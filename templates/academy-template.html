@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://waterbalancetools.com/{{SLUG}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{PAGE_TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/knowledge.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3974004697476579" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{H1_TITLE}}",
+    "description": "{{META_DESCRIPTION}}",
+    "url": "https://waterbalancetools.com/{{SLUG}}",
+    "dateModified": "{{LAST_REVIEWED}}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "WaterBalanceTools",
+      "url": "https://waterbalancetools.com"
+    }
+  }
+  </script>
+  {{BREADCRUMB_SCHEMA}}
+</head>
+<body class="knowledge-page academy-page">
+  <header class="site-header">
+    <a href="/" class="logo-link">
+      <img src="/assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36">
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Primary navigation">
+      <a href="/calculators/chemical-calculator">Calculator</a>
+      <a href="/resources/">Resources</a>
+      <a href="/pool-chemical-levels-chart">Charts</a>
+      <a href="/academy/">Academy</a>
+      <a href="/guides/pool-chemistry-basics">Guides</a>
+      <a href="/about/">About</a>
+    </nav>
+    <div class="nav-end">
+      <a href="/search/" class="nav-search" aria-label="Search site">
+        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  {{BREADCRUMB}}
+
+  <main class="container">
+    <div class="knowledge-layout">
+
+      <!-- Sidebar (desktop only) -->
+      {{SIDEBAR}}
+
+      <!-- Main content -->
+      <div class="knowledge-content">
+
+        {{HERO}}
+
+        <article id="overview">
+          {{CONTENT}}
+        </article>
+
+        <section class="knowledge-takeaways" id="key-facts">
+          <h2>Key Takeaways</h2>
+          <ul>
+            {{TAKEAWAYS}}
+          </ul>
+        </section>
+
+        {{RELATED_TOOLS}}
+
+        {{RELATED_TOPICS}}
+
+        {{KNOWLEDGE_FOOTER}}
+
+        <p class="knowledge-sources"><em>Last reviewed: {{LAST_REVIEWED}}</em></p>
+
+      </div><!-- /.knowledge-content -->
+    </div><!-- /.knowledge-layout -->
+  </main>
+
+  {{SITE_FOOTER}}
+
+  <script src="/js/nav.js" defer></script>
+</body>
+</html>

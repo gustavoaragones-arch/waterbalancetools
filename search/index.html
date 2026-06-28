@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://waterbalancetools.com/search/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search | WaterBalanceTools</title>
+  <meta name="description" content="Search pool and hot tub water chemistry guides, calculators, formulas, and resources on WaterBalanceTools.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/knowledge.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://waterbalancetools.com"},
+      {"@type":"ListItem","position":2,"name":"Search WaterBalanceTools"}]}
+</script>
+</head>
+<body class="knowledge-page search-page">
+    <header class="site-header" data-canonical-nav="v2">
+    <a href="/" class="logo-link">
+      <img src="/assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36">
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Primary navigation">
+      <a href="/calculators/chemical-calculator">Calculator</a>
+      <a href="/resources/">Resources</a>
+      <a href="/pool-chemical-levels-chart">Charts</a>
+      <a href="/academy/">Academy</a>
+      <a href="/guides/pool-chemistry-basics">Guides</a>
+      <a href="/about/">About</a>
+    </nav>
+    <div class="nav-end">
+      <a href="/search/" class="nav-search" aria-label="Search site">
+        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li>
+    <li class="breadcrumb-sep" aria-hidden="true">&#8250;</li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page"><span itemprop="name">Search WaterBalanceTools</span><meta itemprop="position" content="2"></li>
+  </ol>
+</nav>
+
+
+  <main class="container">
+    <section class="hero hero-compact" style="padding-bottom:0.5rem">
+      <h1>Search WaterBalanceTools</h1>
+      <p>Find calculators, guides, formulas, resources, and glossary terms.</p>
+    </section>
+
+    <div class="search-form">
+      <input
+        type="search"
+        id="search-input"
+        class="search-input"
+        placeholder="e.g. chlorine, pH calculator, alkalinity…"
+        autocomplete="off"
+        autofocus
+        aria-label="Search query"
+      >
+    </div>
+
+    <div id="search-status" style="font-size:13px;color:var(--text-secondary);margin-bottom:1rem"></div>
+    <div id="search-results" role="region" aria-label="Search results" aria-live="polite"></div>
+  </main>
+
+    <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a>
+      <a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a>
+      <a href="/calculators/pool-shock-calculator">Pool Shock Calculator</a>
+      <a href="/calculators/pool-ph-calculator">Pool pH Calculator</a>
+      <a href="/charts/pool-chemical-levels-chart">Pool Chemical Levels Chart</a>
+      <a href="/guides/pool-chemistry-basics">Pool Chemistry Guide</a>
+      <a href="/all-pages">All Pages</a>
+      <a href="/legal/ownership">Ownership</a>
+      <a href="/legal/legal">Legal</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Albor Digital LLC. All rights reserved.</p>
+    <p class="footer-note">WaterBalanceTools.com is an independent educational website owned and operated by Albor Digital LLC.</p>
+  </footer>
+
+  <script src="/js/nav.js" defer></script>
+  <script>
+  (function () {
+    'use strict';
+
+    var INDEX_URL = '/data/search-index.json';
+    var input     = document.getElementById('search-input');
+    var results   = document.getElementById('search-results');
+    var status    = document.getElementById('search-status');
+    var data      = null;
+    var timer     = null;
+
+    // ── Load index ────────────────────────────────────────────────────────────
+    fetch(INDEX_URL)
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        data = d;
+        // Run any query that was typed before load
+        if (input.value.trim().length > 1) runSearch(input.value.trim());
+      })
+      .catch(function () {
+        status.textContent = 'Search index unavailable.';
+      });
+
+    // ── Input listener ────────────────────────────────────────────────────────
+    input.addEventListener('input', function () {
+      clearTimeout(timer);
+      var q = input.value.trim();
+      if (q.length < 2) { results.innerHTML = ''; status.textContent = ''; return; }
+      timer = setTimeout(function () { runSearch(q); }, 180);
+    });
+
+    // ── Search ────────────────────────────────────────────────────────────────
+    function runSearch(query) {
+      if (!data) { status.textContent = 'Loading index…'; return; }
+      var terms = query.toLowerCase().split(/\s+/).filter(function (t) { return t.length > 1; });
+      var scored = data
+        .map(function (page) {
+          var haystack = ((page.title || '') + ' ' + (page.h1 || '') + ' ' + (page.description || '') + ' ' + (page.keywords || '')).toLowerCase();
+          var score = 0;
+          terms.forEach(function (t) {
+            if (page.title && page.title.toLowerCase().includes(t)) score += 3;
+            if (page.h1   && page.h1.toLowerCase().includes(t))    score += 2;
+            if (haystack.includes(t))                               score += 1;
+          });
+          return { page: page, score: score };
+        })
+        .filter(function (r) { return r.score > 0; })
+        .sort(function (a, b) { return b.score - a.score; })
+        .slice(0, 20);
+
+      if (scored.length === 0) {
+        results.innerHTML = '<div class="search-empty">No results for <strong>' + esc(query) + '</strong>. Try a different term.</div>';
+        status.textContent = '';
+        return;
+      }
+
+      status.textContent = scored.length + ' result' + (scored.length !== 1 ? 's' : '');
+      results.innerHTML = scored.map(function (r) {
+        var p = r.page;
+        return '<div class="search-result-item">' +
+          '<div class="search-result-category">' + esc(p.category || '') + '</div>' +
+          '<a href="' + esc(p.url) + '" class="search-result-title">' + esc(p.title) + '</a>' +
+          (p.description ? '<p class="search-result-desc">' + esc(p.description) + '</p>' : '') +
+          '</div>';
+      }).join('');
+    }
+
+    function esc(str) {
+      return String(str || '')
+        .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    // ── URL query param support ───────────────────────────────────────────────
+    var params = new URLSearchParams(window.location.search);
+    var q = params.get('q') || '';
+    if (q) { input.value = q; }
+  })();
+  </script>
+</body>
+</html>

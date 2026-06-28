@@ -1,0 +1,17 @@
+{
+  "_comment": "Glossary term definitions. Add entries to generate pages via generate-glossary.js.",
+  "_schema": {
+    "slug":               "glossary/free-chlorine",
+    "title":              "Free Chlorine",
+    "term":               "Free Chlorine",
+    "phonetic":           "free KLOR-een",
+    "abbreviation":       "FC",
+    "definition":         "One-paragraph definition.",
+    "targetRange":        "1–3 ppm (pools), 3–5 ppm (hot tubs)",
+    "relatedTerms":       ["glossary/combined-chlorine", "glossary/total-chlorine"],
+    "relatedCalculators": ["/calculators/pool-chlorine-calculator"],
+    "category":           "sanitizers",
+    "tags":               ["chlorine", "sanitization"]
+  },
+  "terms": []
+}

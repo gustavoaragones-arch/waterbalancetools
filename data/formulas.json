@@ -1,0 +1,26 @@
+{
+  "_comment": "Formula page definitions. Add entries to generate pages via generate-formulas.js.",
+  "_schema": {
+    "slug":               "formulas/chlorine-demand",
+    "title":              "Chlorine Demand Formula",
+    "description":        "Meta description.",
+    "summary":            "Hero summary.",
+    "readingTime":        "3 min read",
+    "lastReviewed":       "2026-06-01",
+    "tags":               ["chlorine", "dosing"],
+    "equation":           "Dose (oz) = (TargetFC - CurrentFC) × Volume (gal) / PoolFactor",
+    "variables": [
+      { "symbol": "Dose",      "description": "Ounces of product to add" },
+      { "symbol": "TargetFC",  "description": "Target free chlorine level (ppm)" },
+      { "symbol": "CurrentFC", "description": "Current free chlorine level (ppm)" },
+      { "symbol": "Volume",    "description": "Pool volume in gallons" },
+      { "symbol": "PoolFactor","description": "Product-specific dose factor" }
+    ],
+    "example":            "Example walkthrough...",
+    "notes":              "Important notes about the formula.",
+    "relatedCalculators": ["/calculators/pool-chlorine-calculator"],
+    "relatedTopics":      ["academy/sanitizers/chlorine-basics"],
+    "content":            "Optional additional HTML content."
+  },
+  "formulas": []
+}

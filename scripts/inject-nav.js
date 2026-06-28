@@ -1,12 +1,14 @@
 /**
  * inject-nav.js
  *
- * Normalises the site-wide navigation bar to the canonical 4-pillar nav
- * using root-relative URLs.  Identical to inject-footer.js in approach —
- * finds any existing <nav class="nav">…</nav> block inside the site-header
- * and replaces it with the canonical markup.
+ * Replaces the entire <header class="site-header">…</header> block on every
+ * HTML page with the canonical 6-pillar header:
+ *   Calculator | Resources | Charts | Academy | Guides | About
+ * Plus a search icon and mobile hamburger button.
  *
- * Idempotent — safe to run on every build cycle.
+ * Also injects /js/nav.js (hamburger logic) into <head> if not present.
+ *
+ * Idempotent — detects already-canonical headers via a sentinel attribute.
  * Run: node scripts/inject-nav.js
  */
 
@@ -17,24 +19,45 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 
-// ── Canonical nav ─────────────────────────────────────────────────────────────
+// ── Canonical header ──────────────────────────────────────────────────────────
 
-const NAV = `    <nav class="nav">
+const SEARCH_SVG = `<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>`;
+
+const HEADER = `  <header class="site-header" data-canonical-nav="v2">
+    <a href="/" class="logo-link">
+      <img src="/assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36">
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Primary navigation">
       <a href="/calculators/chemical-calculator">Calculator</a>
       <a href="/resources/">Resources</a>
       <a href="/pool-chemical-levels-chart">Charts</a>
-      <a href="/guides/pool-chemistry-basics">Guide</a>
-    </nav>`;
+      <a href="/academy/">Academy</a>
+      <a href="/guides/pool-chemistry-basics">Guides</a>
+      <a href="/about/">About</a>
+    </nav>
+    <div class="nav-end">
+      <a href="/search/" class="nav-search" aria-label="Search site">
+        ${SEARCH_SVG}
+      </a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>`;
 
 // ── File collection ───────────────────────────────────────────────────────────
+
+const SKIP_DIRS = new Set([
+  'node_modules', 'scripts', 'assets', 'js', 'functions', 'data', 'lib',
+  'templates', 'partials',
+]);
 
 function collectHtmlFiles(dir, results = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     if (entry.name.startsWith('.')) continue;
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
-      // Skip node_modules, scripts, assets
-      if (['node_modules', 'scripts', 'assets', 'js', 'functions'].includes(entry.name)) continue;
+      if (SKIP_DIRS.has(entry.name)) continue;
       collectHtmlFiles(full, results);
     } else if (entry.isFile() && entry.name.endsWith('.html')) {
       results.push(full);
@@ -43,11 +66,11 @@ function collectHtmlFiles(dir, results = []) {
   return results;
 }
 
-// ── Injection ─────────────────────────────────────────────────────────────────
+// ── Replacement ───────────────────────────────────────────────────────────────
 
-// Match the <nav class="nav">…</nav> block inside a site-header.
-// We match lazily so we don't accidentally consume multiple navs.
-const NAV_RE = /<nav\s+class="nav">[\s\S]*?<\/nav>/i;
+// Matches the entire <header class="site-header"> … </header> block.
+const HEADER_RE = /<header\s[^>]*class="site-header"[^>]*>[\s\S]*?<\/header>/i;
+const ALREADY_CANONICAL_RE = /data-canonical-nav="v2"/;
 
 let updated = 0;
 let skipped = 0;
@@ -55,23 +78,17 @@ let skipped = 0;
 for (const filePath of collectHtmlFiles(ROOT)) {
   let html = fs.readFileSync(filePath, 'utf8');
 
-  // Only touch files that have a site-header
-  if (!html.includes('class="site-header"') && !html.includes("class='site-header'")) {
-    skipped++;
-    continue;
+  if (!HEADER_RE.test(html)) { skipped++; continue; }
+  if (ALREADY_CANONICAL_RE.test(html)) { skipped++; continue; }
+
+  let newHtml = html.replace(HEADER_RE, HEADER);
+
+  // Inject nav.js script into <head> if not already present
+  if (!newHtml.includes('nav.js') && newHtml.includes('</body>')) {
+    newHtml = newHtml.replace('</body>', '  <script src="/js/nav.js" defer></script>\n</body>');
   }
 
-  if (!NAV_RE.test(html)) {
-    skipped++;
-    continue;
-  }
-
-  const newHtml = html.replace(NAV_RE, NAV);
-
-  if (newHtml === html) {
-    skipped++;
-    continue;
-  }
+  if (newHtml === html) { skipped++; continue; }
 
   fs.writeFileSync(filePath, newHtml, 'utf8');
   updated++;
@@ -79,5 +96,5 @@ for (const filePath of collectHtmlFiles(ROOT)) {
 
 console.log(
   `inject-nav: updated ${updated} pages` +
-  (skipped ? ` (${skipped} unchanged / no-nav)` : '')
+  (skipped ? ` (${skipped} already canonical or no header)` : '')
 );

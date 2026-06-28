@@ -1,6 +1,22 @@
 /**
- * Run all programmatic page generators, then tools index and sitemap.
- * Order: … → hub pages → authority → ads → link matrix → calculator related tools → terminology → …
+ * run-all-generators.js
+ *
+ * Mandatory build order (Phase 5A):
+ *   1.  Generate calculators (programmatic clusters)
+ *   2.  Generate resources (/resources/)
+ *   3.  Generate academy   (/academy/)
+ *   4.  Generate formulas  (/formulas/)
+ *   5.  Generate glossary  (/glossary/)
+ *   6.  Generate reference (/reference/)
+ *   7.  Inject nav (6-pillar header + hamburger)
+ *   8.  Restructure calculator pages (UX hierarchy)
+ *   9.  Inject footer
+ *   10. Generate navigation index (data/navigation.json)
+ *   11. Generate breadcrumbs (injects into every page)
+ *   12. Generate search index (data/search-index.json)
+ *   13. Validate broken links
+ *   14. Generate sitemaps (grouped XML)
+ *
  * Usage: node scripts/run-all-generators.js
  */
 const { execSync } = require('child_process');
@@ -47,28 +63,45 @@ require(path.join(__dirname, 'generate-all-pages.js'));
 require(path.join(__dirname, 'inject-seo-metadata.js'));
 require(path.join(__dirname, 'inject-last-updated.js'));
 
-const scripts = ['generate-tools-index.js', 'generate-sitemap.js'];
-
 require(path.join(__dirname, 'generate-redirects.js'));
 
-// /resources/ content cluster — must run before broken-link check resolves /resources/*
+// ── Step 2: Resources ─────────────────────────────────────────────────────────
 require(path.join(__dirname, 'generate-resource-pages.js'));
 
-// Restructure calculator pages to new UX hierarchy — runs after all injectors
-require(path.join(__dirname, 'restructure-calculator-pages.js'));
+// ── Steps 3–6: Knowledge platform content generators ─────────────────────────
+require(path.join(__dirname, 'generate-academy.js'));
+require(path.join(__dirname, 'generate-formulas.js'));
+require(path.join(__dirname, 'generate-glossary.js'));
+require(path.join(__dirname, 'generate-reference.js'));
 
-// Normalise nav across all pages — runs after restructure so new pages are included
+// ── Step 7: Canonical nav (6-pillar header + hamburger) ──────────────────────
 require(path.join(__dirname, 'inject-nav.js'));
 
-// Normalise footer across all pages — must run after all content generators
+// ── Step 8: Restructure calculator pages to new UX hierarchy ─────────────────
+require(path.join(__dirname, 'restructure-calculator-pages.js'));
+
+// ── Step 9: Canonical footer ──────────────────────────────────────────────────
 require(path.join(__dirname, 'inject-footer.js'));
 
-// Validate all internal links before sitemap generation — fail fast on broken hrefs
+// ── Step 10: Navigation index ─────────────────────────────────────────────────
+require(path.join(__dirname, 'generate-navigation.js'));
+
+// ── Step 11: Breadcrumbs ──────────────────────────────────────────────────────
+require(path.join(__dirname, 'generate-breadcrumbs.js'));
+
+// ── Step 12: Search index ─────────────────────────────────────────────────────
+require(path.join(__dirname, 'generate-search-index.js'));
+
+// ── Step 13: Validate internal links (fail-fast gate) ────────────────────────
 console.log('Running check-broken-links.js...');
 execSync('node scripts/check-broken-links.js', { cwd: root, stdio: 'inherit' });
 
-scripts.forEach(script => {
-  console.log('Running ' + script + '...');
-  execSync('node scripts/' + script, { cwd: root, stdio: 'inherit' });
-});
+// ── Step 14: Grouped sitemaps ─────────────────────────────────────────────────
+console.log('Running generate-sitemaps.js...');
+execSync('node scripts/generate-sitemaps.js', { cwd: root, stdio: 'inherit' });
+
+// Legacy flat tools index (kept for backward compat)
+console.log('Running generate-tools-index.js...');
+execSync('node scripts/generate-tools-index.js', { cwd: root, stdio: 'inherit' });
+
 console.log('Done. Regenerate with: node scripts/run-all-generators.js');

@@ -1,0 +1,18 @@
+{
+  "_comment": "Reference page definitions. Add entries to generate pages via generate-reference.js. Separate from existing /reference/ HTML pages.",
+  "_schema": {
+    "slug":               "reference/chlorine-dosing-table",
+    "title":              "Chlorine Dosing Reference Table",
+    "description":        "Meta description.",
+    "summary":            "Hero summary.",
+    "readingTime":        "2 min read",
+    "lastReviewed":       "2026-06-01",
+    "type":               "table",
+    "category":           "sanitizers",
+    "tags":               ["chlorine", "reference"],
+    "relatedCalculators": ["/calculators/pool-chlorine-calculator"],
+    "relatedTopics":      [],
+    "content":            "Full HTML content for the reference page."
+  },
+  "pages": []
+}

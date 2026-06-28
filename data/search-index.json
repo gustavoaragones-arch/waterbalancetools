@@ -1,0 +1,1522 @@
+[
+  {
+    "url": "/calculators/chemical-calculator",
+    "title": "Pool Chemical Calculator (Exact Levels in 30 Seconds)",
+    "description": "Calculate exact chlorine, pH, and alkalinity doses in seconds—enter gallons + test readings. Avoid over-treatment, cut guesswork, and keep water swim-ready.",
+    "h1": "Pool & Hot Tub Chemical Calculator",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool chemical calculator exact levels seconds hot tub"
+  },
+  {
+    "url": "/calculators/hot-tub-chlorine-calculator",
+    "title": "Hot Tub Chemical Calculator (Safe Levels in 30 Seconds)",
+    "description": "Hit 3–5 ppm sanitizer in seconds: enter spa gallons + test strip readings for exact chlorine ounces. Avoid over-chlorination, rash risk, and cover damage.",
+    "h1": "Hot Tub Chlorine Calculator",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub chemical calculator safe levels seconds chlorine"
+  },
+  {
+    "url": "/calculators/hot-tub-ph-calculator",
+    "title": "Hot Tub pH Calculator",
+    "description": "Hot tub pH calculator. Enter spa gallons and current pH to get pH increaser or reducer amount. Free and fast.",
+    "h1": "Hot Tub pH Calculator",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub calculator"
+  },
+  {
+    "url": "/calculators/hot-tub-shock-calculator",
+    "title": "Hot Tub Shock Calculator",
+    "description": "Hot tub shock calculator. Enter spa gallons and shock type to get shock dosage. Free and fast.",
+    "h1": "Hot Tub Shock Calculator",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub shock calculator"
+  },
+  {
+    "url": "/calculators/pool-alkalinity-calculator",
+    "title": "Pool Alkalinity Calculator",
+    "description": "Pool alkalinity calculator. Enter pool gallons and current alkalinity to get alkalinity increaser amount. Free and fast.",
+    "h1": "Pool Alkalinity Calculator",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool alkalinity calculator"
+  },
+  {
+    "url": "/calculators/pool-chlorine-calculator",
+    "title": "Pool Chlorine Calculator (Ounces from Volume + ppm)",
+    "description": "Pool chlorine calculator: gallons + ppm in → exact liquid or granular ounces out. For pH, alkalinity, and combined dosing, use the main Pool Chemical Calculator.",
+    "h1": "Pool Chlorine Calculator",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool chlorine calculator ounces from volume ppm"
+  },
+  {
+    "url": "/calculators/pool-cyanuric-acid-calculator",
+    "title": "Pool Cyanuric Acid Calculator",
+    "description": "Pool cyanuric acid (CYA) calculator. Enter pool gallons and current CYA to get stabilizer amount. Free and fast.",
+    "h1": "Pool Cyanuric Acid Calculator",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool cyanuric acid calculator"
+  },
+  {
+    "url": "/calculators/pool-ph-calculator",
+    "title": "Pool pH Calculator (Hit 7.2–7.6 Without Overshoot)",
+    "description": "Turn pH + gallon readings into exact increaser or reducer ounces in 30 seconds. Fewer wild swings, safer water for skin, liner, and chlorine performance.",
+    "h1": "Pool pH Calculator",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool calculator hit without overshoot"
+  },
+  {
+    "url": "/calculators/pool-shock-calculator",
+    "title": "Pool Shock Calculator (10–30 ppm Dose in 30 Seconds)",
+    "description": "Pool shock calculator: granular shock ounces from gallons + target ppm (10–30). For combined chlorine, pH, and alkalinity dosing, use the main Pool Chemical Calculator.",
+    "h1": "Pool Shock Calculator",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool shock calculator ppm dose seconds"
+  },
+  {
+    "url": "/calculators/pool-turnover-rate-calculator",
+    "title": "Pool Turnover Rate Calculator",
+    "description": "Pool turnover rate calculator. Enter pool volume and pump flow rate to get hours for full turnover. Free and fast.",
+    "h1": "Pool Turnover Rate Calculator",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool turnover rate calculator"
+  },
+  {
+    "url": "/calculators/pool-volume-calculator",
+    "title": "Pool Volume Calculator",
+    "description": "Pool volume calculator. Rectangular, circular, and oval shapes. Get gallons and liters. Free and fast.",
+    "h1": "Pool Volume Calculator",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool volume calculator"
+  },
+  {
+    "url": "/calculators/saltwater-pool-salt-calculator",
+    "title": "Saltwater Pool Salt Calculator",
+    "description": "Saltwater pool salt calculator. Enter pool gallons and current salt level to get pounds of salt required. Free and fast.",
+    "h1": "Saltwater Pool Salt Calculator",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "saltwater pool salt calculator"
+  },
+  {
+    "url": "/calculators/spa-volume-calculator",
+    "title": "Spa Volume Calculator",
+    "description": "Spa volume calculator. Enter diameter and depth to get hot tub volume in gallons. Free and fast.",
+    "h1": "Spa Volume Calculator",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "spa volume calculator"
+  },
+  {
+    "url": "/calculators/volume-calculator",
+    "title": "Pool Volume Calculator",
+    "description": "Calculate your pool or hot tub volume in gallons. Supports rectangular and circular shapes.",
+    "h1": "Pool Volume Calculator",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool volume calculator"
+  },
+  {
+    "url": "/charts/hot-tub-chemical-levels-chart",
+    "title": "Hot Tub Chemical Levels Chart",
+    "description": "Hot tub chemical levels chart: ideal ranges for chlorine, pH, and alkalinity in spas.",
+    "h1": "Hot Tub Chemical Levels Chart",
+    "category": "Charts",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub chemical levels chart"
+  },
+  {
+    "url": "/charts/pool-chemical-levels-chart",
+    "title": "Pool Chemical Levels Chart",
+    "description": "Pool chemical levels chart: ideal ranges for chlorine, pH, alkalinity, calcium hardness, and cyanuric acid. Free reference.",
+    "h1": "Pool Chemical Levels Chart",
+    "category": "Charts",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool chemical levels chart"
+  },
+  {
+    "url": "/charts/pool-water-balance-chart",
+    "title": "Pool Water Balance Chart",
+    "description": "How pH, alkalinity, and chlorine work together in pool water balance. Simple diagram and explanation.",
+    "h1": "Pool Water Balance Chart",
+    "category": "Charts",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool water balance chart"
+  },
+  {
+    "url": "/resources",
+    "title": "Free Pool &amp; Hot Tub Printable Resources",
+    "description": "Free printable checklists, log sheets, and maintenance forms for pool and hot tub owners. Download or print for free — no signup required.",
+    "h1": "Free Pool & Hot Tub Printable Resources",
+    "category": "Resources",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "free pool amp hot tub printable resources"
+  },
+  {
+    "url": "/resources/airbnb-pool-turnover-checklist",
+    "title": "Vacation Rental Pool Turnover Checklist",
+    "description": "Free printable Airbnb and vacation rental pool turnover checklist. Quick between-guest pool inspection and chemical check. Download or print for free.",
+    "h1": "Vacation Rental Pool Turnover Checklist",
+    "category": "Resources",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "vacation rental pool turnover checklist"
+  },
+  {
+    "url": "/resources/hot-tub-maintenance-log",
+    "title": "Hot Tub Maintenance Log",
+    "description": "Free printable hot tub maintenance log. Track chemical readings, water tests, and maintenance tasks. Download or print for free.",
+    "h1": "Hot Tub Maintenance Log",
+    "category": "Resources",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub maintenance log"
+  },
+  {
+    "url": "/resources/pool-chemical-log-sheet",
+    "title": "Pool Chemical Log Sheet",
+    "description": "Free printable pool chemical log sheet. Track chlorine, pH, alkalinity additions and water test results. Download or print for free.",
+    "h1": "Pool Chemical Log Sheet",
+    "category": "Resources",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool chemical log sheet"
+  },
+  {
+    "url": "/resources/pool-closing-checklist",
+    "title": "Pool Closing Checklist",
+    "description": "Free printable pool closing / winterization checklist. Step-by-step guide to closing your pool for winter. Download or print for free.",
+    "h1": "Pool Closing Checklist",
+    "category": "Resources",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool closing checklist"
+  },
+  {
+    "url": "/resources/pool-maintenance-checklist",
+    "title": "Pool Maintenance Checklist",
+    "description": "Free printable pool maintenance checklist. Weekly, monthly, and seasonal pool care tasks. Download or print for free.",
+    "h1": "Pool Maintenance Checklist",
+    "category": "Resources",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool maintenance checklist"
+  },
+  {
+    "url": "/resources/pool-opening-checklist",
+    "title": "Pool Opening Checklist",
+    "description": "Free printable pool opening checklist for spring. Step-by-step guide to opening your pool. Download or print for free.",
+    "h1": "Pool Opening Checklist",
+    "category": "Resources",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool opening checklist"
+  },
+  {
+    "url": "/resources/pool-shock-log",
+    "title": "Pool Shock Treatment Log",
+    "description": "Free printable pool shock treatment log. Track shock doses, product used, and water clarity results. Download or print for free.",
+    "h1": "Pool Shock Treatment Log",
+    "category": "Resources",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool shock treatment log"
+  },
+  {
+    "url": "/resources/water-test-log",
+    "title": "Water Test Log",
+    "description": "Free printable water test log for pool and hot tub. Record chlorine, pH, alkalinity, hardness, and CYA readings. Download or print for free.",
+    "h1": "Water Test Log",
+    "category": "Resources",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "water test log"
+  },
+  {
+    "url": "/academy",
+    "title": "Pool &amp; Hot Tub Chemistry Academy",
+    "description": "Learn pool and hot tub water chemistry with structured guides covering pH, chlorine, alkalinity, troubleshooting, and more.",
+    "h1": "Pool & Hot Tub Chemistry Academy",
+    "category": "Academy",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool amp hot tub chemistry academy"
+  },
+  {
+    "url": "/academy/equipment",
+    "title": "Equipment",
+    "description": "Pumps, filters, heaters, automation, and maintenance tips.",
+    "h1": "Equipment",
+    "category": "Academy",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "equipment"
+  },
+  {
+    "url": "/academy/fundamentals",
+    "title": "Fundamentals",
+    "description": "Core water chemistry concepts every pool owner needs to understand.",
+    "h1": "Fundamentals",
+    "category": "Academy",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "fundamentals"
+  },
+  {
+    "url": "/academy/hot-tubs",
+    "title": "Hot Tubs &amp; Spas",
+    "description": "Hot tub chemistry, maintenance schedules, and water care.",
+    "h1": "Hot Tubs & Spas",
+    "category": "Academy",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tubs amp spas"
+  },
+  {
+    "url": "/academy/sanitizers",
+    "title": "Sanitizers",
+    "description": "Chlorine, bromine, salt, and alternative sanitization methods.",
+    "h1": "Sanitizers",
+    "category": "Academy",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "sanitizers"
+  },
+  {
+    "url": "/academy/testing",
+    "title": "Testing",
+    "description": "How to test pool water accurately and interpret results.",
+    "h1": "Testing",
+    "category": "Academy",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "testing"
+  },
+  {
+    "url": "/academy/troubleshooting",
+    "title": "Troubleshooting",
+    "description": "Diagnosing and fixing cloudy water, algae, staining, and more.",
+    "h1": "Troubleshooting",
+    "category": "Academy",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "troubleshooting"
+  },
+  {
+    "url": "/academy/vacation-rentals",
+    "title": "Vacation Rentals",
+    "description": "Pool and hot tub management for Airbnb and short-term rentals.",
+    "h1": "Vacation Rentals",
+    "category": "Academy",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "vacation rentals"
+  },
+  {
+    "url": "/academy/water-balance",
+    "title": "Water Balance",
+    "description": "Balancing pH, alkalinity, hardness, and stabilizer for clear water.",
+    "h1": "Water Balance",
+    "category": "Academy",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "water balance"
+  },
+  {
+    "url": "/formulas",
+    "title": "Pool Chemistry Formula Library",
+    "description": "The complete pool chemistry formula library — chlorine dosing, pH adjustment, alkalinity, CYA, calcium hardness, and more. Every formula explained with worked examples.",
+    "h1": "Pool Chemistry Formula Library",
+    "category": "Formula Library",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool chemistry formula library"
+  },
+  {
+    "url": "/glossary",
+    "title": "Pool Chemistry Glossary",
+    "description": "Definitions for pool and hot tub water chemistry terms — free chlorine, pH, total alkalinity, CYA, calcium hardness, LSI, and more.",
+    "h1": "Pool & Hot Tub Water Chemistry Glossary",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool chemistry glossary hot tub water"
+  },
+  {
+    "url": "/reference",
+    "title": "Pool Chemistry Reference",
+    "description": "Reference tables, target ranges, and chemical data for pool and hot tub water chemistry. Ideal ranges for chlorine, pH, alkalinity, hardness, and CYA.",
+    "h1": "Pool Chemistry Reference",
+    "category": "Reference",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool chemistry reference"
+  },
+  {
+    "url": "/reference/calcium-hardness-explained",
+    "title": "Calcium Hardness in Pools Explained",
+    "description": "Calcium hardness in pools explained: ideal range 200–400 ppm, what low and high calcium does to surfaces and water, and how to adjust it safely.",
+    "h1": "Calcium Hardness in Pools Explained",
+    "category": "Reference",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calcium hardness pools explained"
+  },
+  {
+    "url": "/reference/chlorine-explained",
+    "title": "Chlorine in Pools Explained",
+    "description": "Chlorine in pools explained: free chlorine vs combined chlorine vs total chlorine, ideal ranges 1–3 ppm, what causes it to drop, and how to maintain it.",
+    "h1": "Chlorine in Pools Explained",
+    "category": "Reference",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "chlorine pools explained"
+  },
+  {
+    "url": "/reference/combined-chlorine-explained",
+    "title": "Combined Chlorine (Chloramines) Explained",
+    "description": "Combined chlorine (chloramines) explained: what causes it, why it causes pool smell and eye irritation, the 0.5 ppm limit, and how to eliminate it with breakpoint shock.",
+    "h1": "Combined Chlorine (Chloramines) Explained",
+    "category": "Reference",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "combined chlorine chloramines explained"
+  },
+  {
+    "url": "/reference/common-pool-chemistry-mistakes",
+    "title": "Common Pool Chemistry Mistakes",
+    "description": "Common pool chemistry mistakes: too much chlorine, ignoring alkalinity, wrong pH adjustment. How to avoid them with our calculators.",
+    "h1": "Common Pool Chemistry Mistakes",
+    "category": "Reference",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "common pool chemistry mistakes"
+  },
+  {
+    "url": "/reference/cyanuric-acid-explained",
+    "title": "Cyanuric Acid (CYA / Stabilizer) Explained",
+    "description": "Cyanuric acid (CYA) explained: how pool stabilizer protects chlorine from UV, ideal range 30–50 ppm, what chlorine lock is, and how to lower CYA.",
+    "h1": "Cyanuric Acid (CYA / Stabilizer) Explained",
+    "category": "Reference",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "cyanuric acid cya stabilizer explained"
+  },
+  {
+    "url": "/reference/free-chlorine-explained",
+    "title": "Free Chlorine Explained",
+    "description": "Free chlorine explained: what it is, why it's the only active sanitizer, how pH affects it, target range 1–3 ppm, and how to test and maintain it.",
+    "h1": "Free Chlorine Explained",
+    "category": "Reference",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "free chlorine explained"
+  },
+  {
+    "url": "/reference/pool-chemicals-explained",
+    "title": "Pool Chemicals Explained",
+    "description": "Pool chemicals explained: chlorine, pH increaser, pH reducer, shock, stabilizer. What they do and when to use them.",
+    "h1": "Pool Chemicals Explained",
+    "category": "Reference",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool chemicals explained"
+  },
+  {
+    "url": "/reference/pool-chemistry-reference",
+    "title": "Pool Chemistry Reference Guide",
+    "description": "Pool chemistry reference: ideal ranges for chlorine, pH, alkalinity, calcium, CYA, shock, and temperature—with low/high effects and calculator links.",
+    "h1": "Pool Chemistry Reference Guide",
+    "category": "Reference",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool chemistry reference guide"
+  },
+  {
+    "url": "/reference/salt-water-generator-explained",
+    "title": "Salt Water Generator (SWG) Explained",
+    "description": "Salt water generator explained: how electrolytic chlorine generation works, salt levels 2700–3400 ppm, chemistry management, pros and cons vs traditional chlorine.",
+    "h1": "Salt Water Generator (SWG) Explained",
+    "category": "Reference",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "salt water generator swg explained"
+  },
+  {
+    "url": "/reference/shock-treatment-explained",
+    "title": "Pool Shock Treatment Explained",
+    "description": "Pool shock treatment explained: what it is, types of shock, how breakpoint chlorination works, when to shock, and how long to wait before swimming.",
+    "h1": "Pool Shock Treatment Explained",
+    "category": "Reference",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool shock treatment explained"
+  },
+  {
+    "url": "/reference/total-alkalinity-explained",
+    "title": "Total Alkalinity Explained",
+    "description": "Total alkalinity explained: how it buffers pH, ideal range 80–120 ppm, symptoms of low and high TA, and how to raise or lower it correctly.",
+    "h1": "Total Alkalinity Explained",
+    "category": "Reference",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "total alkalinity explained"
+  },
+  {
+    "url": "/guides/advanced/chlorine-breakdown-sunlight",
+    "title": "Chlorine Breakdown in Sunlight (UV, CYA &amp; Dosing)",
+    "description": "UV destroys free chlorine quickly unless CYA buffers it—here’s the mechanism and what to do.",
+    "h1": "Chlorine Breakdown in Sunlight",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "chlorine breakdown sunlight cya amp dosing"
+  },
+  {
+    "url": "/guides/advanced/chlorine-vs-saltwater",
+    "title": "Chlorine vs Saltwater Pools (How Sanitizing Actually Works)",
+    "description": "Saltwater pools still make chlorine—here’s how salt systems differ from manual chlorination, dosing, and maintenance.",
+    "h1": "Chlorine Pools vs Saltwater Pools: What’s Actually Different?",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "chlorine saltwater pools how sanitizing actually works what different"
+  },
+  {
+    "url": "/guides/advanced/cya-stabilizer-explained",
+    "title": "CYA Stabilizer Explained (Chlorine Protection vs Lock-In)",
+    "description": "CYA (cyanuric acid) protects chlorine from UV—but high CYA dulls sanitizing power. Here’s how it works.",
+    "h1": "Cyanuric Acid (CYA): Stabilizer Explained",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "cya stabilizer explained chlorine protection lock cyanuric acid"
+  },
+  {
+    "url": "/guides/advanced/pool-chemistry-balance-explained",
+    "title": "Pool Chemistry Balance Explained (pH, TA, Calcium &amp; Sanitizer)",
+    "description": "Pool water balance means pH, alkalinity, calcium, and sanitizer work together—learn LSI-style reasoning without the fluff.",
+    "h1": "Pool Chemistry Balance Explained",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool chemistry balance explained calcium amp sanitizer"
+  },
+  {
+    "url": "/guides/alkalinity-guide",
+    "title": "Pool Alkalinity Guide",
+    "description": "Total alkalinity as a pH buffer, ideal range, and adjustment tools.",
+    "h1": "Pool Alkalinity Guide",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool alkalinity guide"
+  },
+  {
+    "url": "/guides/chlorine-guide",
+    "title": "Pool Chlorine Guide",
+    "description": "Sanitizer levels, shock, green pool recovery, and chlorine dosing for pools.",
+    "h1": "Pool Chlorine Guide",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool chlorine guide"
+  },
+  {
+    "url": "/guides/chlorine/chlorine-too-high-after-shocking",
+    "title": "Chlorine Too High After Shocking: What to Do",
+    "description": "Pool chlorine too high after shocking? Wait 24–48 hours, run the pump, and let UV reduce FC naturally. Exact steps by FC level inside.",
+    "h1": "Chlorine Too High After Shocking: What to Do",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "chlorine too high after shocking what"
+  },
+  {
+    "url": "/guides/chlorine/free-chlorine-vs-total-chlorine",
+    "title": "Free Chlorine vs Total Chlorine Explained",
+    "description": "Free chlorine is the active sanitizer; total chlorine = free + combined. How to interpret readings, combined chlorine limits, and when to shock.",
+    "h1": "Free Chlorine vs Total Chlorine Explained",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "free chlorine total explained"
+  },
+  {
+    "url": "/guides/chlorine/how-often-should-i-shock-my-pool",
+    "title": "How Often Should I Shock My Pool?",
+    "description": "How often to shock a pool: weekly in swim season, after heavy use, after rain, or when FC drops. Full schedule + troubleshooting table.",
+    "h1": "How Often Should I Shock My Pool?",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how often should shock pool"
+  },
+  {
+    "url": "/guides/chlorine/why-pool-chlorine-disappears-overnight",
+    "title": "Why Pool Chlorine Disappears Overnight",
+    "description": "Chlorine disappearing overnight usually means algae, high organic load, or chlorine demand. Diagnosis table and fix steps inside.",
+    "h1": "Why Pool Chlorine Disappears Overnight",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "why pool chlorine disappears overnight"
+  },
+  {
+    "url": "/guides/chlorine/why-pool-wont-hold-chlorine",
+    "title": "Why Pool Won't Hold Chlorine: Causes and Fixes",
+    "description": "Pool won't hold chlorine? Common causes: low CYA, algae, high phosphates, or high organic load. Diagnosis table and step-by-step fix.",
+    "h1": "Why Pool Won't Hold Chlorine",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "why pool won hold chlorine causes and fixes"
+  },
+  {
+    "url": "/guides/edge-cases/high-cya-chlorine-lock",
+    "title": "High CYA Chlorine Lock (Why FC Reads Fine But Water Fails)",
+    "description": "Why chlorine stops working when CYA is high: less active sanitizer per ppm reading—fix with dilution and FC targets.",
+    "h1": "High CYA and “Chlorine Lock”",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "high cya chlorine lock why reads fine but water fails and"
+  },
+  {
+    "url": "/guides/edge-cases/over-shocking-pool-effects",
+    "title": "Over-Shocking a Pool: Effects &amp; What to Do",
+    "description": "What happens if you over-shock a pool? Very high FC, equipment and liner stress, long wait times before swimming.",
+    "h1": "Over-Shocking a Pool: Effects",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "over shocking pool effects amp what"
+  },
+  {
+    "url": "/guides/edge-cases/pool-temperature-effect-chlorine",
+    "title": "Pool Temperature Effect on Chlorine (Warmer Water, Faster Demand)",
+    "description": "Warmer water increases chlorine consumption—here’s why and how to adjust dosing.",
+    "h1": "How Pool Temperature Affects Chlorine",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool temperature effect chlorine warmer water faster demand how affects"
+  },
+  {
+    "url": "/guides/edge-cases/rain-effect-on-pool-chemistry",
+    "title": "Does Rain Affect Pool Chemistry? (Dilution, pH &amp; Chlorine)",
+    "description": "Does rain affect pool chemistry? Yes—dilution, debris, and pH shift can change FC, alkalinity, and clarity.",
+    "h1": "Rain’s Effect on Pool Chemistry",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "does rain affect pool chemistry dilution amp chlorine effect"
+  },
+  {
+    "url": "/guides/edge-cases/swimming-after-shocking-pool",
+    "title": "How Long After Shocking a Pool Can You Swim? (Safe Wait Times)",
+    "description": "How long after shocking a pool can you swim? Wait until FC is back in range and the product label says it’s safe—often hours, sometimes overnight.",
+    "h1": "Swimming After Shocking a Pool",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how long after shocking pool can you swim safe wait times swimming"
+  },
+  {
+    "url": "/guides/hot-tub-chemistry",
+    "title": "Hot Tub Chemistry Guide",
+    "description": "Spa volume, chlorine or bromine context, and hot-tub dosing tables.",
+    "h1": "Hot Tub Chemistry",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub chemistry guide"
+  },
+  {
+    "url": "/guides/hot-tub-maintenance",
+    "title": "Hot Tub Maintenance Guide",
+    "description": "Hot tub and spa maintenance guide: daily and weekly tasks, water chemistry, and draining.",
+    "h1": "Hot Tub Maintenance",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub maintenance guide"
+  },
+  {
+    "url": "/guides/hot-tub/hot-tub-alkalinity-too-high",
+    "title": "Hot Tub Alkalinity Too High: What to Do",
+    "description": "Hot tub total alkalinity too high? Above 150 ppm causes cloudy water, scale, and pH that won't stay down. Step-by-step fix.",
+    "h1": "Hot Tub Alkalinity Too High: What to Do",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub alkalinity too high what"
+  },
+  {
+    "url": "/guides/hot-tub/hot-tub-chlorine-too-high",
+    "title": "Hot Tub Chlorine Too High: What to Do",
+    "description": "Hot tub chlorine too high? FC above 10 ppm causes irritation. Steps to lower it fast: remove cover, run jets, or dilute. Full guide.",
+    "h1": "Hot Tub Chlorine Too High: What to Do",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub chlorine too high what"
+  },
+  {
+    "url": "/guides/hot-tub/hot-tub-chlorine-too-low",
+    "title": "Hot Tub Chlorine Too Low: Causes and Fix",
+    "description": "Hot tub chlorine too low? Below 1 ppm, bacteria can grow in minutes at spa temperatures. Causes, fast fix, and prevention guide.",
+    "h1": "Hot Tub Chlorine Too Low: Causes and Fix",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub chlorine too low causes and fix"
+  },
+  {
+    "url": "/guides/hot-tub/hot-tub-ph-too-low",
+    "title": "Hot Tub pH Too Low: Causes and Fix",
+    "description": "Hot tub pH too low? Below 7.2 corrodes equipment, irritates skin, and destabilizes chlorine. Step-by-step fix with dose guide.",
+    "h1": "Hot Tub pH Too Low: Causes and Fix",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub too low causes and fix"
+  },
+  {
+    "url": "/guides/hot-tub/how-often-to-shock-a-hot-tub",
+    "title": "How Often to Shock a Hot Tub",
+    "description": "How often to shock a hot tub: weekly minimum, after every 2–3 soaks, or when water looks dull. Shock schedule and product guide.",
+    "h1": "How Often to Shock a Hot Tub",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how often shock hot tub"
+  },
+  {
+    "url": "/guides/ph-guide",
+    "title": "Pool pH Guide",
+    "description": "Ideal pH range, how acid and base moves pH, and links to adjustment guides.",
+    "h1": "Pool pH Guide",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool guide"
+  },
+  {
+    "url": "/guides/ph/can-you-swim-in-high-ph-water",
+    "title": "Can You Swim in High pH Pool Water?",
+    "description": "Can you swim in high pH water? pH 7.8–8.0 is uncomfortable; above 8.0 risks irritation and drastically reduced chlorine. Full guidance inside.",
+    "h1": "Can You Swim in High pH Pool Water?",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "can you swim high pool water"
+  },
+  {
+    "url": "/guides/ph/does-rain-lower-pool-ph",
+    "title": "Does Rain Lower Pool pH?",
+    "description": "Does rain lower pool pH? Rainwater is acidic (pH ~5.6) but the effect on pool pH depends on pool volume, TA, and how much rain fell.",
+    "h1": "Does Rain Lower Pool pH?",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "does rain lower pool"
+  },
+  {
+    "url": "/guides/ph/how-to-lower-pool-ph",
+    "title": "How to Lower Pool pH: Step-by-Step Guide",
+    "description": "How to lower pool pH with muriatic acid or dry acid. Safe dose table, step-by-step instructions, and how to avoid over-correcting.",
+    "h1": "How to Lower Pool pH",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how lower pool step guide"
+  },
+  {
+    "url": "/guides/ph/what-causes-high-pool-ph",
+    "title": "What Causes High Pool pH?",
+    "description": "High pool pH causes: CO2 off-gassing, high alkalinity, algae, aeration, SWG systems, and high-pH fill water. Fix guide and FAQ.",
+    "h1": "What Causes High Pool pH?",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "what causes high pool"
+  },
+  {
+    "url": "/guides/ph/why-pool-ph-keeps-rising",
+    "title": "Why Pool pH Keeps Rising",
+    "description": "Pool pH keeps rising? Causes include CO2 off-gassing, aeration, algae, and high alkalinity. Fix guide and FAQ inside.",
+    "h1": "Why Pool pH Keeps Rising",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "why pool keeps rising"
+  },
+  {
+    "url": "/guides/pool-chemistry-basics",
+    "title": "Pool Chemistry Basics",
+    "description": "Learn the basics of pool chemistry: chlorine, pH, and alkalinity for safe and clear pool water.",
+    "h1": "Pool Chemistry Basics",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool chemistry basics"
+  },
+  {
+    "url": "/guides/questions/can-rain-affect-pool-chemistry",
+    "title": "Can Rain Affect Pool Chemistry?",
+    "description": "Can rain affect pool chemistry? Yes — rain dilutes chlorine, pH, alkalinity, and CYA while introducing organic debris. What to test and fix after rain.",
+    "h1": "Can Rain Affect Pool Chemistry?",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "can rain affect pool chemistry"
+  },
+  {
+    "url": "/guides/questions/can-you-swim-after-shocking-a-pool",
+    "title": "Can You Swim After Shocking a Pool?",
+    "description": "Can you swim after shocking a pool? Wait until FC drops below 5 ppm — usually 8–24 hours. Wait times by shock dose, and how to speed up FC reduction.",
+    "h1": "Can You Swim After Shocking a Pool?",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "can you swim after shocking pool"
+  },
+  {
+    "url": "/guides/questions/why-does-hot-tub-water-smell",
+    "title": "Why Does Hot Tub Water Smell?",
+    "description": "Why does hot tub water smell? Usually combined chlorine or bacteria. Causes table and step-by-step fix for chemical odor, sulfur smell, and musty odor.",
+    "h1": "Why Does Hot Tub Water Smell?",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "why does hot tub water smell"
+  },
+  {
+    "url": "/guides/questions/why-does-pool-water-turn-cloudy",
+    "title": "Why Does Pool Water Turn Cloudy?",
+    "description": "Why does pool water turn cloudy? Causes include low chlorine, high pH, poor filtration, algae, and heavy rain. Diagnosis steps and fix guide.",
+    "h1": "Why Does Pool Water Turn Cloudy?",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "why does pool water turn cloudy"
+  },
+  {
+    "url": "/guides/questions/why-is-my-hot-tub-foamy",
+    "title": "Why Is My Hot Tub Foamy?",
+    "description": "Why is my hot tub foamy? Causes: body products, low calcium hardness, high TDS, detergent in swimwear. Fix guide and long-term prevention.",
+    "h1": "Why Is My Hot Tub Foamy?",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "why hot tub foamy"
+  },
+  {
+    "url": "/guides/questions/why-is-my-pool-green-but-chlorine-is-high",
+    "title": "Why Is My Pool Green But Chlorine Is High?",
+    "description": "Pool green but chlorine is high? Usually high pH making chlorine ineffective, CYA chlorine lock, or dead algae still in water. Diagnosis and fix guide.",
+    "h1": "Why Is My Pool Green But Chlorine Is High?",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "why pool green but chlorine high"
+  },
+  {
+    "url": "/guides/seasonal/closing-pool-chemistry-winter",
+    "title": "Closing Pool Chemistry for Winter (Balance, Shock &amp; Winterize)",
+    "description": "Winter pool closing chemicals: balance water, shock, optional algaecide per label—then winterize equipment.",
+    "h1": "Closing Pool Chemistry for Winter",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "closing pool chemistry for winter balance shock amp winterize"
+  },
+  {
+    "url": "/guides/seasonal/opening-pool-chemistry-checklist",
+    "title": "Opening Pool Chemistry Checklist (Start-Up Chemicals Order)",
+    "description": "Opening pool chemistry: remove winter cover debris, circulate, test, balance, then sanitize—use this checklist.",
+    "h1": "Opening Pool Chemistry Checklist",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "opening pool chemistry checklist start chemicals order"
+  },
+  {
+    "url": "/guides/seasonal/summer-high-chlorine-demand",
+    "title": "Summer High Chlorine Demand (Heat, Sun &amp; Load)",
+    "description": "Summer high chlorine demand: heat, sun, and bather load raise daily FC loss—test more often and dose smarter.",
+    "h1": "Summer High Chlorine Demand",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "summer high chlorine demand heat sun amp load"
+  },
+  {
+    "url": "/guides/seasonal/winter-pool-maintenance-chemistry",
+    "title": "Winter Pool Maintenance Chemistry (Mild &amp; Cold Climates)",
+    "description": "Winter pool maintenance chemistry for mild climates: test monthly, keep FC non-zero where water isn’t frozen, manage leaves.",
+    "h1": "Winter Pool Maintenance Chemistry",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "winter pool maintenance chemistry mild amp cold climates"
+  },
+  {
+    "url": "/comparisons/chlorine-vs-bromine",
+    "title": "Chlorine vs Bromine: Which Is Better for Your Pool?",
+    "description": "Chlorine vs bromine comparison: cost, temperature stability, UV stability, odor, and best use cases. Which is better for pools vs hot tubs?",
+    "h1": "Chlorine vs Bromine: Which Is Better for Your Pool?",
+    "category": "Comparisons",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "chlorine bromine which better for your pool"
+  },
+  {
+    "url": "/comparisons/chlorine-vs-bromine-hot-tub",
+    "title": "Chlorine vs Bromine for Hot Tubs",
+    "description": "Chlorine vs bromine for hot tubs: which sanitizer is better for spas? Compare pros, cons, and maintenance.",
+    "h1": "Chlorine vs Bromine for Hot Tubs",
+    "category": "Comparisons",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "chlorine bromine for hot tubs"
+  },
+  {
+    "url": "/comparisons/free-chlorine-vs-total-chlorine",
+    "title": "Free Chlorine vs Total Chlorine: What's the Difference?",
+    "description": "Free chlorine vs total chlorine explained: FC sanitizes, TC = FC + combined chlorine. How to interpret test results and when CC above 0.5 ppm requires action.",
+    "h1": "Free Chlorine vs Total Chlorine: What's the Difference?",
+    "category": "Comparisons",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "free chlorine total what the difference"
+  },
+  {
+    "url": "/comparisons/liquid-chlorine-vs-tablets",
+    "title": "Liquid Chlorine vs Chlorine Tablets: Which Is Better?",
+    "description": "Liquid chlorine vs tablets: pH impact, CYA buildup, cost, speed, and SWG compatibility compared. When to use each for pools.",
+    "h1": "Liquid Chlorine vs Chlorine Tablets: Which Is Better?",
+    "category": "Comparisons",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "liquid chlorine tablets which better"
+  },
+  {
+    "url": "/comparisons/pool-shock-vs-chlorine",
+    "title": "Pool Shock vs Chlorine: What's the Difference?",
+    "description": "Pool shock vs regular chlorine: how they differ in purpose, concentration, frequency, and when to use each. They work together, not as alternatives.",
+    "h1": "Pool Shock vs Chlorine: What's the Difference?",
+    "category": "Comparisons",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool shock chlorine what the difference"
+  },
+  {
+    "url": "/comparisons/salt-water-pool-vs-chlorine-pool",
+    "title": "Salt Water Pool vs Chlorine Pool: Full Comparison",
+    "description": "Salt water pool vs traditional chlorine pool: upfront cost, ongoing cost, water feel, chemistry management, pH behavior, and which is better for your situation.",
+    "h1": "Salt Water Pool vs Chlorine Pool: Full Comparison",
+    "category": "Comparisons",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "salt water pool chlorine full comparison"
+  },
+  {
+    "url": "/comparisons/saltwater-pool-vs-chlorine",
+    "title": "Saltwater Pool vs Chlorine Pool",
+    "description": "Saltwater pool vs chlorine pool: maintenance, cost, and chemistry compared.",
+    "h1": "Saltwater Pool vs Chlorine Pool",
+    "category": "Comparisons",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "saltwater pool chlorine"
+  },
+  {
+    "url": "/methodology",
+    "title": "Calculation Methodology",
+    "description": "How WaterBalanceTools calculates pool and hot tub chemical doses — the formulas, data sources, and assumptions behind every calculator.",
+    "h1": "Calculation Methodology",
+    "category": "Methodology",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculation methodology"
+  },
+  {
+    "url": "/about",
+    "title": "About WaterBalanceTools",
+    "description": "WaterBalanceTools is an independent pool and hot tub water chemistry reference, owned and operated by Albor Digital LLC.",
+    "h1": "About WaterBalanceTools",
+    "category": "About",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "about waterbalancetools"
+  },
+  {
+    "url": "/all-pages",
+    "title": "All Pool Chemistry Pages",
+    "description": "Complete list of WaterBalanceTools pool chemistry calculators, guides, and topic pages—flat crawl hub.",
+    "h1": "All Pool Chemistry Pages",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "all pool chemistry pages"
+  },
+  {
+    "url": "/hot-tub-chemical-levels-chart",
+    "title": "Hot Tub Chemical Levels Chart (All Parameters)",
+    "description": "Hot tub chemical levels chart: chlorine, pH, alkalinity, calcium hardness, and CYA ideal ranges for spas. Quick reference table + FAQ.",
+    "h1": "Hot Tub Chemical Levels Chart",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub chemical levels chart all parameters"
+  },
+  {
+    "url": "/hot-tub-chlorine-levels-chart",
+    "title": "Hot Tub Chlorine Levels Chart",
+    "description": "Hot tub chlorine levels chart: ideal 3–5 ppm, safe swim threshold, what too high and too low means for health and equipment.",
+    "h1": "Hot Tub Chlorine Levels Chart",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub chlorine levels chart"
+  },
+  {
+    "url": "/index",
+    "title": "Pool & Hot Tub Chemical Calculator",
+    "description": "Free pool and hot tub chemical calculator. Calculate chlorine and pH adjustments for pools and spas instantly.",
+    "h1": "Pool & Hot Tub Chemical Calculator",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool hot tub chemical calculator"
+  },
+  {
+    "url": "/legal/legal",
+    "title": "Legal Information",
+    "description": "Terms of use, privacy, disclaimer, and cookies for WaterBalanceTools.com.",
+    "h1": "Legal Information",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "legal information"
+  },
+  {
+    "url": "/legal/ownership",
+    "title": "Ownership &amp; Operator Information",
+    "description": "Ownership and operator information for WaterBalanceTools.com — Albor Digital LLC.",
+    "h1": "WaterBalanceTools Ownership",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "ownership amp operator information waterbalancetools"
+  },
+  {
+    "url": "/maintenance/how-often-add-chlorine-pool",
+    "title": "How Often to Add Chlorine to a Pool",
+    "description": "How often to add chlorine to a pool. Testing frequency, daily vs weekly dosing, and when to shock.",
+    "h1": "How Often to Add Chlorine to a Pool",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how often add chlorine pool"
+  },
+  {
+    "url": "/maintenance/how-to-balance-pool-water",
+    "title": "How to Balance Pool Water",
+    "description": "How to balance pool water: test, adjust pH, chlorine, and alkalinity. Step-by-step guide with calculator links.",
+    "h1": "How to Balance Pool Water",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how balance pool water"
+  },
+  {
+    "url": "/maintenance/how-to-fix-cloudy-hot-tub",
+    "title": "How to Fix Cloudy Hot Tub Water",
+    "description": "How to fix cloudy hot tub water: low sanitizer, high alkalinity, dirty filters. Step-by-step with calculator links.",
+    "h1": "How to Fix Cloudy Hot Tub Water",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how fix cloudy hot tub water"
+  },
+  {
+    "url": "/pool-alkalinity-levels-chart",
+    "title": "Pool Alkalinity Levels Chart",
+    "description": "Pool total alkalinity levels chart: ideal 80–120 ppm. What happens if low or high, and how alkalinity affects pH stability.",
+    "h1": "Pool Alkalinity Levels Chart",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool alkalinity levels chart"
+  },
+  {
+    "url": "/pool-chemical-levels-chart",
+    "title": "Pool Chemical Levels Chart (Ideal Ranges + Next Steps)",
+    "description": "Pool chemical levels chart: ideal ppm for chlorine, pH, alkalinity, calcium, and CYA—plus what to do next. Free reference.",
+    "h1": "Pool chemical levels chart",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool chemical levels chart ideal ranges next steps"
+  },
+  {
+    "url": "/pool-chemistry-system",
+    "title": "Pool Chemistry System: How All Parameters Work Together",
+    "description": "Pool chemistry system: how all 8 parameters (chlorine, pH, alkalinity, CYA, calcium hardness, combined chlorine, shock, and salt) work together to keep pool water safe and clear.",
+    "h1": "Pool Chemistry System: How All Parameters Work Together",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool chemistry system how all parameters work together"
+  },
+  {
+    "url": "/pool-chlorine-levels-chart",
+    "title": "Pool Chlorine Levels Chart (1–3 ppm + Shock Targets)",
+    "description": "Pool chlorine levels chart: 1–3 ppm targets, shock ranges, and CYA context—free table + calculator links.",
+    "h1": "Pool chlorine levels chart",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool chlorine levels chart ppm shock targets"
+  },
+  {
+    "url": "/pool-cya-levels-chart",
+    "title": "Pool CYA (Cyanuric Acid) Levels Chart",
+    "description": "Pool CYA levels chart: ideal range 30–50 ppm, what is too high, and how CYA affects chlorine effectiveness. Quick reference table.",
+    "h1": "Pool CYA (Cyanuric Acid) Levels Chart",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool cya cyanuric acid levels chart"
+  },
+  {
+    "url": "/pool-ph-levels-chart",
+    "title": "Pool pH Levels Chart (7.2–7.6 + Fix Order)",
+    "description": "Pool pH levels chart: 7.2–7.6 target, what high and low pH do to chlorine and equipment—plus calculator links.",
+    "h1": "Pool pH levels chart",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool levels chart fix order"
+  },
+  {
+    "url": "/programmatic/behavior/how-often-to-shock-pool",
+    "title": "How Often to Shock a Pool (Weekly Guide)",
+    "description": "Shock on a smart schedule—after parties, storms, or algae risk. Avoid guesswork with testing.",
+    "h1": "How Often Should You Shock a Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how often shock pool weekly guide should you"
+  },
+  {
+    "url": "/programmatic/behavior/how-often-to-test-pool-water",
+    "title": "How Often to Test Pool Water (Simple Schedule)",
+    "description": "Test chlorine and pH several times weekly—catch drift before it becomes a costly fix.",
+    "h1": "How Often Should You Test Pool Water?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how often test pool water simple schedule should you"
+  },
+  {
+    "url": "/programmatic/behavior/when-to-add-chlorine",
+    "title": "When to Add Chlorine to a Pool (Best Time)",
+    "description": "Add chlorine when readings fall below target—often evening dosing reduces UV loss.",
+    "h1": "When Should You Add Chlorine to a Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "when add chlorine pool best time should you"
+  },
+  {
+    "url": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool",
+    "title": "How Much Chlorine for 10000 Gallon Pool (Exact Dose)",
+    "description": "Get exact ounces for a 10,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
+    "h1": "How Much Chlorine Do You Need for a 10,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much chlorine for 10000 gallon pool exact dose you need 000"
+  },
+  {
+    "url": "/programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool",
+    "title": "How Much Chlorine for 12000 Gallon Pool (Exact Dose)",
+    "description": "Get exact ounces for a 12,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
+    "h1": "How Much Chlorine Do You Need for a 12,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much chlorine for 12000 gallon pool exact dose you need 000"
+  },
+  {
+    "url": "/programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool",
+    "title": "How Much Chlorine for 15000 Gallon Pool (Exact Dose)",
+    "description": "Get exact ounces for a 15,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
+    "h1": "How Much Chlorine Do You Need for a 15,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much chlorine for 15000 gallon pool exact dose you need 000"
+  },
+  {
+    "url": "/programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool",
+    "title": "How Much Chlorine for 18000 Gallon Pool (Exact Dose)",
+    "description": "Get exact ounces for a 18,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
+    "h1": "How Much Chlorine Do You Need for a 18,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much chlorine for 18000 gallon pool exact dose you need 000"
+  },
+  {
+    "url": "/programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool",
+    "title": "How Much Chlorine for 20000 Gallon Pool (Exact Dose)",
+    "description": "Get exact ounces for a 20,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
+    "h1": "How Much Chlorine Do You Need for a 20,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much chlorine for 20000 gallon pool exact dose you need 000"
+  },
+  {
+    "url": "/programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool",
+    "title": "How Much Chlorine for 25000 Gallon Pool (Exact Dose)",
+    "description": "Get exact ounces for a 25,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
+    "h1": "How Much Chlorine Do You Need for a 25,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much chlorine for 25000 gallon pool exact dose you need 000"
+  },
+  {
+    "url": "/programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool",
+    "title": "How Much Chlorine for 30000 Gallon Pool (Exact Dose)",
+    "description": "Get exact ounces for a 30,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
+    "h1": "How Much Chlorine Do You Need for a 30,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much chlorine for 30000 gallon pool exact dose you need 000"
+  },
+  {
+    "url": "/programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool",
+    "title": "How Much Chlorine for 5000 Gallon Pool (Exact Dose)",
+    "description": "Get exact ounces for a 5,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
+    "h1": "How Much Chlorine Do You Need for a 5,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much chlorine for 5000 gallon pool exact dose you need 000"
+  },
+  {
+    "url": "/programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool",
+    "title": "How Much Chlorine for 7000 Gallon Pool (Exact Dose)",
+    "description": "Get exact ounces for a 7,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
+    "h1": "How Much Chlorine Do You Need for a 7,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much chlorine for 7000 gallon pool exact dose you need 000"
+  },
+  {
+    "url": "/programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool",
+    "title": "How Much Chlorine for 8000 Gallon Pool (Exact Dose)",
+    "description": "Get exact ounces for a 8,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
+    "h1": "How Much Chlorine Do You Need for a 8,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much chlorine for 8000 gallon pool exact dose you need 000"
+  },
+  {
+    "url": "/programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool",
+    "title": "How Much Chlorine for 9000 Gallon Pool (Exact Dose)",
+    "description": "Get exact ounces for a 9,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
+    "h1": "How Much Chlorine Do You Need for a 9,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much chlorine for 9000 gallon pool exact dose you need 000"
+  },
+  {
+    "url": "/programmatic/explanations/what-is-pool-alkalinity",
+    "title": "What Is Total Alkalinity (Pool Basics)",
+    "description": "Total alkalinity buffers pH—learn what it means and how to keep water balance stable.",
+    "h1": "What Is Total Alkalinity in a Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "what total alkalinity pool basics"
+  },
+  {
+    "url": "/programmatic/explanations/why-ph-affects-chlorine",
+    "title": "Why pH Affects Chlorine (Pool Science)",
+    "description": "Understand pH balance and sanitizer—fix pH first, then fine-tune chlorine levels safely.",
+    "h1": "Why Does pH Affect Chlorine Effectiveness?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "why affects chlorine pool science does affect effectiveness"
+  },
+  {
+    "url": "/programmatic/explanations/why-shower-before-pool",
+    "title": "Why Shower Before Swimming (Pool Chemistry)",
+    "description": "Reduce chloramines and sanitizer load—quick facts on pool water chemistry and bather-introduced contaminants.",
+    "h1": "Why Should You Shower Before Entering a Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "why shower before swimming pool chemistry should you entering"
+  },
+  {
+    "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons",
+    "title": "Hot Tub Chemicals for 200 Gallons (Dosing Guide)",
+    "description": "Sanitizer dosing for a 200-gallon spa. Get exact chlorine reference and calculators—safe hot tub water chemistry.",
+    "h1": "What Chemicals Do You Need for a 200 Gallon Hot Tub?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub chemicals for 200 gallons dosing guide what you need gallon"
+  },
+  {
+    "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons",
+    "title": "Hot Tub Chemicals for 300 Gallons (Dosing Guide)",
+    "description": "Sanitizer dosing for a 300-gallon spa. Get exact chlorine reference and calculators—safe hot tub water chemistry.",
+    "h1": "What Chemicals Do You Need for a 300 Gallon Hot Tub?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub chemicals for 300 gallons dosing guide what you need gallon"
+  },
+  {
+    "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons",
+    "title": "Hot Tub Chemicals for 400 Gallons (Dosing Guide)",
+    "description": "Sanitizer dosing for a 400-gallon spa. Get exact chlorine reference and calculators—safe hot tub water chemistry.",
+    "h1": "What Chemicals Do You Need for a 400 Gallon Hot Tub?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub chemicals for 400 gallons dosing guide what you need gallon"
+  },
+  {
+    "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons",
+    "title": "Hot Tub Chemicals for 500 Gallons (Dosing Guide)",
+    "description": "Sanitizer dosing for a 500-gallon spa. Get exact chlorine reference and calculators—safe hot tub water chemistry.",
+    "h1": "What Chemicals Do You Need for a 500 Gallon Hot Tub?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub chemicals for 500 gallons dosing guide what you need gallon"
+  },
+  {
+    "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons",
+    "title": "Hot Tub Chemicals for 600 Gallons (Dosing Guide)",
+    "description": "Sanitizer dosing for a 600-gallon spa. Get exact chlorine reference and calculators—safe hot tub water chemistry.",
+    "h1": "What Chemicals Do You Need for a 600 Gallon Hot Tub?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub chemicals for 600 gallons dosing guide what you need gallon"
+  },
+  {
+    "url": "/programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2",
+    "title": "How to Adjust Pool pH from 6.8 to 7.2 (Safe Steps)",
+    "description": "Adjust pool pH from 6.8 to 7.2. Use the calculator for exact ounces and stable pH balance.",
+    "h1": "How Do You Adjust Pool pH from 6.8 to 7.2?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how adjust pool from safe steps you"
+  },
+  {
+    "url": "/programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4",
+    "title": "How to Adjust Pool pH from 7.8 to 7.4 (Safe Steps)",
+    "description": "Adjust pool pH from 7.8 to 7.4. Use the calculator for exact ounces and stable pH balance.",
+    "h1": "How Do You Adjust Pool pH from 7.8 to 7.4?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how adjust pool from safe steps you"
+  },
+  {
+    "url": "/programmatic/ph/how-to-adjust-ph-from-7-to-7-4",
+    "title": "How to Adjust Pool pH from 7 to 7.4 (Safe Steps)",
+    "description": "Adjust pool pH from 7 to 7.4. Use the calculator for exact ounces and stable pH balance.",
+    "h1": "How Do You Adjust Pool pH from 7 to 7.4?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how adjust pool from safe steps you"
+  },
+  {
+    "url": "/programmatic/ph/how-to-adjust-ph-from-8-to-7-5",
+    "title": "How to Adjust Pool pH from 8 to 7.5 (Safe Steps)",
+    "description": "Adjust pool pH from 8 to 7.5. Use the calculator for exact ounces and stable pH balance.",
+    "h1": "How Do You Adjust Pool pH from 8 to 7.5?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how adjust pool from safe steps you"
+  },
+  {
+    "url": "/programmatic/problems/cloudy-pool-fix",
+    "title": "Cloudy Pool Fix (Clear Water Fast)",
+    "description": "Clear cloudy water with filtration, pH balance, and targeted chemistry. Practical steps—test before you dump chemicals.",
+    "h1": "How Do You Fix a Cloudy Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "cloudy pool fix clear water fast how you"
+  },
+  {
+    "url": "/programmatic/problems/green-pool-how-much-chlorine",
+    "title": "Fix a Green Pool Fast (Chlorine Guide)",
+    "description": "Shock algae with the right chlorine dose and filtration. Step-by-step guide plus calculators—clear water faster.",
+    "h1": "How Much Chlorine Do You Need to Fix a Green Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "fix green pool fast chlorine guide how much you need"
+  },
+  {
+    "url": "/programmatic/problems/high-chlorine-how-to-lower",
+    "title": "How to Lower High Chlorine Fast (Safe Method)",
+    "description": "Bring high chlorine down safely with dilution, time, and circulation. Know when you can swim again.",
+    "h1": "How Do You Lower High Chlorine in a Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how lower high chlorine fast safe method you pool"
+  },
+  {
+    "url": "/programmatic/problems/low-alkalinity-symptoms",
+    "title": "Low Alkalinity Symptoms (Fix TA Safely)",
+    "description": "Spot low total alkalinity early—stop pH bounce and protect surfaces. Dosing steps plus alkalinity calculator.",
+    "h1": "What Are the Symptoms of Low Alkalinity in a Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "low alkalinity symptoms fix safely what are the pool"
+  },
+  {
+    "url": "/programmatic/shock/how-much-shock-for-10000-gallon-pool",
+    "title": "How Much Shock for 10000 Gallon Pool (Exact Ounces)",
+    "description": "Get granular shock ounces for a 10,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
+    "h1": "How Much Shock Do You Need for a 10,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much shock for 10000 gallon pool exact ounces you need 000"
+  },
+  {
+    "url": "/programmatic/shock/how-much-shock-for-15000-gallon-pool",
+    "title": "How Much Shock for 15000 Gallon Pool (Exact Ounces)",
+    "description": "Get granular shock ounces for a 15,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
+    "h1": "How Much Shock Do You Need for a 15,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much shock for 15000 gallon pool exact ounces you need 000"
+  },
+  {
+    "url": "/programmatic/shock/how-much-shock-for-20000-gallon-pool",
+    "title": "How Much Shock for 20000 Gallon Pool (Exact Ounces)",
+    "description": "Get granular shock ounces for a 20,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
+    "h1": "How Much Shock Do You Need for a 20,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much shock for 20000 gallon pool exact ounces you need 000"
+  },
+  {
+    "url": "/programmatic/shock/how-much-shock-for-25000-gallon-pool",
+    "title": "How Much Shock for 25000 Gallon Pool (Exact Ounces)",
+    "description": "Get granular shock ounces for a 25,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
+    "h1": "How Much Shock Do You Need for a 25,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much shock for 25000 gallon pool exact ounces you need 000"
+  },
+  {
+    "url": "/programmatic/shock/how-much-shock-for-30000-gallon-pool",
+    "title": "How Much Shock for 30000 Gallon Pool (Exact Ounces)",
+    "description": "Get granular shock ounces for a 30,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
+    "h1": "How Much Shock Do You Need for a 30,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much shock for 30000 gallon pool exact ounces you need 000"
+  },
+  {
+    "url": "/programmatic/shock/how-much-shock-for-5000-gallon-pool",
+    "title": "How Much Shock for 5000 Gallon Pool (Exact Ounces)",
+    "description": "Get granular shock ounces for a 5,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
+    "h1": "How Much Shock Do You Need for a 5,000 Gallon Pool?",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "how much shock for 5000 gallon pool exact ounces you need 000"
+  },
+  {
+    "url": "/salt-water-pool-chemical-levels-chart",
+    "title": "Salt Water Pool Chemical Levels Chart",
+    "description": "Salt water pool chemical levels chart: ideal salt ppm, chlorine, pH, TA, CYA, and calcium. SWG-specific targets and maintenance guide.",
+    "h1": "Salt Water Pool Chemical Levels Chart",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "salt water pool chemical levels chart"
+  },
+  {
+    "url": "/search",
+    "title": "Search",
+    "description": "Search pool and hot tub water chemistry guides, calculators, formulas, and resources on WaterBalanceTools.",
+    "h1": "Search WaterBalanceTools",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "search waterbalancetools"
+  },
+  {
+    "url": "/tools",
+    "title": "All Pool & Hot Tub Tools",
+    "description": "All pool and hot tub calculators and dosage guides. Pool chlorine, shock, pH, volume, and hot tub tools.",
+    "h1": "All Pool & Hot Tub Tools",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "all pool hot tub tools"
+  }
+]

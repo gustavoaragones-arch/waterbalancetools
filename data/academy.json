@@ -1,0 +1,31 @@
+{
+  "_comment": "Academy article definitions. Add entries here to generate pages via generate-academy.js.",
+  "_schema": {
+    "slug":               "academy/fundamentals/understanding-ph",
+    "title":              "Understanding pH in Pool Water",
+    "description":        "One-sentence meta description.",
+    "summary":            "One-sentence hero summary shown beneath the H1.",
+    "category":           "fundamentals",
+    "readingTime":        "5 min read",
+    "lastReviewed":       "2026-06-01",
+    "tags":               ["ph", "water-balance", "fundamentals"],
+    "keyFacts":           ["Fact 1", "Fact 2"],
+    "takeaways":          ["Takeaway 1", "Takeaway 2"],
+    "relatedCalculators": ["/calculators/pool-ph-calculator"],
+    "relatedCharts":      ["/pool-ph-levels-chart"],
+    "relatedResources":   ["/resources/pool-maintenance-checklist"],
+    "relatedTopics":      ["academy/fundamentals/total-alkalinity", "academy/water-balance/saturation-index"],
+    "content":            "Full HTML content block (inner body of the article)."
+  },
+  "categories": [
+    { "slug": "fundamentals",       "label": "Fundamentals",       "description": "Core water chemistry concepts every pool owner needs to understand.", "icon": "book" },
+    { "slug": "sanitizers",         "label": "Sanitizers",         "description": "Chlorine, bromine, salt, and alternative sanitization methods.", "icon": "flask" },
+    { "slug": "testing",            "label": "Testing",            "description": "How to test pool water accurately and interpret results.", "icon": "chart" },
+    { "slug": "water-balance",      "label": "Water Balance",      "description": "Balancing pH, alkalinity, hardness, and stabilizer for clear water.", "icon": "pool" },
+    { "slug": "troubleshooting",    "label": "Troubleshooting",    "description": "Diagnosing and fixing cloudy water, algae, staining, and more.", "icon": "warning" },
+    { "slug": "hot-tubs",           "label": "Hot Tubs & Spas",    "description": "Hot tub chemistry, maintenance schedules, and water care.", "icon": "hottub" },
+    { "slug": "equipment",          "label": "Equipment",          "description": "Pumps, filters, heaters, automation, and maintenance tips.", "icon": "shield" },
+    { "slug": "vacation-rentals",   "label": "Vacation Rentals",   "description": "Pool and hot tub management for Airbnb and short-term rentals.", "icon": "checklist" }
+  ],
+  "articles": []
+}

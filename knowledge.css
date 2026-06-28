@@ -1,0 +1,676 @@
+/**
+ * knowledge.css
+ *
+ * Design-system extension for the WaterBalanceTools knowledge platform
+ * (Academy, Formula Library, Glossary, Reference, Methodology).
+ *
+ * Depends on style.css custom properties — always loaded AFTER style.css.
+ * Never duplicates calculator styles; only adds new components.
+ */
+
+/* ── Two-column knowledge layout ────────────────────────────────────────────── */
+
+.knowledge-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .knowledge-layout {
+    grid-template-columns: 240px 1fr;
+    gap: 2.5rem;
+  }
+  .knowledge-sidebar {
+    position: sticky;
+    top: 1.5rem;
+    max-height: calc(100vh - 3rem);
+    overflow-y: auto;
+  }
+}
+
+.knowledge-content {
+  min-width: 0; /* prevent grid blowout */
+}
+
+/* ── Sidebar ─────────────────────────────────────────────────────────────────── */
+
+.knowledge-sidebar {
+  background: var(--bg-soft);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+.knowledge-sidebar h3 {
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-secondary);
+  margin: 0 0 0.6rem;
+}
+.knowledge-sidebar-section {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-soft);
+}
+.knowledge-sidebar-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.knowledge-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.knowledge-sidebar li {
+  margin: 0;
+}
+.knowledge-sidebar a {
+  display: block;
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.3rem 0;
+  line-height: 1.5;
+  border-radius: 4px;
+}
+.knowledge-sidebar a:hover {
+  color: var(--blue);
+}
+.knowledge-sidebar a.active {
+  color: var(--blue);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ── Breadcrumb ──────────────────────────────────────────────────────────────── */
+
+.breadcrumb {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-soft);
+  margin-bottom: 0;
+}
+.breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: var(--text-secondary);
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 820px) {
+  .breadcrumb-list {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+.breadcrumb-list a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+.breadcrumb-list a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+.breadcrumb-sep {
+  color: var(--border-soft);
+  user-select: none;
+  padding: 0 0.1rem;
+  font-size: 14px;
+}
+.breadcrumb-list li[aria-current="page"] {
+  color: var(--text-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ── Knowledge hero ──────────────────────────────────────────────────────────── */
+
+.knowledge-hero {
+  padding: 2rem 0 1.5rem;
+}
+.knowledge-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.knowledge-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 100px;
+  background: var(--blue-light);
+  color: var(--blue);
+  border: 1px solid rgba(14, 116, 144, 0.2);
+}
+.knowledge-badge--fundamentals  { background: #ecfdf5; color: #166534; border-color: rgba(22,101,52,0.2); }
+.knowledge-badge--sanitizers    { background: #fff7ed; color: #9a3412; border-color: rgba(154,52,18,0.2); }
+.knowledge-badge--testing       { background: #f0f9ff; color: #0369a1; border-color: rgba(3,105,161,0.2); }
+.knowledge-badge--water-balance { background: var(--blue-light); color: var(--blue); border-color: rgba(14,116,144,0.2); }
+.knowledge-badge--troubleshooting { background: #fef9c3; color: #713f12; border-color: rgba(113,63,18,0.2); }
+.knowledge-badge--hot-tubs      { background: #fdf2f8; color: #86198f; border-color: rgba(134,25,143,0.2); }
+.knowledge-badge--equipment     { background: #f8fafc; color: #475569; border-color: rgba(71,85,105,0.2); }
+.knowledge-badge--vacation-rentals { background: #f0fdf4; color: #166534; border-color: rgba(22,101,52,0.2); }
+.knowledge-badge--formula       { background: #eff6ff; color: #1d4ed8; border-color: rgba(29,78,216,0.2); }
+.knowledge-badge--glossary      { background: #faf5ff; color: #7e22ce; border-color: rgba(126,34,206,0.2); }
+.knowledge-badge--reference     { background: #fff1f2; color: #be123c; border-color: rgba(190,18,60,0.2); }
+
+.knowledge-hero-reading {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.knowledge-hero h1 {
+  font-size: clamp(24px, 4vw, 36px);
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+}
+.knowledge-hero-summary {
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 0 1.25rem;
+}
+.knowledge-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+.knowledge-chip {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  padding: 0.3rem 0.7rem;
+  border-radius: 100px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border-soft);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+  cursor: pointer;
+}
+.knowledge-chip:hover {
+  background: var(--blue-light);
+  border-color: rgba(14,116,144,0.3);
+  color: var(--blue);
+  text-decoration: none;
+}
+
+/* ── Cards ───────────────────────────────────────────────────────────────────── */
+
+.knowledge-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  background: var(--white);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+  box-shadow: var(--shadow);
+}
+.knowledge-card:hover {
+  border-color: var(--blue-soft);
+  box-shadow: 0 4px 12px rgba(8, 145, 178, 0.1);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+.knowledge-card-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--blue);
+  margin-bottom: 0.3rem;
+}
+.knowledge-card-icon svg { width: 100%; height: 100%; }
+.knowledge-card h3,
+.knowledge-card .knowledge-card-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: var(--font-weight-bold);
+  color: var(--blue);
+  line-height: 1.3;
+}
+.knowledge-card p,
+.knowledge-card .knowledge-card-desc {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.knowledge-card-meta {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 0.2rem;
+}
+
+/* Card grid */
+.knowledge-grid {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 540px) {
+  .knowledge-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .knowledge-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.knowledge-grid--2col {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 540px) {
+  .knowledge-grid--2col { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── Callouts ────────────────────────────────────────────────────────────────── */
+
+.knowledge-callout,
+.knowledge-warning,
+.knowledge-success {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+}
+.knowledge-callout {
+  background: #f0f9ff;
+  border: 1px solid rgba(3,105,161,0.2);
+  color: #0c4a6e;
+}
+.knowledge-warning {
+  background: #fef9c3;
+  border: 1px solid rgba(202,138,4,0.3);
+  color: #713f12;
+}
+.knowledge-success {
+  background: #f0fdf4;
+  border: 1px solid rgba(22,101,52,0.2);
+  color: #14532d;
+}
+.knowledge-callout-icon,
+.knowledge-warning-icon,
+.knowledge-success-icon {
+  flex-shrink: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* ── Table ───────────────────────────────────────────────────────────────────── */
+
+.knowledge-table-wrap {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-soft);
+}
+.knowledge-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.knowledge-table th {
+  text-align: left;
+  padding: 0.6rem 0.85rem;
+  background: var(--bg-soft);
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-soft);
+  white-space: nowrap;
+}
+.knowledge-table td {
+  padding: 0.65rem 0.85rem;
+  border-bottom: 1px solid var(--border-soft);
+  vertical-align: top;
+  line-height: 1.5;
+}
+.knowledge-table tr:last-child td { border-bottom: none; }
+.knowledge-table tr:hover td { background: var(--bg-soft); }
+
+/* ── Definition & example ────────────────────────────────────────────────────── */
+
+.knowledge-definition {
+  border-left: 3px solid var(--blue);
+  padding: 0.75rem 1rem;
+  background: var(--blue-light);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 1.25rem 0;
+}
+.knowledge-definition strong {
+  display: block;
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--blue);
+  margin-bottom: 0.4rem;
+}
+.knowledge-example {
+  background: var(--bg-soft);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 1.25rem 0;
+}
+.knowledge-example strong {
+  display: block;
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+}
+
+/* ── Key takeaways ───────────────────────────────────────────────────────────── */
+
+.knowledge-takeaways {
+  background: var(--blue-light);
+  border: 1px solid rgba(14, 116, 144, 0.2);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+}
+.knowledge-takeaways h2 {
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--blue);
+  margin: 0 0 0.75rem;
+}
+.knowledge-takeaways ul {
+  margin: 0;
+  padding: 0 0 0 1.25rem;
+}
+.knowledge-takeaways li {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+
+/* ── Sources / citations ─────────────────────────────────────────────────────── */
+
+.knowledge-sources {
+  font-size: 12px;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border-soft);
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+.knowledge-sources ol {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+.knowledge-sources li {
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}
+
+/* ── Knowledge footer ────────────────────────────────────────────────────────── */
+
+.knowledge-footer-links {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0 0;
+  padding: 2rem 0 0;
+  border-top: 1px solid var(--border-soft);
+}
+@media (min-width: 600px) {
+  .knowledge-footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.knowledge-footer-section h4 {
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-secondary);
+  margin: 0 0 0.5rem;
+}
+.knowledge-footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.knowledge-footer-section li {
+  font-size: 13px;
+  line-height: 1.8;
+}
+.knowledge-footer-section a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+.knowledge-footer-section a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+/* ── Category hub ────────────────────────────────────────────────────────────── */
+
+.knowledge-hub-hero {
+  padding: 2.5rem 0 1.5rem;
+  border-bottom: 1px solid var(--border-soft);
+  margin-bottom: 2rem;
+}
+.knowledge-hub-hero h1 {
+  font-size: clamp(26px, 4vw, 40px);
+  line-height: 1.15;
+  margin: 0.5rem 0 0.75rem;
+}
+.knowledge-hub-hero p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 580px;
+  margin: 0;
+}
+.knowledge-hub-categories {
+  display: grid;
+  gap: 0.75rem;
+}
+@media (min-width: 540px) {
+  .knowledge-hub-categories { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .knowledge-hub-categories { grid-template-columns: repeat(4, 1fr); }
+}
+.knowledge-category-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1rem 1.1rem;
+  background: var(--white);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: border-color 0.15s, transform 0.12s;
+}
+.knowledge-category-card:hover {
+  border-color: var(--blue-soft);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+.knowledge-category-card h3 {
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+  color: var(--blue);
+}
+.knowledge-category-card p {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+.knowledge-category-count {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+
+/* ── Formula display ─────────────────────────────────────────────────────────── */
+
+.formula-display {
+  background: var(--bg-soft);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 20px;
+  font-family: var(--font-mono);
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+.formula-display .formula-equation {
+  font-size: clamp(16px, 3vw, 22px);
+  color: var(--text-primary);
+}
+.formula-variable-table {
+  margin-top: 1rem;
+  font-size: 13px;
+  width: 100%;
+}
+.formula-variable-table td:first-child {
+  font-family: var(--font-mono);
+  font-weight: var(--font-weight-bold);
+  color: var(--blue);
+  padding-right: 1rem;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+/* ── Glossary term ───────────────────────────────────────────────────────────── */
+
+.glossary-term {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-soft);
+}
+.glossary-term:last-child { border-bottom: none; }
+.glossary-term-word {
+  font-size: 20px;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin: 0 0 0.3rem;
+}
+.glossary-term-phonetic {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+.glossary-term-definition {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+/* ── Search page ─────────────────────────────────────────────────────────────── */
+
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.search-input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  font-size: 16px;
+  border: 1.5px solid var(--border-soft);
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.15s;
+  background: var(--white);
+  color: var(--text-primary);
+}
+.search-input:focus {
+  border-color: var(--blue);
+}
+.search-result-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-soft);
+}
+.search-result-item:last-child { border-bottom: none; }
+.search-result-category {
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--blue);
+  margin-bottom: 0.2rem;
+}
+.search-result-title {
+  font-size: 16px;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  text-decoration: none;
+}
+.search-result-title:hover { color: var(--blue); }
+.search-result-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-top: 0.25rem;
+}
+.search-empty {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+/* ── Nav search icon ─────────────────────────────────────────────────────────── */
+
+.nav-end {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+.nav-search {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: color 0.15s, background 0.15s;
+}
+.nav-search:hover {
+  color: var(--blue);
+  background: var(--bg-soft);
+}
+.nav-search svg {
+  width: 18px;
+  height: 18px;
+}
