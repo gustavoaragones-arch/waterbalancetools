@@ -31,6 +31,53 @@
       <h1>Pool Shock Calculator</h1>
     <p class="hero-sub">Calculate how much shock your pool needs based on volume and shock strength.</p>
     </section>
+
+    <form id="calc-form" class="calc-form">
+      <div class="form-group">
+        <label for="volume">Pool gallons</label>
+        <input type="number" id="volume" min="1" step="1" placeholder="e.g. 15000">
+      </div>
+      <div class="form-group">
+        <label for="strength">Shock strength (target ppm)</label>
+        <select id="strength">
+          <option value="5">Light (5 ppm)</option>
+          <option value="10" selected>Standard (10 ppm)</option>
+          <option value="15">Heavy (15 ppm)</option>
+          <option value="20">Double shock (20 ppm)</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Calculate</button>
+    </form>
+
+    <div id="result" class="output-panel hidden">
+      <h3>Result</h3>
+      <p id="result-text"></p>
+    </div>
+
+    <div class="ad ad-result"><!-- AdSense --></div>
+
+        <section class="printable-resources">
+      <h2>Free Printable Resources</h2>
+      <div class="printable-cards">
+        <a href="/printable/maintenance-checklist" class="printable-card">
+          <strong>Pool Maintenance Plan</strong>
+          <span>Fillable checklist — download as PDF</span>
+        </a>
+        <a href="/printables/pool-maintenance-checklist" class="printable-card">
+          <strong>Pool Maintenance Checklist</strong>
+          <span>Weekly task tracker</span>
+        </a>
+        <a href="/printables/hot-tub-maintenance-log" class="printable-card">
+          <strong>Hot Tub Maintenance Log</strong>
+          <span>Chemical log sheet</span>
+        </a>
+        <a href="/printables/airbnb-pool-turnover-checklist" class="printable-card">
+          <strong>Vacation Rental Turnover Checklist</strong>
+          <span>Pool handoff reference</span>
+        </a>
+      </div>
+    </section>
+
     <section class="trust-strip">
       <ul class="trust-strip-list">
         <li><span class="trust-check" aria-hidden="true">✓</span> <strong>Shock raise:</strong> often 10–30 ppm (follow label)</li>
@@ -39,11 +86,28 @@
         <li><span class="trust-check" aria-hidden="true">✓</span> <a href="/pool-chlorine-levels-chart">Chlorine levels chart</a> · <a href="/pool-chemical-levels-chart">Full balance chart</a></li>
       </ul>
     </section>
+
+    <section class="calc-chart-crosslinks card">
+      <h2>Recommended Levels</h2>
+      <p>See the full reference chart:</p>
+      <ul class="ring-links">
+        <li><a href="/pool-chemical-levels-chart">Pool Chemical Levels Chart</a></li>
+        <li><a href="/pool-chlorine-levels-chart">Chlorine Levels Chart</a></li>
+        <li><a href="/pool-ph-levels-chart">pH Levels Chart</a></li>
+      </ul>
+    </section>
+
     <section class="quick-answers">
       <h2>Quick Answers</h2>
       <div class="faq-item"><h3>How much shock does a pool need?</h3><p>Shock dose depends on gallons and how many ppm you want to raise—often 10–30 ppm for algae or heavy use. Enter volume and target ppm here for granular ounces.</p></div>
       <div class="faq-item"><h3>When should I shock my pool?</h3><p>Shock after heavy bather load, visible algae, cloudy water with low chlorine, or when combined chlorine is high. Run the pump and retest before swimming.</p></div>
     </section>
+
+    <section class="quick-tips">
+      <h2>Quick tips</h2>
+      <p><strong>When to shock:</strong> After heavy use, rain, or if chlorine is low. Run pump for several hours after adding shock. Avoid swimming until chlorine returns to normal (1–3 ppm).</p>
+    </section>
+
     <section class="people-also-ask">
       <h2>People Also Ask</h2>
       <div class="paa-accordion">
@@ -74,8 +138,40 @@
       </div>
     </section>
 
-
-    <p class="context">For full water balance, use the main <a href="/calculators/chemical-calculator">Pool Chemical Calculator</a>.</p>
+        <section class="related-calculators">
+      <h2>Related Calculators</h2>
+      <div class="related-calcs-grid">
+        <div class="related-calcs-group">
+          <h3>Pool Calculators</h3>
+          <div class="related-calcs-cards">
+          <a href="/calculators/chemical-calculator" class="calc-card">Pool Chemical Calculator</a>
+          <a href="/calculators/pool-chlorine-calculator" class="calc-card">Pool Chlorine Calculator</a>
+          <a href="/calculators/pool-ph-calculator" class="calc-card">Pool pH Calculator</a>
+          <a href="/calculators/pool-shock-calculator" class="calc-card calc-card--active">Pool Shock Calculator</a>
+          <a href="/calculators/pool-volume-calculator" class="calc-card">Pool Volume Calculator</a>
+          </div>
+        </div>
+        <div class="related-calcs-group">
+          <h3>Hot Tub Calculators</h3>
+          <div class="related-calcs-cards">
+          <a href="/calculators/hot-tub-chlorine-calculator" class="calc-card">Hot Tub Chlorine Calculator</a>
+          <a href="/calculators/hot-tub-ph-calculator" class="calc-card">Hot Tub pH Calculator</a>
+          <a href="/calculators/hot-tub-shock-calculator" class="calc-card">Hot Tub Shock Calculator</a>
+          </div>
+        </div>
+        <div class="related-calcs-group">
+          <h3>Water Chemistry</h3>
+          <div class="related-calcs-cards">
+          <a href="/calculators/saltwater-pool-salt-calculator" class="calc-card">Salt Calculator</a>
+          <a href="/calculators/pool-alkalinity-calculator" class="calc-card">Alkalinity Calculator</a>
+          <a href="/calculators/pool-cyanuric-acid-calculator" class="calc-card">CYA Calculator</a>
+          <a href="/calculators/pool-turnover-rate-calculator" class="calc-card">Turnover Rate Calculator</a>
+          <a href="/calculators/spa-volume-calculator" class="calc-card">Spa Volume Calculator</a>
+          <a href="/calculators/volume-calculator" class="calc-card">Volume Calculator</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="calc-related-tools card">
       <h2>Related Pool Chemistry Tools</h2>
@@ -114,69 +210,7 @@
         </ul>
       </div>
     </section>
-  
-    <p class="silo-hub-cta"><a href="../guides/chlorine-guide.html">See full guide →</a></p><form id="calc-form" class="calc-form">
-      <div class="form-group">
-        <label for="volume">Pool gallons</label>
-        <input type="number" id="volume" min="1" step="1" placeholder="e.g. 15000">
-      </div>
-      <div class="form-group">
-        <label for="strength">Shock strength (target ppm)</label>
-        <select id="strength">
-          <option value="5">Light (5 ppm)</option>
-          <option value="10" selected>Standard (10 ppm)</option>
-          <option value="15">Heavy (15 ppm)</option>
-          <option value="20">Double shock (20 ppm)</option>
-        </select>
-      </div>
-      <button type="submit" class="btn btn-primary">Calculate</button>
-    </form>
-    <section class="calc-chart-crosslinks card">
-      <h2>Recommended Levels</h2>
-      <p>See the full reference chart:</p>
-      <ul class="ring-links">
-        <li><a href="/pool-chemical-levels-chart">Pool Chemical Levels Chart</a></li>
-        <li><a href="/pool-chlorine-levels-chart">Chlorine Levels Chart</a></li>
-        <li><a href="/pool-ph-levels-chart">pH Levels Chart</a></li>
-      </ul>
-    </section>
-<div id="result" class="output-panel hidden">
-      <h3>Result</h3>
-      <p id="result-text"></p>
-    </div>
-    <div class="ad ad-result"><!-- AdSense --></div>
-    <section class="quick-tips">
-      <h2>Quick tips</h2>
-      <p><strong>When to shock:</strong> After heavy use, rain, or if chlorine is low. Run pump for several hours after adding shock. Avoid swimming until chlorine returns to normal (1–3 ppm).</p>
-    </section>
-    <section class="related-tools">
-      <h2>Related tools</h2>
-      <ul class="ring-links">
-        <li><a href="pool-volume-calculator.html">Pool Volume Calculator</a></li>
-        <li><a href="pool-chlorine-calculator.html">Pool Chlorine Calculator</a></li>
-        <li><a href="pool-ph-calculator.html">Pool pH Calculator</a></li>
-        <li><a href="../guides/pool-chemistry-basics.html">Pool Chemistry Guide</a></li>
-      </ul>
-    </section>
-  
-    <section class="related-calculators">
-      <h2>Related Pool Calculators</h2>
-      <ul>
-        <li><a href="/calculators/chemical-calculator">Chemical Calculator</a></li>
-        <li><a href="/calculators/hot-tub-chlorine-calculator">Hot Tub Chlorine Calculator</a></li>
-        <li><a href="/calculators/hot-tub-ph-calculator">Hot Tub Ph Calculator</a></li>
-        <li><a href="/calculators/hot-tub-shock-calculator">Hot Tub Shock Calculator</a></li>
-        <li><a href="/calculators/pool-alkalinity-calculator">Pool Alkalinity Calculator</a></li>
-        <li><a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a></li>
-        <li><a href="/calculators/pool-cyanuric-acid-calculator">Pool Cyanuric Acid Calculator</a></li>
-        <li><a href="/calculators/pool-ph-calculator">Pool Ph Calculator</a></li>
-        <li><a href="/calculators/pool-turnover-rate-calculator">Pool Turnover Rate Calculator</a></li>
-        <li><a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a></li>
-        <li><a href="/calculators/saltwater-pool-salt-calculator">Saltwater Pool Salt Calculator</a></li>
-        <li><a href="/calculators/spa-volume-calculator">Spa Volume Calculator</a></li>
-        <li><a href="/calculators/volume-calculator">Volume Calculator</a></li>
-      </ul>
-    </section>
+
     <div class="ad ad-bottom"><!-- AdSense --></div>
 
     <section class="credibility">
@@ -189,10 +223,11 @@
 These tools are designed to help maintain safe chlorine, pH, and total alkalinity within a healthy water balance.</p>
       <p class="meta publisher-meta">Published by Water Balance Tools · Operated by Albor Digital LLC</p>
     </section>
+
     <p class="updated">Last updated: April 2026</p>
 
-    </main>
-        <footer class="site-footer">
+  </main>
+          <footer class="site-footer">
     <nav class="footer-nav">
       <a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a>
       <a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a>

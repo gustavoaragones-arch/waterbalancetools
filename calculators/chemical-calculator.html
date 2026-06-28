@@ -27,63 +27,12 @@
   </header>
 
   <main class="container">
-    <h1>Pool & Hot Tub Chemical Calculator</h1>
+    <section class="hero hero-compact">
+      <h1>Pool & Hot Tub Chemical Calculator</h1>
     <p>Enter your water volume and test results to get chlorine and pH adjustment amounts.</p>
-    <section class="trust-strip">
-      <ul class="trust-strip-list">
-        <li><span class="trust-check" aria-hidden="true">✓</span> <strong>Safe chlorine:</strong> 1–3 ppm (pools)</li>
-        <li><span class="trust-check" aria-hidden="true">✓</span> <strong>Safe pH:</strong> 7.2–7.6</li>
-        <li><span class="trust-check" aria-hidden="true">✓</span> <strong>Alkalinity:</strong> 80–120 ppm</li>
-        <li><span class="trust-check" aria-hidden="true">✓</span> Calculator updated monthly</li>
-        <li><span class="trust-check" aria-hidden="true">✓</span> <a href="/pool-chemical-levels-chart">Pool chemical levels chart</a> · <a href="/pool-chlorine-levels-chart">Chlorine chart</a> · <a href="/pool-ph-levels-chart">pH chart</a></li>
-      </ul>
-    </section>
-    <section class="quick-answers">
-      <h2>Quick Answers</h2>
-      <div class="faq-item"><h3>What should pool chlorine be?</h3><p>Keep free chlorine between 1–3 ppm for most swimming pools. Below 1 ppm sanitizer may be too weak; above 3 ppm can irritate swimmers—test and dose in small steps.</p></div>
-      <div class="faq-item"><h3>How often should I test pool water?</h3><p>Test chlorine and pH at least 2–3 times per week during swim season. Test alkalinity weekly and after heavy rain or large water changes.</p></div>
-    </section>
-    <section class="people-also-ask">
-      <h2>People Also Ask</h2>
-      <div class="paa-accordion">
-      <details class="paa-item">
-        <summary>What happens if pool chlorine is too low?</summary>
-        <p>Below about 1 ppm, bacteria and algae can grow and water may turn cloudy or green. Raise sanitizer in small steps, run the pump, and retest—avoid doubling doses without testing after circulation.</p>
-      </details>
-      <details class="paa-item">
-        <summary>Can I use the same chemicals for pools and hot tubs?</summary>
-        <p>Many products overlap, but hot tubs need higher sanitizer (often 3–5 ppm) and smaller volumes mean tiny errors matter. Select hot tub in this calculator when dosing a spa.</p>
-      </details>
-      <details class="paa-item">
-        <summary>Should I balance pH before adding chlorine?</summary>
-        <p>Often yes. High pH weakens chlorine effectiveness; very low pH can irritate skin and corrode equipment. Get pH near 7.2–7.6, then fine-tune free chlorine based on test readings.</p>
-      </details>
-      <details class="paa-item">
-        <summary>Does rain lower pool chlorine?</summary>
-        <p>Rain can dilute sanitizer and introduce contaminants that consume chlorine. After heavy rain, test free chlorine and pH, run the filter, and adjust chemistry before heavy swimming.</p>
-      </details>
-      <details class="paa-item">
-        <summary>What is the difference between shock and chlorine?</summary>
-        <p>Routine chlorine maintains daily sanitizer; shock is a larger dose to oxidize waste, algae, or chloramines. Use the shock calculator for big raises; use this tool for ongoing balance.</p>
-      </details>
-      <details class="paa-item">
-        <summary>How much chlorine per 10,000 gallons?</summary>
-        <p>It depends on current ppm and product strength—not a single fixed ounce. Enter your gallons and test results here, or open the chlorine-by-size guides linked from your volume.</p>
-      </details>
-      </div>
     </section>
 
-
-    <section class="calc-related-tools card">
-      <h2>Related Pool Chemistry Tools</h2>
-      <ul class="ring-links">
-        <li><a href="/reference/pool-chemistry-reference">Pool chemistry reference</a></li>
-        <li><a href="../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html">Chlorine dose for 10,000 gal</a></li>
-        <li><a href="../programmatic/shock/how-much-shock-for-10000-gallon-pool.html">Shock ounces for 10,000 gal</a></li>
-        <li><a href="../programmatic/problems/green-pool-how-much-chlorine.html">Green pool: chlorine &amp; shock</a></li>
-        <li><a href="../programmatic/problems/cloudy-pool-fix.html">Cloudy pool fix</a></li>
-      </ul>
-    </section><form id="chemical-form" class="chemical-form">
+    <form id="chemical-form" class="chemical-form">
       <h2>Water Type</h2>
       <div class="form-group">
         <label for="water-type">Type</label>
@@ -162,21 +111,16 @@
         <button type="submit" class="btn btn-primary">Calculate</button>
       </div>
     </form>
-    <section class="calc-chart-crosslinks card">
-      <h2>Recommended Levels</h2>
-      <p>See the full reference chart:</p>
-      <ul class="ring-links">
-        <li><a href="/pool-chemical-levels-chart">Pool Chemical Levels Chart</a></li>
-        <li><a href="/pool-chlorine-levels-chart">Chlorine Levels Chart</a></li>
-        <li><a href="/pool-ph-levels-chart">pH Levels Chart</a></li>
-      </ul>
-    </section>
-<div id="output-panel" class="output-panel hidden">
+
+    <div id="output-panel" class="output-panel hidden">
       <h3>Recommendations</h3>
       <div id="output-content"></div>
-    <div class="ad ad-result"><!-- AdSense --></div>
+    
+    
     <p class="re-test">Re-test water after 20–30 minutes with pump running.</p>
     </div>
+
+    <div class="ad ad-result"><!-- AdSense --></div>
 
     <section class="maintenance-section">
       <h2>Maintenance Schedule</h2>
@@ -196,25 +140,131 @@
         <button type="button" id="download-pdf" class="btn btn-primary">Download Maintenance Plan (PDF)</button>
       </div>
     </section>
-  
-    <section class="related-calculators">
-      <h2>Related Pool Calculators</h2>
-      <ul>
-        <li><a href="/calculators/hot-tub-chlorine-calculator">Hot Tub Chlorine Calculator</a></li>
-        <li><a href="/calculators/hot-tub-ph-calculator">Hot Tub Ph Calculator</a></li>
-        <li><a href="/calculators/hot-tub-shock-calculator">Hot Tub Shock Calculator</a></li>
-        <li><a href="/calculators/pool-alkalinity-calculator">Pool Alkalinity Calculator</a></li>
-        <li><a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a></li>
-        <li><a href="/calculators/pool-cyanuric-acid-calculator">Pool Cyanuric Acid Calculator</a></li>
-        <li><a href="/calculators/pool-ph-calculator">Pool Ph Calculator</a></li>
-        <li><a href="/calculators/pool-shock-calculator">Pool Shock Calculator</a></li>
-        <li><a href="/calculators/pool-turnover-rate-calculator">Pool Turnover Rate Calculator</a></li>
-        <li><a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a></li>
-        <li><a href="/calculators/saltwater-pool-salt-calculator">Saltwater Pool Salt Calculator</a></li>
-        <li><a href="/calculators/spa-volume-calculator">Spa Volume Calculator</a></li>
-        <li><a href="/calculators/volume-calculator">Volume Calculator</a></li>
+
+        <section class="printable-resources">
+      <h2>Free Printable Resources</h2>
+      <div class="printable-cards">
+        <a href="/printable/maintenance-checklist" class="printable-card">
+          <strong>Pool Maintenance Plan</strong>
+          <span>Fillable checklist — download as PDF</span>
+        </a>
+        <a href="/printables/pool-maintenance-checklist" class="printable-card">
+          <strong>Pool Maintenance Checklist</strong>
+          <span>Weekly task tracker</span>
+        </a>
+        <a href="/printables/hot-tub-maintenance-log" class="printable-card">
+          <strong>Hot Tub Maintenance Log</strong>
+          <span>Chemical log sheet</span>
+        </a>
+        <a href="/printables/airbnb-pool-turnover-checklist" class="printable-card">
+          <strong>Vacation Rental Turnover Checklist</strong>
+          <span>Pool handoff reference</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <ul class="trust-strip-list">
+        <li><span class="trust-check" aria-hidden="true">✓</span> <strong>Safe chlorine:</strong> 1–3 ppm (pools)</li>
+        <li><span class="trust-check" aria-hidden="true">✓</span> <strong>Safe pH:</strong> 7.2–7.6</li>
+        <li><span class="trust-check" aria-hidden="true">✓</span> <strong>Alkalinity:</strong> 80–120 ppm</li>
+        <li><span class="trust-check" aria-hidden="true">✓</span> Calculator updated monthly</li>
+        <li><span class="trust-check" aria-hidden="true">✓</span> <a href="/pool-chemical-levels-chart">Pool chemical levels chart</a> · <a href="/pool-chlorine-levels-chart">Chlorine chart</a> · <a href="/pool-ph-levels-chart">pH chart</a></li>
       </ul>
-    </section><div class="ad ad-bottom"><!-- AdSense --></div>
+    </section>
+
+    <section class="calc-chart-crosslinks card">
+      <h2>Recommended Levels</h2>
+      <p>See the full reference chart:</p>
+      <ul class="ring-links">
+        <li><a href="/pool-chemical-levels-chart">Pool Chemical Levels Chart</a></li>
+        <li><a href="/pool-chlorine-levels-chart">Chlorine Levels Chart</a></li>
+        <li><a href="/pool-ph-levels-chart">pH Levels Chart</a></li>
+      </ul>
+    </section>
+
+    <section class="quick-answers">
+      <h2>Quick Answers</h2>
+      <div class="faq-item"><h3>What should pool chlorine be?</h3><p>Keep free chlorine between 1–3 ppm for most swimming pools. Below 1 ppm sanitizer may be too weak; above 3 ppm can irritate swimmers—test and dose in small steps.</p></div>
+      <div class="faq-item"><h3>How often should I test pool water?</h3><p>Test chlorine and pH at least 2–3 times per week during swim season. Test alkalinity weekly and after heavy rain or large water changes.</p></div>
+    </section>
+
+    <section class="people-also-ask">
+      <h2>People Also Ask</h2>
+      <div class="paa-accordion">
+      <details class="paa-item">
+        <summary>What happens if pool chlorine is too low?</summary>
+        <p>Below about 1 ppm, bacteria and algae can grow and water may turn cloudy or green. Raise sanitizer in small steps, run the pump, and retest—avoid doubling doses without testing after circulation.</p>
+      </details>
+      <details class="paa-item">
+        <summary>Can I use the same chemicals for pools and hot tubs?</summary>
+        <p>Many products overlap, but hot tubs need higher sanitizer (often 3–5 ppm) and smaller volumes mean tiny errors matter. Select hot tub in this calculator when dosing a spa.</p>
+      </details>
+      <details class="paa-item">
+        <summary>Should I balance pH before adding chlorine?</summary>
+        <p>Often yes. High pH weakens chlorine effectiveness; very low pH can irritate skin and corrode equipment. Get pH near 7.2–7.6, then fine-tune free chlorine based on test readings.</p>
+      </details>
+      <details class="paa-item">
+        <summary>Does rain lower pool chlorine?</summary>
+        <p>Rain can dilute sanitizer and introduce contaminants that consume chlorine. After heavy rain, test free chlorine and pH, run the filter, and adjust chemistry before heavy swimming.</p>
+      </details>
+      <details class="paa-item">
+        <summary>What is the difference between shock and chlorine?</summary>
+        <p>Routine chlorine maintains daily sanitizer; shock is a larger dose to oxidize waste, algae, or chloramines. Use the shock calculator for big raises; use this tool for ongoing balance.</p>
+      </details>
+      <details class="paa-item">
+        <summary>How much chlorine per 10,000 gallons?</summary>
+        <p>It depends on current ppm and product strength—not a single fixed ounce. Enter your gallons and test results here, or open the chlorine-by-size guides linked from your volume.</p>
+      </details>
+      </div>
+    </section>
+
+        <section class="related-calculators">
+      <h2>Related Calculators</h2>
+      <div class="related-calcs-grid">
+        <div class="related-calcs-group">
+          <h3>Pool Calculators</h3>
+          <div class="related-calcs-cards">
+          <a href="/calculators/chemical-calculator" class="calc-card calc-card--active">Pool Chemical Calculator</a>
+          <a href="/calculators/pool-chlorine-calculator" class="calc-card">Pool Chlorine Calculator</a>
+          <a href="/calculators/pool-ph-calculator" class="calc-card">Pool pH Calculator</a>
+          <a href="/calculators/pool-shock-calculator" class="calc-card">Pool Shock Calculator</a>
+          <a href="/calculators/pool-volume-calculator" class="calc-card">Pool Volume Calculator</a>
+          </div>
+        </div>
+        <div class="related-calcs-group">
+          <h3>Hot Tub Calculators</h3>
+          <div class="related-calcs-cards">
+          <a href="/calculators/hot-tub-chlorine-calculator" class="calc-card">Hot Tub Chlorine Calculator</a>
+          <a href="/calculators/hot-tub-ph-calculator" class="calc-card">Hot Tub pH Calculator</a>
+          <a href="/calculators/hot-tub-shock-calculator" class="calc-card">Hot Tub Shock Calculator</a>
+          </div>
+        </div>
+        <div class="related-calcs-group">
+          <h3>Water Chemistry</h3>
+          <div class="related-calcs-cards">
+          <a href="/calculators/saltwater-pool-salt-calculator" class="calc-card">Salt Calculator</a>
+          <a href="/calculators/pool-alkalinity-calculator" class="calc-card">Alkalinity Calculator</a>
+          <a href="/calculators/pool-cyanuric-acid-calculator" class="calc-card">CYA Calculator</a>
+          <a href="/calculators/pool-turnover-rate-calculator" class="calc-card">Turnover Rate Calculator</a>
+          <a href="/calculators/spa-volume-calculator" class="calc-card">Spa Volume Calculator</a>
+          <a href="/calculators/volume-calculator" class="calc-card">Volume Calculator</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="calc-related-tools card">
+      <h2>Related Pool Chemistry Tools</h2>
+      <ul class="ring-links">
+        <li><a href="/reference/pool-chemistry-reference">Pool chemistry reference</a></li>
+        <li><a href="../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html">Chlorine dose for 10,000 gal</a></li>
+        <li><a href="../programmatic/shock/how-much-shock-for-10000-gallon-pool.html">Shock ounces for 10,000 gal</a></li>
+        <li><a href="../programmatic/problems/green-pool-how-much-chlorine.html">Green pool: chlorine &amp; shock</a></li>
+        <li><a href="../programmatic/problems/cloudy-pool-fix.html">Cloudy pool fix</a></li>
+      </ul>
+    </section>
+
     <section class="link-matrix link-matrix--mid card">
       <h2>Related Pool Chemistry Guides</h2>
       <div class="matrix-group">
@@ -241,19 +291,10 @@
         </ul>
       </div>
     </section>
-  
 
-  
+    <div class="ad ad-bottom"><!-- AdSense --></div>
 
-  
-
-  
-
-  
-
-  
-
-  <section class="credibility">
+    <section class="credibility">
       <ul class="credibility-trust">
         <li>Typical range: 1–3 ppm chlorine</li>
         <li>Recommended pH: 7.2–7.6</li>
@@ -263,11 +304,12 @@
 These tools are designed to help maintain safe chlorine, pH, and total alkalinity within a healthy water balance.</p>
       <p class="meta publisher-meta">Published by Water Balance Tools · Operated by Albor Digital LLC</p>
     </section>
+
     <p class="updated">Last updated: April 2026</p>
 
-    </main>
+  </main>
 
-        <footer class="site-footer">
+          <footer class="site-footer">
     <nav class="footer-nav">
       <a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a>
       <a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a>

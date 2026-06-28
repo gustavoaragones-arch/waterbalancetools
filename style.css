@@ -1194,6 +1194,96 @@ textarea:focus {
   font-size: 13px;
 }
 
+/* ── Related-Calculators card grid ─────────────────────────────────────── */
+.related-calcs-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.related-calcs-group > h3 {
+  margin: 0 0 0.6rem;
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-secondary);
+}
+.related-calcs-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.5rem;
+}
+.calc-card {
+  display: inline-block;
+  padding: 0.45rem 0.875rem;
+  background: #f0f7fa;
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--text-primary);
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.calc-card:hover {
+  background: #e0eef4;
+  color: var(--blue);
+  text-decoration: none;
+}
+.calc-card--active {
+  background: var(--blue);
+  color: #fff;
+  pointer-events: none;
+}
+.calc-card--active:hover {
+  background: var(--blue);
+  color: #fff;
+}
+
+/* ── Printable Resources section ────────────────────────────────────────── */
+.printable-resources {
+  background: #f8fafb;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+.printable-resources h2 {
+  margin: 0 0 0.875rem;
+}
+.printable-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.printable-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.75rem 1rem;
+  background: var(--white);
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  min-width: 160px;
+  max-width: 230px;
+  flex: 1 1 160px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: border-color 0.15s, transform 0.15s;
+}
+.printable-card:hover {
+  border-color: var(--blue-soft);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+.printable-card strong {
+  font-size: 13px;
+  font-weight: var(--font-weight-medium);
+  color: var(--blue);
+}
+.printable-card span {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
 /* Printable */
 @media print {
   .no-print {

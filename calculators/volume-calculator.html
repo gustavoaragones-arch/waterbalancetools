@@ -27,19 +27,12 @@
   </header>
 
   <main class="container">
-    <h1>Pool Volume Calculator</h1>
+    <section class="hero hero-compact">
+      <h1>Pool Volume Calculator</h1>
     <p>Enter dimensions in feet. We'll calculate volume in US gallons.</p>
-    <section class="calc-related-tools card">
-      <h2>Related Pool Chemistry Tools</h2>
-      <ul class="ring-links">
-        <li><a href="../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html">Chlorine dose for 10,000 gal</a></li>
-        <li><a href="../programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html">Lower pool pH 8.0 → 7.5</a></li>
-        <li><a href="../programmatic/behavior/when-to-add-chlorine.html">When to add chlorine</a></li>
-        <li><a href="../programmatic/problems/cloudy-pool-fix.html">Cloudy pool fix</a></li>
-        <li><a href="../programmatic/problems/green-pool-how-much-chlorine.html">Green pool: chlorine &amp; shock</a></li>
-      </ul>
     </section>
-<form id="volume-form">
+
+    <form id="volume-form">
       <div class="form-group">
         <label for="shape">Shape</label>
         <select id="shape" name="shape">
@@ -96,6 +89,29 @@
         <button type="submit" class="btn btn-primary">Calculate volume</button>
       </div>
     </form>
+
+        <section class="printable-resources">
+      <h2>Free Printable Resources</h2>
+      <div class="printable-cards">
+        <a href="/printable/maintenance-checklist" class="printable-card">
+          <strong>Pool Maintenance Plan</strong>
+          <span>Fillable checklist — download as PDF</span>
+        </a>
+        <a href="/printables/pool-maintenance-checklist" class="printable-card">
+          <strong>Pool Maintenance Checklist</strong>
+          <span>Weekly task tracker</span>
+        </a>
+        <a href="/printables/hot-tub-maintenance-log" class="printable-card">
+          <strong>Hot Tub Maintenance Log</strong>
+          <span>Chemical log sheet</span>
+        </a>
+        <a href="/printables/airbnb-pool-turnover-checklist" class="printable-card">
+          <strong>Vacation Rental Turnover Checklist</strong>
+          <span>Pool handoff reference</span>
+        </a>
+      </div>
+    </section>
+
     <section class="calc-chart-crosslinks card">
       <h2>Recommended Levels</h2>
       <p>See the full reference chart:</p>
@@ -105,40 +121,53 @@
         <li><a href="/pool-ph-levels-chart">pH Levels Chart</a></li>
       </ul>
     </section>
-<div id="volume-output" class="output-panel hidden">
-      <h3>Volume</h3>
-      <p id="volume-result"></p>
-      <p id="volume-cubic-meters" class="muted"></p>
-      <a id="use-in-chemical" href="chemical-calculator.html" class="btn btn-secondary">Use this volume in Chemical Calculator</a>
-    </div>
-    <div class="ad ad-result"><!-- AdSense --></div>
-    <div class="form-group" style="margin-top:1.5rem;">
-      <h2>Or enter volume directly</h2>
-      <p>If you already know volume in cubic meters:</p>
-      <label for="cubic-meters">Cubic meters (m³)</label>
-      <input type="number" id="cubic-meters" name="cubicMeters" min="0" step="0.01" placeholder="e.g. 37.85">
-      <button type="button" id="convert-m3" class="btn btn-secondary">Convert to gallons</button>
-      <p id="m3-result" class="muted"></p>
-    </div>
-  
-    <section class="related-calculators">
-      <h2>Related Pool Calculators</h2>
-      <ul>
-        <li><a href="/calculators/chemical-calculator">Chemical Calculator</a></li>
-        <li><a href="/calculators/hot-tub-chlorine-calculator">Hot Tub Chlorine Calculator</a></li>
-        <li><a href="/calculators/hot-tub-ph-calculator">Hot Tub Ph Calculator</a></li>
-        <li><a href="/calculators/hot-tub-shock-calculator">Hot Tub Shock Calculator</a></li>
-        <li><a href="/calculators/pool-alkalinity-calculator">Pool Alkalinity Calculator</a></li>
-        <li><a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a></li>
-        <li><a href="/calculators/pool-cyanuric-acid-calculator">Pool Cyanuric Acid Calculator</a></li>
-        <li><a href="/calculators/pool-ph-calculator">Pool Ph Calculator</a></li>
-        <li><a href="/calculators/pool-shock-calculator">Pool Shock Calculator</a></li>
-        <li><a href="/calculators/pool-turnover-rate-calculator">Pool Turnover Rate Calculator</a></li>
-        <li><a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a></li>
-        <li><a href="/calculators/saltwater-pool-salt-calculator">Saltwater Pool Salt Calculator</a></li>
-        <li><a href="/calculators/spa-volume-calculator">Spa Volume Calculator</a></li>
+
+        <section class="related-calculators">
+      <h2>Related Calculators</h2>
+      <div class="related-calcs-grid">
+        <div class="related-calcs-group">
+          <h3>Pool Calculators</h3>
+          <div class="related-calcs-cards">
+          <a href="/calculators/chemical-calculator" class="calc-card">Pool Chemical Calculator</a>
+          <a href="/calculators/pool-chlorine-calculator" class="calc-card">Pool Chlorine Calculator</a>
+          <a href="/calculators/pool-ph-calculator" class="calc-card">Pool pH Calculator</a>
+          <a href="/calculators/pool-shock-calculator" class="calc-card">Pool Shock Calculator</a>
+          <a href="/calculators/pool-volume-calculator" class="calc-card">Pool Volume Calculator</a>
+          </div>
+        </div>
+        <div class="related-calcs-group">
+          <h3>Hot Tub Calculators</h3>
+          <div class="related-calcs-cards">
+          <a href="/calculators/hot-tub-chlorine-calculator" class="calc-card">Hot Tub Chlorine Calculator</a>
+          <a href="/calculators/hot-tub-ph-calculator" class="calc-card">Hot Tub pH Calculator</a>
+          <a href="/calculators/hot-tub-shock-calculator" class="calc-card">Hot Tub Shock Calculator</a>
+          </div>
+        </div>
+        <div class="related-calcs-group">
+          <h3>Water Chemistry</h3>
+          <div class="related-calcs-cards">
+          <a href="/calculators/saltwater-pool-salt-calculator" class="calc-card">Salt Calculator</a>
+          <a href="/calculators/pool-alkalinity-calculator" class="calc-card">Alkalinity Calculator</a>
+          <a href="/calculators/pool-cyanuric-acid-calculator" class="calc-card">CYA Calculator</a>
+          <a href="/calculators/pool-turnover-rate-calculator" class="calc-card">Turnover Rate Calculator</a>
+          <a href="/calculators/spa-volume-calculator" class="calc-card">Spa Volume Calculator</a>
+          <a href="/calculators/volume-calculator" class="calc-card calc-card--active">Volume Calculator</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="calc-related-tools card">
+      <h2>Related Pool Chemistry Tools</h2>
+      <ul class="ring-links">
+        <li><a href="../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html">Chlorine dose for 10,000 gal</a></li>
+        <li><a href="../programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html">Lower pool pH 8.0 → 7.5</a></li>
+        <li><a href="../programmatic/behavior/when-to-add-chlorine.html">When to add chlorine</a></li>
+        <li><a href="../programmatic/problems/cloudy-pool-fix.html">Cloudy pool fix</a></li>
+        <li><a href="../programmatic/problems/green-pool-how-much-chlorine.html">Green pool: chlorine &amp; shock</a></li>
       </ul>
-    </section><div class="ad ad-bottom"><!-- AdSense --></div>
+    </section>
+
     <section class="link-matrix link-matrix--mid card">
       <h2>Related Pool Chemistry Guides</h2>
       <div class="matrix-group">
@@ -165,19 +194,10 @@
         </ul>
       </div>
     </section>
-  
 
-  
+    <div class="ad ad-bottom"><!-- AdSense --></div>
 
-  
-
-  
-
-  
-
-  
-
-  <section class="credibility">
+    <section class="credibility">
       <ul class="credibility-trust">
         <li>Typical range: 1–3 ppm chlorine</li>
         <li>Recommended pH: 7.2–7.6</li>
@@ -187,11 +207,12 @@
 These tools are designed to help maintain safe chlorine, pH, and total alkalinity within a healthy water balance.</p>
       <p class="meta publisher-meta">Published by Water Balance Tools · Operated by Albor Digital LLC</p>
     </section>
+
     <p class="updated">Last updated: April 2026</p>
 
-    </main>
+  </main>
 
-        <footer class="site-footer">
+          <footer class="site-footer">
     <nav class="footer-nav">
       <a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a>
       <a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a>

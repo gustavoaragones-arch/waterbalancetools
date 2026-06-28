@@ -51,6 +51,9 @@ const scripts = ['generate-tools-index.js', 'generate-sitemap.js'];
 
 require(path.join(__dirname, 'generate-redirects.js'));
 
+// Restructure calculator pages to new UX hierarchy — runs after all injectors
+require(path.join(__dirname, 'restructure-calculator-pages.js'));
+
 // Normalise footer across all pages — must run after all content generators
 require(path.join(__dirname, 'inject-footer.js'));
 
