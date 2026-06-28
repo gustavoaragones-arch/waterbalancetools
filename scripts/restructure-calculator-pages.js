@@ -1,18 +1,22 @@
 /**
  * Restructure calculator pages to the new UX hierarchy:
  *
- *   1. Hero (compact)
+ *   1. Hero (compact + SVG icon)          [P4]
+ *      ↓  flow arrow                      [P2]
  *   2. Calculator form
  *   3. Results (output-panel)
  *   4. Maintenance schedule (if present)
- *   5. Printable resources (injected)
+ *      ↓  flow arrow                      [P2]
+ *   5. Printable resources (premium labels)[P7]
  *   6. Recommended levels (trust-strip + calc-chart-crosslinks)
  *   7. Quick answers
  *   8. People Also Ask
- *   9. Related calculators  →  grouped responsive card grid
+ *   9. Related calculators  →  grouped card grid with counts [P5]
  *  10. Related guides       →  calc-related-tools + link-matrix
  *  11. Credibility / meta
  *  12. Last updated
+ *
+ * Also injects result-renderer.js into <head>.              [P1]
  *
  * Idempotent — runs every pipeline cycle after all injectors.
  * Run: node scripts/restructure-calculator-pages.js
@@ -59,41 +63,75 @@ const ALL_FILES = [
   ...WATER_CHEM_CALCS,
 ];
 
-// ── Printable resources ───────────────────────────────────────────────────────
+// ── P4 — SVG icons per calculator type ───────────────────────────────────────
+
+const SVG_BEAKER = `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 10h20M26 10v18L14 52h36L38 28V10" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 44q5-4 12 0t12 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`;
+const SVG_POOL   = `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="8" y="24" width="48" height="24" rx="5" stroke="currentColor" stroke-width="3"/><path d="M8 36q8-5 16 0t16 0t16 0" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M16 24v-8M48 24v-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>`;
+const SVG_PH     = `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="6" y="26" width="52" height="12" rx="6" stroke="currentColor" stroke-width="3"/><circle cx="32" cy="32" r="5" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="2.5"/><circle cx="32" cy="32" r="2.5" fill="currentColor"/><path d="M14 22v-5M32 20v-7M50 22v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`;
+const SVG_HOTTUB = `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 46c0-11 8-20 20-20s20 9 20 20" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M8 46h48" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M20 24v-5M32 22v-7M44 24v-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="2 2"/></svg>`;
+const SVG_SALT   = `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="18" y="18" width="28" height="28" rx="8" stroke="currentColor" stroke-width="3" transform="rotate(12 32 32)"/><circle cx="32" cy="32" r="5" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="2.5"/></svg>`;
+const SVG_WAVE   = `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 44L20 22l14 14 10-18 12 10" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="22" r="3.5" fill="currentColor"/><circle cx="34" cy="36" r="3.5" fill="currentColor"/></svg>`;
+const SVG_SHIELD = `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M32 8L10 18v16c0 12 10 20 22 24 12-4 22-12 22-24V18L32 8z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M24 32a8 8 0 0 1 16 0" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>`;
+const SVG_CLOCK  = `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="32" cy="32" r="22" stroke="currentColor" stroke-width="3"/><path d="M32 18v14l9 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const SVG_SPA    = `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="32" cy="40" rx="24" ry="12" stroke="currentColor" stroke-width="3"/><path d="M8 40V32c0-7 10-12 24-12s24 5 24 12v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>`;
+
+const CALC_ICONS = {
+  'chemical-calculator.html':          SVG_BEAKER,
+  'pool-chlorine-calculator.html':     SVG_BEAKER,
+  'pool-ph-calculator.html':           SVG_PH,
+  'pool-shock-calculator.html':        SVG_BEAKER,
+  'pool-volume-calculator.html':       SVG_POOL,
+  'hot-tub-chlorine-calculator.html':  SVG_HOTTUB,
+  'hot-tub-ph-calculator.html':        SVG_PH,
+  'hot-tub-shock-calculator.html':     SVG_HOTTUB,
+  'saltwater-pool-salt-calculator.html': SVG_SALT,
+  'pool-alkalinity-calculator.html':   SVG_WAVE,
+  'pool-cyanuric-acid-calculator.html': SVG_SHIELD,
+  'pool-turnover-rate-calculator.html': SVG_CLOCK,
+  'spa-volume-calculator.html':        SVG_SPA,
+  'volume-calculator.html':            SVG_POOL,
+};
+
+// ── P7 — Printable resources (premium labels) ─────────────────────────────────
 
 const PRINTABLE_BLOCK = `    <section class="printable-resources">
       <h2>Free Printable Resources</h2>
       <div class="printable-cards">
-        <a href="/printable/maintenance-checklist" class="printable-card">
-          <strong>Pool Maintenance Plan</strong>
-          <span>Fillable checklist — download as PDF</span>
-        </a>
-        <a href="/printables/pool-maintenance-checklist" class="printable-card">
+        <a href="/resources/pool-maintenance-checklist" class="printable-card">
           <strong>Pool Maintenance Checklist</strong>
-          <span>Weekly task tracker</span>
+          <span>&#10003;&nbsp;Printable &middot; &#10003;&nbsp;Free &middot; &#10003;&nbsp;One Page</span>
         </a>
-        <a href="/printables/hot-tub-maintenance-log" class="printable-card">
+        <a href="/resources/hot-tub-maintenance-log" class="printable-card">
           <strong>Hot Tub Maintenance Log</strong>
-          <span>Chemical log sheet</span>
+          <span>&#10003;&nbsp;Printable &middot; &#10003;&nbsp;Free &middot; &#10003;&nbsp;Letter &amp; A4</span>
         </a>
-        <a href="/printables/airbnb-pool-turnover-checklist" class="printable-card">
+        <a href="/resources/pool-chemical-log-sheet" class="printable-card">
+          <strong>Pool Chemical Log Sheet</strong>
+          <span>&#10003;&nbsp;Printable &middot; &#10003;&nbsp;Free &middot; &#10003;&nbsp;One Page</span>
+        </a>
+        <a href="/resources/airbnb-pool-turnover-checklist" class="printable-card">
           <strong>Vacation Rental Turnover Checklist</strong>
-          <span>Pool handoff reference</span>
+          <span>&#10003;&nbsp;Printable &middot; &#10003;&nbsp;Free &middot; &#10003;&nbsp;One Page</span>
         </a>
       </div>
     </section>`;
 
-// ── Related calculators card grid ─────────────────────────────────────────────
+// ── P2 — Flow arrow ───────────────────────────────────────────────────────────
+
+const FLOW = '    <div class="calc-flow-arrow" aria-hidden="true">&#8595;</div>';
+
+// ── P5 — Related calculators card grid (with counts) ─────────────────────────
 
 function relatedCalcsBlock(currentFile) {
   const groups = ALL_GROUPS.map(({ title, calcs }) => {
+    const count = calcs.length;
     const cards = calcs.map(({ file, href, label }) => {
       const active = file === currentFile;
       const cls = active ? 'calc-card calc-card--active' : 'calc-card';
       return `          <a href="${href}" class="${cls}">${label}</a>`;
     }).join('\n');
     return `        <div class="related-calcs-group">
-          <h3>${title}</h3>
+          <h3>${title} (${count})</h3>
           <div class="related-calcs-cards">
 ${cards}
           </div>
@@ -129,11 +167,11 @@ function pluck(html, openRe, closeTag) {
 
   while (depth > 0 && pos < html.length) {
     const c = html.toLowerCase().indexOf(closeStr.toLowerCase(), pos);
-    if (c === -1) break; // malformed, bail
+    if (c === -1) break;
     const o = html.toLowerCase().indexOf(openLow, pos);
     if (o !== -1 && o < c) {
       depth++;
-      pos = o + openLow.length; // skip past the nested open-tag start
+      pos = o + openLow.length;
     } else {
       depth--;
       pos = c + closeStr.length;
@@ -170,10 +208,10 @@ function restructureFile(fileName) {
 
   const beforeMain   = html.slice(0, contentStart);
   let   mainContent  = html.slice(contentStart, mainEnd);
-  const afterMain    = html.slice(mainEnd); // includes </main> onward
+  const afterMain    = html.slice(mainEnd);
 
-  // ── Extract each known block (order of extraction is irrelevant) ──────────
-  const B = {}; // named blocks
+  // ── Extract each known block ──────────────────────────────────────────────
+  const B = {};
 
   function ex(name, openRe, closeTag) {
     const { block, rest } = pluck(mainContent, openRe, closeTag);
@@ -197,7 +235,7 @@ function restructureFile(fileName) {
   ex('quickTips',        /<section\s[^>]*class="quick-tips[^"]*"[^>]*>/i,         'section');
   ex('relatedTools',     /<section\s[^>]*class="related-tools[^"]*"[^>]*>/i,      'section');
   ex('credibility',      /<section\s[^>]*class="credibility[^"]*"[^>]*>/i,        'section');
-  // The old flat related-calculators list (replaced by generated card grid)
+  // Old flat related-calculators list (replaced by generated card grid)
   ex('_oldRelatedCalcs', /<section\s[^>]*class="related-calculators[^"]*"[^>]*>/i, 'section');
   // Ad divs
   ex('adResult', /<div\s[^>]*class="ad ad-result"[^>]*>/i, 'div');
@@ -207,16 +245,15 @@ function restructureFile(fileName) {
   // Output/results panel
   ex('outputPanel', /<div\s[^>]*id="(?:output-panel|result)"[^>]*>/i, 'div');
 
-  // Inline elements (single-line)
-  exInline('updated',    /<p\s+class="updated">[^<]*<\/p>/i);
+  // Inline elements
+  exInline('updated', /<p\s+class="updated">[^<]*<\/p>/i);
 
-  // Discard: context paragraph, silo-hub-cta, old quick-tips/related-tools
-  // (quick-tips content is superseded by quick-answers; related-tools by card grid)
+  // Discard stray context / silo-hub paragraphs
   mainContent = mainContent
     .replace(/<p\s+class="context"[^>]*>[\s\S]*?<\/p>/gi, '')
     .replace(/<p\s+class="silo-hub-cta"[^>]*>[\s\S]*?<\/p>/gi, '');
 
-  // ── Handle volume-calculator.html: bare <h1> (no .hero section) ──────────
+  // ── Handle bare <h1> (no .hero section) ──────────────────────────────────
   if (!B.hero) {
     const bareHero = mainContent.match(
       /<h1[^>]*>([\s\S]*?)<\/h1>(\s*<p[^>]*>[\s\S]*?<\/p>)?/i
@@ -228,21 +265,33 @@ function restructureFile(fileName) {
     }
   }
 
-  // ── Combine Related Guides (calc-related-tools + link-matrix) ────────────
+  // ── P4 — Inject SVG icon into hero (idempotent guard: calc-hero-icon) ────
+  const svg = CALC_ICONS[fileName];
+  if (svg && B.hero && !B.hero.includes('calc-hero-icon')) {
+    B.hero = B.hero.replace(
+      '</section>',
+      `  <div class="calc-hero-icon">${svg}</div>\n    </section>`
+    );
+  }
+
+  // ── Combine Related Guides ────────────────────────────────────────────────
   const relatedGuides = [B.calcRelatedTools, B.linkMatrix].filter(Boolean).join('\n\n    ');
 
   // ── Assemble in new order ─────────────────────────────────────────────────
+  // P2: flow arrows between Hero→Calculator and Answer→Downloads
   const parts = [
     B.hero,
+    B.hero ? FLOW : null,          // ↓ Hero → Calculator
     B.calcForm,
     B.outputPanel,
-    B.adResult,       // ad immediately after results
+    B.adResult,
     B.maintenance,
+    FLOW,                           // ↓ Answer/Maintenance → Downloads
     PRINTABLE_BLOCK,
     B.trustStrip,
     B.calcChartXlinks,
     B.quickAnswers,
-    B.quickTips,      // kept if present (quick tips on older calculators)
+    B.quickTips,
     B.paa,
     relatedCalcsBlock(fileName),
     relatedGuides,
@@ -251,10 +300,17 @@ function restructureFile(fileName) {
     B.updated,
   ].filter(Boolean);
 
-  // Whitespace remaining in mainContent (e.g. stray whitespace/newlines) is ignored.
-
   const newMainContent = '\n    ' + parts.join('\n\n    ') + '\n\n  ';
-  const newHtml = beforeMain + newMainContent + afterMain;
+  let newHtml = beforeMain + newMainContent + afterMain;
+
+  // ── P1 — Inject result-renderer.js into <head> (idempotent) ──────────────
+  if (!newHtml.includes('result-renderer.js')) {
+    newHtml = newHtml.replace(
+      '</head>',
+      '  <script src="/js/result-renderer.js" defer></script>\n</head>'
+    );
+  }
+
   fs.writeFileSync(filePath, newHtml, 'utf8');
   return true;
 }

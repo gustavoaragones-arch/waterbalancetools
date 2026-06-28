@@ -51,8 +51,14 @@ const scripts = ['generate-tools-index.js', 'generate-sitemap.js'];
 
 require(path.join(__dirname, 'generate-redirects.js'));
 
+// /resources/ content cluster — must run before broken-link check resolves /resources/*
+require(path.join(__dirname, 'generate-resource-pages.js'));
+
 // Restructure calculator pages to new UX hierarchy — runs after all injectors
 require(path.join(__dirname, 'restructure-calculator-pages.js'));
+
+// Normalise nav across all pages — runs after restructure so new pages are included
+require(path.join(__dirname, 'inject-nav.js'));
 
 // Normalise footer across all pages — must run after all content generators
 require(path.join(__dirname, 'inject-footer.js'));
