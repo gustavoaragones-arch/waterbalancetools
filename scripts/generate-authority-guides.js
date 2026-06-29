@@ -102,7 +102,6 @@ ${body}
         <li>Test water regularly</li>
       </ul>
       <p>WaterBalanceTools provides practical calculators and guides for pool and hot tub water chemistry. These tools are designed to help maintain safe chlorine, pH, and total alkalinity within a healthy water balance.</p>
-      <p class="meta publisher-meta">Published by Water Balance Tools · Operated by Albor Digital LLC</p>
     </section>
     <div class="ad ad-bottom"><!-- AdSense --></div>
     <p class="updated">Last updated: June 2026</p>

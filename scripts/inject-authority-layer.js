@@ -1,5 +1,5 @@
 /**
- * Credibility block (includes publisher) + footer legal on programmatic, calculators, and guides.
+ * Credibility block + footer legal on programmatic, calculators, and guides.
  * Idempotent. Run before build-link-matrix.js (matrix inserts mid-main).
  */
 const fs = require('fs');
@@ -19,7 +19,6 @@ const CREDIBILITY = `
       </ul>
       <p>WaterBalanceTools provides practical calculators and guides for pool and hot tub water chemistry.
 These tools are designed to help maintain safe chlorine, pH, and total alkalinity within a healthy water balance.</p>
-      <p class="meta publisher-meta">Published by Water Balance Tools · Operated by Albor Digital LLC</p>
     </section>`;
 
 function walkHtmlFiles(dir, out) {

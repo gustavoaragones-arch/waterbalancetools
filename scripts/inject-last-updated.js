@@ -1,28 +1,20 @@
 /**
- * Idempotent: single <p class="updated"> before </main>. Bump month in programmatic-seo-constants.js.
+ * Removes legacy inline "Last updated" blocks before </main>.
  * Same crawl set as inject-seo-metadata.js (skips components/, templates/).
  * Run: node scripts/inject-last-updated.js
  */
 const fs = require('fs');
 const path = require('path');
-const { LAST_UPDATED_DISPLAY } = require('./programmatic-seo-constants');
 
 const ROOT = path.join(__dirname, '..');
 const SKIP_DIRS = new Set(['node_modules', '.git', 'components', 'templates']);
-
-const UPDATED_BLOCK =
-  '    <p class="updated">Last updated: ' +
-  LAST_UPDATED_DISPLAY.replace(/</g, '&lt;') +
-  '</p>\n';
 
 function stripUpdated(html) {
   return html.replace(/<p\s+class=["']updated["'][^>]*>[\s\S]*?<\/p>\s*/gi, '');
 }
 
 function injectUpdated(html) {
-  let h = stripUpdated(html);
-  if (!/<\/main>/i.test(h)) return html;
-  return h.replace(/(\s*)<\/main>/i, '\n' + UPDATED_BLOCK + '$1</main>');
+  return stripUpdated(html);
 }
 
 function walkHtml(dir, baseRel, out) {
