@@ -598,15 +598,18 @@ p.updated {
 }
 /* ── Breadcrumb ───────────────────────────────────────────────────────────── */
 .breadcrumb {
-  padding: .5rem 1.5rem;
+  padding: .5rem 0;
   font-size: .8125rem;
   color: #666;
   border-bottom: 1px solid #f0f0f0;
 }
 .breadcrumb-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+  width: 100%;
+  max-width: var(--max-width);
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -767,6 +770,11 @@ p.updated {
 }
 .hero-compact {
   padding: 2.5rem 1.5rem;
+}
+
+/* Keep consistent breathing room before footer across pages */
+main {
+  padding-bottom: 2.5rem;
 }
 .hero-compact h1 {
   font-size: var(--text-lg);
