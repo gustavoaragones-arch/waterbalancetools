@@ -675,6 +675,16 @@ p.updated {
   color: var(--blue);
   text-decoration: none;
 }
+@media (min-width: 768px) {
+  /* Align menu row to the logo wordmark (not droplet icon). */
+  .site-header__inner {
+    align-items: flex-start;
+  }
+  .site-header__inner .nav,
+  .site-header__inner .nav-end {
+    padding-top: 12px;
+  }
+}
 /* Hamburger button — hidden on desktop */
 .nav-hamburger {
   display: none;
@@ -752,8 +762,19 @@ p.updated {
 .hero {
   text-align: center;
   padding: 56px 20px;
-  background: linear-gradient(180deg, #f8fafb 0%, #ecfeff 100%);
+  background-image:
+    url("/public/background.svg"),
+    linear-gradient(180deg, #f8fafb 0%, #ecfeff 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-size: min(1680px, 100vw) auto, 100% 100%;
+  background-position: center top, center center;
   border-bottom: none;
+}
+.hero:not(.hero-compact) {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  min-height: 390px;
 }
 .hero h1 {
   letter-spacing: -0.02em;
