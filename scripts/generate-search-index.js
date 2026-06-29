@@ -64,7 +64,8 @@ function urlToCategory(url) {
     calculators:'Calculators', guides:'Guides', charts:'Charts',
     resources:'Resources', academy:'Academy', formulas:'Formula Library',
     glossary:'Glossary', reference:'Reference', comparisons:'Comparisons',
-    methodology:'Methodology', about:'About',
+    methodology:'Methodology', editorial:'Editorial', provenance:'Methodology',
+    revisions:'Methodology', about:'About',
   };
   return MAP[seg] || 'Other';
 }

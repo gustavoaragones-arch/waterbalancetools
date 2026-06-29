@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Content Standards | WaterBalanceTools</title>
+  <meta name="description" content="Standards for accuracy, clarity, and completeness applied to all WaterBalanceTools content.">
+  <link rel="canonical" href="https://waterbalancetools.com/editorial/content-standards/">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .trust-page h1{margin-bottom:.5rem}.trust-page .page-meta{color:#666;font-size:.875rem;margin-bottom:2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+    .trust-page section{margin-bottom:2rem}.trust-page section h2{border-bottom:2px solid #e0e0e0;padding-bottom:.5rem;margin-bottom:1rem}
+    .policy-section{background:#fff;border:1px solid #e8e8e8;border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.25rem}
+    .policy-section h3{margin:0 0 .5rem;font-size:1rem;color:#0073aa}
+    .trust-nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.5rem 0}
+    .trust-nav a{display:block;padding:1rem 1.25rem;background:#f8f9fa;border:1px solid #e0e0e0;border-radius:6px;text-decoration:none;color:#0073aa;font-weight:500}
+    .trust-nav a:hover{background:#e8f0fe;border-color:#0073aa}
+    .diagram-box{background:#f0f4f8;border:1px solid #ccd;border-radius:6px;padding:1rem;font-family:monospace;font-size:.875rem;white-space:pre;margin:1rem 0}
+  </style>
+</head>
+<body>
+  <header class="site-header"><!-- nav injected --></header>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/editorial/">Editorial</a> › Content Standards</nav>
+  <main class="knowledge-content trust-page">
+    
+<h1>Content Standards</h1>
+<div class="page-meta">
+  <span>Last reviewed: 2026-07-01</span>
+  <a href="/editorial/">← Editorial Framework</a>
+</div>
+
+<div class="policy-section">
+  <h3>Purpose</h3>
+  <p>These standards define the quality requirements for all content on WaterBalanceTools. They apply to both editorially written content and programmatically generated content.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Accuracy</h3>
+  <p>All numerical values, ranges, and recommendations must be traceable to the canonical data layer (data/datasets/). No page may contain hardcoded scientific values that bypass dataset validation. Accuracy is verified at build time by validate-datasets.js and validate-trust.js.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Clarity</h3>
+  <p>Content is written for pool and spa owners who are not chemists. Technical terminology is defined on first use. Jargon is avoided unless it is the established industry term. Every technical article must link to the relevant glossary entry.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Completeness</h3>
+  <p>Every calculator must document what it calculates, what it does not calculate, and what external factors may affect results. Every dataset must document its source priority, version, and last review date. Every formula must document its variables and assumptions.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Consistency</h3>
+  <p>Units are consistent within each page and consistent with the canonical unit definitions in data/datasets/units.json. Terminology follows the canonical entity names in data/graph/entity-index.json. Contradictions between pages are treated as errors and resolved at build time.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Disclosure of Limitations</h3>
+  <p>Calculator results are clearly identified as estimates. Known limitations of each calculator are disclosed in the trust panel. Environmental factors (temperature, sunlight, bather load) that affect real-world results are documented.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Maintenance</h3>
+  <p>Content standards are enforced at build time. The validate-trust.js script rejects builds that fail to meet minimum standards for trust metadata, version information, and confidence level assignment.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Review Frequency</h3>
+  <p>Content standards are reviewed annually and updated when significant changes to platform architecture or data layer require new requirements.</p>
+  
+</div>
+<p style="margin-top:2rem"><a href="/editorial/">← Back to Editorial Framework</a></p>
+  </main>
+  <footer class="site-footer"><!-- footer injected --></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

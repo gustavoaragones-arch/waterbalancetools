@@ -107,6 +107,13 @@ require(path.join(__dirname, 'generate-breadcrumbs.js'));
 // ── Step 12: Search index ─────────────────────────────────────────────────────
 require(path.join(__dirname, 'generate-search-index.js'));
 
+// ── Phase 5B: Scientific Authority System ────────────────────────────────────
+// Must run after all content generators so it can inject panels into generated pages.
+// 5B-a: Compile trust data, generate editorial/methodology/provenance/revision pages
+require(path.join(__dirname, 'generate-trust.js'));
+// 5B-b: Inject trust panels into calculators, version badges, formula/dataset panels
+require(path.join(__dirname, 'inject-trust-panels.js'));
+
 // ── Step 13a: Validate canonical data layer ──────────────────────────────────
 console.log('Running validate-datasets.js...');
 execSync('node scripts/validate-datasets.js', { cwd: root, stdio: 'inherit' });
@@ -115,7 +122,11 @@ execSync('node scripts/validate-datasets.js', { cwd: root, stdio: 'inherit' });
 console.log('Running validate-entities.js...');
 execSync('node scripts/validate-entities.js', { cwd: root, stdio: 'inherit' });
 
-// ── Step 13b: Validate internal links (fail-fast gate) ───────────────────────
+// ── Step 13c: Validate Scientific Authority System ───────────────────────────
+console.log('Running validate-trust.js...');
+execSync('node scripts/validate-trust.js', { cwd: root, stdio: 'inherit' });
+
+// ── Step 13d: Validate internal links (fail-fast gate) ───────────────────────
 console.log('Running check-broken-links.js...');
 execSync('node scripts/check-broken-links.js', { cwd: root, stdio: 'inherit' });
 

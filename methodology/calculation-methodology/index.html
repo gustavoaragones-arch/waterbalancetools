@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculation Methodology | WaterBalanceTools</title>
+  <meta name="description" content="How WaterBalanceTools builds pool chemistry calculators: data flow from canonical datasets through entities to calculator outputs.">
+  <link rel="canonical" href="https://waterbalancetools.com/methodology/calculation-methodology/">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .trust-page h1{margin-bottom:.5rem}.trust-page .page-meta{color:#666;font-size:.875rem;margin-bottom:2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+    .trust-page section{margin-bottom:2rem}.trust-page section h2{border-bottom:2px solid #e0e0e0;padding-bottom:.5rem;margin-bottom:1rem}
+    .policy-section{background:#fff;border:1px solid #e8e8e8;border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.25rem}
+    .policy-section h3{margin:0 0 .5rem;font-size:1rem;color:#0073aa}
+    .trust-nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.5rem 0}
+    .trust-nav a{display:block;padding:1rem 1.25rem;background:#f8f9fa;border:1px solid #e0e0e0;border-radius:6px;text-decoration:none;color:#0073aa;font-weight:500}
+    .trust-nav a:hover{background:#e8f0fe;border-color:#0073aa}
+    .diagram-box{background:#f0f4f8;border:1px solid #ccd;border-radius:6px;padding:1rem;font-family:monospace;font-size:.875rem;white-space:pre;margin:1rem 0}
+  </style>
+</head>
+<body>
+  <header class="site-header"><!-- nav injected --></header>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/methodology/">Methodology</a> › Calculation Methodology</nav>
+  <main class="knowledge-content trust-page">
+    
+<h1>Calculation Methodology</h1>
+<div class="page-meta">
+  <span>Last reviewed: 2026-07-01</span>
+  <span class="confidence-badge confidence-high" title="Value derived from well-established industry practice, widely adopted by professional pool operators, or supported by multiple manufacturer specifications with strong practitioner consensus." style="background:#2d7a2d;color:#ffffff">✓ High</span>
+  <a href="/methodology/">← Methodology</a>
+</div>
+
+<div class="policy-section">
+  <h3>Overview</h3>
+  <p>WaterBalanceTools calculators use a layered data architecture. All factual values flow from canonical datasets, through entities, into calculators. No calculator embeds hardcoded scientific values. This design ensures that corrections to a single dataset record propagate automatically to every calculator, formula, and page that depends on it.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Data Flow Architecture</h3>
+  <p>The data flow follows a strict hierarchy: (1) Canonical Datasets (data/datasets/) define factual values; (2) The Entity Layer (data/entities/, data/graph/) organizes these values by chemical, parameter, and pool type; (3) Generators read entities and datasets to produce HTML; (4) Calculators embed the resolved values from the canonical data layer at build time.</p>
+  <div class="diagram-box">Dataset → Entity → Generator → HTML Calculator</div>
+</div>
+
+<div class="policy-section">
+  <h3>How Datasets Flow Into Entities</h3>
+  <p>Each entity in the knowledge graph (e.g., "Free Chlorine") references a canonical dataset record for its ideal range and units via the rangeDataset and rangeRecord fields. The entity generator (generate-entities.js) resolves these references at build time using dataset-loader.js, replacing hardcoded strings with dataset values. The result is written to data/entities/chemicals.json and propagated to all entity pages.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>How Entities Flow Into Calculators</h3>
+  <p>Calculator generators read the entity index (data/graph/entity-index.json) to populate related topics, cross-references, and the trust panel. Calculator logic constants (ideal ranges, dosage coefficients, conversion factors) are loaded from data/datasets/ via the DatasetLoader utility module (js/data/dataset-loader.js).</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>How Calculations Are Generated</h3>
+  <p>Pool chemistry calculations follow documented mathematical formulas drawn from industry-standard references. Each formula is versioned in data/trust/formulas.json. Calculator generators apply these formulas to user inputs and produce results. The formula version and dataset versions used are embedded in the trust panel of each calculator page.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Build Pipeline Order</h3>
+  <p>The build pipeline runs in a fixed order: (1) generate-datasets.js compiles canonical datasets; (2) generate-entities.js resolves entity values from datasets; (3) Content generators (academy, formulas, glossary, reference) consume entities; (4) generate-trust.js compiles trust metadata and generates methodology/editorial/provenance pages; (5) inject-trust-panels.js embeds trust panels in calculators and version badges site-wide; (6) validate-trust.js validates trust completeness; (7) validate-datasets.js and validate-entities.js validate data integrity.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Maintenance</h3>
+  <p>The calculation methodology is maintained by updating the relevant dataset source modules in scripts/data/. All methodology documentation is regenerated from data on each build. No manual editing of generated HTML is required or permitted.</p>
+  
+</div>
+<section style="margin-top:2rem">
+  <h2>Related Resources</h2>
+  <ul>
+    <li><a href="/methodology/">Calculation Methodology Index</a></li>
+    <li><a href="/editorial/editorial-policy/">Editorial Policy</a></li>
+    <li><a href="/reference/datasets/">Canonical Datasets</a></li>
+  </ul>
+</section>
+  </main>
+  <footer class="site-footer"><!-- footer injected --></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

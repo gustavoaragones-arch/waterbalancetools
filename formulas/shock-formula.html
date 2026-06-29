@@ -25,6 +25,25 @@
       {"@type":"ListItem","position":2,"name":"Formula Library","item":"https://waterbalancetools.com/formulas/"},
       {"@type":"ListItem","position":3,"name":"Pool Shock Formula"}]}
 </script>
+<style>
+.trust-panel{margin:2rem 0;border:1px solid #d0dde8;border-radius:8px;background:#f8fbff;font-size:.875rem}
+.trust-panel details summary{list-style:none;cursor:pointer;padding:.875rem 1.25rem;display:flex;align-items:center;gap:.75rem;user-select:none}
+.trust-panel details summary::-webkit-details-marker{display:none}
+.trust-panel details[open] summary{border-bottom:1px solid #d0dde8}
+.trust-panel__icon{font-size:1.1rem;flex-shrink:0}
+.trust-panel__confidence{margin-left:auto}
+.trust-panel__body{padding:1.25rem}
+.trust-panel__grid{display:grid;grid-template-columns:max-content 1fr;gap:.35rem 1rem;margin:0 0 1rem}
+.trust-panel__grid dt{color:#666;font-weight:500}
+.trust-panel__grid dd{margin:0;color:#222}
+.trust-panel__links{display:flex;gap:1rem;flex-wrap:wrap}
+.trust-panel__links a{color:#0073aa;font-size:.8rem}
+.trust-panel__note{margin:.75rem 0 0;padding:.5rem .75rem;background:#fffde7;border-radius:4px;font-size:.8rem;color:#555}
+.confidence-badge{display:inline-flex;align-items:center;gap:.3em;padding:2px 8px;border-radius:12px;font-size:.75rem;font-weight:600;white-space:nowrap}
+.version-badge{display:inline-flex;align-items:center;gap:.4em;background:#f0f4f8;border:1px solid #c8d8e8;border-radius:4px;padding:2px 8px;font-size:.72rem;color:#445;margin-left:.75rem;vertical-align:middle}
+.formula-panel,.dataset-panel{border:1px solid #e0e0e0;border-radius:6px;padding:1rem 1.25rem;background:#fff;margin:1.5rem 0;font-size:.875rem}
+.formula-panel h3,.dataset-panel h3{margin:0 0 .75rem;font-size:.9rem;color:#0073aa;text-transform:uppercase;letter-spacing:.04em}
+</style>
 </head>
 <body class="knowledge-page formula-page">
     <header class="site-header" data-canonical-nav="v2">
@@ -151,7 +170,26 @@
 
       </div>
     </div>
-  </main>
+  
+<!-- formula-panel: inject-trust-panels.js -->
+<aside class="formula-panel">
+  <h3>Formula Details</h3>
+  <dl class="trust-panel__grid">
+    <dt>Formula</dt><dd><code>shockTarget = max(10 × combinedChlorine, shockMinFC); dose = (shockTarget − currentFC) × volume_gal × coefficient / 10000</code></dd>
+    <dt>Version</dt><dd>2026.07</dd>
+    <dt>Confidence</dt><dd><span class="confidence-badge confidence-high" style="background:#2d7a2d;color:#ffffff" title="Value derived from well-established industry practice, widely adopted by professional pool operators, or supported by multiple manufacturer specifications with strong practitioner consensus.">✓ High</span></dd>
+    <dt>Last Reviewed</dt><dd>2026-07-01</dd>
+    <dt>Dataset Sources</dt><dd><a href="/reference/datasets/chemical-ranges/">chemical-ranges</a>, <a href="/reference/datasets/dosage-matrices/">dosage-matrices</a></dd>
+    <dt>Used By</dt><dd><a href="/calculators/pool-shock-calculator">Pool Shock Calculator</a>, <a href="/calculators/hot-tub-shock-calculator">Hot Tub Shock Calculator</a></dd>
+  </dl>
+  <div class="trust-panel__links">
+    <a href="/methodology/formula-selection/">Formula Selection Policy</a>
+    <a href="/methodology/calculation-assumptions/">Assumptions</a>
+    <a href="/revisions/">Revision History</a>
+  </div>
+  
+</aside>
+</main>
 
       <footer class="site-footer">
     <nav class="footer-nav">

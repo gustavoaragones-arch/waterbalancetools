@@ -2,171 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://waterbalancetools.com/methodology/">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Calculation Methodology | WaterBalanceTools</title>
-  <meta name="description" content="How WaterBalanceTools calculates pool and hot tub chemical doses — the formulas, data sources, and assumptions behind every calculator.">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/knowledge.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3974004697476579" crossorigin="anonymous"></script>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://waterbalancetools.com"},
-      {"@type":"ListItem","position":2,"name":"Calculation Methodology"}]}
-</script>
+  <meta name="description" content="How WaterBalanceTools calculates pool chemistry recommendations. Data flow, formula selection, rounding, precision, and known limitations.">
+  <link rel="canonical" href="https://waterbalancetools.com/methodology/">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .trust-page h1{margin-bottom:.5rem}.trust-page .page-meta{color:#666;font-size:.875rem;margin-bottom:2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+    .trust-page section{margin-bottom:2rem}.trust-page section h2{border-bottom:2px solid #e0e0e0;padding-bottom:.5rem;margin-bottom:1rem}
+    .policy-section{background:#fff;border:1px solid #e8e8e8;border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.25rem}
+    .policy-section h3{margin:0 0 .5rem;font-size:1rem;color:#0073aa}
+    .trust-nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.5rem 0}
+    .trust-nav a{display:block;padding:1rem 1.25rem;background:#f8f9fa;border:1px solid #e0e0e0;border-radius:6px;text-decoration:none;color:#0073aa;font-weight:500}
+    .trust-nav a:hover{background:#e8f0fe;border-color:#0073aa}
+    .diagram-box{background:#f0f4f8;border:1px solid #ccd;border-radius:6px;padding:1rem;font-family:monospace;font-size:.875rem;white-space:pre;margin:1rem 0}
+  </style>
 </head>
-<body class="knowledge-page methodology-page">
-    <header class="site-header" data-canonical-nav="v2">
-    <a href="/" class="logo-link">
-      <img src="/assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36">
-    </a>
-    <nav class="nav" id="site-nav" aria-label="Primary navigation">
-      <a href="/calculators/chemical-calculator">Calculator</a>
-      <a href="/resources/">Resources</a>
-      <a href="/pool-chemical-levels-chart">Charts</a>
-      <a href="/academy/">Academy</a>
-      <a href="/guides/pool-chemistry-basics">Guides</a>
-      <a href="/about/">About</a>
-    </nav>
-    <div class="nav-end">
-      <a href="/search/" class="nav-search" aria-label="Search site">
-        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-      </a>
-      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li>
-    <li class="breadcrumb-sep" aria-hidden="true">&#8250;</li>
-    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page"><span itemprop="name">Calculation Methodology</span><meta itemprop="position" content="2"></li>
-  </ol>
+<body>
+  <header class="site-header"><!-- nav injected --></header>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/methodology/">Methodology</a></nav>
+  <main class="knowledge-content trust-page">
+    
+<h1>Calculation Methodology</h1>
+<div class="page-meta">
+  <span>Version 2026.07</span>
+</div>
+<p>Every calculator on WaterBalanceTools follows a documented methodology that defines how inputs are processed, how formulas are selected, and how results are produced. This section provides the complete technical documentation.</p>
+<nav class="trust-nav">
+  <a href="/methodology/calculation-methodology/">Calculation Methodology</a>
+<a href="/methodology/calculation-assumptions/">Calculation Assumptions</a>
+<a href="/methodology/formula-selection/">Formula Selection</a>
+<a href="/methodology/rounding-policy/">Rounding Policy</a>
+<a href="/methodology/precision-policy/">Precision Policy</a>
+<a href="/methodology/known-limitations/">Known Limitations</a>
+<a href="/methodology/confidence-system/">Confidence System</a>
 </nav>
-
-
-  <main class="container">
-    <section class="knowledge-hero">
-      <div class="knowledge-hero-meta">
-        <span class="knowledge-badge">Methodology</span>
-      </div>
-      <h1>Calculation Methodology</h1>
-      <p class="knowledge-hero-summary">The formulas, data sources, and assumptions behind every WaterBalanceTools calculator.</p>
-      <nav class="knowledge-chips">
-        <a href="#chlorine" class="knowledge-chip">Chlorine</a>
-        <a href="#ph" class="knowledge-chip">pH</a>
-        <a href="#alkalinity" class="knowledge-chip">Alkalinity</a>
-        <a href="#volume" class="knowledge-chip">Volume</a>
-        <a href="#sources" class="knowledge-chip">Sources</a>
-      </nav>
-    </section>
-
-    <article style="max-width:680px">
-      <section id="overview">
-        <h2>Overview</h2>
-        <p>All chemical dose calculations on this site use industry-standard formulas derived from published pool chemistry references. Doses are estimates based on product concentration and pool volume. Actual results may vary based on water temperature, cyanuric acid level, organic load, and other factors.</p>
-        <div class="knowledge-callout">
-          <span class="knowledge-callout-icon">&#8505;</span>
-          <div>Always verify chemical levels with a reliable test kit before and after adding chemicals, and before allowing swimming.</div>
-        </div>
-      </section>
-
-      <section id="chlorine">
-        <h2>Chlorine Dosing</h2>
-        <p>Chlorine doses are calculated using the relationship between product concentration, pool volume, and the ppm change required:</p>
-        <div class="formula-display">
-          <div class="formula-equation">Dose (oz) = ΔFC (ppm) × Volume (gal) ÷ Product Factor</div>
-        </div>
-        <p>Where <strong>Product Factor</strong> represents the effective chlorine yield of the product per ounce per 10,000 gallons, derived from the product's available chlorine percentage and molecular weight.</p>
-        <p>Liquid chlorine (10% sodium hypochlorite) has a factor of approximately 7,500 oz × ppm per 10,000 gallons. Granular shock (65% calcium hypochlorite) and trichlor (90% available chlorine) use their respective concentration factors.</p>
-      </section>
-
-      <section id="ph">
-        <h2>pH Adjustment</h2>
-        <p>pH adjustment doses are based on the buffering capacity of the water (total alkalinity) and the magnitude of the pH change required. The formula accounts for the fact that water with higher alkalinity requires more pH increaser or reducer to shift the same pH amount.</p>
-        <div class="formula-display">
-          <div class="formula-equation">Dose (oz) = pH Δ × Volume (gal) × Alkalinity Factor ÷ Product Factor</div>
-        </div>
-        <p>pH increaser (sodium carbonate / soda ash) typically raises pH by 0.2 per oz per 10,000 gallons at standard alkalinity. pH reducer (muriatic acid or sodium bisulfate) lowers pH proportionally to acid strength.</p>
-      </section>
-
-      <section id="alkalinity">
-        <h2>Total Alkalinity</h2>
-        <p>Sodium bicarbonate (baking soda) is the standard alkalinity increaser. The dose is calculated linearly: approximately 1.5 oz of sodium bicarbonate raises alkalinity by 10 ppm in 10,000 gallons. Muriatic acid can reduce alkalinity by aeration.</p>
-      </section>
-
-      <section id="volume">
-        <h2>Pool &amp; Spa Volume</h2>
-        <p>Volume calculations use standard geometric formulas:</p>
-        <ul>
-          <li><strong>Rectangle:</strong> Length × Width × Average Depth × 7.48 gal/ft³</li>
-          <li><strong>Circle/oval:</strong> π × (Diameter/2)² × Depth × 7.48</li>
-          <li><strong>Kidney:</strong> 0.45 × (A + B) × Length × Depth × 7.48</li>
-          <li><strong>L-shape:</strong> Two rectangles computed separately and added</li>
-        </ul>
-        <p>Hot tub and spa volumes use the same formulas, scaled for typical dimensions.</p>
-      </section>
-
-      <section id="cya">
-        <h2>Cyanuric Acid (CYA / Stabilizer)</h2>
-        <p>CYA addition doses are calculated from the volume increase formula: cyanuric acid concentration increases linearly with product added, at approximately 13 oz per 10 ppm increase per 10,000 gallons. Reduction requires partial water replacement.</p>
-      </section>
-
-      <section id="salt">
-        <h2>Saltwater Pool Salt</h2>
-        <p>Salt addition doses are linear: approximately 8.3 lb of NaCl raises salinity by 1,000 ppm in 10,000 gallons. Salt cannot be chemically removed — dilution (partial drain and refill) is the only way to lower it.</p>
-      </section>
-
-      <section id="assumptions">
-        <h2>Assumptions &amp; Limitations</h2>
-        <ul>
-          <li>Product concentrations are based on typical US retail formulations. Verify your product's label.</li>
-          <li>Calculations assume well-mixed water. Allow sufficient pump run time after adding chemicals.</li>
-          <li>Organic load, water temperature, and cyanuric acid level affect actual chlorine demand and are not modeled.</li>
-          <li>Results are estimates. Always test before and after adjustments.</li>
-        </ul>
-      </section>
-
-      <section id="sources" class="knowledge-sources">
-        <h2>Sources &amp; References</h2>
-        <ol>
-          <li>Pool & Hot Tub Alliance (PHTA) — Pool & Spa Operator Handbook</li>
-          <li>National Swimming Pool Foundation (NSPF) — CPO Certification Reference</li>
-          <li>Taylor Technologies — Pool/Spa Water Chemistry Manual</li>
-          <li>Arch Chemicals — Pool Chemical Dosage Guidelines</li>
-        </ol>
-      </section>
-    </article>
-
-    <section class="link-matrix">
-      <h3>Related</h3>
-      <ul>
-        <li><a href="/formulas/">Formula Library</a></li>
-        <li><a href="/calculators/chemical-calculator">Pool Chemical Calculator</a></li>
-        <li><a href="/academy/">Chemistry Academy</a></li>
-        <li><a href="/about/">About WaterBalanceTools</a></li>
-      </ul>
-    </section>
   </main>
-
-            <footer class="site-footer">
-    <nav class="footer-nav">
-      <a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a>
-      <a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a>
-      <a href="/calculators/pool-shock-calculator">Pool Shock Calculator</a>
-      <a href="/calculators/pool-ph-calculator">Pool pH Calculator</a>
-      <a href="/charts/pool-chemical-levels-chart">Pool Chemical Levels Chart</a>
-      <a href="/guides/pool-chemistry-basics">Pool Chemistry Guide</a>
-      <a href="/all-pages">All Pages</a>
-      <a href="/legal/ownership">Ownership</a>
-      <a href="/legal/legal">Legal</a>
-    </nav>
-    <p class="footer-copy">&copy; 2026 Albor Digital LLC. All rights reserved.</p>
-    <p class="footer-note">WaterBalanceTools.com is an independent educational website owned and operated by Albor Digital LLC.</p>
-  </footer>
-
-  <script src="/js/nav.js" defer></script>
+  <footer class="site-footer"><!-- footer injected --></footer>
+  <script src="/js/main.js"></script>
 </body>
 </html>

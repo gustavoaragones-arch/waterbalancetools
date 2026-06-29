@@ -1,0 +1,50 @@
+'use strict';
+// trust-revisions.js
+// Revision history for WaterBalanceTools platform.
+
+module.exports = {
+  dataId: 'revisions',
+  description: 'Revision history for the WaterBalanceTools platform. Each entry records a version, date, component changed, summary, and affected pages.',
+  records: [
+    {
+      id: 'rev-001',
+      version: '5A.75',
+      date: '2026-07-01',
+      component: 'canonical-data-layer',
+      summary: 'Phase 5A.75: Implemented the Canonical Data Layer. All factual values now originate from 15 canonical datasets in data/datasets/. Entities reference datasets via rangeDataset/rangeRecord fields. DatasetLoader utility module (js/data/dataset-loader.js) provides unified access to all datasets.',
+      affectedDatasets: ['chemical-ranges', 'hot-tub-ranges', 'water-balance', 'dosage-matrices', 'chemical-properties', 'compatibility', 'units', 'conversion-factors', 'temperature-guidelines', 'testing-frequency', 'pool-types', 'water-problems', 'maintenance-schedules', 'confidence-levels', 'version'],
+      affectedEntities: ['all — idealRange and units now resolved from canonical datasets'],
+      affectedPages: ['all entity pages', 'all calculator pages (indirect)', 'reference/datasets/*'],
+    },
+    {
+      id: 'rev-002',
+      version: '5A.5',
+      date: '2026-07-01',
+      component: 'entity-layer',
+      summary: 'Phase 5A.5: Implemented the Canonical Entity Layer. 104 entities with typed relationships, aliases, and synonyms. Entity pages generated for all entities. Entity panels injected into academy, formula, glossary, and reference pages.',
+      affectedDatasets: [],
+      affectedEntities: ['all 104 entities created'],
+      affectedPages: ['entities/* (104 pages)', 'academy/* (51 panels injected)', 'formulas/*', 'glossary/*', 'reference/*'],
+    },
+    {
+      id: 'rev-003',
+      version: '5A.2',
+      date: '2026-07-01',
+      component: 'knowledge-platform',
+      summary: 'Phase 5A Part 2: Populated knowledge platform with 48 academy articles, 9 formula pages, 100 glossary terms, and 25 reference pages. All content generated from structured JSON.',
+      affectedDatasets: [],
+      affectedEntities: [],
+      affectedPages: ['academy/* (48 articles)', 'formulas/* (9 pages)', 'glossary/* (100 terms)', 'reference/* (25 pages)'],
+    },
+    {
+      id: 'rev-004',
+      version: '5B',
+      date: '2026-07-01',
+      component: 'scientific-authority-system',
+      summary: 'Phase 5B: Implemented the Scientific Authority System. Editorial framework, calculation methodology, confidence system, trust panels, version badges, formula registry, revision history, and source framework. All trust components are generated, not manual.',
+      affectedDatasets: ['all — confidence levels and source categories now canonical'],
+      affectedEntities: [],
+      affectedPages: ['editorial/*', 'methodology/*', 'provenance/*', 'revisions/*', 'all calculators (trust panels)', 'all formulas (formula panels)', 'all datasets (dataset panels)', 'all pages (version badges)'],
+    },
+  ],
+};

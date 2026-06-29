@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rounding Policy | WaterBalanceTools</title>
+  <meta name="description" content="How WaterBalanceTools rounds calculator results and chemical dosages.">
+  <link rel="canonical" href="https://waterbalancetools.com/methodology/rounding-policy/">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .trust-page h1{margin-bottom:.5rem}.trust-page .page-meta{color:#666;font-size:.875rem;margin-bottom:2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+    .trust-page section{margin-bottom:2rem}.trust-page section h2{border-bottom:2px solid #e0e0e0;padding-bottom:.5rem;margin-bottom:1rem}
+    .policy-section{background:#fff;border:1px solid #e8e8e8;border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.25rem}
+    .policy-section h3{margin:0 0 .5rem;font-size:1rem;color:#0073aa}
+    .trust-nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.5rem 0}
+    .trust-nav a{display:block;padding:1rem 1.25rem;background:#f8f9fa;border:1px solid #e0e0e0;border-radius:6px;text-decoration:none;color:#0073aa;font-weight:500}
+    .trust-nav a:hover{background:#e8f0fe;border-color:#0073aa}
+    .diagram-box{background:#f0f4f8;border:1px solid #ccd;border-radius:6px;padding:1rem;font-family:monospace;font-size:.875rem;white-space:pre;margin:1rem 0}
+  </style>
+</head>
+<body>
+  <header class="site-header"><!-- nav injected --></header>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/methodology/">Methodology</a> › Rounding Policy</nav>
+  <main class="knowledge-content trust-page">
+    
+<h1>Rounding Policy</h1>
+<div class="page-meta">
+  <span>Last reviewed: 2026-07-01</span>
+  <span class="confidence-badge confidence-very-high" title="Value or calculation is derived from peer-reviewed scientific literature or formally adopted consensus standards (e.g., CDC, WHO, PHTA/ANSI, FINA). Multiple independent sources agree." style="background:#1a7a1a;color:#ffffff">✓✓ Very High</span>
+  <a href="/methodology/">← Methodology</a>
+</div>
+
+<div class="policy-section">
+  <h3>Purpose</h3>
+  <p>This page specifies the rounding conventions applied to all calculator results. Every calculator links to this policy to ensure users understand the precision of displayed results.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Displayed Precision</h3>
+  <p>Chemical concentrations (ppm): displayed to 1 decimal place. pH: displayed to 2 decimal places. LSI: displayed to 2 decimal places. Temperatures (°F, °C): displayed to 1 decimal place. Volume (gallons, liters): displayed as whole numbers. Dosage (fl oz, oz, lbs): displayed to 1 decimal place for quantities under 10, whole numbers for 10 and above.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Internal Precision</h3>
+  <p>All intermediate calculations are performed in full JavaScript floating-point precision (IEEE 754 double, approximately 15–17 significant digits). Rounding is applied only at the final display step, not at intermediate calculation steps. This prevents compounding rounding errors in multi-step calculations.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Unit Conversions</h3>
+  <p>Unit conversions use the exact factors defined in data/datasets/conversion-factors.json. For example, gallons to liters uses exactly 3.785411784 (the NIST definition). No rounded approximations are used in intermediate calculations.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Rounding Order</h3>
+  <p>(1) Perform all calculations in full floating-point precision; (2) Apply unit conversion if required; (3) Round only the final displayed value to the specified decimal places. Intermediate values passed between calculation steps are not rounded.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Examples</h3>
+  <p>FC change needed: calculated as 2.00 ppm → displayed as "2.0 ppm". Muriatic acid dose: calculated as 9.876 fl oz → displayed as "9.9 fl oz". Pool volume: 24,831.4 gallons → displayed as "24,831 gallons". LSI: −0.1234 → displayed as "−0.12". Note: displayed rounding does not affect calculation accuracy — all intermediate values retain full precision.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Relationship to Confidence</h3>
+  <p>The precision of displayed results does not imply that accuracy is equivalent to the displayed decimal places. A result of "9.9 fl oz" is precise to 0.1 fl oz but may have an accuracy uncertainty of ±10–15% due to product concentration variation, pool volume estimation, and measurement error. See the Precision Policy for full uncertainty discussion.</p>
+  
+</div>
+<section style="margin-top:2rem">
+  <h2>Related Resources</h2>
+  <ul>
+    <li><a href="/methodology/">Calculation Methodology Index</a></li>
+    <li><a href="/editorial/editorial-policy/">Editorial Policy</a></li>
+    <li><a href="/reference/datasets/">Canonical Datasets</a></li>
+  </ul>
+</section>
+  </main>
+  <footer class="site-footer"><!-- footer injected --></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

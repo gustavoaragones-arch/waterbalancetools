@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formula Selection | WaterBalanceTools</title>
+  <meta name="description" content="How WaterBalanceTools selects the formulas and equations used in its pool chemistry calculators.">
+  <link rel="canonical" href="https://waterbalancetools.com/methodology/formula-selection/">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .trust-page h1{margin-bottom:.5rem}.trust-page .page-meta{color:#666;font-size:.875rem;margin-bottom:2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+    .trust-page section{margin-bottom:2rem}.trust-page section h2{border-bottom:2px solid #e0e0e0;padding-bottom:.5rem;margin-bottom:1rem}
+    .policy-section{background:#fff;border:1px solid #e8e8e8;border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.25rem}
+    .policy-section h3{margin:0 0 .5rem;font-size:1rem;color:#0073aa}
+    .trust-nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.5rem 0}
+    .trust-nav a{display:block;padding:1rem 1.25rem;background:#f8f9fa;border:1px solid #e0e0e0;border-radius:6px;text-decoration:none;color:#0073aa;font-weight:500}
+    .trust-nav a:hover{background:#e8f0fe;border-color:#0073aa}
+    .diagram-box{background:#f0f4f8;border:1px solid #ccd;border-radius:6px;padding:1rem;font-family:monospace;font-size:.875rem;white-space:pre;margin:1rem 0}
+  </style>
+</head>
+<body>
+  <header class="site-header"><!-- nav injected --></header>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/methodology/">Methodology</a> › Formula Selection</nav>
+  <main class="knowledge-content trust-page">
+    
+<h1>Formula Selection</h1>
+<div class="page-meta">
+  <span>Last reviewed: 2026-07-01</span>
+  <span class="confidence-badge confidence-high" title="Value derived from well-established industry practice, widely adopted by professional pool operators, or supported by multiple manufacturer specifications with strong practitioner consensus." style="background:#2d7a2d;color:#ffffff">✓ High</span>
+  <a href="/methodology/">← Methodology</a>
+</div>
+
+<div class="policy-section">
+  <h3>Purpose</h3>
+  <p>This page explains how WaterBalanceTools selects the mathematical formulas used in its calculators and why industry-standard equations are preferred.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Preference for Industry-Standard Equations</h3>
+  <p>WaterBalanceTools uses the same equations used by professional pool operators and certified pool technicians. These include the Langelier Saturation Index formula as defined by PHTA/ANSI standards, chlorine dosage calculations consistent with Taylor Technologies training materials, and volume formulas consistent with geometric standards.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Why Standard Equations Are Preferred</h3>
+  <p>Standard equations produce results consistent with professional testing, allow users to verify results against commercial test kits and operator guidance, and have a documented history of real-world application. Novel or experimental equations are not used unless they have been formally adopted by a recognized standards body.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>How Units Are Normalized</h3>
+  <p>All calculations are performed in US customary units (gallons, °F, oz, fl oz) by default, with metric equivalents provided where specified. Unit conversions use the canonical factors in data/datasets/conversion-factors.json. All conversion factors have a single source of truth and are never duplicated in calculator logic.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Formula Versioning</h3>
+  <p>Every formula used on the platform is assigned a version number and tracked in data/trust/formulas.json. When an authoritative source updates an equation, a new formula version is created. Calculators reference formula versions in their trust panels, enabling users to identify which version produced a given result.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Formula Review</h3>
+  <p>Formulas are reviewed when: (1) a new edition of a reference standard is published, (2) new scientific literature provides evidence that a more accurate equation is available, or (3) the annual review date is reached. Changes are logged in the revision history.</p>
+  
+</div>
+<section style="margin-top:2rem">
+  <h2>Related Resources</h2>
+  <ul>
+    <li><a href="/methodology/">Calculation Methodology Index</a></li>
+    <li><a href="/editorial/editorial-policy/">Editorial Policy</a></li>
+    <li><a href="/reference/datasets/">Canonical Datasets</a></li>
+  </ul>
+</section>
+  </main>
+  <footer class="site-footer"><!-- footer injected --></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

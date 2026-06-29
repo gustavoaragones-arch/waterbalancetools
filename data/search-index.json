@@ -2782,12 +2782,102 @@
   {
     "url": "/methodology",
     "title": "Calculation Methodology",
-    "description": "How WaterBalanceTools calculates pool and hot tub chemical doses — the formulas, data sources, and assumptions behind every calculator.",
+    "description": "How WaterBalanceTools calculates pool chemistry recommendations. Data flow, formula selection, rounding, precision, and known limitations.",
     "h1": "Calculation Methodology",
     "category": "Methodology",
     "readingTime": null,
     "updated": null,
     "keywords": "calculation methodology"
+  },
+  {
+    "url": "/methodology/calculation-assumptions",
+    "title": "Calculation Assumptions",
+    "description": "The assumptions, ideal conditions, and limitations built into WaterBalanceTools pool chemistry calculations.",
+    "h1": "Calculation Assumptions",
+    "category": "Methodology",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculation assumptions"
+  },
+  {
+    "url": "/methodology/calculation-methodology",
+    "title": "Calculation Methodology",
+    "description": "How WaterBalanceTools builds pool chemistry calculators: data flow from canonical datasets through entities to calculator outputs.",
+    "h1": "Calculation Methodology",
+    "category": "Methodology",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculation methodology"
+  },
+  {
+    "url": "/methodology/confidence-system",
+    "title": "Confidence System",
+    "description": "How WaterBalanceTools uses confidence levels to communicate the strength of its pool chemistry recommendations.",
+    "h1": "Confidence System",
+    "category": "Methodology",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "confidence system"
+  },
+  {
+    "url": "/methodology/formula-selection",
+    "title": "Formula Selection",
+    "description": "How WaterBalanceTools selects the formulas and equations used in its pool chemistry calculators.",
+    "h1": "Formula Selection",
+    "category": "Methodology",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "formula selection"
+  },
+  {
+    "url": "/methodology/known-limitations",
+    "title": "Known Limitations",
+    "description": "Documented limitations of WaterBalanceTools pool chemistry calculators.",
+    "h1": "Known Limitations",
+    "category": "Methodology",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "known limitations"
+  },
+  {
+    "url": "/methodology/precision-policy",
+    "title": "Precision Policy",
+    "description": "Floating-point handling, measurement uncertainty, and precision limitations of WaterBalanceTools calculators.",
+    "h1": "Precision Policy",
+    "category": "Methodology",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "precision policy"
+  },
+  {
+    "url": "/methodology/rounding-policy",
+    "title": "Rounding Policy",
+    "description": "How WaterBalanceTools rounds calculator results and chemical dosages.",
+    "h1": "Rounding Policy",
+    "category": "Methodology",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "rounding policy"
+  },
+  {
+    "url": "/provenance",
+    "title": "Data Provenance",
+    "description": "Provenance for all canonical datasets used on WaterBalanceTools.",
+    "h1": "Data Provenance",
+    "category": "Methodology",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "data provenance"
+  },
+  {
+    "url": "/revisions",
+    "title": "Revision History",
+    "description": "Complete revision history for WaterBalanceTools datasets, formulas, and calculators.",
+    "h1": "Revision History",
+    "category": "Methodology",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "revision history"
   },
   {
     "url": "/about",
@@ -4388,5 +4478,65 @@
     "readingTime": null,
     "updated": null,
     "keywords": "all pool hot tub tools"
+  },
+  {
+    "url": "/editorial",
+    "title": "Editorial Framework",
+    "description": "How WaterBalanceTools creates, reviews, and maintains pool chemistry content. Editorial standards, review processes, and correction policies.",
+    "h1": "Editorial Framework",
+    "category": "Editorial",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "editorial framework"
+  },
+  {
+    "url": "/editorial/content-standards",
+    "title": "Content Standards",
+    "description": "Standards for accuracy, clarity, and completeness applied to all WaterBalanceTools content.",
+    "h1": "Content Standards",
+    "category": "Editorial",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "content standards"
+  },
+  {
+    "url": "/editorial/correction-policy",
+    "title": "Correction Policy",
+    "description": "How WaterBalanceTools handles corrections and updates to pool chemistry content.",
+    "h1": "Correction Policy",
+    "category": "Editorial",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "correction policy"
+  },
+  {
+    "url": "/editorial/editorial-policy",
+    "title": "Editorial Policy",
+    "description": "The editorial policy governing how WaterBalanceTools selects, produces, and publishes pool chemistry content.",
+    "h1": "Editorial Policy",
+    "category": "Editorial",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "editorial policy"
+  },
+  {
+    "url": "/editorial/review-process",
+    "title": "Review Process",
+    "description": "How WaterBalanceTools reviews and maintains the accuracy of its pool chemistry calculators and content.",
+    "h1": "Review Process",
+    "category": "Editorial",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "review process"
+  },
+  {
+    "url": "/editorial/update-policy",
+    "title": "Update Policy",
+    "description": "How WaterBalanceTools updates its content, datasets, and calculators over time.",
+    "h1": "Update Policy",
+    "category": "Editorial",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "update policy"
   }
 ]

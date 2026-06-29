@@ -1,0 +1,298 @@
+{
+  "dataId": "datasets",
+  "version": "2026.07",
+  "calculators": [
+    {
+      "id": "pool-chlorine-calculator",
+      "name": "Pool Chlorine Calculator",
+      "urlPath": "/calculators/pool-chlorine-calculator",
+      "formulaIds": [
+        "formula-chlorine-dose"
+      ],
+      "datasetDependencies": [
+        "chemical-ranges",
+        "dosage-matrices",
+        "conversion-factors"
+      ],
+      "entityDependencies": [
+        "free-chlorine",
+        "liquid-chlorine",
+        "calcium-hypochlorite"
+      ],
+      "confidenceLevel": "high",
+      "version": "2026.07",
+      "lastReviewed": "2026-07-01",
+      "notes": "Dosage coefficients from dosage-matrices.json. Target ranges from chemical-ranges.json (residential-pool-free-chlorine)."
+    },
+    {
+      "id": "pool-shock-calculator",
+      "name": "Pool Shock Calculator",
+      "urlPath": "/calculators/pool-shock-calculator",
+      "formulaIds": [
+        "formula-shock-dose"
+      ],
+      "datasetDependencies": [
+        "chemical-ranges",
+        "dosage-matrices"
+      ],
+      "entityDependencies": [
+        "free-chlorine",
+        "combined-chlorine",
+        "shock-treatment"
+      ],
+      "confidenceLevel": "high",
+      "version": "2026.07",
+      "lastReviewed": "2026-07-01",
+      "notes": "Breakpoint chlorination target: 10× combined chlorine level."
+    },
+    {
+      "id": "pool-ph-calculator",
+      "name": "Pool pH Calculator",
+      "urlPath": "/calculators/pool-ph-calculator",
+      "formulaIds": [
+        "formula-ph-adjustment"
+      ],
+      "datasetDependencies": [
+        "chemical-ranges",
+        "dosage-matrices"
+      ],
+      "entityDependencies": [
+        "ph",
+        "muriatic-acid",
+        "soda-ash"
+      ],
+      "confidenceLevel": "moderate",
+      "version": "2026.07",
+      "lastReviewed": "2026-07-01",
+      "notes": "Linear pH adjustment approximation. Most accurate within ±0.5 pH units of target."
+    },
+    {
+      "id": "pool-alkalinity-calculator",
+      "name": "Pool Alkalinity Calculator",
+      "urlPath": "/calculators/pool-alkalinity-calculator",
+      "formulaIds": [
+        "formula-alkalinity-adjustment"
+      ],
+      "datasetDependencies": [
+        "chemical-ranges",
+        "dosage-matrices"
+      ],
+      "entityDependencies": [
+        "alkalinity",
+        "baking-soda",
+        "muriatic-acid"
+      ],
+      "confidenceLevel": "high",
+      "version": "2026.07",
+      "lastReviewed": "2026-07-01",
+      "notes": "Baking soda coefficient: 24 oz per 10 ppm per 10,000 gal."
+    },
+    {
+      "id": "pool-cyanuric-acid-calculator",
+      "name": "Pool CYA Calculator",
+      "urlPath": "/calculators/pool-cyanuric-acid-calculator",
+      "formulaIds": [
+        "formula-cya-adjustment"
+      ],
+      "datasetDependencies": [
+        "chemical-ranges",
+        "dosage-matrices"
+      ],
+      "entityDependencies": [
+        "cyanuric-acid",
+        "stabilizer"
+      ],
+      "confidenceLevel": "high",
+      "version": "2026.07",
+      "lastReviewed": "2026-07-01",
+      "notes": "CYA dissolves slowly. Allow 24–48 hours for equilibration before retesting."
+    },
+    {
+      "id": "saltwater-pool-salt-calculator",
+      "name": "Saltwater Pool Salt Calculator",
+      "urlPath": "/calculators/saltwater-pool-salt-calculator",
+      "formulaIds": [
+        "formula-salt-adjustment"
+      ],
+      "datasetDependencies": [
+        "chemical-ranges",
+        "dosage-matrices"
+      ],
+      "entityDependencies": [
+        "salt",
+        "salt-chlorinator",
+        "pool-salt"
+      ],
+      "confidenceLevel": "high",
+      "version": "2026.07",
+      "lastReviewed": "2026-07-01",
+      "notes": "Target range from saltwater-pool-salt record in chemical-ranges.json. Verify against your system's manufacturer spec."
+    },
+    {
+      "id": "pool-volume-calculator",
+      "name": "Pool Volume Calculator",
+      "urlPath": "/calculators/pool-volume-calculator",
+      "formulaIds": [
+        "formula-pool-volume-rectangular",
+        "formula-pool-volume-oval"
+      ],
+      "datasetDependencies": [
+        "conversion-factors"
+      ],
+      "entityDependencies": [
+        "gallons"
+      ],
+      "confidenceLevel": "very-high",
+      "version": "2026.07",
+      "lastReviewed": "2026-07-01",
+      "notes": "Volume formulas use exact ft³-to-gallon conversion factor (7.48051948) from conversion-factors.json."
+    },
+    {
+      "id": "volume-calculator",
+      "name": "Volume Calculator",
+      "urlPath": "/calculators/volume-calculator",
+      "formulaIds": [
+        "formula-pool-volume-rectangular",
+        "formula-pool-volume-oval"
+      ],
+      "datasetDependencies": [
+        "conversion-factors"
+      ],
+      "entityDependencies": [
+        "gallons",
+        "liters"
+      ],
+      "confidenceLevel": "very-high",
+      "version": "2026.07",
+      "lastReviewed": "2026-07-01"
+    },
+    {
+      "id": "pool-turnover-rate-calculator",
+      "name": "Pool Turnover Rate Calculator",
+      "urlPath": "/calculators/pool-turnover-rate-calculator",
+      "formulaIds": [
+        "formula-turnover-rate"
+      ],
+      "datasetDependencies": [
+        "units",
+        "conversion-factors"
+      ],
+      "entityDependencies": [
+        "pump",
+        "turnover-time"
+      ],
+      "confidenceLevel": "very-high",
+      "version": "2026.07",
+      "lastReviewed": "2026-07-01"
+    },
+    {
+      "id": "chemical-calculator",
+      "name": "All-in-One Chemical Calculator",
+      "urlPath": "/calculators/chemical-calculator",
+      "formulaIds": [
+        "formula-chlorine-dose",
+        "formula-ph-adjustment",
+        "formula-alkalinity-adjustment",
+        "formula-lsi",
+        "formula-calcium-hardness-dose"
+      ],
+      "datasetDependencies": [
+        "chemical-ranges",
+        "dosage-matrices",
+        "water-balance",
+        "conversion-factors"
+      ],
+      "entityDependencies": [
+        "free-chlorine",
+        "ph",
+        "alkalinity",
+        "calcium-hardness",
+        "cyanuric-acid",
+        "lsi"
+      ],
+      "confidenceLevel": "high",
+      "version": "2026.07",
+      "lastReviewed": "2026-07-01",
+      "notes": "Multi-parameter calculator. LSI uses water-balance factor tables. pH uses linear approximation."
+    },
+    {
+      "id": "hot-tub-chlorine-calculator",
+      "name": "Hot Tub Chlorine Calculator",
+      "urlPath": "/calculators/hot-tub-chlorine-calculator",
+      "formulaIds": [
+        "formula-chlorine-dose"
+      ],
+      "datasetDependencies": [
+        "chemical-ranges",
+        "dosage-matrices"
+      ],
+      "entityDependencies": [
+        "free-chlorine",
+        "bromine",
+        "hot-tub"
+      ],
+      "confidenceLevel": "high",
+      "version": "2026.07",
+      "lastReviewed": "2026-07-01",
+      "notes": "Uses hot-tub-free-chlorine range (3–5 ppm) from chemical-ranges.json."
+    },
+    {
+      "id": "hot-tub-ph-calculator",
+      "name": "Hot Tub pH Calculator",
+      "urlPath": "/calculators/hot-tub-ph-calculator",
+      "formulaIds": [
+        "formula-ph-adjustment"
+      ],
+      "datasetDependencies": [
+        "chemical-ranges",
+        "dosage-matrices"
+      ],
+      "entityDependencies": [
+        "ph",
+        "hot-tub"
+      ],
+      "confidenceLevel": "moderate",
+      "version": "2026.07",
+      "lastReviewed": "2026-07-01"
+    },
+    {
+      "id": "hot-tub-shock-calculator",
+      "name": "Hot Tub Shock Calculator",
+      "urlPath": "/calculators/hot-tub-shock-calculator",
+      "formulaIds": [
+        "formula-shock-dose"
+      ],
+      "datasetDependencies": [
+        "chemical-ranges",
+        "dosage-matrices"
+      ],
+      "entityDependencies": [
+        "free-chlorine",
+        "combined-chlorine",
+        "hot-tub",
+        "shock-treatment"
+      ],
+      "confidenceLevel": "high",
+      "version": "2026.07",
+      "lastReviewed": "2026-07-01"
+    },
+    {
+      "id": "spa-volume-calculator",
+      "name": "Spa Volume Calculator",
+      "urlPath": "/calculators/spa-volume-calculator",
+      "formulaIds": [
+        "formula-pool-volume-rectangular"
+      ],
+      "datasetDependencies": [
+        "conversion-factors"
+      ],
+      "entityDependencies": [
+        "gallons",
+        "hot-tub"
+      ],
+      "confidenceLevel": "very-high",
+      "version": "2026.07",
+      "lastReviewed": "2026-07-01"
+    }
+  ]
+}

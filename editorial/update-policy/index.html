@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Update Policy | WaterBalanceTools</title>
+  <meta name="description" content="How WaterBalanceTools updates its content, datasets, and calculators over time.">
+  <link rel="canonical" href="https://waterbalancetools.com/editorial/update-policy/">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .trust-page h1{margin-bottom:.5rem}.trust-page .page-meta{color:#666;font-size:.875rem;margin-bottom:2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+    .trust-page section{margin-bottom:2rem}.trust-page section h2{border-bottom:2px solid #e0e0e0;padding-bottom:.5rem;margin-bottom:1rem}
+    .policy-section{background:#fff;border:1px solid #e8e8e8;border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.25rem}
+    .policy-section h3{margin:0 0 .5rem;font-size:1rem;color:#0073aa}
+    .trust-nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.5rem 0}
+    .trust-nav a{display:block;padding:1rem 1.25rem;background:#f8f9fa;border:1px solid #e0e0e0;border-radius:6px;text-decoration:none;color:#0073aa;font-weight:500}
+    .trust-nav a:hover{background:#e8f0fe;border-color:#0073aa}
+    .diagram-box{background:#f0f4f8;border:1px solid #ccd;border-radius:6px;padding:1rem;font-family:monospace;font-size:.875rem;white-space:pre;margin:1rem 0}
+  </style>
+</head>
+<body>
+  <header class="site-header"><!-- nav injected --></header>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/editorial/">Editorial</a> › Update Policy</nav>
+  <main class="knowledge-content trust-page">
+    
+<h1>Update Policy</h1>
+<div class="page-meta">
+  <span>Last reviewed: 2026-07-01</span>
+  <a href="/editorial/">← Editorial Framework</a>
+</div>
+
+<div class="policy-section">
+  <h3>Purpose</h3>
+  <p>This policy describes how WaterBalanceTools manages updates to its content, datasets, formulas, and calculators.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Scope</h3>
+  <p>This policy applies to all content updates, including dataset record changes, formula revisions, calculator logic changes, and textual content updates.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Version-Based Updates</h3>
+  <p>Every dataset, formula, and calculator is versioned. Version numbers follow the YYYY.MM format for major versions. Minor revisions are tracked as YYYY.MM.revision_count. Version numbers are stored in data/trust/versions.json and displayed in trust panels and dataset documentation.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Update Triggers</h3>
+  <p>Updates are triggered by: (1) annual review schedule, (2) new authoritative standards or guidelines, (3) accepted user corrections, (4) architecture changes requiring content updates, or (5) new data becoming available that improves confidence level.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Update Propagation</h3>
+  <p>All updates are made to the canonical source (dataset JSON, content JSON, or formula JSON). The build pipeline propagates changes automatically to all affected HTML pages. Manual updates to generated HTML are not permitted and will be overwritten on the next build.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Backward Compatibility</h3>
+  <p>Dataset record IDs are stable and are not changed once assigned. Formula IDs are stable. If a formula is fundamentally revised, a new formula ID is created rather than changing the existing one. Legacy formula versions are retained in revision history.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Relationship to Calculators</h3>
+  <p>Calculator pages always reflect the current version of the formulas and datasets they depend on. When a user accesses a calculator, the trust panel shows the current versions. Historical version details are available in the revision history.</p>
+  
+</div>
+
+<div class="policy-section">
+  <h3>Review Frequency</h3>
+  <p>Update policy reviewed annually.</p>
+  
+</div>
+<p style="margin-top:2rem"><a href="/editorial/">← Back to Editorial Framework</a></p>
+  </main>
+  <footer class="site-footer"><!-- footer injected --></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

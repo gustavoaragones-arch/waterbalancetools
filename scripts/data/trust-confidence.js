@@ -1,0 +1,73 @@
+'use strict';
+// trust-confidence.js
+// Canonical confidence level definitions for the Scientific Authority System.
+// Five levels precisely as specified in Phase 5B.
+
+module.exports = {
+  dataId: 'confidence',
+  version: '2026.07',
+  lastReviewed: '2026-07-01',
+  description: 'Five canonical confidence levels applied to calculators, datasets, formulas, and reference pages to communicate the strength of the underlying evidence.',
+  levels: [
+    {
+      id: 'very-high',
+      label: 'Very High Confidence',
+      shortLabel: 'Very High',
+      meaning: 'Value or calculation is derived from peer-reviewed scientific literature or formally adopted consensus standards (e.g., CDC, WHO, PHTA/ANSI, FINA). Multiple independent sources agree.',
+      typicalUse: 'Core chemistry constants, established safety limits, widely-adopted industry standards.',
+      examples: ['Maximum hot tub temperature (104°F — CPSC/PHTA)', 'Minimum ORP for disinfection (650 mV — WHO)', 'LSI formula constants (Taylor Technologies, peer-reviewed)'],
+      displayColor: '#1a7a1a',
+      badgeColor: 'confidence-very-high',
+      icon: '✓✓',
+      textColor: '#ffffff',
+    },
+    {
+      id: 'high',
+      label: 'High Confidence',
+      shortLabel: 'High',
+      meaning: 'Value derived from well-established industry practice, widely adopted by professional pool operators, or supported by multiple manufacturer specifications with strong practitioner consensus.',
+      typicalUse: 'Recommended parameter ranges, standard dosage coefficients, common maintenance intervals.',
+      examples: ['Residential pool FC target 1–3 ppm', 'Sodium bicarbonate TA dosage coefficient', 'pH target range 7.2–7.6'],
+      displayColor: '#2d7a2d',
+      badgeColor: 'confidence-high',
+      icon: '✓',
+      textColor: '#ffffff',
+    },
+    {
+      id: 'moderate',
+      label: 'Moderate Confidence',
+      shortLabel: 'Moderate',
+      meaning: 'Value based on common practice supported by limited peer-reviewed evidence, or derived from industry guidance that has not been universally standardized. Some variation between sources.',
+      typicalUse: 'CYA/FC ratio guidance, phosphate thresholds, pool-specific recommendations that vary by surface type.',
+      examples: ['CYA target range for saltwater pools', 'Phosphate action threshold', 'Pool-specific CH targets by surface material'],
+      displayColor: '#b06000',
+      badgeColor: 'confidence-moderate',
+      icon: '~',
+      textColor: '#ffffff',
+    },
+    {
+      id: 'limited',
+      label: 'Limited Confidence',
+      shortLabel: 'Limited',
+      meaning: 'Value derived from sparse sources, editorial interpretation, or emerging guidance not yet widely adopted. May vary significantly between manufacturers, regions, or pool conditions.',
+      typicalUse: 'Manufacturer-specific settings, regional regulatory variations, anecdotal industry practice.',
+      examples: ['Specific algaecide dosing rates', 'Manufacturer-specific salt cell ranges', 'Regional health code variations'],
+      displayColor: '#8a3a00',
+      badgeColor: 'confidence-limited',
+      icon: '!',
+      textColor: '#ffffff',
+    },
+    {
+      id: 'informational',
+      label: 'Informational',
+      shortLabel: 'Informational',
+      meaning: 'Provided for general orientation only. Not a specific recommendation. Users should consult their product label, local health authority, or certified pool professional for their specific situation.',
+      typicalUse: 'General background information, illustrative examples, preliminary guidance pending further review.',
+      examples: ['General maintenance timing suggestions', 'Background on why a chemical matters', 'Overview comparisons not intended for direct use'],
+      displayColor: '#4a6080',
+      badgeColor: 'confidence-informational',
+      icon: 'ℹ',
+      textColor: '#ffffff',
+    },
+  ],
+};

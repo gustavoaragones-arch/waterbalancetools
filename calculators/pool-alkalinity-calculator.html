@@ -23,6 +23,25 @@
       {"@type":"ListItem","position":2,"name":"Calculators","item":"https://waterbalancetools.com/calculators/"},
       {"@type":"ListItem","position":3,"name":"Pool Alkalinity Calculator"}]}
 </script>
+<style>
+.trust-panel{margin:2rem 0;border:1px solid #d0dde8;border-radius:8px;background:#f8fbff;font-size:.875rem}
+.trust-panel details summary{list-style:none;cursor:pointer;padding:.875rem 1.25rem;display:flex;align-items:center;gap:.75rem;user-select:none}
+.trust-panel details summary::-webkit-details-marker{display:none}
+.trust-panel details[open] summary{border-bottom:1px solid #d0dde8}
+.trust-panel__icon{font-size:1.1rem;flex-shrink:0}
+.trust-panel__confidence{margin-left:auto}
+.trust-panel__body{padding:1.25rem}
+.trust-panel__grid{display:grid;grid-template-columns:max-content 1fr;gap:.35rem 1rem;margin:0 0 1rem}
+.trust-panel__grid dt{color:#666;font-weight:500}
+.trust-panel__grid dd{margin:0;color:#222}
+.trust-panel__links{display:flex;gap:1rem;flex-wrap:wrap}
+.trust-panel__links a{color:#0073aa;font-size:.8rem}
+.trust-panel__note{margin:.75rem 0 0;padding:.5rem .75rem;background:#fffde7;border-radius:4px;font-size:.8rem;color:#555}
+.confidence-badge{display:inline-flex;align-items:center;gap:.3em;padding:2px 8px;border-radius:12px;font-size:.75rem;font-weight:600;white-space:nowrap}
+.version-badge{display:inline-flex;align-items:center;gap:.4em;background:#f0f4f8;border:1px solid #c8d8e8;border-radius:4px;padding:2px 8px;font-size:.72rem;color:#445;margin-left:.75rem;vertical-align:middle}
+.formula-panel,.dataset-panel{border:1px solid #e0e0e0;border-radius:6px;padding:1rem 1.25rem;background:#fff;margin:1.5rem 0;font-size:.875rem}
+.formula-panel h3,.dataset-panel h3{margin:0 0 .75rem;font-size:.9rem;color:#0073aa;text-transform:uppercase;letter-spacing:.04em}
+</style>
 </head>
 <body class="calc-page">
     <header class="site-header" data-canonical-nav="v2">
@@ -217,8 +236,38 @@ These tools are designed to help maintain safe chlorine, pH, and total alkalinit
 
     <p class="updated">Last updated: April 2026</p>
 
-  </main>
-                      <footer class="site-footer">
+  
+<!-- trust-panel: inject-trust-panels.js -->
+<aside class="trust-panel" aria-label="Calculation Trust Panel">
+  <details>
+    <summary class="trust-panel__toggle">
+      <span class="trust-panel__icon">🔬</span>
+      <strong>About This Calculation</strong>
+      <span class="trust-panel__confidence"><span class="confidence-badge confidence-high" style="background:#2d7a2d;color:#ffffff" title="Value derived from well-established industry practice, widely adopted by professional pool operators, or supported by multiple manufacturer specifications with strong practitioner consensus.">✓ High</span></span>
+    </summary>
+    <div class="trust-panel__body">
+      <dl class="trust-panel__grid">
+        <dt>Formula Version</dt><dd>2026.07</dd>
+        <dt>Dataset Version</dt><dd>2026.07</dd>
+        <dt>Knowledge Graph</dt><dd>2026.07</dd>
+        <dt>Last Reviewed</dt><dd>2026-07-01</dd>
+        <dt>Confidence</dt><dd><span class="confidence-badge confidence-high" style="background:#2d7a2d;color:#ffffff" title="Value derived from well-established industry practice, widely adopted by professional pool operators, or supported by multiple manufacturer specifications with strong practitioner consensus.">✓ High</span></dd>
+        <dt>Formulas Used</dt><dd><a href="/methodology/formula-selection/" title="Total Alkalinity Adjustment">Total Alkalinity Adjustment</a></dd>
+        <dt>Dataset Sources</dt><dd><a href="/reference/datasets/chemical-ranges/">chemical-ranges</a>, <a href="/reference/datasets/dosage-matrices/">dosage-matrices</a></dd>
+      </dl>
+      <div class="trust-panel__links">
+        <a href="/methodology/calculation-methodology/">Methodology</a>
+        <a href="/methodology/calculation-assumptions/">Assumptions</a>
+        <a href="/methodology/known-limitations/">Known Limitations</a>
+        <a href="/methodology/rounding-policy/">Rounding Policy</a>
+        <a href="/revisions/">Revision History</a>
+      </div>
+      <p class="trust-panel__note"><em>Baking soda coefficient: 24 oz per 10 ppm per 10,000 gal.</em></p>
+    </div>
+  </details>
+</aside>
+</main>
+                        <footer class="site-footer">
     <nav class="footer-nav">
       <a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a>
       <a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a>
