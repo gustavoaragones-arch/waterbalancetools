@@ -1,5 +1,15 @@
 [
   {
+    "url": "/calculators",
+    "title": "Calculators Hub",
+    "description": "All pool and hot tub calculators organized by use-case and maintenance workflow.",
+    "h1": "Calculators Hub",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculators hub"
+  },
+  {
     "url": "/calculators/chemical-calculator",
     "title": "Pool Chemical Calculator (Exact Levels in 30 Seconds)",
     "description": "Calculate exact chlorine, pH, and alkalinity doses in seconds—enter gallons + test readings. Avoid over-treatment, cut guesswork, and keep water swim-ready.",
@@ -138,6 +148,16 @@
     "readingTime": null,
     "updated": null,
     "keywords": "pool volume calculator calculators"
+  },
+  {
+    "url": "/charts",
+    "title": "Charts Hub",
+    "description": "Visual range charts for pool and spa chemistry with supporting calculator paths.",
+    "h1": "Charts Hub",
+    "category": "Charts",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "charts hub"
   },
   {
     "url": "/charts/hot-tub-chemical-levels-chart",
@@ -2310,6 +2330,26 @@
     "keywords": "pool water replacement guidelines"
   },
   {
+    "url": "/guides",
+    "title": "Guides Hub",
+    "description": "Guided explanations organized into practical problem-solving clusters.",
+    "h1": "Guides Hub",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "guides hub"
+  },
+  {
+    "url": "/guides/advanced",
+    "title": "Advanced Guides Hub",
+    "description": "Advanced chemistry scenarios and deeper technical interpretation guides.",
+    "h1": "Advanced Guides Hub",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "advanced guides hub"
+  },
+  {
     "url": "/guides/advanced/chlorine-breakdown-sunlight",
     "title": "Chlorine Breakdown in Sunlight (UV, CYA &amp; Dosing)",
     "description": "UV destroys free chlorine quickly unless CYA buffers it—here’s the mechanism and what to do.",
@@ -2358,6 +2398,16 @@
     "readingTime": null,
     "updated": null,
     "keywords": "pool alkalinity guide"
+  },
+  {
+    "url": "/guides/chlorine",
+    "title": "Chlorine Guides Hub",
+    "description": "Chlorine-specific troubleshooting, dosing, and maintenance decision guides.",
+    "h1": "Chlorine Guides Hub",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "chlorine guides hub"
   },
   {
     "url": "/guides/chlorine-guide",
@@ -2420,6 +2470,16 @@
     "keywords": "why pool won hold chlorine causes and fixes"
   },
   {
+    "url": "/guides/edge-cases",
+    "title": "Edge Cases Guides Hub",
+    "description": "Low-frequency but high-impact pool chemistry edge-case playbooks.",
+    "h1": "Edge Cases Guides Hub",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "edge cases guides hub"
+  },
+  {
     "url": "/guides/edge-cases/high-cya-chlorine-lock",
     "title": "High CYA Chlorine Lock (Why FC Reads Fine But Water Fails)",
     "description": "Why chlorine stops working when CYA is high: less active sanitizer per ppm reading—fix with dilution and FC targets.",
@@ -2468,6 +2528,16 @@
     "readingTime": null,
     "updated": null,
     "keywords": "how long after shocking pool can you swim safe wait times swimming"
+  },
+  {
+    "url": "/guides/hot-tub",
+    "title": "Hot Tub Guides Hub",
+    "description": "Hot tub-specific chemistry and maintenance troubleshooting guides.",
+    "h1": "Hot Tub Guides Hub",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hot tub guides hub"
   },
   {
     "url": "/guides/hot-tub-chemistry",
@@ -2540,6 +2610,16 @@
     "keywords": "how often shock hot tub"
   },
   {
+    "url": "/guides/ph",
+    "title": "pH Guides Hub",
+    "description": "pH and alkalinity stabilization guides, from diagnostics to correction workflows.",
+    "h1": "pH Guides Hub",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "guides hub"
+  },
+  {
     "url": "/guides/ph-guide",
     "title": "Pool pH Guide",
     "description": "Ideal pH range, how acid and base moves pH, and links to adjustment guides.",
@@ -2610,6 +2690,16 @@
     "keywords": "pool chemistry basics"
   },
   {
+    "url": "/guides/questions",
+    "title": "Questions Guides Hub",
+    "description": "Question-driven guide collection mapped to common search intents.",
+    "h1": "Questions Guides Hub",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "questions guides hub"
+  },
+  {
     "url": "/guides/questions/can-rain-affect-pool-chemistry",
     "title": "Can Rain Affect Pool Chemistry?",
     "description": "Can rain affect pool chemistry? Yes — rain dilutes chlorine, pH, alkalinity, and CYA while introducing organic debris. What to test and fix after rain.",
@@ -2670,6 +2760,16 @@
     "keywords": "why pool green but chlorine high"
   },
   {
+    "url": "/guides/seasonal",
+    "title": "Seasonal Guides Hub",
+    "description": "Seasonal opening, summer, and winter maintenance guide collection.",
+    "h1": "Seasonal Guides Hub",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "seasonal guides hub"
+  },
+  {
     "url": "/guides/seasonal/closing-pool-chemistry-winter",
     "title": "Closing Pool Chemistry for Winter (Balance, Shock &amp; Winterize)",
     "description": "Winter pool closing chemicals: balance water, shock, optional algaecide per label—then winterize equipment.",
@@ -2708,6 +2808,16 @@
     "readingTime": null,
     "updated": null,
     "keywords": "winter pool maintenance chemistry mild amp cold climates"
+  },
+  {
+    "url": "/comparisons",
+    "title": "Comparisons Hub",
+    "description": "Side-by-side comparisons for core chemistry products and maintenance paths.",
+    "h1": "Comparisons Hub",
+    "category": "Comparisons",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "comparisons hub"
   },
   {
     "url": "/comparisons/chlorine-vs-bromine",
@@ -2888,6 +2998,16 @@
     "readingTime": null,
     "updated": null,
     "keywords": "about waterbalancetools"
+  },
+  {
+    "url": "/",
+    "title": "Pool & Hot Tub Chemical Calculator",
+    "description": "Free pool and hot tub chemical calculator. Calculate chlorine and pH adjustments for pools and spas instantly.",
+    "h1": "Pool & Hot Tub Chemical Calculator",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "pool hot tub chemical calculator"
   },
   {
     "url": "/all-pages",
@@ -3970,24 +4090,14 @@
     "keywords": "hot tub chlorine levels chart"
   },
   {
-    "url": "/index",
-    "title": "Pool & Hot Tub Chemical Calculator",
-    "description": "Free pool and hot tub chemical calculator. Calculate chlorine and pH adjustments for pools and spas instantly.",
-    "h1": "Pool & Hot Tub Chemical Calculator",
+    "url": "/legal",
+    "title": "Legal Hub",
+    "description": "Ownership, legal, and policy pages for compliance and transparency.",
+    "h1": "Legal Hub",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "pool hot tub chemical calculator"
-  },
-  {
-    "url": "/legal/legal",
-    "title": "Legal Information",
-    "description": "Terms of use, privacy, disclaimer, and cookies for WaterBalanceTools.com.",
-    "h1": "Legal Information",
-    "category": "Other",
-    "readingTime": null,
-    "updated": null,
-    "keywords": "legal information"
+    "keywords": "legal hub"
   },
   {
     "url": "/legal/ownership",
@@ -3998,6 +4108,16 @@
     "readingTime": null,
     "updated": null,
     "keywords": "ownership amp operator information waterbalancetools"
+  },
+  {
+    "url": "/maintenance",
+    "title": "Maintenance Hub",
+    "description": "Maintenance workflows and recurring service procedures.",
+    "h1": "Maintenance Hub",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "maintenance hub"
   },
   {
     "url": "/maintenance/how-often-add-chlorine-pool",
@@ -4090,6 +4210,26 @@
     "keywords": "pool levels chart fix order"
   },
   {
+    "url": "/programmatic",
+    "title": "Programmatic Hub",
+    "description": "Programmatic knowledge pages grouped by recurring calculation patterns.",
+    "h1": "Programmatic Hub",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "programmatic hub"
+  },
+  {
+    "url": "/programmatic/behavior",
+    "title": "Programmatic Behavior Hub",
+    "description": "Behavior and schedule-oriented pages for maintenance frequency decisions.",
+    "h1": "Programmatic Behavior Hub",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "programmatic behavior hub"
+  },
+  {
     "url": "/programmatic/behavior/how-often-to-shock-pool",
     "title": "How Often to Shock a Pool (Weekly Guide)",
     "description": "Shock on a smart schedule—after parties, storms, or algae risk. Avoid guesswork with testing.",
@@ -4118,6 +4258,16 @@
     "readingTime": null,
     "updated": null,
     "keywords": "when add chlorine pool best time should you"
+  },
+  {
+    "url": "/programmatic/chlorine",
+    "title": "Programmatic Chlorine Hub",
+    "description": "Programmatic chlorine dosing pages grouped by volume and scenario.",
+    "h1": "Programmatic Chlorine Hub",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "programmatic chlorine hub"
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool",
@@ -4230,6 +4380,16 @@
     "keywords": "how much chlorine for 9000 gallon pool exact dose you need 000"
   },
   {
+    "url": "/programmatic/explanations",
+    "title": "Programmatic Explanations Hub",
+    "description": "Conceptual explanation pages that support calculator interpretation.",
+    "h1": "Programmatic Explanations Hub",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "programmatic explanations hub"
+  },
+  {
     "url": "/programmatic/explanations/what-is-pool-alkalinity",
     "title": "What Is Total Alkalinity (Pool Basics)",
     "description": "Total alkalinity buffers pH—learn what it means and how to keep water balance stable.",
@@ -4258,6 +4418,16 @@
     "readingTime": null,
     "updated": null,
     "keywords": "why shower before swimming pool chemistry should you entering"
+  },
+  {
+    "url": "/programmatic/hot-tubs",
+    "title": "Programmatic Hot Tub Hub",
+    "description": "Programmatic hot tub chemistry pages organized by spa volume.",
+    "h1": "Programmatic Hot Tub Hub",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "programmatic hot tub hub"
   },
   {
     "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons",
@@ -4310,6 +4480,16 @@
     "keywords": "hot tub chemicals for 600 gallons dosing guide what you need gallon"
   },
   {
+    "url": "/programmatic/ph",
+    "title": "Programmatic pH Hub",
+    "description": "Programmatic pH adjustment pages and correction scenarios.",
+    "h1": "Programmatic pH Hub",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "programmatic hub"
+  },
+  {
     "url": "/programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2",
     "title": "How to Adjust Pool pH from 6.8 to 7.2 (Safe Steps)",
     "description": "Adjust pool pH from 6.8 to 7.2. Use the calculator for exact ounces and stable pH balance.",
@@ -4350,6 +4530,16 @@
     "keywords": "how adjust pool from safe steps you"
   },
   {
+    "url": "/programmatic/problems",
+    "title": "Programmatic Problems Hub",
+    "description": "Problem-resolution playbooks generated from recurring chemistry failures.",
+    "h1": "Programmatic Problems Hub",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "programmatic problems hub"
+  },
+  {
     "url": "/programmatic/problems/cloudy-pool-fix",
     "title": "Cloudy Pool Fix (Clear Water Fast)",
     "description": "Clear cloudy water with filtration, pH balance, and targeted chemistry. Practical steps—test before you dump chemicals.",
@@ -4388,6 +4578,16 @@
     "readingTime": null,
     "updated": null,
     "keywords": "low alkalinity symptoms fix safely what are the pool"
+  },
+  {
+    "url": "/programmatic/shock",
+    "title": "Programmatic Shock Hub",
+    "description": "Programmatic shock dosing pages by pool volume and event type.",
+    "h1": "Programmatic Shock Hub",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "programmatic shock hub"
   },
   {
     "url": "/programmatic/shock/how-much-shock-for-10000-gallon-pool",

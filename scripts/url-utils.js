@@ -4,6 +4,7 @@
  */
 
 'use strict';
+const urlEngine = require('../js/url/url-engine');
 
 const SITE_FOLDERS = [
   'calculators', 'guides', 'charts', 'programmatic', 'reference',
@@ -32,29 +33,7 @@ function normalizeInternalUrl(url) {
   if (typeof url !== 'string') return url;
   // Don't touch external or protocol-relative URLs
   if (/^(https?:)?\/\//.test(url)) return url;
-
-  // Split off any query/fragment
-  const qIdx = url.search(/[?#]/);
-  const suffix = qIdx >= 0 ? url.slice(qIdx) : '';
-  let path = qIdx >= 0 ? url.slice(0, qIdx) : url;
-
-  // Collapse duplicate consecutive folder segments (folder/folder but not folder/folder.html)
-  // e.g. /calculators/calculators/foo → /calculators/foo
-  let prev = null;
-  while (prev !== path) {
-    prev = path;
-    path = path.replace(
-      /\/([\w-]+)\/\1\//g,
-      (match, seg) => '/' + seg + '/'
-    );
-  }
-
-  // Strip trailing slash (except bare '/')
-  if (path.length > 1 && path.endsWith('/')) {
-    path = path.slice(0, -1);
-  }
-
-  return path + suffix;
+  return urlEngine.normalizeHref(url);
 }
 
 /**

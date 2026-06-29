@@ -7,9 +7,10 @@
 'use strict';
 const fs   = require('fs');
 const path = require('path');
+const urlEngine = require('../js/url/url-engine');
+const { SITE_HEADER, SITE_FOOTER } = require('./template-utils');
 
 const ROOT = path.join(__dirname, '..');
-const BASE = '../../'; // depth-2 from root (guides/questions/ folder)
 
 function esc(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -21,8 +22,8 @@ function breadcrumbSchema(canonicalPath, title) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://waterbalancetools.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://waterbalancetools.com/guides/pool-chemistry-basics' },
-      { '@type': 'ListItem', position: 3, name: title, item: 'https://waterbalancetools.com' + canonicalPath }
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: urlEngine.absoluteUrl('/guides/pool-chemistry-basics') },
+      { '@type': 'ListItem', position: 3, name: title, item: urlEngine.absoluteUrl(canonicalPath) }
     ]
   });
 }
@@ -73,7 +74,7 @@ function html(opts) {
   const faqSchema   = faqPageSchema(faqs);
 
   const calcLinks = relatedCalcs.map(([href, label]) =>
-    '        <li><a href="' + BASE + 'calculators/' + href + '">' + esc(label) + '</a></li>'
+    '        <li><a href="' + urlEngine.href('/calculators/' + href) + '">' + esc(label) + '</a></li>'
   ).join('\n');
 
   const fixSteps = howToFixSteps.map(step =>
@@ -85,14 +86,14 @@ function html(opts) {
 <head>
   <meta charset="UTF-8">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://waterbalancetools.com${canonicalPath}">
+  <link rel="canonical" href="${urlEngine.canonicalUrl(canonicalPath)}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${esc(metaDesc)}">
   <title>${esc(title)} | WaterBalanceTools</title>
   <meta property="og:title" content="${esc(title)} | WaterBalanceTools">
   <meta property="og:description" content="${esc(metaDesc)}">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="${BASE}style.css">
+  <link rel="stylesheet" href="/style.css">
   <script type="application/ld+json">
   ${crumbSchema}
   </script>
@@ -102,14 +103,7 @@ function html(opts) {
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3974004697476579" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="site-header">
-    <a href="${BASE}index.html" class="logo-link"><img src="${BASE}assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36"></a>
-    <nav class="nav">
-      <a href="${BASE}calculators/chemical-calculator.html">Chemical Calculator</a>
-      <a href="${BASE}calculators/pool-volume-calculator.html">Volume Calculator</a>
-      <a href="${BASE}guides/pool-chemistry-basics.html">Chemistry Guide</a>
-    </nav>
-  </header>
+${SITE_HEADER}
   <main class="container guide-content">
     <h1>${esc(title)}</h1>
     <section class="quick-answer">
@@ -157,18 +151,7 @@ ${faqItems(faqs)}
     <div class="ad ad-bottom"><!-- AdSense --></div>
     <p class="updated">Last updated: June 2026</p>
   </main>
-  <footer class="site-footer">
-    <nav class="footer-nav">
-      <a href="${BASE}calculators/pool-volume-calculator.html">Pool Volume Calculator</a>
-      <a href="${BASE}calculators/pool-chlorine-calculator.html">Pool Chlorine Calculator</a>
-      <a href="${BASE}calculators/pool-shock-calculator.html">Pool Shock Calculator</a>
-      <a href="${BASE}calculators/pool-ph-calculator.html">Pool pH Calculator</a>
-      <a href="${BASE}guides/pool-chemistry-basics.html">Pool Chemistry Guide</a>
-      <a href="${BASE}legal/ownership.html">Ownership</a>
-      <a href="${BASE}legal/legal.html">Legal</a>
-    </nav>
-    <p class="footer-copy">&copy; WaterBalanceTools.com</p>
-  </footer>
+${SITE_FOOTER}
 </body>
 </html>`;
 }

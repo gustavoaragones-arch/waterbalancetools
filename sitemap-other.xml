@@ -13,7 +13,55 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://waterbalancetools.com/audit/google/authority-flow</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/audit/google/crawl-depth</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/audit/google/freshness</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/audit/google</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/audit/google/priority-report</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/audit/google/search-console-helper</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/audit/google/weak-pages</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://waterbalancetools.com/charts/hot-tub-chemical-levels-chart</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/charts</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -44,6 +92,12 @@
   </url>
   <url>
     <loc>https://waterbalancetools.com/comparisons/free-chlorine-vs-total-chlorine</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/comparisons</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -763,13 +817,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/index</loc>
+    <loc>https://waterbalancetools.com/legal</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://waterbalancetools.com/legal/legal</loc>
+    <loc>https://waterbalancetools.com/legal</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -794,6 +848,12 @@
   </url>
   <url>
     <loc>https://waterbalancetools.com/maintenance/how-to-fix-cloudy-hot-tub</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/maintenance</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -919,6 +979,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://waterbalancetools.com/programmatic/behavior</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://waterbalancetools.com/programmatic/behavior/when-to-add-chlorine</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -991,6 +1057,18 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://waterbalancetools.com/programmatic/chlorine</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/explanations</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://waterbalancetools.com/programmatic/explanations/what-is-pool-alkalinity</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -1039,6 +1117,18 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://waterbalancetools.com/programmatic/hot-tubs</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -1063,6 +1153,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://waterbalancetools.com/programmatic/ph</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://waterbalancetools.com/programmatic/problems/cloudy-pool-fix</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -1076,6 +1172,12 @@
   </url>
   <url>
     <loc>https://waterbalancetools.com/programmatic/problems/high-chlorine-how-to-lower</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/problems</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1118,6 +1220,12 @@
   </url>
   <url>
     <loc>https://waterbalancetools.com/programmatic/shock/how-much-shock-for-5000-gallon-pool</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/programmatic/shock</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1202,6 +1310,12 @@
   </url>
   <url>
     <loc>https://waterbalancetools.com/reports/entities</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://waterbalancetools.com/reports/indexing-intelligence</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

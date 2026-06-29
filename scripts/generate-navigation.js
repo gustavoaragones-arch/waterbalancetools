@@ -14,9 +14,7 @@
 
 const fs   = require('fs');
 const path = require('path');
-const { walkHtml, ROOT } = require('./template-utils');
-
-const BASE_URL = 'https://waterbalancetools.com';
+const { walkHtml, ROOT, buildUrl } = require('./template-utils');
 
 // Directories whose HTML we skip when building the nav index
 const SKIP_DIRS = new Set([
@@ -39,7 +37,7 @@ function extractMeta(html) {
 }
 
 function toCleanUrl(relPath) {
-  return '/' + relPath.replace(/\.html$/i, '').replace(/\/index$/i, '') || '/';
+  return buildUrl(relPath);
 }
 
 function urlToCategory(url) {
@@ -65,7 +63,7 @@ function loadKnowledgeMeta() {
       for (const list of lists) {
         for (const entry of list) {
           if (!entry.slug) continue;
-          const url = '/' + entry.slug.replace(/\.html$/, '');
+          const url = buildUrl(entry.slug);
           metaMap[url] = {
             readingTime:        entry.readingTime || null,
             lastReviewed:       entry.lastReviewed || null,

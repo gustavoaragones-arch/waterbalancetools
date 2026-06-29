@@ -14,7 +14,7 @@ const path = require('path');
 const {
   fill, template, partial, SITE_HEADER, SITE_FOOTER, esc,
   buildBreadcrumb, buildFormulaContent, buildRelatedTools,
-  buildRelatedTopics, renderBody, writeFile, ROOT,
+  buildRelatedTopics, renderBody, writeFile, ROOT, href, canonicalUrl,
 } = require('./template-utils');
 
 const data = require(path.join(ROOT, 'data', 'formulas.json'));
@@ -27,13 +27,13 @@ function generateHub() {
 
   const formulaCards = formulas.length > 0
     ? formulas.map(f =>
-        `      <a href="/${f.slug}" class="knowledge-card">
+        `      <a href="${href(f.slug)}" class="knowledge-card">
         <div class="knowledge-card-title">${esc(f.title)}</div>
         <p class="knowledge-card-desc">${esc(f.summary || f.description)}</p>
       </a>`).join('\n')
     : `      <div class="knowledge-callout">
         <span class="knowledge-callout-icon">&#128221;</span>
-        <div><strong>Coming in Phase 5B</strong> — Pool chemistry formulas are being prepared. In the meantime, use the <a href="/calculators/chemical-calculator">Chemical Calculator</a> for instant dose calculations.</div>
+        <div><strong>Coming in Phase 5B</strong> — Pool chemistry formulas are being prepared. In the meantime, use the <a href="${href('/calculators/chemical-calculator')}">Chemical Calculator</a> for instant dose calculations.</div>
       </div>`;
 
   const bc = buildBreadcrumb('formulas', 'Formula Library');
@@ -42,7 +42,7 @@ function generateHub() {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://waterbalancetools.com/formulas/">
+  <link rel="canonical" href="${canonicalUrl('/formulas')}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pool Chemistry Formula Library | WaterBalanceTools</title>
   <meta name="description" content="The complete pool chemistry formula library — chlorine dosing, pH adjustment, alkalinity, CYA, calcium hardness, and more. Every formula explained with worked examples.">
@@ -69,10 +69,10 @@ ${formulaCards}
     <section class="link-matrix">
       <h3>Related Tools</h3>
       <ul>
-        <li><a href="/calculators/chemical-calculator">Pool Chemical Calculator</a></li>
-        <li><a href="/academy/">Chemistry Academy</a></li>
-        <li><a href="/glossary/">Glossary</a></li>
-        <li><a href="/reference/">Reference Tables</a></li>
+        <li><a href="${href('/calculators/chemical-calculator')}">Pool Chemical Calculator</a></li>
+        <li><a href="${href('/academy')}">Chemistry Academy</a></li>
+        <li><a href="${href('/glossary')}">Glossary</a></li>
+        <li><a href="${href('/reference')}">Reference Tables</a></li>
       </ul>
     </section>
   </main>

@@ -4,11 +4,12 @@ seo,98,Green,0,1
 performance,100,Green,0,0
 schema,100,Green,0,0
 accessibility,96,Green,0,1
-mobile,100,Green,0,0
-links,100,Green,0,2
+mobile,95,Green,0,1
+links,100,Green,0,1
 entities,100,Green,0,0
 datasets,100,Green,0,0
 calculators,100,Green,0,0
 content,95,Green,0,2
 ai-readiness,100,Green,0,0
-overall,99,Green,0,7
+indexing-intelligence,100,Green,0,0
+overall,98,Green,0,7

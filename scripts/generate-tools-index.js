@@ -4,6 +4,8 @@
  */
 const fs = require('fs');
 const path = require('path');
+const urlEngine = require('../js/url/url-engine');
+const { SITE_HEADER, SITE_FOOTER } = require('./template-utils');
 
 const ROOT = path.join(__dirname, '..');
 const OUT_FILE = path.join(ROOT, 'tools', 'index.html');
@@ -79,7 +81,11 @@ function friendlyTitle(filename) {
 }
 
 function linkList(baseUrl, files) {
-  return files.map(f => '<li><a href="' + baseUrl + f + '">' + friendlyTitle(f) + '</a></li>').join('\n        ');
+  return files.map((f) => {
+    const raw = baseUrl + f;
+    const normalized = urlEngine.href(raw.replace(/^(\.\.\/)+/g, '/'));
+    return '<li><a href="' + normalized + '">' + friendlyTitle(f) + '</a></li>';
+  }).join('\n        ');
 }
 
 const chlorineFiles = listHtml(path.join(ROOT, 'programmatic', 'chlorine'));
@@ -98,12 +104,13 @@ const problemLinks = linkList('../programmatic/problems/', problemFiles);
 const explanationLinks = linkList('../programmatic/explanations/', explanationFiles);
 const behaviorLinks = linkList('../programmatic/behavior/', behaviorFiles);
 
-const calcList = CALCULATORS.map(c => '<li><a href="' + c.url + '">' + c.name + '</a></li>').join('\n        ');
-const chartsList = CHARTS.map(c => '<li><a href="' + c.url + '">' + c.name + '</a></li>').join('\n        ');
-const maintenanceList = MAINTENANCE.map(m => '<li><a href="' + m.url + '">' + m.name + '</a></li>').join('\n        ');
-const printablesList = PRINTABLES.map(p => '<li><a href="' + p.url + '">' + p.name + '</a></li>').join('\n        ');
-const comparisonsList = COMPARISONS.map(c => '<li><a href="' + c.url + '">' + c.name + '</a></li>').join('\n        ');
-const referenceList = REFERENCE.map(r => '<li><a href="' + r.url + '">' + r.name + '</a></li>').join('\n        ');
+const toHref = (raw) => urlEngine.href(String(raw).replace(/^(\.\.\/)+/g, '/'));
+const calcList = CALCULATORS.map(c => '<li><a href="' + toHref(c.url) + '">' + c.name + '</a></li>').join('\n        ');
+const chartsList = CHARTS.map(c => '<li><a href="' + toHref(c.url) + '">' + c.name + '</a></li>').join('\n        ');
+const maintenanceList = MAINTENANCE.map(m => '<li><a href="' + toHref(m.url) + '">' + m.name + '</a></li>').join('\n        ');
+const printablesList = PRINTABLES.map(p => '<li><a href="' + toHref(p.url) + '">' + p.name + '</a></li>').join('\n        ');
+const comparisonsList = COMPARISONS.map(c => '<li><a href="' + toHref(c.url) + '">' + c.name + '</a></li>').join('\n        ');
+const referenceList = REFERENCE.map(r => '<li><a href="' + toHref(r.url) + '">' + r.name + '</a></li>').join('\n        ');
 
 const html = `<!DOCTYPE html>
 <html lang="en">
@@ -114,17 +121,10 @@ const html = `<!DOCTYPE html>
   <title>All Pool & Hot Tub Tools | WaterBalanceTools</title>
   <meta property="og:title" content="All Pool & Hot Tub Tools | WaterBalanceTools">
   <meta property="og:description" content="Calculators and dosage guides for pool and hot tub chemistry.">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body class="calc-page">
-  <header class="site-header">
-    <a href="../index.html" class="logo-link"><img src="../assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36"></a>
-    <nav class="nav">
-      <a href="../calculators/chemical-calculator.html">Chemical Calculator</a>
-      <a href="../calculators/pool-volume-calculator.html">Volume Calculator</a>
-      <a href="../guides/pool-chemistry-basics.html">Chemistry Guide</a>
-    </nav>
-  </header>
+${SITE_HEADER}
   <main class="container">
     <section class="hero hero-compact">
       <h1>All Pool & Hot Tub Tools</h1>
@@ -211,17 +211,7 @@ const html = `<!DOCTYPE html>
       </section>
     </div>
   </main>
-  <footer class="site-footer">
-    <nav class="footer-nav">
-      <a href="../calculators/pool-volume-calculator.html">Pool Volume Calculator</a>
-      <a href="../calculators/pool-chlorine-calculator.html">Pool Chlorine Calculator</a>
-      <a href="../calculators/pool-shock-calculator.html">Pool Shock Calculator</a>
-      <a href="../calculators/pool-ph-calculator.html">Pool pH Calculator</a>
-      <a href="../charts/pool-chemical-levels-chart.html">Pool Chemical Levels Chart</a>
-      <a href="../maintenance/how-to-balance-pool-water.html">Pool Maintenance Guide</a>
-    </nav>
-    <p class="footer-copy">&copy; WaterBalanceTools.com</p>
-  </footer>
+${SITE_FOOTER}
 </body>
 </html>
 `;

@@ -1,0 +1,1665 @@
+{
+  "generatedAt": "2026-06-29T14:43:01.200Z",
+  "pagesAudited": 495,
+  "totalInternalLinks": 14972,
+  "brokenInternalLinks": 177,
+  "relativeLinks": 1727,
+  "htmlExtensionLinks": 1746,
+  "indexHtmlLinks": 57,
+  "anchorsFound": 1896,
+  "topLinkedPages": [
+    {
+      "url": "/guides/pool-chemistry-basics",
+      "count": 940
+    },
+    {
+      "url": "/",
+      "count": 933
+    },
+    {
+      "url": "/calculators/chemical-calculator",
+      "count": 733
+    },
+    {
+      "url": "/calculators/pool-chlorine-calculator",
+      "count": 631
+    },
+    {
+      "url": "/calculators/pool-shock-calculator",
+      "count": 594
+    },
+    {
+      "url": "/calculators/pool-ph-calculator",
+      "count": 575
+    },
+    {
+      "url": "/academy",
+      "count": 527
+    },
+    {
+      "url": "/pool-chemical-levels-chart",
+      "count": 525
+    },
+    {
+      "url": "/calculators/pool-volume-calculator",
+      "count": 514
+    },
+    {
+      "url": "/resources",
+      "count": 486
+    },
+    {
+      "url": "/about",
+      "count": 459
+    },
+    {
+      "url": "/search",
+      "count": 459
+    },
+    {
+      "url": "/charts/pool-chemical-levels-chart",
+      "count": 456
+    },
+    {
+      "url": "/all-pages",
+      "count": 446
+    },
+    {
+      "url": "/legal/legal",
+      "count": 445
+    },
+    {
+      "url": "/legal/ownership",
+      "count": 445
+    },
+    {
+      "url": "/entities/free-chlorine",
+      "count": 122
+    },
+    {
+      "url": "/glossary",
+      "count": 111
+    },
+    {
+      "url": "/calculators/hot-tub-chlorine-calculator",
+      "count": 111
+    },
+    {
+      "url": "/entities",
+      "count": 104
+    },
+    {
+      "url": "/calculators/pool-alkalinity-calculator",
+      "count": 102
+    },
+    {
+      "url": "/entities/ph",
+      "count": 77
+    },
+    {
+      "url": "/calculators/hot-tub-ph-calculator",
+      "count": 76
+    },
+    {
+      "url": "/calculators/pool-cyanuric-acid-calculator",
+      "count": 72
+    },
+    {
+      "url": "/entities/lsi",
+      "count": 65
+    },
+    {
+      "url": "/entities/balancing",
+      "count": 60
+    },
+    {
+      "url": "/entities/calcium-hardness",
+      "count": 59
+    },
+    {
+      "url": "/entities/alkalinity",
+      "count": 57
+    },
+    {
+      "url": "/reference",
+      "count": 56
+    },
+    {
+      "url": "/calculators/hot-tub-shock-calculator",
+      "count": 53
+    },
+    {
+      "url": "/resources/pool-maintenance-checklist",
+      "count": 52
+    },
+    {
+      "url": "/guides/chlorine-guide",
+      "count": 51
+    },
+    {
+      "url": "/entities/swimming-pool",
+      "count": 51
+    },
+    {
+      "url": "/entities/cyanuric-acid",
+      "count": 50
+    },
+    {
+      "url": "/calculators/pool-turnover-rate-calculator",
+      "count": 47
+    },
+    {
+      "url": "/entities/shock-treatment",
+      "count": 46
+    },
+    {
+      "url": "/entities/testing",
+      "count": 44
+    },
+    {
+      "url": "/calculators/saltwater-pool-salt-calculator",
+      "count": 43
+    },
+    {
+      "url": "/entities/filtration",
+      "count": 43
+    },
+    {
+      "url": "/reference/datasets",
+      "count": 43
+    },
+    {
+      "url": "/entities/combined-chlorine",
+      "count": 42
+    },
+    {
+      "url": "/guides",
+      "count": 40
+    },
+    {
+      "url": "/calculators/spa-volume-calculator",
+      "count": 36
+    },
+    {
+      "url": "/reference/alkalinity-table",
+      "count": 36
+    },
+    {
+      "url": "/programmatic",
+      "count": 36
+    },
+    {
+      "url": "/entities/hot-tub",
+      "count": 34
+    },
+    {
+      "url": "/guides/ph/can-you-swim-in-high-ph-water",
+      "count": 33
+    },
+    {
+      "url": "/entities/pump",
+      "count": 33
+    },
+    {
+      "url": "/entities/breakpoint-chlorination",
+      "count": 32
+    },
+    {
+      "url": "/entities/corrosion",
+      "count": 31
+    },
+    {
+      "url": "/pool-chlorine-levels-chart",
+      "count": 31
+    },
+    {
+      "url": "/methodology/formula-selection",
+      "count": 30
+    },
+    {
+      "url": "/methodology/calculation-methodology",
+      "count": 30
+    },
+    {
+      "url": "/resources/hot-tub-maintenance-log",
+      "count": 29
+    },
+    {
+      "url": "/academy/sanitizers/shock-treatments-explained",
+      "count": 29
+    },
+    {
+      "url": "/entities/sanitizing",
+      "count": 29
+    },
+    {
+      "url": "/academy/water-balance/understanding-ph",
+      "count": 28
+    },
+    {
+      "url": "/resources/water-test-log",
+      "count": 27
+    },
+    {
+      "url": "/entities/algae",
+      "count": 27
+    },
+    {
+      "url": "/entities/temperature",
+      "count": 27
+    },
+    {
+      "url": "/calculators/volume-calculator",
+      "count": 27
+    },
+    {
+      "url": "/pool-ph-levels-chart",
+      "count": 27
+    },
+    {
+      "url": "/programmatic/explanations/what-is-pool-alkalinity",
+      "count": 27
+    },
+    {
+      "url": "/guides/ph/does-rain-lower-pool-ph",
+      "count": 27
+    },
+    {
+      "url": "/reference/ideal-pool-levels",
+      "count": 26
+    },
+    {
+      "url": "/resources/pool-chemical-log-sheet",
+      "count": 25
+    },
+    {
+      "url": "/formulas/shock-formula",
+      "count": 25
+    },
+    {
+      "url": "/entities/sand-filter",
+      "count": 25
+    },
+    {
+      "url": "/methodology",
+      "count": 24
+    },
+    {
+      "url": "/entities/scaling",
+      "count": 24
+    },
+    {
+      "url": "/reference/total-alkalinity-explained",
+      "count": 24
+    },
+    {
+      "url": "/methodology/calculation-assumptions",
+      "count": 24
+    },
+    {
+      "url": "/revisions",
+      "count": 24
+    },
+    {
+      "url": "/editorial/editorial-policy",
+      "count": 23
+    },
+    {
+      "url": "/entities/de-filter",
+      "count": 23
+    },
+    {
+      "url": "/entities/turnover-time",
+      "count": 23
+    },
+    {
+      "url": "/academy/sanitizers/understanding-free-chlorine",
+      "count": 22
+    },
+    {
+      "url": "/academy/troubleshooting/green-water",
+      "count": 22
+    },
+    {
+      "url": "/resources/airbnb-pool-turnover-checklist",
+      "count": 22
+    },
+    {
+      "url": "/academy/equipment/pool-pumps",
+      "count": 21
+    },
+    {
+      "url": "/academy/sanitizers/breakpoint-chlorination",
+      "count": 21
+    },
+    {
+      "url": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool",
+      "count": 21
+    },
+    {
+      "url": "/programmatic/problems/low-alkalinity-symptoms",
+      "count": 21
+    },
+    {
+      "url": "/reference/datasets/chemical-ranges",
+      "count": 21
+    },
+    {
+      "url": "/academy/equipment/pool-filters",
+      "count": 20
+    },
+    {
+      "url": "/academy/water-balance/understanding-cyanuric-acid",
+      "count": 20
+    },
+    {
+      "url": "/academy/fundamentals/understanding-pool-water-chemistry",
+      "count": 20
+    },
+    {
+      "url": "/academy/water-balance/understanding-lsi",
+      "count": 20
+    },
+    {
+      "url": "/academy/troubleshooting/corrosion",
+      "count": 20
+    },
+    {
+      "url": "/programmatic/shock/how-much-shock-for-10000-gallon-pool",
+      "count": 20
+    },
+    {
+      "url": "/entities/water-replacement",
+      "count": 20
+    },
+    {
+      "url": "/academy/sanitizers/liquid-chlorine-vs-tablets",
+      "count": 19
+    },
+    {
+      "url": "/academy/fundamentals/the-four-core-water-tests",
+      "count": 19
+    },
+    {
+      "url": "/academy/water-balance/understanding-calcium-hardness",
+      "count": 19
+    },
+    {
+      "url": "/academy/water-balance/understanding-total-alkalinity",
+      "count": 19
+    },
+    {
+      "url": "/academy/testing/using-liquid-test-kits",
+      "count": 19
+    },
+    {
+      "url": "/academy/sanitizers/combined-chlorine-explained",
+      "count": 19
+    },
+    {
+      "url": "/academy/water-balance/water-balance-order",
+      "count": 19
+    },
+    {
+      "url": "/guides/advanced/cya-stabilizer-explained",
+      "count": 19
+    },
+    {
+      "url": "/reference/datasets/dosage-matrices",
+      "count": 19
+    }
+  ],
+  "orphanRisk": [
+    {
+      "url": "/404",
+      "inbound": 0,
+      "outbound": 9
+    },
+    {
+      "url": "/components/ad",
+      "inbound": 0,
+      "outbound": 0
+    },
+    {
+      "url": "/components/global-schema",
+      "inbound": 0,
+      "outbound": 0
+    },
+    {
+      "url": "/editorial/content-standards",
+      "inbound": 1,
+      "outbound": 9
+    },
+    {
+      "url": "/editorial/review-process",
+      "inbound": 1,
+      "outbound": 9
+    },
+    {
+      "url": "/entities/chemical-feeder",
+      "inbound": 1,
+      "outbound": 22
+    },
+    {
+      "url": "/entities/commercial-pool",
+      "inbound": 1,
+      "outbound": 29
+    },
+    {
+      "url": "/entities/foaming",
+      "inbound": 1,
+      "outbound": 22
+    },
+    {
+      "url": "/entities/heater",
+      "inbound": 1,
+      "outbound": 23
+    },
+    {
+      "url": "/entities/high-chlorine",
+      "inbound": 1,
+      "outbound": 23
+    },
+    {
+      "url": "/entities/maintenance-log",
+      "inbound": 1,
+      "outbound": 26
+    },
+    {
+      "url": "/entities/manganese",
+      "inbound": 1,
+      "outbound": 20
+    },
+    {
+      "url": "/entities/swim-spa",
+      "inbound": 1,
+      "outbound": 27
+    },
+    {
+      "url": "/entities/unit-mg-l",
+      "inbound": 1,
+      "outbound": 20
+    },
+    {
+      "url": "/glossary/algae-bloom",
+      "inbound": 1,
+      "outbound": 19
+    },
+    {
+      "url": "/glossary/algaecide",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/ammonia",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/bather-load",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/bicarbonate-alkalinity",
+      "inbound": 1,
+      "outbound": 26
+    },
+    {
+      "url": "/glossary/breakpoint-dose",
+      "inbound": 1,
+      "outbound": 19
+    },
+    {
+      "url": "/glossary/carbon-dioxide",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/chemical-storage",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/chlorine-demand",
+      "inbound": 1,
+      "outbound": 19
+    },
+    {
+      "url": "/glossary/closing-chemical-kit",
+      "inbound": 1,
+      "outbound": 17
+    },
+    {
+      "url": "/glossary/colorimetric-test",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/conductivity",
+      "inbound": 1,
+      "outbound": 19
+    },
+    {
+      "url": "/glossary/dead-algae",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/dilution",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/dpd-test",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/hypochlorous-acid",
+      "inbound": 1,
+      "outbound": 19
+    },
+    {
+      "url": "/glossary/main-drain",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/opening-chemical-kit",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/ozone",
+      "inbound": 1,
+      "outbound": 21
+    },
+    {
+      "url": "/glossary/ph-increaser",
+      "inbound": 1,
+      "outbound": 23
+    },
+    {
+      "url": "/glossary/pink-slime",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/pool-maintenance-schedule",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/pool-safety-equipment",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/pool-shock-schedule",
+      "inbound": 1,
+      "outbound": 19
+    },
+    {
+      "url": "/glossary/pool-volume-reference",
+      "inbound": 1,
+      "outbound": 19
+    },
+    {
+      "url": "/glossary/return-jet",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/saturated-ph",
+      "inbound": 1,
+      "outbound": 19
+    },
+    {
+      "url": "/glossary/scale-inhibitor",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/shock-dosage",
+      "inbound": 1,
+      "outbound": 19
+    },
+    {
+      "url": "/glossary/uv-sanitization",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/water-balance-checklist",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/glossary/water-test-log",
+      "inbound": 1,
+      "outbound": 22
+    },
+    {
+      "url": "/maintenance/how-often-add-chlorine-pool",
+      "inbound": 1,
+      "outbound": 18
+    },
+    {
+      "url": "/maintenance/how-to-fix-cloudy-hot-tub",
+      "inbound": 1,
+      "outbound": 21
+    },
+    {
+      "url": "/methodology/confidence-system",
+      "inbound": 1,
+      "outbound": 11
+    },
+    {
+      "url": "/methodology/precision-policy",
+      "inbound": 1,
+      "outbound": 11
+    },
+    {
+      "url": "/pool-chemistry-system",
+      "inbound": 1,
+      "outbound": 48
+    },
+    {
+      "url": "/printable/maintenance-checklist",
+      "inbound": 1,
+      "outbound": 12
+    },
+    {
+      "url": "/printables/airbnb-pool-turnover-checklist",
+      "inbound": 1,
+      "outbound": 13
+    },
+    {
+      "url": "/printables/hot-tub-maintenance-log",
+      "inbound": 1,
+      "outbound": 14
+    },
+    {
+      "url": "/releases/1.0.0",
+      "inbound": 1,
+      "outbound": 19
+    },
+    {
+      "url": "/releases/1.1.0",
+      "inbound": 1,
+      "outbound": 19
+    },
+    {
+      "url": "/reports/accessibility",
+      "inbound": 1,
+      "outbound": 1
+    },
+    {
+      "url": "/reports/ai-readiness",
+      "inbound": 1,
+      "outbound": 1
+    },
+    {
+      "url": "/reports/architecture",
+      "inbound": 1,
+      "outbound": 1
+    },
+    {
+      "url": "/reports/calculators",
+      "inbound": 1,
+      "outbound": 1
+    },
+    {
+      "url": "/reports/content",
+      "inbound": 1,
+      "outbound": 1
+    },
+    {
+      "url": "/reports/datasets",
+      "inbound": 1,
+      "outbound": 1
+    },
+    {
+      "url": "/reports/entities",
+      "inbound": 1,
+      "outbound": 1
+    },
+    {
+      "url": "/reports/links",
+      "inbound": 1,
+      "outbound": 1
+    },
+    {
+      "url": "/reports/mobile",
+      "inbound": 1,
+      "outbound": 1
+    },
+    {
+      "url": "/reports/performance",
+      "inbound": 1,
+      "outbound": 1
+    },
+    {
+      "url": "/reports/schema",
+      "inbound": 1,
+      "outbound": 1
+    },
+    {
+      "url": "/reports/seo",
+      "inbound": 1,
+      "outbound": 1
+    }
+  ],
+  "unexpectedPatterns": [],
+  "crawlDepth": {
+    "0": 1,
+    "1": 26,
+    "2": 335,
+    "3": 133
+  },
+  "sampleBroken": [
+    {
+      "source": "/all-pages",
+      "href": "/reference/index",
+      "target": "/reference/index"
+    },
+    {
+      "source": "/calculators/chemical-calculator",
+      "href": "/calculators/",
+      "target": "/calculators"
+    },
+    {
+      "source": "/calculators/hot-tub-chlorine-calculator",
+      "href": "/calculators/",
+      "target": "/calculators"
+    },
+    {
+      "source": "/calculators/hot-tub-ph-calculator",
+      "href": "/calculators/",
+      "target": "/calculators"
+    },
+    {
+      "source": "/calculators/hot-tub-shock-calculator",
+      "href": "/calculators/",
+      "target": "/calculators"
+    },
+    {
+      "source": "/calculators/pool-alkalinity-calculator",
+      "href": "/calculators/",
+      "target": "/calculators"
+    },
+    {
+      "source": "/calculators/pool-chlorine-calculator",
+      "href": "/calculators/",
+      "target": "/calculators"
+    },
+    {
+      "source": "/calculators/pool-cyanuric-acid-calculator",
+      "href": "/calculators/",
+      "target": "/calculators"
+    },
+    {
+      "source": "/calculators/pool-ph-calculator",
+      "href": "/calculators/",
+      "target": "/calculators"
+    },
+    {
+      "source": "/calculators/pool-shock-calculator",
+      "href": "/calculators/",
+      "target": "/calculators"
+    },
+    {
+      "source": "/calculators/pool-turnover-rate-calculator",
+      "href": "/calculators/",
+      "target": "/calculators"
+    },
+    {
+      "source": "/calculators/pool-volume-calculator",
+      "href": "/calculators/",
+      "target": "/calculators"
+    },
+    {
+      "source": "/calculators/saltwater-pool-salt-calculator",
+      "href": "/calculators/",
+      "target": "/calculators"
+    },
+    {
+      "source": "/calculators/spa-volume-calculator",
+      "href": "/calculators/",
+      "target": "/calculators"
+    },
+    {
+      "source": "/calculators/volume-calculator",
+      "href": "/calculators/",
+      "target": "/calculators"
+    },
+    {
+      "source": "/charts/hot-tub-chemical-levels-chart",
+      "href": "/charts/",
+      "target": "/charts"
+    },
+    {
+      "source": "/charts/pool-chemical-levels-chart",
+      "href": "/charts/",
+      "target": "/charts"
+    },
+    {
+      "source": "/charts/pool-water-balance-chart",
+      "href": "/charts/",
+      "target": "/charts"
+    },
+    {
+      "source": "/comparisons/chlorine-vs-bromine-hot-tub",
+      "href": "/comparisons/",
+      "target": "/comparisons"
+    },
+    {
+      "source": "/comparisons/chlorine-vs-bromine",
+      "href": "/comparisons/",
+      "target": "/comparisons"
+    },
+    {
+      "source": "/comparisons/free-chlorine-vs-total-chlorine",
+      "href": "/comparisons/",
+      "target": "/comparisons"
+    },
+    {
+      "source": "/comparisons/liquid-chlorine-vs-tablets",
+      "href": "/comparisons/",
+      "target": "/comparisons"
+    },
+    {
+      "source": "/comparisons/pool-shock-vs-chlorine",
+      "href": "/comparisons/",
+      "target": "/comparisons"
+    },
+    {
+      "source": "/comparisons/salt-water-pool-vs-chlorine-pool",
+      "href": "/comparisons/",
+      "target": "/comparisons"
+    },
+    {
+      "source": "/comparisons/saltwater-pool-vs-chlorine",
+      "href": "/comparisons/",
+      "target": "/comparisons"
+    },
+    {
+      "source": "/guides/advanced/chlorine-breakdown-sunlight",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/advanced/chlorine-breakdown-sunlight",
+      "href": "/guides/advanced/",
+      "target": "/guides/advanced"
+    },
+    {
+      "source": "/guides/advanced/chlorine-vs-saltwater",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/advanced/chlorine-vs-saltwater",
+      "href": "/guides/advanced/",
+      "target": "/guides/advanced"
+    },
+    {
+      "source": "/guides/advanced/cya-stabilizer-explained",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/advanced/cya-stabilizer-explained",
+      "href": "/guides/advanced/",
+      "target": "/guides/advanced"
+    },
+    {
+      "source": "/guides/advanced/pool-chemistry-balance-explained",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/advanced/pool-chemistry-balance-explained",
+      "href": "/guides/advanced/",
+      "target": "/guides/advanced"
+    },
+    {
+      "source": "/guides/alkalinity-guide",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/chlorine/chlorine-too-high-after-shocking",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/chlorine/chlorine-too-high-after-shocking",
+      "href": "/guides/chlorine/",
+      "target": "/guides/chlorine"
+    },
+    {
+      "source": "/guides/chlorine/free-chlorine-vs-total-chlorine",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/chlorine/free-chlorine-vs-total-chlorine",
+      "href": "/guides/chlorine/",
+      "target": "/guides/chlorine"
+    },
+    {
+      "source": "/guides/chlorine/how-often-should-i-shock-my-pool",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/chlorine/how-often-should-i-shock-my-pool",
+      "href": "/guides/chlorine/",
+      "target": "/guides/chlorine"
+    },
+    {
+      "source": "/guides/chlorine/why-pool-chlorine-disappears-overnight",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/chlorine/why-pool-chlorine-disappears-overnight",
+      "href": "/guides/chlorine/",
+      "target": "/guides/chlorine"
+    },
+    {
+      "source": "/guides/chlorine/why-pool-wont-hold-chlorine",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/chlorine/why-pool-wont-hold-chlorine",
+      "href": "/guides/chlorine/",
+      "target": "/guides/chlorine"
+    },
+    {
+      "source": "/guides/chlorine-guide",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/edge-cases/high-cya-chlorine-lock",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/edge-cases/high-cya-chlorine-lock",
+      "href": "/guides/edge-cases/",
+      "target": "/guides/edge-cases"
+    },
+    {
+      "source": "/guides/edge-cases/over-shocking-pool-effects",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/edge-cases/over-shocking-pool-effects",
+      "href": "/guides/edge-cases/",
+      "target": "/guides/edge-cases"
+    },
+    {
+      "source": "/guides/edge-cases/pool-temperature-effect-chlorine",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/edge-cases/pool-temperature-effect-chlorine",
+      "href": "/guides/edge-cases/",
+      "target": "/guides/edge-cases"
+    },
+    {
+      "source": "/guides/edge-cases/rain-effect-on-pool-chemistry",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/edge-cases/rain-effect-on-pool-chemistry",
+      "href": "/guides/edge-cases/",
+      "target": "/guides/edge-cases"
+    },
+    {
+      "source": "/guides/edge-cases/swimming-after-shocking-pool",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/edge-cases/swimming-after-shocking-pool",
+      "href": "/guides/edge-cases/",
+      "target": "/guides/edge-cases"
+    },
+    {
+      "source": "/guides/hot-tub/hot-tub-alkalinity-too-high",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/hot-tub/hot-tub-alkalinity-too-high",
+      "href": "/guides/hot-tub/",
+      "target": "/guides/hot-tub"
+    },
+    {
+      "source": "/guides/hot-tub/hot-tub-chlorine-too-high",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/hot-tub/hot-tub-chlorine-too-high",
+      "href": "/guides/hot-tub/",
+      "target": "/guides/hot-tub"
+    },
+    {
+      "source": "/guides/hot-tub/hot-tub-chlorine-too-low",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/hot-tub/hot-tub-chlorine-too-low",
+      "href": "/guides/hot-tub/",
+      "target": "/guides/hot-tub"
+    },
+    {
+      "source": "/guides/hot-tub/hot-tub-ph-too-low",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/hot-tub/hot-tub-ph-too-low",
+      "href": "/guides/hot-tub/",
+      "target": "/guides/hot-tub"
+    },
+    {
+      "source": "/guides/hot-tub/how-often-to-shock-a-hot-tub",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/hot-tub/how-often-to-shock-a-hot-tub",
+      "href": "/guides/hot-tub/",
+      "target": "/guides/hot-tub"
+    },
+    {
+      "source": "/guides/hot-tub-chemistry",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/hot-tub-maintenance",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/ph/can-you-swim-in-high-ph-water",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/ph/can-you-swim-in-high-ph-water",
+      "href": "/guides/ph/",
+      "target": "/guides/ph"
+    },
+    {
+      "source": "/guides/ph/does-rain-lower-pool-ph",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/ph/does-rain-lower-pool-ph",
+      "href": "/guides/ph/",
+      "target": "/guides/ph"
+    },
+    {
+      "source": "/guides/ph/how-to-lower-pool-ph",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/ph/how-to-lower-pool-ph",
+      "href": "/guides/ph/",
+      "target": "/guides/ph"
+    },
+    {
+      "source": "/guides/ph/what-causes-high-pool-ph",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/ph/what-causes-high-pool-ph",
+      "href": "/guides/ph/",
+      "target": "/guides/ph"
+    },
+    {
+      "source": "/guides/ph/why-pool-ph-keeps-rising",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/ph/why-pool-ph-keeps-rising",
+      "href": "/guides/ph/",
+      "target": "/guides/ph"
+    },
+    {
+      "source": "/guides/ph-guide",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/pool-chemistry-basics",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/questions/can-rain-affect-pool-chemistry",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/questions/can-rain-affect-pool-chemistry",
+      "href": "/guides/questions/",
+      "target": "/guides/questions"
+    },
+    {
+      "source": "/guides/questions/can-you-swim-after-shocking-a-pool",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/questions/can-you-swim-after-shocking-a-pool",
+      "href": "/guides/questions/",
+      "target": "/guides/questions"
+    },
+    {
+      "source": "/guides/questions/why-does-hot-tub-water-smell",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/questions/why-does-hot-tub-water-smell",
+      "href": "/guides/questions/",
+      "target": "/guides/questions"
+    },
+    {
+      "source": "/guides/questions/why-does-pool-water-turn-cloudy",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/questions/why-does-pool-water-turn-cloudy",
+      "href": "/guides/questions/",
+      "target": "/guides/questions"
+    },
+    {
+      "source": "/guides/questions/why-is-my-hot-tub-foamy",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/questions/why-is-my-hot-tub-foamy",
+      "href": "/guides/questions/",
+      "target": "/guides/questions"
+    },
+    {
+      "source": "/guides/questions/why-is-my-pool-green-but-chlorine-is-high",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/questions/why-is-my-pool-green-but-chlorine-is-high",
+      "href": "/guides/questions/",
+      "target": "/guides/questions"
+    },
+    {
+      "source": "/guides/seasonal/closing-pool-chemistry-winter",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/seasonal/closing-pool-chemistry-winter",
+      "href": "/guides/seasonal/",
+      "target": "/guides/seasonal"
+    },
+    {
+      "source": "/guides/seasonal/opening-pool-chemistry-checklist",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/seasonal/opening-pool-chemistry-checklist",
+      "href": "/guides/seasonal/",
+      "target": "/guides/seasonal"
+    },
+    {
+      "source": "/guides/seasonal/summer-high-chlorine-demand",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/seasonal/summer-high-chlorine-demand",
+      "href": "/guides/seasonal/",
+      "target": "/guides/seasonal"
+    },
+    {
+      "source": "/guides/seasonal/winter-pool-maintenance-chemistry",
+      "href": "/guides/",
+      "target": "/guides"
+    },
+    {
+      "source": "/guides/seasonal/winter-pool-maintenance-chemistry",
+      "href": "/guides/seasonal/",
+      "target": "/guides/seasonal"
+    },
+    {
+      "source": "/legal/legal",
+      "href": "/legal/",
+      "target": "/legal"
+    }
+  ],
+  "sampleRelative": [
+    {
+      "page": "/calculators/chemical-calculator",
+      "href": "volume-calculator.html"
+    },
+    {
+      "page": "/calculators/chemical-calculator",
+      "href": "../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html"
+    },
+    {
+      "page": "/calculators/chemical-calculator",
+      "href": "../programmatic/shock/how-much-shock-for-10000-gallon-pool.html"
+    },
+    {
+      "page": "/calculators/chemical-calculator",
+      "href": "../programmatic/problems/green-pool-how-much-chlorine.html"
+    },
+    {
+      "page": "/calculators/chemical-calculator",
+      "href": "../programmatic/problems/cloudy-pool-fix.html"
+    },
+    {
+      "page": "/calculators/chemical-calculator",
+      "href": "../reference/datasets/dosage-matrices/index.html"
+    },
+    {
+      "page": "/calculators/chemical-calculator",
+      "href": "../reference/datasets/hot-tub-ranges/index.html"
+    },
+    {
+      "page": "/calculators/chemical-calculator",
+      "href": "../reference/datasets/index.html"
+    },
+    {
+      "page": "/calculators/chemical-calculator",
+      "href": "../reference/datasets/maintenance-schedules/index.html"
+    },
+    {
+      "page": "/calculators/chemical-calculator",
+      "href": "../reference/datasets/pool-types/index.html"
+    },
+    {
+      "page": "/calculators/chemical-calculator",
+      "href": "pool-cyanuric-acid-calculator.html"
+    },
+    {
+      "page": "/calculators/chemical-calculator",
+      "href": "../programmatic/explanations/what-is-pool-alkalinity.html"
+    },
+    {
+      "page": "/calculators/chemical-calculator",
+      "href": "pool-volume-calculator.html"
+    },
+    {
+      "page": "/calculators/chemical-calculator",
+      "href": "../guides/pool-chemistry-basics.html"
+    },
+    {
+      "page": "/calculators/hot-tub-chlorine-calculator",
+      "href": "../programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html"
+    },
+    {
+      "page": "/calculators/hot-tub-chlorine-calculator",
+      "href": "../programmatic/behavior/how-often-to-test-pool-water.html"
+    },
+    {
+      "page": "/calculators/hot-tub-chlorine-calculator",
+      "href": "../programmatic/problems/high-chlorine-how-to-lower.html"
+    },
+    {
+      "page": "/calculators/hot-tub-chlorine-calculator",
+      "href": "../programmatic/problems/cloudy-pool-fix.html"
+    },
+    {
+      "page": "/calculators/hot-tub-chlorine-calculator",
+      "href": "../programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons.html"
+    },
+    {
+      "page": "/calculators/hot-tub-chlorine-calculator",
+      "href": "../programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons.html"
+    },
+    {
+      "page": "/calculators/hot-tub-chlorine-calculator",
+      "href": "../programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html"
+    },
+    {
+      "page": "/calculators/hot-tub-chlorine-calculator",
+      "href": "../programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons.html"
+    },
+    {
+      "page": "/calculators/hot-tub-chlorine-calculator",
+      "href": "../programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons.html"
+    },
+    {
+      "page": "/calculators/hot-tub-chlorine-calculator",
+      "href": "../guides/ph/does-rain-lower-pool-ph.html"
+    },
+    {
+      "page": "/calculators/hot-tub-chlorine-calculator",
+      "href": "../reference/total-alkalinity-explained.html"
+    },
+    {
+      "page": "/calculators/hot-tub-chlorine-calculator",
+      "href": "chemical-calculator.html"
+    },
+    {
+      "page": "/calculators/hot-tub-chlorine-calculator",
+      "href": "../guides/hot-tub-chemistry.html"
+    },
+    {
+      "page": "/calculators/hot-tub-ph-calculator",
+      "href": "../programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4.html"
+    },
+    {
+      "page": "/calculators/hot-tub-ph-calculator",
+      "href": "../programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html"
+    },
+    {
+      "page": "/calculators/hot-tub-ph-calculator",
+      "href": "../programmatic/explanations/why-ph-affects-chlorine.html"
+    },
+    {
+      "page": "/calculators/hot-tub-ph-calculator",
+      "href": "../programmatic/problems/cloudy-pool-fix.html"
+    },
+    {
+      "page": "/calculators/hot-tub-ph-calculator",
+      "href": "../programmatic/problems/low-alkalinity-symptoms.html"
+    },
+    {
+      "page": "/calculators/hot-tub-ph-calculator",
+      "href": "../programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html"
+    },
+    {
+      "page": "/calculators/hot-tub-ph-calculator",
+      "href": "../reference/ph-table.html"
+    },
+    {
+      "page": "/calculators/hot-tub-ph-calculator",
+      "href": "pool-cyanuric-acid-calculator.html"
+    },
+    {
+      "page": "/calculators/hot-tub-ph-calculator",
+      "href": "../guides/ph/can-you-swim-in-high-ph-water.html"
+    },
+    {
+      "page": "/calculators/hot-tub-ph-calculator",
+      "href": "../guides/ph/does-rain-lower-pool-ph.html"
+    },
+    {
+      "page": "/calculators/hot-tub-ph-calculator",
+      "href": "../reference/alkalinity-table.html"
+    },
+    {
+      "page": "/calculators/hot-tub-ph-calculator",
+      "href": "../comparisons/chlorine-vs-bromine-hot-tub.html"
+    },
+    {
+      "page": "/calculators/hot-tub-ph-calculator",
+      "href": "pool-ph-calculator.html"
+    },
+    {
+      "page": "/calculators/hot-tub-ph-calculator",
+      "href": "../guides/ph-guide.html"
+    },
+    {
+      "page": "/calculators/hot-tub-shock-calculator",
+      "href": "../programmatic/shock/how-much-shock-for-10000-gallon-pool.html"
+    },
+    {
+      "page": "/calculators/hot-tub-shock-calculator",
+      "href": "../programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html"
+    },
+    {
+      "page": "/calculators/hot-tub-shock-calculator",
+      "href": "../programmatic/behavior/when-to-add-chlorine.html"
+    },
+    {
+      "page": "/calculators/hot-tub-shock-calculator",
+      "href": "../programmatic/problems/green-pool-how-much-chlorine.html"
+    },
+    {
+      "page": "/calculators/hot-tub-shock-calculator",
+      "href": "../programmatic/problems/cloudy-pool-fix.html"
+    },
+    {
+      "page": "/calculators/hot-tub-shock-calculator",
+      "href": "spa-volume-calculator.html"
+    },
+    {
+      "page": "/calculators/hot-tub-shock-calculator",
+      "href": "../comparisons/chlorine-vs-bromine-hot-tub.html"
+    },
+    {
+      "page": "/calculators/hot-tub-shock-calculator",
+      "href": "../guides/hot-tub/hot-tub-alkalinity-too-high.html"
+    },
+    {
+      "page": "/calculators/hot-tub-shock-calculator",
+      "href": "../guides/hot-tub/hot-tub-chlorine-too-high.html"
+    },
+    {
+      "page": "/calculators/hot-tub-shock-calculator",
+      "href": "../guides/hot-tub/hot-tub-chlorine-too-low.html"
+    },
+    {
+      "page": "/calculators/hot-tub-shock-calculator",
+      "href": "pool-cyanuric-acid-calculator.html"
+    },
+    {
+      "page": "/calculators/hot-tub-shock-calculator",
+      "href": "../programmatic/explanations/what-is-pool-alkalinity.html"
+    },
+    {
+      "page": "/calculators/hot-tub-shock-calculator",
+      "href": "hot-tub-chlorine-calculator.html"
+    },
+    {
+      "page": "/calculators/hot-tub-shock-calculator",
+      "href": "../guides/hot-tub-chemistry.html"
+    },
+    {
+      "page": "/calculators/pool-alkalinity-calculator",
+      "href": "../programmatic/explanations/what-is-pool-alkalinity.html"
+    },
+    {
+      "page": "/calculators/pool-alkalinity-calculator",
+      "href": "../programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html"
+    },
+    {
+      "page": "/calculators/pool-alkalinity-calculator",
+      "href": "../programmatic/problems/low-alkalinity-symptoms.html"
+    },
+    {
+      "page": "/calculators/pool-alkalinity-calculator",
+      "href": "../programmatic/problems/cloudy-pool-fix.html"
+    },
+    {
+      "page": "/calculators/pool-alkalinity-calculator",
+      "href": "../reference/total-alkalinity-explained.html"
+    },
+    {
+      "page": "/calculators/pool-alkalinity-calculator",
+      "href": "../programmatic/explanations/what-is-pool-alkalinity.html"
+    },
+    {
+      "page": "/calculators/pool-alkalinity-calculator",
+      "href": "../programmatic/problems/low-alkalinity-symptoms.html"
+    },
+    {
+      "page": "/calculators/pool-alkalinity-calculator",
+      "href": "../reference/alkalinity-table.html"
+    },
+    {
+      "page": "/calculators/pool-alkalinity-calculator",
+      "href": "../guides/ph/can-you-swim-in-high-ph-water.html"
+    },
+    {
+      "page": "/calculators/pool-alkalinity-calculator",
+      "href": "../comparisons/chlorine-vs-bromine-hot-tub.html"
+    },
+    {
+      "page": "/calculators/pool-alkalinity-calculator",
+      "href": "chemical-calculator.html"
+    },
+    {
+      "page": "/calculators/pool-alkalinity-calculator",
+      "href": "../guides/alkalinity-guide.html"
+    },
+    {
+      "page": "/calculators/pool-chlorine-calculator",
+      "href": "../programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html"
+    },
+    {
+      "page": "/calculators/pool-chlorine-calculator",
+      "href": "../programmatic/shock/how-much-shock-for-10000-gallon-pool.html"
+    },
+    {
+      "page": "/calculators/pool-chlorine-calculator",
+      "href": "../programmatic/problems/green-pool-how-much-chlorine.html"
+    },
+    {
+      "page": "/calculators/pool-chlorine-calculator",
+      "href": "../programmatic/problems/high-chlorine-how-to-lower.html"
+    },
+    {
+      "page": "/calculators/pool-chlorine-calculator",
+      "href": "../programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html"
+    },
+    {
+      "page": "/calculators/pool-chlorine-calculator",
+      "href": "../programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html"
+    },
+    {
+      "page": "/calculators/pool-chlorine-calculator",
+      "href": "../programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html"
+    },
+    {
+      "page": "/calculators/pool-chlorine-calculator",
+      "href": "../programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html"
+    },
+    {
+      "page": "/calculators/pool-chlorine-calculator",
+      "href": "../programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html"
+    },
+    {
+      "page": "/calculators/pool-chlorine-calculator",
+      "href": "pool-cyanuric-acid-calculator.html"
+    },
+    {
+      "page": "/calculators/pool-chlorine-calculator",
+      "href": "../programmatic/explanations/what-is-pool-alkalinity.html"
+    },
+    {
+      "page": "/calculators/pool-chlorine-calculator",
+      "href": "chemical-calculator.html"
+    },
+    {
+      "page": "/calculators/pool-chlorine-calculator",
+      "href": "../guides/chlorine-guide.html"
+    },
+    {
+      "page": "/calculators/pool-cyanuric-acid-calculator",
+      "href": "../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html"
+    },
+    {
+      "page": "/calculators/pool-cyanuric-acid-calculator",
+      "href": "../programmatic/shock/how-much-shock-for-10000-gallon-pool.html"
+    },
+    {
+      "page": "/calculators/pool-cyanuric-acid-calculator",
+      "href": "../programmatic/explanations/why-ph-affects-chlorine.html"
+    },
+    {
+      "page": "/calculators/pool-cyanuric-acid-calculator",
+      "href": "../programmatic/problems/green-pool-how-much-chlorine.html"
+    },
+    {
+      "page": "/calculators/pool-cyanuric-acid-calculator",
+      "href": "../programmatic/problems/high-chlorine-how-to-lower.html"
+    },
+    {
+      "page": "/calculators/pool-cyanuric-acid-calculator",
+      "href": "../programmatic/ph/how-to-adjust-ph-from-7-to-7-4.html"
+    },
+    {
+      "page": "/calculators/pool-cyanuric-acid-calculator",
+      "href": "../programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html"
+    },
+    {
+      "page": "/calculators/pool-cyanuric-acid-calculator",
+      "href": "../reference/ph-table.html"
+    },
+    {
+      "page": "/calculators/pool-cyanuric-acid-calculator",
+      "href": "hot-tub-ph-calculator.html"
+    },
+    {
+      "page": "/calculators/pool-cyanuric-acid-calculator",
+      "href": "../guides/ph/can-you-swim-in-high-ph-water.html"
+    },
+    {
+      "page": "/calculators/pool-cyanuric-acid-calculator",
+      "href": "../programmatic/explanations/what-is-pool-alkalinity.html"
+    },
+    {
+      "page": "/calculators/pool-cyanuric-acid-calculator",
+      "href": "hot-tub-shock-calculator.html"
+    },
+    {
+      "page": "/calculators/pool-cyanuric-acid-calculator",
+      "href": "pool-ph-calculator.html"
+    },
+    {
+      "page": "/calculators/pool-cyanuric-acid-calculator",
+      "href": "../guides/ph-guide.html"
+    },
+    {
+      "page": "/calculators/pool-ph-calculator",
+      "href": "../programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4.html"
+    },
+    {
+      "page": "/calculators/pool-ph-calculator",
+      "href": "../programmatic/explanations/why-ph-affects-chlorine.html"
+    },
+    {
+      "page": "/calculators/pool-ph-calculator",
+      "href": "../programmatic/problems/cloudy-pool-fix.html"
+    },
+    {
+      "page": "/calculators/pool-ph-calculator",
+      "href": "../programmatic/problems/low-alkalinity-symptoms.html"
+    },
+    {
+      "page": "/calculators/pool-ph-calculator",
+      "href": "../guides/ph/can-you-swim-in-high-ph-water.html"
+    },
+    {
+      "page": "/calculators/pool-ph-calculator",
+      "href": "../guides/ph/does-rain-lower-pool-ph.html"
+    }
+  ]
+}

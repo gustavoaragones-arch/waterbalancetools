@@ -16,7 +16,7 @@ const path = require('path');
 const {
   fill, SITE_HEADER, SITE_FOOTER, esc, titleCase,
   buildBreadcrumb, buildArticleContent, buildRelatedTools,
-  buildRelatedTopics, buildAcademySidebar, writeFile, ROOT,
+  buildRelatedTopics, buildAcademySidebar, writeFile, ROOT, href, canonicalUrl,
 } = require('./template-utils');
 
 const data = require(path.join(ROOT, 'data', 'academy.json'));
@@ -72,7 +72,7 @@ function generateHub() {
   const categoryCards = categories.map(cat => {
     const count = articles.filter(a => a.category === cat.slug).length;
     const icon = ICONS[cat.icon] || ICONS.book;
-    return `      <a href="/academy/${cat.slug}/" class="knowledge-card">
+    return `      <a href="${href(`/academy/${cat.slug}`)}" class="knowledge-card">
         <div class="knowledge-card-icon">${icon}</div>
         <div class="knowledge-card-title">${esc(cat.label)}</div>
         <p class="knowledge-card-desc">${esc(cat.description)}</p>
@@ -99,18 +99,18 @@ ${categoryCards}
     <section class="link-matrix">
       <h3>Related Tools &amp; Resources</h3>
       <ul>
-        <li><a href="/calculators/chemical-calculator">Pool Chemical Calculator</a></li>
-        <li><a href="/formulas/">Formula Library</a></li>
-        <li><a href="/glossary/">Water Chemistry Glossary</a></li>
-        <li><a href="/reference/">Reference Tables</a></li>
-        <li><a href="/resources/">Free Printable Resources</a></li>
+        <li><a href="${href('/calculators/chemical-calculator')}">Pool Chemical Calculator</a></li>
+        <li><a href="${href('/formulas')}">Formula Library</a></li>
+        <li><a href="${href('/glossary')}">Water Chemistry Glossary</a></li>
+        <li><a href="${href('/reference')}">Reference Tables</a></li>
+        <li><a href="${href('/resources')}">Free Printable Resources</a></li>
       </ul>
     </section>`;
 
   return pageWrap({
     title: 'Pool & Hot Tub Chemistry Academy | WaterBalanceTools',
     metaDesc: 'Learn pool and hot tub water chemistry with structured guides covering pH, chlorine, alkalinity, troubleshooting, and more.',
-    canonical: 'https://waterbalancetools.com/academy/',
+    canonical: canonicalUrl('/academy'),
     breadcrumbNav: bc.nav,
     breadcrumbSchema: bc.schema,
     bodyClass: 'academy-hub',
@@ -126,14 +126,14 @@ function generateCategory(cat) {
 
   const articleCards = articles.length > 0
     ? articles.map(a =>
-        `      <a href="/${a.slug}" class="knowledge-card">
+        `      <a href="${href(a.slug)}" class="knowledge-card">
         <div class="knowledge-card-title">${esc(a.title)}</div>
         <p class="knowledge-card-desc">${esc(a.summary || a.description)}</p>
         <span class="knowledge-card-meta">${esc(a.readingTime || '')}</span>
       </a>`).join('\n')
     : `      <div class="knowledge-callout">
         <span class="knowledge-callout-icon">&#128218;</span>
-        <div><strong>Coming in Phase 5B</strong> — Articles for this category are being prepared. Check back soon, or explore other categories in the <a href="/academy/">Academy hub</a>.</div>
+        <div><strong>Coming in Phase 5B</strong> — Articles for this category are being prepared. Check back soon, or explore other categories in the <a href="${href('/academy')}">Academy hub</a>.</div>
       </div>`;
 
   const bc = buildBreadcrumb(`academy/${cat.slug}`, cat.label);
@@ -156,16 +156,16 @@ ${articleCards}
     <section class="link-matrix">
       <h3>Related</h3>
       <ul>
-        <li><a href="/academy/">Back to Academy</a></li>
-        <li><a href="/calculators/chemical-calculator">Pool Chemical Calculator</a></li>
-        <li><a href="/glossary/">Glossary</a></li>
+        <li><a href="${href('/academy')}">Back to Academy</a></li>
+        <li><a href="${href('/calculators/chemical-calculator')}">Pool Chemical Calculator</a></li>
+        <li><a href="${href('/glossary')}">Glossary</a></li>
       </ul>
     </section>`;
 
   return pageWrap({
     title: `${cat.label} | Academy | WaterBalanceTools`,
     metaDesc: cat.description,
-    canonical: `https://waterbalancetools.com/academy/${cat.slug}/`,
+    canonical: canonicalUrl(`/academy/${cat.slug}`),
     breadcrumbNav: bc.nav,
     breadcrumbSchema: bc.schema,
     bodyClass: `academy-category academy-${cat.slug}`,

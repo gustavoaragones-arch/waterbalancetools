@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-06-29T14:43:01.465Z",
+  "pagesAudited": 495,
+  "missingCanonical": 17,
+  "nonSelfCanonical": 0,
+  "canonicalMissingTarget": 0,
+  "sitemapMismatch": 1,
+  "withHtmlCanonical": 2,
+  "samples": {
+    "missingCanonical": [
+      "/components/ad",
+      "/components/global-schema",
+      "/qa/certification",
+      "/qa",
+      "/reports/accessibility",
+      "/reports/ai-readiness",
+      "/reports/architecture",
+      "/reports/calculators",
+      "/reports/content",
+      "/reports/datasets",
+      "/reports/entities",
+      "/reports/links",
+      "/reports/mobile",
+      "/reports/performance",
+      "/reports/schema",
+      "/reports/seo",
+      "/tools"
+    ],
+    "nonSelfCanonical": [],
+    "canonicalMissingTarget": [],
+    "sitemapMismatch": [
+      {
+        "page": "/404",
+        "canonical": "/404"
+      }
+    ],
+    "withHtmlCanonical": [
+      {
+        "page": "/releases/1.0.0",
+        "canonical": "https://waterbalancetools.com/releases/1.0.0.html"
+      },
+      {
+        "page": "/releases/1.1.0",
+        "canonical": "https://waterbalancetools.com/releases/1.1.0.html"
+      }
+    ]
+  }
+}

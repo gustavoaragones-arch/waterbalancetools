@@ -1,7 +1,7 @@
 {
-  "buildDate": "2026-06-29T02:53:24.974Z",
+  "buildDate": "2026-06-29T22:58:57.086Z",
   "platformVersion": "5A.75",
-  "overallScore": 99,
+  "overallScore": 98,
   "overallStatus": "Green",
   "validationErrors": 0,
   "validationWarnings": 7,
@@ -17,7 +17,8 @@
     "datasets": 100,
     "calculators": 100,
     "content": 95,
-    "ai-readiness": 95
+    "ai-readiness": 95,
+    "indexing-intelligence": 95
   },
   "audits": {
     "architecture": {
@@ -61,20 +62,20 @@
       "scoreChange": 0
     },
     "mobile": {
-      "score": 100,
+      "score": 95,
       "status": "Green",
       "errors": 0,
-      "warnings": 0,
-      "previousScore": 100,
+      "warnings": 1,
+      "previousScore": 95,
       "scoreChange": 0
     },
     "links": {
       "score": 100,
       "status": "Green",
       "errors": 0,
-      "warnings": 2,
-      "previousScore": 100,
-      "scoreChange": 0
+      "warnings": 1,
+      "previousScore": 68,
+      "scoreChange": 32
     },
     "entities": {
       "score": 100,
@@ -109,6 +110,14 @@
       "scoreChange": 0
     },
     "ai-readiness": {
+      "score": 100,
+      "status": "Green",
+      "errors": 0,
+      "warnings": 0,
+      "previousScore": 100,
+      "scoreChange": 0
+    },
+    "indexing-intelligence": {
       "score": 100,
       "status": "Green",
       "errors": 0,

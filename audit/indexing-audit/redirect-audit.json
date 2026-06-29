@@ -1,0 +1,158 @@
+{
+  "generatedAt": "2026-06-29T14:42:10.974Z",
+  "totalRules": 22,
+  "non301": 0,
+  "chains": 0,
+  "loops": 0,
+  "extensionMismatch": 10,
+  "duplicatedSources": 10,
+  "samples": {
+    "non301": [],
+    "chains": [],
+    "loops": [],
+    "extensionMismatch": [
+      {
+        "source": "/programmatic/how-much-chlorine-for-5000-gallon-pool.html",
+        "destination": "/programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool",
+        "status": 301,
+        "sourceClean": "/programmatic/how-much-chlorine-for-5000-gallon-pool",
+        "destClean": "/programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool"
+      },
+      {
+        "source": "/programmatic/how-much-chlorine-for-10000-gallon-pool.html",
+        "destination": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool",
+        "status": 301,
+        "sourceClean": "/programmatic/how-much-chlorine-for-10000-gallon-pool",
+        "destClean": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool"
+      },
+      {
+        "source": "/programmatic/how-much-chlorine-for-15000-gallon-pool.html",
+        "destination": "/programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool",
+        "status": 301,
+        "sourceClean": "/programmatic/how-much-chlorine-for-15000-gallon-pool",
+        "destClean": "/programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool"
+      },
+      {
+        "source": "/programmatic/how-much-chlorine-for-20000-gallon-pool.html",
+        "destination": "/programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool",
+        "status": 301,
+        "sourceClean": "/programmatic/how-much-chlorine-for-20000-gallon-pool",
+        "destClean": "/programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool"
+      },
+      {
+        "source": "/programmatic/explanation/why-ph-affects-chlorine.html",
+        "destination": "/programmatic/explanations/why-ph-affects-chlorine",
+        "status": 301,
+        "sourceClean": "/programmatic/explanation/why-ph-affects-chlorine",
+        "destClean": "/programmatic/explanations/why-ph-affects-chlorine"
+      },
+      {
+        "source": "/explanations/why-ph-affects-chlorine.html",
+        "destination": "/programmatic/explanations/why-ph-affects-chlorine",
+        "status": 301,
+        "sourceClean": "/explanations/why-ph-affects-chlorine",
+        "destClean": "/programmatic/explanations/why-ph-affects-chlorine"
+      },
+      {
+        "source": "/programmatic/explanation/what-is-pool-alkalinity.html",
+        "destination": "/programmatic/explanations/what-is-pool-alkalinity",
+        "status": 301,
+        "sourceClean": "/programmatic/explanation/what-is-pool-alkalinity",
+        "destClean": "/programmatic/explanations/what-is-pool-alkalinity"
+      },
+      {
+        "source": "/explanations/what-is-pool-alkalinity.html",
+        "destination": "/programmatic/explanations/what-is-pool-alkalinity",
+        "status": 301,
+        "sourceClean": "/explanations/what-is-pool-alkalinity",
+        "destClean": "/programmatic/explanations/what-is-pool-alkalinity"
+      },
+      {
+        "source": "/programmatic/explanation/why-shower-before-pool.html",
+        "destination": "/programmatic/explanations/why-shower-before-pool",
+        "status": 301,
+        "sourceClean": "/programmatic/explanation/why-shower-before-pool",
+        "destClean": "/programmatic/explanations/why-shower-before-pool"
+      },
+      {
+        "source": "/explanations/why-shower-before-pool.html",
+        "destination": "/programmatic/explanations/why-shower-before-pool",
+        "status": 301,
+        "sourceClean": "/explanations/why-shower-before-pool",
+        "destClean": "/programmatic/explanations/why-shower-before-pool"
+      }
+    ],
+    "duplicatedSources": [
+      {
+        "source": "/programmatic/how-much-chlorine-for-5000-gallon-pool.html",
+        "destination": "/programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool",
+        "status": 301,
+        "sourceClean": "/programmatic/how-much-chlorine-for-5000-gallon-pool",
+        "destClean": "/programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool"
+      },
+      {
+        "source": "/programmatic/how-much-chlorine-for-10000-gallon-pool.html",
+        "destination": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool",
+        "status": 301,
+        "sourceClean": "/programmatic/how-much-chlorine-for-10000-gallon-pool",
+        "destClean": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool"
+      },
+      {
+        "source": "/programmatic/how-much-chlorine-for-15000-gallon-pool.html",
+        "destination": "/programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool",
+        "status": 301,
+        "sourceClean": "/programmatic/how-much-chlorine-for-15000-gallon-pool",
+        "destClean": "/programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool"
+      },
+      {
+        "source": "/programmatic/how-much-chlorine-for-20000-gallon-pool.html",
+        "destination": "/programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool",
+        "status": 301,
+        "sourceClean": "/programmatic/how-much-chlorine-for-20000-gallon-pool",
+        "destClean": "/programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool"
+      },
+      {
+        "source": "/programmatic/explanation/why-ph-affects-chlorine.html",
+        "destination": "/programmatic/explanations/why-ph-affects-chlorine",
+        "status": 301,
+        "sourceClean": "/programmatic/explanation/why-ph-affects-chlorine",
+        "destClean": "/programmatic/explanations/why-ph-affects-chlorine"
+      },
+      {
+        "source": "/explanations/why-ph-affects-chlorine.html",
+        "destination": "/programmatic/explanations/why-ph-affects-chlorine",
+        "status": 301,
+        "sourceClean": "/explanations/why-ph-affects-chlorine",
+        "destClean": "/programmatic/explanations/why-ph-affects-chlorine"
+      },
+      {
+        "source": "/programmatic/explanation/what-is-pool-alkalinity.html",
+        "destination": "/programmatic/explanations/what-is-pool-alkalinity",
+        "status": 301,
+        "sourceClean": "/programmatic/explanation/what-is-pool-alkalinity",
+        "destClean": "/programmatic/explanations/what-is-pool-alkalinity"
+      },
+      {
+        "source": "/explanations/what-is-pool-alkalinity.html",
+        "destination": "/programmatic/explanations/what-is-pool-alkalinity",
+        "status": 301,
+        "sourceClean": "/explanations/what-is-pool-alkalinity",
+        "destClean": "/programmatic/explanations/what-is-pool-alkalinity"
+      },
+      {
+        "source": "/programmatic/explanation/why-shower-before-pool.html",
+        "destination": "/programmatic/explanations/why-shower-before-pool",
+        "status": 301,
+        "sourceClean": "/programmatic/explanation/why-shower-before-pool",
+        "destClean": "/programmatic/explanations/why-shower-before-pool"
+      },
+      {
+        "source": "/explanations/why-shower-before-pool.html",
+        "destination": "/programmatic/explanations/why-shower-before-pool",
+        "status": 301,
+        "sourceClean": "/explanations/why-shower-before-pool",
+        "destClean": "/programmatic/explanations/why-shower-before-pool"
+      }
+    ]
+  }
+}

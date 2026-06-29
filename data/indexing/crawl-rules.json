@@ -1,0 +1,4190 @@
+{
+  "generatedAt": "2026-06-29T22:58:53.778Z",
+  "rulesVersion": "1.0",
+  "rules": [
+    {
+      "url": "/calculators",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/calculators",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/calculators/chemical-calculator",
+      "pageType": "calculator",
+      "crawlTier": "Tier 1",
+      "hub": "/calculators/chemical-calculator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (calculator)."
+    },
+    {
+      "url": "/calculators/hot-tub-chlorine-calculator",
+      "pageType": "calculator",
+      "crawlTier": "Tier 1",
+      "hub": "/calculators/hot-tub-chlorine-calculator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (calculator)."
+    },
+    {
+      "url": "/calculators/hot-tub-ph-calculator",
+      "pageType": "calculator",
+      "crawlTier": "Tier 1",
+      "hub": "/calculators/hot-tub-ph-calculator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (calculator)."
+    },
+    {
+      "url": "/calculators/hot-tub-shock-calculator",
+      "pageType": "calculator",
+      "crawlTier": "Tier 1",
+      "hub": "/calculators/hot-tub-shock-calculator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (calculator)."
+    },
+    {
+      "url": "/calculators/pool-alkalinity-calculator",
+      "pageType": "calculator",
+      "crawlTier": "Tier 1",
+      "hub": "/calculators/pool-alkalinity-calculator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (calculator)."
+    },
+    {
+      "url": "/calculators/pool-chlorine-calculator",
+      "pageType": "calculator",
+      "crawlTier": "Tier 1",
+      "hub": "/calculators/pool-chlorine-calculator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (calculator)."
+    },
+    {
+      "url": "/calculators/pool-cyanuric-acid-calculator",
+      "pageType": "calculator",
+      "crawlTier": "Tier 1",
+      "hub": "/calculators/pool-cyanuric-acid-calculator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (calculator)."
+    },
+    {
+      "url": "/calculators/pool-ph-calculator",
+      "pageType": "calculator",
+      "crawlTier": "Tier 1",
+      "hub": "/calculators/pool-ph-calculator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (calculator)."
+    },
+    {
+      "url": "/calculators/pool-shock-calculator",
+      "pageType": "calculator",
+      "crawlTier": "Tier 1",
+      "hub": "/calculators/pool-shock-calculator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (calculator)."
+    },
+    {
+      "url": "/calculators/pool-turnover-rate-calculator",
+      "pageType": "calculator",
+      "crawlTier": "Tier 1",
+      "hub": "/calculators/pool-turnover-rate-calculator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (calculator)."
+    },
+    {
+      "url": "/calculators/pool-volume-calculator",
+      "pageType": "calculator",
+      "crawlTier": "Tier 1",
+      "hub": "/calculators/pool-volume-calculator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (calculator)."
+    },
+    {
+      "url": "/calculators/saltwater-pool-salt-calculator",
+      "pageType": "calculator",
+      "crawlTier": "Tier 1",
+      "hub": "/calculators/saltwater-pool-salt-calculator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (calculator)."
+    },
+    {
+      "url": "/calculators/spa-volume-calculator",
+      "pageType": "calculator",
+      "crawlTier": "Tier 1",
+      "hub": "/calculators/spa-volume-calculator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (calculator)."
+    },
+    {
+      "url": "/calculators/volume-calculator",
+      "pageType": "calculator",
+      "crawlTier": "Tier 1",
+      "hub": "/calculators/volume-calculator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (calculator)."
+    },
+    {
+      "url": "/charts",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/charts",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/charts/hot-tub-chemical-levels-chart",
+      "pageType": "chart",
+      "crawlTier": "Tier 1",
+      "hub": "/charts/hot-tub-chemical-levels-chart",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (chart)."
+    },
+    {
+      "url": "/charts/pool-chemical-levels-chart",
+      "pageType": "chart",
+      "crawlTier": "Tier 1",
+      "hub": "/charts/pool-chemical-levels-chart",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (chart)."
+    },
+    {
+      "url": "/charts/pool-water-balance-chart",
+      "pageType": "chart",
+      "crawlTier": "Tier 1",
+      "hub": "/charts/pool-water-balance-chart",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (chart)."
+    },
+    {
+      "url": "/resources",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/resources",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/resources/airbnb-pool-turnover-checklist",
+      "pageType": "resource",
+      "crawlTier": "Tier 2",
+      "hub": "/resources/airbnb-pool-turnover-checklist",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (resource)."
+    },
+    {
+      "url": "/resources/hot-tub-maintenance-log",
+      "pageType": "resource",
+      "crawlTier": "Tier 2",
+      "hub": "/resources/hot-tub-maintenance-log",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (resource)."
+    },
+    {
+      "url": "/resources/pool-chemical-log-sheet",
+      "pageType": "resource",
+      "crawlTier": "Tier 2",
+      "hub": "/resources/pool-chemical-log-sheet",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (resource)."
+    },
+    {
+      "url": "/resources/pool-closing-checklist",
+      "pageType": "resource",
+      "crawlTier": "Tier 2",
+      "hub": "/resources/pool-closing-checklist",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (resource)."
+    },
+    {
+      "url": "/resources/pool-maintenance-checklist",
+      "pageType": "resource",
+      "crawlTier": "Tier 2",
+      "hub": "/resources/pool-maintenance-checklist",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (resource)."
+    },
+    {
+      "url": "/resources/pool-opening-checklist",
+      "pageType": "resource",
+      "crawlTier": "Tier 2",
+      "hub": "/resources/pool-opening-checklist",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (resource)."
+    },
+    {
+      "url": "/resources/pool-shock-log",
+      "pageType": "resource",
+      "crawlTier": "Tier 2",
+      "hub": "/resources/pool-shock-log",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (resource)."
+    },
+    {
+      "url": "/resources/water-test-log",
+      "pageType": "resource",
+      "crawlTier": "Tier 2",
+      "hub": "/resources/water-test-log",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (resource)."
+    },
+    {
+      "url": "/academy",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/academy",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/academy/equipment",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/equipment",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/equipment/automatic-chlorinators",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/equipment",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/equipment/pool-filters",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/equipment",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/equipment/pool-pumps",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/equipment",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/equipment/pool-skimmers",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/equipment",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/equipment/salt-systems",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/equipment",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/equipment/sand-vs-cartridge-filters",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/equipment",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/fundamentals",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/fundamentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/fundamentals/how-temperature-changes-water-chemistry",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/fundamentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/fundamentals/how-water-balance-works",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/fundamentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/fundamentals/pool-vs-hot-tub-chemistry",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/fundamentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/fundamentals/the-four-core-water-tests",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/fundamentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/fundamentals/understanding-pool-water-chemistry",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/fundamentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/fundamentals/why-water-testing-matters",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/fundamentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/hot-tubs",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/hot-tubs",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/hot-tubs/daily-spa-maintenance",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/hot-tubs",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/hot-tubs/monthly-spa-maintenance",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/hot-tubs",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/hot-tubs/refilling-your-hot-tub",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/hot-tubs",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/hot-tubs/shock-after-heavy-use",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/hot-tubs",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/hot-tubs/weekly-spa-maintenance",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/hot-tubs",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/hot-tubs/winter-spa-care",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/hot-tubs",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/sanitizers",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/sanitizers",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/sanitizers/breakpoint-chlorination",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/sanitizers",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/sanitizers/bromine-vs-chlorine",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/sanitizers",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/sanitizers/combined-chlorine-explained",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/sanitizers",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/sanitizers/liquid-chlorine-vs-tablets",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/sanitizers",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/sanitizers/shock-treatments-explained",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/sanitizers",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/sanitizers/understanding-free-chlorine",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/sanitizers",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/testing",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/testing",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/testing/common-testing-mistakes",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/testing",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/testing/digital-pool-testers",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/testing",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/testing/how-often-to-test-water",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/testing",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/testing/understanding-test-results",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/testing",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/testing/using-liquid-test-kits",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/testing",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/testing/using-test-strips",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/testing",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/troubleshooting",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/troubleshooting",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/troubleshooting/cloudy-water",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/troubleshooting",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/troubleshooting/corrosion",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/troubleshooting",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/troubleshooting/foaming-hot-tubs",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/troubleshooting",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/troubleshooting/green-water",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/troubleshooting",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/troubleshooting/scaling",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/troubleshooting",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/troubleshooting/strong-chlorine-smell",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/troubleshooting",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/vacation-rentals",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/vacation-rentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/vacation-rentals/chemical-log-sheets",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/vacation-rentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/vacation-rentals/emergency-water-recovery",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/vacation-rentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/vacation-rentals/guest-safety",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/vacation-rentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/vacation-rentals/maintenance-schedule",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/vacation-rentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/vacation-rentals/turnover-checklist",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/vacation-rentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/vacation-rentals/weekly-inspection",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/vacation-rentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/water-balance",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/water-balance",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/water-balance/understanding-calcium-hardness",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/water-balance",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/water-balance/understanding-cyanuric-acid",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/water-balance",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/water-balance/understanding-lsi",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/water-balance",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/water-balance/understanding-ph",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/water-balance",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/water-balance/understanding-total-alkalinity",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/water-balance",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/water-balance/water-balance-order",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/water-balance",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/formulas",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/formulas",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/formulas/alkalinity-formula",
+      "pageType": "formula",
+      "crawlTier": "Tier 2",
+      "hub": "/formulas/alkalinity-formula",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (formula)."
+    },
+    {
+      "url": "/formulas/cya-formula",
+      "pageType": "formula",
+      "crawlTier": "Tier 2",
+      "hub": "/formulas/cya-formula",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (formula)."
+    },
+    {
+      "url": "/formulas/liquid-chlorine-formula",
+      "pageType": "formula",
+      "crawlTier": "Tier 2",
+      "hub": "/formulas/liquid-chlorine-formula",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (formula)."
+    },
+    {
+      "url": "/formulas/lsi-formula",
+      "pageType": "formula",
+      "crawlTier": "Tier 2",
+      "hub": "/formulas/lsi-formula",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (formula)."
+    },
+    {
+      "url": "/formulas/ph-adjustment-formula",
+      "pageType": "formula",
+      "crawlTier": "Tier 2",
+      "hub": "/formulas/ph-adjustment-formula",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (formula)."
+    },
+    {
+      "url": "/formulas/pool-volume-formula",
+      "pageType": "formula",
+      "crawlTier": "Tier 2",
+      "hub": "/formulas/pool-volume-formula",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (formula)."
+    },
+    {
+      "url": "/formulas/salt-formula",
+      "pageType": "formula",
+      "crawlTier": "Tier 2",
+      "hub": "/formulas/salt-formula",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (formula)."
+    },
+    {
+      "url": "/formulas/shock-formula",
+      "pageType": "formula",
+      "crawlTier": "Tier 2",
+      "hub": "/formulas/shock-formula",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (formula)."
+    },
+    {
+      "url": "/formulas/turnover-formula",
+      "pageType": "formula",
+      "crawlTier": "Tier 2",
+      "hub": "/formulas/turnover-formula",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (formula)."
+    },
+    {
+      "url": "/glossary",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/glossary/aggressive-water",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/aggressive-water",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/algae-bloom",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/algae-bloom",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/algaecide",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/algaecide",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/ammonia",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/ammonia",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/backwashing",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/backwashing",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/bather-load",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/bather-load",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/bcdmh",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/bcdmh",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/bicarbonate-alkalinity",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/bicarbonate-alkalinity",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/biofilm",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/biofilm",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/black-algae",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/black-algae",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/breakpoint-chlorination",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/breakpoint-chlorination",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/breakpoint-dose",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/breakpoint-dose",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/bromine",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/bromine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/calcium-hardness",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/calcium-hardness",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/calcium-hypochlorite",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/calcium-hypochlorite",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/carbon-dioxide",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/carbon-dioxide",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/cartridge-filter",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/cartridge-filter",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/chemical-compatibility",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/chemical-compatibility",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/chemical-log",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/chemical-log",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/chemical-storage",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/chemical-storage",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/chloramine",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/chloramine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/chlorine-demand",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/chlorine-demand",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/chlorine-stabilizer",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/chlorine-stabilizer",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/clarifier",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/clarifier",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/closing-chemical-kit",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/closing-chemical-kit",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/colorimetric-test",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/colorimetric-test",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/combined-chlorine",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/combined-chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/conductivity",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/conductivity",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/copper",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/copper",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/cyanuric-acid",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/cyanuric-acid",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/de-filter",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/de-filter",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/dead-algae",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/dead-algae",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/dichlor",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/dichlor",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/dilution",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/dilution",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/dpd-test",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/dpd-test",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/evaporation",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/evaporation",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/filter-pressure",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/filter-pressure",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/flocculant",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/flocculant",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/free-chlorine",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/free-chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/gpm",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/gpm",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/green-algae",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/green-algae",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/hypochlorous-acid",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/hypochlorous-acid",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/iron",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/iron",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/langelier-saturation-index",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/langelier-saturation-index",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/main-drain",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/main-drain",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/metal-sequestrant",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/metal-sequestrant",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/multiport-valve",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/multiport-valve",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/muriatic-acid",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/muriatic-acid",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/mustard-algae",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/mustard-algae",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/opening-chemical-kit",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/opening-chemical-kit",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/orp",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/orp",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/oto-test",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/oto-test",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/oxidizer",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/oxidizer",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/ozone",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/ozone",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/partial-drain",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/partial-drain",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/parts-per-million",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/parts-per-million",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/ph",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/ph-bounce",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/ph-bounce",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/ph-increaser",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/ph-increaser",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/phosphates",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/phosphates",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/pink-slime",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/pink-slime",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/pool-chemistry-reference",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/pool-chemistry-reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/pool-maintenance-schedule",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/pool-maintenance-schedule",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/pool-pump",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/pool-pump",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/pool-safety-equipment",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/pool-safety-equipment",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/pool-shock-schedule",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/pool-shock-schedule",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/pool-turnover-rate",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/pool-turnover-rate",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/pool-volume",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/pool-volume",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/pool-volume-reference",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/pool-volume-reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/pressure-gauge",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/pressure-gauge",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/pump-turnover",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/pump-turnover",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/reagent",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/reagent",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/return-jet",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/return-jet",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/salt-chlorination",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/salt-chlorination",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/sand-filter",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/sand-filter",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/sanitizer",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/sanitizer",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/saturated-ph",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/saturated-ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/saturation-index",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/saturation-index",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/scale-inhibitor",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/scale-inhibitor",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/scaling-water",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/scaling-water",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/shock",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/shock",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/shock-dosage",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/shock-dosage",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/skimmer",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/skimmer",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/sodium-bicarbonate",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/sodium-bicarbonate",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/sodium-bisulfate",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/sodium-bisulfate",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/sodium-carbonate",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/sodium-carbonate",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/sodium-hypochlorite",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/sodium-hypochlorite",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/superchlorination",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/superchlorination",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/test-strip",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/test-strip",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/total-alkalinity",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/total-alkalinity",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/total-chlorine",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/total-chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/total-dissolved-solids",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/total-dissolved-solids",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/total-hardness",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/total-hardness",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/trichlor",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/trichlor",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/turbidity",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/turbidity",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/uv-sanitization",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/uv-sanitization",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/water-balance-checklist",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/water-balance-checklist",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/water-temperature",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/water-temperature",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/water-test-log",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/water-test-log",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/glossary/winterization",
+      "pageType": "glossary",
+      "crawlTier": "Tier 3",
+      "hub": "/glossary/winterization",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/reference",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/reference/alkalinity-table",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/alkalinity-table",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/calcium-hardness-explained",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/calcium-hardness-explained",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/calculator-directory",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/calculator-directory",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/chemical-compatibility",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/chemical-compatibility",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/chemical-conversion-tables",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/chemical-conversion-tables",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/chemical-safety",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/chemical-safety",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/chemical-storage-guide",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/chemical-storage-guide",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/chlorine-effectiveness-chart",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/chlorine-effectiveness-chart",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/chlorine-explained",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/chlorine-explained",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/combined-chlorine-explained",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/combined-chlorine-explained",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/common-pool-chemistry-mistakes",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/common-pool-chemistry-mistakes",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/cya-matrix",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/cya-matrix",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/cyanuric-acid-explained",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/cyanuric-acid-explained",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets/chemical-properties",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets/chemical-ranges",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets/compatibility",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets/confidence-levels",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets/conversion-factors",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets/dosage-matrices",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets/hot-tub-ranges",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets/maintenance-schedules",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets/pool-types",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets/temperature-guidelines",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets/testing-frequency",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets/units",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets/version",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets/water-balance",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/datasets/water-problems",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/datasets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/emergency-recovery",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/emergency-recovery",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/filter-comparison",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/filter-comparison",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/free-chlorine-explained",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/free-chlorine-explained",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/ideal-pool-levels",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/ideal-pool-levels",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/ideal-spa-levels",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/ideal-spa-levels",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/ph-table",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/ph-table",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/pool-chemical-timeline",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/pool-chemical-timeline",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/pool-chemicals-explained",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/pool-chemicals-explained",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/pool-chemistry-reference",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/pool-chemistry-reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/pool-shape-guide",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/pool-shape-guide",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/pool-volume-reference",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/pool-volume-reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/printable-resources-index",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/printable-resources-index",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/pump-sizing",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/pump-sizing",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/recommended-water-temperature",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/recommended-water-temperature",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/salt-matrix",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/salt-matrix",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/salt-water-generator-explained",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/salt-water-generator-explained",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/shock-dosage-matrix",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/shock-dosage-matrix",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/shock-treatment-explained",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/shock-treatment-explained",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/testing-frequency",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/testing-frequency",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/total-alkalinity-explained",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/total-alkalinity-explained",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/vacation-rental-maintenance-schedule",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/vacation-rental-maintenance-schedule",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/water-balance-checklist",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/water-balance-checklist",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/reference/water-replacement-guidelines",
+      "pageType": "reference",
+      "crawlTier": "Tier 2",
+      "hub": "/reference/water-replacement-guidelines",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (reference)."
+    },
+    {
+      "url": "/guides",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/guides",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/guides/advanced",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/advanced",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/advanced/chlorine-breakdown-sunlight",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/advanced",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/advanced/chlorine-vs-saltwater",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/advanced",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/advanced/cya-stabilizer-explained",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/advanced",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/advanced/pool-chemistry-balance-explained",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/advanced",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/alkalinity-guide",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/alkalinity-guide",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/chlorine",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/chlorine-guide",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/chlorine-guide",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/chlorine/chlorine-too-high-after-shocking",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/chlorine/free-chlorine-vs-total-chlorine",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/chlorine/how-often-should-i-shock-my-pool",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/chlorine/why-pool-chlorine-disappears-overnight",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/chlorine/why-pool-wont-hold-chlorine",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/edge-cases",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/edge-cases",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/edge-cases/high-cya-chlorine-lock",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/edge-cases",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/edge-cases/over-shocking-pool-effects",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/edge-cases",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/edge-cases/pool-temperature-effect-chlorine",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/edge-cases",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/edge-cases/rain-effect-on-pool-chemistry",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/edge-cases",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/edge-cases/swimming-after-shocking-pool",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/edge-cases",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/hot-tub",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/hot-tub",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/hot-tub-chemistry",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/hot-tub-chemistry",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/hot-tub-maintenance",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/hot-tub-maintenance",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/hot-tub/hot-tub-alkalinity-too-high",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/hot-tub",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/hot-tub/hot-tub-chlorine-too-high",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/hot-tub",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/hot-tub/hot-tub-chlorine-too-low",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/hot-tub",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/hot-tub/hot-tub-ph-too-low",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/hot-tub",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/hot-tub/how-often-to-shock-a-hot-tub",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/hot-tub",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/ph",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/ph-guide",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/ph-guide",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/ph/can-you-swim-in-high-ph-water",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/ph/does-rain-lower-pool-ph",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/ph/how-to-lower-pool-ph",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/ph/what-causes-high-pool-ph",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/ph/why-pool-ph-keeps-rising",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/pool-chemistry-basics",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/pool-chemistry-basics",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/questions",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/questions",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/questions/can-rain-affect-pool-chemistry",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/questions",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/questions/can-you-swim-after-shocking-a-pool",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/questions",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/questions/why-does-hot-tub-water-smell",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/questions",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/questions/why-does-pool-water-turn-cloudy",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/questions",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/questions/why-is-my-hot-tub-foamy",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/questions",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/questions/why-is-my-pool-green-but-chlorine-is-high",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/questions",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/seasonal",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/seasonal",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/seasonal/closing-pool-chemistry-winter",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/seasonal",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/seasonal/opening-pool-chemistry-checklist",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/seasonal",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/seasonal/summer-high-chlorine-demand",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/seasonal",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/seasonal/winter-pool-maintenance-chemistry",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/seasonal",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/comparisons",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/comparisons",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/comparisons/chlorine-vs-bromine",
+      "pageType": "comparison",
+      "crawlTier": "Tier 3",
+      "hub": "/comparisons/chlorine-vs-bromine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (comparison)."
+    },
+    {
+      "url": "/comparisons/chlorine-vs-bromine-hot-tub",
+      "pageType": "comparison",
+      "crawlTier": "Tier 3",
+      "hub": "/comparisons/chlorine-vs-bromine-hot-tub",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (comparison)."
+    },
+    {
+      "url": "/comparisons/free-chlorine-vs-total-chlorine",
+      "pageType": "comparison",
+      "crawlTier": "Tier 3",
+      "hub": "/comparisons/free-chlorine-vs-total-chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (comparison)."
+    },
+    {
+      "url": "/comparisons/liquid-chlorine-vs-tablets",
+      "pageType": "comparison",
+      "crawlTier": "Tier 3",
+      "hub": "/comparisons/liquid-chlorine-vs-tablets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (comparison)."
+    },
+    {
+      "url": "/comparisons/pool-shock-vs-chlorine",
+      "pageType": "comparison",
+      "crawlTier": "Tier 3",
+      "hub": "/comparisons/pool-shock-vs-chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (comparison)."
+    },
+    {
+      "url": "/comparisons/salt-water-pool-vs-chlorine-pool",
+      "pageType": "comparison",
+      "crawlTier": "Tier 3",
+      "hub": "/comparisons/salt-water-pool-vs-chlorine-pool",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (comparison)."
+    },
+    {
+      "url": "/comparisons/saltwater-pool-vs-chlorine",
+      "pageType": "comparison",
+      "crawlTier": "Tier 3",
+      "hub": "/comparisons/saltwater-pool-vs-chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (comparison)."
+    },
+    {
+      "url": "/methodology",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/methodology",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/methodology/calculation-assumptions",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/methodology/calculation-assumptions",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/methodology/calculation-methodology",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/methodology/calculation-methodology",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/methodology/confidence-system",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/methodology/confidence-system",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/methodology/formula-selection",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/methodology/formula-selection",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/methodology/known-limitations",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/methodology/known-limitations",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/methodology/precision-policy",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/methodology/precision-policy",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/methodology/rounding-policy",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/methodology/rounding-policy",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/about",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/about",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/",
+      "pageType": "homepage",
+      "crawlTier": "Tier 1",
+      "hub": "/",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (homepage)."
+    },
+    {
+      "url": "/404",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/404",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/all-pages",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/all-pages",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/audit/google",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/audit/google",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/audit/google/authority-flow",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/audit/google",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/audit/google/crawl-depth",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/audit/google",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/audit/google/freshness",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/audit/google",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/audit/google/priority-report",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/audit/google",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/audit/google/search-console-helper",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/audit/google",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/audit/google/weak-pages",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/audit/google",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/components/ad",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/components/ad",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/components/global-schema",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/components/global-schema",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/editorial",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/editorial",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/editorial/content-standards",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/editorial/content-standards",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/editorial/correction-policy",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/editorial/correction-policy",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/editorial/editorial-policy",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/editorial/editorial-policy",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/editorial/review-process",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/editorial/review-process",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/editorial/update-policy",
+      "pageType": "documentation",
+      "crawlTier": "Tier 4",
+      "hub": "/editorial/update-policy",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (documentation)."
+    },
+    {
+      "url": "/entities",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/entities",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/entities/algae",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/algae",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/alkalinity",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/alkalinity",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/automatic-chlorinator",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/automatic-chlorinator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/backwashing",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/backwashing",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/baking-soda",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/baking-soda",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/balancing",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/balancing",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/biguanide",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/biguanide",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/breakpoint-chlorination",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/breakpoint-chlorination",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/bromine",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/bromine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/calcium-chloride",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/calcium-chloride",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/calcium-hardness",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/calcium-hardness",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/calcium-hypochlorite",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/calcium-hypochlorite",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/cartridge-filter",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/cartridge-filter",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/cdc",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/cdc",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/chemical-feeder",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/chemical-feeder",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/chemical-log",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/chemical-log",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/closing-checklist",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/closing-checklist",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/cloudy-water",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/cloudy-water",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/combined-chlorine",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/combined-chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/commercial-pool",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/commercial-pool",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/concrete-pool",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/concrete-pool",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/copper",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/copper",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/corrosion",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/corrosion",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/cover",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/cover",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/cyanuric-acid",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/cyanuric-acid",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/de-filter",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/de-filter",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/emergency-reference",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/emergency-reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/epa",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/epa",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/eye-irritation",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/eye-irritation",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/fiberglass-pool",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/fiberglass-pool",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/filtration",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/filtration",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/flow-rate",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/flow-rate",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/foaming",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/foaming",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/free-chlorine",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/free-chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/gallons",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/gallons",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/green-water",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/green-water",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/heater",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/heater",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/high-chlorine",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/high-chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/high-ph",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/high-ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/hot-tub",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/hot-tub",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/hydrogen-peroxide",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/hydrogen-peroxide",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/indoor-pool",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/indoor-pool",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/iron",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/iron",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/lamotte",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/lamotte",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/liquid-chlorine",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/liquid-chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/liters",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/liters",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/low-chlorine",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/low-chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/low-ph",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/low-ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/lsi",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/lsi",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/maintenance-checklist",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/maintenance-checklist",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/maintenance-log",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/maintenance-log",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/manganese",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/manganese",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/muriatic-acid",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/muriatic-acid",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/nsf",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/nsf",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/opening-checklist",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/opening-checklist",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/orp",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/orp",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/outdoor-pool",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/outdoor-pool",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/oxidation",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/oxidation",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/ozone",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/ozone",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/ph",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/phosphate",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/phosphate",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/phta",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/phta",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/pool-opening",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/pool-opening",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/pool-salt",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/pool-salt",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/ppm",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/ppm",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/pump",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/pump",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/salt",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/salt",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/salt-chlorinator",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/salt-chlorinator",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/saltwater-pool",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/saltwater-pool",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/sand-filter",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/sand-filter",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/sanitizing",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/sanitizing",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/scaling",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/scaling",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/shock-treatment",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/shock-treatment",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/skimmer",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/skimmer",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/skin-irritation",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/skin-irritation",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/soda-ash",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/soda-ash",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/sodium-dichlor",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/sodium-dichlor",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/stabilizer",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/stabilizer",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/strong-chlorine-smell",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/strong-chlorine-smell",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/swim-spa",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/swim-spa",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/swimming-pool",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/swimming-pool",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/taylor-technologies",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/taylor-technologies",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/temperature",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/temperature",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/testing",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/testing",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/total-chlorine",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/total-chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/total-dissolved-solids",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/total-dissolved-solids",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/trichlor-tablets",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/trichlor-tablets",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/turnover-time",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/turnover-time",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/unit-celsius",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/unit-celsius",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/unit-days",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/unit-days",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/unit-fahrenheit",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/unit-fahrenheit",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/unit-gallons",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/unit-gallons",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/unit-hours",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/unit-hours",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/unit-liters",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/unit-liters",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/unit-mg-l",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/unit-mg-l",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/unit-minutes",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/unit-minutes",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/unit-months",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/unit-months",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/unit-ppm",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/unit-ppm",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/unit-weeks",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/unit-weeks",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/vacation-rental-checklist",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/vacation-rental-checklist",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/vinyl-pool",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/vinyl-pool",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/water-replacement",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/water-replacement",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/water-test-sheet",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/water-test-sheet",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/entities/winterization",
+      "pageType": "entity",
+      "crawlTier": "Tier 2",
+      "hub": "/entities/winterization",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (entity)."
+    },
+    {
+      "url": "/hot-tub-chemical-levels-chart",
+      "pageType": "chart",
+      "crawlTier": "Tier 1",
+      "hub": "/hot-tub-chemical-levels-chart",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (chart)."
+    },
+    {
+      "url": "/hot-tub-chlorine-levels-chart",
+      "pageType": "chart",
+      "crawlTier": "Tier 1",
+      "hub": "/hot-tub-chlorine-levels-chart",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (chart)."
+    },
+    {
+      "url": "/legal",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/legal",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/legal/ownership",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/legal/ownership",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/maintenance",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/maintenance",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/maintenance/how-often-add-chlorine-pool",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/maintenance/how-often-add-chlorine-pool",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/maintenance/how-to-balance-pool-water",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/maintenance/how-to-balance-pool-water",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/maintenance/how-to-fix-cloudy-hot-tub",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/maintenance/how-to-fix-cloudy-hot-tub",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/pool-alkalinity-levels-chart",
+      "pageType": "chart",
+      "crawlTier": "Tier 1",
+      "hub": "/pool-alkalinity-levels-chart",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (chart)."
+    },
+    {
+      "url": "/pool-chemical-levels-chart",
+      "pageType": "chart",
+      "crawlTier": "Tier 1",
+      "hub": "/pool-chemical-levels-chart",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (chart)."
+    },
+    {
+      "url": "/pool-chemistry-system",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/pool-chemistry-system",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/pool-chlorine-levels-chart",
+      "pageType": "chart",
+      "crawlTier": "Tier 1",
+      "hub": "/pool-chlorine-levels-chart",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (chart)."
+    },
+    {
+      "url": "/pool-cya-levels-chart",
+      "pageType": "chart",
+      "crawlTier": "Tier 1",
+      "hub": "/pool-cya-levels-chart",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (chart)."
+    },
+    {
+      "url": "/pool-ph-levels-chart",
+      "pageType": "chart",
+      "crawlTier": "Tier 1",
+      "hub": "/pool-ph-levels-chart",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (chart)."
+    },
+    {
+      "url": "/printable/maintenance-checklist",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/printable/maintenance-checklist",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/printables/airbnb-pool-turnover-checklist",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/printables/airbnb-pool-turnover-checklist",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/printables/hot-tub-maintenance-log",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/printables/hot-tub-maintenance-log",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/printables/pool-maintenance-checklist",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/printables/pool-maintenance-checklist",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/programmatic",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/programmatic/behavior",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/behavior",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/behavior/how-often-to-shock-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/behavior",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/behavior/how-often-to-test-pool-water",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/behavior",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/behavior/when-to-add-chlorine",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/behavior",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/chlorine",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/chlorine",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/explanations",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/explanations",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/explanations/what-is-pool-alkalinity",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/explanations",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/explanations/why-ph-affects-chlorine",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/explanations",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/explanations/why-shower-before-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/explanations",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/hot-tubs",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/hot-tubs",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/hot-tubs",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/hot-tubs",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/hot-tubs",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/hot-tubs",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/hot-tubs",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/ph",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/ph/how-to-adjust-ph-from-7-to-7-4",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/ph/how-to-adjust-ph-from-8-to-7-5",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/ph",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/problems",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/problems",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/problems/cloudy-pool-fix",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/problems",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/problems/green-pool-how-much-chlorine",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/problems",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/problems/high-chlorine-how-to-lower",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/problems",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/problems/low-alkalinity-symptoms",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/problems",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/shock",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/shock",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/shock/how-much-shock-for-10000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/shock",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/shock/how-much-shock-for-15000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/shock",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/shock/how-much-shock-for-20000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/shock",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/shock/how-much-shock-for-25000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/shock",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/shock/how-much-shock-for-30000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/shock",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/programmatic/shock/how-much-shock-for-5000-gallon-pool",
+      "pageType": "programmatic",
+      "crawlTier": "Tier 3",
+      "hub": "/programmatic/shock",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (programmatic)."
+    },
+    {
+      "url": "/provenance",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/provenance",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/qa",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/qa",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/qa/certification",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/qa/certification",
+      "indexable": false,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/releases",
+      "pageType": "release",
+      "crawlTier": "Tier 4",
+      "hub": "/releases",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (release)."
+    },
+    {
+      "url": "/releases/1.0.0",
+      "pageType": "release",
+      "crawlTier": "Tier 4",
+      "hub": "/releases/1.0.0",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (release)."
+    },
+    {
+      "url": "/releases/1.1.0",
+      "pageType": "release",
+      "crawlTier": "Tier 4",
+      "hub": "/releases/1.1.0",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (release)."
+    },
+    {
+      "url": "/releases/compatibility",
+      "pageType": "release",
+      "crawlTier": "Tier 4",
+      "hub": "/releases/compatibility",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (release)."
+    },
+    {
+      "url": "/reports/accessibility",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/reports/accessibility",
+      "indexable": false,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/reports/ai-readiness",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/reports/ai-readiness",
+      "indexable": false,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/reports/architecture",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/reports/architecture",
+      "indexable": false,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/reports/calculators",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/reports/calculators",
+      "indexable": false,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/reports/content",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/reports/content",
+      "indexable": false,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/reports/datasets",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/reports/datasets",
+      "indexable": false,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/reports/entities",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/reports/entities",
+      "indexable": false,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/reports/indexing-intelligence",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/reports/indexing-intelligence",
+      "indexable": false,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/reports/links",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/reports/links",
+      "indexable": false,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/reports/mobile",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/reports/mobile",
+      "indexable": false,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/reports/performance",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/reports/performance",
+      "indexable": false,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/reports/schema",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/reports/schema",
+      "indexable": false,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/reports/seo",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/reports/seo",
+      "indexable": false,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/revisions",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/revisions",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/salt-water-pool-chemical-levels-chart",
+      "pageType": "chart",
+      "crawlTier": "Tier 1",
+      "hub": "/salt-water-pool-chemical-levels-chart",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (chart)."
+    },
+    {
+      "url": "/tools",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/tools",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/search",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/search",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    }
+  ]
+}

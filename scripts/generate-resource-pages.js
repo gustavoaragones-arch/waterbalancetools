@@ -19,6 +19,7 @@
 
 const fs   = require('fs');
 const path = require('path');
+const { SITE_HEADER, SITE_FOOTER, href, canonicalUrl, absoluteUrl } = require('./template-utils');
 
 const ROOT         = path.join(__dirname, '..');
 const RESOURCES_DIR = path.join(ROOT, 'resources');
@@ -37,9 +38,9 @@ const RESOURCES = [
     metaDesc:    'Free printable pool maintenance checklist. Weekly, monthly, and seasonal pool care tasks. Download or print for free.',
     labels:      ['Printable', 'Free Download', 'Letter & A4 Ready', 'One Page'],
     relatedCalcs: [
-      { href: '/calculators/chemical-calculator',      label: 'Pool Chemical Calculator' },
-      { href: '/calculators/pool-chlorine-calculator', label: 'Chlorine Calculator' },
-      { href: '/calculators/pool-ph-calculator',       label: 'pH Calculator' },
+      { href: href('/calculators/chemical-calculator'),      label: 'Pool Chemical Calculator' },
+      { href: href('/calculators/pool-chlorine-calculator'), label: 'Chlorine Calculator' },
+      { href: href('/calculators/pool-ph-calculator'),       label: 'pH Calculator' },
     ],
     tips: [
       'Run the filter for at least 8 hours per day during swim season.',
@@ -78,9 +79,9 @@ const RESOURCES = [
     metaDesc:    'Free printable hot tub maintenance log. Track chemical readings, water tests, and maintenance tasks. Download or print for free.',
     labels:      ['Printable', 'Free Download', 'Letter & A4 Ready', 'One Page'],
     relatedCalcs: [
-      { href: '/calculators/hot-tub-chlorine-calculator', label: 'Hot Tub Chlorine Calculator' },
-      { href: '/calculators/hot-tub-ph-calculator',       label: 'Hot Tub pH Calculator' },
-      { href: '/calculators/hot-tub-shock-calculator',    label: 'Hot Tub Shock Calculator' },
+      { href: href('/calculators/hot-tub-chlorine-calculator'), label: 'Hot Tub Chlorine Calculator' },
+      { href: href('/calculators/hot-tub-ph-calculator'),       label: 'Hot Tub pH Calculator' },
+      { href: href('/calculators/hot-tub-shock-calculator'),    label: 'Hot Tub Shock Calculator' },
     ],
     tips: [
       'Test water at least 2–3 times per week.',
@@ -100,9 +101,9 @@ const RESOURCES = [
     metaDesc:    'Free printable pool opening checklist for spring. Step-by-step guide to opening your pool. Download or print for free.',
     labels:      ['Printable', 'Free Download', 'Letter & A4 Ready', 'One Page'],
     relatedCalcs: [
-      { href: '/calculators/chemical-calculator',      label: 'Pool Chemical Calculator' },
-      { href: '/calculators/pool-shock-calculator',    label: 'Pool Shock Calculator' },
-      { href: '/calculators/pool-volume-calculator',   label: 'Pool Volume Calculator' },
+      { href: href('/calculators/chemical-calculator'),      label: 'Pool Chemical Calculator' },
+      { href: href('/calculators/pool-shock-calculator'),    label: 'Pool Shock Calculator' },
+      { href: href('/calculators/pool-volume-calculator'),   label: 'Pool Volume Calculator' },
     ],
     tips: [
       'Open the pool when daytime temps consistently exceed 70°F to prevent algae.',
@@ -143,9 +144,9 @@ const RESOURCES = [
     metaDesc:    'Free printable pool closing / winterization checklist. Step-by-step guide to closing your pool for winter. Download or print for free.',
     labels:      ['Printable', 'Free Download', 'Letter & A4 Ready', 'One Page'],
     relatedCalcs: [
-      { href: '/calculators/chemical-calculator',    label: 'Pool Chemical Calculator' },
-      { href: '/calculators/pool-shock-calculator',  label: 'Pool Shock Calculator' },
-      { href: '/calculators/pool-volume-calculator', label: 'Pool Volume Calculator' },
+      { href: href('/calculators/chemical-calculator'),    label: 'Pool Chemical Calculator' },
+      { href: href('/calculators/pool-shock-calculator'),  label: 'Pool Shock Calculator' },
+      { href: href('/calculators/pool-volume-calculator'), label: 'Pool Volume Calculator' },
     ],
     tips: [
       'Close when overnight temps consistently fall below 65°F.',
@@ -183,9 +184,9 @@ const RESOURCES = [
     metaDesc:    'Free printable Airbnb and vacation rental pool turnover checklist. Quick between-guest pool inspection and chemical check. Download or print for free.',
     labels:      ['Printable', 'Free Download', 'Letter & A4 Ready', 'One Page'],
     relatedCalcs: [
-      { href: '/calculators/chemical-calculator',      label: 'Pool Chemical Calculator' },
-      { href: '/calculators/pool-chlorine-calculator', label: 'Chlorine Calculator' },
-      { href: '/calculators/pool-ph-calculator',       label: 'pH Calculator' },
+      { href: href('/calculators/chemical-calculator'),      label: 'Pool Chemical Calculator' },
+      { href: href('/calculators/pool-chlorine-calculator'), label: 'Chlorine Calculator' },
+      { href: href('/calculators/pool-ph-calculator'),       label: 'pH Calculator' },
     ],
     tips: [
       'Complete the turnover within 2–4 hours of guest checkout.',
@@ -225,10 +226,10 @@ const RESOURCES = [
     metaDesc:    'Free printable pool chemical log sheet. Track chlorine, pH, alkalinity additions and water test results. Download or print for free.',
     labels:      ['Printable', 'Free Download', 'Letter & A4 Ready', 'One Page'],
     relatedCalcs: [
-      { href: '/calculators/chemical-calculator',      label: 'Pool Chemical Calculator' },
-      { href: '/calculators/pool-chlorine-calculator', label: 'Chlorine Calculator' },
-      { href: '/calculators/pool-ph-calculator',       label: 'pH Calculator' },
-      { href: '/calculators/pool-shock-calculator',    label: 'Shock Calculator' },
+      { href: href('/calculators/chemical-calculator'),      label: 'Pool Chemical Calculator' },
+      { href: href('/calculators/pool-chlorine-calculator'), label: 'Chlorine Calculator' },
+      { href: href('/calculators/pool-ph-calculator'),       label: 'pH Calculator' },
+      { href: href('/calculators/pool-shock-calculator'),    label: 'Shock Calculator' },
     ],
     tips: [
       'Log readings before and after adding chemicals to see the effect.',
@@ -248,9 +249,9 @@ const RESOURCES = [
     metaDesc:    'Free printable water test log for pool and hot tub. Record chlorine, pH, alkalinity, hardness, and CYA readings. Download or print for free.',
     labels:      ['Printable', 'Free Download', 'Letter & A4 Ready', 'One Page'],
     relatedCalcs: [
-      { href: '/calculators/chemical-calculator',          label: 'Pool Chemical Calculator' },
-      { href: '/calculators/pool-cyanuric-acid-calculator', label: 'CYA Calculator' },
-      { href: '/calculators/pool-alkalinity-calculator',   label: 'Alkalinity Calculator' },
+      { href: href('/calculators/chemical-calculator'),          label: 'Pool Chemical Calculator' },
+      { href: href('/calculators/pool-cyanuric-acid-calculator'), label: 'CYA Calculator' },
+      { href: href('/calculators/pool-alkalinity-calculator'),   label: 'Alkalinity Calculator' },
     ],
     tips: [
       'Test at the same time each day for consistent results.',
@@ -270,9 +271,9 @@ const RESOURCES = [
     metaDesc:    'Free printable pool shock treatment log. Track shock doses, product used, and water clarity results. Download or print for free.',
     labels:      ['Printable', 'Free Download', 'Letter & A4 Ready', 'One Page'],
     relatedCalcs: [
-      { href: '/calculators/pool-shock-calculator',   label: 'Pool Shock Calculator' },
-      { href: '/calculators/chemical-calculator',     label: 'Chemical Calculator' },
-      { href: '/calculators/pool-volume-calculator',  label: 'Pool Volume Calculator' },
+      { href: href('/calculators/pool-shock-calculator'),   label: 'Pool Shock Calculator' },
+      { href: href('/calculators/chemical-calculator'),     label: 'Chemical Calculator' },
+      { href: href('/calculators/pool-volume-calculator'),  label: 'Pool Volume Calculator' },
     ],
     tips: [
       'Shock in the evening to prevent UV from breaking down the chlorine.',
@@ -326,7 +327,7 @@ function resourcePage(r) {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://waterbalancetools.com/resources/${r.slug}">
+  <link rel="canonical" href="${canonicalUrl(`/resources/${r.slug}`)}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${r.title} | Free Printable | WaterBalanceTools</title>
   <meta name="description" content="${r.metaDesc}">
@@ -338,22 +339,12 @@ function resourcePage(r) {
     "@type": "HowTo",
     "name": "${r.title}",
     "description": "${r.metaDesc}",
-    "url": "https://waterbalancetools.com/resources/${r.slug}"
+    "url": "${absoluteUrl(`/resources/${r.slug}`)}"
   }
   </script>
 </head>
 <body class="resource-page">
-  <header class="site-header">
-    <a href="/" class="logo-link">
-      <img src="/assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36">
-    </a>
-    <nav class="nav">
-      <a href="/calculators/chemical-calculator">Calculator</a>
-      <a href="/resources/">Resources</a>
-      <a href="/pool-chemical-levels-chart">Charts</a>
-      <a href="/guides/pool-chemistry-basics">Guide</a>
-    </nav>
-  </header>
+${SITE_HEADER}
 
   <main class="container">
     <section class="hero hero-compact">
@@ -362,7 +353,7 @@ function resourcePage(r) {
       <p>${r.description}</p>
       <div class="resource-actions-top no-print">
         <button onclick="window.print()" class="btn btn-primary">Print This Page</button>
-        <a href="/resources/" class="btn btn-outline">&#8592; All Resources</a>
+        <a href="${href('/resources')}" class="btn btn-outline">&#8592; All Resources</a>
       </div>
       <div class="resource-labels" style="margin-top:0.75rem">
         ${labelsHtml}
@@ -391,29 +382,15 @@ ${relatedHtml}
     <section class="link-matrix no-print">
       <h3>More Free Resources</h3>
       <ul>
-        <li><a href="/resources/">All Free Printable Resources</a></li>
-        <li><a href="/guides/pool-chemistry-basics">Pool Chemistry Basics Guide</a></li>
-        <li><a href="/pool-chemical-levels-chart">Pool Chemical Levels Chart</a></li>
-        <li><a href="/calculators/chemical-calculator">Pool Chemical Calculator</a></li>
+        <li><a href="${href('/resources')}">All Free Printable Resources</a></li>
+        <li><a href="${href('/guides/pool-chemistry-basics')}">Pool Chemistry Basics Guide</a></li>
+        <li><a href="${href('/pool-chemical-levels-chart')}">Pool Chemical Levels Chart</a></li>
+        <li><a href="${href('/calculators/chemical-calculator')}">Pool Chemical Calculator</a></li>
       </ul>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <nav class="footer-nav">
-      <a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a>
-      <a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a>
-      <a href="/calculators/pool-shock-calculator">Pool Shock Calculator</a>
-      <a href="/calculators/pool-ph-calculator">Pool pH Calculator</a>
-      <a href="/pool-chemical-levels-chart">Pool Chemical Levels Chart</a>
-      <a href="/guides/pool-chemistry-basics">Pool Chemistry Guide</a>
-      <a href="/all-pages">All Pages</a>
-      <a href="/legal/ownership">Ownership</a>
-      <a href="/legal/legal">Legal</a>
-    </nav>
-    <p class="footer-copy">&copy; 2026 Albor Digital LLC. All rights reserved.</p>
-    <p class="footer-note">WaterBalanceTools.com is an independent educational website owned and operated by Albor Digital LLC.</p>
-  </footer>
+${SITE_FOOTER}
 </body>
 </html>`;
 }
@@ -423,7 +400,7 @@ ${relatedHtml}
 function hubPage() {
   const cards = RESOURCES.map(r => {
     const labelsHtml = r.labels.slice(0, 2).map(l => `<span class="resource-label">&#10003;&nbsp;${l}</span>`).join(' ');
-    return `        <a href="/resources/${r.slug}" class="resource-hub-card">
+    return `        <a href="${href(`/resources/${r.slug}`)}" class="resource-hub-card">
           <h3>${r.title}</h3>
           <p>${r.description.split('.')[0]}.</p>
           <div class="resource-labels">${labelsHtml}</div>
@@ -434,7 +411,7 @@ function hubPage() {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://waterbalancetools.com/resources/">
+  <link rel="canonical" href="${canonicalUrl('/resources')}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Free Pool &amp; Hot Tub Printable Resources | WaterBalanceTools</title>
   <meta name="description" content="Free printable checklists, log sheets, and maintenance forms for pool and hot tub owners. Download or print for free — no signup required.">
@@ -446,22 +423,12 @@ function hubPage() {
     "@type": "CollectionPage",
     "name": "Free Pool & Hot Tub Printable Resources",
     "description": "Free printable checklists, log sheets, and maintenance forms for pool and hot tub owners.",
-    "url": "https://waterbalancetools.com/resources/"
+    "url": "${absoluteUrl('/resources')}"
   }
   </script>
 </head>
 <body class="resource-page">
-  <header class="site-header">
-    <a href="/" class="logo-link">
-      <img src="/assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36">
-    </a>
-    <nav class="nav">
-      <a href="/calculators/chemical-calculator">Calculator</a>
-      <a href="/resources/">Resources</a>
-      <a href="/pool-chemical-levels-chart">Charts</a>
-      <a href="/guides/pool-chemistry-basics">Guide</a>
-    </nav>
-  </header>
+${SITE_HEADER}
 
   <main class="container">
     <section class="hero">
@@ -484,30 +451,16 @@ ${cards}
     <section class="link-matrix">
       <h3>Related Tools</h3>
       <ul>
-        <li><a href="/calculators/chemical-calculator">Pool Chemical Calculator</a></li>
-        <li><a href="/calculators/pool-shock-calculator">Pool Shock Calculator</a></li>
-        <li><a href="/calculators/hot-tub-chlorine-calculator">Hot Tub Chlorine Calculator</a></li>
-        <li><a href="/guides/pool-chemistry-basics">Pool Chemistry Basics Guide</a></li>
-        <li><a href="/pool-chemical-levels-chart">Pool Chemical Levels Chart</a></li>
+        <li><a href="${href('/calculators/chemical-calculator')}">Pool Chemical Calculator</a></li>
+        <li><a href="${href('/calculators/pool-shock-calculator')}">Pool Shock Calculator</a></li>
+        <li><a href="${href('/calculators/hot-tub-chlorine-calculator')}">Hot Tub Chlorine Calculator</a></li>
+        <li><a href="${href('/guides/pool-chemistry-basics')}">Pool Chemistry Basics Guide</a></li>
+        <li><a href="${href('/pool-chemical-levels-chart')}">Pool Chemical Levels Chart</a></li>
       </ul>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <nav class="footer-nav">
-      <a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a>
-      <a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a>
-      <a href="/calculators/pool-shock-calculator">Pool Shock Calculator</a>
-      <a href="/calculators/pool-ph-calculator">Pool pH Calculator</a>
-      <a href="/pool-chemical-levels-chart">Pool Chemical Levels Chart</a>
-      <a href="/guides/pool-chemistry-basics">Pool Chemistry Guide</a>
-      <a href="/all-pages">All Pages</a>
-      <a href="/legal/ownership">Ownership</a>
-      <a href="/legal/legal">Legal</a>
-    </nav>
-    <p class="footer-copy">&copy; 2026 Albor Digital LLC. All rights reserved.</p>
-    <p class="footer-note">WaterBalanceTools.com is an independent educational website owned and operated by Albor Digital LLC.</p>
-  </footer>
+${SITE_FOOTER}
 </body>
 </html>`;
 }

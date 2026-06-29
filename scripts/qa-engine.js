@@ -329,6 +329,13 @@ function runMobileAudit(ctx) {
 
 function runLinksAudit(ctx) {
   const r = createAuditResult('links');
+  const crawlRules = readJson(path.join(ROOT, 'data', 'indexing', 'crawl-rules.json'), { rules: [] });
+  const ruleByUrl = new Map((crawlRules.rules || []).map((x) => [x.url, x]));
+  function isTier123(url) {
+    const rule = ruleByUrl.get(url);
+    if (!rule) return true;
+    return ['Tier 1', 'Tier 2', 'Tier 3'].includes(rule.crawlTier);
+  }
   function toPageUrl(filePath) {
     const rel = path.relative(ROOT, filePath).replace(/\\/g, '/');
     let clean = '/' + rel;
@@ -382,10 +389,10 @@ function runLinksAudit(ctx) {
   }
 
   const canonicalPages = ctx.pages.map((p) => toPageUrl(p));
-  const canonicalPageSet = new Set(canonicalPages);
-  const orphans = canonicalPages.filter((u) => !['/', '/404'].includes(u) && (inbound.get(u) || inbound.get(u + '/') || 0) === 0);
-  const lowOutbound = [...outbound.values()].filter((n) => n < 3).length;
-  const lowInbound = [...canonicalPageSet].filter((u) => (inbound.get(u) || inbound.get(u + '/') || 0) < 3).length;
+  const corePages = canonicalPages.filter((u) => isTier123(u));
+  const orphans = corePages.filter((u) => !['/', '/404'].includes(u) && (inbound.get(u) || inbound.get(u + '/') || 0) === 0);
+  const lowOutbound = corePages.filter((u) => (outbound.get(u) || 0) < 3).length;
+  const lowInbound = corePages.filter((u) => (inbound.get(u) || inbound.get(u + '/') || 0) < 3).length;
   if (broken) r.errors.push(`Broken internal links detected: ${broken}`);
   if (orphans.length) r.errors.push(`Orphan pages: ${orphans.length}`);
   if (lowInbound) r.warnings.push(`Pages with inbound links < 3: ${lowInbound}`);
@@ -475,7 +482,7 @@ function runDatasetsAudit(ctx) {
 function runCalculatorsAudit(ctx) {
   const r = createAuditResult('calculators');
   const calcDir = path.join(ROOT, 'calculators');
-  const pages = fs.readdirSync(calcDir).filter((f) => f.endsWith('.html'));
+  const pages = fs.readdirSync(calcDir).filter((f) => f.endsWith('.html') && f !== 'index.html');
   let missingTrust = 0;
   let missingHero = 0;
   let missingForm = 0;
@@ -569,6 +576,66 @@ function runAiAudit(ctx) {
   return r;
 }
 
+function runIndexingIntelligenceAudit(ctx) {
+  const r = createAuditResult('indexing-intelligence');
+  const indexingDir = path.join(ROOT, 'data', 'indexing');
+  const googleAuditDir = path.join(ROOT, 'audit', 'google');
+  const priority = readJson(path.join(indexingDir, 'priority.json'), { records: [] });
+  const rules = readJson(path.join(indexingDir, 'crawl-rules.json'), { rules: [] });
+  const freshness = readJson(path.join(indexingDir, 'freshness.json'), { pages: [] });
+  const weights = readJson(path.join(indexingDir, 'weights.json'), { edges: [] });
+  const requiredReports = [
+    'index.html',
+    'priority-report.html',
+    'weak-pages.html',
+    'freshness.html',
+    'crawl-depth.html',
+    'authority-flow.html',
+    'search-console-helper.html',
+  ];
+
+  const pages = priority.records || [];
+  const hasPriority = pages.length;
+  const avgPriority = hasPriority ? Number((pages.reduce((s, p) => s + (p.priority || 0), 0) / pages.length).toFixed(2)) : 0;
+  const avgAuthority = (weights.edges || []).length
+    ? Number(((weights.edges || []).reduce((s, e) => s + (e.weight || 0), 0) / (weights.edges || []).length).toFixed(2))
+    : 0;
+  const missingTiers = (rules.rules || []).filter((x) => !x.crawlTier).length;
+  const freshCoverage = pages.length ? Number((((freshness.pages || []).length / pages.length) * 100).toFixed(2)) : 0;
+  const hubCoverage = pages.filter((p) => p.hub).length;
+  const weightedLinks = (weights.edges || []).length;
+
+  requiredReports.forEach((f) => {
+    if (!fs.existsSync(path.join(googleAuditDir, f))) r.errors.push(`Missing indexing report: audit/google/${f}`);
+  });
+  ['validation-list.csv', 'priority-pages.csv', 'weak-pages.csv', 'recently-updated.csv', 'crawl-review.md'].forEach((f) => {
+    if (!fs.existsSync(path.join(googleAuditDir, f))) r.errors.push(`Missing Search Console companion file: audit/google/${f}`);
+  });
+  if (!hasPriority) r.errors.push('Priority coverage is empty');
+  if (missingTiers > 0) r.errors.push(`Missing crawl tier assignments: ${missingTiers}`);
+  if (freshCoverage < 95) r.errors.push(`Freshness coverage below 95%: ${freshCoverage}%`);
+  if (hubCoverage < pages.length) r.errors.push(`Hub assignment incomplete: ${hubCoverage}/${pages.length}`);
+  if (weightedLinks === 0) r.errors.push('Weighted link graph is empty');
+  if (avgPriority < 30) r.warnings.push(`Average priority unexpectedly low: ${avgPriority}`);
+  if (avgAuthority < 20) r.warnings.push(`Average authority unexpectedly low: ${avgAuthority}`);
+
+  r.metrics = {
+    priorityCoverage: pages.length,
+    averagePriority: avgPriority,
+    averageAuthority: avgAuthority,
+    freshnessCoverage: freshCoverage,
+    hubCoverage,
+    weightedLinks,
+    missingTiers,
+  };
+  r.summary = 'Evaluates crawl tiering, indexing priority, freshness, and Search Console readiness artifacts.';
+  r.recommendations.push('Use weak-pages.csv to schedule contextual-link improvements.');
+  r.recommendations.push('Validate top priority-pages.csv URLs first in Search Console.');
+  r.score = Math.max(0, 100 - r.errors.length * 20 - r.warnings.length * 5);
+  r.critical = r.errors.length > 0;
+  return r;
+}
+
 const AUDIT_RUNNERS = {
   architecture: runArchitectureAudit,
   seo: runSeoAudit,
@@ -582,6 +649,7 @@ const AUDIT_RUNNERS = {
   calculators: runCalculatorsAudit,
   content: runContentAudit,
   'ai-readiness': runAiAudit,
+  'indexing-intelligence': runIndexingIntelligenceAudit,
 };
 
 function runAuditByName(name, ctx) {

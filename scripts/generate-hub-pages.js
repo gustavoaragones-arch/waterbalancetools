@@ -6,6 +6,8 @@ const fs = require('fs');
 const path = require('path');
 const { getSiloForPath, getCalculatorRel } = require('./silo-map');
 const { isLegacyProgrammaticChlorine } = require('./redirect-rules');
+const urlEngine = require('../js/url/url-engine');
+const { SITE_HEADER, SITE_FOOTER } = require('./template-utils');
 
 const ROOT = path.join(__dirname, '..');
 const PROG = path.join(ROOT, 'programmatic');
@@ -26,9 +28,7 @@ function walkHtmlFiles(dir, out) {
 }
 
 function hrefFromGuides(targetRelFromRoot) {
-  return path
-    .relative(GUIDES, path.join(ROOT, targetRelFromRoot))
-    .replace(/\\/g, '/');
+  return urlEngine.href(targetRelFromRoot);
 }
 
 function friendlyTitle(filename) {
@@ -92,34 +92,14 @@ function shell(meta) {
     desc.replace(/"/g, '&quot;') +
     '">\n' +
     '  <meta property="og:type" content="website">\n' +
-    '  <link rel="stylesheet" href="../style.css">\n' +
+    '  <link rel="stylesheet" href="/style.css">\n' +
     '</head>\n' +
     '<body>\n' +
-    '  <header class="site-header">\n' +
-    '    <a href="../index.html" class="logo-link">\n' +
-    '      <img src="../assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36">\n' +
-    '    </a>\n' +
-    '    <nav class="nav">\n' +
-    '      <a href="../calculators/chemical-calculator.html">Chemical Calculator</a>\n' +
-    '      <a href="../calculators/pool-volume-calculator.html">Volume Calculator</a>\n' +
-    '      <a href="pool-chemistry-basics.html">Chemistry Guide</a>\n' +
-    '    </nav>\n' +
-    '  </header>\n' +
+    SITE_HEADER + '\n' +
     '  <article class="guide-content">\n' +
     body +
     '\n  </article>\n' +
-    '  <footer class="site-footer">\n' +
-    '    <nav class="footer-nav">\n' +
-    '      <a href="../calculators/pool-volume-calculator.html">Pool Volume Calculator</a>\n' +
-    '      <a href="../calculators/pool-chlorine-calculator.html">Pool Chlorine Calculator</a>\n' +
-    '      <a href="../calculators/pool-shock-calculator.html">Pool Shock Calculator</a>\n' +
-    '      <a href="../calculators/pool-ph-calculator.html">Pool pH Calculator</a>\n' +
-    '      <a href="pool-chemistry-basics.html">Pool Chemistry Guide</a>\n' +
-    '      <a href="../legal/ownership.html">Ownership</a>\n' +
-    '      <a href="../legal/legal.html">Legal</a>\n' +
-    '    </nav>\n' +
-    '    <p class="footer-copy">&copy; WaterBalanceTools.com</p>\n' +
-    '  </footer>\n' +
+    SITE_FOOTER + '\n' +
     '</body>\n' +
     '</html>\n';
   fs.writeFileSync(outPath, html, 'utf8');
@@ -157,7 +137,7 @@ function main() {
       '    <ul class="ring-links hub-silo-list">\n' +
       listCh +
       '\n    </ul>\n' +
-      '    <p><a href="pool-chemistry-basics.html">← Pool chemistry basics</a></p>'
+      '    <p><a href="' + urlEngine.href('/guides/pool-chemistry-basics') + '">← Pool chemistry basics</a></p>'
   });
 
   const listPh = linksForSilo(pool, 'ph');
@@ -183,7 +163,7 @@ function main() {
       '    <ul class="ring-links hub-silo-list">\n' +
       listPh +
       '\n    </ul>\n' +
-      '    <p><a href="pool-chemistry-basics.html">← Pool chemistry basics</a></p>'
+      '    <p><a href="' + urlEngine.href('/guides/pool-chemistry-basics') + '">← Pool chemistry basics</a></p>'
   });
 
   const listAlk = linksForSilo(pool, 'alkalinity');
@@ -209,7 +189,7 @@ function main() {
       '    <ul class="ring-links hub-silo-list">\n' +
       listAlk +
       '\n    </ul>\n' +
-      '    <p><a href="pool-chemistry-basics.html">← Pool chemistry basics</a></p>'
+      '    <p><a href="' + urlEngine.href('/guides/pool-chemistry-basics') + '">← Pool chemistry basics</a></p>'
   });
 
   const listHt = linksForSilo(pool, 'hotTubs');
@@ -233,7 +213,7 @@ function main() {
       '    <ul class="ring-links hub-silo-list">\n' +
       listHt +
       '\n    </ul>\n' +
-      '    <p><a href="pool-chemistry-basics.html">← Pool chemistry basics</a></p>'
+      '    <p><a href="' + urlEngine.href('/guides/pool-chemistry-basics') + '">← Pool chemistry basics</a></p>'
   });
 
   console.log('generate-hub-pages: wrote chlorine-guide, ph-guide, alkalinity-guide, hot-tub-chemistry');

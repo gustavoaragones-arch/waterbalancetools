@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-06-29T14:42:12.137Z",
+  "auditedGenerators": 10,
+  "perFile": {
+    "generate-academy.js": {
+      "relativeHrefPatterns": 0,
+      "duplicatedPathJoinHints": 0,
+      "parentTraversal": 0,
+      "duplicateSlashes": 0,
+      "hardcodedHtmlLinks": 8,
+      "hardcodedIndexHtml": 7
+    },
+    "generate-reference.js": {
+      "relativeHrefPatterns": 0,
+      "duplicatedPathJoinHints": 0,
+      "parentTraversal": 0,
+      "duplicateSlashes": 0,
+      "hardcodedHtmlLinks": 8,
+      "hardcodedIndexHtml": 4
+    },
+    "generate-navigation.js": {
+      "relativeHrefPatterns": 0,
+      "duplicatedPathJoinHints": 0,
+      "parentTraversal": 0,
+      "duplicateSlashes": 0,
+      "hardcodedHtmlLinks": 1,
+      "hardcodedIndexHtml": 0
+    },
+    "template-utils.js": {
+      "relativeHrefPatterns": 0,
+      "duplicatedPathJoinHints": 0,
+      "parentTraversal": 0,
+      "duplicateSlashes": 0,
+      "hardcodedHtmlLinks": 1,
+      "hardcodedIndexHtml": 0
+    },
+    "generate-entities.js": {
+      "relativeHrefPatterns": 0,
+      "duplicatedPathJoinHints": 0,
+      "parentTraversal": 0,
+      "duplicateSlashes": 0,
+      "hardcodedHtmlLinks": 0,
+      "hardcodedIndexHtml": 0
+    },
+    "generate-entity-pages.js": {
+      "relativeHrefPatterns": 0,
+      "duplicatedPathJoinHints": 0,
+      "parentTraversal": 0,
+      "duplicateSlashes": 0,
+      "hardcodedHtmlLinks": 5,
+      "hardcodedIndexHtml": 4
+    },
+    "generate-resource-pages.js": {
+      "relativeHrefPatterns": 4,
+      "duplicatedPathJoinHints": 0,
+      "parentTraversal": 2,
+      "duplicateSlashes": 0,
+      "hardcodedHtmlLinks": 4,
+      "hardcodedIndexHtml": 3
+    },
+    "generate-formulas.js": {
+      "relativeHrefPatterns": 0,
+      "duplicatedPathJoinHints": 0,
+      "parentTraversal": 0,
+      "duplicateSlashes": 0,
+      "hardcodedHtmlLinks": 6,
+      "hardcodedIndexHtml": 3
+    },
+    "generate-glossary.js": {
+      "relativeHrefPatterns": 0,
+      "duplicatedPathJoinHints": 0,
+      "parentTraversal": 0,
+      "duplicateSlashes": 0,
+      "hardcodedHtmlLinks": 6,
+      "hardcodedIndexHtml": 3
+    },
+    "generate-sitemaps.js": {
+      "relativeHrefPatterns": 0,
+      "duplicatedPathJoinHints": 0,
+      "parentTraversal": 0,
+      "duplicateSlashes": 0,
+      "hardcodedHtmlLinks": 3,
+      "hardcodedIndexHtml": 1
+    }
+  },
+  "historyEvidence": {
+    "calculators/calculators/": [
+      "64f4c68 feat(phase-5.4a): broken internal link audit + normaliseInternalUrl helper"
+    ],
+    "legal/guides/": [],
+    "guides/tools/": [],
+    "tools/charts/": [],
+    "index.html links": [
+      "e8ca770 Phase 5B.6/5B.7: certify QA and add semantic release versioning.",
+      "e9ffa56 Fix global header and spacing regressions across generated pages.",
+      "29962c6 Phase 5B — Scientific Authority System",
+      "e1c1f91 Phase 5A.75 — Canonical Data Layer",
+      "634f51d Phase 5A.5 — Entity Layer: Canonical Domain Knowledge Graph",
+      "f4c4758 Phase 5A Part 1 — Knowledge Platform Architecture",
+      "28d66a6 UX polish pass (P1–P8): result card, /resources/ hub, nav, SVG icons, counts",
+      "bb4d5f0 feat(phase-7): entity expansion + AI search optimization — 20 new pages",
+      "2e93c6f feat(phase-6): topical authority expansion — 20 new pages + cluster rings",
+      "4b4275d Crawl hub, sitemap tiers, link matrix + hub, pipeline order, styles",
+      "a3fd5b7 Add last-updated inject, deepen programmatic pages, SEO scripts",
+      "53afdc7 feat: depth guides, SERP linking, authority on guides, AdSense placeholders",
+      "f1e5a04 Phase 2–4: SEO calculators, programmatic pages, authority content"
+    ]
+  }
+}

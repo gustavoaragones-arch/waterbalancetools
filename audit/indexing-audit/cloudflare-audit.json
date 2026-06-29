@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-06-29T14:42:12.227Z",
+  "repositoryEvidence": {
+    "hasRedirectConfig": true,
+    "hasHeadersConfig": false,
+    "hasMiddleware": true,
+    "redirectRuleCount": 22,
+    "hasAlwaysHttpsHint": false
+  },
+  "dashboardOnlyChecks": [
+    "Email Obfuscation",
+    "Automatic HTTPS Rewrites",
+    "Always Use HTTPS",
+    "Trailing Slash setting",
+    "Caching/Page Rules",
+    "Custom 404 behavior in Cloudflare dashboard"
+  ],
+  "limitations": [
+    "Cloudflare dashboard settings are not available in repository-only audit.",
+    "This audit confirms deploy artifacts and config files only."
+  ]
+}

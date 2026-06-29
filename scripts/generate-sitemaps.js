@@ -26,9 +26,9 @@
 const fs   = require('fs');
 const path = require('path');
 const { isLegacyProgrammaticChlorine } = require('./redirect-rules');
+const urlEngine = require('../js/url/url-engine');
 
 const ROOT     = path.join(__dirname, '..');
-const BASE_URL = 'https://waterbalancetools.com';
 
 // ── Priorities & change-frequencies per category ─────────────────────────────
 
@@ -70,7 +70,7 @@ function walk(dir, out = []) {
 }
 
 function toCleanPath(rel) {
-  return rel.replace(/\.html$/i, '').replace(/\/index$/i, '') || '';
+  return urlEngine.buildUrl(rel);
 }
 
 function getCategory(cleanPath) {
@@ -90,7 +90,7 @@ function getCategory(cleanPath) {
 const TODAY = new Date().toISOString().slice(0, 10);
 
 function urlEntry(cleanPath, prio) {
-  const url = cleanPath ? `${BASE_URL}/${cleanPath}` : BASE_URL;
+  const url = urlEngine.sitemapUrl(cleanPath || '/');
   return `  <url>
     <loc>${url}</loc>
     <lastmod>${TODAY}</lastmod>
@@ -107,7 +107,7 @@ function buildSitemap(entries) {
 
 function buildIndex(sitemapNames) {
   const items = sitemapNames.map(n =>
-    `  <sitemap>\n    <loc>${BASE_URL}/${n}</loc>\n    <lastmod>${TODAY}</lastmod>\n  </sitemap>`
+    `  <sitemap>\n    <loc>${urlEngine.absoluteUrl(n)}</loc>\n    <lastmod>${TODAY}</lastmod>\n  </sitemap>`
   ).join('\n');
   return '<?xml version="1.0" encoding="UTF-8"?>\n' +
     '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
@@ -123,12 +123,12 @@ const groups = {
 };
 
 // Homepage first
-groups.calculators.unshift(urlEntry('', { priority: '1.0', changefreq: 'weekly' }));
+groups.calculators.unshift(urlEntry('/', { priority: '1.0', changefreq: 'weekly' }));
 
 for (const rel of files) {
   const cleanPath = toCleanPath(rel);
   if (!cleanPath && cleanPath !== '') continue;
-  const cat = cleanPath === '' ? 'calculators' : getCategory(cleanPath);
+  const cat = cleanPath === '/' ? 'calculators' : getCategory(cleanPath.replace(/^\//, ''));
   const prio = PRIORITIES[cat] || PRIORITIES.other;
   const group = groups[cat] || groups.other;
   group.push(urlEntry(cleanPath, prio));

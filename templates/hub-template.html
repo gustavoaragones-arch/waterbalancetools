@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{PAGE_TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <meta property="og:title" content="{{OG_TITLE}}">
+  <meta property="og:description" content="{{OG_DESCRIPTION}}">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{OG_TITLE}}">
+  <meta name="twitter:description" content="{{OG_DESCRIPTION}}">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/knowledge.css">
+  {{BREADCRUMB_SCHEMA}}
+  {{HUB_SCHEMA}}
+</head>
+<body class="knowledge-page hub-page" data-hub-page="true" data-hub-path="{{HUB_PATH}}">
+{{SITE_HEADER}}
+{{BREADCRUMB_NAV}}
+  <main class="container">
+    <section class="knowledge-hub-hero">
+      <span class="knowledge-badge">{{HUB_BADGE}}</span>
+      <h1>{{HERO_TITLE}}</h1>
+      <p>{{HERO_DESCRIPTION}}</p>
+      <p class="hub-meta">Reading time: {{READING_TIME}} · Last updated: {{LAST_UPDATED}}</p>
+      <div class="platform-version-badge">{{VERSION_BADGE}}</div>
+    </section>
+
+    <section id="section-description">
+      <h2>Section Description</h2>
+      <p>{{SECTION_DESCRIPTION}}</p>
+    </section>
+
+    <section id="featured-content">
+      <h2>Featured Content</h2>
+      <div class="knowledge-grid knowledge-grid--2col">
+{{FEATURED_CONTENT}}
+      </div>
+    </section>
+
+    <section id="category-cards">
+      <h2>Category Cards</h2>
+      <div class="knowledge-grid knowledge-grid--2col">
+{{CATEGORY_CARDS}}
+      </div>
+    </section>
+
+    <section id="popular-calculators">
+      <h2>Popular Calculators</h2>
+      <ul class="ring-links">
+{{POPULAR_CALCULATORS}}
+      </ul>
+    </section>
+
+    <section id="popular-resources">
+      <h2>Popular Resources</h2>
+      <ul class="ring-links">
+{{POPULAR_RESOURCES}}
+      </ul>
+    </section>
+
+    <section id="related-knowledge">
+      <h2>Related Knowledge</h2>
+      <ul class="ring-links">
+{{RELATED_KNOWLEDGE}}
+      </ul>
+    </section>
+
+    <section id="related-entities">
+      <h2>Related Entities</h2>
+      <ul class="ring-links">
+{{RELATED_ENTITIES}}
+      </ul>
+    </section>
+
+    <section id="recently-updated">
+      <h2>Recently Updated</h2>
+      <ul class="ring-links">
+{{RECENTLY_UPDATED}}
+      </ul>
+    </section>
+  </main>
+{{SITE_FOOTER}}
+</body>
+</html>

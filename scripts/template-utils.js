@@ -10,8 +10,33 @@
 
 const fs   = require('fs');
 const path = require('path');
+const urlEngine = require('../js/url/url-engine');
 
 const ROOT = path.join(__dirname, '..');
+
+function href(value) {
+  return urlEngine.href(value);
+}
+
+function buildUrl(value) {
+  return urlEngine.buildUrl(value);
+}
+
+function absoluteUrl(value) {
+  return urlEngine.absoluteUrl(value);
+}
+
+function canonicalUrl(value) {
+  return urlEngine.canonicalUrl(value);
+}
+
+function sitemapUrl(value) {
+  return urlEngine.sitemapUrl(value);
+}
+
+function joinUrl(...parts) {
+  return urlEngine.join(...parts);
+}
 
 // ── Token substitution ────────────────────────────────────────────────────────
 
@@ -47,19 +72,19 @@ function template(name) {
 // ── Canonical site-header HTML ────────────────────────────────────────────────
 
 const SITE_HEADER = `  <header class="site-header">
-    <a href="/" class="logo-link">
+    <a href="${href('/')}" class="logo-link">
       <img src="/public/logo.svg" alt="WaterBalanceTools" class="logo" width="185" height="56">
     </a>
     <nav class="nav" id="site-nav" aria-label="Primary navigation">
-      <a href="/calculators/chemical-calculator">Calculator</a>
-      <a href="/resources/">Resources</a>
-      <a href="/pool-chemical-levels-chart">Charts</a>
-      <a href="/academy/">Academy</a>
-      <a href="/guides/pool-chemistry-basics">Guides</a>
-      <a href="/about/">About</a>
+      <a href="${href('/calculators/chemical-calculator')}">Calculator</a>
+      <a href="${href('/resources')}">Resources</a>
+      <a href="${href('/pool-chemical-levels-chart')}">Charts</a>
+      <a href="${href('/academy')}">Academy</a>
+      <a href="${href('/guides/pool-chemistry-basics')}">Guides</a>
+      <a href="${href('/about')}">About</a>
     </nav>
     <div class="nav-end">
-      <a href="/search/" class="nav-search" aria-label="Search site">
+      <a href="${href('/search')}" class="nav-search" aria-label="Search site">
         <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
       </a>
       <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
@@ -72,15 +97,15 @@ const SITE_HEADER = `  <header class="site-header">
 
 const SITE_FOOTER = `  <footer class="site-footer">
     <nav class="footer-nav">
-      <a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a>
-      <a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a>
-      <a href="/calculators/pool-shock-calculator">Pool Shock Calculator</a>
-      <a href="/calculators/pool-ph-calculator">Pool pH Calculator</a>
-      <a href="/pool-chemical-levels-chart">Pool Chemical Levels Chart</a>
-      <a href="/guides/pool-chemistry-basics">Pool Chemistry Guide</a>
-      <a href="/all-pages">All Pages</a>
-      <a href="/legal/ownership">Ownership</a>
-      <a href="/legal/legal">Legal</a>
+      <a href="${href('/calculators/pool-volume-calculator')}">Pool Volume Calculator</a>
+      <a href="${href('/calculators/pool-chlorine-calculator')}">Pool Chlorine Calculator</a>
+      <a href="${href('/calculators/pool-shock-calculator')}">Pool Shock Calculator</a>
+      <a href="${href('/calculators/pool-ph-calculator')}">Pool pH Calculator</a>
+      <a href="${href('/pool-chemical-levels-chart')}">Pool Chemical Levels Chart</a>
+      <a href="${href('/guides/pool-chemistry-basics')}">Pool Chemistry Guide</a>
+      <a href="${href('/all-pages')}">All Pages</a>
+      <a href="${href('/legal/ownership')}">Ownership</a>
+      <a href="${href('/legal/legal')}">Legal</a>
     </nav>
     <p class="footer-copy">&copy; 2026 Albor Digital LLC. All rights reserved.</p>
     <p class="footer-note">WaterBalanceTools.com is an independent educational website owned and operated by Albor Digital LLC.</p>
@@ -119,23 +144,24 @@ const DIR_LABELS = {
  * @param {string} pageTitle  - human-readable title of the leaf page
  */
 function buildBreadcrumb(cleanPath, pageTitle) {
-  const segments = cleanPath.replace(/\/$/, '').split('/').filter(Boolean);
+  const normalizedPath = buildUrl(cleanPath || '/');
+  const segments = normalizedPath.replace(/^\//, '').split('/').filter(Boolean);
   if (!segments.length) return '';
 
-  const crumbs = [{ href: '/', label: 'Home' }];
+  const crumbs = [{ href: href('/'), label: 'Home' }];
   let cumulative = '';
   for (let i = 0; i < segments.length - 1; i++) {
     cumulative += (i === 0 ? '' : '/') + segments[i];
     const check = i > 0 ? cumulative : segments[i];
     const label = DIR_LABELS[check] || DIR_LABELS[segments[i]] || titleCase(segments[i]);
-    crumbs.push({ href: '/' + cumulative + '/', label });
+    crumbs.push({ href: href(cumulative), label });
   }
   // Leaf — current page
   crumbs.push({ href: null, label: pageTitle });
 
   const schemaItems = crumbs.map((c, idx) =>
     `      {"@type":"ListItem","position":${idx + 1},"name":"${esc(c.label)}"` +
-    (c.href ? `,"item":"https://waterbalancetools.com${c.href === '/' ? '' : c.href}"` : '') +
+    (c.href ? `,"item":"${canonicalUrl(c.href)}"` : '') +
     '}'
   ).join(',\n');
 
@@ -178,9 +204,10 @@ function renderCards(items, maxItems = 6) {
  */
 function renderSidebarLinks(hrefs, navPages) {
   return (hrefs || []).map(href => {
-    const entry = navPages.find(p => p.url === href || '/' + p.url === href);
-    const label = entry ? entry.title : titleCase(href.split('/').pop().replace(/-/g, ' '));
-    return `<li><a href="${href}">${esc(label)}</a></li>`;
+    const normalizedHref = buildUrl(href);
+    const entry = navPages.find(p => p.url === normalizedHref);
+    const label = entry ? entry.title : titleCase(normalizedHref.split('/').pop().replace(/-/g, ' '));
+    return `<li><a href="${normalizedHref}">${esc(label)}</a></li>`;
   }).join('\n');
 }
 
@@ -338,9 +365,9 @@ function buildTermContent(term) {
 
   // Related article links
   const relatedItems = [
-    ...(term.relatedCalculators || []).map(href => ({ href, label: titleCase(href.split('/').pop()) })),
-    ...(term.relatedArticles || []).map(slug => ({ href: '/' + slug, label: titleCase(slug.split('/').pop()) })),
-    ...(term.relatedFormulas || []).map(slug => ({ href: '/' + slug, label: titleCase(slug.split('/').pop()) })),
+    ...(term.relatedCalculators || []).map(link => ({ href: href(link), label: titleCase(href(link).split('/').pop()) })),
+    ...(term.relatedArticles || []).map(slug => ({ href: href(slug), label: titleCase(href(slug).split('/').pop()) })),
+    ...(term.relatedFormulas || []).map(slug => ({ href: href(slug), label: titleCase(href(slug).split('/').pop()) })),
   ];
   if (relatedItems.length > 0) {
     const cards = relatedItems.slice(0, 6).map(item =>
@@ -387,8 +414,10 @@ function buildRefContent(page) {
   // Related
   const relCalcs = (page.relatedCalculators || []);
   if (relCalcs.length > 0) {
-    const cards = relCalcs.map(href =>
-      `<a href="${href}" class="knowledge-card"><div class="knowledge-card-title">${esc(titleCase(href.split('/').pop()))}</div></a>`
+    const cards = relCalcs.map(link => {
+      const normalizedHref = href(link);
+      return `<a href="${normalizedHref}" class="knowledge-card"><div class="knowledge-card-title">${esc(titleCase(normalizedHref.split('/').pop()))}</div></a>`;
+    }
     ).join('\n');
     html += `<section class="related-calculators">\n<h2>Related Calculators</h2>\n<div class="related-calcs-cards">\n${cards}\n</div>\n</section>\n\n`;
   }
@@ -405,9 +434,9 @@ function buildRefContent(page) {
  */
 function buildRelatedTools(article) {
   const all = [
-    ...(article.relatedCalculators || []).map(href => ({ href, label: titleCase(href.split('/').pop()) })),
-    ...(article.relatedCharts || []).map(href => ({ href, label: titleCase(href.split('/').pop()) })),
-    ...(article.relatedResources || []).map(href => ({ href, label: titleCase(href.split('/').pop()) })),
+    ...(article.relatedCalculators || []).map(link => ({ href: href(link), label: titleCase(href(link).split('/').pop()) })),
+    ...(article.relatedCharts || []).map(link => ({ href: href(link), label: titleCase(href(link).split('/').pop()) })),
+    ...(article.relatedResources || []).map(link => ({ href: href(link), label: titleCase(href(link).split('/').pop()) })),
   ];
   if (all.length === 0) return '';
   const cards = all.slice(0, 6).map(item =>
@@ -424,11 +453,11 @@ function buildRelatedTools(article) {
 function buildRelatedTopics(slugs, allArticles) {
   if (!slugs || slugs.length === 0) return '';
   const cards = slugs.slice(0, 6).map(slug => {
-    const href = '/' + slug;
+    const topicHref = href(slug);
     const art = (allArticles || []).find(a => a.slug === slug);
     const label = art ? art.title : titleCase(slug.split('/').pop());
     const desc = art ? ((art.summary || '').split('.')[0] + '.') : '';
-    return `<a href="${href}" class="knowledge-card">` +
+    return `<a href="${topicHref}" class="knowledge-card">` +
       `<div class="knowledge-card-title">${esc(label)}</div>` +
       (desc ? `<p class="knowledge-card-desc">${esc(desc)}</p>` : '') +
       `</a>`;
@@ -447,11 +476,13 @@ function buildAcademySidebar(article, categoryArticles) {
 
   const catLinks = (categoryArticles || []).slice(0, 8).map(a => {
     const active = a.slug === article.slug;
-    return `<li><a href="/${a.slug}"${active ? ' class="active"' : ''}>${esc(a.title)}</a></li>`;
+    return `<li><a href="${href(a.slug)}"${active ? ' class="active"' : ''}>${esc(a.title)}</a></li>`;
   }).join('\n');
 
-  const calcLinks = (article.relatedCalculators || []).slice(0, 4).map(href =>
-    `<li><a href="${href}">${esc(titleCase(href.split('/').pop()))}</a></li>`
+  const calcLinks = (article.relatedCalculators || []).slice(0, 4).map(link => {
+    const normalizedHref = href(link);
+    return `<li><a href="${normalizedHref}">${esc(titleCase(normalizedHref.split('/').pop()))}</a></li>`;
+  }
   ).join('\n');
 
   return `<aside class="knowledge-sidebar">` +
@@ -491,4 +522,10 @@ module.exports = {
   walkHtml,
   writeFile,
   ROOT,
+  href,
+  buildUrl,
+  absoluteUrl,
+  canonicalUrl,
+  sitemapUrl,
+  joinUrl,
 };

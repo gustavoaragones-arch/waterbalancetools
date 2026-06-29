@@ -16,7 +16,7 @@
 const fs   = require('fs');
 const path = require('path');
 const {
-  buildBreadcrumb, walkHtml, ROOT, titleCase,
+  buildBreadcrumb, walkHtml, ROOT, titleCase, buildUrl,
 } = require('./template-utils');
 
 // ── Page title extractor ──────────────────────────────────────────────────────
@@ -63,7 +63,7 @@ for (const fullPath of walkHtml(ROOT)) {
   if (html.includes('class="breadcrumb"')) { skipped++; continue; }
 
   // Determine URL path from file path
-  const cleanPath = relPath.replace(/\.html$/, '').replace(/\/index$/, '');
+  const cleanPath = buildUrl(relPath);
   const segments = cleanPath.split('/').filter(Boolean);
 
   // Skip homepage root explicitly

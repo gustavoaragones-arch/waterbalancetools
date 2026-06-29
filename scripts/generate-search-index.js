@@ -15,7 +15,7 @@
 
 const fs   = require('fs');
 const path = require('path');
-const { ROOT, walkHtml } = require('./template-utils');
+const { ROOT, buildUrl } = require('./template-utils');
 
 const DATA_DIR = path.join(ROOT, 'data');
 
@@ -55,7 +55,7 @@ function extractH1(html) {
 }
 
 function toCleanUrl(relPath) {
-  return '/' + relPath.replace(/\.html$/i, '').replace(/\/index$/i, '');
+  return buildUrl(relPath);
 }
 
 function urlToCategory(url) {
@@ -166,7 +166,7 @@ if (fs.existsSync(DATASETS_DIR)) {
     if (!fs.existsSync(fp)) return;
     let ds;
     try { ds = JSON.parse(fs.readFileSync(fp, 'utf8')); } catch (_) { return; }
-    const url = `/reference/datasets/${name}`;
+    const url = buildUrl(`/reference/datasets/${name}`);
     if (!seen.has(url)) {
       seen.add(url);
       const recordCount = ds.records ? ds.records.length : 0;

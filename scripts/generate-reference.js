@@ -16,7 +16,7 @@ const fs   = require('fs');
 const path = require('path');
 const {
   fill, template, partial, SITE_HEADER, SITE_FOOTER, esc,
-  buildBreadcrumb, buildRefContent, writeFile, ROOT,
+  buildBreadcrumb, buildRefContent, writeFile, ROOT, href, canonicalUrl, buildUrl,
 } = require('./template-utils');
 
 const data = require(path.join(ROOT, 'data', 'reference.json'));
@@ -29,10 +29,10 @@ function existingRefPages() {
   return fs.readdirSync(REF_DIR)
     .filter(f => f.endsWith('.html') && f !== 'index.html')
     .map(f => {
-      const slug = f.replace(/\.html$/, '');
+      const slug = path.parse(f).name;
       const title = slug.replace(/-/g, ' ')
         .replace(/\b[a-z]/g, c => c.toUpperCase());
-      return { href: `/reference/${slug}`, label: title };
+      return { href: href(`/reference/${slug}`), label: title };
     });
 }
 
@@ -43,7 +43,7 @@ function generateHub() {
   const newPages = data.pages || [];
   const allPages = [
     ...existing,
-    ...newPages.map(p => ({ href: `/${p.slug}`, label: p.title })),
+    ...newPages.map(p => ({ href: href(p.slug), label: p.title })),
   ];
 
   const refCards = allPages.length > 0
@@ -53,7 +53,7 @@ function generateHub() {
       </a>`).join('\n')
     : `      <div class="knowledge-callout">
         <span class="knowledge-callout-icon">&#128197;</span>
-        <div><strong>Reference pages are coming.</strong> Use the <a href="/reference/pool-chemistry-reference">Pool Chemistry Reference</a> to get started.</div>
+        <div><strong>Reference pages are coming.</strong> Use the <a href="${href('/reference/pool-chemistry-reference')}">Pool Chemistry Reference</a> to get started.</div>
       </div>`;
 
   const bc = buildBreadcrumb('reference', 'Reference');
@@ -62,7 +62,7 @@ function generateHub() {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://waterbalancetools.com/reference/">
+  <link rel="canonical" href="${canonicalUrl('/reference')}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pool Chemistry Reference | WaterBalanceTools</title>
   <meta name="description" content="Reference tables, target ranges, and chemical data for pool and hot tub water chemistry. Ideal ranges for chlorine, pH, alkalinity, hardness, and CYA.">
@@ -89,10 +89,10 @@ ${refCards}
     <section class="link-matrix">
       <h3>Related</h3>
       <ul>
-        <li><a href="/academy/">Chemistry Academy</a></li>
-        <li><a href="/formulas/">Formula Library</a></li>
-        <li><a href="/glossary/">Glossary</a></li>
-        <li><a href="/calculators/chemical-calculator">Pool Chemical Calculator</a></li>
+        <li><a href="${href('/academy')}">Chemistry Academy</a></li>
+        <li><a href="${href('/formulas')}">Formula Library</a></li>
+        <li><a href="${href('/glossary')}">Glossary</a></li>
+        <li><a href="${href('/calculators/chemical-calculator')}">Pool Chemical Calculator</a></li>
       </ul>
     </section>
   </main>
@@ -106,7 +106,7 @@ ${SITE_FOOTER}
 
 function generateRefPage(page) {
   const tpl = template('reference-template.html');
-  const bc = buildBreadcrumb(page.slug, page.title);
+  const bc = buildBreadcrumb(buildUrl(page.slug), page.title);
 
   return fill(tpl, {
     SLUG:              page.slug,

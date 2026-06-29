@@ -1,0 +1,130 @@
+{
+  "generatedAt": "2026-06-29T14:43:47.101Z",
+  "testPaths": [
+    "/",
+    "/index.html",
+    "/pool-chemical-levels-chart",
+    "/pool-chemical-levels-chart/",
+    "/pool-chemical-levels-chart.html",
+    "/Pool-chemical-levels-chart",
+    "/pool-chemical-levels-chart?utm=test"
+  ],
+  "results": {
+    "localhost": [
+      {
+        "input": "/",
+        "statusCode": 200,
+        "redirectUrl": null,
+        "finalUrl": "http://localhost:8080/",
+        "canonical": "https://waterbalancetools.com/",
+        "error": null
+      },
+      {
+        "input": "/index.html",
+        "statusCode": 200,
+        "redirectUrl": null,
+        "finalUrl": "http://localhost:8080/index.html",
+        "canonical": "https://waterbalancetools.com/",
+        "error": null
+      },
+      {
+        "input": "/pool-chemical-levels-chart",
+        "statusCode": 404,
+        "redirectUrl": null,
+        "finalUrl": "http://localhost:8080/pool-chemical-levels-chart",
+        "canonical": null,
+        "error": null
+      },
+      {
+        "input": "/pool-chemical-levels-chart/",
+        "statusCode": 404,
+        "redirectUrl": null,
+        "finalUrl": "http://localhost:8080/pool-chemical-levels-chart/",
+        "canonical": null,
+        "error": null
+      },
+      {
+        "input": "/pool-chemical-levels-chart.html",
+        "statusCode": 200,
+        "redirectUrl": null,
+        "finalUrl": "http://localhost:8080/pool-chemical-levels-chart.html",
+        "canonical": "https://waterbalancetools.com/pool-chemical-levels-chart",
+        "error": null
+      },
+      {
+        "input": "/Pool-chemical-levels-chart",
+        "statusCode": 404,
+        "redirectUrl": null,
+        "finalUrl": "http://localhost:8080/Pool-chemical-levels-chart",
+        "canonical": null,
+        "error": null
+      },
+      {
+        "input": "/pool-chemical-levels-chart?utm=test",
+        "statusCode": 404,
+        "redirectUrl": null,
+        "finalUrl": "http://localhost:8080/pool-chemical-levels-chart?utm=test",
+        "canonical": null,
+        "error": null
+      }
+    ],
+    "production": [
+      {
+        "input": "/",
+        "statusCode": 200,
+        "redirectUrl": null,
+        "finalUrl": "https://waterbalancetools.com/",
+        "canonical": "https://waterbalancetools.com/",
+        "error": null
+      },
+      {
+        "input": "/index.html",
+        "statusCode": 200,
+        "redirectUrl": null,
+        "finalUrl": "https://waterbalancetools.com/",
+        "canonical": "https://waterbalancetools.com/",
+        "error": null
+      },
+      {
+        "input": "/pool-chemical-levels-chart",
+        "statusCode": 200,
+        "redirectUrl": null,
+        "finalUrl": "https://waterbalancetools.com/pool-chemical-levels-chart",
+        "canonical": "https://waterbalancetools.com/pool-chemical-levels-chart",
+        "error": null
+      },
+      {
+        "input": "/pool-chemical-levels-chart/",
+        "statusCode": 200,
+        "redirectUrl": null,
+        "finalUrl": "https://waterbalancetools.com/pool-chemical-levels-chart",
+        "canonical": "https://waterbalancetools.com/pool-chemical-levels-chart",
+        "error": null
+      },
+      {
+        "input": "/pool-chemical-levels-chart.html",
+        "statusCode": 200,
+        "redirectUrl": null,
+        "finalUrl": "https://waterbalancetools.com/pool-chemical-levels-chart",
+        "canonical": "https://waterbalancetools.com/pool-chemical-levels-chart",
+        "error": null
+      },
+      {
+        "input": "/Pool-chemical-levels-chart",
+        "statusCode": 404,
+        "redirectUrl": null,
+        "finalUrl": "https://waterbalancetools.com/Pool-chemical-levels-chart",
+        "canonical": "https://waterbalancetools.com/404",
+        "error": null
+      },
+      {
+        "input": "/pool-chemical-levels-chart?utm=test",
+        "statusCode": 200,
+        "redirectUrl": null,
+        "finalUrl": "https://waterbalancetools.com/pool-chemical-levels-chart?utm=test",
+        "canonical": "https://waterbalancetools.com/pool-chemical-levels-chart",
+        "error": null
+      }
+    ]
+  }
+}

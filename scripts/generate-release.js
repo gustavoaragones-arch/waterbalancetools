@@ -3,6 +3,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const urlEngine = require('../js/url/url-engine');
 
 const ROOT = path.join(__dirname, '..');
 const PLATFORM_DIR = path.join(ROOT, 'data', 'platform');
@@ -42,8 +43,36 @@ function list(items) {
   return `<ul>${items.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>`;
 }
 
+function countHtmlRecursive(dir) {
+  if (!fs.existsSync(dir)) return 0;
+  let total = 0;
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, e.name);
+    if (e.isDirectory()) total += countHtmlRecursive(full);
+    else if (e.isFile() && e.name.endsWith('.html')) total++;
+  }
+  return total;
+}
+
+function foundationStats() {
+  const entities = Object.keys(readJson(path.join(ROOT, 'data', 'graph', 'entity-index.json'), {})).length;
+  const datasets = fs.existsSync(path.join(ROOT, 'data', 'datasets'))
+    ? fs.readdirSync(path.join(ROOT, 'data', 'datasets')).filter((f) => f.endsWith('.json') && f !== 'resolved-ranges.json').length
+    : 0;
+  return {
+    totalPages: countHtmlRecursive(ROOT),
+    totalEntities: entities,
+    totalDatasets: datasets,
+    totalFormulas: Math.max(0, countHtmlRecursive(path.join(ROOT, 'formulas')) - 1),
+    totalGlossaryEntries: Math.max(0, countHtmlRecursive(path.join(ROOT, 'glossary')) - 1),
+    totalAcademyArticles: Math.max(0, countHtmlRecursive(path.join(ROOT, 'academy')) - 9),
+    totalReferencePages: Math.max(0, countHtmlRecursive(path.join(ROOT, 'reference')) - 1),
+  };
+}
+
 function renderReleasePage(template, release, platform) {
   const title = `Release ${release.version}${release.codename ? ` — ${release.codename}` : ''}`;
+  const stats = foundationStats();
   const content = `
   <section class="hero hero-compact">
     <h1>${esc(title)}</h1>
@@ -77,19 +106,43 @@ function renderReleasePage(template, release, platform) {
   <section><h2>Formulas Changed</h2>${list(release.formulasChanged)}</section>
   <section><h2>Related Commits</h2>${list(release.relatedCommits)}</section>
 
+  <section>
+    <h2>Foundation Architecture Summary</h2>
+    <table class="qa-table">
+      <tbody>
+        <tr><td>Platform overview</td><td>Canonical dataset, entity graph, trust, URL, QA, and crawl systems integrated.</td></tr>
+        <tr><td>Foundation milestones</td><td>Certification, URL normalization, crawl topology, indexing intelligence.</td></tr>
+        <tr><td>Architecture summary</td><td>Static generated platform with single source-of-truth data and deterministic generators.</td></tr>
+        <tr><td>QA certification</td><td>${esc(String(release.qaScore ?? platform.platform?.qaScore ?? 'N/A'))}/100</td></tr>
+        <tr><td>Crawl optimization summary</td><td>Priority/tier assignment, weighted authority flow, crawl-depth and weak-page audits.</td></tr>
+        <tr><td>URL architecture summary</td><td>Unified URL engine with preflight validation and regression enforcement.</td></tr>
+        <tr><td>Entity graph statistics</td><td>${stats.totalEntities} entities</td></tr>
+        <tr><td>Dataset statistics</td><td>${stats.totalDatasets} datasets</td></tr>
+        <tr><td>Knowledge platform statistics</td><td>${stats.totalAcademyArticles} academy · ${stats.totalFormulas} formulas · ${stats.totalGlossaryEntries} glossary · ${stats.totalReferencePages} reference</td></tr>
+        <tr><td>Total generated pages</td><td>${stats.totalPages}</td></tr>
+        <tr><td>Total entities</td><td>${stats.totalEntities}</td></tr>
+        <tr><td>Total datasets</td><td>${stats.totalDatasets}</td></tr>
+        <tr><td>Total formulas</td><td>${stats.totalFormulas}</td></tr>
+        <tr><td>Total glossary entries</td><td>${stats.totalGlossaryEntries}</td></tr>
+        <tr><td>Total academy articles</td><td>${stats.totalAcademyArticles}</td></tr>
+        <tr><td>Total reference pages</td><td>${stats.totalReferencePages}</td></tr>
+      </tbody>
+    </table>
+  </section>
+
   <section class="link-matrix">
     <h2>Related</h2>
     <ul>
-      <li><a href="/releases/">Release History</a></li>
-      <li><a href="/releases/compatibility.html">Compatibility Matrix</a></li>
-      <li><a href="/qa/certification.html">Certification</a></li>
+      <li><a href="${urlEngine.href('/releases')}">Release History</a></li>
+      <li><a href="${urlEngine.href('/releases/compatibility')}">Compatibility Matrix</a></li>
+      <li><a href="${urlEngine.href('/qa/certification')}">Certification</a></li>
     </ul>
   </section>`;
 
   return fill(template, {
     PAGE_TITLE: `${title} | WaterBalanceTools`,
     META_DESCRIPTION: `Release notes for WaterBalanceTools ${release.version}${release.codename ? ` (${release.codename})` : ''}.`,
-    CANONICAL_URL: `https://waterbalancetools.com/releases/${release.version}.html`,
+    CANONICAL_URL: urlEngine.canonicalUrl(`/releases/${release.version}`),
     CONTENT: content,
   });
 }
@@ -102,7 +155,7 @@ function run() {
   const template = fs.readFileSync(TEMPLATE_PATH, 'utf8');
 
   const history = versions.releaseHistory || [];
-  const releaseLinks = history.map((r) => `<li><a href="/releases/${esc(r.version)}.html">${esc(r.version)}${r.codename ? ` — ${esc(r.codename)}` : ''}</a> · ${esc(r.certificationStatus || r.status || 'Unknown')}</li>`).join('\n');
+  const releaseLinks = history.map((r) => `<li><a href="${urlEngine.href(`/releases/${esc(r.version)}`)}">${esc(r.version)}${r.codename ? ` — ${esc(r.codename)}` : ''}</a> · ${esc(r.certificationStatus || r.status || 'Unknown')}</li>`).join('\n');
 
   const indexContent = `
   <section class="hero hero-compact">
@@ -117,16 +170,16 @@ function run() {
   <section class="link-matrix">
     <h2>Related</h2>
     <ul>
-      <li><a href="/releases/compatibility.html">Compatibility Matrix</a></li>
-      <li><a href="/qa/">QA Dashboard</a></li>
-      <li><a href="/revisions/">Revision History</a></li>
+      <li><a href="${urlEngine.href('/releases/compatibility')}">Compatibility Matrix</a></li>
+      <li><a href="${urlEngine.href('/qa')}">QA Dashboard</a></li>
+      <li><a href="${urlEngine.href('/revisions')}">Revision History</a></li>
     </ul>
   </section>`;
 
   fs.writeFileSync(path.join(RELEASES_DIR, 'index.html'), fill(template, {
     PAGE_TITLE: 'Releases | WaterBalanceTools',
     META_DESCRIPTION: 'Canonical WaterBalanceTools release history with semantic versions and certification status.',
-    CANONICAL_URL: 'https://waterbalancetools.com/releases/',
+    CANONICAL_URL: urlEngine.canonicalUrl('/releases'),
     CONTENT: indexContent,
   }), 'utf8');
 

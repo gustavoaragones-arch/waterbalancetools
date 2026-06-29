@@ -16,6 +16,7 @@
 
 const fs   = require('fs');
 const path = require('path');
+const urlEngine = require('../js/url/url-engine');
 
 const ROOT = path.join(__dirname, '..');
 
@@ -25,19 +26,19 @@ const SEARCH_SVG = `<svg width="18" height="18" viewBox="0 0 20 20" fill="none" 
 
 const HEADER = `  <header class="site-header" data-canonical-nav="v4">
     <div class="site-header__inner container">
-      <a href="/" class="logo-link">
+      <a href="${urlEngine.href('/')}" class="logo-link">
         <img src="/public/logo.svg" alt="WaterBalanceTools" class="logo" width="185" height="56">
       </a>
       <nav class="nav" id="site-nav" aria-label="Primary navigation">
-        <a href="/calculators/chemical-calculator">Calculator</a>
-        <a href="/resources/">Resources</a>
-        <a href="/pool-chemical-levels-chart">Charts</a>
-        <a href="/academy/">Academy</a>
-        <a href="/guides/pool-chemistry-basics">Guides</a>
-        <a href="/about/">About</a>
+        <a href="${urlEngine.href('/calculators/chemical-calculator')}">Calculator</a>
+        <a href="${urlEngine.href('/resources')}">Resources</a>
+        <a href="${urlEngine.href('/pool-chemical-levels-chart')}">Charts</a>
+        <a href="${urlEngine.href('/academy')}">Academy</a>
+        <a href="${urlEngine.href('/guides/pool-chemistry-basics')}">Guides</a>
+        <a href="${urlEngine.href('/about')}">About</a>
       </nav>
       <div class="nav-end" style="display:flex;align-items:center;gap:.5rem;">
-        <a href="/search/" class="nav-search" aria-label="Search site" style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;">
+        <a href="${urlEngine.href('/search')}" class="nav-search" aria-label="Search site" style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;">
           ${SEARCH_SVG}
         </a>
         <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">

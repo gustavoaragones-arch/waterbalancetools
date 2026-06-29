@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-06-29T14:43:01.695Z",
+  "dataSource": "Repository and generated-output evidence only (no direct GSC API export provided).",
+  "issueEstimates": {
+    "redirectedUrls": 22,
+    "urls404Risk": 178,
+    "alternateCanonicals": 0,
+    "crawledNotIndexedRisk": 68
+  },
+  "evidence": {
+    "redirectRuleCount": 22,
+    "brokenInternalLinks": 177,
+    "canonicalNonSelf": 0,
+    "sitemapMissingInBuild": 1,
+    "orphanRiskPages": 68
+  },
+  "confidence": {
+    "redirectedUrls": "High",
+    "urls404Risk": "Medium",
+    "alternateCanonicals": "High",
+    "crawledNotIndexedRisk": "Medium"
+  },
+  "limitations": [
+    "No direct Search Console issue export available in repository.",
+    "Counts are evidence-backed estimates from crawl/build artifacts."
+  ]
+}

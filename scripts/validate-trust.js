@@ -105,7 +105,7 @@ const CALC_DIR = path.join(ROOT, 'calculators');
 let calcTotal = 0, calcWithPanel = 0;
 if (fs.existsSync(CALC_DIR)) {
   for (const file of fs.readdirSync(CALC_DIR)) {
-    if (!file.endsWith('.html')) continue;
+    if (!file.endsWith('.html') || file === 'index.html') continue;
     calcTotal++;
     const html = fs.readFileSync(path.join(CALC_DIR, file), 'utf8');
     if (html.includes('<!-- trust-panel:')) calcWithPanel++;

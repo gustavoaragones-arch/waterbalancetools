@@ -7,9 +7,10 @@
 'use strict';
 const fs   = require('fs');
 const path = require('path');
+const urlEngine = require('../js/url/url-engine');
+const { SITE_HEADER, SITE_FOOTER } = require('./template-utils');
 
 const ROOT = path.join(__dirname, '..');
-const BASE = ''; // root level
 
 function esc(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -20,7 +21,7 @@ const breadcrumbSchema = JSON.stringify({
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://waterbalancetools.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Pool Chemistry System', item: 'https://waterbalancetools.com/pool-chemistry-system' }
+    { '@type': 'ListItem', position: 2, name: 'Pool Chemistry System', item: urlEngine.absoluteUrl('/pool-chemistry-system') }
   ]
 });
 
@@ -29,28 +30,21 @@ const html = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://waterbalancetools.com/pool-chemistry-system">
+  <link rel="canonical" href="${urlEngine.canonicalUrl('/pool-chemistry-system')}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Pool chemistry system: how all 8 parameters (chlorine, pH, alkalinity, CYA, calcium hardness, combined chlorine, shock, and salt) work together to keep pool water safe and clear.">
   <title>Pool Chemistry System: How All Parameters Work Together | WaterBalanceTools</title>
   <meta property="og:title" content="Pool Chemistry System | WaterBalanceTools">
   <meta property="og:description" content="How all pool chemistry parameters interact: chlorine, pH, alkalinity, CYA, calcium hardness, combined chlorine, shock, and salt.">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="${BASE}style.css">
+  <link rel="stylesheet" href="/style.css">
   <script type="application/ld+json">
   ${breadcrumbSchema}
   </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3974004697476579" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="site-header">
-    <a href="${BASE}index.html" class="logo-link"><img src="${BASE}assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36"></a>
-    <nav class="nav">
-      <a href="${BASE}calculators/chemical-calculator.html">Chemical Calculator</a>
-      <a href="${BASE}calculators/pool-volume-calculator.html">Volume Calculator</a>
-      <a href="${BASE}guides/pool-chemistry-basics.html">Chemistry Guide</a>
-    </nav>
-  </header>
+${SITE_HEADER}
   <main class="container guide-content">
     <h1>Pool Chemistry System: How All Parameters Work Together</h1>
     <section class="quick-answer">
@@ -121,54 +115,54 @@ const html = `<!DOCTYPE html>
     </table>
     <h2>All Calculators</h2>
     <ul class="ring-links">
-      <li><a href="calculators/chemical-calculator.html">Full Chemical Calculator</a></li>
-      <li><a href="calculators/pool-chlorine-calculator.html">Pool Chlorine Calculator</a></li>
-      <li><a href="calculators/pool-shock-calculator.html">Pool Shock Calculator</a></li>
-      <li><a href="calculators/pool-ph-calculator.html">Pool pH Calculator</a></li>
-      <li><a href="calculators/pool-alkalinity-calculator.html">Pool Alkalinity Calculator</a></li>
-      <li><a href="calculators/pool-cyanuric-acid-calculator.html">Pool CYA Calculator</a></li>
-      <li><a href="calculators/pool-volume-calculator.html">Pool Volume Calculator</a></li>
-      <li><a href="calculators/saltwater-pool-salt-calculator.html">Saltwater Pool Salt Calculator</a></li>
-      <li><a href="calculators/hot-tub-chlorine-calculator.html">Hot Tub Chlorine Calculator</a></li>
-      <li><a href="calculators/hot-tub-ph-calculator.html">Hot Tub pH Calculator</a></li>
-      <li><a href="calculators/hot-tub-shock-calculator.html">Hot Tub Shock Calculator</a></li>
+      <li><a href="${urlEngine.href('/calculators/chemical-calculator')}">Full Chemical Calculator</a></li>
+      <li><a href="${urlEngine.href('/calculators/pool-chlorine-calculator')}">Pool Chlorine Calculator</a></li>
+      <li><a href="${urlEngine.href('/calculators/pool-shock-calculator')}">Pool Shock Calculator</a></li>
+      <li><a href="${urlEngine.href('/calculators/pool-ph-calculator')}">Pool pH Calculator</a></li>
+      <li><a href="${urlEngine.href('/calculators/pool-alkalinity-calculator')}">Pool Alkalinity Calculator</a></li>
+      <li><a href="${urlEngine.href('/calculators/pool-cyanuric-acid-calculator')}">Pool CYA Calculator</a></li>
+      <li><a href="${urlEngine.href('/calculators/pool-volume-calculator')}">Pool Volume Calculator</a></li>
+      <li><a href="${urlEngine.href('/calculators/saltwater-pool-salt-calculator')}">Saltwater Pool Salt Calculator</a></li>
+      <li><a href="${urlEngine.href('/calculators/hot-tub-chlorine-calculator')}">Hot Tub Chlorine Calculator</a></li>
+      <li><a href="${urlEngine.href('/calculators/hot-tub-ph-calculator')}">Hot Tub pH Calculator</a></li>
+      <li><a href="${urlEngine.href('/calculators/hot-tub-shock-calculator')}">Hot Tub Shock Calculator</a></li>
     </ul>
     <h2>All Reference Pages</h2>
     <ul class="ring-links">
-      <li><a href="reference/chlorine-explained.html">Chlorine Explained</a></li>
-      <li><a href="reference/free-chlorine-explained.html">Free Chlorine Explained</a></li>
-      <li><a href="reference/combined-chlorine-explained.html">Combined Chlorine Explained</a></li>
-      <li><a href="reference/cyanuric-acid-explained.html">Cyanuric Acid Explained</a></li>
-      <li><a href="reference/total-alkalinity-explained.html">Total Alkalinity Explained</a></li>
-      <li><a href="reference/calcium-hardness-explained.html">Calcium Hardness Explained</a></li>
-      <li><a href="reference/shock-treatment-explained.html">Shock Treatment Explained</a></li>
-      <li><a href="reference/salt-water-generator-explained.html">Salt Water Generator Explained</a></li>
-      <li><a href="reference/pool-chemistry-reference.html">Pool Chemistry Reference Guide</a></li>
-      <li><a href="reference/pool-chemicals-explained.html">Pool Chemicals Explained</a></li>
+      <li><a href="${urlEngine.href('/reference/chlorine-explained')}">Chlorine Explained</a></li>
+      <li><a href="${urlEngine.href('/reference/free-chlorine-explained')}">Free Chlorine Explained</a></li>
+      <li><a href="${urlEngine.href('/reference/combined-chlorine-explained')}">Combined Chlorine Explained</a></li>
+      <li><a href="${urlEngine.href('/reference/cyanuric-acid-explained')}">Cyanuric Acid Explained</a></li>
+      <li><a href="${urlEngine.href('/reference/total-alkalinity-explained')}">Total Alkalinity Explained</a></li>
+      <li><a href="${urlEngine.href('/reference/calcium-hardness-explained')}">Calcium Hardness Explained</a></li>
+      <li><a href="${urlEngine.href('/reference/shock-treatment-explained')}">Shock Treatment Explained</a></li>
+      <li><a href="${urlEngine.href('/reference/salt-water-generator-explained')}">Salt Water Generator Explained</a></li>
+      <li><a href="${urlEngine.href('/reference/pool-chemistry-reference')}">Pool Chemistry Reference Guide</a></li>
+      <li><a href="${urlEngine.href('/reference/pool-chemicals-explained')}">Pool Chemicals Explained</a></li>
     </ul>
     <h2>All Charts</h2>
     <ul class="ring-links">
-      <li><a href="pool-chemical-levels-chart.html">Pool Chemical Levels Chart</a></li>
-      <li><a href="pool-chlorine-levels-chart.html">Pool Chlorine Levels Chart</a></li>
-      <li><a href="pool-ph-levels-chart.html">Pool pH Levels Chart</a></li>
-      <li><a href="pool-alkalinity-levels-chart.html">Pool Alkalinity Levels Chart</a></li>
-      <li><a href="pool-cya-levels-chart.html">Pool CYA Levels Chart</a></li>
-      <li><a href="hot-tub-chemical-levels-chart.html">Hot Tub Chemical Levels Chart</a></li>
-      <li><a href="hot-tub-chlorine-levels-chart.html">Hot Tub Chlorine Levels Chart</a></li>
-      <li><a href="salt-water-pool-chemical-levels-chart.html">Salt Water Pool Chemical Levels Chart</a></li>
+      <li><a href="${urlEngine.href('/pool-chemical-levels-chart')}">Pool Chemical Levels Chart</a></li>
+      <li><a href="${urlEngine.href('/pool-chlorine-levels-chart')}">Pool Chlorine Levels Chart</a></li>
+      <li><a href="${urlEngine.href('/pool-ph-levels-chart')}">Pool pH Levels Chart</a></li>
+      <li><a href="${urlEngine.href('/pool-alkalinity-levels-chart')}">Pool Alkalinity Levels Chart</a></li>
+      <li><a href="${urlEngine.href('/pool-cya-levels-chart')}">Pool CYA Levels Chart</a></li>
+      <li><a href="${urlEngine.href('/hot-tub-chemical-levels-chart')}">Hot Tub Chemical Levels Chart</a></li>
+      <li><a href="${urlEngine.href('/hot-tub-chlorine-levels-chart')}">Hot Tub Chlorine Levels Chart</a></li>
+      <li><a href="${urlEngine.href('/salt-water-pool-chemical-levels-chart')}">Salt Water Pool Chemical Levels Chart</a></li>
     </ul>
     <h2>All Guides</h2>
     <ul class="ring-links">
-      <li><a href="guides/pool-chemistry-basics.html">Pool Chemistry Basics</a></li>
-      <li><a href="guides/hot-tub-maintenance.html">Hot Tub Maintenance Guide</a></li>
-      <li><a href="guides/chlorine/free-chlorine-vs-total-chlorine.html">Free Chlorine vs Total Chlorine</a></li>
-      <li><a href="guides/chlorine/how-often-should-i-shock-my-pool.html">How Often to Shock a Pool</a></li>
-      <li><a href="guides/ph/why-pool-ph-keeps-rising.html">Why Pool pH Keeps Rising</a></li>
-      <li><a href="guides/ph/how-to-lower-pool-ph.html">How to Lower Pool pH</a></li>
-      <li><a href="guides/hot-tub/hot-tub-chlorine-too-high.html">Hot Tub Chlorine Too High</a></li>
-      <li><a href="guides/questions/why-does-pool-water-turn-cloudy.html">Why Does Pool Water Turn Cloudy</a></li>
-      <li><a href="guides/questions/why-is-my-pool-green-but-chlorine-is-high.html">Pool Green But Chlorine Is High</a></li>
-      <li><a href="guides/questions/can-you-swim-after-shocking-a-pool.html">Can You Swim After Shocking a Pool</a></li>
+      <li><a href="${urlEngine.href('/guides/pool-chemistry-basics')}">Pool Chemistry Basics</a></li>
+      <li><a href="${urlEngine.href('/guides/hot-tub-maintenance')}">Hot Tub Maintenance Guide</a></li>
+      <li><a href="${urlEngine.href('/guides/chlorine/free-chlorine-vs-total-chlorine')}">Free Chlorine vs Total Chlorine</a></li>
+      <li><a href="${urlEngine.href('/guides/chlorine/how-often-should-i-shock-my-pool')}">How Often to Shock a Pool</a></li>
+      <li><a href="${urlEngine.href('/guides/ph/why-pool-ph-keeps-rising')}">Why Pool pH Keeps Rising</a></li>
+      <li><a href="${urlEngine.href('/guides/ph/how-to-lower-pool-ph')}">How to Lower Pool pH</a></li>
+      <li><a href="${urlEngine.href('/guides/hot-tub/hot-tub-chlorine-too-high')}">Hot Tub Chlorine Too High</a></li>
+      <li><a href="${urlEngine.href('/guides/questions/why-does-pool-water-turn-cloudy')}">Why Does Pool Water Turn Cloudy</a></li>
+      <li><a href="${urlEngine.href('/guides/questions/why-is-my-pool-green-but-chlorine-is-high')}">Pool Green But Chlorine Is High</a></li>
+      <li><a href="${urlEngine.href('/guides/questions/can-you-swim-after-shocking-a-pool')}">Can You Swim After Shocking a Pool</a></li>
     </ul>
     <section class="credibility">
       <ul class="credibility-trust">
@@ -181,18 +175,7 @@ const html = `<!DOCTYPE html>
     <div class="ad ad-bottom"><!-- AdSense --></div>
     <p class="updated">Last updated: June 2026</p>
   </main>
-  <footer class="site-footer">
-    <nav class="footer-nav">
-      <a href="calculators/pool-volume-calculator.html">Pool Volume Calculator</a>
-      <a href="calculators/pool-chlorine-calculator.html">Pool Chlorine Calculator</a>
-      <a href="calculators/pool-shock-calculator.html">Pool Shock Calculator</a>
-      <a href="calculators/pool-ph-calculator.html">Pool pH Calculator</a>
-      <a href="guides/pool-chemistry-basics.html">Pool Chemistry Guide</a>
-      <a href="legal/ownership.html">Ownership</a>
-      <a href="legal/legal.html">Legal</a>
-    </nav>
-    <p class="footer-copy">&copy; WaterBalanceTools.com</p>
-  </footer>
+${SITE_FOOTER}
 </body>
 </html>`;
 

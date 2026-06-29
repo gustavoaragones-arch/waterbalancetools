@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-06-29T14:43:01.588Z",
+  "sitemapFiles": 8,
+  "sitemapEntries": 494,
+  "uniqueEntries": 494,
+  "duplicates": 0,
+  "withHtml": 0,
+  "withIndex": 0,
+  "withParams": 0,
+  "invalidBase": 0,
+  "redirectCandidates": 0,
+  "missingFromSitemap": 0,
+  "missingInBuild": 1,
+  "samples": {
+    "duplicates": [],
+    "withHtml": [],
+    "missingFromSitemap": [],
+    "missingInBuild": [
+      "/index"
+    ],
+    "redirectCandidates": []
+  }
+}

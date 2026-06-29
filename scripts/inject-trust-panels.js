@@ -17,6 +17,7 @@
 
 const fs   = require('fs');
 const path = require('path');
+const urlEngine = require('../js/url/url-engine');
 
 const ROOT    = path.join(__dirname, '..');
 const TRUST   = path.join(ROOT, 'data', 'trust');
@@ -44,6 +45,7 @@ const KG_VERSION = version.knowledgeGraphVersion || version.entityVersion || '20
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 function esc(s) { return String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+function link(pathLike) { return urlEngine.href(pathLike); }
 
 function confidenceBadge(levelId) {
   const c = CONF_MAP[levelId];
@@ -67,11 +69,11 @@ function buildTrustPanel(calc) {
 
   const formLinks = (calc.formulaIds || []).map(fid => {
     const f = FORMULA_MAP[fid];
-    return f ? `<a href="/methodology/formula-selection/" title="${esc(f.name)}">${esc(f.name)}</a>` : esc(fid);
+    return f ? `<a href="${link('/methodology/formula-selection')}" title="${esc(f.name)}">${esc(f.name)}</a>` : esc(fid);
   }).join(', ') || '—';
 
   const dsLinks = (calc.datasetDependencies || []).map(d =>
-    `<a href="/reference/datasets/${esc(d)}/">${esc(d)}</a>`
+    `<a href="${link(`/reference/datasets/${d}`)}">${esc(d)}</a>`
   ).join(', ') || '—';
 
   return `
@@ -94,11 +96,11 @@ function buildTrustPanel(calc) {
         <dt>Dataset Sources</dt><dd>${dsLinks}</dd>
       </dl>
       <div class="trust-panel__links">
-        <a href="/methodology/calculation-methodology/">Methodology</a>
-        <a href="/methodology/calculation-assumptions/">Assumptions</a>
-        <a href="/methodology/known-limitations/">Known Limitations</a>
-        <a href="/methodology/rounding-policy/">Rounding Policy</a>
-        <a href="/revisions/">Revision History</a>
+        <a href="${link('/methodology/calculation-methodology')}">Methodology</a>
+        <a href="${link('/methodology/calculation-assumptions')}">Assumptions</a>
+        <a href="${link('/methodology/known-limitations')}">Known Limitations</a>
+        <a href="${link('/methodology/rounding-policy')}">Rounding Policy</a>
+        <a href="${link('/revisions')}">Revision History</a>
       </div>
       ${calc.notes ? `<p class="trust-panel__note"><em>${esc(calc.notes)}</em></p>` : ''}
     </div>
@@ -112,10 +114,10 @@ function buildFormulaPanel(formulaRecord) {
   if (!formulaRecord) return '';
   const conf = CONF_MAP[formulaRecord.confidenceLevel] || CONF_MAP['high'];
   const dsLinks = (formulaRecord.datasetDependencies || []).map(d =>
-    `<a href="/reference/datasets/${esc(d)}/">${esc(d)}</a>`
+    `<a href="${link(`/reference/datasets/${d}`)}">${esc(d)}</a>`
   ).join(', ') || '—';
   const calcLinks = (formulaRecord.calculatorIds || []).map(cid =>
-    `<a href="/calculators/${esc(cid)}">${esc(CALC_MAP[cid] ? CALC_MAP[cid].name : cid)}</a>`
+    `<a href="${link(`/calculators/${cid}`)}">${esc(CALC_MAP[cid] ? CALC_MAP[cid].name : cid)}</a>`
   ).join(', ') || '—';
 
   return `
@@ -131,9 +133,9 @@ function buildFormulaPanel(formulaRecord) {
     <dt>Used By</dt><dd>${calcLinks}</dd>
   </dl>
   <div class="trust-panel__links">
-    <a href="/methodology/formula-selection/">Formula Selection Policy</a>
-    <a href="/methodology/calculation-assumptions/">Assumptions</a>
-    <a href="/revisions/">Revision History</a>
+    <a href="${link('/methodology/formula-selection')}">Formula Selection Policy</a>
+    <a href="${link('/methodology/calculation-assumptions')}">Assumptions</a>
+    <a href="${link('/revisions')}">Revision History</a>
   </div>
   ${formulaRecord.notes ? `<p class="trust-panel__note"><em>${esc(formulaRecord.notes)}</em></p>` : ''}
 </aside>`;
@@ -150,7 +152,7 @@ function buildDatasetPanel(name) {
   // Find calculator consumers
   const consumers = calculators
     .filter(c => c.datasetDependencies && c.datasetDependencies.includes(name))
-    .map(c => `<a href="${esc(c.urlPath || '#')}">${esc(c.name)}</a>`)
+    .map(c => `<a href="${esc(c.urlPath ? link(c.urlPath) : '#')}">${esc(c.name)}</a>`)
     .join(', ') || '—';
 
   return `
@@ -166,9 +168,9 @@ function buildDatasetPanel(name) {
     <dt>Consumed by</dt><dd>${consumers}</dd>
   </dl>
   <div class="trust-panel__links">
-    <a href="/provenance/">Data Provenance</a>
-    <a href="/methodology/calculation-methodology/">How Data Flows</a>
-    <a href="/editorial/editorial-policy/">Editorial Policy</a>
+    <a href="${link('/provenance')}">Data Provenance</a>
+    <a href="${link('/methodology/calculation-methodology')}">How Data Flows</a>
+    <a href="${link('/editorial/editorial-policy')}">Editorial Policy</a>
   </div>
 </aside>`;
 }

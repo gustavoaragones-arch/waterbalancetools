@@ -4,6 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const { buildContext, runAuditByName, esc, ROOT } = require('./qa-engine');
+const urlEngine = require('../js/url/url-engine');
 
 const QA_DIR = path.join(ROOT, 'qa');
 const REPORTS_DIR = path.join(ROOT, 'reports');
@@ -21,6 +22,7 @@ const REPORT_ORDER = [
   'calculators',
   'content',
   'ai-readiness',
+  'indexing-intelligence',
 ];
 
 const REPORT_FILES = {
@@ -36,6 +38,7 @@ const REPORT_FILES = {
   calculators: 'calculators.html',
   content: 'content.html',
   'ai-readiness': 'ai-readiness.html',
+  'indexing-intelligence': 'indexing-intelligence.html',
 };
 
 const CERTIFICATION_THRESHOLDS = {
@@ -51,6 +54,7 @@ const CERTIFICATION_THRESHOLDS = {
   calculators: 100,
   content: 95,
   'ai-readiness': 95,
+  'indexing-intelligence': 95,
 };
 
 function readJson(filePath, fallback = null) {
@@ -171,18 +175,18 @@ function renderReportPage(name, result, ctx, trend) {
     <div class="card"><h2>Errors</h2>${renderIssueTable(name, result.errors, 'Critical')}</div>
     <div class="card"><h2>Metrics</h2>${renderMetricsTable(result.metrics)}</div>
     <div class="card"><h2>Recommendations</h2>${renderList(result.recommendations)}</div>
-    <p><a href="/qa/">← Back to QA Dashboard</a></p>
+    <p><a href="${urlEngine.href('/qa')}">← Back to QA Dashboard</a></p>
   `;
   return htmlShell(title, body);
 }
 
 function renderDashboard(results, ctx, totals, trends) {
-  const scoreRows = REPORT_ORDER.map((k) => {
+    const scoreRows = REPORT_ORDER.map((k) => {
     const r = results[k];
     const c = scoreColor(r.score);
     const threshold = CERTIFICATION_THRESHOLDS[k];
     const pass = r.score >= threshold;
-    return `<tr><td><a href="/reports/${REPORT_FILES[k]}">${esc(k)}</a></td><td>${r.score}</td><td>${threshold}</td><td>${trends[k].scoreChange}</td><td style="color:${c.color};font-weight:700">${c.label}</td><td>${pass ? 'Pass' : 'Fail'}</td><td>${r.errors.length}</td><td>${r.warnings.length}</td></tr>`;
+    return `<tr><td><a href="${urlEngine.href(`/reports/${REPORT_FILES[k]}`)}">${esc(k)}</a></td><td>${r.score}</td><td>${threshold}</td><td>${trends[k].scoreChange}</td><td style="color:${c.color};font-weight:700">${c.label}</td><td>${pass ? 'Pass' : 'Fail'}</td><td>${r.errors.length}</td><td>${r.warnings.length}</td></tr>`;
   }).join('');
   const badge = scoreColor(totals.overallScore);
 

@@ -11,6 +11,7 @@
 
 const fs   = require('fs');
 const path = require('path');
+const urlEngine = require('../js/url/url-engine');
 
 const ROOT   = path.join(__dirname, '..');
 const DATA   = path.join(ROOT, 'data');
@@ -39,7 +40,7 @@ glossaryData.terms.forEach(t => { termById[t.id] = t; });
 const refById      = {};
 referenceData.pages.forEach(p => { refById[p.id] = p; });
 
-const SITE = 'https://waterbalancetools.com';
+const SITE = urlEngine.absoluteUrl('/');
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
 
@@ -112,7 +113,7 @@ function buildCalcSection(ids) {
   const cards = ids.map(id => {
     const title = esc(CALC_TITLES[id] || id);
     return `      <div class="knowledge-card">
-        <a href="/calculators/${id}">
+        <a href="${urlEngine.href(`/calculators/${id}`)}">
           <div class="knowledge-card-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M8 12h8M8 16h5M8 8h8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
           <h3>${title}</h3>
         </a>
@@ -184,7 +185,7 @@ function buildRelatedEntitiesSection(relatedIds) {
   const cards = valid.map(id => {
     const e = entityIndex[id];
     return `      <div class="knowledge-card">
-        <a href="/entities/${esc(id)}">
+        <a href="${urlEngine.href(`/entities/${id}`)}">
           <span class="knowledge-badge knowledge-badge--${esc(e.type)}">${esc(TYPE_LABELS[e.type] || e.type)}</span>
           <h3>${esc(e.name)}</h3>
           <p>${esc(e.shortDescription)}</p>
@@ -202,7 +203,7 @@ function buildSidebarRelated(relatedIds) {
   if (valid.length === 0) return '';
   const items = valid.slice(0, 8).map(id => {
     const e = entityIndex[id];
-    return `<li><a href="/entities/${esc(id)}">${esc(e.name)}</a></li>`;
+    return `<li><a href="${urlEngine.href(`/entities/${id}`)}">${esc(e.name)}</a></li>`;
   }).join('\n');
   return `<div class="knowledge-sidebar-section"><h3>Related Entities</h3><ul>${items}</ul></div>`;
 }
@@ -211,7 +212,7 @@ function buildSidebarCalcs(ids) {
   if (!ids || ids.length === 0) return '';
   const items = ids.map(id => {
     const title = esc(CALC_TITLES[id] || id);
-    return `<li><a href="/calculators/${id}">${title}</a></li>`;
+    return `<li><a href="${urlEngine.href(`/calculators/${id}`)}">${title}</a></li>`;
   }).join('\n');
   return `<div class="knowledge-sidebar-section"><h3>Calculators</h3><ul>${items}</ul></div>`;
 }
@@ -241,7 +242,7 @@ function buildResourceSection(ids) {
   const cards = ids.map(id => {
     const title = esc(RESOURCE_TITLES[id] || id);
     return `      <div class="knowledge-card">
-        <a href="/resources/${id}">
+        <a href="${urlEngine.href(`/resources/${id}`)}">
           <h3>${title}</h3>
           <p>Free printable</p>
         </a>
@@ -349,7 +350,7 @@ Object.entries(typeGroups).forEach(([type, entities]) => {
     <ul class="entity-index-list">
 `;
   entities.forEach(e => {
-    indexBody += `      <li><a href="/entities/${esc(e.id)}">${esc(e.name)}</a> — <span>${esc(e.shortDescription)}</span></li>\n`;
+    indexBody += `      <li><a href="${urlEngine.href(`/entities/${e.id}`)}">${esc(e.name)}</a> — <span>${esc(e.shortDescription)}</span></li>\n`;
   });
   indexBody += `    </ul>
   </div>
@@ -361,7 +362,7 @@ const indexHtml = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="canonical" href="${SITE}/entities/">
+  <link rel="canonical" href="${urlEngine.canonicalUrl('/entities')}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Entity Graph — Pool Chemistry Knowledge Base | WaterBalanceTools</title>
   <meta name="description" content="The canonical pool chemistry entity graph: 104 entities covering chemicals, measurements, equipment, processes, problems, and pool types. The semantic backbone of WaterBalanceTools.">
@@ -373,21 +374,21 @@ const indexHtml = `<!DOCTYPE html>
     "@type": "CollectionPage",
     "name": "Pool Chemistry Entity Graph",
     "description": "104 canonical pool and spa chemistry entities with typed relationships.",
-    "url": "${SITE}/entities/",
-    "hasPart": ${JSON.stringify(Object.values(entityIndex).slice(0, 20).map(e => ({ '@type': 'DefinedTerm', 'name': e.name, 'url': SITE + '/entities/' + e.id })))}
+    "url": "${urlEngine.absoluteUrl('/entities')}",
+    "hasPart": ${JSON.stringify(Object.values(entityIndex).slice(0, 20).map(e => ({ '@type': 'DefinedTerm', 'name': e.name, 'url': urlEngine.absoluteUrl(`/entities/${e.id}`) })))}
   }
   </script>
 </head>
 <body class="knowledge-page entity-page">
   <header class="site-header">
-    <a href="/" class="logo-link"><img src="/assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36"></a>
+    <a href="${urlEngine.href('/')}" class="logo-link"><img src="/assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36"></a>
     <nav class="nav" id="site-nav" aria-label="Primary navigation">
-      <a href="/calculators/chemical-calculator">Calculator</a>
-      <a href="/resources/">Resources</a>
-      <a href="/pool-chemical-levels-chart">Charts</a>
-      <a href="/academy/">Academy</a>
-      <a href="/guides/pool-chemistry-basics">Guides</a>
-      <a href="/about/">About</a>
+      <a href="${urlEngine.href('/calculators/chemical-calculator')}">Calculator</a>
+      <a href="${urlEngine.href('/resources')}">Resources</a>
+      <a href="${urlEngine.href('/pool-chemical-levels-chart')}">Charts</a>
+      <a href="${urlEngine.href('/academy')}">Academy</a>
+      <a href="${urlEngine.href('/guides/pool-chemistry-basics')}">Guides</a>
+      <a href="${urlEngine.href('/about')}">About</a>
     </nav>
   </header>
   <main>

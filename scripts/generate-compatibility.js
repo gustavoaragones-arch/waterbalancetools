@@ -3,6 +3,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const urlEngine = require('../js/url/url-engine');
 
 const ROOT = path.join(__dirname, '..');
 const PLATFORM_DIR = path.join(ROOT, 'data', 'platform');
@@ -35,7 +36,7 @@ function shell(title, description, body) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(title)} | WaterBalanceTools</title>
   <meta name="description" content="${esc(description)}">
-  <link rel="canonical" href="https://waterbalancetools.com/releases/compatibility/">
+  <link rel="canonical" href="${urlEngine.canonicalUrl('/releases/compatibility')}">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="${esc(title)} | WaterBalanceTools">
   <meta property="og:description" content="${esc(description)}">
@@ -134,9 +135,9 @@ function run() {
   <section class="link-matrix">
     <h2>Related</h2>
     <ul>
-      <li><a href="/releases/">Release History</a></li>
-      <li><a href="/qa/">QA Dashboard</a></li>
-      <li><a href="/qa/certification.html">Certification</a></li>
+      <li><a href="${urlEngine.href('/releases')}">Release History</a></li>
+      <li><a href="${urlEngine.href('/qa')}">QA Dashboard</a></li>
+      <li><a href="${urlEngine.href('/qa/certification')}">Certification</a></li>
     </ul>
   </section>`;
 

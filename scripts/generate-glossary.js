@@ -13,7 +13,7 @@
 const path = require('path');
 const {
   fill, template, partial, SITE_HEADER, SITE_FOOTER, esc,
-  buildBreadcrumb, buildTermContent, writeFile, ROOT,
+  buildBreadcrumb, buildTermContent, writeFile, ROOT, href, canonicalUrl,
 } = require('./template-utils');
 
 const data = require(path.join(ROOT, 'data', 'glossary.json'));
@@ -35,7 +35,7 @@ function generateHub() {
     termListHtml = Object.keys(byLetter).sort().map(letter => {
       const items = byLetter[letter].map(t =>
         `        <div class="glossary-term">
-          <a href="/${t.slug}" class="knowledge-card-title">${esc(t.term || t.title)}</a>
+          <a href="${href(t.slug)}" class="knowledge-card-title">${esc(t.term || t.title)}</a>
           ${t.abbreviation ? `<span class="knowledge-badge" style="font-size:10px">${esc(t.abbreviation)}</span>` : ''}
           <p class="knowledge-card-desc">${esc((t.definition || '').split('.')[0])}.</p>
         </div>`
@@ -45,7 +45,7 @@ function generateHub() {
   } else {
     termListHtml = `      <div class="knowledge-callout">
         <span class="knowledge-callout-icon">&#128218;</span>
-        <div><strong>Coming in Phase 5B</strong> — Glossary terms are being prepared. Use the <a href="/academy/">Chemistry Academy</a> or <a href="/reference/">Reference Tables</a> in the meantime.</div>
+        <div><strong>Coming in Phase 5B</strong> — Glossary terms are being prepared. Use the <a href="${href('/academy')}">Chemistry Academy</a> or <a href="${href('/reference')}">Reference Tables</a> in the meantime.</div>
       </div>`;
   }
 
@@ -55,7 +55,7 @@ function generateHub() {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://waterbalancetools.com/glossary/">
+  <link rel="canonical" href="${canonicalUrl('/glossary')}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pool Chemistry Glossary | WaterBalanceTools</title>
   <meta name="description" content="Definitions for pool and hot tub water chemistry terms — free chlorine, pH, total alkalinity, CYA, calcium hardness, LSI, and more.">
@@ -80,10 +80,10 @@ ${termListHtml}
     <section class="link-matrix">
       <h3>Related</h3>
       <ul>
-        <li><a href="/academy/">Chemistry Academy</a></li>
-        <li><a href="/formulas/">Formula Library</a></li>
-        <li><a href="/reference/">Reference Tables</a></li>
-        <li><a href="/calculators/chemical-calculator">Pool Chemical Calculator</a></li>
+        <li><a href="${href('/academy')}">Chemistry Academy</a></li>
+        <li><a href="${href('/formulas')}">Formula Library</a></li>
+        <li><a href="${href('/reference')}">Reference Tables</a></li>
+        <li><a href="${href('/calculators/chemical-calculator')}">Pool Chemical Calculator</a></li>
       </ul>
     </section>
   </main>
