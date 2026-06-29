@@ -185,7 +185,7 @@ function generateArticle(article) {
     '<a href="#key-facts" class="knowledge-chip">Key Facts</a>',
     '<a href="#examples" class="knowledge-chip">Examples</a>',
     article.relatedCalculators?.length ? '<a href="#related-tools" class="knowledge-chip">Calculator</a>' : '',
-    article.relatedTopics?.length ? '<a href=".knowledge-related-topics" class="knowledge-chip">Related</a>' : '',
+    article.relatedTopics?.length ? '<a href="#related-topics" class="knowledge-chip">Related</a>' : '',
   ].filter(Boolean).join('\n    ');
 
   return fill(tpl, {

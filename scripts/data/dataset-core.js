@@ -301,6 +301,7 @@ const confidenceLevels = {
 
 const version = {
   datasetId: 'version',
+  version: '2026.07',
   description: 'Version tracking for the canonical data layer. Updated automatically by generate-datasets.js on each build.',
   schemaVersion: '1.0',
   datasets: {

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seo Audit | WaterBalanceTools QA</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,sans-serif;margin:0;background:#f6f8fb;color:#1d2630}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    .card{background:#fff;border:1px solid #dbe3ef;border-radius:10px;padding:18px;margin:14px 0}
+    .h{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+    .score{font-weight:700;padding:6px 10px;border-radius:999px;color:#fff}
+    .qa-table{width:100%;border-collapse:collapse}
+    .qa-table th,.qa-table td{border:1px solid #e3e8f2;padding:8px 10px;text-align:left;font-size:14px}
+    .qa-table th{background:#f0f4fb}
+    a{color:#0b5cab;text-decoration:none}
+    a:hover{text-decoration:underline}
+    code{background:#eef3fa;padding:2px 6px;border-radius:4px}
+    ul{margin:8px 0 0 20px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card h">
+      <div>
+        <h1 style="margin:0">Seo Audit</h1>
+        <p style="margin:.35rem 0 0">Summary: Validates metadata uniqueness and required SEO tags.</p>
+      </div>
+      <div class="score" style="background:#1f8a3c">98/100 · Green</div>
+    </div>
+    <div class="card">
+      <h2>Metadata</h2>
+      <table class="qa-table"><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>timestamp</td><td>2026-06-29T02:53:24.974Z</td></tr><tr><td>platformVersion</td><td>5A.75</td></tr><tr><td>datasetVersion</td><td>2026.07</td></tr><tr><td>entityVersion</td><td>2026.07</td></tr><tr><td>trustVersion</td><td>2026.07</td></tr><tr><td>critical</td><td>false</td></tr><tr><td>previousScore</td><td>98</td></tr><tr><td>currentScore</td><td>98</td></tr><tr><td>scoreChange</td><td>0</td></tr></tbody></table>
+    </div>
+    <div class="card"><h2>Passed Checks</h2><p>None.</p></div>
+    <div class="card"><h2>Warnings</h2><table class="qa-table"><thead><tr><th>Severity</th><th>Issue</th><th>Affected Files</th><th>Root Cause</th><th>Recommended Fix</th><th>Status</th></tr></thead><tbody><tr>
+    <td>Warning</td>
+    <td>Missing breadcrumb on 36 page(s)</td>
+    <td>Affected files are listed in audit metrics/logs.</td>
+    <td>Required metadata/component was not emitted by the shared template layer.</td>
+    <td>Ensure seo generator emits this field for all affected pages.</td>
+    <td>Requires action</td>
+  </tr></tbody></table></div>
+    <div class="card"><h2>Errors</h2><p>None.</p></div>
+    <div class="card"><h2>Metrics</h2><table class="qa-table"><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>totalPages</td><td>479</td></tr><tr><td>duplicateTitles</td><td>0</td></tr><tr><td>duplicateDescriptions</td><td>0</td></tr></tbody></table></div>
+    <div class="card"><h2>Recommendations</h2><ul><li>Add twitter:card metadata in templates to reduce warnings.</li></ul></div>
+    <p><a href="/qa/">← Back to QA Dashboard</a></p>
+  </div>
+</body>
+</html>

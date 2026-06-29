@@ -1,0 +1,76 @@
+{
+  "releaseHistory": [
+    {
+      "version": "1.0.0",
+      "codename": "Foundation",
+      "type": "major",
+      "status": "Production Certified",
+      "releaseDate": "2026-06-29",
+      "qaScore": 99,
+      "subsystems": {
+        "knowledgeGraph": "1.0.0",
+        "entityLayer": "1.0.0",
+        "datasets": "1.0.0",
+        "formulaEngine": "1.0.0",
+        "calculatorEngine": "1.0.0",
+        "trustSystem": "1.0.0",
+        "qaFramework": "1.0.0"
+      },
+      "highlights": [
+        "Production-certified platform baseline established.",
+        "Scientific authority and provenance framework integrated.",
+        "QA release gate and certification process enforced."
+      ],
+      "breakingChanges": [],
+      "datasetsChanged": [
+        "canonical-data-layer"
+      ],
+      "entitiesChanged": [
+        "entity-graph-initialization"
+      ],
+      "formulasChanged": [
+        "formula-engine-baseline"
+      ],
+      "relatedCommits": [
+        "manual-field"
+      ],
+      "certificationStatus": "Production Certified"
+    },
+    {
+      "version": "1.1.0",
+      "codename": "Explorer",
+      "type": "minor",
+      "status": "Planned",
+      "releaseDate": "",
+      "qaScore": null,
+      "subsystems": {
+        "knowledgeGraph": "1.1.0",
+        "entityLayer": "1.1.0",
+        "datasets": "1.1.0",
+        "formulaEngine": "1.1.0",
+        "calculatorEngine": "1.1.0",
+        "trustSystem": "1.1.0",
+        "qaFramework": "1.1.0"
+      },
+      "highlights": [
+        "Reserved for interactive knowledge capabilities."
+      ],
+      "breakingChanges": [],
+      "datasetsChanged": [],
+      "entitiesChanged": [],
+      "formulasChanged": [],
+      "relatedCommits": [
+        "manual-field"
+      ],
+      "certificationStatus": "Planned"
+    }
+  ],
+  "roadmapCodenames": [
+    { "version": "1.0.0", "codename": "Foundation" },
+    { "version": "1.1.0", "codename": "Explorer" },
+    { "version": "1.2.0", "codename": "Insight" },
+    { "version": "1.3.0", "codename": "Compass" },
+    { "version": "1.4.0", "codename": "Atlas" },
+    { "version": "2.0.0", "codename": "Horizon" }
+  ]
+}

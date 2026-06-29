@@ -1,0 +1,49 @@
+{
+  "semanticVersioning": {
+    "major": [
+      "architecture changes",
+      "fundamental generator changes",
+      "breaking data model changes",
+      "incompatible schema updates"
+    ],
+    "minor": [
+      "major new capabilities added",
+      "interactive knowledge",
+      "AI services",
+      "internationalization"
+    ],
+    "patch": [
+      "bug fixes",
+      "QA improvements",
+      "typo fixes",
+      "metadata improvements",
+      "dataset corrections",
+      "generator fixes"
+    ]
+  },
+  "certificationRequirements": {
+    "minimumOverallQaScore": 97,
+    "criticalFailuresAllowed": 0,
+    "requiresCompatibilityMatrix": true,
+    "requiresReleasePage": true,
+    "requiresVersionValidationPass": true
+  },
+  "releaseCadence": {
+    "majorMinor": "Planned milestone-based",
+    "patch": "As required for certified fixes"
+  },
+  "supportedBranches": [
+    "main"
+  ],
+  "taggingPolicy": {
+    "format": "v<platform-version>-<codename-lowercase>",
+    "examples": [
+      "v1.0.0-foundation",
+      "v1.1.0-explorer"
+    ],
+    "notes": [
+      "Patch releases reuse existing codename.",
+      "Tags are recommendations only and are not auto-executed."
+    ]
+  }
+}

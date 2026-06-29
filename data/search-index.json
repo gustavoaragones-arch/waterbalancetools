@@ -52,7 +52,7 @@
   {
     "url": "/calculators/pool-chlorine-calculator",
     "title": "Pool Chlorine Calculator (Ounces from Volume + ppm)",
-    "description": "Pool chlorine calculator: gallons + ppm in → exact liquid or granular ounces out. For pH, alkalinity, and combined dosing, use the main Pool Chemical Calculator.",
+    "description": "Pool chlorine calculator: gallons + ppm in → exact liquid or granular ounces out. For pH, alkalinity, and combined dosing, use the main Pool Chemical Calcula...",
     "h1": "Pool Chlorine Calculator",
     "category": "Calculators",
     "readingTime": null,
@@ -82,7 +82,7 @@
   {
     "url": "/calculators/pool-shock-calculator",
     "title": "Pool Shock Calculator (10–30 ppm Dose in 30 Seconds)",
-    "description": "Pool shock calculator: granular shock ounces from gallons + target ppm (10–30). For combined chlorine, pH, and alkalinity dosing, use the main Pool Chemical Calculator.",
+    "description": "Pool shock calculator: granular shock ounces from gallons + target ppm (10–30). For combined chlorine, pH, and alkalinity dosing, use the main Pool Chemical ...",
     "h1": "Pool Shock Calculator",
     "category": "Calculators",
     "readingTime": null,
@@ -101,13 +101,13 @@
   },
   {
     "url": "/calculators/pool-volume-calculator",
-    "title": "Pool Volume Calculator",
+    "title": "Pool Volume Calculator (calculators)",
     "description": "Pool volume calculator. Rectangular, circular, and oval shapes. Get gallons and liters. Free and fast.",
     "h1": "Pool Volume Calculator",
     "category": "Calculators",
     "readingTime": null,
     "updated": null,
-    "keywords": "pool volume calculator"
+    "keywords": "pool volume calculator calculators"
   },
   {
     "url": "/calculators/saltwater-pool-salt-calculator",
@@ -131,13 +131,13 @@
   },
   {
     "url": "/calculators/volume-calculator",
-    "title": "Pool Volume Calculator",
+    "title": "Pool Volume Calculator (calculators) (calculators)",
     "description": "Calculate your pool or hot tub volume in gallons. Supports rectangular and circular shapes.",
     "h1": "Pool Volume Calculator",
     "category": "Calculators",
     "readingTime": null,
     "updated": null,
-    "keywords": "pool volume calculator"
+    "keywords": "pool volume calculator calculators"
   },
   {
     "url": "/charts/hot-tub-chemical-levels-chart",
@@ -512,7 +512,7 @@
   {
     "url": "/academy/sanitizers/combined-chlorine-explained",
     "title": "Combined Chlorine Explained",
-    "description": "Learn what combined chlorine is, why it forms in pools, how to measure it, and why it causes the irritating pool smell many people mistake for too much chlorine.",
+    "description": "Learn what combined chlorine is, why it forms in pools, how to measure it, and why it causes the irritating pool smell many people mistake for too much chlor...",
     "h1": "Combined Chlorine Explained",
     "category": "Academy",
     "readingTime": "5 min read",
@@ -752,7 +752,7 @@
   {
     "url": "/academy/vacation-rentals/weekly-inspection",
     "title": "Weekly Pool Inspection for Vacation Rentals",
-    "description": "Learn the comprehensive weekly inspection protocol for vacation rental pools that catches chemistry, equipment, and safety problems before guests experience them.",
+    "description": "Learn the comprehensive weekly inspection protocol for vacation rental pools that catches chemistry, equipment, and safety problems before guests experience ...",
     "h1": "Weekly Pool Inspection for Vacation Rentals",
     "category": "Academy",
     "readingTime": "5 min read",
@@ -832,7 +832,7 @@
   {
     "url": "/formulas",
     "title": "Pool Chemistry Formula Library",
-    "description": "The complete pool chemistry formula library — chlorine dosing, pH adjustment, alkalinity, CYA, calcium hardness, and more. Every formula explained with worked examples.",
+    "description": "The complete pool chemistry formula library — chlorine dosing, pH adjustment, alkalinity, CYA, calcium hardness, and more. Every formula explained with worke...",
     "h1": "Pool Chemistry Formula Library",
     "category": "Formula Library",
     "readingTime": null,
@@ -842,7 +842,7 @@
   {
     "url": "/formulas/alkalinity-formula",
     "title": "Total Alkalinity Adjustment Formula",
-    "description": "undefined",
+    "description": "Home Formula Library Total Alkalinity Adjustment Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 Total Alkalinity Adj",
     "h1": "Total Alkalinity Adjustment Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -852,7 +852,7 @@
   {
     "url": "/formulas/cya-formula",
     "title": "CYA (Cyanuric Acid) Dose Formula",
-    "description": "undefined",
+    "description": "Home Formula Library CYA (Cyanuric Acid) Dose Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 CYA (Cyanuric Acid) Dos",
     "h1": "CYA (Cyanuric Acid) Dose Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -862,7 +862,7 @@
   {
     "url": "/formulas/liquid-chlorine-formula",
     "title": "Liquid Chlorine Dose Formula",
-    "description": "undefined",
+    "description": "Home Formula Library Liquid Chlorine Dose Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 Liquid Chlorine Dose Formul",
     "h1": "Liquid Chlorine Dose Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -872,7 +872,7 @@
   {
     "url": "/formulas/lsi-formula",
     "title": "Langelier Saturation Index (LSI) Formula",
-    "description": "undefined",
+    "description": "Home Formula Library Langelier Saturation Index (LSI) Formula Formula Example Explanation --> Formula Library 4 min read Updated 2026-06-01 Langelier Satur",
     "h1": "Langelier Saturation Index (LSI) Formula",
     "category": "Formula Library",
     "readingTime": "4 min read",
@@ -882,7 +882,7 @@
   {
     "url": "/formulas/ph-adjustment-formula",
     "title": "pH Adjustment Formula",
-    "description": "undefined",
+    "description": "Home Formula Library pH Adjustment Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 pH Adjustment Formula",
     "h1": "pH Adjustment Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -892,7 +892,7 @@
   {
     "url": "/formulas/pool-volume-formula",
     "title": "Pool Volume Formula",
-    "description": "undefined",
+    "description": "Home Formula Library Pool Volume Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 Pool Volume Formula",
     "h1": "Pool Volume Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -902,7 +902,7 @@
   {
     "url": "/formulas/salt-formula",
     "title": "Salt Pool Formula",
-    "description": "undefined",
+    "description": "Home Formula Library Salt Pool Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 Salt Pool Formula",
     "h1": "Salt Pool Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -912,7 +912,7 @@
   {
     "url": "/formulas/shock-formula",
     "title": "Pool Shock Formula",
-    "description": "undefined",
+    "description": "Home Formula Library Pool Shock Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 Pool Shock Formula",
     "h1": "Pool Shock Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -922,7 +922,7 @@
   {
     "url": "/formulas/turnover-formula",
     "title": "Pool Turnover Rate Formula",
-    "description": "undefined",
+    "description": "Home Formula Library Pool Turnover Rate Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 Pool Turnover Rate Formula",
     "h1": "Pool Turnover Rate Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -952,7 +952,7 @@
   {
     "url": "/glossary/algae-bloom",
     "title": "Algae Bloom: Definition",
-    "description": "An algae bloom is the rapid, visible multiplication of algae in pool water, resulting in green, cloudy, or discolored water. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "An algae bloom is the rapid, visible multiplication of algae in pool water, resulting in green, cloudy, or discolored water. Plain-language definition with t...",
     "h1": "Algae Bloom",
     "category": "Glossary",
     "readingTime": null,
@@ -962,7 +962,7 @@
   {
     "url": "/glossary/algaecide",
     "title": "Algaecide: Definition",
-    "description": "An algaecide is a chemical product that prevents algae growth or assists in killing established algae in pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "An algaecide is a chemical product that prevents algae growth or assists in killing established algae in pool water. Plain-language definition with target va...",
     "h1": "Algaecide",
     "category": "Glossary",
     "readingTime": null,
@@ -972,7 +972,7 @@
   {
     "url": "/glossary/ammonia",
     "title": "Ammonia (Pool Water): Definition",
-    "description": "Ammonia in pool water is the primary nitrogen source for chloramine formation, introduced by bather waste including sweat and urine. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Ammonia in pool water is the primary nitrogen source for chloramine formation, introduced by bather waste including sweat and urine. Plain-language definitio...",
     "h1": "Ammonia (Pool Water)",
     "category": "Glossary",
     "readingTime": null,
@@ -982,7 +982,7 @@
   {
     "url": "/glossary/backwashing",
     "title": "Backwashing: Definition",
-    "description": "Backwashing is the process of reversing water flow through a sand or DE filter to flush accumulated debris out of the filter media to waste. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Backwashing is the process of reversing water flow through a sand or DE filter to flush accumulated debris out of the filter media to waste. Plain-language d...",
     "h1": "Backwashing",
     "category": "Glossary",
     "readingTime": null,
@@ -992,7 +992,7 @@
   {
     "url": "/glossary/bather-load",
     "title": "Bather Load: Definition",
-    "description": "Bather load refers to the number and duration of swimmers in a pool, which affects chlorine consumption and organic contamination levels. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Bather load refers to the number and duration of swimmers in a pool, which affects chlorine consumption and organic contamination levels. Plain-language defi...",
     "h1": "Bather Load",
     "category": "Glossary",
     "readingTime": null,
@@ -1002,7 +1002,7 @@
   {
     "url": "/glossary/bcdmh",
     "title": "BCDMH: Definition",
-    "description": "BCDMH (1-bromo-3-chloro-5,5-dimethylhydantoin) is the most common active ingredient in bromine tablets for hot tubs and spas. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "BCDMH (1-bromo-3-chloro-5,5-dimethylhydantoin) is the most common active ingredient in bromine tablets for hot tubs and spas. Plain-language definition with ...",
     "h1": "BCDMH",
     "category": "Glossary",
     "readingTime": null,
@@ -1012,7 +1012,7 @@
   {
     "url": "/glossary/bicarbonate-alkalinity",
     "title": "Bicarbonate Alkalinity: Definition",
-    "description": "Bicarbonate alkalinity is the portion of total alkalinity contributed by bicarbonate ions (HCO3-), which is the dominant form in properly maintained pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Bicarbonate alkalinity is the portion of total alkalinity contributed by bicarbonate ions (HCO3-), which is the dominant form in properly maintained pool wat...",
     "h1": "Bicarbonate Alkalinity",
     "category": "Glossary",
     "readingTime": null,
@@ -1022,7 +1022,7 @@
   {
     "url": "/glossary/biofilm",
     "title": "Biofilm: Definition",
-    "description": "Biofilm is a protective matrix of bacteria and organic material that establishes on pool and spa plumbing surfaces. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Biofilm is a protective matrix of bacteria and organic material that establishes on pool and spa plumbing surfaces. Plain-language definition with target val...",
     "h1": "Biofilm",
     "category": "Glossary",
     "readingTime": null,
@@ -1032,7 +1032,7 @@
   {
     "url": "/glossary/black-algae",
     "title": "Black Algae: Definition",
-    "description": "Black algae is a stubborn, deeply rooted algae species that forms black or dark blue-green spots on pool plaster surfaces. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Black algae is a stubborn, deeply rooted algae species that forms black or dark blue-green spots on pool plaster surfaces. Plain-language definition with tar...",
     "h1": "Black Algae",
     "category": "Glossary",
     "readingTime": null,
@@ -1042,7 +1042,7 @@
   {
     "url": "/glossary/breakpoint-chlorination",
     "title": "Breakpoint Chlorination: Definition",
-    "description": "Breakpoint chlorination is the process of adding enough free chlorine to destroy all combined chlorine (chloramines) in pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Breakpoint chlorination is the process of adding enough free chlorine to destroy all combined chlorine (chloramines) in pool water. Plain-language definition...",
     "h1": "Breakpoint Chlorination",
     "category": "Glossary",
     "readingTime": null,
@@ -1052,7 +1052,7 @@
   {
     "url": "/glossary/breakpoint-dose",
     "title": "Breakpoint Dose: Definition",
-    "description": "The breakpoint dose is the specific amount of free chlorine that must be added to destroy all combined chlorine in pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "The breakpoint dose is the specific amount of free chlorine that must be added to destroy all combined chlorine in pool water. Plain-language definition with...",
     "h1": "Breakpoint Dose",
     "category": "Glossary",
     "readingTime": null,
@@ -1062,7 +1062,7 @@
   {
     "url": "/glossary/bromine",
     "title": "Bromine: Definition",
-    "description": "Bromine is a halogen sanitiser used in pool and spa water that forms hypobromous acid (HOBr) as its active disinfectant form. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Bromine is a halogen sanitiser used in pool and spa water that forms hypobromous acid (HOBr) as its active disinfectant form. Plain-language definition with ...",
     "h1": "Bromine",
     "category": "Glossary",
     "readingTime": null,
@@ -1072,7 +1072,7 @@
   {
     "url": "/glossary/calcium-hardness",
     "title": "Calcium Hardness: Definition",
-    "description": "Calcium hardness measures the concentration of dissolved calcium ions in pool water, expressed in ppm. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Calcium hardness measures the concentration of dissolved calcium ions in pool water, expressed in ppm. Plain-language definition with target values and relat...",
     "h1": "Calcium Hardness",
     "category": "Glossary",
     "readingTime": null,
@@ -1082,7 +1082,7 @@
   {
     "url": "/glossary/calcium-hypochlorite",
     "title": "Calcium Hypochlorite: Definition",
-    "description": "Calcium hypochlorite is a granular chlorine compound used primarily as pool shock, with approximately 65–73% available chlorine. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Calcium hypochlorite is a granular chlorine compound used primarily as pool shock, with approximately 65–73% available chlorine. Plain-language definition wi...",
     "h1": "Calcium Hypochlorite",
     "category": "Glossary",
     "readingTime": null,
@@ -1092,7 +1092,7 @@
   {
     "url": "/glossary/carbon-dioxide",
     "title": "Carbon Dioxide: Definition",
-    "description": "Carbon dioxide (CO2) in pool water forms carbonic acid, which influences pH and contributes to the natural downward pH drift in some systems. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Carbon dioxide (CO2) in pool water forms carbonic acid, which influences pH and contributes to the natural downward pH drift in some systems. Plain-language ...",
     "h1": "Carbon Dioxide",
     "category": "Glossary",
     "readingTime": null,
@@ -1102,7 +1102,7 @@
   {
     "url": "/glossary/cartridge-filter",
     "title": "Cartridge Filter: Definition",
-    "description": "A cartridge filter is a pool filter type that uses a pleated polyester element to capture particles as water passes from outside to inside the element. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A cartridge filter is a pool filter type that uses a pleated polyester element to capture particles as water passes from outside to inside the element. Plain...",
     "h1": "Cartridge Filter",
     "category": "Glossary",
     "readingTime": null,
@@ -1112,7 +1112,7 @@
   {
     "url": "/glossary/chemical-compatibility",
     "title": "Chemical Compatibility: Definition",
-    "description": "Chemical compatibility refers to the safety of mixing or sequentially adding pool chemicals to water without dangerous reactions. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Chemical compatibility refers to the safety of mixing or sequentially adding pool chemicals to water without dangerous reactions. Plain-language definition w...",
     "h1": "Chemical Compatibility",
     "category": "Glossary",
     "readingTime": null,
@@ -1122,7 +1122,7 @@
   {
     "url": "/glossary/chemical-log",
     "title": "Chemical Log: Definition",
-    "description": "A chemical log is a written or digital record of every pool water test result and chemical addition, used for maintenance tracking and liability documentation. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A chemical log is a written or digital record of every pool water test result and chemical addition, used for maintenance tracking and liability documentatio...",
     "h1": "Chemical Log",
     "category": "Glossary",
     "readingTime": null,
@@ -1132,7 +1132,7 @@
   {
     "url": "/glossary/chemical-storage",
     "title": "Chemical Storage: Definition",
-    "description": "Chemical storage refers to the safe storage of pool and spa chemicals to prevent degradation, accidents, and dangerous reactions. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Chemical storage refers to the safe storage of pool and spa chemicals to prevent degradation, accidents, and dangerous reactions. Plain-language definition w...",
     "h1": "Chemical Storage",
     "category": "Glossary",
     "readingTime": null,
@@ -1142,7 +1142,7 @@
   {
     "url": "/glossary/chloramine",
     "title": "Chloramine: Definition",
-    "description": "Chloramines are compounds formed when free chlorine reacts with nitrogen-containing compounds in pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Chloramines are compounds formed when free chlorine reacts with nitrogen-containing compounds in pool water. Plain-language definition with target values and...",
     "h1": "Chloramine",
     "category": "Glossary",
     "readingTime": null,
@@ -1152,7 +1152,7 @@
   {
     "url": "/glossary/chlorine-demand",
     "title": "Chlorine Demand: Definition",
-    "description": "Chlorine demand is the total amount of chlorine consumed by all reactions in pool water before a free chlorine residual can be established. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Chlorine demand is the total amount of chlorine consumed by all reactions in pool water before a free chlorine residual can be established. Plain-language de...",
     "h1": "Chlorine Demand",
     "category": "Glossary",
     "readingTime": null,
@@ -1162,7 +1162,7 @@
   {
     "url": "/glossary/chlorine-stabilizer",
     "title": "Chlorine Stabilizer: Definition",
-    "description": "Chlorine stabilizer is another name for cyanuric acid (CYA), used as a synonym especially in product marketing. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Chlorine stabilizer is another name for cyanuric acid (CYA), used as a synonym especially in product marketing. Plain-language definition with target values ...",
     "h1": "Chlorine Stabilizer",
     "category": "Glossary",
     "readingTime": null,
@@ -1172,7 +1172,7 @@
   {
     "url": "/glossary/clarifier",
     "title": "Clarifier: Definition",
-    "description": "A pool clarifier is a coagulant product that causes fine suspended particles to clump together into larger particles that the filter can capture. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A pool clarifier is a coagulant product that causes fine suspended particles to clump together into larger particles that the filter can capture. Plain-langu...",
     "h1": "Clarifier",
     "category": "Glossary",
     "readingTime": null,
@@ -1182,7 +1182,7 @@
   {
     "url": "/glossary/closing-chemical-kit",
     "title": "Closing Chemical Kit: Definition",
-    "description": "A pool closing chemical kit contains the chemicals needed to balance and protect pool water during winter dormancy. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A pool closing chemical kit contains the chemicals needed to balance and protect pool water during winter dormancy. Plain-language definition with target val...",
     "h1": "Closing Chemical Kit",
     "category": "Glossary",
     "readingTime": null,
@@ -1192,7 +1192,7 @@
   {
     "url": "/glossary/colorimetric-test",
     "title": "Colorimetric Test: Definition",
-    "description": "A colorimetric test measures water chemistry by observing the colour change of a reagent added to a water sample. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A colorimetric test measures water chemistry by observing the colour change of a reagent added to a water sample. Plain-language definition with target value...",
     "h1": "Colorimetric Test",
     "category": "Glossary",
     "readingTime": null,
@@ -1202,7 +1202,7 @@
   {
     "url": "/glossary/combined-chlorine",
     "title": "Combined Chlorine: Definition",
-    "description": "Combined chlorine is the portion of total chlorine that has reacted with nitrogen compounds and is no longer an effective sanitiser. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Combined chlorine is the portion of total chlorine that has reacted with nitrogen compounds and is no longer an effective sanitiser. Plain-language definitio...",
     "h1": "Combined Chlorine",
     "category": "Glossary",
     "readingTime": null,
@@ -1212,7 +1212,7 @@
   {
     "url": "/glossary/conductivity",
     "title": "Conductivity: Definition",
-    "description": "Conductivity is a measure of water's ability to conduct electricity, which increases with the concentration of dissolved ions. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Conductivity is a measure of water's ability to conduct electricity, which increases with the concentration of dissolved ions. Plain-language definition with...",
     "h1": "Conductivity",
     "category": "Glossary",
     "readingTime": null,
@@ -1222,7 +1222,7 @@
   {
     "url": "/glossary/copper",
     "title": "Copper (Pool Water): Definition",
-    "description": "Copper is a dissolved metal found in some pool water that causes blue-green staining when oxidised. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Copper is a dissolved metal found in some pool water that causes blue-green staining when oxidised. Plain-language definition with target values and related ...",
     "h1": "Copper (Pool Water)",
     "category": "Glossary",
     "readingTime": null,
@@ -1232,7 +1232,7 @@
   {
     "url": "/glossary/cyanuric-acid",
     "title": "Cyanuric Acid: Definition",
-    "description": "Cyanuric acid is a stabilizing compound that forms a reversible bond with free chlorine in pool water, protecting it from UV degradation. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Cyanuric acid is a stabilizing compound that forms a reversible bond with free chlorine in pool water, protecting it from UV degradation. Plain-language defi...",
     "h1": "Cyanuric Acid",
     "category": "Glossary",
     "readingTime": null,
@@ -1242,7 +1242,7 @@
   {
     "url": "/glossary/de-filter",
     "title": "DE Filter: Definition",
-    "description": "A DE (diatomaceous earth) filter uses diatomaceous earth powder coated on internal grids to filter pool water to 3–5 micron fineness. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A DE (diatomaceous earth) filter uses diatomaceous earth powder coated on internal grids to filter pool water to 3–5 micron fineness. Plain-language definiti...",
     "h1": "DE Filter",
     "category": "Glossary",
     "readingTime": null,
@@ -1252,7 +1252,7 @@
   {
     "url": "/glossary/dead-algae",
     "title": "Dead Algae: Definition",
-    "description": "Dead algae is killed algae cells that remain suspended or settled in pool water after shock treatment, causing grey or white cloudiness. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Dead algae is killed algae cells that remain suspended or settled in pool water after shock treatment, causing grey or white cloudiness. Plain-language defin...",
     "h1": "Dead Algae",
     "category": "Glossary",
     "readingTime": null,
@@ -1262,7 +1262,7 @@
   {
     "url": "/glossary/dichlor",
     "title": "Dichlor: Definition",
-    "description": "Dichlor (sodium dichloroisocyanurate) is a fast-dissolving stabilised chlorine product that adds both free chlorine and cyanuric acid to pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Dichlor (sodium dichloroisocyanurate) is a fast-dissolving stabilised chlorine product that adds both free chlorine and cyanuric acid to pool water. Plain-la...",
     "h1": "Dichlor",
     "category": "Glossary",
     "readingTime": null,
@@ -1272,7 +1272,7 @@
   {
     "url": "/glossary/dilution",
     "title": "Dilution: Definition",
-    "description": "Dilution refers to the reduction in chemical concentration in pool water caused by adding water (rain, refill, splash-out). Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Dilution refers to the reduction in chemical concentration in pool water caused by adding water (rain, refill, splash-out). Plain-language definition with ta...",
     "h1": "Dilution",
     "category": "Glossary",
     "readingTime": null,
@@ -1282,7 +1282,7 @@
   {
     "url": "/glossary/dpd-test",
     "title": "DPD Test: Definition",
-    "description": "DPD (N,N-diethyl-p-phenylenediamine) is the standard reagent used in liquid test kits to measure free chlorine and total chlorine. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "DPD (N,N-diethyl-p-phenylenediamine) is the standard reagent used in liquid test kits to measure free chlorine and total chlorine. Plain-language definition ...",
     "h1": "DPD Test",
     "category": "Glossary",
     "readingTime": null,
@@ -1292,7 +1292,7 @@
   {
     "url": "/glossary/evaporation",
     "title": "Evaporation: Definition",
-    "description": "Evaporation is the loss of water from a pool's surface as water molecules escape into the air, which concentrates dissolved chemicals and raises TDS. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Evaporation is the loss of water from a pool's surface as water molecules escape into the air, which concentrates dissolved chemicals and raises TDS. Plain-l...",
     "h1": "Evaporation",
     "category": "Glossary",
     "readingTime": null,
@@ -1302,7 +1302,7 @@
   {
     "url": "/glossary/filter-pressure",
     "title": "Filter Pressure: Definition",
-    "description": "Filter pressure is the water pressure reading on the filter pressure gauge, measured in psi (pounds per square inch). Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Filter pressure is the water pressure reading on the filter pressure gauge, measured in psi (pounds per square inch). Plain-language definition with target v...",
     "h1": "Filter Pressure",
     "category": "Glossary",
     "readingTime": null,
@@ -1312,7 +1312,7 @@
   {
     "url": "/glossary/flocculant",
     "title": "Flocculant: Definition",
-    "description": "A pool flocculant is a coagulating agent that causes all suspended particles to clump and sink to the pool floor for vacuuming to waste. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A pool flocculant is a coagulating agent that causes all suspended particles to clump and sink to the pool floor for vacuuming to waste. Plain-language defin...",
     "h1": "Flocculant",
     "category": "Glossary",
     "readingTime": null,
@@ -1322,7 +1322,7 @@
   {
     "url": "/glossary/free-chlorine",
     "title": "Free Chlorine: Definition",
-    "description": "Free chlorine is the concentration of active, unsaturated chlorine available in pool water to sanitise and disinfect. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Free chlorine is the concentration of active, unsaturated chlorine available in pool water to sanitise and disinfect. Plain-language definition with target v...",
     "h1": "Free Chlorine",
     "category": "Glossary",
     "readingTime": null,
@@ -1332,7 +1332,7 @@
   {
     "url": "/glossary/gpm",
     "title": "GPM (Gallons Per Minute): Definition",
-    "description": "GPM is the unit measuring the flow rate of water through a pool pump or other equipment. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "GPM is the unit measuring the flow rate of water through a pool pump or other equipment. Plain-language definition with target values and related pool chemis...",
     "h1": "GPM (Gallons Per Minute)",
     "category": "Glossary",
     "readingTime": null,
@@ -1342,7 +1342,7 @@
   {
     "url": "/glossary/green-algae",
     "title": "Green Algae: Definition",
-    "description": "Green algae is the most common pool algae species, causing water to turn green or teal and surfaces to become slippery. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Green algae is the most common pool algae species, causing water to turn green or teal and surfaces to become slippery. Plain-language definition with target...",
     "h1": "Green Algae",
     "category": "Glossary",
     "readingTime": null,
@@ -1352,7 +1352,7 @@
   {
     "url": "/glossary/hypochlorous-acid",
     "title": "Hypochlorous Acid: Definition",
-    "description": "Hypochlorous acid (HOCl) is the active, bactericidal form of chlorine in pool water, responsible for killing pathogens. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Hypochlorous acid (HOCl) is the active, bactericidal form of chlorine in pool water, responsible for killing pathogens. Plain-language definition with target...",
     "h1": "Hypochlorous Acid",
     "category": "Glossary",
     "readingTime": null,
@@ -1362,7 +1362,7 @@
   {
     "url": "/glossary/iron",
     "title": "Iron (Pool Water): Definition",
-    "description": "Iron in pool water is a dissolved metal that can cause reddish-brown staining when oxidised by chlorine or shock treatment. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Iron in pool water is a dissolved metal that can cause reddish-brown staining when oxidised by chlorine or shock treatment. Plain-language definition with ta...",
     "h1": "Iron (Pool Water)",
     "category": "Glossary",
     "readingTime": null,
@@ -1372,7 +1372,7 @@
   {
     "url": "/glossary/langelier-saturation-index",
     "title": "Langelier Saturation Index: Definition",
-    "description": "The Langelier Saturation Index is a calculated number that predicts whether pool water is in equilibrium with calcium carbonate, tending to corrode, or tending to deposit scale. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "The Langelier Saturation Index is a calculated number that predicts whether pool water is in equilibrium with calcium carbonate, tending to corrode, or tendi...",
     "h1": "Langelier Saturation Index",
     "category": "Glossary",
     "readingTime": null,
@@ -1382,7 +1382,7 @@
   {
     "url": "/glossary/main-drain",
     "title": "Main Drain: Definition",
-    "description": "The main drain is the fitting at the lowest point of a pool that allows the pool to be completely drained and provides a second suction point for the pump. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "The main drain is the fitting at the lowest point of a pool that allows the pool to be completely drained and provides a second suction point for the pump. P...",
     "h1": "Main Drain",
     "category": "Glossary",
     "readingTime": null,
@@ -1392,7 +1392,7 @@
   {
     "url": "/glossary/metal-sequestrant",
     "title": "Metal Sequestrant: Definition",
-    "description": "A metal sequestrant is a pool chemical that binds dissolved metals (iron, copper, manganese) to prevent them from staining pool surfaces. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A metal sequestrant is a pool chemical that binds dissolved metals (iron, copper, manganese) to prevent them from staining pool surfaces. Plain-language defi...",
     "h1": "Metal Sequestrant",
     "category": "Glossary",
     "readingTime": null,
@@ -1402,7 +1402,7 @@
   {
     "url": "/glossary/multiport-valve",
     "title": "Multiport Valve: Definition",
-    "description": "A multiport valve is the control valve on a sand or DE filter that selects between filter, backwash, rinse, waste, and other operational modes. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A multiport valve is the control valve on a sand or DE filter that selects between filter, backwash, rinse, waste, and other operational modes. Plain-languag...",
     "h1": "Multiport Valve",
     "category": "Glossary",
     "readingTime": null,
@@ -1412,7 +1412,7 @@
   {
     "url": "/glossary/muriatic-acid",
     "title": "Muriatic Acid: Definition",
-    "description": "Muriatic acid (dilute hydrochloric acid) is the most commonly used chemical for lowering pool pH and total alkalinity. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Muriatic acid (dilute hydrochloric acid) is the most commonly used chemical for lowering pool pH and total alkalinity. Plain-language definition with target ...",
     "h1": "Muriatic Acid",
     "category": "Glossary",
     "readingTime": null,
@@ -1422,7 +1422,7 @@
   {
     "url": "/glossary/mustard-algae",
     "title": "Mustard Algae: Definition",
-    "description": "Mustard algae is a yellow-brown pool algae species that brushes off easily but quickly returns, caused by a chlorine-resistant strain. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Mustard algae is a yellow-brown pool algae species that brushes off easily but quickly returns, caused by a chlorine-resistant strain. Plain-language definit...",
     "h1": "Mustard Algae",
     "category": "Glossary",
     "readingTime": null,
@@ -1432,7 +1432,7 @@
   {
     "url": "/glossary/opening-chemical-kit",
     "title": "Opening Chemical Kit: Definition",
-    "description": "A pool opening chemical kit is a package of chemicals assembled for spring pool opening, typically including shock, algaecide, and stain prevention. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A pool opening chemical kit is a package of chemicals assembled for spring pool opening, typically including shock, algaecide, and stain prevention. Plain-la...",
     "h1": "Opening Chemical Kit",
     "category": "Glossary",
     "readingTime": null,
@@ -1442,7 +1442,7 @@
   {
     "url": "/glossary/orp",
     "title": "ORP (Oxidation-Reduction Potential): Definition",
-    "description": "ORP is the electrical potential of water measured in millivolts that indicates the overall oxidising capacity of the water. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "ORP is the electrical potential of water measured in millivolts that indicates the overall oxidising capacity of the water. Plain-language definition with ta...",
     "h1": "ORP (Oxidation-Reduction Potential)",
     "category": "Glossary",
     "readingTime": null,
@@ -1452,7 +1452,7 @@
   {
     "url": "/glossary/oto-test",
     "title": "OTO Test: Definition",
-    "description": "OTO (orthotolidine) is an older test reagent that measures total chlorine by producing a yellow colour in chlorinated water. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "OTO (orthotolidine) is an older test reagent that measures total chlorine by producing a yellow colour in chlorinated water. Plain-language definition with t...",
     "h1": "OTO Test",
     "category": "Glossary",
     "readingTime": null,
@@ -1462,7 +1462,7 @@
   {
     "url": "/glossary/oxidizer",
     "title": "Oxidizer: Definition",
-    "description": "An oxidizer is a chemical that destroys organic contaminants in pool water through oxidation, without necessarily adding sanitiser residual. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "An oxidizer is a chemical that destroys organic contaminants in pool water through oxidation, without necessarily adding sanitiser residual. Plain-language d...",
     "h1": "Oxidizer",
     "category": "Glossary",
     "readingTime": null,
@@ -1472,7 +1472,7 @@
   {
     "url": "/glossary/ozone",
     "title": "Ozone: Definition",
-    "description": "Ozone (O3) is a powerful oxidiser used in pool systems to reduce organic contamination, chlorine demand, and chloramine formation. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Ozone (O3) is a powerful oxidiser used in pool systems to reduce organic contamination, chlorine demand, and chloramine formation. Plain-language definition ...",
     "h1": "Ozone",
     "category": "Glossary",
     "readingTime": null,
@@ -1482,7 +1482,7 @@
   {
     "url": "/glossary/partial-drain",
     "title": "Partial Drain: Definition",
-    "description": "A partial drain is the process of removing a portion of pool water and replacing it with fresh water to dilute accumulated dissolved compounds. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A partial drain is the process of removing a portion of pool water and replacing it with fresh water to dilute accumulated dissolved compounds. Plain-languag...",
     "h1": "Partial Drain",
     "category": "Glossary",
     "readingTime": null,
@@ -1492,7 +1492,7 @@
   {
     "url": "/glossary/parts-per-million",
     "title": "Parts Per Million: Definition",
-    "description": "Parts per million (ppm) is the unit used to express the concentration of dissolved substances in pool water, equivalent to milligrams per liter (mg/L). Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Parts per million (ppm) is the unit used to express the concentration of dissolved substances in pool water, equivalent to milligrams per liter (mg/L). Plain...",
     "h1": "Parts Per Million",
     "category": "Glossary",
     "readingTime": null,
@@ -1502,7 +1502,7 @@
   {
     "url": "/glossary/ph",
     "title": "pH: Definition",
-    "description": "pH measures the concentration of hydrogen ions in water on a logarithmic scale from 0 (most acidic) to 14 (most alkaline), with 7. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "pH measures the concentration of hydrogen ions in water on a logarithmic scale from 0 (most acidic) to 14 (most alkaline), with 7. Plain-language definition ...",
     "h1": "pH",
     "category": "Glossary",
     "readingTime": null,
@@ -1512,7 +1512,7 @@
   {
     "url": "/glossary/ph-bounce",
     "title": "pH Bounce: Definition",
-    "description": "pH bounce is the condition where pool water pH swings rapidly and unpredictably, typically caused by insufficient total alkalinity. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "pH bounce is the condition where pool water pH swings rapidly and unpredictably, typically caused by insufficient total alkalinity. Plain-language definition...",
     "h1": "pH Bounce",
     "category": "Glossary",
     "readingTime": null,
@@ -1522,7 +1522,7 @@
   {
     "url": "/glossary/ph-increaser",
     "title": "pH Increaser: Definition",
-    "description": "pH increaser is a pool product that raises water pH, typically sodium carbonate (soda ash) or sodium bicarbonate. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "pH increaser is a pool product that raises water pH, typically sodium carbonate (soda ash) or sodium bicarbonate. Plain-language definition with target value...",
     "h1": "pH Increaser",
     "category": "Glossary",
     "readingTime": null,
@@ -1532,7 +1532,7 @@
   {
     "url": "/glossary/phosphates",
     "title": "Phosphates: Definition",
-    "description": "Phosphates are nutrients present in pool water that can promote algae growth when free chlorine is inadequate. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Phosphates are nutrients present in pool water that can promote algae growth when free chlorine is inadequate. Plain-language definition with target values a...",
     "h1": "Phosphates",
     "category": "Glossary",
     "readingTime": null,
@@ -1542,7 +1542,7 @@
   {
     "url": "/glossary/pink-slime",
     "title": "Pink Slime: Definition",
-    "description": "Pink slime is a pink or orange bacterial growth caused by Serratia marcescens or Methylobacterium species, commonly seen in hot tubs and pool fittings. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Pink slime is a pink or orange bacterial growth caused by Serratia marcescens or Methylobacterium species, commonly seen in hot tubs and pool fittings. Plain...",
     "h1": "Pink Slime",
     "category": "Glossary",
     "readingTime": null,
@@ -1552,7 +1552,7 @@
   {
     "url": "/glossary/pool-chemistry-reference",
     "title": "Pool Chemistry Reference: Definition",
-    "description": "A pool chemistry reference is a compiled table of target ranges, typical values, and adjustment guides for all major pool water parameters. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A pool chemistry reference is a compiled table of target ranges, typical values, and adjustment guides for all major pool water parameters. Plain-language de...",
     "h1": "Pool Chemistry Reference",
     "category": "Glossary",
     "readingTime": null,
@@ -1562,7 +1562,7 @@
   {
     "url": "/glossary/pool-maintenance-schedule",
     "title": "Pool Maintenance Schedule: Definition",
-    "description": "A pool maintenance schedule is a written plan covering daily, weekly, monthly, and seasonal maintenance tasks for pool chemistry and equipment. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A pool maintenance schedule is a written plan covering daily, weekly, monthly, and seasonal maintenance tasks for pool chemistry and equipment. Plain-languag...",
     "h1": "Pool Maintenance Schedule",
     "category": "Glossary",
     "readingTime": null,
@@ -1572,7 +1572,7 @@
   {
     "url": "/glossary/pool-pump",
     "title": "Pool Pump: Definition",
-    "description": "A pool pump is the mechanical device that circulates water through the filter, heater, and chlorinator, maintaining water movement and filtration. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A pool pump is the mechanical device that circulates water through the filter, heater, and chlorinator, maintaining water movement and filtration. Plain-lang...",
     "h1": "Pool Pump",
     "category": "Glossary",
     "readingTime": null,
@@ -1582,7 +1582,7 @@
   {
     "url": "/glossary/pool-safety-equipment",
     "title": "Pool Safety Equipment: Definition",
-    "description": "Pool safety equipment includes the physical devices required to assist in pool emergency response: life ring, reaching pole, first aid kit, and emergency signage. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Pool safety equipment includes the physical devices required to assist in pool emergency response: life ring, reaching pole, first aid kit, and emergency sig...",
     "h1": "Pool Safety Equipment",
     "category": "Glossary",
     "readingTime": null,
@@ -1592,7 +1592,7 @@
   {
     "url": "/glossary/pool-shock-schedule",
     "title": "Pool Shock Schedule: Definition",
-    "description": "A pool shock schedule is the planned frequency and timing of pool shock treatments throughout the swimming season. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A pool shock schedule is the planned frequency and timing of pool shock treatments throughout the swimming season. Plain-language definition with target valu...",
     "h1": "Pool Shock Schedule",
     "category": "Glossary",
     "readingTime": null,
@@ -1602,7 +1602,7 @@
   {
     "url": "/glossary/pool-turnover-rate",
     "title": "Pool Turnover Rate: Definition",
-    "description": "Pool turnover rate is the time required for the pool pump to circulate the entire pool volume through the filtration system once. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Pool turnover rate is the time required for the pool pump to circulate the entire pool volume through the filtration system once. Plain-language definition w...",
     "h1": "Pool Turnover Rate",
     "category": "Glossary",
     "readingTime": null,
@@ -1612,7 +1612,7 @@
   {
     "url": "/glossary/pool-volume",
     "title": "Pool Volume: Definition",
-    "description": "Pool volume is the total capacity of a pool in gallons, used as the basis for all chemical dose calculations. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Pool volume is the total capacity of a pool in gallons, used as the basis for all chemical dose calculations. Plain-language definition with target values an...",
     "h1": "Pool Volume",
     "category": "Glossary",
     "readingTime": null,
@@ -1622,7 +1622,7 @@
   {
     "url": "/glossary/pool-volume-reference",
     "title": "Pool Volume Reference: Definition",
-    "description": "A pool volume reference is a pre-calculated table of approximate volumes for common pool dimensions, used for quick dose estimation. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A pool volume reference is a pre-calculated table of approximate volumes for common pool dimensions, used for quick dose estimation. Plain-language definitio...",
     "h1": "Pool Volume Reference",
     "category": "Glossary",
     "readingTime": null,
@@ -1632,7 +1632,7 @@
   {
     "url": "/glossary/pressure-gauge",
     "title": "Pressure Gauge: Definition",
-    "description": "A pressure gauge on the pool filter measures water pressure inside the filter housing in psi, indicating filter cleanliness and flow resistance. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A pressure gauge on the pool filter measures water pressure inside the filter housing in psi, indicating filter cleanliness and flow resistance. Plain-langua...",
     "h1": "Pressure Gauge",
     "category": "Glossary",
     "readingTime": null,
@@ -1642,7 +1642,7 @@
   {
     "url": "/glossary/pump-turnover",
     "title": "Pump Turnover: Definition",
-    "description": "Pump turnover is the number of times the entire pool volume passes through the filter in a 24-hour period. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Pump turnover is the number of times the entire pool volume passes through the filter in a 24-hour period. Plain-language definition with target values and r...",
     "h1": "Pump Turnover",
     "category": "Glossary",
     "readingTime": null,
@@ -1652,7 +1652,7 @@
   {
     "url": "/glossary/reagent",
     "title": "Reagent: Definition",
-    "description": "A reagent is a chemical used in a water test kit that reacts with the parameter being measured to produce a measurable colour change. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A reagent is a chemical used in a water test kit that reacts with the parameter being measured to produce a measurable colour change. Plain-language definiti...",
     "h1": "Reagent",
     "category": "Glossary",
     "readingTime": null,
@@ -1662,7 +1662,7 @@
   {
     "url": "/glossary/return-jet",
     "title": "Return Jet: Definition",
-    "description": "Return jets are the fittings in a pool wall through which filtered and treated water is returned to the pool. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Return jets are the fittings in a pool wall through which filtered and treated water is returned to the pool. Plain-language definition with target values an...",
     "h1": "Return Jet",
     "category": "Glossary",
     "readingTime": null,
@@ -1672,7 +1672,7 @@
   {
     "url": "/glossary/salt-chlorination",
     "title": "Salt Chlorination: Definition",
-    "description": "Salt chlorination (salt water generation) is a system that produces free chlorine continuously by electrolyzing dissolved sodium chloride in pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Salt chlorination (salt water generation) is a system that produces free chlorine continuously by electrolyzing dissolved sodium chloride in pool water. Plai...",
     "h1": "Salt Chlorination",
     "category": "Glossary",
     "readingTime": null,
@@ -1682,7 +1682,7 @@
   {
     "url": "/glossary/sand-filter",
     "title": "Sand Filter: Definition",
-    "description": "A sand filter is a pool filter type that passes water through a bed of specially graded silica sand to capture particles. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A sand filter is a pool filter type that passes water through a bed of specially graded silica sand to capture particles. Plain-language definition with targ...",
     "h1": "Sand Filter",
     "category": "Glossary",
     "readingTime": null,
@@ -1692,7 +1692,7 @@
   {
     "url": "/glossary/sanitizer",
     "title": "Sanitizer: Definition",
-    "description": "A sanitizer is a chemical agent that reduces microbial contamination in pool water to safe levels for human contact. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A sanitizer is a chemical agent that reduces microbial contamination in pool water to safe levels for human contact. Plain-language definition with target va...",
     "h1": "Sanitizer",
     "category": "Glossary",
     "readingTime": null,
@@ -1702,7 +1702,7 @@
   {
     "url": "/glossary/saturated-ph",
     "title": "Saturated pH: Definition",
-    "description": "Saturated pH (pHs) is the theoretical pH at which pool water would be exactly in equilibrium with calcium carbonate, used in LSI calculation. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Saturated pH (pHs) is the theoretical pH at which pool water would be exactly in equilibrium with calcium carbonate, used in LSI calculation. Plain-language ...",
     "h1": "Saturated pH",
     "category": "Glossary",
     "readingTime": null,
@@ -1712,7 +1712,7 @@
   {
     "url": "/glossary/saturation-index",
     "title": "Saturation Index: Definition",
-    "description": "A saturation index is a calculated value predicting whether pool water will dissolve minerals (negative index) or deposit them as scale (positive index). Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A saturation index is a calculated value predicting whether pool water will dissolve minerals (negative index) or deposit them as scale (positive index). Pla...",
     "h1": "Saturation Index",
     "category": "Glossary",
     "readingTime": null,
@@ -1722,7 +1722,7 @@
   {
     "url": "/glossary/scale-inhibitor",
     "title": "Scale Inhibitor: Definition",
-    "description": "A scale inhibitor is a pool product that prevents calcium carbonate from precipitating onto pool surfaces, tile, and equipment. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A scale inhibitor is a pool product that prevents calcium carbonate from precipitating onto pool surfaces, tile, and equipment. Plain-language definition wit...",
     "h1": "Scale Inhibitor",
     "category": "Glossary",
     "readingTime": null,
@@ -1742,7 +1742,7 @@
   {
     "url": "/glossary/shock",
     "title": "Shock: Definition",
-    "description": "Shock is the practice of adding a large dose of chlorine or oxidizer to pool water to reach breakpoint chlorination, kill algae, or reset water clarity. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Shock is the practice of adding a large dose of chlorine or oxidizer to pool water to reach breakpoint chlorination, kill algae, or reset water clarity. Plai...",
     "h1": "Shock",
     "category": "Glossary",
     "readingTime": null,
@@ -1752,7 +1752,7 @@
   {
     "url": "/glossary/shock-dosage",
     "title": "Shock Dosage: Definition",
-    "description": "Shock dosage refers to the amount of shock product required to raise free chlorine to the target level for the pool volume and treatment goal. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Shock dosage refers to the amount of shock product required to raise free chlorine to the target level for the pool volume and treatment goal. Plain-language...",
     "h1": "Shock Dosage",
     "category": "Glossary",
     "readingTime": null,
@@ -1762,7 +1762,7 @@
   {
     "url": "/glossary/skimmer",
     "title": "Skimmer: Definition",
-    "description": "A skimmer is a pool fitting built into the pool wall at the water surface that draws in surface water and floating debris for filtration. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A skimmer is a pool fitting built into the pool wall at the water surface that draws in surface water and floating debris for filtration. Plain-language defi...",
     "h1": "Skimmer",
     "category": "Glossary",
     "readingTime": null,
@@ -1772,7 +1772,7 @@
   {
     "url": "/glossary/sodium-bicarbonate",
     "title": "Sodium Bicarbonate: Definition",
-    "description": "Sodium bicarbonate (baking soda) is the standard chemical for raising total alkalinity in pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Sodium bicarbonate (baking soda) is the standard chemical for raising total alkalinity in pool water. Plain-language definition with target values and relate...",
     "h1": "Sodium Bicarbonate",
     "category": "Glossary",
     "readingTime": null,
@@ -1782,7 +1782,7 @@
   {
     "url": "/glossary/sodium-bisulfate",
     "title": "Sodium Bisulfate: Definition",
-    "description": "Sodium bisulfate (dry acid) is a granular acid used to lower pool pH and total alkalinity as a safer alternative to liquid muriatic acid. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Sodium bisulfate (dry acid) is a granular acid used to lower pool pH and total alkalinity as a safer alternative to liquid muriatic acid. Plain-language defi...",
     "h1": "Sodium Bisulfate",
     "category": "Glossary",
     "readingTime": null,
@@ -1792,7 +1792,7 @@
   {
     "url": "/glossary/sodium-carbonate",
     "title": "Sodium Carbonate: Definition",
-    "description": "Sodium carbonate (soda ash) is used to raise pool water pH with minimal effect on total alkalinity. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Sodium carbonate (soda ash) is used to raise pool water pH with minimal effect on total alkalinity. Plain-language definition with target values and related ...",
     "h1": "Sodium Carbonate",
     "category": "Glossary",
     "readingTime": null,
@@ -1802,7 +1802,7 @@
   {
     "url": "/glossary/sodium-hypochlorite",
     "title": "Sodium Hypochlorite: Definition",
-    "description": "Sodium hypochlorite is liquid chlorine — a solution of sodium and hypochlorite ions used to sanitise and shock pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Sodium hypochlorite is liquid chlorine — a solution of sodium and hypochlorite ions used to sanitise and shock pool water. Plain-language definition with tar...",
     "h1": "Sodium Hypochlorite",
     "category": "Glossary",
     "readingTime": null,
@@ -1812,7 +1812,7 @@
   {
     "url": "/glossary/superchlorination",
     "title": "Superchlorination: Definition",
-    "description": "Superchlorination is the practice of raising free chlorine to 10 ppm or higher to destroy chloramines, kill algae, or clear severely compromised water. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Superchlorination is the practice of raising free chlorine to 10 ppm or higher to destroy chloramines, kill algae, or clear severely compromised water. Plain...",
     "h1": "Superchlorination",
     "category": "Glossary",
     "readingTime": null,
@@ -1822,7 +1822,7 @@
   {
     "url": "/glossary/test-strip",
     "title": "Test Strip: Definition",
-    "description": "A test strip is a plastic strip with reagent-impregnated pads that produce colour changes when dipped in pool water, indicating chemical concentrations. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A test strip is a plastic strip with reagent-impregnated pads that produce colour changes when dipped in pool water, indicating chemical concentrations. Plai...",
     "h1": "Test Strip",
     "category": "Glossary",
     "readingTime": null,
@@ -1832,7 +1832,7 @@
   {
     "url": "/glossary/total-alkalinity",
     "title": "Total Alkalinity: Definition",
-    "description": "Total alkalinity measures the water's ability to resist changes in pH, expressed as the total concentration of alkaline compounds (bicarbonate, carbonate, hydroxide) in ppm. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Total alkalinity measures the water's ability to resist changes in pH, expressed as the total concentration of alkaline compounds (bicarbonate, carbonate, hy...",
     "h1": "Total Alkalinity",
     "category": "Glossary",
     "readingTime": null,
@@ -1842,7 +1842,7 @@
   {
     "url": "/glossary/total-chlorine",
     "title": "Total Chlorine: Definition",
-    "description": "Total chlorine is the sum of free chlorine and combined chlorine in pool water. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Total chlorine is the sum of free chlorine and combined chlorine in pool water. Plain-language definition with target values and related pool chemistry resou...",
     "h1": "Total Chlorine",
     "category": "Glossary",
     "readingTime": null,
@@ -1852,7 +1852,7 @@
   {
     "url": "/glossary/total-dissolved-solids",
     "title": "Total Dissolved Solids: Definition",
-    "description": "Total dissolved solids measures the total concentration of all dissolved substances in pool water, expressed in ppm. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Total dissolved solids measures the total concentration of all dissolved substances in pool water, expressed in ppm. Plain-language definition with target va...",
     "h1": "Total Dissolved Solids",
     "category": "Glossary",
     "readingTime": null,
@@ -1862,7 +1862,7 @@
   {
     "url": "/glossary/total-hardness",
     "title": "Total Hardness: Definition",
-    "description": "Total hardness measures all divalent mineral ions in water (calcium and magnesium), while pool chemistry specifically uses only calcium hardness. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Total hardness measures all divalent mineral ions in water (calcium and magnesium), while pool chemistry specifically uses only calcium hardness. Plain-langu...",
     "h1": "Total Hardness",
     "category": "Glossary",
     "readingTime": null,
@@ -1872,7 +1872,7 @@
   {
     "url": "/glossary/trichlor",
     "title": "Trichlor: Definition",
-    "description": "Trichlor (trichloroisocyanuric acid) is a slow-dissolving stabilised chlorine tablet that delivers free chlorine and cyanuric acid simultaneously. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Trichlor (trichloroisocyanuric acid) is a slow-dissolving stabilised chlorine tablet that delivers free chlorine and cyanuric acid simultaneously. Plain-lang...",
     "h1": "Trichlor",
     "category": "Glossary",
     "readingTime": null,
@@ -1882,7 +1882,7 @@
   {
     "url": "/glossary/turbidity",
     "title": "Turbidity: Definition",
-    "description": "Turbidity is the cloudiness or haziness of pool water caused by suspended fine particles that scatter light. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Turbidity is the cloudiness or haziness of pool water caused by suspended fine particles that scatter light. Plain-language definition with target values and...",
     "h1": "Turbidity",
     "category": "Glossary",
     "readingTime": null,
@@ -1892,7 +1892,7 @@
   {
     "url": "/glossary/uv-sanitization",
     "title": "UV Sanitization: Definition",
-    "description": "UV sanitization uses ultraviolet light to inactivate microorganisms in pool water as it passes through a UV chamber in the equipment line. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "UV sanitization uses ultraviolet light to inactivate microorganisms in pool water as it passes through a UV chamber in the equipment line. Plain-language def...",
     "h1": "UV Sanitization",
     "category": "Glossary",
     "readingTime": null,
@@ -1902,7 +1902,7 @@
   {
     "url": "/glossary/water-balance-checklist",
     "title": "Water Balance Checklist: Definition",
-    "description": "A water balance checklist is a sequential list of tests and adjustments that ensures all pool chemistry parameters are brought into range in the correct order. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A water balance checklist is a sequential list of tests and adjustments that ensures all pool chemistry parameters are brought into range in the correct orde...",
     "h1": "Water Balance Checklist",
     "category": "Glossary",
     "readingTime": null,
@@ -1912,7 +1912,7 @@
   {
     "url": "/glossary/water-temperature",
     "title": "Water Temperature: Definition",
-    "description": "Water temperature affects chlorine demand, chemical reaction rates, calcium solubility, and the Langelier Saturation Index. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Water temperature affects chlorine demand, chemical reaction rates, calcium solubility, and the Langelier Saturation Index. Plain-language definition with ta...",
     "h1": "Water Temperature",
     "category": "Glossary",
     "readingTime": null,
@@ -1922,7 +1922,7 @@
   {
     "url": "/glossary/water-test-log",
     "title": "Water Test Log: Definition",
-    "description": "A water test log is a record sheet for documenting pool or hot tub water test results over time. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "A water test log is a record sheet for documenting pool or hot tub water test results over time. Plain-language definition with target values and related poo...",
     "h1": "Water Test Log",
     "category": "Glossary",
     "readingTime": null,
@@ -1932,7 +1932,7 @@
   {
     "url": "/glossary/winterization",
     "title": "Winterization: Definition",
-    "description": "Winterization is the process of preparing a pool or hot tub for winter shutdown, including draining, blowing out plumbing lines, and protecting equipment from freeze damage. Plain-language definition with target values and related pool chemistry resources.",
+    "description": "Winterization is the process of preparing a pool or hot tub for winter shutdown, including draining, blowing out plumbing lines, and protecting equipment fro...",
     "h1": "Winterization",
     "category": "Glossary",
     "readingTime": null,
@@ -2042,7 +2042,7 @@
   {
     "url": "/reference/combined-chlorine-explained",
     "title": "Combined Chlorine (Chloramines) Explained",
-    "description": "Combined chlorine (chloramines) explained: what causes it, why it causes pool smell and eye irritation, the 0.5 ppm limit, and how to eliminate it with breakpoint shock.",
+    "description": "Combined chlorine (chloramines) explained: what causes it, why it causes pool smell and eye irritation, the 0.5 ppm limit, and how to eliminate it with break...",
     "h1": "Combined Chlorine (Chloramines) Explained",
     "category": "Reference",
     "readingTime": null,
@@ -2232,7 +2232,7 @@
   {
     "url": "/reference/salt-water-generator-explained",
     "title": "Salt Water Generator (SWG) Explained",
-    "description": "Salt water generator explained: how electrolytic chlorine generation works, salt levels 2700–3400 ppm, chemistry management, pros and cons vs traditional chlorine.",
+    "description": "Salt water generator explained: how electrolytic chlorine generation works, salt levels 2700–3400 ppm, chemistry management, pros and cons vs traditional chl...",
     "h1": "Salt Water Generator (SWG) Explained",
     "category": "Reference",
     "readingTime": null,
@@ -2781,7 +2781,7 @@
   },
   {
     "url": "/methodology",
-    "title": "Calculation Methodology",
+    "title": "Calculation Methodology (methodology)",
     "description": "How WaterBalanceTools calculates pool chemistry recommendations. Data flow, formula selection, rounding, precision, and known limitations.",
     "h1": "Calculation Methodology",
     "category": "Methodology",
@@ -2902,7 +2902,7 @@
   {
     "url": "/entities",
     "title": "Entity Graph — Pool Chemistry Knowledge Base",
-    "description": "The canonical pool chemistry entity graph: 104 entities covering chemicals, measurements, equipment, processes, problems, and pool types. The semantic backbone of WaterBalanceTools.",
+    "description": "The canonical pool chemistry entity graph: 104 entities covering chemicals, measurements, equipment, processes, problems, and pool types. The semantic backbo...",
     "h1": "Pool Chemistry Entity Graph",
     "category": "Other",
     "readingTime": null,
@@ -3841,13 +3841,13 @@
   },
   {
     "url": "/entities/unit-liters",
-    "title": "Liters — Pool Chemistry Entity",
+    "title": "Liters — Pool Chemistry Entity (entities)",
     "description": "SI unit of volume. 1 US gallon = 3.785 liters.",
     "h1": "Liters",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "liters pool chemistry entity"
+    "keywords": "liters pool chemistry entity entities"
   },
   {
     "url": "/entities/unit-mg-l",
@@ -4052,7 +4052,7 @@
   {
     "url": "/pool-chemistry-system",
     "title": "Pool Chemistry System: How All Parameters Work Together",
-    "description": "Pool chemistry system: how all 8 parameters (chlorine, pH, alkalinity, CYA, calcium hardness, combined chlorine, shock, and salt) work together to keep pool water safe and clear.",
+    "description": "Pool chemistry system: how all 8 parameters (chlorine, pH, alkalinity, CYA, calcium hardness, combined chlorine, shock, and salt) work together to keep pool ...",
     "h1": "Pool Chemistry System: How All Parameters Work Together",
     "category": "Other",
     "readingTime": null,
@@ -4448,6 +4448,46 @@
     "readingTime": null,
     "updated": null,
     "keywords": "how much shock for 5000 gallon pool exact ounces you need 000"
+  },
+  {
+    "url": "/releases",
+    "title": "Releases",
+    "description": "Canonical WaterBalanceTools release history with semantic versions and certification status.",
+    "h1": "Release History",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "releases release history"
+  },
+  {
+    "url": "/releases/1.0.0",
+    "title": "Release 1.0.0 — Foundation",
+    "description": "Release notes for WaterBalanceTools 1.0.0 (Foundation).",
+    "h1": "Release 1.0.0 — Foundation",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "release foundation"
+  },
+  {
+    "url": "/releases/1.1.0",
+    "title": "Release 1.1.0 — Explorer",
+    "description": "Release notes for WaterBalanceTools 1.1.0 (Explorer).",
+    "h1": "Release 1.1.0 — Explorer",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "release explorer"
+  },
+  {
+    "url": "/releases/compatibility",
+    "title": "Compatibility Matrix",
+    "description": "Platform and subsystem compatibility matrix for WaterBalanceTools releases.",
+    "h1": "Platform Compatibility Matrix",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "compatibility matrix platform"
   },
   {
     "url": "/salt-water-pool-chemical-levels-chart",

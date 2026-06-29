@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Performance Audit | WaterBalanceTools QA</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,sans-serif;margin:0;background:#f6f8fb;color:#1d2630}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    .card{background:#fff;border:1px solid #dbe3ef;border-radius:10px;padding:18px;margin:14px 0}
+    .h{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+    .score{font-weight:700;padding:6px 10px;border-radius:999px;color:#fff}
+    .qa-table{width:100%;border-collapse:collapse}
+    .qa-table th,.qa-table td{border:1px solid #e3e8f2;padding:8px 10px;text-align:left;font-size:14px}
+    .qa-table th{background:#f0f4fb}
+    a{color:#0b5cab;text-decoration:none}
+    a:hover{text-decoration:underline}
+    code{background:#eef3fa;padding:2px 6px;border-radius:4px}
+    ul{margin:8px 0 0 20px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card h">
+      <div>
+        <h1 style="margin:0">Performance Audit</h1>
+        <p style="margin:.35rem 0 0">Summary: Measures file-size based performance budgets for static delivery.</p>
+      </div>
+      <div class="score" style="background:#1f8a3c">100/100 · Green</div>
+    </div>
+    <div class="card">
+      <h2>Metadata</h2>
+      <table class="qa-table"><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>timestamp</td><td>2026-06-29T02:53:24.974Z</td></tr><tr><td>platformVersion</td><td>5A.75</td></tr><tr><td>datasetVersion</td><td>2026.07</td></tr><tr><td>entityVersion</td><td>2026.07</td></tr><tr><td>trustVersion</td><td>2026.07</td></tr><tr><td>critical</td><td>false</td></tr><tr><td>previousScore</td><td>100</td></tr><tr><td>currentScore</td><td>100</td></tr><tr><td>scoreChange</td><td>0</td></tr></tbody></table>
+    </div>
+    <div class="card"><h2>Passed Checks</h2><ul><li>HTML size target met</li></ul></div>
+    <div class="card"><h2>Warnings</h2><p>None.</p></div>
+    <div class="card"><h2>Errors</h2><p>None.</p></div>
+    <div class="card"><h2>Metrics</h2><table class="qa-table"><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>maxHtmlKb</td><td>40.7</td></tr><tr><td>avgHtmlKb</td><td>11.3</td></tr><tr><td>cssKb</td><td>35</td></tr><tr><td>jsKb</td><td>21</td></tr><tr><td>svgCount</td><td>2</td></tr></tbody></table></div>
+    <div class="card"><h2>Recommendations</h2><ul><li>Minify CSS/JS in production pipeline if warnings persist.</li></ul></div>
+    <p><a href="/qa/">← Back to QA Dashboard</a></p>
+  </div>
+</body>
+</html>

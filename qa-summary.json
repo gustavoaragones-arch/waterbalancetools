@@ -1,0 +1,120 @@
+{
+  "buildDate": "2026-06-29T02:53:24.974Z",
+  "platformVersion": "5A.75",
+  "overallScore": 99,
+  "overallStatus": "Green",
+  "validationErrors": 0,
+  "validationWarnings": 7,
+  "thresholds": {
+    "architecture": 95,
+    "seo": 98,
+    "performance": 95,
+    "schema": 100,
+    "accessibility": 95,
+    "mobile": 95,
+    "links": 100,
+    "entities": 98,
+    "datasets": 100,
+    "calculators": 100,
+    "content": 95,
+    "ai-readiness": 95
+  },
+  "audits": {
+    "architecture": {
+      "score": 96,
+      "status": "Green",
+      "errors": 0,
+      "warnings": 1,
+      "previousScore": 96,
+      "scoreChange": 0
+    },
+    "seo": {
+      "score": 98,
+      "status": "Green",
+      "errors": 0,
+      "warnings": 1,
+      "previousScore": 98,
+      "scoreChange": 0
+    },
+    "performance": {
+      "score": 100,
+      "status": "Green",
+      "errors": 0,
+      "warnings": 0,
+      "previousScore": 100,
+      "scoreChange": 0
+    },
+    "schema": {
+      "score": 100,
+      "status": "Green",
+      "errors": 0,
+      "warnings": 0,
+      "previousScore": 100,
+      "scoreChange": 0
+    },
+    "accessibility": {
+      "score": 96,
+      "status": "Green",
+      "errors": 0,
+      "warnings": 1,
+      "previousScore": 96,
+      "scoreChange": 0
+    },
+    "mobile": {
+      "score": 100,
+      "status": "Green",
+      "errors": 0,
+      "warnings": 0,
+      "previousScore": 100,
+      "scoreChange": 0
+    },
+    "links": {
+      "score": 100,
+      "status": "Green",
+      "errors": 0,
+      "warnings": 2,
+      "previousScore": 100,
+      "scoreChange": 0
+    },
+    "entities": {
+      "score": 100,
+      "status": "Green",
+      "errors": 0,
+      "warnings": 0,
+      "previousScore": 100,
+      "scoreChange": 0
+    },
+    "datasets": {
+      "score": 100,
+      "status": "Green",
+      "errors": 0,
+      "warnings": 0,
+      "previousScore": 100,
+      "scoreChange": 0
+    },
+    "calculators": {
+      "score": 100,
+      "status": "Green",
+      "errors": 0,
+      "warnings": 0,
+      "previousScore": 100,
+      "scoreChange": 0
+    },
+    "content": {
+      "score": 95,
+      "status": "Green",
+      "errors": 0,
+      "warnings": 2,
+      "previousScore": 95,
+      "scoreChange": 0
+    },
+    "ai-readiness": {
+      "score": 100,
+      "status": "Green",
+      "errors": 0,
+      "warnings": 0,
+      "previousScore": 100,
+      "scoreChange": 0
+    }
+  }
+}

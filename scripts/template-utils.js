@@ -433,7 +433,7 @@ function buildRelatedTopics(slugs, allArticles) {
       (desc ? `<p class="knowledge-card-desc">${esc(desc)}</p>` : '') +
       `</a>`;
   }).join('\n');
-  return `<section class="related-topics">\n<h2>Related Topics</h2>\n<div class="knowledge-grid knowledge-grid--2col">\n${cards}\n</div>\n</section>\n`;
+  return `<section id="related-topics" class="related-topics">\n<h2>Related Topics</h2>\n<div class="knowledge-grid knowledge-grid--2col">\n${cards}\n</div>\n</section>\n`;
 }
 
 /**

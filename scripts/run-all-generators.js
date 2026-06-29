@@ -104,15 +104,14 @@ require(path.join(__dirname, 'generate-navigation.js'));
 // ── Step 11: Breadcrumbs ──────────────────────────────────────────────────────
 require(path.join(__dirname, 'generate-breadcrumbs.js'));
 
-// ── Step 12: Search index ─────────────────────────────────────────────────────
-require(path.join(__dirname, 'generate-search-index.js'));
-
 // ── Phase 5B: Scientific Authority System ────────────────────────────────────
 // Must run after all content generators so it can inject panels into generated pages.
 // 5B-a: Compile trust data, generate editorial/methodology/provenance/revision pages
 require(path.join(__dirname, 'generate-trust.js'));
 // 5B-b: Inject trust panels into calculators, version badges, formula/dataset panels
 require(path.join(__dirname, 'inject-trust-panels.js'));
+// 5B.6 remediation: normalize baseline metadata tags/headings across generated pages
+require(path.join(__dirname, 'normalize-seo-metadata.js'));
 
 // ── Step 13a: Validate canonical data layer ──────────────────────────────────
 console.log('Running validate-datasets.js...');
@@ -127,10 +126,32 @@ console.log('Running validate-trust.js...');
 execSync('node scripts/validate-trust.js', { cwd: root, stdio: 'inherit' });
 
 // ── Step 13d: Validate internal links (fail-fast gate) ───────────────────────
+// ── Phase 5B.5: QA and launch readiness ───────────────────────────────────────
+console.log('Running generate-qa-report.js...');
+execSync('node scripts/generate-qa-report.js', { cwd: root, stdio: 'inherit' });
+
+// ── Phase 5B.7: Platform semantic versioning system ───────────────────────────
+console.log('Running generate-compatibility.js...');
+execSync('node scripts/generate-compatibility.js', { cwd: root, stdio: 'inherit' });
+
+console.log('Running generate-release.js...');
+execSync('node scripts/generate-release.js', { cwd: root, stdio: 'inherit' });
+
+console.log('Running generate-version-badges.js...');
+execSync('node scripts/generate-version-badges.js', { cwd: root, stdio: 'inherit' });
+
+console.log('Running validate-versioning.js...');
+execSync('node scripts/validate-versioning.js', { cwd: root, stdio: 'inherit' });
+
+// ── Step 14: Validate internal links (fail-fast gate) ────────────────────────
 console.log('Running check-broken-links.js...');
 execSync('node scripts/check-broken-links.js', { cwd: root, stdio: 'inherit' });
 
-// ── Step 14: Grouped sitemaps ─────────────────────────────────────────────────
+// ── Step 15: Regenerate search index after QA ─────────────────────────────────
+console.log('Running generate-search-index.js...');
+execSync('node scripts/generate-search-index.js', { cwd: root, stdio: 'inherit' });
+
+// ── Step 16: Grouped sitemaps ─────────────────────────────────────────────────
 console.log('Running generate-sitemaps.js...');
 execSync('node scripts/generate-sitemaps.js', { cwd: root, stdio: 'inherit' });
 
