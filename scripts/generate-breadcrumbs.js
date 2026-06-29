@@ -66,7 +66,10 @@ for (const fullPath of walkHtml(ROOT)) {
   const cleanPath = relPath.replace(/\.html$/, '').replace(/\/index$/, '');
   const segments = cleanPath.split('/').filter(Boolean);
 
-  // Skip single-segment or homepage (no meaningful breadcrumb trail)
+  // Skip homepage root explicitly
+  if (relPath === 'index.html') { skipped++; continue; }
+
+  // Skip paths that have no meaningful hierarchy
   if (segments.length < 1) { skipped++; continue; }
 
   // Get best available page title

@@ -48,7 +48,7 @@ function template(name) {
 
 const SITE_HEADER = `  <header class="site-header">
     <a href="/" class="logo-link">
-      <img src="/assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36">
+      <img src="/public/logo.svg" alt="WaterBalanceTools" class="logo" width="185" height="56">
     </a>
     <nav class="nav" id="site-nav" aria-label="Primary navigation">
       <a href="/calculators/chemical-calculator">Calculator</a>
@@ -151,13 +151,10 @@ function buildBreadcrumb(cleanPath, pageTitle) {
       `    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">` +
       `<a href="${c.href}" itemprop="item"><span itemprop="name">${esc(c.label)}</span></a>` +
       `<meta itemprop="position" content="${idx + 1}"></li>`;
-    if (idx < crumbs.length - 2) {
-      return liHtml + '\n    <li class="breadcrumb-sep" aria-hidden="true">&#8250;</li>';
-    }
-    return liHtml + '\n    <li class="breadcrumb-sep" aria-hidden="true">&#8250;</li>';
+    return liHtml;
   }).join('\n');
 
-  const nav = `<nav class="breadcrumb" aria-label="Breadcrumb">\n  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">\n${items}\n  </ol>\n</nav>`;
+  const nav = `<nav class="breadcrumb" aria-label="Breadcrumb">\n  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList" style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:.15rem">\n${items}\n  </ol>\n</nav>`;
   return { nav, schema };
 }
 
