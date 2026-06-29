@@ -1,0 +1,169 @@
+{
+  "datasetId": "conversion-factors",
+  "version": "2026.07",
+  "lastReviewed": "2026-07-01",
+  "description": "All unit conversion factors used in pool chemistry calculations. Single authoritative source. Never duplicate these values elsewhere.",
+  "maintainer": "WaterBalanceTools",
+  "sourcePriority": [
+    "scientific-literature",
+    "industry-standards"
+  ],
+  "records": [
+    {
+      "id": "gal-to-liters",
+      "fromUnit": "us-gallons",
+      "toUnit": "liters",
+      "factor": 3.785411784,
+      "formula": "liters = gallons × 3.785411784"
+    },
+    {
+      "id": "liters-to-gal",
+      "fromUnit": "liters",
+      "toUnit": "us-gallons",
+      "factor": 0.264172052,
+      "formula": "gallons = liters × 0.264172052"
+    },
+    {
+      "id": "gal-to-ft3",
+      "fromUnit": "us-gallons",
+      "toUnit": "cubic-feet",
+      "factor": 0.133680556,
+      "formula": "ft³ = gallons × 0.133680556"
+    },
+    {
+      "id": "ft3-to-gal",
+      "fromUnit": "cubic-feet",
+      "toUnit": "us-gallons",
+      "factor": 7.48051948,
+      "formula": "gallons = ft³ × 7.48051948"
+    },
+    {
+      "id": "fl-oz-to-gal",
+      "fromUnit": "us-fluid-oz",
+      "toUnit": "us-gallons",
+      "factor": 0.0078125,
+      "formula": "gallons = fl_oz / 128"
+    },
+    {
+      "id": "gal-to-fl-oz",
+      "fromUnit": "us-gallons",
+      "toUnit": "us-fluid-oz",
+      "factor": 128,
+      "formula": "fl_oz = gallons × 128"
+    },
+    {
+      "id": "liters-to-ml",
+      "fromUnit": "liters",
+      "toUnit": "milliliters",
+      "factor": 1000,
+      "formula": "mL = L × 1000"
+    },
+    {
+      "id": "lb-to-oz",
+      "fromUnit": "pounds",
+      "toUnit": "oz-weight",
+      "factor": 16,
+      "formula": "oz = lb × 16"
+    },
+    {
+      "id": "oz-to-lb",
+      "fromUnit": "oz-weight",
+      "toUnit": "pounds",
+      "factor": 0.0625,
+      "formula": "lb = oz / 16"
+    },
+    {
+      "id": "lb-to-grams",
+      "fromUnit": "pounds",
+      "toUnit": "grams",
+      "factor": 453.59237,
+      "formula": "g = lb × 453.59237"
+    },
+    {
+      "id": "grams-to-oz",
+      "fromUnit": "grams",
+      "toUnit": "oz-weight",
+      "factor": 0.035273962,
+      "formula": "oz = g × 0.035273962"
+    },
+    {
+      "id": "oz-to-grams",
+      "fromUnit": "oz-weight",
+      "toUnit": "grams",
+      "factor": 28.34952,
+      "formula": "g = oz × 28.34952"
+    },
+    {
+      "id": "kg-to-lb",
+      "fromUnit": "kilograms",
+      "toUnit": "pounds",
+      "factor": 2.20462262,
+      "formula": "lb = kg × 2.20462262"
+    },
+    {
+      "id": "ppm-to-mgl",
+      "fromUnit": "ppm",
+      "toUnit": "mg-per-l",
+      "factor": 1,
+      "formula": "mg/L = ppm (in dilute aqueous solution)"
+    },
+    {
+      "id": "ppm-to-ppb",
+      "fromUnit": "ppm",
+      "toUnit": "ppb",
+      "factor": 1000,
+      "formula": "ppb = ppm × 1000"
+    },
+    {
+      "id": "percent-to-ppm",
+      "fromUnit": "percent",
+      "toUnit": "ppm",
+      "factor": 10000,
+      "formula": "ppm = percent × 10000"
+    },
+    {
+      "id": "f-to-c",
+      "fromUnit": "fahrenheit",
+      "toUnit": "celsius",
+      "factor": null,
+      "formula": "°C = (°F − 32) × 5/9"
+    },
+    {
+      "id": "c-to-f",
+      "fromUnit": "celsius",
+      "toUnit": "fahrenheit",
+      "factor": null,
+      "formula": "°F = °C × 9/5 + 32"
+    },
+    {
+      "id": "hours-to-minutes",
+      "fromUnit": "hours",
+      "toUnit": "minutes",
+      "factor": 60,
+      "formula": "min = hr × 60"
+    },
+    {
+      "id": "days-to-hours",
+      "fromUnit": "days",
+      "toUnit": "hours",
+      "factor": 24,
+      "formula": "hr = days × 24"
+    },
+    {
+      "id": "grams-per-ppm-per-gal",
+      "fromUnit": "grams",
+      "toUnit": "ppm-gallons",
+      "factor": 37.854,
+      "formula": "grams_needed = ppm_change × volume_gallons × 3.785411784 / 1000",
+      "notes": "37.854 g of pure substance per 1 ppm change per 10,000 gallons of water"
+    },
+    {
+      "id": "water-density-lbs-per-gal",
+      "fromUnit": "gallons",
+      "toUnit": "pounds",
+      "factor": 8.34,
+      "formula": "lbs = gallons × 8.34 (at 77°F/25°C)",
+      "notes": "Approximate. Density varies slightly with temperature."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temperature Guidelines | WaterBalanceTools Datasets</title>
+  <meta name="description" content="Safe and recommended water temperature ranges by pool type.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .dataset-header { background: var(--color-bg-alt, #f5f5f5); border-left: 4px solid var(--color-brand, #0073aa); padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 4px; }
+    .dataset-badge { display: inline-block; background: #0073aa; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-right: 8px; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th { background: #f0f0f0; text-align: left; padding: 8px 10px; border: 1px solid #ddd; white-space: nowrap; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; max-width: 320px; word-break: break-word; }
+    tr:hover td { background: #fafafa; }
+    .null { color: #aaa; font-style: italic; }
+    .tag { display: inline-block; background: #e8f0fe; color: #333; border-radius: 3px; padding: 1px 5px; font-size: 0.78em; margin: 1px; }
+    .json { font-family: monospace; font-size: 0.78em; color: #555; }
+    .no-records { color: #888; font-style: italic; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .meta-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; }
+    .meta-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 1rem; font-weight: 600; color: #222; }
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-list li::before { content: "↑ "; color: #0073aa; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/reference/">Reference</a> › <a href="/reference/datasets/">Datasets</a> › Temperature Guidelines</nav>
+  <main class="knowledge-content">
+    
+<div class="dataset-header">
+  <span class="dataset-badge">Canonical Dataset</span>
+  <h1>🌡 Temperature Guidelines</h1>
+  <p>Recommended water temperature ranges for all pool and spa types, plus effects of temperature on pool chemistry.</p>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-card"><div class="meta-label">Dataset ID</div><div class="meta-value">temperature-guidelines</div></div>
+<div class="meta-card"><div class="meta-label">Version</div><div class="meta-value">2026.07</div></div>
+<div class="meta-card"><div class="meta-label">Last Reviewed</div><div class="meta-value">2026-07-01</div></div>
+<div class="meta-card"><div class="meta-label">Maintainer</div><div class="meta-value">WaterBalanceTools</div></div>
+<div class="meta-card"><div class="meta-label">Records</div><div class="meta-value">5</div></div>
+</div>
+
+<section><h2>Source Priority</h2><p>Values in this dataset are sourced in the following order (highest authority first):</p><ol class="source-list"><li>1. government-guidance</li><li>2. industry-standards</li><li>3. manufacturer-documentation</li></ol></section>
+
+<section><h2>Records (5)</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>id</th><th>poolType</th><th>unit</th><th>comfortable</th><th>competitive</th><th>therapeutic</th><th>notes</th><th>maximum</th><th>recommended</th><th>children</th><th>recreational</th><th>therapy</th><th>swim</th><th>relax</th><th>effects</th></tr></thead>
+  <tbody><tr><td>residential-pool-temp</td><td>residential-pool</td><td>°F</td><td><span class="json">{"min":78,"max":84}</span></td><td><span class="json">{"min":77,"max":82}</span></td><td><span class="json">{"min":86,"max":92}</span></td><td>Most swimmers prefer 78–82°F. Higher temperatures increase chlorine demand.</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>hot-tub-temp</td><td>hot-tub</td><td>°F</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td>Maximum 104°F per CPSC/PHTA safety standards. Hyperthermia risk above 104°F. Children and pregnant women: lower temperatures.</td><td>104</td><td><span class="json">{"min":100,"max":104}</span></td><td><span class="json">{"max":95}</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>commercial-pool-temp</td><td>commercial-pool</td><td>°F</td><td><span class="null">—</span></td><td><span class="json">{"min":77,"max":82}</span></td><td><span class="null">—</span></td><td>Competition pools: 77–79°F per FINA guidelines. Public recreational pools: 82–84°F typical.</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="json">{"min":80,"max":84}</span></td><td><span class="json">{"min":88,"max":96}</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>swim-spa-temp</td><td>swim-spa</td><td>°F</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td>Dual-purpose swim spas may have separate temperature zones.</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="json">{"min":78,"max":84}</span></td><td><span class="json">{"min":100,"max":104}</span></td><td><span class="null">—</span></td></tr>
+<tr><td>temp-chemistry-effects</td><td>all</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="json">{"effect":"chlorine-demand","description":"Chlorine demand approximately doubles for every 10°C (18°F) temperature increase."}</span> <span class="json">{"effect":"lsi-scaling","description":"Higher temperatures increase LSI, shifting toward scale-forming. Monitor calcium and alkalinity in heated pools."}</span> <span class="json">{"effect":"algae-growth","description":"Algae growth rate increases significantly above 85°F (29°C)."}</span> <span class="json">{"effect":"co2-offgassing","description":"CO2 off-gasses more rapidly at higher temperatures, causing pH to rise."}</span> <span class="json">{"effect":"chlorine-degradation","description":"Without CYA, UV + heat degrade chlorine faster in warm, sunny conditions."}</span> <span class="json">{"effect":"salt-cell-output","description":"Salt cell output decreases significantly below 60°F (15°C). Below 50°F, most cells shut off automatically."}</span></td></tr></tbody>
+</table>
+</div></section>
+
+<section>
+  <h2>About This Dataset</h2>
+  <p>This dataset is part of the <strong>WaterBalanceTools Canonical Data Layer</strong>. All factual values used across the website originate from canonical datasets like this one. No calculator, article, or tool embeds these values directly — they are always resolved through the data layer.</p>
+  <p><a href="/reference/datasets/">← Back to all datasets</a></p>
+</section>
+
+  </main>
+  <footer><p>Auto-generated by generate-data-docs.js. Source: data/datasets/temperature-guidelines.json. Do not edit manually.</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

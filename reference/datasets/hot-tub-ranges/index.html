@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hot Tub Ranges | WaterBalanceTools Datasets</title>
+  <meta name="description" content="Chemical ranges specific to hot tubs and spas.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .dataset-header { background: var(--color-bg-alt, #f5f5f5); border-left: 4px solid var(--color-brand, #0073aa); padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 4px; }
+    .dataset-badge { display: inline-block; background: #0073aa; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-right: 8px; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th { background: #f0f0f0; text-align: left; padding: 8px 10px; border: 1px solid #ddd; white-space: nowrap; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; max-width: 320px; word-break: break-word; }
+    tr:hover td { background: #fafafa; }
+    .null { color: #aaa; font-style: italic; }
+    .tag { display: inline-block; background: #e8f0fe; color: #333; border-radius: 3px; padding: 1px 5px; font-size: 0.78em; margin: 1px; }
+    .json { font-family: monospace; font-size: 0.78em; color: #555; }
+    .no-records { color: #888; font-style: italic; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .meta-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; }
+    .meta-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 1rem; font-weight: 600; color: #222; }
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-list li::before { content: "↑ "; color: #0073aa; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/reference/">Reference</a> › <a href="/reference/datasets/">Datasets</a> › Hot Tub Ranges</nav>
+  <main class="knowledge-content">
+    
+<div class="dataset-header">
+  <span class="dataset-badge">Canonical Dataset</span>
+  <h1>♨ Hot Tub Ranges</h1>
+  <p>Canonical chemical ranges specifically for hot tubs and spas. Extracted from chemical-ranges.json for hot-tub pool type. Provided as a standalone dataset for convenience.</p>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-card"><div class="meta-label">Dataset ID</div><div class="meta-value">hot-tub-ranges</div></div>
+<div class="meta-card"><div class="meta-label">Version</div><div class="meta-value">2026.07</div></div>
+<div class="meta-card"><div class="meta-label">Last Reviewed</div><div class="meta-value">2026-07-01</div></div>
+<div class="meta-card"><div class="meta-label">Maintainer</div><div class="meta-value">WaterBalanceTools</div></div>
+<div class="meta-card"><div class="meta-label">Records</div><div class="meta-value">7</div></div>
+</div>
+
+<section><h2>Source Priority</h2><p>Values in this dataset are sourced in the following order (highest authority first):</p><ol class="source-list"><li>1. industry-standards</li><li>2. government-guidance</li></ol></section>
+
+<section><h2>Records (7)</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>id</th><th>parameter</th><th>unit</th><th>target</th><th>warning</th><th>critical</th><th>notes</th></tr></thead>
+  <tbody><tr><td>ht-free-chlorine</td><td>free-chlorine</td><td>ppm</td><td><span class="json">{"min":3,"max":5,"ideal":4}</span></td><td><span class="json">{"low":1,"high":8}</span></td><td><span class="json">{"low":0,"high":10}</span></td><td><span class="null">—</span></td></tr>
+<tr><td>ht-bromine</td><td>bromine</td><td>ppm</td><td><span class="json">{"min":3,"max":6,"ideal":4}</span></td><td><span class="json">{"low":1,"high":8}</span></td><td><span class="json">{"low":0,"high":10}</span></td><td><span class="null">—</span></td></tr>
+<tr><td>ht-ph</td><td>ph</td><td>pH</td><td><span class="json">{"min":7.2,"max":7.6,"ideal":7.4}</span></td><td><span class="json">{"low":7,"high":7.8}</span></td><td><span class="json">{"low":6.8,"high":8}</span></td><td><span class="null">—</span></td></tr>
+<tr><td>ht-total-alkalinity</td><td>total-alkalinity</td><td>ppm</td><td><span class="json">{"min":80,"max":120,"ideal":100}</span></td><td><span class="json">{"low":60,"high":150}</span></td><td><span class="json">{"low":40,"high":200}</span></td><td><span class="null">—</span></td></tr>
+<tr><td>ht-calcium-hardness</td><td>calcium-hardness</td><td>ppm</td><td><span class="json">{"min":150,"max":250,"ideal":200}</span></td><td><span class="json">{"low":100,"high":350}</span></td><td><span class="json">{"low":75,"high":500}</span></td><td><span class="null">—</span></td></tr>
+<tr><td>ht-temperature</td><td>temperature</td><td>°F</td><td><span class="json">{"min":100,"max":104,"ideal":102}</span></td><td><span class="json">{"low":95,"high":104}</span></td><td><span class="json">{"low":null,"high":104}</span></td><td><span class="null">—</span></td></tr>
+<tr><td>ht-tds</td><td>tds</td><td>ppm</td><td><span class="json">{"min":0,"max":1500,"ideal":null}</span></td><td><span class="json">{"low":null,"high":2000}</span></td><td><span class="json">{"low":null,"high":3000}</span></td><td>Values above 1500 ppm over the initial fill water TDS baseline indicate water change is needed.</td></tr></tbody>
+</table>
+</div></section>
+
+<section>
+  <h2>About This Dataset</h2>
+  <p>This dataset is part of the <strong>WaterBalanceTools Canonical Data Layer</strong>. All factual values used across the website originate from canonical datasets like this one. No calculator, article, or tool embeds these values directly — they are always resolved through the data layer.</p>
+  <p><a href="/reference/datasets/">← Back to all datasets</a></p>
+</section>
+
+  </main>
+  <footer><p>Auto-generated by generate-data-docs.js. Source: data/datasets/hot-tub-ranges.json. Do not edit manually.</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

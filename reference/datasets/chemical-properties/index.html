@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chemical Properties | WaterBalanceTools Datasets</title>
+  <meta name="description" content="Formula, purpose, safety notes, and cross-references for each chemical compound.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .dataset-header { background: var(--color-bg-alt, #f5f5f5); border-left: 4px solid var(--color-brand, #0073aa); padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 4px; }
+    .dataset-badge { display: inline-block; background: #0073aa; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-right: 8px; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th { background: #f0f0f0; text-align: left; padding: 8px 10px; border: 1px solid #ddd; white-space: nowrap; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; max-width: 320px; word-break: break-word; }
+    tr:hover td { background: #fafafa; }
+    .null { color: #aaa; font-style: italic; }
+    .tag { display: inline-block; background: #e8f0fe; color: #333; border-radius: 3px; padding: 1px 5px; font-size: 0.78em; margin: 1px; }
+    .json { font-family: monospace; font-size: 0.78em; color: #555; }
+    .no-records { color: #888; font-style: italic; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .meta-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; }
+    .meta-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 1rem; font-weight: 600; color: #222; }
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-list li::before { content: "↑ "; color: #0073aa; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/reference/">Reference</a> › <a href="/reference/datasets/">Datasets</a> › Chemical Properties</nav>
+  <main class="knowledge-content">
+    
+<div class="dataset-header">
+  <span class="dataset-badge">Canonical Dataset</span>
+  <h1>🔬 Chemical Properties</h1>
+  <p>Canonical chemical properties: formula, purpose, measurement units, and safety information. One record per distinct chemical compound or parameter.</p>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-card"><div class="meta-label">Dataset ID</div><div class="meta-value">chemical-properties</div></div>
+<div class="meta-card"><div class="meta-label">Version</div><div class="meta-value">2026.07</div></div>
+<div class="meta-card"><div class="meta-label">Last Reviewed</div><div class="meta-value">2026-07-01</div></div>
+<div class="meta-card"><div class="meta-label">Maintainer</div><div class="meta-value">WaterBalanceTools</div></div>
+<div class="meta-card"><div class="meta-label">Records</div><div class="meta-value">16</div></div>
+</div>
+
+<section><h2>Source Priority</h2><p>Values in this dataset are sourced in the following order (highest authority first):</p><ol class="source-list"><li>1. scientific-literature</li><li>2. industry-standards</li><li>3. manufacturer-documentation</li></ol></section>
+
+<section><h2>Records (16)</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>id</th><th>name</th><th>formula</th><th>entityId</th><th>purpose</th><th>measurement</th><th>primaryUnit</th><th>alternateUnits</th><th>activeForm</th><th>activeFormPct</th><th>affectedBy</th><th>relatedChemicals</th><th>storageRequirements</th><th>safetyNotes</th></tr></thead>
+  <tbody><tr><td>free-chlorine</td><td>Free Chlorine</td><td>HOCl / OCl⁻</td><td>free-chlorine</td><td>Primary disinfectant in chlorine pool systems. Kills bacteria, viruses, and algae.</td><td>DPD test kit (free chlorine reagent), digital photometer, ORP probe</td><td>ppm</td><td><span class="tag">mg/L</span></td><td>HOCl (hypochlorous acid)</td><td><span class="json">{"pH7_2":67,"pH7_4":54,"pH7_6":40,"pH8_0":22}</span></td><td><span class="tag">ph</span> <span class="tag">cyanuric-acid</span> <span class="tag">temperature</span> <span class="tag">sunlight</span> <span class="tag">bather-load</span></td><td><span class="tag">combined-chlorine</span> <span class="tag">total-chlorine</span> <span class="tag">cyanuric-acid</span></td><td>Cool, dry, well-ventilated area. Away from heat and oxidizers.</td><td>Oxidizer. Do not mix with other chemicals. Eye and respiratory irritant at high concentrations.</td></tr>
+<tr><td>combined-chlorine</td><td>Combined Chlorine</td><td>NH₂Cl / NHCl₂ / NCl₃</td><td>combined-chlorine</td><td>Chloramines formed when free chlorine reacts with nitrogen compounds. Largely ineffective as sanitizer. Causes odor and irritation.</td><td>DPD test: TC minus FC = CC</td><td>ppm</td><td><span class="tag">mg/L</span></td><td>Mono/di/trichloramine</td><td><span class="null">—</span></td><td><span class="tag">bather-load</span> <span class="tag">nitrogen-compounds</span> <span class="tag">urea</span> <span class="tag">free-chlorine</span></td><td><span class="tag">free-chlorine</span> <span class="tag">total-chlorine</span></td><td>N/A — exists in pool water</td><td>Causes eye irritation, respiratory irritation, and skin irritation. Remove by breakpoint chlorination.</td></tr>
+<tr><td>ph-parameter</td><td>pH</td><td>H⁺ / OH⁻ equilibrium</td><td>ph</td><td>Measure of acidity/alkalinity. Controls chlorine activity ratio (HOCl vs OCl⁻) and water comfort.</td><td>Phenol red indicator, DPD combo kits, digital pH meter</td><td>pH units</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">total-alkalinity</span> <span class="tag">co2-offgassing</span> <span class="tag">temperature</span> <span class="tag">chemical-additions</span> <span class="tag">rainfall</span></td><td><span class="tag">total-alkalinity</span> <span class="tag">calcium-hardness</span> <span class="tag">free-chlorine</span></td><td>N/A — water parameter</td><td>Corrosive water (pH &lt; 7) damages equipment and irritates skin. Very alkaline water (pH &gt; 8.2) reduces chlorine effectiveness.</td></tr>
+<tr><td>total-alkalinity</td><td>Total Alkalinity</td><td>HCO₃⁻ / CO₃²⁻ / OH⁻</td><td>alkalinity</td><td>pH buffer. Resists pH change. Composed primarily of bicarbonate, carbonate, and hydroxide ions.</td><td>Sulfuric acid titration (TA drop test), DPD combo kit</td><td>ppm</td><td><span class="tag">mg/L as CaCO₃</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">muriatic-acid</span> <span class="tag">baking-soda</span> <span class="tag">aeration</span> <span class="tag">co2-offgassing</span></td><td><span class="tag">ph-parameter</span> <span class="tag">calcium-hardness</span> <span class="tag">lsi-parameter</span></td><td>N/A — water parameter</td><td>Low TA causes pH instability. High TA makes pH correction difficult.</td></tr>
+<tr><td>calcium-hardness</td><td>Calcium Hardness</td><td>Ca²⁺</td><td>calcium-hardness</td><td>Dissolved calcium ion concentration. Part of LSI. Prevents aggressive water from dissolving calcium from surfaces.</td><td>EDTA titration (hardness drop test)</td><td>ppm</td><td><span class="tag">mg/L as CaCO₃</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">dilution</span> <span class="tag">calcium-chloride</span> <span class="tag">calcium-hypochlorite</span></td><td><span class="tag">total-alkalinity</span> <span class="tag">ph-parameter</span> <span class="tag">lsi-parameter</span></td><td>N/A — water parameter</td><td>Only lowered by dilution. Cannot be chemically reduced.</td></tr>
+<tr><td>cyanuric-acid-chem</td><td>Cyanuric Acid</td><td>C₃H₃N₃O₃</td><td>cyanuric-acid</td><td>UV stabilizer. Protects free chlorine from UV photolysis. Also reduces active HOCl concentration.</td><td>Melamine turbidity test (visual/photometric), Taylor CYA test, BNC strip</td><td>ppm</td><td><span class="tag">mg/L</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">dilution</span> <span class="tag">stabilizer-addition</span> <span class="tag">trichlor-tablets</span> <span class="tag">sodium-dichlor</span></td><td><span class="tag">free-chlorine</span> <span class="tag">trichlor-tablets</span> <span class="tag">sodium-dichlor</span></td><td>N/A — water parameter. Granular: cool dry location.</td><td>Cannot be removed chemically. Only dilution reduces CYA. Above 100 ppm, severely reduces chlorine effectiveness.</td></tr>
+<tr><td>salt-chem</td><td>Sodium Chloride (Salt)</td><td>NaCl</td><td>salt</td><td>Source of chloride ions for electrolysis by salt chlorinator cells. Produces hypochlorous acid.</td><td>Salt test kit (silver nitrate), digital salt meter, TDS meter</td><td>ppm</td><td><span class="tag">mg/L</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">dilution</span> <span class="tag">pool-salt-addition</span></td><td><span class="tag">free-chlorine</span> <span class="tag">total-dissolved-solids</span></td><td>40-lb bags in dry location. Keep sealed.</td><td>Minimal toxicity at pool concentrations (3,200 ppm). High purity required (no additives).</td></tr>
+<tr><td>tds-chem</td><td>Total Dissolved Solids</td><td>All dissolved ions</td><td>total-dissolved-solids</td><td>Cumulative measure of all dissolved matter. High TDS indicates water is approaching end of useful life.</td><td>Digital TDS meter, conductivity probe</td><td>ppm</td><td><span class="tag">mg/L</span> <span class="tag">μS/cm</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">all-chemical-additions</span> <span class="tag">evaporation</span> <span class="tag">bather-waste</span> <span class="tag">time</span></td><td><span class="tag">salt-chem</span></td><td>N/A — water parameter</td><td>Only reduced by water replacement (partial or full drain and refill).</td></tr>
+<tr><td>sodium-hypochlorite</td><td>Sodium Hypochlorite</td><td>NaOCl</td><td>liquid-chlorine</td><td>Active ingredient in liquid chlorine. Disinfectant and oxidizer.</td><td>N/A — product characteristic (label concentration)</td><td>percent</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">temperature</span> <span class="tag">sunlight</span> <span class="tag">time</span> <span class="tag">ph</span></td><td><span class="tag">free-chlorine</span> <span class="tag">calcium-hypochlorite</span></td><td>Cool, dark, ventilated location. Away from heat. Use within 60–90 days.</td><td>Corrosive. Strong oxidizer. Do not mix with acids or other pool chemicals. Eye and skin hazard.</td></tr>
+<tr><td>calcium-hypochlorite-chem</td><td>Calcium Hypochlorite</td><td>Ca(OCl)₂</td><td>calcium-hypochlorite</td><td>Dry granular or tablet chlorine. High concentration (65–73% available chlorine).</td><td>N/A — product characteristic</td><td>percent</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">moisture</span> <span class="tag">temperature</span> <span class="tag">contamination</span></td><td><span class="tag">free-chlorine</span> <span class="tag">calcium-hardness</span></td><td>Cool, dry location in original container. Do not store with other pool chemicals, fuels, or organic materials.</td><td>Strong oxidizer. Fire and explosion hazard if contaminated. Do not mix with trichlor, acids, or any liquid. Pre-dissolve before pool addition.</td></tr>
+<tr><td>trichlor-chem</td><td>Trichloro-s-triazinetrione</td><td>C₃Cl₃N₃O₃</td><td>trichlor-tablets</td><td>Stabilized slow-dissolving chlorine tablet. 90% available chlorine. Contains 58% CYA.</td><td>N/A — product characteristic</td><td>percent</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">water-flow</span> <span class="tag">temperature</span></td><td><span class="tag">free-chlorine</span> <span class="tag">cyanuric-acid-chem</span></td><td>Cool, dry, ventilated. Original container. Away from metals and other chemicals.</td><td>Low pH (~2.9). Oxidizer. Fire risk when wet. NEVER mix with calcium hypochlorite — violent reaction.</td></tr>
+<tr><td>muriatic-acid-chem</td><td>Muriatic Acid (Hydrochloric Acid)</td><td>HCl</td><td>muriatic-acid</td><td>Lowers pool pH and total alkalinity.</td><td>N/A — product characteristic (31.45% concentration)</td><td>percent</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">temperature</span></td><td><span class="tag">ph-parameter</span> <span class="tag">total-alkalinity</span></td><td>Original container. Cool, ventilated area. Away from metals. Store separately from all other chemicals.</td><td>Corrosive acid. Fumes toxic. Add acid TO water, never water to acid. Eye and respiratory protection required. Do not mix with chlorine products.</td></tr>
+<tr><td>sodium-carbonate</td><td>Sodium Carbonate (Soda Ash)</td><td>Na₂CO₃</td><td>soda-ash</td><td>Raises pool pH with minimal effect on total alkalinity.</td><td>N/A — product added by measurement</td><td>oz or lbs</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">ph-parameter</span></td><td>Sealed container in dry location.</td><td>Mild irritant. Pre-dissolve before pool addition to prevent cloudiness.</td></tr>
+<tr><td>sodium-bicarbonate-chem</td><td>Sodium Bicarbonate (Baking Soda)</td><td>NaHCO₃</td><td>baking-soda</td><td>Raises total alkalinity with modest pH increase.</td><td>N/A — product added by measurement</td><td>oz or lbs</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">total-alkalinity</span> <span class="tag">ph-parameter</span></td><td>Sealed container in dry location.</td><td>Generally safe. Minimal hazard. Can be added directly around pool perimeter.</td></tr>
+<tr><td>calcium-chloride-chem</td><td>Calcium Chloride</td><td>CaCl₂</td><td>calcium-chloride</td><td>Raises calcium hardness.</td><td>N/A — product added by measurement</td><td>oz or lbs</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">calcium-hardness</span></td><td>Sealed container. Absorbs moisture from air. Keep dry.</td><td>Exothermic dissolution. Pre-dissolve in large bucket of pool water. Add slowly — significant heat generated.</td></tr>
+<tr><td>lsi-parameter</td><td>Langelier Saturation Index</td><td>pH + TF + CHF + TAF − TDS_constant</td><td>lsi</td><td>Composite balance index. Score of 0 = balanced. Negative = corrosive. Positive = scale-forming.</td><td>Calculated from pH, temperature, calcium hardness, total alkalinity, TDS</td><td>dimensionless</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">ph-parameter</span> <span class="tag">temperature</span> <span class="tag">calcium-hardness</span> <span class="tag">total-alkalinity</span> <span class="tag">tds-chem</span></td><td><span class="tag">ph-parameter</span> <span class="tag">calcium-hardness</span> <span class="tag">total-alkalinity</span></td><td>N/A — calculated parameter</td><td>LSI below −0.3: corrosive. LSI above +0.5: scale-forming. Both damage surfaces and equipment.</td></tr></tbody>
+</table>
+</div></section>
+
+<section>
+  <h2>About This Dataset</h2>
+  <p>This dataset is part of the <strong>WaterBalanceTools Canonical Data Layer</strong>. All factual values used across the website originate from canonical datasets like this one. No calculator, article, or tool embeds these values directly — they are always resolved through the data layer.</p>
+  <p><a href="/reference/datasets/">← Back to all datasets</a></p>
+</section>
+
+  </main>
+  <footer><p>Auto-generated by generate-data-docs.js. Source: data/datasets/chemical-properties.json. Do not edit manually.</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

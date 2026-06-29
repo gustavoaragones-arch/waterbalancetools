@@ -136,5 +136,52 @@ index.sort((a, b) => {
   return a.url.localeCompare(b.url);
 });
 
+// ── Add canonical dataset entries ─────────────────────────────────────────────
+// Dataset docs are generated at /reference/datasets/<name>/ but lack site-header,
+// so we add them here directly from their JSON metadata.
+
+const DATASETS_DIR = path.join(ROOT, 'data', 'datasets');
+const DATASET_TITLES = {
+  'chemical-ranges':       'Chemical Ranges — Canonical Dataset',
+  'hot-tub-ranges':        'Hot Tub Ranges — Canonical Dataset',
+  'water-balance':         'Water Balance (LSI) — Canonical Dataset',
+  'dosage-matrices':       'Dosage Matrices — Canonical Dataset',
+  'chemical-properties':   'Chemical Properties — Canonical Dataset',
+  'compatibility':         'Chemical Compatibility — Canonical Dataset',
+  'units':                 'Units — Canonical Dataset',
+  'conversion-factors':    'Conversion Factors — Canonical Dataset',
+  'temperature-guidelines':'Temperature Guidelines — Canonical Dataset',
+  'testing-frequency':     'Testing Frequency — Canonical Dataset',
+  'pool-types':            'Pool Types — Canonical Dataset',
+  'water-problems':        'Water Problems — Canonical Dataset',
+  'maintenance-schedules': 'Maintenance Schedules — Canonical Dataset',
+  'confidence-levels':     'Confidence Levels — Canonical Dataset',
+  'version':               'Version Registry — Canonical Dataset',
+};
+
+if (fs.existsSync(DATASETS_DIR)) {
+  Object.entries(DATASET_TITLES).forEach(([name, title]) => {
+    const fp = path.join(DATASETS_DIR, name + '.json');
+    if (!fs.existsSync(fp)) return;
+    let ds;
+    try { ds = JSON.parse(fs.readFileSync(fp, 'utf8')); } catch (_) { return; }
+    const url = `/reference/datasets/${name}`;
+    if (!seen.has(url)) {
+      seen.add(url);
+      const recordCount = ds.records ? ds.records.length : 0;
+      index.push({
+        url,
+        title,
+        description: ds.description || '',
+        h1: title,
+        category: 'Reference',
+        readingTime: null,
+        updated: ds.lastReviewed || null,
+        keywords: generateKeywords(title, ds.description || '', ['dataset', 'canonical', 'data-layer', name]),
+      });
+    }
+  });
+}
+
 fs.writeFileSync(path.join(DATA_DIR, 'search-index.json'), JSON.stringify(index, null, 2), 'utf8');
 console.log(`generate-search-index: indexed ${index.length} pages → data/search-index.json`);

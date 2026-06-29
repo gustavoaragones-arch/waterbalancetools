@@ -1,0 +1,217 @@
+{
+  "free-chlorine": {
+    "idealRange": "1–3 ppm",
+    "units": "ppm",
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-free-chlorine",
+    "target": {
+      "min": 1,
+      "max": 3,
+      "ideal": 2
+    },
+    "warning": {
+      "low": 0.5,
+      "high": 5
+    },
+    "critical": {
+      "low": 0,
+      "high": 10
+    }
+  },
+  "combined-chlorine": {
+    "idealRange": "0–0 ppm",
+    "units": "ppm",
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-combined-chlorine",
+    "target": {
+      "min": 0,
+      "max": 0,
+      "ideal": 0
+    },
+    "warning": {
+      "low": null,
+      "high": 0.5
+    },
+    "critical": {
+      "low": null,
+      "high": 1
+    }
+  },
+  "ph": {
+    "idealRange": "7.2–7.6 pH",
+    "units": "pH",
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-ph",
+    "target": {
+      "min": 7.2,
+      "max": 7.6,
+      "ideal": 7.4
+    },
+    "warning": {
+      "low": 7,
+      "high": 7.8
+    },
+    "critical": {
+      "low": 6.8,
+      "high": 8.2
+    }
+  },
+  "alkalinity": {
+    "idealRange": "80–120 ppm",
+    "units": "ppm",
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-total-alkalinity",
+    "target": {
+      "min": 80,
+      "max": 120,
+      "ideal": 100
+    },
+    "warning": {
+      "low": 60,
+      "high": 180
+    },
+    "critical": {
+      "low": 40,
+      "high": 240
+    }
+  },
+  "calcium-hardness": {
+    "idealRange": "200–400 ppm",
+    "units": "ppm",
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-calcium-hardness",
+    "target": {
+      "min": 200,
+      "max": 400,
+      "ideal": 300
+    },
+    "warning": {
+      "low": 150,
+      "high": 500
+    },
+    "critical": {
+      "low": 100,
+      "high": 800
+    }
+  },
+  "cyanuric-acid": {
+    "idealRange": "30–50 ppm",
+    "units": "ppm",
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-cyanuric-acid",
+    "target": {
+      "min": 30,
+      "max": 50,
+      "ideal": 40
+    },
+    "warning": {
+      "low": 0,
+      "high": 80
+    },
+    "critical": {
+      "low": null,
+      "high": 100
+    }
+  },
+  "salt": {
+    "idealRange": "",
+    "units": "ppm",
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-salt",
+    "target": {
+      "min": null,
+      "max": null,
+      "ideal": null
+    },
+    "warning": {
+      "low": null,
+      "high": null
+    },
+    "critical": {
+      "low": null,
+      "high": null
+    }
+  },
+  "temperature": {
+    "idealRange": "78–84 °F",
+    "units": "°F",
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-temperature",
+    "target": {
+      "min": 78,
+      "max": 84,
+      "ideal": 80
+    },
+    "warning": {
+      "low": 60,
+      "high": 90
+    },
+    "critical": {
+      "low": null,
+      "high": 95
+    }
+  },
+  "orp": {
+    "idealRange": "650–750 mV",
+    "units": "mV",
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-orp",
+    "target": {
+      "min": 650,
+      "max": 750,
+      "ideal": 700
+    },
+    "warning": {
+      "low": 600,
+      "high": 800
+    },
+    "critical": {
+      "low": 400,
+      "high": null
+    }
+  },
+  "bromine": {
+    "idealRange": "3–6 ppm",
+    "units": "ppm",
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "hot-tub-bromine",
+    "target": {
+      "min": 3,
+      "max": 6,
+      "ideal": 4
+    },
+    "warning": {
+      "low": 1,
+      "high": 8
+    },
+    "critical": {
+      "low": 0,
+      "high": 10
+    }
+  },
+  "lsi": {
+    "idealRange": "-0.3 to +0.5",
+    "units": "dimensionless",
+    "rangeDataset": "water-balance",
+    "rangeRecord": "lsi-target-range",
+    "target": {
+      "min": -0.3,
+      "max": 0.5,
+      "ideal": 0
+    },
+    "warning": {
+      "low": -0.5,
+      "high": 0.8
+    },
+    "critical": {
+      "low": -1,
+      "high": 1.5
+    }
+  },
+  "turnover-time": {
+    "idealRange": "Maximum 8 hours (residential)",
+    "units": "hours",
+    "rangeDataset": "pool-types",
+    "rangeRecord": "commercial-pool"
+  }
+}

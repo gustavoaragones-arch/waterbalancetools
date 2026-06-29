@@ -1,0 +1,26 @@
+{
+  "datasetId": "version",
+  "description": "Version tracking for the canonical data layer. Updated automatically by generate-datasets.js on each build.",
+  "schemaVersion": "1.0",
+  "datasets": {
+    "chemical-ranges": "2026.07",
+    "hot-tub-ranges": "2026.07",
+    "water-balance": "2026.07",
+    "dosage-matrices": "2026.07",
+    "chemical-properties": "2026.07",
+    "compatibility": "2026.07",
+    "units": "2026.07",
+    "conversion-factors": "2026.07",
+    "temperature-guidelines": "2026.07",
+    "testing-frequency": "2026.07",
+    "pool-types": "2026.07",
+    "water-problems": "2026.07",
+    "maintenance-schedules": "2026.07",
+    "confidence-levels": "2026.07"
+  },
+  "entityVersion": "2026.07",
+  "knowledgeGraphVersion": "2026.07",
+  "generatorVersion": "5A.75",
+  "websiteVersion": "5A.75",
+  "lastBuilt": "2026-06-29"
+}

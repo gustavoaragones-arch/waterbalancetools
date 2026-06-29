@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compatibility | WaterBalanceTools Datasets</title>
+  <meta name="description" content="Chemical safety matrix: safe, avoid, and never-mix pairings.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .dataset-header { background: var(--color-bg-alt, #f5f5f5); border-left: 4px solid var(--color-brand, #0073aa); padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 4px; }
+    .dataset-badge { display: inline-block; background: #0073aa; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-right: 8px; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th { background: #f0f0f0; text-align: left; padding: 8px 10px; border: 1px solid #ddd; white-space: nowrap; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; max-width: 320px; word-break: break-word; }
+    tr:hover td { background: #fafafa; }
+    .null { color: #aaa; font-style: italic; }
+    .tag { display: inline-block; background: #e8f0fe; color: #333; border-radius: 3px; padding: 1px 5px; font-size: 0.78em; margin: 1px; }
+    .json { font-family: monospace; font-size: 0.78em; color: #555; }
+    .no-records { color: #888; font-style: italic; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .meta-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; }
+    .meta-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 1rem; font-weight: 600; color: #222; }
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-list li::before { content: "↑ "; color: #0073aa; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/reference/">Reference</a> › <a href="/reference/datasets/">Datasets</a> › Compatibility</nav>
+  <main class="knowledge-content">
+    
+<div class="dataset-header">
+  <span class="dataset-badge">Canonical Dataset</span>
+  <h1>⚠ Compatibility</h1>
+  <p>Chemical compatibility matrix for pool and spa products. Every pair with a safety-relevant interaction is explicitly recorded. Status: safe | avoid | never_mix | unknown.</p>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-card"><div class="meta-label">Dataset ID</div><div class="meta-value">compatibility</div></div>
+<div class="meta-card"><div class="meta-label">Version</div><div class="meta-value">2026.07</div></div>
+<div class="meta-card"><div class="meta-label">Last Reviewed</div><div class="meta-value">2026-07-01</div></div>
+<div class="meta-card"><div class="meta-label">Maintainer</div><div class="meta-value">WaterBalanceTools</div></div>
+<div class="meta-card"><div class="meta-label">Records</div><div class="meta-value">15</div></div>
+</div>
+
+<section><h2>Source Priority</h2><p>Values in this dataset are sourced in the following order (highest authority first):</p><ol class="source-list"><li>1. government-guidance</li><li>2. manufacturer-documentation</li><li>3. scientific-literature</li><li>4. industry-standards</li></ol></section>
+
+<section><h2>Records (15)</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>id</th><th>productA</th><th>productB</th><th>status</th><th>severity</th><th>hazard</th><th>description</th><th>handlingInstructions</th></tr></thead>
+  <tbody><tr><td>trichlor-x-cal-hypo</td><td>trichlor-tablets</td><td>calcium-hypochlorite</td><td>never_mix</td><td>critical</td><td>fire-explosion</td><td>Trichlor (acidic, ~pH 2.9) reacts violently with calcium hypochlorite (alkaline, strong oxidizer). Reaction generates heat, chlorine gas, and can cause fire or explosion.</td><td>Never combine in container, chlorinator, or skimmer. If accidental mixture occurs, evacuate and call emergency services.</td></tr>
+<tr><td>muriatic-acid-x-chlorine</td><td>muriatic-acid</td><td>liquid-chlorine</td><td>never_mix</td><td>critical</td><td>toxic-gas</td><td>Mixing muriatic acid with any chlorine product releases chlorine gas — a toxic, corrosive gas that causes severe respiratory damage.</td><td>Never combine. Add to pool water separately, at least 30 minutes apart with pump running.</td></tr>
+<tr><td>muriatic-acid-x-cal-hypo</td><td>muriatic-acid</td><td>calcium-hypochlorite</td><td>never_mix</td><td>critical</td><td>toxic-gas-fire</td><td>Acid mixed with calcium hypochlorite releases chlorine gas and can cause fire. Extremely hazardous.</td><td>Never combine under any circumstances.</td></tr>
+<tr><td>trichlor-x-muriatic</td><td>trichlor-tablets</td><td>muriatic-acid</td><td>never_mix</td><td>critical</td><td>toxic-gas</td><td>Both are acidic but combining concentrated forms releases chlorine gas.</td><td>Never combine. Add separately to pool.</td></tr>
+<tr><td>cal-hypo-x-hydrogen-peroxide</td><td>calcium-hypochlorite</td><td>hydrogen-peroxide</td><td>never_mix</td><td>critical</td><td>fire-explosion</td><td>Mixing oxidizers can produce rapid decomposition, heat, oxygen release, fire, or explosion.</td><td>Never combine. These products are from incompatible sanitizer systems.</td></tr>
+<tr><td>biguanide-x-chlorine</td><td>biguanide</td><td>liquid-chlorine</td><td>never_mix</td><td>critical</td><td>system-failure</td><td>Biguanide (PHMB) is completely incompatible with all chlorine products. Mixing causes precipitation and destroys both sanitizers.</td><td>Full water replacement required when switching between systems.</td></tr>
+<tr><td>trichlor-x-dichlor</td><td>trichlor-tablets</td><td>sodium-dichlor</td><td>avoid</td><td>high</td><td>heat-degradation</td><td>Both are chlorinated isocyanurates but mixing concentrated forms generates heat and can cause degradation or fire risk.</td><td>Do not add simultaneously to chlorinator or skimmer. Add separately to pool water.</td></tr>
+<tr><td>soda-ash-x-cal-hypo</td><td>soda-ash</td><td>calcium-hypochlorite</td><td>avoid</td><td>medium</td><td>cloudiness-precipitate</td><td>Adding soda ash immediately after calcium hypochlorite can cause calcium carbonate precipitation and water cloudiness.</td><td>Add at least 4 hours apart. Allow each to fully disperse before adding the next.</td></tr>
+<tr><td>algaecide-x-liquid-chlorine</td><td>algaecide</td><td>liquid-chlorine</td><td>avoid</td><td>low</td><td>reduced-effectiveness</td><td>Adding algaecide simultaneously with chlorine shock may reduce effectiveness of both. Chlorine can oxidize some algaecide types.</td><td>Add algaecide 24 hours after shocking, when FC has returned to normal range.</td></tr>
+<tr><td>baking-soda-x-liquid-chlorine</td><td>baking-soda</td><td>liquid-chlorine</td><td>safe</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td>Sodium bicarbonate and sodium hypochlorite are compatible. Can be added to pool within normal maintenance intervals.</td><td>Add each product separately to pool with pump running. No special precautions needed.</td></tr>
+<tr><td>soda-ash-x-baking-soda</td><td>soda-ash</td><td>baking-soda</td><td>safe</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td>Both are alkaline sodium compounds. Compatible when added separately to pool water.</td><td>Standard handling. Pre-dissolve each before adding.</td></tr>
+<tr><td>calcium-chloride-x-baking-soda</td><td>calcium-chloride</td><td>baking-soda</td><td>avoid</td><td>medium</td><td>calcium-carbonate-precipitate</td><td>Adding calcium chloride and baking soda simultaneously to pool water may cause calcium carbonate to precipitate, causing cloudiness.</td><td>Add at least 4–6 hours apart. Calcium chloride first, allow to fully distribute, then baking soda.</td></tr>
+<tr><td>muriatic-acid-x-baking-soda</td><td>muriatic-acid</td><td>baking-soda</td><td>never_mix</td><td>high</td><td>violent-reaction-CO2</td><td>Acid and bicarbonate react rapidly, releasing CO2, heat, and causing foaming overflow. Dangerous in concentrated form.</td><td>Never mix directly. In pool water, each can be used at separate times as normal.</td></tr>
+<tr><td>pool-salt-x-liquid-chlorine</td><td>pool-salt</td><td>liquid-chlorine</td><td>safe</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td>Sodium chloride and sodium hypochlorite are compatible. Used together in salt pool maintenance.</td><td>Standard handling. Add salt in shallow end, add chlorine near return jets.</td></tr>
+<tr><td>store-chlorine-x-acid</td><td>any-chlorine</td><td>any-acid</td><td>never_mix</td><td>critical</td><td>toxic-gas-fire</td><td>Chlorine and acid products must never be stored together. Even vapors can react.</td><td>Store in separate, ventilated locations. Separate by at least 10 feet or in separate storage structures.</td></tr></tbody>
+</table>
+</div></section>
+
+<section>
+  <h2>About This Dataset</h2>
+  <p>This dataset is part of the <strong>WaterBalanceTools Canonical Data Layer</strong>. All factual values used across the website originate from canonical datasets like this one. No calculator, article, or tool embeds these values directly — they are always resolved through the data layer.</p>
+  <p><a href="/reference/datasets/">← Back to all datasets</a></p>
+</section>
+
+  </main>
+  <footer><p>Auto-generated by generate-data-docs.js. Source: data/datasets/compatibility.json. Do not edit manually.</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

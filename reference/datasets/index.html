@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canonical Datasets | WaterBalanceTools Datasets</title>
+  <meta name="description" content="All canonical datasets for WaterBalanceTools — chemical ranges, dosage matrices, units, conversion factors, and more.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .dataset-header { background: var(--color-bg-alt, #f5f5f5); border-left: 4px solid var(--color-brand, #0073aa); padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 4px; }
+    .dataset-badge { display: inline-block; background: #0073aa; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-right: 8px; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th { background: #f0f0f0; text-align: left; padding: 8px 10px; border: 1px solid #ddd; white-space: nowrap; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; max-width: 320px; word-break: break-word; }
+    tr:hover td { background: #fafafa; }
+    .null { color: #aaa; font-style: italic; }
+    .tag { display: inline-block; background: #e8f0fe; color: #333; border-radius: 3px; padding: 1px 5px; font-size: 0.78em; margin: 1px; }
+    .json { font-family: monospace; font-size: 0.78em; color: #555; }
+    .no-records { color: #888; font-style: italic; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .meta-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; }
+    .meta-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 1rem; font-weight: 600; color: #222; }
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-list li::before { content: "↑ "; color: #0073aa; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/reference/">Reference</a> › <a href="/reference/datasets/">Datasets</a></nav>
+  <main class="knowledge-content">
+    
+<h1>Canonical Dataset Documentation</h1>
+<p>Every factual value used on WaterBalanceTools originates from one of the canonical datasets below. No scientific constant, recommended range, dosage coefficient, conversion factor, or compatibility rule exists anywhere else in the codebase.</p>
+<style>
+  .datasets-grid { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+  .dataset-card a { display: flex; gap: 1rem; padding: 1.25rem; background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; text-decoration: none; color: inherit; transition: box-shadow 0.2s; }
+  .dataset-card a:hover { box-shadow: 0 2px 12px rgba(0,0,0,.1); }
+  .card-icon { font-size: 2rem; flex-shrink: 0; }
+  .card-body h3 { margin: 0 0 4px; font-size: 1rem; color: #0073aa; }
+  .card-body p { margin: 0; font-size: 0.85rem; color: #555; }
+  .card-count { display: inline-block; background: #e8f0fe; color: #333; font-size: 0.72rem; padding: 2px 6px; border-radius: 10px; margin-top: 6px; }
+</style>
+<ul class="datasets-grid">
+  <li class="dataset-card">
+  <a href="/reference/datasets/chemical-ranges/">
+    <span class="card-icon">⚗</span>
+    <div class="card-body">
+      <h3>Chemical Ranges</h3>
+      <p>Target, warning, and critical bounds for all chemical parameters by pool type.</p>
+      <span class="card-count">36 records</span>
+    </div>
+  </a>
+</li>
+<li class="dataset-card">
+  <a href="/reference/datasets/hot-tub-ranges/">
+    <span class="card-icon">♨</span>
+    <div class="card-body">
+      <h3>Hot Tub Ranges</h3>
+      <p>Chemical ranges specific to hot tubs and spas.</p>
+      <span class="card-count">7 records</span>
+    </div>
+  </a>
+</li>
+<li class="dataset-card">
+  <a href="/reference/datasets/water-balance/">
+    <span class="card-icon">⚖</span>
+    <div class="card-body">
+      <h3>Water Balance (LSI)</h3>
+      <p>Langelier Saturation Index factors and interpretation table.</p>
+      <span class="card-count">5 records</span>
+    </div>
+  </a>
+</li>
+<li class="dataset-card">
+  <a href="/reference/datasets/dosage-matrices/">
+    <span class="card-icon">🧪</span>
+    <div class="card-body">
+      <h3>Dosage Matrices</h3>
+      <p>Product dosage coefficients for all supported pool chemicals.</p>
+      <span class="card-count">13 records</span>
+    </div>
+  </a>
+</li>
+<li class="dataset-card">
+  <a href="/reference/datasets/chemical-properties/">
+    <span class="card-icon">🔬</span>
+    <div class="card-body">
+      <h3>Chemical Properties</h3>
+      <p>Formula, purpose, safety notes, and cross-references for each chemical compound.</p>
+      <span class="card-count">16 records</span>
+    </div>
+  </a>
+</li>
+<li class="dataset-card">
+  <a href="/reference/datasets/compatibility/">
+    <span class="card-icon">⚠</span>
+    <div class="card-body">
+      <h3>Compatibility</h3>
+      <p>Chemical safety matrix: safe, avoid, and never-mix pairings.</p>
+      <span class="card-count">15 records</span>
+    </div>
+  </a>
+</li>
+<li class="dataset-card">
+  <a href="/reference/datasets/units/">
+    <span class="card-icon">📏</span>
+    <div class="card-body">
+      <h3>Units</h3>
+      <p>Canonical definitions for every unit of measurement used on the platform.</p>
+      <span class="card-count">21 records</span>
+    </div>
+  </a>
+</li>
+<li class="dataset-card">
+  <a href="/reference/datasets/conversion-factors/">
+    <span class="card-icon">↔</span>
+    <div class="card-body">
+      <h3>Conversion Factors</h3>
+      <p>All unit conversion factors. Single source of truth. Never duplicated.</p>
+      <span class="card-count">22 records</span>
+    </div>
+  </a>
+</li>
+<li class="dataset-card">
+  <a href="/reference/datasets/temperature-guidelines/">
+    <span class="card-icon">🌡</span>
+    <div class="card-body">
+      <h3>Temperature Guidelines</h3>
+      <p>Safe and recommended water temperature ranges by pool type.</p>
+      <span class="card-count">5 records</span>
+    </div>
+  </a>
+</li>
+<li class="dataset-card">
+  <a href="/reference/datasets/testing-frequency/">
+    <span class="card-icon">📅</span>
+    <div class="card-body">
+      <h3>Testing Frequency</h3>
+      <p>Recommended testing intervals by pool type and scenario.</p>
+      <span class="card-count">6 records</span>
+    </div>
+  </a>
+</li>
+<li class="dataset-card">
+  <a href="/reference/datasets/pool-types/">
+    <span class="card-icon">🏊</span>
+    <div class="card-body">
+      <h3>Pool Types</h3>
+      <p>Canonical pool type definitions with chemistry implications.</p>
+      <span class="card-count">6 records</span>
+    </div>
+  </a>
+</li>
+<li class="dataset-card">
+  <a href="/reference/datasets/water-problems/">
+    <span class="card-icon">🚨</span>
+    <div class="card-body">
+      <h3>Water Problems</h3>
+      <p>Diagnostic entries for common water quality problems with resolution guidance.</p>
+      <span class="card-count">11 records</span>
+    </div>
+  </a>
+</li>
+<li class="dataset-card">
+  <a href="/reference/datasets/maintenance-schedules/">
+    <span class="card-icon">🗓</span>
+    <div class="card-body">
+      <h3>Maintenance Schedules</h3>
+      <p>Reusable structured maintenance schedules by pool type.</p>
+      <span class="card-count">4 records</span>
+    </div>
+  </a>
+</li>
+<li class="dataset-card">
+  <a href="/reference/datasets/confidence-levels/">
+    <span class="card-icon">✅</span>
+    <div class="card-body">
+      <h3>Confidence Levels</h3>
+      <p>Reusable confidence definitions for calculators and reference pages.</p>
+      <span class="card-count">5 records</span>
+    </div>
+  </a>
+</li>
+<li class="dataset-card">
+  <a href="/reference/datasets/version/">
+    <span class="card-icon">📦</span>
+    <div class="card-body">
+      <h3>Version Registry</h3>
+      <p>Version tracking for all canonical datasets and build metadata.</p>
+      
+    </div>
+  </a>
+</li>
+</ul>
+
+  </main>
+  <footer><p>Auto-generated by generate-data-docs.js. Source: data/datasets/. Do not edit manually.</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

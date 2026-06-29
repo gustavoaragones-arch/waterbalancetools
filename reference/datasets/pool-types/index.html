@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pool Types | WaterBalanceTools Datasets</title>
+  <meta name="description" content="Canonical pool type definitions with chemistry implications.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .dataset-header { background: var(--color-bg-alt, #f5f5f5); border-left: 4px solid var(--color-brand, #0073aa); padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 4px; }
+    .dataset-badge { display: inline-block; background: #0073aa; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-right: 8px; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th { background: #f0f0f0; text-align: left; padding: 8px 10px; border: 1px solid #ddd; white-space: nowrap; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; max-width: 320px; word-break: break-word; }
+    tr:hover td { background: #fafafa; }
+    .null { color: #aaa; font-style: italic; }
+    .tag { display: inline-block; background: #e8f0fe; color: #333; border-radius: 3px; padding: 1px 5px; font-size: 0.78em; margin: 1px; }
+    .json { font-family: monospace; font-size: 0.78em; color: #555; }
+    .no-records { color: #888; font-style: italic; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .meta-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; }
+    .meta-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 1rem; font-weight: 600; color: #222; }
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-list li::before { content: "↑ "; color: #0073aa; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/reference/">Reference</a> › <a href="/reference/datasets/">Datasets</a> › Pool Types</nav>
+  <main class="knowledge-content">
+    
+<div class="dataset-header">
+  <span class="dataset-badge">Canonical Dataset</span>
+  <h1>🏊 Pool Types</h1>
+  <p>Canonical pool type definitions with chemistry implications and special considerations.</p>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-card"><div class="meta-label">Dataset ID</div><div class="meta-value">pool-types</div></div>
+<div class="meta-card"><div class="meta-label">Version</div><div class="meta-value">2026.07</div></div>
+<div class="meta-card"><div class="meta-label">Last Reviewed</div><div class="meta-value">2026-07-01</div></div>
+<div class="meta-card"><div class="meta-label">Maintainer</div><div class="meta-value">WaterBalanceTools</div></div>
+<div class="meta-card"><div class="meta-label">Records</div><div class="meta-value">6</div></div>
+</div>
+
+<section><h2>Source Priority</h2><p>Values in this dataset are sourced in the following order (highest authority first):</p><ol class="source-list"><li>1. industry-standards</li><li>2. manufacturer-documentation</li></ol></section>
+
+<section><h2>Records (6)</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>id</th><th>name</th><th>entityId</th><th>surfaces</th><th>typicalVolume</th><th>chlorineSystem</th><th>requiresCYA</th><th>maxTemperature</th><th>specialConsiderations</th><th>cyaTarget</th><th>saltTarget</th><th>waterChangeFrequency</th><th>regulations</th><th>maxTurnoverHours</th></tr></thead>
+  <tbody><tr><td>residential-pool</td><td>Residential Pool</td><td>swimming-pool</td><td><span class="tag">plaster</span> <span class="tag">vinyl</span> <span class="tag">fiberglass</span> <span class="tag">pebble</span></td><td><span class="json">{"min":10000,"max":30000,"unit":"gallons"}</span></td><td>chlorine-or-salt</td><td>Yes</td><td>90</td><td><span class="tag">surface-type-determines-calcium-target</span> <span class="tag">CYA-required-for-outdoor</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>saltwater-pool</td><td>Saltwater Pool</td><td>saltwater-pool</td><td><span class="tag">plaster</span> <span class="tag">vinyl</span> <span class="tag">fiberglass</span> <span class="tag">pebble</span></td><td><span class="json">{"min":10000,"max":30000,"unit":"gallons"}</span></td><td>salt-chlorinator</td><td>Yes</td><td><span class="null">—</span></td><td><span class="tag">higher-CYA-target</span> <span class="tag">monitor-salt-cell-pH</span> <span class="tag">higher-pH-drift</span></td><td><span class="json">{"min":60,"max":80}</span></td><td><span class="json">{"min":2700,"max":3400,"unit":"ppm"}</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>hot-tub</td><td>Hot Tub / Spa</td><td>hot-tub</td><td><span class="tag">acrylic</span> <span class="tag">composite</span> <span class="tag">fiberglass</span></td><td><span class="json">{"min":100,"max":500,"unit":"gallons"}</span></td><td>chlorine-or-bromine</td><td>No</td><td>104</td><td><span class="tag">no-CYA</span> <span class="tag">high-bather-ratio</span> <span class="tag">rapid-chemistry-change</span> <span class="tag">change-water-every-3-4-months</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="json">{"interval":3,"unit":"months"}</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>commercial-pool</td><td>Commercial Pool</td><td>commercial-pool</td><td><span class="tag">plaster</span> <span class="tag">tile</span> <span class="tag">vinyl</span></td><td><span class="json">{"min":50000,"max":500000,"unit":"gallons"}</span></td><td>chlorine</td><td>No</td><td><span class="null">—</span></td><td><span class="tag">regulatory-requirements</span> <span class="tag">ORP-monitoring</span> <span class="tag">chemical-log-required</span> <span class="tag">licensed-operator-required</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">health-code</span> <span class="tag">PHTA</span> <span class="tag">state-specific</span></td><td>6</td></tr>
+<tr><td>indoor-pool</td><td>Indoor Pool</td><td>indoor-pool</td><td><span class="tag">plaster</span> <span class="tag">tile</span> <span class="tag">vinyl</span></td><td><span class="json">{"min":10000,"max":200000,"unit":"gallons"}</span></td><td>chlorine</td><td>No</td><td><span class="null">—</span></td><td><span class="tag">no-CYA</span> <span class="tag">ventilation-critical</span> <span class="tag">chloramine-monitoring-critical</span> <span class="tag">pH-rises-faster</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>outdoor-pool</td><td>Outdoor Pool</td><td>outdoor-pool</td><td><span class="tag">plaster</span> <span class="tag">vinyl</span> <span class="tag">fiberglass</span> <span class="tag">pebble</span></td><td><span class="json">{"min":10000,"max":50000,"unit":"gallons"}</span></td><td>chlorine-or-salt</td><td>Yes</td><td><span class="null">—</span></td><td><span class="tag">UV-degradation</span> <span class="tag">CYA-essential</span> <span class="tag">seasonal-chemistry-variation</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr></tbody>
+</table>
+</div></section>
+
+<section>
+  <h2>About This Dataset</h2>
+  <p>This dataset is part of the <strong>WaterBalanceTools Canonical Data Layer</strong>. All factual values used across the website originate from canonical datasets like this one. No calculator, article, or tool embeds these values directly — they are always resolved through the data layer.</p>
+  <p><a href="/reference/datasets/">← Back to all datasets</a></p>
+</section>
+
+  </main>
+  <footer><p>Auto-generated by generate-data-docs.js. Source: data/datasets/pool-types.json. Do not edit manually.</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

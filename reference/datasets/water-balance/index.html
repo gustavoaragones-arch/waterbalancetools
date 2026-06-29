@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Water Balance (LSI) | WaterBalanceTools Datasets</title>
+  <meta name="description" content="Langelier Saturation Index factors and interpretation table.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .dataset-header { background: var(--color-bg-alt, #f5f5f5); border-left: 4px solid var(--color-brand, #0073aa); padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 4px; }
+    .dataset-badge { display: inline-block; background: #0073aa; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-right: 8px; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th { background: #f0f0f0; text-align: left; padding: 8px 10px; border: 1px solid #ddd; white-space: nowrap; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; max-width: 320px; word-break: break-word; }
+    tr:hover td { background: #fafafa; }
+    .null { color: #aaa; font-style: italic; }
+    .tag { display: inline-block; background: #e8f0fe; color: #333; border-radius: 3px; padding: 1px 5px; font-size: 0.78em; margin: 1px; }
+    .json { font-family: monospace; font-size: 0.78em; color: #555; }
+    .no-records { color: #888; font-style: italic; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .meta-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; }
+    .meta-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 1rem; font-weight: 600; color: #222; }
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-list li::before { content: "↑ "; color: #0073aa; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/reference/">Reference</a> › <a href="/reference/datasets/">Datasets</a> › Water Balance (LSI)</nav>
+  <main class="knowledge-content">
+    
+<div class="dataset-header">
+  <span class="dataset-badge">Canonical Dataset</span>
+  <h1>⚖ Water Balance (LSI)</h1>
+  <p>Langelier Saturation Index (LSI) calculation parameters, factor tables, and water balance target ranges. Single source of truth for all LSI calculations.</p>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-card"><div class="meta-label">Dataset ID</div><div class="meta-value">water-balance</div></div>
+<div class="meta-card"><div class="meta-label">Version</div><div class="meta-value">2026.07</div></div>
+<div class="meta-card"><div class="meta-label">Last Reviewed</div><div class="meta-value">2026-07-01</div></div>
+<div class="meta-card"><div class="meta-label">Maintainer</div><div class="meta-value">WaterBalanceTools</div></div>
+<div class="meta-card"><div class="meta-label">Records</div><div class="meta-value">5</div></div>
+</div>
+
+<section><h2>Source Priority</h2><p>Values in this dataset are sourced in the following order (highest authority first):</p><ol class="source-list"><li>1. scientific-literature</li><li>2. industry-standards</li><li>3. manufacturer-documentation</li></ol></section>
+
+<section><h2>Records (5)</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>id</th><th>parameter</th><th>unit</th><th>target</th><th>warning</th><th>critical</th><th>interpretation</th><th>source</th><th>confidenceLevel</th><th>values</th><th>notes</th><th>cyaCorrectionFactor</th><th>standardValue</th><th>saltPoolValue</th></tr></thead>
+  <tbody><tr><td>lsi-target-range</td><td>lsi</td><td>dimensionless</td><td><span class="json">{"min":-0.3,"max":0.5,"ideal":0}</span></td><td><span class="json">{"low":-0.5,"high":0.8}</span></td><td><span class="json">{"low":-1,"high":1.5}</span></td><td><span class="json">{"balanced":"-0.3 to +0.5","corrosive":"below -0.3","scaleForming":"above +0.5"}</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>temperature-factors</td><td>temperature-factor</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td>Taylor Technologies Pool/Spa Water Chemistry</td><td>high</td><td><span class="json">{"tempF":32,"tempC":0,"tf":0}</span> <span class="json">{"tempF":37,"tempC":3,"tf":0.1}</span> <span class="json">{"tempF":46,"tempC":8,"tf":0.2}</span> <span class="json">{"tempF":53,"tempC":12,"tf":0.3}</span> <span class="json">{"tempF":60,"tempC":16,"tf":0.4}</span> <span class="json">{"tempF":66,"tempC":19,"tf":0.5}</span> <span class="json">{"tempF":76,"tempC":24,"tf":0.6}</span> <span class="json">{"tempF":84,"tempC":29,"tf":0.7}</span> <span class="json">{"tempF":94,"tempC":34,"tf":0.8}</span> <span class="json">{"tempF":105,"tempC":41,"tf":0.9}</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>calcium-hardness-factors</td><td>calcium-hardness-factor</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td>Taylor Technologies Pool/Spa Water Chemistry</td><td>high</td><td><span class="json">{"chPpm":5,"chf":0.3}</span> <span class="json">{"chPpm":25,"chf":1}</span> <span class="json">{"chPpm":50,"chf":1.3}</span> <span class="json">{"chPpm":75,"chf":1.5}</span> <span class="json">{"chPpm":100,"chf":1.6}</span> <span class="json">{"chPpm":150,"chf":1.8}</span> <span class="json">{"chPpm":200,"chf":1.9}</span> <span class="json">{"chPpm":250,"chf":2}</span> <span class="json">{"chPpm":300,"chf":2.1}</span> <span class="json">{"chPpm":400,"chf":2.2}</span> <span class="json">{"chPpm":600,"chf":2.4}</span> <span class="json">{"chPpm":800,"chf":2.5}</span> <span class="json">{"chPpm":1000,"chf":2.6}</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>total-alkalinity-factors</td><td>total-alkalinity-factor</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td>Taylor Technologies Pool/Spa Water Chemistry</td><td>high</td><td><span class="json">{"taPpm":5,"taf":1}</span> <span class="json">{"taPpm":25,"taf":1.4}</span> <span class="json">{"taPpm":50,"taf":1.7}</span> <span class="json">{"taPpm":75,"taf":1.9}</span> <span class="json">{"taPpm":100,"taf":2}</span> <span class="json">{"taPpm":150,"taf":2.2}</span> <span class="json">{"taPpm":200,"taf":2.3}</span> <span class="json">{"taPpm":300,"taf":2.5}</span> <span class="json">{"taPpm":400,"taf":2.6}</span> <span class="json">{"taPpm":800,"taf":2.9}</span></td><td>Use corrected TA: TA_corrected = TA − (CYA × correction_factor)</td><td>0.33</td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>tds-constant</td><td>tds-constant</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td>Standard: 12.1 for pools with TDS ~1000 ppm. Use 12.2 for saltwater pools (higher TDS ~3200 ppm).</td><td><span class="null">—</span></td><td>12.1</td><td>12.2</td></tr></tbody>
+</table>
+</div></section>
+
+<section>
+  <h2>About This Dataset</h2>
+  <p>This dataset is part of the <strong>WaterBalanceTools Canonical Data Layer</strong>. All factual values used across the website originate from canonical datasets like this one. No calculator, article, or tool embeds these values directly — they are always resolved through the data layer.</p>
+  <p><a href="/reference/datasets/">← Back to all datasets</a></p>
+</section>
+
+  </main>
+  <footer><p>Auto-generated by generate-data-docs.js. Source: data/datasets/water-balance-(lsi).json. Do not edit manually.</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

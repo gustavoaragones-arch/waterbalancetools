@@ -1,0 +1,165 @@
+{
+  "datasetId": "compatibility",
+  "version": "2026.07",
+  "lastReviewed": "2026-07-01",
+  "description": "Chemical compatibility matrix for pool and spa products. Every pair with a safety-relevant interaction is explicitly recorded. Status: safe | avoid | never_mix | unknown.",
+  "maintainer": "WaterBalanceTools",
+  "sourcePriority": [
+    "government-guidance",
+    "manufacturer-documentation",
+    "scientific-literature",
+    "industry-standards"
+  ],
+  "records": [
+    {
+      "id": "trichlor-x-cal-hypo",
+      "productA": "trichlor-tablets",
+      "productB": "calcium-hypochlorite",
+      "status": "never_mix",
+      "severity": "critical",
+      "hazard": "fire-explosion",
+      "description": "Trichlor (acidic, ~pH 2.9) reacts violently with calcium hypochlorite (alkaline, strong oxidizer). Reaction generates heat, chlorine gas, and can cause fire or explosion.",
+      "handlingInstructions": "Never combine in container, chlorinator, or skimmer. If accidental mixture occurs, evacuate and call emergency services."
+    },
+    {
+      "id": "muriatic-acid-x-chlorine",
+      "productA": "muriatic-acid",
+      "productB": "liquid-chlorine",
+      "status": "never_mix",
+      "severity": "critical",
+      "hazard": "toxic-gas",
+      "description": "Mixing muriatic acid with any chlorine product releases chlorine gas — a toxic, corrosive gas that causes severe respiratory damage.",
+      "handlingInstructions": "Never combine. Add to pool water separately, at least 30 minutes apart with pump running."
+    },
+    {
+      "id": "muriatic-acid-x-cal-hypo",
+      "productA": "muriatic-acid",
+      "productB": "calcium-hypochlorite",
+      "status": "never_mix",
+      "severity": "critical",
+      "hazard": "toxic-gas-fire",
+      "description": "Acid mixed with calcium hypochlorite releases chlorine gas and can cause fire. Extremely hazardous.",
+      "handlingInstructions": "Never combine under any circumstances."
+    },
+    {
+      "id": "trichlor-x-muriatic",
+      "productA": "trichlor-tablets",
+      "productB": "muriatic-acid",
+      "status": "never_mix",
+      "severity": "critical",
+      "hazard": "toxic-gas",
+      "description": "Both are acidic but combining concentrated forms releases chlorine gas.",
+      "handlingInstructions": "Never combine. Add separately to pool."
+    },
+    {
+      "id": "cal-hypo-x-hydrogen-peroxide",
+      "productA": "calcium-hypochlorite",
+      "productB": "hydrogen-peroxide",
+      "status": "never_mix",
+      "severity": "critical",
+      "hazard": "fire-explosion",
+      "description": "Mixing oxidizers can produce rapid decomposition, heat, oxygen release, fire, or explosion.",
+      "handlingInstructions": "Never combine. These products are from incompatible sanitizer systems."
+    },
+    {
+      "id": "biguanide-x-chlorine",
+      "productA": "biguanide",
+      "productB": "liquid-chlorine",
+      "status": "never_mix",
+      "severity": "critical",
+      "hazard": "system-failure",
+      "description": "Biguanide (PHMB) is completely incompatible with all chlorine products. Mixing causes precipitation and destroys both sanitizers.",
+      "handlingInstructions": "Full water replacement required when switching between systems."
+    },
+    {
+      "id": "trichlor-x-dichlor",
+      "productA": "trichlor-tablets",
+      "productB": "sodium-dichlor",
+      "status": "avoid",
+      "severity": "high",
+      "hazard": "heat-degradation",
+      "description": "Both are chlorinated isocyanurates but mixing concentrated forms generates heat and can cause degradation or fire risk.",
+      "handlingInstructions": "Do not add simultaneously to chlorinator or skimmer. Add separately to pool water."
+    },
+    {
+      "id": "soda-ash-x-cal-hypo",
+      "productA": "soda-ash",
+      "productB": "calcium-hypochlorite",
+      "status": "avoid",
+      "severity": "medium",
+      "hazard": "cloudiness-precipitate",
+      "description": "Adding soda ash immediately after calcium hypochlorite can cause calcium carbonate precipitation and water cloudiness.",
+      "handlingInstructions": "Add at least 4 hours apart. Allow each to fully disperse before adding the next."
+    },
+    {
+      "id": "algaecide-x-liquid-chlorine",
+      "productA": "algaecide",
+      "productB": "liquid-chlorine",
+      "status": "avoid",
+      "severity": "low",
+      "hazard": "reduced-effectiveness",
+      "description": "Adding algaecide simultaneously with chlorine shock may reduce effectiveness of both. Chlorine can oxidize some algaecide types.",
+      "handlingInstructions": "Add algaecide 24 hours after shocking, when FC has returned to normal range."
+    },
+    {
+      "id": "baking-soda-x-liquid-chlorine",
+      "productA": "baking-soda",
+      "productB": "liquid-chlorine",
+      "status": "safe",
+      "severity": null,
+      "hazard": null,
+      "description": "Sodium bicarbonate and sodium hypochlorite are compatible. Can be added to pool within normal maintenance intervals.",
+      "handlingInstructions": "Add each product separately to pool with pump running. No special precautions needed."
+    },
+    {
+      "id": "soda-ash-x-baking-soda",
+      "productA": "soda-ash",
+      "productB": "baking-soda",
+      "status": "safe",
+      "severity": null,
+      "hazard": null,
+      "description": "Both are alkaline sodium compounds. Compatible when added separately to pool water.",
+      "handlingInstructions": "Standard handling. Pre-dissolve each before adding."
+    },
+    {
+      "id": "calcium-chloride-x-baking-soda",
+      "productA": "calcium-chloride",
+      "productB": "baking-soda",
+      "status": "avoid",
+      "severity": "medium",
+      "hazard": "calcium-carbonate-precipitate",
+      "description": "Adding calcium chloride and baking soda simultaneously to pool water may cause calcium carbonate to precipitate, causing cloudiness.",
+      "handlingInstructions": "Add at least 4–6 hours apart. Calcium chloride first, allow to fully distribute, then baking soda."
+    },
+    {
+      "id": "muriatic-acid-x-baking-soda",
+      "productA": "muriatic-acid",
+      "productB": "baking-soda",
+      "status": "never_mix",
+      "severity": "high",
+      "hazard": "violent-reaction-CO2",
+      "description": "Acid and bicarbonate react rapidly, releasing CO2, heat, and causing foaming overflow. Dangerous in concentrated form.",
+      "handlingInstructions": "Never mix directly. In pool water, each can be used at separate times as normal."
+    },
+    {
+      "id": "pool-salt-x-liquid-chlorine",
+      "productA": "pool-salt",
+      "productB": "liquid-chlorine",
+      "status": "safe",
+      "severity": null,
+      "hazard": null,
+      "description": "Sodium chloride and sodium hypochlorite are compatible. Used together in salt pool maintenance.",
+      "handlingInstructions": "Standard handling. Add salt in shallow end, add chlorine near return jets."
+    },
+    {
+      "id": "store-chlorine-x-acid",
+      "productA": "any-chlorine",
+      "productB": "any-acid",
+      "status": "never_mix",
+      "severity": "critical",
+      "hazard": "toxic-gas-fire",
+      "description": "Chlorine and acid products must never be stored together. Even vapors can react.",
+      "handlingInstructions": "Store in separate, ventilated locations. Separate by at least 10 feet or in separate storage structures."
+    }
+  ]
+}

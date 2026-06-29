@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Water Problems | WaterBalanceTools Datasets</title>
+  <meta name="description" content="Diagnostic entries for common water quality problems with resolution guidance.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .dataset-header { background: var(--color-bg-alt, #f5f5f5); border-left: 4px solid var(--color-brand, #0073aa); padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 4px; }
+    .dataset-badge { display: inline-block; background: #0073aa; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-right: 8px; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th { background: #f0f0f0; text-align: left; padding: 8px 10px; border: 1px solid #ddd; white-space: nowrap; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; max-width: 320px; word-break: break-word; }
+    tr:hover td { background: #fafafa; }
+    .null { color: #aaa; font-style: italic; }
+    .tag { display: inline-block; background: #e8f0fe; color: #333; border-radius: 3px; padding: 1px 5px; font-size: 0.78em; margin: 1px; }
+    .json { font-family: monospace; font-size: 0.78em; color: #555; }
+    .no-records { color: #888; font-style: italic; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .meta-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; }
+    .meta-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 1rem; font-weight: 600; color: #222; }
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-list li::before { content: "↑ "; color: #0073aa; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/reference/">Reference</a> › <a href="/reference/datasets/">Datasets</a> › Water Problems</nav>
+  <main class="knowledge-content">
+    
+<div class="dataset-header">
+  <span class="dataset-badge">Canonical Dataset</span>
+  <h1>🚨 Water Problems</h1>
+  <p>Canonical water problem definitions with symptoms, likely causes, and recommended resolution references.</p>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-card"><div class="meta-label">Dataset ID</div><div class="meta-value">water-problems</div></div>
+<div class="meta-card"><div class="meta-label">Version</div><div class="meta-value">2026.07</div></div>
+<div class="meta-card"><div class="meta-label">Last Reviewed</div><div class="meta-value">2026-07-01</div></div>
+<div class="meta-card"><div class="meta-label">Maintainer</div><div class="meta-value">WaterBalanceTools</div></div>
+<div class="meta-card"><div class="meta-label">Records</div><div class="meta-value">11</div></div>
+</div>
+
+<section><h2>Source Priority</h2><p>Values in this dataset are sourced in the following order (highest authority first):</p><ol class="source-list"><li>1. industry-standards</li><li>2. scientific-literature</li></ol></section>
+
+<section><h2>Records (11)</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>id</th><th>name</th><th>entityId</th><th>symptoms</th><th>likelyCauses</th><th>urgency</th><th>recommendedCalculators</th><th>recommendedAcademy</th><th>recommendedReference</th><th>resolutionOrder</th></tr></thead>
+  <tbody><tr><td>cloudy-water</td><td>Cloudy Water</td><td>cloudy-water</td><td><span class="tag">Water lacks clarity</span> <span class="tag">Reduced visibility</span> <span class="tag">Hazy or milky appearance</span></td><td><span class="tag">low-free-chlorine</span> <span class="tag">high-ph</span> <span class="tag">high-alkalinity</span> <span class="tag">calcium-carbonate-precipitation</span> <span class="tag">poor-filtration</span> <span class="tag">high-tds</span> <span class="tag">dead-algae-post-treatment</span></td><td>medium</td><td><span class="tag">pool-chlorine-calculator</span> <span class="tag">pool-ph-calculator</span> <span class="tag">pool-alkalinity-calculator</span></td><td><span class="tag">ts-01</span></td><td><span class="null">—</span></td><td><span class="tag">test-all-parameters</span> <span class="tag">correct-chlorine</span> <span class="tag">correct-ph</span> <span class="tag">correct-alkalinity</span> <span class="tag">run-filter-continuously</span> <span class="tag">add-clarifier-if-needed</span></td></tr>
+<tr><td>green-water</td><td>Green Water</td><td>green-water</td><td><span class="tag">Water turns green</span> <span class="tag">Algae visible on walls or floor</span> <span class="tag">Strong organic odor</span></td><td><span class="tag">low-free-chlorine</span> <span class="tag">high-cya</span> <span class="tag">missed-shock-treatment</span> <span class="tag">pump-failure</span> <span class="tag">heavy-rain</span></td><td>high</td><td><span class="tag">pool-shock-calculator</span> <span class="tag">pool-volume-calculator</span></td><td><span class="tag">ts-02</span></td><td><span class="null">—</span></td><td><span class="tag">lower-ph-to-72</span> <span class="tag">brush-all-surfaces</span> <span class="tag">shock-to-30ppm-fc</span> <span class="tag">run-filter-24hr</span> <span class="tag">backwash-when-pressure-rises</span> <span class="tag">retest-after-24hr</span></td></tr>
+<tr><td>foaming</td><td>Foaming</td><td>foaming</td><td><span class="tag">Persistent foam on water surface</span> <span class="tag">Foam especially during jets or aeration</span></td><td><span class="tag">body-oils-lotions-sunscreen</span> <span class="tag">soap-residue-on-swimwear</span> <span class="tag">high-tds</span> <span class="tag">polyquat-algaecide</span> <span class="tag">low-calcium-hardness</span></td><td>low</td><td><span class="null">—</span></td><td><span class="tag">ts-03</span></td><td><span class="null">—</span></td><td><span class="tag">identify-source</span> <span class="tag">shock-if-bather-related</span> <span class="tag">anti-foam-temporary-fix</span> <span class="tag">water-change-if-high-tds</span></td></tr>
+<tr><td>scaling</td><td>Scaling</td><td>scaling</td><td><span class="tag">White deposits on tile line</span> <span class="tag">Rough surfaces</span> <span class="tag">Calcium deposits on equipment</span></td><td><span class="tag">high-ph</span> <span class="tag">high-calcium-hardness</span> <span class="tag">high-alkalinity</span> <span class="tag">high-temperature</span> <span class="tag">positive-lsi</span></td><td>medium</td><td><span class="tag">chemical-calculator</span></td><td><span class="tag">ts-05</span> <span class="tag">wb-05</span></td><td><span class="null">—</span></td><td><span class="tag">calculate-lsi</span> <span class="tag">lower-ph</span> <span class="tag">lower-alkalinity</span> <span class="tag">lower-calcium-if-very-high</span> <span class="tag">add-sequestrant</span></td></tr>
+<tr><td>corrosion</td><td>Corrosion</td><td>corrosion</td><td><span class="tag">Etching of plaster</span> <span class="tag">Rust staining from metal</span> <span class="tag">Equipment damage</span> <span class="tag">Green staining from copper</span></td><td><span class="tag">low-ph</span> <span class="tag">low-alkalinity</span> <span class="tag">low-calcium-hardness</span> <span class="tag">negative-lsi</span></td><td>high</td><td><span class="tag">chemical-calculator</span></td><td><span class="tag">ts-06</span> <span class="tag">wb-05</span></td><td><span class="null">—</span></td><td><span class="tag">calculate-lsi</span> <span class="tag">raise-ph</span> <span class="tag">raise-alkalinity</span> <span class="tag">raise-calcium</span> <span class="tag">add-sequestrant-for-existing-stains</span></td></tr>
+<tr><td>algae</td><td>Algae Growth</td><td>algae</td><td><span class="tag">Green, yellow, or black discoloration</span> <span class="tag">Slippery surfaces</span> <span class="tag">Cloudy green water</span></td><td><span class="tag">low-free-chlorine</span> <span class="tag">high-phosphate</span> <span class="tag">poor-circulation</span> <span class="tag">insufficient-shocking</span></td><td>high</td><td><span class="tag">pool-shock-calculator</span></td><td><span class="tag">ts-02</span></td><td><span class="null">—</span></td><td><span class="tag">identify-algae-type</span> <span class="tag">brush-surfaces</span> <span class="tag">shock</span> <span class="tag">algaecide-if-persistent</span> <span class="tag">filter-24hr</span></td></tr>
+<tr><td>strong-chlorine-smell</td><td>Strong Chlorine Smell</td><td>strong-chlorine-smell</td><td><span class="tag">Strong chemical odor</span> <span class="tag">Eye and throat irritation</span> <span class="tag">Odor worse near pool surface</span></td><td><span class="tag">high-combined-chlorine</span> <span class="tag">poor-ventilation-indoor-pool</span></td><td>medium</td><td><span class="tag">pool-shock-calculator</span></td><td><span class="tag">ts-04</span> <span class="tag">san-02</span></td><td><span class="null">—</span></td><td><span class="tag">test-combined-chlorine</span> <span class="tag">perform-breakpoint-chlorination</span> <span class="tag">improve-ventilation-if-indoor</span></td></tr>
+<tr><td>low-chlorine</td><td>Low Chlorine</td><td>low-chlorine</td><td><span class="tag">FC below target</span> <span class="tag">Algae risk</span> <span class="tag">Pathogen risk</span></td><td><span class="tag">insufficient-dosing</span> <span class="tag">high-cya</span> <span class="tag">heavy-bather-load</span> <span class="tag">high-temperature</span> <span class="tag">uv-degradation</span></td><td>high</td><td><span class="tag">pool-chlorine-calculator</span></td><td><span class="tag">san-01</span></td><td><span class="null">—</span></td><td><span class="tag">add-chlorine-immediately</span> <span class="tag">check-cya-level</span> <span class="tag">increase-dosing-frequency</span></td></tr>
+<tr><td>high-chlorine</td><td>High Chlorine</td><td>high-chlorine</td><td><span class="tag">FC above 5 ppm</span> <span class="tag">Bleaching of swimwear</span> <span class="tag">Eye and skin irritation</span></td><td><span class="tag">over-dosing</span> <span class="tag">feeder-malfunction</span> <span class="tag">over-shocking</span></td><td>medium</td><td><span class="null">—</span></td><td><span class="tag">san-05</span></td><td><span class="null">—</span></td><td><span class="tag">close-pool-until-fc-below-5ppm</span> <span class="tag">allow-natural-dissipation</span> <span class="tag">uncover-pool-in-sunlight</span></td></tr>
+<tr><td>low-ph</td><td>Low pH</td><td>low-ph</td><td><span class="tag">pH below 7.2</span> <span class="tag">Eye irritation</span> <span class="tag">Corroded equipment</span> <span class="tag">Etched surfaces</span></td><td><span class="tag">too-much-acid</span> <span class="tag">co2-from-rain</span> <span class="tag">acidic-fill-water</span> <span class="tag">trichlor-use</span></td><td>high</td><td><span class="tag">pool-ph-calculator</span></td><td><span class="tag">wb-01</span></td><td><span class="null">—</span></td><td><span class="tag">add-soda-ash</span> <span class="tag">retest-after-4hr</span> <span class="tag">check-alkalinity</span></td></tr>
+<tr><td>high-ph</td><td>High pH</td><td>high-ph</td><td><span class="tag">pH above 7.8</span> <span class="tag">Reduced chlorine effectiveness</span> <span class="tag">Scaling</span> <span class="tag">Cloudy water</span></td><td><span class="tag">too-much-soda-ash</span> <span class="tag">co2-offgassing</span> <span class="tag">aeration</span> <span class="tag">new-plaster-outgassing</span></td><td>medium</td><td><span class="tag">pool-ph-calculator</span></td><td><span class="tag">wb-01</span></td><td><span class="null">—</span></td><td><span class="tag">add-muriatic-acid</span> <span class="tag">retest-after-4hr</span> <span class="tag">check-alkalinity</span></td></tr></tbody>
+</table>
+</div></section>
+
+<section>
+  <h2>About This Dataset</h2>
+  <p>This dataset is part of the <strong>WaterBalanceTools Canonical Data Layer</strong>. All factual values used across the website originate from canonical datasets like this one. No calculator, article, or tool embeds these values directly — they are always resolved through the data layer.</p>
+  <p><a href="/reference/datasets/">← Back to all datasets</a></p>
+</section>
+
+  </main>
+  <footer><p>Auto-generated by generate-data-docs.js. Source: data/datasets/water-problems.json. Do not edit manually.</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

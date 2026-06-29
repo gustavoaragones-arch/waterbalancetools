@@ -1,0 +1,171 @@
+{
+  "datasetId": "pool-types",
+  "version": "2026.07",
+  "lastReviewed": "2026-07-01",
+  "description": "Canonical pool type definitions with chemistry implications and special considerations.",
+  "maintainer": "WaterBalanceTools",
+  "sourcePriority": [
+    "industry-standards",
+    "manufacturer-documentation"
+  ],
+  "records": [
+    {
+      "id": "residential-pool",
+      "name": "Residential Pool",
+      "entityId": "swimming-pool",
+      "surfaces": [
+        "plaster",
+        "vinyl",
+        "fiberglass",
+        "pebble"
+      ],
+      "typicalVolume": {
+        "min": 10000,
+        "max": 30000,
+        "unit": "gallons"
+      },
+      "chlorineSystem": "chlorine-or-salt",
+      "requiresCYA": true,
+      "maxTemperature": 90,
+      "specialConsiderations": [
+        "surface-type-determines-calcium-target",
+        "CYA-required-for-outdoor"
+      ]
+    },
+    {
+      "id": "saltwater-pool",
+      "name": "Saltwater Pool",
+      "entityId": "saltwater-pool",
+      "surfaces": [
+        "plaster",
+        "vinyl",
+        "fiberglass",
+        "pebble"
+      ],
+      "typicalVolume": {
+        "min": 10000,
+        "max": 30000,
+        "unit": "gallons"
+      },
+      "chlorineSystem": "salt-chlorinator",
+      "requiresCYA": true,
+      "cyaTarget": {
+        "min": 60,
+        "max": 80
+      },
+      "saltTarget": {
+        "min": 2700,
+        "max": 3400,
+        "unit": "ppm"
+      },
+      "specialConsiderations": [
+        "higher-CYA-target",
+        "monitor-salt-cell-pH",
+        "higher-pH-drift"
+      ]
+    },
+    {
+      "id": "hot-tub",
+      "name": "Hot Tub / Spa",
+      "entityId": "hot-tub",
+      "surfaces": [
+        "acrylic",
+        "composite",
+        "fiberglass"
+      ],
+      "typicalVolume": {
+        "min": 100,
+        "max": 500,
+        "unit": "gallons"
+      },
+      "chlorineSystem": "chlorine-or-bromine",
+      "requiresCYA": false,
+      "maxTemperature": 104,
+      "waterChangeFrequency": {
+        "interval": 3,
+        "unit": "months"
+      },
+      "specialConsiderations": [
+        "no-CYA",
+        "high-bather-ratio",
+        "rapid-chemistry-change",
+        "change-water-every-3-4-months"
+      ]
+    },
+    {
+      "id": "commercial-pool",
+      "name": "Commercial Pool",
+      "entityId": "commercial-pool",
+      "surfaces": [
+        "plaster",
+        "tile",
+        "vinyl"
+      ],
+      "typicalVolume": {
+        "min": 50000,
+        "max": 500000,
+        "unit": "gallons"
+      },
+      "chlorineSystem": "chlorine",
+      "requiresCYA": false,
+      "regulations": [
+        "health-code",
+        "PHTA",
+        "state-specific"
+      ],
+      "maxTurnoverHours": 6,
+      "specialConsiderations": [
+        "regulatory-requirements",
+        "ORP-monitoring",
+        "chemical-log-required",
+        "licensed-operator-required"
+      ]
+    },
+    {
+      "id": "indoor-pool",
+      "name": "Indoor Pool",
+      "entityId": "indoor-pool",
+      "surfaces": [
+        "plaster",
+        "tile",
+        "vinyl"
+      ],
+      "typicalVolume": {
+        "min": 10000,
+        "max": 200000,
+        "unit": "gallons"
+      },
+      "chlorineSystem": "chlorine",
+      "requiresCYA": false,
+      "specialConsiderations": [
+        "no-CYA",
+        "ventilation-critical",
+        "chloramine-monitoring-critical",
+        "pH-rises-faster"
+      ]
+    },
+    {
+      "id": "outdoor-pool",
+      "name": "Outdoor Pool",
+      "entityId": "outdoor-pool",
+      "surfaces": [
+        "plaster",
+        "vinyl",
+        "fiberglass",
+        "pebble"
+      ],
+      "typicalVolume": {
+        "min": 10000,
+        "max": 50000,
+        "unit": "gallons"
+      },
+      "chlorineSystem": "chlorine-or-salt",
+      "requiresCYA": true,
+      "specialConsiderations": [
+        "UV-degradation",
+        "CYA-essential",
+        "seasonal-chemistry-variation"
+      ]
+    }
+  ]
+}

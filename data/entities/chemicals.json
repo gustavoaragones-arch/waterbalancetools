@@ -15,8 +15,10 @@
       "free available chlorine",
       "FAC"
     ],
-    "idealRange": "1–3 ppm (pools); 3–5 ppm (hot tubs)",
+    "idealRange": "1–3 ppm",
     "units": "ppm",
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-free-chlorine",
     "calculatorIds": [
       "pool-chlorine-calculator",
       "hot-tub-chlorine-calculator",
@@ -99,8 +101,10 @@
       "chloramines",
       "bound chlorine"
     ],
-    "idealRange": "0 ppm (maximum 0.5 ppm)",
+    "idealRange": "0–0 ppm",
     "units": "ppm",
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-combined-chlorine",
     "calculatorIds": [
       "pool-shock-calculator",
       "hot-tub-shock-calculator",
@@ -221,7 +225,7 @@
       "bromine sanitizer",
       "spa bromine"
     ],
-    "idealRange": "3–6 ppm (hot tubs/spas)",
+    "idealRange": "3–6 ppm",
     "units": "ppm",
     "calculatorIds": [
       "hot-tub-chlorine-calculator",
@@ -264,7 +268,9 @@
       "spa sanitizer",
       "hot tub bromine",
       "BCDMH"
-    ]
+    ],
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "hot-tub-bromine"
   },
   {
     "id": "cyanuric-acid",
@@ -283,7 +289,7 @@
       "pool conditioner",
       "pool stabilizer"
     ],
-    "idealRange": "30–50 ppm (standard pools); 60–80 ppm (salt pools)",
+    "idealRange": "30–50 ppm",
     "units": "ppm",
     "calculatorIds": [
       "pool-cyanuric-acid-calculator",
@@ -336,7 +342,9 @@
       "conditioner",
       "chlorine lock",
       "UV protection"
-    ]
+    ],
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-cyanuric-acid"
   },
   {
     "id": "calcium-hardness",
@@ -354,7 +362,7 @@
       "hardness",
       "total hardness (calcium component)"
     ],
-    "idealRange": "200–400 ppm (plaster); 150–250 ppm (vinyl/fiberglass)",
+    "idealRange": "200–400 ppm",
     "units": "ppm",
     "calculatorIds": [
       "chemical-calculator"
@@ -409,7 +417,9 @@
       "water hardness",
       "scaling",
       "calcium"
-    ]
+    ],
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-calcium-hardness"
   },
   {
     "id": "salt",

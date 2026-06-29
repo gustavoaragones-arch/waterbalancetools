@@ -1,0 +1,343 @@
+{
+  "datasetId": "water-problems",
+  "version": "2026.07",
+  "lastReviewed": "2026-07-01",
+  "description": "Canonical water problem definitions with symptoms, likely causes, and recommended resolution references.",
+  "maintainer": "WaterBalanceTools",
+  "sourcePriority": [
+    "industry-standards",
+    "scientific-literature"
+  ],
+  "records": [
+    {
+      "id": "cloudy-water",
+      "name": "Cloudy Water",
+      "entityId": "cloudy-water",
+      "symptoms": [
+        "Water lacks clarity",
+        "Reduced visibility",
+        "Hazy or milky appearance"
+      ],
+      "likelyCauses": [
+        "low-free-chlorine",
+        "high-ph",
+        "high-alkalinity",
+        "calcium-carbonate-precipitation",
+        "poor-filtration",
+        "high-tds",
+        "dead-algae-post-treatment"
+      ],
+      "urgency": "medium",
+      "recommendedCalculators": [
+        "pool-chlorine-calculator",
+        "pool-ph-calculator",
+        "pool-alkalinity-calculator"
+      ],
+      "recommendedAcademy": [
+        "ts-01"
+      ],
+      "recommendedReference": [],
+      "resolutionOrder": [
+        "test-all-parameters",
+        "correct-chlorine",
+        "correct-ph",
+        "correct-alkalinity",
+        "run-filter-continuously",
+        "add-clarifier-if-needed"
+      ]
+    },
+    {
+      "id": "green-water",
+      "name": "Green Water",
+      "entityId": "green-water",
+      "symptoms": [
+        "Water turns green",
+        "Algae visible on walls or floor",
+        "Strong organic odor"
+      ],
+      "likelyCauses": [
+        "low-free-chlorine",
+        "high-cya",
+        "missed-shock-treatment",
+        "pump-failure",
+        "heavy-rain"
+      ],
+      "urgency": "high",
+      "recommendedCalculators": [
+        "pool-shock-calculator",
+        "pool-volume-calculator"
+      ],
+      "recommendedAcademy": [
+        "ts-02"
+      ],
+      "resolutionOrder": [
+        "lower-ph-to-72",
+        "brush-all-surfaces",
+        "shock-to-30ppm-fc",
+        "run-filter-24hr",
+        "backwash-when-pressure-rises",
+        "retest-after-24hr"
+      ]
+    },
+    {
+      "id": "foaming",
+      "name": "Foaming",
+      "entityId": "foaming",
+      "symptoms": [
+        "Persistent foam on water surface",
+        "Foam especially during jets or aeration"
+      ],
+      "likelyCauses": [
+        "body-oils-lotions-sunscreen",
+        "soap-residue-on-swimwear",
+        "high-tds",
+        "polyquat-algaecide",
+        "low-calcium-hardness"
+      ],
+      "urgency": "low",
+      "recommendedCalculators": [],
+      "recommendedAcademy": [
+        "ts-03"
+      ],
+      "resolutionOrder": [
+        "identify-source",
+        "shock-if-bather-related",
+        "anti-foam-temporary-fix",
+        "water-change-if-high-tds"
+      ]
+    },
+    {
+      "id": "scaling",
+      "name": "Scaling",
+      "entityId": "scaling",
+      "symptoms": [
+        "White deposits on tile line",
+        "Rough surfaces",
+        "Calcium deposits on equipment"
+      ],
+      "likelyCauses": [
+        "high-ph",
+        "high-calcium-hardness",
+        "high-alkalinity",
+        "high-temperature",
+        "positive-lsi"
+      ],
+      "urgency": "medium",
+      "recommendedCalculators": [
+        "chemical-calculator"
+      ],
+      "recommendedAcademy": [
+        "ts-05",
+        "wb-05"
+      ],
+      "resolutionOrder": [
+        "calculate-lsi",
+        "lower-ph",
+        "lower-alkalinity",
+        "lower-calcium-if-very-high",
+        "add-sequestrant"
+      ]
+    },
+    {
+      "id": "corrosion",
+      "name": "Corrosion",
+      "entityId": "corrosion",
+      "symptoms": [
+        "Etching of plaster",
+        "Rust staining from metal",
+        "Equipment damage",
+        "Green staining from copper"
+      ],
+      "likelyCauses": [
+        "low-ph",
+        "low-alkalinity",
+        "low-calcium-hardness",
+        "negative-lsi"
+      ],
+      "urgency": "high",
+      "recommendedCalculators": [
+        "chemical-calculator"
+      ],
+      "recommendedAcademy": [
+        "ts-06",
+        "wb-05"
+      ],
+      "resolutionOrder": [
+        "calculate-lsi",
+        "raise-ph",
+        "raise-alkalinity",
+        "raise-calcium",
+        "add-sequestrant-for-existing-stains"
+      ]
+    },
+    {
+      "id": "algae",
+      "name": "Algae Growth",
+      "entityId": "algae",
+      "symptoms": [
+        "Green, yellow, or black discoloration",
+        "Slippery surfaces",
+        "Cloudy green water"
+      ],
+      "likelyCauses": [
+        "low-free-chlorine",
+        "high-phosphate",
+        "poor-circulation",
+        "insufficient-shocking"
+      ],
+      "urgency": "high",
+      "recommendedCalculators": [
+        "pool-shock-calculator"
+      ],
+      "recommendedAcademy": [
+        "ts-02"
+      ],
+      "resolutionOrder": [
+        "identify-algae-type",
+        "brush-surfaces",
+        "shock",
+        "algaecide-if-persistent",
+        "filter-24hr"
+      ]
+    },
+    {
+      "id": "strong-chlorine-smell",
+      "name": "Strong Chlorine Smell",
+      "entityId": "strong-chlorine-smell",
+      "symptoms": [
+        "Strong chemical odor",
+        "Eye and throat irritation",
+        "Odor worse near pool surface"
+      ],
+      "likelyCauses": [
+        "high-combined-chlorine",
+        "poor-ventilation-indoor-pool"
+      ],
+      "urgency": "medium",
+      "recommendedCalculators": [
+        "pool-shock-calculator"
+      ],
+      "recommendedAcademy": [
+        "ts-04",
+        "san-02"
+      ],
+      "resolutionOrder": [
+        "test-combined-chlorine",
+        "perform-breakpoint-chlorination",
+        "improve-ventilation-if-indoor"
+      ]
+    },
+    {
+      "id": "low-chlorine",
+      "name": "Low Chlorine",
+      "entityId": "low-chlorine",
+      "symptoms": [
+        "FC below target",
+        "Algae risk",
+        "Pathogen risk"
+      ],
+      "likelyCauses": [
+        "insufficient-dosing",
+        "high-cya",
+        "heavy-bather-load",
+        "high-temperature",
+        "uv-degradation"
+      ],
+      "urgency": "high",
+      "recommendedCalculators": [
+        "pool-chlorine-calculator"
+      ],
+      "recommendedAcademy": [
+        "san-01"
+      ],
+      "resolutionOrder": [
+        "add-chlorine-immediately",
+        "check-cya-level",
+        "increase-dosing-frequency"
+      ]
+    },
+    {
+      "id": "high-chlorine",
+      "name": "High Chlorine",
+      "entityId": "high-chlorine",
+      "symptoms": [
+        "FC above 5 ppm",
+        "Bleaching of swimwear",
+        "Eye and skin irritation"
+      ],
+      "likelyCauses": [
+        "over-dosing",
+        "feeder-malfunction",
+        "over-shocking"
+      ],
+      "urgency": "medium",
+      "recommendedCalculators": [],
+      "recommendedAcademy": [
+        "san-05"
+      ],
+      "resolutionOrder": [
+        "close-pool-until-fc-below-5ppm",
+        "allow-natural-dissipation",
+        "uncover-pool-in-sunlight"
+      ]
+    },
+    {
+      "id": "low-ph",
+      "name": "Low pH",
+      "entityId": "low-ph",
+      "symptoms": [
+        "pH below 7.2",
+        "Eye irritation",
+        "Corroded equipment",
+        "Etched surfaces"
+      ],
+      "likelyCauses": [
+        "too-much-acid",
+        "co2-from-rain",
+        "acidic-fill-water",
+        "trichlor-use"
+      ],
+      "urgency": "high",
+      "recommendedCalculators": [
+        "pool-ph-calculator"
+      ],
+      "recommendedAcademy": [
+        "wb-01"
+      ],
+      "resolutionOrder": [
+        "add-soda-ash",
+        "retest-after-4hr",
+        "check-alkalinity"
+      ]
+    },
+    {
+      "id": "high-ph",
+      "name": "High pH",
+      "entityId": "high-ph",
+      "symptoms": [
+        "pH above 7.8",
+        "Reduced chlorine effectiveness",
+        "Scaling",
+        "Cloudy water"
+      ],
+      "likelyCauses": [
+        "too-much-soda-ash",
+        "co2-offgassing",
+        "aeration",
+        "new-plaster-outgassing"
+      ],
+      "urgency": "medium",
+      "recommendedCalculators": [
+        "pool-ph-calculator"
+      ],
+      "recommendedAcademy": [
+        "wb-01"
+      ],
+      "resolutionOrder": [
+        "add-muriatic-acid",
+        "retest-after-4hr",
+        "check-alkalinity"
+      ]
+    }
+  ]
+}

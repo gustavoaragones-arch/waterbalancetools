@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dosage Matrices | WaterBalanceTools Datasets</title>
+  <meta name="description" content="Product dosage coefficients for all supported pool chemicals.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .dataset-header { background: var(--color-bg-alt, #f5f5f5); border-left: 4px solid var(--color-brand, #0073aa); padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 4px; }
+    .dataset-badge { display: inline-block; background: #0073aa; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-right: 8px; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th { background: #f0f0f0; text-align: left; padding: 8px 10px; border: 1px solid #ddd; white-space: nowrap; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; max-width: 320px; word-break: break-word; }
+    tr:hover td { background: #fafafa; }
+    .null { color: #aaa; font-style: italic; }
+    .tag { display: inline-block; background: #e8f0fe; color: #333; border-radius: 3px; padding: 1px 5px; font-size: 0.78em; margin: 1px; }
+    .json { font-family: monospace; font-size: 0.78em; color: #555; }
+    .no-records { color: #888; font-style: italic; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .meta-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; }
+    .meta-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 1rem; font-weight: 600; color: #222; }
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-list li::before { content: "↑ "; color: #0073aa; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/reference/">Reference</a> › <a href="/reference/datasets/">Datasets</a> › Dosage Matrices</nav>
+  <main class="knowledge-content">
+    
+<div class="dataset-header">
+  <span class="dataset-badge">Canonical Dataset</span>
+  <h1>🧪 Dosage Matrices</h1>
+  <p>Canonical dosage calculation matrices for pool and spa chemicals. Coefficients define the product quantity required to change a parameter by 1 unit in 10,000 gallons. Used by all calculators and generators.</p>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-card"><div class="meta-label">Dataset ID</div><div class="meta-value">dosage-matrices</div></div>
+<div class="meta-card"><div class="meta-label">Version</div><div class="meta-value">2026.07</div></div>
+<div class="meta-card"><div class="meta-label">Last Reviewed</div><div class="meta-value">2026-07-01</div></div>
+<div class="meta-card"><div class="meta-label">Maintainer</div><div class="meta-value">WaterBalanceTools</div></div>
+<div class="meta-card"><div class="meta-label">Records</div><div class="meta-value">13</div></div>
+</div>
+
+<section><h2>Source Priority</h2><p>Values in this dataset are sourced in the following order (highest authority first):</p><ol class="source-list"><li>1. industry-standards</li><li>2. manufacturer-documentation</li><li>3. scientific-literature</li><li>4. editorial-interpretation</li></ol></section>
+
+<section><h2>Records (13)</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>id</th><th>product</th><th>productId</th><th>activePercent</th><th>parameter</th><th>changePerUnit</th><th>volumeBase</th><th>volumeUnit</th><th>coefficient</th><th>coefficientUnit</th><th>coefficientGrams</th><th>supportedPoolTypes</th><th>cyaContribution</th><th>phEffect</th><th>notes</th><th>calciumContributionPpmPerOz</th><th>cyaContributionUnit</th><th>coefficientLbs</th></tr></thead>
+  <tbody><tr><td>liquid-chlorine-10pct</td><td>Liquid Chlorine (10%)</td><td>liquid-chlorine</td><td>10</td><td>free-chlorine</td><td>1</td><td>10000</td><td>gallons</td><td>10.7</td><td>fl oz</td><td>29.5</td><td><span class="tag">residential-pool</span> <span class="tag">saltwater-pool</span> <span class="tag">hot-tub</span> <span class="tag">commercial-pool</span> <span class="tag">indoor-pool</span> <span class="tag">outdoor-pool</span></td><td>0</td><td>slight-increase</td><td>Preferred product for routine chlorination and shock. No CYA accumulation. Degrades ~30% per 60 days at room temperature.</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>liquid-chlorine-12pct</td><td>Liquid Chlorine (12.5%)</td><td>liquid-chlorine</td><td>12.5</td><td>free-chlorine</td><td>1</td><td>10000</td><td>gallons</td><td>8.6</td><td>fl oz</td><td>29.5</td><td><span class="tag">residential-pool</span> <span class="tag">saltwater-pool</span> <span class="tag">hot-tub</span> <span class="tag">commercial-pool</span> <span class="tag">indoor-pool</span> <span class="tag">outdoor-pool</span></td><td>0</td><td>slight-increase</td><td>Higher concentration. More economical. Same active ingredient as 10%.</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>calcium-hypochlorite-65pct</td><td>Calcium Hypochlorite (65%)</td><td>calcium-hypochlorite</td><td>65</td><td>free-chlorine</td><td>1</td><td>10000</td><td>gallons</td><td>2</td><td>oz (dry)</td><td>58.2</td><td><span class="tag">residential-pool</span> <span class="tag">saltwater-pool</span> <span class="tag">hot-tub</span> <span class="tag">commercial-pool</span> <span class="tag">outdoor-pool</span></td><td>0</td><td>increase</td><td>Pre-dissolve in water before adding. Do not add to skimmer. Adds calcium — relevant at high CH. Do not mix with trichlor.</td><td>0.39</td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>calcium-hypochlorite-73pct</td><td>Calcium Hypochlorite (73%)</td><td>calcium-hypochlorite</td><td>73</td><td>free-chlorine</td><td>1</td><td>10000</td><td>gallons</td><td>1.8</td><td>oz (dry)</td><td>51.8</td><td><span class="tag">residential-pool</span> <span class="tag">saltwater-pool</span> <span class="tag">hot-tub</span> <span class="tag">commercial-pool</span> <span class="tag">outdoor-pool</span></td><td>0</td><td>increase</td><td>Higher concentration calcium hypochlorite. Same handling precautions as 65%.</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>sodium-dichlor-56pct</td><td>Sodium Dichlor (56%)</td><td>sodium-dichlor</td><td>56</td><td>free-chlorine</td><td>1</td><td>10000</td><td>gallons</td><td>2.4</td><td>oz (dry)</td><td>67.6</td><td><span class="tag">residential-pool</span> <span class="tag">outdoor-pool</span></td><td>0.9</td><td>neutral</td><td>Each oz adds ~0.9 ppm CYA per 10,000 gal. Use sparingly to avoid CYA accumulation. Dissolves rapidly.</td><td><span class="null">—</span></td><td>ppm CYA per oz per 10k gal</td><td><span class="null">—</span></td></tr>
+<tr><td>trichlor-tablets-90pct</td><td>Trichlor Tablets (90%)</td><td>trichlor-tablets</td><td>90</td><td>free-chlorine</td><td>1</td><td>10000</td><td>gallons</td><td>1.5</td><td>oz (dry)</td><td>42.1</td><td><span class="tag">residential-pool</span> <span class="tag">outdoor-pool</span></td><td>0.6</td><td>decrease</td><td>Slow-dissolving. pH ~2.9, adds acidity over time. CYA accumulates with routine use. Do not mix with cal-hypo.</td><td><span class="null">—</span></td><td>ppm CYA per oz per 10k gal</td><td><span class="null">—</span></td></tr>
+<tr><td>muriatic-acid-31pct-ph</td><td>Muriatic Acid (31.45%) — pH Reduction</td><td>muriatic-acid</td><td>31.45</td><td>ph</td><td>-0.1</td><td>10000</td><td>gallons</td><td>1.3</td><td>fl oz</td><td><span class="null">—</span></td><td><span class="tag">residential-pool</span> <span class="tag">saltwater-pool</span> <span class="tag">hot-tub</span> <span class="tag">commercial-pool</span> <span class="tag">indoor-pool</span> <span class="tag">outdoor-pool</span></td><td><span class="null">—</span></td><td>decrease</td><td>Approximate. Actual dose depends on current pH, alkalinity, and cyanuric acid level. Pre-dilute before adding. Add near return jets.</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>muriatic-acid-31pct-ta</td><td>Muriatic Acid (31.45%) — Alkalinity Reduction</td><td>muriatic-acid</td><td>31.45</td><td>total-alkalinity</td><td>-10</td><td>10000</td><td>gallons</td><td>13</td><td>fl oz</td><td><span class="null">—</span></td><td><span class="tag">residential-pool</span> <span class="tag">saltwater-pool</span> <span class="tag">hot-tub</span> <span class="tag">commercial-pool</span> <span class="tag">indoor-pool</span> <span class="tag">outdoor-pool</span></td><td><span class="null">—</span></td><td>decrease</td><td>To lower TA: add acid, allow CO2 to off-gas with aeration, then retest. Multiple treatments may be required.</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>soda-ash-100pct-ph</td><td>Soda Ash (Sodium Carbonate, 100%) — pH Increase</td><td>soda-ash</td><td>100</td><td>ph</td><td>0.2</td><td>10000</td><td>gallons</td><td>8</td><td>oz (dry)</td><td><span class="null">—</span></td><td><span class="tag">residential-pool</span> <span class="tag">saltwater-pool</span> <span class="tag">hot-tub</span> <span class="tag">commercial-pool</span> <span class="tag">indoor-pool</span> <span class="tag">outdoor-pool</span></td><td><span class="null">—</span></td><td>increase</td><td>Approximate. Pre-dissolve in water bucket before adding to pool. May cause temporary cloudiness.</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>baking-soda-100pct-ta</td><td>Baking Soda (Sodium Bicarbonate, 100%) — Alkalinity Increase</td><td>baking-soda</td><td>100</td><td>total-alkalinity</td><td>10</td><td>10000</td><td>gallons</td><td>24</td><td>oz (dry)</td><td><span class="null">—</span></td><td><span class="tag">residential-pool</span> <span class="tag">saltwater-pool</span> <span class="tag">hot-tub</span> <span class="tag">commercial-pool</span> <span class="tag">indoor-pool</span> <span class="tag">outdoor-pool</span></td><td><span class="null">—</span></td><td>slight-increase</td><td>1.5 lbs raises TA by ~10 ppm in 10,000 gallons. Add around pool perimeter with pump running.</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td>1.5</td></tr>
+<tr><td>calcium-chloride-77pct-ch</td><td>Calcium Chloride (Anhydrous, 77%) — Calcium Hardness Increase</td><td>calcium-chloride</td><td>77</td><td>calcium-hardness</td><td>10</td><td>10000</td><td>gallons</td><td>27.2</td><td>oz (dry)</td><td><span class="null">—</span></td><td><span class="tag">residential-pool</span> <span class="tag">saltwater-pool</span> <span class="tag">hot-tub</span> <span class="tag">commercial-pool</span> <span class="tag">indoor-pool</span> <span class="tag">outdoor-pool</span></td><td><span class="null">—</span></td><td>none</td><td>1.7 lbs raises CH by ~10 ppm in 10,000 gal. Pre-dissolve in large bucket of water — reacts exothermically. Add slowly near return.</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td>1.7</td></tr>
+<tr><td>stabilizer-100pct-cya</td><td>Stabilizer / CYA Granules (100%) — CYA Increase</td><td>stabilizer</td><td>100</td><td>cyanuric-acid</td><td>10</td><td>10000</td><td>gallons</td><td>20.8</td><td>oz (dry)</td><td><span class="null">—</span></td><td><span class="tag">residential-pool</span> <span class="tag">saltwater-pool</span> <span class="tag">outdoor-pool</span></td><td><span class="null">—</span></td><td>none</td><td>1.3 lbs raises CYA by ~10 ppm in 10,000 gal. Dissolves slowly (24–48 hrs). Place in nylon sock near return jet.</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td>1.3</td></tr>
+<tr><td>pool-salt-99pct</td><td>Pool Salt (NaCl, 99.9%) — Salt Increase</td><td>pool-salt</td><td>99.9</td><td>salt</td><td>10</td><td>10000</td><td>gallons</td><td>213.3</td><td>oz (dry)</td><td><span class="null">—</span></td><td><span class="tag">saltwater-pool</span></td><td><span class="null">—</span></td><td>none</td><td>13.3 lbs raises salt by ~10 ppm in 10,000 gal. High-purity NaCl required (no additives). Pre-dissolve in shallow end.</td><td><span class="null">—</span></td><td><span class="null">—</span></td><td>13.3</td></tr></tbody>
+</table>
+</div></section>
+
+<section>
+  <h2>About This Dataset</h2>
+  <p>This dataset is part of the <strong>WaterBalanceTools Canonical Data Layer</strong>. All factual values used across the website originate from canonical datasets like this one. No calculator, article, or tool embeds these values directly — they are always resolved through the data layer.</p>
+  <p><a href="/reference/datasets/">← Back to all datasets</a></p>
+</section>
+
+  </main>
+  <footer><p>Auto-generated by generate-data-docs.js. Source: data/datasets/dosage-matrices.json. Do not edit manually.</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confidence Levels | WaterBalanceTools Datasets</title>
+  <meta name="description" content="Reusable confidence definitions for calculators and reference pages.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .dataset-header { background: var(--color-bg-alt, #f5f5f5); border-left: 4px solid var(--color-brand, #0073aa); padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 4px; }
+    .dataset-badge { display: inline-block; background: #0073aa; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-right: 8px; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th { background: #f0f0f0; text-align: left; padding: 8px 10px; border: 1px solid #ddd; white-space: nowrap; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; max-width: 320px; word-break: break-word; }
+    tr:hover td { background: #fafafa; }
+    .null { color: #aaa; font-style: italic; }
+    .tag { display: inline-block; background: #e8f0fe; color: #333; border-radius: 3px; padding: 1px 5px; font-size: 0.78em; margin: 1px; }
+    .json { font-family: monospace; font-size: 0.78em; color: #555; }
+    .no-records { color: #888; font-style: italic; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .meta-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; }
+    .meta-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 1rem; font-weight: 600; color: #222; }
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-list li::before { content: "↑ "; color: #0073aa; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/reference/">Reference</a> › <a href="/reference/datasets/">Datasets</a> › Confidence Levels</nav>
+  <main class="knowledge-content">
+    
+<div class="dataset-header">
+  <span class="dataset-badge">Canonical Dataset</span>
+  <h1>✅ Confidence Levels</h1>
+  <p>Reusable confidence level definitions used by calculators, reference pages, datasets, and methodology documentation.</p>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-card"><div class="meta-label">Dataset ID</div><div class="meta-value">confidence-levels</div></div>
+<div class="meta-card"><div class="meta-label">Version</div><div class="meta-value">2026.07</div></div>
+<div class="meta-card"><div class="meta-label">Last Reviewed</div><div class="meta-value">2026-07-01</div></div>
+<div class="meta-card"><div class="meta-label">Maintainer</div><div class="meta-value">WaterBalanceTools</div></div>
+<div class="meta-card"><div class="meta-label">Records</div><div class="meta-value">5</div></div>
+</div>
+
+<section><h2>Source Priority</h2><p>Values in this dataset are sourced in the following order (highest authority first):</p><ol class="source-list"><li>1. editorial-interpretation</li></ol></section>
+
+<section><h2>Records (5)</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>id</th><th>label</th><th>description</th><th>color</th><th>badge</th><th>applicableWhen</th></tr></thead>
+  <tbody><tr><td>high</td><td>High Confidence</td><td>Value derived from peer-reviewed scientific literature or consensus industry standards (PHTA, ANSI, WHO).</td><td>green</td><td>high-confidence</td><td>Strong scientific consensus. Widely adopted by industry.</td></tr>
+<tr><td>medium</td><td>Medium Confidence</td><td>Value based on widely accepted industry practice or manufacturer documentation with broad adoption.</td><td>yellow</td><td>medium-confidence</td><td>Industry consensus but limited peer-reviewed support, or values vary by source.</td></tr>
+<tr><td>low</td><td>Low Confidence</td><td>Value derived from limited sources, editorial judgment, or emerging guidance not yet widely adopted.</td><td>orange</td><td>low-confidence</td><td>Sparse or conflicting sources. Editorial interpretation required.</td></tr>
+<tr><td>estimated</td><td>Estimated</td><td>Value calculated or interpolated from related data. Not directly measured or specified.</td><td>gray</td><td>estimated</td><td>No direct measurement available. Derived from first principles or related data.</td></tr>
+<tr><td>manufacturer-specified</td><td>Manufacturer Specified</td><td>Value from manufacturer documentation. May vary by product. Consult your specific product label.</td><td>blue</td><td>manufacturer-specified</td><td>Product-specific values (e.g., salt cell salt range, chlorinator dose rate).</td></tr></tbody>
+</table>
+</div></section>
+
+<section>
+  <h2>About This Dataset</h2>
+  <p>This dataset is part of the <strong>WaterBalanceTools Canonical Data Layer</strong>. All factual values used across the website originate from canonical datasets like this one. No calculator, article, or tool embeds these values directly — they are always resolved through the data layer.</p>
+  <p><a href="/reference/datasets/">← Back to all datasets</a></p>
+</section>
+
+  </main>
+  <footer><p>Auto-generated by generate-data-docs.js. Source: data/datasets/confidence-levels.json. Do not edit manually.</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

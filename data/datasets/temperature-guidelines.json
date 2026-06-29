@@ -1,0 +1,108 @@
+{
+  "datasetId": "temperature-guidelines",
+  "version": "2026.07",
+  "lastReviewed": "2026-07-01",
+  "description": "Recommended water temperature ranges for all pool and spa types, plus effects of temperature on pool chemistry.",
+  "maintainer": "WaterBalanceTools",
+  "sourcePriority": [
+    "government-guidance",
+    "industry-standards",
+    "manufacturer-documentation"
+  ],
+  "records": [
+    {
+      "id": "residential-pool-temp",
+      "poolType": "residential-pool",
+      "unit": "°F",
+      "comfortable": {
+        "min": 78,
+        "max": 84
+      },
+      "competitive": {
+        "min": 77,
+        "max": 82
+      },
+      "therapeutic": {
+        "min": 86,
+        "max": 92
+      },
+      "notes": "Most swimmers prefer 78–82°F. Higher temperatures increase chlorine demand."
+    },
+    {
+      "id": "hot-tub-temp",
+      "poolType": "hot-tub",
+      "unit": "°F",
+      "maximum": 104,
+      "recommended": {
+        "min": 100,
+        "max": 104
+      },
+      "children": {
+        "max": 95
+      },
+      "notes": "Maximum 104°F per CPSC/PHTA safety standards. Hyperthermia risk above 104°F. Children and pregnant women: lower temperatures."
+    },
+    {
+      "id": "commercial-pool-temp",
+      "poolType": "commercial-pool",
+      "unit": "°F",
+      "competitive": {
+        "min": 77,
+        "max": 82
+      },
+      "recreational": {
+        "min": 80,
+        "max": 84
+      },
+      "therapy": {
+        "min": 88,
+        "max": 96
+      },
+      "notes": "Competition pools: 77–79°F per FINA guidelines. Public recreational pools: 82–84°F typical."
+    },
+    {
+      "id": "swim-spa-temp",
+      "poolType": "swim-spa",
+      "unit": "°F",
+      "swim": {
+        "min": 78,
+        "max": 84
+      },
+      "relax": {
+        "min": 100,
+        "max": 104
+      },
+      "notes": "Dual-purpose swim spas may have separate temperature zones."
+    },
+    {
+      "id": "temp-chemistry-effects",
+      "poolType": "all",
+      "effects": [
+        {
+          "effect": "chlorine-demand",
+          "description": "Chlorine demand approximately doubles for every 10°C (18°F) temperature increase."
+        },
+        {
+          "effect": "lsi-scaling",
+          "description": "Higher temperatures increase LSI, shifting toward scale-forming. Monitor calcium and alkalinity in heated pools."
+        },
+        {
+          "effect": "algae-growth",
+          "description": "Algae growth rate increases significantly above 85°F (29°C)."
+        },
+        {
+          "effect": "co2-offgassing",
+          "description": "CO2 off-gasses more rapidly at higher temperatures, causing pH to rise."
+        },
+        {
+          "effect": "chlorine-degradation",
+          "description": "Without CYA, UV + heat degrade chlorine faster in warm, sunny conditions."
+        },
+        {
+          "effect": "salt-cell-output",
+          "description": "Salt cell output decreases significantly below 60°F (15°C). Below 50°F, most cells shut off automatically."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "datasetId": "confidence-levels",
+  "version": "2026.07",
+  "lastReviewed": "2026-07-01",
+  "description": "Reusable confidence level definitions used by calculators, reference pages, datasets, and methodology documentation.",
+  "maintainer": "WaterBalanceTools",
+  "sourcePriority": [
+    "editorial-interpretation"
+  ],
+  "records": [
+    {
+      "id": "high",
+      "label": "High Confidence",
+      "description": "Value derived from peer-reviewed scientific literature or consensus industry standards (PHTA, ANSI, WHO).",
+      "color": "green",
+      "badge": "high-confidence",
+      "applicableWhen": "Strong scientific consensus. Widely adopted by industry."
+    },
+    {
+      "id": "medium",
+      "label": "Medium Confidence",
+      "description": "Value based on widely accepted industry practice or manufacturer documentation with broad adoption.",
+      "color": "yellow",
+      "badge": "medium-confidence",
+      "applicableWhen": "Industry consensus but limited peer-reviewed support, or values vary by source."
+    },
+    {
+      "id": "low",
+      "label": "Low Confidence",
+      "description": "Value derived from limited sources, editorial judgment, or emerging guidance not yet widely adopted.",
+      "color": "orange",
+      "badge": "low-confidence",
+      "applicableWhen": "Sparse or conflicting sources. Editorial interpretation required."
+    },
+    {
+      "id": "estimated",
+      "label": "Estimated",
+      "description": "Value calculated or interpolated from related data. Not directly measured or specified.",
+      "color": "gray",
+      "badge": "estimated",
+      "applicableWhen": "No direct measurement available. Derived from first principles or related data."
+    },
+    {
+      "id": "manufacturer-specified",
+      "label": "Manufacturer Specified",
+      "description": "Value from manufacturer documentation. May vary by product. Consult your specific product label.",
+      "color": "blue",
+      "badge": "manufacturer-specified",
+      "applicableWhen": "Product-specific values (e.g., salt cell salt range, chlorinator dose rate)."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Units | WaterBalanceTools Datasets</title>
+  <meta name="description" content="Canonical definitions for every unit of measurement used on the platform.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .dataset-header { background: var(--color-bg-alt, #f5f5f5); border-left: 4px solid var(--color-brand, #0073aa); padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 4px; }
+    .dataset-badge { display: inline-block; background: #0073aa; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-right: 8px; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th { background: #f0f0f0; text-align: left; padding: 8px 10px; border: 1px solid #ddd; white-space: nowrap; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; max-width: 320px; word-break: break-word; }
+    tr:hover td { background: #fafafa; }
+    .null { color: #aaa; font-style: italic; }
+    .tag { display: inline-block; background: #e8f0fe; color: #333; border-radius: 3px; padding: 1px 5px; font-size: 0.78em; margin: 1px; }
+    .json { font-family: monospace; font-size: 0.78em; color: #555; }
+    .no-records { color: #888; font-style: italic; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .meta-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; }
+    .meta-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 1rem; font-weight: 600; color: #222; }
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-list li::before { content: "↑ "; color: #0073aa; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/reference/">Reference</a> › <a href="/reference/datasets/">Datasets</a> › Units</nav>
+  <main class="knowledge-content">
+    
+<div class="dataset-header">
+  <span class="dataset-badge">Canonical Dataset</span>
+  <h1>📏 Units</h1>
+  <p>Canonical unit definitions for all measurements used on WaterBalanceTools. Every conversion originates from conversion-factors.json.</p>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-card"><div class="meta-label">Dataset ID</div><div class="meta-value">units</div></div>
+<div class="meta-card"><div class="meta-label">Version</div><div class="meta-value">2026.07</div></div>
+<div class="meta-card"><div class="meta-label">Last Reviewed</div><div class="meta-value">2026-07-01</div></div>
+<div class="meta-card"><div class="meta-label">Maintainer</div><div class="meta-value">WaterBalanceTools</div></div>
+<div class="meta-card"><div class="meta-label">Records</div><div class="meta-value">21</div></div>
+</div>
+
+<section><h2>Source Priority</h2><p>Values in this dataset are sourced in the following order (highest authority first):</p><ol class="source-list"><li>1. scientific-literature</li><li>2. industry-standards</li></ol></section>
+
+<section><h2>Records (21)</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>id</th><th>name</th><th>symbol</th><th>quantity</th><th>baseUnit</th><th>siEquivalent</th><th>numericalEquivalence</th><th>usedFor</th></tr></thead>
+  <tbody><tr><td>ppm</td><td>Parts Per Million</td><td>ppm</td><td>concentration</td><td>Yes</td><td>mg/L</td><td>1 ppm = 1 mg/L in dilute aqueous solution</td><td><span class="tag">free-chlorine</span> <span class="tag">combined-chlorine</span> <span class="tag">total-alkalinity</span> <span class="tag">calcium-hardness</span> <span class="tag">cyanuric-acid</span> <span class="tag">salt</span> <span class="tag">tds</span> <span class="tag">phosphate</span> <span class="tag">copper</span> <span class="tag">iron</span></td></tr>
+<tr><td>mg-per-l</td><td>Milligrams per Liter</td><td>mg/L</td><td>concentration</td><td>No</td><td>mg/L</td><td>1 mg/L = 1 ppm in dilute aqueous solution</td><td><span class="tag">all-chemical-parameters-metric</span></td></tr>
+<tr><td>ppb</td><td>Parts Per Billion</td><td>ppb</td><td>concentration</td><td>No</td><td>µg/L</td><td>1 ppb = 0.001 ppm</td><td><span class="tag">phosphate</span> <span class="tag">trace-metals</span></td></tr>
+<tr><td>ph-unit</td><td>pH Unit</td><td>pH</td><td>acidity</td><td>Yes</td><td><span class="null">—</span></td><td>Logarithmic scale 0–14. 7 = neutral.</td><td><span class="tag">ph</span></td></tr>
+<tr><td>millivolts</td><td>Millivolts</td><td>mV</td><td>electrical-potential</td><td>No</td><td>0.001 V</td><td>1 V = 1000 mV</td><td><span class="tag">orp</span></td></tr>
+<tr><td>us-gallons</td><td>US Liquid Gallon</td><td>gal</td><td>volume</td><td>Yes</td><td>3.785411784 L</td><td>1 gal = 3.785411784 L = 0.133680556 ft³</td><td><span class="tag">pool-volume</span> <span class="tag">product-dose</span></td></tr>
+<tr><td>liters</td><td>Liter</td><td>L</td><td>volume</td><td>No</td><td>L</td><td>1 L = 0.264172052 gal = 0.001 m³</td><td><span class="tag">pool-volume-metric</span> <span class="tag">product-dose-metric</span></td></tr>
+<tr><td>cubic-feet</td><td>Cubic Foot</td><td>ft³</td><td>volume</td><td>No</td><td>28.316847 L</td><td>1 ft³ = 7.48051948 gal = 28.3168 L</td><td><span class="tag">pool-volume-calculation</span></td></tr>
+<tr><td>us-fluid-oz</td><td>US Fluid Ounce</td><td>fl oz</td><td>volume</td><td>No</td><td>29.5735 mL</td><td>128 fl oz = 1 gal = 3.785 L</td><td><span class="tag">liquid-chemical-dose</span></td></tr>
+<tr><td>oz-weight</td><td>Ounce (Weight)</td><td>oz</td><td>mass</td><td>No</td><td>28.3495 g</td><td>16 oz = 1 lb = 453.592 g</td><td><span class="tag">dry-chemical-dose</span></td></tr>
+<tr><td>pounds</td><td>Pound</td><td>lb</td><td>mass</td><td>No</td><td>453.59237 g</td><td>1 lb = 16 oz = 453.592 g</td><td><span class="tag">dry-chemical-dose</span> <span class="tag">chemical-inventory</span></td></tr>
+<tr><td>grams</td><td>Gram</td><td>g</td><td>mass</td><td>No</td><td>g</td><td>1 g = 0.03527 oz = 0.002205 lb</td><td><span class="tag">scientific-calculations</span></td></tr>
+<tr><td>fahrenheit</td><td>Degrees Fahrenheit</td><td>°F</td><td>temperature</td><td>Yes</td><td>(°F − 32) × 5/9 = °C</td><td>32°F = 0°C. 212°F = 100°C.</td><td><span class="tag">water-temperature</span></td></tr>
+<tr><td>celsius</td><td>Degrees Celsius</td><td>°C</td><td>temperature</td><td>No</td><td>°C</td><td>°C × 9/5 + 32 = °F</td><td><span class="tag">water-temperature-metric</span></td></tr>
+<tr><td>hours</td><td>Hours</td><td>hr</td><td>time</td><td>No</td><td>3600 s</td><td>1 hr = 60 min</td><td><span class="tag">pump-run-time</span> <span class="tag">turnover-rate</span> <span class="tag">wait-time</span></td></tr>
+<tr><td>minutes</td><td>Minutes</td><td>min</td><td>time</td><td>No</td><td>60 s</td><td>60 min = 1 hr</td><td><span class="tag">wait-time</span> <span class="tag">pump-turnover-calculation</span></td></tr>
+<tr><td>days</td><td>Days</td><td>d</td><td>time</td><td>No</td><td>86400 s</td><td>1 d = 24 hr</td><td><span class="tag">maintenance-intervals</span> <span class="tag">water-change-schedule</span></td></tr>
+<tr><td>weeks</td><td>Weeks</td><td>wk</td><td>time</td><td>No</td><td>604800 s</td><td>1 wk = 7 d</td><td><span class="tag">maintenance-schedule</span></td></tr>
+<tr><td>months</td><td>Months</td><td>mo</td><td>time</td><td>No</td><td>~2628000 s</td><td>1 mo ≈ 30.437 d (calendar average)</td><td><span class="tag">seasonal-maintenance</span> <span class="tag">water-change-schedule</span></td></tr>
+<tr><td>gallons-per-minute</td><td>Gallons Per Minute</td><td>GPM</td><td>flow-rate</td><td>Yes</td><td>0.063 L/s</td><td>1 GPM = 0.0630902 L/s</td><td><span class="tag">pump-flow-rate</span> <span class="tag">turnover-calculation</span></td></tr>
+<tr><td>percent</td><td>Percent</td><td>%</td><td>concentration</td><td>No</td><td>dimensionless (ratio × 100)</td><td>1% = 10,000 ppm</td><td><span class="tag">product-active-percentage</span></td></tr></tbody>
+</table>
+</div></section>
+
+<section>
+  <h2>About This Dataset</h2>
+  <p>This dataset is part of the <strong>WaterBalanceTools Canonical Data Layer</strong>. All factual values used across the website originate from canonical datasets like this one. No calculator, article, or tool embeds these values directly — they are always resolved through the data layer.</p>
+  <p><a href="/reference/datasets/">← Back to all datasets</a></p>
+</section>
+
+  </main>
+  <footer><p>Auto-generated by generate-data-docs.js. Source: data/datasets/units.json. Do not edit manually.</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

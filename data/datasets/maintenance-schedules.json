@@ -1,0 +1,123 @@
+{
+  "datasetId": "maintenance-schedules",
+  "version": "2026.07",
+  "lastReviewed": "2026-07-01",
+  "description": "Reusable structured maintenance schedules for different pool and spa types and usage scenarios.",
+  "maintainer": "WaterBalanceTools",
+  "sourcePriority": [
+    "industry-standards",
+    "editorial-interpretation"
+  ],
+  "records": [
+    {
+      "id": "residential-pool-schedule",
+      "name": "Residential Pool — Standard Schedule",
+      "poolType": "residential-pool",
+      "daily": [
+        "Verify skimmer basket is not full",
+        "Check water level",
+        "Note any visible water quality changes"
+      ],
+      "weekly": [
+        "Test FC and pH (twice per week)",
+        "Add chlorine as needed",
+        "Clean skimmer basket",
+        "Check filter pressure",
+        "Brush walls and floor",
+        "Vacuum debris",
+        "Shock if CC > 0.5 ppm or after heavy rain"
+      ],
+      "monthly": [
+        "Test alkalinity, calcium hardness, CYA",
+        "Balance all parameters",
+        "Clean filter (backwash or cartridge rinse)",
+        "Check pump, motor, and equipment",
+        "Inspect for cracks, leaks, or surface damage"
+      ],
+      "seasonal": [
+        "Spring opening: full water balance, equipment inspection",
+        "Fall closing: winterize if applicable"
+      ]
+    },
+    {
+      "id": "vacation-rental-pool-schedule",
+      "name": "Vacation Rental Pool — Schedule",
+      "poolType": "residential-pool",
+      "eachTurnover": [
+        "Test FC, CC, pH — document results",
+        "Add chemicals as needed to reach target",
+        "Clean skimmer basket",
+        "Inspect safety equipment",
+        "Record results on log sheet"
+      ],
+      "weekly": [
+        "Test alkalinity",
+        "Test calcium hardness",
+        "Brush walls and floor",
+        "Vacuum debris",
+        "Check equipment"
+      ],
+      "monthly": [
+        "Test CYA",
+        "Comprehensive equipment inspection",
+        "Verify log sheet completeness"
+      ]
+    },
+    {
+      "id": "hot-tub-schedule",
+      "name": "Hot Tub / Spa — Standard Schedule",
+      "poolType": "hot-tub",
+      "beforeEachUse": [
+        "Test FC or bromine",
+        "Test pH",
+        "Verify temperature is safe (maximum 104°F)",
+        "Check for clarity"
+      ],
+      "weekly": [
+        "Test alkalinity",
+        "Check filter",
+        "Rinse filter if pressure elevated",
+        "Shock if CC elevated or after heavy use"
+      ],
+      "monthly": [
+        "Test calcium hardness",
+        "Test TDS",
+        "Full water balance",
+        "Deep-clean filter",
+        "Inspect jets and equipment"
+      ],
+      "quarterly": [
+        "Change water (every 3–4 months)",
+        "Clean spa surface",
+        "Inspect cover"
+      ]
+    },
+    {
+      "id": "commercial-pool-schedule",
+      "name": "Commercial Pool — Standard Schedule",
+      "poolType": "commercial-pool",
+      "perOperatingShift": [
+        "Test FC and pH every 2 hours",
+        "Record results in log book",
+        "Add chemicals if needed",
+        "Check ORP if monitoring system installed"
+      ],
+      "daily": [
+        "Test all primary parameters",
+        "Log all results",
+        "Check equipment",
+        "Verify chemical inventory"
+      ],
+      "weekly": [
+        "Test alkalinity, calcium hardness, TDS",
+        "Review log book for trends",
+        "Inspect equipment thoroughly"
+      ],
+      "monthly": [
+        "Test CYA",
+        "Comprehensive equipment inspection",
+        "Review and update safety data sheets"
+      ]
+    }
+  ]
+}

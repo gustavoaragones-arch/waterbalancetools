@@ -1,0 +1,284 @@
+{
+  "datasetId": "units",
+  "version": "2026.07",
+  "lastReviewed": "2026-07-01",
+  "description": "Canonical unit definitions for all measurements used on WaterBalanceTools. Every conversion originates from conversion-factors.json.",
+  "maintainer": "WaterBalanceTools",
+  "sourcePriority": [
+    "scientific-literature",
+    "industry-standards"
+  ],
+  "records": [
+    {
+      "id": "ppm",
+      "name": "Parts Per Million",
+      "symbol": "ppm",
+      "quantity": "concentration",
+      "baseUnit": true,
+      "siEquivalent": "mg/L",
+      "numericalEquivalence": "1 ppm = 1 mg/L in dilute aqueous solution",
+      "usedFor": [
+        "free-chlorine",
+        "combined-chlorine",
+        "total-alkalinity",
+        "calcium-hardness",
+        "cyanuric-acid",
+        "salt",
+        "tds",
+        "phosphate",
+        "copper",
+        "iron"
+      ]
+    },
+    {
+      "id": "mg-per-l",
+      "name": "Milligrams per Liter",
+      "symbol": "mg/L",
+      "quantity": "concentration",
+      "baseUnit": false,
+      "siEquivalent": "mg/L",
+      "numericalEquivalence": "1 mg/L = 1 ppm in dilute aqueous solution",
+      "usedFor": [
+        "all-chemical-parameters-metric"
+      ]
+    },
+    {
+      "id": "ppb",
+      "name": "Parts Per Billion",
+      "symbol": "ppb",
+      "quantity": "concentration",
+      "baseUnit": false,
+      "siEquivalent": "µg/L",
+      "numericalEquivalence": "1 ppb = 0.001 ppm",
+      "usedFor": [
+        "phosphate",
+        "trace-metals"
+      ]
+    },
+    {
+      "id": "ph-unit",
+      "name": "pH Unit",
+      "symbol": "pH",
+      "quantity": "acidity",
+      "baseUnit": true,
+      "siEquivalent": null,
+      "numericalEquivalence": "Logarithmic scale 0–14. 7 = neutral.",
+      "usedFor": [
+        "ph"
+      ]
+    },
+    {
+      "id": "millivolts",
+      "name": "Millivolts",
+      "symbol": "mV",
+      "quantity": "electrical-potential",
+      "baseUnit": false,
+      "siEquivalent": "0.001 V",
+      "numericalEquivalence": "1 V = 1000 mV",
+      "usedFor": [
+        "orp"
+      ]
+    },
+    {
+      "id": "us-gallons",
+      "name": "US Liquid Gallon",
+      "symbol": "gal",
+      "quantity": "volume",
+      "baseUnit": true,
+      "siEquivalent": "3.785411784 L",
+      "numericalEquivalence": "1 gal = 3.785411784 L = 0.133680556 ft³",
+      "usedFor": [
+        "pool-volume",
+        "product-dose"
+      ]
+    },
+    {
+      "id": "liters",
+      "name": "Liter",
+      "symbol": "L",
+      "quantity": "volume",
+      "baseUnit": false,
+      "siEquivalent": "L",
+      "numericalEquivalence": "1 L = 0.264172052 gal = 0.001 m³",
+      "usedFor": [
+        "pool-volume-metric",
+        "product-dose-metric"
+      ]
+    },
+    {
+      "id": "cubic-feet",
+      "name": "Cubic Foot",
+      "symbol": "ft³",
+      "quantity": "volume",
+      "baseUnit": false,
+      "siEquivalent": "28.316847 L",
+      "numericalEquivalence": "1 ft³ = 7.48051948 gal = 28.3168 L",
+      "usedFor": [
+        "pool-volume-calculation"
+      ]
+    },
+    {
+      "id": "us-fluid-oz",
+      "name": "US Fluid Ounce",
+      "symbol": "fl oz",
+      "quantity": "volume",
+      "baseUnit": false,
+      "siEquivalent": "29.5735 mL",
+      "numericalEquivalence": "128 fl oz = 1 gal = 3.785 L",
+      "usedFor": [
+        "liquid-chemical-dose"
+      ]
+    },
+    {
+      "id": "oz-weight",
+      "name": "Ounce (Weight)",
+      "symbol": "oz",
+      "quantity": "mass",
+      "baseUnit": false,
+      "siEquivalent": "28.3495 g",
+      "numericalEquivalence": "16 oz = 1 lb = 453.592 g",
+      "usedFor": [
+        "dry-chemical-dose"
+      ]
+    },
+    {
+      "id": "pounds",
+      "name": "Pound",
+      "symbol": "lb",
+      "quantity": "mass",
+      "baseUnit": false,
+      "siEquivalent": "453.59237 g",
+      "numericalEquivalence": "1 lb = 16 oz = 453.592 g",
+      "usedFor": [
+        "dry-chemical-dose",
+        "chemical-inventory"
+      ]
+    },
+    {
+      "id": "grams",
+      "name": "Gram",
+      "symbol": "g",
+      "quantity": "mass",
+      "baseUnit": false,
+      "siEquivalent": "g",
+      "numericalEquivalence": "1 g = 0.03527 oz = 0.002205 lb",
+      "usedFor": [
+        "scientific-calculations"
+      ]
+    },
+    {
+      "id": "fahrenheit",
+      "name": "Degrees Fahrenheit",
+      "symbol": "°F",
+      "quantity": "temperature",
+      "baseUnit": true,
+      "siEquivalent": "(°F − 32) × 5/9 = °C",
+      "numericalEquivalence": "32°F = 0°C. 212°F = 100°C.",
+      "usedFor": [
+        "water-temperature"
+      ]
+    },
+    {
+      "id": "celsius",
+      "name": "Degrees Celsius",
+      "symbol": "°C",
+      "quantity": "temperature",
+      "baseUnit": false,
+      "siEquivalent": "°C",
+      "numericalEquivalence": "°C × 9/5 + 32 = °F",
+      "usedFor": [
+        "water-temperature-metric"
+      ]
+    },
+    {
+      "id": "hours",
+      "name": "Hours",
+      "symbol": "hr",
+      "quantity": "time",
+      "baseUnit": false,
+      "siEquivalent": "3600 s",
+      "numericalEquivalence": "1 hr = 60 min",
+      "usedFor": [
+        "pump-run-time",
+        "turnover-rate",
+        "wait-time"
+      ]
+    },
+    {
+      "id": "minutes",
+      "name": "Minutes",
+      "symbol": "min",
+      "quantity": "time",
+      "baseUnit": false,
+      "siEquivalent": "60 s",
+      "numericalEquivalence": "60 min = 1 hr",
+      "usedFor": [
+        "wait-time",
+        "pump-turnover-calculation"
+      ]
+    },
+    {
+      "id": "days",
+      "name": "Days",
+      "symbol": "d",
+      "quantity": "time",
+      "baseUnit": false,
+      "siEquivalent": "86400 s",
+      "numericalEquivalence": "1 d = 24 hr",
+      "usedFor": [
+        "maintenance-intervals",
+        "water-change-schedule"
+      ]
+    },
+    {
+      "id": "weeks",
+      "name": "Weeks",
+      "symbol": "wk",
+      "quantity": "time",
+      "baseUnit": false,
+      "siEquivalent": "604800 s",
+      "numericalEquivalence": "1 wk = 7 d",
+      "usedFor": [
+        "maintenance-schedule"
+      ]
+    },
+    {
+      "id": "months",
+      "name": "Months",
+      "symbol": "mo",
+      "quantity": "time",
+      "baseUnit": false,
+      "siEquivalent": "~2628000 s",
+      "numericalEquivalence": "1 mo ≈ 30.437 d (calendar average)",
+      "usedFor": [
+        "seasonal-maintenance",
+        "water-change-schedule"
+      ]
+    },
+    {
+      "id": "gallons-per-minute",
+      "name": "Gallons Per Minute",
+      "symbol": "GPM",
+      "quantity": "flow-rate",
+      "baseUnit": true,
+      "siEquivalent": "0.063 L/s",
+      "numericalEquivalence": "1 GPM = 0.0630902 L/s",
+      "usedFor": [
+        "pump-flow-rate",
+        "turnover-calculation"
+      ]
+    },
+    {
+      "id": "percent",
+      "name": "Percent",
+      "symbol": "%",
+      "quantity": "concentration",
+      "baseUnit": false,
+      "siEquivalent": "dimensionless (ratio × 100)",
+      "numericalEquivalence": "1% = 10,000 ppm",
+      "usedFor": [
+        "product-active-percentage"
+      ]
+    }
+  ]
+}

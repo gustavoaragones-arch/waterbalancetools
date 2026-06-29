@@ -14,8 +14,8 @@
       "potential hydrogen",
       "water pH"
     ],
-    "idealRange": "7.2–7.6",
-    "units": "pH units",
+    "idealRange": "7.2–7.6 pH",
+    "units": "pH",
     "calculatorIds": [
       "pool-ph-calculator",
       "hot-tub-ph-calculator",
@@ -82,7 +82,9 @@
       "alkaline level",
       "pH balance",
       "pH adjustment"
-    ]
+    ],
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-ph"
   },
   {
     "id": "orp",
@@ -133,7 +135,9 @@
       "redox",
       "sanitizing capacity",
       "mV"
-    ]
+    ],
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-orp"
   },
   {
     "id": "temperature",
@@ -148,8 +152,8 @@
     "synonyms": [
       "water temperature"
     ],
-    "idealRange": "78–84°F (pools); 100–104°F (hot tubs)",
-    "units": "°F / °C",
+    "idealRange": "78–84 °F",
+    "units": "°F",
     "calculatorIds": [
       "chemical-calculator"
     ],
@@ -189,7 +193,9 @@
       "hot tub temperature",
       "°F",
       "°C"
-    ]
+    ],
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-temperature"
   },
   {
     "id": "alkalinity",
@@ -264,7 +270,9 @@
       "pH buffer",
       "bicarbonate alkalinity",
       "alkalinity adjustment"
-    ]
+    ],
+    "rangeDataset": "chemical-ranges",
+    "rangeRecord": "residential-pool-total-alkalinity"
   },
   {
     "id": "lsi",
@@ -282,7 +290,7 @@
       "water balance index",
       "calcium carbonate saturation index"
     ],
-    "idealRange": "−0.3 to +0.5",
+    "idealRange": "-0.3 to +0.5",
     "units": "dimensionless",
     "calculatorIds": [
       "chemical-calculator"
@@ -329,7 +337,9 @@
       "water balance",
       "saturation index",
       "corrosion index"
-    ]
+    ],
+    "rangeDataset": "water-balance",
+    "rangeRecord": "lsi-target-range"
   },
   {
     "id": "gallons",
@@ -542,7 +552,7 @@
       "pump turnover",
       "circulation turnover"
     ],
-    "idealRange": "6–8 hours maximum (residential pools)",
+    "idealRange": "Maximum 8 hours (residential)",
     "units": "hours",
     "calculatorIds": [
       "pool-turnover-rate-calculator"
@@ -581,6 +591,8 @@
       "pump turnover",
       "filter rate",
       "pool circulation"
-    ]
+    ],
+    "rangeDataset": "pool-types",
+    "rangeRecord": "commercial-pool"
   }
 ]

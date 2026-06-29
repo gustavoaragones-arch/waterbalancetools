@@ -1,0 +1,213 @@
+{
+  "datasetId": "water-balance",
+  "version": "2026.07",
+  "lastReviewed": "2026-07-01",
+  "description": "Langelier Saturation Index (LSI) calculation parameters, factor tables, and water balance target ranges. Single source of truth for all LSI calculations.",
+  "maintainer": "WaterBalanceTools",
+  "sourcePriority": [
+    "scientific-literature",
+    "industry-standards",
+    "manufacturer-documentation"
+  ],
+  "formula": "LSI = pH + TF + CHF + TAF − 12.1 (at 0 TDS)",
+  "records": [
+    {
+      "id": "lsi-target-range",
+      "parameter": "lsi",
+      "unit": "dimensionless",
+      "target": {
+        "min": -0.3,
+        "max": 0.5,
+        "ideal": 0
+      },
+      "warning": {
+        "low": -0.5,
+        "high": 0.8
+      },
+      "critical": {
+        "low": -1,
+        "high": 1.5
+      },
+      "interpretation": {
+        "balanced": "-0.3 to +0.5",
+        "corrosive": "below -0.3",
+        "scaleForming": "above +0.5"
+      }
+    },
+    {
+      "id": "temperature-factors",
+      "parameter": "temperature-factor",
+      "source": "Taylor Technologies Pool/Spa Water Chemistry",
+      "confidenceLevel": "high",
+      "values": [
+        {
+          "tempF": 32,
+          "tempC": 0,
+          "tf": 0
+        },
+        {
+          "tempF": 37,
+          "tempC": 3,
+          "tf": 0.1
+        },
+        {
+          "tempF": 46,
+          "tempC": 8,
+          "tf": 0.2
+        },
+        {
+          "tempF": 53,
+          "tempC": 12,
+          "tf": 0.3
+        },
+        {
+          "tempF": 60,
+          "tempC": 16,
+          "tf": 0.4
+        },
+        {
+          "tempF": 66,
+          "tempC": 19,
+          "tf": 0.5
+        },
+        {
+          "tempF": 76,
+          "tempC": 24,
+          "tf": 0.6
+        },
+        {
+          "tempF": 84,
+          "tempC": 29,
+          "tf": 0.7
+        },
+        {
+          "tempF": 94,
+          "tempC": 34,
+          "tf": 0.8
+        },
+        {
+          "tempF": 105,
+          "tempC": 41,
+          "tf": 0.9
+        }
+      ]
+    },
+    {
+      "id": "calcium-hardness-factors",
+      "parameter": "calcium-hardness-factor",
+      "source": "Taylor Technologies Pool/Spa Water Chemistry",
+      "confidenceLevel": "high",
+      "values": [
+        {
+          "chPpm": 5,
+          "chf": 0.3
+        },
+        {
+          "chPpm": 25,
+          "chf": 1
+        },
+        {
+          "chPpm": 50,
+          "chf": 1.3
+        },
+        {
+          "chPpm": 75,
+          "chf": 1.5
+        },
+        {
+          "chPpm": 100,
+          "chf": 1.6
+        },
+        {
+          "chPpm": 150,
+          "chf": 1.8
+        },
+        {
+          "chPpm": 200,
+          "chf": 1.9
+        },
+        {
+          "chPpm": 250,
+          "chf": 2
+        },
+        {
+          "chPpm": 300,
+          "chf": 2.1
+        },
+        {
+          "chPpm": 400,
+          "chf": 2.2
+        },
+        {
+          "chPpm": 600,
+          "chf": 2.4
+        },
+        {
+          "chPpm": 800,
+          "chf": 2.5
+        },
+        {
+          "chPpm": 1000,
+          "chf": 2.6
+        }
+      ]
+    },
+    {
+      "id": "total-alkalinity-factors",
+      "parameter": "total-alkalinity-factor",
+      "source": "Taylor Technologies Pool/Spa Water Chemistry",
+      "confidenceLevel": "high",
+      "notes": "Use corrected TA: TA_corrected = TA − (CYA × correction_factor)",
+      "cyaCorrectionFactor": 0.33,
+      "values": [
+        {
+          "taPpm": 5,
+          "taf": 1
+        },
+        {
+          "taPpm": 25,
+          "taf": 1.4
+        },
+        {
+          "taPpm": 50,
+          "taf": 1.7
+        },
+        {
+          "taPpm": 75,
+          "taf": 1.9
+        },
+        {
+          "taPpm": 100,
+          "taf": 2
+        },
+        {
+          "taPpm": 150,
+          "taf": 2.2
+        },
+        {
+          "taPpm": 200,
+          "taf": 2.3
+        },
+        {
+          "taPpm": 300,
+          "taf": 2.5
+        },
+        {
+          "taPpm": 400,
+          "taf": 2.6
+        },
+        {
+          "taPpm": 800,
+          "taf": 2.9
+        }
+      ]
+    },
+    {
+      "id": "tds-constant",
+      "parameter": "tds-constant",
+      "standardValue": 12.1,
+      "saltPoolValue": 12.2,
+      "notes": "Standard: 12.1 for pools with TDS ~1000 ppm. Use 12.2 for saltwater pools (higher TDS ~3200 ppm)."
+    }
+  ]
+}

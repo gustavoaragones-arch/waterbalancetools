@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maintenance Schedules | WaterBalanceTools Datasets</title>
+  <meta name="description" content="Reusable structured maintenance schedules by pool type.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .dataset-header { background: var(--color-bg-alt, #f5f5f5); border-left: 4px solid var(--color-brand, #0073aa); padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 4px; }
+    .dataset-badge { display: inline-block; background: #0073aa; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-right: 8px; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th { background: #f0f0f0; text-align: left; padding: 8px 10px; border: 1px solid #ddd; white-space: nowrap; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; max-width: 320px; word-break: break-word; }
+    tr:hover td { background: #fafafa; }
+    .null { color: #aaa; font-style: italic; }
+    .tag { display: inline-block; background: #e8f0fe; color: #333; border-radius: 3px; padding: 1px 5px; font-size: 0.78em; margin: 1px; }
+    .json { font-family: monospace; font-size: 0.78em; color: #555; }
+    .no-records { color: #888; font-style: italic; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .meta-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; }
+    .meta-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 1rem; font-weight: 600; color: #222; }
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-list li::before { content: "↑ "; color: #0073aa; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/reference/">Reference</a> › <a href="/reference/datasets/">Datasets</a> › Maintenance Schedules</nav>
+  <main class="knowledge-content">
+    
+<div class="dataset-header">
+  <span class="dataset-badge">Canonical Dataset</span>
+  <h1>🗓 Maintenance Schedules</h1>
+  <p>Reusable structured maintenance schedules for different pool and spa types and usage scenarios.</p>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-card"><div class="meta-label">Dataset ID</div><div class="meta-value">maintenance-schedules</div></div>
+<div class="meta-card"><div class="meta-label">Version</div><div class="meta-value">2026.07</div></div>
+<div class="meta-card"><div class="meta-label">Last Reviewed</div><div class="meta-value">2026-07-01</div></div>
+<div class="meta-card"><div class="meta-label">Maintainer</div><div class="meta-value">WaterBalanceTools</div></div>
+<div class="meta-card"><div class="meta-label">Records</div><div class="meta-value">4</div></div>
+</div>
+
+<section><h2>Source Priority</h2><p>Values in this dataset are sourced in the following order (highest authority first):</p><ol class="source-list"><li>1. industry-standards</li><li>2. editorial-interpretation</li></ol></section>
+
+<section><h2>Records (4)</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>id</th><th>name</th><th>poolType</th><th>daily</th><th>weekly</th><th>monthly</th><th>seasonal</th><th>eachTurnover</th><th>beforeEachUse</th><th>quarterly</th><th>perOperatingShift</th></tr></thead>
+  <tbody><tr><td>residential-pool-schedule</td><td>Residential Pool — Standard Schedule</td><td>residential-pool</td><td><span class="tag">Verify skimmer basket is not full</span> <span class="tag">Check water level</span> <span class="tag">Note any visible water quality changes</span></td><td><span class="tag">Test FC and pH (twice per week)</span> <span class="tag">Add chlorine as needed</span> <span class="tag">Clean skimmer basket</span> <span class="tag">Check filter pressure</span> <span class="tag">Brush walls and floor</span> <span class="tag">Vacuum debris</span> <span class="tag">Shock if CC &gt; 0.5 ppm or after heavy rain</span></td><td><span class="tag">Test alkalinity, calcium hardness, CYA</span> <span class="tag">Balance all parameters</span> <span class="tag">Clean filter (backwash or cartridge rinse)</span> <span class="tag">Check pump, motor, and equipment</span> <span class="tag">Inspect for cracks, leaks, or surface damage</span></td><td><span class="tag">Spring opening: full water balance, equipment inspection</span> <span class="tag">Fall closing: winterize if applicable</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>vacation-rental-pool-schedule</td><td>Vacation Rental Pool — Schedule</td><td>residential-pool</td><td><span class="null">—</span></td><td><span class="tag">Test alkalinity</span> <span class="tag">Test calcium hardness</span> <span class="tag">Brush walls and floor</span> <span class="tag">Vacuum debris</span> <span class="tag">Check equipment</span></td><td><span class="tag">Test CYA</span> <span class="tag">Comprehensive equipment inspection</span> <span class="tag">Verify log sheet completeness</span></td><td><span class="null">—</span></td><td><span class="tag">Test FC, CC, pH — document results</span> <span class="tag">Add chemicals as needed to reach target</span> <span class="tag">Clean skimmer basket</span> <span class="tag">Inspect safety equipment</span> <span class="tag">Record results on log sheet</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td></tr>
+<tr><td>hot-tub-schedule</td><td>Hot Tub / Spa — Standard Schedule</td><td>hot-tub</td><td><span class="null">—</span></td><td><span class="tag">Test alkalinity</span> <span class="tag">Check filter</span> <span class="tag">Rinse filter if pressure elevated</span> <span class="tag">Shock if CC elevated or after heavy use</span></td><td><span class="tag">Test calcium hardness</span> <span class="tag">Test TDS</span> <span class="tag">Full water balance</span> <span class="tag">Deep-clean filter</span> <span class="tag">Inspect jets and equipment</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">Test FC or bromine</span> <span class="tag">Test pH</span> <span class="tag">Verify temperature is safe (maximum 104°F)</span> <span class="tag">Check for clarity</span></td><td><span class="tag">Change water (every 3–4 months)</span> <span class="tag">Clean spa surface</span> <span class="tag">Inspect cover</span></td><td><span class="null">—</span></td></tr>
+<tr><td>commercial-pool-schedule</td><td>Commercial Pool — Standard Schedule</td><td>commercial-pool</td><td><span class="tag">Test all primary parameters</span> <span class="tag">Log all results</span> <span class="tag">Check equipment</span> <span class="tag">Verify chemical inventory</span></td><td><span class="tag">Test alkalinity, calcium hardness, TDS</span> <span class="tag">Review log book for trends</span> <span class="tag">Inspect equipment thoroughly</span></td><td><span class="tag">Test CYA</span> <span class="tag">Comprehensive equipment inspection</span> <span class="tag">Review and update safety data sheets</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="null">—</span></td><td><span class="tag">Test FC and pH every 2 hours</span> <span class="tag">Record results in log book</span> <span class="tag">Add chemicals if needed</span> <span class="tag">Check ORP if monitoring system installed</span></td></tr></tbody>
+</table>
+</div></section>
+
+<section>
+  <h2>About This Dataset</h2>
+  <p>This dataset is part of the <strong>WaterBalanceTools Canonical Data Layer</strong>. All factual values used across the website originate from canonical datasets like this one. No calculator, article, or tool embeds these values directly — they are always resolved through the data layer.</p>
+  <p><a href="/reference/datasets/">← Back to all datasets</a></p>
+</section>
+
+  </main>
+  <footer><p>Auto-generated by generate-data-docs.js. Source: data/datasets/maintenance-schedules.json. Do not edit manually.</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

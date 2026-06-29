@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conversion Factors | WaterBalanceTools Datasets</title>
+  <meta name="description" content="All unit conversion factors. Single source of truth. Never duplicated.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .dataset-header { background: var(--color-bg-alt, #f5f5f5); border-left: 4px solid var(--color-brand, #0073aa); padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 4px; }
+    .dataset-badge { display: inline-block; background: #0073aa; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-right: 8px; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th { background: #f0f0f0; text-align: left; padding: 8px 10px; border: 1px solid #ddd; white-space: nowrap; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; max-width: 320px; word-break: break-word; }
+    tr:hover td { background: #fafafa; }
+    .null { color: #aaa; font-style: italic; }
+    .tag { display: inline-block; background: #e8f0fe; color: #333; border-radius: 3px; padding: 1px 5px; font-size: 0.78em; margin: 1px; }
+    .json { font-family: monospace; font-size: 0.78em; color: #555; }
+    .no-records { color: #888; font-style: italic; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .meta-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; }
+    .meta-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 1rem; font-weight: 600; color: #222; }
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-list li::before { content: "↑ "; color: #0073aa; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/reference/">Reference</a> › <a href="/reference/datasets/">Datasets</a> › Conversion Factors</nav>
+  <main class="knowledge-content">
+    
+<div class="dataset-header">
+  <span class="dataset-badge">Canonical Dataset</span>
+  <h1>↔ Conversion Factors</h1>
+  <p>All unit conversion factors used in pool chemistry calculations. Single authoritative source. Never duplicate these values elsewhere.</p>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-card"><div class="meta-label">Dataset ID</div><div class="meta-value">conversion-factors</div></div>
+<div class="meta-card"><div class="meta-label">Version</div><div class="meta-value">2026.07</div></div>
+<div class="meta-card"><div class="meta-label">Last Reviewed</div><div class="meta-value">2026-07-01</div></div>
+<div class="meta-card"><div class="meta-label">Maintainer</div><div class="meta-value">WaterBalanceTools</div></div>
+<div class="meta-card"><div class="meta-label">Records</div><div class="meta-value">22</div></div>
+</div>
+
+<section><h2>Source Priority</h2><p>Values in this dataset are sourced in the following order (highest authority first):</p><ol class="source-list"><li>1. scientific-literature</li><li>2. industry-standards</li></ol></section>
+
+<section><h2>Records (22)</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>id</th><th>fromUnit</th><th>toUnit</th><th>factor</th><th>formula</th><th>notes</th></tr></thead>
+  <tbody><tr><td>gal-to-liters</td><td>us-gallons</td><td>liters</td><td>3.785411784</td><td>liters = gallons × 3.785411784</td><td><span class="null">—</span></td></tr>
+<tr><td>liters-to-gal</td><td>liters</td><td>us-gallons</td><td>0.264172052</td><td>gallons = liters × 0.264172052</td><td><span class="null">—</span></td></tr>
+<tr><td>gal-to-ft3</td><td>us-gallons</td><td>cubic-feet</td><td>0.133680556</td><td>ft³ = gallons × 0.133680556</td><td><span class="null">—</span></td></tr>
+<tr><td>ft3-to-gal</td><td>cubic-feet</td><td>us-gallons</td><td>7.48051948</td><td>gallons = ft³ × 7.48051948</td><td><span class="null">—</span></td></tr>
+<tr><td>fl-oz-to-gal</td><td>us-fluid-oz</td><td>us-gallons</td><td>0.0078125</td><td>gallons = fl_oz / 128</td><td><span class="null">—</span></td></tr>
+<tr><td>gal-to-fl-oz</td><td>us-gallons</td><td>us-fluid-oz</td><td>128</td><td>fl_oz = gallons × 128</td><td><span class="null">—</span></td></tr>
+<tr><td>liters-to-ml</td><td>liters</td><td>milliliters</td><td>1000</td><td>mL = L × 1000</td><td><span class="null">—</span></td></tr>
+<tr><td>lb-to-oz</td><td>pounds</td><td>oz-weight</td><td>16</td><td>oz = lb × 16</td><td><span class="null">—</span></td></tr>
+<tr><td>oz-to-lb</td><td>oz-weight</td><td>pounds</td><td>0.0625</td><td>lb = oz / 16</td><td><span class="null">—</span></td></tr>
+<tr><td>lb-to-grams</td><td>pounds</td><td>grams</td><td>453.59237</td><td>g = lb × 453.59237</td><td><span class="null">—</span></td></tr>
+<tr><td>grams-to-oz</td><td>grams</td><td>oz-weight</td><td>0.035273962</td><td>oz = g × 0.035273962</td><td><span class="null">—</span></td></tr>
+<tr><td>oz-to-grams</td><td>oz-weight</td><td>grams</td><td>28.34952</td><td>g = oz × 28.34952</td><td><span class="null">—</span></td></tr>
+<tr><td>kg-to-lb</td><td>kilograms</td><td>pounds</td><td>2.20462262</td><td>lb = kg × 2.20462262</td><td><span class="null">—</span></td></tr>
+<tr><td>ppm-to-mgl</td><td>ppm</td><td>mg-per-l</td><td>1</td><td>mg/L = ppm (in dilute aqueous solution)</td><td><span class="null">—</span></td></tr>
+<tr><td>ppm-to-ppb</td><td>ppm</td><td>ppb</td><td>1000</td><td>ppb = ppm × 1000</td><td><span class="null">—</span></td></tr>
+<tr><td>percent-to-ppm</td><td>percent</td><td>ppm</td><td>10000</td><td>ppm = percent × 10000</td><td><span class="null">—</span></td></tr>
+<tr><td>f-to-c</td><td>fahrenheit</td><td>celsius</td><td><span class="null">—</span></td><td>°C = (°F − 32) × 5/9</td><td><span class="null">—</span></td></tr>
+<tr><td>c-to-f</td><td>celsius</td><td>fahrenheit</td><td><span class="null">—</span></td><td>°F = °C × 9/5 + 32</td><td><span class="null">—</span></td></tr>
+<tr><td>hours-to-minutes</td><td>hours</td><td>minutes</td><td>60</td><td>min = hr × 60</td><td><span class="null">—</span></td></tr>
+<tr><td>days-to-hours</td><td>days</td><td>hours</td><td>24</td><td>hr = days × 24</td><td><span class="null">—</span></td></tr>
+<tr><td>grams-per-ppm-per-gal</td><td>grams</td><td>ppm-gallons</td><td>37.854</td><td>grams_needed = ppm_change × volume_gallons × 3.785411784 / 1000</td><td>37.854 g of pure substance per 1 ppm change per 10,000 gallons of water</td></tr>
+<tr><td>water-density-lbs-per-gal</td><td>gallons</td><td>pounds</td><td>8.34</td><td>lbs = gallons × 8.34 (at 77°F/25°C)</td><td>Approximate. Density varies slightly with temperature.</td></tr></tbody>
+</table>
+</div></section>
+
+<section>
+  <h2>About This Dataset</h2>
+  <p>This dataset is part of the <strong>WaterBalanceTools Canonical Data Layer</strong>. All factual values used across the website originate from canonical datasets like this one. No calculator, article, or tool embeds these values directly — they are always resolved through the data layer.</p>
+  <p><a href="/reference/datasets/">← Back to all datasets</a></p>
+</section>
+
+  </main>
+  <footer><p>Auto-generated by generate-data-docs.js. Source: data/datasets/conversion-factors.json. Do not edit manually.</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+{
+  "datasetId": "hot-tub-ranges",
+  "version": "2026.07",
+  "lastReviewed": "2026-07-01",
+  "description": "Canonical chemical ranges specifically for hot tubs and spas. Extracted from chemical-ranges.json for hot-tub pool type. Provided as a standalone dataset for convenience.",
+  "maintainer": "WaterBalanceTools",
+  "sourcePriority": [
+    "industry-standards",
+    "government-guidance"
+  ],
+  "derivedFrom": "chemical-ranges",
+  "records": [
+    {
+      "id": "ht-free-chlorine",
+      "parameter": "free-chlorine",
+      "unit": "ppm",
+      "target": {
+        "min": 3,
+        "max": 5,
+        "ideal": 4
+      },
+      "warning": {
+        "low": 1,
+        "high": 8
+      },
+      "critical": {
+        "low": 0,
+        "high": 10
+      }
+    },
+    {
+      "id": "ht-bromine",
+      "parameter": "bromine",
+      "unit": "ppm",
+      "target": {
+        "min": 3,
+        "max": 6,
+        "ideal": 4
+      },
+      "warning": {
+        "low": 1,
+        "high": 8
+      },
+      "critical": {
+        "low": 0,
+        "high": 10
+      }
+    },
+    {
+      "id": "ht-ph",
+      "parameter": "ph",
+      "unit": "pH",
+      "target": {
+        "min": 7.2,
+        "max": 7.6,
+        "ideal": 7.4
+      },
+      "warning": {
+        "low": 7,
+        "high": 7.8
+      },
+      "critical": {
+        "low": 6.8,
+        "high": 8
+      }
+    },
+    {
+      "id": "ht-total-alkalinity",
+      "parameter": "total-alkalinity",
+      "unit": "ppm",
+      "target": {
+        "min": 80,
+        "max": 120,
+        "ideal": 100
+      },
+      "warning": {
+        "low": 60,
+        "high": 150
+      },
+      "critical": {
+        "low": 40,
+        "high": 200
+      }
+    },
+    {
+      "id": "ht-calcium-hardness",
+      "parameter": "calcium-hardness",
+      "unit": "ppm",
+      "target": {
+        "min": 150,
+        "max": 250,
+        "ideal": 200
+      },
+      "warning": {
+        "low": 100,
+        "high": 350
+      },
+      "critical": {
+        "low": 75,
+        "high": 500
+      }
+    },
+    {
+      "id": "ht-temperature",
+      "parameter": "temperature",
+      "unit": "°F",
+      "target": {
+        "min": 100,
+        "max": 104,
+        "ideal": 102
+      },
+      "warning": {
+        "low": 95,
+        "high": 104
+      },
+      "critical": {
+        "low": null,
+        "high": 104
+      }
+    },
+    {
+      "id": "ht-tds",
+      "parameter": "tds",
+      "unit": "ppm",
+      "target": {
+        "min": 0,
+        "max": 1500,
+        "ideal": null
+      },
+      "warning": {
+        "low": null,
+        "high": 2000
+      },
+      "critical": {
+        "low": null,
+        "high": 3000
+      },
+      "notes": "Values above 1500 ppm over the initial fill water TDS baseline indicate water change is needed."
+    }
+  ]
+}

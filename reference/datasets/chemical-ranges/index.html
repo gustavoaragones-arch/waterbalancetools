@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chemical Ranges | WaterBalanceTools Datasets</title>
+  <meta name="description" content="Target, warning, and critical bounds for all chemical parameters by pool type.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .dataset-header { background: var(--color-bg-alt, #f5f5f5); border-left: 4px solid var(--color-brand, #0073aa); padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 4px; }
+    .dataset-badge { display: inline-block; background: #0073aa; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-right: 8px; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th { background: #f0f0f0; text-align: left; padding: 8px 10px; border: 1px solid #ddd; white-space: nowrap; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; max-width: 320px; word-break: break-word; }
+    tr:hover td { background: #fafafa; }
+    .null { color: #aaa; font-style: italic; }
+    .tag { display: inline-block; background: #e8f0fe; color: #333; border-radius: 3px; padding: 1px 5px; font-size: 0.78em; margin: 1px; }
+    .json { font-family: monospace; font-size: 0.78em; color: #555; }
+    .no-records { color: #888; font-style: italic; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .meta-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; }
+    .meta-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 1rem; font-weight: 600; color: #222; }
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-list li::before { content: "↑ "; color: #0073aa; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/reference/">Reference</a> › <a href="/reference/datasets/">Datasets</a> › Chemical Ranges</nav>
+  <main class="knowledge-content">
+    
+<div class="dataset-header">
+  <span class="dataset-badge">Canonical Dataset</span>
+  <h1>⚗ Chemical Ranges</h1>
+  <p>Canonical recommended chemical ranges for residential pools, saltwater pools, hot tubs, commercial pools, indoor pools, and outdoor pools. One record per parameter per pool type.</p>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-card"><div class="meta-label">Dataset ID</div><div class="meta-value">chemical-ranges</div></div>
+<div class="meta-card"><div class="meta-label">Version</div><div class="meta-value">2026.07</div></div>
+<div class="meta-card"><div class="meta-label">Last Reviewed</div><div class="meta-value">2026-07-01</div></div>
+<div class="meta-card"><div class="meta-label">Maintainer</div><div class="meta-value">WaterBalanceTools</div></div>
+<div class="meta-card"><div class="meta-label">Records</div><div class="meta-value">36</div></div>
+</div>
+
+<section><h2>Source Priority</h2><p>Values in this dataset are sourced in the following order (highest authority first):</p><ol class="source-list"><li>1. industry-standards</li><li>2. government-guidance</li><li>3. manufacturer-documentation</li><li>4. scientific-literature</li><li>5. editorial-interpretation</li></ol></section>
+
+<section><h2>Records (36)</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>id</th><th>poolType</th><th>parameter</th><th>unit</th><th>target</th><th>warning</th><th>critical</th><th>notes</th></tr></thead>
+  <tbody><tr><td>residential-pool-free-chlorine</td><td>residential-pool</td><td>free-chlorine</td><td>ppm</td><td><span class="json">{"min":1,"max":3,"ideal":2}</span></td><td><span class="json">{"low":0.5,"high":5}</span></td><td><span class="json">{"low":0,"high":10}</span></td><td>Minimum effective level depends on CYA. At CYA 50 ppm, minimum FC is 4 ppm per TFPC guidelines.</td></tr>
+<tr><td>residential-pool-combined-chlorine</td><td>residential-pool</td><td>combined-chlorine</td><td>ppm</td><td><span class="json">{"min":0,"max":0,"ideal":0}</span></td><td><span class="json">{"low":null,"high":0.5}</span></td><td><span class="json">{"low":null,"high":1}</span></td><td>Any detectable CC above 0.5 ppm requires breakpoint chlorination (shock at 10x CC level).</td></tr>
+<tr><td>residential-pool-ph</td><td>residential-pool</td><td>ph</td><td>pH</td><td><span class="json">{"min":7.2,"max":7.6,"ideal":7.4}</span></td><td><span class="json">{"low":7,"high":7.8}</span></td><td><span class="json">{"low":6.8,"high":8.2}</span></td><td>At pH 7.2, 67% of FC is active HOCl. At pH 7.6, 50% is active. At pH 8.0, only 22% is active.</td></tr>
+<tr><td>residential-pool-total-alkalinity</td><td>residential-pool</td><td>total-alkalinity</td><td>ppm</td><td><span class="json">{"min":80,"max":120,"ideal":100}</span></td><td><span class="json">{"low":60,"high":180}</span></td><td><span class="json">{"low":40,"high":240}</span></td><td>Adjust TA before pH. TA acts as a pH buffer. Low TA causes pH bounce. High TA makes pH hard to lower.</td></tr>
+<tr><td>residential-pool-calcium-hardness</td><td>residential-pool</td><td>calcium-hardness</td><td>ppm</td><td><span class="json">{"min":200,"max":400,"ideal":300}</span></td><td><span class="json">{"low":150,"high":500}</span></td><td><span class="json">{"low":100,"high":800}</span></td><td>Target depends on surface type. Plaster pools: 200–400 ppm. Vinyl/fiberglass: 150–250 ppm. Only reduced by dilution.</td></tr>
+<tr><td>residential-pool-cyanuric-acid</td><td>residential-pool</td><td>cyanuric-acid</td><td>ppm</td><td><span class="json">{"min":30,"max":50,"ideal":40}</span></td><td><span class="json">{"low":0,"high":80}</span></td><td><span class="json">{"low":null,"high":100}</span></td><td>Above 80 ppm, increase FC target proportionally. Above 100 ppm, partial drain required. Only reduced by water dilution.</td></tr>
+<tr><td>residential-pool-salt</td><td>residential-pool</td><td>salt</td><td>ppm</td><td><span class="json">{"min":null,"max":null,"ideal":null}</span></td><td><span class="json">{"low":null,"high":null}</span></td><td><span class="json">{"low":null,"high":null}</span></td><td>Not applicable for non-salt pools. See saltwater-pool records.</td></tr>
+<tr><td>residential-pool-temperature</td><td>residential-pool</td><td>temperature</td><td>°F</td><td><span class="json">{"min":78,"max":84,"ideal":80}</span></td><td><span class="json">{"low":60,"high":90}</span></td><td><span class="json">{"low":null,"high":95}</span></td><td>Higher temperatures increase chlorine demand, scale tendency, and algae growth risk.</td></tr>
+<tr><td>residential-pool-orp</td><td>residential-pool</td><td>orp</td><td>mV</td><td><span class="json">{"min":650,"max":750,"ideal":700}</span></td><td><span class="json">{"low":600,"high":800}</span></td><td><span class="json">{"low":400,"high":null}</span></td><td>ORP directly measures sanitizing capacity. Below 650 mV, pathogen kill time increases significantly.</td></tr>
+<tr><td>saltwater-pool-free-chlorine</td><td>saltwater-pool</td><td>free-chlorine</td><td>ppm</td><td><span class="json">{"min":1,"max":3,"ideal":2}</span></td><td><span class="json">{"low":0.5,"high":5}</span></td><td><span class="json">{"low":0,"high":10}</span></td><td>Same as residential pool. Salt chlorinator output may need adjustment seasonally.</td></tr>
+<tr><td>saltwater-pool-ph</td><td>saltwater-pool</td><td>ph</td><td>pH</td><td><span class="json">{"min":7.2,"max":7.6,"ideal":7.4}</span></td><td><span class="json">{"low":7,"high":7.8}</span></td><td><span class="json">{"low":6.8,"high":8.2}</span></td><td>Salt pools tend to drift high pH due to electrolysis byproducts. Monitor frequently.</td></tr>
+<tr><td>saltwater-pool-total-alkalinity</td><td>saltwater-pool</td><td>total-alkalinity</td><td>ppm</td><td><span class="json">{"min":80,"max":120,"ideal":100}</span></td><td><span class="json">{"low":60,"high":180}</span></td><td><span class="json">{"low":40,"high":240}</span></td><td>Same as residential pool.</td></tr>
+<tr><td>saltwater-pool-calcium-hardness</td><td>saltwater-pool</td><td>calcium-hardness</td><td>ppm</td><td><span class="json">{"min":200,"max":400,"ideal":300}</span></td><td><span class="json">{"low":150,"high":500}</span></td><td><span class="json">{"low":100,"high":800}</span></td><td>Critical to maintain for salt cell longevity. Low calcium accelerates cell plate scaling.</td></tr>
+<tr><td>saltwater-pool-cyanuric-acid</td><td>saltwater-pool</td><td>cyanuric-acid</td><td>ppm</td><td><span class="json">{"min":60,"max":80,"ideal":70}</span></td><td><span class="json">{"low":40,"high":100}</span></td><td><span class="json">{"low":0,"high":120}</span></td><td>Higher CYA required for salt pools to protect chlorine generated by cell. Do not exceed 80 ppm if possible.</td></tr>
+<tr><td>saltwater-pool-salt</td><td>saltwater-pool</td><td>salt</td><td>ppm</td><td><span class="json">{"min":2700,"max":3400,"ideal":3200}</span></td><td><span class="json">{"low":2500,"high":3600}</span></td><td><span class="json">{"low":2000,"high":4000}</span></td><td>Optimal range is system-dependent. Consult manufacturer specification. Salt level below minimum disables the cell.</td></tr>
+<tr><td>saltwater-pool-temperature</td><td>saltwater-pool</td><td>temperature</td><td>°F</td><td><span class="json">{"min":78,"max":84,"ideal":80}</span></td><td><span class="json">{"low":60,"high":90}</span></td><td><span class="json">{"low":null,"high":95}</span></td><td>Salt cell output decreases significantly below 60°F. Manual chlorination may be needed in cold weather.</td></tr>
+<tr><td>hot-tub-free-chlorine</td><td>hot-tub</td><td>free-chlorine</td><td>ppm</td><td><span class="json">{"min":3,"max":5,"ideal":4}</span></td><td><span class="json">{"low":1,"high":8}</span></td><td><span class="json">{"low":0,"high":10}</span></td><td>Higher target than pools due to temperature-accelerated chlorine demand and high bather load relative to volume.</td></tr>
+<tr><td>hot-tub-bromine</td><td>hot-tub</td><td>bromine</td><td>ppm</td><td><span class="json">{"min":3,"max":6,"ideal":4}</span></td><td><span class="json">{"low":1,"high":8}</span></td><td><span class="json">{"low":0,"high":10}</span></td><td>Bromine alternative to chlorine. More stable at high temperatures. Bromamines remain sanitizing (unlike chloramines).</td></tr>
+<tr><td>hot-tub-combined-chlorine</td><td>hot-tub</td><td>combined-chlorine</td><td>ppm</td><td><span class="json">{"min":0,"max":0,"ideal":0}</span></td><td><span class="json">{"low":null,"high":0.5}</span></td><td><span class="json">{"low":null,"high":1}</span></td><td>Same as pool. High CC causes skin and respiratory irritation, amplified in enclosed hot tub environments.</td></tr>
+<tr><td>hot-tub-ph</td><td>hot-tub</td><td>ph</td><td>pH</td><td><span class="json">{"min":7.2,"max":7.6,"ideal":7.4}</span></td><td><span class="json">{"low":7,"high":7.8}</span></td><td><span class="json">{"low":6.8,"high":8}</span></td><td>pH tends to rise faster in hot tubs due to CO2 off-gassing at high temperatures.</td></tr>
+<tr><td>hot-tub-total-alkalinity</td><td>hot-tub</td><td>total-alkalinity</td><td>ppm</td><td><span class="json">{"min":80,"max":120,"ideal":100}</span></td><td><span class="json">{"low":60,"high":150}</span></td><td><span class="json">{"low":40,"high":200}</span></td><td>Same range as pool. Critical as a pH buffer.</td></tr>
+<tr><td>hot-tub-calcium-hardness</td><td>hot-tub</td><td>calcium-hardness</td><td>ppm</td><td><span class="json">{"min":150,"max":250,"ideal":200}</span></td><td><span class="json">{"low":100,"high":350}</span></td><td><span class="json">{"low":75,"high":500}</span></td><td>Lower target than plaster pools. Hot tub surfaces are typically acrylic or composite. High CH at high temp accelerates scaling.</td></tr>
+<tr><td>hot-tub-cyanuric-acid</td><td>hot-tub</td><td>cyanuric-acid</td><td>ppm</td><td><span class="json">{"min":0,"max":0,"ideal":0}</span></td><td><span class="json">{"low":null,"high":10}</span></td><td><span class="json">{"low":null,"high":30}</span></td><td>CYA should NOT be used in hot tubs. Hot tubs are typically covered and not exposed to UV light.</td></tr>
+<tr><td>hot-tub-temperature</td><td>hot-tub</td><td>temperature</td><td>°F</td><td><span class="json">{"min":100,"max":104,"ideal":102}</span></td><td><span class="json">{"low":95,"high":104}</span></td><td><span class="json">{"low":null,"high":104}</span></td><td>CPSC and PHTA set maximum at 104°F for safety. Temperatures above 104°F risk hyperthermia. Children: max 95°F.</td></tr>
+<tr><td>commercial-pool-free-chlorine</td><td>commercial-pool</td><td>free-chlorine</td><td>ppm</td><td><span class="json">{"min":1,"max":3,"ideal":2}</span></td><td><span class="json">{"low":0.5,"high":5}</span></td><td><span class="json">{"low":0,"high":10}</span></td><td>Many jurisdictions require minimum 1 ppm FC by law. ORP must also be maintained above 650 mV.</td></tr>
+<tr><td>commercial-pool-ph</td><td>commercial-pool</td><td>ph</td><td>pH</td><td><span class="json">{"min":7.2,"max":7.6,"ideal":7.4}</span></td><td><span class="json">{"low":7,"high":7.8}</span></td><td><span class="json">{"low":6.8,"high":8}</span></td><td>Many health codes require pH between 7.2 and 7.8 for public pools.</td></tr>
+<tr><td>commercial-pool-total-alkalinity</td><td>commercial-pool</td><td>total-alkalinity</td><td>ppm</td><td><span class="json">{"min":80,"max":120,"ideal":100}</span></td><td><span class="json">{"low":60,"high":180}</span></td><td><span class="json">{"low":40,"high":240}</span></td><td>Same as residential.</td></tr>
+<tr><td>commercial-pool-calcium-hardness</td><td>commercial-pool</td><td>calcium-hardness</td><td>ppm</td><td><span class="json">{"min":200,"max":400,"ideal":300}</span></td><td><span class="json">{"low":150,"high":500}</span></td><td><span class="json">{"low":100,"high":800}</span></td><td>Same as residential.</td></tr>
+<tr><td>commercial-pool-cyanuric-acid</td><td>commercial-pool</td><td>cyanuric-acid</td><td>ppm</td><td><span class="json">{"min":0,"max":40,"ideal":30}</span></td><td><span class="json">{"low":null,"high":60}</span></td><td><span class="json">{"low":null,"high":90}</span></td><td>Many health codes prohibit CYA above 40 ppm in commercial pools or prohibit CYA entirely.</td></tr>
+<tr><td>commercial-pool-orp</td><td>commercial-pool</td><td>orp</td><td>mV</td><td><span class="json">{"min":650,"max":800,"ideal":700}</span></td><td><span class="json">{"low":600,"high":850}</span></td><td><span class="json">{"low":500,"high":null}</span></td><td>WHO recommends minimum 650 mV for public pools. Required in many commercial facility health codes.</td></tr>
+<tr><td>indoor-pool-free-chlorine</td><td>indoor-pool</td><td>free-chlorine</td><td>ppm</td><td><span class="json">{"min":1,"max":3,"ideal":2}</span></td><td><span class="json">{"low":0.5,"high":5}</span></td><td><span class="json">{"low":0,"high":10}</span></td><td>Same as residential pool. No UV degradation indoors so lower FC maintenance dose needed.</td></tr>
+<tr><td>indoor-pool-cyanuric-acid</td><td>indoor-pool</td><td>cyanuric-acid</td><td>ppm</td><td><span class="json">{"min":0,"max":0,"ideal":0}</span></td><td><span class="json">{"low":null,"high":10}</span></td><td><span class="json">{"low":null,"high":30}</span></td><td>CYA should NOT be used in indoor pools. No UV exposure so no need for UV protection, and CYA reduces chlorine efficiency.</td></tr>
+<tr><td>indoor-pool-ph</td><td>indoor-pool</td><td>ph</td><td>pH</td><td><span class="json">{"min":7.2,"max":7.6,"ideal":7.4}</span></td><td><span class="json">{"low":7,"high":7.8}</span></td><td><span class="json">{"low":6.8,"high":8}</span></td><td>pH tends to rise in indoor pools due to CO2 off-gassing into enclosed air space. Ventilation management is critical.</td></tr>
+<tr><td>outdoor-pool-free-chlorine</td><td>outdoor-pool</td><td>free-chlorine</td><td>ppm</td><td><span class="json">{"min":1,"max":3,"ideal":2}</span></td><td><span class="json">{"low":0.5,"high":5}</span></td><td><span class="json">{"low":0,"high":10}</span></td><td>Outdoor pools require CYA to prevent UV degradation of chlorine.</td></tr>
+<tr><td>outdoor-pool-cyanuric-acid</td><td>outdoor-pool</td><td>cyanuric-acid</td><td>ppm</td><td><span class="json">{"min":30,"max":50,"ideal":40}</span></td><td><span class="json">{"low":10,"high":80}</span></td><td><span class="json">{"low":0,"high":100}</span></td><td>CYA is essential for outdoor pools. Without CYA, chlorine degrades within 30–60 minutes of direct sunlight.</td></tr>
+<tr><td>outdoor-pool-temperature</td><td>outdoor-pool</td><td>temperature</td><td>°F</td><td><span class="json">{"min":78,"max":84,"ideal":80}</span></td><td><span class="json">{"low":60,"high":90}</span></td><td><span class="json">{"low":null,"high":95}</span></td><td>Temperature above 85°F increases chlorine demand significantly and promotes algae growth.</td></tr></tbody>
+</table>
+</div></section>
+
+<section>
+  <h2>About This Dataset</h2>
+  <p>This dataset is part of the <strong>WaterBalanceTools Canonical Data Layer</strong>. All factual values used across the website originate from canonical datasets like this one. No calculator, article, or tool embeds these values directly — they are always resolved through the data layer.</p>
+  <p><a href="/reference/datasets/">← Back to all datasets</a></p>
+</section>
+
+  </main>
+  <footer><p>Auto-generated by generate-data-docs.js. Source: data/datasets/chemical-ranges.json. Do not edit manually.</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

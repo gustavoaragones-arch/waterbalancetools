@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Testing Frequency | WaterBalanceTools Datasets</title>
+  <meta name="description" content="Recommended testing intervals by pool type and scenario.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .dataset-header { background: var(--color-bg-alt, #f5f5f5); border-left: 4px solid var(--color-brand, #0073aa); padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 4px; }
+    .dataset-badge { display: inline-block; background: #0073aa; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-right: 8px; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th { background: #f0f0f0; text-align: left; padding: 8px 10px; border: 1px solid #ddd; white-space: nowrap; }
+    td { padding: 6px 10px; border: 1px solid #eee; vertical-align: top; max-width: 320px; word-break: break-word; }
+    tr:hover td { background: #fafafa; }
+    .null { color: #aaa; font-style: italic; }
+    .tag { display: inline-block; background: #e8f0fe; color: #333; border-radius: 3px; padding: 1px 5px; font-size: 0.78em; margin: 1px; }
+    .json { font-family: monospace; font-size: 0.78em; color: #555; }
+    .no-records { color: #888; font-style: italic; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .meta-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; }
+    .meta-label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .meta-value { font-size: 1rem; font-weight: 600; color: #222; }
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-list li::before { content: "↑ "; color: #0073aa; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/reference/">Reference</a> › <a href="/reference/datasets/">Datasets</a> › Testing Frequency</nav>
+  <main class="knowledge-content">
+    
+<div class="dataset-header">
+  <span class="dataset-badge">Canonical Dataset</span>
+  <h1>📅 Testing Frequency</h1>
+  <p>Recommended testing intervals for pool and spa water chemistry parameters by pool type and usage scenario.</p>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-card"><div class="meta-label">Dataset ID</div><div class="meta-value">testing-frequency</div></div>
+<div class="meta-card"><div class="meta-label">Version</div><div class="meta-value">2026.07</div></div>
+<div class="meta-card"><div class="meta-label">Last Reviewed</div><div class="meta-value">2026-07-01</div></div>
+<div class="meta-card"><div class="meta-label">Maintainer</div><div class="meta-value">WaterBalanceTools</div></div>
+<div class="meta-card"><div class="meta-label">Records</div><div class="meta-value">6</div></div>
+</div>
+
+<section><h2>Source Priority</h2><p>Values in this dataset are sourced in the following order (highest authority first):</p><ol class="source-list"><li>1. industry-standards</li><li>2. government-guidance</li></ol></section>
+
+<section><h2>Records (6)</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>id</th><th>scenarioId</th><th>poolType</th><th>parameters</th><th>trigger</th></tr></thead>
+  <tbody><tr><td>residential-pool-standard</td><td>residential-pool-standard</td><td>residential-pool</td><td><span class="json">{"parameter":"free-chlorine","frequency":"twice-weekly","notes":"Test before adding chlorine. Test in morning before peak UV hours."}</span> <span class="json">{"parameter":"ph","frequency":"twice-weekly","notes":"Test whenever FC is tested."}</span> <span class="json">{"parameter":"combined-chlorine","frequency":"weekly","notes":"If CC &gt; 0.5 ppm, shock immediately."}</span> <span class="json">{"parameter":"total-alkalinity","frequency":"monthly","notes":"More frequent if pH is unstable."}</span> <span class="json">{"parameter":"calcium-hardness","frequency":"monthly","notes":"More frequent for new plaster pools (first year)."}</span> <span class="json">{"parameter":"cyanuric-acid","frequency":"monthly","notes":"Test after heavy rain. More frequent if using trichlor tablets."}</span> <span class="json">{"parameter":"salt","frequency":"monthly","notes":"Salt pools only. Check after heavy rain or partial draining."}</span> <span class="json">{"parameter":"temperature","frequency":"as-needed","notes":"Check before swimming season and in heat waves."}</span></td><td><span class="null">—</span></td></tr>
+<tr><td>hot-tub-standard</td><td>hot-tub-standard</td><td>hot-tub</td><td><span class="json">{"parameter":"free-chlorine","frequency":"before-each-use","notes":"Minimum. Daily if used daily."}</span> <span class="json">{"parameter":"bromine","frequency":"before-each-use","notes":"If bromine system. Same frequency as chlorine."}</span> <span class="json">{"parameter":"ph","frequency":"before-each-use","notes":"Hot tubs have rapid pH change due to aeration."}</span> <span class="json">{"parameter":"combined-chlorine","frequency":"weekly","notes":""}</span> <span class="json">{"parameter":"total-alkalinity","frequency":"weekly","notes":""}</span> <span class="json">{"parameter":"calcium-hardness","frequency":"monthly","notes":""}</span> <span class="json">{"parameter":"tds","frequency":"monthly","notes":"High TDS (&gt;1,500 ppm above baseline) triggers water change."}</span> <span class="json">{"parameter":"temperature","frequency":"before-each-use","notes":"Safety requirement. Maximum 104°F."}</span></td><td><span class="null">—</span></td></tr>
+<tr><td>commercial-pool-standard</td><td>commercial-pool-standard</td><td>commercial-pool</td><td><span class="json">{"parameter":"free-chlorine","frequency":"every-2-hours","notes":"Required by most health codes during operating hours."}</span> <span class="json">{"parameter":"ph","frequency":"every-2-hours","notes":"Required during operating hours."}</span> <span class="json">{"parameter":"orp","frequency":"continuous-monitoring","notes":"Automated ORP monitoring required in many jurisdictions."}</span> <span class="json">{"parameter":"combined-chlorine","frequency":"daily","notes":""}</span> <span class="json">{"parameter":"total-alkalinity","frequency":"weekly","notes":""}</span> <span class="json">{"parameter":"calcium-hardness","frequency":"weekly","notes":""}</span> <span class="json">{"parameter":"cyanuric-acid","frequency":"monthly","notes":""}</span> <span class="json">{"parameter":"temperature","frequency":"every-2-hours","notes":""}</span></td><td><span class="null">—</span></td></tr>
+<tr><td>after-heavy-use</td><td>after-heavy-use</td><td>all</td><td><span class="json">{"parameter":"free-chlorine","frequency":"immediately-after","notes":"FC may drop significantly after heavy bather load."}</span> <span class="json">{"parameter":"ph","frequency":"immediately-after","notes":""}</span> <span class="json">{"parameter":"combined-chlorine","frequency":"immediately-after","notes":"Shock if CC &gt; 0.5 ppm."}</span></td><td>After pool party, rental, or heavy bather load</td></tr>
+<tr><td>after-storm</td><td>after-storm</td><td>all</td><td><span class="json">{"parameter":"free-chlorine","frequency":"immediately-after","notes":"Rain dilutes chlorine and introduces contaminants."}</span> <span class="json">{"parameter":"ph","frequency":"immediately-after","notes":"Rain (naturally acidic pH ~5.6) lowers pool pH."}</span> <span class="json">{"parameter":"cyanuric-acid","frequency":"after-major-rain","notes":"Heavy rainfall dilutes CYA."}</span> <span class="json">{"parameter":"total-alkalinity","frequency":"after-major-rain","notes":""}</span></td><td>After rain, storm, or flooding</td></tr>
+<tr><td>vacation-rental-turnover</td><td>vacation-rental-turnover</td><td>residential-pool</td><td><span class="json">{"parameter":"free-chlorine","frequency":"at-each-turnover","notes":"Document result."}</span> <span class="json">{"parameter":"ph","frequency":"at-each-turnover","notes":"Document result."}</span> <span class="json">{"parameter":"combined-chlorine","frequency":"at-each-turnover","notes":"Shock if elevated."}</span> <span class="json">{"parameter":"total-alkalinity","frequency":"weekly","notes":""}</span> <span class="json">{"parameter":"calcium-hardness","frequency":"monthly","notes":""}</span> <span class="json">{"parameter":"cyanuric-acid","frequency":"monthly","notes":""}</span></td><td>Between each guest stay</td></tr></tbody>
+</table>
+</div></section>
+
+<section>
+  <h2>About This Dataset</h2>
+  <p>This dataset is part of the <strong>WaterBalanceTools Canonical Data Layer</strong>. All factual values used across the website originate from canonical datasets like this one. No calculator, article, or tool embeds these values directly — they are always resolved through the data layer.</p>
+  <p><a href="/reference/datasets/">← Back to all datasets</a></p>
+</section>
+
+  </main>
+  <footer><p>Auto-generated by generate-data-docs.js. Source: data/datasets/testing-frequency.json. Do not edit manually.</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

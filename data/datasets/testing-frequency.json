@@ -1,0 +1,243 @@
+{
+  "datasetId": "testing-frequency",
+  "version": "2026.07",
+  "lastReviewed": "2026-07-01",
+  "description": "Recommended testing intervals for pool and spa water chemistry parameters by pool type and usage scenario.",
+  "maintainer": "WaterBalanceTools",
+  "sourcePriority": [
+    "industry-standards",
+    "government-guidance"
+  ],
+  "records": [
+    {
+      "id": "residential-pool-standard",
+      "scenarioId": "residential-pool-standard",
+      "poolType": "residential-pool",
+      "parameters": [
+        {
+          "parameter": "free-chlorine",
+          "frequency": "twice-weekly",
+          "notes": "Test before adding chlorine. Test in morning before peak UV hours."
+        },
+        {
+          "parameter": "ph",
+          "frequency": "twice-weekly",
+          "notes": "Test whenever FC is tested."
+        },
+        {
+          "parameter": "combined-chlorine",
+          "frequency": "weekly",
+          "notes": "If CC > 0.5 ppm, shock immediately."
+        },
+        {
+          "parameter": "total-alkalinity",
+          "frequency": "monthly",
+          "notes": "More frequent if pH is unstable."
+        },
+        {
+          "parameter": "calcium-hardness",
+          "frequency": "monthly",
+          "notes": "More frequent for new plaster pools (first year)."
+        },
+        {
+          "parameter": "cyanuric-acid",
+          "frequency": "monthly",
+          "notes": "Test after heavy rain. More frequent if using trichlor tablets."
+        },
+        {
+          "parameter": "salt",
+          "frequency": "monthly",
+          "notes": "Salt pools only. Check after heavy rain or partial draining."
+        },
+        {
+          "parameter": "temperature",
+          "frequency": "as-needed",
+          "notes": "Check before swimming season and in heat waves."
+        }
+      ]
+    },
+    {
+      "id": "hot-tub-standard",
+      "scenarioId": "hot-tub-standard",
+      "poolType": "hot-tub",
+      "parameters": [
+        {
+          "parameter": "free-chlorine",
+          "frequency": "before-each-use",
+          "notes": "Minimum. Daily if used daily."
+        },
+        {
+          "parameter": "bromine",
+          "frequency": "before-each-use",
+          "notes": "If bromine system. Same frequency as chlorine."
+        },
+        {
+          "parameter": "ph",
+          "frequency": "before-each-use",
+          "notes": "Hot tubs have rapid pH change due to aeration."
+        },
+        {
+          "parameter": "combined-chlorine",
+          "frequency": "weekly",
+          "notes": ""
+        },
+        {
+          "parameter": "total-alkalinity",
+          "frequency": "weekly",
+          "notes": ""
+        },
+        {
+          "parameter": "calcium-hardness",
+          "frequency": "monthly",
+          "notes": ""
+        },
+        {
+          "parameter": "tds",
+          "frequency": "monthly",
+          "notes": "High TDS (>1,500 ppm above baseline) triggers water change."
+        },
+        {
+          "parameter": "temperature",
+          "frequency": "before-each-use",
+          "notes": "Safety requirement. Maximum 104°F."
+        }
+      ]
+    },
+    {
+      "id": "commercial-pool-standard",
+      "scenarioId": "commercial-pool-standard",
+      "poolType": "commercial-pool",
+      "parameters": [
+        {
+          "parameter": "free-chlorine",
+          "frequency": "every-2-hours",
+          "notes": "Required by most health codes during operating hours."
+        },
+        {
+          "parameter": "ph",
+          "frequency": "every-2-hours",
+          "notes": "Required during operating hours."
+        },
+        {
+          "parameter": "orp",
+          "frequency": "continuous-monitoring",
+          "notes": "Automated ORP monitoring required in many jurisdictions."
+        },
+        {
+          "parameter": "combined-chlorine",
+          "frequency": "daily",
+          "notes": ""
+        },
+        {
+          "parameter": "total-alkalinity",
+          "frequency": "weekly",
+          "notes": ""
+        },
+        {
+          "parameter": "calcium-hardness",
+          "frequency": "weekly",
+          "notes": ""
+        },
+        {
+          "parameter": "cyanuric-acid",
+          "frequency": "monthly",
+          "notes": ""
+        },
+        {
+          "parameter": "temperature",
+          "frequency": "every-2-hours",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "after-heavy-use",
+      "scenarioId": "after-heavy-use",
+      "poolType": "all",
+      "trigger": "After pool party, rental, or heavy bather load",
+      "parameters": [
+        {
+          "parameter": "free-chlorine",
+          "frequency": "immediately-after",
+          "notes": "FC may drop significantly after heavy bather load."
+        },
+        {
+          "parameter": "ph",
+          "frequency": "immediately-after",
+          "notes": ""
+        },
+        {
+          "parameter": "combined-chlorine",
+          "frequency": "immediately-after",
+          "notes": "Shock if CC > 0.5 ppm."
+        }
+      ]
+    },
+    {
+      "id": "after-storm",
+      "scenarioId": "after-storm",
+      "poolType": "all",
+      "trigger": "After rain, storm, or flooding",
+      "parameters": [
+        {
+          "parameter": "free-chlorine",
+          "frequency": "immediately-after",
+          "notes": "Rain dilutes chlorine and introduces contaminants."
+        },
+        {
+          "parameter": "ph",
+          "frequency": "immediately-after",
+          "notes": "Rain (naturally acidic pH ~5.6) lowers pool pH."
+        },
+        {
+          "parameter": "cyanuric-acid",
+          "frequency": "after-major-rain",
+          "notes": "Heavy rainfall dilutes CYA."
+        },
+        {
+          "parameter": "total-alkalinity",
+          "frequency": "after-major-rain",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "vacation-rental-turnover",
+      "scenarioId": "vacation-rental-turnover",
+      "poolType": "residential-pool",
+      "trigger": "Between each guest stay",
+      "parameters": [
+        {
+          "parameter": "free-chlorine",
+          "frequency": "at-each-turnover",
+          "notes": "Document result."
+        },
+        {
+          "parameter": "ph",
+          "frequency": "at-each-turnover",
+          "notes": "Document result."
+        },
+        {
+          "parameter": "combined-chlorine",
+          "frequency": "at-each-turnover",
+          "notes": "Shock if elevated."
+        },
+        {
+          "parameter": "total-alkalinity",
+          "frequency": "weekly",
+          "notes": ""
+        },
+        {
+          "parameter": "calcium-hardness",
+          "frequency": "monthly",
+          "notes": ""
+        },
+        {
+          "parameter": "cyanuric-acid",
+          "frequency": "monthly",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

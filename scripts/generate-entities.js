@@ -30,6 +30,12 @@ const DATA    = path.join(ROOT, 'data');
 const ENT_DIR = path.join(DATA, 'entities');
 const GRP_DIR = path.join(DATA, 'graph');
 
+// ── Dataset loader (canonical data layer) ─────────────────────────────────────
+const DatasetLoader = require(path.join(ROOT, 'js', 'data', 'dataset-loader'));
+const DATASETS_DIR  = path.join(DATA, 'datasets');
+// Only initialise loader if datasets have been compiled
+const loader = fs.existsSync(DATASETS_DIR) ? new DatasetLoader(DATASETS_DIR) : null;
+
 [ENT_DIR, GRP_DIR].forEach(d => { if (!fs.existsSync(d)) fs.mkdirSync(d, { recursive: true }); });
 
 // ── Load source modules ────────────────────────────────────────────────────────
@@ -53,6 +59,10 @@ const REQUIRED_FIELDS = [
   'relatedEntities', 'sourceOrganizations', 'keywords',
 ];
 
+// Optional fields added by Phase 5A.75 — Canonical Data Layer
+// These are allowed to pass through enforce() and are written to entity JSON.
+const OPTIONAL_FIELDS = ['rangeDataset', 'rangeRecord'];
+
 // ── Enforce strict entity schema ───────────────────────────────────────────────
 function enforce(entities, typeName) {
   entities.forEach(e => {
@@ -61,12 +71,56 @@ function enforce(entities, typeName) {
         throw new Error(`Entity [${e.id || '?'}] in ${typeName} missing required field: ${f}`);
       }
     });
-    // Remove any extra fields not in spec
+    // Remove any extra fields not in REQUIRED_FIELDS or OPTIONAL_FIELDS
     Object.keys(e).forEach(k => {
-      if (!REQUIRED_FIELDS.includes(k)) {
+      if (!REQUIRED_FIELDS.includes(k) && !OPTIONAL_FIELDS.includes(k)) {
         delete e[k];
       }
     });
+  });
+  return entities;
+}
+
+// ── Resolve idealRange and units from canonical datasets ──────────────────────
+// Overwrites hardcoded idealRange/units strings with values from datasets.
+// This ensures a single source of truth: datasets → entities → pages.
+function resolveRangesFromDatasets(entities) {
+  if (!loader) return entities;
+  entities.forEach(e => {
+    if (e.rangeDataset && e.rangeRecord) {
+      const rec = loader.getRecord(e.rangeDataset, e.rangeRecord);
+      if (rec) {
+        // Build idealRange string from canonical record
+        if (rec.target) {
+          const t = rec.target;
+          const unit = rec.unit || e.units || '';
+          if (t.min !== null && t.min !== undefined && t.max !== null && t.max !== undefined) {
+            e.idealRange = `${t.min}–${t.max} ${unit}`.trim();
+          } else if (t.ideal !== null && t.ideal !== undefined) {
+            e.idealRange = `${t.ideal} ${unit} (ideal)`.trim();
+          }
+        }
+        if (rec.unit) e.units = rec.unit;
+      } else {
+        // Try resolved-ranges fallback
+        const resolved = loader.getEntityRange(e.id);
+        if (resolved) {
+          if (resolved.idealRange) e.idealRange = resolved.idealRange;
+          if (resolved.units)      e.units = resolved.units;
+        }
+      }
+    } else {
+      // No explicit dataset reference: try resolved-ranges by entity ID
+      if (loader) {
+        const resolved = loader.getEntityRange(e.id);
+        if (resolved && resolved.idealRange) {
+          e.idealRange = resolved.idealRange;
+          if (resolved.units) e.units = resolved.units;
+          if (!e.rangeDataset) e.rangeDataset = resolved.rangeDataset;
+          if (!e.rangeRecord)  e.rangeRecord  = resolved.rangeRecord;
+        }
+      }
+    }
   });
   return entities;
 }
@@ -86,6 +140,10 @@ const entityGroups = {
 };
 
 Object.entries(entityGroups).forEach(([name, arr]) => enforce(arr, name));
+
+// Resolve idealRange/units from canonical datasets
+Object.values(entityGroups).forEach(arr => resolveRangesFromDatasets(arr));
+if (loader) console.log('  ✓ idealRange and units resolved from canonical datasets');
 
 // ── Write entity JSON files ────────────────────────────────────────────────────
 

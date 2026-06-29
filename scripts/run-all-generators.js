@@ -1,7 +1,7 @@
 /**
  * run-all-generators.js
  *
- * Mandatory build order (Phase 5A):
+ * Mandatory build order (Phase 5A / 5A.5 / 5A.75):
  *   1.  Generate calculators (programmatic clusters)
  *   2.  Generate resources (/resources/)
  *   3.  Generate academy   (/academy/)
@@ -74,8 +74,15 @@ require(path.join(__dirname, 'generate-formulas.js'));
 require(path.join(__dirname, 'generate-glossary.js'));
 require(path.join(__dirname, 'generate-reference.js'));
 
+// ── Phase 5A.75: Canonical Data Layer ────────────────────────────────────────
+// Must run before entity compilation so datasets are available for range resolution.
+// 5A.75-a: Compile all 15 canonical dataset JSON files
+require(path.join(__dirname, 'generate-datasets.js'));
+// 5A.75-b: Generate /reference/datasets/ documentation pages
+require(path.join(__dirname, 'generate-data-docs.js'));
+
 // ── Phase 5A.5: Entity layer ──────────────────────────────────────────────────
-// 5A.5-a: Compile entity JSON from source modules
+// 5A.5-a: Compile entity JSON from source modules (resolves idealRange from datasets)
 require(path.join(__dirname, 'generate-entities.js'));
 // 5A.5-b: Generate /entities/ HTML pages
 require(path.join(__dirname, 'generate-entity-pages.js'));
@@ -100,7 +107,11 @@ require(path.join(__dirname, 'generate-breadcrumbs.js'));
 // ── Step 12: Search index ─────────────────────────────────────────────────────
 require(path.join(__dirname, 'generate-search-index.js'));
 
-// ── Step 13a: Validate entity layer ──────────────────────────────────────────
+// ── Step 13a: Validate canonical data layer ──────────────────────────────────
+console.log('Running validate-datasets.js...');
+execSync('node scripts/validate-datasets.js', { cwd: root, stdio: 'inherit' });
+
+// ── Step 13b: Validate entity layer ──────────────────────────────────────────
 console.log('Running validate-entities.js...');
 execSync('node scripts/validate-entities.js', { cwd: root, stdio: 'inherit' });
 

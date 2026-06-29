@@ -1,0 +1,371 @@
+{
+  "datasetId": "chemical-properties",
+  "version": "2026.07",
+  "lastReviewed": "2026-07-01",
+  "description": "Canonical chemical properties: formula, purpose, measurement units, and safety information. One record per distinct chemical compound or parameter.",
+  "maintainer": "WaterBalanceTools",
+  "sourcePriority": [
+    "scientific-literature",
+    "industry-standards",
+    "manufacturer-documentation"
+  ],
+  "records": [
+    {
+      "id": "free-chlorine",
+      "name": "Free Chlorine",
+      "formula": "HOCl / OCl⁻",
+      "entityId": "free-chlorine",
+      "purpose": "Primary disinfectant in chlorine pool systems. Kills bacteria, viruses, and algae.",
+      "measurement": "DPD test kit (free chlorine reagent), digital photometer, ORP probe",
+      "primaryUnit": "ppm",
+      "alternateUnits": [
+        "mg/L"
+      ],
+      "activeForm": "HOCl (hypochlorous acid)",
+      "activeFormPct": {
+        "pH7_2": 67,
+        "pH7_4": 54,
+        "pH7_6": 40,
+        "pH8_0": 22
+      },
+      "affectedBy": [
+        "ph",
+        "cyanuric-acid",
+        "temperature",
+        "sunlight",
+        "bather-load"
+      ],
+      "relatedChemicals": [
+        "combined-chlorine",
+        "total-chlorine",
+        "cyanuric-acid"
+      ],
+      "storageRequirements": "Cool, dry, well-ventilated area. Away from heat and oxidizers.",
+      "safetyNotes": "Oxidizer. Do not mix with other chemicals. Eye and respiratory irritant at high concentrations."
+    },
+    {
+      "id": "combined-chlorine",
+      "name": "Combined Chlorine",
+      "formula": "NH₂Cl / NHCl₂ / NCl₃",
+      "entityId": "combined-chlorine",
+      "purpose": "Chloramines formed when free chlorine reacts with nitrogen compounds. Largely ineffective as sanitizer. Causes odor and irritation.",
+      "measurement": "DPD test: TC minus FC = CC",
+      "primaryUnit": "ppm",
+      "alternateUnits": [
+        "mg/L"
+      ],
+      "activeForm": "Mono/di/trichloramine",
+      "affectedBy": [
+        "bather-load",
+        "nitrogen-compounds",
+        "urea",
+        "free-chlorine"
+      ],
+      "relatedChemicals": [
+        "free-chlorine",
+        "total-chlorine"
+      ],
+      "storageRequirements": "N/A — exists in pool water",
+      "safetyNotes": "Causes eye irritation, respiratory irritation, and skin irritation. Remove by breakpoint chlorination."
+    },
+    {
+      "id": "ph-parameter",
+      "name": "pH",
+      "formula": "H⁺ / OH⁻ equilibrium",
+      "entityId": "ph",
+      "purpose": "Measure of acidity/alkalinity. Controls chlorine activity ratio (HOCl vs OCl⁻) and water comfort.",
+      "measurement": "Phenol red indicator, DPD combo kits, digital pH meter",
+      "primaryUnit": "pH units",
+      "alternateUnits": [],
+      "affectedBy": [
+        "total-alkalinity",
+        "co2-offgassing",
+        "temperature",
+        "chemical-additions",
+        "rainfall"
+      ],
+      "relatedChemicals": [
+        "total-alkalinity",
+        "calcium-hardness",
+        "free-chlorine"
+      ],
+      "storageRequirements": "N/A — water parameter",
+      "safetyNotes": "Corrosive water (pH < 7) damages equipment and irritates skin. Very alkaline water (pH > 8.2) reduces chlorine effectiveness."
+    },
+    {
+      "id": "total-alkalinity",
+      "name": "Total Alkalinity",
+      "formula": "HCO₃⁻ / CO₃²⁻ / OH⁻",
+      "entityId": "alkalinity",
+      "purpose": "pH buffer. Resists pH change. Composed primarily of bicarbonate, carbonate, and hydroxide ions.",
+      "measurement": "Sulfuric acid titration (TA drop test), DPD combo kit",
+      "primaryUnit": "ppm",
+      "alternateUnits": [
+        "mg/L as CaCO₃"
+      ],
+      "affectedBy": [
+        "muriatic-acid",
+        "baking-soda",
+        "aeration",
+        "co2-offgassing"
+      ],
+      "relatedChemicals": [
+        "ph-parameter",
+        "calcium-hardness",
+        "lsi-parameter"
+      ],
+      "storageRequirements": "N/A — water parameter",
+      "safetyNotes": "Low TA causes pH instability. High TA makes pH correction difficult."
+    },
+    {
+      "id": "calcium-hardness",
+      "name": "Calcium Hardness",
+      "formula": "Ca²⁺",
+      "entityId": "calcium-hardness",
+      "purpose": "Dissolved calcium ion concentration. Part of LSI. Prevents aggressive water from dissolving calcium from surfaces.",
+      "measurement": "EDTA titration (hardness drop test)",
+      "primaryUnit": "ppm",
+      "alternateUnits": [
+        "mg/L as CaCO₃"
+      ],
+      "affectedBy": [
+        "dilution",
+        "calcium-chloride",
+        "calcium-hypochlorite"
+      ],
+      "relatedChemicals": [
+        "total-alkalinity",
+        "ph-parameter",
+        "lsi-parameter"
+      ],
+      "storageRequirements": "N/A — water parameter",
+      "safetyNotes": "Only lowered by dilution. Cannot be chemically reduced."
+    },
+    {
+      "id": "cyanuric-acid-chem",
+      "name": "Cyanuric Acid",
+      "formula": "C₃H₃N₃O₃",
+      "entityId": "cyanuric-acid",
+      "purpose": "UV stabilizer. Protects free chlorine from UV photolysis. Also reduces active HOCl concentration.",
+      "measurement": "Melamine turbidity test (visual/photometric), Taylor CYA test, BNC strip",
+      "primaryUnit": "ppm",
+      "alternateUnits": [
+        "mg/L"
+      ],
+      "affectedBy": [
+        "dilution",
+        "stabilizer-addition",
+        "trichlor-tablets",
+        "sodium-dichlor"
+      ],
+      "relatedChemicals": [
+        "free-chlorine",
+        "trichlor-tablets",
+        "sodium-dichlor"
+      ],
+      "storageRequirements": "N/A — water parameter. Granular: cool dry location.",
+      "safetyNotes": "Cannot be removed chemically. Only dilution reduces CYA. Above 100 ppm, severely reduces chlorine effectiveness."
+    },
+    {
+      "id": "salt-chem",
+      "name": "Sodium Chloride (Salt)",
+      "formula": "NaCl",
+      "entityId": "salt",
+      "purpose": "Source of chloride ions for electrolysis by salt chlorinator cells. Produces hypochlorous acid.",
+      "measurement": "Salt test kit (silver nitrate), digital salt meter, TDS meter",
+      "primaryUnit": "ppm",
+      "alternateUnits": [
+        "mg/L"
+      ],
+      "affectedBy": [
+        "dilution",
+        "pool-salt-addition"
+      ],
+      "relatedChemicals": [
+        "free-chlorine",
+        "total-dissolved-solids"
+      ],
+      "storageRequirements": "40-lb bags in dry location. Keep sealed.",
+      "safetyNotes": "Minimal toxicity at pool concentrations (3,200 ppm). High purity required (no additives)."
+    },
+    {
+      "id": "tds-chem",
+      "name": "Total Dissolved Solids",
+      "formula": "All dissolved ions",
+      "entityId": "total-dissolved-solids",
+      "purpose": "Cumulative measure of all dissolved matter. High TDS indicates water is approaching end of useful life.",
+      "measurement": "Digital TDS meter, conductivity probe",
+      "primaryUnit": "ppm",
+      "alternateUnits": [
+        "mg/L",
+        "μS/cm"
+      ],
+      "affectedBy": [
+        "all-chemical-additions",
+        "evaporation",
+        "bather-waste",
+        "time"
+      ],
+      "relatedChemicals": [
+        "salt-chem"
+      ],
+      "storageRequirements": "N/A — water parameter",
+      "safetyNotes": "Only reduced by water replacement (partial or full drain and refill)."
+    },
+    {
+      "id": "sodium-hypochlorite",
+      "name": "Sodium Hypochlorite",
+      "formula": "NaOCl",
+      "entityId": "liquid-chlorine",
+      "purpose": "Active ingredient in liquid chlorine. Disinfectant and oxidizer.",
+      "measurement": "N/A — product characteristic (label concentration)",
+      "primaryUnit": "percent",
+      "alternateUnits": [],
+      "affectedBy": [
+        "temperature",
+        "sunlight",
+        "time",
+        "ph"
+      ],
+      "relatedChemicals": [
+        "free-chlorine",
+        "calcium-hypochlorite"
+      ],
+      "storageRequirements": "Cool, dark, ventilated location. Away from heat. Use within 60–90 days.",
+      "safetyNotes": "Corrosive. Strong oxidizer. Do not mix with acids or other pool chemicals. Eye and skin hazard."
+    },
+    {
+      "id": "calcium-hypochlorite-chem",
+      "name": "Calcium Hypochlorite",
+      "formula": "Ca(OCl)₂",
+      "entityId": "calcium-hypochlorite",
+      "purpose": "Dry granular or tablet chlorine. High concentration (65–73% available chlorine).",
+      "measurement": "N/A — product characteristic",
+      "primaryUnit": "percent",
+      "alternateUnits": [],
+      "affectedBy": [
+        "moisture",
+        "temperature",
+        "contamination"
+      ],
+      "relatedChemicals": [
+        "free-chlorine",
+        "calcium-hardness"
+      ],
+      "storageRequirements": "Cool, dry location in original container. Do not store with other pool chemicals, fuels, or organic materials.",
+      "safetyNotes": "Strong oxidizer. Fire and explosion hazard if contaminated. Do not mix with trichlor, acids, or any liquid. Pre-dissolve before pool addition."
+    },
+    {
+      "id": "trichlor-chem",
+      "name": "Trichloro-s-triazinetrione",
+      "formula": "C₃Cl₃N₃O₃",
+      "entityId": "trichlor-tablets",
+      "purpose": "Stabilized slow-dissolving chlorine tablet. 90% available chlorine. Contains 58% CYA.",
+      "measurement": "N/A — product characteristic",
+      "primaryUnit": "percent",
+      "alternateUnits": [],
+      "affectedBy": [
+        "water-flow",
+        "temperature"
+      ],
+      "relatedChemicals": [
+        "free-chlorine",
+        "cyanuric-acid-chem"
+      ],
+      "storageRequirements": "Cool, dry, ventilated. Original container. Away from metals and other chemicals.",
+      "safetyNotes": "Low pH (~2.9). Oxidizer. Fire risk when wet. NEVER mix with calcium hypochlorite — violent reaction."
+    },
+    {
+      "id": "muriatic-acid-chem",
+      "name": "Muriatic Acid (Hydrochloric Acid)",
+      "formula": "HCl",
+      "entityId": "muriatic-acid",
+      "purpose": "Lowers pool pH and total alkalinity.",
+      "measurement": "N/A — product characteristic (31.45% concentration)",
+      "primaryUnit": "percent",
+      "alternateUnits": [],
+      "affectedBy": [
+        "temperature"
+      ],
+      "relatedChemicals": [
+        "ph-parameter",
+        "total-alkalinity"
+      ],
+      "storageRequirements": "Original container. Cool, ventilated area. Away from metals. Store separately from all other chemicals.",
+      "safetyNotes": "Corrosive acid. Fumes toxic. Add acid TO water, never water to acid. Eye and respiratory protection required. Do not mix with chlorine products."
+    },
+    {
+      "id": "sodium-carbonate",
+      "name": "Sodium Carbonate (Soda Ash)",
+      "formula": "Na₂CO₃",
+      "entityId": "soda-ash",
+      "purpose": "Raises pool pH with minimal effect on total alkalinity.",
+      "measurement": "N/A — product added by measurement",
+      "primaryUnit": "oz or lbs",
+      "alternateUnits": [],
+      "affectedBy": [],
+      "relatedChemicals": [
+        "ph-parameter"
+      ],
+      "storageRequirements": "Sealed container in dry location.",
+      "safetyNotes": "Mild irritant. Pre-dissolve before pool addition to prevent cloudiness."
+    },
+    {
+      "id": "sodium-bicarbonate-chem",
+      "name": "Sodium Bicarbonate (Baking Soda)",
+      "formula": "NaHCO₃",
+      "entityId": "baking-soda",
+      "purpose": "Raises total alkalinity with modest pH increase.",
+      "measurement": "N/A — product added by measurement",
+      "primaryUnit": "oz or lbs",
+      "alternateUnits": [],
+      "affectedBy": [],
+      "relatedChemicals": [
+        "total-alkalinity",
+        "ph-parameter"
+      ],
+      "storageRequirements": "Sealed container in dry location.",
+      "safetyNotes": "Generally safe. Minimal hazard. Can be added directly around pool perimeter."
+    },
+    {
+      "id": "calcium-chloride-chem",
+      "name": "Calcium Chloride",
+      "formula": "CaCl₂",
+      "entityId": "calcium-chloride",
+      "purpose": "Raises calcium hardness.",
+      "measurement": "N/A — product added by measurement",
+      "primaryUnit": "oz or lbs",
+      "alternateUnits": [],
+      "affectedBy": [],
+      "relatedChemicals": [
+        "calcium-hardness"
+      ],
+      "storageRequirements": "Sealed container. Absorbs moisture from air. Keep dry.",
+      "safetyNotes": "Exothermic dissolution. Pre-dissolve in large bucket of pool water. Add slowly — significant heat generated."
+    },
+    {
+      "id": "lsi-parameter",
+      "name": "Langelier Saturation Index",
+      "formula": "pH + TF + CHF + TAF − TDS_constant",
+      "entityId": "lsi",
+      "purpose": "Composite balance index. Score of 0 = balanced. Negative = corrosive. Positive = scale-forming.",
+      "measurement": "Calculated from pH, temperature, calcium hardness, total alkalinity, TDS",
+      "primaryUnit": "dimensionless",
+      "alternateUnits": [],
+      "affectedBy": [
+        "ph-parameter",
+        "temperature",
+        "calcium-hardness",
+        "total-alkalinity",
+        "tds-chem"
+      ],
+      "relatedChemicals": [
+        "ph-parameter",
+        "calcium-hardness",
+        "total-alkalinity"
+      ],
+      "storageRequirements": "N/A — calculated parameter",
+      "safetyNotes": "LSI below −0.3: corrosive. LSI above +0.5: scale-forming. Both damage surfaces and equipment."
+    }
+  ]
+}
