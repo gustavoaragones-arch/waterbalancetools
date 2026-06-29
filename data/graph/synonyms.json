@@ -1,0 +1,248 @@
+{
+  "free-chlorine": [
+    "FC",
+    "free chlorine",
+    "available chlorine",
+    "FAC",
+    "residual chlorine",
+    "pool chlorine"
+  ],
+  "combined-chlorine": [
+    "CC",
+    "combined chlorine",
+    "chloramine",
+    "chloramines",
+    "bound chlorine",
+    "combined available chlorine"
+  ],
+  "total-chlorine": [
+    "TC",
+    "total chlorine",
+    "total available chlorine"
+  ],
+  "cyanuric-acid": [
+    "CYA",
+    "cyanuric acid",
+    "stabilizer",
+    "conditioner",
+    "isocyanuric acid",
+    "chlorine stabilizer",
+    "pool conditioner"
+  ],
+  "ph": [
+    "pH",
+    "potential hydrogen",
+    "water pH",
+    "acidity",
+    "alkalinity level"
+  ],
+  "alkalinity": [
+    "TA",
+    "total alkalinity",
+    "bicarbonate alkalinity",
+    "carbonate alkalinity",
+    "pH buffer"
+  ],
+  "lsi": [
+    "LSI",
+    "Langelier Saturation Index",
+    "saturation index",
+    "Langelier index",
+    "water balance index"
+  ],
+  "orp": [
+    "ORP",
+    "oxidation-reduction potential",
+    "redox",
+    "sanitizing capacity"
+  ],
+  "total-dissolved-solids": [
+    "TDS",
+    "total dissolved solids",
+    "dissolved solids"
+  ],
+  "calcium-hardness": [
+    "CH",
+    "calcium hardness",
+    "calcium",
+    "water hardness",
+    "hardness"
+  ],
+  "salt": [
+    "NaCl",
+    "pool salt",
+    "sodium chloride",
+    "salt level",
+    "saltwater"
+  ],
+  "bromine": [
+    "Br",
+    "BCDMH",
+    "bromine",
+    "spa bromine",
+    "hot tub bromine"
+  ],
+  "phosphate": [
+    "PO4",
+    "phosphate",
+    "phosphates",
+    "phosphorus"
+  ],
+  "copper": [
+    "Cu",
+    "copper",
+    "copper staining"
+  ],
+  "iron": [
+    "Fe",
+    "iron",
+    "ferrous iron",
+    "ferric iron",
+    "rust staining"
+  ],
+  "ozone": [
+    "O3",
+    "ozone",
+    "ozone generator",
+    "ozone sanitizer"
+  ],
+  "hydrogen-peroxide": [
+    "H2O2",
+    "hydrogen peroxide",
+    "peroxide"
+  ],
+  "temperature": [
+    "temperature",
+    "water temp",
+    "pool temperature",
+    "water temperature"
+  ],
+  "gallons": [
+    "gal",
+    "gallons",
+    "US gallons",
+    "pool volume"
+  ],
+  "ppm": [
+    "ppm",
+    "parts per million",
+    "mg/L",
+    "milligrams per liter"
+  ],
+  "flow-rate": [
+    "GPM",
+    "gallons per minute",
+    "pump flow",
+    "flow rate"
+  ],
+  "turnover-time": [
+    "turnover rate",
+    "pump turnover",
+    "filter turnover",
+    "turnover time"
+  ],
+  "pump": [
+    "pool pump",
+    "circulation pump",
+    "VSP",
+    "variable speed pump"
+  ],
+  "salt-chlorinator": [
+    "SWCG",
+    "saltwater generator",
+    "chlorine generator",
+    "salt cell"
+  ],
+  "automatic-chlorinator": [
+    "chlorinator",
+    "erosion feeder",
+    "tablet feeder",
+    "automatic chlorinator"
+  ],
+  "shock-treatment": [
+    "shock",
+    "pool shock",
+    "superchlorination",
+    "hyperchlorination"
+  ],
+  "breakpoint-chlorination": [
+    "BPC",
+    "breakpoint chlorination",
+    "breakpoint"
+  ],
+  "backwashing": [
+    "backwash",
+    "filter backwash",
+    "backwashing"
+  ],
+  "hot-tub": [
+    "hot tub",
+    "spa",
+    "jacuzzi",
+    "hydrotherapy spa"
+  ],
+  "saltwater-pool": [
+    "salt pool",
+    "saltwater pool",
+    "salt chlorinator pool"
+  ],
+  "liquid-chlorine": [
+    "sodium hypochlorite",
+    "bleach",
+    "pool bleach",
+    "liquid chlorine"
+  ],
+  "calcium-hypochlorite": [
+    "cal-hypo",
+    "calcium hypochlorite",
+    "granular shock",
+    "65% shock"
+  ],
+  "trichlor-tablets": [
+    "chlorine tablets",
+    "trichlor",
+    "3-inch tablets",
+    "stabilized tablets"
+  ],
+  "sodium-dichlor": [
+    "dichlor",
+    "sodium dichlor",
+    "stabilized shock"
+  ],
+  "muriatic-acid": [
+    "HCl",
+    "hydrochloric acid",
+    "muriatic acid",
+    "pool acid",
+    "pH down"
+  ],
+  "soda-ash": [
+    "sodium carbonate",
+    "soda ash",
+    "pH up",
+    "pH increaser"
+  ],
+  "baking-soda": [
+    "sodium bicarbonate",
+    "baking soda",
+    "bicarb",
+    "alkalinity increaser"
+  ],
+  "phta": [
+    "PHTA",
+    "Pool & Hot Tub Alliance",
+    "APSP",
+    "pool industry association"
+  ],
+  "cdc": [
+    "CDC",
+    "Centers for Disease Control",
+    "healthy swimming"
+  ],
+  "taylor-technologies": [
+    "Taylor Technologies",
+    "Taylor",
+    "Taylor test kits",
+    "K-2006"
+  ]
+}

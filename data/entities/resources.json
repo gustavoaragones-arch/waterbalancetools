@@ -1,0 +1,361 @@
+[
+  {
+    "id": "maintenance-checklist",
+    "type": "resource",
+    "name": "Pool Maintenance Checklist",
+    "shortDescription": "A printable weekly pool maintenance checklist covering testing, cleaning, and chemical additions.",
+    "longDescription": "The Pool Maintenance Checklist is a free printable resource that guides residential pool owners through weekly pool care: testing water chemistry, adding chemicals, cleaning skimmer baskets, brushing walls, checking filter pressure, and verifying equipment operation. Following a consistent checklist prevents the buildup of problems that lead to expensive treatments.",
+    "aliases": [
+      "maintenance log",
+      "weekly checklist"
+    ],
+    "synonyms": [
+      "pool care checklist",
+      "maintenance schedule"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "vr-04",
+      "fund-06"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-19",
+      "ref-20"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "testing",
+      "balancing",
+      "filtration",
+      "swimming-pool"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "maintenance checklist",
+      "pool maintenance log",
+      "weekly pool care",
+      "printable checklist"
+    ]
+  },
+  {
+    "id": "maintenance-log",
+    "type": "resource",
+    "name": "Hot Tub Maintenance Log",
+    "shortDescription": "A printable log for recording hot tub and spa water tests, chemical additions, and service notes.",
+    "longDescription": "The Hot Tub Maintenance Log tracks daily and weekly spa chemistry readings, chemical doses, filter cleaning, and water change dates. Consistent record-keeping helps identify patterns, troubleshoot problems faster, and demonstrate due diligence for vacation rental operators.",
+    "aliases": [
+      "spa log",
+      "hot tub log"
+    ],
+    "synonyms": [
+      "spa maintenance record"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "hot-tub-chlorine-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "ht-01",
+      "ht-02",
+      "ht-03"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-19"
+    ],
+    "resourceIds": [
+      "hot-tub-maintenance-log"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "testing",
+      "hot-tub",
+      "balancing"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "hot tub log",
+      "spa maintenance log",
+      "hot tub record",
+      "spa care log"
+    ]
+  },
+  {
+    "id": "chemical-log",
+    "type": "resource",
+    "name": "Pool Chemical Log Sheet",
+    "shortDescription": "A printable log for tracking pool chemical inventory, purchases, and usage over time.",
+    "longDescription": "The Pool Chemical Log Sheet provides a structured record of chemical purchases, storage inventory, and usage per maintenance session. It is especially useful for vacation rental operators who must demonstrate chemical compliance and for multi-property managers tracking chemical costs.",
+    "aliases": [
+      "chemical record",
+      "chemical inventory log"
+    ],
+    "synonyms": [
+      "chemical usage log"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "vr-03"
+    ],
+    "glossaryIds": [
+      "gl-092"
+    ],
+    "referenceIds": [],
+    "resourceIds": [
+      "pool-chemical-log-sheet"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "testing",
+      "balancing",
+      "swimming-pool",
+      "vacation-rental-checklist"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "chemical log",
+      "pool chemical record",
+      "chemical usage sheet",
+      "chemical inventory"
+    ]
+  },
+  {
+    "id": "vacation-rental-checklist",
+    "type": "resource",
+    "name": "Airbnb Pool Turnover Checklist",
+    "shortDescription": "A printable turnover checklist for vacation rental pool inspection and chemistry verification between guests.",
+    "longDescription": "The Vacation Rental Pool Turnover Checklist provides a structured protocol for testing, adjusting, and documenting pool chemistry at the start of each guest stay. It covers safety equipment inspection, water chemistry testing, chemical additions, filter check, and safety communication to incoming guests. Used consistently, it reduces liability exposure and ensures every guest has safe pool access.",
+    "aliases": [
+      "turnover checklist",
+      "rental pool checklist"
+    ],
+    "synonyms": [
+      "guest arrival checklist",
+      "short-term rental pool checklist"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "vr-01",
+      "vr-02",
+      "vr-03",
+      "vr-04",
+      "vr-05"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-21"
+    ],
+    "resourceIds": [
+      "airbnb-pool-turnover-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "testing",
+      "balancing",
+      "swimming-pool",
+      "hot-tub"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "vacation rental pool",
+      "Airbnb pool checklist",
+      "rental pool turnover",
+      "guest pool safety"
+    ]
+  },
+  {
+    "id": "water-test-sheet",
+    "type": "resource",
+    "name": "Water Test Log",
+    "shortDescription": "A printable log for recording water test results over time to track chemistry trends.",
+    "longDescription": "The Water Test Log provides a structured format for recording all pool or hot tub chemistry test results over time: free chlorine, pH, alkalinity, calcium hardness, CYA, salt, and any notes on chemical additions or pool events. Tracking readings over time reveals chemistry trends, helps diagnose recurring problems, and supports informed decisions about when water replacement is needed.",
+    "aliases": [
+      "test log",
+      "water test record"
+    ],
+    "synonyms": [
+      "chemistry log",
+      "test results log"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "test-04",
+      "test-05"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-19"
+    ],
+    "resourceIds": [
+      "water-test-log"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "testing",
+      "balancing",
+      "swimming-pool"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "water test log",
+      "test results record",
+      "chemistry tracking",
+      "pool test history"
+    ]
+  },
+  {
+    "id": "opening-checklist",
+    "type": "resource",
+    "name": "Pool Opening Checklist",
+    "shortDescription": "A printable step-by-step checklist for spring pool opening.",
+    "longDescription": "The Pool Opening Checklist guides pool owners through the spring startup process: removing the cover, reinstalling equipment, filling to proper level, starting the pump, and completing a full water balance before the first swim. It provides space for recording test results and chemical additions during the opening process.",
+    "aliases": [
+      "spring opening checklist"
+    ],
+    "synonyms": [
+      "pool startup checklist"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [
+      "pool-opening-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "pool-opening",
+      "balancing",
+      "swimming-pool"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "pool opening checklist",
+      "spring pool startup",
+      "opening the pool"
+    ]
+  },
+  {
+    "id": "closing-checklist",
+    "type": "resource",
+    "name": "Pool Closing Checklist",
+    "shortDescription": "A printable step-by-step checklist for winterizing a pool.",
+    "longDescription": "The Pool Closing Checklist provides a structured process for winterizing a pool: balancing chemistry, adding winter chemicals, lowering water level, blowing out plumbing, installing freeze plugs, removing equipment, and covering the pool. Proper winterization prevents expensive freeze damage.",
+    "aliases": [
+      "winterizing checklist",
+      "closing the pool checklist"
+    ],
+    "synonyms": [
+      "pool shutdown checklist"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "ht-06"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [
+      "pool-closing-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "winterization",
+      "balancing",
+      "swimming-pool"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "pool closing checklist",
+      "winterizing checklist",
+      "closing pool for winter"
+    ]
+  },
+  {
+    "id": "emergency-reference",
+    "type": "resource",
+    "name": "Emergency Recovery Reference",
+    "shortDescription": "A printable quick-reference for emergency pool and spa recovery scenarios.",
+    "longDescription": "The Emergency Recovery Reference provides concise protocols for the most urgent pool chemistry situations: green pool recovery, zero chlorine restoration, chemical overdose response, and equipment failure response. Designed for vacation rental operators and property managers who need clear action steps for uncommon emergencies.",
+    "aliases": [
+      "emergency protocol",
+      "emergency pool guide"
+    ],
+    "synonyms": [
+      "pool emergency reference"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-shock-calculator",
+      "pool-volume-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "vr-06"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-22"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "green-water",
+      "algae",
+      "low-chlorine"
+    ],
+    "relatedEntities": [
+      "shock-treatment",
+      "green-water",
+      "algae",
+      "balancing"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "emergency pool recovery",
+      "green pool emergency",
+      "pool crisis response"
+    ]
+  }
+]

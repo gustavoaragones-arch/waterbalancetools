@@ -1,0 +1,21 @@
+<!-- entity-panel.html — tokens: {{ENTITY_ID}}, {{ENTITY_NAME}}, {{ENTITY_TYPE}},
+     {{ENTITY_SHORT_DESC}}, {{ENTITY_IDEAL_RANGE}}, {{ENTITY_UNITS}},
+     {{ENTITY_CALC_LINKS}}, {{ENTITY_FORMULA_LINKS}}, {{ENTITY_ARTICLE_LINKS}},
+     {{ENTITY_GLOSSARY_LINKS}}, {{ENTITY_RESOURCE_LINKS}}, {{ENTITY_CHART_LINKS}} -->
+<aside class="entity-panel" id="entity-panel-{{ENTITY_ID}}" aria-label="{{ENTITY_NAME}} knowledge panel">
+  <div class="entity-panel-header">
+    <span class="entity-panel-type knowledge-badge knowledge-badge--{{ENTITY_TYPE}}">{{ENTITY_TYPE}}</span>
+    <h3 class="entity-panel-name">{{ENTITY_NAME}}</h3>
+  </div>
+  <p class="entity-panel-desc">{{ENTITY_SHORT_DESC}}</p>
+  {{ENTITY_RANGE_BLOCK}}
+  <div class="entity-panel-links">
+    {{ENTITY_CALC_LINKS}}
+    {{ENTITY_FORMULA_LINKS}}
+    {{ENTITY_ARTICLE_LINKS}}
+    {{ENTITY_GLOSSARY_LINKS}}
+    {{ENTITY_RESOURCE_LINKS}}
+    {{ENTITY_CHART_LINKS}}
+  </div>
+  <a href="/entities/{{ENTITY_ID}}" class="entity-panel-cta">View full entity →</a>
+</aside>

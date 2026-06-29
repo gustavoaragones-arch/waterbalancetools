@@ -22,7 +22,7 @@ const ROOT      = path.join(__dirname, '..');
 const WARN_ONLY = process.argv.includes('--warn-only');
 
 /** Folders/files to skip entirely */
-const SKIP_DIRS = new Set(['node_modules', '_site', '.git', 'assets', 'js', 'data', 'lib']);
+const SKIP_DIRS = new Set(['node_modules', '_site', '.git', 'assets', 'js', 'data', 'lib', 'partials', 'templates']);
 const SKIP_FILES = new Set([
   'templates/programmatic-template.html',
   'components/ad.html',

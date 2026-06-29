@@ -1,0 +1,539 @@
+[
+  {
+    "id": "liquid-chlorine",
+    "type": "chemical-product",
+    "name": "Liquid Chlorine",
+    "shortDescription": "Sodium hypochlorite solution (10–12.5%) — the most commonly used liquid pool sanitizer.",
+    "longDescription": "Liquid chlorine is sodium hypochlorite (NaOCl) solution, typically sold at 10–12.5% available chlorine for pool use (compared to 5–8.25% for household bleach). It is the most widely used chlorine product for pool maintenance: fast-dissolving, no residue, does not raise calcium or CYA, and relatively inexpensive. Degradation: liquid chlorine loses approximately 20–30% potency within 60 days at room temperature and significantly faster in heat. Always buy fresh product and check the manufacture date.",
+    "aliases": [
+      "sodium hypochlorite",
+      "bleach",
+      "chlorine bleach",
+      "pool bleach"
+    ],
+    "synonyms": [
+      "liquid sodium hypochlorite"
+    ],
+    "idealRange": "N/A",
+    "units": "fl oz, gallons",
+    "calculatorIds": [
+      "pool-chlorine-calculator",
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-02",
+      "formula-03"
+    ],
+    "academyIds": [
+      "san-04",
+      "san-05"
+    ],
+    "glossaryIds": [
+      "gl-026"
+    ],
+    "referenceIds": [
+      "ref-11"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "sodium-hypochlorite",
+      "sanitizing",
+      "shock-treatment"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "liquid chlorine",
+      "sodium hypochlorite",
+      "pool bleach",
+      "liquid pool sanitizer"
+    ]
+  },
+  {
+    "id": "calcium-hypochlorite",
+    "type": "chemical-product",
+    "name": "Calcium Hypochlorite",
+    "shortDescription": "Granular or tablet pool shock available at 65% or 73% available chlorine (cal-hypo).",
+    "longDescription": "Calcium hypochlorite (cal-hypo) is a dry granular or tablet chlorine compound available at 65% and 73% available chlorine — the most concentrated of common pool shock products. It raises free chlorine rapidly and is the preferred product for breakpoint chlorination and algae recovery. Unlike trichlor and dichlor, it does not add CYA. However, it does add calcium — relevant in pools with already high calcium hardness. Must be pre-dissolved in water before adding to the pool; direct application can bleach liners and damage surfaces.",
+    "aliases": [
+      "cal-hypo",
+      "calcium hypochlorite shock",
+      "65% shock"
+    ],
+    "synonyms": [
+      "granular shock",
+      "calcium chlorinating compound"
+    ],
+    "idealRange": "N/A",
+    "units": "lbs, oz",
+    "calculatorIds": [
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "san-05",
+      "san-03"
+    ],
+    "glossaryIds": [
+      "gl-025"
+    ],
+    "referenceIds": [
+      "ref-05"
+    ],
+    "resourceIds": [
+      "pool-shock-log"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "shock-treatment",
+      "calcium-hardness",
+      "breakpoint-chlorination"
+    ],
+    "sourceOrganizations": [
+      "phta",
+      "taylor-technologies"
+    ],
+    "keywords": [
+      "calcium hypochlorite",
+      "cal-hypo",
+      "pool shock",
+      "granular shock",
+      "65% shock"
+    ]
+  },
+  {
+    "id": "sodium-dichlor",
+    "type": "chemical-product",
+    "name": "Dichlor",
+    "shortDescription": "A stabilized granular shock (56–62% available chlorine) that adds both chlorine and CYA.",
+    "longDescription": "Sodium dichloro-s-triazinetrione (dichlor) is a stabilized granular chlorine compound containing approximately 56–62% available chlorine and 57% CYA by weight. It dissolves quickly and is convenient for pool shocking, but each pound added raises CYA by approximately 6–7 ppm per 10,000 gallons. Regular use as a shock product will accumulate CYA rapidly. Best used sparingly when CYA needs to be raised simultaneously with chlorine at season opening or after a significant drain. Not recommended for routine shocking because of CYA accumulation.",
+    "aliases": [
+      "dichlor",
+      "sodium dichloro-s-triazinetrione"
+    ],
+    "synonyms": [
+      "granular dichlor",
+      "stabilized shock"
+    ],
+    "idealRange": "N/A",
+    "units": "lbs, oz",
+    "calculatorIds": [
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "san-05"
+    ],
+    "glossaryIds": [
+      "gl-023"
+    ],
+    "referenceIds": [
+      "ref-04"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "cyanuric-acid",
+      "shock-treatment"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "dichlor",
+      "sodium dichlor",
+      "stabilized shock",
+      "granular dichlor",
+      "CYA shock"
+    ]
+  },
+  {
+    "id": "trichlor-tablets",
+    "type": "chemical-product",
+    "name": "Trichlor Tablets",
+    "shortDescription": "Stabilized chlorine tablets (90% available chlorine) for use in automatic chlorinators and floaters.",
+    "longDescription": "Trichloro-s-triazinetrione (trichlor) tablets contain approximately 90% available chlorine and 58% CYA by weight. They dissolve slowly and are used in automatic chlorinators, floaters, and skimmer baskets for consistent baseline chlorination. Very acidic (pH ~2.9) — repeated use will lower pool pH and alkalinity over time. CYA accumulation from trichlor is the most common cause of high CYA in residential pools. Should not be mixed with calcium hypochlorite — fire and explosion risk.",
+    "aliases": [
+      "3-inch tablets",
+      "chlorine tablets",
+      "trichlor tabs",
+      "1-inch tablets"
+    ],
+    "synonyms": [
+      "slow-dissolving tablets",
+      "stabilized tablets"
+    ],
+    "idealRange": "N/A",
+    "units": "tablets, lbs",
+    "calculatorIds": [
+      "pool-chlorine-calculator"
+    ],
+    "formulaIds": [
+      "formula-02"
+    ],
+    "academyIds": [
+      "san-04",
+      "eq-05"
+    ],
+    "glossaryIds": [
+      "gl-024"
+    ],
+    "referenceIds": [
+      "ref-04"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "cyanuric-acid",
+      "automatic-chlorinator",
+      "ph"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "trichlor tablets",
+      "chlorine tablets",
+      "3-inch tablets",
+      "stabilized chlorine"
+    ]
+  },
+  {
+    "id": "muriatic-acid",
+    "type": "chemical-product",
+    "name": "Muriatic Acid",
+    "shortDescription": "Hydrochloric acid (31.45%) used to lower pH and total alkalinity in pool water.",
+    "longDescription": "Muriatic acid (hydrochloric acid, HCl) at 31.45% concentration is the standard product for lowering pH and total alkalinity in pools. It reacts quickly and is highly effective but requires careful handling — it is strongly corrosive and produces acidic vapors. Always add acid to water (not water to acid), pre-dilute in a bucket of pool water, and add near return jets with pump running. Dry acid (sodium bisulfate) is a safer-handling alternative that produces the same chemistry result. Store in original container away from chlorine products.",
+    "aliases": [
+      "HCl",
+      "hydrochloric acid",
+      "acid",
+      "pH decreaser"
+    ],
+    "synonyms": [
+      "pool acid",
+      "swimming pool acid"
+    ],
+    "idealRange": "N/A",
+    "units": "fl oz, gallons",
+    "calculatorIds": [
+      "pool-ph-calculator",
+      "pool-alkalinity-calculator"
+    ],
+    "formulaIds": [
+      "formula-04",
+      "formula-05"
+    ],
+    "academyIds": [
+      "wb-01",
+      "wb-02",
+      "wb-06",
+      "ts-05"
+    ],
+    "glossaryIds": [
+      "gl-033"
+    ],
+    "referenceIds": [
+      "ref-09",
+      "ref-08",
+      "ref-04"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "scaling",
+      "high-ph"
+    ],
+    "relatedEntities": [
+      "ph",
+      "alkalinity",
+      "lsi",
+      "balancing"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "muriatic acid",
+      "HCl",
+      "pool acid",
+      "pH down",
+      "hydrochloric acid"
+    ]
+  },
+  {
+    "id": "soda-ash",
+    "type": "chemical-product",
+    "name": "Soda Ash",
+    "shortDescription": "Sodium carbonate — used to raise pH in pool water.",
+    "longDescription": "Soda ash (sodium carbonate, Na₂CO₃) is the standard product for raising pH in pool water. Unlike sodium bicarbonate, soda ash primarily raises pH with a modest effect on alkalinity. Pre-dissolve in a bucket of water before adding to prevent white cloudiness in the pool. Typical dose: 6 oz raises pH by 0.2 in a 10,000-gallon pool. Too much soda ash can cause temporary cloudiness from calcium carbonate precipitation.",
+    "aliases": [
+      "sodium carbonate",
+      "pH up",
+      "pH increaser",
+      "pH raiser"
+    ],
+    "synonyms": [
+      "sodium carbonate",
+      "washing soda"
+    ],
+    "idealRange": "N/A",
+    "units": "oz, lbs",
+    "calculatorIds": [
+      "pool-ph-calculator"
+    ],
+    "formulaIds": [
+      "formula-04"
+    ],
+    "academyIds": [
+      "wb-01",
+      "wb-06"
+    ],
+    "glossaryIds": [
+      "gl-034"
+    ],
+    "referenceIds": [
+      "ref-09"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "low-ph"
+    ],
+    "relatedEntities": [
+      "ph",
+      "alkalinity",
+      "balancing"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "soda ash",
+      "sodium carbonate",
+      "pH up",
+      "pH increaser",
+      "raise pH"
+    ]
+  },
+  {
+    "id": "baking-soda",
+    "type": "chemical-product",
+    "name": "Baking Soda",
+    "shortDescription": "Sodium bicarbonate — the standard product for raising total alkalinity in pool water.",
+    "longDescription": "Sodium bicarbonate (NaHCO₃), commonly called baking soda, is the standard product for raising total alkalinity in pool water. It raises TA with a modest, predictable pH increase (typically 0.1–0.2 pH units for a standard dose). 1.5 lbs per 10,000 gallons raises TA by approximately 10 ppm. Pre-dissolve in a bucket of pool water before broadcasting around the pool perimeter. Pool-grade sodium bicarbonate is identical in chemistry to food-grade baking soda but is sold in larger quantities.",
+    "aliases": [
+      "sodium bicarbonate",
+      "bicarb",
+      "alkalinity increaser",
+      "alkalinity up"
+    ],
+    "synonyms": [
+      "sodium hydrogen carbonate"
+    ],
+    "idealRange": "N/A",
+    "units": "lbs, oz",
+    "calculatorIds": [
+      "pool-alkalinity-calculator"
+    ],
+    "formulaIds": [
+      "formula-05"
+    ],
+    "academyIds": [
+      "wb-02",
+      "wb-06"
+    ],
+    "glossaryIds": [
+      "gl-035"
+    ],
+    "referenceIds": [
+      "ref-08"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "alkalinity",
+      "ph",
+      "balancing"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "baking soda",
+      "sodium bicarbonate",
+      "alkalinity increaser",
+      "raise alkalinity",
+      "TA up"
+    ]
+  },
+  {
+    "id": "calcium-chloride",
+    "type": "chemical-product",
+    "name": "Calcium Chloride",
+    "shortDescription": "Used to raise calcium hardness in pool water.",
+    "longDescription": "Calcium chloride (CaCl₂) is the chemical used to raise calcium hardness in pool water. It dissolves exothermically (generates heat) — always pre-dissolve in a large bucket of water before adding to the pool, or add very slowly near a return jet. Allow 4–6 hours for full distribution before retesting. 12 oz raises calcium hardness by approximately 10 ppm in a 10,000-gallon pool. Calcium hardness can only be lowered by partial drain and refill — there is no chemical that removes calcium from pool water.",
+    "aliases": [
+      "cal chloride",
+      "hardness increaser",
+      "calcium up"
+    ],
+    "synonyms": [
+      "calcium chloride flake",
+      "pool hardness increaser"
+    ],
+    "idealRange": "N/A",
+    "units": "lbs, oz",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "wb-03",
+      "wb-06"
+    ],
+    "glossaryIds": [
+      "gl-010"
+    ],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "corrosion"
+    ],
+    "relatedEntities": [
+      "calcium-hardness",
+      "lsi",
+      "balancing"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "calcium chloride",
+      "hardness increaser",
+      "raise calcium",
+      "calcium up"
+    ]
+  },
+  {
+    "id": "stabilizer",
+    "type": "chemical-product",
+    "name": "Stabilizer / CYA Granules",
+    "shortDescription": "Granular cyanuric acid product used to raise CYA to the target stabilizer level.",
+    "longDescription": "Pool stabilizer (cyanuric acid granules) is added to outdoor pools at the start of the season to raise CYA to the target range (30–50 ppm for standard pools, 60–80 ppm for salt pools). It dissolves slowly — place in a nylon sock and hang in front of a return jet, or pre-dissolve in warm water. Allow 24–48 hours before retesting. Never add to an indoor pool or covered spa. Stabilizer is also added gradually by routine use of trichlor tablets.",
+    "aliases": [
+      "CYA granules",
+      "pool conditioner",
+      "chlorine stabilizer granules"
+    ],
+    "synonyms": [
+      "isocyanuric acid granules"
+    ],
+    "idealRange": "N/A",
+    "units": "lbs, oz",
+    "calculatorIds": [
+      "pool-cyanuric-acid-calculator"
+    ],
+    "formulaIds": [
+      "formula-07"
+    ],
+    "academyIds": [
+      "wb-04"
+    ],
+    "glossaryIds": [
+      "gl-011"
+    ],
+    "referenceIds": [
+      "ref-07"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "low-chlorine"
+    ],
+    "relatedEntities": [
+      "cyanuric-acid",
+      "free-chlorine",
+      "outdoor-pool"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "stabilizer",
+      "CYA granules",
+      "pool conditioner",
+      "chlorine stabilizer",
+      "cyanuric acid product"
+    ]
+  },
+  {
+    "id": "pool-salt",
+    "type": "chemical-product",
+    "name": "Pool Salt",
+    "shortDescription": "High-purity sodium chloride (99.8%+) for use in saltwater pool systems.",
+    "longDescription": "Pool salt is 99.8%+ pure sodium chloride (NaCl) sold specifically for use in saltwater pool systems. It must be free of additives (no anti-caking agents, iodide, or ferrocyanide) that can stain pools and damage salt cells. Sold in 40-lb bags; a typical 20,000-gallon pool requires 350–400 lbs to reach the target 3,200 ppm from zero. Salt does not evaporate and only needs replacement after significant water loss.",
+    "aliases": [
+      "sodium chloride",
+      "salt",
+      "NaCl",
+      "pool grade salt"
+    ],
+    "synonyms": [
+      "swimming pool salt",
+      "saltwater pool salt"
+    ],
+    "idealRange": "N/A",
+    "units": "lbs",
+    "calculatorIds": [
+      "saltwater-pool-salt-calculator"
+    ],
+    "formulaIds": [
+      "formula-06"
+    ],
+    "academyIds": [
+      "eq-04"
+    ],
+    "glossaryIds": [
+      "gl-029"
+    ],
+    "referenceIds": [
+      "ref-06"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "salt",
+      "salt-chlorinator",
+      "saltwater-pool"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "pool salt",
+      "sodium chloride",
+      "saltwater pool salt",
+      "40 lb salt bag"
+    ]
+  }
+]

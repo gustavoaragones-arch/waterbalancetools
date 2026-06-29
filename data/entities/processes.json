@@ -1,0 +1,662 @@
+[
+  {
+    "id": "shock-treatment",
+    "type": "process",
+    "name": "Shock Treatment",
+    "shortDescription": "Adding a large dose of chlorine or non-chlorine oxidizer to destroy combined chlorine, algae, and contaminants.",
+    "longDescription": "Shock treatment (superchlorination) involves raising free chlorine to a high level — typically 10 ppm for maintenance, 10× the combined chlorine level for breakpoint chlorination, or 30 ppm for algae recovery — to eliminate combined chlorine, algae, bacteria, and other contaminants. Use calcium hypochlorite (65%) or liquid chlorine (sodium hypochlorite) for chlorine shocking. Non-chlorine shock (potassium monopersulfate) oxidizes contaminants without adding chlorine — useful when swimming must resume quickly. Always shock after dark to prevent UV degradation of the added chlorine.",
+    "aliases": [
+      "superchlorination",
+      "shock",
+      "pool shock"
+    ],
+    "synonyms": [
+      "hyperchlorination",
+      "breakpoint shock",
+      "chlorine shock"
+    ],
+    "idealRange": "N/A (raises FC to 10–30 ppm temporarily)",
+    "units": "ppm FC",
+    "calculatorIds": [
+      "pool-shock-calculator",
+      "hot-tub-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "san-05",
+      "san-03",
+      "ht-05",
+      "ts-02",
+      "ts-04",
+      "vr-06"
+    ],
+    "glossaryIds": [
+      "gl-007",
+      "gl-021",
+      "gl-004",
+      "gl-025"
+    ],
+    "referenceIds": [
+      "ref-05",
+      "ref-11"
+    ],
+    "resourceIds": [
+      "pool-shock-log",
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart"
+    ],
+    "problemIds": [
+      "algae",
+      "green-water",
+      "strong-chlorine-smell",
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "breakpoint-chlorination",
+      "free-chlorine",
+      "combined-chlorine",
+      "calcium-hypochlorite",
+      "liquid-chlorine",
+      "algae"
+    ],
+    "sourceOrganizations": [
+      "phta",
+      "taylor-technologies"
+    ],
+    "keywords": [
+      "shock treatment",
+      "pool shock",
+      "superchlorination",
+      "breakpoint chlorination",
+      "chlorine shock"
+    ]
+  },
+  {
+    "id": "breakpoint-chlorination",
+    "type": "process",
+    "name": "Breakpoint Chlorination",
+    "shortDescription": "Adding chlorine at 10× the combined chlorine level to destroy all chloramines.",
+    "longDescription": "Breakpoint chlorination is the process of adding enough chlorine to destroy all combined chlorine (chloramines) in pool water. The breakpoint dose is approximately 10 times the current combined chlorine level. Below this threshold, adding chlorine merely adds to combined chlorine; above it, all combined chlorine is oxidized and destroyed. The term \"breakpoint\" describes the inflection point on the chlorine demand curve where adding more chlorine actually increases free chlorine rather than increasing combined chlorine. Combined chlorine above 0.5 ppm is the trigger for breakpoint chlorination.",
+    "aliases": [
+      "breakpoint",
+      "BPC"
+    ],
+    "synonyms": [
+      "superchlorination",
+      "breakpoint shock"
+    ],
+    "idealRange": "FC must reach 10× CC level",
+    "units": "ppm FC",
+    "calculatorIds": [
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "san-03",
+      "san-05",
+      "ts-04"
+    ],
+    "glossaryIds": [
+      "gl-004",
+      "gl-021"
+    ],
+    "referenceIds": [
+      "ref-05"
+    ],
+    "resourceIds": [
+      "pool-shock-log"
+    ],
+    "chartIds": [],
+    "problemIds": [
+      "strong-chlorine-smell",
+      "eye-irritation",
+      "skin-irritation"
+    ],
+    "relatedEntities": [
+      "shock-treatment",
+      "combined-chlorine",
+      "free-chlorine",
+      "chloramines"
+    ],
+    "sourceOrganizations": [
+      "phta",
+      "taylor-technologies"
+    ],
+    "keywords": [
+      "breakpoint chlorination",
+      "BPC",
+      "chloramine removal",
+      "10x combined chlorine",
+      "shock dose"
+    ]
+  },
+  {
+    "id": "backwashing",
+    "type": "process",
+    "name": "Backwashing",
+    "shortDescription": "Reversing water flow through a sand or DE filter to flush trapped debris to waste.",
+    "longDescription": "Backwashing is the process of reversing water flow through a sand or DE filter to dislodge and flush accumulated debris. It is initiated when the filter pressure gauge reads 8–10 psi above the clean baseline. The multiport valve is turned to \"Backwash,\" the pump is run until water runs clear (typically 2–5 minutes), then switched to \"Rinse\" for 30–60 seconds to reseat the sand before returning to \"Filter.\" Backwashing removes water from the pool — factor this into water level management. DE filters require adding fresh DE powder after backwashing to recharged the filter grids.",
+    "aliases": [
+      "backwash",
+      "filter backwash"
+    ],
+    "synonyms": [
+      "filter cleaning",
+      "filter flush"
+    ],
+    "idealRange": "N/A (triggered at 8–10 psi over baseline)",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "eq-01",
+      "eq-02"
+    ],
+    "glossaryIds": [
+      "gl-016",
+      "gl-015"
+    ],
+    "referenceIds": [
+      "ref-12"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "sand-filter",
+      "de-filter",
+      "filtration",
+      "pump"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "backwashing",
+      "backwash filter",
+      "filter pressure",
+      "multiport valve",
+      "filter cleaning"
+    ]
+  },
+  {
+    "id": "winterization",
+    "type": "process",
+    "name": "Winterization",
+    "shortDescription": "The process of closing a pool or hot tub for the winter to prevent freeze damage.",
+    "longDescription": "Winterization (pool closing) involves a specific sequence of steps to protect pool equipment and surfaces from freeze damage during cold weather: balancing water chemistry, adding winter chemicals (algaecide, scale inhibitor), draining water below skimmers and jets, blowing out plumbing lines, plugging returns, removing and storing equipment, and covering the pool. Hot tub winterization involves either proper insulation and continuous low-level heating, or full draining. Improper winterization is one of the most common and expensive pool maintenance mistakes.",
+    "aliases": [
+      "pool closing",
+      "closing the pool",
+      "winter shutdown"
+    ],
+    "synonyms": [
+      "pool shutdown",
+      "off-season closure",
+      "winterize"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "ht-06"
+    ],
+    "glossaryIds": [
+      "gl-069"
+    ],
+    "referenceIds": [],
+    "resourceIds": [
+      "pool-closing-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "cover",
+      "swimming-pool",
+      "hot-tub",
+      "pool-opening",
+      "balancing"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "winterization",
+      "pool closing",
+      "winter shutdown",
+      "closing checklist",
+      "freeze protection"
+    ]
+  },
+  {
+    "id": "pool-opening",
+    "type": "process",
+    "name": "Pool Opening",
+    "shortDescription": "The spring start-up process to prepare a pool for the swimming season.",
+    "longDescription": "Pool opening (spring start-up) is the systematic process of bringing a winterized pool back into service: removing the cover and cleaning it, removing winter plugs and reinstalling equipment, reconnecting the pump and filter, filling to proper water level, starting the pump and checking for leaks, then testing and balancing all water chemistry parameters before the first swim. Pool opening chemistry typically requires more adjustment than weekly maintenance because water chemistry changes significantly during winter shutdown. A complete water balance is the final step before opening for swimming.",
+    "aliases": [
+      "spring opening",
+      "pool start-up",
+      "seasonal opening"
+    ],
+    "synonyms": [
+      "spring startup",
+      "pool reopening"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [
+      "gl-082"
+    ],
+    "referenceIds": [
+      "ref-20"
+    ],
+    "resourceIds": [
+      "pool-opening-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [
+      "algae",
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "winterization",
+      "balancing",
+      "testing",
+      "swimming-pool"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "pool opening",
+      "spring startup",
+      "pool opening checklist",
+      "seasonal opening"
+    ]
+  },
+  {
+    "id": "water-replacement",
+    "type": "process",
+    "name": "Water Replacement",
+    "shortDescription": "Partially or completely draining and refilling pool or spa water to reduce dissolved compound levels.",
+    "longDescription": "Water replacement (partial or full drain and refill) is the only way to reduce CYA, calcium hardness, TDS, and salt when they exceed maximum levels. A partial drain replaces a percentage of the water — a 50% drain reduces all dissolved compounds by 50%. Hot tubs require complete water changes every 3–4 months due to high bather-to-water ratios that accelerate TDS and combined chlorine accumulation. Pool partial drains are typically 25–50% and are triggered by CYA above 80 ppm, calcium above 500 ppm, or TDS above 3,000 ppm.",
+    "aliases": [
+      "drain and refill",
+      "partial drain",
+      "water change"
+    ],
+    "synonyms": [
+      "pool draining",
+      "partial drain and refill",
+      "water change"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-volume-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "ht-04",
+      "vr-06"
+    ],
+    "glossaryIds": [
+      "gl-072"
+    ],
+    "referenceIds": [
+      "ref-14"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "cyanuric-acid",
+      "calcium-hardness",
+      "total-dissolved-solids",
+      "salt",
+      "hot-tub"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "water replacement",
+      "partial drain",
+      "drain and refill",
+      "water change",
+      "dilution"
+    ]
+  },
+  {
+    "id": "filtration",
+    "type": "process",
+    "name": "Filtration",
+    "shortDescription": "The continuous mechanical removal of suspended particles from pool water.",
+    "longDescription": "Filtration is the continuous process of circulating pool water through a filter to remove suspended particles — algae, dust, debris, dead skin cells, and other particulate matter. Effective filtration requires adequate pump flow rate, properly sized filter, regular cleaning, and sufficient daily pump run time. Filtration does not replace chemical sanitization but works synergistically — the filter removes the physical matter that would otherwise increase chemical demand. The three main filter types (sand, cartridge, DE) differ in filtration fineness, maintenance frequency, and water usage.",
+    "aliases": [
+      "pool filtration",
+      "water filtration"
+    ],
+    "synonyms": [
+      "mechanical filtration",
+      "filter circulation"
+    ],
+    "idealRange": "N/A (at least 8-hour turnover per day)",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-turnover-rate-calculator"
+    ],
+    "formulaIds": [
+      "formula-08"
+    ],
+    "academyIds": [
+      "eq-01",
+      "eq-02",
+      "eq-03"
+    ],
+    "glossaryIds": [
+      "gl-015",
+      "gl-016",
+      "gl-017"
+    ],
+    "referenceIds": [
+      "ref-12",
+      "ref-13"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [
+      "cloudy-water",
+      "algae"
+    ],
+    "relatedEntities": [
+      "pump",
+      "sand-filter",
+      "cartridge-filter",
+      "de-filter",
+      "backwashing",
+      "turnover-time"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "filtration",
+      "pool filter",
+      "filter system",
+      "pump filtration",
+      "water clarity"
+    ]
+  },
+  {
+    "id": "testing",
+    "type": "process",
+    "name": "Water Testing",
+    "shortDescription": "Measuring pool water chemistry parameters using test strips, liquid kits, or digital testers.",
+    "longDescription": "Water testing is the foundation of pool maintenance. Accurate, regular testing of free chlorine, combined chlorine, pH, alkalinity, calcium hardness, and CYA enables correct chemical dosing. Test methods include: test strips (fast but less precise), DPD liquid test kits (more accurate, color-based), digital photometric testers (highest accuracy), and professional testing by a pool store. Testing frequency varies by parameter: FC and pH should be tested twice weekly; alkalinity and calcium monthly. Test before every soak in a hot tub.",
+    "aliases": [
+      "water testing",
+      "pool testing",
+      "chemical testing"
+    ],
+    "synonyms": [
+      "pool water analysis",
+      "chemical testing",
+      "water analysis"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "test-01",
+      "test-02",
+      "test-03",
+      "test-04",
+      "test-05",
+      "test-06",
+      "fund-03"
+    ],
+    "glossaryIds": [
+      "gl-051",
+      "gl-052",
+      "gl-053",
+      "gl-050"
+    ],
+    "referenceIds": [
+      "ref-19"
+    ],
+    "resourceIds": [
+      "water-test-log"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "ph",
+      "alkalinity",
+      "calcium-hardness",
+      "cyanuric-acid"
+    ],
+    "sourceOrganizations": [
+      "phta",
+      "taylor-technologies",
+      "lamotte"
+    ],
+    "keywords": [
+      "water testing",
+      "pool test",
+      "test strips",
+      "test kit",
+      "DPD test",
+      "digital tester"
+    ]
+  },
+  {
+    "id": "sanitizing",
+    "type": "process",
+    "name": "Sanitizing",
+    "shortDescription": "Maintaining an adequate residual disinfectant to destroy pathogens in pool water.",
+    "longDescription": "Sanitizing is the ongoing process of maintaining sufficient disinfectant (free chlorine, bromine, or alternative) to kill bacteria, viruses, and other pathogens in pool water. Effective sanitization requires maintaining free chlorine above the minimum level for the current CYA concentration, ensuring pH is in the 7.2–7.6 range where HOCl is maximally effective, and providing adequate turnover for the disinfectant to contact all parts of the pool. Sanitizing is distinct from oxidizing — both are needed for safe, clear pool water.",
+    "aliases": [
+      "disinfection",
+      "pool sanitation"
+    ],
+    "synonyms": [
+      "chlorination",
+      "disinfecting",
+      "pool disinfection"
+    ],
+    "idealRange": "N/A (depends on disinfectant type and CYA)",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-chlorine-calculator",
+      "hot-tub-chlorine-calculator"
+    ],
+    "formulaIds": [
+      "formula-02"
+    ],
+    "academyIds": [
+      "san-01",
+      "san-06",
+      "fund-01",
+      "fund-02"
+    ],
+    "glossaryIds": [
+      "gl-005",
+      "gl-001"
+    ],
+    "referenceIds": [
+      "ref-01",
+      "ref-02"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "low-chlorine",
+      "algae",
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "free-chlorine",
+      "bromine",
+      "biguanide",
+      "ozone",
+      "ph",
+      "cyanuric-acid"
+    ],
+    "sourceOrganizations": [
+      "phta",
+      "cdc",
+      "epa"
+    ],
+    "keywords": [
+      "sanitizing",
+      "disinfection",
+      "pool sanitation",
+      "chlorination",
+      "disinfectant residual"
+    ]
+  },
+  {
+    "id": "oxidation",
+    "type": "process",
+    "name": "Oxidation",
+    "shortDescription": "The chemical destruction of organic compounds, combined chlorine, and contaminants in pool water.",
+    "longDescription": "Oxidation is the chemical reaction that destroys organic matter, combined chlorine (chloramines), swimmer waste, and other contaminants in pool water. While free chlorine both sanitizes (kills pathogens) and oxidizes (destroys organic matter), pools with high bather loads may have more oxidation demand than chlorine sanitization demand. Non-chlorine oxidizers (potassium monopersulfate, hydrogen peroxide) can handle the oxidation load while preserving free chlorine for sanitization. Regular oxidation keeps combined chlorine low, prevents chlorine odor, and maintains water clarity.",
+    "aliases": [
+      "pool oxidation",
+      "non-chlorine oxidizer"
+    ],
+    "synonyms": [
+      "oxidizing treatment",
+      "chemical oxidation"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "san-05",
+      "san-02"
+    ],
+    "glossaryIds": [
+      "gl-006"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "combined-chlorine",
+      "strong-chlorine-smell"
+    ],
+    "relatedEntities": [
+      "shock-treatment",
+      "combined-chlorine",
+      "sanitizing",
+      "hydrogen-peroxide"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "oxidation",
+      "non-chlorine oxidizer",
+      "potassium monopersulfate",
+      "oxidizing treatment"
+    ]
+  },
+  {
+    "id": "balancing",
+    "type": "process",
+    "name": "Water Balancing",
+    "shortDescription": "The process of adjusting all chemistry parameters to achieve a stable, non-corrosive, non-scaling LSI.",
+    "longDescription": "Water balancing is the comprehensive process of adjusting pH, total alkalinity, calcium hardness, CYA, and free chlorine to achieve a stable, safe, and non-damaging water chemistry. The correct order matters: adjust alkalinity first (it determines how much acid/base is needed for pH), then pH, then calcium hardness, then CYA, then chlorine. The final check is the LSI — if all individual parameters are in range, the LSI confirms the combination is balanced. Properly balanced water protects equipment, surfaces, and swimmers.",
+    "aliases": [
+      "water balance",
+      "chemical balancing",
+      "pool balancing"
+    ],
+    "synonyms": [
+      "chemical balance",
+      "pool chemistry balancing"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-09",
+      "formula-04",
+      "formula-05"
+    ],
+    "academyIds": [
+      "wb-06",
+      "fund-02",
+      "fund-01"
+    ],
+    "glossaryIds": [
+      "gl-012",
+      "gl-091"
+    ],
+    "referenceIds": [
+      "ref-20",
+      "ref-01"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist",
+      "water-test-log"
+    ],
+    "chartIds": [
+      "pool-water-balance-chart"
+    ],
+    "problemIds": [
+      "scaling",
+      "corrosion",
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "ph",
+      "alkalinity",
+      "calcium-hardness",
+      "lsi",
+      "cyanuric-acid",
+      "free-chlorine"
+    ],
+    "sourceOrganizations": [
+      "phta",
+      "taylor-technologies"
+    ],
+    "keywords": [
+      "water balancing",
+      "water balance",
+      "pool chemistry",
+      "chemical balance",
+      "LSI balancing"
+    ]
+  }
+]

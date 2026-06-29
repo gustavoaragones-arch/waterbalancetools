@@ -74,6 +74,14 @@ require(path.join(__dirname, 'generate-formulas.js'));
 require(path.join(__dirname, 'generate-glossary.js'));
 require(path.join(__dirname, 'generate-reference.js'));
 
+// ── Phase 5A.5: Entity layer ──────────────────────────────────────────────────
+// 5A.5-a: Compile entity JSON from source modules
+require(path.join(__dirname, 'generate-entities.js'));
+// 5A.5-b: Generate /entities/ HTML pages
+require(path.join(__dirname, 'generate-entity-pages.js'));
+// 5A.5-c: Inject entity panels into glossary/formula/academy/reference pages
+require(path.join(__dirname, 'generate-entity-links.js'));
+
 // ── Step 7: Canonical nav (6-pillar header + hamburger) ──────────────────────
 require(path.join(__dirname, 'inject-nav.js'));
 
@@ -92,7 +100,11 @@ require(path.join(__dirname, 'generate-breadcrumbs.js'));
 // ── Step 12: Search index ─────────────────────────────────────────────────────
 require(path.join(__dirname, 'generate-search-index.js'));
 
-// ── Step 13: Validate internal links (fail-fast gate) ────────────────────────
+// ── Step 13a: Validate entity layer ──────────────────────────────────────────
+console.log('Running validate-entities.js...');
+execSync('node scripts/validate-entities.js', { cwd: root, stdio: 'inherit' });
+
+// ── Step 13b: Validate internal links (fail-fast gate) ───────────────────────
 console.log('Running check-broken-links.js...');
 execSync('node scripts/check-broken-links.js', { cwd: root, stdio: 'inherit' });
 

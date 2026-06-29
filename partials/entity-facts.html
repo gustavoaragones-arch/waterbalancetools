@@ -1,0 +1,15 @@
+<!-- entity-facts.html — tokens: {{ENTITY_NAME}}, {{ENTITY_IDEAL_RANGE}},
+     {{ENTITY_UNITS}}, {{ENTITY_TYPE}}, {{ENTITY_ALIASES}}, {{ENTITY_SOURCE_ORGS}} -->
+<section class="entity-facts" aria-label="{{ENTITY_NAME}} quick facts">
+  <h2 id="quick-facts">Quick Facts</h2>
+  <dl class="entity-facts-table">
+    <div class="entity-fact-row">
+      <dt>Category</dt>
+      <dd><span class="knowledge-badge knowledge-badge--{{ENTITY_TYPE}}">{{ENTITY_TYPE}}</span></dd>
+    </div>
+    {{ENTITY_RANGE_FACT}}
+    {{ENTITY_UNITS_FACT}}
+    {{ENTITY_ALIASES_FACT}}
+    {{ENTITY_ORGS_FACT}}
+  </dl>
+</section>

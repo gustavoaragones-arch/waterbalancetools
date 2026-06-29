@@ -1,0 +1,417 @@
+[
+  {
+    "id": "unit-ppm",
+    "type": "unit",
+    "name": "ppm",
+    "shortDescription": "Parts per million — the standard concentration unit for pool chemistry.",
+    "longDescription": "1 ppm = 1 mg/L = 1 part chemical per 1,000,000 parts water. Used for free chlorine, combined chlorine, alkalinity, calcium hardness, CYA, TDS, salt, metals, and phosphates.",
+    "aliases": [
+      "parts per million",
+      "mg/L"
+    ],
+    "synonyms": [
+      "milligrams per liter"
+    ],
+    "idealRange": "N/A",
+    "units": "ppm",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [
+      "gl-054"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "ppm",
+      "free-chlorine",
+      "alkalinity",
+      "calcium-hardness"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "ppm",
+      "parts per million",
+      "mg/L",
+      "concentration unit"
+    ]
+  },
+  {
+    "id": "unit-mg-l",
+    "type": "unit",
+    "name": "mg/L",
+    "shortDescription": "Milligrams per liter — numerically identical to ppm in aqueous solutions.",
+    "longDescription": "In dilute aqueous solutions (including pool water), mg/L and ppm are numerically equal: 1 mg/L = 1 ppm. mg/L is the SI unit preferred in scientific contexts, while ppm is the practical shorthand used in pool industry applications.",
+    "aliases": [
+      "milligrams per liter",
+      "ppm equivalent"
+    ],
+    "synonyms": [
+      "mg per litre"
+    ],
+    "idealRange": "N/A",
+    "units": "mg/L",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-23"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "unit-ppm",
+      "ppm"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "mg/L",
+      "milligrams per liter",
+      "concentration unit",
+      "SI unit"
+    ]
+  },
+  {
+    "id": "unit-gallons",
+    "type": "unit",
+    "name": "US Gallons",
+    "shortDescription": "US liquid gallon — the primary volume unit for pool calculations in North America.",
+    "longDescription": "1 US gallon = 3.785 liters = 0.1337 cubic feet. Pool volume in gallons is used in every chemical dose calculation. 7.48 gallons per cubic foot is the standard conversion used in pool volume formulas.",
+    "aliases": [
+      "gal",
+      "US gal",
+      "gallons"
+    ],
+    "synonyms": [],
+    "idealRange": "N/A",
+    "units": "gal",
+    "calculatorIds": [
+      "pool-volume-calculator"
+    ],
+    "formulaIds": [
+      "formula-01"
+    ],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-23"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "gallons",
+      "unit-liters"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "gallons",
+      "US gallon",
+      "gal",
+      "pool volume unit"
+    ]
+  },
+  {
+    "id": "unit-liters",
+    "type": "unit",
+    "name": "Liters",
+    "shortDescription": "SI unit of volume. 1 US gallon = 3.785 liters.",
+    "longDescription": "1 liter = 0.2642 US gallons = 1,000 milliliters. Used in metric countries for pool volume measurement. Chemical concentrations in mg/L are equivalent to ppm.",
+    "aliases": [
+      "L",
+      "litres"
+    ],
+    "synonyms": [
+      "litre"
+    ],
+    "idealRange": "N/A",
+    "units": "L",
+    "calculatorIds": [
+      "pool-volume-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-23"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "unit-gallons",
+      "liters"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "liters",
+      "litres",
+      "L",
+      "metric volume"
+    ]
+  },
+  {
+    "id": "unit-fahrenheit",
+    "type": "unit",
+    "name": "°F",
+    "shortDescription": "Degrees Fahrenheit — the standard temperature unit for pool and spa temperature in North America.",
+    "longDescription": "Fahrenheit is the US standard for temperature measurement. Pool temperature targets: 78–84°F (residential pools), 100–104°F maximum (hot tubs). LSI temperature factor tables use °F. Conversion: °C = (°F − 32) × 5/9.",
+    "aliases": [
+      "Fahrenheit",
+      "degrees F",
+      "degrees Fahrenheit"
+    ],
+    "synonyms": [],
+    "idealRange": "N/A",
+    "units": "°F",
+    "calculatorIds": [],
+    "formulaIds": [
+      "formula-09"
+    ],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-03",
+      "ref-23"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "temperature",
+      "unit-celsius"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "Fahrenheit",
+      "°F",
+      "temperature unit",
+      "pool temperature"
+    ]
+  },
+  {
+    "id": "unit-celsius",
+    "type": "unit",
+    "name": "°C",
+    "shortDescription": "Degrees Celsius — the SI temperature unit used in metric countries.",
+    "longDescription": "Celsius is the SI standard for temperature. Pool targets: 25–29°C (residential), maximum 40°C (hot tubs). Conversion: °F = °C × 9/5 + 32.",
+    "aliases": [
+      "Celsius",
+      "degrees C",
+      "degrees Celsius",
+      "centigrade"
+    ],
+    "synonyms": [],
+    "idealRange": "N/A",
+    "units": "°C",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-23"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "temperature",
+      "unit-fahrenheit"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "Celsius",
+      "°C",
+      "temperature unit"
+    ]
+  },
+  {
+    "id": "unit-minutes",
+    "type": "unit",
+    "name": "Minutes",
+    "shortDescription": "Unit of time — used for pump turnover calculation and wait times after chemical additions.",
+    "longDescription": "Minutes are used in pool chemistry for: turnover rate calculations (Volume in gallons / GPM = turnover time in minutes), wait times after chemical additions, and filtration cycle timing.",
+    "aliases": [
+      "min",
+      "minutes"
+    ],
+    "synonyms": [],
+    "idealRange": "N/A",
+    "units": "min",
+    "calculatorIds": [
+      "pool-turnover-rate-calculator"
+    ],
+    "formulaIds": [
+      "formula-08"
+    ],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-11"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "turnover-time",
+      "unit-hours"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "minutes",
+      "min",
+      "time unit",
+      "wait time"
+    ]
+  },
+  {
+    "id": "unit-hours",
+    "type": "unit",
+    "name": "Hours",
+    "shortDescription": "Unit of time — used for turnover rate and pump run time calculations.",
+    "longDescription": "Hours are the standard unit for expressing pool turnover time, pump daily run time, and wait times for chemical balancing. PHTA recommends a maximum 8-hour turnover time for residential pools.",
+    "aliases": [
+      "hr",
+      "hours"
+    ],
+    "synonyms": [],
+    "idealRange": "N/A",
+    "units": "hr",
+    "calculatorIds": [
+      "pool-turnover-rate-calculator"
+    ],
+    "formulaIds": [
+      "formula-08"
+    ],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-13"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "turnover-time",
+      "unit-minutes",
+      "unit-days"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "hours",
+      "hr",
+      "pump run time",
+      "turnover hours"
+    ]
+  },
+  {
+    "id": "unit-days",
+    "type": "unit",
+    "name": "Days",
+    "shortDescription": "Unit of time — used for maintenance scheduling and chemical activity timelines.",
+    "longDescription": "Days are used for maintenance scheduling (test twice per week, shock weekly), CYA dissolution time (24–48 days), water change intervals for hot tubs (every 90 days), and chemical activity timelines.",
+    "aliases": [
+      "day",
+      "days"
+    ],
+    "synonyms": [],
+    "idealRange": "N/A",
+    "units": "days",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-19"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "unit-hours",
+      "unit-weeks",
+      "testing"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "days",
+      "maintenance interval",
+      "scheduling unit"
+    ]
+  },
+  {
+    "id": "unit-weeks",
+    "type": "unit",
+    "name": "Weeks",
+    "shortDescription": "Unit of time — used for maintenance scheduling (weekly testing, weekly shock).",
+    "longDescription": "Weeks are the standard interval for pool maintenance activities: weekly water testing, weekly shock treatment (optional), weekly brushing and vacuuming, and weekly filter checks.",
+    "aliases": [
+      "wk",
+      "weeks"
+    ],
+    "synonyms": [],
+    "idealRange": "N/A",
+    "units": "weeks",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-19"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "unit-days",
+      "unit-months",
+      "testing"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "weeks",
+      "weekly maintenance",
+      "weekly testing"
+    ]
+  },
+  {
+    "id": "unit-months",
+    "type": "unit",
+    "name": "Months",
+    "shortDescription": "Unit of time — used for seasonal maintenance intervals and hot tub water change schedules.",
+    "longDescription": "Monthly intervals are used for: calcium hardness and CYA testing (monthly), hot tub water changes (every 3–4 months), filter inspection, and salt level verification.",
+    "aliases": [
+      "mo",
+      "months"
+    ],
+    "synonyms": [],
+    "idealRange": "N/A",
+    "units": "months",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-14",
+      "ref-19"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "unit-weeks",
+      "testing",
+      "water-replacement"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "months",
+      "monthly testing",
+      "hot tub water change interval"
+    ]
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "id": "cdc",
+    "type": "organization",
+    "name": "CDC",
+    "shortDescription": "Centers for Disease Control and Prevention — a key authority on healthy swimming and recreational water illness.",
+    "longDescription": "The CDC provides guidelines on healthy swimming, recreational water illness prevention, disinfection standards for public pools and water parks, and outbreak reporting. Their Model Aquatic Health Code (MAHC) provides science-based guidance used as the basis for many state pool health codes.",
+    "aliases": [
+      "Centers for Disease Control",
+      "U.S. CDC"
+    ],
+    "synonyms": [],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "phta",
+      "epa"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "CDC",
+      "Centers for Disease Control",
+      "healthy swimming",
+      "recreational water illness"
+    ]
+  },
+  {
+    "id": "epa",
+    "type": "organization",
+    "name": "EPA",
+    "shortDescription": "U.S. Environmental Protection Agency — regulates disinfectants including pool chemicals.",
+    "longDescription": "The EPA regulates the registration, labeling, and use of pesticides and disinfectants in the United States under FIFRA (Federal Insecticide, Fungicide, and Rodenticide Act). Pool disinfectants — including chlorine products, bromine products, and algaecides — are regulated as pesticides by the EPA. EPA registration numbers on pool chemical labels confirm federal approval.",
+    "aliases": [
+      "Environmental Protection Agency",
+      "U.S. EPA"
+    ],
+    "synonyms": [],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "cdc",
+      "phta"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "EPA",
+      "Environmental Protection Agency",
+      "pool chemical regulation",
+      "FIFRA"
+    ]
+  },
+  {
+    "id": "phta",
+    "type": "organization",
+    "name": "PHTA",
+    "shortDescription": "Pool & Hot Tub Alliance — the primary industry trade association for pool and spa professionals.",
+    "longDescription": "The Pool & Hot Tub Alliance (formerly APSP) is the primary trade association for pool and spa manufacturers, builders, service technicians, and retailers. PHTA publishes the Pool & Spa Operator Handbook (the industry standard reference for pool chemistry) and the ANSI standards for pool design, construction, and safety. PHTA certifications (CPO, ATP) are the recognized professional credentials in the pool industry.",
+    "aliases": [
+      "Pool & Hot Tub Alliance",
+      "APSP"
+    ],
+    "synonyms": [
+      "pool industry association"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "cdc",
+      "nsf",
+      "taylor-technologies"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "PHTA",
+      "Pool Hot Tub Alliance",
+      "APSP",
+      "CPO certification",
+      "pool industry"
+    ]
+  },
+  {
+    "id": "nsf",
+    "type": "organization",
+    "name": "NSF International",
+    "shortDescription": "NSF International — certifies pool and spa equipment and chemicals to safety standards.",
+    "longDescription": "NSF International develops public health standards and certifies products including pool equipment, water treatment products, and chemicals. NSF/ANSI 50 covers pool and spa equipment and chemicals. NSF certification marks on pool products indicate independent verification of performance and safety claims.",
+    "aliases": [
+      "NSF",
+      "NSF/ANSI"
+    ],
+    "synonyms": [
+      "NSF certification"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "phta",
+      "cdc"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "NSF",
+      "NSF certification",
+      "pool equipment certification",
+      "NSF/ANSI 50"
+    ]
+  },
+  {
+    "id": "taylor-technologies",
+    "type": "organization",
+    "name": "Taylor Technologies",
+    "shortDescription": "Taylor Technologies — manufacturer of professional pool test kits and the standard reference for pool chemistry calculations.",
+    "longDescription": "Taylor Technologies is the leading manufacturer of professional pool and spa water test kits (the Taylor K-2006 is the gold-standard residential test kit) and the publisher of the Pool/Spa Water Chemistry book, which is the definitive technical reference for pool chemistry calculations, LSI factors, and treatment formulas. Taylor LSI factor tables and formulas are used as the basis for LSI calculations throughout the industry.",
+    "aliases": [
+      "Taylor",
+      "Taylor test kits"
+    ],
+    "synonyms": [
+      "Taylor Technologies Inc."
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "phta",
+      "lamotte"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "Taylor Technologies",
+      "Taylor test kit",
+      "K-2006",
+      "pool chemistry reference"
+    ]
+  },
+  {
+    "id": "lamotte",
+    "type": "organization",
+    "name": "LaMotte",
+    "shortDescription": "LaMotte Company — manufacturer of professional water testing equipment for pool and spa use.",
+    "longDescription": "LaMotte Company manufactures professional-grade water testing equipment including DPD colorimetric test kits, digital photometers, and test strips for pool and spa use. LaMotte products are widely used by commercial pool operators and certified pool operators for their higher accuracy compared to consumer test strips.",
+    "aliases": [
+      "LaMotte Company"
+    ],
+    "synonyms": [],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "taylor-technologies",
+      "testing"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "LaMotte",
+      "LaMotte test kit",
+      "pool test equipment",
+      "DPD photometer"
+    ]
+  }
+]

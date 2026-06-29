@@ -1,0 +1,586 @@
+[
+  {
+    "id": "ph",
+    "type": "measurement",
+    "name": "pH",
+    "shortDescription": "The measure of hydrogen ion concentration indicating acidity or alkalinity of pool water.",
+    "longDescription": "pH is the scale from 0 to 14 measuring how acidic or alkaline pool water is. A pH of 7.0 is neutral; below 7.0 is acidic; above 7.0 is alkaline. Pool water should be maintained between 7.2 and 7.6. Below 7.2, water is corrosive — it irritates eyes and skin and attacks surfaces and equipment. Above 7.8, chlorine effectiveness drops dramatically (at pH 8.0 only 22% of chlorine is active vs. 67% at pH 7.2) and scale forms. pH is affected by every chemical addition and by CO₂ off-gassing.",
+    "aliases": [
+      "hydrogen ion concentration",
+      "acidity",
+      "alkalinity level"
+    ],
+    "synonyms": [
+      "potential hydrogen",
+      "water pH"
+    ],
+    "idealRange": "7.2–7.6",
+    "units": "pH units",
+    "calculatorIds": [
+      "pool-ph-calculator",
+      "hot-tub-ph-calculator",
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-04",
+      "formula-09"
+    ],
+    "academyIds": [
+      "wb-01",
+      "fund-01",
+      "fund-02",
+      "wb-06",
+      "ts-05",
+      "ts-06"
+    ],
+    "glossaryIds": [
+      "gl-008",
+      "gl-036",
+      "gl-035",
+      "gl-037",
+      "gl-073"
+    ],
+    "referenceIds": [
+      "ref-09",
+      "ref-01",
+      "ref-10"
+    ],
+    "resourceIds": [
+      "water-test-log",
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart",
+      "pool-water-balance-chart",
+      "hot-tub-chemical-levels-chart"
+    ],
+    "problemIds": [
+      "scaling",
+      "corrosion",
+      "eye-irritation",
+      "skin-irritation",
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "alkalinity",
+      "lsi",
+      "free-chlorine",
+      "calcium-hardness",
+      "muriatic-acid",
+      "soda-ash",
+      "scaling",
+      "corrosion"
+    ],
+    "sourceOrganizations": [
+      "phta",
+      "taylor-technologies"
+    ],
+    "keywords": [
+      "pH",
+      "pool pH",
+      "acid level",
+      "alkaline level",
+      "pH balance",
+      "pH adjustment"
+    ]
+  },
+  {
+    "id": "orp",
+    "type": "measurement",
+    "name": "ORP",
+    "shortDescription": "Oxidation-Reduction Potential — an electrical measurement of water's sanitizing capacity.",
+    "longDescription": "Oxidation-Reduction Potential (ORP) measures the water's ability to oxidize or sanitize — expressed in millivolts (mV). A higher ORP indicates greater sanitizing capacity. Unlike ppm-based chlorine testing, ORP directly measures chlorine's effectiveness considering both concentration and pH. The World Health Organization and many public health authorities specify a minimum ORP of 650 mV for swimming pools. ORP sensors are used in automated chemical control systems to maintain consistent sanitizing capacity regardless of bather load variations.",
+    "aliases": [
+      "oxidation-reduction potential",
+      "redox potential",
+      "redox"
+    ],
+    "synonyms": [
+      "sanitizing capacity",
+      "oxidative capacity"
+    ],
+    "idealRange": "650–750 mV",
+    "units": "mV",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "fund-03",
+      "test-05"
+    ],
+    "glossaryIds": [
+      "gl-013"
+    ],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "low-chlorine"
+    ],
+    "relatedEntities": [
+      "free-chlorine",
+      "ph",
+      "sanitizing"
+    ],
+    "sourceOrganizations": [
+      "phta",
+      "cdc"
+    ],
+    "keywords": [
+      "ORP",
+      "oxidation reduction potential",
+      "redox",
+      "sanitizing capacity",
+      "mV"
+    ]
+  },
+  {
+    "id": "temperature",
+    "type": "measurement",
+    "name": "Temperature",
+    "shortDescription": "Water temperature in °F or °C, affecting chemical reactions, chlorine demand, and comfort.",
+    "longDescription": "Water temperature directly affects pool and spa water chemistry. Higher temperatures accelerate chlorine demand (halving with every 10°C/18°F drop), shift pH upward, increase scaling tendency (higher LSI), and increase CO₂ off-gassing. For hot tubs, temperature is also a primary safety parameter — temperatures above 104°F can cause hyperthermia. For the LSI calculation, water temperature is a required input since calcium carbonate solubility decreases with rising temperature.",
+    "aliases": [
+      "water temp",
+      "pool temperature"
+    ],
+    "synonyms": [
+      "water temperature"
+    ],
+    "idealRange": "78–84°F (pools); 100–104°F (hot tubs)",
+    "units": "°F / °C",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-09"
+    ],
+    "academyIds": [
+      "fund-05",
+      "ht-01",
+      "ht-06",
+      "wb-05"
+    ],
+    "glossaryIds": [
+      "gl-078"
+    ],
+    "referenceIds": [
+      "ref-03"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "lsi",
+      "free-chlorine",
+      "ph",
+      "hot-tub",
+      "balancing"
+    ],
+    "sourceOrganizations": [
+      "phta",
+      "cdc"
+    ],
+    "keywords": [
+      "temperature",
+      "water temperature",
+      "pool temp",
+      "hot tub temperature",
+      "°F",
+      "°C"
+    ]
+  },
+  {
+    "id": "alkalinity",
+    "type": "measurement",
+    "name": "Total Alkalinity",
+    "shortDescription": "The capacity of water to resist pH changes — a pH buffer.",
+    "longDescription": "Total alkalinity (TA) measures the concentration of alkaline compounds — primarily bicarbonates, carbonates, and hydroxides — dissolved in pool water. It acts as a pH buffer, resisting pH swings caused by additions of acid, base, or CO₂. Low TA causes pH to swing wildly with minor chemical additions (pH bounce). High TA makes pH very difficult to lower and increases scaling tendency. Total alkalinity must be adjusted before pH — it determines how much chemical is needed for a given pH change.",
+    "aliases": [
+      "TA",
+      "total alkalinity",
+      "alkalinity"
+    ],
+    "synonyms": [
+      "bicarbonate alkalinity",
+      "carbonate alkalinity",
+      "pH buffering capacity"
+    ],
+    "idealRange": "80–120 ppm",
+    "units": "ppm",
+    "calculatorIds": [
+      "pool-alkalinity-calculator",
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-05",
+      "formula-09"
+    ],
+    "academyIds": [
+      "wb-02",
+      "fund-01",
+      "fund-02",
+      "wb-06",
+      "ts-05",
+      "ts-06"
+    ],
+    "glossaryIds": [
+      "gl-009",
+      "gl-035",
+      "gl-075"
+    ],
+    "referenceIds": [
+      "ref-08",
+      "ref-01"
+    ],
+    "resourceIds": [
+      "water-test-log"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart",
+      "pool-water-balance-chart"
+    ],
+    "problemIds": [
+      "scaling",
+      "corrosion",
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "ph",
+      "lsi",
+      "calcium-hardness",
+      "sodium-bicarbonate",
+      "muriatic-acid",
+      "balancing"
+    ],
+    "sourceOrganizations": [
+      "phta",
+      "taylor-technologies"
+    ],
+    "keywords": [
+      "total alkalinity",
+      "TA",
+      "pH buffer",
+      "bicarbonate alkalinity",
+      "alkalinity adjustment"
+    ]
+  },
+  {
+    "id": "lsi",
+    "type": "measurement",
+    "name": "Langelier Saturation Index",
+    "shortDescription": "A composite score indicating whether water is balanced, corrosive, or scale-forming.",
+    "longDescription": "The Langelier Saturation Index (LSI) is a mathematical model that combines pH, temperature, calcium hardness, total alkalinity, and TDS into a single balance score. A score of 0 means water is perfectly balanced for calcium carbonate. Negative values (below −0.3) indicate corrosive water. Positive values (above +0.5) indicate scale-forming water. The LSI is the final quality check in the water balancing process — if all individual parameters are in range but the LSI is out of range, the combination still needs adjustment.",
+    "aliases": [
+      "LSI",
+      "saturation index",
+      "Langelier index"
+    ],
+    "synonyms": [
+      "Langelier Saturation Index",
+      "water balance index",
+      "calcium carbonate saturation index"
+    ],
+    "idealRange": "−0.3 to +0.5",
+    "units": "dimensionless",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-09"
+    ],
+    "academyIds": [
+      "wb-05",
+      "fund-02",
+      "wb-06"
+    ],
+    "glossaryIds": [
+      "gl-012",
+      "gl-074"
+    ],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [
+      "pool-water-balance-chart"
+    ],
+    "problemIds": [
+      "scaling",
+      "corrosion"
+    ],
+    "relatedEntities": [
+      "ph",
+      "alkalinity",
+      "calcium-hardness",
+      "temperature",
+      "scaling",
+      "corrosion",
+      "balancing"
+    ],
+    "sourceOrganizations": [
+      "phta",
+      "taylor-technologies"
+    ],
+    "keywords": [
+      "LSI",
+      "Langelier Saturation Index",
+      "water balance",
+      "saturation index",
+      "corrosion index"
+    ]
+  },
+  {
+    "id": "gallons",
+    "type": "measurement",
+    "name": "Gallons",
+    "shortDescription": "US liquid gallon — the standard unit of pool volume measurement.",
+    "longDescription": "The US gallon (approximately 3.785 liters) is the standard unit for measuring pool volume in North America. All chemical dose calculations for pools require an accurate volume in gallons. Volume is calculated using length × width × average depth × 7.48 (gallons per cubic foot) for rectangular pools, with shape correction factors for other pool shapes. A 10% error in pool volume produces a 10% error in every chemical dose calculated.",
+    "aliases": [
+      "gal",
+      "US gallons"
+    ],
+    "synonyms": [
+      "pool volume",
+      "pool capacity"
+    ],
+    "idealRange": "N/A",
+    "units": "gallons",
+    "calculatorIds": [
+      "pool-volume-calculator",
+      "spa-volume-calculator",
+      "volume-calculator"
+    ],
+    "formulaIds": [
+      "formula-01"
+    ],
+    "academyIds": [
+      "fund-01"
+    ],
+    "glossaryIds": [
+      "gl-058"
+    ],
+    "referenceIds": [
+      "ref-15",
+      "ref-16"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "flow-rate",
+      "turnover-time",
+      "pool-volume-formula"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "gallons",
+      "pool volume",
+      "gal",
+      "pool capacity",
+      "volume measurement"
+    ]
+  },
+  {
+    "id": "liters",
+    "type": "measurement",
+    "name": "Liters",
+    "shortDescription": "SI unit of volume — 1 US gallon equals approximately 3.785 liters.",
+    "longDescription": "The liter is the SI unit of volume used in metric countries for pool measurements. One US gallon equals approximately 3.785 liters. While calculators on this site use US gallons as the primary unit, all conversions to and from liters are supported. Chemical doses calculated in metric units (grams per liter, or mg/L for ppm equivalents) are consistent with the same chemistry but expressed in metric terms.",
+    "aliases": [
+      "L",
+      "litres"
+    ],
+    "synonyms": [
+      "litre"
+    ],
+    "idealRange": "N/A",
+    "units": "liters",
+    "calculatorIds": [
+      "pool-volume-calculator",
+      "volume-calculator"
+    ],
+    "formulaIds": [
+      "formula-01"
+    ],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-23"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "gallons",
+      "ppm"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "liters",
+      "litres",
+      "metric volume",
+      "L",
+      "pool volume metric"
+    ]
+  },
+  {
+    "id": "ppm",
+    "type": "measurement",
+    "name": "Parts Per Million",
+    "shortDescription": "The standard unit for measuring chemical concentrations in pool water.",
+    "longDescription": "Parts per million (ppm) is the standard unit of concentration for pool chemistry parameters including free chlorine, alkalinity, calcium hardness, cyanuric acid, and TDS. 1 ppm equals 1 milligram per liter (mg/L) in aqueous solution. Most pool test kits and digital testers report results in ppm. The relationship between ppm and actual chemical dose is direct: 1 ppm in a 10,000-gallon pool corresponds to 8.34 mg of the substance dissolved in the water.",
+    "aliases": [
+      "mg/L",
+      "ppm concentration"
+    ],
+    "synonyms": [
+      "parts per million",
+      "milligrams per liter"
+    ],
+    "idealRange": "N/A (unit, not parameter)",
+    "units": "ppm = mg/L",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "fund-03",
+      "test-05"
+    ],
+    "glossaryIds": [
+      "gl-054"
+    ],
+    "referenceIds": [
+      "ref-23"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "alkalinity",
+      "calcium-hardness",
+      "cyanuric-acid"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "ppm",
+      "parts per million",
+      "mg/L",
+      "concentration unit",
+      "pool chemistry units"
+    ]
+  },
+  {
+    "id": "flow-rate",
+    "type": "measurement",
+    "name": "Flow Rate",
+    "shortDescription": "The volume of water the pump moves per minute — a key factor in turnover rate.",
+    "longDescription": "Flow rate is measured in gallons per minute (GPM) and represents how much water the pump circulates through the filtration system. The required flow rate for adequate filtration is calculated from pool volume divided by the target turnover time. Pump flow rate in real systems is lower than the rated maximum because of pipe resistance, filter restriction, and other head pressure losses. Variable speed pumps can be programmed to run at different flow rates at different times of day, reducing energy consumption while maintaining adequate filtration.",
+    "aliases": [
+      "GPM",
+      "gallons per minute",
+      "pump flow"
+    ],
+    "synonyms": [
+      "pump GPM",
+      "circulation rate",
+      "flow"
+    ],
+    "idealRange": "N/A (calculated from pool volume and target turnover)",
+    "units": "GPM",
+    "calculatorIds": [
+      "pool-turnover-rate-calculator"
+    ],
+    "formulaIds": [
+      "formula-08"
+    ],
+    "academyIds": [
+      "eq-03"
+    ],
+    "glossaryIds": [
+      "gl-060",
+      "gl-017"
+    ],
+    "referenceIds": [
+      "ref-13"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "pump",
+      "turnover-time",
+      "filtration",
+      "gallons"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "flow rate",
+      "GPM",
+      "gallons per minute",
+      "pump flow",
+      "circulation"
+    ]
+  },
+  {
+    "id": "turnover-time",
+    "type": "measurement",
+    "name": "Turnover Time",
+    "shortDescription": "The time required for the pump to circulate the entire pool volume through the filter once.",
+    "longDescription": "Turnover time is the number of hours required for the pump to move the full pool volume through the filtration system. It is calculated as pool volume divided by pump flow rate. PHTA recommends a maximum turnover time of 8 hours for residential pools (one complete turnover in 8 hours or less). Shorter turnover times indicate better filtration — most high-quality pools achieve 6-hour or less turnovers. Hot tub turnover is faster due to smaller volume; the target is typically 2–4 turnovers per day.",
+    "aliases": [
+      "turnover rate",
+      "recirculation time"
+    ],
+    "synonyms": [
+      "filter turnover",
+      "pump turnover",
+      "circulation turnover"
+    ],
+    "idealRange": "6–8 hours maximum (residential pools)",
+    "units": "hours",
+    "calculatorIds": [
+      "pool-turnover-rate-calculator"
+    ],
+    "formulaIds": [
+      "formula-08"
+    ],
+    "academyIds": [
+      "eq-03",
+      "fund-01"
+    ],
+    "glossaryIds": [
+      "gl-017",
+      "gl-077"
+    ],
+    "referenceIds": [
+      "ref-13"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "pump",
+      "flow-rate",
+      "filtration",
+      "gallons"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "turnover rate",
+      "turnover time",
+      "pump turnover",
+      "filter rate",
+      "pool circulation"
+    ]
+  }
+]

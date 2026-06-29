@@ -1,0 +1,4129 @@
+{
+  "free-chlorine": {
+    "id": "free-chlorine",
+    "type": "chemical",
+    "name": "Free Chlorine",
+    "shortDescription": "The active, unsaturated chlorine available to sanitize pool water.",
+    "idealRange": "1–3 ppm (pools); 3–5 ppm (hot tubs)",
+    "units": "ppm",
+    "calculatorIds": [
+      "pool-chlorine-calculator",
+      "hot-tub-chlorine-calculator",
+      "chemical-calculator",
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-02",
+      "formula-03"
+    ],
+    "academyIds": [
+      "san-01",
+      "san-03",
+      "san-04",
+      "san-05",
+      "fund-01",
+      "fund-02"
+    ],
+    "glossaryIds": [
+      "gl-001",
+      "gl-002",
+      "gl-003",
+      "gl-022"
+    ],
+    "referenceIds": [
+      "ref-01",
+      "ref-02",
+      "ref-07",
+      "ref-10"
+    ],
+    "resourceIds": [
+      "water-test-log",
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart",
+      "hot-tub-chemical-levels-chart"
+    ],
+    "problemIds": [
+      "low-chlorine",
+      "high-chlorine",
+      "strong-chlorine-smell",
+      "algae",
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "combined-chlorine",
+      "total-chlorine",
+      "ph",
+      "cyanuric-acid",
+      "hypochlorous-acid",
+      "shock-treatment",
+      "breakpoint-chlorination"
+    ],
+    "keywords": [
+      "free chlorine",
+      "FC",
+      "pool chlorine",
+      "available chlorine",
+      "HOCl",
+      "sanitizer level"
+    ]
+  },
+  "combined-chlorine": {
+    "id": "combined-chlorine",
+    "type": "chemical",
+    "name": "Combined Chlorine",
+    "shortDescription": "Chlorine that has reacted with contaminants and is no longer effective for sanitization.",
+    "idealRange": "0 ppm (maximum 0.5 ppm)",
+    "units": "ppm",
+    "calculatorIds": [
+      "pool-shock-calculator",
+      "hot-tub-shock-calculator",
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "san-02",
+      "san-03",
+      "san-05",
+      "ts-04"
+    ],
+    "glossaryIds": [
+      "gl-002",
+      "gl-022",
+      "gl-021"
+    ],
+    "referenceIds": [
+      "ref-01",
+      "ref-02"
+    ],
+    "resourceIds": [
+      "water-test-log"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart"
+    ],
+    "problemIds": [
+      "strong-chlorine-smell",
+      "eye-irritation",
+      "skin-irritation"
+    ],
+    "relatedEntities": [
+      "free-chlorine",
+      "total-chlorine",
+      "shock-treatment",
+      "breakpoint-chlorination",
+      "bather-load"
+    ],
+    "keywords": [
+      "combined chlorine",
+      "CC",
+      "chloramine",
+      "pool smell",
+      "chlorine odor"
+    ]
+  },
+  "total-chlorine": {
+    "id": "total-chlorine",
+    "type": "chemical",
+    "name": "Total Chlorine",
+    "shortDescription": "The sum of free chlorine and combined chlorine in pool water.",
+    "idealRange": "Same as FC target (CC should be 0)",
+    "units": "ppm",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "san-02",
+      "fund-03"
+    ],
+    "glossaryIds": [
+      "gl-003",
+      "gl-001",
+      "gl-002"
+    ],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [
+      "water-test-log"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart"
+    ],
+    "problemIds": [
+      "strong-chlorine-smell"
+    ],
+    "relatedEntities": [
+      "free-chlorine",
+      "combined-chlorine",
+      "dpd-test"
+    ],
+    "keywords": [
+      "total chlorine",
+      "TC",
+      "DPD test",
+      "chlorine test"
+    ]
+  },
+  "bromine": {
+    "id": "bromine",
+    "type": "chemical",
+    "name": "Bromine",
+    "shortDescription": "A halogen sanitizer commonly used in hot tubs that remains effective at higher pH and temperatures.",
+    "idealRange": "3–6 ppm (hot tubs/spas)",
+    "units": "ppm",
+    "calculatorIds": [
+      "hot-tub-chlorine-calculator",
+      "hot-tub-shock-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "san-06",
+      "ht-01",
+      "ht-02"
+    ],
+    "glossaryIds": [
+      "gl-027",
+      "gl-028"
+    ],
+    "referenceIds": [
+      "ref-02"
+    ],
+    "resourceIds": [
+      "hot-tub-maintenance-log"
+    ],
+    "chartIds": [
+      "hot-tub-chemical-levels-chart"
+    ],
+    "problemIds": [
+      "skin-irritation",
+      "eye-irritation"
+    ],
+    "relatedEntities": [
+      "free-chlorine",
+      "hot-tub",
+      "bcdmh",
+      "oxidation"
+    ],
+    "keywords": [
+      "bromine",
+      "spa sanitizer",
+      "hot tub bromine",
+      "BCDMH"
+    ]
+  },
+  "cyanuric-acid": {
+    "id": "cyanuric-acid",
+    "type": "chemical",
+    "name": "Cyanuric Acid",
+    "shortDescription": "A chemical stabilizer that protects chlorine from UV degradation in outdoor pools.",
+    "idealRange": "30–50 ppm (standard pools); 60–80 ppm (salt pools)",
+    "units": "ppm",
+    "calculatorIds": [
+      "pool-cyanuric-acid-calculator",
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-07"
+    ],
+    "academyIds": [
+      "wb-04",
+      "san-04",
+      "san-05"
+    ],
+    "glossaryIds": [
+      "gl-011",
+      "gl-024",
+      "gl-023"
+    ],
+    "referenceIds": [
+      "ref-07",
+      "ref-01",
+      "ref-14"
+    ],
+    "resourceIds": [
+      "water-test-log"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart",
+      "pool-water-balance-chart"
+    ],
+    "problemIds": [
+      "low-chlorine",
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "free-chlorine",
+      "uv-degradation",
+      "chlorine-lock",
+      "lsi",
+      "water-replacement"
+    ],
+    "keywords": [
+      "CYA",
+      "cyanuric acid",
+      "stabilizer",
+      "conditioner",
+      "chlorine lock",
+      "UV protection"
+    ]
+  },
+  "calcium-hardness": {
+    "id": "calcium-hardness",
+    "type": "chemical",
+    "name": "Calcium Hardness",
+    "shortDescription": "The concentration of dissolved calcium in pool water, affecting scaling and corrosion tendency.",
+    "idealRange": "200–400 ppm (plaster); 150–250 ppm (vinyl/fiberglass)",
+    "units": "ppm",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-09"
+    ],
+    "academyIds": [
+      "wb-03",
+      "fund-01",
+      "fund-02",
+      "ts-05",
+      "ts-06"
+    ],
+    "glossaryIds": [
+      "gl-010",
+      "gl-063",
+      "gl-064"
+    ],
+    "referenceIds": [
+      "ref-01",
+      "ref-08",
+      "ref-14"
+    ],
+    "resourceIds": [
+      "water-test-log"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart",
+      "pool-water-balance-chart"
+    ],
+    "problemIds": [
+      "scaling",
+      "corrosion"
+    ],
+    "relatedEntities": [
+      "lsi",
+      "ph",
+      "alkalinity",
+      "scaling",
+      "corrosion",
+      "concrete-pool",
+      "water-replacement"
+    ],
+    "keywords": [
+      "calcium hardness",
+      "CH",
+      "water hardness",
+      "scaling",
+      "calcium"
+    ]
+  },
+  "salt": {
+    "id": "salt",
+    "type": "chemical",
+    "name": "Salt",
+    "shortDescription": "Sodium chloride dissolved in pool water to enable chlorine generation by a salt chlorinator.",
+    "idealRange": "2,700–3,400 ppm (system-dependent)",
+    "units": "ppm",
+    "calculatorIds": [
+      "saltwater-pool-salt-calculator"
+    ],
+    "formulaIds": [
+      "formula-06"
+    ],
+    "academyIds": [
+      "eq-04",
+      "san-04"
+    ],
+    "glossaryIds": [
+      "gl-029"
+    ],
+    "referenceIds": [
+      "ref-06",
+      "ref-01"
+    ],
+    "resourceIds": [
+      "water-test-log"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart"
+    ],
+    "problemIds": [],
+    "relatedEntities": [
+      "saltwater-pool",
+      "salt-chlorinator",
+      "free-chlorine",
+      "total-dissolved-solids"
+    ],
+    "keywords": [
+      "salt",
+      "pool salt",
+      "NaCl",
+      "saltwater pool",
+      "salt level"
+    ]
+  },
+  "total-dissolved-solids": {
+    "id": "total-dissolved-solids",
+    "type": "chemical",
+    "name": "Total Dissolved Solids",
+    "shortDescription": "The cumulative concentration of all dissolved matter in pool water.",
+    "idealRange": "Below 2,000 ppm (pools); below 1,500 ppm above baseline (spas)",
+    "units": "ppm",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "fund-01",
+      "ht-04"
+    ],
+    "glossaryIds": [
+      "gl-014"
+    ],
+    "referenceIds": [
+      "ref-14",
+      "ref-02"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "foaming",
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "water-replacement",
+      "hot-tub",
+      "salt",
+      "partial-drain"
+    ],
+    "keywords": [
+      "TDS",
+      "total dissolved solids",
+      "water replacement trigger",
+      "spa water change"
+    ]
+  },
+  "phosphate": {
+    "id": "phosphate",
+    "type": "chemical",
+    "name": "Phosphate",
+    "shortDescription": "A nutrient compound in pool water that can fuel algae growth.",
+    "idealRange": "Below 200 ppb (ideally)",
+    "units": "ppb",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "ts-02"
+    ],
+    "glossaryIds": [
+      "gl-065"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "algae",
+      "green-water"
+    ],
+    "relatedEntities": [
+      "algae",
+      "free-chlorine",
+      "green-water"
+    ],
+    "keywords": [
+      "phosphate",
+      "PO4",
+      "algae nutrient",
+      "phosphate remover"
+    ]
+  },
+  "copper": {
+    "id": "copper",
+    "type": "chemical",
+    "name": "Copper",
+    "shortDescription": "A metal that can enter pool water from ionizers, algaecides, or corroded equipment, causing green staining.",
+    "idealRange": "0 ppm (maximum 0.2 ppm)",
+    "units": "ppm",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "ts-06"
+    ],
+    "glossaryIds": [
+      "gl-067"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "corrosion",
+      "green-water"
+    ],
+    "relatedEntities": [
+      "corrosion",
+      "lsi",
+      "algae",
+      "metal-sequestrant"
+    ],
+    "keywords": [
+      "copper",
+      "Cu",
+      "copper staining",
+      "green hair",
+      "metal level"
+    ]
+  },
+  "iron": {
+    "id": "iron",
+    "type": "chemical",
+    "name": "Iron",
+    "shortDescription": "A metal dissolved in pool water that causes rust-brown staining when oxidized.",
+    "idealRange": "0 ppm",
+    "units": "ppm",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "ts-06"
+    ],
+    "glossaryIds": [
+      "gl-066"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "corrosion"
+    ],
+    "relatedEntities": [
+      "corrosion",
+      "lsi",
+      "metal-sequestrant"
+    ],
+    "keywords": [
+      "iron",
+      "Fe",
+      "rust staining",
+      "iron staining",
+      "metal level"
+    ]
+  },
+  "manganese": {
+    "id": "manganese",
+    "type": "chemical",
+    "name": "Manganese",
+    "shortDescription": "A dissolved metal that causes black or purple staining in pool water.",
+    "idealRange": "0 ppm",
+    "units": "ppm",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "corrosion"
+    ],
+    "relatedEntities": [
+      "iron",
+      "copper",
+      "corrosion",
+      "metal-sequestrant"
+    ],
+    "keywords": [
+      "manganese",
+      "Mn",
+      "black staining",
+      "metal staining"
+    ]
+  },
+  "hydrogen-peroxide": {
+    "id": "hydrogen-peroxide",
+    "type": "chemical",
+    "name": "Hydrogen Peroxide",
+    "shortDescription": "An oxidizer used in non-chlorine pool systems and as an emergency chlorine neutralizer.",
+    "idealRange": "30–100 ppm (peroxide-based systems)",
+    "units": "ppm",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-04"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "high-chlorine"
+    ],
+    "relatedEntities": [
+      "biguanide",
+      "oxidation",
+      "free-chlorine"
+    ],
+    "keywords": [
+      "hydrogen peroxide",
+      "H2O2",
+      "peroxide pool",
+      "chlorine neutralizer"
+    ]
+  },
+  "ozone": {
+    "id": "ozone",
+    "type": "chemical",
+    "name": "Ozone",
+    "shortDescription": "A powerful oxidizer generated on-site and injected into pool water as a supplemental sanitizer.",
+    "idealRange": "N/A (residual; used with 0.5–1 ppm FC)",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [
+      "gl-032"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "oxidation",
+      "free-chlorine",
+      "sanitizing"
+    ],
+    "keywords": [
+      "ozone",
+      "O3",
+      "ozone generator",
+      "UV sanitizer",
+      "supplemental sanitizer"
+    ]
+  },
+  "biguanide": {
+    "id": "biguanide",
+    "type": "chemical",
+    "name": "Biguanide",
+    "shortDescription": "A chlorine-free sanitizer system using polyhexamethylene biguanide (PHMB) as the primary disinfectant.",
+    "idealRange": "30–50 ppm (PHMB)",
+    "units": "ppm",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "hydrogen-peroxide",
+      "sanitizing",
+      "swimming-pool"
+    ],
+    "keywords": [
+      "biguanide",
+      "PHMB",
+      "Baquacil",
+      "chlorine-free pool",
+      "SoftSwim"
+    ]
+  },
+  "ph": {
+    "id": "ph",
+    "type": "measurement",
+    "name": "pH",
+    "shortDescription": "The measure of hydrogen ion concentration indicating acidity or alkalinity of pool water.",
+    "idealRange": "7.2–7.6",
+    "units": "pH units",
+    "calculatorIds": [
+      "pool-ph-calculator",
+      "hot-tub-ph-calculator",
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-04",
+      "formula-09"
+    ],
+    "academyIds": [
+      "wb-01",
+      "fund-01",
+      "fund-02",
+      "wb-06",
+      "ts-05",
+      "ts-06"
+    ],
+    "glossaryIds": [
+      "gl-008",
+      "gl-036",
+      "gl-035",
+      "gl-037",
+      "gl-073"
+    ],
+    "referenceIds": [
+      "ref-09",
+      "ref-01",
+      "ref-10"
+    ],
+    "resourceIds": [
+      "water-test-log",
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart",
+      "pool-water-balance-chart",
+      "hot-tub-chemical-levels-chart"
+    ],
+    "problemIds": [
+      "scaling",
+      "corrosion",
+      "eye-irritation",
+      "skin-irritation",
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "alkalinity",
+      "lsi",
+      "free-chlorine",
+      "calcium-hardness",
+      "muriatic-acid",
+      "soda-ash",
+      "scaling",
+      "corrosion"
+    ],
+    "keywords": [
+      "pH",
+      "pool pH",
+      "acid level",
+      "alkaline level",
+      "pH balance",
+      "pH adjustment"
+    ]
+  },
+  "orp": {
+    "id": "orp",
+    "type": "measurement",
+    "name": "ORP",
+    "shortDescription": "Oxidation-Reduction Potential — an electrical measurement of water's sanitizing capacity.",
+    "idealRange": "650–750 mV",
+    "units": "mV",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "fund-03",
+      "test-05"
+    ],
+    "glossaryIds": [
+      "gl-013"
+    ],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "low-chlorine"
+    ],
+    "relatedEntities": [
+      "free-chlorine",
+      "ph",
+      "sanitizing"
+    ],
+    "keywords": [
+      "ORP",
+      "oxidation reduction potential",
+      "redox",
+      "sanitizing capacity",
+      "mV"
+    ]
+  },
+  "temperature": {
+    "id": "temperature",
+    "type": "measurement",
+    "name": "Temperature",
+    "shortDescription": "Water temperature in °F or °C, affecting chemical reactions, chlorine demand, and comfort.",
+    "idealRange": "78–84°F (pools); 100–104°F (hot tubs)",
+    "units": "°F / °C",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-09"
+    ],
+    "academyIds": [
+      "fund-05",
+      "ht-01",
+      "ht-06",
+      "wb-05"
+    ],
+    "glossaryIds": [
+      "gl-078"
+    ],
+    "referenceIds": [
+      "ref-03"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "lsi",
+      "free-chlorine",
+      "ph",
+      "hot-tub",
+      "balancing"
+    ],
+    "keywords": [
+      "temperature",
+      "water temperature",
+      "pool temp",
+      "hot tub temperature",
+      "°F",
+      "°C"
+    ]
+  },
+  "alkalinity": {
+    "id": "alkalinity",
+    "type": "measurement",
+    "name": "Total Alkalinity",
+    "shortDescription": "The capacity of water to resist pH changes — a pH buffer.",
+    "idealRange": "80–120 ppm",
+    "units": "ppm",
+    "calculatorIds": [
+      "pool-alkalinity-calculator",
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-05",
+      "formula-09"
+    ],
+    "academyIds": [
+      "wb-02",
+      "fund-01",
+      "fund-02",
+      "wb-06",
+      "ts-05",
+      "ts-06"
+    ],
+    "glossaryIds": [
+      "gl-009",
+      "gl-035",
+      "gl-075"
+    ],
+    "referenceIds": [
+      "ref-08",
+      "ref-01"
+    ],
+    "resourceIds": [
+      "water-test-log"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart",
+      "pool-water-balance-chart"
+    ],
+    "problemIds": [
+      "scaling",
+      "corrosion",
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "ph",
+      "lsi",
+      "calcium-hardness",
+      "sodium-bicarbonate",
+      "muriatic-acid",
+      "balancing"
+    ],
+    "keywords": [
+      "total alkalinity",
+      "TA",
+      "pH buffer",
+      "bicarbonate alkalinity",
+      "alkalinity adjustment"
+    ]
+  },
+  "lsi": {
+    "id": "lsi",
+    "type": "measurement",
+    "name": "Langelier Saturation Index",
+    "shortDescription": "A composite score indicating whether water is balanced, corrosive, or scale-forming.",
+    "idealRange": "−0.3 to +0.5",
+    "units": "dimensionless",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-09"
+    ],
+    "academyIds": [
+      "wb-05",
+      "fund-02",
+      "wb-06"
+    ],
+    "glossaryIds": [
+      "gl-012",
+      "gl-074"
+    ],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [
+      "pool-water-balance-chart"
+    ],
+    "problemIds": [
+      "scaling",
+      "corrosion"
+    ],
+    "relatedEntities": [
+      "ph",
+      "alkalinity",
+      "calcium-hardness",
+      "temperature",
+      "scaling",
+      "corrosion",
+      "balancing"
+    ],
+    "keywords": [
+      "LSI",
+      "Langelier Saturation Index",
+      "water balance",
+      "saturation index",
+      "corrosion index"
+    ]
+  },
+  "gallons": {
+    "id": "gallons",
+    "type": "measurement",
+    "name": "Gallons",
+    "shortDescription": "US liquid gallon — the standard unit of pool volume measurement.",
+    "idealRange": "N/A",
+    "units": "gallons",
+    "calculatorIds": [
+      "pool-volume-calculator",
+      "spa-volume-calculator",
+      "volume-calculator"
+    ],
+    "formulaIds": [
+      "formula-01"
+    ],
+    "academyIds": [
+      "fund-01"
+    ],
+    "glossaryIds": [
+      "gl-058"
+    ],
+    "referenceIds": [
+      "ref-15",
+      "ref-16"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "flow-rate",
+      "turnover-time",
+      "pool-volume-formula"
+    ],
+    "keywords": [
+      "gallons",
+      "pool volume",
+      "gal",
+      "pool capacity",
+      "volume measurement"
+    ]
+  },
+  "liters": {
+    "id": "liters",
+    "type": "measurement",
+    "name": "Liters",
+    "shortDescription": "SI unit of volume — 1 US gallon equals approximately 3.785 liters.",
+    "idealRange": "N/A",
+    "units": "liters",
+    "calculatorIds": [
+      "pool-volume-calculator",
+      "volume-calculator"
+    ],
+    "formulaIds": [
+      "formula-01"
+    ],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-23"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "gallons",
+      "ppm"
+    ],
+    "keywords": [
+      "liters",
+      "litres",
+      "metric volume",
+      "L",
+      "pool volume metric"
+    ]
+  },
+  "ppm": {
+    "id": "ppm",
+    "type": "measurement",
+    "name": "Parts Per Million",
+    "shortDescription": "The standard unit for measuring chemical concentrations in pool water.",
+    "idealRange": "N/A (unit, not parameter)",
+    "units": "ppm = mg/L",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "fund-03",
+      "test-05"
+    ],
+    "glossaryIds": [
+      "gl-054"
+    ],
+    "referenceIds": [
+      "ref-23"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "alkalinity",
+      "calcium-hardness",
+      "cyanuric-acid"
+    ],
+    "keywords": [
+      "ppm",
+      "parts per million",
+      "mg/L",
+      "concentration unit",
+      "pool chemistry units"
+    ]
+  },
+  "flow-rate": {
+    "id": "flow-rate",
+    "type": "measurement",
+    "name": "Flow Rate",
+    "shortDescription": "The volume of water the pump moves per minute — a key factor in turnover rate.",
+    "idealRange": "N/A (calculated from pool volume and target turnover)",
+    "units": "GPM",
+    "calculatorIds": [
+      "pool-turnover-rate-calculator"
+    ],
+    "formulaIds": [
+      "formula-08"
+    ],
+    "academyIds": [
+      "eq-03"
+    ],
+    "glossaryIds": [
+      "gl-060",
+      "gl-017"
+    ],
+    "referenceIds": [
+      "ref-13"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "pump",
+      "turnover-time",
+      "filtration",
+      "gallons"
+    ],
+    "keywords": [
+      "flow rate",
+      "GPM",
+      "gallons per minute",
+      "pump flow",
+      "circulation"
+    ]
+  },
+  "turnover-time": {
+    "id": "turnover-time",
+    "type": "measurement",
+    "name": "Turnover Time",
+    "shortDescription": "The time required for the pump to circulate the entire pool volume through the filter once.",
+    "idealRange": "6–8 hours maximum (residential pools)",
+    "units": "hours",
+    "calculatorIds": [
+      "pool-turnover-rate-calculator"
+    ],
+    "formulaIds": [
+      "formula-08"
+    ],
+    "academyIds": [
+      "eq-03",
+      "fund-01"
+    ],
+    "glossaryIds": [
+      "gl-017",
+      "gl-077"
+    ],
+    "referenceIds": [
+      "ref-13"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "pump",
+      "flow-rate",
+      "filtration",
+      "gallons"
+    ],
+    "keywords": [
+      "turnover rate",
+      "turnover time",
+      "pump turnover",
+      "filter rate",
+      "pool circulation"
+    ]
+  },
+  "pump": {
+    "id": "pump",
+    "type": "equipment",
+    "name": "Pool Pump",
+    "shortDescription": "The motor and impeller assembly that circulates water through the filtration and chemical treatment system.",
+    "idealRange": "N/A",
+    "units": "horsepower (HP), GPM",
+    "calculatorIds": [
+      "pool-turnover-rate-calculator"
+    ],
+    "formulaIds": [
+      "formula-08"
+    ],
+    "academyIds": [
+      "eq-03",
+      "fund-01"
+    ],
+    "glossaryIds": [
+      "gl-059",
+      "gl-017",
+      "gl-060"
+    ],
+    "referenceIds": [
+      "ref-13"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "sand-filter",
+      "cartridge-filter",
+      "de-filter",
+      "flow-rate",
+      "turnover-time",
+      "filtration"
+    ],
+    "keywords": [
+      "pool pump",
+      "circulation pump",
+      "variable speed pump",
+      "VSP",
+      "pump horsepower"
+    ]
+  },
+  "sand-filter": {
+    "id": "sand-filter",
+    "type": "equipment",
+    "name": "Sand Filter",
+    "shortDescription": "A filter using silica sand to trap particles down to 20–40 microns.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "eq-01",
+      "eq-02"
+    ],
+    "glossaryIds": [
+      "gl-020",
+      "gl-016",
+      "gl-015"
+    ],
+    "referenceIds": [
+      "ref-12"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "pump",
+      "cartridge-filter",
+      "de-filter",
+      "backwashing",
+      "filtration"
+    ],
+    "keywords": [
+      "sand filter",
+      "pool filter sand",
+      "backwash filter",
+      "silica sand filter"
+    ]
+  },
+  "cartridge-filter": {
+    "id": "cartridge-filter",
+    "type": "equipment",
+    "name": "Cartridge Filter",
+    "shortDescription": "A filter using pleated polyester cartridges to trap particles down to 10–15 microns without backwashing.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "eq-01",
+      "eq-02"
+    ],
+    "glossaryIds": [
+      "gl-019",
+      "gl-015"
+    ],
+    "referenceIds": [
+      "ref-12"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "pump",
+      "sand-filter",
+      "de-filter",
+      "filtration"
+    ],
+    "keywords": [
+      "cartridge filter",
+      "pool filter cartridge",
+      "pleated filter",
+      "no backwash filter"
+    ]
+  },
+  "de-filter": {
+    "id": "de-filter",
+    "type": "equipment",
+    "name": "DE Filter",
+    "shortDescription": "A diatomaceous earth filter offering the finest filtration (3–5 microns) of any pool filter type.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "eq-01",
+      "eq-02"
+    ],
+    "glossaryIds": [
+      "gl-061"
+    ],
+    "referenceIds": [
+      "ref-12"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "pump",
+      "sand-filter",
+      "cartridge-filter",
+      "backwashing",
+      "filtration"
+    ],
+    "keywords": [
+      "DE filter",
+      "diatomaceous earth filter",
+      "D.E. filter",
+      "fine filtration"
+    ]
+  },
+  "skimmer": {
+    "id": "skimmer",
+    "type": "equipment",
+    "name": "Skimmer",
+    "shortDescription": "A wall-mounted intake that removes floating debris from the pool surface before it sinks.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "eq-06",
+      "eq-03"
+    ],
+    "glossaryIds": [
+      "gl-018"
+    ],
+    "referenceIds": [],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "pump",
+      "filtration",
+      "main-drain"
+    ],
+    "keywords": [
+      "skimmer",
+      "pool skimmer",
+      "surface skimmer",
+      "skimmer basket"
+    ]
+  },
+  "heater": {
+    "id": "heater",
+    "type": "equipment",
+    "name": "Pool Heater",
+    "shortDescription": "A device that raises water temperature using gas, electric heat pump, or solar energy.",
+    "idealRange": "N/A",
+    "units": "BTU, kW",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "fund-05"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-03"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "scaling"
+    ],
+    "relatedEntities": [
+      "temperature",
+      "lsi",
+      "scaling",
+      "swimming-pool"
+    ],
+    "keywords": [
+      "pool heater",
+      "heat pump",
+      "gas heater",
+      "solar pool heater",
+      "pool heating"
+    ]
+  },
+  "salt-chlorinator": {
+    "id": "salt-chlorinator",
+    "type": "equipment",
+    "name": "Salt Chlorinator",
+    "shortDescription": "An electrolytic cell that converts dissolved salt into hypochlorous acid to sanitize pool water.",
+    "idealRange": "N/A (requires 2,700–3,400 ppm salt)",
+    "units": "N/A",
+    "calculatorIds": [
+      "saltwater-pool-salt-calculator"
+    ],
+    "formulaIds": [
+      "formula-06"
+    ],
+    "academyIds": [
+      "eq-04",
+      "san-04"
+    ],
+    "glossaryIds": [
+      "gl-029"
+    ],
+    "referenceIds": [
+      "ref-06"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "saltwater-pool",
+      "salt",
+      "free-chlorine",
+      "calcium-hardness",
+      "lsi"
+    ],
+    "keywords": [
+      "salt chlorinator",
+      "saltwater generator",
+      "SWCG",
+      "salt cell",
+      "chlorine generator"
+    ]
+  },
+  "automatic-chlorinator": {
+    "id": "automatic-chlorinator",
+    "type": "equipment",
+    "name": "Automatic Chlorinator",
+    "shortDescription": "An inline or offline device that dispenses trichlor tablets continuously to maintain free chlorine.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-chlorine-calculator"
+    ],
+    "formulaIds": [
+      "formula-02"
+    ],
+    "academyIds": [
+      "eq-05",
+      "san-04"
+    ],
+    "glossaryIds": [
+      "gl-024"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "low-chlorine"
+    ],
+    "relatedEntities": [
+      "free-chlorine",
+      "cyanuric-acid",
+      "trichlor-tablets",
+      "sanitizing"
+    ],
+    "keywords": [
+      "automatic chlorinator",
+      "chlorine feeder",
+      "tablet feeder",
+      "erosion feeder",
+      "trichlor feeder"
+    ]
+  },
+  "chemical-feeder": {
+    "id": "chemical-feeder",
+    "type": "equipment",
+    "name": "Chemical Feeder",
+    "shortDescription": "A device that automatically dispenses pool chemicals at a controlled rate.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "eq-05"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "automatic-chlorinator",
+      "ph",
+      "orp",
+      "sanitizing"
+    ],
+    "keywords": [
+      "chemical feeder",
+      "automated chemical system",
+      "chemical controller",
+      "ORP controller"
+    ]
+  },
+  "cover": {
+    "id": "cover",
+    "type": "equipment",
+    "name": "Pool Cover",
+    "shortDescription": "A cover that reduces evaporation, heat loss, debris entry, and UV degradation of chemicals.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "ht-06",
+      "eq-01"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [
+      "pool-closing-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "hot-tub",
+      "swimming-pool",
+      "winterization",
+      "temperature"
+    ],
+    "keywords": [
+      "pool cover",
+      "solar cover",
+      "safety cover",
+      "pool blanket",
+      "hot tub cover"
+    ]
+  },
+  "shock-treatment": {
+    "id": "shock-treatment",
+    "type": "process",
+    "name": "Shock Treatment",
+    "shortDescription": "Adding a large dose of chlorine or non-chlorine oxidizer to destroy combined chlorine, algae, and contaminants.",
+    "idealRange": "N/A (raises FC to 10–30 ppm temporarily)",
+    "units": "ppm FC",
+    "calculatorIds": [
+      "pool-shock-calculator",
+      "hot-tub-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "san-05",
+      "san-03",
+      "ht-05",
+      "ts-02",
+      "ts-04",
+      "vr-06"
+    ],
+    "glossaryIds": [
+      "gl-007",
+      "gl-021",
+      "gl-004",
+      "gl-025"
+    ],
+    "referenceIds": [
+      "ref-05",
+      "ref-11"
+    ],
+    "resourceIds": [
+      "pool-shock-log",
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart"
+    ],
+    "problemIds": [
+      "algae",
+      "green-water",
+      "strong-chlorine-smell",
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "breakpoint-chlorination",
+      "free-chlorine",
+      "combined-chlorine",
+      "calcium-hypochlorite",
+      "liquid-chlorine",
+      "algae"
+    ],
+    "keywords": [
+      "shock treatment",
+      "pool shock",
+      "superchlorination",
+      "breakpoint chlorination",
+      "chlorine shock"
+    ]
+  },
+  "breakpoint-chlorination": {
+    "id": "breakpoint-chlorination",
+    "type": "process",
+    "name": "Breakpoint Chlorination",
+    "shortDescription": "Adding chlorine at 10× the combined chlorine level to destroy all chloramines.",
+    "idealRange": "FC must reach 10× CC level",
+    "units": "ppm FC",
+    "calculatorIds": [
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "san-03",
+      "san-05",
+      "ts-04"
+    ],
+    "glossaryIds": [
+      "gl-004",
+      "gl-021"
+    ],
+    "referenceIds": [
+      "ref-05"
+    ],
+    "resourceIds": [
+      "pool-shock-log"
+    ],
+    "chartIds": [],
+    "problemIds": [
+      "strong-chlorine-smell",
+      "eye-irritation",
+      "skin-irritation"
+    ],
+    "relatedEntities": [
+      "shock-treatment",
+      "combined-chlorine",
+      "free-chlorine",
+      "chloramines"
+    ],
+    "keywords": [
+      "breakpoint chlorination",
+      "BPC",
+      "chloramine removal",
+      "10x combined chlorine",
+      "shock dose"
+    ]
+  },
+  "backwashing": {
+    "id": "backwashing",
+    "type": "process",
+    "name": "Backwashing",
+    "shortDescription": "Reversing water flow through a sand or DE filter to flush trapped debris to waste.",
+    "idealRange": "N/A (triggered at 8–10 psi over baseline)",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "eq-01",
+      "eq-02"
+    ],
+    "glossaryIds": [
+      "gl-016",
+      "gl-015"
+    ],
+    "referenceIds": [
+      "ref-12"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "sand-filter",
+      "de-filter",
+      "filtration",
+      "pump"
+    ],
+    "keywords": [
+      "backwashing",
+      "backwash filter",
+      "filter pressure",
+      "multiport valve",
+      "filter cleaning"
+    ]
+  },
+  "winterization": {
+    "id": "winterization",
+    "type": "process",
+    "name": "Winterization",
+    "shortDescription": "The process of closing a pool or hot tub for the winter to prevent freeze damage.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "ht-06"
+    ],
+    "glossaryIds": [
+      "gl-069"
+    ],
+    "referenceIds": [],
+    "resourceIds": [
+      "pool-closing-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "cover",
+      "swimming-pool",
+      "hot-tub",
+      "pool-opening",
+      "balancing"
+    ],
+    "keywords": [
+      "winterization",
+      "pool closing",
+      "winter shutdown",
+      "closing checklist",
+      "freeze protection"
+    ]
+  },
+  "pool-opening": {
+    "id": "pool-opening",
+    "type": "process",
+    "name": "Pool Opening",
+    "shortDescription": "The spring start-up process to prepare a pool for the swimming season.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [
+      "gl-082"
+    ],
+    "referenceIds": [
+      "ref-20"
+    ],
+    "resourceIds": [
+      "pool-opening-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [
+      "algae",
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "winterization",
+      "balancing",
+      "testing",
+      "swimming-pool"
+    ],
+    "keywords": [
+      "pool opening",
+      "spring startup",
+      "pool opening checklist",
+      "seasonal opening"
+    ]
+  },
+  "water-replacement": {
+    "id": "water-replacement",
+    "type": "process",
+    "name": "Water Replacement",
+    "shortDescription": "Partially or completely draining and refilling pool or spa water to reduce dissolved compound levels.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-volume-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "ht-04",
+      "vr-06"
+    ],
+    "glossaryIds": [
+      "gl-072"
+    ],
+    "referenceIds": [
+      "ref-14"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "cyanuric-acid",
+      "calcium-hardness",
+      "total-dissolved-solids",
+      "salt",
+      "hot-tub"
+    ],
+    "keywords": [
+      "water replacement",
+      "partial drain",
+      "drain and refill",
+      "water change",
+      "dilution"
+    ]
+  },
+  "filtration": {
+    "id": "filtration",
+    "type": "process",
+    "name": "Filtration",
+    "shortDescription": "The continuous mechanical removal of suspended particles from pool water.",
+    "idealRange": "N/A (at least 8-hour turnover per day)",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-turnover-rate-calculator"
+    ],
+    "formulaIds": [
+      "formula-08"
+    ],
+    "academyIds": [
+      "eq-01",
+      "eq-02",
+      "eq-03"
+    ],
+    "glossaryIds": [
+      "gl-015",
+      "gl-016",
+      "gl-017"
+    ],
+    "referenceIds": [
+      "ref-12",
+      "ref-13"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [
+      "cloudy-water",
+      "algae"
+    ],
+    "relatedEntities": [
+      "pump",
+      "sand-filter",
+      "cartridge-filter",
+      "de-filter",
+      "backwashing",
+      "turnover-time"
+    ],
+    "keywords": [
+      "filtration",
+      "pool filter",
+      "filter system",
+      "pump filtration",
+      "water clarity"
+    ]
+  },
+  "testing": {
+    "id": "testing",
+    "type": "process",
+    "name": "Water Testing",
+    "shortDescription": "Measuring pool water chemistry parameters using test strips, liquid kits, or digital testers.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "test-01",
+      "test-02",
+      "test-03",
+      "test-04",
+      "test-05",
+      "test-06",
+      "fund-03"
+    ],
+    "glossaryIds": [
+      "gl-051",
+      "gl-052",
+      "gl-053",
+      "gl-050"
+    ],
+    "referenceIds": [
+      "ref-19"
+    ],
+    "resourceIds": [
+      "water-test-log"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "ph",
+      "alkalinity",
+      "calcium-hardness",
+      "cyanuric-acid"
+    ],
+    "keywords": [
+      "water testing",
+      "pool test",
+      "test strips",
+      "test kit",
+      "DPD test",
+      "digital tester"
+    ]
+  },
+  "sanitizing": {
+    "id": "sanitizing",
+    "type": "process",
+    "name": "Sanitizing",
+    "shortDescription": "Maintaining an adequate residual disinfectant to destroy pathogens in pool water.",
+    "idealRange": "N/A (depends on disinfectant type and CYA)",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-chlorine-calculator",
+      "hot-tub-chlorine-calculator"
+    ],
+    "formulaIds": [
+      "formula-02"
+    ],
+    "academyIds": [
+      "san-01",
+      "san-06",
+      "fund-01",
+      "fund-02"
+    ],
+    "glossaryIds": [
+      "gl-005",
+      "gl-001"
+    ],
+    "referenceIds": [
+      "ref-01",
+      "ref-02"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "low-chlorine",
+      "algae",
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "free-chlorine",
+      "bromine",
+      "biguanide",
+      "ozone",
+      "ph",
+      "cyanuric-acid"
+    ],
+    "keywords": [
+      "sanitizing",
+      "disinfection",
+      "pool sanitation",
+      "chlorination",
+      "disinfectant residual"
+    ]
+  },
+  "oxidation": {
+    "id": "oxidation",
+    "type": "process",
+    "name": "Oxidation",
+    "shortDescription": "The chemical destruction of organic compounds, combined chlorine, and contaminants in pool water.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "san-05",
+      "san-02"
+    ],
+    "glossaryIds": [
+      "gl-006"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "combined-chlorine",
+      "strong-chlorine-smell"
+    ],
+    "relatedEntities": [
+      "shock-treatment",
+      "combined-chlorine",
+      "sanitizing",
+      "hydrogen-peroxide"
+    ],
+    "keywords": [
+      "oxidation",
+      "non-chlorine oxidizer",
+      "potassium monopersulfate",
+      "oxidizing treatment"
+    ]
+  },
+  "balancing": {
+    "id": "balancing",
+    "type": "process",
+    "name": "Water Balancing",
+    "shortDescription": "The process of adjusting all chemistry parameters to achieve a stable, non-corrosive, non-scaling LSI.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-09",
+      "formula-04",
+      "formula-05"
+    ],
+    "academyIds": [
+      "wb-06",
+      "fund-02",
+      "fund-01"
+    ],
+    "glossaryIds": [
+      "gl-012",
+      "gl-091"
+    ],
+    "referenceIds": [
+      "ref-20",
+      "ref-01"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist",
+      "water-test-log"
+    ],
+    "chartIds": [
+      "pool-water-balance-chart"
+    ],
+    "problemIds": [
+      "scaling",
+      "corrosion",
+      "cloudy-water"
+    ],
+    "relatedEntities": [
+      "ph",
+      "alkalinity",
+      "calcium-hardness",
+      "lsi",
+      "cyanuric-acid",
+      "free-chlorine"
+    ],
+    "keywords": [
+      "water balancing",
+      "water balance",
+      "pool chemistry",
+      "chemical balance",
+      "LSI balancing"
+    ]
+  },
+  "maintenance-checklist": {
+    "id": "maintenance-checklist",
+    "type": "resource",
+    "name": "Pool Maintenance Checklist",
+    "shortDescription": "A printable weekly pool maintenance checklist covering testing, cleaning, and chemical additions.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "vr-04",
+      "fund-06"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-19",
+      "ref-20"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "testing",
+      "balancing",
+      "filtration",
+      "swimming-pool"
+    ],
+    "keywords": [
+      "maintenance checklist",
+      "pool maintenance log",
+      "weekly pool care",
+      "printable checklist"
+    ]
+  },
+  "maintenance-log": {
+    "id": "maintenance-log",
+    "type": "resource",
+    "name": "Hot Tub Maintenance Log",
+    "shortDescription": "A printable log for recording hot tub and spa water tests, chemical additions, and service notes.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "hot-tub-chlorine-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "ht-01",
+      "ht-02",
+      "ht-03"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-19"
+    ],
+    "resourceIds": [
+      "hot-tub-maintenance-log"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "testing",
+      "hot-tub",
+      "balancing"
+    ],
+    "keywords": [
+      "hot tub log",
+      "spa maintenance log",
+      "hot tub record",
+      "spa care log"
+    ]
+  },
+  "chemical-log": {
+    "id": "chemical-log",
+    "type": "resource",
+    "name": "Pool Chemical Log Sheet",
+    "shortDescription": "A printable log for tracking pool chemical inventory, purchases, and usage over time.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "vr-03"
+    ],
+    "glossaryIds": [
+      "gl-092"
+    ],
+    "referenceIds": [],
+    "resourceIds": [
+      "pool-chemical-log-sheet"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "testing",
+      "balancing",
+      "swimming-pool",
+      "vacation-rental-checklist"
+    ],
+    "keywords": [
+      "chemical log",
+      "pool chemical record",
+      "chemical usage sheet",
+      "chemical inventory"
+    ]
+  },
+  "vacation-rental-checklist": {
+    "id": "vacation-rental-checklist",
+    "type": "resource",
+    "name": "Airbnb Pool Turnover Checklist",
+    "shortDescription": "A printable turnover checklist for vacation rental pool inspection and chemistry verification between guests.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "vr-01",
+      "vr-02",
+      "vr-03",
+      "vr-04",
+      "vr-05"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-21"
+    ],
+    "resourceIds": [
+      "airbnb-pool-turnover-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "testing",
+      "balancing",
+      "swimming-pool",
+      "hot-tub"
+    ],
+    "keywords": [
+      "vacation rental pool",
+      "Airbnb pool checklist",
+      "rental pool turnover",
+      "guest pool safety"
+    ]
+  },
+  "water-test-sheet": {
+    "id": "water-test-sheet",
+    "type": "resource",
+    "name": "Water Test Log",
+    "shortDescription": "A printable log for recording water test results over time to track chemistry trends.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "test-04",
+      "test-05"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-19"
+    ],
+    "resourceIds": [
+      "water-test-log"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "testing",
+      "balancing",
+      "swimming-pool"
+    ],
+    "keywords": [
+      "water test log",
+      "test results record",
+      "chemistry tracking",
+      "pool test history"
+    ]
+  },
+  "opening-checklist": {
+    "id": "opening-checklist",
+    "type": "resource",
+    "name": "Pool Opening Checklist",
+    "shortDescription": "A printable step-by-step checklist for spring pool opening.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [
+      "pool-opening-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "pool-opening",
+      "balancing",
+      "swimming-pool"
+    ],
+    "keywords": [
+      "pool opening checklist",
+      "spring pool startup",
+      "opening the pool"
+    ]
+  },
+  "closing-checklist": {
+    "id": "closing-checklist",
+    "type": "resource",
+    "name": "Pool Closing Checklist",
+    "shortDescription": "A printable step-by-step checklist for winterizing a pool.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "ht-06"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [
+      "pool-closing-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "winterization",
+      "balancing",
+      "swimming-pool"
+    ],
+    "keywords": [
+      "pool closing checklist",
+      "winterizing checklist",
+      "closing pool for winter"
+    ]
+  },
+  "emergency-reference": {
+    "id": "emergency-reference",
+    "type": "resource",
+    "name": "Emergency Recovery Reference",
+    "shortDescription": "A printable quick-reference for emergency pool and spa recovery scenarios.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-shock-calculator",
+      "pool-volume-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "vr-06"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-22"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "green-water",
+      "algae",
+      "low-chlorine"
+    ],
+    "relatedEntities": [
+      "shock-treatment",
+      "green-water",
+      "algae",
+      "balancing"
+    ],
+    "keywords": [
+      "emergency pool recovery",
+      "green pool emergency",
+      "pool crisis response"
+    ]
+  },
+  "cloudy-water": {
+    "id": "cloudy-water",
+    "type": "problem",
+    "name": "Cloudy Water",
+    "shortDescription": "Water that lacks clarity due to suspended particles, chemical imbalance, or filtration issues.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-chlorine-calculator",
+      "pool-shock-calculator",
+      "pool-ph-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "ts-01"
+    ],
+    "glossaryIds": [
+      "gl-046",
+      "gl-047"
+    ],
+    "referenceIds": [],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart"
+    ],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "ph",
+      "alkalinity",
+      "calcium-hardness",
+      "filtration",
+      "algae",
+      "shock-treatment"
+    ],
+    "keywords": [
+      "cloudy water",
+      "cloudy pool",
+      "hazy pool",
+      "turbid water",
+      "pool clarity"
+    ]
+  },
+  "green-water": {
+    "id": "green-water",
+    "type": "problem",
+    "name": "Green Water",
+    "shortDescription": "Pool water discolored green by algae bloom due to insufficient free chlorine.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-shock-calculator",
+      "pool-chlorine-calculator",
+      "pool-volume-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "ts-02",
+      "vr-06"
+    ],
+    "glossaryIds": [
+      "gl-040",
+      "gl-041"
+    ],
+    "referenceIds": [
+      "ref-22"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "algae",
+      "free-chlorine",
+      "shock-treatment",
+      "cyanuric-acid",
+      "filtration"
+    ],
+    "keywords": [
+      "green pool",
+      "green water",
+      "algae bloom",
+      "pool algae",
+      "green pool fix"
+    ]
+  },
+  "foaming": {
+    "id": "foaming",
+    "type": "problem",
+    "name": "Foaming",
+    "shortDescription": "Persistent foam on pool or spa water surface caused by surfactants, high TDS, or algaecide.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "ts-03"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "total-dissolved-solids",
+      "hot-tub",
+      "water-replacement",
+      "sanitizing"
+    ],
+    "keywords": [
+      "foaming",
+      "pool foam",
+      "hot tub foam",
+      "spa foam",
+      "anti-foam"
+    ]
+  },
+  "scaling": {
+    "id": "scaling",
+    "type": "problem",
+    "name": "Scaling",
+    "shortDescription": "White or grey mineral deposits on pool surfaces and equipment caused by over-saturated water.",
+    "idealRange": "N/A (prevented by LSI < +0.5)",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-09"
+    ],
+    "academyIds": [
+      "ts-05",
+      "wb-05"
+    ],
+    "glossaryIds": [
+      "gl-064"
+    ],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [
+      "pool-water-balance-chart"
+    ],
+    "problemIds": [],
+    "relatedEntities": [
+      "lsi",
+      "calcium-hardness",
+      "ph",
+      "alkalinity",
+      "temperature",
+      "concrete-pool"
+    ],
+    "keywords": [
+      "scaling",
+      "calcium scale",
+      "pool scale",
+      "mineral deposits",
+      "lime scale",
+      "calcium carbonate"
+    ]
+  },
+  "corrosion": {
+    "id": "corrosion",
+    "type": "problem",
+    "name": "Corrosion",
+    "shortDescription": "Damage to pool surfaces and metal equipment caused by corrosive (low LSI) water.",
+    "idealRange": "N/A (prevented by LSI > −0.3)",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-09"
+    ],
+    "academyIds": [
+      "ts-06",
+      "wb-05"
+    ],
+    "glossaryIds": [
+      "gl-062"
+    ],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [
+      "pool-water-balance-chart"
+    ],
+    "problemIds": [],
+    "relatedEntities": [
+      "lsi",
+      "ph",
+      "alkalinity",
+      "calcium-hardness",
+      "copper",
+      "iron",
+      "concrete-pool"
+    ],
+    "keywords": [
+      "corrosion",
+      "pool corrosion",
+      "etching",
+      "aggressive water",
+      "plaster damage"
+    ]
+  },
+  "algae": {
+    "id": "algae",
+    "type": "problem",
+    "name": "Algae",
+    "shortDescription": "Plant-like organisms that grow in pool water when free chlorine is insufficient.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "ts-02"
+    ],
+    "glossaryIds": [
+      "gl-040",
+      "gl-041",
+      "gl-042",
+      "gl-043",
+      "gl-045"
+    ],
+    "referenceIds": [
+      "ref-22"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "shock-treatment",
+      "phosphate",
+      "cyanuric-acid",
+      "filtration",
+      "green-water"
+    ],
+    "keywords": [
+      "algae",
+      "pool algae",
+      "green algae",
+      "mustard algae",
+      "black algae",
+      "algae prevention"
+    ]
+  },
+  "strong-chlorine-smell": {
+    "id": "strong-chlorine-smell",
+    "type": "problem",
+    "name": "Strong Chlorine Smell",
+    "shortDescription": "A pungent chlorine odor caused by chloramines, not excess chlorine.",
+    "idealRange": "N/A (prevented by keeping CC < 0.5 ppm)",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "ts-04",
+      "san-02",
+      "san-03"
+    ],
+    "glossaryIds": [
+      "gl-022"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "combined-chlorine",
+      "breakpoint-chlorination",
+      "shock-treatment",
+      "eye-irritation"
+    ],
+    "keywords": [
+      "chlorine smell",
+      "pool odor",
+      "chloramine",
+      "strong chlorine",
+      "pool smell"
+    ]
+  },
+  "eye-irritation": {
+    "id": "eye-irritation",
+    "type": "problem",
+    "name": "Eye Irritation",
+    "shortDescription": "Swimmer eye irritation caused by chloramines or pH imbalance.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-shock-calculator",
+      "pool-ph-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "san-02",
+      "ts-04",
+      "wb-01"
+    ],
+    "glossaryIds": [
+      "gl-022",
+      "gl-008"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "combined-chlorine",
+      "ph",
+      "breakpoint-chlorination"
+    ],
+    "keywords": [
+      "eye irritation",
+      "red eyes",
+      "pool eye irritation",
+      "stinging eyes",
+      "swimmer eyes"
+    ]
+  },
+  "skin-irritation": {
+    "id": "skin-irritation",
+    "type": "problem",
+    "name": "Skin Irritation",
+    "shortDescription": "Swimmer skin irritation caused by pH imbalance, chloramines, or high disinfectant levels.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-ph-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "ts-04",
+      "wb-01"
+    ],
+    "glossaryIds": [
+      "gl-022",
+      "gl-008"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "combined-chlorine",
+      "ph",
+      "free-chlorine",
+      "breakpoint-chlorination"
+    ],
+    "keywords": [
+      "skin irritation",
+      "pool rash",
+      "swimmer rash",
+      "chemical irritation",
+      "skin sensitivity"
+    ]
+  },
+  "low-chlorine": {
+    "id": "low-chlorine",
+    "type": "problem",
+    "name": "Low Chlorine",
+    "shortDescription": "Free chlorine below the minimum effective level for the current CYA concentration.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-chlorine-calculator",
+      "hot-tub-chlorine-calculator"
+    ],
+    "formulaIds": [
+      "formula-02"
+    ],
+    "academyIds": [
+      "san-01",
+      "ts-02",
+      "wb-04"
+    ],
+    "glossaryIds": [
+      "gl-001",
+      "gl-011",
+      "gl-057"
+    ],
+    "referenceIds": [
+      "ref-07"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "cyanuric-acid",
+      "algae",
+      "green-water",
+      "sanitizing"
+    ],
+    "keywords": [
+      "low chlorine",
+      "insufficient chlorine",
+      "chlorine depletion",
+      "low FC",
+      "green pool risk"
+    ]
+  },
+  "high-chlorine": {
+    "id": "high-chlorine",
+    "type": "problem",
+    "name": "High Chlorine",
+    "shortDescription": "Free chlorine above 5 ppm causing bleaching, eye/skin irritation, and swimmer discomfort.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "san-05"
+    ],
+    "glossaryIds": [
+      "gl-001"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "hydrogen-peroxide",
+      "eye-irritation",
+      "skin-irritation"
+    ],
+    "keywords": [
+      "high chlorine",
+      "over-chlorination",
+      "excess chlorine",
+      "chlorine overdose"
+    ]
+  },
+  "low-ph": {
+    "id": "low-ph",
+    "type": "problem",
+    "name": "Low pH",
+    "shortDescription": "Pool water pH below 7.2, causing corrosion, eye irritation, and equipment damage.",
+    "idealRange": "N/A (pH should be 7.2–7.6)",
+    "units": "pH units",
+    "calculatorIds": [
+      "pool-ph-calculator"
+    ],
+    "formulaIds": [
+      "formula-04"
+    ],
+    "academyIds": [
+      "wb-01",
+      "ts-06"
+    ],
+    "glossaryIds": [
+      "gl-008"
+    ],
+    "referenceIds": [
+      "ref-09"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "ph",
+      "alkalinity",
+      "corrosion",
+      "lsi",
+      "soda-ash"
+    ],
+    "keywords": [
+      "low pH",
+      "acidic pool",
+      "pH too low",
+      "corrosive water",
+      "pH correction"
+    ]
+  },
+  "high-ph": {
+    "id": "high-ph",
+    "type": "problem",
+    "name": "High pH",
+    "shortDescription": "Pool water pH above 7.8, reducing chlorine effectiveness and promoting scale formation.",
+    "idealRange": "N/A (pH should be 7.2–7.6)",
+    "units": "pH units",
+    "calculatorIds": [
+      "pool-ph-calculator"
+    ],
+    "formulaIds": [
+      "formula-04"
+    ],
+    "academyIds": [
+      "wb-01",
+      "ts-05"
+    ],
+    "glossaryIds": [
+      "gl-008"
+    ],
+    "referenceIds": [
+      "ref-09"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "ph",
+      "alkalinity",
+      "scaling",
+      "lsi",
+      "muriatic-acid",
+      "free-chlorine"
+    ],
+    "keywords": [
+      "high pH",
+      "alkaline pool",
+      "pH too high",
+      "chlorine effectiveness pH",
+      "pH correction"
+    ]
+  },
+  "swimming-pool": {
+    "id": "swimming-pool",
+    "type": "pool-type",
+    "name": "Swimming Pool",
+    "shortDescription": "A permanent or above-ground body of water designed for recreational swimming.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator",
+      "pool-volume-calculator",
+      "pool-chlorine-calculator",
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-01"
+    ],
+    "academyIds": [
+      "fund-01",
+      "fund-02",
+      "fund-03"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-01",
+      "ref-15",
+      "ref-20"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist",
+      "pool-opening-checklist",
+      "pool-closing-checklist"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart"
+    ],
+    "problemIds": [
+      "cloudy-water",
+      "green-water",
+      "algae",
+      "scaling",
+      "corrosion"
+    ],
+    "relatedEntities": [
+      "saltwater-pool",
+      "vinyl-pool",
+      "fiberglass-pool",
+      "concrete-pool",
+      "outdoor-pool",
+      "indoor-pool"
+    ],
+    "keywords": [
+      "swimming pool",
+      "residential pool",
+      "pool care",
+      "pool maintenance",
+      "in-ground pool"
+    ]
+  },
+  "saltwater-pool": {
+    "id": "saltwater-pool",
+    "type": "pool-type",
+    "name": "Saltwater Pool",
+    "shortDescription": "A pool that uses a salt chlorinator to generate chlorine on-site from dissolved sodium chloride.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "saltwater-pool-salt-calculator",
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-06"
+    ],
+    "academyIds": [
+      "eq-04"
+    ],
+    "glossaryIds": [
+      "gl-029"
+    ],
+    "referenceIds": [
+      "ref-06",
+      "ref-01"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart"
+    ],
+    "problemIds": [
+      "scaling"
+    ],
+    "relatedEntities": [
+      "swimming-pool",
+      "salt-chlorinator",
+      "salt",
+      "cyanuric-acid",
+      "free-chlorine"
+    ],
+    "keywords": [
+      "saltwater pool",
+      "salt pool",
+      "salt chlorinator",
+      "SWCG",
+      "saltwater system"
+    ]
+  },
+  "indoor-pool": {
+    "id": "indoor-pool",
+    "type": "pool-type",
+    "name": "Indoor Pool",
+    "shortDescription": "A pool housed inside a building, requiring ventilation management and no CYA.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-chlorine-calculator",
+      "pool-ph-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "fund-04"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "strong-chlorine-smell"
+    ],
+    "relatedEntities": [
+      "swimming-pool",
+      "combined-chlorine",
+      "free-chlorine"
+    ],
+    "keywords": [
+      "indoor pool",
+      "enclosed pool",
+      "natatorium",
+      "indoor pool chemistry"
+    ]
+  },
+  "outdoor-pool": {
+    "id": "outdoor-pool",
+    "type": "pool-type",
+    "name": "Outdoor Pool",
+    "shortDescription": "A pool exposed to direct sunlight and weather, requiring CYA stabilization of chlorine.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-chlorine-calculator",
+      "pool-cyanuric-acid-calculator"
+    ],
+    "formulaIds": [
+      "formula-07"
+    ],
+    "academyIds": [
+      "fund-04",
+      "wb-04"
+    ],
+    "glossaryIds": [
+      "gl-011"
+    ],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [
+      "low-chlorine"
+    ],
+    "relatedEntities": [
+      "swimming-pool",
+      "cyanuric-acid",
+      "free-chlorine",
+      "temperature"
+    ],
+    "keywords": [
+      "outdoor pool",
+      "backyard pool",
+      "UV protection pool",
+      "outdoor pool chemistry"
+    ]
+  },
+  "hot-tub": {
+    "id": "hot-tub",
+    "type": "pool-type",
+    "name": "Hot Tub",
+    "shortDescription": "A small, heated pool (75–500 gallons) used for relaxation and hydrotherapy.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "hot-tub-chlorine-calculator",
+      "hot-tub-ph-calculator",
+      "hot-tub-shock-calculator",
+      "spa-volume-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "ht-01",
+      "ht-02",
+      "ht-03",
+      "ht-04",
+      "ht-05",
+      "ht-06",
+      "fund-04"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-02",
+      "ref-03"
+    ],
+    "resourceIds": [
+      "hot-tub-maintenance-log"
+    ],
+    "chartIds": [
+      "hot-tub-chemical-levels-chart"
+    ],
+    "problemIds": [
+      "foaming",
+      "scaling",
+      "strong-chlorine-smell"
+    ],
+    "relatedEntities": [
+      "bromine",
+      "free-chlorine",
+      "temperature",
+      "balancing",
+      "testing",
+      "water-replacement"
+    ],
+    "keywords": [
+      "hot tub",
+      "spa",
+      "jacuzzi",
+      "hot tub chemistry",
+      "spa maintenance"
+    ]
+  },
+  "swim-spa": {
+    "id": "swim-spa",
+    "type": "pool-type",
+    "name": "Swim Spa",
+    "shortDescription": "A larger spa (12–20 ft) with jets for swimming in place and hydrotherapy.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "spa-volume-calculator",
+      "hot-tub-chlorine-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "fund-04"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-02"
+    ],
+    "resourceIds": [
+      "hot-tub-maintenance-log"
+    ],
+    "chartIds": [
+      "hot-tub-chemical-levels-chart"
+    ],
+    "problemIds": [],
+    "relatedEntities": [
+      "hot-tub",
+      "swimming-pool",
+      "free-chlorine",
+      "temperature"
+    ],
+    "keywords": [
+      "swim spa",
+      "exercise spa",
+      "swim-in-place",
+      "aqua trainer"
+    ]
+  },
+  "commercial-pool": {
+    "id": "commercial-pool",
+    "type": "pool-type",
+    "name": "Commercial Pool",
+    "shortDescription": "A public or semi-public pool subject to health department regulations and inspection.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-turnover-rate-calculator",
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-08"
+    ],
+    "academyIds": [
+      "vr-01",
+      "vr-02"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-21"
+    ],
+    "resourceIds": [
+      "water-test-log",
+      "pool-chemical-log-sheet"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "swimming-pool",
+      "turnover-time",
+      "orp",
+      "testing",
+      "balancing"
+    ],
+    "keywords": [
+      "commercial pool",
+      "public pool",
+      "hotel pool",
+      "pool regulations",
+      "pool health department"
+    ]
+  },
+  "vinyl-pool": {
+    "id": "vinyl-pool",
+    "type": "pool-type",
+    "name": "Vinyl Pool",
+    "shortDescription": "A pool with a vinyl liner surface requiring lower calcium hardness targets.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "wb-03"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "corrosion"
+    ],
+    "relatedEntities": [
+      "swimming-pool",
+      "calcium-hardness",
+      "lsi"
+    ],
+    "keywords": [
+      "vinyl pool",
+      "vinyl liner pool",
+      "liner pool",
+      "vinyl pool care"
+    ]
+  },
+  "fiberglass-pool": {
+    "id": "fiberglass-pool",
+    "type": "pool-type",
+    "name": "Fiberglass Pool",
+    "shortDescription": "A pre-molded pool with a smooth fiberglass surface requiring moderate calcium levels.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "wb-03"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "corrosion"
+    ],
+    "relatedEntities": [
+      "swimming-pool",
+      "calcium-hardness",
+      "lsi"
+    ],
+    "keywords": [
+      "fiberglass pool",
+      "fibreglass pool",
+      "composite pool",
+      "fiberglass pool care"
+    ]
+  },
+  "concrete-pool": {
+    "id": "concrete-pool",
+    "type": "pool-type",
+    "name": "Concrete Pool",
+    "shortDescription": "A plastered or pebbled concrete pool requiring higher calcium hardness (200–400 ppm).",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "wb-03",
+      "ts-06",
+      "ts-05"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "scaling",
+      "corrosion"
+    ],
+    "relatedEntities": [
+      "swimming-pool",
+      "calcium-hardness",
+      "lsi",
+      "scaling",
+      "corrosion"
+    ],
+    "keywords": [
+      "concrete pool",
+      "plaster pool",
+      "gunite pool",
+      "pebble tec",
+      "plastered pool"
+    ]
+  },
+  "liquid-chlorine": {
+    "id": "liquid-chlorine",
+    "type": "chemical-product",
+    "name": "Liquid Chlorine",
+    "shortDescription": "Sodium hypochlorite solution (10–12.5%) — the most commonly used liquid pool sanitizer.",
+    "idealRange": "N/A",
+    "units": "fl oz, gallons",
+    "calculatorIds": [
+      "pool-chlorine-calculator",
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-02",
+      "formula-03"
+    ],
+    "academyIds": [
+      "san-04",
+      "san-05"
+    ],
+    "glossaryIds": [
+      "gl-026"
+    ],
+    "referenceIds": [
+      "ref-11"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "sodium-hypochlorite",
+      "sanitizing",
+      "shock-treatment"
+    ],
+    "keywords": [
+      "liquid chlorine",
+      "sodium hypochlorite",
+      "pool bleach",
+      "liquid pool sanitizer"
+    ]
+  },
+  "calcium-hypochlorite": {
+    "id": "calcium-hypochlorite",
+    "type": "chemical-product",
+    "name": "Calcium Hypochlorite",
+    "shortDescription": "Granular or tablet pool shock available at 65% or 73% available chlorine (cal-hypo).",
+    "idealRange": "N/A",
+    "units": "lbs, oz",
+    "calculatorIds": [
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "san-05",
+      "san-03"
+    ],
+    "glossaryIds": [
+      "gl-025"
+    ],
+    "referenceIds": [
+      "ref-05"
+    ],
+    "resourceIds": [
+      "pool-shock-log"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "shock-treatment",
+      "calcium-hardness",
+      "breakpoint-chlorination"
+    ],
+    "keywords": [
+      "calcium hypochlorite",
+      "cal-hypo",
+      "pool shock",
+      "granular shock",
+      "65% shock"
+    ]
+  },
+  "sodium-dichlor": {
+    "id": "sodium-dichlor",
+    "type": "chemical-product",
+    "name": "Dichlor",
+    "shortDescription": "A stabilized granular shock (56–62% available chlorine) that adds both chlorine and CYA.",
+    "idealRange": "N/A",
+    "units": "lbs, oz",
+    "calculatorIds": [
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "san-05"
+    ],
+    "glossaryIds": [
+      "gl-023"
+    ],
+    "referenceIds": [
+      "ref-04"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "cyanuric-acid",
+      "shock-treatment"
+    ],
+    "keywords": [
+      "dichlor",
+      "sodium dichlor",
+      "stabilized shock",
+      "granular dichlor",
+      "CYA shock"
+    ]
+  },
+  "trichlor-tablets": {
+    "id": "trichlor-tablets",
+    "type": "chemical-product",
+    "name": "Trichlor Tablets",
+    "shortDescription": "Stabilized chlorine tablets (90% available chlorine) for use in automatic chlorinators and floaters.",
+    "idealRange": "N/A",
+    "units": "tablets, lbs",
+    "calculatorIds": [
+      "pool-chlorine-calculator"
+    ],
+    "formulaIds": [
+      "formula-02"
+    ],
+    "academyIds": [
+      "san-04",
+      "eq-05"
+    ],
+    "glossaryIds": [
+      "gl-024"
+    ],
+    "referenceIds": [
+      "ref-04"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "cyanuric-acid",
+      "automatic-chlorinator",
+      "ph"
+    ],
+    "keywords": [
+      "trichlor tablets",
+      "chlorine tablets",
+      "3-inch tablets",
+      "stabilized chlorine"
+    ]
+  },
+  "muriatic-acid": {
+    "id": "muriatic-acid",
+    "type": "chemical-product",
+    "name": "Muriatic Acid",
+    "shortDescription": "Hydrochloric acid (31.45%) used to lower pH and total alkalinity in pool water.",
+    "idealRange": "N/A",
+    "units": "fl oz, gallons",
+    "calculatorIds": [
+      "pool-ph-calculator",
+      "pool-alkalinity-calculator"
+    ],
+    "formulaIds": [
+      "formula-04",
+      "formula-05"
+    ],
+    "academyIds": [
+      "wb-01",
+      "wb-02",
+      "wb-06",
+      "ts-05"
+    ],
+    "glossaryIds": [
+      "gl-033"
+    ],
+    "referenceIds": [
+      "ref-09",
+      "ref-08",
+      "ref-04"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "scaling",
+      "high-ph"
+    ],
+    "relatedEntities": [
+      "ph",
+      "alkalinity",
+      "lsi",
+      "balancing"
+    ],
+    "keywords": [
+      "muriatic acid",
+      "HCl",
+      "pool acid",
+      "pH down",
+      "hydrochloric acid"
+    ]
+  },
+  "soda-ash": {
+    "id": "soda-ash",
+    "type": "chemical-product",
+    "name": "Soda Ash",
+    "shortDescription": "Sodium carbonate — used to raise pH in pool water.",
+    "idealRange": "N/A",
+    "units": "oz, lbs",
+    "calculatorIds": [
+      "pool-ph-calculator"
+    ],
+    "formulaIds": [
+      "formula-04"
+    ],
+    "academyIds": [
+      "wb-01",
+      "wb-06"
+    ],
+    "glossaryIds": [
+      "gl-034"
+    ],
+    "referenceIds": [
+      "ref-09"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "low-ph"
+    ],
+    "relatedEntities": [
+      "ph",
+      "alkalinity",
+      "balancing"
+    ],
+    "keywords": [
+      "soda ash",
+      "sodium carbonate",
+      "pH up",
+      "pH increaser",
+      "raise pH"
+    ]
+  },
+  "baking-soda": {
+    "id": "baking-soda",
+    "type": "chemical-product",
+    "name": "Baking Soda",
+    "shortDescription": "Sodium bicarbonate — the standard product for raising total alkalinity in pool water.",
+    "idealRange": "N/A",
+    "units": "lbs, oz",
+    "calculatorIds": [
+      "pool-alkalinity-calculator"
+    ],
+    "formulaIds": [
+      "formula-05"
+    ],
+    "academyIds": [
+      "wb-02",
+      "wb-06"
+    ],
+    "glossaryIds": [
+      "gl-035"
+    ],
+    "referenceIds": [
+      "ref-08"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "alkalinity",
+      "ph",
+      "balancing"
+    ],
+    "keywords": [
+      "baking soda",
+      "sodium bicarbonate",
+      "alkalinity increaser",
+      "raise alkalinity",
+      "TA up"
+    ]
+  },
+  "calcium-chloride": {
+    "id": "calcium-chloride",
+    "type": "chemical-product",
+    "name": "Calcium Chloride",
+    "shortDescription": "Used to raise calcium hardness in pool water.",
+    "idealRange": "N/A",
+    "units": "lbs, oz",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "wb-03",
+      "wb-06"
+    ],
+    "glossaryIds": [
+      "gl-010"
+    ],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "corrosion"
+    ],
+    "relatedEntities": [
+      "calcium-hardness",
+      "lsi",
+      "balancing"
+    ],
+    "keywords": [
+      "calcium chloride",
+      "hardness increaser",
+      "raise calcium",
+      "calcium up"
+    ]
+  },
+  "stabilizer": {
+    "id": "stabilizer",
+    "type": "chemical-product",
+    "name": "Stabilizer / CYA Granules",
+    "shortDescription": "Granular cyanuric acid product used to raise CYA to the target stabilizer level.",
+    "idealRange": "N/A",
+    "units": "lbs, oz",
+    "calculatorIds": [
+      "pool-cyanuric-acid-calculator"
+    ],
+    "formulaIds": [
+      "formula-07"
+    ],
+    "academyIds": [
+      "wb-04"
+    ],
+    "glossaryIds": [
+      "gl-011"
+    ],
+    "referenceIds": [
+      "ref-07"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "low-chlorine"
+    ],
+    "relatedEntities": [
+      "cyanuric-acid",
+      "free-chlorine",
+      "outdoor-pool"
+    ],
+    "keywords": [
+      "stabilizer",
+      "CYA granules",
+      "pool conditioner",
+      "chlorine stabilizer",
+      "cyanuric acid product"
+    ]
+  },
+  "pool-salt": {
+    "id": "pool-salt",
+    "type": "chemical-product",
+    "name": "Pool Salt",
+    "shortDescription": "High-purity sodium chloride (99.8%+) for use in saltwater pool systems.",
+    "idealRange": "N/A",
+    "units": "lbs",
+    "calculatorIds": [
+      "saltwater-pool-salt-calculator"
+    ],
+    "formulaIds": [
+      "formula-06"
+    ],
+    "academyIds": [
+      "eq-04"
+    ],
+    "glossaryIds": [
+      "gl-029"
+    ],
+    "referenceIds": [
+      "ref-06"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "salt",
+      "salt-chlorinator",
+      "saltwater-pool"
+    ],
+    "keywords": [
+      "pool salt",
+      "sodium chloride",
+      "saltwater pool salt",
+      "40 lb salt bag"
+    ]
+  },
+  "cdc": {
+    "id": "cdc",
+    "type": "organization",
+    "name": "CDC",
+    "shortDescription": "Centers for Disease Control and Prevention — a key authority on healthy swimming and recreational water illness.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "phta",
+      "epa"
+    ],
+    "keywords": [
+      "CDC",
+      "Centers for Disease Control",
+      "healthy swimming",
+      "recreational water illness"
+    ]
+  },
+  "epa": {
+    "id": "epa",
+    "type": "organization",
+    "name": "EPA",
+    "shortDescription": "U.S. Environmental Protection Agency — regulates disinfectants including pool chemicals.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "cdc",
+      "phta"
+    ],
+    "keywords": [
+      "EPA",
+      "Environmental Protection Agency",
+      "pool chemical regulation",
+      "FIFRA"
+    ]
+  },
+  "phta": {
+    "id": "phta",
+    "type": "organization",
+    "name": "PHTA",
+    "shortDescription": "Pool & Hot Tub Alliance — the primary industry trade association for pool and spa professionals.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "cdc",
+      "nsf",
+      "taylor-technologies"
+    ],
+    "keywords": [
+      "PHTA",
+      "Pool Hot Tub Alliance",
+      "APSP",
+      "CPO certification",
+      "pool industry"
+    ]
+  },
+  "nsf": {
+    "id": "nsf",
+    "type": "organization",
+    "name": "NSF International",
+    "shortDescription": "NSF International — certifies pool and spa equipment and chemicals to safety standards.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "phta",
+      "cdc"
+    ],
+    "keywords": [
+      "NSF",
+      "NSF certification",
+      "pool equipment certification",
+      "NSF/ANSI 50"
+    ]
+  },
+  "taylor-technologies": {
+    "id": "taylor-technologies",
+    "type": "organization",
+    "name": "Taylor Technologies",
+    "shortDescription": "Taylor Technologies — manufacturer of professional pool test kits and the standard reference for pool chemistry calculations.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "phta",
+      "lamotte"
+    ],
+    "keywords": [
+      "Taylor Technologies",
+      "Taylor test kit",
+      "K-2006",
+      "pool chemistry reference"
+    ]
+  },
+  "lamotte": {
+    "id": "lamotte",
+    "type": "organization",
+    "name": "LaMotte",
+    "shortDescription": "LaMotte Company — manufacturer of professional water testing equipment for pool and spa use.",
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "taylor-technologies",
+      "testing"
+    ],
+    "keywords": [
+      "LaMotte",
+      "LaMotte test kit",
+      "pool test equipment",
+      "DPD photometer"
+    ]
+  },
+  "unit-ppm": {
+    "id": "unit-ppm",
+    "type": "unit",
+    "name": "ppm",
+    "shortDescription": "Parts per million — the standard concentration unit for pool chemistry.",
+    "idealRange": "N/A",
+    "units": "ppm",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [
+      "gl-054"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "ppm",
+      "free-chlorine",
+      "alkalinity",
+      "calcium-hardness"
+    ],
+    "keywords": [
+      "ppm",
+      "parts per million",
+      "mg/L",
+      "concentration unit"
+    ]
+  },
+  "unit-mg-l": {
+    "id": "unit-mg-l",
+    "type": "unit",
+    "name": "mg/L",
+    "shortDescription": "Milligrams per liter — numerically identical to ppm in aqueous solutions.",
+    "idealRange": "N/A",
+    "units": "mg/L",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-23"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "unit-ppm",
+      "ppm"
+    ],
+    "keywords": [
+      "mg/L",
+      "milligrams per liter",
+      "concentration unit",
+      "SI unit"
+    ]
+  },
+  "unit-gallons": {
+    "id": "unit-gallons",
+    "type": "unit",
+    "name": "US Gallons",
+    "shortDescription": "US liquid gallon — the primary volume unit for pool calculations in North America.",
+    "idealRange": "N/A",
+    "units": "gal",
+    "calculatorIds": [
+      "pool-volume-calculator"
+    ],
+    "formulaIds": [
+      "formula-01"
+    ],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-23"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "gallons",
+      "unit-liters"
+    ],
+    "keywords": [
+      "gallons",
+      "US gallon",
+      "gal",
+      "pool volume unit"
+    ]
+  },
+  "unit-liters": {
+    "id": "unit-liters",
+    "type": "unit",
+    "name": "Liters",
+    "shortDescription": "SI unit of volume. 1 US gallon = 3.785 liters.",
+    "idealRange": "N/A",
+    "units": "L",
+    "calculatorIds": [
+      "pool-volume-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-23"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "unit-gallons",
+      "liters"
+    ],
+    "keywords": [
+      "liters",
+      "litres",
+      "L",
+      "metric volume"
+    ]
+  },
+  "unit-fahrenheit": {
+    "id": "unit-fahrenheit",
+    "type": "unit",
+    "name": "°F",
+    "shortDescription": "Degrees Fahrenheit — the standard temperature unit for pool and spa temperature in North America.",
+    "idealRange": "N/A",
+    "units": "°F",
+    "calculatorIds": [],
+    "formulaIds": [
+      "formula-09"
+    ],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-03",
+      "ref-23"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "temperature",
+      "unit-celsius"
+    ],
+    "keywords": [
+      "Fahrenheit",
+      "°F",
+      "temperature unit",
+      "pool temperature"
+    ]
+  },
+  "unit-celsius": {
+    "id": "unit-celsius",
+    "type": "unit",
+    "name": "°C",
+    "shortDescription": "Degrees Celsius — the SI temperature unit used in metric countries.",
+    "idealRange": "N/A",
+    "units": "°C",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-23"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "temperature",
+      "unit-fahrenheit"
+    ],
+    "keywords": [
+      "Celsius",
+      "°C",
+      "temperature unit"
+    ]
+  },
+  "unit-minutes": {
+    "id": "unit-minutes",
+    "type": "unit",
+    "name": "Minutes",
+    "shortDescription": "Unit of time — used for pump turnover calculation and wait times after chemical additions.",
+    "idealRange": "N/A",
+    "units": "min",
+    "calculatorIds": [
+      "pool-turnover-rate-calculator"
+    ],
+    "formulaIds": [
+      "formula-08"
+    ],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-11"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "turnover-time",
+      "unit-hours"
+    ],
+    "keywords": [
+      "minutes",
+      "min",
+      "time unit",
+      "wait time"
+    ]
+  },
+  "unit-hours": {
+    "id": "unit-hours",
+    "type": "unit",
+    "name": "Hours",
+    "shortDescription": "Unit of time — used for turnover rate and pump run time calculations.",
+    "idealRange": "N/A",
+    "units": "hr",
+    "calculatorIds": [
+      "pool-turnover-rate-calculator"
+    ],
+    "formulaIds": [
+      "formula-08"
+    ],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-13"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "turnover-time",
+      "unit-minutes",
+      "unit-days"
+    ],
+    "keywords": [
+      "hours",
+      "hr",
+      "pump run time",
+      "turnover hours"
+    ]
+  },
+  "unit-days": {
+    "id": "unit-days",
+    "type": "unit",
+    "name": "Days",
+    "shortDescription": "Unit of time — used for maintenance scheduling and chemical activity timelines.",
+    "idealRange": "N/A",
+    "units": "days",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-19"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "unit-hours",
+      "unit-weeks",
+      "testing"
+    ],
+    "keywords": [
+      "days",
+      "maintenance interval",
+      "scheduling unit"
+    ]
+  },
+  "unit-weeks": {
+    "id": "unit-weeks",
+    "type": "unit",
+    "name": "Weeks",
+    "shortDescription": "Unit of time — used for maintenance scheduling (weekly testing, weekly shock).",
+    "idealRange": "N/A",
+    "units": "weeks",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-19"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "unit-days",
+      "unit-months",
+      "testing"
+    ],
+    "keywords": [
+      "weeks",
+      "weekly maintenance",
+      "weekly testing"
+    ]
+  },
+  "unit-months": {
+    "id": "unit-months",
+    "type": "unit",
+    "name": "Months",
+    "shortDescription": "Unit of time — used for seasonal maintenance intervals and hot tub water change schedules.",
+    "idealRange": "N/A",
+    "units": "months",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-14",
+      "ref-19"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "unit-weeks",
+      "testing",
+      "water-replacement"
+    ],
+    "keywords": [
+      "months",
+      "monthly testing",
+      "hot tub water change interval"
+    ]
+  }
+}

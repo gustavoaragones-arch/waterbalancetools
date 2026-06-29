@@ -1,0 +1,560 @@
+[
+  {
+    "id": "swimming-pool",
+    "type": "pool-type",
+    "name": "Swimming Pool",
+    "shortDescription": "A permanent or above-ground body of water designed for recreational swimming.",
+    "longDescription": "A swimming pool is any artificial basin filled with water for swimming, wading, or exercise. Pools range from small above-ground models to large in-ground installations. Standard pool chemistry applies to all pool types, with adjustments for surface material, volume, and usage pattern. Most residential pools hold 10,000–30,000 gallons and require weekly chemical maintenance.",
+    "aliases": [
+      "pool",
+      "in-ground pool",
+      "above-ground pool"
+    ],
+    "synonyms": [
+      "residential pool",
+      "backyard pool"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator",
+      "pool-volume-calculator",
+      "pool-chlorine-calculator",
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-01"
+    ],
+    "academyIds": [
+      "fund-01",
+      "fund-02",
+      "fund-03"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-01",
+      "ref-15",
+      "ref-20"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist",
+      "pool-opening-checklist",
+      "pool-closing-checklist"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart"
+    ],
+    "problemIds": [
+      "cloudy-water",
+      "green-water",
+      "algae",
+      "scaling",
+      "corrosion"
+    ],
+    "relatedEntities": [
+      "saltwater-pool",
+      "vinyl-pool",
+      "fiberglass-pool",
+      "concrete-pool",
+      "outdoor-pool",
+      "indoor-pool"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "swimming pool",
+      "residential pool",
+      "pool care",
+      "pool maintenance",
+      "in-ground pool"
+    ]
+  },
+  {
+    "id": "saltwater-pool",
+    "type": "pool-type",
+    "name": "Saltwater Pool",
+    "shortDescription": "A pool that uses a salt chlorinator to generate chlorine on-site from dissolved sodium chloride.",
+    "longDescription": "A saltwater pool is a chlorine pool that generates its own chlorine using a salt chlorinator (SWCG). The pool still contains and uses chlorine — the salt content (typically 3,000–3,200 ppm) is far lower than ocean water (35,000 ppm) and is often described as similar to natural tears. Salt pools still require the same chemistry balancing (pH, alkalinity, calcium, CYA) as traditionally chlorinated pools. Key differences include higher CYA requirements (60–80 ppm), consistent monitoring of the salt cell, and the risk of calcium scaling on the cell at low LSI.",
+    "aliases": [
+      "salt pool",
+      "saltwater chlorine pool"
+    ],
+    "synonyms": [
+      "salt chlorine pool",
+      "SWCG pool"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "saltwater-pool-salt-calculator",
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-06"
+    ],
+    "academyIds": [
+      "eq-04"
+    ],
+    "glossaryIds": [
+      "gl-029"
+    ],
+    "referenceIds": [
+      "ref-06",
+      "ref-01"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart"
+    ],
+    "problemIds": [
+      "scaling"
+    ],
+    "relatedEntities": [
+      "swimming-pool",
+      "salt-chlorinator",
+      "salt",
+      "cyanuric-acid",
+      "free-chlorine"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "saltwater pool",
+      "salt pool",
+      "salt chlorinator",
+      "SWCG",
+      "saltwater system"
+    ]
+  },
+  {
+    "id": "indoor-pool",
+    "type": "pool-type",
+    "name": "Indoor Pool",
+    "shortDescription": "A pool housed inside a building, requiring ventilation management and no CYA.",
+    "longDescription": "Indoor pools present unique challenges: without UV light, chlorine is not degraded and CYA is not needed (and is actually counterproductive in indoor settings). However, chloramines accumulate more noticeably because there is less air movement. Ventilation is critical — pool rooms must exchange air continuously to remove chloramine vapors and prevent moisture damage to the structure. pH tends to rise in indoor pools due to CO₂ off-gassing into enclosed air. Cyanuric acid should not be used in indoor pools.",
+    "aliases": [
+      "enclosed pool",
+      "natatorium"
+    ],
+    "synonyms": [
+      "covered pool",
+      "indoor natatorium"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-chlorine-calculator",
+      "pool-ph-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "fund-04"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "strong-chlorine-smell"
+    ],
+    "relatedEntities": [
+      "swimming-pool",
+      "combined-chlorine",
+      "free-chlorine"
+    ],
+    "sourceOrganizations": [
+      "phta",
+      "cdc"
+    ],
+    "keywords": [
+      "indoor pool",
+      "enclosed pool",
+      "natatorium",
+      "indoor pool chemistry"
+    ]
+  },
+  {
+    "id": "outdoor-pool",
+    "type": "pool-type",
+    "name": "Outdoor Pool",
+    "shortDescription": "A pool exposed to direct sunlight and weather, requiring CYA stabilization of chlorine.",
+    "longDescription": "Outdoor pools are exposed to UV light that rapidly degrades free chlorine. Cyanuric acid (CYA) is essential for stabilizing chlorine in outdoor pools — without it, sunlight can destroy the chlorine within 30–60 minutes. Outdoor pools also experience chemistry changes from rainfall, temperature variation, and seasonal sun intensity. Summer requires more frequent chlorine dosing due to both UV degradation and higher bather loads.",
+    "aliases": [
+      "backyard pool",
+      "exterior pool"
+    ],
+    "synonyms": [
+      "open-air pool"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-chlorine-calculator",
+      "pool-cyanuric-acid-calculator"
+    ],
+    "formulaIds": [
+      "formula-07"
+    ],
+    "academyIds": [
+      "fund-04",
+      "wb-04"
+    ],
+    "glossaryIds": [
+      "gl-011"
+    ],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [],
+    "problemIds": [
+      "low-chlorine"
+    ],
+    "relatedEntities": [
+      "swimming-pool",
+      "cyanuric-acid",
+      "free-chlorine",
+      "temperature"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "outdoor pool",
+      "backyard pool",
+      "UV protection pool",
+      "outdoor pool chemistry"
+    ]
+  },
+  {
+    "id": "hot-tub",
+    "type": "pool-type",
+    "name": "Hot Tub",
+    "shortDescription": "A small, heated pool (75–500 gallons) used for relaxation and hydrotherapy.",
+    "longDescription": "A hot tub (spa) is a small, heated body of water — typically 75–500 gallons — used for soaking, relaxation, and hydrotherapy. The chemistry challenges are significant: high water temperature accelerates chemical reactions and chlorine demand; small volume means even one bather produces a significant bather load relative to total water; the high bather-to-water ratio causes rapid chemistry changes. Hot tub water should be tested before every soak session and changed every 3–4 months under typical use.",
+    "aliases": [
+      "spa",
+      "hot spa",
+      "jacuzzi"
+    ],
+    "synonyms": [
+      "hydrotherapy spa",
+      "outdoor spa",
+      "portable spa"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "hot-tub-chlorine-calculator",
+      "hot-tub-ph-calculator",
+      "hot-tub-shock-calculator",
+      "spa-volume-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "ht-01",
+      "ht-02",
+      "ht-03",
+      "ht-04",
+      "ht-05",
+      "ht-06",
+      "fund-04"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-02",
+      "ref-03"
+    ],
+    "resourceIds": [
+      "hot-tub-maintenance-log"
+    ],
+    "chartIds": [
+      "hot-tub-chemical-levels-chart"
+    ],
+    "problemIds": [
+      "foaming",
+      "scaling",
+      "strong-chlorine-smell"
+    ],
+    "relatedEntities": [
+      "bromine",
+      "free-chlorine",
+      "temperature",
+      "balancing",
+      "testing",
+      "water-replacement"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "hot tub",
+      "spa",
+      "jacuzzi",
+      "hot tub chemistry",
+      "spa maintenance"
+    ]
+  },
+  {
+    "id": "swim-spa",
+    "type": "pool-type",
+    "name": "Swim Spa",
+    "shortDescription": "A larger spa (12–20 ft) with jets for swimming in place and hydrotherapy.",
+    "longDescription": "A swim spa combines the exercise function of a lap pool with the hydrotherapy features of a hot tub. Typically 12–20 feet long and holding 1,000–2,000 gallons, swim spas have a jet system that creates a current for swimming in place. Chemistry management is similar to hot tubs but with a larger water volume, reducing the impact of bather load. Many swim spas have separate hot tub and swim sections with separate chemistry.",
+    "aliases": [
+      "exercise spa",
+      "aqua trainer"
+    ],
+    "synonyms": [
+      "swim tub",
+      "endless pool spa"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "spa-volume-calculator",
+      "hot-tub-chlorine-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "fund-04"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-02"
+    ],
+    "resourceIds": [
+      "hot-tub-maintenance-log"
+    ],
+    "chartIds": [
+      "hot-tub-chemical-levels-chart"
+    ],
+    "problemIds": [],
+    "relatedEntities": [
+      "hot-tub",
+      "swimming-pool",
+      "free-chlorine",
+      "temperature"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "swim spa",
+      "exercise spa",
+      "swim-in-place",
+      "aqua trainer"
+    ]
+  },
+  {
+    "id": "commercial-pool",
+    "type": "pool-type",
+    "name": "Commercial Pool",
+    "shortDescription": "A public or semi-public pool subject to health department regulations and inspection.",
+    "longDescription": "Commercial pools (public pools, hotel pools, club pools) are subject to state and local health department regulations that typically require stricter chemistry standards than residential pools — often a maximum 6-hour or even 4-hour turnover rate, specific free chlorine and pH ranges, mandatory ORP monitoring, and documented chemical logs. Commercial operations also require trained operators and regular third-party inspections. The principles are identical to residential pool care but standards are higher and enforcement is regulatory.",
+    "aliases": [
+      "public pool",
+      "hotel pool",
+      "club pool"
+    ],
+    "synonyms": [
+      "public swimming pool",
+      "community pool"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-turnover-rate-calculator",
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-08"
+    ],
+    "academyIds": [
+      "vr-01",
+      "vr-02"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-21"
+    ],
+    "resourceIds": [
+      "water-test-log",
+      "pool-chemical-log-sheet"
+    ],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "swimming-pool",
+      "turnover-time",
+      "orp",
+      "testing",
+      "balancing"
+    ],
+    "sourceOrganizations": [
+      "phta",
+      "cdc",
+      "epa"
+    ],
+    "keywords": [
+      "commercial pool",
+      "public pool",
+      "hotel pool",
+      "pool regulations",
+      "pool health department"
+    ]
+  },
+  {
+    "id": "vinyl-pool",
+    "type": "pool-type",
+    "name": "Vinyl Pool",
+    "shortDescription": "A pool with a vinyl liner surface requiring lower calcium hardness targets.",
+    "longDescription": "Vinyl liner pools have a flexible PVC liner as the pool surface. They require lower calcium hardness (150–250 ppm) than plaster pools because the liner itself does not dissolve calcium. Low calcium is less of a concern for vinyl pools from a surface damage perspective, but very aggressive water can still attack metal parts and fittings. Vinyl liners can be bleached by direct contact with undissolved granular chemicals — always pre-dissolve shock and calcium chloride before adding. Liners typically last 8–15 years before replacement.",
+    "aliases": [
+      "vinyl liner pool",
+      "liner pool"
+    ],
+    "synonyms": [],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "wb-03"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "corrosion"
+    ],
+    "relatedEntities": [
+      "swimming-pool",
+      "calcium-hardness",
+      "lsi"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "vinyl pool",
+      "vinyl liner pool",
+      "liner pool",
+      "vinyl pool care"
+    ]
+  },
+  {
+    "id": "fiberglass-pool",
+    "type": "pool-type",
+    "name": "Fiberglass Pool",
+    "shortDescription": "A pre-molded pool with a smooth fiberglass surface requiring moderate calcium levels.",
+    "longDescription": "Fiberglass pools have a smooth, non-porous fiberglass surface that is inherently resistant to algae (fewer attachment points) and requires less maintenance than plaster pools. Calcium hardness targets are lower (150–250 ppm) than plaster pools. Very low calcium in aggressive water can leach the gelcoat surface over time. The smooth surface also means less chemical demand overall. Fiberglass pools cannot be refinished in the same way as plaster, so maintaining proper water chemistry to protect the surface is especially important.",
+    "aliases": [
+      "fibreglass pool",
+      "FRP pool"
+    ],
+    "synonyms": [
+      "composite pool"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "wb-03"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "corrosion"
+    ],
+    "relatedEntities": [
+      "swimming-pool",
+      "calcium-hardness",
+      "lsi"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "fiberglass pool",
+      "fibreglass pool",
+      "composite pool",
+      "fiberglass pool care"
+    ]
+  },
+  {
+    "id": "concrete-pool",
+    "type": "pool-type",
+    "name": "Concrete Pool",
+    "shortDescription": "A plastered or pebbled concrete pool requiring higher calcium hardness (200–400 ppm).",
+    "longDescription": "Concrete pools (gunite or shotcrete) have a plaster, aggregate (pebble), or tile surface applied over a concrete shell. These surfaces are porous and contain calcium — aggressive water (low LSI) actively dissolves calcium from the surface, causing etching, pitting, and roughness. Calcium hardness must be maintained at 200–400 ppm for plaster pools to prevent surface damage. Concrete pools are durable and highly customizable but require more careful chemistry management than vinyl or fiberglass pools.",
+    "aliases": [
+      "plaster pool",
+      "gunite pool",
+      "shotcrete pool",
+      "pebble tec pool"
+    ],
+    "synonyms": [
+      "marcite pool",
+      "plaster pool"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "wb-03",
+      "ts-06",
+      "ts-05"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [
+      "scaling",
+      "corrosion"
+    ],
+    "relatedEntities": [
+      "swimming-pool",
+      "calcium-hardness",
+      "lsi",
+      "scaling",
+      "corrosion"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "concrete pool",
+      "plaster pool",
+      "gunite pool",
+      "pebble tec",
+      "plastered pool"
+    ]
+  }
+]

@@ -1,0 +1,701 @@
+[
+  {
+    "id": "cloudy-water",
+    "type": "problem",
+    "name": "Cloudy Water",
+    "shortDescription": "Water that lacks clarity due to suspended particles, chemical imbalance, or filtration issues.",
+    "longDescription": "Cloudy water can result from low free chlorine (allowing algae or bacteria to proliferate), pH or alkalinity out of range (causing precipitation or flocculation), calcium carbonate precipitation (scaling, especially after shock), high TDS, poor filtration (pump run time too low, dirty filter, inadequate turnover), or dissolved metals. The remedy depends on the cause. Start by testing all parameters, correcting chemistry, and running the filter continuously until clarity returns. Clarifier can help coagulate fine particles for the filter to capture.",
+    "aliases": [
+      "turbid water",
+      "hazy water",
+      "milky water"
+    ],
+    "synonyms": [
+      "pool cloudiness",
+      "water turbidity"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-chlorine-calculator",
+      "pool-shock-calculator",
+      "pool-ph-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "ts-01"
+    ],
+    "glossaryIds": [
+      "gl-046",
+      "gl-047"
+    ],
+    "referenceIds": [],
+    "resourceIds": [
+      "pool-maintenance-checklist"
+    ],
+    "chartIds": [
+      "pool-chemical-levels-chart"
+    ],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "ph",
+      "alkalinity",
+      "calcium-hardness",
+      "filtration",
+      "algae",
+      "shock-treatment"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "cloudy water",
+      "cloudy pool",
+      "hazy pool",
+      "turbid water",
+      "pool clarity"
+    ]
+  },
+  {
+    "id": "green-water",
+    "type": "problem",
+    "name": "Green Water",
+    "shortDescription": "Pool water discolored green by algae bloom due to insufficient free chlorine.",
+    "longDescription": "Green pool water is almost always caused by an algae bloom — typically green algae — resulting from insufficient free chlorine. Contributing factors include CYA too high (reducing chlorine effectiveness), missed shock treatments, heavy rain (diluting chlorine), extended periods without service, or pump failure. Treatment involves lowering pH to 7.2 to maximize chlorine activity, brushing all surfaces, shocking to 30 ppm FC, and running the filter 24 hours. The water may turn grey as algae dies, then clear over 24–72 hours as the dead algae is filtered out.",
+    "aliases": [
+      "green pool",
+      "algae bloom",
+      "green algae pool"
+    ],
+    "synonyms": [
+      "algae-clouded water",
+      "green pool water"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-shock-calculator",
+      "pool-chlorine-calculator",
+      "pool-volume-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "ts-02",
+      "vr-06"
+    ],
+    "glossaryIds": [
+      "gl-040",
+      "gl-041"
+    ],
+    "referenceIds": [
+      "ref-22"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "algae",
+      "free-chlorine",
+      "shock-treatment",
+      "cyanuric-acid",
+      "filtration"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "green pool",
+      "green water",
+      "algae bloom",
+      "pool algae",
+      "green pool fix"
+    ]
+  },
+  {
+    "id": "foaming",
+    "type": "problem",
+    "name": "Foaming",
+    "shortDescription": "Persistent foam on pool or spa water surface caused by surfactants, high TDS, or algaecide.",
+    "longDescription": "Foam on pool or hot tub water is caused by surfactants — substances that lower water surface tension. Common sources include body oils, lotions, soap residue on swimwear, certain algaecides (polyquats), and high TDS. In hot tubs, foaming is more common due to smaller water volumes and higher bather loads. Mild foaming can be treated with an anti-foam agent as a temporary fix, but the underlying cause must be addressed: rinsing swimwear without soap, showering before entering, reducing algaecide dose, or changing the water if TDS is very high.",
+    "aliases": [
+      "pool foam",
+      "spa foam",
+      "hot tub foam"
+    ],
+    "synonyms": [
+      "water foaming",
+      "excessive foam"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "ts-03"
+    ],
+    "glossaryIds": [],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "total-dissolved-solids",
+      "hot-tub",
+      "water-replacement",
+      "sanitizing"
+    ],
+    "sourceOrganizations": [],
+    "keywords": [
+      "foaming",
+      "pool foam",
+      "hot tub foam",
+      "spa foam",
+      "anti-foam"
+    ]
+  },
+  {
+    "id": "scaling",
+    "type": "problem",
+    "name": "Scaling",
+    "shortDescription": "White or grey mineral deposits on pool surfaces and equipment caused by over-saturated water.",
+    "longDescription": "Scaling is the precipitation of calcium carbonate and other minerals onto pool surfaces, tile lines, plumbing, and equipment. It is caused by over-saturated water (positive LSI), which occurs when pH, calcium hardness, alkalinity, or temperature is too high. Scale deposits are hard and difficult to remove — prevention is far easier than remediation. Treatment requires lowering the LSI by adjusting pH, alkalinity, and calcium hardness. Existing scale can be removed with acid washing or mechanical removal, but this should be done by a professional to avoid surface damage.",
+    "aliases": [
+      "calcium scale",
+      "mineral deposits",
+      "lime scale"
+    ],
+    "synonyms": [
+      "calcium carbonate deposits",
+      "scale buildup"
+    ],
+    "idealRange": "N/A (prevented by LSI < +0.5)",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-09"
+    ],
+    "academyIds": [
+      "ts-05",
+      "wb-05"
+    ],
+    "glossaryIds": [
+      "gl-064"
+    ],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [
+      "pool-water-balance-chart"
+    ],
+    "problemIds": [],
+    "relatedEntities": [
+      "lsi",
+      "calcium-hardness",
+      "ph",
+      "alkalinity",
+      "temperature",
+      "concrete-pool"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "scaling",
+      "calcium scale",
+      "pool scale",
+      "mineral deposits",
+      "lime scale",
+      "calcium carbonate"
+    ]
+  },
+  {
+    "id": "corrosion",
+    "type": "problem",
+    "name": "Corrosion",
+    "shortDescription": "Damage to pool surfaces and metal equipment caused by corrosive (low LSI) water.",
+    "longDescription": "Corrosion occurs when pool water is under-saturated with calcium carbonate (negative LSI), causing it to aggressively dissolve calcium from plaster, grout, and metal surfaces. Visible signs include pitting of plaster surfaces, etching of tile grout, staining from dissolved metals (green from copper, rust from iron), and corrosion of metal fittings. Contributing factors include low pH, low alkalinity, low calcium hardness, and high water temperature. Treatment involves raising the LSI by adjusting the relevant parameters. Ongoing corrosion from a heater indicates the LSI needs attention immediately.",
+    "aliases": [
+      "pool corrosion",
+      "etching",
+      "aggressive water"
+    ],
+    "synonyms": [
+      "aggressive water damage",
+      "acid etching",
+      "plaster pitting"
+    ],
+    "idealRange": "N/A (prevented by LSI > −0.3)",
+    "units": "N/A",
+    "calculatorIds": [
+      "chemical-calculator"
+    ],
+    "formulaIds": [
+      "formula-09"
+    ],
+    "academyIds": [
+      "ts-06",
+      "wb-05"
+    ],
+    "glossaryIds": [
+      "gl-062"
+    ],
+    "referenceIds": [
+      "ref-01"
+    ],
+    "resourceIds": [],
+    "chartIds": [
+      "pool-water-balance-chart"
+    ],
+    "problemIds": [],
+    "relatedEntities": [
+      "lsi",
+      "ph",
+      "alkalinity",
+      "calcium-hardness",
+      "copper",
+      "iron",
+      "concrete-pool"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "corrosion",
+      "pool corrosion",
+      "etching",
+      "aggressive water",
+      "plaster damage"
+    ]
+  },
+  {
+    "id": "algae",
+    "type": "problem",
+    "name": "Algae",
+    "shortDescription": "Plant-like organisms that grow in pool water when free chlorine is insufficient.",
+    "longDescription": "Algae are plant-like microorganisms that grow in pool water when free chlorine drops below effective levels. Green algae is the most common and easiest to treat. Mustard (yellow) algae is more resistant and requires more aggressive treatment. Black algae develops deep root structures that penetrate pool surfaces, making it the most difficult to eradicate. Algae growth is fueled by nutrients (especially phosphates), warm water, sunlight, and insufficient chlorine. Prevention requires maintaining adequate free chlorine relative to CYA level at all times.",
+    "aliases": [
+      "pool algae",
+      "green algae",
+      "algae bloom"
+    ],
+    "synonyms": [
+      "algae growth",
+      "algae infestation"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "ts-02"
+    ],
+    "glossaryIds": [
+      "gl-040",
+      "gl-041",
+      "gl-042",
+      "gl-043",
+      "gl-045"
+    ],
+    "referenceIds": [
+      "ref-22"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "shock-treatment",
+      "phosphate",
+      "cyanuric-acid",
+      "filtration",
+      "green-water"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "algae",
+      "pool algae",
+      "green algae",
+      "mustard algae",
+      "black algae",
+      "algae prevention"
+    ]
+  },
+  {
+    "id": "strong-chlorine-smell",
+    "type": "problem",
+    "name": "Strong Chlorine Smell",
+    "shortDescription": "A pungent chlorine odor caused by chloramines, not excess chlorine.",
+    "longDescription": "The \"strong chlorine smell\" associated with pools is not caused by too much free chlorine — it is caused by combined chlorine (chloramines). When free chlorine reacts with nitrogen compounds from bathers (urea, ammonia, amino acids), it forms chloramines that have a strong, distinctive odor and are irritating to eyes and respiratory tract. Paradoxically, the solution is to add MORE chlorine (breakpoint chlorination) to destroy the chloramines, not less. A well-maintained pool with low combined chlorine should have little to no chlorine smell.",
+    "aliases": [
+      "chlorine odor",
+      "pool smell",
+      "chloramine odor"
+    ],
+    "synonyms": [
+      "chlorine smell",
+      "pool chlorine odor",
+      "chloramine smell"
+    ],
+    "idealRange": "N/A (prevented by keeping CC < 0.5 ppm)",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-shock-calculator"
+    ],
+    "formulaIds": [
+      "formula-03"
+    ],
+    "academyIds": [
+      "ts-04",
+      "san-02",
+      "san-03"
+    ],
+    "glossaryIds": [
+      "gl-022"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "combined-chlorine",
+      "breakpoint-chlorination",
+      "shock-treatment",
+      "eye-irritation"
+    ],
+    "sourceOrganizations": [
+      "phta",
+      "cdc"
+    ],
+    "keywords": [
+      "chlorine smell",
+      "pool odor",
+      "chloramine",
+      "strong chlorine",
+      "pool smell"
+    ]
+  },
+  {
+    "id": "eye-irritation",
+    "type": "problem",
+    "name": "Eye Irritation",
+    "shortDescription": "Swimmer eye irritation caused by chloramines or pH imbalance.",
+    "longDescription": "Eye irritation from pool water is most commonly caused by chloramines (combined chlorine) or pH outside the 7.2–7.8 range. Human tears have a pH of approximately 7.4 — water at the same pH is least irritating to eyes. At lower pH, the water is acidic and irritating; at higher pH, chlorine effectiveness drops and chloramines accumulate. The fix for chloramine-induced eye irritation is breakpoint chlorination. The fix for pH-related eye irritation is adjusting pH to 7.2–7.6.",
+    "aliases": [
+      "red eyes",
+      "stinging eyes",
+      "eye redness"
+    ],
+    "synonyms": [
+      "swimmer eye irritation",
+      "pool eye irritation"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-shock-calculator",
+      "pool-ph-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "san-02",
+      "ts-04",
+      "wb-01"
+    ],
+    "glossaryIds": [
+      "gl-022",
+      "gl-008"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "combined-chlorine",
+      "ph",
+      "breakpoint-chlorination"
+    ],
+    "sourceOrganizations": [
+      "cdc",
+      "phta"
+    ],
+    "keywords": [
+      "eye irritation",
+      "red eyes",
+      "pool eye irritation",
+      "stinging eyes",
+      "swimmer eyes"
+    ]
+  },
+  {
+    "id": "skin-irritation",
+    "type": "problem",
+    "name": "Skin Irritation",
+    "shortDescription": "Swimmer skin irritation caused by pH imbalance, chloramines, or high disinfectant levels.",
+    "longDescription": "Skin irritation after pool or hot tub use can result from pH too far outside the neutral range (below 7.0 or above 8.0), high combined chlorine (chloramines), very high free chlorine (above 5 ppm), high bromine (above 10 ppm), or individual sensitivity to pool chemicals. In hot tubs, the combination of warm water and concentrated chemicals increases sensitivity. Rinsing with fresh water immediately after exiting the pool significantly reduces chemical exposure. Persistent skin irritation despite normal chemistry may indicate individual chemical sensitivity.",
+    "aliases": [
+      "skin rash",
+      "pool rash",
+      "chemical irritation"
+    ],
+    "synonyms": [
+      "swimmer skin irritation",
+      "pool skin irritation"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-ph-calculator"
+    ],
+    "formulaIds": [],
+    "academyIds": [
+      "ts-04",
+      "wb-01"
+    ],
+    "glossaryIds": [
+      "gl-022",
+      "gl-008"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "combined-chlorine",
+      "ph",
+      "free-chlorine",
+      "breakpoint-chlorination"
+    ],
+    "sourceOrganizations": [
+      "cdc",
+      "phta"
+    ],
+    "keywords": [
+      "skin irritation",
+      "pool rash",
+      "swimmer rash",
+      "chemical irritation",
+      "skin sensitivity"
+    ]
+  },
+  {
+    "id": "low-chlorine",
+    "type": "problem",
+    "name": "Low Chlorine",
+    "shortDescription": "Free chlorine below the minimum effective level for the current CYA concentration.",
+    "longDescription": "Low free chlorine is the single most common and dangerous pool chemistry problem. When FC drops below the minimum for the current CYA level, the pool loses its primary protection against pathogens and algae. Causes include: heavy bather loads, hot sunny weather (UV degradation), CYA too high (reducing chlorine activity), insufficient dosing frequency, or empty chlorinator. The remedy is immediate addition of chlorine to restore FC to the target range. If CYA is above 80 ppm, a partial drain may be needed before chlorine can be maintained effectively.",
+    "aliases": [
+      "insufficient chlorine",
+      "chlorine demand"
+    ],
+    "synonyms": [
+      "low FC",
+      "chlorine depletion"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [
+      "pool-chlorine-calculator",
+      "hot-tub-chlorine-calculator"
+    ],
+    "formulaIds": [
+      "formula-02"
+    ],
+    "academyIds": [
+      "san-01",
+      "ts-02",
+      "wb-04"
+    ],
+    "glossaryIds": [
+      "gl-001",
+      "gl-011",
+      "gl-057"
+    ],
+    "referenceIds": [
+      "ref-07"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "cyanuric-acid",
+      "algae",
+      "green-water",
+      "sanitizing"
+    ],
+    "sourceOrganizations": [
+      "phta",
+      "cdc"
+    ],
+    "keywords": [
+      "low chlorine",
+      "insufficient chlorine",
+      "chlorine depletion",
+      "low FC",
+      "green pool risk"
+    ]
+  },
+  {
+    "id": "high-chlorine",
+    "type": "problem",
+    "name": "High Chlorine",
+    "shortDescription": "Free chlorine above 5 ppm causing bleaching, eye/skin irritation, and swimmer discomfort.",
+    "longDescription": "High free chlorine (above 5 ppm) causes bleaching of swimwear, eye and skin irritation, and respiratory irritation in enclosed spaces. It occurs after an accidental over-dose, feeder malfunction, or over-shocking. The pool should be closed to swimmers until FC drops below 5 ppm (3 ppm for hot tubs). Natural dissipation by sunlight and time is the safest remedy. Sodium thiosulfate can neutralize chlorine in emergencies but should be used sparingly — reducing FC too quickly can cause a rebound. Running the pump without cover during daylight hours accelerates UV degradation of excess chlorine.",
+    "aliases": [
+      "over-chlorination",
+      "excess chlorine"
+    ],
+    "synonyms": [
+      "chlorine overdose",
+      "high FC"
+    ],
+    "idealRange": "N/A",
+    "units": "N/A",
+    "calculatorIds": [],
+    "formulaIds": [],
+    "academyIds": [
+      "san-05"
+    ],
+    "glossaryIds": [
+      "gl-001"
+    ],
+    "referenceIds": [],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "free-chlorine",
+      "hydrogen-peroxide",
+      "eye-irritation",
+      "skin-irritation"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "high chlorine",
+      "over-chlorination",
+      "excess chlorine",
+      "chlorine overdose"
+    ]
+  },
+  {
+    "id": "low-ph",
+    "type": "problem",
+    "name": "Low pH",
+    "shortDescription": "Pool water pH below 7.2, causing corrosion, eye irritation, and equipment damage.",
+    "longDescription": "Low pH (below 7.2) makes pool water corrosive and irritating. Effects include: etching of plaster and grout surfaces, staining from dissolved metals, corrosion of metal equipment and fittings, eye and skin irritation, and degradation of seals and gaskets. Low pH is commonly caused by adding too much acid, CO₂ from bather respiration, heavy rain (which is naturally acidic), and naturally acidic fill water. Treatment involves adding soda ash (sodium carbonate) to raise pH, after first verifying alkalinity is in range.",
+    "aliases": [
+      "acidic water",
+      "low pH pool"
+    ],
+    "synonyms": [
+      "corrosive water",
+      "acid pool water"
+    ],
+    "idealRange": "N/A (pH should be 7.2–7.6)",
+    "units": "pH units",
+    "calculatorIds": [
+      "pool-ph-calculator"
+    ],
+    "formulaIds": [
+      "formula-04"
+    ],
+    "academyIds": [
+      "wb-01",
+      "ts-06"
+    ],
+    "glossaryIds": [
+      "gl-008"
+    ],
+    "referenceIds": [
+      "ref-09"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "ph",
+      "alkalinity",
+      "corrosion",
+      "lsi",
+      "soda-ash"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "low pH",
+      "acidic pool",
+      "pH too low",
+      "corrosive water",
+      "pH correction"
+    ]
+  },
+  {
+    "id": "high-ph",
+    "type": "problem",
+    "name": "High pH",
+    "shortDescription": "Pool water pH above 7.8, reducing chlorine effectiveness and promoting scale formation.",
+    "longDescription": "High pH (above 7.8) significantly reduces free chlorine effectiveness — at pH 8.0, only 22% of FC is in the active HOCl form (compared to 67% at pH 7.2). High pH also promotes scaling (high positive LSI), causes eye irritation through a different mechanism than low pH, and can cause white cloudiness from calcium carbonate precipitation. High pH commonly results from adding too much soda ash, sodium bicarbonate increasing pH as a side effect, CO₂ off-gassing from aeration (waterfalls, jets), and some source water. Treatment involves adding muriatic acid (hydrochloric acid) or dry acid (sodium bisulfate).",
+    "aliases": [
+      "alkaline water",
+      "high pH pool"
+    ],
+    "synonyms": [
+      "alkaline pool water",
+      "pH too high"
+    ],
+    "idealRange": "N/A (pH should be 7.2–7.6)",
+    "units": "pH units",
+    "calculatorIds": [
+      "pool-ph-calculator"
+    ],
+    "formulaIds": [
+      "formula-04"
+    ],
+    "academyIds": [
+      "wb-01",
+      "ts-05"
+    ],
+    "glossaryIds": [
+      "gl-008"
+    ],
+    "referenceIds": [
+      "ref-09"
+    ],
+    "resourceIds": [],
+    "chartIds": [],
+    "problemIds": [],
+    "relatedEntities": [
+      "ph",
+      "alkalinity",
+      "scaling",
+      "lsi",
+      "muriatic-acid",
+      "free-chlorine"
+    ],
+    "sourceOrganizations": [
+      "phta"
+    ],
+    "keywords": [
+      "high pH",
+      "alkaline pool",
+      "pH too high",
+      "chlorine effectiveness pH",
+      "pH correction"
+    ]
+  }
+]

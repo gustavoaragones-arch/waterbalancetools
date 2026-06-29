@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://waterbalancetools.com/entities/{{ENTITY_ID}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{PAGE_TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta property="og:title" content="{{OG_TITLE}}">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:url" content="https://waterbalancetools.com/entities/{{ENTITY_ID}}">
+  <meta property="og:type" content="article">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/knowledge.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3974004697476579" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": "{{ENTITY_NAME}}",
+    "description": "{{META_DESCRIPTION}}",
+    "url": "https://waterbalancetools.com/entities/{{ENTITY_ID}}",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "WaterBalanceTools Pool Chemistry Entity Graph",
+      "url": "https://waterbalancetools.com/entities/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://waterbalancetools.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Entities", "item": "https://waterbalancetools.com/entities/" },
+      { "@type": "ListItem", "position": 3, "name": "{{ENTITY_NAME}}", "item": "https://waterbalancetools.com/entities/{{ENTITY_ID}}" }
+    ]
+  }
+  </script>
+</head>
+<body class="knowledge-page entity-page">
+  <header class="site-header">
+    <a href="/" class="logo-link">
+      <img src="/assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36">
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Primary navigation">
+      <a href="/calculators/chemical-calculator">Calculator</a>
+      <a href="/resources/">Resources</a>
+      <a href="/pool-chemical-levels-chart">Charts</a>
+      <a href="/academy/">Academy</a>
+      <a href="/guides/pool-chemistry-basics">Guides</a>
+      <a href="/about/">About</a>
+    </nav>
+    <div class="nav-end">
+      <a href="/search/" class="nav-search" aria-label="Search site">
+        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="knowledge-layout entity-layout">
+    <article class="knowledge-content entity-content">
+
+      <!-- Hero -->
+      <section class="knowledge-hero entity-hero">
+        <div class="knowledge-hero-meta">
+          <span class="knowledge-badge knowledge-badge--{{ENTITY_TYPE}}">{{ENTITY_TYPE_LABEL}}</span>
+          <span class="knowledge-hero-reading">Entity</span>
+        </div>
+        <h1>{{ENTITY_NAME}}</h1>
+        <p class="knowledge-hero-summary">{{ENTITY_SHORT_DESC}}</p>
+        <nav class="knowledge-chips" aria-label="Page sections">
+          <a class="knowledge-chip" href="#definition">Definition</a>
+          <a class="knowledge-chip" href="#quick-facts">Quick Facts</a>
+          <a class="knowledge-chip" href="#relationships">Relationships</a>
+          <a class="knowledge-chip" href="#calculators">Calculators</a>
+          <a class="knowledge-chip" href="#related-entities">Related Entities</a>
+        </nav>
+      </section>
+
+      <!-- Definition -->
+      <section id="definition">
+        <h2>Definition</h2>
+        <p>{{ENTITY_LONG_DESC}}</p>
+      </section>
+
+      <!-- Quick Facts -->
+      {{ENTITY_FACTS}}
+
+      <!-- Relationships -->
+      <section id="relationships">
+        <h2>Relationships</h2>
+        {{RELATIONSHIPS_CONTENT}}
+      </section>
+
+      <!-- Calculators -->
+      {{CALC_SECTION}}
+
+      <!-- Academy Articles -->
+      {{ACADEMY_SECTION}}
+
+      <!-- Formulas -->
+      {{FORMULA_SECTION}}
+
+      <!-- Glossary -->
+      {{GLOSSARY_SECTION}}
+
+      <!-- Reference Pages -->
+      {{REFERENCE_SECTION}}
+
+      <!-- Resources -->
+      {{RESOURCE_SECTION}}
+
+      <!-- Charts -->
+      {{CHART_SECTION}}
+
+      <!-- Related Entities -->
+      {{RELATED_ENTITIES_SECTION}}
+
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="knowledge-sidebar entity-sidebar">
+      <div class="knowledge-sidebar-section">
+        <h3>Entity Type</h3>
+        <ul>
+          <li><span class="knowledge-badge knowledge-badge--{{ENTITY_TYPE}}">{{ENTITY_TYPE_LABEL}}</span></li>
+        </ul>
+      </div>
+      {{SIDEBAR_RANGE}}
+      <div class="knowledge-sidebar-section">
+        <h3>Aliases</h3>
+        <ul>
+          {{SIDEBAR_ALIASES}}
+        </ul>
+      </div>
+      {{SIDEBAR_CALCS}}
+      {{SIDEBAR_RELATED}}
+    </aside>
+  </main>
+
+      <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a>
+      <a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a>
+      <a href="/calculators/pool-shock-calculator">Pool Shock Calculator</a>
+      <a href="/calculators/pool-ph-calculator">Pool pH Calculator</a>
+      <a href="/charts/pool-chemical-levels-chart">Pool Chemical Levels Chart</a>
+      <a href="/guides/pool-chemistry-basics">Pool Chemistry Guide</a>
+      <a href="/all-pages">All Pages</a>
+      <a href="/legal/ownership">Ownership</a>
+      <a href="/legal/legal">Legal</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Albor Digital LLC. All rights reserved.</p>
+    <p class="footer-note">WaterBalanceTools.com is an independent educational website owned and operated by Albor Digital LLC.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('nav-hamburger');
+    const nav = document.getElementById('site-nav');
+    if (hamburger && nav) {
+      hamburger.addEventListener('click', () => {
+        const open = nav.classList.toggle('nav--open');
+        hamburger.setAttribute('aria-expanded', open);
+      });
+    }
+  </script>
+</body>
+</html>
