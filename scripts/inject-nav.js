@@ -21,9 +21,9 @@ const ROOT = path.join(__dirname, '..');
 
 // ── Canonical header ──────────────────────────────────────────────────────────
 
-const SEARCH_SVG = `<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>`;
+const SEARCH_SVG = `<svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>`;
 
-const HEADER = `  <header class="site-header" data-canonical-nav="v3">
+const HEADER = `  <header class="site-header" data-canonical-nav="v4">
     <div class="site-header__inner container">
       <a href="/" class="logo-link">
         <img src="/public/logo.svg" alt="WaterBalanceTools" class="logo" width="185" height="56">
@@ -36,8 +36,8 @@ const HEADER = `  <header class="site-header" data-canonical-nav="v3">
         <a href="/guides/pool-chemistry-basics">Guides</a>
         <a href="/about/">About</a>
       </nav>
-      <div class="nav-end">
-        <a href="/search/" class="nav-search" aria-label="Search site">
+      <div class="nav-end" style="display:flex;align-items:center;gap:.5rem;">
+        <a href="/search/" class="nav-search" aria-label="Search site" style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;">
           ${SEARCH_SVG}
         </a>
         <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
@@ -72,7 +72,7 @@ function collectHtmlFiles(dir, results = []) {
 
 // Matches the entire <header class="site-header"> … </header> block.
 const HEADER_RE = /<header\s[^>]*class="site-header"[^>]*>[\s\S]*?<\/header>/i;
-const ALREADY_CANONICAL_RE = /data-canonical-nav="v3"/;
+const ALREADY_CANONICAL_RE = /data-canonical-nav="v4"/;
 
 let updated = 0;
 let skipped = 0;
