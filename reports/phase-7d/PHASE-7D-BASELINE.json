@@ -1,0 +1,19 @@
+{
+  "extracted_claims_total": 3933,
+  "major_factual_pages": 413,
+  "pages_with_zero_external_sources": 413,
+  "parameter_categories": 15,
+  "chemistry_source_inventory_occurrences": 1893,
+  "generator_locations_sample": [
+    "scripts/data/academy-equipment.js",
+    "scripts/data/entities-chemicals.js",
+    "scripts/data/entities-equipment.js",
+    "js/calc-utils.js",
+    "data/formulas.json",
+    "data/reference.json",
+    "scripts/generators/generate-chlorine-pages.js",
+    "scripts/generators/generate-ph-pages.js",
+    "scripts/generators/generate-shock-pages.js",
+    "scripts/generators/generate-hot-tub-pages.js"
+  ]
+}

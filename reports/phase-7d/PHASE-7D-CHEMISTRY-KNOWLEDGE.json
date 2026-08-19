@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "correction_note": "Added 2026-08-18 during Phase 7D.1: claim_reconciliation below (Section 7 / 'Claim Mapping' in the .md) was computed by scripts/phase-7d/reconcile-claims.js, which had a whole-sentence-keyword-search bug causing systematic parameter misclassification. Preserved unedited as historical record; not authoritative. Corrected figures: reports/phase-7d-1/post-fix-chemistry-claims.csv and PHASE-7D-KNOWLEDGE-IMPACT.md. No other section is affected.",
+  "commit_baseline": "6df374b4b10e832503791d8f5286218806828a2c",
+  "knowledge_layer": {
+    "parameters_file": "scripts/data/chemistry-knowledge.js",
+    "ranges_file": "scripts/data/chemistry-ranges.js",
+    "sources_file": "scripts/data/chemistry-sources.js",
+    "claims_file": "scripts/data/chemistry-claims.js",
+    "api_module": "scripts/chemistry/chemistryKnowledge.js",
+    "render_module": "scripts/chemistry/renderSources.js (architecture only, not wired into any page)"
+  },
+  "parameters": { "count": 15, "verified": 0, "supported": 8, "pending_review": 7 },
+  "context_model": {
+    "environment": ["pool", "hot_tub"],
+    "sanitizer": ["chlorine", "bromine", "saltwater_chlorine_generator", "unspecified"],
+    "scenario": ["routine_maintenance", "target_range", "treatment", "shock", "troubleshooting", "calculator_input", "calculator_output", "safety_guidance"],
+    "temperature": ["general", "cold", "normal", "elevated"]
+  },
+  "ranges": { "count": 23, "SUPPORTED": 12, "CONTEXTUAL": 5, "REQUIRES_REVIEW": 6, "VERIFIED": 0 },
+  "sources": { "count": 9, "primary": 5, "professional": 2, "academic": 1, "secondary": 1, "manufacturer": 0 },
+  "claims_canonical": { "count": 15 },
+  "claim_reconciliation": {
+    "total_extracted_claims": 3933,
+    "mapped_to_parameter": 2772,
+    "status_counts": { "SUPPORTED": 32, "CONTEXTUAL": 146, "AMBIGUOUS": 3231, "REQUIRES_REVIEW": 524, "VERIFIED": 0, "UNSUPPORTED": 0, "DEPRECATED": 0 },
+    "methodology": "Programmatic rule-based classification, scripts/phase-7d/reconcile-claims.js; see file header for exact rules. No claim marked VERIFIED."
+  },
+  "consistency_matrix": {
+    "pairwise_comparisons": 23,
+    "multi_range_parameters": 7,
+    "status_counts": { "CONSISTENT_CONTEXT_DIFFERENCE": 23, "POTENTIAL_CONTRADICTION": 0, "REQUIRES_EXPERT_REVIEW": 0 },
+    "headline_finding": "Saltwater-pool CYA target (60-80 ppm) vs general residential outdoor-pool CYA (30-50 ppm) -- mechanically classified CONSISTENT_CONTEXT_DIFFERENCE (different sanitizer field) but manually flagged for expert review since no confirmed chemical mechanism justifies the difference. See HIGH-RISK-CHEMISTRY-CLAIMS.md."
+  },
+  "high_risk_claims": { "categories": 6, "report": "reports/phase-7d/HIGH-RISK-CHEMISTRY-CLAIMS.md" },
+  "calculator_assumption_audit": {
+    "engine_file": "js/calc-utils.js",
+    "functions_reviewed": 9,
+    "calculator_review_required": ["calculateChlorine (undocumented concentration assumptions)", "calculateShock (no combined-chlorine-based breakpoint logic)"],
+    "no_action_needed": ["calculatePoolVolume/calculateSpaVolume (conversion factor internally consistent)", "calculateTurnover (pure arithmetic)"],
+    "requires_review_not_error": ["calculateSalt", "calculateCYA", "calculateAlkalinity", "calculatePHAdjustment (already self-disclosed as a simplification)"],
+    "no_formula_changed": true
+  },
+  "generator_migration_plan": {
+    "report": "reports/phase-7d/GENERATOR-CHEMISTRY-MIGRATION-PLAN.md",
+    "source_inventory_occurrences": 1893,
+    "files_scanned": 232,
+    "first_recommended_target": "scripts/generate-authority-charts.js"
+  },
+  "validator": {
+    "path": "scripts/validate-chemistry-knowledge.js",
+    "wired_into": "scripts/run-all-generators.js, after validate-url-indexation.js",
+    "final_result": { "status": "PASS", "parameters": 15, "ranges": 23, "sources": 9, "claims": 15, "errors": 0, "warnings": 10 }
+  },
+  "regression_tests": { "path": "scripts/test-chemistry-knowledge.js", "assertions": 25, "result": "PASS" },
+  "full_build": { "command": "npm run build", "exit_code": 0 },
+  "forensic_reaudit": { "command": "npm run audit:forensic", "page_count_before": 522, "page_count_after": 522, "unchanged_from_phase_7c_baseline": true },
+  "phase_7b_validator": "PASS",
+  "phase_7c_validator": "PASS",
+  "broken_link_validator": "PASS",
+  "scope_control": {
+    "broad_content_rewrite": false,
+    "spanish_pages_created": false,
+    "french_pages_created": false,
+    "url_canonical_redirect_changes": false,
+    "adsense_work": false
+  },
+  "reports": [
+    "reports/phase-7d/PHASE-7D-CHEMISTRY-KNOWLEDGE.md",
+    "reports/phase-7d/PHASE-7D-CHEMISTRY-KNOWLEDGE.json",
+    "reports/phase-7d/PHASE-7D-BASELINE.md",
+    "reports/phase-7d/PHASE-7D-BASELINE.json",
+    "reports/phase-7d/chemistry-source-inventory.csv",
+    "reports/phase-7d/chemistry-source-inventory.json",
+    "reports/phase-7d/chemistry-consistency-matrix.csv",
+    "reports/phase-7d/chemistry-coverage.csv",
+    "reports/phase-7d/chemistry-coverage.json",
+    "reports/phase-7d/HIGH-RISK-CHEMISTRY-CLAIMS.md",
+    "reports/phase-7d/GENERATOR-CHEMISTRY-MIGRATION-PLAN.md",
+    "reports/phase-7d/SOURCE-SELECTION-POLICY.md",
+    "reports/phase-7d/CHEMISTRY-CONFLICT-POLICY.md",
+    "reports/phase-7d/SOURCE-REGISTRY.json",
+    "reports/phase-7d/chemistry-validation-results.json"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-08-19T02:47:37.442Z",
+  "parameters": 15,
+  "ranges": 23,
+  "sources": 9,
+  "claims": 16,
+  "errors": [],
+  "warnings": [
+    "Source \"clevelandclinic-pool-chemical-safety\" is not referenced by any parameter, range, or claim (orphan source)",
+    "Range \"range-ph-hottub-bromine-routine\" is not referenced by any canonical claim (orphan range)",
+    "Range \"range-ph-pool-narrow-operational\" is not referenced by any canonical claim (orphan range)",
+    "Range \"range-ta-public-pool-standard\" is not referenced by any canonical claim (orphan range)",
+    "Range \"range-ta-hottub\" is not referenced by any canonical claim (orphan range)",
+    "Range \"range-ch-residential-practical\" is not referenced by any canonical claim (orphan range)",
+    "Range \"range-cya-saltwater-outdoor\" is not referenced by any canonical claim (orphan range)",
+    "Range \"range-salt-pentair\" is not referenced by any canonical claim (orphan range)",
+    "Range \"range-salt-autopilot\" is not referenced by any canonical claim (orphan range)"
+  ],
+  "status": "PASS"
+}

@@ -3,6 +3,10 @@
   "private": true,
   "scripts": {
     "build": "node scripts/run-all-generators.js",
-    "sitemap": "node scripts/generate-sitemap.js"
+    "sitemap": "node scripts/generate-sitemap.js",
+    "audit:forensic": "node scripts/audit-forensic/run.js",
+    "test-chemistry-knowledge": "node scripts/test-chemistry-knowledge.js",
+    "validate-chemistry-knowledge": "node scripts/validate-chemistry-knowledge.js",
+    "validate-chemistry-extraction": "node scripts/validate-chemistry-extraction.js"
   }
 }

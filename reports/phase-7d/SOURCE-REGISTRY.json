@@ -1,0 +1,157 @@
+[
+  {
+    "id": "cdc-healthy-swimming-home-treatment",
+    "organization": "Centers for Disease Control and Prevention (CDC)",
+    "title": "Home Pool and Hot Tub Water Treatment and Testing",
+    "url": "https://www.cdc.gov/healthy-swimming/about/home-pool-and-hot-tub-water-treatment-and-testing.html",
+    "source_type": "government_public_health",
+    "authority_level": "primary",
+    "publication_date": null,
+    "last_updated": null,
+    "accessed_date": "2026-08-18",
+    "topics": [
+      "free_chlorine",
+      "ph",
+      "residential_pools",
+      "hot_tubs"
+    ],
+    "notes": "States CDC recommends free chlorine of at least 1 ppm in pools and at least 3 ppm in hot tubs (at least 2 ppm in pools if using cyanuric acid / stabilized chlorine products; CDC recommends not using cyanuric acid in hot tubs). States recommended pH range 7.0-7.8 for both pools and hot tubs."
+  },
+  {
+    "id": "cdc-healthy-swimming-what-you-can-do-hot-tubs",
+    "organization": "Centers for Disease Control and Prevention (CDC)",
+    "title": "What You Can Do to Stay Healthy in Hot Tubs",
+    "url": "https://www.cdc.gov/healthy-swimming/safety/what-you-can-do-to-stay-healthy-in-hot-tubs.html",
+    "source_type": "government_public_health",
+    "authority_level": "primary",
+    "publication_date": null,
+    "last_updated": null,
+    "accessed_date": "2026-08-18",
+    "topics": [
+      "hot_tubs",
+      "bromine",
+      "free_chlorine",
+      "ph"
+    ],
+    "notes": "CDC hot tub safety guidance; referenced for bromine and sanitizer guidance in hot tubs."
+  },
+  {
+    "id": "cdc-mahc-2023",
+    "organization": "Centers for Disease Control and Prevention (CDC) / Council for the Model Aquatic Health Code",
+    "title": "Model Aquatic Health Code (MAHC), 4th Edition",
+    "url": "https://www.cdc.gov/model-aquatic-health-code/media/pdfs/2023-MAHC-508.pdf",
+    "source_type": "government_public_health",
+    "authority_level": "primary",
+    "publication_date": "2023-02",
+    "last_updated": null,
+    "accessed_date": "2026-08-18",
+    "topics": [
+      "free_chlorine",
+      "combined_chlorine",
+      "cyanuric_acid",
+      "shock_treatment",
+      "crypto_response"
+    ],
+    "notes": "National voluntary guidance for public aquatic facilities. States FAC (free available chlorine) 1.0-3.0 ppm for traditional chlorinated pools, 2.0-4.0 ppm for pools using cyanuric acid; minimum 1.0 ppm FAC without CYA, minimum 2.0 ppm FAC with CYA. States a public-pool maximum CYA guidance of 15 ppm specifically in the context of contamination/outbreak response (not a general residential-pool operating ceiling). Fecal/diarrheal-incident response: raise free chlorine to 20 ppm for approximately 13 hours (general fecal incident) or, when CYA has been reduced to <=15 ppm, maintain 20 ppm FC for ~28 hours at pH <=7.5 for Cryptosporidium inactivation."
+  },
+  {
+    "id": "cdc-mmwr-pool-chemical-injuries",
+    "organization": "Centers for Disease Control and Prevention (CDC) — Morbidity and Mortality Weekly Report (MMWR)",
+    "title": "Pool Chemical–Associated Health Events in Public and Residential Settings",
+    "url": "https://www.cdc.gov/mmwr/volumes/68/wr/mm6819a2.htm",
+    "source_type": "government_public_health",
+    "authority_level": "primary",
+    "publication_date": null,
+    "last_updated": null,
+    "accessed_date": "2026-08-18",
+    "topics": [
+      "chemical_safety",
+      "mixing_hazards"
+    ],
+    "notes": "CDC surveillance report on pool-chemical-related injuries; supports safety guidance on chemical mixing/handling hazards."
+  },
+  {
+    "id": "cdc-pool-chemical-safety-toolkit",
+    "organization": "Centers for Disease Control and Prevention (CDC)",
+    "title": "Pool Chemical Safety",
+    "url": "https://www.cdc.gov/healthy-swimming/toolkit/pool-chemical-safety.html",
+    "source_type": "government_public_health",
+    "authority_level": "primary",
+    "publication_date": null,
+    "last_updated": null,
+    "accessed_date": "2026-08-18",
+    "topics": [
+      "chemical_safety",
+      "mixing_hazards",
+      "storage"
+    ],
+    "notes": "CDC toolkit resource on safe handling and storage of pool chemicals, including never mixing chlorine with acid."
+  },
+  {
+    "id": "npic-pool-spa-chemicals-fact-sheet",
+    "organization": "National Pesticide Information Center (NPIC), Oregon State University Extension Services / U.S. EPA cooperative agreement",
+    "title": "Pool and Spa Chemicals Fact Sheet",
+    "url": "https://npic.orst.edu/factsheets/pool-chemicals.html",
+    "source_type": "academic_extension",
+    "authority_level": "academic",
+    "publication_date": "2024-01",
+    "last_updated": null,
+    "accessed_date": "2026-08-18",
+    "topics": [
+      "chemical_safety",
+      "mixing_hazards",
+      "chlorine_gas",
+      "chloramines",
+      "storage"
+    ],
+    "notes": "University-extension fact sheet (co-sponsored by EPA) on pool/spa chemical hazards: never mix products with acids or other pool chemicals unless the label directs it; chlorine gas and chloramine inhalation hazards; storage guidance to keep products sealed, separated, and in original containers."
+  },
+  {
+    "id": "ansi-phta-11-2019",
+    "organization": "Pool & Hot Tub Alliance (PHTA), ANSI-Accredited Standards Developer",
+    "title": "ANSI/APSP/ICC-11 2019: American National Standard for Water Quality in Public Pools and Spas",
+    "url": "https://blog.ansi.org/ansi/ansi-apsp-11-water-quality-in-public-pools-and-spas/",
+    "source_type": "industry_standard",
+    "authority_level": "professional",
+    "publication_date": "2019",
+    "last_updated": null,
+    "accessed_date": "2026-08-18",
+    "topics": [
+      "total_alkalinity",
+      "calcium_hardness"
+    ],
+    "notes": "ANSI-accredited national standard for public pool/spa water quality. States total alkalinity shall be maintained between 60-180 ppm as CaCO3, and calcium hardness between 150-1,000 ppm, for public pools. A newer edition (ANSI/PHTA/ICC-11 2026) is referenced in PHTA materials as in progress/public review; this record cites the 2019 edition actually retrieved. Public-pool standard ranges are wider than commonly-cited residential practical targets -- see chemistry-ranges.js for the distinction."
+  },
+  {
+    "id": "phta-total-alkalinity-fact-sheet",
+    "organization": "Pool & Hot Tub Alliance (PHTA)",
+    "title": "Total Alkalinity in Pool and Spa Water (PHTA Fact Sheet)",
+    "url": "https://www.phta.org/pub/?id=25a114b4-1866-daac-99fb-277001b3c020",
+    "source_type": "industry_standard",
+    "authority_level": "professional",
+    "publication_date": null,
+    "last_updated": null,
+    "accessed_date": "2026-08-18",
+    "topics": [
+      "total_alkalinity",
+      "ph_buffering"
+    ],
+    "notes": "PHTA technical fact sheet explaining total alkalinity as a pH buffer; below ~60 ppm pH can \"bounce\" (swing rapidly), above ~180 ppm pH becomes difficult to lower."
+  },
+  {
+    "id": "clevelandclinic-pool-chemical-safety",
+    "organization": "Cleveland Clinic",
+    "title": "Pool Chemical Safety Tips",
+    "url": "https://health.clevelandclinic.org/swimming-pool-chemical-safety",
+    "source_type": "medical_institution",
+    "authority_level": "secondary",
+    "publication_date": null,
+    "last_updated": null,
+    "accessed_date": "2026-08-18",
+    "topics": [
+      "chemical_safety",
+      "mixing_hazards"
+    ],
+    "notes": "Secondary source (non-governmental medical institution) used only to corroborate CPSC/CDC/NPIC chemical-mixing safety guidance, not as a standalone basis for any numeric range."
+  }
+]

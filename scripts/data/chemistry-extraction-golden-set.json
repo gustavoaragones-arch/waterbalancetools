@@ -1,0 +1,2288 @@
+[
+  {
+    "id": "golden-001",
+    "category": "ph",
+    "source": "real",
+    "text": "Compatibility Considerations Trichlor tablets are strongly acidic (pH approximately 2.8) and contain cyanuric acid.",
+    "expected": [
+      {
+        "parameter_id": "ph",
+        "minimum": 2.8,
+        "maximum": 2.8,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-002",
+    "category": "ph",
+    "source": "real",
+    "text": "This is why pool pH tends to be higher in summer and why pools with waterfalls, fountains, or high-speed jets see faster pH rise, all of those features accelerate CO2 off-gassing.",
+    "expected": [
+      {
+        "parameter_id": "ph",
+        "minimum": 2,
+        "maximum": 2,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "pool",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CARRIED_CONTEXT"
+      }
+    ]
+  },
+  {
+    "id": "golden-003",
+    "category": "ph",
+    "source": "real",
+    "text": "Then bring pH into the 7.2-7.6 range.",
+    "expected": [
+      {
+        "parameter_id": "ph",
+        "minimum": 7.2,
+        "maximum": 7.6,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-004",
+    "category": "ph",
+    "source": "real",
+    "text": "Key Facts Free chlorine (1-3 ppm) is the test most directly linked to swimmer health. pH (7.2-7.6) controls how effectively chlorine kills pathogens.",
+    "expected": [
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 1,
+        "maximum": 3,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "ph",
+        "minimum": 7.2,
+        "maximum": 7.6,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-005",
+    "category": "ph",
+    "source": "real",
+    "text": "Free chlorine should be at least 3 ppm. pH should be between 7.2 and 7.8.",
+    "expected": [
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 3,
+        "maximum": 3,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "ph",
+        "minimum": 7.2,
+        "maximum": 7.8,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-006",
+    "category": "ph",
+    "source": "real",
+    "text": "If pH is above 7.8, add pH reducer before soaking.",
+    "expected": [
+      {
+        "parameter_id": "ph",
+        "minimum": 7.8,
+        "maximum": 7.8,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-007",
+    "category": "ph_threshold",
+    "source": "real",
+    "text": "Above 7.8, chlorine effectiveness drops sharply, at pH 8.0, active chlorine is only about 22% of what the test shows.",
+    "expected": [
+      {
+        "parameter_id": null,
+        "minimum": 7.8,
+        "maximum": 7.8,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      },
+      {
+        "parameter_id": "ph",
+        "minimum": 8,
+        "maximum": 8,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": null,
+        "minimum": 22,
+        "maximum": 22,
+        "unit": "%",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      }
+    ]
+  },
+  {
+    "id": "golden-008",
+    "category": "ph",
+    "source": "synthetic",
+    "text": "pH 7.2-7.6 is the target range for most residential pools.",
+    "expected": [
+      {
+        "parameter_id": "ph",
+        "minimum": 7.2,
+        "maximum": 7.6,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-009",
+    "category": "ph",
+    "source": "synthetic",
+    "text": "Bromine works over a wider pH range (7.0-8.0) than chlorine (7.2-7.6 recommended).",
+    "expected": [
+      {
+        "parameter_id": "ph",
+        "minimum": 7,
+        "maximum": 8,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "ph",
+        "minimum": 7.2,
+        "maximum": 7.6,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-010",
+    "category": "fc",
+    "source": "real",
+    "text": "Key Facts Free chlorine should be 1-3 ppm for pools and 3-5 ppm for hot tubs.",
+    "expected": [
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 1,
+        "maximum": 3,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 3,
+        "maximum": 5,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "hot_tub",
+        "claim_type": "RANGE",
+        "extraction_status": "CARRIED_CONTEXT"
+      }
+    ]
+  },
+  {
+    "id": "golden-011",
+    "category": "fc",
+    "source": "synthetic",
+    "text": "Free chlorine should be at least 1 ppm for pools and at least 3 ppm for hot tubs.",
+    "expected": [
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 1,
+        "maximum": 1,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 3,
+        "maximum": 3,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "hot_tub",
+        "claim_type": "RANGE",
+        "extraction_status": "CARRIED_CONTEXT"
+      }
+    ]
+  },
+  {
+    "id": "golden-012",
+    "category": "cc",
+    "source": "synthetic",
+    "text": "Combined chlorine above 0.5 ppm indicates chloramines are building up and shock treatment is recommended.",
+    "expected": [
+      {
+        "parameter_id": "combined_chlorine",
+        "minimum": 0.5,
+        "maximum": 0.5,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-013",
+    "category": "tc",
+    "source": "synthetic",
+    "text": "Total chlorine reads 4 ppm while free chlorine reads 1 ppm, meaning combined chlorine is 3 ppm.",
+    "expected": [
+      {
+        "parameter_id": "total_chlorine",
+        "minimum": 4,
+        "maximum": 4,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 1,
+        "maximum": 1,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "combined_chlorine",
+        "minimum": 3,
+        "maximum": 3,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-014",
+    "category": "composite",
+    "source": "synthetic",
+    "text": "FC 1.0 ppm, pH 7.7, TA 90 ppm, hardness 280 ppm, CYA 45 ppm.",
+    "expected": [
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 1,
+        "maximum": 1,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "ph",
+        "minimum": 7.7,
+        "maximum": 7.7,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "total_alkalinity",
+        "minimum": 90,
+        "maximum": 90,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "calcium_hardness",
+        "minimum": 280,
+        "maximum": 280,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "cyanuric_acid",
+        "minimum": 45,
+        "maximum": 45,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-015",
+    "category": "ta",
+    "source": "real",
+    "text": "Balancing in Practice Start by adjusting total alkalinity to 80-120 ppm, which supports stable pH.",
+    "expected": [
+      {
+        "parameter_id": "total_alkalinity",
+        "minimum": 80,
+        "maximum": 120,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-016",
+    "category": "ta",
+    "source": "real",
+    "text": "Total alkalinity (80-120 ppm) buffers pH against sudden changes.",
+    "expected": [
+      {
+        "parameter_id": "total_alkalinity",
+        "minimum": 80,
+        "maximum": 120,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-017",
+    "category": "ta",
+    "source": "real",
+    "text": "Total alkalinity between 80 and 120 ppm stabilises pH and prevents rapid swings.",
+    "expected": [
+      {
+        "parameter_id": "total_alkalinity",
+        "minimum": 80,
+        "maximum": 120,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-018",
+    "category": "ta",
+    "source": "real",
+    "text": "Without adequate alkalinity (target 80-120 ppm), pH swings wildly with every chemical addition or rainstorm.",
+    "expected": [
+      {
+        "parameter_id": "total_alkalinity",
+        "minimum": 80,
+        "maximum": 120,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-019",
+    "category": "ta_no_number",
+    "source": "real",
+    "text": "In hot tubs, alkalinity tends to drift more than in pools due to aeration from jets, which off-gases CO2 and raises pH.",
+    "expected": [
+      {
+        "parameter_id": null,
+        "minimum": 2,
+        "maximum": 2,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "pool",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      }
+    ]
+  },
+  {
+    "id": "golden-020",
+    "category": "ta_threshold",
+    "source": "real",
+    "text": "For any adjustment to alkalinity or pH, allow 4-6 hours before retesting.",
+    "expected": [
+      {
+        "parameter_id": null,
+        "minimum": 4,
+        "maximum": 6,
+        "unit": "hours",
+        "value_type": "duration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      }
+    ]
+  },
+  {
+    "id": "golden-021",
+    "category": "ch",
+    "source": "real",
+    "text": "Calcium hardness (200-400 ppm for plaster pools) protects pool surfaces and equipment.",
+    "expected": [
+      {
+        "parameter_id": "calcium_hardness",
+        "minimum": 200,
+        "maximum": 400,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-022",
+    "category": "ch",
+    "source": "real",
+    "text": "Key Facts Target calcium hardness: 200-400 ppm for plaster and concrete pools; 150-250 ppm for vinyl and fibreglass.",
+    "expected": [
+      {
+        "parameter_id": "calcium_hardness",
+        "minimum": 200,
+        "maximum": 400,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "calcium_hardness",
+        "minimum": 150,
+        "maximum": 250,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CARRIED_CONTEXT"
+      }
+    ]
+  },
+  {
+    "id": "golden-023",
+    "category": "ch",
+    "source": "real",
+    "text": "Effects of Low and High Hardness Low calcium hardness (below 150 ppm in a plaster pool) causes etching and pitting of the pool surface, visible as rough patches.",
+    "expected": [
+      {
+        "parameter_id": "calcium_hardness",
+        "minimum": 150,
+        "maximum": 150,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-024",
+    "category": "ch_composite",
+    "source": "real",
+    "text": "Preventing and Removing Scale Prevention: keep LSI between -0.3 and +0.3 by maintaining pH below 7.6, calcium hardness at or below 400 ppm, and alkalinity at 80-120 ppm.",
+    "expected": [
+      {
+        "parameter_id": "lsi",
+        "minimum": -0.3,
+        "maximum": -0.3,
+        "unit": "",
+        "value_type": "index_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "ph",
+        "minimum": 0.3,
+        "maximum": 0.3,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "ph",
+        "minimum": 7.6,
+        "maximum": 7.6,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "calcium_hardness",
+        "minimum": 400,
+        "maximum": 400,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "total_alkalinity",
+        "minimum": 80,
+        "maximum": 120,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-025",
+    "category": "cya",
+    "source": "real",
+    "text": "In a pool managed exclusively with a tablet feeder, CYA can reach problem levels (80-100 ppm) within one season and pH will consistently trend low without acid addition.",
+    "expected": [
+      {
+        "parameter_id": "cyanuric_acid",
+        "minimum": 80,
+        "maximum": 100,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-026",
+    "category": "cya",
+    "source": "real",
+    "text": "Examples End-of-Season Feeder Check As the season winds down, a pool owner discovers their CYA is at 85 ppm, above the 80 ppm upper limit.",
+    "expected": [
+      {
+        "parameter_id": "cyanuric_acid",
+        "minimum": 85,
+        "maximum": 85,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "cyanuric_acid",
+        "minimum": 80,
+        "maximum": 80,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CARRIED_CONTEXT"
+      }
+    ]
+  },
+  {
+    "id": "golden-027",
+    "category": "cya",
+    "source": "real",
+    "text": "CYA of 60-80 ppm is needed for salt pool outdoor use to protect the generated chlorine from UV.",
+    "expected": [
+      {
+        "parameter_id": "cyanuric_acid",
+        "minimum": 60,
+        "maximum": 80,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-028",
+    "category": "cya",
+    "source": "real",
+    "text": "Cyanuric acid above 80 ppm significantly reduces chlorine effectiveness even when the reading looks correct.",
+    "expected": [
+      {
+        "parameter_id": "cyanuric_acid",
+        "minimum": 80,
+        "maximum": 80,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-029",
+    "category": "cya",
+    "source": "real",
+    "text": "Target CYA for standard outdoor pools is 30-50 ppm.",
+    "expected": [
+      {
+        "parameter_id": "cyanuric_acid",
+        "minimum": 30,
+        "maximum": 50,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-030",
+    "category": "cya",
+    "source": "real",
+    "text": "High cyanuric acid that is making your 3 ppm chlorine reading nearly useless is invisible.",
+    "expected": [
+      {
+        "parameter_id": "cyanuric_acid",
+        "minimum": 3,
+        "maximum": 3,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-031",
+    "category": "cya_dosage",
+    "source": "real",
+    "text": "Every pound of trichlor added to a pool raises CYA by approximately 0.6 ppm for every 10,000 gallons.",
+    "expected": [
+      {
+        "parameter_id": "cyanuric_acid",
+        "minimum": 0.6,
+        "maximum": 0.6,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "pool_volume",
+        "minimum": 10000,
+        "maximum": 10000,
+        "unit": "gallons",
+        "value_type": "volume",
+        "environment": "pool",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-032",
+    "category": "temp_no_number",
+    "source": "real",
+    "text": "Key Facts Examples Calculator Related Water temperature affects almost every aspect of pool chemistry.",
+    "expected": []
+  },
+  {
+    "id": "golden-033",
+    "category": "temp",
+    "source": "real",
+    "text": "Key Facts Chlorine demand roughly doubles for every 10°F rise in water temperature above 80°F.",
+    "expected": [
+      {
+        "parameter_id": "water_temperature",
+        "minimum": 10,
+        "maximum": 10,
+        "unit": "°f",
+        "value_type": "temperature",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "water_temperature",
+        "minimum": 80,
+        "maximum": 80,
+        "unit": "°f",
+        "value_type": "temperature",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-034",
+    "category": "temp_no_number",
+    "source": "real",
+    "text": "Seasonal temperature changes are the most common reason for mid-summer chemistry problems.",
+    "expected": []
+  },
+  {
+    "id": "golden-035",
+    "category": "temp_no_number",
+    "source": "real",
+    "text": "Temperature and pH Drift As water warms, carbon dioxide escapes from solution more readily.",
+    "expected": []
+  },
+  {
+    "id": "golden-036",
+    "category": "salt",
+    "source": "real",
+    "text": "Key Facts Target salt level for most systems: 2,700-3,400 ppm, far lower than ocean water (35,000 ppm).",
+    "expected": [
+      {
+        "parameter_id": "salt",
+        "minimum": 2700,
+        "maximum": 3400,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "salt",
+        "minimum": 35000,
+        "maximum": 35000,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CARRIED_CONTEXT"
+      }
+    ]
+  },
+  {
+    "id": "golden-037",
+    "category": "salt",
+    "source": "real",
+    "text": "Salt reads 2,400 ppm, slightly below the 2,700 ppm minimum for the system.",
+    "expected": [
+      {
+        "parameter_id": "salt",
+        "minimum": 2400,
+        "maximum": 2400,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "salt",
+        "minimum": 2700,
+        "maximum": 2700,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CARRIED_CONTEXT"
+      }
+    ]
+  },
+  {
+    "id": "golden-038",
+    "category": "salt_dosage",
+    "source": "real",
+    "text": "Add approximately 40 lbs of sodium chloride (pool grade) to a 15,000-gallon pool to raise salt by 300 ppm.",
+    "expected": [
+      {
+        "parameter_id": "salt",
+        "minimum": 40,
+        "maximum": 40,
+        "unit": "lbs",
+        "value_type": "mass_or_dosage",
+        "environment": "pool",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "IMPOSSIBLE_MAPPING"
+      },
+      {
+        "parameter_id": "salt",
+        "minimum": 15000,
+        "maximum": 15000,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "pool",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "IMPOSSIBLE_MAPPING"
+      },
+      {
+        "parameter_id": "salt",
+        "minimum": 300,
+        "maximum": 300,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-039",
+    "category": "salt",
+    "source": "real",
+    "text": "Retest, salt now at 2,750 ppm.",
+    "expected": [
+      {
+        "parameter_id": "salt",
+        "minimum": 2750,
+        "maximum": 2750,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-040",
+    "category": "salt",
+    "source": "real",
+    "text": "Saltwater pools need salt in range (e.g. 2,700-3,400 ppm), use our Saltwater Pool Salt Calculator.",
+    "expected": [
+      {
+        "parameter_id": "salt",
+        "minimum": 2700,
+        "maximum": 3400,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CARRIED_CONTEXT"
+      }
+    ]
+  },
+  {
+    "id": "golden-041",
+    "category": "bromine",
+    "source": "real",
+    "text": "Key Facts Bromine is more stable than chlorine at temperatures above 86°F, making it the preferred choice for hot tubs.",
+    "expected": [
+      {
+        "parameter_id": "bromine",
+        "minimum": 86,
+        "maximum": 86,
+        "unit": "°f",
+        "value_type": "temperature",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "IMPOSSIBLE_MAPPING"
+      }
+    ]
+  },
+  {
+    "id": "golden-042",
+    "category": "bromine",
+    "source": "real",
+    "text": "Typical Values Available bromine: approximately 54%.",
+    "expected": [
+      {
+        "parameter_id": "bromine",
+        "minimum": 54,
+        "maximum": 54,
+        "unit": "%",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-043",
+    "category": "bromine",
+    "source": "synthetic",
+    "text": "Hot tub bromine should be maintained between 4 and 8 ppm.",
+    "expected": [
+      {
+        "parameter_id": "bromine",
+        "minimum": 4,
+        "maximum": 8,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "hot_tub",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-044",
+    "category": "volume",
+    "source": "real",
+    "text": "Over a 30-week season, that is 6-10 backwashes, totalling 900-2,000 gallons of water wasted to drain.",
+    "expected": [
+      {
+        "parameter_id": null,
+        "minimum": 30,
+        "maximum": 30,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      },
+      {
+        "parameter_id": null,
+        "minimum": 6,
+        "maximum": 10,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      },
+      {
+        "parameter_id": "pool_volume",
+        "minimum": 900,
+        "maximum": 2000,
+        "unit": "gallons",
+        "value_type": "volume",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-045",
+    "category": "hottub_volume",
+    "source": "real",
+    "text": "A hot tub holds 300-500 gallons.",
+    "expected": [
+      {
+        "parameter_id": "pool_volume",
+        "minimum": 300,
+        "maximum": 500,
+        "unit": "gallons",
+        "value_type": "volume",
+        "environment": "hot_tub",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-046",
+    "category": "hottub_volume",
+    "source": "real",
+    "text": "In a small hot tub volume (300-500 gallons), even two or three bathers in an extended session can consume most of the free chlorine and leave behind significant combined chlorine.",
+    "expected": [
+      {
+        "parameter_id": "pool_volume",
+        "minimum": 300,
+        "maximum": 500,
+        "unit": "gallons",
+        "value_type": "volume",
+        "environment": "hot_tub",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-047",
+    "category": "volume",
+    "source": "synthetic",
+    "text": "A typical residential pool holds 10,000 to 25,000 gallons of water.",
+    "expected": [
+      {
+        "parameter_id": "pool_volume",
+        "minimum": 10000,
+        "maximum": 25000,
+        "unit": "gallons",
+        "value_type": "volume",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-048",
+    "category": "dosage",
+    "source": "synthetic",
+    "text": "Add 10 oz of liquid chlorine per 10,000 gallons to raise free chlorine by roughly 2 ppm.",
+    "expected": [
+      {
+        "parameter_id": "pool_volume",
+        "minimum": 10,
+        "maximum": 10,
+        "unit": "oz",
+        "value_type": "mass_or_dosage",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "IMPOSSIBLE_MAPPING"
+      },
+      {
+        "parameter_id": "pool_volume",
+        "minimum": 10000,
+        "maximum": 10000,
+        "unit": "gallons",
+        "value_type": "volume",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 2,
+        "maximum": 2,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-049",
+    "category": "dosage",
+    "source": "synthetic",
+    "text": "Use 1 lb of granular shock per 10,000 gallons for routine maintenance shock.",
+    "expected": [
+      {
+        "parameter_id": "pool_volume",
+        "minimum": 1,
+        "maximum": 1,
+        "unit": "lb",
+        "value_type": "mass_or_dosage",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "IMPOSSIBLE_MAPPING"
+      },
+      {
+        "parameter_id": "pool_volume",
+        "minimum": 10000,
+        "maximum": 10000,
+        "unit": "gallons",
+        "value_type": "volume",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-050",
+    "category": "shock",
+    "source": "real",
+    "text": "Non-chlorine shock (MPS) is the fastest option: it works without raising FC and the spa can be used in 15-30 minutes.",
+    "expected": [
+      {
+        "parameter_id": null,
+        "minimum": 15,
+        "maximum": 30,
+        "unit": "minutes",
+        "value_type": "duration",
+        "environment": "hot_tub",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      }
+    ]
+  },
+  {
+    "id": "golden-051",
+    "category": "shock",
+    "source": "real",
+    "text": "Chlorine shock provides deeper treatment but requires a minimum wait of 4-8 hours.",
+    "expected": [
+      {
+        "parameter_id": null,
+        "minimum": 4,
+        "maximum": 8,
+        "unit": "hours",
+        "value_type": "duration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      }
+    ]
+  },
+  {
+    "id": "golden-052",
+    "category": "shock_threshold",
+    "source": "synthetic",
+    "text": "To reach breakpoint chlorination, dose free chlorine to roughly 10 times the combined chlorine reading.",
+    "expected": [
+      {
+        "parameter_id": "combined_chlorine",
+        "minimum": 10,
+        "maximum": 10,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "IMPOSSIBLE_MAPPING"
+      }
+    ]
+  },
+  {
+    "id": "golden-053",
+    "category": "example_input",
+    "source": "synthetic",
+    "text": "For example, suppose your test strip shows FC 0.5 ppm, pH 7.8, and TA 140 ppm before treatment.",
+    "expected": [
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 0.5,
+        "maximum": 0.5,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "EXAMPLE_INPUT",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "ph",
+        "minimum": 7.8,
+        "maximum": 7.8,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "EXAMPLE_INPUT",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "total_alkalinity",
+        "minimum": 140,
+        "maximum": 140,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "EXAMPLE_INPUT",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-054",
+    "category": "example_output",
+    "source": "synthetic",
+    "text": "After shocking, the calculator result shows a target of 12 ppm free chlorine to reach breakpoint.",
+    "expected": [
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 12,
+        "maximum": 12,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "CALCULATED_VALUE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-055",
+    "category": "lsi",
+    "source": "real",
+    "text": "The LSI increases with temperature, water balanced at 70°F may begin scaling at 90°F.",
+    "expected": [
+      {
+        "parameter_id": null,
+        "minimum": 70,
+        "maximum": 70,
+        "unit": "°f",
+        "value_type": "temperature",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      },
+      {
+        "parameter_id": null,
+        "minimum": 90,
+        "maximum": 90,
+        "unit": "°f",
+        "value_type": "temperature",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      }
+    ]
+  },
+  {
+    "id": "golden-056",
+    "category": "lsi_no_number",
+    "source": "real",
+    "text": "LSI Shifts with Temperature Temperature is a significant variable in the Langelier Saturation Index formula.",
+    "expected": []
+  },
+  {
+    "id": "golden-057",
+    "category": "lsi_composite",
+    "source": "real",
+    "text": "Water with an LSI of -0.1 at 68°F (well-balanced) may have an LSI of +0.4 at 90°F (beginning to scale) with identical pH, hardness, and alkalinity.",
+    "expected": [
+      {
+        "parameter_id": "lsi",
+        "minimum": -0.1,
+        "maximum": -0.1,
+        "unit": "",
+        "value_type": "index_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "lsi",
+        "minimum": 68,
+        "maximum": 68,
+        "unit": "°f",
+        "value_type": "temperature",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "IMPOSSIBLE_MAPPING"
+      },
+      {
+        "parameter_id": "lsi",
+        "minimum": 0.4,
+        "maximum": 0.4,
+        "unit": "",
+        "value_type": "index_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "lsi",
+        "minimum": 90,
+        "maximum": 90,
+        "unit": "°f",
+        "value_type": "temperature",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "IMPOSSIBLE_MAPPING"
+      }
+    ]
+  },
+  {
+    "id": "golden-058",
+    "category": "lsi",
+    "source": "real",
+    "text": "Key Facts An LSI of 0.0 is perfect balance; the industry target range is -0.3 to +0.3.",
+    "expected": [
+      {
+        "parameter_id": "lsi",
+        "minimum": 0,
+        "maximum": 0,
+        "unit": "",
+        "value_type": "index_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "lsi",
+        "minimum": -0.3,
+        "maximum": -0.3,
+        "unit": "",
+        "value_type": "index_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CARRIED_CONTEXT"
+      },
+      {
+        "parameter_id": "lsi",
+        "minimum": 0.3,
+        "maximum": 0.3,
+        "unit": "",
+        "value_type": "index_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CARRIED_CONTEXT"
+      }
+    ]
+  },
+  {
+    "id": "golden-059",
+    "category": "lsi_threshold",
+    "source": "real",
+    "text": "Aggressive water (LSI below -0.3) attacks plaster, grout, metal fittings, and pump impellers.",
+    "expected": [
+      {
+        "parameter_id": "lsi",
+        "minimum": -0.3,
+        "maximum": -0.3,
+        "unit": "",
+        "value_type": "index_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-060",
+    "category": "calculation",
+    "source": "synthetic",
+    "text": "The calculated LSI result is -0.1, indicating slightly corrosive water.",
+    "expected": [
+      {
+        "parameter_id": "lsi",
+        "minimum": -0.1,
+        "maximum": -0.1,
+        "unit": "",
+        "value_type": "index_value",
+        "environment": "unspecified",
+        "claim_type": "CALCULATED_VALUE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-061",
+    "category": "safety",
+    "source": "synthetic",
+    "text": "Never mix chlorine and muriatic acid directly; doing so can release toxic chlorine gas within seconds.",
+    "expected": []
+  },
+  {
+    "id": "golden-062",
+    "category": "safety",
+    "source": "synthetic",
+    "text": "Wait at least 8 hours after shocking a pool with 20 ppm chlorine before allowing swimmers back in.",
+    "expected": [
+      {
+        "parameter_id": "shock_treatment",
+        "minimum": 8,
+        "maximum": 8,
+        "unit": "hours",
+        "value_type": "duration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "IMPOSSIBLE_MAPPING"
+      },
+      {
+        "parameter_id": "shock_treatment",
+        "minimum": 20,
+        "maximum": 20,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-063",
+    "category": "safety",
+    "source": "synthetic",
+    "text": "Store pool chemicals in their original containers, at least 3 feet apart, in a cool, dry, ventilated area.",
+    "expected": [
+      {
+        "parameter_id": null,
+        "minimum": 3,
+        "maximum": 3,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      }
+    ]
+  },
+  {
+    "id": "golden-064",
+    "category": "non_chemistry",
+    "source": "real",
+    "text": "Typical Values Available bromine: ~54%; Dissolves in about 3-5 days (3-inch tablets) Related Resources Bromine Vs Chlorine Last reviewed: 2026-06-01",
+    "expected": [
+      {
+        "parameter_id": "bromine",
+        "minimum": 54,
+        "maximum": 54,
+        "unit": "%",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "bromine",
+        "minimum": 3,
+        "maximum": 5,
+        "unit": "days",
+        "value_type": "duration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "IMPOSSIBLE_MAPPING"
+      },
+      {
+        "parameter_id": "bromine",
+        "minimum": 3,
+        "maximum": 3,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "IMPOSSIBLE_MAPPING"
+      }
+    ]
+  },
+  {
+    "id": "golden-065",
+    "category": "non_chemistry",
+    "source": "real",
+    "text": "5 min read Winter Spa Care Hot tubs used year-round need adjusted chemistry for cold weather.",
+    "expected": []
+  },
+  {
+    "id": "golden-066",
+    "category": "non_chemistry",
+    "source": "synthetic",
+    "text": "This page was last updated on 2026-06-29 and has a QA score of 98 out of 100.",
+    "expected": [
+      {
+        "parameter_id": null,
+        "minimum": 98,
+        "maximum": 98,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      },
+      {
+        "parameter_id": null,
+        "minimum": 100,
+        "maximum": 100,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      }
+    ]
+  },
+  {
+    "id": "golden-067",
+    "category": "non_chemistry",
+    "source": "synthetic",
+    "text": "The calculator has 6 input fields and takes about 30 seconds to complete.",
+    "expected": [
+      {
+        "parameter_id": null,
+        "minimum": 6,
+        "maximum": 6,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      },
+      {
+        "parameter_id": null,
+        "minimum": 30,
+        "maximum": 30,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      }
+    ]
+  },
+  {
+    "id": "golden-068",
+    "category": "ambiguous",
+    "source": "synthetic",
+    "text": "Water chemistry can drift for several reasons, and regular testing catches problems early.",
+    "expected": []
+  },
+  {
+    "id": "golden-069",
+    "category": "ambiguous",
+    "source": "synthetic",
+    "text": "Balance all four core parameters together rather than adjusting one in isolation.",
+    "expected": []
+  },
+  {
+    "id": "golden-070",
+    "category": "context_pool",
+    "source": "synthetic",
+    "text": "For pools, keep free chlorine between 1 and 3 ppm.",
+    "expected": [
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 1,
+        "maximum": 3,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-071",
+    "category": "context_hottub",
+    "source": "synthetic",
+    "text": "For hot tubs, keep free chlorine between 3 and 5 ppm.",
+    "expected": [
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 3,
+        "maximum": 5,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "hot_tub",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-072",
+    "category": "context_pool",
+    "source": "synthetic",
+    "text": "Residential pool total alkalinity should sit near 100 ppm.",
+    "expected": [
+      {
+        "parameter_id": "total_alkalinity",
+        "minimum": 100,
+        "maximum": 100,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-073",
+    "category": "context_hottub",
+    "source": "synthetic",
+    "text": "Hot tub total alkalinity should sit near 100 ppm as well.",
+    "expected": [
+      {
+        "parameter_id": "total_alkalinity",
+        "minimum": 100,
+        "maximum": 100,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "hot_tub",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-074",
+    "category": "context_both",
+    "source": "synthetic",
+    "text": "Both pool and hot tub water should be tested for pH at least twice a week, targeting 7.2 to 7.6.",
+    "expected": [
+      {
+        "parameter_id": "ph",
+        "minimum": 7.2,
+        "maximum": 7.6,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "hot_tub",
+        "claim_type": "RANGE",
+        "extraction_status": "CARRIED_CONTEXT"
+      }
+    ]
+  },
+  {
+    "id": "golden-075",
+    "category": "context_unspecified",
+    "source": "synthetic",
+    "text": "Calcium hardness of 250 ppm is generally acceptable.",
+    "expected": [
+      {
+        "parameter_id": "calcium_hardness",
+        "minimum": 250,
+        "maximum": 250,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-076",
+    "category": "cc",
+    "source": "real",
+    "text": "Combined chlorine readings above roughly 0.2 to 0.5 ppm are commonly treated as the point where shock treatment is recommended.",
+    "expected": [
+      {
+        "parameter_id": "combined_chlorine",
+        "minimum": 0.2,
+        "maximum": 0.5,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-077",
+    "category": "tc",
+    "source": "synthetic",
+    "text": "If total chlorine is 5 ppm and free chlorine is 4 ppm, combined chlorine is 1 ppm.",
+    "expected": [
+      {
+        "parameter_id": "total_chlorine",
+        "minimum": 5,
+        "maximum": 5,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 4,
+        "maximum": 4,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "combined_chlorine",
+        "minimum": 1,
+        "maximum": 1,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-078",
+    "category": "cc",
+    "source": "synthetic",
+    "text": "Chloramines (combined chlorine) above 0.2 ppm can cause the strong \"chlorine smell\" often mistaken for too much chlorine.",
+    "expected": [
+      {
+        "parameter_id": "combined_chlorine",
+        "minimum": 0.2,
+        "maximum": 0.2,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-079",
+    "category": "relationship",
+    "source": "synthetic",
+    "text": "A commonly cited rule of thumb keeps free chlorine at roughly 7.5% of the cyanuric acid reading.",
+    "expected": [
+      {
+        "parameter_id": "cyanuric_acid",
+        "minimum": 7.5,
+        "maximum": 7.5,
+        "unit": "%",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-080",
+    "category": "relationship",
+    "source": "real",
+    "text": "The CYA/FC ratio matters more than either single number for gauging real sanitizing power in a stabilized pool.",
+    "expected": []
+  },
+  {
+    "id": "golden-081",
+    "category": "threshold",
+    "source": "synthetic",
+    "text": "If cyanuric acid exceeds 100 ppm, a partial drain and refill is typically recommended.",
+    "expected": [
+      {
+        "parameter_id": "cyanuric_acid",
+        "minimum": 100,
+        "maximum": 100,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-082",
+    "category": "threshold",
+    "source": "synthetic",
+    "text": "Once calcium hardness falls below 150 ppm, plaster surfaces become vulnerable to etching.",
+    "expected": [
+      {
+        "parameter_id": "calcium_hardness",
+        "minimum": 150,
+        "maximum": 150,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-083",
+    "category": "threshold",
+    "source": "real",
+    "text": "Cyanuric acid (CYA) at 300 ppm or higher requires immediate remediation in public facilities.",
+    "expected": [
+      {
+        "parameter_id": "cyanuric_acid",
+        "minimum": 300,
+        "maximum": 300,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-084",
+    "category": "composite",
+    "source": "synthetic",
+    "text": "Balanced water at 78°F reads pH 7.4, FC 2 ppm, TA 100 ppm, CH 300 ppm, and CYA 40 ppm.",
+    "expected": [
+      {
+        "parameter_id": "ph",
+        "minimum": 78,
+        "maximum": 78,
+        "unit": "°f",
+        "value_type": "temperature",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "IMPOSSIBLE_MAPPING"
+      },
+      {
+        "parameter_id": "ph",
+        "minimum": 7.4,
+        "maximum": 7.4,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 2,
+        "maximum": 2,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "total_alkalinity",
+        "minimum": 100,
+        "maximum": 100,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "calcium_hardness",
+        "minimum": 300,
+        "maximum": 300,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "cyanuric_acid",
+        "minimum": 40,
+        "maximum": 40,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-085",
+    "category": "composite",
+    "source": "synthetic",
+    "text": "A saltwater pool should read salt 3,200 ppm, FC 3 ppm, and pH 7.5 for typical maintenance.",
+    "expected": [
+      {
+        "parameter_id": "salt",
+        "minimum": 3200,
+        "maximum": 3200,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "free_chlorine",
+        "minimum": 3,
+        "maximum": 3,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "ph",
+        "minimum": 7.5,
+        "maximum": 7.5,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-086",
+    "category": "dosage",
+    "source": "real",
+    "text": "For a standard maintenance shock, use 1 lb of cal-hypo shock per 10,000 gallons of water.",
+    "expected": [
+      {
+        "parameter_id": "pool_volume",
+        "minimum": 1,
+        "maximum": 1,
+        "unit": "lb",
+        "value_type": "mass_or_dosage",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "IMPOSSIBLE_MAPPING"
+      },
+      {
+        "parameter_id": "pool_volume",
+        "minimum": 10000,
+        "maximum": 10000,
+        "unit": "gallons",
+        "value_type": "volume",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-087",
+    "category": "dosage",
+    "source": "synthetic",
+    "text": "Adding 6 oz of dry acid per 10,000 gallons typically lowers pH by about 0.2 units.",
+    "expected": [
+      {
+        "parameter_id": "pool_volume",
+        "minimum": 6,
+        "maximum": 6,
+        "unit": "oz",
+        "value_type": "mass_or_dosage",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "IMPOSSIBLE_MAPPING"
+      },
+      {
+        "parameter_id": "pool_volume",
+        "minimum": 10000,
+        "maximum": 10000,
+        "unit": "gallons",
+        "value_type": "volume",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "ph",
+        "minimum": 0.2,
+        "maximum": 0.2,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-088",
+    "category": "safety",
+    "source": "real",
+    "text": "Chlorine and muriatic acid or dry acid should never be added together, whether outside the pool or in it.",
+    "expected": []
+  },
+  {
+    "id": "golden-089",
+    "category": "safety",
+    "source": "synthetic",
+    "text": "CPSC data shows about 4,500 emergency room visits per year from pool chemical injuries in the United States.",
+    "expected": [
+      {
+        "parameter_id": null,
+        "minimum": 4500,
+        "maximum": 4500,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      }
+    ]
+  },
+  {
+    "id": "golden-090",
+    "category": "non_chemistry",
+    "source": "real",
+    "text": "Platform version: v1.0.0 (Foundation), Production Certified.",
+    "expected": [
+      {
+        "parameter_id": null,
+        "minimum": 1,
+        "maximum": 1,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      },
+      {
+        "parameter_id": null,
+        "minimum": 0,
+        "maximum": 0,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      }
+    ]
+  },
+  {
+    "id": "golden-091",
+    "category": "non_chemistry",
+    "source": "synthetic",
+    "text": "This calculator page has been viewed by thousands of pool owners since 2024.",
+    "expected": [
+      {
+        "parameter_id": null,
+        "minimum": 2024,
+        "maximum": 2024,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "pool",
+        "claim_type": "CALCULATED_VALUE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      }
+    ]
+  },
+  {
+    "id": "golden-092",
+    "category": "non_chemistry",
+    "source": "synthetic",
+    "text": "The article contains 12 sections and 4 tables.",
+    "expected": [
+      {
+        "parameter_id": null,
+        "minimum": 12,
+        "maximum": 12,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      },
+      {
+        "parameter_id": null,
+        "minimum": 4,
+        "maximum": 4,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      }
+    ]
+  },
+  {
+    "id": "golden-093",
+    "category": "volume",
+    "source": "synthetic",
+    "text": "Spa volume calculators typically handle 100 to 800 gallon spas.",
+    "expected": [
+      {
+        "parameter_id": "pool_volume",
+        "minimum": 100,
+        "maximum": 800,
+        "unit": "gallon",
+        "value_type": "volume",
+        "environment": "hot_tub",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-094",
+    "category": "volume",
+    "source": "real",
+    "text": "A pump rated for 1.5 horsepower can typically turn over a 20,000-gallon pool in about 8 hours.",
+    "expected": [
+      {
+        "parameter_id": null,
+        "minimum": 1.5,
+        "maximum": 1.5,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "pool",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      },
+      {
+        "parameter_id": null,
+        "minimum": 20000,
+        "maximum": 20000,
+        "unit": "",
+        "value_type": "unknown",
+        "environment": "pool",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      },
+      {
+        "parameter_id": null,
+        "minimum": 8,
+        "maximum": 8,
+        "unit": "hours",
+        "value_type": "duration",
+        "environment": "pool",
+        "claim_type": "RULE_OF_THUMB",
+        "extraction_status": "NO_PARAMETER_IN_CLAUSE"
+      }
+    ]
+  },
+  {
+    "id": "golden-095",
+    "category": "ambiguous",
+    "source": "real",
+    "text": "Every four core parameters interact, so changing one often shifts the others.",
+    "expected": []
+  },
+  {
+    "id": "golden-096",
+    "category": "ambiguous",
+    "source": "synthetic",
+    "text": "Consistent testing is the single best habit for avoiding chemistry problems.",
+    "expected": []
+  },
+  {
+    "id": "golden-097",
+    "category": "ambiguous",
+    "source": "real",
+    "text": "Understanding why a reading looks wrong is often more useful than the reading itself.",
+    "expected": []
+  },
+  {
+    "id": "golden-098",
+    "category": "calculation",
+    "source": "synthetic",
+    "text": "Entering pH 7.6, temperature 80°F, calcium hardness 250 ppm, alkalinity 100 ppm, and TDS 1000 ppm yields an LSI of 0.05.",
+    "expected": [
+      {
+        "parameter_id": "ph",
+        "minimum": 7.6,
+        "maximum": 7.6,
+        "unit": "ph_units",
+        "value_type": "ph_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "water_temperature",
+        "minimum": 80,
+        "maximum": 80,
+        "unit": "°f",
+        "value_type": "temperature",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "calcium_hardness",
+        "minimum": 250,
+        "maximum": 250,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "total_alkalinity",
+        "minimum": 100,
+        "maximum": 100,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      },
+      {
+        "parameter_id": "lsi",
+        "minimum": 1000,
+        "maximum": 1000,
+        "unit": "ppm",
+        "value_type": "concentration",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "IMPOSSIBLE_MAPPING"
+      },
+      {
+        "parameter_id": "lsi",
+        "minimum": 0.05,
+        "maximum": 0.05,
+        "unit": "",
+        "value_type": "index_value",
+        "environment": "unspecified",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-099",
+    "category": "lsi",
+    "source": "synthetic",
+    "text": "A pool with LSI consistently above +0.5 is at meaningfully higher risk of scale formation.",
+    "expected": [
+      {
+        "parameter_id": "lsi",
+        "minimum": 0.5,
+        "maximum": 0.5,
+        "unit": "",
+        "value_type": "index_value",
+        "environment": "pool",
+        "claim_type": "RANGE",
+        "extraction_status": "CORRECT_EXTRACTION"
+      }
+    ]
+  },
+  {
+    "id": "golden-100",
+    "category": "context_hottub",
+    "source": "real",
+    "text": "CDC recommends not using cyanuric acid or chlorine products with cyanuric acid in hot tubs.",
+    "expected": []
+  }
+]
