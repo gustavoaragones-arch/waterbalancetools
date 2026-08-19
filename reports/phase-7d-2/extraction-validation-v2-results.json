@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "golden_set_v2": {
+    "total": 104,
+    "pass": 104,
+    "fail": 0,
+    "real_cases": 21,
+    "synthetic_cases": 83
+  },
+  "failures": []
+}

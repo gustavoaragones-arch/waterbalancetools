@@ -1,0 +1,112 @@
+{
+  "status": "PASS_WITH_DATA_REBUILD",
+  "why_required": {
+    "golden_set_circularity": "build-golden-set.js generated expected values by calling extractFromSentence() on the same text",
+    "old_audit_non_independence": "build-sample-audit.js classified old-vs-new agreement using the new extractor's output as the reference standard",
+    "status_model_bug": "reconcile-claims-v2.js assigned scientific_review_status=AMBIGUOUS (an evaluated verdict) to NO_NUMERIC_CONTENT records, which were never evaluated"
+  },
+  "independent_golden_set": {
+    "path": "scripts/data/chemistry-extraction-golden-set-v2.json",
+    "builder": "scripts/phase-7d-2/build-golden-set-v2.js",
+    "builder_calls_extractor": false,
+    "cases_total": 104,
+    "real_cases": 21,
+    "synthetic_cases": 83,
+    "result": "104/104 PASS",
+    "extractor_bugs_found_and_fixed": [
+      "unrecognized 'ounces' unit let a dosage number inherit a nearby pH mention's ph_value type",
+      "unrecognized time-duration units (hours/minutes/days) had the same false-carry-forward effect",
+      "comma-grouped NUM regex alternative allowed zero comma groups, silently truncating comma-less 4+ digit numbers (18000 -> 180, 3200 -> 320)"
+    ],
+    "hand_tracing_corrections": 10,
+    "genuine_unfixed_limitation_found": "g-syn-034: raw character-distance proximity is not grammar-aware; kept as documented regression anchor, not hidden"
+  },
+  "independent_old_extraction_audit": {
+    "path": "reports/phase-7d-2/INDEPENDENT-OLD-EXTRACTION-AUDIT.csv",
+    "records_audited": 136,
+    "minimum_required": 100,
+    "methodology": "each row classified by reading the source claim sentence directly, never by consulting the new extractor",
+    "classification_summary": {
+      "CORRECT": 84,
+      "PARAMETER_MISCLASSIFICATION": 22,
+      "MISSED_CLAIM": 13,
+      "LEGITIMATE_AMBIGUITY": 15,
+      "NON_CHEMISTRY_NUMERIC": 2,
+      "VALUE_MISCLASSIFICATION": 0,
+      "UNIT_MISCLASSIFICATION": 0,
+      "CONTEXT_MISCLASSIFICATION": 0
+    },
+    "note": "VALUE/UNIT/CONTEXT_MISCLASSIFICATION structurally unobservable -- old system has no value/unit/environment columns, single topic tag per claim",
+    "dominant_pattern": "pH as false attractor: 14 of 22 parameter misclassifications had pH tagged while the true subject was total_alkalinity/water_temperature/lsi/cyanuric_acid/calcium_hardness"
+  },
+  "new_extractor_accuracy": {
+    "golden_set_v2": "104/104 (100%), non-circular",
+    "dedicated_regression_suite": "24/24 assertions (scripts/phase-7d-2/test-extraction-regression.js, Steps 9-12 named tests A-J + context + impossible-mapping + claim-type)",
+    "impossible_mapping_leakage": "0/15 named pairings leaked as CORRECT_EXTRACTION",
+    "scope_of_100pct_claim": "Limited to the 104 golden cases + 24 regression assertions independently evaluated; not claimed as full-population accuracy"
+  },
+  "status_integrity": {
+    "validator": "scripts/validate-chemistry-status-integrity.js",
+    "result": "PASS",
+    "rows_checked": 5877,
+    "violations": 0
+  },
+  "impossible_mapping_audit": { "checked": 15, "leaked_as_correct": 0, "result": "PASS" },
+  "composite_sentence_audit": {
+    "result": "PASS_WITH_DOCUMENTED_LIMITATIONS",
+    "residual_limitations": [
+      "grammar-blind proximity (g-syn-034)",
+      "hyphenated unit attachment not recognized (10,000-gallon)",
+      "singular 'gallon' not recognized as pool_volume trigger",
+      "'N times' multiplier phrasing not specially typed",
+      "'and' as clause-delimiter prevents environment='both' via 'X and Y' phrasing",
+      "chemical_dosage has no lexical trigger, unreachable as a parameter_id"
+    ]
+  },
+  "context_audit": { "result": "PASS" },
+  "scientific_review_separation": { "result": "PASS" },
+  "regression": {
+    "full_build": "PASS (exit 0)",
+    "phase_7b_validator": "PASS",
+    "phase_7c_validator": "PASS",
+    "broken_link_validator": "PASS",
+    "phase_7d_chemistry_validator": "PASS",
+    "phase_7d_chemistry_tests": "PASS (25 assertions)",
+    "url_engine_tests": "PASS (263 assertions)",
+    "phase_7d1_golden_set_regenerated": "PASS (100/100, snapshot regenerated after 3 extractor fixes -- was never independent evidence, see why_required)",
+    "golden_set_v2": "PASS (104/104)",
+    "status_integrity_validator": "PASS",
+    "extraction_regression_suite": "PASS (24 assertions)"
+  },
+  "scope_control": {
+    "production_content_rewritten": false,
+    "calculator_formulas_changed": false,
+    "urls_canonicals_redirects_sitemap_changed": false,
+    "url_engine_redirects_sitemap_diffs": "pre-existing Phase 7C changes, not touched this phase",
+    "language_expansion": false,
+    "citations_added_to_production": false,
+    "page_count": 523,
+    "phase_7d_knowledge_layer_touched": false,
+    "phase_7d1_evidence_preserved_unedited": true
+  },
+  "final_decision": "PASS_WITH_DATA_REBUILD",
+  "go_no_go_phase_7e": "NO-GO pending user review (per phase brief instruction: do not proceed automatically)",
+  "corrected_inventory": {
+    "path": "reports/phase-7d-2/post-fix-chemistry-claims-v2.csv",
+    "source_claims": 3933,
+    "extraction_records": 5877,
+    "supersedes": ["reports/phase-7d/chemistry-coverage.csv", "reports/phase-7d-1/post-fix-chemistry-claims.csv"]
+  },
+  "reports": [
+    "reports/phase-7d-2/PHASE-7D-2-INDEPENDENT-VALIDATION.md",
+    "reports/phase-7d-2/PHASE-7D-2-INDEPENDENT-VALIDATION.json",
+    "reports/phase-7d-2/INDEPENDENT-OLD-EXTRACTION-AUDIT.csv",
+    "reports/phase-7d-2/OLD-VS-NEW-EXTRACTION-COMPARISON.md",
+    "reports/phase-7d-2/post-fix-chemistry-claims-v2.csv",
+    "reports/phase-7d-2/post-fix-chemistry-claims-v2-summary.json",
+    "reports/phase-7d-2/status-integrity-results.json",
+    "reports/phase-7d-2/extraction-validation-v2-results.json",
+    "reports/phase-7d-2/independent-old-audit-summary.json",
+    "scripts/data/chemistry-extraction-golden-set-v2.json"
+  ]
+}

@@ -1,0 +1,682 @@
+{
+  "8": [
+    "CORRECT",
+    "free_chlorine",
+    "FC below target 1 ppm -- correctly free_chlorine."
+  ],
+  "10": [
+    "CORRECT",
+    "(none)",
+    "No number, no specific parameter value stated."
+  ],
+  "14": [
+    "PARAMETER_MISCLASSIFICATION",
+    "cyanuric_acid",
+    "80-100 ppm is explicitly CYA's own stated range; pH is mentioned with no number at all (confirmed original bug example)."
+  ],
+  "15": [
+    "CORRECT",
+    "ph",
+    "No number present; pH testing frequency is the genuine subject."
+  ],
+  "16": [
+    "CORRECT",
+    "cyanuric_acid",
+    "CYA at 85 ppm vs 80 ppm limit -- correct."
+  ],
+  "21": [
+    "PARAMETER_MISCLASSIFICATION",
+    "(none)",
+    "Navigation/menu chrome listing many equipment topics; no real salt claim or value."
+  ],
+  "38": [
+    "CORRECT",
+    "salt",
+    "2,700-3,400 ppm target salt level -- correct."
+  ],
+  "47": [
+    "CORRECT",
+    "salt",
+    "No number; genuinely about testing salt level."
+  ],
+  "50": [
+    "CORRECT",
+    "salt",
+    "2,750 ppm retest -- correct."
+  ],
+  "58": [
+    "CORRECT",
+    "water_temperature",
+    "No number; genuinely about temperature effects."
+  ],
+  "59": [
+    "PARAMETER_MISCLASSIFICATION",
+    "water_temperature",
+    "10F/80F are temperature values; pH is only mentioned in a separate non-numeric sentence."
+  ],
+  "69": [
+    "PARAMETER_MISCLASSIFICATION",
+    "lsi",
+    "-0.1/+0.4/68F/90F are LSI and temperature values; pH appears with no number at all."
+  ],
+  "107": [
+    "CORRECT",
+    "calcium_hardness",
+    "200-400 ppm -- correct."
+  ],
+  "131": [
+    "CORRECT",
+    "cyanuric_acid",
+    "No ppm number; genuinely about CYA's UV-protection role."
+  ],
+  "142": [
+    "CORRECT",
+    "total_alkalinity",
+    "No number; alkalinity is the primary named parameter."
+  ],
+  "146": [
+    "CORRECT",
+    "free_chlorine",
+    "FC 0.8 ppm vs 1.0 ppm minimum -- correct."
+  ],
+  "169": [
+    "PARAMETER_MISCLASSIFICATION",
+    "(none)",
+    "Navigation menu chrome listing many hot-tub-care topics; no real shock_treatment claim."
+  ],
+  "175": [
+    "CORRECT",
+    "water_temperature",
+    "No number; LSI-at-current-temperature statement."
+  ],
+  "177": [
+    "CORRECT",
+    "ph",
+    "No number; genuinely about pH drift causation."
+  ],
+  "216": [
+    "CORRECT",
+    "(none)",
+    "No number, no chemistry parameter."
+  ],
+  "247": [
+    "LEGITIMATE_AMBIGUITY",
+    "bromine",
+    "Truncated navigation heading fragment ('Bromine vs.'); no coherent claim or number."
+  ],
+  "269": [
+    "CORRECT",
+    "bromine",
+    "No number; genuinely about bromine's sanitizing mechanism."
+  ],
+  "295": [
+    "LEGITIMATE_AMBIGUITY",
+    "free_chlorine",
+    "No number; FC/CYA/pH all mentioned, FC arguably most central ('raises FC'), reasonable people could differ."
+  ],
+  "331": [
+    "LEGITIMATE_AMBIGUITY",
+    "bromine",
+    "Same truncated heading fragment as idx247."
+  ],
+  "375": [
+    "CORRECT",
+    "(none)",
+    "No number, no chemistry parameter."
+  ],
+  "490": [
+    "CORRECT",
+    "ph",
+    "No number; pH listed first among three co-equal factors, not a clear error."
+  ],
+  "500": [
+    "MISSED_CLAIM",
+    "ph",
+    "pH=7.8 correctly present, but calcium_hardness=480ppm, total_alkalinity=140ppm, and LSI=+0.8 are all explicit and silently dropped by the one-parameter-per-claim model."
+  ],
+  "513": [
+    "CORRECT",
+    "free_chlorine",
+    "No number; genuinely comparing free chlorine to other disinfectants."
+  ],
+  "527": [
+    "LEGITIMATE_AMBIGUITY",
+    "ph",
+    "No number; multi-issue list (green water/zero chlorine/extreme pH/cloudiness), no clear single parameter."
+  ],
+  "575": [
+    "MISSED_CLAIM",
+    "ph",
+    "pH toward 7.4 is defensible, but FC~2ppm claim ('raised FC to estimate 2 ppm') is completely dropped."
+  ],
+  "609": [
+    "CORRECT",
+    "calcium_hardness",
+    "No number; genuinely about raising calcium hardness."
+  ],
+  "623": [
+    "CORRECT",
+    "cyanuric_acid",
+    "90% is a chlorine-depletion-rate figure, not a CYA ppm value, but the sentence's core topic is genuinely CYA's protective role; no CYA range asserted or contradicted."
+  ],
+  "667": [
+    "LEGITIMATE_AMBIGUITY",
+    "total_alkalinity",
+    "No number; total_alkalinity is the grammatical subject/cause, pH is the effect -- reasonable to tag either."
+  ],
+  "690": [
+    "PARAMETER_MISCLASSIFICATION",
+    "(none)",
+    "Navigation menu chrome listing many different calculators; no coherent single ph claim."
+  ],
+  "694": [
+    "NON_CHEMISTRY_NUMERIC",
+    "(none)",
+    "Sitemap/crawl-depth listing; the numbers present (2, 3) are crawl-depth counts, unrelated to water_temperature or any chemistry value."
+  ],
+  "703": [
+    "LEGITIMATE_AMBIGUITY",
+    "(none)",
+    "Calculator UI chrome/form labels; no number, multiple parameters mentioned equally."
+  ],
+  "723": [
+    "CORRECT",
+    "sanitizer",
+    "5 ppm threshold for pausing sanitizer addition -- correct."
+  ],
+  "748": [
+    "CORRECT",
+    "total_alkalinity",
+    "No number; calculator title, correct topic."
+  ],
+  "755": [
+    "CORRECT",
+    "(none)",
+    "'30 Seconds' is a UI/marketing speed claim, not a chemistry value -- correctly rejected."
+  ],
+  "781": [
+    "CORRECT",
+    "ph",
+    "No number; correct topic (pH drift question)."
+  ],
+  "851": [
+    "PARAMETER_MISCLASSIFICATION",
+    "free_chlorine",
+    "3-5 ppm is explicitly a chlorine value ('3-5 ppm chlorine'); pH/alkalinity mentioned at the end with no number."
+  ],
+  "857": [
+    "PARAMETER_MISCLASSIFICATION",
+    "water_temperature",
+    "100-104F is a spa temperature range; 'pH-stable' is qualitative with no pH number."
+  ],
+  "874": [
+    "CORRECT",
+    "bromine",
+    "No number; comparison genuinely includes bromine as one of two compared items."
+  ],
+  "915": [
+    "CORRECT",
+    "salt",
+    "No number; salt reasonably one of the listed calculator topics."
+  ],
+  "951": [
+    "PARAMETER_MISCLASSIFICATION",
+    "total_alkalinity",
+    "Baking soda entity page: self-described as 'alkalinity increaser' with 'Pool Alkalinity Calculator' link; pH appears only once in a trailing related-entities list."
+  ],
+  "983": [
+    "CORRECT",
+    "calcium_hardness",
+    "No number; correct entity-page topic (calcium chloride)."
+  ],
+  "1041": [
+    "PARAMETER_MISCLASSIFICATION",
+    "lsi",
+    "-0.3 is explicitly an LSI threshold ('LSI > -0.3'); pH appears only as a relationship-graph label with no number."
+  ],
+  "1046": [
+    "CORRECT",
+    "calcium_hardness",
+    "200-400 ppm -- correct."
+  ],
+  "1098": [
+    "CORRECT",
+    "free_chlorine",
+    "No number; 'Free Chlorine' is a literal relationship-graph node label, defensible."
+  ],
+  "1195": [
+    "CORRECT",
+    "(none)",
+    "No number, no parameter."
+  ],
+  "1219": [
+    "PARAMETER_MISCLASSIFICATION",
+    "(none)",
+    "650-750 mV is ORP, a concept outside the 15-parameter vocabulary entirely; pH is mentioned only as a related entity, not the value's true subject."
+  ],
+  "1220": [
+    "CORRECT",
+    "cyanuric_acid",
+    "No number; correct topic (CYA stabilization)."
+  ],
+  "1226": [
+    "CORRECT",
+    "water_temperature",
+    "No number; correct topic."
+  ],
+  "1282": [
+    "CORRECT",
+    "salt",
+    "No number; correct topic (salt/SWG definition)."
+  ],
+  "1283": [
+    "CORRECT",
+    "salt",
+    "2,700-3,400 ppm -- correct."
+  ],
+  "1361": [
+    "CORRECT",
+    "calcium_hardness",
+    "200-400 ppm -- correct (duplicate content)."
+  ],
+  "1370": [
+    "PARAMETER_MISCLASSIFICATION",
+    "water_temperature",
+    "78-84F is literally the Temperature entity's own Quick Facts ideal range; pH appears only as a relationship label."
+  ],
+  "1375": [
+    "PARAMETER_MISCLASSIFICATION",
+    "water_temperature",
+    "Same Temperature-entity ideal range (78-84F) mislabeled as ph."
+  ],
+  "1408": [
+    "CORRECT",
+    "water_temperature",
+    "No number; correct topic (Fahrenheit unit entity)."
+  ],
+  "1464": [
+    "CORRECT",
+    "total_alkalinity",
+    "Explicitly 'raising TA by 10 ppm' -- correct."
+  ],
+  "1475": [
+    "CORRECT",
+    "cyanuric_acid",
+    "6 ppm CYA per pound trichlor -- correct."
+  ],
+  "1515": [
+    "MISSED_CLAIM",
+    "ph",
+    "pH delta (7.8-7.4=0.4) is defensible/correct, but TA=100ppm is stated explicitly and silently dropped."
+  ],
+  "1520": [
+    "CORRECT",
+    "ph",
+    "0.2 pH unit increase -- correct."
+  ],
+  "1522": [
+    "LEGITIMATE_AMBIGUITY",
+    "total_alkalinity",
+    "No number; total_alkalinity is grammatical subject/cause, pH is the effect."
+  ],
+  "1532": [
+    "CORRECT",
+    "salt",
+    "No number; correct topic (SWG salt concentration)."
+  ],
+  "1545": [
+    "LEGITIMATE_AMBIGUITY",
+    "shock_treatment",
+    "No number; shock dose ('the required dose') is arguably the more central subject than FC, one of three named factors."
+  ],
+  "1565": [
+    "CORRECT",
+    "free_chlorine",
+    "30 ppm FC shock dose / 1 ppm FC prevention are both explicitly labeled FC values, even on an algae-entity page."
+  ],
+  "1580": [
+    "CORRECT",
+    "(none)",
+    "No number, no single parameter value."
+  ],
+  "1591": [
+    "CORRECT",
+    "bromine",
+    "No number; correct topic (BCDMH bromine product)."
+  ],
+  "1638": [
+    "CORRECT",
+    "bromine",
+    "3-6 ppm -- correct."
+  ],
+  "1639": [
+    "CORRECT",
+    "calcium_hardness",
+    "No number; correct topic."
+  ],
+  "1738": [
+    "CORRECT",
+    "cyanuric_acid",
+    "CYA added ~33% by weight is explicit and directly quantified; defensible primary tag."
+  ],
+  "1875": [
+    "CORRECT",
+    "total_alkalinity",
+    "TA below 60 ppm -- correct."
+  ],
+  "1883": [
+    "CORRECT",
+    "ph",
+    "Raises pH by ~0.2 -- correct."
+  ],
+  "1884": [
+    "CORRECT",
+    "ph",
+    "No number; correct topic (pH definition)."
+  ],
+  "1893": [
+    "PARAMETER_MISCLASSIFICATION",
+    "(none)",
+    "500/1,000 ppb are phosphate concentrations (outside the 15-parameter vocabulary), not free_chlorine; 'free chlorine' appears only in passing with no chlorine number."
+  ],
+  "1961": [
+    "LEGITIMATE_AMBIGUITY",
+    "(none)",
+    "No number; 'salt pools' is one of three listed contexts (hard water, heated pools, salt pools), not a salt-concentration claim."
+  ],
+  "1976": [
+    "CORRECT",
+    "(none)",
+    "No number; correctly conservative given no value stated."
+  ],
+  "2004": [
+    "CORRECT",
+    "ph",
+    "Raises pH by ~0.2 units -- correct."
+  ],
+  "2051": [
+    "CORRECT",
+    "calcium_hardness",
+    "60-70% of total hardness figure directly relates to calcium hardness -- correct."
+  ],
+  "2073": [
+    "PARAMETER_MISCLASSIFICATION",
+    "water_temperature",
+    "78-84F is the Temperature entity's own ideal range; page explicitly ends '...Water Temperature Water temperature affects...'."
+  ],
+  "2074": [
+    "CORRECT",
+    "water_temperature",
+    "78-84F/98-104F/104F -- correct (near-duplicate content correctly tagged here, showing old bug's inconsistency)."
+  ],
+  "2111": [
+    "PARAMETER_MISCLASSIFICATION",
+    "(none)",
+    "Related-links navigation block; pH mentioned once in one of several unrelated link titles, no coherent claim."
+  ],
+  "2131": [
+    "CORRECT",
+    "cyanuric_acid",
+    "No number; correct topic (CYA question heading)."
+  ],
+  "2162": [
+    "MISSED_CLAIM",
+    "ph",
+    "pH 7.2-7.6 is present and correctly tagged, but a free_chlorine 1-3 ppm claim in the same text is silently dropped."
+  ],
+  "2221": [
+    "CORRECT",
+    "free_chlorine",
+    "No number; free_chlorine is the primary/first-named topic."
+  ],
+  "2234": [
+    "PARAMETER_MISCLASSIFICATION",
+    "cyanuric_acid",
+    "The stated '30 ppm' is explicitly a CYA threshold ('Check CYA levels; below 30 ppm...'), not an FC value, though FC is the passage's overall topic (borderline call)."
+  ],
+  "2328": [
+    "LEGITIMATE_AMBIGUITY",
+    "ph",
+    "No number; chlorine/pH/total alkalinity listed equally, pH is the middle item."
+  ],
+  "2351": [
+    "MISSED_CLAIM",
+    "(none)",
+    "Both a free_chlorine (below 1 ppm) and a water_temperature (100-104F) claim are explicitly present and both dropped."
+  ],
+  "2359": [
+    "PARAMETER_MISCLASSIFICATION",
+    "(none)",
+    "Related-links navigation block; '200 gal'/'300 gal' are link-title volume figures, pH appears once in one link title among many."
+  ],
+  "2391": [
+    "CORRECT",
+    "total_alkalinity",
+    "No number; correct topic (alkalinity category card)."
+  ],
+  "2442": [
+    "CORRECT",
+    "ph",
+    "pH below 5 -- correct."
+  ],
+  "2446": [
+    "CORRECT",
+    "ph",
+    "16 oz/10,000 gal is a dosage safety limit supporting the passage's core pH-lowering topic -- defensible."
+  ],
+  "2448": [
+    "CORRECT",
+    "ph",
+    "Explicit 'lower pH by 0.2/0.5' dose table -- correct."
+  ],
+  "2511": [
+    "CORRECT",
+    "ph",
+    "No number; correct topic."
+  ],
+  "2514": [
+    "CORRECT",
+    "(none)",
+    "No number, no single chemistry parameter (pool volume mentioned generically)."
+  ],
+  "2588": [
+    "MISSED_CLAIM",
+    "ph",
+    "pH 7.2-7.6 correctly tagged, but FC 1-3 ppm in the same sentence is silently dropped."
+  ],
+  "2592": [
+    "CORRECT",
+    "(none)",
+    "No number, no chemistry parameter."
+  ],
+  "2662": [
+    "CORRECT",
+    "free_chlorine",
+    "3-5 ppm FC -- correct."
+  ],
+  "2665": [
+    "CORRECT",
+    "free_chlorine",
+    "3-5 ppm / 1 ppm FC -- correct."
+  ],
+  "2679": [
+    "LEGITIMATE_AMBIGUITY",
+    "ph",
+    "No number; Chlorine Calculator and pH Calculator named equally."
+  ],
+  "2681": [
+    "LEGITIMATE_AMBIGUITY",
+    "ph",
+    "No number; Chlorine chart and pH chart named equally."
+  ],
+  "2689": [
+    "CORRECT",
+    "total_alkalinity",
+    "No number; correct topic."
+  ],
+  "2741": [
+    "LEGITIMATE_AMBIGUITY",
+    "water_temperature",
+    "No number; temperature is one of five listed factors (evaporation, bather load, temperature, UV, degradation), no clear primary."
+  ],
+  "2820": [
+    "CORRECT",
+    "cyanuric_acid",
+    "No number; correct topic."
+  ],
+  "2826": [
+    "LEGITIMATE_AMBIGUITY",
+    "salt",
+    "No number; passage is more about SWG chlorine degradation behavior than a salt-concentration claim, though 'salt water' opens the sentence."
+  ],
+  "2832": [
+    "CORRECT",
+    "ph",
+    "No number; pH is the literal grammatical subject."
+  ],
+  "2837": [
+    "MISSED_CLAIM",
+    "ph",
+    "pH 7.2-7.6 correctly tagged, but chlorine 1-3 ppm in the same sentence is silently dropped."
+  ],
+  "2861": [
+    "CORRECT",
+    "total_alkalinity",
+    "No number; alkalinity listed first, defensible."
+  ],
+  "2899": [
+    "PARAMETER_MISCLASSIFICATION",
+    "(none)",
+    "Related-links navigation block; gallon figures are link-title volumes, pH appears once in one link title among many."
+  ],
+  "2902": [
+    "CORRECT",
+    "(none)",
+    "10,000 describes pool volume, a category the old system's vocabulary cannot represent at all -- (none) is the most honest available answer."
+  ],
+  "2942": [
+    "CORRECT",
+    "(none)",
+    "No number, no available-vocabulary parameter."
+  ],
+  "3004": [
+    "PARAMETER_MISCLASSIFICATION",
+    "(none)",
+    "Same related-links navigation pattern as idx2899."
+  ],
+  "3040": [
+    "MISSED_CLAIM",
+    "ph",
+    "Chlorine 1-3ppm, pH 7.2-7.6, and TA 80-120ppm are ALL explicit; only pH is kept."
+  ],
+  "3115": [
+    "MISSED_CLAIM",
+    "ph",
+    "Same three-parameter composite pattern as idx3040."
+  ],
+  "3135": [
+    "CORRECT",
+    "(none)",
+    "No number; qualitative safety statement."
+  ],
+  "3165": [
+    "CORRECT",
+    "(none)",
+    "Duplicate of idx3135 content."
+  ],
+  "3178": [
+    "MISSED_CLAIM",
+    "ph",
+    "FC 3-5ppm and pH 7.2-7.8 both explicit; only pH kept (TA has no number here)."
+  ],
+  "3195": [
+    "CORRECT",
+    "(none)",
+    "Duplicate of idx3135 content."
+  ],
+  "3221": [
+    "CORRECT",
+    "(none)",
+    "15,000 describes pool volume, outside old vocabulary -- (none) is the most honest available answer."
+  ],
+  "3281": [
+    "LEGITIMATE_AMBIGUITY",
+    "total_alkalinity",
+    "No number; total_alkalinity is grammatical subject/cause, pH is the effect."
+  ],
+  "3359": [
+    "CORRECT",
+    "total_alkalinity",
+    "No number; correct topic."
+  ],
+  "3365": [
+    "MISSED_CLAIM",
+    "ph",
+    "FC 1-3ppm, pH 7.2-7.6, TA 80-120ppm all explicit; only pH kept."
+  ],
+  "3386": [
+    "CORRECT",
+    "free_chlorine",
+    "No number; correct topic."
+  ],
+  "3456": [
+    "MISSED_CLAIM",
+    "ph",
+    "FC 1-3ppm, pH 7.2-7.6, TA 80-120ppm all explicit; only pH kept."
+  ],
+  "3473": [
+    "NON_CHEMISTRY_NUMERIC",
+    "(none)",
+    "Dataset provenance metadata (version 2026.07, 36 records, dates); numbers are metadata, not chemistry values; 'pH' is one calculator name among a long list."
+  ],
+  "3484": [
+    "CORRECT",
+    "calcium_hardness",
+    "No number; correct topic."
+  ],
+  "3542": [
+    "CORRECT",
+    "(none)",
+    "No number; correctly conservative (page topic is combined_chlorine but this specific sentence has no value)."
+  ],
+  "3569": [
+    "CORRECT",
+    "cyanuric_acid",
+    "No number; correct topic."
+  ],
+  "3610": [
+    "PARAMETER_MISCLASSIFICATION",
+    "cyanuric_acid",
+    "Raw structured data explicitly labeled 'residential-pool-cyanuric-acid'/'cyanuric-acid' with min:30/max:50/ideal:40; FC appears only in a trailing note."
+  ],
+  "3631": [
+    "CORRECT",
+    "water_temperature",
+    "No number; correct topic."
+  ],
+  "3640": [
+    "PARAMETER_MISCLASSIFICATION",
+    "free_chlorine",
+    "Structured dosage-matrix row explicitly labeled 'free-chlorine' for Trichlor Tablets; 'pH ~2.9' is a trailing note, not the record's primary subject."
+  ],
+  "3645": [
+    "CORRECT",
+    "ph",
+    "Structured record explicitly labeled 'soda-ash-100pct-ph'/'pH Increase'/'ph 0.2' -- correct."
+  ],
+  "3652": [
+    "CORRECT",
+    "(none)",
+    "No number, no parameter."
+  ],
+  "3709": [
+    "MISSED_CLAIM",
+    "ph",
+    "Full reference table states SIX+ parameters (FC, CC, pH, TA, CH x2, CYA...) each with explicit values; only pH is kept."
+  ],
+  "3777": [
+    "CORRECT",
+    "salt",
+    "No number; correct topic."
+  ]
+}

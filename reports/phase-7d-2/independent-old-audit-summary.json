@@ -1,0 +1,10 @@
+{
+  "total": 136,
+  "summary": {
+    "CORRECT": 84,
+    "PARAMETER_MISCLASSIFICATION": 22,
+    "LEGITIMATE_AMBIGUITY": 15,
+    "MISSED_CLAIM": 13,
+    "NON_CHEMISTRY_NUMERIC": 2
+  }
+}

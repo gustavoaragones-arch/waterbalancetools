@@ -1,0 +1,17 @@
+{
+  "source_claims": 3933,
+  "extraction_records": 5861,
+  "extraction_status_summary": {
+    "NO_PARAMETER_IN_CLAUSE": 1047,
+    "NO_NUMERIC_CONTENT": 2410,
+    "CORRECT_EXTRACTION": 1326,
+    "IMPOSSIBLE_MAPPING": 982,
+    "CARRIED_CONTEXT": 96
+  },
+  "scientific_review_status_summary": {
+    "NOT_EXTRACTED": 4439,
+    "SUPPORTED": 603,
+    "REQUIRES_REVIEW": 589,
+    "AMBIGUOUS": 230
+  }
+}
