@@ -81,15 +81,23 @@ function buildPage(size) {
   const directAnswer =
     '    <p class="serp-direct">Hot tub water chemistry changes fast in small volume. Use the table as a reference from 0 ppm, then plug real readings into the Hot Tub Chlorine Calculator. <span class="badge">Test often</span></p>';
 
+  // 2 decimal places for liquid -- see generate-chlorine-pages.js for why
+  // (display-precision fix only, liquidOz/granularOz unchanged).
+  const loLiquid = liquidOz(size, 3).toFixed(2);
+  const hiLiquid = liquidOz(size, 5).toFixed(2);
+  const loGranular = granularOz(size, 3).toFixed(1);
+  const hiGranular = granularOz(size, 5).toFixed(1);
+  const sizeClass = size <= 300 ? 'a compact 2-4 person spa' : size <= 450 ? 'a mid-size 4-6 person spa' : 'a larger 6+ person spa';
+
   const faqList = [
     {
       q: 'What chemicals does a ' + g + ' gallon hot tub need?',
       a:
-        'At minimum, sanitizer (chlorine or bromine), pH control, and regular testing. This page focuses on chlorine reference amounts; use the Hot Tub Chlorine Calculator for your exact readings.'
+        'To reach the typical 3-5 ppm free chlorine target from 0 ppm, a ' + g + '-gallon spa takes roughly ' + loLiquid + '-' + hiLiquid + ' oz of liquid chlorine (10%) or ' + loGranular + '-' + hiGranular + ' oz of granular product, plus pH control and regular testing. Use the calculator for your exact reading.'
     },
     {
-      q: 'How much chlorine per 100 gallons in a spa?',
-      a: 'Scale estimates by volume—but always use test results and the calculator rather than rules of thumb alone.'
+      q: 'Is a ' + g + ' gallon hot tub small, medium, or large?',
+      a: 'At ' + g + ' gallons, this is ' + sizeClass + '. Smaller spas shift chemistry faster per bather since there is less water to dilute sanitizer demand.'
     },
     {
       q: 'Can you use pool chemicals in a hot tub?',
@@ -158,10 +166,7 @@ function buildPage(size) {
     ]) +
     '\n' +
     H.whatThisMeansSection([
-      'A <strong>' +
-        g +
-        '-gallon hot tub</strong> holds far less water than a pool, so each bather, product, and top-off changes sanitizer and pH much faster. The reference table on this page estimates chlorine from 0 ppm at your volume; real dosing must follow your latest test strip or meter reading.',
-      'Warm water increases chemical activity and evaporation concentrates dissolved solids over time. Many spas target higher free chlorine than pools while in use, but exact targets depend on whether you use chlorine, bromine, or a mineral system—always follow equipment and chemical labels for your setup.'
+      'A <strong>' + g + '-gallon hot tub</strong> holds far less water than a pool, so each bather, product, and top-off changes sanitizer and pH much faster than the reference table alone shows. Real dosing must follow your latest test strip or meter reading. Full explanation: <a href="' + BASE_HREF + 'guides/hot-tub-chemistry.html">hot tub chemistry guide</a>.'
     ]) +
     '\n' +
     H.recommendedLevelsSection([
@@ -174,9 +179,7 @@ function buildPage(size) {
     ]) +
     '\n' +
     H.whatHappensIfIncorrectSection([
-      'Too little sanitizer in a spa allows bacteria and biofilm risk in pipes and surfaces—often before water looks bad. That is why frequent testing matters more in hot tubs than in large pools.',
-      'Too much chlorine or mis-dosed shock can damage covers, irritate skin, and create unsafe soak conditions. Small volumes mean overdosing happens easily if you confuse pool and spa strengths.',
-      'Ignoring pH while chasing sanitizer leads to uncomfortable water and can damage heaters and seals. Imbalance also makes readings harder to interpret when you switch products mid-season.'
+      'Too little sanitizer risks bacteria/biofilm in pipes, often before water looks bad; too much can irritate skin and damage covers. Small volumes make overdosing easy if you confuse pool and spa strengths. See <a href="' + BASE_HREF + 'guides/hot-tub-chemistry.html">the hot tub guide</a> for troubleshooting.'
     ]) +
     '\n' +
     H.quickTipsSection([

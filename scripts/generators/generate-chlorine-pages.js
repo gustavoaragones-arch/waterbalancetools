@@ -81,16 +81,29 @@ function buildPage(volume) {
   const directAnswer =
     '    <p class="serp-direct">Dosing uses your pool volume and test results. The table below estimates ounces from 0 ppm; run the calculator with your current ppm for a precise dose. <span class="badge">Test first</span></p>';
 
+  // Page-specific: the exact computed range for THIS pool's most common
+  // dosing move (0 ppm -> the 1-3 ppm target band), not a generic pointer
+  // to "use the calculator" -- real numbers, not spun wording.
+  // 2 decimal places for liquid (10% dilution makes the oz figure small
+  // even at moderate volumes -- 1 decimal rounded to a degenerate-looking
+  // "0.0" for smaller pools; this is a display-precision fix, not a
+  // formula change -- liquidOz/granularOz themselves are untouched).
+  const loLiquid = liquidOz(volume, 1).toFixed(2);
+  const hiLiquid = liquidOz(volume, 3).toFixed(2);
+  const loGranular = granularOz(volume, 1).toFixed(1);
+  const hiGranular = granularOz(volume, 3).toFixed(1);
+  const sizeClass = volume < 10000 ? 'a smaller residential pool' : volume <= 20000 ? 'a typical mid-size residential pool' : 'a large residential pool';
+
   const faqList = [
     {
       q: 'How much chlorine for a ' + g + ' gallon pool?',
       a:
-        'It depends on current free chlorine and target ppm. Use the dosage table on this page or the Pool Chlorine Calculator for exact ounces.'
+        'To raise a ' + g + '-gallon pool from 0 ppm to the typical 1-3 ppm target, that\'s roughly ' + loLiquid + '-' + hiLiquid + ' oz of liquid chlorine (10%) or ' + loGranular + '-' + hiGranular + ' oz of granular shock. See the table below for other ppm targets, and use the calculator with your actual current reading for a precise dose.'
     },
     {
-      q: 'How much chlorine per 1,000 gallons?',
+      q: 'Is a ' + g + ' gallon pool considered small, medium, or large?',
       a:
-        'Roughly scale the per-10,000-gallon estimates by dividing by 10—but always use your test readings and the calculator for accuracy.'
+        'At ' + g + ' gallons, this is ' + sizeClass + '. Pool size mainly affects how much product you add per treatment, not the target ppm ranges themselves -- those stay the same regardless of volume.'
     },
     {
       q: 'Can you add too much chlorine?',
@@ -168,10 +181,7 @@ function buildPage(volume) {
     ]) +
     '\n' +
     H.whatThisMeansSection([
-      'Free chlorine exists mainly as hypochlorous acid and hypochlorite—those forms kill bacteria, viruses, and algae while oxidizing sweat, oils, and debris. For a <strong>' +
-        g +
-        '-gallon pool</strong>, label dosing and reference tables assume known volume, known product strength, and a clear starting point for ppm.',
-      'Real pools rarely match every assumption: <strong>cyanuric acid (CYA)</strong> buffers UV loss but changes how much measured chlorine is immediately active; bather load, leaves, pollen, and warm water all raise sanitizer demand. Always measure current <strong>free chlorine</strong> before adding, then use the Pool Chlorine Calculator so ounces match your readings—not pool size alone.'
+      'For a <strong>' + g + '-gallon pool</strong>, the table below scales standard dosing math to your exact volume — always confirm with a current <strong>free chlorine</strong> reading rather than volume alone, since CYA, bather load, and warm weather all change how much is actually needed. Full explanation: <a href="' + BASE_HREF + 'guides/chlorine-guide.html">chlorine chemistry guide</a>.'
     ]) +
     '\n' +
     H.recommendedLevelsSection([
@@ -184,9 +194,7 @@ function buildPage(volume) {
     ]) +
     '\n' +
     H.whatHappensIfIncorrectSection([
-      'Running too little free chlorine leaves water vulnerable to bacteria, algae, and murky conditions. You may notice green or cloudy water, slippery walls, or a strong “chlorine smell” from chloramines when sanitizer cannot keep up with organic load.',
-      'Adding too much chlorine can irritate skin and eyes, damage liners or covers, and keep swimmers out until levels drop. Repeated overdosing wastes chemicals and can throw off pH if you never retest between adds.',
-      'Misjudging pool volume leads to systematic under- or overdosing all season. Combine an accurate gallon estimate (dimensions or a volume calculator) with testing after storms, parties, or when switching between liquid, granular, and tablet products.'
+      'Too little free chlorine risks algae and cloudy water; too much irritates skin and eyes and keeps swimmers out until levels drop. See <a href="' + BASE_HREF + 'guides/chlorine-guide.html">the chlorine guide</a> for troubleshooting specific symptoms.'
     ]) +
     '\n' +
     H.quickTipsSection([

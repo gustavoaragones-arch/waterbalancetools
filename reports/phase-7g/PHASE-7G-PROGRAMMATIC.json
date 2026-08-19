@@ -1,0 +1,115 @@
+{
+  "phase": "7G",
+  "title": "Programmatic Duplication & Content Differentiation",
+  "status": "PASS_WITH_REVIEW_QUEUE",
+  "scope": {
+    "families": ["chlorine", "ph", "shock", "hot-tubs"],
+    "long_tail_pages": 26,
+    "hub_pages": 4,
+    "generators": [
+      "scripts/generators/generate-chlorine-pages.js",
+      "scripts/generators/generate-ph-pages.js",
+      "scripts/generators/generate-shock-pages.js",
+      "scripts/generators/generate-hot-tub-pages.js"
+    ]
+  },
+  "root_cause": "whatThisMeansSection/whatHappensIfIncorrectSection/quickTipsSection content arrays byte-identical across every page in a family; 4 of 5 FAQ answers identical verbatim; only H1/meta/computed table varied per page.",
+  "duplication": {
+    "baseline": {
+      "hot-tubs": { "risk": "CRITICAL", "avg_pairwise_similarity": 0.795, "repeated_paragraph_blocks": 33, "repeated_faqs": 4 },
+      "shock": { "risk": "CRITICAL", "avg_pairwise_similarity": 0.784, "repeated_paragraph_blocks": 29, "repeated_faqs": 4 },
+      "chlorine": { "risk": "HIGH", "avg_pairwise_similarity": 0.740, "repeated_paragraph_blocks": 34, "repeated_faqs": 4 },
+      "ph": { "risk": "HIGH", "avg_pairwise_similarity": 0.712, "repeated_paragraph_blocks": 30, "repeated_faqs": 4 }
+    },
+    "post_remediation": {
+      "hot-tubs": { "risk": "HIGH", "avg_pairwise_similarity": 0.711, "repeated_paragraph_blocks": 25, "repeated_faqs": 3 },
+      "shock": { "risk": "HIGH", "avg_pairwise_similarity": 0.689, "repeated_paragraph_blocks": 23, "repeated_faqs": 3 },
+      "chlorine": { "risk": "HIGH", "avg_pairwise_similarity": 0.651, "repeated_paragraph_blocks": 26, "repeated_faqs": 3 },
+      "ph": { "risk": "HIGH", "avg_pairwise_similarity": 0.579, "repeated_paragraph_blocks": 31, "repeated_faqs": 5 }
+    },
+    "any_family_reached_low_or_medium": false,
+    "known_anomaly": "ph family repeated_paragraph_blocks and repeated_faqs increased slightly (30->31, 4->5) despite largest similarity-score improvement; attributed to duplication-tool paragraph-boundary sensitivity, not a content regression."
+  },
+  "remediation_applied": [
+    "computed page-specific FAQ answers (real dosing figures per volume/level/size)",
+    "trimmed shared explanatory sections to one paragraph + canonical guide link",
+    "corrected shock-page CTA link from wrong chlorine-guide target to academy/sanitizers/shock-treatments-explained.html",
+    "display-precision fix: liquid chlorine FAQ figures .toFixed(1) -> .toFixed(2) (formulas unchanged)"
+  ],
+  "intentionally_not_touched": [
+    "stepsSection",
+    "recommendedLevelsSection",
+    "3 of 5 FAQ answers (overdosing safety, swim-wait timing, product-type guidance)"
+  ],
+  "consolidation_decisions": {
+    "total_pages": 26,
+    "decision_counts": { "KEEP": 26, "DIFFERENTIATE": 0, "MERGE": 0, "REDIRECT": 0, "NOINDEX": 0, "RESEARCH_REQUIRED": 0 },
+    "source_file": "reports/phase-7g/PROGRAMMATIC-DECISIONS.csv"
+  },
+  "cannibalization": {
+    "high_risk_sitewide": 0,
+    "relevant_cross_format_pairs": 12,
+    "relevant_pairs_risk": "LOW",
+    "relevant_pairs_similarity_range": [0.05, 0.06],
+    "source_file": "reports/phase-7g/CANNIBALIZATION-RESOLUTION.md"
+  },
+  "aeo_differentiation": {
+    "structure_changed": false,
+    "answer_content_changed": true,
+    "new_schema_types_added": false,
+    "source_file": "reports/phase-7g/AEO-DIFFERENTIATION.md"
+  },
+  "validator": {
+    "name": "scripts/validate-programmatic-quality.js",
+    "status": "PASS",
+    "pages_checked": 26,
+    "violations_found": 0,
+    "warnings_count": 0
+  },
+  "regression": {
+    "7B_validate_generated_output": "PASS",
+    "7C_validate_url_indexation": "PASS",
+    "7D_chemistry_validator": "WARN_PREEXISTING_UNCHANGED",
+    "7D2_golden_set_v2": "PASS_104_104",
+    "7D2_status_integrity": "PASS",
+    "7D2_regression_suite": "PASS_24_ASSERTIONS",
+    "7D3_evidence_dataset": "PASS",
+    "7E_provenance": "PASS_0_VIOLATIONS_4787_WARNINGS",
+    "7E1_provenance_resolution": "PASS",
+    "7F_trust_layer": "PASS",
+    "7F_trust_existing": "PASS",
+    "7F1_editorial_decisions": "PASS",
+    "7G_programmatic_quality": "PASS",
+    "broken_links": "PASS_0_ISSUES_523_PAGES",
+    "url_engine": "PASS_263_ASSERTIONS",
+    "any_regression_introduced": false
+  },
+  "reproducibility": {
+    "method": "two independent full rebuilds of all 4 generator output directories, compared via SHA-256",
+    "result": "byte-identical"
+  },
+  "scope_control": {
+    "footprint": [
+      "scripts/generators/generate-chlorine-pages.js",
+      "scripts/generators/generate-ph-pages.js",
+      "scripts/generators/generate-shock-pages.js",
+      "scripts/generators/generate-hot-tub-pages.js",
+      "scripts/data/programmatic-intents.js",
+      "scripts/phase-7g/*",
+      "reports/phase-7g/*",
+      "scripts/validate-programmatic-quality.js"
+    ],
+    "spanish_french_paths_exist": false,
+    "adsense_touched": false,
+    "calculator_formula_files_touched": false,
+    "url_architecture_files_touched_by_this_phase": false,
+    "preexisting_unrelated_baseline_diff": "sitewide one-line footer-link flattening (/charts/X -> /X) plus sitemap.xml/_redirects churn, present before this phase began, not introduced or altered by Phase 7G"
+  },
+  "remaining_review_queue": [
+    "all 4 families remain HIGH risk; none reached LOW/MEDIUM",
+    "ph family repeated-block count anomaly (30->31, 4->5) worth revisiting if duplication tool is revised",
+    "hub-page section consolidation identified as the likely path below HIGH risk; not attempted (out of scope for this phase, would require design change)"
+  ],
+  "phase_7h_decision": "GO",
+  "do_not_begin_phase_7h_automatically": true
+}

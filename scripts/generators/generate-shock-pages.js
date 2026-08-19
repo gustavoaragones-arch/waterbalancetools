@@ -81,14 +81,18 @@ function buildPage(volume) {
   const directAnswer =
     '    <p class="serp-direct">Shock raises free chlorine fast. Use the table below for rough ounces at your volume, then fine-tune with the calculator for your target ppm. <span class="badge">Run pump</span></p>';
 
+  const standardOz = shockOz(volume, 10).toFixed(1);
+  const doubleOz = shockOz(volume, 20).toFixed(1);
+  const sizeClass = volume < 10000 ? 'a smaller residential pool' : volume <= 20000 ? 'a typical mid-size residential pool' : 'a large residential pool';
+
   const faqList = [
     {
       q: 'How much shock for a ' + g + ' gallon pool?',
-      a: 'It depends on current water condition and target chlorine raise. Use the table on this page or the Pool Shock Calculator for exact ounces.'
+      a: 'A standard shock (about a 10 ppm chlorine raise) for a ' + g + '-gallon pool is roughly ' + standardOz + ' oz of granular shock; double that (~' + doubleOz + ' oz) for heavy algae or contamination. Confirm with the calculator using your actual current reading.'
     },
     {
-      q: 'How much shock per 1,000 gallons?',
-      a: 'Scale the per-pool estimates by volume—your calculator is the safest way to avoid overdosing.'
+      q: 'Is a ' + g + ' gallon pool considered small, medium, or large?',
+      a: 'At ' + g + ' gallons, this is ' + sizeClass + '. The shock dose scales with volume; the target ppm raise (10 ppm standard, 20 ppm for heavy contamination) stays the same regardless of pool size.'
     },
     {
       q: 'Can you add too much shock?',
@@ -153,7 +157,7 @@ function buildPage(volume) {
     'calculators/pool-shock-calculator.html" class="btn btn-primary">Open Pool Shock Calculator</a></p>\n' +
     '      <p class="silo-hub-cta"><a href="' +
     BASE_HREF +
-    'guides/chlorine-guide.html">See full guide →</a></p>\n' +
+    'academy/sanitizers/shock-treatments-explained">See full guide →</a></p>\n' +
     '    </section>\n' +
     H.stepsSection([
       'Test pool volume and current sanitizer level.',
@@ -163,10 +167,7 @@ function buildPage(volume) {
     ]) +
     '\n' +
     H.whatThisMeansSection([
-      'Shock treatment temporarily raises free chlorine well above daily maintenance so the water can oxidize sweat, oils, algae, and other organic load. For a <strong>' +
-        g +
-        '-gallon pool</strong>, the ounces on this page scale with volume; your starting sanitizer level and how “dirty” the water is still determine whether you need a standard or stronger dose.',
-      'Granular shock products vary in strength and required handling—always read the label, pre-dissolve when instructed, and broadcast with the pump running. Afterward, filtration time matters as much as the initial dose: dead algae and debris must be captured by the filter or vacuumed out.'
+      'For a <strong>' + g + '-gallon pool</strong>, the ounces on this page scale standard shock math to your exact volume — your starting sanitizer level and how "dirty" the water is still determine whether you need a standard or double dose. Full explanation: <a href="' + BASE_HREF + 'academy/sanitizers/shock-treatments-explained">shock treatment guide</a>.'
     ]) +
     '\n' +
     H.recommendedLevelsSection([
@@ -179,9 +180,7 @@ function buildPage(volume) {
     ]) +
     '\n' +
     H.whatHappensIfIncorrectSection([
-      'Under-shocking during an algae bloom or after heavy contamination often wastes time: chlorine may rise briefly but not long enough to oxidize everything, and the pool can slide back to cloudy or green water.',
-      'Over-shocking can keep swimmers out for an extended period, stress vinyl or equipment finishes, and mask other problems if you never verify pH, alkalinity, and filtration.',
-      'Shocking without circulation or with a clogged filter leaves dead organics suspended—water can look worse before it looks better. Clean baskets, watch filter pressure, and run the pump as recommended during recovery.'
+      'Under-shocking can leave the pool sliding back to cloudy or green water; over-shocking keeps swimmers out longer and can stress equipment finishes. See <a href="' + BASE_HREF + 'academy/sanitizers/shock-treatments-explained">the shock treatment guide</a> for troubleshooting.'
     ]) +
     '\n' +
     H.quickTipsSection([

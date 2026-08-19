@@ -88,15 +88,19 @@ function buildPage(lvl) {
   const directAnswer =
     '    <p class="serp-direct">pH moves best in small steps. The 10,000-gallon reference below is a starting point—use the Pool pH Calculator with your gallons for a precise dose. <span class="badge">Go slow</span></p>';
 
+  const diffForFaq = Math.round(Math.abs(lvl.to - lvl.from) * 100) / 100;
+  const refOz = (raise ? phIncreaserOz(10000, diffForFaq) : phReducerOz(10000, diffForFaq)).toFixed(1);
   const faqList = [
     {
       q: 'How to adjust pool pH from ' + fromS + ' to ' + toS + '?',
       a:
-        'Use pH increaser or pH reducer in small increments with the pump running. Test after each addition. The table on this page shows a reference dose for a 10,000 gallon example; use the calculator for your volume.'
+        'That\'s a ' + diffForFaq + '-unit change, using ' + (raise ? 'pH increaser (soda ash)' : 'pH reducer (dry acid)') + ' — roughly ' + refOz + ' oz for a 10,000-gallon pool as a reference point. Add in small increments with the pump running and test after each addition; use the calculator for your exact volume.'
     },
     {
-      q: 'What is ideal pool pH?',
-      a: 'Most pools should stay between 7.2 and 7.6. Hot tubs may differ slightly—check your equipment guidelines.'
+      q: 'Why is pool pH ' + (raise ? 'so low' : 'so high') + ' in the first place?',
+      a: raise
+        ? 'Low pH is often caused by heavy rain, certain sanitizers (like trichlor tablets), or high bather load. Check total alkalinity too — very low alkalinity lets pH swing further than expected.'
+        : 'High pH commonly comes from aeration (waterfalls, fountains, spa jets), certain sanitizers, or naturally alkaline fill water. High total alkalinity can also hold pH elevated even after you add acid.'
     },
     {
       q: 'How fast can I change pH?',
@@ -165,12 +169,7 @@ function buildPage(lvl) {
     ]) +
     '\n' +
     H.whatThisMeansSection([
-      'pH measures how acidic or basic the water is. Moving from <strong>' +
-        fromS +
-        '</strong> to <strong>' +
-        toS +
-        '</strong> changes how much of your sanitizer exists in its most active forms and how comfortable the water feels on skin and eyes.',
-      'Large single-dose corrections often overshoot because test kits have lag and water needs time to mix. Total alkalinity acts as a buffer—if alkalinity is far out of range, pH may drift back quickly after you dose. That is why this page emphasizes small steps, circulation, and retesting rather than one aggressive pour.'
+      'Moving from <strong>' + fromS + '</strong> to <strong>' + toS + '</strong> is a ' + diffForFaq + '-unit change — large single-dose corrections often overshoot, since total alkalinity buffers pH and water needs time to mix. That is why this page emphasizes small steps and retesting. Full explanation: <a href="' + BASE_HREF + 'guides/ph-guide.html">pH guide</a>.'
     ]) +
     '\n' +
     H.recommendedLevelsSection([
@@ -180,9 +179,9 @@ function buildPage(lvl) {
     ]) +
     '\n' +
     H.whatHappensIfIncorrectSection([
-      'Letting pH run high for long periods can reduce chlorine effectiveness, contribute to scale on surfaces and heaters, and make water feel slippery or irritating.',
-      'Very low pH increases corrosion risk for metal fixtures, heater elements, and pool surfaces, and can cause eye or skin discomfort even when sanitizer readings look fine.',
-      'Swinging pH wildly with big acid or base adds wastes chemicals and can throw alkalinity off balance—fixing the rebound then takes more time and testing than steady incremental moves.'
+      (raise
+        ? 'Low pH increases corrosion risk for metal fixtures and surfaces and can irritate skin/eyes even when sanitizer looks fine.'
+        : 'High pH reduces chlorine effectiveness and contributes to scale on surfaces and heaters.') + ' See <a href="' + BASE_HREF + 'guides/ph-guide.html">the pH guide</a> for the full picture.'
     ]) +
     '\n' +
     H.quickTipsSection([
