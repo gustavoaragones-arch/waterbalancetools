@@ -1,0 +1,89 @@
+{
+  "task": "Phase 7 Preservation, Recovery & Commit/Push",
+  "status": "PASS",
+  "original_state": {
+    "branch": "main",
+    "upstream": "origin/main",
+    "local_head": "6df374b",
+    "origin_main": "6df374b",
+    "divergence": "none",
+    "uncommitted_path_count": 611,
+    "untracked_count": 47,
+    "modified_count": 564
+  },
+  "classification": {
+    "methodology": "untracked-vs-tracked check, full git diff inspection for inline phase-marker comments, cross-reference against each phase's own reports/phase-7*/ narrative, generator/source-script tracing for unmarked files",
+    "category_a_phase_work_committed": "all scripts/phase-7*/, scripts/data/chemistry-*, scripts/data/programmatic-intents.js, scripts/chemistry/*, new validate-*/test-*.js, scripts/url-policy.js, scripts/redirect-rules.js, scripts/restructure-calculator-pages.js, js/url/url-engine.js, scripts/data/entities-measurements.js, scripts/data/trust-*.js, data/trust/*.json, components/global-schema.html, scripts/generators/generate-*-pages.js, programmatic/{chlorine,ph,shock,hot-tubs}/*.html, editorial/editorial-policy/index.html, all reports/phase-7*/*, plus reports/phase-7a/ and scripts/audit-forensic/ (foundational infra, outside requested phase list but preserved for the same reason)",
+    "category_b_preexisting_unrelated_left_uncommitted": ["graphs.ai"],
+    "category_c_ambiguous_cumulative_committed_in_bundle": [
+      "scripts/generate-authority-charts.js",
+      "charts/*.html",
+      "root *-chart.html pages",
+      "index.html",
+      "about/index.html",
+      "reference/combined-chlorine-explained.html",
+      "calculators/*.html (14 pages)",
+      "~450 academy/glossary/entities/guides/reference pages",
+      "sitemap.xml, sitemap-*.xml, _redirects",
+      "data/navigation.json, data/search-index.json, data/entities/measurements.json, data/graph/entity-index.json, data/indexing/*.json, data/platform/compatibility.json, data/reference.json",
+      "audit/google/*",
+      "qa-summary.json/.md",
+      "style.css",
+      "templates/*",
+      "package.json",
+      "all-pages.html, provenance/index.html, search/index.html, releases/*.html, functions/_middleware.js, tools/index.html, legal/*, resources/*, printable*/*, formulas/*, comparisons/*, 404.html"
+    ],
+    "correction_to_prior_phase_7g_report": "the /charts/X -> /X footer-link flattening and sitemap/_redirects churn were previously described as pre-existing unrelated baseline noise; this task found that characterization incorrect -- it is genuine Phase 7C work (scripts/url-policy.js REDIRECT_SOURCES), confirmed via explicit inline 'Phase 7C' comments in scripts/redirect-rules.js and scripts/restructure-calculator-pages.js"
+  },
+  "file_group_verification": {
+    "all_groups_present": true,
+    "corrections_needed": [
+      "scripts/phase-7d/ (3 files) was omitted from the initial Phase 7D commit by staging oversight; corrected via a new follow-up commit (amend was not used, per instructions)",
+      "package.json and scripts/generate-authority-charts.js required explicit mixed-content documentation rather than clean single-phase attribution"
+    ]
+  },
+  "commits": [
+    { "phase": "7B", "hash": "5676901", "message": "Phase 7B: remediate generator integrity" },
+    { "phase": "7C", "hash": "04a0ff6", "message": "Phase 7C: centralize URL indexation policy" },
+    { "phase": "7D", "hash": "b296edc", "message": "Phase 7D: establish chemistry knowledge provenance" },
+    { "phase": "7D.1", "hash": "457b688", "message": "Phase 7D.1: correct chemistry extraction attribution" },
+    { "phase": "7D.2", "hash": "0da45a6", "message": "Phase 7D.2: independently validate chemistry extraction" },
+    { "phase": "7D.3", "hash": "c295661", "message": "Phase 7D.3: rebuild chemistry evidence dataset" },
+    { "phase": "7E", "hash": "d430386", "message": "Phase 7E: implement chemistry provenance citations" },
+    { "phase": "7E.1", "hash": "5739377", "message": "Phase 7E.1: resolve provenance conflicts" },
+    { "phase": "7F", "hash": "bf4fe64", "message": "Phase 7F: strengthen editorial trust layer" },
+    { "phase": "7F.1", "hash": "9e8857e", "message": "Phase 7F.1: resolve priority chemistry claims" },
+    { "phase": "7G", "hash": "c961e7a", "message": "Phase 7G: differentiate programmatic content" },
+    { "phase": "7D-supplement", "hash": "5d92a77", "message": "Phase 7D: establish chemistry knowledge provenance (additional build scripts)" },
+    { "phase": "7A-infra", "hash": "23ab40c", "message": "Phase 7A: forensic audit baseline (supporting infrastructure)" },
+    { "phase": "bundle", "hash": "a3cfd17", "message": "Phase 7B-7G: regenerate production build output (cumulative)" }
+  ],
+  "push_verification": {
+    "method": "git push origin main; git fetch origin; git rev-parse HEAD; git rev-parse origin/main -- compared after every single commit",
+    "all_pushes_verified_matching": true,
+    "force_push_used": false
+  },
+  "final_state": {
+    "head": "a3cfd1787955af872734e58c1175f0c41b8a7683",
+    "origin_main": "a3cfd1787955af872734e58c1175f0c41b8a7683",
+    "match": true,
+    "ahead_behind": "0 0"
+  },
+  "remaining_uncommitted": [
+    { "path": "graphs.ai", "reason": "pre-existing unrelated binary asset, intentionally preserved uncommitted" },
+    { "path": "reports/phase-7-commit-recovery/", "reason": "this task's own output, committed as the final step of this task" }
+  ],
+  "data_preservation_confirmation": {
+    "reset_used": false,
+    "clean_used": false,
+    "checkout_dash_dash_used": false,
+    "restore_used": false,
+    "stash_used": false,
+    "amend_used": false,
+    "force_push_used": false,
+    "any_file_discarded": false,
+    "statement": "Every one of the 611 originally-inventoried paths was either committed or deliberately left uncommitted and explicitly documented. Nothing was deleted, discarded, reset, or silently dropped."
+  },
+  "phase_7h_decision": "PENDING",
+  "do_not_begin_phase_7h": true
+}

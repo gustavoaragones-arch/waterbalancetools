@@ -1,0 +1,1950 @@
+=== git status --short ===
+ M 404.html
+ M _redirects
+ M about/index.html
+ M academy/equipment/automatic-chlorinators.html
+ M academy/equipment/index.html
+ M academy/equipment/pool-filters.html
+ M academy/equipment/pool-pumps.html
+ M academy/equipment/pool-skimmers.html
+ M academy/equipment/salt-systems.html
+ M academy/equipment/sand-vs-cartridge-filters.html
+ M academy/fundamentals/how-temperature-changes-water-chemistry.html
+ M academy/fundamentals/how-water-balance-works.html
+ M academy/fundamentals/index.html
+ M academy/fundamentals/pool-vs-hot-tub-chemistry.html
+ M academy/fundamentals/the-four-core-water-tests.html
+ M academy/fundamentals/understanding-pool-water-chemistry.html
+ M academy/fundamentals/why-water-testing-matters.html
+ M academy/hot-tubs/daily-spa-maintenance.html
+ M academy/hot-tubs/index.html
+ M academy/hot-tubs/monthly-spa-maintenance.html
+ M academy/hot-tubs/refilling-your-hot-tub.html
+ M academy/hot-tubs/shock-after-heavy-use.html
+ M academy/hot-tubs/weekly-spa-maintenance.html
+ M academy/hot-tubs/winter-spa-care.html
+ M academy/index.html
+ M academy/sanitizers/breakpoint-chlorination.html
+ M academy/sanitizers/bromine-vs-chlorine.html
+ M academy/sanitizers/combined-chlorine-explained.html
+ M academy/sanitizers/index.html
+ M academy/sanitizers/liquid-chlorine-vs-tablets.html
+ M academy/sanitizers/shock-treatments-explained.html
+ M academy/sanitizers/understanding-free-chlorine.html
+ M academy/testing/common-testing-mistakes.html
+ M academy/testing/digital-pool-testers.html
+ M academy/testing/how-often-to-test-water.html
+ M academy/testing/index.html
+ M academy/testing/understanding-test-results.html
+ M academy/testing/using-liquid-test-kits.html
+ M academy/testing/using-test-strips.html
+ M academy/troubleshooting/cloudy-water.html
+ M academy/troubleshooting/corrosion.html
+ M academy/troubleshooting/foaming-hot-tubs.html
+ M academy/troubleshooting/green-water.html
+ M academy/troubleshooting/index.html
+ M academy/troubleshooting/scaling.html
+ M academy/troubleshooting/strong-chlorine-smell.html
+ M academy/vacation-rentals/chemical-log-sheets.html
+ M academy/vacation-rentals/emergency-water-recovery.html
+ M academy/vacation-rentals/guest-safety.html
+ M academy/vacation-rentals/index.html
+ M academy/vacation-rentals/maintenance-schedule.html
+ M academy/vacation-rentals/turnover-checklist.html
+ M academy/vacation-rentals/weekly-inspection.html
+ M academy/water-balance/index.html
+ M academy/water-balance/understanding-calcium-hardness.html
+ M academy/water-balance/understanding-cyanuric-acid.html
+ M academy/water-balance/understanding-lsi.html
+ M academy/water-balance/understanding-ph.html
+ M academy/water-balance/understanding-total-alkalinity.html
+ M academy/water-balance/water-balance-order.html
+ M all-pages.html
+ M audit/google/authority-flow.html
+ M audit/google/crawl-depth.html
+ M audit/google/crawl-review.md
+ M audit/google/freshness.html
+ M audit/google/index.html
+ M audit/google/priority-pages.csv
+ M audit/google/priority-report.html
+ M audit/google/recently-updated.csv
+ M audit/google/search-console-helper.html
+ M audit/google/validation-list.csv
+ M audit/google/weak-pages.csv
+ M audit/google/weak-pages.html
+ M audit/hub-topology.md
+ M calculators/chemical-calculator.html
+ M calculators/hot-tub-chlorine-calculator.html
+ M calculators/hot-tub-ph-calculator.html
+ M calculators/hot-tub-shock-calculator.html
+ M calculators/index.html
+ M calculators/pool-alkalinity-calculator.html
+ M calculators/pool-chlorine-calculator.html
+ M calculators/pool-cyanuric-acid-calculator.html
+ M calculators/pool-ph-calculator.html
+ M calculators/pool-shock-calculator.html
+ M calculators/pool-turnover-rate-calculator.html
+ M calculators/pool-volume-calculator.html
+ M calculators/saltwater-pool-salt-calculator.html
+ M calculators/spa-volume-calculator.html
+ M calculators/volume-calculator.html
+ M charts/hot-tub-chemical-levels-chart.html
+ M charts/index.html
+ M charts/pool-chemical-levels-chart.html
+ M charts/pool-water-balance-chart.html
+ M comparisons/chlorine-vs-bromine-hot-tub.html
+ M comparisons/chlorine-vs-bromine.html
+ M comparisons/free-chlorine-vs-total-chlorine.html
+ M comparisons/index.html
+ M comparisons/liquid-chlorine-vs-tablets.html
+ M comparisons/pool-shock-vs-chlorine.html
+ M comparisons/salt-water-pool-vs-chlorine-pool.html
+ M comparisons/saltwater-pool-vs-chlorine.html
+ M components/global-schema.html
+ M data/datasets/version.json
+ M data/entities/measurements.json
+ M data/graph/entity-index.json
+ M data/indexing/crawl-rules.json
+ M data/indexing/freshness.json
+ M data/indexing/priority.json
+ M data/indexing/weights.json
+ M data/navigation.json
+ M data/platform/compatibility.json
+ M data/reference.json
+ M data/search-index.json
+ M data/trust/datasets.json
+ M data/trust/editorial.json
+ M data/trust/formulas.json
+ M editorial/editorial-policy/index.html
+ M entities/algae.html
+ M entities/alkalinity.html
+ M entities/automatic-chlorinator.html
+ M entities/backwashing.html
+ M entities/baking-soda.html
+ M entities/balancing.html
+ M entities/biguanide.html
+ M entities/breakpoint-chlorination.html
+ M entities/bromine.html
+ M entities/calcium-chloride.html
+ M entities/calcium-hardness.html
+ M entities/calcium-hypochlorite.html
+ M entities/cartridge-filter.html
+ M entities/cdc.html
+ M entities/chemical-feeder.html
+ M entities/chemical-log.html
+ M entities/closing-checklist.html
+ M entities/cloudy-water.html
+ M entities/combined-chlorine.html
+ M entities/commercial-pool.html
+ M entities/concrete-pool.html
+ M entities/copper.html
+ M entities/corrosion.html
+ M entities/cover.html
+ M entities/cyanuric-acid.html
+ M entities/de-filter.html
+ M entities/emergency-reference.html
+ M entities/epa.html
+ M entities/eye-irritation.html
+ M entities/fiberglass-pool.html
+ M entities/filtration.html
+ M entities/flow-rate.html
+ M entities/foaming.html
+ M entities/free-chlorine.html
+ M entities/gallons.html
+ M entities/green-water.html
+ M entities/heater.html
+ M entities/high-chlorine.html
+ M entities/high-ph.html
+ M entities/hot-tub.html
+ M entities/hydrogen-peroxide.html
+ M entities/index.html
+ M entities/indoor-pool.html
+ M entities/iron.html
+ M entities/lamotte.html
+ M entities/liquid-chlorine.html
+ M entities/liters.html
+ M entities/low-chlorine.html
+ M entities/low-ph.html
+ M entities/lsi.html
+ M entities/maintenance-checklist.html
+ M entities/maintenance-log.html
+ M entities/manganese.html
+ M entities/muriatic-acid.html
+ M entities/nsf.html
+ M entities/opening-checklist.html
+ M entities/orp.html
+ M entities/outdoor-pool.html
+ M entities/oxidation.html
+ M entities/ozone.html
+ M entities/ph.html
+ M entities/phosphate.html
+ M entities/phta.html
+ M entities/pool-opening.html
+ M entities/pool-salt.html
+ M entities/ppm.html
+ M entities/pump.html
+ M entities/salt-chlorinator.html
+ M entities/salt.html
+ M entities/saltwater-pool.html
+ M entities/sand-filter.html
+ M entities/sanitizing.html
+ M entities/scaling.html
+ M entities/shock-treatment.html
+ M entities/skimmer.html
+ M entities/skin-irritation.html
+ M entities/soda-ash.html
+ M entities/sodium-dichlor.html
+ M entities/stabilizer.html
+ M entities/strong-chlorine-smell.html
+ M entities/swim-spa.html
+ M entities/swimming-pool.html
+ M entities/taylor-technologies.html
+ M entities/temperature.html
+ M entities/testing.html
+ M entities/total-chlorine.html
+ M entities/total-dissolved-solids.html
+ M entities/trichlor-tablets.html
+ M entities/turnover-time.html
+ M entities/unit-celsius.html
+ M entities/unit-days.html
+ M entities/unit-fahrenheit.html
+ M entities/unit-gallons.html
+ M entities/unit-hours.html
+ M entities/unit-liters.html
+ M entities/unit-mg-l.html
+ M entities/unit-minutes.html
+ M entities/unit-months.html
+ M entities/unit-ppm.html
+ M entities/unit-weeks.html
+ M entities/vacation-rental-checklist.html
+ M entities/vinyl-pool.html
+ M entities/water-replacement.html
+ M entities/water-test-sheet.html
+ M entities/winterization.html
+ M formulas/alkalinity-formula.html
+ M formulas/cya-formula.html
+ M formulas/index.html
+ M formulas/liquid-chlorine-formula.html
+ M formulas/lsi-formula.html
+ M formulas/ph-adjustment-formula.html
+ M formulas/pool-volume-formula.html
+ M formulas/salt-formula.html
+ M formulas/shock-formula.html
+ M formulas/turnover-formula.html
+ M functions/_middleware.js
+ M glossary/aggressive-water.html
+ M glossary/algae-bloom.html
+ M glossary/algaecide.html
+ M glossary/ammonia.html
+ M glossary/backwashing.html
+ M glossary/bather-load.html
+ M glossary/bcdmh.html
+ M glossary/bicarbonate-alkalinity.html
+ M glossary/biofilm.html
+ M glossary/black-algae.html
+ M glossary/breakpoint-chlorination.html
+ M glossary/breakpoint-dose.html
+ M glossary/bromine.html
+ M glossary/calcium-hardness.html
+ M glossary/calcium-hypochlorite.html
+ M glossary/carbon-dioxide.html
+ M glossary/cartridge-filter.html
+ M glossary/chemical-compatibility.html
+ M glossary/chemical-log.html
+ M glossary/chemical-storage.html
+ M glossary/chloramine.html
+ M glossary/chlorine-demand.html
+ M glossary/chlorine-stabilizer.html
+ M glossary/clarifier.html
+ M glossary/closing-chemical-kit.html
+ M glossary/colorimetric-test.html
+ M glossary/combined-chlorine.html
+ M glossary/conductivity.html
+ M glossary/copper.html
+ M glossary/cyanuric-acid.html
+ M glossary/de-filter.html
+ M glossary/dead-algae.html
+ M glossary/dichlor.html
+ M glossary/dilution.html
+ M glossary/dpd-test.html
+ M glossary/evaporation.html
+ M glossary/filter-pressure.html
+ M glossary/flocculant.html
+ M glossary/free-chlorine.html
+ M glossary/gpm.html
+ M glossary/green-algae.html
+ M glossary/hypochlorous-acid.html
+ M glossary/index.html
+ M glossary/iron.html
+ M glossary/langelier-saturation-index.html
+ M glossary/main-drain.html
+ M glossary/metal-sequestrant.html
+ M glossary/multiport-valve.html
+ M glossary/muriatic-acid.html
+ M glossary/mustard-algae.html
+ M glossary/opening-chemical-kit.html
+ M glossary/orp.html
+ M glossary/oto-test.html
+ M glossary/oxidizer.html
+ M glossary/ozone.html
+ M glossary/partial-drain.html
+ M glossary/parts-per-million.html
+ M glossary/ph-bounce.html
+ M glossary/ph-increaser.html
+ M glossary/ph.html
+ M glossary/phosphates.html
+ M glossary/pink-slime.html
+ M glossary/pool-chemistry-reference.html
+ M glossary/pool-maintenance-schedule.html
+ M glossary/pool-pump.html
+ M glossary/pool-safety-equipment.html
+ M glossary/pool-shock-schedule.html
+ M glossary/pool-turnover-rate.html
+ M glossary/pool-volume-reference.html
+ M glossary/pool-volume.html
+ M glossary/pressure-gauge.html
+ M glossary/pump-turnover.html
+ M glossary/reagent.html
+ M glossary/return-jet.html
+ M glossary/salt-chlorination.html
+ M glossary/sand-filter.html
+ M glossary/sanitizer.html
+ M glossary/saturated-ph.html
+ M glossary/saturation-index.html
+ M glossary/scale-inhibitor.html
+ M glossary/scaling-water.html
+ M glossary/shock-dosage.html
+ M glossary/shock.html
+ M glossary/skimmer.html
+ M glossary/sodium-bicarbonate.html
+ M glossary/sodium-bisulfate.html
+ M glossary/sodium-carbonate.html
+ M glossary/sodium-hypochlorite.html
+ M glossary/superchlorination.html
+ M glossary/test-strip.html
+ M glossary/total-alkalinity.html
+ M glossary/total-chlorine.html
+ M glossary/total-dissolved-solids.html
+ M glossary/total-hardness.html
+ M glossary/trichlor.html
+ M glossary/turbidity.html
+ M glossary/uv-sanitization.html
+ M glossary/water-balance-checklist.html
+ M glossary/water-temperature.html
+ M glossary/water-test-log.html
+ M glossary/winterization.html
+ M guides/advanced/chlorine-breakdown-sunlight.html
+ M guides/advanced/chlorine-vs-saltwater.html
+ M guides/advanced/cya-stabilizer-explained.html
+ M guides/advanced/index.html
+ M guides/advanced/pool-chemistry-balance-explained.html
+ M guides/alkalinity-guide.html
+ M guides/chlorine-guide.html
+ M guides/chlorine/chlorine-too-high-after-shocking.html
+ M guides/chlorine/free-chlorine-vs-total-chlorine.html
+ M guides/chlorine/how-often-should-i-shock-my-pool.html
+ M guides/chlorine/index.html
+ M guides/chlorine/why-pool-chlorine-disappears-overnight.html
+ M guides/chlorine/why-pool-wont-hold-chlorine.html
+ M guides/edge-cases/high-cya-chlorine-lock.html
+ M guides/edge-cases/index.html
+ M guides/edge-cases/over-shocking-pool-effects.html
+ M guides/edge-cases/pool-temperature-effect-chlorine.html
+ M guides/edge-cases/rain-effect-on-pool-chemistry.html
+ M guides/edge-cases/swimming-after-shocking-pool.html
+ M guides/hot-tub-chemistry.html
+ M guides/hot-tub-maintenance.html
+ M guides/hot-tub/hot-tub-alkalinity-too-high.html
+ M guides/hot-tub/hot-tub-chlorine-too-high.html
+ M guides/hot-tub/hot-tub-chlorine-too-low.html
+ M guides/hot-tub/hot-tub-ph-too-low.html
+ M guides/hot-tub/how-often-to-shock-a-hot-tub.html
+ M guides/hot-tub/index.html
+ M guides/index.html
+ M guides/ph-guide.html
+ M guides/ph/can-you-swim-in-high-ph-water.html
+ M guides/ph/does-rain-lower-pool-ph.html
+ M guides/ph/how-to-lower-pool-ph.html
+ M guides/ph/index.html
+ M guides/ph/what-causes-high-pool-ph.html
+ M guides/ph/why-pool-ph-keeps-rising.html
+ M guides/pool-chemistry-basics.html
+ M guides/questions/can-rain-affect-pool-chemistry.html
+ M guides/questions/can-you-swim-after-shocking-a-pool.html
+ M guides/questions/index.html
+ M guides/questions/why-does-hot-tub-water-smell.html
+ M guides/questions/why-does-pool-water-turn-cloudy.html
+ M guides/questions/why-is-my-hot-tub-foamy.html
+ M guides/questions/why-is-my-pool-green-but-chlorine-is-high.html
+ M guides/seasonal/closing-pool-chemistry-winter.html
+ M guides/seasonal/index.html
+ M guides/seasonal/opening-pool-chemistry-checklist.html
+ M guides/seasonal/summer-high-chlorine-demand.html
+ M guides/seasonal/winter-pool-maintenance-chemistry.html
+ M hot-tub-chemical-levels-chart.html
+ M hot-tub-chlorine-levels-chart.html
+ M index.html
+ M js/url/url-engine.js
+ M legal/index.html
+ M legal/legal.html
+ M legal/ownership.html
+ M maintenance/how-often-add-chlorine-pool.html
+ M maintenance/how-to-balance-pool-water.html
+ M maintenance/how-to-fix-cloudy-hot-tub.html
+ M maintenance/index.html
+ M package.json
+ M pool-alkalinity-levels-chart.html
+ M pool-chemical-levels-chart.html
+ M pool-chemistry-system.html
+ M pool-chlorine-levels-chart.html
+ M pool-cya-levels-chart.html
+ M pool-ph-levels-chart.html
+ M printable/maintenance-checklist.html
+ M printables/airbnb-pool-turnover-checklist.html
+ M printables/hot-tub-maintenance-log.html
+ M printables/pool-maintenance-checklist.html
+ M programmatic/behavior/how-often-to-shock-pool.html
+ M programmatic/behavior/how-often-to-test-pool-water.html
+ M programmatic/behavior/index.html
+ M programmatic/behavior/when-to-add-chlorine.html
+ M programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html
+ M programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html
+ M programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html
+ M programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html
+ M programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html
+ M programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html
+ M programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html
+ M programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html
+ M programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html
+ M programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html
+ M programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html
+ M programmatic/chlorine/index.html
+ M programmatic/explanations/index.html
+ M programmatic/explanations/what-is-pool-alkalinity.html
+ M programmatic/explanations/why-ph-affects-chlorine.html
+ M programmatic/explanations/why-shower-before-pool.html
+ M programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons.html
+ M programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons.html
+ M programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html
+ M programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons.html
+ M programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons.html
+ M programmatic/hot-tubs/index.html
+ M programmatic/index.html
+ M programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2.html
+ M programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4.html
+ M programmatic/ph/how-to-adjust-ph-from-7-to-7-4.html
+ M programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html
+ M programmatic/ph/index.html
+ M programmatic/problems/cloudy-pool-fix.html
+ M programmatic/problems/green-pool-how-much-chlorine.html
+ M programmatic/problems/high-chlorine-how-to-lower.html
+ M programmatic/problems/index.html
+ M programmatic/problems/low-alkalinity-symptoms.html
+ M programmatic/shock/how-much-shock-for-10000-gallon-pool.html
+ M programmatic/shock/how-much-shock-for-15000-gallon-pool.html
+ M programmatic/shock/how-much-shock-for-20000-gallon-pool.html
+ M programmatic/shock/how-much-shock-for-25000-gallon-pool.html
+ M programmatic/shock/how-much-shock-for-30000-gallon-pool.html
+ M programmatic/shock/how-much-shock-for-5000-gallon-pool.html
+ M programmatic/shock/index.html
+ M provenance/index.html
+ M qa-summary.json
+ M qa-summary.md
+ M qa/certification.html
+ M qa/index.html
+ M reference/alkalinity-table.html
+ M reference/calcium-hardness-explained.html
+ M reference/calculator-directory.html
+ M reference/chemical-compatibility.html
+ M reference/chemical-conversion-tables.html
+ M reference/chemical-safety.html
+ M reference/chemical-storage-guide.html
+ M reference/chlorine-effectiveness-chart.html
+ M reference/chlorine-explained.html
+ M reference/combined-chlorine-explained.html
+ M reference/common-pool-chemistry-mistakes.html
+ M reference/cya-matrix.html
+ M reference/cyanuric-acid-explained.html
+ M reference/datasets/conversion-factors/index.html
+ M reference/datasets/version/index.html
+ M reference/emergency-recovery.html
+ M reference/filter-comparison.html
+ M reference/free-chlorine-explained.html
+ M reference/ideal-pool-levels.html
+ M reference/ideal-spa-levels.html
+ M reference/index.html
+ M reference/ph-table.html
+ M reference/pool-chemical-timeline.html
+ M reference/pool-chemicals-explained.html
+ M reference/pool-chemistry-reference.html
+ M reference/pool-shape-guide.html
+ M reference/pool-volume-reference.html
+ M reference/printable-resources-index.html
+ M reference/pump-sizing.html
+ M reference/recommended-water-temperature.html
+ M reference/salt-matrix.html
+ M reference/salt-water-generator-explained.html
+ M reference/shock-dosage-matrix.html
+ M reference/shock-treatment-explained.html
+ M reference/testing-frequency.html
+ M reference/total-alkalinity-explained.html
+ M reference/vacation-rental-maintenance-schedule.html
+ M reference/water-balance-checklist.html
+ M reference/water-replacement-guidelines.html
+ M releases/1.0.0.html
+ M releases/1.1.0.html
+ M releases/index.html
+ M reports/accessibility.html
+ M reports/ai-readiness.html
+ M reports/architecture.html
+ M reports/calculators.html
+ M reports/content.html
+ M reports/datasets.html
+ M reports/entities.html
+ M reports/indexing-intelligence.html
+ M reports/links.html
+ M reports/mobile.html
+ M reports/performance.html
+ M reports/schema.html
+ M reports/seo.html
+ M resources/airbnb-pool-turnover-checklist.html
+ M resources/hot-tub-maintenance-log.html
+ M resources/index.html
+ M resources/pool-chemical-log-sheet.html
+ M resources/pool-closing-checklist.html
+ M resources/pool-maintenance-checklist.html
+ M resources/pool-opening-checklist.html
+ M resources/pool-shock-log.html
+ M resources/water-test-log.html
+ M salt-water-pool-chemical-levels-chart.html
+ M scripts/audit-authority.js
+ M scripts/audit-crawl-depth.js
+ M scripts/audit-indexing.js
+ M scripts/data/entities-measurements.js
+ M scripts/data/trust-calculator-metadata.js
+ M scripts/data/trust-editorial.js
+ M scripts/data/trust-formulas.js
+ M scripts/generate-all-pages.js
+ M scripts/generate-authority-charts.js
+ M scripts/generate-formulas.js
+ M scripts/generate-google-dashboard.js
+ M scripts/generate-hubs.js
+ M scripts/generate-navigation.js
+ M scripts/generate-qa-report.js
+ M scripts/generate-redirects.js
+ M scripts/generate-search-index.js
+ M scripts/generate-sitemaps.js
+ M scripts/generate-tools-index.js
+ M scripts/generators/generate-chlorine-pages.js
+ M scripts/generators/generate-hot-tub-pages.js
+ M scripts/generators/generate-ph-pages.js
+ M scripts/generators/generate-shock-pages.js
+ M scripts/inject-calculator-related-tools.js
+ M scripts/inject-footer.js
+ M scripts/inject-seo-metadata.js
+ M scripts/inject-winner-amplification.js
+ M scripts/populate-data.js
+ M scripts/redirect-rules.js
+ M scripts/restructure-calculator-pages.js
+ M scripts/run-all-generators.js
+ M scripts/template-utils.js
+ M scripts/test-url-engine.js
+ M search/index.html
+ M sitemap-academy.xml
+ M sitemap-calculators.xml
+ M sitemap-formulas.xml
+ M sitemap-glossary.xml
+ M sitemap-guides.xml
+ M sitemap-other.xml
+ M sitemap-reference.xml
+ M sitemap-resources.xml
+ M sitemap.xml
+ M style.css
+ M templates/entity-template.html
+ M templates/release-template.html
+ M tools/index.html
+?? graphs.ai
+?? reports/phase-7-commit-recovery/
+?? reports/phase-7a/
+?? reports/phase-7b/
+?? reports/phase-7c/
+?? reports/phase-7d-1/
+?? reports/phase-7d-2/
+?? reports/phase-7d-3/
+?? reports/phase-7d/
+?? reports/phase-7e-1/
+?? reports/phase-7e/
+?? reports/phase-7f-1/
+?? reports/phase-7f/
+?? reports/phase-7g/
+?? scripts/audit-forensic/
+?? scripts/chemistry/
+?? scripts/data/chemistry-claim-family-map.js
+?? scripts/data/chemistry-claims.js
+?? scripts/data/chemistry-extraction-golden-set-v2.json
+?? scripts/data/chemistry-extraction-golden-set.json
+?? scripts/data/chemistry-knowledge.js
+?? scripts/data/chemistry-ranges.js
+?? scripts/data/chemistry-sources.js
+?? scripts/data/programmatic-intents.js
+?? scripts/phase-7d-1/
+?? scripts/phase-7d-2/
+?? scripts/phase-7d-3/
+?? scripts/phase-7d/
+?? scripts/phase-7e-1/
+?? scripts/phase-7e/
+?? scripts/phase-7f-1/
+?? scripts/phase-7g/
+?? scripts/test-chemistry-knowledge.js
+?? scripts/test-url-policy.js
+?? scripts/test-validate-generated-output.js
+?? scripts/url-policy.js
+?? scripts/validate-chemistry-evidence-dataset.js
+?? scripts/validate-chemistry-extraction-v2.js
+?? scripts/validate-chemistry-extraction.js
+?? scripts/validate-chemistry-knowledge.js
+?? scripts/validate-chemistry-status-integrity.js
+?? scripts/validate-editorial-decisions.js
+?? scripts/validate-generated-output.js
+?? scripts/validate-programmatic-quality.js
+?? scripts/validate-provenance-resolution.js
+?? scripts/validate-provenance.js
+?? scripts/validate-trust-layer.js
+?? scripts/validate-url-indexation.js
+
+=== git diff --stat ===
+ 404.html                                           |   38 +
+ _redirects                                         |    6 +
+ about/index.html                                   |   44 +-
+ academy/equipment/automatic-chlorinators.html      |    4 +-
+ academy/equipment/index.html                       |    2 +-
+ academy/equipment/pool-filters.html                |    4 +-
+ academy/equipment/pool-pumps.html                  |    4 +-
+ academy/equipment/pool-skimmers.html               |    4 +-
+ academy/equipment/salt-systems.html                |    4 +-
+ academy/equipment/sand-vs-cartridge-filters.html   |    4 +-
+ .../how-temperature-changes-water-chemistry.html   |    4 +-
+ academy/fundamentals/how-water-balance-works.html  |    4 +-
+ academy/fundamentals/index.html                    |    2 +-
+ .../fundamentals/pool-vs-hot-tub-chemistry.html    |    4 +-
+ .../fundamentals/the-four-core-water-tests.html    |    4 +-
+ .../understanding-pool-water-chemistry.html        |    4 +-
+ .../fundamentals/why-water-testing-matters.html    |    4 +-
+ academy/hot-tubs/daily-spa-maintenance.html        |    4 +-
+ academy/hot-tubs/index.html                        |    2 +-
+ academy/hot-tubs/monthly-spa-maintenance.html      |    4 +-
+ academy/hot-tubs/refilling-your-hot-tub.html       |    4 +-
+ academy/hot-tubs/shock-after-heavy-use.html        |    4 +-
+ academy/hot-tubs/weekly-spa-maintenance.html       |    4 +-
+ academy/hot-tubs/winter-spa-care.html              |    4 +-
+ academy/index.html                                 |    2 +-
+ academy/sanitizers/breakpoint-chlorination.html    |    4 +-
+ academy/sanitizers/bromine-vs-chlorine.html        |    4 +-
+ .../sanitizers/combined-chlorine-explained.html    |    4 +-
+ academy/sanitizers/index.html                      |    2 +-
+ academy/sanitizers/liquid-chlorine-vs-tablets.html |    4 +-
+ academy/sanitizers/shock-treatments-explained.html |    4 +-
+ .../sanitizers/understanding-free-chlorine.html    |    4 +-
+ academy/testing/common-testing-mistakes.html       |    4 +-
+ academy/testing/digital-pool-testers.html          |    4 +-
+ academy/testing/how-often-to-test-water.html       |    4 +-
+ academy/testing/index.html                         |    2 +-
+ academy/testing/understanding-test-results.html    |    4 +-
+ academy/testing/using-liquid-test-kits.html        |    4 +-
+ academy/testing/using-test-strips.html             |    4 +-
+ academy/troubleshooting/cloudy-water.html          |    4 +-
+ academy/troubleshooting/corrosion.html             |    4 +-
+ academy/troubleshooting/foaming-hot-tubs.html      |    4 +-
+ academy/troubleshooting/green-water.html           |    4 +-
+ academy/troubleshooting/index.html                 |    2 +-
+ academy/troubleshooting/scaling.html               |    4 +-
+ academy/troubleshooting/strong-chlorine-smell.html |    4 +-
+ academy/vacation-rentals/chemical-log-sheets.html  |    4 +-
+ .../vacation-rentals/emergency-water-recovery.html |    4 +-
+ academy/vacation-rentals/guest-safety.html         |    4 +-
+ academy/vacation-rentals/index.html                |    2 +-
+ academy/vacation-rentals/maintenance-schedule.html |    4 +-
+ academy/vacation-rentals/turnover-checklist.html   |    4 +-
+ academy/vacation-rentals/weekly-inspection.html    |    4 +-
+ academy/water-balance/index.html                   |    2 +-
+ .../understanding-calcium-hardness.html            |    4 +-
+ .../water-balance/understanding-cyanuric-acid.html |    4 +-
+ academy/water-balance/understanding-lsi.html       |    4 +-
+ academy/water-balance/understanding-ph.html        |    4 +-
+ .../understanding-total-alkalinity.html            |    4 +-
+ academy/water-balance/water-balance-order.html     |    4 +-
+ all-pages.html                                     |    3 +-
+ audit/google/authority-flow.html                   |   76 +-
+ audit/google/crawl-depth.html                      |   26 +-
+ audit/google/crawl-review.md                       |    6 +-
+ audit/google/freshness.html                        |  204 +-
+ audit/google/index.html                            |    6 +-
+ audit/google/priority-pages.csv                    |    6 +-
+ audit/google/priority-report.html                  |   66 +-
+ audit/google/recently-updated.csv                  |  200 +-
+ audit/google/search-console-helper.html            |    4 +-
+ audit/google/validation-list.csv                   |   19 +-
+ audit/google/weak-pages.csv                        |   10 +-
+ audit/google/weak-pages.html                       |   14 +-
+ audit/hub-topology.md                              |   11 +-
+ calculators/chemical-calculator.html               |   56 +-
+ calculators/hot-tub-chlorine-calculator.html       |   26 +-
+ calculators/hot-tub-ph-calculator.html             |    7 +-
+ calculators/hot-tub-shock-calculator.html          |   15 +-
+ calculators/index.html                             |    8 +-
+ calculators/pool-alkalinity-calculator.html        |   15 +-
+ calculators/pool-chlorine-calculator.html          |   25 +-
+ calculators/pool-cyanuric-acid-calculator.html     |   15 +-
+ calculators/pool-ph-calculator.html                |    7 +-
+ calculators/pool-shock-calculator.html             |   15 +-
+ calculators/pool-turnover-rate-calculator.html     |    7 +-
+ calculators/pool-volume-calculator.html            |    7 +-
+ calculators/saltwater-pool-salt-calculator.html    |   15 +-
+ calculators/spa-volume-calculator.html             |    7 +-
+ calculators/volume-calculator.html                 |   91 +-
+ charts/hot-tub-chemical-levels-chart.html          |    8 +-
+ charts/index.html                                  |   16 +-
+ charts/pool-chemical-levels-chart.html             |    8 +-
+ charts/pool-water-balance-chart.html               |    4 +-
+ comparisons/chlorine-vs-bromine-hot-tub.html       |    4 +-
+ comparisons/chlorine-vs-bromine.html               |    2 +-
+ comparisons/free-chlorine-vs-total-chlorine.html   |    2 +-
+ comparisons/index.html                             |    6 +-
+ comparisons/liquid-chlorine-vs-tablets.html        |    2 +-
+ comparisons/pool-shock-vs-chlorine.html            |    2 +-
+ comparisons/salt-water-pool-vs-chlorine-pool.html  |    2 +-
+ comparisons/saltwater-pool-vs-chlorine.html        |    4 +-
+ components/global-schema.html                      |    2 +-
+ data/datasets/version.json                         |    2 +-
+ data/entities/measurements.json                    |    6 +-
+ data/graph/entity-index.json                       |    6 +-
+ data/indexing/crawl-rules.json                     |   42 +-
+ data/indexing/freshness.json                       | 3035 ++++++++-------
+ data/indexing/priority.json                        |  354 +-
+ data/indexing/weights.json                         | 3886 +++++++-------------
+ data/navigation.json                               |   91 +-
+ data/platform/compatibility.json                   |    2 +-
+ data/reference.json                                |    5 -
+ data/search-index.json                             |   60 +-
+ data/trust/datasets.json                           |   66 +-
+ data/trust/editorial.json                          |    2 +-
+ data/trust/formulas.json                           |   50 +-
+ editorial/editorial-policy/index.html              |    2 +-
+ entities/algae.html                                |    4 +-
+ entities/alkalinity.html                           |    4 +-
+ entities/automatic-chlorinator.html                |    4 +-
+ entities/backwashing.html                          |    4 +-
+ entities/baking-soda.html                          |    4 +-
+ entities/balancing.html                            |    4 +-
+ entities/biguanide.html                            |    4 +-
+ entities/breakpoint-chlorination.html              |    4 +-
+ entities/bromine.html                              |    4 +-
+ entities/calcium-chloride.html                     |    4 +-
+ entities/calcium-hardness.html                     |    4 +-
+ entities/calcium-hypochlorite.html                 |    4 +-
+ entities/cartridge-filter.html                     |    4 +-
+ entities/cdc.html                                  |    4 +-
+ entities/chemical-feeder.html                      |    4 +-
+ entities/chemical-log.html                         |    4 +-
+ entities/closing-checklist.html                    |    4 +-
+ entities/cloudy-water.html                         |    4 +-
+ entities/combined-chlorine.html                    |    4 +-
+ entities/commercial-pool.html                      |    4 +-
+ entities/concrete-pool.html                        |    4 +-
+ entities/copper.html                               |    4 +-
+ entities/corrosion.html                            |    4 +-
+ entities/cover.html                                |    4 +-
+ entities/cyanuric-acid.html                        |    4 +-
+ entities/de-filter.html                            |    4 +-
+ entities/emergency-reference.html                  |    4 +-
+ entities/epa.html                                  |    4 +-
+ entities/eye-irritation.html                       |    4 +-
+ entities/fiberglass-pool.html                      |    4 +-
+ entities/filtration.html                           |    4 +-
+ entities/flow-rate.html                            |    4 +-
+ entities/foaming.html                              |    4 +-
+ entities/free-chlorine.html                        |    4 +-
+ entities/gallons.html                              |   13 +-
+ entities/green-water.html                          |    4 +-
+ entities/heater.html                               |    4 +-
+ entities/high-chlorine.html                        |    4 +-
+ entities/high-ph.html                              |    4 +-
+ entities/hot-tub.html                              |    4 +-
+ entities/hydrogen-peroxide.html                    |    4 +-
+ entities/index.html                                |    2 +-
+ entities/indoor-pool.html                          |    4 +-
+ entities/iron.html                                 |    4 +-
+ entities/lamotte.html                              |    4 +-
+ entities/liquid-chlorine.html                      |    4 +-
+ entities/liters.html                               |   13 +-
+ entities/low-chlorine.html                         |    4 +-
+ entities/low-ph.html                               |    4 +-
+ entities/lsi.html                                  |    4 +-
+ entities/maintenance-checklist.html                |    4 +-
+ entities/maintenance-log.html                      |    4 +-
+ entities/manganese.html                            |    4 +-
+ entities/muriatic-acid.html                        |    4 +-
+ entities/nsf.html                                  |    4 +-
+ entities/opening-checklist.html                    |    4 +-
+ entities/orp.html                                  |    4 +-
+ entities/outdoor-pool.html                         |    4 +-
+ entities/oxidation.html                            |    4 +-
+ entities/ozone.html                                |    4 +-
+ entities/ph.html                                   |    4 +-
+ entities/phosphate.html                            |    4 +-
+ entities/phta.html                                 |    4 +-
+ entities/pool-opening.html                         |    4 +-
+ entities/pool-salt.html                            |    4 +-
+ entities/ppm.html                                  |    4 +-
+ entities/pump.html                                 |    4 +-
+ entities/salt-chlorinator.html                     |    4 +-
+ entities/salt.html                                 |    4 +-
+ entities/saltwater-pool.html                       |    4 +-
+ entities/sand-filter.html                          |    4 +-
+ entities/sanitizing.html                           |    4 +-
+ entities/scaling.html                              |    4 +-
+ entities/shock-treatment.html                      |    4 +-
+ entities/skimmer.html                              |    4 +-
+ entities/skin-irritation.html                      |    4 +-
+ entities/soda-ash.html                             |    4 +-
+ entities/sodium-dichlor.html                       |    4 +-
+ entities/stabilizer.html                           |    4 +-
+ entities/strong-chlorine-smell.html                |    4 +-
+ entities/swim-spa.html                             |    4 +-
+ entities/swimming-pool.html                        |    4 +-
+ entities/taylor-technologies.html                  |    4 +-
+ entities/temperature.html                          |    4 +-
+ entities/testing.html                              |    4 +-
+ entities/total-chlorine.html                       |    4 +-
+ entities/total-dissolved-solids.html               |    4 +-
+ entities/trichlor-tablets.html                     |    4 +-
+ entities/turnover-time.html                        |    4 +-
+ entities/unit-celsius.html                         |    4 +-
+ entities/unit-days.html                            |    4 +-
+ entities/unit-fahrenheit.html                      |    4 +-
+ entities/unit-gallons.html                         |    4 +-
+ entities/unit-hours.html                           |    4 +-
+ entities/unit-liters.html                          |    4 +-
+ entities/unit-mg-l.html                            |    4 +-
+ entities/unit-minutes.html                         |    4 +-
+ entities/unit-months.html                          |    4 +-
+ entities/unit-ppm.html                             |    4 +-
+ entities/unit-weeks.html                           |    4 +-
+ entities/vacation-rental-checklist.html            |    4 +-
+ entities/vinyl-pool.html                           |    4 +-
+ entities/water-replacement.html                    |    4 +-
+ entities/water-test-sheet.html                     |    4 +-
+ entities/winterization.html                        |    4 +-
+ formulas/alkalinity-formula.html                   |   18 +-
+ formulas/cya-formula.html                          |   18 +-
+ formulas/index.html                                |   20 +-
+ formulas/liquid-chlorine-formula.html              |   18 +-
+ formulas/lsi-formula.html                          |   12 +-
+ formulas/ph-adjustment-formula.html                |   12 +-
+ formulas/pool-volume-formula.html                  |   14 +-
+ formulas/salt-formula.html                         |   18 +-
+ formulas/shock-formula.html                        |   18 +-
+ formulas/turnover-formula.html                     |   12 +-
+ functions/_middleware.js                           |    5 +-
+ glossary/aggressive-water.html                     |    4 +-
+ glossary/algae-bloom.html                          |    4 +-
+ glossary/algaecide.html                            |    4 +-
+ glossary/ammonia.html                              |    4 +-
+ glossary/backwashing.html                          |    4 +-
+ glossary/bather-load.html                          |    4 +-
+ glossary/bcdmh.html                                |    4 +-
+ glossary/bicarbonate-alkalinity.html               |    4 +-
+ glossary/biofilm.html                              |    4 +-
+ glossary/black-algae.html                          |    4 +-
+ glossary/breakpoint-chlorination.html              |    4 +-
+ glossary/breakpoint-dose.html                      |    4 +-
+ glossary/bromine.html                              |    4 +-
+ glossary/calcium-hardness.html                     |    4 +-
+ glossary/calcium-hypochlorite.html                 |    4 +-
+ glossary/carbon-dioxide.html                       |    4 +-
+ glossary/cartridge-filter.html                     |    4 +-
+ glossary/chemical-compatibility.html               |    4 +-
+ glossary/chemical-log.html                         |    4 +-
+ glossary/chemical-storage.html                     |    4 +-
+ glossary/chloramine.html                           |    4 +-
+ glossary/chlorine-demand.html                      |    4 +-
+ glossary/chlorine-stabilizer.html                  |    4 +-
+ glossary/clarifier.html                            |    4 +-
+ glossary/closing-chemical-kit.html                 |    4 +-
+ glossary/colorimetric-test.html                    |    4 +-
+ glossary/combined-chlorine.html                    |    4 +-
+ glossary/conductivity.html                         |    4 +-
+ glossary/copper.html                               |    4 +-
+ glossary/cyanuric-acid.html                        |    4 +-
+ glossary/de-filter.html                            |    4 +-
+ glossary/dead-algae.html                           |    4 +-
+ glossary/dichlor.html                              |    4 +-
+ glossary/dilution.html                             |    4 +-
+ glossary/dpd-test.html                             |    4 +-
+ glossary/evaporation.html                          |    4 +-
+ glossary/filter-pressure.html                      |    4 +-
+ glossary/flocculant.html                           |    4 +-
+ glossary/free-chlorine.html                        |    4 +-
+ glossary/gpm.html                                  |    4 +-
+ glossary/green-algae.html                          |    4 +-
+ glossary/hypochlorous-acid.html                    |    4 +-
+ glossary/index.html                                |    2 +-
+ glossary/iron.html                                 |    4 +-
+ glossary/langelier-saturation-index.html           |    4 +-
+ glossary/main-drain.html                           |    4 +-
+ glossary/metal-sequestrant.html                    |    4 +-
+ glossary/multiport-valve.html                      |    4 +-
+ glossary/muriatic-acid.html                        |    4 +-
+ glossary/mustard-algae.html                        |    4 +-
+ glossary/opening-chemical-kit.html                 |    4 +-
+ glossary/orp.html                                  |    4 +-
+ glossary/oto-test.html                             |    4 +-
+ glossary/oxidizer.html                             |    4 +-
+ glossary/ozone.html                                |    4 +-
+ glossary/partial-drain.html                        |    4 +-
+ glossary/parts-per-million.html                    |    4 +-
+ glossary/ph-bounce.html                            |    4 +-
+ glossary/ph-increaser.html                         |    4 +-
+ glossary/ph.html                                   |    4 +-
+ glossary/phosphates.html                           |    4 +-
+ glossary/pink-slime.html                           |    4 +-
+ glossary/pool-chemistry-reference.html             |    4 +-
+ glossary/pool-maintenance-schedule.html            |    4 +-
+ glossary/pool-pump.html                            |    4 +-
+ glossary/pool-safety-equipment.html                |    4 +-
+ glossary/pool-shock-schedule.html                  |    4 +-
+ glossary/pool-turnover-rate.html                   |    4 +-
+ glossary/pool-volume-reference.html                |    4 +-
+ glossary/pool-volume.html                          |    6 +-
+ glossary/pressure-gauge.html                       |    4 +-
+ glossary/pump-turnover.html                        |    4 +-
+ glossary/reagent.html                              |    4 +-
+ glossary/return-jet.html                           |    4 +-
+ glossary/salt-chlorination.html                    |    4 +-
+ glossary/sand-filter.html                          |    4 +-
+ glossary/sanitizer.html                            |    4 +-
+ glossary/saturated-ph.html                         |    4 +-
+ glossary/saturation-index.html                     |    4 +-
+ glossary/scale-inhibitor.html                      |    4 +-
+ glossary/scaling-water.html                        |    4 +-
+ glossary/shock-dosage.html                         |    4 +-
+ glossary/shock.html                                |    4 +-
+ glossary/skimmer.html                              |    4 +-
+ glossary/sodium-bicarbonate.html                   |    4 +-
+ glossary/sodium-bisulfate.html                     |    4 +-
+ glossary/sodium-carbonate.html                     |    4 +-
+ glossary/sodium-hypochlorite.html                  |    4 +-
+ glossary/superchlorination.html                    |    4 +-
+ glossary/test-strip.html                           |    4 +-
+ glossary/total-alkalinity.html                     |    4 +-
+ glossary/total-chlorine.html                       |    4 +-
+ glossary/total-dissolved-solids.html               |    4 +-
+ glossary/total-hardness.html                       |    4 +-
+ glossary/trichlor.html                             |    4 +-
+ glossary/turbidity.html                            |    4 +-
+ glossary/uv-sanitization.html                      |    4 +-
+ glossary/water-balance-checklist.html              |    4 +-
+ glossary/water-temperature.html                    |    4 +-
+ glossary/water-test-log.html                       |    4 +-
+ glossary/winterization.html                        |    4 +-
+ guides/advanced/chlorine-breakdown-sunlight.html   |   45 +-
+ guides/advanced/chlorine-vs-saltwater.html         |   45 +-
+ guides/advanced/cya-stabilizer-explained.html      |   45 +-
+ guides/advanced/index.html                         |    6 +-
+ .../advanced/pool-chemistry-balance-explained.html |   45 +-
+ guides/alkalinity-guide.html                       |    2 +-
+ guides/chlorine-guide.html                         |    2 +-
+ .../chlorine/chlorine-too-high-after-shocking.html |    2 +-
+ .../chlorine/free-chlorine-vs-total-chlorine.html  |    2 +-
+ .../chlorine/how-often-should-i-shock-my-pool.html |    2 +-
+ guides/chlorine/index.html                         |    6 +-
+ .../why-pool-chlorine-disappears-overnight.html    |    2 +-
+ guides/chlorine/why-pool-wont-hold-chlorine.html   |    2 +-
+ guides/edge-cases/high-cya-chlorine-lock.html      |   45 +-
+ guides/edge-cases/index.html                       |    6 +-
+ guides/edge-cases/over-shocking-pool-effects.html  |   45 +-
+ .../pool-temperature-effect-chlorine.html          |   45 +-
+ .../edge-cases/rain-effect-on-pool-chemistry.html  |   45 +-
+ .../edge-cases/swimming-after-shocking-pool.html   |   45 +-
+ guides/hot-tub-chemistry.html                      |    2 +-
+ guides/hot-tub-maintenance.html                    |   45 +-
+ guides/hot-tub/hot-tub-alkalinity-too-high.html    |    2 +-
+ guides/hot-tub/hot-tub-chlorine-too-high.html      |    2 +-
+ guides/hot-tub/hot-tub-chlorine-too-low.html       |    2 +-
+ guides/hot-tub/hot-tub-ph-too-low.html             |    2 +-
+ guides/hot-tub/how-often-to-shock-a-hot-tub.html   |    2 +-
+ guides/hot-tub/index.html                          |    6 +-
+ guides/index.html                                  |    6 +-
+ guides/ph-guide.html                               |    2 +-
+ guides/ph/can-you-swim-in-high-ph-water.html       |    2 +-
+ guides/ph/does-rain-lower-pool-ph.html             |    2 +-
+ guides/ph/how-to-lower-pool-ph.html                |    2 +-
+ guides/ph/index.html                               |    6 +-
+ guides/ph/what-causes-high-pool-ph.html            |    2 +-
+ guides/ph/why-pool-ph-keeps-rising.html            |    2 +-
+ guides/pool-chemistry-basics.html                  |   45 +-
+ .../questions/can-rain-affect-pool-chemistry.html  |    2 +-
+ .../can-you-swim-after-shocking-a-pool.html        |    2 +-
+ guides/questions/index.html                        |    6 +-
+ guides/questions/why-does-hot-tub-water-smell.html |    2 +-
+ .../questions/why-does-pool-water-turn-cloudy.html |    2 +-
+ guides/questions/why-is-my-hot-tub-foamy.html      |    2 +-
+ .../why-is-my-pool-green-but-chlorine-is-high.html |    2 +-
+ guides/seasonal/closing-pool-chemistry-winter.html |   45 +-
+ guides/seasonal/index.html                         |    6 +-
+ .../seasonal/opening-pool-chemistry-checklist.html |   45 +-
+ guides/seasonal/summer-high-chlorine-demand.html   |   45 +-
+ .../winter-pool-maintenance-chemistry.html         |   45 +-
+ hot-tub-chemical-levels-chart.html                 |   15 +-
+ hot-tub-chlorine-levels-chart.html                 |   10 +-
+ index.html                                         |   48 +-
+ js/url/url-engine.js                               |   15 +-
+ legal/index.html                                   |   11 +-
+ legal/legal.html                                   |    4 +-
+ legal/ownership.html                               |    4 +-
+ maintenance/how-often-add-chlorine-pool.html       |    4 +-
+ maintenance/how-to-balance-pool-water.html         |    4 +-
+ maintenance/how-to-fix-cloudy-hot-tub.html         |    4 +-
+ maintenance/index.html                             |    6 +-
+ package.json                                       |    6 +-
+ pool-alkalinity-levels-chart.html                  |    8 +-
+ pool-chemical-levels-chart.html                    |    4 +-
+ pool-chemistry-system.html                         |    2 +-
+ pool-chlorine-levels-chart.html                    |    4 +-
+ pool-cya-levels-chart.html                         |    3 +-
+ pool-ph-levels-chart.html                          |    4 +-
+ printable/maintenance-checklist.html               |    4 +-
+ printables/airbnb-pool-turnover-checklist.html     |    4 +-
+ printables/hot-tub-maintenance-log.html            |    4 +-
+ printables/pool-maintenance-checklist.html         |    4 +-
+ programmatic/behavior/how-often-to-shock-pool.html |    2 +-
+ .../behavior/how-often-to-test-pool-water.html     |    2 +-
+ programmatic/behavior/index.html                   |    6 +-
+ programmatic/behavior/when-to-add-chlorine.html    |    2 +-
+ .../how-much-chlorine-for-10000-gallon-pool.html   |   15 +-
+ .../how-much-chlorine-for-12000-gallon-pool.html   |   15 +-
+ .../how-much-chlorine-for-15000-gallon-pool.html   |   15 +-
+ .../how-much-chlorine-for-18000-gallon-pool.html   |   15 +-
+ .../how-much-chlorine-for-20000-gallon-pool.html   |   15 +-
+ .../how-much-chlorine-for-25000-gallon-pool.html   |   15 +-
+ .../how-much-chlorine-for-30000-gallon-pool.html   |   15 +-
+ .../how-much-chlorine-for-5000-gallon-pool.html    |   15 +-
+ .../how-much-chlorine-for-7000-gallon-pool.html    |   15 +-
+ .../how-much-chlorine-for-8000-gallon-pool.html    |   15 +-
+ .../how-much-chlorine-for-9000-gallon-pool.html    |   15 +-
+ programmatic/chlorine/index.html                   |    6 +-
+ programmatic/explanations/index.html               |    6 +-
+ .../explanations/what-is-pool-alkalinity.html      |    2 +-
+ .../explanations/why-ph-affects-chlorine.html      |    2 +-
+ .../explanations/why-shower-before-pool.html       |    2 +-
+ .../hot-tub-chemicals-for-200-gallons.html         |   15 +-
+ .../hot-tub-chemicals-for-300-gallons.html         |   15 +-
+ .../hot-tub-chemicals-for-400-gallons.html         |   15 +-
+ .../hot-tub-chemicals-for-500-gallons.html         |   15 +-
+ .../hot-tub-chemicals-for-600-gallons.html         |   15 +-
+ programmatic/hot-tubs/index.html                   |    6 +-
+ programmatic/index.html                            |    6 +-
+ .../ph/how-to-adjust-ph-from-6-8-to-7-2.html       |   15 +-
+ .../ph/how-to-adjust-ph-from-7-8-to-7-4.html       |   15 +-
+ .../ph/how-to-adjust-ph-from-7-to-7-4.html         |   15 +-
+ .../ph/how-to-adjust-ph-from-8-to-7-5.html         |   15 +-
+ programmatic/ph/index.html                         |    6 +-
+ programmatic/problems/cloudy-pool-fix.html         |    2 +-
+ .../problems/green-pool-how-much-chlorine.html     |    2 +-
+ .../problems/high-chlorine-how-to-lower.html       |    2 +-
+ programmatic/problems/index.html                   |    6 +-
+ programmatic/problems/low-alkalinity-symptoms.html |    2 +-
+ .../how-much-shock-for-10000-gallon-pool.html      |   15 +-
+ .../how-much-shock-for-15000-gallon-pool.html      |   15 +-
+ .../how-much-shock-for-20000-gallon-pool.html      |   15 +-
+ .../how-much-shock-for-25000-gallon-pool.html      |   15 +-
+ .../how-much-shock-for-30000-gallon-pool.html      |   15 +-
+ .../shock/how-much-shock-for-5000-gallon-pool.html |   15 +-
+ programmatic/shock/index.html                      |    6 +-
+ provenance/index.html                              |    2 +-
+ qa-summary.json                                    |    6 +-
+ qa-summary.md                                      |    2 +-
+ qa/certification.html                              |    3 +-
+ qa/index.html                                      |    5 +-
+ reference/alkalinity-table.html                    |    2 +-
+ reference/calcium-hardness-explained.html          |    4 +-
+ reference/calculator-directory.html                |    4 +-
+ reference/chemical-compatibility.html              |    2 +-
+ reference/chemical-conversion-tables.html          |    2 +-
+ reference/chemical-safety.html                     |    2 +-
+ reference/chemical-storage-guide.html              |    2 +-
+ reference/chlorine-effectiveness-chart.html        |    2 +-
+ reference/chlorine-explained.html                  |    4 +-
+ reference/combined-chlorine-explained.html         |    6 +-
+ reference/common-pool-chemistry-mistakes.html      |    4 +-
+ reference/cya-matrix.html                          |    2 +-
+ reference/cyanuric-acid-explained.html             |    4 +-
+ reference/datasets/conversion-factors/index.html   |    2 +-
+ reference/datasets/version/index.html              |    2 +-
+ reference/emergency-recovery.html                  |    2 +-
+ reference/filter-comparison.html                   |    2 +-
+ reference/free-chlorine-explained.html             |    4 +-
+ reference/ideal-pool-levels.html                   |    2 +-
+ reference/ideal-spa-levels.html                    |    2 +-
+ reference/index.html                               |    2 +-
+ reference/ph-table.html                            |    2 +-
+ reference/pool-chemical-timeline.html              |    2 +-
+ reference/pool-chemicals-explained.html            |    4 +-
+ reference/pool-chemistry-reference.html            |    4 +-
+ reference/pool-shape-guide.html                    |    2 +-
+ reference/pool-volume-reference.html               |    2 +-
+ reference/printable-resources-index.html           |    2 +-
+ reference/pump-sizing.html                         |    2 +-
+ reference/recommended-water-temperature.html       |    2 +-
+ reference/salt-matrix.html                         |    2 +-
+ reference/salt-water-generator-explained.html      |    4 +-
+ reference/shock-dosage-matrix.html                 |    2 +-
+ reference/shock-treatment-explained.html           |    4 +-
+ reference/testing-frequency.html                   |    2 +-
+ reference/total-alkalinity-explained.html          |    4 +-
+ .../vacation-rental-maintenance-schedule.html      |    2 +-
+ reference/water-balance-checklist.html             |    2 +-
+ reference/water-replacement-guidelines.html        |    2 +-
+ releases/1.0.0.html                                |    6 +-
+ releases/1.1.0.html                                |    6 +-
+ releases/index.html                                |    4 +-
+ reports/accessibility.html                         |    3 +-
+ reports/ai-readiness.html                          |    3 +-
+ reports/architecture.html                          |    5 +-
+ reports/calculators.html                           |    3 +-
+ reports/content.html                               |    7 +-
+ reports/datasets.html                              |    3 +-
+ reports/entities.html                              |    3 +-
+ reports/indexing-intelligence.html                 |    5 +-
+ reports/links.html                                 |    7 +-
+ reports/mobile.html                                |    3 +-
+ reports/performance.html                           |    5 +-
+ reports/schema.html                                |    3 +-
+ reports/seo.html                                   |    3 +-
+ resources/airbnb-pool-turnover-checklist.html      |    2 +-
+ resources/hot-tub-maintenance-log.html             |    2 +-
+ resources/index.html                               |    2 +-
+ resources/pool-chemical-log-sheet.html             |    2 +-
+ resources/pool-closing-checklist.html              |    2 +-
+ resources/pool-maintenance-checklist.html          |    2 +-
+ resources/pool-opening-checklist.html              |    2 +-
+ resources/pool-shock-log.html                      |    2 +-
+ resources/water-test-log.html                      |    2 +-
+ salt-water-pool-chemical-levels-chart.html         |    3 +-
+ scripts/audit-authority.js                         |    5 +-
+ scripts/audit-crawl-depth.js                       |    2 +-
+ scripts/audit-indexing.js                          |    3 +-
+ scripts/data/entities-measurements.js              |    4 +-
+ scripts/data/trust-calculator-metadata.js          |   72 +-
+ scripts/data/trust-editorial.js                    |    9 +-
+ scripts/data/trust-formulas.js                     |   71 +-
+ scripts/generate-all-pages.js                      |    5 +-
+ scripts/generate-authority-charts.js               |   42 +-
+ scripts/generate-formulas.js                       |    4 +-
+ scripts/generate-google-dashboard.js               |    6 +-
+ scripts/generate-hubs.js                           |   12 +-
+ scripts/generate-navigation.js                     |    2 +
+ scripts/generate-qa-report.js                      |    9 +-
+ scripts/generate-redirects.js                      |    8 +
+ scripts/generate-search-index.js                   |    2 +
+ scripts/generate-sitemaps.js                       |   17 +-
+ scripts/generate-tools-index.js                    |    9 +-
+ scripts/generators/generate-chlorine-pages.js      |   28 +-
+ scripts/generators/generate-hot-tub-pages.js       |   23 +-
+ scripts/generators/generate-ph-pages.js            |   23 +-
+ scripts/generators/generate-shock-pages.js         |   21 +-
+ scripts/inject-calculator-related-tools.js         |    3 +-
+ scripts/inject-footer.js                           |    2 +-
+ scripts/inject-seo-metadata.js                     |   19 +-
+ scripts/inject-winner-amplification.js             |    2 +-
+ scripts/populate-data.js                           |    2 +-
+ scripts/redirect-rules.js                          |    9 +
+ scripts/restructure-calculator-pages.js            |    7 +-
+ scripts/run-all-generators.js                      |   36 +
+ scripts/template-utils.js                          |   21 +-
+ scripts/test-url-engine.js                         |    7 +
+ search/index.html                                  |    4 +-
+ sitemap-academy.xml                                |  114 +-
+ sitemap-calculators.xml                            |   38 +-
+ sitemap-formulas.xml                               |   20 +-
+ sitemap-glossary.xml                               |  202 +-
+ sitemap-guides.xml                                 |   96 +-
+ sitemap-other.xml                                  |  566 +--
+ sitemap-reference.xml                              |  170 +-
+ sitemap-resources.xml                              |   18 +-
+ sitemap.xml                                        |   16 +-
+ style.css                                          |   42 +-
+ templates/entity-template.html                     |    4 +-
+ templates/release-template.html                    |    4 +-
+ tools/index.html                                   |    9 +-
+ 564 files changed, 6457 insertions(+), 6887 deletions(-)
+
+=== git diff --name-only ===
+404.html
+_redirects
+about/index.html
+academy/equipment/automatic-chlorinators.html
+academy/equipment/index.html
+academy/equipment/pool-filters.html
+academy/equipment/pool-pumps.html
+academy/equipment/pool-skimmers.html
+academy/equipment/salt-systems.html
+academy/equipment/sand-vs-cartridge-filters.html
+academy/fundamentals/how-temperature-changes-water-chemistry.html
+academy/fundamentals/how-water-balance-works.html
+academy/fundamentals/index.html
+academy/fundamentals/pool-vs-hot-tub-chemistry.html
+academy/fundamentals/the-four-core-water-tests.html
+academy/fundamentals/understanding-pool-water-chemistry.html
+academy/fundamentals/why-water-testing-matters.html
+academy/hot-tubs/daily-spa-maintenance.html
+academy/hot-tubs/index.html
+academy/hot-tubs/monthly-spa-maintenance.html
+academy/hot-tubs/refilling-your-hot-tub.html
+academy/hot-tubs/shock-after-heavy-use.html
+academy/hot-tubs/weekly-spa-maintenance.html
+academy/hot-tubs/winter-spa-care.html
+academy/index.html
+academy/sanitizers/breakpoint-chlorination.html
+academy/sanitizers/bromine-vs-chlorine.html
+academy/sanitizers/combined-chlorine-explained.html
+academy/sanitizers/index.html
+academy/sanitizers/liquid-chlorine-vs-tablets.html
+academy/sanitizers/shock-treatments-explained.html
+academy/sanitizers/understanding-free-chlorine.html
+academy/testing/common-testing-mistakes.html
+academy/testing/digital-pool-testers.html
+academy/testing/how-often-to-test-water.html
+academy/testing/index.html
+academy/testing/understanding-test-results.html
+academy/testing/using-liquid-test-kits.html
+academy/testing/using-test-strips.html
+academy/troubleshooting/cloudy-water.html
+academy/troubleshooting/corrosion.html
+academy/troubleshooting/foaming-hot-tubs.html
+academy/troubleshooting/green-water.html
+academy/troubleshooting/index.html
+academy/troubleshooting/scaling.html
+academy/troubleshooting/strong-chlorine-smell.html
+academy/vacation-rentals/chemical-log-sheets.html
+academy/vacation-rentals/emergency-water-recovery.html
+academy/vacation-rentals/guest-safety.html
+academy/vacation-rentals/index.html
+academy/vacation-rentals/maintenance-schedule.html
+academy/vacation-rentals/turnover-checklist.html
+academy/vacation-rentals/weekly-inspection.html
+academy/water-balance/index.html
+academy/water-balance/understanding-calcium-hardness.html
+academy/water-balance/understanding-cyanuric-acid.html
+academy/water-balance/understanding-lsi.html
+academy/water-balance/understanding-ph.html
+academy/water-balance/understanding-total-alkalinity.html
+academy/water-balance/water-balance-order.html
+all-pages.html
+audit/google/authority-flow.html
+audit/google/crawl-depth.html
+audit/google/crawl-review.md
+audit/google/freshness.html
+audit/google/index.html
+audit/google/priority-pages.csv
+audit/google/priority-report.html
+audit/google/recently-updated.csv
+audit/google/search-console-helper.html
+audit/google/validation-list.csv
+audit/google/weak-pages.csv
+audit/google/weak-pages.html
+audit/hub-topology.md
+calculators/chemical-calculator.html
+calculators/hot-tub-chlorine-calculator.html
+calculators/hot-tub-ph-calculator.html
+calculators/hot-tub-shock-calculator.html
+calculators/index.html
+calculators/pool-alkalinity-calculator.html
+calculators/pool-chlorine-calculator.html
+calculators/pool-cyanuric-acid-calculator.html
+calculators/pool-ph-calculator.html
+calculators/pool-shock-calculator.html
+calculators/pool-turnover-rate-calculator.html
+calculators/pool-volume-calculator.html
+calculators/saltwater-pool-salt-calculator.html
+calculators/spa-volume-calculator.html
+calculators/volume-calculator.html
+charts/hot-tub-chemical-levels-chart.html
+charts/index.html
+charts/pool-chemical-levels-chart.html
+charts/pool-water-balance-chart.html
+comparisons/chlorine-vs-bromine-hot-tub.html
+comparisons/chlorine-vs-bromine.html
+comparisons/free-chlorine-vs-total-chlorine.html
+comparisons/index.html
+comparisons/liquid-chlorine-vs-tablets.html
+comparisons/pool-shock-vs-chlorine.html
+comparisons/salt-water-pool-vs-chlorine-pool.html
+comparisons/saltwater-pool-vs-chlorine.html
+components/global-schema.html
+data/datasets/version.json
+data/entities/measurements.json
+data/graph/entity-index.json
+data/indexing/crawl-rules.json
+data/indexing/freshness.json
+data/indexing/priority.json
+data/indexing/weights.json
+data/navigation.json
+data/platform/compatibility.json
+data/reference.json
+data/search-index.json
+data/trust/datasets.json
+data/trust/editorial.json
+data/trust/formulas.json
+editorial/editorial-policy/index.html
+entities/algae.html
+entities/alkalinity.html
+entities/automatic-chlorinator.html
+entities/backwashing.html
+entities/baking-soda.html
+entities/balancing.html
+entities/biguanide.html
+entities/breakpoint-chlorination.html
+entities/bromine.html
+entities/calcium-chloride.html
+entities/calcium-hardness.html
+entities/calcium-hypochlorite.html
+entities/cartridge-filter.html
+entities/cdc.html
+entities/chemical-feeder.html
+entities/chemical-log.html
+entities/closing-checklist.html
+entities/cloudy-water.html
+entities/combined-chlorine.html
+entities/commercial-pool.html
+entities/concrete-pool.html
+entities/copper.html
+entities/corrosion.html
+entities/cover.html
+entities/cyanuric-acid.html
+entities/de-filter.html
+entities/emergency-reference.html
+entities/epa.html
+entities/eye-irritation.html
+entities/fiberglass-pool.html
+entities/filtration.html
+entities/flow-rate.html
+entities/foaming.html
+entities/free-chlorine.html
+entities/gallons.html
+entities/green-water.html
+entities/heater.html
+entities/high-chlorine.html
+entities/high-ph.html
+entities/hot-tub.html
+entities/hydrogen-peroxide.html
+entities/index.html
+entities/indoor-pool.html
+entities/iron.html
+entities/lamotte.html
+entities/liquid-chlorine.html
+entities/liters.html
+entities/low-chlorine.html
+entities/low-ph.html
+entities/lsi.html
+entities/maintenance-checklist.html
+entities/maintenance-log.html
+entities/manganese.html
+entities/muriatic-acid.html
+entities/nsf.html
+entities/opening-checklist.html
+entities/orp.html
+entities/outdoor-pool.html
+entities/oxidation.html
+entities/ozone.html
+entities/ph.html
+entities/phosphate.html
+entities/phta.html
+entities/pool-opening.html
+entities/pool-salt.html
+entities/ppm.html
+entities/pump.html
+entities/salt-chlorinator.html
+entities/salt.html
+entities/saltwater-pool.html
+entities/sand-filter.html
+entities/sanitizing.html
+entities/scaling.html
+entities/shock-treatment.html
+entities/skimmer.html
+entities/skin-irritation.html
+entities/soda-ash.html
+entities/sodium-dichlor.html
+entities/stabilizer.html
+entities/strong-chlorine-smell.html
+entities/swim-spa.html
+entities/swimming-pool.html
+entities/taylor-technologies.html
+entities/temperature.html
+entities/testing.html
+entities/total-chlorine.html
+entities/total-dissolved-solids.html
+entities/trichlor-tablets.html
+entities/turnover-time.html
+entities/unit-celsius.html
+entities/unit-days.html
+entities/unit-fahrenheit.html
+entities/unit-gallons.html
+entities/unit-hours.html
+entities/unit-liters.html
+entities/unit-mg-l.html
+entities/unit-minutes.html
+entities/unit-months.html
+entities/unit-ppm.html
+entities/unit-weeks.html
+entities/vacation-rental-checklist.html
+entities/vinyl-pool.html
+entities/water-replacement.html
+entities/water-test-sheet.html
+entities/winterization.html
+formulas/alkalinity-formula.html
+formulas/cya-formula.html
+formulas/index.html
+formulas/liquid-chlorine-formula.html
+formulas/lsi-formula.html
+formulas/ph-adjustment-formula.html
+formulas/pool-volume-formula.html
+formulas/salt-formula.html
+formulas/shock-formula.html
+formulas/turnover-formula.html
+functions/_middleware.js
+glossary/aggressive-water.html
+glossary/algae-bloom.html
+glossary/algaecide.html
+glossary/ammonia.html
+glossary/backwashing.html
+glossary/bather-load.html
+glossary/bcdmh.html
+glossary/bicarbonate-alkalinity.html
+glossary/biofilm.html
+glossary/black-algae.html
+glossary/breakpoint-chlorination.html
+glossary/breakpoint-dose.html
+glossary/bromine.html
+glossary/calcium-hardness.html
+glossary/calcium-hypochlorite.html
+glossary/carbon-dioxide.html
+glossary/cartridge-filter.html
+glossary/chemical-compatibility.html
+glossary/chemical-log.html
+glossary/chemical-storage.html
+glossary/chloramine.html
+glossary/chlorine-demand.html
+glossary/chlorine-stabilizer.html
+glossary/clarifier.html
+glossary/closing-chemical-kit.html
+glossary/colorimetric-test.html
+glossary/combined-chlorine.html
+glossary/conductivity.html
+glossary/copper.html
+glossary/cyanuric-acid.html
+glossary/de-filter.html
+glossary/dead-algae.html
+glossary/dichlor.html
+glossary/dilution.html
+glossary/dpd-test.html
+glossary/evaporation.html
+glossary/filter-pressure.html
+glossary/flocculant.html
+glossary/free-chlorine.html
+glossary/gpm.html
+glossary/green-algae.html
+glossary/hypochlorous-acid.html
+glossary/index.html
+glossary/iron.html
+glossary/langelier-saturation-index.html
+glossary/main-drain.html
+glossary/metal-sequestrant.html
+glossary/multiport-valve.html
+glossary/muriatic-acid.html
+glossary/mustard-algae.html
+glossary/opening-chemical-kit.html
+glossary/orp.html
+glossary/oto-test.html
+glossary/oxidizer.html
+glossary/ozone.html
+glossary/partial-drain.html
+glossary/parts-per-million.html
+glossary/ph-bounce.html
+glossary/ph-increaser.html
+glossary/ph.html
+glossary/phosphates.html
+glossary/pink-slime.html
+glossary/pool-chemistry-reference.html
+glossary/pool-maintenance-schedule.html
+glossary/pool-pump.html
+glossary/pool-safety-equipment.html
+glossary/pool-shock-schedule.html
+glossary/pool-turnover-rate.html
+glossary/pool-volume-reference.html
+glossary/pool-volume.html
+glossary/pressure-gauge.html
+glossary/pump-turnover.html
+glossary/reagent.html
+glossary/return-jet.html
+glossary/salt-chlorination.html
+glossary/sand-filter.html
+glossary/sanitizer.html
+glossary/saturated-ph.html
+glossary/saturation-index.html
+glossary/scale-inhibitor.html
+glossary/scaling-water.html
+glossary/shock-dosage.html
+glossary/shock.html
+glossary/skimmer.html
+glossary/sodium-bicarbonate.html
+glossary/sodium-bisulfate.html
+glossary/sodium-carbonate.html
+glossary/sodium-hypochlorite.html
+glossary/superchlorination.html
+glossary/test-strip.html
+glossary/total-alkalinity.html
+glossary/total-chlorine.html
+glossary/total-dissolved-solids.html
+glossary/total-hardness.html
+glossary/trichlor.html
+glossary/turbidity.html
+glossary/uv-sanitization.html
+glossary/water-balance-checklist.html
+glossary/water-temperature.html
+glossary/water-test-log.html
+glossary/winterization.html
+guides/advanced/chlorine-breakdown-sunlight.html
+guides/advanced/chlorine-vs-saltwater.html
+guides/advanced/cya-stabilizer-explained.html
+guides/advanced/index.html
+guides/advanced/pool-chemistry-balance-explained.html
+guides/alkalinity-guide.html
+guides/chlorine-guide.html
+guides/chlorine/chlorine-too-high-after-shocking.html
+guides/chlorine/free-chlorine-vs-total-chlorine.html
+guides/chlorine/how-often-should-i-shock-my-pool.html
+guides/chlorine/index.html
+guides/chlorine/why-pool-chlorine-disappears-overnight.html
+guides/chlorine/why-pool-wont-hold-chlorine.html
+guides/edge-cases/high-cya-chlorine-lock.html
+guides/edge-cases/index.html
+guides/edge-cases/over-shocking-pool-effects.html
+guides/edge-cases/pool-temperature-effect-chlorine.html
+guides/edge-cases/rain-effect-on-pool-chemistry.html
+guides/edge-cases/swimming-after-shocking-pool.html
+guides/hot-tub-chemistry.html
+guides/hot-tub-maintenance.html
+guides/hot-tub/hot-tub-alkalinity-too-high.html
+guides/hot-tub/hot-tub-chlorine-too-high.html
+guides/hot-tub/hot-tub-chlorine-too-low.html
+guides/hot-tub/hot-tub-ph-too-low.html
+guides/hot-tub/how-often-to-shock-a-hot-tub.html
+guides/hot-tub/index.html
+guides/index.html
+guides/ph-guide.html
+guides/ph/can-you-swim-in-high-ph-water.html
+guides/ph/does-rain-lower-pool-ph.html
+guides/ph/how-to-lower-pool-ph.html
+guides/ph/index.html
+guides/ph/what-causes-high-pool-ph.html
+guides/ph/why-pool-ph-keeps-rising.html
+guides/pool-chemistry-basics.html
+guides/questions/can-rain-affect-pool-chemistry.html
+guides/questions/can-you-swim-after-shocking-a-pool.html
+guides/questions/index.html
+guides/questions/why-does-hot-tub-water-smell.html
+guides/questions/why-does-pool-water-turn-cloudy.html
+guides/questions/why-is-my-hot-tub-foamy.html
+guides/questions/why-is-my-pool-green-but-chlorine-is-high.html
+guides/seasonal/closing-pool-chemistry-winter.html
+guides/seasonal/index.html
+guides/seasonal/opening-pool-chemistry-checklist.html
+guides/seasonal/summer-high-chlorine-demand.html
+guides/seasonal/winter-pool-maintenance-chemistry.html
+hot-tub-chemical-levels-chart.html
+hot-tub-chlorine-levels-chart.html
+index.html
+js/url/url-engine.js
+legal/index.html
+legal/legal.html
+legal/ownership.html
+maintenance/how-often-add-chlorine-pool.html
+maintenance/how-to-balance-pool-water.html
+maintenance/how-to-fix-cloudy-hot-tub.html
+maintenance/index.html
+package.json
+pool-alkalinity-levels-chart.html
+pool-chemical-levels-chart.html
+pool-chemistry-system.html
+pool-chlorine-levels-chart.html
+pool-cya-levels-chart.html
+pool-ph-levels-chart.html
+printable/maintenance-checklist.html
+printables/airbnb-pool-turnover-checklist.html
+printables/hot-tub-maintenance-log.html
+printables/pool-maintenance-checklist.html
+programmatic/behavior/how-often-to-shock-pool.html
+programmatic/behavior/how-often-to-test-pool-water.html
+programmatic/behavior/index.html
+programmatic/behavior/when-to-add-chlorine.html
+programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html
+programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html
+programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html
+programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html
+programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html
+programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html
+programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html
+programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html
+programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html
+programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html
+programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html
+programmatic/chlorine/index.html
+programmatic/explanations/index.html
+programmatic/explanations/what-is-pool-alkalinity.html
+programmatic/explanations/why-ph-affects-chlorine.html
+programmatic/explanations/why-shower-before-pool.html
+programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons.html
+programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons.html
+programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html
+programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons.html
+programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons.html
+programmatic/hot-tubs/index.html
+programmatic/index.html
+programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2.html
+programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4.html
+programmatic/ph/how-to-adjust-ph-from-7-to-7-4.html
+programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html
+programmatic/ph/index.html
+programmatic/problems/cloudy-pool-fix.html
+programmatic/problems/green-pool-how-much-chlorine.html
+programmatic/problems/high-chlorine-how-to-lower.html
+programmatic/problems/index.html
+programmatic/problems/low-alkalinity-symptoms.html
+programmatic/shock/how-much-shock-for-10000-gallon-pool.html
+programmatic/shock/how-much-shock-for-15000-gallon-pool.html
+programmatic/shock/how-much-shock-for-20000-gallon-pool.html
+programmatic/shock/how-much-shock-for-25000-gallon-pool.html
+programmatic/shock/how-much-shock-for-30000-gallon-pool.html
+programmatic/shock/how-much-shock-for-5000-gallon-pool.html
+programmatic/shock/index.html
+provenance/index.html
+qa-summary.json
+qa-summary.md
+qa/certification.html
+qa/index.html
+reference/alkalinity-table.html
+reference/calcium-hardness-explained.html
+reference/calculator-directory.html
+reference/chemical-compatibility.html
+reference/chemical-conversion-tables.html
+reference/chemical-safety.html
+reference/chemical-storage-guide.html
+reference/chlorine-effectiveness-chart.html
+reference/chlorine-explained.html
+reference/combined-chlorine-explained.html
+reference/common-pool-chemistry-mistakes.html
+reference/cya-matrix.html
+reference/cyanuric-acid-explained.html
+reference/datasets/conversion-factors/index.html
+reference/datasets/version/index.html
+reference/emergency-recovery.html
+reference/filter-comparison.html
+reference/free-chlorine-explained.html
+reference/ideal-pool-levels.html
+reference/ideal-spa-levels.html
+reference/index.html
+reference/ph-table.html
+reference/pool-chemical-timeline.html
+reference/pool-chemicals-explained.html
+reference/pool-chemistry-reference.html
+reference/pool-shape-guide.html
+reference/pool-volume-reference.html
+reference/printable-resources-index.html
+reference/pump-sizing.html
+reference/recommended-water-temperature.html
+reference/salt-matrix.html
+reference/salt-water-generator-explained.html
+reference/shock-dosage-matrix.html
+reference/shock-treatment-explained.html
+reference/testing-frequency.html
+reference/total-alkalinity-explained.html
+reference/vacation-rental-maintenance-schedule.html
+reference/water-balance-checklist.html
+reference/water-replacement-guidelines.html
+releases/1.0.0.html
+releases/1.1.0.html
+releases/index.html
+reports/accessibility.html
+reports/ai-readiness.html
+reports/architecture.html
+reports/calculators.html
+reports/content.html
+reports/datasets.html
+reports/entities.html
+reports/indexing-intelligence.html
+reports/links.html
+reports/mobile.html
+reports/performance.html
+reports/schema.html
+reports/seo.html
+resources/airbnb-pool-turnover-checklist.html
+resources/hot-tub-maintenance-log.html
+resources/index.html
+resources/pool-chemical-log-sheet.html
+resources/pool-closing-checklist.html
+resources/pool-maintenance-checklist.html
+resources/pool-opening-checklist.html
+resources/pool-shock-log.html
+resources/water-test-log.html
+salt-water-pool-chemical-levels-chart.html
+scripts/audit-authority.js
+scripts/audit-crawl-depth.js
+scripts/audit-indexing.js
+scripts/data/entities-measurements.js
+scripts/data/trust-calculator-metadata.js
+scripts/data/trust-editorial.js
+scripts/data/trust-formulas.js
+scripts/generate-all-pages.js
+scripts/generate-authority-charts.js
+scripts/generate-formulas.js
+scripts/generate-google-dashboard.js
+scripts/generate-hubs.js
+scripts/generate-navigation.js
+scripts/generate-qa-report.js
+scripts/generate-redirects.js
+scripts/generate-search-index.js
+scripts/generate-sitemaps.js
+scripts/generate-tools-index.js
+scripts/generators/generate-chlorine-pages.js
+scripts/generators/generate-hot-tub-pages.js
+scripts/generators/generate-ph-pages.js
+scripts/generators/generate-shock-pages.js
+scripts/inject-calculator-related-tools.js
+scripts/inject-footer.js
+scripts/inject-seo-metadata.js
+scripts/inject-winner-amplification.js
+scripts/populate-data.js
+scripts/redirect-rules.js
+scripts/restructure-calculator-pages.js
+scripts/run-all-generators.js
+scripts/template-utils.js
+scripts/test-url-engine.js
+search/index.html
+sitemap-academy.xml
+sitemap-calculators.xml
+sitemap-formulas.xml
+sitemap-glossary.xml
+sitemap-guides.xml
+sitemap-other.xml
+sitemap-reference.xml
+sitemap-resources.xml
+sitemap.xml
+style.css
+templates/entity-template.html
+templates/release-template.html
+tools/index.html
+
+=== git ls-files --others --exclude-standard ===
+graphs.ai
+reports/phase-7-commit-recovery/WORKING-TREE-INVENTORY.txt
+reports/phase-7a/PHASE-7A-FORENSIC-AUDIT.json
+reports/phase-7a/PHASE-7A-FORENSIC-AUDIT.md
+reports/phase-7a/action-matrix.csv
+reports/phase-7a/action-matrix.json
+reports/phase-7a/adsense-readiness.csv
+reports/phase-7a/aeo-audit.csv
+reports/phase-7a/audit-metadata.json
+reports/phase-7a/chemical-claims-topic-summary.json
+reports/phase-7a/chemical-claims.csv
+reports/phase-7a/content-cannibalization.csv
+reports/phase-7a/content-cannibalization.json
+reports/phase-7a/content-quality.csv
+reports/phase-7a/content-quality.json
+reports/phase-7a/crawl-indexation-audit.csv
+reports/phase-7a/crawl-indexation-audit.json
+reports/phase-7a/index.html
+reports/phase-7a/internal-link-audit.csv
+reports/phase-7a/internal-link-graph.json
+reports/phase-7a/programmatic-duplication.csv
+reports/phase-7a/programmatic-duplication.json
+reports/phase-7a/schema-audit.csv
+reports/phase-7a/schema-audit.json
+reports/phase-7a/seo-onpage-audit.csv
+reports/phase-7a/source-audit.csv
+reports/phase-7a/trust-audit.json
+reports/phase-7a/trust-audit.md
+reports/phase-7a/url-inventory.csv
+reports/phase-7a/url-inventory.json
+reports/phase-7a/ux-accessibility-audit.csv
+reports/phase-7b/PHASE-7B-GENERATOR-INTEGRITY.json
+reports/phase-7b/PHASE-7B-GENERATOR-INTEGRITY.md
+reports/phase-7b/generator-defect-inventory.md
+reports/phase-7b/generator-validation-results.json
+reports/phase-7c/PHASE-7C-URL-INDEXATION.json
+reports/phase-7c/PHASE-7C-URL-INDEXATION.md
+reports/phase-7c/REDIRECT-CERTIFICATION.md
+reports/phase-7c/URL-INDEXATION-BASELINE.json
+reports/phase-7c/URL-INDEXATION-BASELINE.md
+reports/phase-7c/URL-POLICY.md
+reports/phase-7c/URL-VALIDATION-RESULTS.json
+reports/phase-7d-1/EXTRACTION-ERROR-ANALYSIS.md
+reports/phase-7d-1/EXTRACTION-PIPELINE.md
+reports/phase-7d-1/PHASE-7D-1-EXTRACTION-INTEGRITY.json
+reports/phase-7d-1/PHASE-7D-1-EXTRACTION-INTEGRITY.md
+reports/phase-7d-1/PHASE-7D-KNOWLEDGE-IMPACT.md
+reports/phase-7d-1/SAMPLE-EXTRACTION-AUDIT.csv
+reports/phase-7d-1/extraction-validation-results.json
+reports/phase-7d-1/full-population-classification-summary.json
+reports/phase-7d-1/post-fix-chemistry-claims-summary.json
+reports/phase-7d-1/post-fix-chemistry-claims.csv
+reports/phase-7d-1/pre-fix-chemical-claims-7a.csv
+reports/phase-7d-1/pre-fix-chemistry-claims.csv
+reports/phase-7d-2/INDEPENDENT-OLD-EXTRACTION-AUDIT.csv
+reports/phase-7d-2/OLD-VS-NEW-EXTRACTION-COMPARISON.md
+reports/phase-7d-2/PHASE-7D-2-INDEPENDENT-VALIDATION.json
+reports/phase-7d-2/PHASE-7D-2-INDEPENDENT-VALIDATION.md
+reports/phase-7d-2/extraction-validation-v2-results.json
+reports/phase-7d-2/independent-old-audit-summary.json
+reports/phase-7d-2/post-fix-chemistry-claims-v2-summary.json
+reports/phase-7d-2/post-fix-chemistry-claims-v2.csv
+reports/phase-7d-2/status-integrity-results.json
+reports/phase-7d-3/CALCULATOR-EVIDENCE-INVENTORY.md
+reports/phase-7d-3/CLAIM-ID-METHODOLOGY.md
+reports/phase-7d-3/HIGH-RISK-CLAIMS-REBUILT.md
+reports/phase-7d-3/OLD-VS-REBUILT-CHEMISTRY-DATA.md
+reports/phase-7d-3/PH-ATTRIBUTION-REMEDIATION.md
+reports/phase-7d-3/PHASE-7D-3-REBUILD.json
+reports/phase-7d-3/PHASE-7D-3-REBUILD.md
+reports/phase-7d-3/REBUILD-SUMMARY.json
+reports/phase-7d-3/REBUILD-SUMMARY.md
+reports/phase-7d-3/chemistry-evidence.csv
+reports/phase-7d-3/chemistry-evidence.json
+reports/phase-7d-3/dataset-validation-results.json
+reports/phase-7d/CHEMISTRY-CONFLICT-POLICY.md
+reports/phase-7d/GENERATOR-CHEMISTRY-MIGRATION-PLAN.md
+reports/phase-7d/HIGH-RISK-CHEMISTRY-CLAIMS.md
+reports/phase-7d/PHASE-7D-BASELINE.json
+reports/phase-7d/PHASE-7D-BASELINE.md
+reports/phase-7d/PHASE-7D-CHEMISTRY-KNOWLEDGE.json
+reports/phase-7d/PHASE-7D-CHEMISTRY-KNOWLEDGE.md
+reports/phase-7d/SOURCE-REGISTRY.json
+reports/phase-7d/SOURCE-SELECTION-POLICY.md
+reports/phase-7d/chemistry-consistency-matrix.csv
+reports/phase-7d/chemistry-coverage.csv
+reports/phase-7d/chemistry-coverage.json
+reports/phase-7d/chemistry-source-inventory.csv
+reports/phase-7d/chemistry-source-inventory.json
+reports/phase-7d/chemistry-validation-results.json
+reports/phase-7e-1/AUTHORITY-CHART-REVIEW.md
+reports/phase-7e-1/CALCULATOR-REVIEW-QUEUE.md
+reports/phase-7e-1/PHASE-7E-1-CONFLICT-RESOLUTION.json
+reports/phase-7e-1/PHASE-7E-1-CONFLICT-RESOLUTION.md
+reports/phase-7e-1/REVIEW-QUEUE-STRATEGY.md
+reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md
+reports/phase-7e-1/TABLE-EXTRACTION-LIMITATION.md
+reports/phase-7e-1/conflict-inventory-summary.json
+reports/phase-7e-1/conflicting-claims.csv
+reports/phase-7e-1/provenance-resolution-validation-results.json
+reports/phase-7e-1/review-queue-segmentation.json
+reports/phase-7e/AUTHORITY-CHART-PROVENANCE.md
+reports/phase-7e/CALCULATOR-PROVENANCE.md
+reports/phase-7e/HIGH-RISK-PROVENANCE-REVIEW.md
+reports/phase-7e/PHASE-7E-PROVENANCE.json
+reports/phase-7e/PHASE-7E-PROVENANCE.md
+reports/phase-7e/PROGRAMMATIC-CHEMISTRY-STRATEGY.md
+reports/phase-7e/PROVENANCE-COVERAGE.md
+reports/phase-7e/high-risk-provenance.csv
+reports/phase-7e/provenance-coverage.json
+reports/phase-7e/provenance-mapping.csv
+reports/phase-7e/provenance-validation-results.json
+reports/phase-7f-1/CALCULATOR-EDITORIAL-DECISIONS.md
+reports/phase-7f-1/CONFLICT-02-DECISION.md
+reports/phase-7f-1/CONFLICT-03-DECISION.md
+reports/phase-7f-1/CONFLICT-04-DECISION.md
+reports/phase-7f-1/CONFLICT-05-DECISION.md
+reports/phase-7f-1/EDITORIAL-DECISIONS.csv
+reports/phase-7f-1/HOT-TUB-CYA-DECISION.md
+reports/phase-7f-1/PHASE-7F-1-EDITORIAL-RESOLUTION.json
+reports/phase-7f-1/PHASE-7F-1-EDITORIAL-RESOLUTION.md
+reports/phase-7f-1/PRODUCTION-CORRECTIONS.md
+reports/phase-7f-1/REVIEW-QUEUE-FINAL.md
+reports/phase-7f-1/editorial-decisions-validation-results.json
+reports/phase-7f-1/editorial-decisions.json
+reports/phase-7f-1/unclassified-categorization-summary.json
+reports/phase-7f-1/unclassified-categorization.csv
+reports/phase-7f/CALCULATOR-METHODOLOGY.md
+reports/phase-7f/EDITORIAL-IDENTITY.md
+reports/phase-7f/PHASE-7F-TRUST.json
+reports/phase-7f/PHASE-7F-TRUST.md
+reports/phase-7f/TRUST-COVERAGE.md
+reports/phase-7f/TRUST-LANGUAGE-AUDIT.md
+reports/phase-7f/trust-layer-validation-results.json
+reports/phase-7g/AEO-DIFFERENTIATION.md
+reports/phase-7g/BASELINE-DUPLICATION.md
+reports/phase-7g/CANNIBALIZATION-RESOLUTION.md
+reports/phase-7g/PHASE-7G-PROGRAMMATIC.json
+reports/phase-7g/PHASE-7G-PROGRAMMATIC.md
+reports/phase-7g/POST-REMEDIATION-DUPLICATION.md
+reports/phase-7g/PROGRAMMATIC-DECISIONS.csv
+reports/phase-7g/PROGRAMMATIC-INVENTORY.md
+reports/phase-7g/programmatic-inventory.csv
+reports/phase-7g/programmatic-quality-validation-results.json
+scripts/audit-forensic/lib/chemistry.js
+scripts/audit-forensic/lib/classify.js
+scripts/audit-forensic/lib/derive.js
+scripts/audit-forensic/lib/duplication.js
+scripts/audit-forensic/lib/parse.js
+scripts/audit-forensic/lib/schema-audit.js
+scripts/audit-forensic/lib/scoring.js
+scripts/audit-forensic/lib/util.js
+scripts/audit-forensic/run.js
+scripts/chemistry/chemistryKnowledge.js
+scripts/chemistry/renderSources.js
+scripts/data/chemistry-claim-family-map.js
+scripts/data/chemistry-claims.js
+scripts/data/chemistry-extraction-golden-set-v2.json
+scripts/data/chemistry-extraction-golden-set.json
+scripts/data/chemistry-knowledge.js
+scripts/data/chemistry-ranges.js
+scripts/data/chemistry-sources.js
+scripts/data/programmatic-intents.js
+scripts/phase-7d-1/build-golden-set.js
+scripts/phase-7d-1/build-sample-audit.js
+scripts/phase-7d-1/extract-claims-v2.js
+scripts/phase-7d-1/reconcile-claims-v2.js
+scripts/phase-7d-2/build-golden-set-v2.js
+scripts/phase-7d-2/build-independent-old-audit.js
+scripts/phase-7d-2/old-audit-judgments.json
+scripts/phase-7d-2/test-extraction-regression.js
+scripts/phase-7d-3/build-chemistry-evidence.js
+scripts/phase-7d-3/build-reports.js
+scripts/phase-7d/build-consistency-matrix.js
+scripts/phase-7d/reconcile-claims.js
+scripts/phase-7d/scan-chemistry-sources.js
+scripts/phase-7e-1/build-conflict-inventory.js
+scripts/phase-7e-1/build-review-queue-strategy.js
+scripts/phase-7e-1/manual-conflict-reviews.json
+scripts/phase-7e/build-coverage.js
+scripts/phase-7e/build-high-risk-review.js
+scripts/phase-7e/build-provenance.js
+scripts/phase-7e/inject-calculator-sources.js
+scripts/phase-7f-1/build-editorial-decisions.js
+scripts/phase-7f-1/classify-unclassified.js
+scripts/phase-7g/build-inventory-and-decisions.js
+scripts/test-chemistry-knowledge.js
+scripts/test-url-policy.js
+scripts/test-validate-generated-output.js
+scripts/url-policy.js
+scripts/validate-chemistry-evidence-dataset.js
+scripts/validate-chemistry-extraction-v2.js
+scripts/validate-chemistry-extraction.js
+scripts/validate-chemistry-knowledge.js
+scripts/validate-chemistry-status-integrity.js
+scripts/validate-editorial-decisions.js
+scripts/validate-generated-output.js
+scripts/validate-programmatic-quality.js
+scripts/validate-provenance-resolution.js
+scripts/validate-provenance.js
+scripts/validate-trust-layer.js
+scripts/validate-url-indexation.js
