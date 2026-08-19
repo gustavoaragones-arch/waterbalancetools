@@ -1,0 +1,9 @@
+{
+  "total": 3933,
+  "summary": {
+    "CORRECT_EXTRACTION": 1781,
+    "COMPOSITE_SENTENCE": 1995,
+    "PARAMETER_MISCLASSIFICATION": 103,
+    "NON_CHEMISTRY_NUMERIC": 54
+  }
+}

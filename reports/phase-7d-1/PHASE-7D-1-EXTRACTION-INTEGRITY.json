@@ -1,0 +1,90 @@
+{
+  "status": "PASS_WITH_DATA_REBUILD",
+  "defect_confirmed": true,
+  "root_cause": {
+    "location": "scripts/phase-7d/reconcile-claims.js findParameter()",
+    "description": "Whole-sentence, first-match-wins keyword search over the entire claim text, not proximity-based number-to-parameter attribution. pH (PARAMETERS index 0) systematically won as a false attractor.",
+    "canonical_knowledge_layer_affected": false,
+    "reconciliation_layer_affected": true
+  },
+  "pipeline_documented": "reports/phase-7d-1/EXTRACTION-PIPELINE.md",
+  "sample_audit": { "path": "reports/phase-7d-1/SAMPLE-EXTRACTION-AUDIT.csv", "rows": 65, "minimum_required": 50 },
+  "golden_set": { "path": "scripts/data/chemistry-extraction-golden-set.json", "cases": 100, "minimum_required": 100, "pass_rate": "100/100" },
+  "pre_fix_inventory": { "path": "reports/phase-7d-1/pre-fix-chemistry-claims.csv", "claims": 3933, "ph_share": 1127, "ph_share_pct": 28.7 },
+  "post_fix_inventory": {
+    "path": "reports/phase-7d-1/post-fix-chemistry-claims.csv",
+    "source_claims": 3933,
+    "extraction_records": 6060,
+    "extraction_status_summary": { "NO_PARAMETER_IN_CLAUSE": 1164, "NO_NUMERIC_CONTENT": 2410, "CORRECT_EXTRACTION": 1344, "IMPOSSIBLE_MAPPING": 1042, "CARRIED_CONTEXT": 100 },
+    "scientific_review_status_summary": { "NOT_EXTRACTED": 2206, "AMBIGUOUS": 2641, "SUPPORTED": 597, "REQUIRES_REVIEW": 616 }
+  },
+  "extraction_accuracy": {
+    "methodology": "full-population deterministic comparison, not sampled",
+    "total_claims": 3933,
+    "old_confirmed_correct": 1781,
+    "old_confirmed_correct_pct": 45.28,
+    "confirmed_misclassification": 103,
+    "confirmed_misclassification_pct_of_all": 2.62,
+    "confirmed_misclassification_pct_of_attributed": 5.47,
+    "old_missed_new_found": 54,
+    "old_attributed_new_unconfirmed": 1995,
+    "old_attributed_new_unconfirmed_note": "Not necessarily wrong -- new extractor deliberately abstains rather than guesses; see EXTRACTION-ERROR-ANALYSIS.md"
+  },
+  "error_classes": {
+    "parameter_misclassification": { "sample_count": "40 of 65 sample rows (all confirmed misclassifications up to cap)", "full_population_count": 103 },
+    "unit_misclassification": { "count": 0, "note": "Old system had no unit-typing capability to misclassify; not applicable" },
+    "value_misclassification": { "count": 0, "note": "Same basis" },
+    "context_misclassification": { "count": 0, "note": "Same basis; new context model verified via golden set instead" },
+    "non_chemistry_numeric": { "count": 54, "note": "Old classifier missed a real chemistry claim entirely (not a false positive)" },
+    "composite_sentence": { "count": 1995 },
+    "correct_extraction": { "count": 1781 }
+  },
+  "impossible_mapping_audit": { "checked": 15, "leaked": 0, "result": "PASS" },
+  "phase_7d_knowledge_impact": {
+    "keep": ["chemistry-knowledge.js", "chemistry-ranges.js", "chemistry-sources.js", "chemistry-claims.js", "chemistryKnowledge.js", "renderSources.js", "chemistry-source-inventory.csv/.json", "chemistry-consistency-matrix.csv", "HIGH-RISK-CHEMISTRY-CLAIMS.md", "GENERATOR-CHEMISTRY-MIGRATION-PLAN.md", "SOURCE-SELECTION-POLICY.md", "CHEMISTRY-CONFLICT-POLICY.md"],
+    "revise": ["PHASE-7D-CHEMISTRY-KNOWLEDGE.md/.json Section 7 (Claim Mapping) only -- correction note added, not silently edited"],
+    "remove": [],
+    "research_required_newly_introduced": [],
+    "report": "reports/phase-7d-1/PHASE-7D-KNOWLEDGE-IMPACT.md"
+  },
+  "validators": {
+    "validate_chemistry_extraction": { "path": "scripts/validate-chemistry-extraction.js", "wired_into_build": false, "reason": "Validates forensic audit data quality, not production HTML -- same precedent as Phase 7A's own tooling", "result": "PASS" }
+  },
+  "regression": {
+    "full_build": "PASS (exit 0)",
+    "phase_7b_validator": "PASS",
+    "phase_7c_validator": "PASS",
+    "broken_link_validator": "PASS",
+    "phase_7d_chemistry_validator": "PASS",
+    "phase_7d_chemistry_tests": "PASS (25 assertions)",
+    "url_engine_tests": "PASS (263 assertions, unrelated module, sanity check)",
+    "golden_set": "PASS (100/100)",
+    "extraction_validator": "PASS"
+  },
+  "scope_control": {
+    "production_content_rewritten": false,
+    "urls_changed": false,
+    "sitemap_architecture_changed": false,
+    "redirects_changed": false,
+    "language_expansion": false,
+    "calculator_formulas_changed": false,
+    "page_count_before": 522,
+    "page_count_after": 522
+  },
+  "final_decision": "PASS_WITH_DATA_REBUILD",
+  "go_no_go_phase_7e": "NO-GO pending user review (per phase brief: do not proceed automatically)",
+  "reports": [
+    "reports/phase-7d-1/EXTRACTION-PIPELINE.md",
+    "reports/phase-7d-1/SAMPLE-EXTRACTION-AUDIT.csv",
+    "reports/phase-7d-1/pre-fix-chemistry-claims.csv",
+    "reports/phase-7d-1/post-fix-chemistry-claims.csv",
+    "reports/phase-7d-1/post-fix-chemistry-claims-summary.json",
+    "reports/phase-7d-1/EXTRACTION-ERROR-ANALYSIS.md",
+    "reports/phase-7d-1/PHASE-7D-KNOWLEDGE-IMPACT.md",
+    "reports/phase-7d-1/extraction-validation-results.json",
+    "reports/phase-7d-1/full-population-classification-summary.json",
+    "reports/phase-7d-1/PHASE-7D-1-EXTRACTION-INTEGRITY.md",
+    "reports/phase-7d-1/PHASE-7D-1-EXTRACTION-INTEGRITY.json",
+    "scripts/data/chemistry-extraction-golden-set.json"
+  ]
+}
