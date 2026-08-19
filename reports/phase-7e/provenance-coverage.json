@@ -1,0 +1,49 @@
+{
+  "total_extracted_claims": 5861,
+  "claims_scientifically_reviewed": 1422,
+  "claims_with_direct_provenance": 575,
+  "claims_with_contextual_provenance": 0,
+  "claims_with_corroborating_provenance": 0,
+  "claims_conflicting_with_sources": 499,
+  "claims_requiring_expert_review": 101,
+  "claims_still_unreviewed": 4686,
+  "page_coverage": {
+    "tier1": {
+      "total_pages": 27,
+      "pages_with_provenance": 15,
+      "pages": [
+        "calculators/chemical-calculator.html",
+        "calculators/hot-tub-chlorine-calculator.html",
+        "calculators/index.html",
+        "calculators/pool-ph-calculator.html",
+        "calculators/pool-shock-calculator.html",
+        "charts/hot-tub-chemical-levels-chart.html",
+        "charts/pool-chemical-levels-chart.html",
+        "charts/pool-water-balance-chart.html",
+        "hot-tub-chemical-levels-chart.html",
+        "hot-tub-chlorine-levels-chart.html",
+        "pool-alkalinity-levels-chart.html",
+        "pool-chemical-levels-chart.html",
+        "pool-chlorine-levels-chart.html",
+        "pool-ph-levels-chart.html",
+        "salt-water-pool-chemical-levels-chart.html"
+      ]
+    },
+    "tier2": {
+      "total_pages": 48,
+      "pages_with_provenance": 33
+    },
+    "tier3": {
+      "total_pages": 44,
+      "pages_with_provenance": 37
+    }
+  },
+  "source_quality": {
+    "primary_government": 5,
+    "professional_standards": 2,
+    "academic": 1,
+    "manufacturer": 0,
+    "secondary": 1,
+    "total_sources": 9
+  }
+}

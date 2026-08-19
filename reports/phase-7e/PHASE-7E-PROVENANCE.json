@@ -1,0 +1,125 @@
+{
+  "status": "PASS_WITH_REVIEW_QUEUE",
+  "source_registry": {
+    "total_sources": 9,
+    "new_sources_added_this_phase": 0,
+    "primary_government": 5,
+    "professional_standards": 2,
+    "academic": 1,
+    "manufacturer": 0,
+    "secondary": 1
+  },
+  "claim_to_source_mapping": {
+    "architecture": "chemistry-claims.js (15 claims) + chemistry-ranges.js (23 ranges) reused as the claim-family layer; scripts/data/chemistry-claim-family-map.js added as explicit (parameter,environment)->claim_id lookup",
+    "path": "reports/phase-7e/provenance-mapping.csv",
+    "records_total": 5861,
+    "direct_support": 575,
+    "contextual_support": 0,
+    "conflicting": 499,
+    "expert_review_required": 101,
+    "unreviewed": 4686,
+    "fabricated_mappings": 0
+  },
+  "high_risk_claims": {
+    "queue_size": 792,
+    "individually_hand_reviewed": 43,
+    "live_source_verifications": 1,
+    "corrections_made": ["range-cc-pool-hottub-max: REQUIRES_REVIEW -> SUPPORTED (MAHC 0.4 ppm confirmed)", "claim-cc-minimize: REQUIRES_REVIEW -> SUPPORTED"],
+    "architecture_gaps_found": ["no numeric shock-treatment free_chlorine range exists"],
+    "extraction_limitations_found": ["multi-column table cross-attribution (reference/ideal-spa-levels.html)"],
+    "production_content_rewritten": false
+  },
+  "calculator_provenance": {
+    "calculators_audited": 5,
+    "report": "reports/phase-7e/CALCULATOR-PROVENANCE.md",
+    "target_ranges_supported": ["pool_chlorine", "hot_tub_chlorine", "pool_ph", "all_in_one (ph/fc/ta/ch components)"],
+    "dosing_constants_review_required": true,
+    "formulas_modified": false
+  },
+  "authority_charts": {
+    "charts_total": 8,
+    "template_generated": 5,
+    "static_hand_authored": 3,
+    "report": "reports/phase-7e/AUTHORITY-CHART-PROVENANCE.md"
+  },
+  "programmatic_strategy": {
+    "documented": true,
+    "implemented": false,
+    "report": "reports/phase-7e/PROGRAMMATIC-CHEMISTRY-STRATEGY.md"
+  },
+  "production_citation_coverage": {
+    "pages_with_rendered_citation": 4,
+    "pages": [
+      "calculators/pool-chlorine-calculator.html",
+      "calculators/hot-tub-chlorine-calculator.html",
+      "pool-alkalinity-levels-chart.html",
+      "hot-tub-chlorine-levels-chart.html"
+    ],
+    "implementation": {
+      "charts": "sourceIds field on qualifying chart records, generate-authority-charts.js, conditional render",
+      "calculators": "idempotent marker-comment injector, scripts/phase-7e/inject-calculator-sources.js, wired into run-all-generators.js after restructure-calculator-pages.js"
+    },
+    "css_added": "style.css: .knowledge-sources-real, .knowledge-source-item, .knowledge-source-type, .knowledge-sources-note",
+    "source_urls_verified_live": true
+  },
+  "provenance_validation": {
+    "validator": "scripts/validate-provenance.js",
+    "result": "PASS",
+    "provenance_records_checked": 5861,
+    "high_risk_records_checked": 788,
+    "violations": 0,
+    "warnings": 4787
+  },
+  "source_url_validation": {
+    "sources_used_in_production": 3,
+    "cdc-healthy-swimming-home-treatment": "verified live via WebSearch cross-confirmation (direct fetch blocked by CDC bot protection in this environment)",
+    "cdc-mahc-2023": "verified live via WebSearch cross-confirmation",
+    "phta-total-alkalinity-fact-sheet": "verified live via direct fetch (real PDF returned)",
+    "sources_marked_unverified": 0
+  },
+  "regression": {
+    "full_build": "PASS",
+    "phase_7b_validator": "PASS",
+    "phase_7c_validator": "PASS",
+    "phase_7d_chemistry_validator": "PASS",
+    "phase_7d_chemistry_tests": "PASS (25 assertions)",
+    "phase_7d2_golden_set_v2": "PASS (104/104)",
+    "phase_7d2_status_integrity": "PASS",
+    "phase_7d2_regression_suite": "PASS (24 assertions)",
+    "phase_7d3_dataset_validator": "PASS",
+    "provenance_validator": "PASS",
+    "broken_link_validator": "PASS",
+    "url_engine_tests": "PASS (263 assertions)"
+  },
+  "scope_control": {
+    "spanish_french": false,
+    "url_canonical_redirect_sitemap_changed": false,
+    "calculator_formulas_changed": false,
+    "adsense_changed": false,
+    "broad_content_rewrite": false,
+    "duplicate_canonicals_or_schema_introduced": false,
+    "reports_leaked_into_sitemap": false,
+    "page_count": 523,
+    "disclosed_pre_existing_nondeterminism": "whitespace-before-footer drift on calculator pages, present on untouched pages too, inherited from restructure-calculator-pages.js/inject-footer.js, not introduced this phase"
+  },
+  "review_queue_remaining": {
+    "unreviewed": 4686,
+    "conflicting": 499,
+    "expert_review_required": 101
+  },
+  "final_decision": "PASS_WITH_REVIEW_QUEUE",
+  "go_no_go_phase_7f": "NO-GO pending user review (per phase brief: do not proceed automatically)",
+  "reports": [
+    "reports/phase-7e/PHASE-7E-PROVENANCE.md",
+    "reports/phase-7e/PHASE-7E-PROVENANCE.json",
+    "reports/phase-7e/PROVENANCE-COVERAGE.md",
+    "reports/phase-7e/provenance-coverage.json",
+    "reports/phase-7e/HIGH-RISK-PROVENANCE-REVIEW.md",
+    "reports/phase-7e/high-risk-provenance.csv",
+    "reports/phase-7e/CALCULATOR-PROVENANCE.md",
+    "reports/phase-7e/AUTHORITY-CHART-PROVENANCE.md",
+    "reports/phase-7e/PROGRAMMATIC-CHEMISTRY-STRATEGY.md",
+    "reports/phase-7e/provenance-mapping.csv",
+    "reports/phase-7e/provenance-validation-results.json"
+  ]
+}
