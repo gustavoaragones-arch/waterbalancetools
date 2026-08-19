@@ -43,7 +43,14 @@ module.exports = {
       },
       {
         heading: 'Evidence Standard',
-        body: 'All factual claims must be traceable to at least one of the recognized source categories defined in the WaterBalanceTools Source Framework: Government Guidance, Industry Standards, Manufacturer Documentation, Scientific Literature, Educational Resources, or Internal Dataset (clearly marked as such). Claims without a traceable source are not published.',
+        // Corrected Phase 7F.2: the previous wording ("Claims without a
+        // traceable source are not published") was contradicted by an
+        // independent claim-extraction and source-mapping review -- most
+        // numeric chemistry statements on the site have not yet been
+        // individually checked against a source. See
+        // reports/phase-7e/PROVENANCE-COVERAGE.md and
+        // reports/phase-7e-1/PHASE-7E-1-CONFLICT-RESOLUTION.md.
+        body: 'Factual claims are checked against the recognized source categories defined in the WaterBalanceTools Source Framework: Government Guidance, Industry Standards, Manufacturer Documentation, Scientific Literature, Educational Resources, or Internal Dataset (clearly marked as such). This is a goal the site is actively working toward, not a completed state: an internal claim-extraction and source-mapping review (2026-08-18) found that most numeric chemistry statements across the site have not yet been individually checked against a specific source, and a smaller number were found to conflict with a source once checked. Where a specific source has been confirmed, it is cited directly on the relevant page. This review is ongoing.',
       },
       {
         heading: 'Transparency',

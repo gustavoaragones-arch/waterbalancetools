@@ -17,7 +17,7 @@ module.exports = {
       variables: { L: 'Length (feet)', W: 'Width (feet)', AverageDepth: '(Deep end depth + Shallow end depth) / 2 (feet)', '7.48052': 'Cubic feet to US gallons conversion factor' },
       datasetDependencies: ['conversion-factors'],
       entityDependencies: ['gallons'],
-      calculatorIds: ['pool-volume-calculator', 'volume-calculator'],
+      calculatorIds: ['pool-volume-calculator'],
       formulaPageId: 'formula-01',
       confidenceLevel: 'very-high',
       sourceCategory: 'scientific-literature',
@@ -33,9 +33,18 @@ module.exports = {
       entityDependencies: ['free-chlorine', 'liquid-chlorine', 'calcium-hypochlorite'],
       calculatorIds: ['pool-chlorine-calculator', 'hot-tub-chlorine-calculator', 'chemical-calculator'],
       formulaPageId: 'formula-02',
-      confidenceLevel: 'high',
-      sourceCategory: 'industry-standards',
-      lastReviewed: '2026-07-01',
+      // Corrected Phase 7F.3 (from 'high'/'industry-standards'): the
+      // Phase 7E calculator audit (reports/phase-7e/CALCULATOR-PROVENANCE.md)
+      // found this formula's product-concentration coefficient was never
+      // independently verified against a specific manufacturer or
+      // regulatory reference. The target range it doses toward IS
+      // CDC-supported; the dosing coefficient itself is not, per the
+      // confidence system's own rule ("sparse or manufacturer-specific
+      // sources -> Limited").
+      confidenceLevel: 'limited',
+      sourceCategory: 'internal-dataset',
+      notes: 'Dosing coefficient not independently verified against a specific manufacturer/regulatory reference -- see reports/phase-7e/CALCULATOR-PROVENANCE.md. The 1-3 ppm / 2-4 ppm target range this formula doses toward is independently CDC-supported.',
+      lastReviewed: '2026-08-18',
     },
     {
       id: 'formula-shock-dose',
@@ -47,9 +56,15 @@ module.exports = {
       entityDependencies: ['free-chlorine', 'combined-chlorine', 'shock-treatment'],
       calculatorIds: ['pool-shock-calculator', 'hot-tub-shock-calculator'],
       formulaPageId: 'formula-03',
-      confidenceLevel: 'high',
-      sourceCategory: 'industry-standards',
-      lastReviewed: '2026-07-01',
+      // Corrected Phase 7F.3: Phase 7E found no confirmed general
+      // residential shock-target source (see
+      // reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md) and Phase 7D
+      // flagged this calculator for not reading the user's actual
+      // combined-chlorine value (no real 10x-CC breakpoint logic).
+      confidenceLevel: 'limited',
+      sourceCategory: 'internal-dataset',
+      notes: 'No confirmed primary source for a general residential shock-FC target; the "10x combined chlorine" breakpoint concept it approximates is an industry rule of thumb, not independently confirmed. See reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md.',
+      lastReviewed: '2026-08-18',
     },
     {
       id: 'formula-ph-adjustment',
@@ -76,9 +91,12 @@ module.exports = {
       entityDependencies: ['alkalinity', 'baking-soda', 'muriatic-acid'],
       calculatorIds: ['pool-alkalinity-calculator', 'chemical-calculator'],
       formulaPageId: 'formula-05',
-      confidenceLevel: 'high',
-      sourceCategory: 'industry-standards',
-      lastReviewed: '2026-07-01',
+      // Corrected Phase 7F.3 -- see formula-chlorine-dose note; same
+      // dosing-coefficient-not-independently-verified finding applies.
+      confidenceLevel: 'limited',
+      sourceCategory: 'internal-dataset',
+      notes: 'Dosing coefficient not independently verified against a specific manufacturer/regulatory reference. The 80-120 ppm target range this formula doses toward is independently supported (PHTA fact sheet).',
+      lastReviewed: '2026-08-18',
     },
     {
       id: 'formula-salt-adjustment',
@@ -90,9 +108,14 @@ module.exports = {
       entityDependencies: ['salt', 'salt-chlorinator', 'pool-salt'],
       calculatorIds: ['saltwater-pool-salt-calculator'],
       formulaPageId: 'formula-06',
-      confidenceLevel: 'high',
-      sourceCategory: 'manufacturer-documentation',
-      lastReviewed: '2026-07-01',
+      // Corrected Phase 7F.3: no specific manufacturer documentation was
+      // actually confirmed (chemistry-ranges.js's salt range has empty
+      // source_ids; Phase 7D noted salt targets are equipment-specific and
+      // no generic manufacturer-independent source was found).
+      confidenceLevel: 'limited',
+      sourceCategory: 'internal-dataset',
+      notes: 'No manufacturer documentation was independently confirmed for this coefficient; salt dosing is equipment-specific and target/dosing figures here are an internal composite, not sourced to a specific manufacturer.',
+      lastReviewed: '2026-08-18',
     },
     {
       id: 'formula-cya-adjustment',
@@ -105,9 +128,15 @@ module.exports = {
       entityDependencies: ['cyanuric-acid', 'stabilizer'],
       calculatorIds: ['pool-cyanuric-acid-calculator', 'chemical-calculator'],
       formulaPageId: 'formula-07',
-      confidenceLevel: 'high',
-      sourceCategory: 'industry-standards',
-      lastReviewed: '2026-07-01',
+      // Corrected Phase 7F.3 -- see formula-chlorine-dose note; same
+      // dosing-coefficient-not-independently-verified finding. The CYA
+      // target range itself is also REQUIRES_REVIEW (claim-cya-routine-outdoor,
+      // no confirmed primary source) -- neither the target nor the dose is
+      // independently confirmed for this parameter.
+      confidenceLevel: 'limited',
+      sourceCategory: 'internal-dataset',
+      notes: 'Dosing coefficient not independently verified. The 30-50 ppm target range this formula doses toward also has no confirmed primary source (see chemistry-claims.js claim-cya-routine-outdoor).',
+      lastReviewed: '2026-08-18',
     },
     {
       id: 'formula-turnover-rate',
@@ -146,7 +175,7 @@ module.exports = {
       variables: { L: 'Length (feet)', W: 'Width (feet)', '0.89': 'Oval shape factor', AverageDepth: 'Average depth (feet)', '7.48052': 'ft³ to gallons conversion factor' },
       datasetDependencies: ['conversion-factors'],
       entityDependencies: ['gallons'],
-      calculatorIds: ['pool-volume-calculator', 'volume-calculator'],
+      calculatorIds: ['pool-volume-calculator'],
       formulaPageId: null,
       confidenceLevel: 'very-high',
       sourceCategory: 'scientific-literature',
@@ -163,9 +192,11 @@ module.exports = {
       entityDependencies: ['calcium-hardness', 'calcium-chloride'],
       calculatorIds: ['chemical-calculator'],
       formulaPageId: null,
-      confidenceLevel: 'high',
-      sourceCategory: 'industry-standards',
-      lastReviewed: '2026-07-01',
+      // Corrected Phase 7F.3 -- see formula-chlorine-dose note.
+      confidenceLevel: 'limited',
+      sourceCategory: 'internal-dataset',
+      notes: 'Dosing coefficient not independently verified against a specific manufacturer/regulatory reference. The 200-400 ppm target range this formula doses toward is independently supported (ANSI/PHTA-11).',
+      lastReviewed: '2026-08-18',
     },
   ],
 };

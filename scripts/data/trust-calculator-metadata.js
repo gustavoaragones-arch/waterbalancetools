@@ -11,10 +11,12 @@ module.exports = [
     formulaIds: ['formula-chlorine-dose'],
     datasetDependencies: ['chemical-ranges', 'dosage-matrices', 'conversion-factors'],
     entityDependencies: ['free-chlorine', 'liquid-chlorine', 'calcium-hypochlorite'],
-    confidenceLevel: 'high',
+    // Corrected Phase 7F.3 -- see scripts/data/trust-formulas.js
+    // formula-chlorine-dose for the underlying finding.
+    confidenceLevel: 'limited',
     version: '2026.07',
-    lastReviewed: '2026-07-01',
-    notes: 'Dosage coefficients from dosage-matrices.json. Target ranges from chemical-ranges.json (residential-pool-free-chlorine).',
+    lastReviewed: '2026-08-18',
+    notes: 'Target range (1-3 ppm / 2-4 ppm with CYA) is CDC-supported. Dosage coefficient from dosage-matrices.json is not independently verified against a manufacturer/regulatory reference.',
   },
   {
     id: 'pool-shock-calculator',
@@ -23,10 +25,13 @@ module.exports = [
     formulaIds: ['formula-shock-dose'],
     datasetDependencies: ['chemical-ranges', 'dosage-matrices'],
     entityDependencies: ['free-chlorine', 'combined-chlorine', 'shock-treatment'],
-    confidenceLevel: 'high',
+    // Corrected Phase 7F.3 -- no confirmed primary source for a general
+    // residential shock-FC target; see
+    // reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md.
+    confidenceLevel: 'limited',
     version: '2026.07',
-    lastReviewed: '2026-07-01',
-    notes: 'Breakpoint chlorination target: 10× combined chlorine level.',
+    lastReviewed: '2026-08-18',
+    notes: 'Breakpoint chlorination target (10x combined chlorine) is an industry rule of thumb, not independently confirmed by a primary source. This calculator also does not read the user\'s actual combined-chlorine reading.',
   },
   {
     id: 'pool-ph-calculator',
@@ -47,10 +52,11 @@ module.exports = [
     formulaIds: ['formula-alkalinity-adjustment'],
     datasetDependencies: ['chemical-ranges', 'dosage-matrices'],
     entityDependencies: ['alkalinity', 'baking-soda', 'muriatic-acid'],
-    confidenceLevel: 'high',
+    // Corrected Phase 7F.3 -- see trust-formulas.js formula-alkalinity-adjustment.
+    confidenceLevel: 'limited',
     version: '2026.07',
-    lastReviewed: '2026-07-01',
-    notes: 'Baking soda coefficient: 24 oz per 10 ppm per 10,000 gal.',
+    lastReviewed: '2026-08-18',
+    notes: 'Target range (80-120 ppm) is independently supported (PHTA fact sheet). Baking soda coefficient (24 oz per 10 ppm per 10,000 gal) is not independently verified.',
   },
   {
     id: 'pool-cyanuric-acid-calculator',
@@ -59,10 +65,11 @@ module.exports = [
     formulaIds: ['formula-cya-adjustment'],
     datasetDependencies: ['chemical-ranges', 'dosage-matrices'],
     entityDependencies: ['cyanuric-acid', 'stabilizer'],
-    confidenceLevel: 'high',
+    // Corrected Phase 7F.3 -- see trust-formulas.js formula-cya-adjustment.
+    confidenceLevel: 'limited',
     version: '2026.07',
-    lastReviewed: '2026-07-01',
-    notes: 'CYA dissolves slowly. Allow 24–48 hours for equilibration before retesting.',
+    lastReviewed: '2026-08-18',
+    notes: 'Neither the 30-50 ppm target range nor the dosing coefficient has a confirmed primary source (see chemistry-claims.js claim-cya-routine-outdoor). CYA dissolves slowly -- allow 24-48 hours for equilibration before retesting.',
   },
   {
     id: 'saltwater-pool-salt-calculator',
@@ -71,10 +78,11 @@ module.exports = [
     formulaIds: ['formula-salt-adjustment'],
     datasetDependencies: ['chemical-ranges', 'dosage-matrices'],
     entityDependencies: ['salt', 'salt-chlorinator', 'pool-salt'],
-    confidenceLevel: 'high',
+    // Corrected Phase 7F.3 -- see trust-formulas.js formula-salt-adjustment.
+    confidenceLevel: 'limited',
     version: '2026.07',
-    lastReviewed: '2026-07-01',
-    notes: 'Target range from saltwater-pool-salt record in chemical-ranges.json. Verify against your system\'s manufacturer spec.',
+    lastReviewed: '2026-08-18',
+    notes: 'Salt targets are equipment/manufacturer-specific; no manufacturer-independent primary source was confirmed for the target range or dosing coefficient. Verify against your system\'s manufacturer spec.',
   },
   {
     id: 'pool-volume-calculator',
@@ -87,17 +95,6 @@ module.exports = [
     version: '2026.07',
     lastReviewed: '2026-07-01',
     notes: 'Volume formulas use exact ft³-to-gallon conversion factor (7.48051948) from conversion-factors.json.',
-  },
-  {
-    id: 'volume-calculator',
-    name: 'Volume Calculator',
-    urlPath: '/calculators/volume-calculator',
-    formulaIds: ['formula-pool-volume-rectangular', 'formula-pool-volume-oval'],
-    datasetDependencies: ['conversion-factors'],
-    entityDependencies: ['gallons', 'liters'],
-    confidenceLevel: 'very-high',
-    version: '2026.07',
-    lastReviewed: '2026-07-01',
   },
   {
     id: 'pool-turnover-rate-calculator',
@@ -117,10 +114,14 @@ module.exports = [
     formulaIds: ['formula-chlorine-dose', 'formula-ph-adjustment', 'formula-alkalinity-adjustment', 'formula-lsi', 'formula-calcium-hardness-dose'],
     datasetDependencies: ['chemical-ranges', 'dosage-matrices', 'water-balance', 'conversion-factors'],
     entityDependencies: ['free-chlorine', 'ph', 'alkalinity', 'calcium-hardness', 'cyanuric-acid', 'lsi'],
-    confidenceLevel: 'high',
+    // Corrected Phase 7F.3 -- composite calculator; several of its
+    // component formulas (chlorine, alkalinity, calcium hardness dosing)
+    // were downgraded, so the calculator as a whole is reported at their
+    // level rather than its strongest component's (LSI, very-high).
+    confidenceLevel: 'limited',
     version: '2026.07',
-    lastReviewed: '2026-07-01',
-    notes: 'Multi-parameter calculator. LSI uses water-balance factor tables. pH uses linear approximation.',
+    lastReviewed: '2026-08-18',
+    notes: 'Multi-parameter calculator combining formulas of differing confidence: LSI (very-high, pure chemistry equation) and target ranges for pH/FC/TA/CH (independently supported) are reliable; the chlorine/alkalinity/calcium-hardness dosing coefficients are not independently verified. pH uses a linear approximation, already self-disclosed as a simplification.',
   },
   {
     id: 'hot-tub-chlorine-calculator',
@@ -129,10 +130,11 @@ module.exports = [
     formulaIds: ['formula-chlorine-dose'],
     datasetDependencies: ['chemical-ranges', 'dosage-matrices'],
     entityDependencies: ['free-chlorine', 'bromine', 'hot-tub'],
-    confidenceLevel: 'high',
+    // Corrected Phase 7F.3 -- see trust-formulas.js formula-chlorine-dose.
+    confidenceLevel: 'limited',
     version: '2026.07',
-    lastReviewed: '2026-07-01',
-    notes: 'Uses hot-tub-free-chlorine range (3–5 ppm) from chemical-ranges.json.',
+    lastReviewed: '2026-08-18',
+    notes: 'Target range (3-5 ppm) is CDC-supported. Dosage coefficient from dosage-matrices.json is not independently verified against a manufacturer/regulatory reference.',
   },
   {
     id: 'hot-tub-ph-calculator',
@@ -152,9 +154,11 @@ module.exports = [
     formulaIds: ['formula-shock-dose'],
     datasetDependencies: ['chemical-ranges', 'dosage-matrices'],
     entityDependencies: ['free-chlorine', 'combined-chlorine', 'hot-tub', 'shock-treatment'],
-    confidenceLevel: 'high',
+    // Corrected Phase 7F.3 -- see trust-formulas.js formula-shock-dose.
+    confidenceLevel: 'limited',
     version: '2026.07',
-    lastReviewed: '2026-07-01',
+    lastReviewed: '2026-08-18',
+    notes: 'No confirmed primary source for a general shock-FC target; see reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md.',
   },
   {
     id: 'spa-volume-calculator',
