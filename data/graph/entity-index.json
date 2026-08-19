@@ -908,8 +908,7 @@
     "units": "gallons",
     "calculatorIds": [
       "pool-volume-calculator",
-      "spa-volume-calculator",
-      "volume-calculator"
+      "spa-volume-calculator"
     ],
     "formulaIds": [
       "formula-01"
@@ -948,8 +947,7 @@
     "idealRange": "N/A",
     "units": "liters",
     "calculatorIds": [
-      "pool-volume-calculator",
-      "volume-calculator"
+      "pool-volume-calculator"
     ],
     "formulaIds": [
       "formula-01"

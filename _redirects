@@ -20,3 +20,9 @@
 /explanations/why-shower-before-pool.html /programmatic/explanations/why-shower-before-pool 301
 /programmatic/explanation/* /programmatic/explanations/:splat 301
 /explanations/* /programmatic/explanations/:splat 301
+/calculators/volume-calculator /calculators/pool-volume-calculator 301
+/calculators/volume-calculator.html /calculators/pool-volume-calculator 301
+/charts/hot-tub-chemical-levels-chart /hot-tub-chemical-levels-chart 301
+/charts/hot-tub-chemical-levels-chart.html /hot-tub-chemical-levels-chart 301
+/charts/pool-chemical-levels-chart /pool-chemical-levels-chart 301
+/charts/pool-chemical-levels-chart.html /pool-chemical-levels-chart 301

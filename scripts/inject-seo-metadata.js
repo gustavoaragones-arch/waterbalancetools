@@ -5,6 +5,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const urlPolicy = require('./url-policy');
 
 const ROOT = path.join(__dirname, '..');
 const BASE_URL = 'https://waterbalancetools.com';
@@ -13,9 +14,21 @@ const SKIP_DIRS = new Set(['node_modules', '.git', 'components', 'templates']);
 
 function canonicalHref(relPath) {
   const p = relPath.replace(/\\/g, '/');
+  const target = urlPolicy.redirectTarget(p);
+  if (target) return BASE_URL + target;
   if (p === 'index.html') return BASE_URL + '/';
   const noExt = p.replace(/\.html$/i, '');
   return BASE_URL + '/' + noExt;
+}
+
+// Phase 7C: this normalizer must not silently re-index a retired
+// duplicate/legacy URL or an internal-tooling page every time it runs --
+// url-policy.js is the single source of truth for which robots directive a
+// given path should carry.
+function robotsDirectiveFor(relPath) {
+  if (urlPolicy.isRedirectSource(relPath)) return 'noindex, follow';
+  if (urlPolicy.isInternalTooling(relPath)) return 'noindex, nofollow';
+  return 'index, follow';
 }
 
 function stripSeoTags(html) {
@@ -24,10 +37,10 @@ function stripSeoTags(html) {
     .replace(/<link\s+rel=["']canonical["'][^>]*>\s*/gi, '');
 }
 
-function injectSeo(html, canonical) {
+function injectSeo(html, canonical, robotsDirective) {
   let h = stripSeoTags(html);
   const block =
-    '  <meta name="robots" content="index, follow">\n' +
+    '  <meta name="robots" content="' + robotsDirective + '">\n' +
     '  <link rel="canonical" href="' +
     canonical.replace(/"/g, '&quot;') +
     '">\n';
@@ -93,7 +106,7 @@ for (const rel of collectFiles()) {
   const full = path.join(ROOT, rel);
   let html = fs.readFileSync(full, 'utf8');
   if (!html.includes('<head')) continue;
-  const next = injectSeo(html, canonicalHref(rel));
+  const next = injectSeo(html, canonicalHref(rel), robotsDirectiveFor(rel));
   if (next !== html) {
     fs.writeFileSync(full, next, 'utf8');
     n++;

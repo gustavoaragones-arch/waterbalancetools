@@ -7,6 +7,7 @@
 'use strict';
 const fs   = require('fs');
 const path = require('path');
+const { renderSourceList } = require('./chemistry/renderSources');
 
 const ROOT = path.join(__dirname, '..');
 
@@ -39,8 +40,13 @@ function chartHtml(opts) {
   const {
     slug, canonicalPath, title, metaDesc, ogDesc, h1,
     quickAnswer, keyTakeaways, tableHead, tableRows,
-    faqItems, calcLinks, related
+    faqItems, calcLinks, related, sourceIds
   } = opts;
+  // Phase 7E.6: only rendered when this specific chart has an individually
+  // reviewed, explicit source mapping (see AUTHORITY-CHART-PROVENANCE.md) --
+  // charts without one render no citation block at all, rather than a
+  // misleading generic one.
+  const sourcesHtml = (sourceIds && sourceIds.length > 0) ? renderSourceList(sourceIds) : '';
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -95,6 +101,7 @@ ${calcLinks.map(([href, label]) => '        <li><a href="' + href + '">' + esc(l
 ${tableRows.map(row => '        <tr>' + row.map(c => '<td>' + c + '</td>').join('') + '</tr>').join('\n')}
       </tbody>
     </table>
+    ${sourcesHtml}
     <section class="people-also-ask">
       <h2>Frequently Asked Questions</h2>
       <div class="paa-accordion">
@@ -207,7 +214,11 @@ const charts = [
     related: [
       ['pool-chemical-levels-chart.html', 'Pool Chemical Levels Chart'],
       ['pool-ph-levels-chart.html', 'pH Levels Chart']
-    ]
+    ],
+    // Phase 7E.6: only the ranges this chart states that were individually
+    // confirmed against a real source in AUTHORITY-CHART-PROVENANCE.md --
+    // the 80-120 ppm figure specifically, not every number on the page.
+    sourceIds: ['phta-total-alkalinity-fact-sheet']
   },
 
   {
@@ -245,18 +256,30 @@ const charts = [
     ],
     related: [
       ['pool-chemical-levels-chart.html', 'Pool Chemical Levels Chart'],
-      ['charts/hot-tub-chemical-levels-chart.html', 'Hot Tub Chemical Levels Chart (detailed)']
-    ]
+      ['hot-tub-chemical-levels-chart.html', 'Hot Tub Chemical Levels Chart (detailed)']
+    ],
+    // Phase 7E.6: the 3-5 ppm FC target specifically -- confirmed against
+    // CDC guidance in AUTHORITY-CHART-PROVENANCE.md.
+    sourceIds: ['cdc-healthy-swimming-home-treatment']
   },
 
   {
     slug: 'hot-tub-chemical-levels-chart.html',
     canonicalPath: '/hot-tub-chemical-levels-chart',
     title: 'Hot Tub Chemical Levels Chart (All Parameters)',
-    metaDesc: 'Hot tub chemical levels chart: chlorine, pH, alkalinity, calcium hardness, and CYA ideal ranges for spas. Quick reference table + FAQ.',
-    ogDesc: 'One-page hot tub chemistry reference. Ideal ranges for all spa parameters: chlorine, pH, TA, calcium hardness, CYA.',
+    metaDesc: 'Hot tub chemical levels chart: ideal chlorine, pH, alkalinity, and calcium hardness ranges for spas, plus CDC guidance on cyanuric acid. Quick reference table + FAQ.',
+    ogDesc: 'One-page hot tub chemistry reference. Ideal ranges for chlorine, pH, TA, and calcium hardness -- plus why CDC recommends against cyanuric acid in hot tubs.',
     h1: 'Hot Tub Chemical Levels Chart',
-    quickAnswer: 'Ideal hot tub chemical levels: free chlorine 3–5 ppm, pH 7.2–7.8, total alkalinity 80–120 ppm, calcium hardness 150–250 ppm, CYA 30–50 ppm (if using unstabilized chlorine). Hot tubs require closer monitoring than pools because small water volume means chemicals shift faster.',
+    // Corrected Phase 7F.1 (see reports/phase-7f-1/HOT-TUB-CYA-DECISION.md):
+    // the prior "CYA 30-50 ppm (if using unstabilized chlorine)" wording
+    // was internally inconsistent (unstabilized chlorine does not carry
+    // CYA) and conflicted with CDC guidance against using cyanuric acid /
+    // stabilized chlorine in hot tubs at all -- confirmed via chemistry
+    // -ranges.js range-cya-hottub (SUPPORTED, cdc-healthy-swimming-home
+    // -treatment) and independently corroborated by live research showing
+    // CYA substantially slows pathogen (e.g. Pseudomonas aeruginosa) kill
+    // time in hot tub conditions.
+    quickAnswer: 'Ideal hot tub chemical levels: free chlorine 3–5 ppm, pH 7.2–7.8, total alkalinity 80–120 ppm, calcium hardness 150–250 ppm. CDC recommends against using cyanuric acid or stabilized chlorine products in hot tubs. Hot tubs require closer monitoring than pools because small water volume means chemicals shift faster.',
     keyTakeaways: [
       'Hot tub FC target (3–5 ppm) is higher than pools due to elevated temperature',
       'pH range for spas is 7.2–7.8 — slightly wider than pools',
@@ -269,7 +292,7 @@ const charts = [
       ['pH', '7.2–7.8', 'Corrosion; chlorine unstable', 'Chlorine ineffective; scale'],
       ['Total alkalinity', '80–120 ppm', 'pH swings', 'pH drift upward; cloudy water'],
       ['Calcium hardness', '150–250 ppm', 'Etching of shell/plumbing', 'Scale on heater and surfaces'],
-      ['Cyanuric acid', '30–50 ppm (outdoor)', 'FC lost to UV quickly', 'Chlorine lock; not needed for indoor'],
+      ['Cyanuric acid', 'Not recommended', 'N/A', 'CDC advises against CYA/stabilized chlorine in hot tubs — it slows pathogen kill time'],
       ['Total dissolved solids', '&lt; 1,500 ppm above fill', '—', 'Foamy, dull water; drain and refill']
     ],
     faqItems: [
@@ -284,8 +307,7 @@ const charts = [
     ],
     related: [
       ['pool-chemical-levels-chart.html', 'Pool Chemical Levels Chart'],
-      ['hot-tub-chlorine-levels-chart.html', 'Hot Tub Chlorine Levels Chart'],
-      ['charts/hot-tub-chemical-levels-chart.html', 'Detailed chart (charts/ section)']
+      ['hot-tub-chlorine-levels-chart.html', 'Hot Tub Chlorine Levels Chart']
     ]
   },
 

@@ -16,6 +16,7 @@
 const fs   = require('fs');
 const path = require('path');
 const { ROOT, buildUrl } = require('./template-utils');
+const urlPolicy = require('./url-policy');
 
 const DATA_DIR = path.join(ROOT, 'data');
 
@@ -35,6 +36,7 @@ const SKIP_PATHS = [
 function shouldSkip(relPath) {
   const first = relPath.split('/')[0];
   if (SKIP_DIRS.has(first)) return true;
+  if (urlPolicy.isRedirectSource(relPath)) return true;
   return SKIP_PATHS.some(re => re.test(relPath));
 }
 

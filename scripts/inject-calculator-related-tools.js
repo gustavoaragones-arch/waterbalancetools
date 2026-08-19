@@ -5,6 +5,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const urlPolicy = require('./url-policy');
 
 const ROOT = path.join(__dirname, '..');
 const CALC_DIR = path.join(ROOT, 'calculators');
@@ -50,7 +51,6 @@ const BY_FILE = {
   'pool-cyanuric-acid-calculator.html': { prog: [P.ch10, P.sh10, P.whyPh], prob: [PROB.green, PROB.highCl] },
   'pool-volume-calculator.html': { prog: [P.ch10, P.sh10, P.ph80], prob: [PROB.cloudy, PROB.green] },
   'spa-volume-calculator.html': { prog: [P.ht400, P.ch10, P.test], prob: [PROB.cloudy, PROB.highCl] },
-  'volume-calculator.html': { prog: [P.ch10, P.ph80, P.when], prob: [PROB.cloudy, PROB.green] },
   'saltwater-pool-salt-calculator.html': { prog: [P.ch10, P.when, P.test], prob: [PROB.green, PROB.highCl] },
   'pool-turnover-rate-calculator.html': { prog: [P.test, P.ch10, P.sh10], prob: [PROB.cloudy, PROB.green] }
 };
@@ -119,6 +119,7 @@ function processFile(name) {
 
 let n = 0;
 for (const name of fs.readdirSync(CALC_DIR)) {
+  if (urlPolicy.isRedirectSource('calculators/' + name)) continue;
   if (processFile(name)) n++;
 }
 console.log('inject-calculator-related-tools: updated ' + n + ' calculator pages');

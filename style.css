@@ -1808,3 +1808,43 @@ textarea:focus {
   font-size:.78rem;
   color:#5b6d80;
 }
+/* Phase 7E.6: real chemistry source citations (scripts/chemistry/renderSources.js).
+   Compact, non-invasive, matches the existing card/table visual language. */
+.knowledge-sources-real {
+  margin: 1.25rem 0;
+  padding: 0.85rem 1rem;
+  background: var(--bg-soft);
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  font-size: var(--text-sm);
+}
+.knowledge-sources-real h3 {
+  margin: 0 0 0.5rem;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.knowledge-sources-real ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+.knowledge-source-item {
+  margin: 0.3rem 0;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+.knowledge-source-item a {
+  color: var(--blue);
+  font-weight: var(--font-weight-medium);
+}
+.knowledge-source-type {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+}
+.knowledge-sources-note {
+  margin: 0.75rem 0 0.4rem;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}

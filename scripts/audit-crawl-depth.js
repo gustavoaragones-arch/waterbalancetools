@@ -83,7 +83,7 @@ function run() {
   const titleByUrl = new Map((nav.pages || []).map((p) => [p.url, p.title]));
 
   const tableRows = rows.slice(0, 500).map((r) => `<tr><td>${r.url}</td><td>${titleByUrl.get(r.url) || ''}</td><td>${r.depth === 999 ? 'unreachable' : r.depth}</td></tr>`).join('\n');
-  const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Crawl Depth Audit</title><link rel="stylesheet" href="/style.css"></head><body><main class="container"><h1>Crawl Depth Audit</h1><p>Maximum clicks: ${maxDepth} · Average clicks: ${avgDepth.toFixed(2)} · Above target (&gt;4): ${overTarget.length} · Unreachable: ${unreachable.length}</p><table class="qa-table"><thead><tr><th>URL</th><th>Title</th><th>Depth</th></tr></thead><tbody>${tableRows}</tbody></table></main></body></html>`;
+  const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Crawl Depth Audit</title><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="${urlEngine.canonicalUrl('/audit/google/crawl-depth')}"><link rel="stylesheet" href="/style.css"></head><body><main class="container"><h1>Crawl Depth Audit</h1><p>Maximum clicks: ${maxDepth} · Average clicks: ${avgDepth.toFixed(2)} · Above target (&gt;4): ${overTarget.length} · Unreachable: ${unreachable.length}</p><table class="qa-table"><thead><tr><th>URL</th><th>Title</th><th>Depth</th></tr></thead><tbody>${tableRows}</tbody></table></main></body></html>`;
   fs.mkdirSync(OUT_DIR, { recursive: true });
   fs.writeFileSync(OUT_FILE, html, 'utf8');
   console.log(`audit-crawl-depth: wrote audit/google/crawl-depth.html (${rows.length} pages)`);

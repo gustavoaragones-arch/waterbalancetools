@@ -116,7 +116,7 @@ function renderMetricsTable(metrics) {
   }</tbody></table>`;
 }
 
-function htmlShell(title, body) {
+function htmlShell(title, body, canonicalPath) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -124,6 +124,7 @@ function htmlShell(title, body) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(title)} | WaterBalanceTools QA</title>
   <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="${urlEngine.canonicalUrl(canonicalPath)}">
   <style>
     body{font-family:Inter,system-ui,-apple-system,sans-serif;margin:0;background:#f6f8fb;color:#1d2630}
     .wrap{max-width:1100px;margin:0 auto;padding:24px}
@@ -177,7 +178,7 @@ function renderReportPage(name, result, ctx, trend) {
     <div class="card"><h2>Recommendations</h2>${renderList(result.recommendations)}</div>
     <p><a href="${urlEngine.href('/qa')}">← Back to QA Dashboard</a></p>
   `;
-  return htmlShell(title, body);
+  return htmlShell(title, body, `/reports/${name}`);
 }
 
 function renderDashboard(results, ctx, totals, trends) {
@@ -228,7 +229,7 @@ function renderDashboard(results, ctx, totals, trends) {
       </table>
     </div>
   `;
-  return htmlShell('QA Dashboard', body);
+  return htmlShell('QA Dashboard', body, '/qa');
 }
 
 function renderCertificationPage(results, ctx, overallScore, overallStatus, thresholdFailures, validationErrors, validationWarnings) {
@@ -255,7 +256,7 @@ function renderCertificationPage(results, ctx, overallScore, overallStatus, thre
     <div class="card"><h2>Category Scores</h2><table class="qa-table"><thead><tr><th>Category</th><th>Score</th><th>Minimum</th><th>Status</th></tr></thead><tbody>${rows}</tbody></table></div>
     <div class="card"><h2>Threshold Failures</h2>${renderList(thresholdFailures.length ? thresholdFailures : ['None'])}</div>
   `;
-  return htmlShell('Certification', body);
+  return htmlShell('Certification', body, '/qa/certification');
 }
 
 function writeSummaryArtifacts(summary) {

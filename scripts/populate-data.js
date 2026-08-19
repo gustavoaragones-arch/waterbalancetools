@@ -86,7 +86,7 @@ const _formulasDataLegacy = {
       workedExample: 'Rectangular pool: 30 ft long, 15 ft wide, average depth 4.5 ft.\nV = 30 × 15 × 4.5 × 7.48 = 15,147 gallons.\n\nCircular pool: 20 ft diameter (r = 10 ft), average depth 4 ft.\nV = π × 10² × 4 × 7.48 = 3.14159 × 100 × 4 × 7.48 = 9,399 gallons.',
       explanation: 'The conversion factor 7.48 converts cubic feet to US gallons (there are 7.48052 gallons per cubic foot). For pools with variable depth (a shallow end and a deep end), use the average depth: (shallow end depth + deep end depth) / 2. For pools with a gradual slope, this average is accurate. For pools with a distinct break between shallow and deep sections, calculate each section separately and add the volumes.',
       limitations: 'This formula assumes a uniform average depth. Irregularly shaped pools (L-shaped, free-form, beach entry) require dividing the pool into regular sections, calculating each section\'s volume, and summing them. An error of even 10% in the volume estimate causes the same percentage error in every chemical dose calculated for that pool.',
-      relatedCalculators: ['/calculators/pool-volume-calculator', '/calculators/volume-calculator', '/calculators/spa-volume-calculator'],
+      relatedCalculators: ['/calculators/pool-volume-calculator', '/calculators/spa-volume-calculator'],
       relatedGlossary: ['glossary/pump-turnover', 'glossary/pool-volume'],
       relatedFormulas: ['formulas/turnover-formula'],
       sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022'],

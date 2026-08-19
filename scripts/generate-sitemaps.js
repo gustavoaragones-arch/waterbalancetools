@@ -27,6 +27,7 @@ const fs   = require('fs');
 const path = require('path');
 const { isLegacyProgrammaticChlorine } = require('./redirect-rules');
 const urlEngine = require('../js/url/url-engine');
+const urlPolicy = require('./url-policy');
 
 const ROOT     = path.join(__dirname, '..');
 
@@ -45,13 +46,13 @@ const PRIORITIES = {
   other:       { priority: '0.5', changefreq: 'monthly' },
 };
 
-const SKIP_DIRS = new Set([
-  'node_modules', '.git', 'assets', 'js', 'functions', 'data', 'lib',
-  'scripts', 'partials', 'templates',
-]);
-const SKIP_FILES = new Set([
-  '404.html', 'tools/index.html',
-]);
+// Directory-level skip is a performance/defense-in-depth measure only.
+// Eligibility itself is decided per-file by url-policy.isSitemapEligible(),
+// which is the single source of truth (Phase 7C Step 5) -- it fails closed
+// for any directory that is not explicitly on the production-content
+// allowlist, so a new reports/audit/qa-style directory added later cannot
+// silently become sitemap-eligible just by containing .html files.
+const SKIP_DIRS = new Set([...urlPolicy.NON_PAGE_DIRS, ...urlPolicy.INTERNAL_TOOLING_DIRS, 'components']);
 
 // ── File walk ─────────────────────────────────────────────────────────────────
 
@@ -62,8 +63,8 @@ function walk(dir, out = []) {
     const rel  = path.relative(ROOT, full).replace(/\\/g, '/');
     if (e.isDirectory()) { walk(full, out); continue; }
     if (!e.name.endsWith('.html')) continue;
-    if (SKIP_FILES.has(rel)) continue;
     if (isLegacyProgrammaticChlorine(rel)) continue;
+    if (!urlPolicy.isSitemapEligible(rel)) continue;
     out.push(rel);
   }
   return out;

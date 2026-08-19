@@ -140,16 +140,6 @@
     "keywords": "spa volume calculator"
   },
   {
-    "url": "/calculators/volume-calculator",
-    "title": "Pool Volume Calculator (calculators) (calculators)",
-    "description": "Calculate your pool or hot tub volume in gallons. Supports rectangular and circular shapes.",
-    "h1": "Pool Volume Calculator",
-    "category": "Calculators",
-    "readingTime": null,
-    "updated": null,
-    "keywords": "pool volume calculator calculators"
-  },
-  {
     "url": "/charts",
     "title": "Charts Hub",
     "description": "Visual range charts for pool and spa chemistry with supporting calculator paths.",
@@ -158,26 +148,6 @@
     "readingTime": null,
     "updated": null,
     "keywords": "charts hub"
-  },
-  {
-    "url": "/charts/hot-tub-chemical-levels-chart",
-    "title": "Hot Tub Chemical Levels Chart",
-    "description": "Hot tub chemical levels chart: ideal ranges for chlorine, pH, and alkalinity in spas.",
-    "h1": "Hot Tub Chemical Levels Chart",
-    "category": "Charts",
-    "readingTime": null,
-    "updated": null,
-    "keywords": "hot tub chemical levels chart"
-  },
-  {
-    "url": "/charts/pool-chemical-levels-chart",
-    "title": "Pool Chemical Levels Chart",
-    "description": "Pool chemical levels chart: ideal ranges for chlorine, pH, alkalinity, calcium hardness, and cyanuric acid. Free reference.",
-    "h1": "Pool Chemical Levels Chart",
-    "category": "Charts",
-    "readingTime": null,
-    "updated": null,
-    "keywords": "pool chemical levels chart"
   },
   {
     "url": "/charts/pool-water-balance-chart",
@@ -862,7 +832,7 @@
   {
     "url": "/formulas/alkalinity-formula",
     "title": "Total Alkalinity Adjustment Formula",
-    "description": "Home Formula Library Total Alkalinity Adjustment Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 Total Alkalinity Adj",
+    "description": "Calculate the exact amount of sodium bicarbonate needed to raise your pool's total alkalinity with the alkalinity formula.",
     "h1": "Total Alkalinity Adjustment Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -872,7 +842,7 @@
   {
     "url": "/formulas/cya-formula",
     "title": "CYA (Cyanuric Acid) Dose Formula",
-    "description": "Home Formula Library CYA (Cyanuric Acid) Dose Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 CYA (Cyanuric Acid) Dos",
+    "description": "Calculate the correct cyanuric acid (stabilizer) dose for your pool with the CYA formula and worked example.",
     "h1": "CYA (Cyanuric Acid) Dose Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -882,7 +852,7 @@
   {
     "url": "/formulas/liquid-chlorine-formula",
     "title": "Liquid Chlorine Dose Formula",
-    "description": "Home Formula Library Liquid Chlorine Dose Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 Liquid Chlorine Dose Formul",
+    "description": "Learn how to calculate the correct liquid chlorine dose for your pool size. Includes worked example and limitations.",
     "h1": "Liquid Chlorine Dose Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -892,7 +862,7 @@
   {
     "url": "/formulas/lsi-formula",
     "title": "Langelier Saturation Index (LSI) Formula",
-    "description": "Home Formula Library Langelier Saturation Index (LSI) Formula Formula Example Explanation --> Formula Library 4 min read Updated 2026-06-01 Langelier Satur",
+    "description": "Understand the Langelier Saturation Index formula. Learn what LSI measures, how to calculate it, and what the score means for your pool.",
     "h1": "Langelier Saturation Index (LSI) Formula",
     "category": "Formula Library",
     "readingTime": "4 min read",
@@ -902,7 +872,7 @@
   {
     "url": "/formulas/ph-adjustment-formula",
     "title": "pH Adjustment Formula",
-    "description": "Home Formula Library pH Adjustment Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 pH Adjustment Formula",
+    "description": "Learn the pool pH adjustment formula. Calculate muriatic acid or soda ash dose with a worked example.",
     "h1": "pH Adjustment Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -912,7 +882,7 @@
   {
     "url": "/formulas/pool-volume-formula",
     "title": "Pool Volume Formula",
-    "description": "Home Formula Library Pool Volume Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 Pool Volume Formula",
+    "description": "Learn the pool volume formula with worked examples. Calculate pool gallons for rectangular, oval, circular, and irregular-shaped pools.",
     "h1": "Pool Volume Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -922,7 +892,7 @@
   {
     "url": "/formulas/salt-formula",
     "title": "Salt Pool Formula",
-    "description": "Home Formula Library Salt Pool Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 Salt Pool Formula",
+    "description": "Calculate how many pounds of pool salt to add using the salt formula. Includes worked example for any pool size.",
     "h1": "Salt Pool Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -932,7 +902,7 @@
   {
     "url": "/formulas/shock-formula",
     "title": "Pool Shock Formula",
-    "description": "Home Formula Library Pool Shock Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 Pool Shock Formula",
+    "description": "Learn the pool shock formula. Calculate exactly how much calcium hypochlorite to add for maintenance, breakpoint, or algae recovery.",
     "h1": "Pool Shock Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -942,7 +912,7 @@
   {
     "url": "/formulas/turnover-formula",
     "title": "Pool Turnover Rate Formula",
-    "description": "Home Formula Library Pool Turnover Rate Formula Formula Example Explanation --> Formula Library 3 min read Updated 2026-06-01 Pool Turnover Rate Formula",
+    "description": "Calculate your pool's turnover rate with the turnover formula. Find required pump run time and verify filtration is adequate.",
     "h1": "Pool Turnover Rate Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
@@ -4072,7 +4042,7 @@
   {
     "url": "/hot-tub-chemical-levels-chart",
     "title": "Hot Tub Chemical Levels Chart (All Parameters)",
-    "description": "Hot tub chemical levels chart: chlorine, pH, alkalinity, calcium hardness, and CYA ideal ranges for spas. Quick reference table + FAQ.",
+    "description": "Hot tub chemical levels chart: ideal chlorine, pH, alkalinity, and calcium hardness ranges for spas, plus CDC guidance on cyanuric acid. Quick reference tabl...",
     "h1": "Hot Tub Chemical Levels Chart",
     "category": "Other",
     "readingTime": null,
@@ -4098,6 +4068,16 @@
     "readingTime": null,
     "updated": null,
     "keywords": "legal hub"
+  },
+  {
+    "url": "/legal/legal",
+    "title": "Legal Information",
+    "description": "Terms of use, privacy, disclaimer, and cookies for WaterBalanceTools.com.",
+    "h1": "Legal Information",
+    "category": "Other",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "legal information"
   },
   {
     "url": "/legal/ownership",

@@ -15,6 +15,7 @@
 const fs   = require('fs');
 const path = require('path');
 const { walkHtml, ROOT, buildUrl } = require('./template-utils');
+const urlPolicy = require('./url-policy');
 
 // Directories whose HTML we skip when building the nav index
 const SKIP_DIRS = new Set([
@@ -102,6 +103,7 @@ for (const fullPath of walk(ROOT)) {
   if (relPath.startsWith('programmatic/') && relPath.includes('programmatic/') ) {
     // Only skip deeply nested programmatic pages for brevity, keep main ones
   }
+  if (urlPolicy.isRedirectSource(relPath)) continue;
   const url = toCleanUrl(relPath);
   if (seen.has(url)) continue;
   seen.add(url);

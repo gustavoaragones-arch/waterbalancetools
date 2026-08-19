@@ -2514,11 +2514,6 @@
               "Spa Volume Calculator",
               "Calculate hot tub volume in gallons",
               "/calculators/spa-volume-calculator"
-            ],
-            [
-              "Volume Calculator",
-              "Universal volume calculator for any shape",
-              "/calculators/volume-calculator"
             ]
           ]
         }

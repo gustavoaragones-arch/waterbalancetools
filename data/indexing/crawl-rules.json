@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T22:58:53.778Z",
+  "generatedAt": "2026-08-19T02:47:18.589Z",
   "rulesVersion": "1.0",
   "rules": [
     {
@@ -115,36 +115,12 @@
       "reason": "Assigned from URL taxonomy (calculator)."
     },
     {
-      "url": "/calculators/volume-calculator",
-      "pageType": "calculator",
-      "crawlTier": "Tier 1",
-      "hub": "/calculators/volume-calculator",
-      "indexable": true,
-      "reason": "Assigned from URL taxonomy (calculator)."
-    },
-    {
       "url": "/charts",
       "pageType": "other",
       "crawlTier": "Tier 3",
       "hub": "/charts",
       "indexable": true,
       "reason": "Assigned from URL taxonomy (other)."
-    },
-    {
-      "url": "/charts/hot-tub-chemical-levels-chart",
-      "pageType": "chart",
-      "crawlTier": "Tier 1",
-      "hub": "/charts/hot-tub-chemical-levels-chart",
-      "indexable": true,
-      "reason": "Assigned from URL taxonomy (chart)."
-    },
-    {
-      "url": "/charts/pool-chemical-levels-chart",
-      "pageType": "chart",
-      "crawlTier": "Tier 1",
-      "hub": "/charts/pool-chemical-levels-chart",
-      "indexable": true,
-      "reason": "Assigned from URL taxonomy (chart)."
     },
     {
       "url": "/charts/pool-water-balance-chart",
@@ -3523,6 +3499,14 @@
       "reason": "Assigned from URL taxonomy (other)."
     },
     {
+      "url": "/legal/legal",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/legal/legal",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
       "url": "/legal/ownership",
       "pageType": "other",
       "crawlTier": "Tier 3",
@@ -4135,6 +4119,14 @@
       "pageType": "qa",
       "crawlTier": "Tier 4",
       "hub": "/reports/performance",
+      "indexable": false,
+      "reason": "Assigned from URL taxonomy (qa)."
+    },
+    {
+      "url": "/reports/phase-7a",
+      "pageType": "qa",
+      "crawlTier": "Tier 4",
+      "hub": "/reports/phase-7a",
       "indexable": false,
       "reason": "Assigned from URL taxonomy (qa)."
     },

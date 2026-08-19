@@ -5,6 +5,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const urlPolicy = require('./url-policy');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'all-pages.html');
@@ -74,7 +75,9 @@ function sectionBlock(h2, paths) {
   );
 }
 
-const calculators   = listSortedHtml(path.join(ROOT, 'calculators')).map(f => 'calculators/' + f);
+const calculators   = listSortedHtml(path.join(ROOT, 'calculators'))
+  .map(f => 'calculators/' + f)
+  .filter(rel => !urlPolicy.isRedirectSource(rel));
 const comparisons   = listSortedHtml(path.join(ROOT, 'comparisons')).map(f => 'comparisons/' + f);
 const questions     = listSortedHtml(path.join(ROOT, 'guides/questions')).map(f => 'guides/questions/' + f);
 

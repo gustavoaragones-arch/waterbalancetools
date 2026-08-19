@@ -17,7 +17,7 @@ const PAGES = {
       '        <li><span class="trust-check" aria-hidden="true">✓</span> <strong>Safe chlorine:</strong> 3–5 ppm</li>\n' +
       '        <li><span class="trust-check" aria-hidden="true">✓</span> <strong>Safe pH:</strong> 7.2–7.8</li>\n' +
       '        <li><span class="trust-check" aria-hidden="true">✓</span> Calculator updated monthly</li>\n' +
-      '        <li><span class="trust-check" aria-hidden="true">✓</span> <strong>Reference:</strong> <a href="/charts/hot-tub-chemical-levels-chart">Hot Tub Chemical Levels Guide</a></li>\n' +
+      '        <li><span class="trust-check" aria-hidden="true">✓</span> <strong>Reference:</strong> <a href="/hot-tub-chemical-levels-chart">Hot Tub Chemical Levels Guide</a></li>\n' +
       '      </ul>\n' +
       '    </section>\n',
     quick:

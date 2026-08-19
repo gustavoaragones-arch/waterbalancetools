@@ -23,13 +23,12 @@ const CALCULATORS = [
   { name: 'Saltwater Pool Salt Calculator', url: '../calculators/saltwater-pool-salt-calculator.html' },
   { name: 'Hot Tub Shock Calculator', url: '../calculators/hot-tub-shock-calculator.html' },
   { name: 'Pool Turnover Rate Calculator', url: '../calculators/pool-turnover-rate-calculator.html' },
-  { name: 'Chemical Calculator (full)', url: '../calculators/chemical-calculator.html' },
-  { name: 'Volume Calculator (legacy)', url: '../calculators/volume-calculator.html' }
+  { name: 'Chemical Calculator (full)', url: '../calculators/chemical-calculator.html' }
 ];
 
 const CHARTS = [
-  { name: 'Pool Chemical Levels Chart', url: '../charts/pool-chemical-levels-chart.html' },
-  { name: 'Hot Tub Chemical Levels Chart', url: '../charts/hot-tub-chemical-levels-chart.html' },
+  { name: 'Pool Chemical Levels Chart', url: '../pool-chemical-levels-chart.html' },
+  { name: 'Hot Tub Chemical Levels Chart', url: '../hot-tub-chemical-levels-chart.html' },
   { name: 'Pool Water Balance Chart', url: '../charts/pool-water-balance-chart.html' }
 ];
 
@@ -119,6 +118,8 @@ const html = `<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="All pool and hot tub calculators and dosage guides. Pool chlorine, shock, pH, volume, and hot tub tools.">
   <title>All Pool & Hot Tub Tools | WaterBalanceTools</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="${urlEngine.canonicalUrl('/tools')}">
   <meta property="og:title" content="All Pool & Hot Tub Tools | WaterBalanceTools">
   <meta property="og:description" content="Calculators and dosage guides for pool and hot tub chemistry.">
   <link rel="stylesheet" href="/style.css">

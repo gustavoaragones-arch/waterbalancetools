@@ -3,6 +3,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const urlEngine = require('../js/url/url-engine');
 
 const ROOT = path.join(__dirname, '..');
 const PRIORITY_PATH = path.join(ROOT, 'data', 'indexing', 'priority.json');
@@ -34,7 +35,7 @@ function run() {
   const bottomRows = bottom.map((r) => `<tr><td>${r.url}</td><td>${r.pageType}</td><td>${r.crawlTier}</td><td>${r.priority}</td><td>${inboundCount.get(r.url) || 0}</td><td>Add contextual links from high-authority hubs/entities.</td></tr>`).join('\n');
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
-  fs.writeFileSync(OUT_FILE, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Priority Report</title><link rel="stylesheet" href="/style.css"></head><body><main class="container"><h1>Index Priority Report</h1><p>Top and bottom 100 pages by indexing priority score (0–100).</p><h2>Top 100 Pages</h2><table class="qa-table"><thead><tr><th>URL</th><th>Type</th><th>Tier</th><th>Priority</th><th>Inbound Links</th><th>Reason</th></tr></thead><tbody>${topRows}</tbody></table><h2>Bottom 100 Pages</h2><table class="qa-table"><thead><tr><th>URL</th><th>Type</th><th>Tier</th><th>Priority</th><th>Inbound Links</th><th>Improvement Suggestion</th></tr></thead><tbody>${bottomRows}</tbody></table></main></body></html>`, 'utf8');
+  fs.writeFileSync(OUT_FILE, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Priority Report</title><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="${urlEngine.canonicalUrl('/audit/google/priority-report')}"><link rel="stylesheet" href="/style.css"></head><body><main class="container"><h1>Index Priority Report</h1><p>Top and bottom 100 pages by indexing priority score (0–100).</p><h2>Top 100 Pages</h2><table class="qa-table"><thead><tr><th>URL</th><th>Type</th><th>Tier</th><th>Priority</th><th>Inbound Links</th><th>Reason</th></tr></thead><tbody>${topRows}</tbody></table><h2>Bottom 100 Pages</h2><table class="qa-table"><thead><tr><th>URL</th><th>Type</th><th>Tier</th><th>Priority</th><th>Inbound Links</th><th>Improvement Suggestion</th></tr></thead><tbody>${bottomRows}</tbody></table></main></body></html>`, 'utf8');
 
   console.log(`audit-indexing: wrote audit/google/priority-report.html (${records.length} records)`);
 }

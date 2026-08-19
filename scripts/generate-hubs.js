@@ -14,6 +14,7 @@ const {
   href,
   ROOT,
 } = require('./template-utils');
+const urlPolicy = require('./url-policy');
 
 const HUB_TEMPLATE = template('hub-template.html');
 const NAV_PATH = path.join(ROOT, 'data', 'navigation.json');
@@ -41,7 +42,16 @@ const entityIndex = readJson(ENTITY_INDEX_PATH, {});
 const platform = readJson(PLATFORM_PATH, { platform: {} });
 const qa = readJson(QA_SUMMARY_PATH, {});
 
-const pages = nav.pages || [];
+// Retired duplicate/legacy URLs (see url-policy.js REDIRECT_SOURCES) must
+// never appear in a generated hub listing, even if data/navigation.json is
+// briefly stale (this generator runs before generate-navigation.js in the
+// pipeline). Defense-in-depth on top of the navigation.json-level filter.
+// REDIRECT_SOURCES keys are relPaths (e.g. "charts/foo.html") -- filter on
+// the *source* URL, not the destination.
+const RETIRED_URL_PATHS = new Set(
+  Object.keys(urlPolicy.REDIRECT_SOURCES).map((relPath) => urlEngine.buildUrl(relPath))
+);
+const pages = (nav.pages || []).filter((p) => !RETIRED_URL_PATHS.has(p.url));
 const entities = Object.values(entityIndex);
 
 const HUBS = [

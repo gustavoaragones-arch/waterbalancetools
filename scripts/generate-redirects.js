@@ -9,6 +9,7 @@ const {
   EXPLANATION_SLUGS,
   buildExactRedirectMap
 } = require('./redirect-rules');
+const urlPolicy = require('./url-policy');
 
 const ROOT = path.join(__dirname, '..');
 const REDIRECTS_OUT = path.join(ROOT, '_redirects');
@@ -44,6 +45,13 @@ lines.push(
   '/programmatic/explanation/* /programmatic/explanations/:splat 301',
   '/explanations/* /programmatic/explanations/:splat 301'
 );
+
+// Phase 7C URL consolidation: duplicate calculator + legacy chart pages.
+for (const [relPath, destination] of Object.entries(urlPolicy.REDIRECT_SOURCES)) {
+  const from = '/' + relPath.replace(/\.html$/, '').replace(/\/index$/, '');
+  lines.push(from + ' ' + destination + ' 301');
+  lines.push(from + '.html ' + destination + ' 301');
+}
 
 fs.writeFileSync(REDIRECTS_OUT, lines.join('\n') + '\n', 'utf8');
 

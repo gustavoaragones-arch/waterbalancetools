@@ -12,7 +12,10 @@ const EXACT = new Map([
   ['/programmatic/explanation/what-is-pool-alkalinity', '/programmatic/explanations/what-is-pool-alkalinity'],
   ['/explanations/what-is-pool-alkalinity', '/programmatic/explanations/what-is-pool-alkalinity'],
   ['/programmatic/explanation/why-shower-before-pool', '/programmatic/explanations/why-shower-before-pool'],
-  ['/explanations/why-shower-before-pool', '/programmatic/explanations/why-shower-before-pool']
+  ['/explanations/why-shower-before-pool', '/programmatic/explanations/why-shower-before-pool'],
+  ['/calculators/volume-calculator', '/calculators/pool-volume-calculator'],
+  ['/charts/hot-tub-chemical-levels-chart', '/hot-tub-chemical-levels-chart'],
+  ['/charts/pool-chemical-levels-chart', '/pool-chemical-levels-chart']
 ]);
 
 function normalizePath(pathname) {

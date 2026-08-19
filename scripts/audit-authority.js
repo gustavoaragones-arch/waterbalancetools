@@ -3,6 +3,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const urlEngine = require('../js/url/url-engine');
 
 const ROOT = path.join(__dirname, '..');
 const WEIGHTS_PATH = path.join(ROOT, 'data', 'indexing', 'weights.json');
@@ -49,8 +50,8 @@ function run() {
   const weakRows = weak.map((r) => `<tr><td>${r.url}</td><td>${r.pageType}</td><td>${r.authority}</td><td>${r.out}</td><td>Increase contextual links from related hubs/entities/calculators</td></tr>`).join('\n');
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
-  fs.writeFileSync(FLOW_FILE, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Authority Flow</title><link rel="stylesheet" href="/style.css"></head><body><main class="container"><h1>Authority Flow</h1><p>Top authority pages, weak pages, orphan risk, and distribution metrics.</p><ul><li>Orphan risk pages: ${orphanRisk}</li><li>Inbound average: ${inboundAvg.toFixed(2)}</li><li>Outbound average: ${outboundAvg.toFixed(2)}</li><li>Hub contribution: weighted via hub links in edge graph</li><li>Entity contribution: weighted via entity links in edge graph</li></ul><table class="qa-table"><thead><tr><th>URL</th><th>Type</th><th>Inbound</th><th>Outbound</th><th>Priority</th></tr></thead><tbody>${topRows}</tbody></table></main></body></html>`, 'utf8');
-  fs.writeFileSync(WEAK_FILE, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Weak Pages</title><link rel="stylesheet" href="/style.css"></head><body><main class="container"><h1>Weak Pages</h1><p>Recommendation report for low-authority and low-priority URLs.</p><table class="qa-table"><thead><tr><th>URL</th><th>Type</th><th>Inbound</th><th>Outbound</th><th>Recommendation</th></tr></thead><tbody>${weakRows}</tbody></table></main></body></html>`, 'utf8');
+  fs.writeFileSync(FLOW_FILE, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Authority Flow</title><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="${urlEngine.canonicalUrl('/audit/google/authority-flow')}"><link rel="stylesheet" href="/style.css"></head><body><main class="container"><h1>Authority Flow</h1><p>Top authority pages, weak pages, orphan risk, and distribution metrics.</p><ul><li>Orphan risk pages: ${orphanRisk}</li><li>Inbound average: ${inboundAvg.toFixed(2)}</li><li>Outbound average: ${outboundAvg.toFixed(2)}</li><li>Hub contribution: weighted via hub links in edge graph</li><li>Entity contribution: weighted via entity links in edge graph</li></ul><table class="qa-table"><thead><tr><th>URL</th><th>Type</th><th>Inbound</th><th>Outbound</th><th>Priority</th></tr></thead><tbody>${topRows}</tbody></table></main></body></html>`, 'utf8');
+  fs.writeFileSync(WEAK_FILE, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Weak Pages</title><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="${urlEngine.canonicalUrl('/audit/google/weak-pages')}"><link rel="stylesheet" href="/style.css"></head><body><main class="container"><h1>Weak Pages</h1><p>Recommendation report for low-authority and low-priority URLs.</p><table class="qa-table"><thead><tr><th>URL</th><th>Type</th><th>Inbound</th><th>Outbound</th><th>Recommendation</th></tr></thead><tbody>${weakRows}</tbody></table></main></body></html>`, 'utf8');
   console.log(`audit-authority: wrote audit/google/authority-flow.html and weak-pages.html (${rows.length} pages analyzed)`);
 }
 
