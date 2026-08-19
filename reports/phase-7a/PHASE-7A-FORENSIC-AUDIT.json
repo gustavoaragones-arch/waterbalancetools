@@ -1,0 +1,220 @@
+{
+  "site_summary": {
+    "total_html_files": 522,
+    "indexable_candidate_pages": 522,
+    "template_and_partial_files_excluded": 0,
+    "page_type_counts": {
+      "error": 1,
+      "trust": 1,
+      "academy-article": 56,
+      "academy-hub": 1,
+      "crawl-hub": 1,
+      "internal-dashboard": 20,
+      "calculator": 14,
+      "calculator-hub": 1,
+      "chart": 13,
+      "comparison": 7,
+      "comparison-hub": 1,
+      "editorial-policy": 6,
+      "entity": 105,
+      "formula-page": 9,
+      "formula-hub": 1,
+      "glossary-term": 101,
+      "guide": 40,
+      "guide-hub": 1,
+      "question-page": 7,
+      "homepage": 1,
+      "legal": 3,
+      "maintenance-guide": 3,
+      "maintenance-hub": 1,
+      "methodology": 8,
+      "printable": 4,
+      "programmatic-longtail": 36,
+      "programmatic-subhub": 7,
+      "programmatic-hub": 1,
+      "provenance": 1,
+      "qa-internal": 2,
+      "reference-page": 36,
+      "dataset-page": 16,
+      "reference-hub": 1,
+      "release-notes": 4,
+      "resource": 8,
+      "resource-hub": 1,
+      "revision-log": 1,
+      "utility": 2
+    },
+    "average_overall_quality_score": 1.9
+  },
+  "page_inventory_file": "url-inventory.csv / url-inventory.json",
+  "quality_scores_file": "content-quality.csv / content-quality.json",
+  "programmatic_findings": {
+    "families_analyzed": 39,
+    "high_or_critical_risk_families": [
+      {
+        "family": "programmatic/hot-tubs",
+        "page_count": 6,
+        "risk": "HIGH",
+        "avg_pairwise_similarity": 0.711,
+        "high_similarity_pairs": 10,
+        "repeated_paragraph_blocks": 25,
+        "repeated_headings": 18,
+        "repeated_faqs": 3,
+        "repeated_tables": 0
+      },
+      {
+        "family": "programmatic/shock",
+        "page_count": 7,
+        "risk": "HIGH",
+        "avg_pairwise_similarity": 0.689,
+        "high_similarity_pairs": 15,
+        "repeated_paragraph_blocks": 23,
+        "repeated_headings": 18,
+        "repeated_faqs": 3,
+        "repeated_tables": 0
+      },
+      {
+        "family": "programmatic/chlorine",
+        "page_count": 12,
+        "risk": "HIGH",
+        "avg_pairwise_similarity": 0.651,
+        "high_similarity_pairs": 55,
+        "repeated_paragraph_blocks": 26,
+        "repeated_headings": 18,
+        "repeated_faqs": 3,
+        "repeated_tables": 0
+      },
+      {
+        "family": "programmatic/ph",
+        "page_count": 5,
+        "risk": "HIGH",
+        "avg_pairwise_similarity": 0.579,
+        "high_similarity_pairs": 5,
+        "repeated_paragraph_blocks": 31,
+        "repeated_headings": 20,
+        "repeated_faqs": 5,
+        "repeated_tables": 1
+      }
+    ]
+  },
+  "chemical_claims": {
+    "total_claims_extracted": 3955,
+    "topic_range_variance": [
+      {
+        "topic": "general",
+        "distinct_ranges_found": 80,
+        "ranges": "1ppm | 3ppm | 85ppm | 100% | 65–80% | 70°f | 3–5ppm | 98–104°f | 80°f | 1–3ppm | 5ppm | 30–50ppm | 0.8ppm | 2.5ppm | 2ppm | 500ppm | 100–104°f | 80–100ppm | 150ppm | 70% | 10–12.5% | 0.6ppm | 0.5ppm | 100ppm | 90ppm | 3.5ppm | 1.5ppm | 8ppm | 4ppm | 400ppm | 10ppm | 80ppm | 90% | 90°f | 80–120ppm | 0–0ppm | 0ppm | 30–100ppm | 0.5–1ppm | 000ppm | 40ppm | 6ppm | 30-50ppm | 10% | 1-3ppm | 65% | 200–400ppm | 150–250ppm | 56% | 0.2ppm | 30ppm | 60–90% | 25% | 50% | 6.7ppm | 10–20% | 0.5–1.0ppm | 50–80% | 78–84°f | 32°f | 20ppm | 15–20% | 2–3ppm | 4–5ppm | 120ppm | 80–90ppm | 77°f | 104°f | 10–15% | 2.00ppm | 60–80ppm | 20–30% | 1mg/l | 1500ppm | 78–82°f | 77–79°f | 82–84°f | 50°f | 1000ppm | 73%"
+      },
+      {
+        "topic": "ph",
+        "distinct_ranges_found": 54,
+        "ranges": "80–100ppm | 10°f | 68°f | 22% | 80–120ppm | 3ppm | 3–5ppm | 2ppm | 10–12.5% | 0.5ppm | 10ppm | 0.8ppm | 100ppm | 250ppm | 480ppm | 90ppm | 2.5ppm | 30ppm | 55% | 28% | 120ppm | 60ppm | 50ppm | 10% | 1–3ppm | 100–104°f | 10–12% | 60–80ppm | 30–50ppm | 80°f | 100% | 31.5% | 150ppm | 20–30ppm | 67% | 31.45% | 93.2% | 200ppm | 20% | 31% | 80–90ppm | 10–20% | 5ppm | 1ppm | 60% | 0.2ppm | 0.05ppm | 500ppm | 77°f | 90% | 50% | 104°f | 85°f | 400ppm"
+      },
+      {
+        "topic": "free chlorine",
+        "distinct_ranges_found": 35,
+        "ranges": "1–3ppm | 3ppm | 5ppm | 67% | 1.0ppm | 0.5ppm | 0.9ppm | 2.0ppm | 1ppm | 22% | 10–30ppm | 1-3ppm | 3–5ppm | 3–6ppm | 65% | 0–0ppm | 30–50ppm | 30–100ppm | 0.5–1ppm | 400ppm | 78–84°f | 10% | 30ppm | 5–15ppm | 65–73% | 0ppm | 56% | 6.5ppm | 10ppm | 90% | 0.5–1.0ppm | 85–90°f | 60% | 80–120ppm | 75–90%"
+      },
+      {
+        "topic": "shock",
+        "distinct_ranges_found": 26,
+        "ranges": "0.5ppm | 65–73% | 10ppm | 30ppm | 10% | 5ppm | 10–30ppm | 1–3ppm | 65% | 56–62% | 20–30ppm | 5–15ppm | 0ppm | 0.2ppm | 6.5ppm | 10–12.5% | 60°f | 1ppm | 30–50ppm | 3–5ppm | 100ppm | 10–20ppm | 8–15ppm | 85°f | 50ppm | 10–15ppm"
+      },
+      {
+        "topic": "salt",
+        "distinct_ranges_found": 19,
+        "ranges": "400ppm | 60–80ppm | 300ppm | 750ppm | 99.8% | 000ppm | 200ppm | 800ppm | 12ppm | 1–3ppm | 500ppm | 30–50ppm | 100ppm | 30% | 10% | 73% | 31.45% | 100% | 3200ppm"
+      },
+      {
+        "topic": "total alkalinity",
+        "distinct_ranges_found": 13,
+        "ranges": "80–120ppm | 120ppm | 1–3ppm | 80-120ppm | 31.45% | 200–400ppm | 95% | 60ppm | 6.7ppm | 93.2% | 150ppm | 80–90ppm | 80–100ppm"
+      },
+      {
+        "topic": "calcium hardness",
+        "distinct_ranges_found": 11,
+        "ranges": "80–120ppm | 200–400ppm | 150ppm | 80–100ppm | 400ppm | 500ppm | 60–70% | 3–5ppm | 300ppm | 77% | 80ppm"
+      },
+      {
+        "topic": "cyanuric acid",
+        "distinct_ranges_found": 11,
+        "ranges": "80ppm | 3ppm | 90% | 1-3ppm | 30–50ppm | 30-50ppm | 10–30ppm | 1–3ppm | 20ppm | 25% | 30ppm"
+      },
+      {
+        "topic": "algae",
+        "distinct_ranges_found": 7,
+        "ranges": "1ppm | 10ppm | 0ppm | 20–30ppm | 0.5ppm | 30ppm | 80–100ppm"
+      },
+      {
+        "topic": "bromine",
+        "distinct_ranges_found": 5,
+        "ranges": "86°f | 3–5ppm | 54% | 3–6ppm | 1–3ppm"
+      }
+    ]
+  },
+  "source_findings": {
+    "pages_with_zero_external_sources": 413,
+    "total_major_factual_pages": 413
+  },
+  "trust_findings": {
+    "missing_sitewide_signals": [
+      "named_author_or_reviewer"
+    ]
+  },
+  "aeo_findings": {
+    "pages_likely_ai_answerable": 86,
+    "total": 522
+  },
+  "schema_findings": {
+    "VALID": 856,
+    "QUESTIONABLE": 49,
+    "MISSING": 63
+  },
+  "link_findings": {
+    "orphan_pages": 2,
+    "inbound_bucket_counts": {
+      "0": 2,
+      "1-2": 139,
+      "3-4": 58,
+      "5+": 323
+    },
+    "broken_internal_links": 0
+  },
+  "crawl_findings": {
+    "CANONICAL_POINTS_ELSEWHERE": 3,
+    "HAS_LEGACY_REDIRECT_SOURCE_COLLISION": 3
+  },
+  "adsense_findings": {
+    "ADSENSE_READY": 340,
+    "ADSENSE_REVIEW": 103,
+    "ADSENSE_RISK": 79
+  },
+  "ux_findings": {
+    "pages_with_flagged_issues": 26
+  },
+  "action_matrix_file": "action-matrix.csv / action-matrix.json",
+  "priority_matrix": {
+    "P0": 0,
+    "P1": 28,
+    "P2": 95,
+    "P3": 399
+  },
+  "internationalization_readiness": {
+    "spanish": "NOT STARTED -- no /es/ or lang=es content found in this crawl; 100% of pages are lang=\"en\".",
+    "french": "NOT STARTED -- no /fr/ or lang=fr content found in this crawl; 100% of pages are lang=\"en\".",
+    "blocking_issues_before_i18n": [
+      "0 pages carry unreplaced {{TEMPLATE}} tokens in production HTML/schema -- must be fixed in the English generators before they are copied into any translation pipeline.",
+      "413 of 413 factual pages cite zero external sources -- translating unverifiable claims multiplies the accuracy-review burden per locale.",
+      "4 programmatic page families show HIGH/CRITICAL near-duplicate content -- translating near-duplicates multiplies thin/duplicate-content risk per locale rather than fixing it once.",
+      "Two live calculator URLs exist for the same tool (pool-volume-calculator vs volume-calculator) -- this ambiguity would be inherited by every locale copy."
+    ]
+  },
+  "audit_metadata": {
+    "timestamp": "2026-08-19T02:26:15.988Z",
+    "git_commit": "6df374b4b10e832503791d8f5286218806828a2c",
+    "node_version": "v24.13.0",
+    "page_count": 522,
+    "non_page_template_count": 0,
+    "methodology_version": "7A.1.0",
+    "script_entry_point": "scripts/audit-forensic/run.js"
+  }
+}
