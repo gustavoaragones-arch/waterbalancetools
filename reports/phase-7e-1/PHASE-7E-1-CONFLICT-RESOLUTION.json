@@ -1,0 +1,85 @@
+{
+  "status": "PASS_WITH_REVIEW_QUEUE",
+  "conflict_inventory": {
+    "total": 499,
+    "path": "reports/phase-7e-1/conflicting-claims.csv",
+    "by_conflict_type": { "RANGE_MISMATCH": 133, "CLAIM_FAMILY_GAP": 82, "EXTRACTION_ARTIFACT": 169, "UNSUPPORTED_PRODUCTION_CLAIM": 79, "CONTEXT_MISMATCH": 31, "SOURCE_CONFLICT": 5 },
+    "by_resolution_status": { "UNREVIEWED": 133, "REQUIRES_EXPERT_REVIEW": 89, "NOT_A_CHEMISTRY_CLAIM": 241, "FALSE_CONFLICT": 31, "SOURCE_CONFLICT_REMAINS": 5 },
+    "genuine_confirmed_conflicts": 5,
+    "individually_hand_reviewed_total": 48
+  },
+  "shock_claim_family": {
+    "decision": "no general numeric shock-treatment FC range invented; no primary source confirms one",
+    "fix_applied": "added claim-shock-fecal-incident-response to chemistry-claims.js, referencing the previously-orphaned range-shock-cdc-fecal-incident-response (SUPPORTED, cdc-mahc-2023)",
+    "claim_families_now_distinguished": ["routine_fc_target", "breakpoint_ratio_rule", "fecal_incident_response", "general_residential_shock (unmodeled, no source)"],
+    "report": "reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md"
+  },
+  "tier1_review": {
+    "total_tier1_conflicts": 30,
+    "individually_reviewed": 30,
+    "remaining_unreviewed": 0,
+    "new_finding": "Hot Tub Chemical Levels Chart CYA row conflicts with CDC no-CYA-in-hot-tubs guidance; flagged SOURCE_CONFLICT_REMAINS, not auto-corrected"
+  },
+  "calculator_review": { "report": "reports/phase-7e-1/CALCULATOR-REVIEW-QUEUE.md", "formulas_modified": false },
+  "authority_chart_review": { "report": "reports/phase-7e-1/AUTHORITY-CHART-REVIEW.md", "charts_reviewed": 8 },
+  "table_extraction_limitation": {
+    "report": "reports/phase-7e-1/TABLE-EXTRACTION-LIMITATION.md",
+    "potentially_affected_records": 129,
+    "affected_pages": 55,
+    "confirmed_false_attributions": 2,
+    "quarantined_this_phase": 35,
+    "extractor_redesigned": false,
+    "safe_to_leave_temporarily": true
+  },
+  "review_queue_segmentation": {
+    "total": 4686,
+    "A_high_value": 267,
+    "B_source_search_candidates": 185,
+    "C_contextual_low_risk": 1661,
+    "D_programmatic": 631,
+    "E_example_calculation": 58,
+    "F_not_currently_worth_review": 1884,
+    "report": "reports/phase-7e-1/REVIEW-QUEUE-STRATEGY.md"
+  },
+  "provenance_coverage_updated": {
+    "direct": 575, "contextual": 0, "conflicting": 499, "expert_review_required": 101, "unreviewed": 4686,
+    "note": "topline counts unchanged from Phase 7E -- the underlying mechanical classifier was not altered; this phase triaged what the CONFLICTING population actually means"
+  },
+  "production_changes": {
+    "pages_changed": 0,
+    "knowledge_layer_changes": ["chemistry-claims.js: +1 claim (claim-shock-fecal-incident-response)"],
+    "discrepancies_found_not_auto_corrected": ["combined chlorine 0.5 vs 0.4 ppm (industry rule-of-thumb vs MAHC regulatory figure)", "hot-tub CYA guidance conflict"]
+  },
+  "validators": {
+    "validate_provenance_resolution": { "result": "PASS", "conflicts_checked": 499, "violations": 0 }
+  },
+  "regression": {
+    "full_build": "PASS", "phase_7b_validator": "PASS", "phase_7c_validator": "PASS",
+    "phase_7d_chemistry_validator": "PASS", "phase_7d_chemistry_tests": "PASS (25 assertions)",
+    "phase_7d2_golden_set_v2": "PASS (104/104)", "phase_7d2_status_integrity": "PASS",
+    "phase_7d2_regression_suite": "PASS (24 assertions)", "phase_7d3_dataset_validator": "PASS",
+    "phase_7e_provenance_validator": "PASS", "phase_7e1_provenance_resolution_validator": "PASS",
+    "broken_link_validator": "PASS", "url_engine_tests": "PASS (263 assertions)"
+  },
+  "scope_control": {
+    "spanish_french": false,
+    "url_canonical_redirect_sitemap_architecture_changed": false,
+    "calculator_formulas_changed": false,
+    "adsense_changed": false,
+    "broad_content_rewrite": false,
+    "programmatic_mass_citation_injection": false,
+    "page_count": 523
+  },
+  "final_decision": "PASS_WITH_REVIEW_QUEUE",
+  "go_no_go_phase_7f": "NO-GO pending user review (per phase brief: do not proceed automatically)",
+  "reports": [
+    "reports/phase-7e-1/PHASE-7E-1-CONFLICT-RESOLUTION.md",
+    "reports/phase-7e-1/PHASE-7E-1-CONFLICT-RESOLUTION.json",
+    "reports/phase-7e-1/conflicting-claims.csv",
+    "reports/phase-7e-1/REVIEW-QUEUE-STRATEGY.md",
+    "reports/phase-7e-1/CALCULATOR-REVIEW-QUEUE.md",
+    "reports/phase-7e-1/AUTHORITY-CHART-REVIEW.md",
+    "reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md",
+    "reports/phase-7e-1/TABLE-EXTRACTION-LIMITATION.md"
+  ]
+}

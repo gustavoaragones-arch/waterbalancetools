@@ -1,0 +1,18 @@
+{
+  "total": 499,
+  "by_conflict_type": {
+    "UNSUPPORTED_PRODUCTION_CLAIM": 79,
+    "CONTEXT_MISMATCH": 31,
+    "RANGE_MISMATCH": 133,
+    "EXTRACTION_ARTIFACT": 169,
+    "SOURCE_CONFLICT": 5,
+    "CLAIM_FAMILY_GAP": 82
+  },
+  "by_resolution_status": {
+    "NOT_A_CHEMISTRY_CLAIM": 241,
+    "FALSE_CONFLICT": 31,
+    "UNREVIEWED": 133,
+    "SOURCE_CONFLICT_REMAINS": 5,
+    "REQUIRES_EXPERT_REVIEW": 89
+  }
+}
