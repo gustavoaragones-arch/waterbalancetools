@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "rows_checked": 5861,
+  "violations_found": 0,
+  "violations": [],
+  "historical_files": {
+    "reports/phase-7a/chemical-claims.csv": "UNCHANGED_VS_HEAD",
+    "reports/phase-7d/chemistry-coverage.csv": "UNCHANGED_VS_HEAD",
+    "reports/phase-7d-1/post-fix-chemistry-claims.csv": "UNCHANGED_VS_HEAD",
+    "reports/phase-7d-2/post-fix-chemistry-claims-v2.csv": "UNCHANGED_VS_HEAD"
+  }
+}

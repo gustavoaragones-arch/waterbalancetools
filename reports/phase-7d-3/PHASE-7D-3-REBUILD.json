@@ -1,0 +1,103 @@
+{
+  "status": "PASS_WITH_REVIEW_QUEUE",
+  "dataset": {
+    "path": "reports/phase-7d-3/chemistry-evidence.csv",
+    "location_rationale": "reports/phase-7d-3/ used instead of top-level data/, which is reserved for generated site-content JSON consumed by the build pipeline -- documented in CLAIM-ID-METHODOLOGY.md",
+    "built_via": "extract-claims-v2.js + reconcile-claims-v2.js scientificReviewStatus (reused directly, no second extraction algorithm)",
+    "source_claims": 3933,
+    "unique_source_claim_text_pairs": 3896,
+    "numeric_occurrences": 5861,
+    "extraction_status_summary": { "NO_PARAMETER_IN_CLAUSE": 1047, "NO_NUMERIC_CONTENT": 2410, "CORRECT_EXTRACTION": 1326, "IMPOSSIBLE_MAPPING": 982, "CARRIED_CONTEXT": 96 },
+    "scientific_review_status_summary": { "NOT_EXTRACTED": 4439, "SUPPORTED": 603, "REQUIRES_REVIEW": 589, "AMBIGUOUS": 230 },
+    "scientifically_evaluated_claims": 1422,
+    "not_extracted_claims": 4439
+  },
+  "extractor_fixes_during_rebuild": [
+    "ISO-8601 timestamp (with T time component) not fully stripped, partially parsed as a numeric range -- fixed by extending ISO_DATE_RE",
+    "directional 'from X to Y' phrasing and 'X - Y = Z' subtraction produced minimum > maximum -- fixed by normalizing to minimum=min(a,b)/maximum=max(a,b) losslessly, without guessing directionality"
+  ],
+  "parameter_distribution": {
+    "ph": 711, "free_chlorine": 448, "combined_chlorine": 91, "total_chlorine": 26, "total_alkalinity": 198,
+    "calcium_hardness": 90, "cyanuric_acid": 124, "salt": 102, "bromine": 29, "water_temperature": 58,
+    "chlorine_demand": 9, "shock_treatment": 37, "sanitizer": 20, "oxidation": 6, "algae": 77,
+    "lsi": 89, "pool_volume": 289, "chemical_dosage": 0
+  },
+  "ph_remediation": {
+    "old_count": 1127, "new_count": 711, "difference": -416, "percent_change": -36.9,
+    "old_share_pct": 28.7, "new_share_pct": 12.1,
+    "clearest_redistribution_evidence": { "total_alkalinity": { "old": 102, "new": 198 }, "total_chlorine": { "old": 11, "new": 26 } },
+    "new_coverage_not_redistribution": { "lsi": 89, "pool_volume": 289 }
+  },
+  "old_vs_rebuilt": {
+    "comparison_unit": "3933 original source claims, old topic-tag vs rebuilt evidence presence",
+    "UNCHANGED": 1767, "CONFIRMED_CORRECTION": 54, "RECLASSIFIED": 103, "REJECTED_AS_EXTRACTION_NOISE": 2009, "REQUIRES_HUMAN_REVIEW": 589
+  },
+  "high_risk_claims": {
+    "definition": "evaluated claim with no overlapping canonical range for its parameter/environment",
+    "rebuilt_count": 589,
+    "previous_phase_7d_categories": 6,
+    "comparability_note": "Phase 7D's list is concept-level (6 hand-curated categories), not a 1:1 predecessor to this claim-level list; none of those categories depended on the buggy reconciliation layer"
+  },
+  "provenance": {
+    "source_registry_ids_assigned": 0,
+    "source_registry_ids_unassigned": 5861,
+    "note": "no explicit claim-to-source mapping fabricated; establishing it is future citation-implementation work"
+  },
+  "calculator_evidence": {
+    "sections_with_evidence": 9,
+    "report": "reports/phase-7d-3/CALCULATOR-EVIDENCE-INVENTORY.md",
+    "calculator_math_changed": false
+  },
+  "dataset_integrity": {
+    "validator": "scripts/validate-chemistry-evidence-dataset.js",
+    "result": "PASS",
+    "rows_checked": 5861,
+    "violations": 0,
+    "checks_performed": 16
+  },
+  "reproducibility": {
+    "rebuild_1_sha256": "54b350e1a22dacd126eb1cd5e2541a416826a4a4bb686d605fa31adc36f639ad",
+    "rebuild_2_sha256": "54b350e1a22dacd126eb1cd5e2541a416826a4a4bb686d605fa31adc36f639ad",
+    "byte_identical": true
+  },
+  "regression": {
+    "full_build": "PASS",
+    "phase_7b_validator": "PASS",
+    "phase_7c_validator": "PASS",
+    "phase_7d_chemistry_validator": "PASS",
+    "phase_7d_chemistry_tests": "PASS (25 assertions)",
+    "phase_7d2_golden_set_v2": "PASS (104/104)",
+    "phase_7d2_status_integrity": "PASS",
+    "phase_7d2_regression_suite": "PASS (24 assertions)",
+    "phase_7d3_dataset_validator": "PASS",
+    "broken_link_validator": "PASS",
+    "url_engine_tests": "PASS (263 assertions)"
+  },
+  "scope_control": {
+    "production_content_changed": false,
+    "urls_canonicals_redirects_sitemap_changed": false,
+    "calculator_formulas_changed": false,
+    "language_expansion": false,
+    "adsense_changed": false,
+    "page_count": 523,
+    "historical_inventories_preserved": true,
+    "pre_existing_phase_7c_diff_untouched": ["js/url/url-engine.js", "_redirects", "sitemap.xml"]
+  },
+  "final_decision": "PASS_WITH_REVIEW_QUEUE",
+  "go_no_go_phase_7e": "NO-GO pending user review (per phase brief: do not proceed automatically)",
+  "supersedes": ["reports/phase-7d/chemistry-coverage.csv", "reports/phase-7d-1/post-fix-chemistry-claims.csv", "reports/phase-7d-2/post-fix-chemistry-claims-v2.csv"],
+  "reports": [
+    "reports/phase-7d-3/PHASE-7D-3-REBUILD.md",
+    "reports/phase-7d-3/PHASE-7D-3-REBUILD.json",
+    "reports/phase-7d-3/chemistry-evidence.csv",
+    "reports/phase-7d-3/chemistry-evidence.json",
+    "reports/phase-7d-3/CLAIM-ID-METHODOLOGY.md",
+    "reports/phase-7d-3/REBUILD-SUMMARY.md",
+    "reports/phase-7d-3/REBUILD-SUMMARY.json",
+    "reports/phase-7d-3/OLD-VS-REBUILT-CHEMISTRY-DATA.md",
+    "reports/phase-7d-3/PH-ATTRIBUTION-REMEDIATION.md",
+    "reports/phase-7d-3/HIGH-RISK-CLAIMS-REBUILT.md",
+    "reports/phase-7d-3/CALCULATOR-EVIDENCE-INVENTORY.md",
+    "reports/phase-7d-3/dataset-validation-results.json"
+  ]
+}
