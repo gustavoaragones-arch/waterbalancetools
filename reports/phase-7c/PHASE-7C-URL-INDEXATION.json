@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "commit_baseline": "6df374b4b10e832503791d8f5286218806828a2c",
+  "url_architecture_decision": {
+    "calculator": {
+      "canonical": "/calculators/pool-volume-calculator",
+      "retired": "/calculators/volume-calculator",
+      "reason": "More feature-complete (3 shapes vs 2) and matches the pool-X-calculator naming convention every sibling calculator follows."
+    },
+    "charts": [
+      { "canonical": "/hot-tub-chemical-levels-chart", "retired": "/charts/hot-tub-chemical-levels-chart", "reason": "Root page is actively generator-maintained; charts/ version is orphaned static content." },
+      { "canonical": "/pool-chemical-levels-chart", "retired": "/charts/pool-chemical-levels-chart", "reason": "Higher inbound-link count; is the URL embedded in the sitewide footer partial." }
+    ]
+  },
+  "root_causes": [
+    "generate-sitemaps.js used a hand-maintained blocklist missing reports/, audit/, qa/, components/",
+    "No centralized production/indexation policy existed prior to this phase",
+    "inject-seo-metadata.js unconditionally overwrote every page's robots meta with index,follow on every build, silently reverting noindex flags",
+    "Duplicate calculator was registered as a first-class entry in 8+ generator/data files",
+    "Legacy chart pages were orphaned static files coexisting with actively-generated equivalents",
+    "url-engine.js's duplicate-segment collapse rule incorrectly collapsed the intentional /legal/legal URL"
+  ],
+  "redirects_created": [
+    { "source": "/calculators/volume-calculator", "destination": "/calculators/pool-volume-calculator", "code": 301 },
+    { "source": "/charts/hot-tub-chemical-levels-chart", "destination": "/hot-tub-chemical-levels-chart", "code": 301 },
+    { "source": "/charts/pool-chemical-levels-chart", "destination": "/pool-chemical-levels-chart", "code": 301 }
+  ],
+  "sitemap": {
+    "before_url_count": 522,
+    "after_url_count": 479,
+    "internal_tooling_removed": 22,
+    "noindex_datasets_removed": 16,
+    "retired_urls_removed": 3,
+    "phase7b_contamination_removed": 1,
+    "legal_legal_added": 1,
+    "policy": "generate-sitemaps.js now calls urlPolicy.isSitemapEligible() per candidate file instead of a hand-maintained blocklist"
+  },
+  "canonicals": {
+    "missing_canonical_before": 16,
+    "missing_canonical_after": 0,
+    "canonical_points_elsewhere_before": 3,
+    "canonical_points_elsewhere_after": 3,
+    "canonical_points_elsewhere_note": "Same count, but now the correct intentional defense-in-depth pattern (retired pages canonicalize to their replacement), not a defect",
+    "legal_legal_fix": "js/url/url-engine.js duplicate-segment collapse rule fixed with an explicit, idempotent allowlist exception"
+  },
+  "internal_links": {
+    "files_fixed": [
+      "scripts/inject-footer.js", "scripts/generate-authority-charts.js", "scripts/inject-winner-amplification.js",
+      "charts/index.html (static, no generator, edited directly)", "scripts/restructure-calculator-pages.js",
+      "scripts/inject-calculator-related-tools.js", "scripts/generate-hubs.js", "scripts/generate-all-pages.js",
+      "scripts/generate-navigation.js", "scripts/generate-search-index.js", "scripts/data/entities-measurements.js",
+      "scripts/data/trust-calculator-metadata.js", "scripts/data/trust-formulas.js", "scripts/populate-data.js"
+    ],
+    "broken_links_check": "check-broken-links.js: 0 issues, 523 pages",
+    "retired_url_link_violations": 0
+  },
+  "validator": {
+    "path": "scripts/validate-url-indexation.js",
+    "wired_into": "scripts/run-all-generators.js, after generate-sitemaps.js and before certification steps",
+    "checks": [
+      "missing canonical", "canonical to nonexistent page", "canonical to redirect source", "canonical to noindex page",
+      "internal tooling indexability", "internal tooling in sitemap", "sitemap URL noindex",
+      "sitemap URL missing canonical", "sitemap URL is a redirect", "sitemap URL canonical mismatch",
+      "duplicate/legacy URL still indexable", "internal link to retired URL"
+    ],
+    "final_result": { "status": "PASS", "files_scanned": 523, "sitemap_urls_checked": 479, "total_violations": 0 }
+  },
+  "regression_tests": {
+    "path": "scripts/test-url-policy.js",
+    "assertions": 22,
+    "manual_demonstration": "flipped retired calculator to index,follow -> validator failed with DUPLICATE_URL_STILL_INDEXABLE -> restored -> validator passed; also caught and fixed a dead-code bug in the validator itself",
+    "test_url_engine_additions": 3
+  },
+  "full_build": { "command": "npm run build", "final_exit_code": 0, "build_attempts_this_phase": 13, "stable_at_end": true },
+  "forensic_reaudit": {
+    "page_count": { "before": 522, "after": 522 },
+    "priority_matrix": { "before": { "P0": 2, "P1": 67, "P2": 79, "P3": 374 }, "after": { "P0": 0, "P1": 28, "P2": 96, "P3": 398 } },
+    "crawl_findings": {
+      "before": { "INTERNAL_TOOLING_PAGE_IS_INDEXABLE": 7, "CANONICAL_POINTS_ELSEWHERE": 3, "INDEXABLE_BUT_NOT_IN_SITEMAP": 5, "MISSING_CANONICAL": 16, "IN_SITEMAP_BUT_NOINDEX": 32 },
+      "after": { "CANONICAL_POINTS_ELSEWHERE": 3, "HAS_LEGACY_REDIRECT_SOURCE_COLLISION": 3 }
+    },
+    "link_findings_stable": true,
+    "schema_findings_stable": true
+  },
+  "live_certification": {
+    "method": "local static server honoring _redirects (deployment not authorized this phase)",
+    "urls_tested": 10,
+    "all_passed": true
+  },
+  "pre_existing_issues_discovered": [
+    {
+      "description": "generate-entity-pages.js is require()d twice in run-all-generators.js; Node module caching means only the first (premature) call's side effects apply",
+      "impact": "A data fix to entity calculatorIds takes one extra full build cycle to propagate into entities/*.html",
+      "remediated": false,
+      "reason": "Reordering safely requires auditing every step between the two require() calls; beyond this phase's mandate"
+    },
+    {
+      "description": "inject-footer.js (and possibly other injectors) have minor whitespace-only non-determinism across repeated builds",
+      "impact": "Cosmetic only -- confirmed via direct diff that no canonical/link/content changes accompany it",
+      "remediated": false,
+      "reason": "Pre-existing, unrelated to URL/indexation architecture"
+    }
+  ],
+  "deferred_findings": [
+    "Content provenance, programmatic duplication, external citations, trust/author signals, thin-content findings",
+    "49 QUESTIONABLE + 63 MISSING schema findings",
+    "generate-entity-pages.js double-require pipeline ordering",
+    "Injector-chain whitespace non-determinism",
+    "7 orphaned root-level chart pages with no maintaining generator (not duplicated, just unowned)"
+  ],
+  "no_unrelated_scope_mixed_in": true,
+  "reports": [
+    "reports/phase-7c/PHASE-7C-URL-INDEXATION.md",
+    "reports/phase-7c/PHASE-7C-URL-INDEXATION.json",
+    "reports/phase-7c/URL-INDEXATION-BASELINE.md",
+    "reports/phase-7c/URL-INDEXATION-BASELINE.json",
+    "reports/phase-7c/URL-POLICY.md",
+    "reports/phase-7c/URL-VALIDATION-RESULTS.json",
+    "reports/phase-7c/REDIRECT-CERTIFICATION.md"
+  ]
+}

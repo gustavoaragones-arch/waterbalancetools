@@ -1,6 +1,8 @@
 /**
  * Single source of truth for legacy URL → canonical redirects.
  */
+const urlPolicy = require('./url-policy');
+
 const LEGACY_CHLORINE_SLUGS = [
   'how-much-chlorine-for-5000-gallon-pool',
   'how-much-chlorine-for-10000-gallon-pool',
@@ -23,6 +25,13 @@ function buildExactRedirectMap() {
   for (const slug of EXPLANATION_SLUGS) {
     map.set('/programmatic/explanation/' + slug, '/programmatic/explanations/' + slug);
     map.set('/explanations/' + slug, '/programmatic/explanations/' + slug);
+  }
+  // Phase 7C URL consolidation: duplicate calculator + legacy chart pages.
+  // url-policy.js is the single source of truth for which relPaths are
+  // retired redirect sources; this just converts its keys to URL paths.
+  for (const [relPath, destination] of Object.entries(urlPolicy.REDIRECT_SOURCES)) {
+    const from = '/' + relPath.replace(/\.html$/, '').replace(/\/index$/, '');
+    map.set(from, destination);
   }
   return map;
 }

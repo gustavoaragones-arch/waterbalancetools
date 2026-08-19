@@ -217,6 +217,13 @@ for (const [input, expected] of duplicateSegmentCases) {
   expect(cleanPath(input), expected, `duplicate segment case: ${input}`);
 }
 
+// Phase 7C: legal/legal.html is a documented, intentional exception (see
+// scripts/url-utils.js) -- a real filename that matches its parent folder,
+// not an accidental repeat. It must survive repeated normalization.
+expect(cleanPath('legal/legal.html'), '/legal/legal', 'intentional duplicate segment: legal/legal.html');
+expect(cleanPath('/legal/legal'), '/legal/legal', 'intentional duplicate segment stays stable on an already-clean path');
+expect(cleanPath(canonicalUrl('legal/legal.html')), '/legal/legal', 'intentional duplicate segment survives re-normalizing its own canonical URL');
+
 const hrefCases = [
   ['../academy/index.html#faq', '/academy#faq'],
   ['./guides/ph-guide.html?tab=2', '/guides/ph-guide?tab=2'],

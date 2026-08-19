@@ -50,7 +50,11 @@ const WATER_CHEM_CALCS = [
   { file: 'pool-cyanuric-acid-calculator.html',  href: '/calculators/pool-cyanuric-acid-calculator',  label: 'CYA Calculator' },
   { file: 'pool-turnover-rate-calculator.html',  href: '/calculators/pool-turnover-rate-calculator',  label: 'Turnover Rate Calculator' },
   { file: 'spa-volume-calculator.html',          href: '/calculators/spa-volume-calculator',          label: 'Spa Volume Calculator' },
-  { file: 'volume-calculator.html',              href: '/calculators/volume-calculator',              label: 'Volume Calculator' },
+  // 'volume-calculator.html' retired in Phase 7C -- duplicate of
+  // pool-volume-calculator.html (same tool, fewer shapes supported). It is
+  // now a permanent 301 redirect source (see scripts/url-policy.js
+  // REDIRECT_SOURCES) and must not be listed, restructured, or cross-linked
+  // as if it were a second live calculator.
 ];
 const ALL_GROUPS = [
   { title: 'Pool Calculators',    calcs: POOL_CALCS },
@@ -89,7 +93,6 @@ const CALC_ICONS = {
   'pool-cyanuric-acid-calculator.html': SVG_SHIELD,
   'pool-turnover-rate-calculator.html': SVG_CLOCK,
   'spa-volume-calculator.html':        SVG_SPA,
-  'volume-calculator.html':            SVG_POOL,
 };
 
 // ── P7 — Printable resources (premium labels) ─────────────────────────────────

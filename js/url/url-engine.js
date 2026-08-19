@@ -48,6 +48,19 @@ function normalizePathPart(pathPart) {
   if (!base.startsWith('/')) base = '/' + base;
   base = base.replace(/\/{2,}/g, '/');
 
+  // Known intentional filename-matches-folder URLs: the generic "collapse
+  // duplicate adjacent segments" rule below exists for accidental repeats
+  // (e.g. /calculators/calculators/x -> /calculators/x), but a small,
+  // explicit set of real pages intentionally have a leaf filename equal to
+  // their parent folder (see scripts/url-utils.js). Checked against the
+  // already-normalized clean form too, so this stays stable under repeated
+  // normalization (canonicalUrl() re-normalizes its own buildUrl() output).
+  const INTENTIONAL_DUPLICATE_SEGMENT_PATHS = new Set(['/legal/legal']);
+  const baseNoExt = base.replace(/\.html$/i, '').replace(/\/$/, '').toLowerCase();
+  if (INTENTIONAL_DUPLICATE_SEGMENT_PATHS.has(baseNoExt)) {
+    return baseNoExt;
+  }
+
   const segments = base.split('/').filter(Boolean).map((seg) => {
     let cleaned = normalizeSegment(seg);
     cleaned = cleaned.replace(/\.html$/i, '');
@@ -59,7 +72,7 @@ function normalizePathPart(pathPart) {
     segments.pop();
   }
 
-  // Collapse duplicate adjacent segments: /a/a/b -> /a/b
+  // Collapse duplicate adjacent segments: /a/a/b -> /a/b.
   const deduped = [];
   for (const seg of segments) {
     if (deduped.length && deduped[deduped.length - 1] === seg) continue;
