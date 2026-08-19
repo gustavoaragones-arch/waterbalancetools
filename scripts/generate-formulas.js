@@ -29,7 +29,7 @@ function generateHub() {
     ? formulas.map(f =>
         `      <a href="${href(f.slug)}" class="knowledge-card">
         <div class="knowledge-card-title">${esc(f.title)}</div>
-        <p class="knowledge-card-desc">${esc(f.summary || f.description)}</p>
+        <p class="knowledge-card-desc">${esc(f.summary || f.metaDescription)}</p>
       </a>`).join('\n')
     : `      <div class="knowledge-callout">
         <span class="knowledge-callout-icon">&#128221;</span>
@@ -102,7 +102,7 @@ function generateFormula(formula) {
     SLUG:              formula.slug,
     PAGE_TITLE:        `${formula.title} | Formula Library | WaterBalanceTools`,
     H1_TITLE:          formula.title,
-    META_DESCRIPTION:  formula.description,
+    META_DESCRIPTION:  formula.metaDescription,
     LAST_REVIEWED:     formula.lastReviewed || '2026-01-01',
     BREADCRUMB:        bc.nav,
     BREADCRUMB_SCHEMA: bc.schema,

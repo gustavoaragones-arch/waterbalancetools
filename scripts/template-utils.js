@@ -43,12 +43,25 @@ function joinUrl(...parts) {
 /**
  * Replace every {{TOKEN}} in a template string with values from a map.
  * Tokens not present in the map are left unchanged (so generators can
- * do multi-pass substitution).
+ * do multi-pass substitution across inject-*.js stages).
+ *
+ * A token whose key IS present in the map but whose value is null/undefined
+ * is always a generator bug (a real value was intended), never a legitimate
+ * multi-pass placeholder -- so that case is a hard build error rather than
+ * a silently stringified "undefined"/"null" in production output.
  */
 function fill(template, tokens) {
-  return template.replace(/\{\{([A-Z_]+)\}\}/g, (match, key) =>
-    Object.prototype.hasOwnProperty.call(tokens, key) ? tokens[key] : match
-  );
+  return template.replace(/\{\{([A-Z0-9_]+)\}\}/g, (match, key) => {
+    if (!Object.prototype.hasOwnProperty.call(tokens, key)) return match;
+    const value = tokens[key];
+    if (value === undefined || value === null) {
+      throw new Error(
+        `fill(): template variable "${key}" was passed as ${value} instead of a real value or an explicit '' fallback. ` +
+        `Refusing to render it as the literal string "${value}" into production output.`
+      );
+    }
+    return value;
+  });
 }
 
 // ── Partial loader ────────────────────────────────────────────────────────────

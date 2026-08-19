@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "commit_audited": "6df374b4b10e832503791d8f5286218806828a2c",
+  "root_cause": {
+    "defect_a": {
+      "name": "{{H1_TITLE}} template-token leakage",
+      "location": "scripts/template-utils.js:49, fill()",
+      "cause": "Token-matching regex /\\{\\{([A-Z_]+)\\}\\}/g excludes digits, so {{H1_TITLE}} never matches and is never substituted, regardless of the caller supplying a correct value.",
+      "pages_affected_before": 157
+    },
+    "defect_b": {
+      "name": "Literal \"undefined\" string in formula JSON-LD",
+      "location": "scripts/generate-formulas.js:105 and :32",
+      "cause": "Referenced a nonexistent data field (formula.description) instead of the real field (formula.metaDescription); undefined was stringified into production output by the pre-fix fill() implementation, and a downstream normalization stage then backfilled a garbled scraped meta description.",
+      "pages_affected_before": 9
+    }
+  },
+  "affected_generators": [
+    "scripts/generate-glossary.js",
+    "scripts/generate-academy.js",
+    "scripts/generate-formulas.js"
+  ],
+  "affected_templates": [
+    "templates/glossary-template.html",
+    "templates/academy-template.html",
+    "templates/formula-template.html"
+  ],
+  "affected_schema_types": ["DefinedTerm", "Article", "HowTo"],
+  "implementation_changes": [
+    "scripts/template-utils.js: fill() regex fixed to [A-Z0-9_]+; added a hard throw when a token key is present but its value is null/undefined",
+    "scripts/generate-formulas.js: formula.description -> formula.metaDescription (two call sites)",
+    "scripts/validate-generated-output.js: new build-time validator scanning all production HTML for unresolved template artifacts",
+    "scripts/test-validate-generated-output.js: new regression suite, 19 assertions",
+    "scripts/run-all-generators.js: validator wired in after normalize-seo-metadata.js and before dataset/entity/trust validation, QA, broken-link check, search index, sitemap generation, and certification",
+    "npm run build: full pipeline re-run to regenerate all production HTML from corrected generators"
+  ],
+  "before_after": {
+    "unresolved_h1_title_tokens": { "before": 157, "after": 0 },
+    "literal_undefined_in_jsonld": { "before": 9, "after": 0 },
+    "schema_status_counts": {
+      "before": { "VALID": 699, "MISREPRESENTED": 157, "QUESTIONABLE": 49, "MISSING": 63 },
+      "after": { "VALID": 856, "MISREPRESENTED": 0, "QUESTIONABLE": 49, "MISSING": 63 }
+    },
+    "priority_matrix": {
+      "before": { "P0": 159, "P1": 67, "P2": 80, "P3": 216 },
+      "after": { "P0": 2, "P1": 67, "P2": 79, "P3": 374 }
+    },
+    "adsense_findings": {
+      "before": { "ADSENSE_READY": 192, "ADSENSE_REVIEW": 93, "ADSENSE_RISK": 237 },
+      "after": { "ADSENSE_READY": 342, "ADSENSE_REVIEW": 101, "ADSENSE_RISK": 79 }
+    },
+    "page_count": { "before": 522, "after": 522 },
+    "link_findings": {
+      "before": { "orphan_pages": 2, "inbound_bucket_counts": { "0": 2, "1-2": 137, "3-4": 57, "5+": 326 }, "broken_internal_links": 0 },
+      "after": { "orphan_pages": 2, "inbound_bucket_counts": { "0": 2, "1-2": 137, "3-4": 57, "5+": 326 }, "broken_internal_links": 0 }
+    },
+    "canonical_diff_lines": 0,
+    "redirects_diff_lines": 0,
+    "robots_txt_diff_lines": 0
+  },
+  "remaining_p0_findings": [
+    {
+      "url": "https://waterbalancetools.com/calculators/pool-volume-calculator",
+      "reason": "Pre-existing duplicate-calculator-URL cannibalization finding from Phase 7A; unrelated to template-token leakage; explicitly out of scope for Phase 7B (\"DO NOT consolidate URLs\")."
+    },
+    {
+      "url": "https://waterbalancetools.com/calculators/volume-calculator",
+      "reason": "Same pair as above."
+    }
+  ],
+  "validator": {
+    "path": "scripts/validate-generated-output.js",
+    "pre_fix_result": { "status": "FAIL", "files_scanned": 502, "files_with_violations": 157, "total_violations": 166, "exit_code": 1 },
+    "post_fix_result": { "status": "PASS", "files_scanned": 502, "files_with_violations": 0, "total_violations": 0, "exit_code": 0 },
+    "integrated_into_pipeline": true,
+    "pipeline_insertion_point": "scripts/run-all-generators.js, immediately after normalize-seo-metadata.js and before validate-datasets.js"
+  },
+  "regression_test": {
+    "path": "scripts/test-validate-generated-output.js",
+    "result": "PASS",
+    "assertions": 19,
+    "manual_fixture_demonstration": {
+      "with_fixture": { "exit_code": 1, "fixture_reported": true },
+      "after_removal": { "fixture_reported": false },
+      "fixture_left_in_repo": false
+    }
+  },
+  "full_build": { "command": "npm run build", "exit_code": 0, "pre_existing_validators_status": "all PASSED", "unrelated_test_url_engine_still_passing": true },
+  "forensic_reaudit": { "command": "npm run audit:forensic", "completed": true, "baseline_compared": true },
+  "unexpected_changes": [
+    {
+      "description": "reports/phase-7a/index.html (this audit's own dashboard) was newly included in sitemap-other.xml and sitemap.xml by the pre-existing sitemap generator, which has no exclusion list for reports/, audit/, or qa/ directories.",
+      "root_cause": "Pre-existing generate-sitemaps.js behavior (already flagged as Phase 7A finding INTERNAL_TOOLING_PAGE_IS_INDEXABLE), triggered by this audit's own output living in a swept directory.",
+      "remediated_in_phase_7b": false,
+      "reason_not_remediated": "Fixing it requires changing sitemap generation logic, which is explicitly out of scope for Phase 7B."
+    },
+    {
+      "description": "Cosmetic 1-2 line whitespace-only diffs (footer indentation) across ~230 pages outside the three affected families.",
+      "root_cause": "Pre-existing non-determinism in inject-footer.js, unrelated to the template-token fix, triggered simply by running the full build.",
+      "remediated_in_phase_7b": false,
+      "reason_not_remediated": "Cosmetic only, no content/link/schema impact; out of scope."
+    },
+    {
+      "description": "last-updated meta tags and data/indexing/freshness.json refreshed to the current regeneration date sitewide.",
+      "root_cause": "Pipeline's existing, intended freshness-stamping behavior.",
+      "remediated_in_phase_7b": false,
+      "reason_not_remediated": "Expected behavior of running npm run build, not introduced by this phase."
+    }
+  ],
+  "git_status_summary": {
+    "modified_files": 399,
+    "new_untracked_paths": 6,
+    "unrelated_modifications_found": false
+  },
+  "acceptance_gates": {
+    "1_zero_unresolved_tokens_in_production": "PASS",
+    "2_h1_title_occurrences_zero": "PASS",
+    "3_all_other_patterns_zero": "PASS",
+    "4_original_157_pages_regenerated_from_source": "PASS",
+    "5_no_manual_html_patching": "PASS",
+    "6_definedterm_names_valid": "PASS",
+    "7_no_schema_placeholder_remains": "PASS",
+    "8_validator_exists": "PASS",
+    "9_validator_integrated_into_pipeline": "PASS",
+    "10_validator_exits_nonzero_on_deliberate_defect": "PASS",
+    "11_full_build_zero_generator_integrity_errors": "PASS",
+    "12_forensic_audit_completes": "PASS",
+    "13_no_unrelated_architecture_changed": "PASS_WITH_DISCLOSED_EXCEPTION",
+    "14_page_count_not_unexpectedly_decreased": "PASS",
+    "15_no_unexpected_sitemap_changes": "PARTIAL_SEE_UNEXPECTED_CHANGES",
+    "16_no_unexpected_canonical_changes": "PASS",
+    "17_no_unexpected_redirect_changes": "PASS",
+    "18_no_unexpected_internal_link_changes": "PASS"
+  },
+  "reports": [
+    "reports/phase-7b/PHASE-7B-GENERATOR-INTEGRITY.md",
+    "reports/phase-7b/PHASE-7B-GENERATOR-INTEGRITY.json",
+    "reports/phase-7b/generator-defect-inventory.md",
+    "reports/phase-7b/generator-validation-results.json"
+  ]
+}

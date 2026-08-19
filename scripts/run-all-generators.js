@@ -147,6 +147,23 @@ require(path.join(__dirname, 'inject-trust-panels.js'));
 // 5B.6 remediation: normalize baseline metadata tags/headings across generated pages
 require(path.join(__dirname, 'normalize-seo-metadata.js'));
 
+// ── Phase 7E.6: chemistry source citations ───────────────────────────────────
+// Must run after restructure-calculator-pages.js, which rebuilds each
+// calculator's <main> content from a fixed whitelist of named sections and
+// silently discards anything else inside <main> on every run (same reason
+// inject-trust-panels.js, above, re-injects on every build instead of being
+// written once).
+require(path.join(__dirname, 'phase-7e', 'inject-calculator-sources.js')).run();
+
+// ── Phase 7B: Generator-integrity gate ────────────────────────────────────────
+// Runs after every generator/inject/normalize step that can produce or mutate
+// HTML, and before sitemap generation or any production-certification step.
+// A build with unresolved {{TOKEN}}-style artifacts in production output must
+// never reach the sitemap or certification stages -- see
+// reports/phase-7b/PHASE-7B-GENERATOR-INTEGRITY.md.
+console.log('Running validate-generated-output.js...');
+execSync('node scripts/validate-generated-output.js', { cwd: root, stdio: 'inherit' });
+
 // ── Step 13a: Validate canonical data layer ──────────────────────────────────
 console.log('Running validate-datasets.js...');
 execSync('node scripts/validate-datasets.js', { cwd: root, stdio: 'inherit' });
@@ -174,6 +191,25 @@ execSync('node scripts/generate-search-index.js', { cwd: root, stdio: 'inherit' 
 // ── Step 16: Grouped sitemaps ─────────────────────────────────────────────────
 console.log('Running generate-sitemaps.js...');
 execSync('node scripts/generate-sitemaps.js', { cwd: root, stdio: 'inherit' });
+
+// ── Phase 7C: URL & indexation-integrity gate ─────────────────────────────────
+// Runs after sitemaps are finalized (it validates sitemap content itself) and
+// before any production-certification step, so a build with a URL/indexation
+// contradiction (duplicate indexable URL, noindex-in-sitemap, internal
+// tooling exposed, canonical/sitemap mismatch, stale link to a retired URL)
+// never reaches certification. See reports/phase-7c/PHASE-7C-URL-INDEXATION.md.
+console.log('Running validate-url-indexation.js...');
+execSync('node scripts/validate-url-indexation.js', { cwd: root, stdio: 'inherit' });
+
+// ── Phase 7D: chemistry knowledge structural-integrity gate ──────────────────
+// Pure data-structure validation of scripts/data/chemistry-*.js (no network,
+// no dependency on generated HTML). Fails the build only on a genuinely
+// broken reference or malformed record (bad unit/context, dangling source
+// id, minimum > maximum, etc.) -- REQUIRES_REVIEW / AMBIGUOUS / UNSUPPORTED
+// content-review states never fail the build. See
+// reports/phase-7d/PHASE-7D-CHEMISTRY-KNOWLEDGE.md.
+console.log('Running validate-chemistry-knowledge.js...');
+execSync('node scripts/validate-chemistry-knowledge.js', { cwd: root, stdio: 'inherit' });
 
 // ── Phase 5B.7: Platform semantic versioning system / certification ──────────
 console.log('Running generate-compatibility.js...');
