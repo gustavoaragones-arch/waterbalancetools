@@ -1,0 +1,81 @@
+{
+  "status": "PASS_WITH_REVIEW_QUEUE",
+  "five_genuine_conflicts": {
+    "total": 5,
+    "individually_reviewed": 5,
+    "corrected": 1,
+    "supported_with_context": 4,
+    "unique_underlying_findings": 2,
+    "reports": ["HOT-TUB-CYA-DECISION.md", "CONFLICT-02-DECISION.md", "CONFLICT-03-DECISION.md", "CONFLICT-04-DECISION.md", "CONFLICT-05-DECISION.md"]
+  },
+  "tier1_review": {
+    "total": 267,
+    "reviewed": 267,
+    "confirmed_non_claims": 264,
+    "source_not_found_reviewed": 3,
+    "new_corrections_required": 0
+  },
+  "safety_claims": { "reviewed": true, "no_generalized_guarantees_introduced": true },
+  "calculator_claims": { "records_reviewed": 3, "calc_utils_modified": false },
+  "authority_charts": { "charts_with_new_correction": 1 },
+  "source_search_candidates": {
+    "total": 185,
+    "individually_researched": 1,
+    "added_to_registry": 0,
+    "research_lead_logged": "hot tub max temperature 104F (CDC/PHTA-consistent, not independently primary-source-verified this phase -- cdc.gov blocked automated fetch)"
+  },
+  "unclassified_claims": {
+    "total": 133,
+    "categorized": 133,
+    "breakdown": { "EXAMPLE_CALCULATION": 8, "NON_CHEMISTRY_ARTIFACT": 14, "CONTEXTUAL_DIFFERENCE": 2, "DEFERRED": 109 }
+  },
+  "table_extraction_quarantine": { "quarantined_records_used_in_decisions": 0, "extractor_redesigned": false },
+  "production_corrections": {
+    "pages_changed": 2,
+    "pages_reviewed_and_deliberately_unchanged": 3,
+    "report": "PRODUCTION-CORRECTIONS.md"
+  },
+  "editorial_decision_dataset": {
+    "path": "reports/phase-7f-1/EDITORIAL-DECISIONS.csv",
+    "total_decisions": 141,
+    "reproducibility_sha256": "19596be79cd66268f316209f506557b2438fba59ff7cb7e5c086dec83a191402",
+    "byte_identical_across_runs": true
+  },
+  "validators": {
+    "validate_editorial_decisions": { "result": "PASS", "decisions_checked": 141, "violations": 0 }
+  },
+  "regression": {
+    "full_build": "PASS", "phase_7b_validator": "PASS", "phase_7c_validator": "PASS",
+    "phase_7d_chemistry_validator": "PASS", "phase_7d2_golden_set_v2": "PASS (104/104)",
+    "phase_7d2_status_integrity": "PASS", "phase_7d2_regression_suite": "PASS (24 assertions)",
+    "phase_7d3_dataset_validator": "PASS", "phase_7e_provenance_validator": "PASS",
+    "phase_7e1_provenance_resolution_validator": "PASS", "phase_7f_trust_layer_validator": "PASS",
+    "existing_trust_validator": "PASS", "broken_link_validator": "PASS", "url_engine_tests": "PASS (263 assertions)"
+  },
+  "scope_control": {
+    "spanish_french": false, "phase_7g_work_started": false, "mass_programmatic_rewrite": false,
+    "mass_citation_injection": false, "adsense_changed": false,
+    "url_redirect_sitemap_architecture_changed": false, "calculator_formulas_changed": false,
+    "sitewide_design_overhaul": false, "page_count": 523,
+    "production_diff_audit": { "files_changed": 2, "unintended_changes": 0 }
+  },
+  "remaining_review_queue": {
+    "five_conflicts_unreviewed": 0, "tier1_unreviewed": 0,
+    "source_search_candidates_remaining": 184, "unclassified_deferred_remaining": 109
+  },
+  "final_decision": "PASS_WITH_REVIEW_QUEUE",
+  "go_no_go_phase_7g": "NO-GO pending user review (per phase brief: do not proceed automatically)",
+  "reports": [
+    "reports/phase-7f-1/PHASE-7F-1-EDITORIAL-RESOLUTION.md",
+    "reports/phase-7f-1/PHASE-7F-1-EDITORIAL-RESOLUTION.json",
+    "reports/phase-7f-1/EDITORIAL-DECISIONS.csv",
+    "reports/phase-7f-1/HOT-TUB-CYA-DECISION.md",
+    "reports/phase-7f-1/CONFLICT-02-DECISION.md",
+    "reports/phase-7f-1/CONFLICT-03-DECISION.md",
+    "reports/phase-7f-1/CONFLICT-04-DECISION.md",
+    "reports/phase-7f-1/CONFLICT-05-DECISION.md",
+    "reports/phase-7f-1/CALCULATOR-EDITORIAL-DECISIONS.md",
+    "reports/phase-7f-1/REVIEW-QUEUE-FINAL.md",
+    "reports/phase-7f-1/PRODUCTION-CORRECTIONS.md"
+  ]
+}

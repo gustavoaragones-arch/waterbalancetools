@@ -1,0 +1,9 @@
+{
+  "total": 133,
+  "summary": {
+    "DEFERRED": 109,
+    "EXAMPLE_CALCULATION": 8,
+    "NON_CHEMISTRY_ARTIFACT": 14,
+    "CONTEXTUAL_DIFFERENCE": 2
+  }
+}
