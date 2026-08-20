@@ -1,0 +1,87 @@
+{
+  "phase": "7J",
+  "title": "Entity Provenance Audit & Knowledge-Layer Certification",
+  "status": "PASS_WITH_REVIEW_QUEUE",
+  "entity_inventory": {
+    "entities_inventoried": 104,
+    "claims_extracted": 378,
+    "by_claim_type": {
+      "numeric_chemistry_claim": 89,
+      "qualitative_chemistry_claim": 150,
+      "operational_claim": 66,
+      "safety_claim": 38,
+      "material_property_claim": 28,
+      "taxonomy_definition_claim": 7
+    }
+  },
+  "extraction": {
+    "reused_validated_extractor": true,
+    "competing_algorithm_introduced": false,
+    "extractor_used": "scripts/phase-7d-1/extract-claims-v2.js:extractFromSentence"
+  },
+  "provenance": {
+    "automated_conflicts_flagged": 34,
+    "reclassified_ambiguous_extraction_artifact": 13,
+    "individually_reviewed": 21,
+    "genuine_numeric_contradictions_found": 0,
+    "final_status_distribution": {
+      "REQUIRES_REVIEW": 291, "AMBIGUOUS": 32, "DIRECTLY_SUPPORTED": 20,
+      "SUPPORTED": 10, "SUPPORTED_BY_CONTEXT": 8, "NO_EXISTING_SOURCE": 8,
+      "NON_CLAIM": 5, "CONTEXTUAL": 3, "NOT_APPLICABLE": 1
+    }
+  },
+  "high_risk_review": {
+    "safety_claims_reviewed": 38,
+    "external_research_performed": 1,
+    "research_sources_checked": 4,
+    "research_conclusive": false,
+    "claim": "trichlor + calcium hypochlorite mixing fire/explosion hazard",
+    "disposition": "REQUIRES_REVIEW"
+  },
+  "material_specific_claims": {
+    "entities_reviewed": ["fiberglass-pool", "vinyl-pool", "concrete-pool"],
+    "fiberglass_pool_disposition": "numeric claims DIRECTLY_SUPPORTED, material claims REQUIRES_REVIEW",
+    "vinyl_pool_disposition": "numeric claims DIRECTLY_SUPPORTED, material claims REQUIRES_REVIEW",
+    "chemistry_vs_materials_evidence_domains_kept_separate": true
+  },
+  "production_corrections": { "pages_modified": 0, "reason": "no claim found demonstrably incorrect, unsafe, or contradicted" },
+  "citations": { "new_citations_rendered": 0 },
+  "entity_schema": { "regression": false, "changed": false },
+  "aeo": { "new_answer_blocks": 0, "regression": false },
+  "duplication": { "entities_family_risk": "LOW", "avg_similarity": 0.201, "unchanged_from_phase_7i": true },
+  "validator": {
+    "name": "scripts/validate-entity-provenance.js",
+    "status": "PASS", "entities_checked": 104, "claims_checked": 378, "critical": 0, "warnings": 7
+  },
+  "regression": {
+    "7B": "PASS", "7C": "PASS", "7D": "PASS_WITH_PREEXISTING_WARNINGS", "7D2": "PASS", "7D3": "PASS",
+    "7E": "PASS", "7E1": "PASS", "7F_trust_layer": "PASS", "7F1": "PASS", "7G": "PASS",
+    "7H_schema_content_consistency": "PASS", "7H_phase_validator": "PASS", "7I_phase_validator": "PASS",
+    "broken_links": "PASS", "url_engine": "PASS", "existing_trust": "PASS",
+    "forensic_reaudit_matches_baseline": true, "any_regression": false
+  },
+  "reproducibility": {
+    "two_build_hash_identical_entities_glossary": false,
+    "non_whitespace_diff_lines": 0,
+    "cause": "inherited non-idempotent footer-injection artifact, same class disclosed in Phase 7H/7I",
+    "newly_introduced": false,
+    "affects_entity_content_or_provenance": false
+  },
+  "scope_control": {
+    "spanish_french_paths_exist": false, "adsense_touched": false, "calculator_formula_files_touched": false,
+    "url_redirect_sitemap_architecture_touched": false, "phase_7g_generators_touched": false,
+    "sitemap_urls": 479, "fake_authority_or_sources": false, "mass_entity_rewrite": false
+  },
+  "remaining_review_queue": [
+    "61 of 104 entities classified RESEARCH REQUIRED (unresolved HIGH-priority claims, none known-incorrect)",
+    "trichlor/calcium-hypochlorite mixing-hazard claim verification incomplete (4 sources checked)",
+    "routine/algae-recovery shock-dosing figures: chemistry-ranges.js coverage gap identified",
+    "material-science claims for fiberglass/vinyl/concrete not independently source-verified",
+    "1 extraction-attribution limitation discovered (proximity heuristic, ec-stabilizer-0338)",
+    "13 entities with cosmetic alias/synonym self-duplication, not changed",
+    "inherited infrastructure nondeterminism, unchanged",
+    "77 remaining sitewide TITLE_TOO_LONG findings out of scope"
+  ],
+  "phase_7k_decision": "GO",
+  "do_not_begin_phase_7k_automatically": true
+}

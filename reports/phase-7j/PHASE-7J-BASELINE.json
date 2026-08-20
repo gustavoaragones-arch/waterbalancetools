@@ -1,0 +1,24 @@
+{
+  "phase": "7J",
+  "baseline_captured_fresh": true,
+  "matches_phase_7i_closing_state": true,
+  "before": {
+    "total_pages": 522,
+    "entity_pages": 105,
+    "entities_with_longdescription": 104,
+    "entities_without_longdescription": 0,
+    "entities_with_source_organizations": 69,
+    "entities_with_aliases": 104,
+    "entities_with_synonyms": 90,
+    "schema_valid": 950,
+    "schema_questionable": 3,
+    "schema_missing": 39,
+    "accessibility_flagged_pages": 0,
+    "entities_family_duplication_risk": "LOW",
+    "entities_family_avg_similarity": 0.201,
+    "chemistry_evidence_records": 5861,
+    "provenance_mapping_records": 5861,
+    "conflict_inventory_records": 499,
+    "improve_flags": 119
+  }
+}

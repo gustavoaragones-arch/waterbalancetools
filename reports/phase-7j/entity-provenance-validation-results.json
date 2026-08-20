@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "entities_checked": 104,
+  "claims_checked": 378,
+  "critical_count": 0,
+  "warning_count": 7,
+  "critical": [],
+  "warnings": [
+    {
+      "rule": "NUMERIC_CLAIM_MISSING_UNIT",
+      "detail": "ec-salt-chlorinator-0130"
+    },
+    {
+      "rule": "NUMERIC_CLAIM_MISSING_UNIT",
+      "detail": "ec-shock-treatment-0141"
+    },
+    {
+      "rule": "NUMERIC_CLAIM_MISSING_UNIT",
+      "detail": "ec-breakpoint-chlorination-0147"
+    },
+    {
+      "rule": "NUMERIC_CLAIM_MISSING_UNIT",
+      "detail": "ec-soda-ash-0324"
+    },
+    {
+      "rule": "NUMERIC_CLAIM_MISSING_UNIT",
+      "detail": "ec-calcium-chloride-0335"
+    },
+    {
+      "rule": "NUMERIC_CLAIM_MISSING_UNIT",
+      "detail": "ec-unit-liters-0363"
+    },
+    {
+      "rule": "NUMERIC_CLAIM_MISSING_UNIT",
+      "detail": "ec-unit-liters-0365"
+    }
+  ]
+}
