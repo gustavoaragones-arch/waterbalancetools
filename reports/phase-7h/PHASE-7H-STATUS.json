@@ -1,0 +1,121 @@
+{
+  "phase": "7H",
+  "title": "Schema Completeness, Thin Content & Accessibility Remediation",
+  "status": "PASS_WITH_REVIEW_QUEUE",
+  "schema_baseline": {
+    "re_run_fresh": true,
+    "identical_to_original_7a": true,
+    "valid": 856,
+    "questionable": 49,
+    "missing": 63
+  },
+  "schema_resolution": {
+    "questionable_before": 49,
+    "questionable_after": 3,
+    "questionable_breakdown": {
+      "CORRECT_detector_bug_fixed": 27,
+      "FIXED_content_made_visible": 5,
+      "CORRECTED_generator_bug_fixed": 8,
+      "RECLASSIFY_VALID_policy": 8,
+      "NOT_APPROPRIATE_nonproduction": 2,
+      "remaining_dispositioned": 3
+    },
+    "missing_before": 63,
+    "missing_after_unaddressed": 0,
+    "missing_breakdown": {
+      "SCHEMA_NOT_APPROPRIATE_internal_tooling": 23,
+      "SCHEMA_NOT_APPROPRIATE_noindex_reference": 16,
+      "SCHEMA_REQUIRED_implemented": 24
+    },
+    "webapplication_added_to_calculators": 11,
+    "howto_removed_from_calculators": 12
+  },
+  "schema_content_consistency_validator": {
+    "name": "scripts/validate-schema-content-consistency.js",
+    "status": "PASS",
+    "pages_checked": 480,
+    "critical": 0,
+    "warnings": 0
+  },
+  "thin_content": {
+    "improve_flagged_total": 175,
+    "p1_merge_tier_total": 28,
+    "p1_deferred_to_phase_7g_keep_decision": 26,
+    "p1_genuine_findings_classified_investigate": 2,
+    "keep_by_policy_confirmed": 1,
+    "filler_introduced": false
+  },
+  "accessibility": {
+    "baseline_flagged_pages": 26,
+    "baseline_total_pages": 523,
+    "finding_type": "HEADING_LEVEL_SKIP",
+    "priority": "P1_HIGH",
+    "final_flagged_pages": 0,
+    "p0_count": 0,
+    "p1_count": 0,
+    "missing_alt": 0,
+    "missing_viewport": 0,
+    "unlabeled_calculator_inputs": 0,
+    "missing_table_headers": 0
+  },
+  "aeo": {
+    "schema_only_answers_found": 0,
+    "new_answer_blocks_manufactured": 0
+  },
+  "validators": {
+    "validate_schema_content_consistency": "PASS",
+    "validate_phase_7h": "PASS"
+  },
+  "regression": {
+    "7B_validate_generated_output": "PASS",
+    "7C_validate_url_indexation": "PASS",
+    "7D2_golden_set_v2": "PASS_104_104",
+    "7D3_evidence_dataset": "PASS",
+    "7E_provenance": "PASS",
+    "7E1_provenance_resolution": "PASS",
+    "7F1_editorial_decisions": "PASS",
+    "7G_programmatic_quality": "PASS",
+    "7H_schema_content_consistency": "PASS",
+    "7H_phase_validator": "PASS",
+    "broken_links": "PASS_0_ISSUES",
+    "url_engine": "PASS_263_ASSERTIONS",
+    "any_regression": false
+  },
+  "reproducibility": {
+    "two_build_hash_identical": false,
+    "nondeterminism_found": true,
+    "nondeterminism_sources": [
+      {
+        "source": "qa_score_fluctuation",
+        "cause": "new Date().toISOString() timestamp calls in qa-engine.js / generate-qa-report.js feeding a freshness-sensitive score",
+        "preexisting": true,
+        "introduced_this_phase": false
+      },
+      {
+        "source": "breadcrumb_escaping_oscillation_academy_hot_tubs",
+        "cause": "not fully isolated within this phase's effort budget; current on-disk state confirmed correct and validator-passing",
+        "preexisting": true,
+        "introduced_this_phase": false,
+        "disposition": "logged for future generator-pipeline hardening, not hidden"
+      }
+    ],
+    "affects_schema_or_accessibility_deliverables": false
+  },
+  "scope_control": {
+    "spanish_french_paths_exist": false,
+    "adsense_touched": false,
+    "calculator_formula_files_touched": false,
+    "url_redirect_sitemap_architecture_touched": false,
+    "phase_7g_generators_touched": false,
+    "fake_authority_or_person_schema_added": false
+  },
+  "remaining_review_queue": [
+    "entities/fiberglass-pool.html and entities/vinyl-pool.html: genuine near-duplicate thin content, needs sourced facts",
+    "~62 additional entity/glossary pages likely sharing the same thin-definition pattern, not individually audited",
+    "~19 calculator/reference pages flagged TITLE_TOO_LONG, an SEO-metadata concern for a future pass",
+    "build-to-build QA-score and breadcrumb-escaping nondeterminism, for a future pipeline-hardening pass",
+    "releases/index.html breadcrumb short-label edge case, accepted rather than force-matched"
+  ],
+  "phase_7i_decision": "GO",
+  "do_not_begin_phase_7i_automatically": true
+}

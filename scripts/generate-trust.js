@@ -18,6 +18,7 @@
 
 const fs   = require('fs');
 const path = require('path');
+const S    = require('../lib/schemaEngine.js');
 
 const ROOT   = path.join(__dirname, '..');
 const D      = path.join(__dirname, 'data');
@@ -58,6 +59,20 @@ function confidenceBadge(levelId) {
 function sitePage(opts) {
   const { title, metaDesc, canonical, breadcrumbs, body, section } = opts;
   const bcHtml = breadcrumbs.map(b => b.url ? `<a href="${esc(b.url)}">${esc(b.label)}</a>` : esc(b.label)).join(' › ');
+  // Phase 7H: these pages (editorial/, methodology/, provenance/, revisions/)
+  // are indexable but rendered zero JSON-LD -- SCHEMA_REQUIRED per the
+  // Phase 7H schema policy for informational reference pages: a plain
+  // WebPage + BreadcrumbList, matching what they actually are (no Article,
+  // no FAQPage/HowTo -- these pages don't contain a genuine visible FAQ or
+  // procedure).
+  const pageUrl = 'https://waterbalancetools.com' + (canonical || '/');
+  const schemaCrumbs = [{ name: 'Home', url: '/' }].concat(
+    breadcrumbs.map(b => ({ name: b.label, url: b.url || canonical }))
+  );
+  const schemaHead = S.renderAllSchemas({
+    webPage: { name: title, description: metaDesc || '', url: pageUrl },
+    breadcrumb: schemaCrumbs
+  });
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,11 +82,12 @@ function sitePage(opts) {
   <meta name="description" content="${esc(metaDesc || '')}">
   ${canonical ? `<link rel="canonical" href="https://waterbalancetools.com${esc(canonical)}">` : ''}
   <link rel="stylesheet" href="/css/style.css">
+  ${schemaHead}
   <style>
     .trust-page h1{margin-bottom:.5rem}.trust-page .page-meta{color:#666;font-size:.875rem;margin-bottom:2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
     .trust-page section{margin-bottom:2rem}.trust-page section h2{border-bottom:2px solid #e0e0e0;padding-bottom:.5rem;margin-bottom:1rem}
     .policy-section{background:#fff;border:1px solid #e8e8e8;border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.25rem}
-    .policy-section h3{margin:0 0 .5rem;font-size:1rem;color:#0073aa}
+    .policy-section h2{margin:0 0 .5rem;font-size:1rem;color:#0073aa;border-bottom:none;padding-bottom:0}
     .trust-nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.5rem 0}
     .trust-nav a{display:block;padding:1rem 1.25rem;background:#f8f9fa;border:1px solid #e0e0e0;border-radius:6px;text-decoration:none;color:#0073aa;font-weight:500}
     .trust-nav a:hover{background:#e8f0fe;border-color:#0073aa}
@@ -93,9 +109,12 @@ function sitePage(opts) {
 // ── Render content sections ───────────────────────────────────────────────────
 
 function renderSections(sections) {
+  // h2, not h3: these sections render directly under the page <h1> with no
+  // intervening h2 on editorial/methodology pages -- h3 here skipped a
+  // level (Phase 7H accessibility fix, WCAG 1.3.1/2.4.6 heading hierarchy).
   return sections.map(s => `
 <div class="policy-section">
-  <h3>${esc(s.heading)}</h3>
+  <h2>${esc(s.heading)}</h2>
   <p>${esc(s.body)}</p>
   ${s.diagram ? `<div class="diagram-box">${esc(s.diagram)}</div>` : ''}
 </div>`).join('\n');

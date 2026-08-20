@@ -99,8 +99,15 @@ function parsePage(relPath, html) {
     images,
     text,
     wordCount: wordCount(text),
-    hasFaqItem: /class="faq-item"/.test(html),
-    faqCount: (html.match(/class="faq-item"/g) || []).length,
+    // Two legitimate visible-FAQ markup patterns coexist sitewide:
+    // .faq-item (programmatic long-tail generator) and .paa-item (the
+    // People Also Ask accordion used by charts/reference/guides pages,
+    // <details class="paa-item">). Both are real, rendered <details>
+    // content, not hidden schema -- recognize both (Phase 7H schema-audit
+    // fix; previously only .faq-item was recognized, producing false
+    // QUESTIONABLE FAQPage findings for every .paa-item page).
+    hasFaqItem: /class="(faq-item|paa-item)"/.test(html),
+    faqCount: (html.match(/class="(faq-item|paa-item)"/g) || []).length,
     hasQuickAnswer: /class="quick-answers?"/.test(html),
     hasKeyTakeaways: /class="(knowledge-takeaways|key-takeaways)"/.test(html),
     hasSourcesPanel: /class="(knowledge-sources|sources-panel|source-list)"/.test(html),

@@ -4,6 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const urlEngine = require('../js/url/url-engine');
+const S = require('../lib/schemaEngine.js');
 
 const ROOT = path.join(__dirname, '..');
 const PLATFORM_DIR = path.join(ROOT, 'data', 'platform');
@@ -44,6 +45,14 @@ function shell(title, description, body) {
   <meta name="twitter:title" content="${esc(title)} | WaterBalanceTools">
   <meta name="twitter:description" content="${esc(description)}">
   <link rel="stylesheet" href="/style.css">
+  ${S.renderAllSchemas({
+    webPage: { name: 'Platform Compatibility Matrix', description: description, url: urlEngine.canonicalUrl('/releases/compatibility') },
+    breadcrumb: [
+      { name: 'Home', url: '/' },
+      { name: 'Releases', url: urlEngine.canonicalUrl('/releases') },
+      { name: title, url: urlEngine.canonicalUrl('/releases/compatibility') },
+    ],
+  })}
 </head>
 <body class="knowledge-page release-page">
   <header class="site-header" data-canonical-nav="v2"><!-- nav --></header>

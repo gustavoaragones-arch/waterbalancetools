@@ -7,11 +7,12 @@
   <meta name="description" content="How WaterBalanceTools selects the formulas and equations used in its pool chemistry calculators.">
   <link rel="canonical" href="https://waterbalancetools.com/methodology/formula-selection/">
   <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterbalancetools.com/"},{"@type":"ListItem","position":2,"name":"Methodology","item":"https://waterbalancetools.com/methodology/"},{"@type":"ListItem","position":3,"name":"Formula Selection","item":"https://waterbalancetools.com/methodology/formula-selection/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Formula Selection","url":"https://waterbalancetools.com/methodology/formula-selection/","description":"How WaterBalanceTools selects the formulas and equations used in its pool chemistry calculators."}</script>
   <style>
     .trust-page h1{margin-bottom:.5rem}.trust-page .page-meta{color:#666;font-size:.875rem;margin-bottom:2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
     .trust-page section{margin-bottom:2rem}.trust-page section h2{border-bottom:2px solid #e0e0e0;padding-bottom:.5rem;margin-bottom:1rem}
     .policy-section{background:#fff;border:1px solid #e8e8e8;border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.25rem}
-    .policy-section h3{margin:0 0 .5rem;font-size:1rem;color:#0073aa}
+    .policy-section h2{margin:0 0 .5rem;font-size:1rem;color:#0073aa;border-bottom:none;padding-bottom:0}
     .trust-nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.5rem 0}
     .trust-nav a{display:block;padding:1rem 1.25rem;background:#f8f9fa;border:1px solid #e0e0e0;border-radius:6px;text-decoration:none;color:#0073aa;font-weight:500}
     .trust-nav a:hover{background:#e8f0fe;border-color:#0073aa}
@@ -39,37 +40,37 @@
 </div>
 
 <div class="policy-section">
-  <h3>Purpose</h3>
+  <h2>Purpose</h2>
   <p>This page explains how WaterBalanceTools selects the mathematical formulas used in its calculators and why industry-standard equations are preferred.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Preference for Industry-Standard Equations</h3>
+  <h2>Preference for Industry-Standard Equations</h2>
   <p>WaterBalanceTools uses the same equations used by professional pool operators and certified pool technicians. These include the Langelier Saturation Index formula as defined by PHTA/ANSI standards, chlorine dosage calculations consistent with Taylor Technologies training materials, and volume formulas consistent with geometric standards.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Why Standard Equations Are Preferred</h3>
+  <h2>Why Standard Equations Are Preferred</h2>
   <p>Standard equations produce results consistent with professional testing, allow users to verify results against commercial test kits and operator guidance, and have a documented history of real-world application. Novel or experimental equations are not used unless they have been formally adopted by a recognized standards body.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>How Units Are Normalized</h3>
+  <h2>How Units Are Normalized</h2>
   <p>All calculations are performed in US customary units (gallons, °F, oz, fl oz) by default, with metric equivalents provided where specified. Unit conversions use the canonical factors in data/datasets/conversion-factors.json. All conversion factors have a single source of truth and are never duplicated in calculator logic.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Formula Versioning</h3>
+  <h2>Formula Versioning</h2>
   <p>Every formula used on the platform is assigned a version number and tracked in data/trust/formulas.json. When an authoritative source updates an equation, a new formula version is created. Calculators reference formula versions in their trust panels, enabling users to identify which version produced a given result.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Formula Review</h3>
+  <h2>Formula Review</h2>
   <p>Formulas are reviewed when: (1) a new edition of a reference standard is published, (2) new scientific literature provides evidence that a more accurate equation is available, or (3) the annual review date is reached. Changes are logged in the revision history.</p>
   
 </div>

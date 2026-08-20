@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "pages_scanned": 536,
+  "schema_pages_checked": 478,
+  "a11y_pages_checked": 509,
+  "faq_schema_pages_total": 0,
+  "known_dispositioned_findings": 3,
+  "violations_found": 0,
+  "violations": [],
+  "warnings": []
+}

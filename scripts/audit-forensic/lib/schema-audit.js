@@ -34,7 +34,12 @@ function auditPageSchema(page) {
       if (status === 'VALID') status = 'DUPLICATE';
     }
 
-    if (type === 'DefinedTerm' || type === 'Article' || type === 'WebPage') {
+    // Article/WebPage: name is conventionally the page's own headline/title,
+    // so it should match H1. DefinedTerm is different by schema.org design --
+    // its "name" is the canonical term being defined (e.g. "Chlorine"), while
+    // the H1 is a full page title ("Chlorine in Pools Explained"); requiring
+    // those to be equal was a false-positive generator (Phase 7H fix).
+    if (type === 'Article' || type === 'WebPage') {
       const name = obj.name || '';
       const h1 = page.h1s[0] || '';
       if (h1 && name && normalize(name) !== normalize(h1) && !/\{\{/.test(name)) {
@@ -50,7 +55,7 @@ function auditPageSchema(page) {
     if (type === 'FAQPage') {
       const qCount = Array.isArray(obj.mainEntity) ? obj.mainEntity.length : 0;
       if (qCount > 0 && page.faqCount === 0) {
-        details.push(`FAQPage schema declares ${qCount} question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.`);
+        details.push(`FAQPage schema declares ${qCount} question(s) but no visible .faq-item/.paa-item elements found -- possible visible/schema mismatch.`);
         status = 'QUESTIONABLE';
       }
     }
@@ -59,9 +64,19 @@ function auditPageSchema(page) {
       const items = Array.isArray(obj.itemListElement) ? obj.itemListElement : [];
       const last = items[items.length - 1];
       const h1 = page.h1s[0] || '';
-      if (last && last.name && h1 && normalize(last.name) !== normalize(h1)) {
-        details.push(`Breadcrumb last item "${last.name}" does not match H1 "${h1}".`);
-        if (status === 'VALID') status = 'QUESTIONABLE';
+      // Breadcrumb nav labels are legitimately shorter than the full H1
+      // (standard practice: "Academy" crumb, "Pool & Hot Tub Chemistry
+      // Academy" H1). Only flag when neither string contains the other as a
+      // normalized substring -- that catches a genuinely wrong/unrelated
+      // label while allowing the common short-label pattern (Phase 7H fix).
+      if (last && last.name && h1) {
+        const nLast = normalize(last.name);
+        const nH1 = normalize(h1);
+        const related = nLast === nH1 || nH1.includes(nLast) || nLast.includes(nH1);
+        if (!related) {
+          details.push(`Breadcrumb last item "${last.name}" does not match H1 "${h1}".`);
+          if (status === 'VALID') status = 'QUESTIONABLE';
+        }
       }
     }
 

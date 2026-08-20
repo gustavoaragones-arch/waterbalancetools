@@ -7,11 +7,12 @@
   <meta name="description" content="How WaterBalanceTools handles corrections and updates to pool chemistry content.">
   <link rel="canonical" href="https://waterbalancetools.com/editorial/correction-policy/">
   <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterbalancetools.com/"},{"@type":"ListItem","position":2,"name":"Editorial","item":"https://waterbalancetools.com/editorial/"},{"@type":"ListItem","position":3,"name":"Correction Policy","item":"https://waterbalancetools.com/editorial/correction-policy/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Correction Policy","url":"https://waterbalancetools.com/editorial/correction-policy/","description":"How WaterBalanceTools handles corrections and updates to pool chemistry content."}</script>
   <style>
     .trust-page h1{margin-bottom:.5rem}.trust-page .page-meta{color:#666;font-size:.875rem;margin-bottom:2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
     .trust-page section{margin-bottom:2rem}.trust-page section h2{border-bottom:2px solid #e0e0e0;padding-bottom:.5rem;margin-bottom:1rem}
     .policy-section{background:#fff;border:1px solid #e8e8e8;border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.25rem}
-    .policy-section h3{margin:0 0 .5rem;font-size:1rem;color:#0073aa}
+    .policy-section h2{margin:0 0 .5rem;font-size:1rem;color:#0073aa;border-bottom:none;padding-bottom:0}
     .trust-nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.5rem 0}
     .trust-nav a{display:block;padding:1rem 1.25rem;background:#f8f9fa;border:1px solid #e0e0e0;border-radius:6px;text-decoration:none;color:#0073aa;font-weight:500}
     .trust-nav a:hover{background:#e8f0fe;border-color:#0073aa}
@@ -38,49 +39,49 @@
 </div>
 
 <div class="policy-section">
-  <h3>Purpose</h3>
+  <h2>Purpose</h2>
   <p>This policy describes how WaterBalanceTools identifies, evaluates, and processes corrections to its calculators, datasets, and knowledge content.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Scope</h3>
+  <h2>Scope</h2>
   <p>This policy applies to corrections to factual values, calculation logic, dataset records, and textual content on WaterBalanceTools. It does not apply to matters of style, layout, or navigational structure.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>How Errors Are Identified</h3>
+  <h2>How Errors Are Identified</h2>
   <p>Errors may be identified through: (1) automated build-time validation (the most common source), (2) user-submitted corrections, (3) periodic review by the editorial team, or (4) changes to external authoritative sources that invalidate existing values.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Evaluation Criteria</h3>
+  <h2>Evaluation Criteria</h2>
   <p>A correction is accepted when the proposed value is supported by a higher-authority source than the current value, or when the current value is demonstrably incorrect relative to the existing source. Editorial judgment is used when sources conflict.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Correction Process</h3>
+  <h2>Correction Process</h2>
   <p>Accepted corrections are applied to the canonical data source (the appropriate dataset in data/datasets/ or the content source in data/academy.json, data/formulas.json, etc.). The change is then propagated to all affected pages by re-running the build pipeline. A revision entry is added to data/trust/revisions.json.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Disclosure</h3>
+  <h2>Disclosure</h2>
   <p>Significant factual corrections are recorded in the revision history and the affected pages' version numbers are incremented. For minor corrections (e.g., typographical errors that do not affect values), revision entries are optional.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Relationship to Calculators</h3>
+  <h2>Relationship to Calculators</h2>
   <p>Calculator corrections that change output values always increment the formula or dataset version, which is reflected in the calculator's trust panel. Users can verify which version was used for any calculation by checking the trust panel.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Review Frequency</h3>
+  <h2>Review Frequency</h2>
   <p>Correction policy reviewed annually.</p>
   
 </div>

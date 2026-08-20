@@ -7,11 +7,12 @@
   <meta name="description" content="How WaterBalanceTools reviews and maintains the accuracy of its pool chemistry calculators and content.">
   <link rel="canonical" href="https://waterbalancetools.com/editorial/review-process/">
   <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterbalancetools.com/"},{"@type":"ListItem","position":2,"name":"Editorial","item":"https://waterbalancetools.com/editorial/"},{"@type":"ListItem","position":3,"name":"Review Process","item":"https://waterbalancetools.com/editorial/review-process/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Review Process","url":"https://waterbalancetools.com/editorial/review-process/","description":"How WaterBalanceTools reviews and maintains the accuracy of its pool chemistry calculators and content."}</script>
   <style>
     .trust-page h1{margin-bottom:.5rem}.trust-page .page-meta{color:#666;font-size:.875rem;margin-bottom:2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
     .trust-page section{margin-bottom:2rem}.trust-page section h2{border-bottom:2px solid #e0e0e0;padding-bottom:.5rem;margin-bottom:1rem}
     .policy-section{background:#fff;border:1px solid #e8e8e8;border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.25rem}
-    .policy-section h3{margin:0 0 .5rem;font-size:1rem;color:#0073aa}
+    .policy-section h2{margin:0 0 .5rem;font-size:1rem;color:#0073aa;border-bottom:none;padding-bottom:0}
     .trust-nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.5rem 0}
     .trust-nav a{display:block;padding:1rem 1.25rem;background:#f8f9fa;border:1px solid #e0e0e0;border-radius:6px;text-decoration:none;color:#0073aa;font-weight:500}
     .trust-nav a:hover{background:#e8f0fe;border-color:#0073aa}
@@ -38,49 +39,49 @@
 </div>
 
 <div class="policy-section">
-  <h3>Purpose</h3>
+  <h2>Purpose</h2>
   <p>This document describes how WaterBalanceTools reviews and validates its calculators, datasets, and knowledge content.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Automated Review</h3>
+  <h2>Automated Review</h2>
   <p>The primary review mechanism is automated. The build pipeline executes validate-datasets.js, validate-entities.js, and validate-trust.js on every build. These scripts reject the build if any required metadata is missing, any value lacks a source, or any trust component is broken. No page reaches production without passing automated validation.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Dataset Review</h3>
+  <h2>Dataset Review</h2>
   <p>Canonical datasets are reviewed when: (1) a new authoritative source is published that contradicts existing values, (2) a user submits a correction with supporting evidence, or (3) the scheduled annual review date is reached. Review dates are stored in each dataset's lastReviewed field.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Calculator Review</h3>
+  <h2>Calculator Review</h2>
   <p>Calculators are reviewed when: (1) an upstream dataset they depend on is updated, (2) a formula change is made, or (3) a correction is submitted. Calculator trust panels display the last reviewed date. Any calculator with a last reviewed date more than 12 months in the past triggers a review flag.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Formula Review</h3>
+  <h2>Formula Review</h2>
   <p>Formulas are reviewed when new scientific literature modifies the accepted equation for a calculation. Formula versions are tracked in data/trust/formulas.json. Changes are logged in the revision history.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Knowledge Content Review</h3>
+  <h2>Knowledge Content Review</h2>
   <p>Academy articles and reference pages are reviewed annually. Review dates are embedded in the data source (data/academy.json, data/reference.json) and displayed on each page.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Scope</h3>
+  <h2>Scope</h2>
   <p>The review process applies to all calculators, canonical datasets, formulas, academy articles, glossary entries, and reference pages. It does not apply to programmatically generated navigation, sitemaps, or schema markup, which are derived automatically from the reviewed content.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Review Frequency</h3>
+  <h2>Review Frequency</h2>
   <p>Annual scheduled review for all content. Immediate review triggered by external standard changes or correction submissions.</p>
   
 </div>

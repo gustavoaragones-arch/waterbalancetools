@@ -4,6 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const urlEngine = require('../js/url/url-engine');
+const S = require('../lib/schemaEngine.js');
 
 const ROOT = path.join(__dirname, '..');
 const PLATFORM_DIR = path.join(ROOT, 'data', 'platform');
@@ -139,11 +140,21 @@ function renderReleasePage(template, release, platform) {
     </ul>
   </section>`;
 
+  const releaseDesc = `Release notes for WaterBalanceTools ${release.version}${release.codename ? ` (${release.codename})` : ''}.`;
+  const releaseCanonical = urlEngine.canonicalUrl(`/releases/${release.version}`);
   return fill(template, {
     PAGE_TITLE: `${title} | WaterBalanceTools`,
-    META_DESCRIPTION: `Release notes for WaterBalanceTools ${release.version}${release.codename ? ` (${release.codename})` : ''}.`,
-    CANONICAL_URL: urlEngine.canonicalUrl(`/releases/${release.version}`),
+    META_DESCRIPTION: releaseDesc,
+    CANONICAL_URL: releaseCanonical,
     CONTENT: content,
+    SCHEMA: S.renderAllSchemas({
+      webPage: { name: title, description: releaseDesc, url: releaseCanonical },
+      breadcrumb: [
+        { name: 'Home', url: '/' },
+        { name: 'Releases', url: urlEngine.canonicalUrl('/releases') },
+        { name: title, url: releaseCanonical },
+      ],
+    }),
   });
 }
 
@@ -176,11 +187,20 @@ function run() {
     </ul>
   </section>`;
 
+  const indexDesc = 'Canonical WaterBalanceTools release history with semantic versions and certification status.';
+  const indexCanonical = urlEngine.canonicalUrl('/releases');
   fs.writeFileSync(path.join(RELEASES_DIR, 'index.html'), fill(template, {
     PAGE_TITLE: 'Releases | WaterBalanceTools',
-    META_DESCRIPTION: 'Canonical WaterBalanceTools release history with semantic versions and certification status.',
-    CANONICAL_URL: urlEngine.canonicalUrl('/releases'),
+    META_DESCRIPTION: indexDesc,
+    CANONICAL_URL: indexCanonical,
     CONTENT: indexContent,
+    SCHEMA: S.renderAllSchemas({
+      webPage: { name: 'Release History', description: indexDesc, url: indexCanonical },
+      breadcrumb: [
+        { name: 'Home', url: '/' },
+        { name: 'Releases', url: indexCanonical },
+      ],
+    }),
   }), 'utf8');
 
   history.forEach((release) => {

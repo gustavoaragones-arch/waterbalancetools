@@ -251,6 +251,7 @@ const indexBody = `
   .card-body p { margin: 0; font-size: 0.85rem; color: #555; }
   .card-count { display: inline-block; background: #e8f0fe; color: #333; font-size: 0.72rem; padding: 2px 6px; border-radius: 10px; margin-top: 6px; }
 </style>
+<h2>Datasets</h2>
 <ul class="datasets-grid">
   ${cards}
 </ul>

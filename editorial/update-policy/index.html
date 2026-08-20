@@ -7,11 +7,12 @@
   <meta name="description" content="How WaterBalanceTools updates its content, datasets, and calculators over time.">
   <link rel="canonical" href="https://waterbalancetools.com/editorial/update-policy/">
   <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://waterbalancetools.com/"},{"@type":"ListItem","position":2,"name":"Editorial","item":"https://waterbalancetools.com/editorial/"},{"@type":"ListItem","position":3,"name":"Update Policy","item":"https://waterbalancetools.com/editorial/update-policy/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Update Policy","url":"https://waterbalancetools.com/editorial/update-policy/","description":"How WaterBalanceTools updates its content, datasets, and calculators over time."}</script>
   <style>
     .trust-page h1{margin-bottom:.5rem}.trust-page .page-meta{color:#666;font-size:.875rem;margin-bottom:2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
     .trust-page section{margin-bottom:2rem}.trust-page section h2{border-bottom:2px solid #e0e0e0;padding-bottom:.5rem;margin-bottom:1rem}
     .policy-section{background:#fff;border:1px solid #e8e8e8;border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.25rem}
-    .policy-section h3{margin:0 0 .5rem;font-size:1rem;color:#0073aa}
+    .policy-section h2{margin:0 0 .5rem;font-size:1rem;color:#0073aa;border-bottom:none;padding-bottom:0}
     .trust-nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.5rem 0}
     .trust-nav a{display:block;padding:1rem 1.25rem;background:#f8f9fa;border:1px solid #e0e0e0;border-radius:6px;text-decoration:none;color:#0073aa;font-weight:500}
     .trust-nav a:hover{background:#e8f0fe;border-color:#0073aa}
@@ -38,49 +39,49 @@
 </div>
 
 <div class="policy-section">
-  <h3>Purpose</h3>
+  <h2>Purpose</h2>
   <p>This policy describes how WaterBalanceTools manages updates to its content, datasets, formulas, and calculators.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Scope</h3>
+  <h2>Scope</h2>
   <p>This policy applies to all content updates, including dataset record changes, formula revisions, calculator logic changes, and textual content updates.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Version-Based Updates</h3>
+  <h2>Version-Based Updates</h2>
   <p>Every dataset, formula, and calculator is versioned. Version numbers follow the YYYY.MM format for major versions. Minor revisions are tracked as YYYY.MM.revision_count. Version numbers are stored in data/trust/versions.json and displayed in trust panels and dataset documentation.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Update Triggers</h3>
+  <h2>Update Triggers</h2>
   <p>Updates are triggered by: (1) annual review schedule, (2) new authoritative standards or guidelines, (3) accepted user corrections, (4) architecture changes requiring content updates, or (5) new data becoming available that improves confidence level.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Update Propagation</h3>
+  <h2>Update Propagation</h2>
   <p>All updates are made to the canonical source (dataset JSON, content JSON, or formula JSON). The build pipeline propagates changes automatically to all affected HTML pages. Manual updates to generated HTML are not permitted and will be overwritten on the next build.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Backward Compatibility</h3>
+  <h2>Backward Compatibility</h2>
   <p>Dataset record IDs are stable and are not changed once assigned. Formula IDs are stable. If a formula is fundamentally revised, a new formula ID is created rather than changing the existing one. Legacy formula versions are retained in revision history.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Relationship to Calculators</h3>
+  <h2>Relationship to Calculators</h2>
   <p>Calculator pages always reflect the current version of the formulas and datasets they depend on. When a user accesses a calculator, the trust panel shows the current versions. Historical version details are available in the revision history.</p>
   
 </div>
 
 <div class="policy-section">
-  <h3>Review Frequency</h3>
+  <h2>Review Frequency</h2>
   <p>Update policy reviewed annually.</p>
   
 </div>

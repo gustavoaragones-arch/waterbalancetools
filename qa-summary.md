@@ -1,10 +1,10 @@
 # QA Summary
 
-- Build Date: 2026-08-19T02:47:22.596Z
+- Build Date: 2026-08-20T00:33:20.014Z
 - Platform Version: 5A.75
-- Overall Score: 98 (Green)
+- Overall Score: 99 (Green)
 - Errors: 0
-- Warnings: 7
+- Warnings: 6
 
 | Audit | Score | Status | Errors | Warnings |
 |---|---:|---|---:|---:|
@@ -12,7 +12,7 @@
 | seo | 98 | Green | 0 | 1 |
 | performance | 100 | Green | 0 | 0 |
 | schema | 100 | Green | 0 | 0 |
-| accessibility | 96 | Green | 0 | 1 |
+| accessibility | 100 | Green | 0 | 0 |
 | mobile | 95 | Green | 0 | 1 |
 | links | 100 | Green | 0 | 1 |
 | entities | 100 | Green | 0 | 0 |

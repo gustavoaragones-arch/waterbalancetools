@@ -172,8 +172,14 @@ function buildBreadcrumb(cleanPath, pageTitle) {
   // Leaf — current page
   crumbs.push({ href: null, label: pageTitle });
 
+  // JSON-LD is not HTML: the "name" value must be JSON-string-escaped
+  // (JSON.stringify), not HTML-entity-escaped (esc()). Using esc() here
+  // previously left literal "&amp;" text inside the structured-data name
+  // for any label containing "&", diverging from the visible H1/breadcrumb
+  // text a browser renders from the same label (Phase 7H schema-content
+  // consistency fix).
   const schemaItems = crumbs.map((c, idx) =>
-    `      {"@type":"ListItem","position":${idx + 1},"name":"${esc(c.label)}"` +
+    `      {"@type":"ListItem","position":${idx + 1},"name":${JSON.stringify(c.label)}` +
     (c.href ? `,"item":"${canonicalUrl(c.href)}"` : '') +
     '}'
   ).join(',\n');
