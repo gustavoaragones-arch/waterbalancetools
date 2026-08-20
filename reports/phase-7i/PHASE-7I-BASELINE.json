@@ -1,0 +1,27 @@
+{
+  "phase": "7I",
+  "baseline_captured_fresh": true,
+  "before": {
+    "total_pages": 522,
+    "entity_pages": 105,
+    "glossary_pages": 101,
+    "schema_valid": 950,
+    "schema_questionable": 3,
+    "schema_missing": 39,
+    "accessibility_flagged_pages": 0,
+    "duplicate_title_groups": 0,
+    "duplicate_description_groups": 0,
+    "improve_flags": 174,
+    "p1_merge_flags": 28,
+    "keep_flags": 70,
+    "title_too_long_total": 116,
+    "title_too_long_by_dir": {
+      "programmatic": 36, "reference": 15, "guides": 14, "academy": 13,
+      "entities": 11, "glossary": 7, "calculators": 6, "comparisons": 5,
+      "formulas": 4, "root": 4, "resources": 1
+    },
+    "sitemap_urls": 478
+  },
+  "scope_decision": "TITLE_TOO_LONG work scoped to entities+glossary+calculators+reference (39 of 116 findings), per the explicit Phase 7H review-queue naming and the 'do not mass-rewrite' constraint. Remaining 77 findings logged for a future phase.",
+  "matches_phase_7h_closing_state": true
+}

@@ -107,10 +107,15 @@ ${SITE_FOOTER}
 function generateRefPage(page) {
   const tpl = template('reference-template.html');
   const bc = buildBreadcrumb(buildUrl(page.slug), page.title);
+  // Drop the "| Reference" segment only when the full title would exceed
+  // the 65-char SEO threshold -- keeps the category marker on every page
+  // where it fits, per Phase 7I (7 of ~70 reference titles needed this).
+  const titleWithCategory = `${page.title} | Reference | WaterBalanceTools`;
+  const pageTitle = titleWithCategory.length <= 65 ? titleWithCategory : `${page.title} | WaterBalanceTools`;
 
   return fill(tpl, {
     SLUG:              page.slug,
-    PAGE_TITLE:        `${page.title} | Reference | WaterBalanceTools`,
+    PAGE_TITLE:        pageTitle,
     H1_TITLE:          page.title,
     META_DESCRIPTION:  page.description,
     LAST_REVIEWED:     page.lastReviewed || '2026-06-01',

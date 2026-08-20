@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "pages_scanned": 258,
+  "violations_found": 0,
+  "violations": [],
+  "warnings_count": 2,
+  "warnings": [
+    {
+      "rule": "H1_TITLE_POSSIBLE_MISMATCH",
+      "detail": "glossary/index.html: H1 \"pool & hot tub water chemistry glossary\" not found in title \"pool chemistry glossary | waterbalancetools\""
+    },
+    {
+      "rule": "H1_TITLE_POSSIBLE_MISMATCH",
+      "detail": "calculators/chemical-calculator.html: H1 \"pool & hot tub chemical calculator\" not found in title \"pool chemical calculator (exact levels fast) | waterbalancetools\""
+    }
+  ]
+}

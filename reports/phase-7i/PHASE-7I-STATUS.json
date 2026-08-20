@@ -1,0 +1,91 @@
+{
+  "phase": "7I",
+  "title": "Thin Entity/Glossary Content & SEO Metadata Remediation",
+  "status": "PASS_WITH_REVIEW_QUEUE",
+  "baseline": {
+    "re_run_fresh": true,
+    "matches_phase_7h_closing_state": true,
+    "total_pages": 522,
+    "entity_pages": 105,
+    "glossary_pages": 101,
+    "improve_flags_before": 174,
+    "improve_flags_after": 119,
+    "p1_merge_flags_before": 28,
+    "p1_merge_flags_after": 26
+  },
+  "root_cause_finding": {
+    "description": "generate-entities.js silently dropped longDescription/aliases/synonyms/sourceOrganizations when compiling data/graph/entity-index.json, despite all 104 entity records already having this content authored",
+    "fix": "added the four fields to the compiler output",
+    "pages_affected": 104,
+    "new_content_written": false
+  },
+  "confirmed_priority_pages": {
+    "fiberglass_pool": { "disposition": "IMPROVE", "root_cause": "entity-index.json bug", "resolved": true },
+    "vinyl_pool": { "disposition": "IMPROVE", "root_cause": "entity-index.json bug", "resolved": true, "near_duplication_also_resolved": true }
+  },
+  "entity_pages": {
+    "improve_before": 55,
+    "improve_after": 19,
+    "keep_by_policy_count": 19,
+    "keep_categories": ["organization_stub", "unit_definition", "resource_pointer", "duplication_heuristic_false_positive"]
+  },
+  "glossary_pages": {
+    "improve_before": 7,
+    "improve_after": 0,
+    "architecture_change_needed": false,
+    "all_findings_were_title_length_only": true
+  },
+  "seo_metadata": {
+    "title_too_long_total_sitewide": 116,
+    "title_too_long_addressed_this_phase": 39,
+    "title_too_long_remaining_out_of_scope": 77,
+    "meta_description_too_short_fixed": 2,
+    "duplicate_titles_found_and_fixed": 1,
+    "duplicate_titles_remaining": 0,
+    "title_collisions_introduced": 0
+  },
+  "aeo": { "new_answer_blocks_manufactured": 0, "schema_only_answers": 0 },
+  "internal_linking": { "new_links_added": 0, "reason": "existing relationship data was already correct; only the compiler was dropping it" },
+  "schema": { "regression": false, "new_schema_types_added": 0 },
+  "accessibility": { "flagged_pages": 0, "regression": false },
+  "validator": {
+    "name": "scripts/validate-phase-7i.js",
+    "status": "PASS",
+    "pages_scanned": 258,
+    "violations": 0,
+    "warnings": 2
+  },
+  "regression": {
+    "7B": "PASS", "7C": "PASS", "7D": "PASS_WITH_PREEXISTING_WARNINGS", "7D2": "PASS", "7D3": "PASS",
+    "7E": "PASS", "7E1": "PASS", "7F_trust_layer": "PASS", "7F1": "PASS", "7G": "PASS", "7H_schema_content_consistency": "PASS",
+    "7H_phase_validator": "PASS", "broken_links": "PASS", "url_engine": "PASS", "existing_trust": "PASS",
+    "any_regression": false
+  },
+  "reproducibility": {
+    "two_build_hash_identical": false,
+    "nondeterminism_sources": [
+      { "source": "qa_freshness_scoring", "inherited_from_phase_7h": true, "fixed_this_phase": false },
+      { "source": "internal_report_title_lag", "detail": "audit/google/crawl-depth.html and data/indexing/freshness.json (both noindex internal tooling) lag one build behind current page titles", "inherited_from_phase_7h": true, "fixed_this_phase": false, "same_class_as": "phase_7h_breadcrumb_oscillation" }
+    ],
+    "affects_validated_content_quality_result": false
+  },
+  "scope_control": {
+    "spanish_french_paths_exist": false,
+    "adsense_touched": false,
+    "calculator_formula_files_touched": false,
+    "url_redirect_sitemap_architecture_touched": false,
+    "phase_7g_generators_touched": false,
+    "phase_7g_intact": true,
+    "fake_authority_or_person_schema_added": false,
+    "mass_citation_injection": false,
+    "new_source_registry_records_added": 0
+  },
+  "remaining_review_queue": [
+    "104 newly-surfaced entity longDescription fields not yet run through Phase 7D extraction/7E provenance pipeline (spot-checked only)",
+    "77 remaining sitewide TITLE_TOO_LONG findings (programmatic, guides, academy, comparisons, formulas, root, resources, noindex dataset docs)",
+    "inherited QA-freshness and internal-report nondeterminism, not resolved this phase",
+    "8 noindex reference/datasets TITLE_TOO_LONG findings, deliberately out of scope"
+  ],
+  "phase_7j_decision": "GO",
+  "do_not_begin_phase_7j_automatically": true
+}

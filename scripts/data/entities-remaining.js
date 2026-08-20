@@ -831,7 +831,11 @@ const units = [
   {
     id: 'unit-liters',
     type: 'unit',
-    name: 'Liters',
+    // Distinguished from the 'liters' measurement entity (entities-
+    // measurements.js), which collided with this page's title/H1 --
+    // "Metric Liters" mirrors the sibling "US Gallons" naming already used
+    // for 'unit-gallons' in this same file (Phase 7I title-collision fix).
+    name: 'Metric Liters',
     shortDescription: 'SI unit of volume. 1 US gallon = 3.785 liters.',
     longDescription: '1 liter = 0.2642 US gallons = 1,000 milliliters. Used in metric countries for pool volume measurement. Chemical concentrations in mg/L are equivalent to ppm.',
     aliases: ['L', 'litres'],

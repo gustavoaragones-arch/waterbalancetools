@@ -118,7 +118,7 @@
   {
     "id": "unit-liters",
     "type": "unit",
-    "name": "Liters",
+    "name": "Metric Liters",
     "shortDescription": "SI unit of volume. 1 US gallon = 3.785 liters.",
     "longDescription": "1 liter = 0.2642 US gallons = 1,000 milliliters. Used in metric countries for pool volume measurement. Chemical concentrations in mg/L are equivalent to ppm.",
     "aliases": [

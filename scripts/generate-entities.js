@@ -166,6 +166,15 @@ allEntities.forEach(e => {
     type:             e.type,
     name:             e.name,
     shortDescription: e.shortDescription,
+    // longDescription/aliases/synonyms/sourceOrganizations are authored on
+    // every entity record in scripts/data/entities-*.js but were dropped
+    // here, so entity-index.json (and everything generated from it, incl.
+    // every entity page's Definition section) silently fell back to the
+    // one-sentence shortDescription sitewide -- Phase 7I fix.
+    longDescription:  e.longDescription,
+    aliases:          e.aliases,
+    synonyms:         e.synonyms,
+    sourceOrganizations: e.sourceOrganizations,
     idealRange:       e.idealRange,
     units:            e.units,
     calculatorIds:    e.calculatorIds,

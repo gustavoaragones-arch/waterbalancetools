@@ -1,0 +1,28 @@
+entity_id,page,decision,reason,action_taken
+fiberglass-pool,entities/fiberglass-pool.html,IMPROVE,"Data source (scripts/data/entities-remaining.js) already had a rich, genuine longDescription (algae resistance, 150-250 ppm calcium target, gelcoat leaching risk, cannot be refinished) that was silently dropped by the entity-index.json compiler and never rendered -- a generator bug, not a content-authoring gap.","Fixed scripts/generate-entities.js to include longDescription/aliases/synonyms/sourceOrganizations in entity-index.json. Regenerated. Page now shows its full, already-authored Definition."
+vinyl-pool,entities/vinyl-pool.html,IMPROVE,"Same root cause as fiberglass-pool. Data source already had a distinct longDescription (metal/fitting corrosion risk instead of gelcoat, liner bleaching from undissolved chemicals, 8-15 year liner lifespan) -- genuinely differentiated from fiberglass-pool's content, not a near-duplicate once rendered.","Same generator fix. Page now shows its full Definition, and the fiberglass/vinyl near-duplication P1 finding from Phase 7H is resolved (both pages now have genuinely distinct chemistry content)."
+(all other chemical/measurement/pool-type/equipment/process/problem entities),entities/*.html,IMPROVE,"Same generator bug affected all 104 entity records equally -- every entity had an authored longDescription that was never rendered.",Same single generator fix resolved this sitewide; verified via full audit re-run (entity IMPROVE flags: 55 -> 19 remaining, all reclassified KEEP below).
+calcium-hardness,entities/calcium-hardness.html,KEEP,"Flagged repetition_score=0 (shares blocks with sibling pages). Investigated: the shared blocks are the knowledge-card UI component (Related Calculators/Entities/Academy cards) used identically across all 104 entity pages by design -- not prose duplication. entities family avg_pairwise_similarity=0.201, risk=LOW (programmatic-duplication.csv). False positive.",No content change; documented as reviewed and dispositioned.
+cloudy-water,entities/cloudy-water.html,KEEP,Same false-positive pattern as calcium-hardness (high cross-reference count triggers the card-matching heuristic).,No content change.
+lsi,entities/lsi.html,KEEP,Same false-positive pattern.,No content change.
+ph,entities/ph.html,KEEP,Same false-positive pattern.,No content change.
+cdc,entities/cdc.html,KEEP,"Organization-type entity. Definition is a genuine 2-sentence answer to ""what does the CDC do for pool chemistry"" (MAHC, outbreak reporting, disinfection standards). Flagged only on raw word_count; per Step 3, word count alone is not a thinness signal when the query is satisfied.",No content change.
+epa,entities/epa.html,KEEP,Same organization-stub reasoning as cdc.,No content change.
+nsf,entities/nsf.html,KEEP,Same organization-stub reasoning as cdc.,No content change.
+lamotte,entities/lamotte.html,KEEP,Same organization-stub reasoning as cdc.,No content change.
+unit-celsius,entities/unit-celsius.html,KEEP,"Unit-definition entity. A temperature-unit conversion page does not need 300 words to satisfy ""what is Celsius"" -- concise is correct for this entity type.",No content change.
+unit-fahrenheit,entities/unit-fahrenheit.html,KEEP,Same unit-definition reasoning.,No content change.
+unit-gallons,entities/unit-gallons.html,KEEP,Same unit-definition reasoning.,No content change.
+unit-liters,entities/unit-liters.html,IMPROVE,"Title collided exactly with the separate 'liters' measurement entity (both rendered ""Liters — Pool Chemistry Entity | WaterBalanceTools""), a real SEO defect (duplicate title).","Renamed this record's name field from 'Liters' to 'Metric Liters' in scripts/data/entities-remaining.js, mirroring the sibling 'US Gallons' naming convention already used for unit-gallons in the same file. Also fixed its meta description (was 47 chars, under the 50-char minimum) via the longDescription fallback."
+unit-mg-l,entities/unit-mg-l.html,KEEP,Same unit-definition reasoning as unit-celsius.,No content change.
+unit-minutes,entities/unit-minutes.html,KEEP,Same unit-definition reasoning.,No content change.
+unit-hours,entities/unit-hours.html,KEEP,Same unit-definition reasoning.,No content change.
+unit-days,entities/unit-days.html,KEEP,Same unit-definition reasoning.,No content change.
+unit-weeks,entities/unit-weeks.html,KEEP,Same unit-definition reasoning.,No content change.
+unit-months,entities/unit-months.html,KEEP,Same unit-definition reasoning.,No content change.
+unit-ppm,entities/unit-ppm.html,KEEP,Same unit-definition reasoning.,No content change.
+closing-checklist,entities/closing-checklist.html,KEEP,"Resource-pointer entity. Its 48-word Definition fully and correctly summarizes the 7-step winterization process; the entity's role is to point to the actual checklist page (already linked), not duplicate it.",No content change.
+opening-checklist,entities/opening-checklist.html,KEEP,Same resource-pointer reasoning.,No content change.
+maintenance-checklist,entities/maintenance-checklist.html,KEEP,Same resource-pointer reasoning.,No content change.
+maintenance-log,entities/maintenance-log.html,KEEP,Same resource-pointer reasoning.,No content change.
+calcium-chloride,entities/calcium-chloride.html,IMPROVE,"META_DESCRIPTION_TOO_SHORT (47 chars, below the 50-char minimum) -- shortDescription was a single terse sentence.","Fixed generate-entity-pages.js to fall back to a longDescription-derived sentence for meta description when shortDescription is under 50 chars. Now 89 chars, accurate."

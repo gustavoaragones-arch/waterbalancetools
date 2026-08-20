@@ -293,7 +293,17 @@ let count = 0;
 Object.values(entityIndex).forEach(entity => {
   const id       = entity.id;
   const typeLabel = esc(TYPE_LABELS[entity.type] || entity.type);
-  const metaDesc = entity.shortDescription.slice(0, 160);
+  // A couple of entities have a one-sentence shortDescription under the
+  // 50-char SEO minimum; fall back to the (now-rendered) longDescription,
+  // truncated at a sentence boundary, so the meta description still
+  // accurately summarizes real page content rather than padding with
+  // boilerplate (Phase 7I fix).
+  let metaDesc = entity.shortDescription;
+  if (metaDesc.length < 50 && entity.longDescription) {
+    const firstSentence = entity.longDescription.split(/(?<=\.)\s/)[0];
+    metaDesc = firstSentence.length >= 50 ? firstSentence : entity.longDescription;
+  }
+  metaDesc = metaDesc.slice(0, 160);
   const relContent = buildRelationshipsSection(id);
 
   const tokens = {
@@ -303,7 +313,13 @@ Object.values(entityIndex).forEach(entity => {
     ENTITY_TYPE_LABEL: typeLabel,
     ENTITY_SHORT_DESC: esc(entity.shortDescription),
     ENTITY_LONG_DESC:  esc(entity.longDescription || entity.shortDescription),
-    PAGE_TITLE:        esc(entity.name) + ' — Pool Chemistry Entity | WaterBalanceTools',
+    // Shorter title (Phase 7I): "Name — Pool Chemistry Entity | WaterBalanceTools"
+    // pushed 11 of 104 entity titles past the 65-char SEO threshold; "Pool
+    // Chemistry Entity" was redundant generic jargon nobody searches for --
+    // the entity name itself already signals the topic (e.g. "Alkalinity",
+    // "Free Chlorine"), so the badge/type context stays visible on-page
+    // (knowledge-badge) without needing to repeat it in the <title>.
+    PAGE_TITLE:        esc(entity.name) + ' | WaterBalanceTools',
     META_DESCRIPTION:  esc(metaDesc),
     OG_TITLE:          esc(entity.name),
     ENTITY_FACTS:      buildEntityFacts(entity),

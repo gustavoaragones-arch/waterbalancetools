@@ -229,7 +229,7 @@ module.exports = [
   {
     id: 'ref-07',
     slug: 'reference/cya-matrix',
-    title: 'CYA Level and Minimum Free Chlorine Matrix',
+    title: 'CYA & Minimum Free Chlorine Matrix',
     description: 'Reference table showing the minimum free chlorine required at each CYA level to maintain effective sanitisation.',
     summary: 'As CYA increases, minimum free chlorine must increase proportionally. This matrix shows the FC floor at each CYA level.',
     readingTime: '2 min read',
@@ -559,7 +559,7 @@ module.exports = [
   {
     id: 'ref-16',
     slug: 'reference/pool-shape-guide',
-    title: 'Pool Shape & Volume Calculation Guide',
+    title: 'Pool Shape & Volume Guide',
     description: 'How to calculate pool volume for different pool shapes: rectangular, L-shaped, oval, kidney, and freeform.',
     summary: 'The correct volume calculation depends on pool shape. This guide shows the formula and method for each common pool shape.',
     readingTime: '3 min read',

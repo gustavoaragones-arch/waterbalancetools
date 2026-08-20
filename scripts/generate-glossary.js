@@ -105,9 +105,19 @@ function generateTerm(term) {
 
   const defFirstSentence = (term.definition || '').split('.')[0];
 
+  // Shorter title (Phase 7I): "Term: Definition | Glossary | WaterBalanceTools"
+  // pushed 7 of 100 glossary titles past the 65-char SEO threshold with
+  // redundant wording ("Definition" and "Glossary" both signal the same
+  // thing). Must still end in the literal "| WaterBalanceTools" suffix --
+  // scripts/normalize-seo-metadata.js appends it to any title that doesn't,
+  // which would otherwise double it up.
+  const termName = term.term || term.title;
+  const titleWithCategory = `${termName} | Glossary | WaterBalanceTools`;
+  const pageTitle = titleWithCategory.length <= 65 ? titleWithCategory : `${termName} | WaterBalanceTools`;
+
   return fill(tpl, {
     SLUG:              term.slug,
-    PAGE_TITLE:        `${term.term || term.title}: Definition | Glossary | WaterBalanceTools`,
+    PAGE_TITLE:        pageTitle,
     H1_TITLE:          term.term || term.title,
     META_DESCRIPTION:  `${defFirstSentence}. Plain-language definition with target values and related pool chemistry resources.`,
     LAST_REVIEWED:     term.lastReviewed || '2026-06-01',
