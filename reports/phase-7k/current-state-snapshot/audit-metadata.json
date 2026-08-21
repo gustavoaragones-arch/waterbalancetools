@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-08-21T00:44:43.652Z",
+  "git_commit": "506b9ce200fc0e355d17c4a663ca02592be0d479",
+  "node_version": "v24.13.0",
+  "page_count": 522,
+  "non_page_template_count": 0,
+  "methodology_version": "7A.1.0",
+  "script_entry_point": "scripts/audit-forensic/run.js"
+}

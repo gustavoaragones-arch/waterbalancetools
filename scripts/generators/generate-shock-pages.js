@@ -42,9 +42,9 @@ function cleanOldPages() {
 
 function buildTable(gallons) {
   const standard = shockOz(gallons, 10);
-  const double = shockOz(gallons, 20);
+  const algae = shockOz(gallons, 30);
   let table =
-    '<div class="output-panel serp-explanation"><h3>Shock dosage reference</h3><p>Standard shock raises chlorine by about <strong>10 ppm</strong>. Use double for heavy contamination. Always verify with testing.</p>';
+    '<div class="output-panel serp-explanation"><h3>Shock dosage reference</h3><p>Standard shock raises chlorine by about <strong>10 ppm</strong>. Green algae recovery calls for a much stronger breakpoint dose. Always verify with testing.</p>';
   table +=
     '<table class="dosage-table"><thead><tr><th>Level</th><th>Granular shock (oz)</th><th>Granular shock (lb)</th></tr></thead><tbody>';
   table +=
@@ -54,10 +54,10 @@ function buildTable(gallons) {
     (standard / 16).toFixed(2) +
     ' lb</td></tr>';
   table +=
-    '<tr><td>Double (20 ppm)</td><td>' +
-    double.toFixed(1) +
+    '<tr><td>Green algae recovery (30 ppm)</td><td>' +
+    algae.toFixed(1) +
     ' oz</td><td>' +
-    (double / 16).toFixed(2) +
+    (algae / 16).toFixed(2) +
     ' lb</td></tr>';
   table += '</tbody></table></div>';
   return table;
@@ -82,17 +82,17 @@ function buildPage(volume) {
     '    <p class="serp-direct">Shock raises free chlorine fast. Use the table below for rough ounces at your volume, then fine-tune with the calculator for your target ppm. <span class="badge">Run pump</span></p>';
 
   const standardOz = shockOz(volume, 10).toFixed(1);
-  const doubleOz = shockOz(volume, 20).toFixed(1);
+  const algaeOz = shockOz(volume, 30).toFixed(1);
   const sizeClass = volume < 10000 ? 'a smaller residential pool' : volume <= 20000 ? 'a typical mid-size residential pool' : 'a large residential pool';
 
   const faqList = [
     {
       q: 'How much shock for a ' + g + ' gallon pool?',
-      a: 'A standard shock (about a 10 ppm chlorine raise) for a ' + g + '-gallon pool is roughly ' + standardOz + ' oz of granular shock; double that (~' + doubleOz + ' oz) for heavy algae or contamination. Confirm with the calculator using your actual current reading.'
+      a: 'A standard shock (about a 10 ppm chlorine raise) for a ' + g + '-gallon pool is roughly ' + standardOz + ' oz of granular shock. Recovering from a green algae bloom calls for a much stronger breakpoint dose, about 30 ppm (roughly ' + algaeOz + ' oz). Confirm with the calculator using your actual current reading.'
     },
     {
       q: 'Is a ' + g + ' gallon pool considered small, medium, or large?',
-      a: 'At ' + g + ' gallons, this is ' + sizeClass + '. The shock dose scales with volume; the target ppm raise (10 ppm standard, 20 ppm for heavy contamination) stays the same regardless of pool size.'
+      a: 'At ' + g + ' gallons, this is ' + sizeClass + '. The shock dose scales with volume; the target ppm raise (10 ppm standard, 30 ppm for green algae recovery) stays the same regardless of pool size.'
     },
     {
       q: 'Can you add too much shock?',
@@ -126,7 +126,7 @@ function buildPage(volume) {
       title: 'Shock a swimming pool',
       steps: [
         'Test water and confirm pool volume',
-        'Choose shock strength (standard vs double) for the situation',
+        'Choose shock strength (standard, or a stronger breakpoint dose for algae recovery) for the situation',
         'Add granular shock with circulation; retest after several hours'
       ]
     }
@@ -161,13 +161,13 @@ function buildPage(volume) {
     '    </section>\n' +
     H.stepsSection([
       'Test pool volume and current sanitizer level.',
-      'Pick standard (about 10 ppm raise) or double for heavy algae—per label.',
+      'Pick standard (about 10 ppm raise) or a stronger breakpoint dose (about 30 ppm) to recover from green algae—per label.',
       'Broadcast shock with pump running; brush and circulate.',
       'Retest before swimming—target safe free chlorine in range.'
     ]) +
     '\n' +
     H.whatThisMeansSection([
-      'For a <strong>' + g + '-gallon pool</strong>, the ounces on this page scale standard shock math to your exact volume — your starting sanitizer level and how "dirty" the water is still determine whether you need a standard or double dose. Full explanation: <a href="' + BASE_HREF + 'academy/sanitizers/shock-treatments-explained">shock treatment guide</a>.'
+      'For a <strong>' + g + '-gallon pool</strong>, the ounces on this page scale standard shock math to your exact volume — your starting sanitizer level and how "dirty" the water is still determine whether you need a standard or algae-recovery dose. Full explanation: <a href="' + BASE_HREF + 'academy/sanitizers/shock-treatments-explained">shock treatment guide</a>.'
     ]) +
     '\n' +
     H.recommendedLevelsSection([

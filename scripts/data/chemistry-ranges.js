@@ -255,6 +255,31 @@ const RANGES = [
     rationale: 'CDC/MAHC fecal-incident response: raise free chlorine to 20 ppm and maintain for approximately 13 hours for a formed-stool incident, or 20 ppm for ~28 hours at pH<=7.5 with CYA<=15 ppm for a diarrheal/Cryptosporidium incident. This is safety/incident-response guidance for public facilities, not routine residential shock dosing -- do not present as routine maintenance guidance.',
     status: 'SUPPORTED', reviewed_by: null, reviewed_date: '2026-08-18',
   },
+  {
+    // Phase 7K: resolves part of the shock-dosing evidence gap identified
+    // in Phase 7J. Distinct scenario from the CDC/MAHC incident-response
+    // record above (algae recovery, not public-health incident response)
+    // -- kept separate per Phase 7D's "differing context = not a
+    // contradiction" policy, not merged with it.
+    id: 'range-shock-algae-recovery-green',
+    parameter_id: 'shock_treatment',
+    environment: 'pool', sanitizer: 'chlorine', scenario: 'algae_recovery',
+    minimum: 30, maximum: 30, target: 30, unit: 'ppm', temperature_context: 'general',
+    source_ids: ['poolspanews-algae-breakpoint-2016'],
+    rationale: 'Pool & Spa News (content from Taylor Technologies): breakpoint-chlorinate to 30 ppm free chlorine to eliminate a green algae bloom -- the minimum concentration needed to disrupt the algae cell nucleus. Scoped specifically to green algae; the source does not address dark green/black algae severity tiers, so this record is NOT extended to cover those. Single professional-trade-publication source (not government/professional-standards-body) -- held at CONTEXTUAL rather than SUPPORTED confidence pending a higher-tier corroborating source.',
+    status: 'CONTEXTUAL', reviewed_by: null, reviewed_date: '2026-08-20',
+  },
+
+  // ---- Water Temperature (Phase 7K: no prior record existed) ---------------------
+  {
+    id: 'range-temperature-hottub-max-safety',
+    parameter_id: 'water_temperature',
+    environment: 'hot_tub', sanitizer: 'unspecified', scenario: 'safety_guidance',
+    minimum: null, maximum: 104, target: null, unit: '°F', temperature_context: 'general',
+    source_ids: ['cmahc-mahc-5th-edition-2024'],
+    rationale: 'Model Aquatic Health Code (MAHC), 5th Edition, Section 5.7.4.7.2: maximum temperature for an aquatic venue is 104°F (40°C). This is a safety ceiling, not a comfort target range -- do not present as a recommended operating temperature.',
+    status: 'SUPPORTED', reviewed_by: null, reviewed_date: '2026-08-20',
+  },
 ];
 
 const RANGES_BY_ID = Object.fromEntries(RANGES.map((r) => [r.id, r]));

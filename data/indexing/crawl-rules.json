@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T22:20:12.735Z",
+  "generatedAt": "2026-08-21T00:56:30.271Z",
   "rulesVersion": "1.0",
   "rules": [
     {
@@ -4127,14 +4127,6 @@
       "pageType": "qa",
       "crawlTier": "Tier 4",
       "hub": "/reports/phase-7a",
-      "indexable": false,
-      "reason": "Assigned from URL taxonomy (qa)."
-    },
-    {
-      "url": "/reports/phase-7j/current-state-snapshot",
-      "pageType": "qa",
-      "crawlTier": "Tier 4",
-      "hub": "/reports/phase-7j",
       "indexable": false,
       "reason": "Assigned from URL taxonomy (qa)."
     },

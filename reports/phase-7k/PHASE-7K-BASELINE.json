@@ -1,0 +1,21 @@
+{
+  "phase": "7K",
+  "baseline_captured_fresh": true,
+  "matches_phase_7j_closing_state": true,
+  "before": {
+    "total_pages": 522,
+    "entity_pages": 105,
+    "entity_longdescriptions": 104,
+    "entity_claims": 378,
+    "chemistry_evidence_records": 5861,
+    "provenance_mapping_records": 5861,
+    "conflict_inventory_records": 499,
+    "entity_provenance_decisions": { "keep_as_written": 43, "research_required": 61 },
+    "schema_valid": 950, "schema_questionable": 3, "schema_missing": 39,
+    "accessibility_flagged_pages": 0,
+    "improve_flags": 119,
+    "shock_treatment_registry_records": 2,
+    "shock_treatment_registry_coverage": ["multiplier_heuristic_REQUIRES_REVIEW", "cdc_mahc_fecal_incident_20ppm_SUPPORTED"],
+    "shock_treatment_routine_or_algae_coverage": false
+  }
+}

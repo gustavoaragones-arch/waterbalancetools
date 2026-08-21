@@ -1,0 +1,82 @@
+{
+  "phase": "7K",
+  "title": "High-Priority Chemistry Evidence Resolution",
+  "status": "PASS_WITH_REVIEW_QUEUE",
+  "resolved_claims": [
+    { "claim_id": "ec-trichlor-tablets-0313", "entity_id": "trichlor-tablets", "old_status": "REQUIRES_REVIEW", "new_status": "SUPPORTED", "source_ids": ["microphor-trichlor-sds-2016", "asepsis-calhypo-msds-2005"] },
+    { "claim_id": "ec-green-water-0204", "entity_id": "green-water", "old_status": "REQUIRES_REVIEW", "new_status": "CONTEXTUAL", "source_ids": ["poolspanews-algae-breakpoint-2016"] },
+    { "claim_id": "ec-shock-treatment-0140", "entity_id": "shock-treatment", "old_status": "REQUIRES_REVIEW", "new_status": "REQUIRES_REVIEW", "source_ids": [], "note": "researched, genuine source disagreement, deliberately not resolved" },
+    { "claim_id": "ec-vinyl-pool-0282", "entity_id": "vinyl-pool", "old_status": "REQUIRES_REVIEW", "new_status": "SUPPORTED", "source_ids": ["cffa-vinyl-liner-bleaching"] },
+    { "claim_id": "ec-fiberglass-pool-0286", "entity_id": "fiberglass-pool", "old_status": "REQUIRES_REVIEW", "new_status": "CONTEXTUAL", "source_ids": [] },
+    { "claim_id": "ec-temperature-0080", "entity_id": "temperature", "old_status": "NO_EXISTING_SOURCE", "new_status": "SUPPORTED", "source_ids": ["range-temperature-hottub-max-safety"] }
+  ],
+  "registry_growth": {
+    "chemistry_sources_before": 9,
+    "chemistry_sources_after": 15,
+    "chemistry_ranges_before": 23,
+    "chemistry_ranges_after": 25,
+    "context_model_scenario_added": ["algae_recovery"]
+  },
+  "priority_queue": {
+    "total_unresolved_at_baseline": 331,
+    "p0": 0, "p1": 50, "p2": 26, "p3": 216, "p4": 39,
+    "resolved_this_phase": 6,
+    "remaining_p1_p2_reviewed_by_category": 70
+  },
+  "extraction_precision_audit": {
+    "test_sentences": 8,
+    "reproduced_failures": 2,
+    "real_production_claims_affected": 1,
+    "verdict": "isolated_and_bounded"
+  },
+  "production_changes": {
+    "entity_pages_modified": 0,
+    "generators_modified": ["scripts/generators/generate-shock-pages.js"],
+    "output_pages_modified": 6
+  },
+  "regression": {
+    "build": "PASS",
+    "validate_chemistry_knowledge": "PASS",
+    "validate_chemistry_extraction_v2": "PASS",
+    "validate_chemistry_evidence_dataset": "PASS",
+    "validate_provenance": "PASS",
+    "validate_provenance_resolution": "PASS",
+    "validate_trust_layer": "PASS",
+    "validate_trust": "PASS",
+    "validate_editorial_decisions": "PASS",
+    "validate_programmatic_quality": "PASS",
+    "validate_schema_content_consistency": "PASS",
+    "validate_phase_7h": "PASS",
+    "validate_phase_7i": "PASS",
+    "validate_entity_provenance": "PASS",
+    "check_broken_links": "PASS",
+    "test_url_engine": "PASS",
+    "validate_phase_7k": "PASS"
+  },
+  "forensic_reaudit": {
+    "pages": 522,
+    "schema_valid": 950,
+    "schema_missing": 39,
+    "schema_questionable": 3,
+    "duplicate_title_groups": 0,
+    "duplicate_description_groups": 0,
+    "matches_baseline": true
+  },
+  "reproducibility": {
+    "content_pages_byte_identical_across_two_builds": true,
+    "known_nondeterminism_scope_unchanged": true,
+    "known_nondeterminism_files": 15
+  },
+  "scope_control": {
+    "spanish_french": false,
+    "adsense": false,
+    "calculator_formula_changes": false,
+    "url_redirect_sitemap_redesign": false,
+    "phase_7g_generator_rewrite": "single verified correction only",
+    "fake_authority_or_dates": false,
+    "duplicate_sources": false,
+    "mass_citation_injection": false
+  },
+  "next_phase": "7L",
+  "auto_advance": false
+}

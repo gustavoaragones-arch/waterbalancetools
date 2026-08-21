@@ -243,7 +243,7 @@ for (const p of PARAMETERS) {
 const CONTEXT_MODEL = {
   environment: ['pool', 'hot_tub'],
   sanitizer: ['chlorine', 'bromine', 'saltwater_chlorine_generator', 'unspecified'],
-  scenario: ['routine_maintenance', 'target_range', 'treatment', 'shock', 'troubleshooting', 'calculator_input', 'calculator_output', 'safety_guidance'],
+  scenario: ['routine_maintenance', 'target_range', 'treatment', 'shock', 'troubleshooting', 'calculator_input', 'calculator_output', 'safety_guidance', 'algae_recovery'],
   temperature: ['general', 'cold', 'normal', 'elevated'],
 };
 

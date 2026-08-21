@@ -1,12 +1,16 @@
 {
-  "timestamp": "2026-08-20T22:20:21.445Z",
+  "timestamp": "2026-08-21T00:56:45.117Z",
   "parameters": 15,
-  "ranges": 23,
-  "sources": 9,
+  "ranges": 25,
+  "sources": 15,
   "claims": 16,
   "errors": [],
   "warnings": [
     "Source \"clevelandclinic-pool-chemical-safety\" is not referenced by any parameter, range, or claim (orphan source)",
+    "Source \"microphor-trichlor-sds-2016\" is not referenced by any parameter, range, or claim (orphan source)",
+    "Source \"asepsis-calhypo-msds-2005\" is not referenced by any parameter, range, or claim (orphan source)",
+    "Source \"aquamagazine-hasa-superchlorination-2020\" is not referenced by any parameter, range, or claim (orphan source)",
+    "Source \"cffa-vinyl-liner-bleaching\" is not referenced by any parameter, range, or claim (orphan source)",
     "Range \"range-ph-hottub-bromine-routine\" is not referenced by any canonical claim (orphan range)",
     "Range \"range-ph-pool-narrow-operational\" is not referenced by any canonical claim (orphan range)",
     "Range \"range-ta-public-pool-standard\" is not referenced by any canonical claim (orphan range)",
@@ -14,7 +18,9 @@
     "Range \"range-ch-residential-practical\" is not referenced by any canonical claim (orphan range)",
     "Range \"range-cya-saltwater-outdoor\" is not referenced by any canonical claim (orphan range)",
     "Range \"range-salt-pentair\" is not referenced by any canonical claim (orphan range)",
-    "Range \"range-salt-autopilot\" is not referenced by any canonical claim (orphan range)"
+    "Range \"range-salt-autopilot\" is not referenced by any canonical claim (orphan range)",
+    "Range \"range-shock-algae-recovery-green\" is not referenced by any canonical claim (orphan range)",
+    "Range \"range-temperature-hottub-max-safety\" is not referenced by any canonical claim (orphan range)"
   ],
   "status": "PASS"
 }

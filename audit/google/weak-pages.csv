@@ -1,6 +1,5 @@
 "url","priority","tier","type"
 "/reports/phase-7a","16","Tier 4","qa"
-"/reports/phase-7j/current-state-snapshot","16","Tier 4","qa"
 "/audit/google","21","Tier 4","documentation"
 "/reports/accessibility","24","Tier 4","qa"
 "/reports/ai-readiness","24","Tier 4","qa"
@@ -149,3 +148,4 @@
 "/entities/unit-ppm","80","Tier 2","entity"
 "/glossary/muriatic-acid","81","Tier 3","glossary"
 "/glossary/pool-pump","81","Tier 3","glossary"
+"/glossary/saturation-index","81","Tier 3","glossary"

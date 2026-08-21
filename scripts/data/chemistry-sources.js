@@ -138,6 +138,110 @@ const SOURCES = [
     topics: ['chemical_safety', 'mixing_hazards'],
     notes: 'Secondary source (non-governmental medical institution) used only to corroborate CPSC/CDC/NPIC chemical-mixing safety guidance, not as a standalone basis for any numeric range.',
   },
+  {
+    // Phase 7K: resolves the trichlor/calcium-hypochlorite mixing-hazard
+    // claim left REQUIRES_REVIEW in Phase 7J. Fetched and read directly
+    // (not summarized) -- Section 10 "Incompatible Materials" explicitly
+    // names "calcium hypochlorite" (not a generic "other pool chemicals"
+    // statement); the same document's EPA pesticide-label section (Sec.
+    // 15) explicitly states contamination/mixing with incompatible
+    // chemicals "may cause a violent reaction leading to fire or
+    // explosion." Both the specific incompatible-material naming and the
+    // fire/explosion consequence come from this one document.
+    id: 'microphor-trichlor-sds-2016',
+    organization: 'Allchem Performance Products, Inc. (manufacturer); distributed by Microphor, A Wabtec Company',
+    title: 'Safety Data Sheet — Chlorinating Slugs (Trichloro-s-triazinetrione / TCCA / Trichlor, 98-100%)',
+    url: 'https://www.msdsdigital.com/system/files/Material-Safety-Data-Sheet-Trichloroisocyanuric-Acid.pdf',
+    source_type: 'manufacturer_sds',
+    authority_level: 'manufacturer',
+    publication_date: '2015-05-27',
+    last_updated: '2016-09-06',
+    accessed_date: ACCESSED_DATE,
+    topics: ['trichlor', 'calcium_hypochlorite', 'chemical_mixing_hazard', 'fire_explosion_risk'],
+    notes: 'Section 10 (Stability and Reactivity), "Incompatible Materials": "Acids, ammonia, bases, floor sweeping compounds, calcium hypochlorite, reducing agents, organic solvents and compounds." Section 15 (EPA pesticide label / Physical and Chemical Hazards): "DO NOT mix with other chemicals... Do not add this product to any dispensing device containing remnants of any other product. Such use may cause a violent reaction leading to fire or explosion. Contamination with moisture, organic matter or other chemicals will start a chemical reaction and generate heat, hazardous gas, possible fire and explosion." Directly supports the site claim (trichlor should not be mixed with calcium hypochlorite -- fire and explosion risk); does not itself establish a numeric range.',
+  },
+  {
+    // Corroborating, reverse-direction source for the same finding: a
+    // calcium hypochlorite product's own SDS explicitly names trichlor.
+    id: 'asepsis-calhypo-msds-2005',
+    organization: 'Asepsis, Inc. (A Chemtura Company)',
+    title: 'Material Safety Data Sheet — Calcium Hypochlorite Tablets (67%)',
+    url: 'https://www.puraquapools.com/MSDS_Sheets/SANITIZERS/Calcium_hypochlorite.pdf',
+    source_type: 'manufacturer_sds',
+    authority_level: 'manufacturer',
+    publication_date: '2000-09-28',
+    last_updated: '2005-10-28',
+    accessed_date: ACCESSED_DATE,
+    topics: ['calcium_hypochlorite', 'trichlor', 'chemical_mixing_hazard', 'fire_explosion_risk'],
+    notes: 'Section 7 (Handling): "Do not use Trichlor-s-triazinetrione (Stabilized Chlorine) tablets or any other chlorinating compound in systems that use this product," in the same handling-precautions paragraph as "Such improper use may cause fire or explosion." Section 10 (Stability and Reactivity): "Keep away from... other swimming pool/spa chemicals in their concentrated forms. Mixing with any of the above materials can initiate a hazardous decomposition." Corroborates microphor-trichlor-sds-2016 from the calcium-hypochlorite side; the fire/explosion statement in this document is attached to the surrounding paragraph rather than the trichlor sentence specifically, so this is used as corroboration, not the primary basis for the claim.',
+  },
+  {
+    // Phase 7K: shock-dosing evidence gap identified in Phase 7J.
+    // Professional pool-industry trade publication, sponsored/reviewed
+    // content from Taylor Technologies (a real, established water-testing
+    // reagent manufacturer, already a named organization entity on this
+    // site). Fetched and read directly.
+    id: 'poolspanews-algae-breakpoint-2016',
+    organization: 'Pool & Spa News (trade publication); content from Taylor Technologies',
+    title: 'Have Algae? Confused about How Much Liquid Shock to Use?',
+    url: 'https://www.poolspanews.com/how-to/maintenance/have-algae-confused-about-how-much-liquid-shock-to-use',
+    source_type: 'professional_trade_publication',
+    authority_level: 'professional',
+    publication_date: '2016-10-31',
+    last_updated: null,
+    accessed_date: ACCESSED_DATE,
+    topics: ['shock_treatment', 'algae', 'breakpoint_chlorination'],
+    notes: 'States: "To eliminate a green algae bloom, the recommendation is to breakpoint chlorinate to 30 ppm... that is the minimum amount needed to break into the nucleus of the algae cell and disrupt its DNA structure." Also states routine "shocking is the simple addition of a few parts per million (usually 2-5 ppm)" for general water cleanup -- a materially different, lower figure than the site prior 10 ppm routine-maintenance claim. Does not differentiate dosing by algae severity (light/dark green/black) despite discussing green algae specifically. Single professional-trade-publication source, not a government/professional-standards-body source -- used at CONTEXTUAL confidence, not SUPPORTED.',
+  },
+  {
+    id: 'aquamagazine-hasa-superchlorination-2020',
+    organization: 'AQUA Magazine (trade publication); author Terry Arko, syndicated by HASA (manufacturer)',
+    title: 'Shock: Oxidation, Superchlorination, Hyperchlorination and Breakpoint Chlorination',
+    url: 'https://hasa.com/blog/shock-oxidation-superchlorination-hyperchlorination-and-breakpoint-chlorination',
+    source_type: 'professional_trade_publication',
+    authority_level: 'professional',
+    publication_date: '2020-09-04',
+    last_updated: null,
+    accessed_date: ACCESSED_DATE,
+    topics: ['shock_treatment', 'superchlorination', 'hyperchlorination', 'algae'],
+    notes: 'States superchlorination (routine maintenance / after heavy swim load, storms, early algae) raises free chlorine to 10-20 ppm -- does not separately distinguish a routine-maintenance figure from an algae-specific figure the way the site prior content did (10 ppm vs 30 ppm); treats both under one 10-20 ppm superchlorination range. Also describes CDC-aligned hyperchlorination for contamination (20 ppm/28hr, 30 ppm/18hr, or 40 ppm/8.5hr), corroborating the existing range-shock-cdc-fecal-incident-response record general shape without being identical in figures -- used only as corroboration for the incident-response scenario, not as the basis for a new range there. Single professional-trade-publication source -- used at CONTEXTUAL confidence.',
+  },
+  {
+    // Phase 7K, Step 9: material-specific source hierarchy -- a vinyl-
+    // liner-industry technical association, not a generic pool-chemistry
+    // article, used to evaluate the vinyl-pool entity's liner-bleaching
+    // material claim. Fetched and read directly.
+    id: 'cffa-vinyl-liner-bleaching',
+    organization: 'Coated Fabrics and Film Association (CFFA), Vinyl Pool Liners division',
+    title: 'Tips on Avoiding Vinyl Liner Bleaching by Chlorine',
+    url: 'https://www.cffaperformanceproducts.org/content/pdfs/TipsOnAvoidingVinylLinerBleachingByChlorine.pdf',
+    source_type: 'material_industry_association',
+    authority_level: 'professional',
+    publication_date: null,
+    last_updated: null,
+    accessed_date: ACCESSED_DATE,
+    topics: ['vinyl_liner', 'material_property', 'bleaching', 'trichlor'],
+    notes: 'Directly and specifically supports the vinyl-pool entity\'s liner-bleaching claim: "Tri-chlor is highly acidic and slow to dissolve, and if it sits directly on a pool liner, it may cause spot bleaching in as few as 6 hours," and lists "Shock product hasn\'t been pre dissolved prior to introduction to the pool" as a specific named cause. A genuine material-science/vinyl-liner-industry source (CFFA\'s own vinyl-pool-liner technical division), not a generic pool-chemistry article misapplied to a material claim, per Step 9.',
+  },
+  {
+    // Phase 7K: resolves the entities/temperature.html HIGH-priority safety
+    // claim (104 F hot-tub maximum) -- a genuine chemistry-ranges.js gap
+    // (no water_temperature record existed at all before this phase).
+    // Distinct edition/document from the existing cdc-mahc-2023 (4th
+    // Edition, CDC.gov PDF) -- this is the 5th Edition, fetched directly
+    // from the Council for the Model Aquatic Health Code's own site.
+    id: 'cmahc-mahc-5th-edition-2024',
+    organization: 'Council for the Model Aquatic Health Code (CMAHC)',
+    title: 'Model Aquatic Health Code (MAHC), 5th Edition, Section 5.7.4.7.2 (Maximum Temperature)',
+    url: 'https://cmahc.org/mahc_sections/1837',
+    source_type: 'government_public_health',
+    authority_level: 'primary',
+    publication_date: null,
+    last_updated: null,
+    accessed_date: ACCESSED_DATE,
+    topics: ['water_temperature', 'hot_tub', 'safety'],
+    notes: 'Section 5.7.4.7.2: "The maximum temperature for an AQUATIC VENUE is 104 F (40C)." Document identifies itself as the 5th Edition (year 2024 per the page), but no exact publication day/month was shown -- publication_date left null rather than guessed, per this project\'s established policy of not inventing dates.',
+  },
 ];
 
 const SOURCES_BY_ID = Object.fromEntries(SOURCES.map((s) => [s.id, s]));
