@@ -17,6 +17,23 @@ function esc(str) {
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+// source_type gives a precise label where one exists; authority_level is
+// the fallback for older records that predate source_type (Phase 7D-era
+// sources only ever set authority_level). Phase 7K introduced source_type
+// values that don't all map 1:1 onto an authority_level bucket -- e.g.
+// "professional" previously meant only ANSI-accredited standards, but now
+// also covers trade publications and material-industry associations,
+// which are not standards bodies and must not be labeled as one.
+const SOURCE_TYPE_LABELS = {
+  government_public_health: 'Government / public health authority',
+  industry_standard: 'Industry standard (ANSI-accredited)',
+  academic_extension: 'University / extension program',
+  medical_institution: 'Medical institution',
+  manufacturer_sds: 'Manufacturer safety data sheet',
+  professional_trade_publication: 'Professional trade publication',
+  material_industry_association: 'Material industry association',
+};
+
 function authorityLabel(level) {
   const labels = {
     primary: 'Government / public health authority',
@@ -26,6 +43,13 @@ function authorityLabel(level) {
     secondary: 'Secondary source',
   };
   return labels[level] || level;
+}
+
+function sourceLabel(source) {
+  if (source.source_type && SOURCE_TYPE_LABELS[source.source_type]) {
+    return SOURCE_TYPE_LABELS[source.source_type];
+  }
+  return authorityLabel(source.authority_level);
 }
 
 /**
@@ -42,7 +66,7 @@ function renderSourceList(sourceIds) {
     `<li class="knowledge-source-item">` +
     `<a href="${esc(s.url)}" rel="noopener" target="_blank">${esc(s.title)}</a>` +
     ` &mdash; ${esc(s.organization)}` +
-    ` <span class="knowledge-source-type">(${esc(authorityLabel(s.authority_level))})</span>` +
+    ` <span class="knowledge-source-type">(${esc(sourceLabel(s))})</span>` +
     `</li>`
   )).join('\n  ');
   return `<section class="knowledge-sources-real">\n  <h3>Sources</h3>\n  <ul>\n  ${items}\n  </ul>\n</section>`;
@@ -59,4 +83,4 @@ function renderClaimSources(claimId) {
   return renderSourceList(claim.source_ids);
 }
 
-module.exports = { renderSourceList, renderClaimSources, authorityLabel };
+module.exports = { renderSourceList, renderClaimSources, authorityLabel, sourceLabel };

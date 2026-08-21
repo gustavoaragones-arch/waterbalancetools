@@ -7,6 +7,14 @@ const { OUTPUT_DIR, VOLUMES, BASE_URL, BASE_HREF } = require('./shock-cluster-co
 const { PROGRAMMATIC_TITLE_SUFFIX } = require('../programmatic-seo-constants');
 const H = require('./serp-dominance-helpers');
 const S = require('../../lib/schemaEngine.js');
+const { renderSourceList } = require('../chemistry/renderSources');
+
+// Phase 7L (Step 7): the 30 ppm green-algae-recovery figure specifically is
+// source-supported (see claim-shock-algae-recovery-green); the 10 ppm
+// standard figure is not. The citation note names the row it supports
+// rather than implying the whole table is validated -- do not attach this
+// to the standard-dose row.
+const ALGAE_ROW_SOURCE_IDS = ['poolspanews-algae-breakpoint-2016'];
 
 if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
@@ -60,6 +68,10 @@ function buildTable(gallons) {
     (algae / 16).toFixed(2) +
     ' lb</td></tr>';
   table += '</tbody></table></div>';
+  const sourcesHtml = renderSourceList(ALGAE_ROW_SOURCE_IDS);
+  if (sourcesHtml) {
+    table += '<p class="knowledge-sources-note">The green algae recovery (30 ppm) figure above is supported by the source below. The standard 10 ppm figure is common industry guidance without a single confirmed primary source.</p>' + sourcesHtml;
+  }
   return table;
 }
 

@@ -122,6 +122,18 @@ function run() {
   const KNOWN_TIER1_CITED_PAGES = [
     'calculators/pool-chlorine-calculator.html', 'calculators/hot-tub-chlorine-calculator.html',
     'pool-alkalinity-levels-chart.html', 'hot-tub-chlorine-levels-chart.html',
+    // Added Phase 7L (see reports/phase-7l/CITATION-ELIGIBILITY.csv for the
+    // individual review behind each of these):
+    'calculators/pool-ph-calculator.html', 'calculators/chemical-calculator.html',
+    'pool-chlorine-levels-chart.html',
+    'entities/trichlor-tablets.html', 'entities/green-water.html',
+    'entities/temperature.html', 'entities/shock-treatment.html', 'entities/vinyl-pool.html',
+    'programmatic/shock/how-much-shock-for-5000-gallon-pool.html',
+    'programmatic/shock/how-much-shock-for-10000-gallon-pool.html',
+    'programmatic/shock/how-much-shock-for-15000-gallon-pool.html',
+    'programmatic/shock/how-much-shock-for-20000-gallon-pool.html',
+    'programmatic/shock/how-much-shock-for-25000-gallon-pool.html',
+    'programmatic/shock/how-much-shock-for-30000-gallon-pool.html',
   ];
   for (const file of allHtml) {
     const rel = path.relative(ROOT, file).replace(/\\/g, '/');

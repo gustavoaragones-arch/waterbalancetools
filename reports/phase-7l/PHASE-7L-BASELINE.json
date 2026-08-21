@@ -1,0 +1,77 @@
+{
+  "generated": "2026-08-21",
+  "total_html_files": 536,
+  "indexable_pages": 505,
+  "pages_with_visible_citations": 4,
+  "total_citation_links": 5,
+  "canonical_claims_total": 16,
+  "canonical_claims_supported_eligible": 13,
+  "canonical_claims_not_eligible": 3,
+  "sources_total": 15,
+  "citation_count_by_source": {
+    "https://www.cdc.gov/healthy-swimming/about/home-pool-and-hot-tub-water-treatment-and-testing.html": 3,
+    "https://www.cdc.gov/model-aquatic-health-code/media/pdfs/2023-MAHC-508.pdf": 1,
+    "https://www.phta.org/pub/?id=25a114b4-1866-daac-99fb-277001b3c020": 1
+  },
+  "claims_by_parameter": {
+    "ph": {
+      "total": 2,
+      "supported": 2
+    },
+    "free_chlorine": {
+      "total": 3,
+      "supported": 3
+    },
+    "cyanuric_acid": {
+      "total": 3,
+      "supported": 2
+    },
+    "total_alkalinity": {
+      "total": 1,
+      "supported": 1
+    },
+    "calcium_hardness": {
+      "total": 1,
+      "supported": 1
+    },
+    "salt": {
+      "total": 1,
+      "supported": 0
+    },
+    "bromine": {
+      "total": 1,
+      "supported": 1
+    },
+    "shock_treatment": {
+      "total": 2,
+      "supported": 1
+    },
+    "sanitizer": {
+      "total": 1,
+      "supported": 1
+    },
+    "combined_chlorine": {
+      "total": 1,
+      "supported": 1
+    }
+  },
+  "pages_with_citations_detail": [
+    {
+      "url": "calculators/hot-tub-chlorine-calculator.html",
+      "citations": 1
+    },
+    {
+      "url": "calculators/pool-chlorine-calculator.html",
+      "citations": 2
+    },
+    {
+      "url": "hot-tub-chlorine-levels-chart.html",
+      "citations": 1
+    },
+    {
+      "url": "pool-alkalinity-levels-chart.html",
+      "citations": 1
+    }
+  ],
+  "entity_claims_resolved_phase_7k": 6
+}

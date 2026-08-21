@@ -1,0 +1,98 @@
+{
+  "phase": "7L",
+  "title": "Authority Citation Expansion & Source Coverage",
+  "status": "PASS_WITH_REVIEW_QUEUE",
+  "baseline": {
+    "total_html_files": 536,
+    "pages_with_citations_before": 4,
+    "citation_links_before": 5,
+    "canonical_claims_before": 16
+  },
+  "final_state": {
+    "citation_blocks": 18,
+    "citation_links": 23,
+    "canonical_claims": 19,
+    "pages_newly_cited": 14
+  },
+  "new_canonical_claims": [
+    "claim-trichlor-calhypo-mixing-hazard",
+    "claim-shock-algae-recovery-green",
+    "claim-temperature-hottub-safety-max"
+  ],
+  "pages_cited_this_phase": [
+    "entities/trichlor-tablets.html", "entities/green-water.html", "entities/temperature.html",
+    "entities/shock-treatment.html", "entities/vinyl-pool.html",
+    "calculators/pool-ph-calculator.html", "calculators/chemical-calculator.html",
+    "pool-chlorine-levels-chart.html",
+    "programmatic/shock/how-much-shock-for-5000-gallon-pool.html",
+    "programmatic/shock/how-much-shock-for-10000-gallon-pool.html",
+    "programmatic/shock/how-much-shock-for-15000-gallon-pool.html",
+    "programmatic/shock/how-much-shock-for-20000-gallon-pool.html",
+    "programmatic/shock/how-much-shock-for-25000-gallon-pool.html",
+    "programmatic/shock/how-much-shock-for-30000-gallon-pool.html"
+  ],
+  "renderer_fix": "renderSources.js authorityLabel() would have mislabeled manufacturer_sds/professional_trade_publication/material_industry_association sources as ANSI-accredited standards; fixed with sourceLabel() before any page rendered",
+  "architecturally_blocked": [
+    "hot-tub-chemical-levels-chart.html", "salt-water-pool-chemical-levels-chart.html"
+  ],
+  "forensic_audit_kpi_note": "413/413 major factual pages metric unchanged -- audit's AUTHORITY_RE domain regex predates Phase 7K's expanded source hierarchy, does not recognize manufacturer/professional/material-association domains; not a citation failure, documented not gamed",
+  "validator": {
+    "script": "scripts/validate-citation-coverage.js",
+    "blocks_scanned": 18,
+    "links_scanned": 23,
+    "errors": 0,
+    "warnings": 0,
+    "result": "PASS"
+  },
+  "regression": {
+    "build": "PASS",
+    "validate_chemistry_knowledge": "PASS",
+    "validate_chemistry_extraction_v2": "PASS",
+    "validate_chemistry_evidence_dataset": "PASS",
+    "validate_provenance": "PASS",
+    "validate_provenance_resolution": "PASS",
+    "validate_trust_layer": "PASS",
+    "validate_trust": "PASS",
+    "validate_editorial_decisions": "PASS",
+    "validate_programmatic_quality": "PASS",
+    "validate_schema_content_consistency": "PASS",
+    "validate_phase_7h": "PASS",
+    "validate_phase_7i": "PASS",
+    "validate_entity_provenance": "PASS",
+    "validate_phase_7k": "PASS",
+    "validate_citation_coverage": "PASS",
+    "check_broken_links": "PASS",
+    "test_url_engine": "PASS",
+    "validate_url_engine": "PASS"
+  },
+  "forensic_reaudit": {
+    "pages": 522,
+    "schema_valid": 950,
+    "schema_missing": 39,
+    "schema_questionable": 3,
+    "duplicate_title_groups": 0,
+    "duplicate_description_groups": 0,
+    "accessibility_flagged_pages": 0,
+    "matches_phase_7k_baseline": true
+  },
+  "reproducibility": {
+    "citation_content_byte_identical_across_two_builds": true,
+    "verified_directly": true,
+    "pre_existing_nondeterminism_scope_corrected": "footer-injection whitespace drift touches ~150-170 files per build (not 15 as previously characterized in Phase 7K), confirmed present on the pre-7L commit 2e5c094 before any Phase 7L edit -- entirely pre-existing, not introduced or worsened this phase",
+    "citation_generation_introduced_no_new_nondeterminism": true
+  },
+  "scope_control": {
+    "spanish_french": false,
+    "adsense": false,
+    "calculator_formula_changes": false,
+    "url_redirect_sitemap_changes": false,
+    "phase_7g_generator_rewrite": "single Step-16-permitted sync only",
+    "mass_content_rewrite": false,
+    "fake_authors_or_reviewers": false,
+    "fabricated_citations": false,
+    "arbitrary_citation_percentage_target": false,
+    "client_side_citation_framework": false
+  },
+  "next_phase": "7M",
+  "auto_advance": false
+}

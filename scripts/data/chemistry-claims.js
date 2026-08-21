@@ -138,6 +138,37 @@ const CLAIMS = [
     // Upgraded from REQUIRES_REVIEW 2026-08-18 during Phase 7E.2 -- see
     // range-cc-pool-hottub-max in chemistry-ranges.js for the verification.
   },
+  {
+    // Added Phase 7L (Step 3): distinct from the generic
+    // claim-mixing-chemicals-danger above -- this is the specific
+    // trichlor + calcium hypochlorite pairing, resolved in Phase 7K with
+    // two manufacturer SDS documents naming the opposing chemical and the
+    // fire/explosion consequence explicitly, not a generic "don't mix
+    // chemicals" inference.
+    claim_id: 'claim-trichlor-calhypo-mixing-hazard',
+    parameter_id: 'sanitizer', context: { environment: 'pool', sanitizer: 'chlorine', scenario: 'safety_guidance' },
+    claim_text: 'Trichlor tablets should not be mixed with calcium hypochlorite -- doing so carries a fire and explosion risk.',
+    range_id: null, source_ids: ['microphor-trichlor-sds-2016', 'asepsis-calhypo-msds-2005'], status: 'SUPPORTED',
+  },
+  {
+    // Added Phase 7L. Distinct scenario from claim-shock-breakpoint-rule
+    // (routine/generic, REQUIRES_REVIEW) and claim-shock-fecal-incident-
+    // response (public-facility contamination protocol, SUPPORTED) --
+    // green-algae recovery is its own scenario per Phase 7K's research and
+    // the Director's explicit "distinct scenarios" instruction.
+    claim_id: 'claim-shock-algae-recovery-green',
+    parameter_id: 'shock_treatment', context: { environment: 'pool', sanitizer: 'chlorine', scenario: 'algae_recovery' },
+    claim_text: 'Recovering from a green algae bloom requires breakpoint-chlorinating to approximately 30 ppm free chlorine.',
+    range_id: 'range-shock-algae-recovery-green', source_ids: ['poolspanews-algae-breakpoint-2016'], status: 'CONTEXTUAL',
+  },
+  {
+    // Added Phase 7L. Hot-tub-specific safety ceiling, not a comfort target
+    // range -- see range-temperature-hottub-max-safety's rationale.
+    claim_id: 'claim-temperature-hottub-safety-max',
+    parameter_id: 'water_temperature', context: { environment: 'hot_tub', sanitizer: 'unspecified', scenario: 'safety_guidance' },
+    claim_text: 'Hot tub water temperature above 104°F (40°C) is a safety hazard and can cause hyperthermia.',
+    range_id: 'range-temperature-hottub-max-safety', source_ids: ['cmahc-mahc-5th-edition-2024'], status: 'SUPPORTED',
+  },
 ];
 
 const CLAIMS_BY_ID = Object.fromEntries(CLAIMS.map((c) => [c.claim_id, c]));

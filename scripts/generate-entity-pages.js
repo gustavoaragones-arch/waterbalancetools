@@ -12,6 +12,8 @@
 const fs   = require('fs');
 const path = require('path');
 const urlEngine = require('../js/url/url-engine');
+const { CLAIMS_BY_ID } = require('./data/chemistry-claims');
+const { renderSourceList } = require('./chemistry/renderSources');
 
 const ROOT   = path.join(__dirname, '..');
 const DATA   = path.join(ROOT, 'data');
@@ -237,6 +239,52 @@ ${rows}  </dl>
 </section>`;
 }
 
+// Phase 7L (Step 10): entity-level citations. Only entities with an
+// individually reviewed, directly-supporting claim get an entry here --
+// this is not a lookup applied to every entity, it is a short, explicit
+// allowlist. `claimIds` render via the canonical chemistry-claims.js layer;
+// `sourceIds` render a source directly for a claim that doesn't fit the
+// parameter-based claims schema (e.g. a material-science claim). `note`
+// is used when the entity's prose contains more than one claim of
+// differing status, so the citation isn't misread as supporting the whole
+// paragraph.
+const ENTITY_CITATIONS = {
+  'trichlor-tablets': {
+    claimIds: ['claim-trichlor-calhypo-mixing-hazard'],
+  },
+  'green-water': {
+    claimIds: ['claim-shock-algae-recovery-green'],
+  },
+  'temperature': {
+    claimIds: ['claim-temperature-hottub-safety-max'],
+  },
+  'shock-treatment': {
+    claimIds: ['claim-shock-algae-recovery-green'],
+    note: 'The source below supports the 30 ppm green-algae-recovery figure specifically. The routine-maintenance (10 ppm) and breakpoint-rule (10x combined chlorine) figures above are common industry guidance without a confirmed primary source and remain under review.',
+  },
+  'vinyl-pool': {
+    sourceIds: ['cffa-vinyl-liner-bleaching'],
+  },
+};
+
+function buildSourcesSection(entityId) {
+  const cfg = ENTITY_CITATIONS[entityId];
+  if (!cfg) return '';
+  let sourceIds = [];
+  if (cfg.claimIds) {
+    for (const cid of cfg.claimIds) {
+      const claim = CLAIMS_BY_ID[cid];
+      if (claim && claim.source_ids) sourceIds.push(...claim.source_ids);
+    }
+  }
+  if (cfg.sourceIds) sourceIds.push(...cfg.sourceIds);
+  sourceIds = [...new Set(sourceIds)];
+  const listHtml = renderSourceList(sourceIds);
+  if (!listHtml) return '';
+  const note = cfg.note ? `<p class="knowledge-sources-note">${esc(cfg.note)}</p>\n` : '';
+  return note + listHtml;
+}
+
 function buildResourceSection(ids) {
   if (!ids || ids.length === 0) return '';
   const cards = ids.map(id => {
@@ -323,6 +371,7 @@ Object.values(entityIndex).forEach(entity => {
     META_DESCRIPTION:  esc(metaDesc),
     OG_TITLE:          esc(entity.name),
     ENTITY_FACTS:      buildEntityFacts(entity),
+    SOURCES_SECTION:   buildSourcesSection(id),
     RELATIONSHIPS_CONTENT: relContent || '<p>No relationships defined for this entity.</p>',
     CALC_SECTION:      buildCalcSection(entity.calculatorIds),
     ACADEMY_SECTION:   buildItemSection(entity.academyIds, articleById, a => a.title, a => a.slug, 'academy', 'Academy Articles'),
