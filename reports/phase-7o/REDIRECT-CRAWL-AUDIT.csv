@@ -1,0 +1,6 @@
+redirect_source,destination,chain_or_loop,internal_links_pointing_at_source_before_this_phase,internal_links_pointing_at_source_after_this_phase,action
+/calculators/volume-calculator,/calculators/pool-volume-calculator,none,0 (already fixed in Phase 7N),0,VALID -- confirmed clean
+/charts/hot-tub-chemical-levels-chart,/hot-tub-chemical-levels-chart,none,3,0,FIXED this phase -- 3 files corrected to canonical root-level path
+/charts/pool-chemical-levels-chart,/pool-chemical-levels-chart,none,8,0,FIXED this phase -- 8 files corrected to canonical root-level path
+/programmatic/how-much-chlorine-for-5000-gallon-pool (+3 sibling volumes),/programmatic/chlorine/how-much-chlorine-for-*-gallon-pool,none,0,0,VALID -- no internal links found pointing at any legacy chlorine slug
+/programmatic/explanation/* and /explanations/* (3 slugs x2 legacy prefixes),/programmatic/explanations/*,none,0,0,VALID -- all internal links already use the canonical /programmatic/explanations/ prefix (initial broad grep match was a false positive from substring overlap, verified directly)

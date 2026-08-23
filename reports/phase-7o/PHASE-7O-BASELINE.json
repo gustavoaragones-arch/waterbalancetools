@@ -1,0 +1,19 @@
+{
+  "captured_at_commit": "b5fa47ccdd8e112abef5a788d88a26d6018ea4a6",
+  "generated": "2026-08-23",
+  "total_pages": 524,
+  "indexable_pages": 480,
+  "schema_valid": 953,
+  "schema_missing": 39,
+  "schema_questionable": 3,
+  "duplicate_title_groups": 0,
+  "duplicate_description_groups": 0,
+  "orphan_pages_before": 2,
+  "sitemap_urls_before": 481,
+  "sitemap_duplicate_homepage_entry_found": true,
+  "redirect_sources": 3,
+  "stray_links_to_redirect_sources_found": 11,
+  "islands_found": ["releases (4 pages)", "tools/index.html + printables (4 pages)"],
+  "lastmod_was_wallclock_uniform": true,
+  "gsc_data_available": false
+}

@@ -1,0 +1,4 @@
+url,page_type,crawl_depth,inbound_links,priority,finding,action
+charts/index.html,chart-index,4,3,P2,Directory index for the 2 legacy/retired chart pages -- appropriately deprioritized since its children are intentional redirect sources.,NONE
+maintenance/how-to-fix-cloudy-hot-tub.html,maintenance-guide,4,3,P2,"Real content page. Already improved from depth 5 to 4 in Phase 7N via a contextual link from academy/troubleshooting/cloudy-water.html. Ordinary content, not a Tier-1/2 page -- further promotion would risk artificial link inflation for marginal benefit.",NONE
+maintenance/index.html,maintenance-hub,4,3,P2,"Hub page itself sits at depth 4 because its only inbound links come from its own 3 children plus a handful of secondary references -- consistent with maintenance/ being an intentionally lower-priority silo (Tier 4), not a defect.",NONE

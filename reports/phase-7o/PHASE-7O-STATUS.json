@@ -1,0 +1,113 @@
+{
+  "phase": "7O",
+  "title": "Indexing & Crawl Optimization",
+  "status": "PASS_WITH_REVIEW_QUEUE",
+  "baseline_commit": "b5fa47ccdd8e112abef5a788d88a26d6018ea4a6",
+  "bugs_fixed": [
+    "generate-sitemaps.js: uniform wall-clock lastmod on every URL -> real git-commit-date-based lastmod",
+    "generate-sitemaps.js: duplicate homepage <loc> in sitemap-calculators.xml",
+    "qa-engine.js: orphan check did not exempt known redirect-source pages, causing a false-positive release-gate failure",
+    "generate-all-pages.js: stray non-canonical href (/tools/index vs canonical /tools)",
+    "generate-all-pages.js: releases/ family (4 pages) had no discovery path from outside its own cluster"
+  ],
+  "redirect_source_link_cleanup": {
+    "files_fixed": 11,
+    "links_fixed": 14
+  },
+  "orphans": {
+    "before": 2,
+    "after": 4,
+    "true_orphans": 0,
+    "all_confirmed_intentional": true
+  },
+  "crawl_simulation": {
+    "total_canonical_pages": 480,
+    "discovered_before_fix": 473,
+    "discovered_after_fix": 477,
+    "undiscovered_remaining": 3,
+    "undiscovered_pages": ["/printables/airbnb-pool-turnover-checklist", "/printables/hot-tub-maintenance-log", "/printables/pool-maintenance-checklist"]
+  },
+  "sitemap": {
+    "urls_before": 481,
+    "urls_after": 480,
+    "duplicate_loc_fixed": true,
+    "lastmod_now_git_based": true
+  },
+  "crawl_depth": {
+    "p0_findings": 0,
+    "p1_findings": 0,
+    "p2_findings": 3
+  },
+  "tier_reclassifications": 9,
+  "validator": {
+    "script": "scripts/validate-phase-7o.js",
+    "pages_scanned": 511,
+    "sitemap_urls_checked": 488,
+    "citation_blocks_confirmed": 18,
+    "citation_links_confirmed": 23,
+    "errors": 0,
+    "warnings": 0,
+    "result": "PASS"
+  },
+  "regression": {
+    "build": "PASS",
+    "validate_chemistry_knowledge": "PASS",
+    "validate_chemistry_extraction_v2": "PASS",
+    "validate_chemistry_evidence_dataset": "PASS",
+    "validate_provenance": "PASS",
+    "validate_provenance_resolution": "PASS",
+    "validate_trust_layer": "PASS",
+    "validate_trust": "PASS",
+    "validate_editorial_decisions": "PASS",
+    "validate_programmatic_quality": "PASS",
+    "validate_schema_content_consistency": "PASS",
+    "validate_phase_7h": "PASS",
+    "validate_phase_7i": "PASS",
+    "validate_entity_provenance": "PASS",
+    "validate_phase_7k": "PASS",
+    "validate_citation_coverage": "PASS",
+    "validate_phase_7m": "PASS",
+    "validate_phase_7n": "PASS",
+    "validate_phase_7o": "PASS",
+    "check_broken_links": "PASS",
+    "test_url_engine": "PASS",
+    "validate_url_engine": "PASS"
+  },
+  "forensic_reaudit": {
+    "pages": 524,
+    "schema_valid": 953,
+    "schema_missing": 39,
+    "schema_questionable": 3,
+    "duplicate_title_groups": 0,
+    "duplicate_description_groups": 0,
+    "accessibility_flagged_pages": 0,
+    "cannibalization_high_risk": 0,
+    "orphans_change_explained": true,
+    "no_legitimate_page_deleted": true
+  },
+  "reproducibility": {
+    "footer_whitespace_nondeterminism_files": 171,
+    "footprint_expanded_by_this_phase": false,
+    "sitemap_files_now_excluded_from_nondeterminism": true
+  },
+  "scope_control": {
+    "spanish_french": false,
+    "adsense": false,
+    "calculator_formula_changes": false,
+    "chemistry_rewrites": false,
+    "broad_content_rewrites": false,
+    "programmatic_family_restructuring": false,
+    "url_renaming": false,
+    "mass_redirects": false,
+    "fake_authors_or_reviewers": false,
+    "fabricated_gsc_data": false,
+    "fabricated_search_volume": false,
+    "fabricated_lastmod_dates": false,
+    "keyword_stuffing": false,
+    "artificial_internal_link_inflation": false,
+    "sitemap_priority_manipulation": false,
+    "mass_citation_changes": false
+  },
+  "next_phase": "7P",
+  "auto_advance": false
+}

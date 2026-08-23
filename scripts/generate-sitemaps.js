@@ -25,6 +25,7 @@
 
 const fs   = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 const { isLegacyProgrammaticChlorine } = require('./redirect-rules');
 const urlEngine = require('../js/url/url-engine');
 const urlPolicy = require('./url-policy');
@@ -90,11 +91,46 @@ function getCategory(cleanPath) {
 
 const TODAY = new Date().toISOString().slice(0, 10);
 
-function urlEntry(cleanPath, prio) {
+// Phase 7O (Step 9): lastmod previously stamped every single sitemap URL
+// with the current build date regardless of whether that page's content
+// actually changed -- a well-known sitemap anti-pattern that both
+// overstates freshness on stable pages and, at scale, teaches crawlers to
+// discount the signal entirely. Real per-file lastmod comes from this
+// file's actual git commit history (deterministic given the same commit
+// history, and never fabricated) rather than wall-clock "today." A file
+// with no commit history yet (newly added, not yet committed) falls back
+// to TODAY -- which is honest, since that genuinely is the only date
+// known for it.
+let GIT_LASTMOD = null;
+function buildGitLastmodMap() {
+  if (GIT_LASTMOD) return GIT_LASTMOD;
+  GIT_LASTMOD = new Map();
+  try {
+    const out = execSync('git log --format="C:%cs" --name-only -- "*.html"', { cwd: ROOT, maxBuffer: 1024 * 1024 * 64 }).toString();
+    let currentDate = null;
+    for (const line of out.split('\n')) {
+      if (line.startsWith('C:')) { currentDate = line.slice(2); continue; }
+      const rel = line.trim();
+      if (!rel || GIT_LASTMOD.has(rel)) continue; // git log is newest-first; keep the first (most recent) date seen per file
+      if (currentDate) GIT_LASTMOD.set(rel, currentDate);
+    }
+  } catch (e) {
+    // Not a git checkout, or git unavailable -- fall back to TODAY for
+    // every file rather than failing the build over a freshness signal.
+  }
+  return GIT_LASTMOD;
+}
+
+function lastmodFor(rel) {
+  const map = buildGitLastmodMap();
+  return (rel && map.get(rel)) || TODAY;
+}
+
+function urlEntry(cleanPath, prio, rel) {
   const url = urlEngine.sitemapUrl(cleanPath || '/');
   return `  <url>
     <loc>${url}</loc>
-    <lastmod>${TODAY}</lastmod>
+    <lastmod>${lastmodFor(rel)}</lastmod>
     <changefreq>${prio.changefreq}</changefreq>
     <priority>${prio.priority}</priority>
   </url>`;
@@ -124,15 +160,20 @@ const groups = {
 };
 
 // Homepage first
-groups.calculators.unshift(urlEntry('/', { priority: '1.0', changefreq: 'weekly' }));
+groups.calculators.unshift(urlEntry('/', { priority: '1.0', changefreq: 'weekly' }, 'index.html'));
 
 for (const rel of files) {
   const cleanPath = toCleanPath(rel);
   if (!cleanPath && cleanPath !== '') continue;
-  const cat = cleanPath === '/' ? 'calculators' : getCategory(cleanPath.replace(/^\//, ''));
+  // Phase 7O (Step 8): the homepage is already added explicitly above via
+  // unshift() -- root index.html was ALSO falling through this loop and
+  // being re-added, producing a genuine duplicate <loc> for / within
+  // sitemap-calculators.xml. Skip it here; it has exactly one entry.
+  if (cleanPath === '/') continue;
+  const cat = getCategory(cleanPath.replace(/^\//, ''));
   const prio = PRIORITIES[cat] || PRIORITIES.other;
   const group = groups[cat] || groups.other;
-  group.push(urlEntry(cleanPath, prio));
+  group.push(urlEntry(cleanPath, prio, rel));
 }
 
 // ── Write grouped sitemaps ────────────────────────────────────────────────────

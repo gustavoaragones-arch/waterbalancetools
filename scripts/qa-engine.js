@@ -399,7 +399,19 @@ function runLinksAudit(ctx) {
 
   const canonicalPages = ctx.pages.map((p) => toPageUrl(p));
   const corePages = canonicalPages.filter((u) => isTier123(u));
-  const orphans = corePages.filter((u) => !['/', '/404'].includes(u) && (inbound.get(u) || inbound.get(u + '/') || 0) === 0);
+  // Phase 7O (Step 21): a retired/redirect-source page is SUPPOSED to have
+  // zero internal inbound links -- every internal link should point at its
+  // canonical replacement, never at the redirect source. Flagging it as an
+  // orphan error here would penalize the correct end-state (this surfaced
+  // directly: fixing 11 pages' stray links to the legacy charts/*.html
+  // redirect sources, per Step 12, made those 2 pages legitimately
+  // link-free, which is right, not a defect).
+  const redirectSourceUrls = new Set(
+    ctx.pages
+      .filter((p) => isRedirectSource(path.relative(ROOT, p).replace(/\\/g, '/')))
+      .map((p) => toPageUrl(p))
+  );
+  const orphans = corePages.filter((u) => !['/', '/404'].includes(u) && !redirectSourceUrls.has(u) && (inbound.get(u) || inbound.get(u + '/') || 0) === 0);
   const lowOutbound = corePages.filter((u) => (outbound.get(u) || 0) < 3).length;
   const lowInbound = corePages.filter((u) => (inbound.get(u) || inbound.get(u + '/') || 0) < 3).length;
   if (broken) r.errors.push(`Broken internal links detected: ${broken}`);

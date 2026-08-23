@@ -118,12 +118,26 @@ const systemHubBlock =
   '        <li><a href="/pool-chemistry-system">Pool Chemistry System: How All Parameters Work Together</a></li>\n' +
   '    </ul>\n';
 
+// Phase 7O (Step 20/21): releases/index.html and its 3 children had zero
+// inbound links from anywhere outside their own small cluster -- a real
+// crawl-discovery island with no bridge to the main site graph. all-pages
+// is the crawl-support mechanism explicitly meant to guarantee every
+// intended canonical page family is reachable, so it is the right place
+// to add this one link (not a link-farm addition -- a single, real,
+// missing family).
+const releasesBlock =
+  '    <h2>Releases</h2>\n' +
+  '    <ul class="ring-links all-pages-list">\n' +
+  '        <li><a href="/releases">Release History</a></li>\n' +
+  '    </ul>\n';
+
 const bodySections =
   systemHubBlock +
   sectionBlock('Calculators', calculators) +
   referenceChartsBlock +
   sectionBlock('Reference Library', referenceGuides) +
   sectionBlock('Comparisons', comparisons) +
+  releasesBlock +
   [
     { h2: 'Chlorine',      paths: chlorine },
     { h2: 'Shock',         paths: shockPages },
@@ -157,7 +171,7 @@ const html = `<!DOCTYPE html>
       <img src="assets/logo.svg" alt="WaterBalanceTools" class="logo" width="180" height="36">
     </a>
     <nav class="nav">
-      <a href="/tools/index">All Tools</a>
+      <a href="/tools">All Tools</a>
       <a href="/calculators/chemical-calculator">Chemical Calculator</a>
       <a href="/guides/pool-chemistry-basics">Chemistry Guide</a>
     </nav>

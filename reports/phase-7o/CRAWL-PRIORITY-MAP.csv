@@ -1,0 +1,17 @@
+tier,page_family,examples,page_count_approx,rationale
+TIER_1,Homepage,/,1,Primary entry point.
+TIER_1,Primary calculators,"pool-chlorine, hot-tub-chlorine, pool-ph, hot-tub-ph, pool-shock, hot-tub-shock, chemical-calculator, pool-volume-calculator",8,"Core utility tools -- highest direct user value, depth 1, 460+ inbound links each."
+TIER_1,Core reference charts,"pool-chemical-levels-chart (468 inbound), pool-chlorine-levels-chart (29), pool-ph-levels-chart (25)",3,"Root-level canonical reference charts with genuinely Tier-1-scale internal-link equity (25-468 inbound) -- Tier-1 citation targets (Phase 7L) and primary AEO answer sources."
+TIER_1,Major cornerstone guides,guides/pool-chemistry-basics (468 inbound),1,Top-level silo hub anchoring the whole guide architecture.
+TIER_2,Secondary reference charts,"hot-tub-chemical-levels-chart (13), hot-tub-chlorine-levels-chart (4), pool-alkalinity-levels-chart (3), pool-cya-levels-chart (4), salt-water-pool-chemical-levels-chart (4)",5,"Reclassified down from an initial Tier-1 assumption after measuring actual internal-link equity (Step 16) -- these support Tier-1 topics but see meaningfully less direct linking than the ""big 3"" combined charts. Not artificially inflated to match Tier 1; reflects the real architecture."
+TIER_2,Secondary silo guides,"guides/chlorine-guide (52), guides/ph-guide (14), guides/hot-tub-chemistry (18), guides/alkalinity-guide (6)",4,Same reclassification rationale as the secondary charts above.
+TIER_2,Academy articles,48 articles across 8 categories,48,"Substantive explainer content, Phase 7M-verified topical depth."
+TIER_2,Important entities,"free-chlorine, ph, total-alkalinity, cyanuric-acid, temperature, shock-treatment, trichlor-tablets, green-water, vinyl-pool, lsi",~15,Entities carrying Phase 7K/7L-verified citations or central to a topical cluster.
+TIER_2,High-value troubleshooting guides,"academy/troubleshooting/*, guides/edge-cases/*, guides/chlorine/*, guides/ph/*, guides/hot-tub/*",~30,Symptom-diagnosis and edge-case content driving real long-tail search intent.
+TIER_2,Seasonal/year-round authority pages,"academy/fundamentals/indoor-pool-chemistry, guides/edge-cases/evaporation-effect-on-pool-chemistry, academy/hot-tubs/winter-spa-care, academy/fundamentals/how-temperature-changes-water-chemistry",4+,Phase 7M seasonal-resilience content -- explicitly prioritized for discoverability per Step 19.
+TIER_3,Programmatic long-tail,"programmatic/{chlorine,shock,ph,hot-tubs,problems,behavior,explanations}/*",~57,"Phase 7N.1-confirmed-acceptable parametric long-tail pages -- real but narrower per-page search intent than Tier 1/2."
+TIER_3,Secondary entities,Remaining ~89 entity pages not in the Tier-2 list,~89,Real knowledge-graph nodes but individually lower search-demand than the Tier-2 subset.
+TIER_3,Supporting glossary/reference,"101 glossary terms, reference/* pages",~140,Short definitions and reference material supporting topical authority rather than driving primary traffic.
+TIER_4,Legal/methodology/editorial,"legal/*, methodology/*, editorial/*",~17,Compliance/transparency pages -- intentionally low search priority.
+TIER_4,Printables/resources,"printables/*, printable/*, resources/*",~13,Downloadable/utility content -- supports UX, not primary SEO targets.
+TIER_4,Other intentionally lower-priority,"releases/*, revisions/*, provenance/*, comparisons/*, formulas/*",~30,Supporting/meta content.

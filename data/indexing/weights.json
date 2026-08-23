@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T13:34:16.560Z",
+  "generatedAt": "2026-08-23T22:55:23.016Z",
   "rationale": {
     "homepage": "Top-level discovery and authority distribution.",
     "calculators": "Primary transactional pages with highest SEO/business impact.",
@@ -16713,6 +16713,14 @@
     },
     {
       "from": "/all-pages",
+      "to": "/releases",
+      "fromType": "other",
+      "toType": "release",
+      "weight": 30,
+      "reason": "other to release authority flow"
+    },
+    {
+      "from": "/all-pages",
       "to": "/programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool",
       "fromType": "other",
       "toType": "programmatic",
@@ -24201,6 +24209,14 @@
     },
     {
       "from": "/charts/pool-water-balance-chart",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "chart",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "chart to chart authority flow"
+    },
+    {
+      "from": "/charts/pool-water-balance-chart",
       "to": "/calculators/pool-chlorine-calculator",
       "fromType": "chart",
       "toType": "calculator",
@@ -24393,6 +24409,14 @@
     },
     {
       "from": "/comparisons/chlorine-vs-bromine-hot-tub",
+      "to": "/hot-tub-chemical-levels-chart",
+      "fromType": "comparison",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "comparison to chart authority flow"
+    },
+    {
+      "from": "/comparisons/chlorine-vs-bromine-hot-tub",
       "to": "/calculators/hot-tub-chlorine-calculator",
       "fromType": "comparison",
       "toType": "calculator",
@@ -24406,6 +24430,14 @@
       "toType": "calculator",
       "weight": 65,
       "reason": "comparison to calculator authority flow"
+    },
+    {
+      "from": "/comparisons/chlorine-vs-bromine-hot-tub",
+      "to": "/hot-tub-chemical-levels-chart",
+      "fromType": "comparison",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "comparison to chart authority flow"
     },
     {
       "from": "/comparisons/chlorine-vs-bromine-hot-tub",
@@ -26537,6 +26569,14 @@
     },
     {
       "from": "/comparisons/saltwater-pool-vs-chlorine",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "comparison",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "comparison to chart authority flow"
+    },
+    {
+      "from": "/comparisons/saltwater-pool-vs-chlorine",
       "to": "/calculators/pool-chlorine-calculator",
       "fromType": "comparison",
       "toType": "calculator",
@@ -26550,6 +26590,14 @@
       "toType": "calculator",
       "weight": 65,
       "reason": "comparison to calculator authority flow"
+    },
+    {
+      "from": "/comparisons/saltwater-pool-vs-chlorine",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "comparison",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "comparison to chart authority flow"
     },
     {
       "from": "/comparisons/saltwater-pool-vs-chlorine",
@@ -97273,6 +97321,14 @@
     },
     {
       "from": "/maintenance/how-often-add-chlorine-pool",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/maintenance/how-often-add-chlorine-pool",
       "to": "/calculators/pool-volume-calculator",
       "fromType": "other",
       "toType": "calculator",
@@ -97425,6 +97481,14 @@
     },
     {
       "from": "/maintenance/how-to-balance-pool-water",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/maintenance/how-to-balance-pool-water",
       "to": "/calculators/pool-volume-calculator",
       "fromType": "other",
       "toType": "calculator",
@@ -97486,6 +97550,14 @@
       "toType": "calculator",
       "weight": 65,
       "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/maintenance/how-to-balance-pool-water",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
     },
     {
       "from": "/maintenance/how-to-balance-pool-water",
@@ -97694,6 +97766,14 @@
       "toType": "calculator",
       "weight": 65,
       "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/maintenance/how-to-fix-cloudy-hot-tub",
+      "to": "/hot-tub-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
     },
     {
       "from": "/maintenance/how-to-fix-cloudy-hot-tub",
@@ -101449,6 +101529,14 @@
     },
     {
       "from": "/printables/airbnb-pool-turnover-checklist",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/printables/airbnb-pool-turnover-checklist",
       "to": "/printables/pool-maintenance-checklist",
       "fromType": "other",
       "toType": "other",
@@ -101577,6 +101665,14 @@
     },
     {
       "from": "/printables/hot-tub-maintenance-log",
+      "to": "/hot-tub-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/printables/hot-tub-maintenance-log",
       "to": "/calculators/pool-volume-calculator",
       "fromType": "other",
       "toType": "calculator",
@@ -101694,6 +101790,14 @@
       "toType": "calculator",
       "weight": 65,
       "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/printables/pool-maintenance-checklist",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
     },
     {
       "from": "/printables/pool-maintenance-checklist",
@@ -117273,6 +117377,14 @@
     },
     {
       "from": "/reference/common-pool-chemistry-mistakes",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "reference",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "reference to chart authority flow"
+    },
+    {
+      "from": "/reference/common-pool-chemistry-mistakes",
       "to": "/calculators/pool-chlorine-calculator",
       "fromType": "reference",
       "toType": "calculator",
@@ -120550,6 +120662,14 @@
       "toType": "calculator",
       "weight": 65,
       "reason": "reference to calculator authority flow"
+    },
+    {
+      "from": "/reference/pool-chemicals-explained",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "reference",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "reference to chart authority flow"
     },
     {
       "from": "/reference/pool-chemicals-explained",
