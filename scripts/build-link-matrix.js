@@ -47,6 +47,7 @@ const DEPTH_SILO = {
   'guides/edge-cases/pool-temperature-effect-chlorine.html': 'chlorine',
   'guides/edge-cases/swimming-after-shocking-pool.html': 'chlorine',
   'guides/edge-cases/rain-effect-on-pool-chemistry.html': 'general',
+  'guides/edge-cases/evaporation-effect-on-pool-chemistry.html': 'general',
   'guides/edge-cases/high-cya-chlorine-lock.html': 'chlorine',
   'guides/edge-cases/over-shocking-pool-effects.html': 'chlorine',
   'guides/seasonal/opening-pool-chemistry-checklist.html': 'general',
@@ -105,6 +106,7 @@ const EDGE_PAGES = [
   { rel: 'guides/edge-cases/pool-temperature-effect-chlorine.html', label: 'Pool temperature & chlorine' },
   { rel: 'guides/edge-cases/swimming-after-shocking-pool.html', label: 'Swimming after shocking' },
   { rel: 'guides/edge-cases/rain-effect-on-pool-chemistry.html', label: 'Rain & pool chemistry' },
+  { rel: 'guides/edge-cases/evaporation-effect-on-pool-chemistry.html', label: 'Evaporation & pool chemistry' },
   { rel: 'guides/edge-cases/high-cya-chlorine-lock.html', label: 'High CYA chlorine lock' },
   { rel: 'guides/edge-cases/over-shocking-pool-effects.html', label: 'Over-shocking effects' },
   // Phase 6 — practical troubleshooting guides

@@ -360,6 +360,16 @@
     "keywords": "how water balance works"
   },
   {
+    "url": "/academy/fundamentals/indoor-pool-chemistry",
+    "title": "Indoor Pool Chemistry",
+    "description": "Why indoor pools need different chemistry management than outdoor pools: no CYA, more aggressive chloramine control, and ventilation-driven pH drift.",
+    "h1": "Indoor Pool Chemistry",
+    "category": "Academy",
+    "readingTime": "6 min read",
+    "updated": "2026-08-22",
+    "keywords": "indoor pool chemistry"
+  },
+  {
     "url": "/academy/fundamentals/pool-vs-hot-tub-chemistry",
     "title": "Pool vs. Hot Tub Chemistry",
     "description": "Understand how hot tub water chemistry differs from pool chemistry, including tighter target ranges, faster depletion, and more frequent testing.",
@@ -2450,6 +2460,16 @@
     "keywords": "edge cases guides hub"
   },
   {
+    "url": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+    "title": "Does Evaporation Affect Pool Chemistry? (Concentration, Not Dilution)",
+    "description": "Does evaporation affect pool chemistry? Yes—it concentrates CYA, salt, calcium, and TDS as pure water leaves and top-off water replaces it.",
+    "h1": "Evaporation's Effect on Pool Chemistry",
+    "category": "Guides",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "does evaporation affect pool chemistry concentration not dilution effect"
+  },
+  {
     "url": "/guides/edge-cases/high-cya-chlorine-lock",
     "title": "High CYA Chlorine Lock (Why FC Reads Fine But Water Fails)",
     "description": "Why chlorine stops working when CYA is high: less active sanitizer per ppm reading—fix with dilution and FC targets.",
@@ -4251,113 +4271,113 @@
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool",
-    "title": "How Much Chlorine for 10000 Gallon Pool (Exact Dose)",
+    "title": "How Much Chlorine for 10000 Gallon Pool",
     "description": "Get exact ounces for a 10,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 10,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much chlorine for 10000 gallon pool exact dose you need 000"
+    "keywords": "how much chlorine for 10000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool",
-    "title": "How Much Chlorine for 12000 Gallon Pool (Exact Dose)",
+    "title": "How Much Chlorine for 12000 Gallon Pool",
     "description": "Get exact ounces for a 12,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 12,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much chlorine for 12000 gallon pool exact dose you need 000"
+    "keywords": "how much chlorine for 12000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool",
-    "title": "How Much Chlorine for 15000 Gallon Pool (Exact Dose)",
+    "title": "How Much Chlorine for 15000 Gallon Pool",
     "description": "Get exact ounces for a 15,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 15,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much chlorine for 15000 gallon pool exact dose you need 000"
+    "keywords": "how much chlorine for 15000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool",
-    "title": "How Much Chlorine for 18000 Gallon Pool (Exact Dose)",
+    "title": "How Much Chlorine for 18000 Gallon Pool",
     "description": "Get exact ounces for a 18,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 18,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much chlorine for 18000 gallon pool exact dose you need 000"
+    "keywords": "how much chlorine for 18000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool",
-    "title": "How Much Chlorine for 20000 Gallon Pool (Exact Dose)",
+    "title": "How Much Chlorine for 20000 Gallon Pool",
     "description": "Get exact ounces for a 20,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 20,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much chlorine for 20000 gallon pool exact dose you need 000"
+    "keywords": "how much chlorine for 20000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool",
-    "title": "How Much Chlorine for 25000 Gallon Pool (Exact Dose)",
+    "title": "How Much Chlorine for 25000 Gallon Pool",
     "description": "Get exact ounces for a 25,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 25,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much chlorine for 25000 gallon pool exact dose you need 000"
+    "keywords": "how much chlorine for 25000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool",
-    "title": "How Much Chlorine for 30000 Gallon Pool (Exact Dose)",
+    "title": "How Much Chlorine for 30000 Gallon Pool",
     "description": "Get exact ounces for a 30,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 30,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much chlorine for 30000 gallon pool exact dose you need 000"
+    "keywords": "how much chlorine for 30000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool",
-    "title": "How Much Chlorine for 5000 Gallon Pool (Exact Dose)",
+    "title": "How Much Chlorine for 5000 Gallon Pool",
     "description": "Get exact ounces for a 5,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 5,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much chlorine for 5000 gallon pool exact dose you need 000"
+    "keywords": "how much chlorine for 5000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool",
-    "title": "How Much Chlorine for 7000 Gallon Pool (Exact Dose)",
+    "title": "How Much Chlorine for 7000 Gallon Pool",
     "description": "Get exact ounces for a 7,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 7,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much chlorine for 7000 gallon pool exact dose you need 000"
+    "keywords": "how much chlorine for 7000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool",
-    "title": "How Much Chlorine for 8000 Gallon Pool (Exact Dose)",
+    "title": "How Much Chlorine for 8000 Gallon Pool",
     "description": "Get exact ounces for a 8,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 8,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much chlorine for 8000 gallon pool exact dose you need 000"
+    "keywords": "how much chlorine for 8000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool",
-    "title": "How Much Chlorine for 9000 Gallon Pool (Exact Dose)",
+    "title": "How Much Chlorine for 9000 Gallon Pool",
     "description": "Get exact ounces for a 9,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 9,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much chlorine for 9000 gallon pool exact dose you need 000"
+    "keywords": "how much chlorine for 9000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/explanations",
@@ -4411,53 +4431,53 @@
   },
   {
     "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons",
-    "title": "Hot Tub Chemicals for 200 Gallons (Dosing Guide)",
+    "title": "Hot Tub Chemicals for 200 Gallons",
     "description": "Sanitizer dosing for a 200-gallon spa. Get exact chlorine reference and calculators—safe hot tub water chemistry.",
     "h1": "What Chemicals Do You Need for a 200 Gallon Hot Tub?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "hot tub chemicals for 200 gallons dosing guide what you need gallon"
+    "keywords": "hot tub chemicals for 200 gallons what you need gallon"
   },
   {
     "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons",
-    "title": "Hot Tub Chemicals for 300 Gallons (Dosing Guide)",
+    "title": "Hot Tub Chemicals for 300 Gallons",
     "description": "Sanitizer dosing for a 300-gallon spa. Get exact chlorine reference and calculators—safe hot tub water chemistry.",
     "h1": "What Chemicals Do You Need for a 300 Gallon Hot Tub?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "hot tub chemicals for 300 gallons dosing guide what you need gallon"
+    "keywords": "hot tub chemicals for 300 gallons what you need gallon"
   },
   {
     "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons",
-    "title": "Hot Tub Chemicals for 400 Gallons (Dosing Guide)",
+    "title": "Hot Tub Chemicals for 400 Gallons",
     "description": "Sanitizer dosing for a 400-gallon spa. Get exact chlorine reference and calculators—safe hot tub water chemistry.",
     "h1": "What Chemicals Do You Need for a 400 Gallon Hot Tub?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "hot tub chemicals for 400 gallons dosing guide what you need gallon"
+    "keywords": "hot tub chemicals for 400 gallons what you need gallon"
   },
   {
     "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons",
-    "title": "Hot Tub Chemicals for 500 Gallons (Dosing Guide)",
+    "title": "Hot Tub Chemicals for 500 Gallons",
     "description": "Sanitizer dosing for a 500-gallon spa. Get exact chlorine reference and calculators—safe hot tub water chemistry.",
     "h1": "What Chemicals Do You Need for a 500 Gallon Hot Tub?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "hot tub chemicals for 500 gallons dosing guide what you need gallon"
+    "keywords": "hot tub chemicals for 500 gallons what you need gallon"
   },
   {
     "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons",
-    "title": "Hot Tub Chemicals for 600 Gallons (Dosing Guide)",
+    "title": "Hot Tub Chemicals for 600 Gallons",
     "description": "Sanitizer dosing for a 600-gallon spa. Get exact chlorine reference and calculators—safe hot tub water chemistry.",
     "h1": "What Chemicals Do You Need for a 600 Gallon Hot Tub?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "hot tub chemicals for 600 gallons dosing guide what you need gallon"
+    "keywords": "hot tub chemicals for 600 gallons what you need gallon"
   },
   {
     "url": "/programmatic/ph",
@@ -4471,43 +4491,43 @@
   },
   {
     "url": "/programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2",
-    "title": "How to Adjust Pool pH from 6.8 to 7.2 (Safe Steps)",
+    "title": "How to Adjust Pool pH from 6.8 to 7.2",
     "description": "Adjust pool pH from 6.8 to 7.2. Use the calculator for exact ounces and stable pH balance.",
     "h1": "How Do You Adjust Pool pH from 6.8 to 7.2?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how adjust pool from safe steps you"
+    "keywords": "how adjust pool from you"
   },
   {
     "url": "/programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4",
-    "title": "How to Adjust Pool pH from 7.8 to 7.4 (Safe Steps)",
+    "title": "How to Adjust Pool pH from 7.8 to 7.4",
     "description": "Adjust pool pH from 7.8 to 7.4. Use the calculator for exact ounces and stable pH balance.",
     "h1": "How Do You Adjust Pool pH from 7.8 to 7.4?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how adjust pool from safe steps you"
+    "keywords": "how adjust pool from you"
   },
   {
     "url": "/programmatic/ph/how-to-adjust-ph-from-7-to-7-4",
-    "title": "How to Adjust Pool pH from 7 to 7.4 (Safe Steps)",
+    "title": "How to Adjust Pool pH from 7 to 7.4",
     "description": "Adjust pool pH from 7 to 7.4. Use the calculator for exact ounces and stable pH balance.",
     "h1": "How Do You Adjust Pool pH from 7 to 7.4?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how adjust pool from safe steps you"
+    "keywords": "how adjust pool from you"
   },
   {
     "url": "/programmatic/ph/how-to-adjust-ph-from-8-to-7-5",
-    "title": "How to Adjust Pool pH from 8 to 7.5 (Safe Steps)",
+    "title": "How to Adjust Pool pH from 8 to 7.5",
     "description": "Adjust pool pH from 8 to 7.5. Use the calculator for exact ounces and stable pH balance.",
     "h1": "How Do You Adjust Pool pH from 8 to 7.5?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how adjust pool from safe steps you"
+    "keywords": "how adjust pool from you"
   },
   {
     "url": "/programmatic/problems",
@@ -4571,63 +4591,63 @@
   },
   {
     "url": "/programmatic/shock/how-much-shock-for-10000-gallon-pool",
-    "title": "How Much Shock for 10000 Gallon Pool (Exact Ounces)",
+    "title": "How Much Shock for 10000 Gallon Pool",
     "description": "Get granular shock ounces for a 10,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
     "h1": "How Much Shock Do You Need for a 10,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much shock for 10000 gallon pool exact ounces you need 000"
+    "keywords": "how much shock for 10000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/shock/how-much-shock-for-15000-gallon-pool",
-    "title": "How Much Shock for 15000 Gallon Pool (Exact Ounces)",
+    "title": "How Much Shock for 15000 Gallon Pool",
     "description": "Get granular shock ounces for a 15,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
     "h1": "How Much Shock Do You Need for a 15,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much shock for 15000 gallon pool exact ounces you need 000"
+    "keywords": "how much shock for 15000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/shock/how-much-shock-for-20000-gallon-pool",
-    "title": "How Much Shock for 20000 Gallon Pool (Exact Ounces)",
+    "title": "How Much Shock for 20000 Gallon Pool",
     "description": "Get granular shock ounces for a 20,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
     "h1": "How Much Shock Do You Need for a 20,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much shock for 20000 gallon pool exact ounces you need 000"
+    "keywords": "how much shock for 20000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/shock/how-much-shock-for-25000-gallon-pool",
-    "title": "How Much Shock for 25000 Gallon Pool (Exact Ounces)",
+    "title": "How Much Shock for 25000 Gallon Pool",
     "description": "Get granular shock ounces for a 25,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
     "h1": "How Much Shock Do You Need for a 25,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much shock for 25000 gallon pool exact ounces you need 000"
+    "keywords": "how much shock for 25000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/shock/how-much-shock-for-30000-gallon-pool",
-    "title": "How Much Shock for 30000 Gallon Pool (Exact Ounces)",
+    "title": "How Much Shock for 30000 Gallon Pool",
     "description": "Get granular shock ounces for a 30,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
     "h1": "How Much Shock Do You Need for a 30,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much shock for 30000 gallon pool exact ounces you need 000"
+    "keywords": "how much shock for 30000 gallon pool you need 000"
   },
   {
     "url": "/programmatic/shock/how-much-shock-for-5000-gallon-pool",
-    "title": "How Much Shock for 5000 Gallon Pool (Exact Ounces)",
+    "title": "How Much Shock for 5000 Gallon Pool",
     "description": "Get granular shock ounces for a 5,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
     "h1": "How Much Shock Do You Need for a 5,000 Gallon Pool?",
     "category": "Other",
     "readingTime": null,
     "updated": null,
-    "keywords": "how much shock for 5000 gallon pool exact ounces you need 000"
+    "keywords": "how much shock for 5000 gallon pool you need 000"
   },
   {
     "url": "/releases",

@@ -79,7 +79,7 @@ function buildPage(volume) {
   const g = formatNum(volume);
   const slug = slugFor(volume);
   const shock = estimateShock(volume);
-  const ctrTitle = 'How Much Shock for ' + volume + ' Gallon Pool (Exact Ounces)';
+  const ctrTitle = 'How Much Shock for ' + volume + ' Gallon Pool';
   const h1 = 'How Much Shock Do You Need for a ' + g + ' Gallon Pool?';
   const metaDesc =
     'Get granular shock ounces for a ' +
@@ -96,27 +96,24 @@ function buildPage(volume) {
   const standardOz = shockOz(volume, 10).toFixed(1);
   const algaeOz = shockOz(volume, 30).toFixed(1);
   const sizeClass = volume < 10000 ? 'a smaller residential pool' : volume <= 20000 ? 'a typical mid-size residential pool' : 'a large residential pool';
+  // Page-specific unit conversion (arithmetic, not a chemistry claim) so
+  // the algae-recovery dose is stated in a second, container-relevant unit
+  // that genuinely differs by volume rather than repeating a generic tips
+  // list on every page.
+  const algaeLb = (shockOz(volume, 30) / 16).toFixed(2);
 
   const faqList = [
     {
       q: 'How much shock for a ' + g + ' gallon pool?',
-      a: 'A standard shock (about a 10 ppm chlorine raise) for a ' + g + '-gallon pool is roughly ' + standardOz + ' oz of granular shock. Recovering from a green algae bloom calls for a much stronger breakpoint dose, about 30 ppm (roughly ' + algaeOz + ' oz). Confirm with the calculator using your actual current reading.'
+      a: 'A standard shock (about a 10 ppm chlorine raise) for a ' + g + '-gallon pool is roughly ' + standardOz + ' oz of granular shock. Recovering from a green algae bloom calls for a much stronger breakpoint dose, about 30 ppm (roughly ' + algaeOz + ' oz, or ' + algaeLb + ' lb). Confirm with the calculator using your actual current reading.'
     },
     {
       q: 'Is a ' + g + ' gallon pool considered small, medium, or large?',
       a: 'At ' + g + ' gallons, this is ' + sizeClass + '. The shock dose scales with volume; the target ppm raise (10 ppm standard, 30 ppm for green algae recovery) stays the same regardless of pool size.'
     },
     {
-      q: 'Can you add too much shock?',
-      a: 'Yes—very high chlorine can delay swimming and irritate skin. Always test and follow label safety.'
-    },
-    {
-      q: 'How long after shocking can you swim?',
-      a: 'Wait until free chlorine returns to a safe range per label and local guidance—often when water is clear and tests read normal.'
-    },
-    {
-      q: 'Is liquid or granular shock better?',
-      a: 'This page focuses on granular ounces; liquid products differ. Use the calculator and match product type to your situation.'
+      q: 'How many bags of shock is that for ' + g + ' gallons?',
+      a: 'Granular shock is commonly sold in 1 lb bags, so a standard dose is roughly ' + (shockOz(volume, 10) / 16).toFixed(1) + ' bags and a green-algae-recovery dose is roughly ' + algaeLb + ' bags at ' + g + ' gallons -- check your specific product\'s label, since concentration varies by brand.'
     }
   ];
 
@@ -195,15 +192,6 @@ function buildPage(volume) {
       'Under-shocking can leave the pool sliding back to cloudy or green water; over-shocking keeps swimmers out longer and can stress equipment finishes. See <a href="' + BASE_HREF + 'academy/sanitizers/shock-treatments-explained">the shock treatment guide</a> for troubleshooting.'
     ]) +
     '\n' +
-    H.quickTipsSection([
-      'Shock in the evening when practical—less immediate UV loss than midday, and you can run the pump overnight.',
-      'Brush walls and floor after dosing to expose algae to treated water.',
-      'Backwash or clean the filter when pressure rises; a loaded filter slows recovery.',
-      'Retest before swimming; follow label wait times and local health guidance.',
-      'Do not mix different shock types or add through the skimmer unless the label allows it.',
-      'Pair shock with good pH—extreme pH reduces how effective the sanitizer is during the treatment window.'
-    ]) +
-    '\n' +
     explanationBlock +
     '\n' +
     H.commonQuestionsSection(faqList) +
@@ -215,8 +203,8 @@ function buildPage(volume) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${H.escapeAttr(metaDesc)}">
-  <title>${H.escapeAttr(ctrTitle)}${H.escapeAttr(PROGRAMMATIC_TITLE_SUFFIX)}</title>
-  <meta property="og:title" content="${H.escapeAttr(ctrTitle)}${H.escapeAttr(PROGRAMMATIC_TITLE_SUFFIX)}">
+  <title>${H.escapeAttr(ctrTitle)}</title>
+  <meta property="og:title" content="${H.escapeAttr(ctrTitle)} | Pool Water Chemistry Guide">
   <meta property="og:description" content="${H.escapeAttr(metaDesc)}">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="${BASE_HREF}style.css">

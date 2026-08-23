@@ -1,0 +1,96 @@
+{
+  "phase": "7M",
+  "title": "Content Quality, Topical Depth & Seasonal Resilience",
+  "status": "PASS_WITH_REVIEW_QUEUE",
+  "baseline_commit": "3f7ce8f39e906b5f1b1a9f9eadf6973a43e653fd",
+  "programmatic_differentiation": {
+    "chlorine": { "risk_before": "HIGH", "risk_after": "HIGH", "similarity_before": 0.650, "similarity_after": 0.565 },
+    "shock": { "risk_before": "HIGH", "risk_after": "HIGH", "similarity_before": 0.715, "similarity_after": 0.621 },
+    "ph": { "risk_before": "HIGH", "risk_after": "MEDIUM", "similarity_before": 0.579, "similarity_after": 0.488 },
+    "hot_tubs": { "risk_before": "HIGH", "risk_after": "HIGH", "similarity_before": 0.705, "similarity_after": 0.629 }
+  },
+  "new_pages": [
+    "academy/fundamentals/indoor-pool-chemistry.html",
+    "guides/edge-cases/evaporation-effect-on-pool-chemistry.html"
+  ],
+  "academy_articles_audited": 48,
+  "academy_articles_added": 1,
+  "edge_cases_evaluated": 29,
+  "edge_cases_adequate": 24,
+  "edge_cases_investigate": 5,
+  "title_fixes": {
+    "findings_before": 86,
+    "findings_after": 51,
+    "fixed": 35,
+    "improved_still_over": 1,
+    "unchanged_different_pattern": 50
+  },
+  "citation_preservation": {
+    "blocks_before": 18,
+    "blocks_after": 18,
+    "links_before": 23,
+    "links_after": 23,
+    "regressions": 0
+  },
+  "validator": {
+    "script": "scripts/validate-phase-7m.js",
+    "pages_scanned": 513,
+    "citation_pages_confirmed": "18/18",
+    "errors": 0,
+    "warnings": 0,
+    "result": "PASS"
+  },
+  "regression": {
+    "build": "PASS",
+    "validate_chemistry_knowledge": "PASS",
+    "validate_chemistry_extraction_v2": "PASS",
+    "validate_chemistry_evidence_dataset": "PASS",
+    "validate_provenance": "PASS",
+    "validate_provenance_resolution": "PASS",
+    "validate_trust_layer": "PASS",
+    "validate_trust": "PASS",
+    "validate_editorial_decisions": "PASS",
+    "validate_programmatic_quality": "PASS",
+    "validate_schema_content_consistency": "PASS",
+    "validate_phase_7h": "PASS",
+    "validate_phase_7i": "PASS",
+    "validate_entity_provenance": "PASS",
+    "validate_phase_7k": "PASS",
+    "validate_citation_coverage": "PASS",
+    "validate_phase_7m": "PASS",
+    "check_broken_links": "PASS",
+    "test_url_engine": "PASS",
+    "validate_url_engine": "PASS"
+  },
+  "forensic_reaudit": {
+    "pages": 524,
+    "schema_valid": 953,
+    "schema_missing": 39,
+    "schema_questionable": 3,
+    "duplicate_title_groups": 0,
+    "duplicate_description_groups": 0,
+    "accessibility_flagged_pages": 0,
+    "new_p1_finding_investigated": "pool-volume-calculator vs volume-calculator borderline pair -- confirmed pre-existing/incidental, not caused by this phase's edits"
+  },
+  "reproducibility": {
+    "differentiated_programmatic_pages_byte_identical": true,
+    "new_academy_article_byte_identical": true,
+    "new_edge_case_page_only_diff_is_preexisting_footer_whitespace": true,
+    "sitewide_footer_whitespace_nondeterminism_files": 171,
+    "note": "broader than Phase 7L's 150-170/qa-reports characterization but confirmed pre-existing (present on the clean pre-7M commit) and whitespace-only in every sampled file"
+  },
+  "scope_control": {
+    "spanish_french": false,
+    "adsense": false,
+    "calculator_formula_changes": false,
+    "url_redirect_sitemap_redesign": false,
+    "mass_citation_changes": false,
+    "phase_7g_architecture_replacement": false,
+    "fake_authors_or_reviewers": false,
+    "fabricated_first_hand_experience": false,
+    "unsupported_chemistry_claims": false,
+    "broad_sitewide_rewrite": false
+  },
+  "next_phase": "7N",
+  "auto_advance": false
+}

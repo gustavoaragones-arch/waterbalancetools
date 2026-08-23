@@ -3640,6 +3640,82 @@
         "Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022",
         "CDC — Healthy Swimming Guidelines"
       ]
+    },
+    {
+      "id": "fund-06",
+      "slug": "academy/fundamentals/indoor-pool-chemistry",
+      "title": "Indoor Pool Chemistry",
+      "description": "Why indoor pools need different chemistry management than outdoor pools: no CYA, more aggressive chloramine control, and ventilation-driven pH drift.",
+      "summary": "Indoor pools face a chemistry problem outdoor pools don't: without sunlight to break down chlorine, stabilizer becomes unnecessary and even counterproductive, while chloramine vapor and rising pH become the dominant issues instead.",
+      "category": "fundamentals",
+      "readingTime": "6 min read",
+      "lastReviewed": "2026-08-22",
+      "keywords": [
+        "indoor pool chemistry",
+        "indoor pool chlorine",
+        "indoor pool ventilation",
+        "indoor pool CYA"
+      ],
+      "overview": "Indoor pools run on the same underlying chemistry as outdoor pools, but two outdoor variables disappear indoors: sunlight and open-air ventilation. Removing UV exposure changes how chlorine should be managed; removing natural air exchange changes how chloramines and pH behave. An indoor pool that is dosed and tested like an outdoor pool will typically end up with chlorine that lingers too long relative to demand, and air quality complaints that a pool-side chlorine test alone won't explain.",
+      "keyFacts": [
+        "Cyanuric acid protects chlorine from UV degradation -- indoors, there is no UV to protect against, so CYA provides no benefit and only suppresses chlorine's effective strength.",
+        "Chloramines (combined chlorine) accumulate more noticeably indoors because there is far less air movement to carry the vapor away.",
+        "pH tends to drift upward indoors as dissolved CO2 escapes into the enclosed air faster than it's replenished, an effect that is muted outdoors by constant air exchange.",
+        "Continuous, dedicated ventilation of the pool enclosure is the primary tool for indoor air quality -- it is an equipment/HVAC issue as much as a water-chemistry one."
+      ],
+      "sections": [
+        {
+          "id": "why-no-cya-indoors",
+          "h2": "Why Cyanuric Acid Doesn't Belong Indoors",
+          "body": "Cyanuric acid (CYA) exists to solve one specific problem: sunlight destroys unprotected chlorine within a couple of hours. Indoors, that problem doesn't exist -- chlorine loss is driven by bather demand and chloramine formation, not UV. Adding CYA to an indoor pool doesn't protect anything; it simply buffers hypochlorous acid the same way it does outdoors, making the same free-chlorine reading less effective at killing pathogens. Because indoor pools have no reason to carry stabilizer, an indoor pool with measurable CYA usually means fill water, a shared filtration system with an outdoor body of water, or dichlor/trichlor products (which both add CYA as a byproduct) being used out of habit rather than need. Liquid chlorine or cal-hypo -- neither of which adds CYA -- are the more appropriate sanitizer choice for a CYA-free indoor pool."
+        },
+        {
+          "id": "chloramines-indoors",
+          "h2": "Chloramines Build Up Faster Without Airflow",
+          "body": "Combined chlorine (chloramines) forms whenever free chlorine reacts with bather waste -- sweat, urine, and personal care products -- and it is a weak disinfectant that off-gasses as an irritant vapor. Outdoors, that vapor disperses into open air. Indoors, in an enclosed volume with limited air exchange, the same chloramine production concentrates near the water surface, which is why indoor pool complaints (eye and throat irritation, a strong 'chlorine smell' that is actually a sign of too little effective sanitizer, not too much) are more common than outdoor ones even at similar combined-chlorine readings. The fix on the water-chemistry side is the same as anywhere: breakpoint-chlorinate to destroy chloramines rather than trying to mask the smell with more routine dosing. See the combined chlorine guide for the underlying mechanism."
+        },
+        {
+          "id": "ph-co2-indoors",
+          "h2": "pH Drift and CO2 Off-Gassing",
+          "body": "Pool water holds dissolved carbon dioxide, and as CO2 escapes to the air, pH rises. Outdoors, wind and open sky keep this exchange roughly in equilibrium. Indoors, if the air handling system isn't purpose-built for a pool enclosure, CO2 can escape the water faster than it's replenished, and indoor pools commonly see pH creep upward between tests even with no chemical added. This is a mechanical/HVAC interaction, not a dosing error, so the practical response is more frequent pH testing and smaller, more frequent acid corrections rather than one large correction sized for an outdoor pool's typical drift rate."
+        },
+        {
+          "id": "ventilation-is-not-optional",
+          "h2": "Ventilation Is Part of the Chemistry Program",
+          "body": "For an indoor pool, air handling is not a comfort feature layered on top of water chemistry -- it is one of the controls that determines what the water chemistry needs to do. Continuous fresh-air exchange over the pool surface removes chloramine vapor before it concentrates, moderates the CO2/pH dynamic described above, and protects the building structure from the moisture and corrosive vapor a poorly ventilated pool enclosure produces. A facility with strong ventilation can run closer to standard target ranges; one without it will fight both chloramine buildup and pH drift regardless of how carefully the water itself is dosed."
+        }
+      ],
+      "commonMistakes": [
+        "Using dichlor or trichlor tablets indoors out of habit, silently building up CYA that serves no purpose in a UV-free environment.",
+        "Treating a strong chlorine smell as a sign to add more chlorine, when it usually signals chloramines and calls for breakpoint chlorination instead.",
+        "Testing pH on the same schedule as an outdoor pool, missing the faster CO2-driven drift that indoor enclosures can produce.",
+        "Attributing air-quality complaints entirely to water chemistry when inadequate ventilation is the primary driver."
+      ],
+      "relatedCalculators": [
+        "/calculators/pool-chlorine-calculator",
+        "/calculators/pool-ph-calculator"
+      ],
+      "relatedCharts": [
+        "/pool-chemical-levels-chart"
+      ],
+      "relatedResources": [
+        "/resources/water-test-log"
+      ],
+      "relatedTopics": [
+        "academy/sanitizers/combined-chlorine-explained",
+        "academy/water-balance/understanding-cyanuric-acid",
+        "academy/water-balance/understanding-ph",
+        "academy/fundamentals/how-temperature-changes-water-chemistry"
+      ],
+      "relatedFormulas": [
+        "formulas/liquid-chlorine-formula",
+        "formulas/ph-adjustment-formula"
+      ],
+      "relatedGlossary": [
+        "glossary/cyanuric-acid",
+        "glossary/combined-chlorine",
+        "glossary/ph"
+      ]
     }
   ]
 }

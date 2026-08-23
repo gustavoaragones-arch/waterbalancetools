@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T03:40:45.254Z",
+  "generatedAt": "2026-08-23T01:27:48.385Z",
   "rationale": {
     "homepage": "Top-level discovery and authority distribution.",
     "calculators": "Primary transactional pages with highest SEO/business impact.",
@@ -2209,6 +2209,14 @@
     },
     {
       "from": "/academy/fundamentals/how-temperature-changes-water-chemistry",
+      "to": "/academy/fundamentals/indoor-pool-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/how-temperature-changes-water-chemistry",
       "to": "/calculators/chemical-calculator",
       "fromType": "academy",
       "toType": "calculator",
@@ -2474,6 +2482,14 @@
     {
       "from": "/academy/fundamentals/how-water-balance-works",
       "to": "/academy/fundamentals/why-water-testing-matters",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/how-water-balance-works",
+      "to": "/academy/fundamentals/indoor-pool-chemistry",
       "fromType": "academy",
       "toType": "academy",
       "weight": 50,
@@ -2761,6 +2777,14 @@
     },
     {
       "from": "/academy/fundamentals",
+      "to": "/academy/fundamentals/indoor-pool-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals",
       "to": "/academy",
       "fromType": "academy",
       "toType": "other",
@@ -2849,6 +2873,302 @@
     },
     {
       "from": "/academy/fundamentals",
+      "to": "/legal/legal",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/",
+      "fromType": "academy",
+      "toType": "homepage",
+      "weight": 30,
+      "reason": "academy to homepage authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/calculators/chemical-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/resources",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "academy",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "academy to chart authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/academy",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "academy",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "academy to guide authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/about",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/search",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/",
+      "fromType": "academy",
+      "toType": "homepage",
+      "weight": 30,
+      "reason": "academy to homepage authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/academy",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/academy/fundamentals",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/academy/fundamentals/understanding-pool-water-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/academy/fundamentals/how-water-balance-works",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/academy/fundamentals/the-four-core-water-tests",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/academy/fundamentals/pool-vs-hot-tub-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/academy/fundamentals/how-temperature-changes-water-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/academy/fundamentals/why-water-testing-matters",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/academy/fundamentals/indoor-pool-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/calculators/pool-chlorine-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/calculators/pool-ph-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/calculators/pool-chlorine-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/calculators/pool-ph-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "academy",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "academy to chart authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/resources/water-test-log",
+      "fromType": "academy",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "academy to resource authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/academy/sanitizers/combined-chlorine-explained",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/academy/water-balance/understanding-cyanuric-acid",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/academy/water-balance/understanding-ph",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/academy/fundamentals/how-temperature-changes-water-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/calculators/pool-volume-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/calculators/pool-chlorine-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/calculators/pool-shock-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/calculators/pool-ph-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "academy",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "academy to chart authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "academy",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "academy to guide authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/all-pages",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/legal/ownership",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
       "to": "/legal/legal",
       "fromType": "academy",
       "toType": "other",
@@ -2986,6 +3306,14 @@
     {
       "from": "/academy/fundamentals/pool-vs-hot-tub-chemistry",
       "to": "/academy/fundamentals/why-water-testing-matters",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/pool-vs-hot-tub-chemistry",
+      "to": "/academy/fundamentals/indoor-pool-chemistry",
       "fromType": "academy",
       "toType": "academy",
       "weight": 50,
@@ -3274,6 +3602,14 @@
     {
       "from": "/academy/fundamentals/the-four-core-water-tests",
       "to": "/academy/fundamentals/why-water-testing-matters",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/the-four-core-water-tests",
+      "to": "/academy/fundamentals/indoor-pool-chemistry",
       "fromType": "academy",
       "toType": "academy",
       "weight": 50,
@@ -3578,6 +3914,14 @@
     {
       "from": "/academy/fundamentals/understanding-pool-water-chemistry",
       "to": "/academy/fundamentals/why-water-testing-matters",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/understanding-pool-water-chemistry",
+      "to": "/academy/fundamentals/indoor-pool-chemistry",
       "fromType": "academy",
       "toType": "academy",
       "weight": 50,
@@ -3890,6 +4234,14 @@
     {
       "from": "/academy/fundamentals/why-water-testing-matters",
       "to": "/academy/fundamentals/why-water-testing-matters",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/why-water-testing-matters",
+      "to": "/academy/fundamentals/indoor-pool-chemistry",
       "fromType": "academy",
       "toType": "academy",
       "weight": 50,
@@ -16801,6 +17153,14 @@
     },
     {
       "from": "/all-pages",
+      "to": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/all-pages",
       "to": "/guides/edge-cases/high-cya-chlorine-lock",
       "fromType": "other",
       "toType": "guide",
@@ -17569,7 +17929,7 @@
     },
     {
       "from": "/calculators/chemical-calculator",
-      "to": "/reference/datasets/dosage-matrices",
+      "to": "/reference/pool-chemical-timeline",
       "fromType": "calculator",
       "toType": "reference",
       "weight": 60,
@@ -17577,7 +17937,7 @@
     },
     {
       "from": "/calculators/chemical-calculator",
-      "to": "/reference/datasets/hot-tub-ranges",
+      "to": "/reference/pool-chemicals-explained",
       "fromType": "calculator",
       "toType": "reference",
       "weight": 60,
@@ -17585,7 +17945,7 @@
     },
     {
       "from": "/calculators/chemical-calculator",
-      "to": "/reference/datasets",
+      "to": "/reference/pool-chemistry-reference",
       "fromType": "calculator",
       "toType": "reference",
       "weight": 60,
@@ -17593,7 +17953,7 @@
     },
     {
       "from": "/calculators/chemical-calculator",
-      "to": "/reference/datasets/maintenance-schedules",
+      "to": "/reference/pool-shape-guide",
       "fromType": "calculator",
       "toType": "reference",
       "weight": 60,
@@ -17601,7 +17961,7 @@
     },
     {
       "from": "/calculators/chemical-calculator",
-      "to": "/reference/datasets/pool-types",
+      "to": "/reference/pool-volume-reference",
       "fromType": "calculator",
       "toType": "reference",
       "weight": 60,
@@ -22305,7 +22665,7 @@
     },
     {
       "from": "/calculators/pool-volume-calculator",
-      "to": "/reference/chemical-compatibility",
+      "to": "/reference/datasets/conversion-factors",
       "fromType": "calculator",
       "toType": "reference",
       "weight": 60,
@@ -22313,7 +22673,7 @@
     },
     {
       "from": "/calculators/pool-volume-calculator",
-      "to": "/reference/chemical-conversion-tables",
+      "to": "/reference/datasets/dosage-matrices",
       "fromType": "calculator",
       "toType": "reference",
       "weight": 60,
@@ -22321,7 +22681,7 @@
     },
     {
       "from": "/calculators/pool-volume-calculator",
-      "to": "/reference/chemical-safety",
+      "to": "/reference/datasets/hot-tub-ranges",
       "fromType": "calculator",
       "toType": "reference",
       "weight": 60,
@@ -22329,7 +22689,7 @@
     },
     {
       "from": "/calculators/pool-volume-calculator",
-      "to": "/reference/chemical-storage-guide",
+      "to": "/reference/datasets",
       "fromType": "calculator",
       "toType": "reference",
       "weight": 60,
@@ -22337,7 +22697,7 @@
     },
     {
       "from": "/calculators/pool-volume-calculator",
-      "to": "/reference/common-pool-chemistry-mistakes",
+      "to": "/reference/datasets/maintenance-schedules",
       "fromType": "calculator",
       "toType": "reference",
       "weight": 60,
@@ -22721,6 +23081,22 @@
     },
     {
       "from": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/guides/questions/why-does-pool-water-turn-cloudy",
+      "fromType": "calculator",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "calculator to guide authority flow"
+    },
+    {
+      "from": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/guides/seasonal/closing-pool-chemistry-winter",
+      "fromType": "calculator",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "calculator to guide authority flow"
+    },
+    {
+      "from": "/calculators/saltwater-pool-salt-calculator",
       "to": "/guides/seasonal",
       "fromType": "calculator",
       "toType": "guide",
@@ -22742,22 +23118,6 @@
       "toType": "guide",
       "weight": 30,
       "reason": "calculator to guide authority flow"
-    },
-    {
-      "from": "/calculators/saltwater-pool-salt-calculator",
-      "to": "/programmatic/behavior/how-often-to-test-pool-water",
-      "fromType": "calculator",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "calculator to programmatic authority flow"
-    },
-    {
-      "from": "/calculators/saltwater-pool-salt-calculator",
-      "to": "/programmatic/behavior",
-      "fromType": "calculator",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "calculator to programmatic authority flow"
     },
     {
       "from": "/calculators/saltwater-pool-salt-calculator",
@@ -43841,7 +44201,7 @@
     },
     {
       "from": "/entities/maintenance-checklist",
-      "to": "/academy/fundamentals/why-water-testing-matters",
+      "to": "/academy/fundamentals/indoor-pool-chemistry",
       "fromType": "entity",
       "toType": "academy",
       "weight": 80,
@@ -82753,43 +83113,43 @@
     },
     {
       "from": "/guides/advanced/pool-chemistry-balance-explained",
-      "to": "/reference/chemical-compatibility",
+      "to": "/programmatic/explanations/why-shower-before-pool",
       "fromType": "guide",
-      "toType": "reference",
-      "weight": 55,
-      "reason": "guide to reference authority flow"
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "guide to programmatic authority flow"
     },
     {
       "from": "/guides/advanced/pool-chemistry-balance-explained",
-      "to": "/reference/chemical-conversion-tables",
+      "to": "/programmatic/hot-tubs",
       "fromType": "guide",
-      "toType": "reference",
-      "weight": 55,
-      "reason": "guide to reference authority flow"
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "guide to programmatic authority flow"
     },
     {
       "from": "/guides/advanced/pool-chemistry-balance-explained",
-      "to": "/reference/chemical-safety",
+      "to": "/programmatic",
       "fromType": "guide",
-      "toType": "reference",
-      "weight": 55,
-      "reason": "guide to reference authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "guide to other authority flow"
     },
     {
       "from": "/guides/advanced/pool-chemistry-balance-explained",
-      "to": "/reference/chemical-storage-guide",
+      "to": "/programmatic/ph",
       "fromType": "guide",
-      "toType": "reference",
-      "weight": 55,
-      "reason": "guide to reference authority flow"
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "guide to programmatic authority flow"
     },
     {
       "from": "/guides/advanced/pool-chemistry-balance-explained",
-      "to": "/reference/common-pool-chemistry-mistakes",
+      "to": "/programmatic/problems/cloudy-pool-fix",
       "fromType": "guide",
-      "toType": "reference",
-      "weight": 55,
-      "reason": "guide to reference authority flow"
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "guide to programmatic authority flow"
     },
     {
       "from": "/guides/advanced/pool-chemistry-balance-explained",
@@ -85184,6 +85544,238 @@
       "reason": "guide to other authority flow"
     },
     {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/",
+      "fromType": "guide",
+      "toType": "homepage",
+      "weight": 30,
+      "reason": "guide to homepage authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/calculators/chemical-calculator",
+      "fromType": "guide",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "guide to calculator authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/resources",
+      "fromType": "guide",
+      "toType": "other",
+      "weight": 30,
+      "reason": "guide to other authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "guide",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "guide to chart authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/academy",
+      "fromType": "guide",
+      "toType": "other",
+      "weight": 30,
+      "reason": "guide to other authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "guide",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "guide to guide authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/about",
+      "fromType": "guide",
+      "toType": "other",
+      "weight": 30,
+      "reason": "guide to other authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/search",
+      "fromType": "guide",
+      "toType": "other",
+      "weight": 30,
+      "reason": "guide to other authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/",
+      "fromType": "guide",
+      "toType": "homepage",
+      "weight": 30,
+      "reason": "guide to homepage authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/guides",
+      "fromType": "guide",
+      "toType": "other",
+      "weight": 30,
+      "reason": "guide to other authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/guides/edge-cases",
+      "fromType": "guide",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "guide to guide authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/calculators/pool-cyanuric-acid-calculator",
+      "fromType": "guide",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "guide to calculator authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/calculators/saltwater-pool-salt-calculator",
+      "fromType": "guide",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "guide to calculator authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/reference/datasets/confidence-levels",
+      "fromType": "guide",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "guide to reference authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/reference/datasets/conversion-factors",
+      "fromType": "guide",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "guide to reference authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/reference/datasets/dosage-matrices",
+      "fromType": "guide",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "guide to reference authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/reference/datasets/hot-tub-ranges",
+      "fromType": "guide",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "guide to reference authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/reference/datasets",
+      "fromType": "guide",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "guide to reference authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/reference/total-alkalinity-explained",
+      "fromType": "guide",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "guide to reference authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/calculators/chemical-calculator",
+      "fromType": "guide",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "guide to calculator authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/calculators/pool-volume-calculator",
+      "fromType": "guide",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "guide to calculator authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/calculators/pool-chlorine-calculator",
+      "fromType": "guide",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "guide to calculator authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/calculators/pool-shock-calculator",
+      "fromType": "guide",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "guide to calculator authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/calculators/pool-ph-calculator",
+      "fromType": "guide",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "guide to calculator authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "guide",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "guide to chart authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "guide",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "guide to guide authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/all-pages",
+      "fromType": "guide",
+      "toType": "other",
+      "weight": 30,
+      "reason": "guide to other authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/legal/ownership",
+      "fromType": "guide",
+      "toType": "other",
+      "weight": 30,
+      "reason": "guide to other authority flow"
+    },
+    {
+      "from": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "to": "/legal/legal",
+      "fromType": "guide",
+      "toType": "other",
+      "weight": 30,
+      "reason": "guide to other authority flow"
+    },
+    {
       "from": "/guides/edge-cases/high-cya-chlorine-lock",
       "to": "/",
       "fromType": "guide",
@@ -85481,6 +86073,14 @@
     },
     {
       "from": "/guides/edge-cases",
+      "to": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "fromType": "guide",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "guide to guide authority flow"
+    },
+    {
+      "from": "/guides/edge-cases",
       "to": "/guides/edge-cases/high-cya-chlorine-lock",
       "fromType": "guide",
       "toType": "guide",
@@ -85514,6 +86114,14 @@
     {
       "from": "/guides/edge-cases",
       "to": "/guides/edge-cases/swimming-after-shocking-pool",
+      "fromType": "guide",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "guide to guide authority flow"
+    },
+    {
+      "from": "/guides/edge-cases",
+      "to": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
       "fromType": "guide",
       "toType": "guide",
       "weight": 30,
@@ -85838,6 +86446,14 @@
       "toType": "entity",
       "weight": 30,
       "reason": "guide to entity authority flow"
+    },
+    {
+      "from": "/guides/edge-cases",
+      "to": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "fromType": "guide",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "guide to guide authority flow"
     },
     {
       "from": "/guides/edge-cases",
@@ -86481,7 +87097,7 @@
     },
     {
       "from": "/guides/edge-cases/rain-effect-on-pool-chemistry",
-      "to": "/reference/datasets/compatibility",
+      "to": "/reference/chemical-safety",
       "fromType": "guide",
       "toType": "reference",
       "weight": 55,
@@ -86489,7 +87105,7 @@
     },
     {
       "from": "/guides/edge-cases/rain-effect-on-pool-chemistry",
-      "to": "/reference/datasets/confidence-levels",
+      "to": "/reference/chemical-storage-guide",
       "fromType": "guide",
       "toType": "reference",
       "weight": 55,
@@ -86497,7 +87113,7 @@
     },
     {
       "from": "/guides/edge-cases/rain-effect-on-pool-chemistry",
-      "to": "/reference/datasets/conversion-factors",
+      "to": "/reference/common-pool-chemistry-mistakes",
       "fromType": "guide",
       "toType": "reference",
       "weight": 55,
@@ -86505,7 +87121,7 @@
     },
     {
       "from": "/guides/edge-cases/rain-effect-on-pool-chemistry",
-      "to": "/reference/datasets/dosage-matrices",
+      "to": "/reference/cya-matrix",
       "fromType": "guide",
       "toType": "reference",
       "weight": 55,
@@ -86513,7 +87129,7 @@
     },
     {
       "from": "/guides/edge-cases/rain-effect-on-pool-chemistry",
-      "to": "/reference/datasets/hot-tub-ranges",
+      "to": "/reference/datasets/chemical-properties",
       "fromType": "guide",
       "toType": "reference",
       "weight": 55,
@@ -91761,11 +92377,35 @@
     },
     {
       "from": "/guides/questions/can-rain-affect-pool-chemistry",
-      "to": "/",
+      "to": "/calculators/pool-turnover-rate-calculator",
       "fromType": "guide",
-      "toType": "homepage",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "guide to calculator authority flow"
+    },
+    {
+      "from": "/guides/questions/can-rain-affect-pool-chemistry",
+      "to": "/calculators/pool-volume-calculator",
+      "fromType": "guide",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "guide to calculator authority flow"
+    },
+    {
+      "from": "/guides/questions/can-rain-affect-pool-chemistry",
+      "to": "/calculators/saltwater-pool-salt-calculator",
+      "fromType": "guide",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "guide to calculator authority flow"
+    },
+    {
+      "from": "/guides/questions/can-rain-affect-pool-chemistry",
+      "to": "/comparisons",
+      "fromType": "guide",
+      "toType": "other",
       "weight": 30,
-      "reason": "guide to homepage authority flow"
+      "reason": "guide to other authority flow"
     },
     {
       "from": "/guides/questions/can-rain-affect-pool-chemistry",
@@ -92945,38 +93585,6 @@
     },
     {
       "from": "/guides/questions/why-does-pool-water-turn-cloudy",
-      "to": "/programmatic/behavior/how-often-to-test-pool-water",
-      "fromType": "guide",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "guide to programmatic authority flow"
-    },
-    {
-      "from": "/guides/questions/why-does-pool-water-turn-cloudy",
-      "to": "/programmatic/behavior",
-      "fromType": "guide",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "guide to programmatic authority flow"
-    },
-    {
-      "from": "/guides/questions/why-does-pool-water-turn-cloudy",
-      "to": "/programmatic/chlorine",
-      "fromType": "guide",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "guide to programmatic authority flow"
-    },
-    {
-      "from": "/guides/questions/why-does-pool-water-turn-cloudy",
-      "to": "/programmatic/explanations",
-      "fromType": "guide",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "guide to programmatic authority flow"
-    },
-    {
-      "from": "/guides/questions/why-does-pool-water-turn-cloudy",
       "to": "/reference/alkalinity-table",
       "fromType": "guide",
       "toType": "reference",
@@ -93649,43 +94257,11 @@
     },
     {
       "from": "/guides/seasonal/closing-pool-chemistry-winter",
-      "to": "/programmatic/behavior",
+      "to": "/",
       "fromType": "guide",
-      "toType": "programmatic",
+      "toType": "homepage",
       "weight": 30,
-      "reason": "guide to programmatic authority flow"
-    },
-    {
-      "from": "/guides/seasonal/closing-pool-chemistry-winter",
-      "to": "/programmatic/chlorine",
-      "fromType": "guide",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "guide to programmatic authority flow"
-    },
-    {
-      "from": "/guides/seasonal/closing-pool-chemistry-winter",
-      "to": "/programmatic/explanations",
-      "fromType": "guide",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "guide to programmatic authority flow"
-    },
-    {
-      "from": "/guides/seasonal/closing-pool-chemistry-winter",
-      "to": "/programmatic/explanations/why-shower-before-pool",
-      "fromType": "guide",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "guide to programmatic authority flow"
-    },
-    {
-      "from": "/guides/seasonal/closing-pool-chemistry-winter",
-      "to": "/programmatic/hot-tubs",
-      "fromType": "guide",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "guide to programmatic authority flow"
+      "reason": "guide to homepage authority flow"
     },
     {
       "from": "/guides/seasonal/closing-pool-chemistry-winter",
@@ -94441,7 +95017,23 @@
     },
     {
       "from": "/guides/seasonal/opening-pool-chemistry-checklist",
-      "to": "/reference/datasets/chemical-properties",
+      "to": "/programmatic/problems",
+      "fromType": "guide",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "guide to programmatic authority flow"
+    },
+    {
+      "from": "/guides/seasonal/opening-pool-chemistry-checklist",
+      "to": "/programmatic/shock",
+      "fromType": "guide",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "guide to programmatic authority flow"
+    },
+    {
+      "from": "/guides/seasonal/opening-pool-chemistry-checklist",
+      "to": "/reference/calcium-hardness-explained",
       "fromType": "guide",
       "toType": "reference",
       "weight": 55,
@@ -94449,7 +95041,7 @@
     },
     {
       "from": "/guides/seasonal/opening-pool-chemistry-checklist",
-      "to": "/reference/datasets/chemical-ranges",
+      "to": "/reference/calculator-directory",
       "fromType": "guide",
       "toType": "reference",
       "weight": 55,
@@ -94457,23 +95049,7 @@
     },
     {
       "from": "/guides/seasonal/opening-pool-chemistry-checklist",
-      "to": "/reference/datasets/compatibility",
-      "fromType": "guide",
-      "toType": "reference",
-      "weight": 55,
-      "reason": "guide to reference authority flow"
-    },
-    {
-      "from": "/guides/seasonal/opening-pool-chemistry-checklist",
-      "to": "/reference/datasets/confidence-levels",
-      "fromType": "guide",
-      "toType": "reference",
-      "weight": 55,
-      "reason": "guide to reference authority flow"
-    },
-    {
-      "from": "/guides/seasonal/opening-pool-chemistry-checklist",
-      "to": "/reference/datasets/conversion-factors",
+      "to": "/reference/chemical-compatibility",
       "fromType": "guide",
       "toType": "reference",
       "weight": 55,
@@ -94905,27 +95481,27 @@
     },
     {
       "from": "/guides/seasonal/winter-pool-maintenance-chemistry",
-      "to": "/",
+      "to": "/calculators/pool-volume-calculator",
       "fromType": "guide",
-      "toType": "homepage",
-      "weight": 30,
-      "reason": "guide to homepage authority flow"
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "guide to calculator authority flow"
     },
     {
       "from": "/guides/seasonal/winter-pool-maintenance-chemistry",
-      "to": "/programmatic/behavior/how-often-to-test-pool-water",
+      "to": "/calculators/saltwater-pool-salt-calculator",
       "fromType": "guide",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "guide to programmatic authority flow"
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "guide to calculator authority flow"
     },
     {
       "from": "/guides/seasonal/winter-pool-maintenance-chemistry",
-      "to": "/programmatic/behavior",
+      "to": "/comparisons",
       "fromType": "guide",
-      "toType": "programmatic",
+      "toType": "other",
       "weight": 30,
-      "reason": "guide to programmatic authority flow"
+      "reason": "guide to other authority flow"
     },
     {
       "from": "/guides/seasonal/winter-pool-maintenance-chemistry",
@@ -101241,7 +101817,7 @@
     },
     {
       "from": "/programmatic/behavior/how-often-to-shock-pool",
-      "to": "/guides/edge-cases/swimming-after-shocking-pool",
+      "to": "/guides/ph/why-pool-ph-keeps-rising",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -101457,7 +102033,7 @@
     },
     {
       "from": "/programmatic/behavior/how-often-to-test-pool-water",
-      "to": "/guides/hot-tub/hot-tub-chlorine-too-high",
+      "to": "/guides/edge-cases/high-cya-chlorine-lock",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -101465,43 +102041,11 @@
     },
     {
       "from": "/programmatic/behavior/how-often-to-test-pool-water",
-      "to": "/reference/cya-matrix",
+      "to": "/",
       "fromType": "programmatic",
-      "toType": "reference",
-      "weight": 55,
-      "reason": "programmatic to reference authority flow"
-    },
-    {
-      "from": "/programmatic/behavior/how-often-to-test-pool-water",
-      "to": "/reference/datasets/chemical-properties",
-      "fromType": "programmatic",
-      "toType": "reference",
-      "weight": 55,
-      "reason": "programmatic to reference authority flow"
-    },
-    {
-      "from": "/programmatic/behavior/how-often-to-test-pool-water",
-      "to": "/reference/datasets/chemical-ranges",
-      "fromType": "programmatic",
-      "toType": "reference",
-      "weight": 55,
-      "reason": "programmatic to reference authority flow"
-    },
-    {
-      "from": "/programmatic/behavior/how-often-to-test-pool-water",
-      "to": "/reference/datasets/compatibility",
-      "fromType": "programmatic",
-      "toType": "reference",
-      "weight": 55,
-      "reason": "programmatic to reference authority flow"
-    },
-    {
-      "from": "/programmatic/behavior/how-often-to-test-pool-water",
-      "to": "/reference/datasets/confidence-levels",
-      "fromType": "programmatic",
-      "toType": "reference",
-      "weight": 55,
-      "reason": "programmatic to reference authority flow"
+      "toType": "homepage",
+      "weight": 30,
+      "reason": "programmatic to homepage authority flow"
     },
     {
       "from": "/programmatic/behavior/how-often-to-test-pool-water",
@@ -102217,7 +102761,7 @@
     },
     {
       "from": "/programmatic/behavior/when-to-add-chlorine",
-      "to": "/guides/ph/does-rain-lower-pool-ph",
+      "to": "/guides/hot-tub/hot-tub-chlorine-too-high",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -102465,7 +103009,7 @@
     },
     {
       "from": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool",
-      "to": "/guides/ph/why-pool-ph-keeps-rising",
+      "to": "/guides/edge-cases/swimming-after-shocking-pool",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -102681,7 +103225,7 @@
     },
     {
       "from": "/programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool",
-      "to": "/guides/edge-cases/pool-temperature-effect-chlorine",
+      "to": "/guides/edge-cases/over-shocking-pool-effects",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -102897,7 +103441,7 @@
     },
     {
       "from": "/programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool",
-      "to": "/guides/hot-tub/hot-tub-chlorine-too-high",
+      "to": "/guides/chlorine/chlorine-too-high-after-shocking",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -103329,7 +103873,7 @@
     },
     {
       "from": "/programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool",
-      "to": "/guides/hot-tub/hot-tub-ph-too-low",
+      "to": "/guides/edge-cases/pool-temperature-effect-chlorine",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -103545,7 +104089,7 @@
     },
     {
       "from": "/programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool",
-      "to": "/guides/hot-tub/hot-tub-chlorine-too-low",
+      "to": "/guides/edge-cases/pool-temperature-effect-chlorine",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -103761,7 +104305,7 @@
     },
     {
       "from": "/programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool",
-      "to": "/guides/ph/can-you-swim-in-high-ph-water",
+      "to": "/guides/chlorine/chlorine-too-high-after-shocking",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -103977,7 +104521,7 @@
     },
     {
       "from": "/programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool",
-      "to": "/guides/ph/why-pool-ph-keeps-rising",
+      "to": "/guides/edge-cases/pool-temperature-effect-chlorine",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -104201,7 +104745,7 @@
     },
     {
       "from": "/programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool",
-      "to": "/guides/edge-cases/pool-temperature-effect-chlorine",
+      "to": "/guides/edge-cases/high-cya-chlorine-lock",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -104425,7 +104969,7 @@
     },
     {
       "from": "/programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool",
-      "to": "/guides/edge-cases/high-cya-chlorine-lock",
+      "to": "/guides/chlorine/how-often-should-i-shock-my-pool",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -104649,7 +105193,7 @@
     },
     {
       "from": "/programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool",
-      "to": "/guides/chlorine/why-pool-chlorine-disappears-overnight",
+      "to": "/guides/chlorine/chlorine-too-high-after-shocking",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -106025,7 +106569,7 @@
     },
     {
       "from": "/programmatic/explanations/what-is-pool-alkalinity",
-      "to": "/guides/ph/does-rain-lower-pool-ph",
+      "to": "/guides/hot-tub/hot-tub-ph-too-low",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -106265,7 +106809,7 @@
     },
     {
       "from": "/programmatic/explanations/why-ph-affects-chlorine",
-      "to": "/guides/chlorine/chlorine-too-high-after-shocking",
+      "to": "/guides/hot-tub/hot-tub-chlorine-too-high",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -106513,7 +107057,7 @@
     },
     {
       "from": "/programmatic/explanations/why-shower-before-pool",
-      "to": "/guides/hot-tub/hot-tub-chlorine-too-low",
+      "to": "/guides/edge-cases/swimming-after-shocking-pool",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -106521,43 +107065,43 @@
     },
     {
       "from": "/programmatic/explanations/why-shower-before-pool",
-      "to": "/comparisons",
+      "to": "/reference/salt-matrix",
       "fromType": "programmatic",
-      "toType": "other",
-      "weight": 30,
-      "reason": "programmatic to other authority flow"
+      "toType": "reference",
+      "weight": 55,
+      "reason": "programmatic to reference authority flow"
     },
     {
       "from": "/programmatic/explanations/why-shower-before-pool",
-      "to": "/guides/advanced",
+      "to": "/reference/testing-frequency",
       "fromType": "programmatic",
-      "toType": "guide",
-      "weight": 30,
-      "reason": "programmatic to guide authority flow"
+      "toType": "reference",
+      "weight": 55,
+      "reason": "programmatic to reference authority flow"
     },
     {
       "from": "/programmatic/explanations/why-shower-before-pool",
-      "to": "/guides/advanced/pool-chemistry-balance-explained",
+      "to": "/reference/vacation-rental-maintenance-schedule",
       "fromType": "programmatic",
-      "toType": "guide",
-      "weight": 30,
-      "reason": "programmatic to guide authority flow"
+      "toType": "reference",
+      "weight": 55,
+      "reason": "programmatic to reference authority flow"
     },
     {
       "from": "/programmatic/explanations/why-shower-before-pool",
-      "to": "/guides/edge-cases",
+      "to": "/reference/water-balance-checklist",
       "fromType": "programmatic",
-      "toType": "guide",
-      "weight": 30,
-      "reason": "programmatic to guide authority flow"
+      "toType": "reference",
+      "weight": 55,
+      "reason": "programmatic to reference authority flow"
     },
     {
       "from": "/programmatic/explanations/why-shower-before-pool",
-      "to": "/guides/edge-cases/rain-effect-on-pool-chemistry",
+      "to": "/reference/water-replacement-guidelines",
       "fromType": "programmatic",
-      "toType": "guide",
-      "weight": 30,
-      "reason": "programmatic to guide authority flow"
+      "toType": "reference",
+      "weight": 55,
+      "reason": "programmatic to reference authority flow"
     },
     {
       "from": "/programmatic/explanations/why-shower-before-pool",
@@ -106769,7 +107313,7 @@
     },
     {
       "from": "/programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons",
-      "to": "/guides/ph/does-rain-lower-pool-ph",
+      "to": "/guides/ph/why-pool-ph-keeps-rising",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -107033,7 +107577,7 @@
     },
     {
       "from": "/programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons",
-      "to": "/guides/edge-cases/rain-effect-on-pool-chemistry",
+      "to": "/guides/hot-tub/hot-tub-ph-too-low",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -107289,7 +107833,7 @@
     },
     {
       "from": "/programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons",
-      "to": "/guides/edge-cases/high-cya-chlorine-lock",
+      "to": "/guides/edge-cases/rain-effect-on-pool-chemistry",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -107777,7 +108321,7 @@
     },
     {
       "from": "/programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons",
-      "to": "/guides/chlorine/how-often-should-i-shock-my-pool",
+      "to": "/guides/chlorine/chlorine-too-high-after-shocking",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -109425,7 +109969,7 @@
     },
     {
       "from": "/programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4",
-      "to": "/guides/hot-tub/hot-tub-chlorine-too-low",
+      "to": "/guides/hot-tub/hot-tub-ph-too-low",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -109665,7 +110209,7 @@
     },
     {
       "from": "/programmatic/ph/how-to-adjust-ph-from-7-to-7-4",
-      "to": "/guides/hot-tub/hot-tub-ph-too-low",
+      "to": "/guides/edge-cases/high-cya-chlorine-lock",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -109921,7 +110465,7 @@
     },
     {
       "from": "/programmatic/ph/how-to-adjust-ph-from-8-to-7-5",
-      "to": "/guides/edge-cases/high-cya-chlorine-lock",
+      "to": "/guides/ph/does-rain-lower-pool-ph",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -110721,7 +111265,7 @@
     },
     {
       "from": "/programmatic/problems/cloudy-pool-fix",
-      "to": "/reference/chemical-conversion-tables",
+      "to": "/reference/datasets/chemical-ranges",
       "fromType": "programmatic",
       "toType": "reference",
       "weight": 55,
@@ -110729,7 +111273,7 @@
     },
     {
       "from": "/programmatic/problems/cloudy-pool-fix",
-      "to": "/reference/chemical-safety",
+      "to": "/reference/datasets/compatibility",
       "fromType": "programmatic",
       "toType": "reference",
       "weight": 55,
@@ -110737,7 +111281,7 @@
     },
     {
       "from": "/programmatic/problems/cloudy-pool-fix",
-      "to": "/reference/chemical-storage-guide",
+      "to": "/reference/datasets/confidence-levels",
       "fromType": "programmatic",
       "toType": "reference",
       "weight": 55,
@@ -110745,7 +111289,7 @@
     },
     {
       "from": "/programmatic/problems/cloudy-pool-fix",
-      "to": "/reference/common-pool-chemistry-mistakes",
+      "to": "/reference/datasets/conversion-factors",
       "fromType": "programmatic",
       "toType": "reference",
       "weight": 55,
@@ -110753,7 +111297,7 @@
     },
     {
       "from": "/programmatic/problems/cloudy-pool-fix",
-      "to": "/reference/cya-matrix",
+      "to": "/reference/datasets/dosage-matrices",
       "fromType": "programmatic",
       "toType": "reference",
       "weight": 55,
@@ -110969,7 +111513,7 @@
     },
     {
       "from": "/programmatic/problems/green-pool-how-much-chlorine",
-      "to": "/guides/edge-cases/over-shocking-pool-effects",
+      "to": "/guides/hot-tub/hot-tub-chlorine-too-low",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -111209,7 +111753,7 @@
     },
     {
       "from": "/programmatic/problems/high-chlorine-how-to-lower",
-      "to": "/guides/chlorine/why-pool-chlorine-disappears-overnight",
+      "to": "/guides/ph/does-rain-lower-pool-ph",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -111977,7 +112521,7 @@
     },
     {
       "from": "/programmatic/problems/low-alkalinity-symptoms",
-      "to": "/guides/edge-cases/rain-effect-on-pool-chemistry",
+      "to": "/guides/edge-cases/high-cya-chlorine-lock",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -112209,7 +112753,7 @@
     },
     {
       "from": "/programmatic/shock/how-much-shock-for-10000-gallon-pool",
-      "to": "/guides/chlorine/why-pool-chlorine-disappears-overnight",
+      "to": "/guides/edge-cases/swimming-after-shocking-pool",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -112473,7 +113017,7 @@
     },
     {
       "from": "/programmatic/shock/how-much-shock-for-15000-gallon-pool",
-      "to": "/guides/chlorine/how-often-should-i-shock-my-pool",
+      "to": "/guides/hot-tub/hot-tub-ph-too-low",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -112737,7 +113281,7 @@
     },
     {
       "from": "/programmatic/shock/how-much-shock-for-20000-gallon-pool",
-      "to": "/guides/edge-cases/high-cya-chlorine-lock",
+      "to": "/guides/chlorine/why-pool-chlorine-disappears-overnight",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -113265,7 +113809,7 @@
     },
     {
       "from": "/programmatic/shock/how-much-shock-for-30000-gallon-pool",
-      "to": "/guides/edge-cases/over-shocking-pool-effects",
+      "to": "/guides/ph/why-pool-ph-keeps-rising",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -113529,7 +114073,7 @@
     },
     {
       "from": "/programmatic/shock/how-much-shock-for-5000-gallon-pool",
-      "to": "/guides/edge-cases/rain-effect-on-pool-chemistry",
+      "to": "/guides/ph/does-rain-lower-pool-ph",
       "fromType": "programmatic",
       "toType": "guide",
       "weight": 30,
@@ -114918,14 +115462,6 @@
       "toType": "guide",
       "weight": 30,
       "reason": "reference to guide authority flow"
-    },
-    {
-      "from": "/reference/calcium-hardness-explained",
-      "to": "/programmatic/shock",
-      "fromType": "reference",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "reference to programmatic authority flow"
     },
     {
       "from": "/reference/calcium-hardness-explained",
@@ -119913,46 +120449,6 @@
     },
     {
       "from": "/reference/pool-chemicals-explained",
-      "to": "/programmatic/explanations",
-      "fromType": "reference",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "reference to programmatic authority flow"
-    },
-    {
-      "from": "/reference/pool-chemicals-explained",
-      "to": "/programmatic/explanations/why-shower-before-pool",
-      "fromType": "reference",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "reference to programmatic authority flow"
-    },
-    {
-      "from": "/reference/pool-chemicals-explained",
-      "to": "/programmatic/hot-tubs",
-      "fromType": "reference",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "reference to programmatic authority flow"
-    },
-    {
-      "from": "/reference/pool-chemicals-explained",
-      "to": "/programmatic",
-      "fromType": "reference",
-      "toType": "other",
-      "weight": 30,
-      "reason": "reference to other authority flow"
-    },
-    {
-      "from": "/reference/pool-chemicals-explained",
-      "to": "/programmatic/ph",
-      "fromType": "reference",
-      "toType": "programmatic",
-      "weight": 30,
-      "reason": "reference to programmatic authority flow"
-    },
-    {
-      "from": "/reference/pool-chemicals-explained",
       "to": "/guides/ph/does-rain-lower-pool-ph",
       "fromType": "reference",
       "toType": "guide",
@@ -120358,6 +120854,38 @@
       "toType": "other",
       "weight": 30,
       "reason": "reference to other authority flow"
+    },
+    {
+      "from": "/reference/pool-chemistry-reference",
+      "to": "/calculators",
+      "fromType": "reference",
+      "toType": "other",
+      "weight": 30,
+      "reason": "reference to other authority flow"
+    },
+    {
+      "from": "/reference/pool-chemistry-reference",
+      "to": "/calculators/pool-turnover-rate-calculator",
+      "fromType": "reference",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "reference to calculator authority flow"
+    },
+    {
+      "from": "/reference/pool-chemistry-reference",
+      "to": "/calculators/pool-volume-calculator",
+      "fromType": "reference",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "reference to calculator authority flow"
+    },
+    {
+      "from": "/reference/pool-chemistry-reference",
+      "to": "/calculators/saltwater-pool-salt-calculator",
+      "fromType": "reference",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "reference to calculator authority flow"
     },
     {
       "from": "/reference/pool-chemistry-reference",

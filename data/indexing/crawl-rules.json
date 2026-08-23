@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T03:40:44.757Z",
+  "generatedAt": "2026-08-23T01:27:47.786Z",
   "rulesVersion": "1.0",
   "rules": [
     {
@@ -284,6 +284,14 @@
     },
     {
       "url": "/academy/fundamentals/how-water-balance-works",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/fundamentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/fundamentals/indoor-pool-chemistry",
       "pageType": "academy",
       "crawlTier": "Tier 2",
       "hub": "/academy/fundamentals",
@@ -2084,6 +2092,14 @@
     },
     {
       "url": "/guides/edge-cases",
+      "pageType": "guide",
+      "crawlTier": "Tier 3",
+      "hub": "/guides/edge-cases",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (guide)."
+    },
+    {
+      "url": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
       "pageType": "guide",
       "crawlTier": "Tier 3",
       "hub": "/guides/edge-cases",

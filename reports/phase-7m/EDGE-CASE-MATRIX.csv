@@ -1,0 +1,30 @@
+edge_case,existing_coverage,coverage_adequate,guide_needed,calculator_needs_content,evidence_support,seasonal,cluster
+salt-water pools,"comparisons/chlorine-vs-bromine-hot-tub.html, comparisons/saltwater-pool-vs-chlorine.html, comparisons/salt-water-pool-vs-chlorine-pool.html, salt-water-pool-chemical-levels-chart.html, academy/equipment/salt-systems, entities/salt-chlorinator, entities/saltwater-pool",yes,no,no,partial (salt target range REQUIRES_REVIEW per Phase 7D),no,salt_systems
+hot tubs,"academy/hot-tubs/* (6 articles), guides/hot-tub/* (5 pages), academy/fundamentals/pool-vs-hot-tub-chemistry, programmatic/hot-tubs/*, comparisons/chlorine-vs-bromine-hot-tub",yes,no,no,yes (CDC sources for FC/pH/CYA-avoid),no,hot_tubs
+high water temperature,"academy/fundamentals/how-temperature-changes-water-chemistry, entities/temperature, guides/edge-cases/pool-temperature-effect-chlorine, academy/water-balance/understanding-lsi (LSI for heated spas section)",yes,no,no,yes (Phase 7K hot-tub-max-104F cited),partially (summer/hot-tub),temperature
+low water temperature,"academy/hot-tubs/winter-spa-care, guides/seasonal/winter-pool-maintenance-chemistry, academy/fundamentals/how-temperature-changes-water-chemistry",yes,no,no,partial,yes,temperature
+heavy rain,guides/edge-cases/rain-effect-on-pool-chemistry.html + guides/ph/does-rain-lower-pool-ph.html,yes,no,no,no (qualitative mechanism only),partially,water_balance
+drought/evaporation,"guides/edge-cases/evaporation-effect-on-pool-chemistry.html (NEW this phase)",yes,no (just closed),no,no (qualitative mechanism only),partially,water_balance
+high bather load,"27 files mention bather load qualitatively (shock-treatment, chemical-log, testing guides)",yes,no,no,no,no,operational
+low bather load,guides/chlorine/how-often-should-i-shock-my-pool.html (light-use scheduling),yes,no,no,no,no,operational
+indoor pools,"entities/indoor-pool (concise definition), academy/fundamentals/indoor-pool-chemistry.html (NEW this phase, deep-dive)",yes,no (just closed),no,partial (CDC CYA-avoidance basis),no (year-round demand -- seasonal-resilience asset),fundamentals
+covered pools,"entities/cover, guides/seasonal/closing-pool-chemistry-winter (winterization covers evaporation/heat-loss angle)",partial,INVESTIGATE (no dedicated 'covered pool chemistry' guide; folded into winterization),no,no,yes,seasonal
+winterized pools,"guides/seasonal/closing-pool-chemistry-winter, guides/seasonal/winter-pool-maintenance-chemistry, academy/hot-tubs/winter-spa-care, entities/winterization, entities/closing-checklist",yes,no,no,no,yes,seasonal
+newly filled pools,"entities/water-replacement, resources/pool-opening checklist family",partial,INVESTIGATE (no dedicated 'first fill chemistry' guide -- opening checklist covers reopening, not brand-new plaster/fill startup chemistry),no,no,no,fundamentals
+fresh water after dilution,entities/water-replacement,partial,INVESTIGATE (thin entity, no guide expansion),no,no,no,water_balance
+high CYA,"guides/edge-cases/high-cya-chlorine-lock.html, pool-cya-levels-chart.html, academy/water-balance/understanding-cyanuric-acid, entities/cyanuric-acid",yes,no,no,yes (CDC-based),partially,cyanuric_acid
+low CYA,pool-cya-levels-chart.html (0-20ppm row),yes,no,no,yes,partially,cyanuric_acid
+high alkalinity,"academy/water-balance/understanding-total-alkalinity, pool-alkalinity-levels-chart.html, entities/alkalinity",yes,no,no,yes (cited, Phase 7L),no,alkalinity
+low alkalinity,"programmatic/problems/low-alkalinity-symptoms.html, pool-alkalinity-levels-chart.html",yes,no,no,yes,no,alkalinity
+high calcium hardness,"academy/water-balance/understanding-calcium-hardness, academy/troubleshooting/scaling, entities/calcium-hardness",yes,no,no,yes (ANSI/PHTA cited),no,calcium_hardness
+low calcium hardness,"academy/troubleshooting/corrosion, entities/vinyl-pool + fiberglass-pool (material-specific, Phase 7K cited)",yes,no,no,yes,no,calcium_hardness
+algae,"academy/troubleshooting/green-water, entities/green-water (cited, Phase 7K), entities/algae, pool-chlorine-levels-chart.html (cited)",yes,no,no,yes,partially,algae
+cloudy water,"academy/troubleshooting/cloudy-water, entities/cloudy-water",yes,no,no,no (qualitative mechanism list, no numeric claim),no,troubleshooting
+combined chlorine,"academy/sanitizers/combined-chlorine-explained, entities/combined-chlorine, reference/combined-chlorine-explained.html, claim-cc-minimize (cited)",yes,no,no,yes (MAHC cited),no,chlorine
+chlorine demand,"academy/fundamentals/how-temperature-changes-water-chemistry (chlorine depletion section), guides/chlorine/why-pool-chlorine-disappears-overnight",yes,no,no,partial,partially,chlorine
+different sanitizer systems (overview),"academy/sanitizers/* (6 articles), comparisons/chlorine-vs-bromine*, guides/advanced/chlorine-vs-saltwater",yes,no,no,yes,no,sanitizers
+liquid chlorine,"academy/sanitizers/liquid-chlorine-vs-tablets, entities/liquid-chlorine",yes,no,no,partial,no,sanitizers
+dichlor,entities/sodium-dichlor,partial,INVESTIGATE (no dedicated academy article; entity only),no,no,no,sanitizers
+trichlor,"entities/trichlor-tablets (cited, Phase 7K/7L)",yes,no,no,yes,no,sanitizers
+calcium hypochlorite,entities/calcium-hypochlorite,partial,INVESTIGATE (no dedicated academy article; entity only),no,partial,no,sanitizers
+salt chlorine generators,"academy/equipment/salt-systems, entities/salt-chlorinator, comparisons/*saltwater*",yes,no,no,partial,no,salt_systems

@@ -67,7 +67,7 @@ function buildPage(volume) {
   const g = formatNum(volume);
   const slug = slugFor(volume);
   const illustrative = estimateChlorine(volume);
-  const ctrTitle = 'How Much Chlorine for ' + volume + ' Gallon Pool (Exact Dose)';
+  const ctrTitle = 'How Much Chlorine for ' + volume + ' Gallon Pool';
   const h1 = 'How Much Chlorine Do You Need for a ' + g + ' Gallon Pool?';
   const metaDesc =
     'Get exact ounces for a ' +
@@ -94,11 +94,18 @@ function buildPage(volume) {
   const hiGranular = granularOz(volume, 3).toFixed(1);
   const sizeClass = volume < 10000 ? 'a smaller residential pool' : volume <= 20000 ? 'a typical mid-size residential pool' : 'a large residential pool';
 
+  // Page-specific, purely arithmetic unit conversion (not a chemistry
+  // claim, no citation needed) so each volume page states a genuinely
+  // different practical quantity rather than repeating the same generic
+  // tips list -- 128 fl oz/gal and 16 oz/lb are unit definitions.
+  const hiLiquidQt = (liquidOz(volume, 3) / 32).toFixed(2);
+  const hiGranularLb = (granularOz(volume, 3) / 16).toFixed(2);
+
   const faqList = [
     {
       q: 'How much chlorine for a ' + g + ' gallon pool?',
       a:
-        'To raise a ' + g + '-gallon pool from 0 ppm to the typical 1-3 ppm target, that\'s roughly ' + loLiquid + '-' + hiLiquid + ' oz of liquid chlorine (10%) or ' + loGranular + '-' + hiGranular + ' oz of granular shock. See the table below for other ppm targets, and use the calculator with your actual current reading for a precise dose.'
+        'To raise a ' + g + '-gallon pool from 0 ppm to the typical 1-3 ppm target, that\'s roughly ' + loLiquid + '-' + hiLiquid + ' oz of liquid chlorine (10%) or ' + loGranular + '-' + hiGranular + ' oz of granular shock -- about ' + hiLiquidQt + ' qt of liquid or ' + hiGranularLb + ' lb of granular at the top of that range. See the table below for other ppm targets, and use the calculator with your actual current reading for a precise dose.'
     },
     {
       q: 'Is a ' + g + ' gallon pool considered small, medium, or large?',
@@ -106,19 +113,9 @@ function buildPage(volume) {
         'At ' + g + ' gallons, this is ' + sizeClass + '. Pool size mainly affects how much product you add per treatment, not the target ppm ranges themselves -- those stay the same regardless of volume.'
     },
     {
-      q: 'Can you add too much chlorine?',
+      q: 'Liquid or granular chlorine—which is better for this size pool?',
       a:
-        'Yes—overdosing can irritate skin and eyes and delay swimming. Always test and add in smaller increments when unsure.'
-    },
-    {
-      q: 'How long after adding chlorine can you swim?',
-      a:
-        'Follow product label guidance and typical safe ranges (often when free chlorine is back in normal range and water is clear).'
-    },
-    {
-      q: 'Liquid or granular chlorine—which is better?',
-      a:
-        'Both can work. Liquid is convenient for precise dosing; granular shock is common for larger raises—follow label instructions.'
+        'Both work at ' + g + ' gallons. Liquid is convenient for precise, frequent dosing in smaller increments; granular shock concentrates a larger raise into less product volume to store and pour -- follow label instructions either way.'
     }
   ];
 
@@ -197,15 +194,6 @@ function buildPage(volume) {
       'Too little free chlorine risks algae and cloudy water; too much irritates skin and eyes and keeps swimmers out until levels drop. See <a href="' + BASE_HREF + 'guides/chlorine-guide.html">the chlorine guide</a> for troubleshooting specific symptoms.'
     ]) +
     '\n' +
-    H.quickTipsSection([
-      'Test free chlorine and pH at least twice weekly during swim season; test more often after storms or heavy use.',
-      'Add chlorine with the pump running; brush walls and steps so chemicals mix evenly through the body of water.',
-      'Wait 30–60 minutes after each adjustment, then retest before stacking another large dose.',
-      'Log your pool volume once and reuse it—small errors in gallons compound every time you dose.',
-      'Keep CYA in a managed range; very high stabilizer makes real sanitation harder even when tests look acceptable.',
-      'Store chlorine in a cool, dry place and never mix incompatible chemicals in the same bucket or vessel.'
-    ]) +
-    '\n' +
     explanationBlock +
     '\n' +
     H.commonQuestionsSection(faqList) +
@@ -217,8 +205,8 @@ function buildPage(volume) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${H.escapeAttr(metaDesc)}">
-  <title>${H.escapeAttr(ctrTitle)}${H.escapeAttr(PROGRAMMATIC_TITLE_SUFFIX)}</title>
-  <meta property="og:title" content="${H.escapeAttr(ctrTitle)}${H.escapeAttr(PROGRAMMATIC_TITLE_SUFFIX)}">
+  <title>${H.escapeAttr(ctrTitle)}</title>
+  <meta property="og:title" content="${H.escapeAttr(ctrTitle)} | Pool Water Chemistry Guide">
   <meta property="og:description" content="${H.escapeAttr(metaDesc)}">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="${BASE_HREF}style.css">

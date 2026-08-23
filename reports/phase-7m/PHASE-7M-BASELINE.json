@@ -1,0 +1,40 @@
+{
+  "captured_at_commit": "3f7ce8f39e906b5f1b1a9f9eadf6973a43e653fd",
+  "generated": "2026-08-22",
+  "total_pages": 522,
+  "indexable_pages": 478,
+  "average_word_count": 371,
+  "schema_valid": 950,
+  "schema_missing": 39,
+  "schema_questionable": 3,
+  "duplicate_title_groups": 0,
+  "duplicate_description_groups": 0,
+  "accessibility_flagged_pages": 0,
+  "citation_blocks": 18,
+  "citation_links": 23,
+  "title_too_long_findings": 86,
+  "content_quality": {
+    "STRONG": 108,
+    "ADEQUATE": 383,
+    "WEAK": 31,
+    "THIN": 0
+  },
+  "priority_counts": {
+    "P1": 26,
+    "P2": 65,
+    "P3": 431
+  },
+  "programmatic_duplication": {
+    "programmatic/chlorine": { "pages": 12, "risk": "HIGH", "avg_pairwise_similarity": 0.65, "repeated_paragraph_blocks": 26, "repeated_headings": 18, "repeated_faqs": 3 },
+    "programmatic/shock": { "pages": 7, "risk": "HIGH", "avg_pairwise_similarity": 0.715, "repeated_paragraph_blocks": 25, "repeated_headings": 19, "repeated_faqs": 3 },
+    "programmatic/ph": { "pages": 5, "risk": "HIGH", "avg_pairwise_similarity": 0.579, "repeated_paragraph_blocks": 31, "repeated_headings": 20, "repeated_faqs": 5 },
+    "programmatic/hot-tubs": { "pages": 6, "risk": "HIGH", "avg_pairwise_similarity": 0.705, "repeated_paragraph_blocks": 25, "repeated_headings": 18, "repeated_faqs": 3 }
+  },
+  "academy_articles": 48,
+  "seasonality": {
+    "not_applicable": 382,
+    "pool_season_leaning": 122,
+    "hot_tub_year_round": 18
+  },
+  "notes": "Baseline re-measured fresh this phase (not assumed from Phase 7A/7G). Word counts, quality scores, and duplication figures come from a live forensic-audit run against the current committed 7L state before any Phase 7M content change."
+}

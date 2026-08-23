@@ -63,7 +63,7 @@ function buildPage(lvl) {
   const fromS = String(lvl.from);
   const toS = String(lvl.to);
   const raise = lvl.to > lvl.from;
-  const ctrTitle = 'How to Adjust Pool pH from ' + fromS + ' to ' + toS + ' (Safe Steps)';
+  const ctrTitle = 'How to Adjust Pool pH from ' + fromS + ' to ' + toS;
   const h1 = 'How Do You Adjust Pool pH from ' + fromS + ' to ' + toS + '?';
   const metaDesc =
     'Adjust pool pH from ' +
@@ -103,16 +103,8 @@ function buildPage(lvl) {
         : 'High pH commonly comes from aeration (waterfalls, fountains, spa jets), certain sanitizers, or naturally alkaline fill water. High total alkalinity can also hold pH elevated even after you add acid.'
     },
     {
-      q: 'How fast can I change pH?',
-      a: 'Make partial adjustments and retest after 30–60 minutes to avoid overshooting.'
-    },
-    {
-      q: 'Do I fix alkalinity first?',
-      a: 'If total alkalinity is far off, address it before large pH moves for more stable results.'
-    },
-    {
-      q: 'Can I use muriatic acid or dry acid?',
-      a: 'Both can lower pH; follow label safety and product-specific dosing for your pool volume.'
+      q: 'Do I need to fix alkalinity before moving pH from ' + fromS + ' to ' + toS + '?',
+      a: 'If total alkalinity is far outside 80-120 ppm, address it first -- alkalinity buffers pH, so a ' + diffForFaq + '-unit move will drift back faster (or resist correction) when alkalinity is off. Otherwise, proceed with partial doses and retest after 30-60 minutes.'
     }
   ];
 
@@ -184,15 +176,6 @@ function buildPage(lvl) {
         : 'High pH reduces chlorine effectiveness and contributes to scale on surfaces and heaters.') + ' See <a href="' + BASE_HREF + 'guides/ph-guide.html">the pH guide</a> for the full picture.'
     ]) +
     '\n' +
-    H.quickTipsSection([
-      'Always add pH increaser or reducer in portions, with the pump running, across the deep end or per label.',
-      'Wait 30–60 minutes, then retest before the next adjustment—especially on large pools.',
-      'If alkalinity is very low or very high, address it alongside pH using your kit and manufacturer guidance.',
-      'Record your pool volume; the Pool pH Calculator scales doses beyond the 10,000-gallon reference on this page.',
-      'Wear appropriate protection when handling strong acids or bases and rinse spills per label.',
-      'After heavy rain or top-offs, retest pH—source water can shift chemistry more than you expect.'
-    ]) +
-    '\n' +
     buildTable(lvl) +
     '\n' +
     H.commonQuestionsSection(faqList) +
@@ -204,8 +187,8 @@ function buildPage(lvl) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${H.escapeAttr(metaDesc)}">
-  <title>${H.escapeAttr(ctrTitle)}${H.escapeAttr(PROGRAMMATIC_TITLE_SUFFIX)}</title>
-  <meta property="og:title" content="${H.escapeAttr(ctrTitle)}${H.escapeAttr(PROGRAMMATIC_TITLE_SUFFIX)}">
+  <title>${H.escapeAttr(ctrTitle)}</title>
+  <meta property="og:title" content="${H.escapeAttr(ctrTitle)} | Pool Water Chemistry Guide">
   <meta property="og:description" content="${H.escapeAttr(metaDesc)}">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="${BASE_HREF}style.css">

@@ -66,7 +66,7 @@ function buildTable(gallons) {
 function buildPage(size) {
   const g = formatNum(size);
   const slug = slugFor(size);
-  const ctrTitle = 'Hot Tub Chemicals for ' + size + ' Gallons (Dosing Guide)';
+  const ctrTitle = 'Hot Tub Chemicals for ' + size + ' Gallons';
   const h1 = 'What Chemicals Do You Need for a ' + g + ' Gallon Hot Tub?';
   const metaDesc =
     'Sanitizer dosing for a ' +
@@ -88,6 +88,8 @@ function buildPage(size) {
   const loGranular = granularOz(size, 3).toFixed(1);
   const hiGranular = granularOz(size, 5).toFixed(1);
   const sizeClass = size <= 300 ? 'a compact 2-4 person spa' : size <= 450 ? 'a mid-size 4-6 person spa' : 'a larger 6+ person spa';
+  // Page-specific unit conversion (arithmetic, not a chemistry claim).
+  const hiGranularOzOnly = granularOz(size, 5).toFixed(1);
 
   const faqList = [
     {
@@ -97,19 +99,11 @@ function buildPage(size) {
     },
     {
       q: 'Is a ' + g + ' gallon hot tub small, medium, or large?',
-      a: 'At ' + g + ' gallons, this is ' + sizeClass + '. Smaller spas shift chemistry faster per bather since there is less water to dilute sanitizer demand.'
+      a: 'At ' + g + ' gallons, this is ' + sizeClass + '. Smaller spas shift chemistry faster per bather since there is less water to dilute sanitizer demand -- at ' + g + ' gallons, a full 5 ppm granular dose is only ' + hiGranularOzOnly + ' oz, small enough that even minor measuring errors matter more than in a pool.'
     },
     {
-      q: 'Can you use pool chemicals in a hot tub?',
-      a: 'Only products labeled for spas/hot tubs when recommended—concentrations differ from pools.'
-    },
-    {
-      q: 'How often should I test hot tub water?',
-      a: 'Test sanitizer and pH frequently—often daily when the spa is used.'
-    },
-    {
-      q: 'Is bromine OK instead of chlorine?',
-      a: 'Many spas use bromine. If you use bromine, follow bromine-specific charts and labels.'
+      q: 'Is bromine OK instead of chlorine for a ' + g + ' gallon spa?',
+      a: 'Yes -- many spas this size use bromine instead. Bromine tablets in a floating dispenser feed gradually and are common in smaller spas; if you switch, follow bromine-specific target ranges (typically 4-8 ppm) rather than the chlorine figures on this page.'
     }
   ];
 
@@ -182,15 +176,6 @@ function buildPage(size) {
       'Too little sanitizer risks bacteria/biofilm in pipes, often before water looks bad; too much can irritate skin and damage covers. Small volumes make overdosing easy if you confuse pool and spa strengths. See <a href="' + BASE_HREF + 'guides/hot-tub-chemistry.html">the hot tub guide</a> for troubleshooting.'
     ]) +
     '\n' +
-    H.quickTipsSection([
-      'Test before every use when the spa is active; at minimum several times per week.',
-      'Rinse swimsuits (no fabric softener) and shower to reduce oils and products that consume sanitizer.',
-      'Leave the cover open briefly after dosing if the label recommends it—off-gassing matters in small spaces.',
-      'Drain and refill on a schedule appropriate for your usage and local water—stale water is harder to balance.',
-      'Use calculators and labels written for spa volume; do not scale pool doses down without verifying product instructions.',
-      'Keep spare test strips stored dry and in date; bad tests cause bad adds.'
-    ]) +
-    '\n' +
     buildTable(size) +
     '\n' +
     H.commonQuestionsSection(faqList) +
@@ -202,8 +187,8 @@ function buildPage(size) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${H.escapeAttr(metaDesc)}">
-  <title>${H.escapeAttr(ctrTitle)}${H.escapeAttr(PROGRAMMATIC_TITLE_SUFFIX)}</title>
-  <meta property="og:title" content="${H.escapeAttr(ctrTitle)}${H.escapeAttr(PROGRAMMATIC_TITLE_SUFFIX)}">
+  <title>${H.escapeAttr(ctrTitle)}</title>
+  <meta property="og:title" content="${H.escapeAttr(ctrTitle)} | Pool Water Chemistry Guide">
   <meta property="og:description" content="${H.escapeAttr(metaDesc)}">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="${BASE_HREF}style.css">

@@ -148,8 +148,8 @@ function buildPage(t) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${escapeAttr(t.metaDesc)}">
-  <title>${escapeAttr(t.ctrTitle)}${escapeAttr(PROGRAMMATIC_TITLE_SUFFIX)}</title>
-  <meta property="og:title" content="${escapeAttr(t.ctrTitle)}${escapeAttr(PROGRAMMATIC_TITLE_SUFFIX)}">
+  <title>${escapeAttr(t.ctrTitle)}</title>
+  <meta property="og:title" content="${escapeAttr(t.ctrTitle)} | Pool Water Chemistry Guide">
   <meta property="og:description" content="${escapeAttr(t.metaDesc)}">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="${BASE_HREF}style.css">
