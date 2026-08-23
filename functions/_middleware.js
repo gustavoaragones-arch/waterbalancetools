@@ -15,7 +15,10 @@ const EXACT = new Map([
   ['/explanations/why-shower-before-pool', '/programmatic/explanations/why-shower-before-pool'],
   ['/calculators/volume-calculator', '/calculators/pool-volume-calculator'],
   ['/charts/hot-tub-chemical-levels-chart', '/hot-tub-chemical-levels-chart'],
-  ['/charts/pool-chemical-levels-chart', '/pool-chemical-levels-chart']
+  ['/charts/pool-chemical-levels-chart', '/pool-chemical-levels-chart'],
+  ['/printables/pool-maintenance-checklist', '/resources/pool-maintenance-checklist'],
+  ['/printables/hot-tub-maintenance-log', '/resources/hot-tub-maintenance-log'],
+  ['/printables/airbnb-pool-turnover-checklist', '/resources/airbnb-pool-turnover-checklist']
 ]);
 
 function normalizePath(pathname) {

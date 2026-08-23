@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T22:55:22.306Z",
+  "generatedAt": "2026-08-23T23:44:00.026Z",
   "rulesVersion": "1.0",
   "rules": [
     {
@@ -3615,30 +3615,6 @@
       "pageType": "other",
       "crawlTier": "Tier 3",
       "hub": "/printable/maintenance-checklist",
-      "indexable": true,
-      "reason": "Assigned from URL taxonomy (other)."
-    },
-    {
-      "url": "/printables/airbnb-pool-turnover-checklist",
-      "pageType": "other",
-      "crawlTier": "Tier 3",
-      "hub": "/printables/airbnb-pool-turnover-checklist",
-      "indexable": true,
-      "reason": "Assigned from URL taxonomy (other)."
-    },
-    {
-      "url": "/printables/hot-tub-maintenance-log",
-      "pageType": "other",
-      "crawlTier": "Tier 3",
-      "hub": "/printables/hot-tub-maintenance-log",
-      "indexable": true,
-      "reason": "Assigned from URL taxonomy (other)."
-    },
-    {
-      "url": "/printables/pool-maintenance-checklist",
-      "pageType": "other",
-      "crawlTier": "Tier 3",
-      "hub": "/printables/pool-maintenance-checklist",
       "indexable": true,
       "reason": "Assigned from URL taxonomy (other)."
     },

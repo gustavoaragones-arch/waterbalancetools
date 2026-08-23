@@ -69,6 +69,11 @@ const REDIRECT_SOURCES = {
   'calculators/volume-calculator.html': '/calculators/pool-volume-calculator',
   'charts/hot-tub-chemical-levels-chart.html': '/hot-tub-chemical-levels-chart',
   'charts/pool-chemical-levels-chart.html': '/pool-chemical-levels-chart',
+  // Phase 7O.1: printables/* were legacy-format duplicates of the richer,
+  // already-canonical resources/* pages covering the same checklists.
+  'printables/pool-maintenance-checklist.html': '/resources/pool-maintenance-checklist',
+  'printables/hot-tub-maintenance-log.html': '/resources/hot-tub-maintenance-log',
+  'printables/airbnb-pool-turnover-checklist.html': '/resources/airbnb-pool-turnover-checklist',
 };
 
 function normalize(relPath) {

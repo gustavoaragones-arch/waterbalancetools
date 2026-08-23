@@ -39,9 +39,9 @@ const MAINTENANCE = [
 ];
 
 const PRINTABLES = [
-  { name: 'Pool Maintenance Checklist', url: '../printables/pool-maintenance-checklist.html' },
-  { name: 'Hot Tub Maintenance Log', url: '../printables/hot-tub-maintenance-log.html' },
-  { name: 'Airbnb Pool Turnover Checklist', url: '../printables/airbnb-pool-turnover-checklist.html' }
+  { name: 'Pool Maintenance Checklist', url: '../resources/pool-maintenance-checklist.html' },
+  { name: 'Hot Tub Maintenance Log', url: '../resources/hot-tub-maintenance-log.html' },
+  { name: 'Airbnb Pool Turnover Checklist', url: '../resources/airbnb-pool-turnover-checklist.html' }
 ];
 
 const COMPARISONS = [

@@ -1,13 +1,9 @@
 {
   "generated": "2026-08-23",
-  "total_canonical_indexable_pages": 480,
+  "total_canonical_indexable_pages": 477,
   "total_discovered_via_contextual_crawl": 477,
-  "total_undiscovered_canonical_pages": 3,
-  "undiscovered_pages": [
-    "/printables/airbnb-pool-turnover-checklist",
-    "/printables/hot-tub-maintenance-log",
-    "/printables/pool-maintenance-checklist"
-  ],
+  "total_undiscovered_canonical_pages": 0,
+  "undiscovered_pages": [],
   "depth_distribution": {
     "0": 1,
     "1": 30,
@@ -17,6 +13,6 @@
     "5": 2
   },
   "pages_discovered_via_both_sitemap_and_allpages": 168,
-  "sitemap_url_count": 488,
+  "sitemap_url_count": 485,
   "all_pages_url_count": 169
 }

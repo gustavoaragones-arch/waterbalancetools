@@ -6,10 +6,10 @@ Real breadth-first simulation of crawl discovery starting from `/`, following on
 
 ## Results
 
-- Canonical indexable pages (per url-policy.js): **480**
+- Canonical indexable pages (per url-policy.js): **477**
 - Discovered via contextual crawl from homepage: **477**
-- Undiscovered canonical pages (no contextual path from homepage at all): **3**
-- Sitemap URL count: 488
+- Undiscovered canonical pages (no contextual path from homepage at all): **0**
+- Sitemap URL count: 485
 - all-pages.html URL count: 169
 - Pages present in both sitemap and all-pages.html (multiple independent discovery paths): 168
 
@@ -24,6 +24,4 @@ Real breadth-first simulation of crawl discovery starting from `/`, following on
 
 ## Undiscovered canonical pages
 
-- /printables/airbnb-pool-turnover-checklist
-- /printables/hot-tub-maintenance-log
-- /printables/pool-maintenance-checklist
+(none -- every canonical indexable page is reachable via contextual links from the homepage)
