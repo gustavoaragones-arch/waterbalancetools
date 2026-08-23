@@ -14,6 +14,7 @@ const {
   SILO_KEYS
 } = require('./silo-map');
 const { isLegacyProgrammaticChlorine } = require('./redirect-rules');
+const { isRedirectSource } = require('./url-policy');
 
 function hubAnchorLabel(silo) {
   if (silo === 'chlorine') return 'Chlorine guide (hub)';
@@ -489,10 +490,17 @@ function buildPool() {
   walkHtmlFiles(REFS, files);
   walkHtmlFiles(COMPARISONS, files);
   walkHtmlFiles(GUIDES_Q, files);
-  return files.map(relPath => ({
-    relPath,
-    silo: DEPTH_SILO[relPath] ?? getSiloForPath(relPath)
-  }));
+  // Phase 7N (Step 8/9): retired/redirect-source pages (e.g.
+  // calculators/volume-calculator.html, retired Phase 7C as a duplicate of
+  // pool-volume-calculator.html) must never be surfaced as if they were a
+  // second live page -- url-policy.js's REDIRECT_SOURCES registry is the
+  // single source of truth for this, reused here rather than duplicated.
+  return files
+    .filter(relPath => !isRedirectSource(relPath))
+    .map(relPath => ({
+      relPath,
+      silo: DEPTH_SILO[relPath] ?? getSiloForPath(relPath)
+    }));
 }
 
 const pool = buildPool();

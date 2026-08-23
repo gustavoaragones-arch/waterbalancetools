@@ -1,0 +1,22 @@
+{
+  "captured_at_commit": "a6e78816aa134c59cb325c45b554fecd58325e88",
+  "generated": "2026-08-23",
+  "total_pages": 524,
+  "indexable_pages": 480,
+  "schema_valid": 953,
+  "schema_missing": 39,
+  "schema_questionable": 3,
+  "duplicate_title_groups": 0,
+  "duplicate_description_groups": 0,
+  "title_too_long_findings": 52,
+  "meta_description_missing": 15,
+  "meta_description_too_short": 3,
+  "canonical_mismatch_findings": 3,
+  "orphan_pages": 2,
+  "cannibalization_high_or_critical": 0,
+  "cannibalization_medium": 35,
+  "cannibalization_low": 92,
+  "entity_glossary_same_slug_pairs": 23,
+  "gsc_data_available": false,
+  "notes": "GSC/live search data was checked for (audit/google/ directory) and confirmed to be self-generated internal crawl/priority tooling, not real Search Console export data. All Phase 7N analysis is architecture-based, not GSC-data-based, per Step 18."
+}

@@ -136,6 +136,14 @@ function main() {
       '    <h2>All chlorine &amp; shock pages</h2>\n' +
       '    <ul class="ring-links hub-silo-list">\n' +
       listCh +
+      // Phase 7N (Step 9): maintenance/how-often-add-chlorine-pool.html was
+      // sitting at crawl depth 5 with only 2 inbound links (its own hub +
+      // a sitewide directory page) despite being directly on-topic for
+      // this hub. buildPool() above only walks programmatic/ and
+      // calculators/, so a one-off hardcoded link here is the targeted
+      // fix rather than widening that pool to a directory it was never
+      // meant to include.
+      '\n      <li><a href="' + urlEngine.href('/maintenance/how-often-add-chlorine-pool') + '">How Often To Add Chlorine</a></li>' +
       '\n    </ul>\n' +
       '    <p><a href="' + urlEngine.href('/guides/pool-chemistry-basics') + '">← Pool chemistry basics</a></p>'
   });

@@ -3,6 +3,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { isRedirectSource } = require('./url-policy');
 
 const ROOT = path.join(__dirname, '..');
 const SKIP_DIRS = new Set(['node_modules', '.git', 'assets', 'templates', 'partials']);
@@ -70,18 +71,39 @@ function run() {
     if (!/\|\s*WaterBalanceTools$/i.test(title)) title = `${title} | WaterBalanceTools`;
 
     // Make duplicate titles unique via path qualifier and basename fallback.
-    const baseTitle = title;
-    const existingForTitle = finalTitles.get(baseTitle) || [];
-    if (existingForTitle.length > 0) {
-      const section = rel.split('/')[0] || 'site';
-      title = `${stripTags(baseTitle.replace(/\s*\|\s*WaterBalanceTools$/i, ''))} (${section}) | WaterBalanceTools`;
-      const existingForSectionTitle = finalTitles.get(title) || [];
-      if (existingForSectionTitle.length > 0) {
-        const leaf = path.basename(rel, '.html').replace(/index$/i, rel.split('/').slice(-2, -1)[0] || 'page');
-        title = `${stripTags(baseTitle.replace(/\s*\|\s*WaterBalanceTools$/i, ''))} (${section}/${leaf}) | WaterBalanceTools`;
+    // Strip any disambiguation suffix a PRIOR run of this script already
+    // added (e.g. " (calculators)" or " (calculators/leaf)") before
+    // re-deriving baseTitle -- otherwise a title already on disk from an
+    // earlier run gets treated as a fresh, undisambiguated title and can
+    // accumulate a second "(section)" suffix on top of the first one this
+    // script itself added (non-idempotence bug, found on
+    // calculators/volume-calculator.html: "... (calculators) (calculators)
+    // | WaterBalanceTools").
+    const baseTitle = title.replace(/\s*\([a-z0-9/_-]+\)\s*\|\s*WaterBalanceTools$/i, ' | WaterBalanceTools');
+    // Phase 7N (Step 8/16): a retired/redirect-source page (noindex,
+    // canonicalized to its replacement -- see url-policy.js
+    // REDIRECT_SOURCES) is never shown to search engines as competing
+    // content, so it must neither be forced into disambiguation itself nor
+    // allowed to occupy a title slot that bumps the real, indexable page
+    // into disambiguation instead. Directory-walk order is not guaranteed,
+    // so without this exclusion the "which page keeps the clean title"
+    // outcome is arbitrary and can (and did, for calculators/volume-
+    // calculator.html vs pool-volume-calculator.html) rename the wrong one.
+    if (isRedirectSource(rel)) {
+      title = baseTitle;
+    } else {
+      const existingForTitle = finalTitles.get(baseTitle) || [];
+      if (existingForTitle.length > 0) {
+        const section = rel.split('/')[0] || 'site';
+        title = `${stripTags(baseTitle.replace(/\s*\|\s*WaterBalanceTools$/i, ''))} (${section}) | WaterBalanceTools`;
+        const existingForSectionTitle = finalTitles.get(title) || [];
+        if (existingForSectionTitle.length > 0) {
+          const leaf = path.basename(rel, '.html').replace(/index$/i, rel.split('/').slice(-2, -1)[0] || 'page');
+          title = `${stripTags(baseTitle.replace(/\s*\|\s*WaterBalanceTools$/i, ''))} (${section}/${leaf}) | WaterBalanceTools`;
+        }
       }
+      finalTitles.set(title, [...(finalTitles.get(title) || []), rel]);
     }
-    finalTitles.set(title, [...(finalTitles.get(title) || []), rel]);
 
     if (/<title>[\s\S]*?<\/title>/i.test(html)) {
       html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${title}</title>`);

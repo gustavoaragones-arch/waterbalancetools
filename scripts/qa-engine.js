@@ -3,6 +3,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { isRedirectSource } = require('./url-policy');
 
 const ROOT = path.join(__dirname, '..');
 const SKIP_DIRS = new Set([
@@ -154,8 +155,16 @@ function runSeoAudit(ctx) {
     const html = fs.readFileSync(p, 'utf8');
     const title = (html.match(/<title>([\s\S]*?)<\/title>/i) || [])[1]?.trim() || '';
     const desc = (html.match(/<meta\s+name="description"\s+content="([^"]*)"/i) || [])[1] || '';
-    if (title) titles.set(title, (titles.get(title) || 0) + 1);
-    if (desc) descs.set(desc, (descs.get(desc) || 0) + 1);
+    // Phase 7N: a retired/redirect-source page (noindex, canonicalized to
+    // its replacement) sharing a title/description string with that
+    // replacement is not a real duplicate-title SEO problem -- Google
+    // never indexes it. Counting it here just makes the gate fight the
+    // canonical+noindex pattern url-policy.js already establishes.
+    const rel = path.relative(ROOT, p).replace(/\\/g, '/');
+    if (!isRedirectSource(rel)) {
+      if (title) titles.set(title, (titles.get(title) || 0) + 1);
+      if (desc) descs.set(desc, (descs.get(desc) || 0) + 1);
+    }
     if (!has(html, /<link[^>]+rel="canonical"/i)) missingCanonical++;
     if (!has(html, /property="og:title"/i) || !has(html, /property="og:description"/i)) missingOg++;
     if (!has(html, /name="twitter:card"/i)) missingTwitter++;

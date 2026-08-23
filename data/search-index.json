@@ -2461,13 +2461,13 @@
   },
   {
     "url": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
-    "title": "Does Evaporation Affect Pool Chemistry? (Concentration, Not Dilution)",
+    "title": "Does Evaporation Affect Pool Chemistry?",
     "description": "Does evaporation affect pool chemistry? Yes—it concentrates CYA, salt, calcium, and TDS as pure water leaves and top-off water replaces it.",
     "h1": "Evaporation's Effect on Pool Chemistry",
     "category": "Guides",
     "readingTime": null,
     "updated": null,
-    "keywords": "does evaporation affect pool chemistry concentration not dilution effect"
+    "keywords": "does evaporation affect pool chemistry effect"
   },
   {
     "url": "/guides/edge-cases/high-cya-chlorine-lock",

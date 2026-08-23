@@ -1,0 +1,108 @@
+{
+  "phase": "7N",
+  "title": "Forensic SEO, Indexation & Search-Demand Optimization",
+  "status": "PASS_WITH_REVIEW_QUEUE",
+  "baseline_commit": "a6e78816aa134c59cb325c45b554fecd58325e88",
+  "titles": {
+    "findings_before": 52,
+    "fixed": 3,
+    "kept_after_review": 39,
+    "pages_affected_by_fixes": 10
+  },
+  "meta_descriptions": {
+    "findings": 18,
+    "action": "NO_ACTION_all_noindex_internal_tooling"
+  },
+  "cannibalization": {
+    "high_or_critical": 0,
+    "medium_reviewed": 35,
+    "entity_glossary_pairs_reviewed": 23,
+    "entity_glossary_pairs_confirmed_non_issue": true
+  },
+  "volume_calculator_pair_decision": "KEEP_BOTH_URLS_AS_CONFIGURED",
+  "bugs_fixed": [
+    "normalize-seo-metadata.js: non-idempotent + order-dependent title disambiguation",
+    "build-link-matrix.js: retired/redirect-source pages surfaced as live cross-link candidates",
+    "qa-engine.js: SEO audit counted retired/redirect-source pages toward duplicate-title errors",
+    "generate-data-docs.js: brand name repeated twice in reference/datasets/* titles"
+  ],
+  "internal_link_fixes": [
+    { "page": "maintenance/how-often-add-chlorine-pool.html", "depth_before": 5, "depth_after": 3, "inbound_before": 2, "inbound_after": 3 },
+    { "page": "maintenance/how-to-fix-cloudy-hot-tub.html", "depth_before": 5, "depth_after": 4, "inbound_before": 2, "inbound_after": 3 }
+  ],
+  "search_demand_gaps": {
+    "total": 8,
+    "missing": 2,
+    "partially_covered": 6,
+    "created_this_phase": 0
+  },
+  "gsc_data_available": false,
+  "validator": {
+    "script": "scripts/validate-phase-7n.js",
+    "pages_scanned": 511,
+    "citation_blocks_confirmed": 18,
+    "citation_links_confirmed": 23,
+    "errors": 0,
+    "warnings": 0,
+    "result": "PASS"
+  },
+  "regression": {
+    "build": "PASS",
+    "validate_chemistry_knowledge": "PASS",
+    "validate_chemistry_extraction_v2": "PASS",
+    "validate_chemistry_evidence_dataset": "PASS",
+    "validate_provenance": "PASS",
+    "validate_provenance_resolution": "PASS",
+    "validate_trust_layer": "PASS",
+    "validate_trust": "PASS",
+    "validate_editorial_decisions": "PASS",
+    "validate_programmatic_quality": "PASS",
+    "validate_schema_content_consistency": "PASS",
+    "validate_phase_7h": "PASS",
+    "validate_phase_7i": "PASS",
+    "validate_entity_provenance": "PASS",
+    "validate_phase_7k": "PASS",
+    "validate_citation_coverage": "PASS",
+    "validate_phase_7m": "PASS",
+    "validate_phase_7n": "PASS",
+    "check_broken_links": "PASS",
+    "test_url_engine": "PASS",
+    "validate_url_engine": "PASS"
+  },
+  "forensic_reaudit": {
+    "pages": 524,
+    "schema_valid": 953,
+    "schema_missing": 39,
+    "schema_questionable": 3,
+    "duplicate_title_groups": 0,
+    "duplicate_description_groups": 0,
+    "accessibility_flagged_pages": 0,
+    "cannibalization_high_risk": 0,
+    "p1_merge_findings_before": 28,
+    "p1_merge_findings_after": 26,
+    "volume_calculator_pair_resolved": true
+  },
+  "reproducibility": {
+    "footer_whitespace_nondeterminism_files": 171,
+    "footprint_expanded_by_this_phase": false,
+    "touched_pages_content_identical": true,
+    "note": "Same magnitude and category distribution as Phase 7M's confirmed baseline; one touched page (evaporation guide) shows a single added blank line, same pre-existing pattern already disclosed for this exact page in Phase 7M -- zero content difference."
+  },
+  "scope_control": {
+    "spanish_french": false,
+    "adsense": false,
+    "calculator_formula_changes": false,
+    "broad_chemistry_rewrite": false,
+    "mass_content_rewrite": false,
+    "mass_citation_injection": false,
+    "fake_authors_or_reviewers": false,
+    "fabricated_search_volume_or_gsc_data": false,
+    "url_renaming": false,
+    "automatic_page_merging": false,
+    "similarity_score_gaming": false,
+    "sitemap_priority_manipulation": false,
+    "keyword_stuffing": false
+  },
+  "next_phase": "7O",
+  "auto_advance": false
+}
