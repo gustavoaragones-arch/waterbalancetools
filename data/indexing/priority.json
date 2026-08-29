@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T01:33:49.531Z",
+  "generatedAt": "2026-08-29T02:15:39.308Z",
   "pageTypeMultiplier": {
     "homepage": 100,
     "calculator": 95,
@@ -456,7 +456,7 @@
       "url": "/academy/fundamentals/indoor-pool-chemistry",
       "pageType": "academy",
       "priority": 100,
-      "reason": "Multiplier=80, inboundWeight=530, outboundLinks=38, freshnessBonus=10",
+      "reason": "Multiplier=80, inboundWeight=450, outboundLinks=38, freshnessBonus=10",
       "crawlTier": "Tier 2",
       "hub": "/academy/fundamentals",
       "entityCount": 0,
@@ -516,7 +516,7 @@
       "url": "/academy/fundamentals/why-water-testing-matters",
       "pageType": "academy",
       "priority": 100,
-      "reason": "Multiplier=80, inboundWeight=550, outboundLinks=35, freshnessBonus=10",
+      "reason": "Multiplier=80, inboundWeight=630, outboundLinks=35, freshnessBonus=10",
       "crawlTier": "Tier 2",
       "hub": "/academy/fundamentals",
       "entityCount": 0,

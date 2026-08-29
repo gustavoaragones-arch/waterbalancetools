@@ -1,0 +1,119 @@
+{
+  "phase": "7Q",
+  "title": "Production Quality, Review-Queue Closure & Final SEO Integrity",
+  "status": "PASS_WITH_REVIEW_QUEUE",
+  "baseline_commit": "2a3a682b25c8068bac6940b828ea37347f103710",
+  "carry_forward_items_total": 26,
+  "dispositions": {
+    "RESOLVED": 4,
+    "CONFIRMED_SAFE": 9,
+    "DEFERRED": 8,
+    "REJECTED": 4,
+    "PARTIALLY_RESOLVED": 1
+  },
+  "production_changes": {
+    "new_pages_created": 0,
+    "entities_expanded_with_new_citations": 3,
+    "new_chemistry_sources_registered": 2,
+    "data_bug_fixes": 1,
+    "tooling_fixes": 2
+  },
+  "citation_coverage": {
+    "blocks_before": 18,
+    "blocks_after": 21,
+    "links_before": 23,
+    "links_after": 26,
+    "new_citations": [
+      {"page": "entities/water-replacement.html", "source_id": "phta-water-conservation-droughts-2021"},
+      {"page": "entities/cover.html", "source_id": "phta-water-conservation-droughts-2021"},
+      {"page": "entities/calcium-hypochlorite.html", "source_id": "phta-calcium-hypochlorite-fact-sheet-2021"}
+    ]
+  },
+  "material_science_decisions": {
+    "vinyl_liner_bleaching": "CONFIRMED_SAFE (unchanged, SUPPORTED)",
+    "fiberglass_gelcoat": "CONFIRMED_SAFE (unchanged, CONTEXTUAL)",
+    "concrete_gunite": "CONFIRMED_SAFE (unchanged, no dedicated claim)"
+  },
+  "shock_dosing_status": {
+    "routine_maintenance": "REQUIRES_REVIEW (preserved, re-verified unresolved via new source check)",
+    "green_algae_recovery": "CONTEXTUAL (unchanged, 30 ppm)",
+    "fecal_incident_response": "SUPPORTED (unchanged, CDC/MAHC 20 ppm)"
+  },
+  "trichlor_calhypo_mixing_hazard": "CONFIRMED_SAFE, independently corroborated by a second source type this phase",
+  "calculator_status": {
+    "formulas_modified": false,
+    "bromine_dosing_calculator": "REJECTED (this phase, scope-blocked)",
+    "standalone_lsi_calculator": "REJECTED (this phase, scope-blocked)"
+  },
+  "programmatic_status": {
+    "families_restructured": false,
+    "pages_checked": 26,
+    "violations": 0
+  },
+  "url_indexation_status": {
+    "canonical_indexable_pages": 478,
+    "sitemap_urls": 478,
+    "redirect_sources": 6,
+    "pages_created": 0,
+    "pages_deleted": 0,
+    "violations": 0
+  },
+  "forensic_reaudit": {
+    "total_html_files": 525,
+    "total_html_files_before": 525,
+    "schema_valid": 952,
+    "schema_missing": 39,
+    "schema_questionable": 6,
+    "orphan_flags_total": 7,
+    "orphan_flags_before": 7,
+    "true_orphans": 0,
+    "duplicate_title_groups_broad_scan": 3,
+    "duplicate_title_groups_canonical_only": 0,
+    "duplicate_description_groups": 0,
+    "cannibalization_high_risk": 0,
+    "source_audit_zero_citation_pages_before": "416/416 (original AUTHORITY_RE)",
+    "source_audit_zero_citation_pages_after": "402/416 (Phase 7Q AUTHORITY_RE)",
+    "no_legitimate_page_deleted": true
+  },
+  "reproducibility": {
+    "two_build_comparison_performed": true,
+    "new_citation_content_stable_across_builds": true,
+    "footer_whitespace_nondeterminism_root_cause_identified": true,
+    "footer_whitespace_nondeterminism_fixed": false,
+    "footprint_expanded_by_this_phase": false
+  },
+  "regression": {
+    "validators_run": 26,
+    "validators_passed": 26,
+    "npm_run_build": "PASS",
+    "qa_score": 99,
+    "qa_score_change": 0,
+    "check_broken_links": "PASS",
+    "url_indexation": "PASS"
+  },
+  "validator": {
+    "script": "scripts/validate-phase-7q.js",
+    "result": "PASS",
+    "errors": 0,
+    "warnings": 0
+  },
+  "tests": {
+    "script": "scripts/test-phase-7q.js",
+    "assertions": 18,
+    "result": "PASS"
+  },
+  "scope_control": {
+    "spanish_french": false,
+    "calculator_formula_changes": false,
+    "url_architecture_changes": false,
+    "redirect_registry_changes": false,
+    "programmatic_family_restructuring": false,
+    "fabricated_sources": false,
+    "fabricated_authors_or_reviewers": false,
+    "mass_page_creation": false,
+    "unsupported_claims_promoted_to_supported": false,
+    "undocumented_production_changes": false
+  },
+  "next_phase": "7R",
+  "auto_advance": false
+}

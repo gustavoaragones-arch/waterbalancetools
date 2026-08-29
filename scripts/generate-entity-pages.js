@@ -265,6 +265,18 @@ const ENTITY_CITATIONS = {
   'vinyl-pool': {
     sourceIds: ['cffa-vinyl-liner-bleaching'],
   },
+  'water-replacement': {
+    sourceIds: ['phta-water-conservation-droughts-2021'],
+    note: 'The source below directly supports the 1,500 ppm TDS-increase-over-baseline trigger (hot tubs) and the general principle that high CYA/TDS should be managed by water replacement. It does not itself state the specific CYA (80 ppm), calcium hardness (500 ppm), or pool TDS (3,000 ppm) figures above -- those remain common industry guidance without an independently confirmed primary source.',
+  },
+  'cover': {
+    sourceIds: ['phta-water-conservation-droughts-2021'],
+    note: 'The source below directly supports the chemical-consumption (up to 60%) and heating-cost (up to 70%) reduction figures and the combined-chlorine/disinfection-byproduct-buildup caution. It does not address the 95% evaporation-reduction or UV-degradation figures above, which remain common industry guidance without an independently confirmed primary source.',
+  },
+  'calcium-hypochlorite': {
+    sourceIds: ['phta-calcium-hypochlorite-fact-sheet-2021'],
+    note: 'The source below directly supports and quantifies the calcium-addition claim (0.8 ppm calcium hardness per ppm of available chlorine added) and states this product must not be mixed with other chlorinating agents, independently corroborating (from an industry-standard fact sheet, distinct from the manufacturer SDS documents already cited on entities/trichlor-tablets.html) the trichlor/cal-hypo mixing hazard. It does not address the pre-dissolving/liner-bleaching claim above, which remains uncited on this page.',
+  },
 };
 
 function buildSourcesSection(entityId) {

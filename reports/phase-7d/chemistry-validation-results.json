@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-08-29T01:33:54.510Z",
+  "timestamp": "2026-08-29T02:15:46.034Z",
   "parameters": 15,
   "ranges": 25,
-  "sources": 16,
+  "sources": 18,
   "claims": 19,
   "errors": [],
   "warnings": [
@@ -10,6 +10,8 @@
     "Source \"aquamagazine-hasa-superchlorination-2020\" is not referenced by any parameter, range, or claim (orphan source)",
     "Source \"cffa-vinyl-liner-bleaching\" is not referenced by any parameter, range, or claim (orphan source)",
     "Source \"phta-fresh-fill-startup-fact-sheet\" is not referenced by any parameter, range, or claim (orphan source)",
+    "Source \"phta-water-conservation-droughts-2021\" is not referenced by any parameter, range, or claim (orphan source)",
+    "Source \"phta-calcium-hypochlorite-fact-sheet-2021\" is not referenced by any parameter, range, or claim (orphan source)",
     "Range \"range-ph-hottub-bromine-routine\" is not referenced by any canonical claim (orphan range)",
     "Range \"range-ph-pool-narrow-operational\" is not referenced by any canonical claim (orphan range)",
     "Range \"range-ta-public-pool-standard\" is not referenced by any canonical claim (orphan range)",

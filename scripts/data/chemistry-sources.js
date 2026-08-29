@@ -258,6 +258,45 @@ const SOURCES = [
     topics: ['ph', 'total_alkalinity', 'calcium_hardness', 'cyanuric_acid', 'chlorine', 'new_plaster_startup'],
     notes: 'PHTA fact sheet presenting the National Plasterers Council (NPC) 28-day fresh-fill start-up procedure for plaster (marble/quartz/pebble/glassbead) pools: staged alkalinity (80-100 ppm) then pH (7.2-7.6) then calcium hardness (80-100 ppm Day 1, 100-150 ppm Day 2, minimum 200 ppm Day 4); no chlorine for 48 hours, then Free Chlorine to 1.5-3 ppm on Day 3; CYA introduced 30-50 ppm beginning Day 4 via skimmer over a minimum of 3 days; no salt addition within 30 days for SWG pools; no heater until manufacturer-specified (normally 2-4 weeks); brushing at least twice daily until plaster dust is removed. Explicitly distinct from routine seasonal reopening of an already-cured pool.',
   },
+  {
+    // Phase 7Q: supports entities/water-replacement.html (Priority A light
+    // expansion). Fetched and read in full (all 6 pages) on 2026-08-28 --
+    // not a search-snippet paraphrase. Only cited for what it specifically
+    // states -- see the entities/water-replacement ENTITY_CITATIONS note in
+    // generate-entity-pages.js for exactly which figures this does and does
+    // not cover.
+    id: 'phta-water-conservation-droughts-2021',
+    organization: 'Pool & Hot Tub Alliance (PHTA), Recreational Water Quality Committee',
+    title: 'Water Conservation During Droughts (PHTA Fact Sheet)',
+    url: 'https://www.phta.org/pub/?id=50ffe77d-1866-daac-99fb-9719108d1367',
+    source_type: 'industry_standard',
+    authority_level: 'professional',
+    publication_date: '2021-12',
+    last_updated: null,
+    accessed_date: '2026-08-28',
+    topics: ['total_dissolved_solids', 'cyanuric_acid', 'calcium_hardness', 'water_replacement'],
+    notes: 'States "the 1,500 ppm TDS increase limit" as the recognized water-replacement trigger (matches this site\'s existing hot-tub TDS-over-baseline figure exactly). States high cyanuric acid concentrations should be reduced by draining and replacing water, and cites the ANSI/APSP-11 standard\'s 100 ppm CYA maximum (30-50 ppm ideal) -- narrower than but not contradicting the site\'s existing "CYA above 80 ppm" residential drain-trigger figure, which this source does not itself state and is NOT treated as confirmed by this citation. Does not address a specific pool (non-drought) absolute TDS ppm trigger or a specific calcium-hardness ppm drain trigger -- those figures remain uncited.',
+  },
+  {
+    // Phase 7Q Priority E/F: fetched while checking whether new evidence
+    // resolves the routine-maintenance shock dosing disagreement. It does
+    // NOT -- this fact sheet explicitly defers shock/superchlorination
+    // dosage to individual product labels rather than giving a number, so
+    // the routine-shock REQUIRES_REVIEW status is correctly preserved (see
+    // RESEARCH.md). It DOES support a genuine, previously-uncited claim on
+    // entities/calcium-hypochlorite.html -- read in full on 2026-08-28.
+    id: 'phta-calcium-hypochlorite-fact-sheet-2021',
+    organization: 'Pool & Hot Tub Alliance (PHTA), Recreational Water Quality Committee',
+    title: 'Calcium Hypochlorite (PHTA Fact Sheet)',
+    url: 'https://www.phta.org/pub/?id=07FD3498-1866-DAAC-99FB-8824A8F3147B',
+    source_type: 'industry_standard',
+    authority_level: 'professional',
+    publication_date: '2021-08',
+    last_updated: null,
+    accessed_date: '2026-08-28',
+    topics: ['chlorine', 'calcium_hardness', 'chemical_mixing_safety'],
+    notes: 'States "0.8 ppm of calcium hardness is added to the water for each ppm of available chlorine added" when using calcium hypochlorite -- directly supports and quantifies this site\'s existing "it does add calcium" claim. Also states routine sanitizing FAC target of 1.0-4.0 ppm (pools) / 2.0-5.0 ppm (spas) when using this product specifically, and that calcium hypochlorite "shall not be mixed with other pool chemicals including other chlorinating agents" (corroborates, from an independent industry-standard source, the trichlor/cal-hypo mixing hazard already cited via manufacturer SDS documents). Explicitly defers shock-treatment/superchlorination dosage to product labels rather than stating a ppm figure -- does NOT resolve the routine-maintenance shock disagreement.',
+  },
 ];
 
 const SOURCES_BY_ID = Object.fromEntries(SOURCES.map((s) => [s.id, s]));

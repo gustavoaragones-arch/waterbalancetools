@@ -1,4 +1,19 @@
 /**
+ * DEPRECATED (Phase 7Q) -- superseded by scripts/generate-sitemaps.js
+ * (plural), which is the version actually wired into `npm run build` /
+ * scripts/run-all-generators.js. This script is not required/imported by
+ * anything and confirmed dead code as of Phase 7Q (see
+ * reports/phase-7q/RESEARCH.md), but is kept rather than deleted per this
+ * project's policy against removing code merely because it is unused.
+ *
+ * It writes a flat, non-partitioned sitemap.xml with no lastmod values,
+ * which WOULD conflict with (overwrite) the partitioned, git-lastmod-based
+ * sitemap.xml index that generate-sitemaps.js produces (see Phase 7O's
+ * LASTMOD-AUDIT.md) if run after a real build. Guarded below so it refuses
+ * to run without an explicit override, rather than silently regressing the
+ * sitemap if someone runs the old `npm run sitemap` script from muscle
+ * memory.
+ *
  * Sitemap: priorities and crawl-friendly ordering.
  * Order: homepage → calculators → problem pages → programmatic → guides → crawl hub → other.
  * Run from project root: node scripts/generate-sitemap.js
@@ -6,6 +21,17 @@
 const fs = require('fs');
 const path = require('path');
 const { isLegacyProgrammaticChlorine } = require('./redirect-rules');
+
+if (!process.env.FORCE_LEGACY_SITEMAP) {
+  console.error(
+    'generate-sitemap.js (singular) is deprecated and disabled -- it would overwrite the ' +
+    'partitioned, git-lastmod-based sitemap.xml that generate-sitemaps.js (plural) produces ' +
+    'as part of `npm run build`. Use `node scripts/generate-sitemaps.js` instead. ' +
+    'If you specifically need this legacy flat sitemap for a one-off purpose, re-run with ' +
+    'FORCE_LEGACY_SITEMAP=1 node scripts/generate-sitemap.js.'
+  );
+  process.exit(1);
+}
 
 const ROOT = path.join(__dirname, '..');
 const BASE_URL = 'https://waterbalancetools.com';

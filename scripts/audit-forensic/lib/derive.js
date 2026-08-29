@@ -1,6 +1,16 @@
 'use strict';
 
-const AUTHORITY_RE = /(\.gov\/|\.gov$|\.edu\/|\.edu$|who\.int|cdc\.gov|epa\.gov|nsf\.org|cpsc\.gov)/i;
+// Phase 7Q: expanded from the original .gov/.edu/who.int/cdc.gov/epa.gov/
+// nsf.org/cpsc.gov-only list to also recognize the source-host types Phase
+// 7K's evidence hierarchy legitimately introduced -- manufacturer SDS
+// hosts, professional trade publications, material-industry associations,
+// and CMAHC -- but only for domains actually present, verified, and
+// registered in scripts/data/chemistry-sources.js as of this phase. This is
+// a metric-definition change, not a retroactive one: it changes what THIS
+// AND FUTURE runs count, not what earlier phases' own reports said at the
+// time. See reports/phase-7q/RESEARCH.md for the before/after numbers and
+// reports/phase-7l/REVIEW-QUEUE.md for the original gap this closes.
+const AUTHORITY_RE = /(\.gov\/|\.gov$|\.edu\/|\.edu$|who\.int|cdc\.gov|epa\.gov|nsf\.org|cpsc\.gov|phta\.org|cmahc\.org|blog\.ansi\.org|cffaperformanceproducts\.org|msdsdigital\.com|puraquapools\.com|poolspanews\.com|clevelandclinic\.org|hasa\.com)/i;
 
 function schemaTypesOf(page) {
   const types = [];
