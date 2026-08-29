@@ -320,6 +320,29 @@ const SOURCES = [
     topics: ['shock_treatment', 'breakpoint_chlorination', 'combined_chlorine'],
     notes: 'States: "The breakpoint chlorination value is 10 times the combined chlorine (CC) level." Gives full worked calculations (liquid and granular chlorine) all built on this same 10x ratio, consistent throughout the document. Explicitly a ratio/rule, not an absolute ppm target -- confirms the site\'s existing range-shock-breakpoint-rule-of-thumb architecture (minimum/maximum/target all null, unit "multiplier_of_combined_chlorine") was modeled correctly. Document is written for regulated/public pool operations (cites Indiana pool code 410 IAC 6-2.1 throughout) but the underlying chemistry (chlorine-to-ammonia reaction stoichiometry) is general, not facility-type-specific. Does NOT state a general residential "shock to N ppm" absolute target -- the routine-maintenance 2-5ppm-vs-10-20ppm disagreement remains unresolved by this source.',
   },
+  {
+    // Phase 7S: government source with a complete "Water Chemistry
+    // Adjustment Guide" dosage table, itself explicitly adapted from the
+    // National Swimming Pool Foundation's Pool & Spa Operator Handbook (the
+    // same handbook already generically cited across this site's older
+    // academy/reference content). Fetched as a PDF and read in full (6
+    // pages) on 2026-08-28. Used to resolve the P0-A liquid-chlorine and
+    // (secondarily) the trichlor-tablet dosing-constant audit -- see
+    // reports/phase-7s/LIQUID-CHLORINE-AUDIT.md for the full derivation.
+    // Distinct document from in-doh-breakpoint-chlorination-2022 (Phase
+    // 7R), same issuing division.
+    id: 'in-doh-chemical-adjustment-2021',
+    organization: 'Indiana Department of Health, Environmental Public Health Division',
+    title: 'Adjusting Chemical Levels in a Swimming Pool',
+    url: 'https://www.in.gov/health/eph/files/Chemical_adjustment_pool.pdf',
+    source_type: 'government_public_health',
+    authority_level: 'primary',
+    publication_date: null,
+    last_updated: null,
+    accessed_date: '2026-08-28',
+    topics: ['chlorine', 'shock_treatment', 'total_alkalinity', 'calcium_hardness', 'cyanuric_acid', 'dosing_math'],
+    notes: 'States the base dosing relationship "1.0 ppm equals about .083 lbs of chemical per 10,000 gallons of water... or 1.3 oz per 10,000 gallons" for 100%-strength product, footnoted as ".083 Pounds of Chemical = 1 ppm x (10,000 gallons treated / 120,000)... since 120,000 gallons weighs 1 million pounds" -- the standard pool-industry mass-balance derivation, independently reproduced in LIQUID-CHLORINE-AUDIT.md using the more precise 8.34 lb/gal water-density constant. Its own "Water Chemistry Adjustment Guide" table (adapted from the National Swimming Pool Foundation Pool & Spa Operator Handbook) states Sodium Hypochlorite (12%): 10.7 fl.oz. per 1 ppm per 10,000 gallons; Sodium Bicarbonate: 1.4 lbs per 10 ppm total-alkalinity increase per 10,000 gallons; Trichlor: 1.5 oz per 1 ppm per 10,000 gallons; Calcium Hypochlorite (67%): 2 oz per 1 ppm per 10,000 gallons. Does not give a pH-specific acid-dose-per-pH-unit figure independent of total alkalinity (pH adjustment via acid is TA-coupled, not a standalone linear relationship this source models).',
+  },
 ];
 
 const SOURCES_BY_ID = Object.fromEntries(SOURCES.map((s) => [s.id, s]));

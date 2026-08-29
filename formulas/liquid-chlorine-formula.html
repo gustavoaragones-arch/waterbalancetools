@@ -16,7 +16,7 @@
     "name": "Liquid Chlorine Dose Formula",
     "description": "Learn how to calculate the correct liquid chlorine dose for your pool size. Includes worked example and limitations.",
     "url": "https://waterbalancetools.com/formulas/liquid-chlorine-formula",
-    "dateModified": "2026-06-01"
+    "dateModified": "2026-08-28"
   }
   </script>
   <script type="application/ld+json">
@@ -94,12 +94,12 @@
       <div class="knowledge-content">
 
         <!-- knowledge-hero.html — tokens: Formula Library, knowledge-badge--formula, 3 min read,
-     2026-06-01, Liquid Chlorine Dose Formula, , <a href="#formula" class="knowledge-chip">Formula</a><a href="#example" class="knowledge-chip">Example</a><a href="#explanation" class="knowledge-chip">Explanation</a> -->
+     2026-08-28, Liquid Chlorine Dose Formula, , <a href="#formula" class="knowledge-chip">Formula</a><a href="#example" class="knowledge-chip">Example</a><a href="#explanation" class="knowledge-chip">Explanation</a> -->
 <section class="knowledge-hero">
   <div class="knowledge-hero-meta">
     <span class="knowledge-badge knowledge-badge--formula">Formula Library</span>
     <span class="knowledge-hero-reading">3 min read</span>
-    <span class="knowledge-hero-reading" style="opacity:0.6">Updated 2026-06-01</span>
+    <span class="knowledge-hero-reading" style="opacity:0.6">Updated 2026-08-28</span>
   </div>
   <h1>Liquid Chlorine Dose Formula</h1>
   <p class="knowledge-hero-summary"></p>
@@ -112,7 +112,7 @@
         <section id="formula">
           <h2>The Formula</h2>
           <div class="formula-display">
-            <div class="formula-equation">Fluid ounces = (Target FC − Current FC) × Pool Volume (gal) ÷ (Chlorine Strength % × 0.0128)</div>
+            <div class="formula-equation">Fluid ounces = (Target FC − Current FC) × Pool Volume (gal) × 0.013344 ÷ Chlorine Strength %</div>
           </div>
           <table class="formula-variable-table knowledge-table">
             <thead><tr><th>Symbol</th><th>Description</th><th>Unit</th></tr></thead>
@@ -121,7 +121,7 @@
               <tr><td><code>Current FC</code></td><td>Current free chlorine level measured from test</td><td>ppm</td></tr>
               <tr><td><code>Volume</code></td><td>Pool volume in gallons</td><td>gallons</td></tr>
               <tr><td><code>Strength%</code></td><td>Available chlorine percentage of the product (e.g. 10 for 10%)</td><td>%</td></tr>
-              <tr><td><code>0.0128</code></td><td>Conversion constant for fluid ounces of 100% chlorine per ppm per gallon</td><td>constant</td></tr>
+              <tr><td><code>0.013344</code></td><td>Fluid ounces of 100%-available-chlorine product needed per ppm per gallon, derived from 8.34 lb/gal water density and 16 oz/lb (see Phase 7S liquid-chlorine audit)</td><td>constant</td></tr>
             </tbody>
           </table>
         </section>
@@ -133,13 +133,9 @@
             <p>Pool volume: 20,000 gallons. Current FC: 0.5 ppm. Target FC: 3 ppm. Product: 10% sodium hypochlorite.</p>
 <ul>
 <li>Increase needed = 3 − 0.5 = 2.5 ppm</li>
-<li>Numerator = 2.5 × 20,000 = 50,000</li>
-<li>Denominator = 10 × 0.0128 = 0.128</li>
-<li>Fluid ounces = 50,000 ÷ 0.128 = 390,625 fl oz</li>
+<li>Fluid ounces = 2.5 ppm × 20,000 gal × 0.013344 ÷ 10 = 667.2 ÷ 10 = 66.7 fl oz</li>
 </ul>
-<p>Wait — that looks wrong. Let's recheck. The constant 0.0128 represents 1 oz of 100% chlorine raises 1 ppm per 10,000 gal. Per gallon: 0.0128 fl oz of 100% chlorine per ppm.</p>
-<p>Simpler form: for 10% sodium hypochlorite, 1 fl oz raises a 10,000-gal pool by about 0.78 ppm. So: - Fluid oz = (2.5 ppm × 20,000 gal) ÷ (10,000 × 0.78) = 50,000 ÷ 7,800 ≈ 6.4 fl oz (per 10,000 gal) - For 20,000 gal: 6.4 × 2 = 12.8 fl oz</p>
-<p>In practical terms: roughly 13 fl oz (about 1.6 cups) of 10% liquid chlorine raises a 20,000-gallon pool by 2.5 ppm.</p>
+<p>Add approximately 66.7 fl oz (about 0.52 gallons) of 10% liquid chlorine to raise a 20,000-gallon pool's free chlorine from 0.5 ppm to 3 ppm.</p>
           </div>
         </section>
 
@@ -148,16 +144,15 @@
 <h2>How This Formula Works</h2>
 <p>Liquid chlorine (sodium hypochlorite) is sold at varying concentrations — most commonly 10% for pool-grade products. The formula calculates how many fluid ounces of that specific concentration are needed to raise free chlorine by the required amount.</p>
 <ul>
-<li>Multiply the desired ppm increase by pool volume to find total ppm-gallons needed.</li>
-<li>Divide by (strength% × 0.0128) to convert to fluid ounces of product.</li>
-<li>For 10% sodium hypochlorite: divide by (10 × 0.0128) = 0.128.</li>
-<li>128 fl oz = 1 gallon, so dividing by 128 converts fluid ounces to gallons.</li>
+<li>Multiply the desired ppm increase by pool volume, then by 0.013344, to find the fluid ounces of 100%-strength product needed.</li>
+<li>Divide by the product's strength percentage (as a whole number, e.g. 10 for 10%) to get the actual fluid ounces of that product.</li>
+<li>For 10% sodium hypochlorite this works out to about 13.3 fluid ounces per 10,000 gallons per 1 ppm increase, consistent with published pool-operator dosage tables (Indiana Department of Health's &quot;Water Chemistry Adjustment Guide,&quot; itself adapted from the National Swimming Pool Foundation Pool &amp; Spa Operator Handbook, states 10.7 fl oz per 10,000 gal per 1 ppm for 12% sodium hypochlorite — the same relationship at a higher concentration).</li>
 </ul>
 </section>
 
 <section id="limitations">
 <h2>Limitations &amp; Notes</h2>
-<p>Assumes all liquid chlorine is immediately and evenly distributed throughout the pool. In practice, some chlorine is consumed immediately by organic demand in the water (the chlorine demand). Always test FC 30–60 minutes after adding liquid chlorine to verify the actual increase, and add more if needed.</p>
+<p>Assumes all liquid chlorine is immediately and evenly distributed throughout the pool. In practice, some chlorine is consumed immediately by organic demand in the water (the chlorine demand). Always test FC 30–60 minutes after adding liquid chlorine to verify the actual increase, and add more if needed. The 0.013344 constant assumes 8.34 lb/gal water density and treats the product's labeled strength percentage as available-chlorine-by-weight; real product density varies slightly by concentration and manufacturer, so treat this as a starting dose, not an exact figure.</p>
 </section>
 
 
@@ -175,7 +170,7 @@
 
         
 
-        <p class="knowledge-sources"><em>Last reviewed: 2026-06-01</em></p>
+        <p class="knowledge-sources"><em>Last reviewed: 2026-08-28</em></p>
 
       </div>
     </div>

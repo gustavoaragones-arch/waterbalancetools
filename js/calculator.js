@@ -17,24 +17,34 @@
   }
 
   /**
-   * Liquid chlorine (10%): ounces = (gallons × ppm) / 128000
+   * Liquid chlorine (10%): ounces = (gallons x ppm) / 749.4
+   * Phase 7S correction (was /128000) -- see js/calc-utils.js's
+   * calculateChlorine for the full derivation and
+   * reports/phase-7s/LIQUID-CHLORINE-AUDIT.md. This function duplicated
+   * calc-utils.js's (also-corrected) constant; kept in sync rather than
+   * consolidated, since de-duplicating the two calculator implementations
+   * is a separate architecture question outside this phase's scope.
    */
   function liquidChlorineOunces(gallons, ppm) {
-    return (gallons * ppm) / 128000;
+    return (gallons * ppm) / 749.4;
   }
 
   /**
    * Granular shock: ~1 oz per 10,000 gal per 1 ppm
+   * Unchanged -- unspecified/ambiguous product assumption, REQUIRES_EXPERT_REVIEW.
    */
   function granularShockOunces(gallons, ppm) {
     return (gallons * ppm) / 10000;
   }
 
   /**
-   * Chlorine tablets (trichlor): ~1 oz per 12,000 gal per 1 ppm (approx)
+   * Chlorine tablets (trichlor, ~90% available chlorine): ounces =
+   * (gallons x ppm) / 6666.7. Phase 7S correction (was /12000) -- matches
+   * this site's own dosage-matrices.json trichlor-tablets-90pct record
+   * (1.5 oz per 10,000 gal per 1 ppm) and the Indiana DOH government table.
    */
   function tabletChlorineOunces(gallons, ppm) {
-    return (gallons * ppm) / 12000;
+    return (gallons * ppm) / 6666.7;
   }
 
   /**

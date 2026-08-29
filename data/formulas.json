@@ -63,7 +63,7 @@
       "slug": "formulas/liquid-chlorine-formula",
       "title": "Liquid Chlorine Dose Formula",
       "category": "chlorine",
-      "equation": "Fluid ounces = (Target FC − Current FC) × Pool Volume (gal) ÷ (Chlorine Strength % × 0.0128)",
+      "equation": "Fluid ounces = (Target FC − Current FC) × Pool Volume (gal) × 0.013344 ÷ Chlorine Strength %",
       "variables": [
         {
           "symbol": "Target FC",
@@ -86,14 +86,14 @@
           "unit": "%"
         },
         {
-          "symbol": "0.0128",
-          "description": "Conversion constant for fluid ounces of 100% chlorine per ppm per gallon",
+          "symbol": "0.013344",
+          "description": "Fluid ounces of 100%-available-chlorine product needed per ppm per gallon, derived from 8.34 lb/gal water density and 16 oz/lb (see Phase 7S liquid-chlorine audit)",
           "unit": "constant"
         }
       ],
-      "explanation": "Liquid chlorine (sodium hypochlorite) is sold at varying concentrations — most commonly 10% for pool-grade products. The formula calculates how many fluid ounces of that specific concentration are needed to raise free chlorine by the required amount.\n\n- Multiply the desired ppm increase by pool volume to find total ppm-gallons needed.\n- Divide by (strength% × 0.0128) to convert to fluid ounces of product.\n- For 10% sodium hypochlorite: divide by (10 × 0.0128) = 0.128.\n- 128 fl oz = 1 gallon, so dividing by 128 converts fluid ounces to gallons.",
-      "workedExample": "Pool volume: 20,000 gallons. Current FC: 0.5 ppm. Target FC: 3 ppm. Product: 10% sodium hypochlorite.\n\n- Increase needed = 3 − 0.5 = 2.5 ppm\n- Numerator = 2.5 × 20,000 = 50,000\n- Denominator = 10 × 0.0128 = 0.128\n- Fluid ounces = 50,000 ÷ 0.128 = 390,625 fl oz\n\nWait — that looks wrong. Let's recheck. The constant 0.0128 represents 1 oz of 100% chlorine raises 1 ppm per 10,000 gal. Per gallon: 0.0128 fl oz of 100% chlorine per ppm.\n\nSimpler form: for 10% sodium hypochlorite, 1 fl oz raises a 10,000-gal pool by about 0.78 ppm. So:\n- Fluid oz = (2.5 ppm × 20,000 gal) ÷ (10,000 × 0.78) = 50,000 ÷ 7,800 ≈ 6.4 fl oz (per 10,000 gal)\n- For 20,000 gal: 6.4 × 2 = 12.8 fl oz\n\nIn practical terms: roughly 13 fl oz (about 1.6 cups) of 10% liquid chlorine raises a 20,000-gallon pool by 2.5 ppm.",
-      "limitations": "Assumes all liquid chlorine is immediately and evenly distributed throughout the pool. In practice, some chlorine is consumed immediately by organic demand in the water (the chlorine demand). Always test FC 30–60 minutes after adding liquid chlorine to verify the actual increase, and add more if needed.",
+      "explanation": "Liquid chlorine (sodium hypochlorite) is sold at varying concentrations — most commonly 10% for pool-grade products. The formula calculates how many fluid ounces of that specific concentration are needed to raise free chlorine by the required amount.\n\n- Multiply the desired ppm increase by pool volume, then by 0.013344, to find the fluid ounces of 100%-strength product needed.\n- Divide by the product's strength percentage (as a whole number, e.g. 10 for 10%) to get the actual fluid ounces of that product.\n- For 10% sodium hypochlorite this works out to about 13.3 fluid ounces per 10,000 gallons per 1 ppm increase, consistent with published pool-operator dosage tables (Indiana Department of Health's \"Water Chemistry Adjustment Guide,\" itself adapted from the National Swimming Pool Foundation Pool & Spa Operator Handbook, states 10.7 fl oz per 10,000 gal per 1 ppm for 12% sodium hypochlorite — the same relationship at a higher concentration).",
+      "workedExample": "Pool volume: 20,000 gallons. Current FC: 0.5 ppm. Target FC: 3 ppm. Product: 10% sodium hypochlorite.\n\n- Increase needed = 3 − 0.5 = 2.5 ppm\n- Fluid ounces = 2.5 ppm × 20,000 gal × 0.013344 ÷ 10 = 667.2 ÷ 10 = 66.7 fl oz\n\nAdd approximately 66.7 fl oz (about 0.52 gallons) of 10% liquid chlorine to raise a 20,000-gallon pool's free chlorine from 0.5 ppm to 3 ppm.",
+      "limitations": "Assumes all liquid chlorine is immediately and evenly distributed throughout the pool. In practice, some chlorine is consumed immediately by organic demand in the water (the chlorine demand). Always test FC 30–60 minutes after adding liquid chlorine to verify the actual increase, and add more if needed. The 0.013344 constant assumes 8.34 lb/gal water density and treats the product's labeled strength percentage as available-chlorine-by-weight; real product density varies slightly by concentration and manufacturer, so treat this as a starting dose, not an exact figure.",
       "relatedCalculators": [
         "/calculators/pool-chlorine-calculator"
       ],
@@ -115,10 +115,11 @@
       "ogTitle": "Liquid Chlorine Dose Formula",
       "ogDescription": "Calculate exactly how much 10% liquid chlorine your pool needs to reach target free chlorine.",
       "readingTime": "3 min read",
-      "lastReviewed": "2026-06-01",
+      "lastReviewed": "2026-08-28",
       "references": [
         "Taylor Technologies — Pool/Spa Water Chemistry Reference",
-        "Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022"
+        "Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022",
+        "Indiana Department of Health, Environmental Public Health Division — Adjusting Chemical Levels in a Swimming Pool, accessed 2026-08-28"
       ]
     },
     {
@@ -248,7 +249,7 @@
       "slug": "formulas/alkalinity-formula",
       "title": "Total Alkalinity Adjustment Formula",
       "category": "alkalinity",
-      "equation": "Sodium bicarbonate (oz) = Desired TA Increase (ppm) × Volume (gal) × 0.0012",
+      "equation": "Sodium bicarbonate (oz) = Desired TA Increase (ppm) × Volume (gal) × 0.000224",
       "variables": [
         {
           "symbol": "TA Increase",
@@ -261,13 +262,13 @@
           "unit": "gallons"
         },
         {
-          "symbol": "0.0012",
-          "description": "Pounds of sodium bicarbonate needed per ppm per gallon",
-          "unit": "lbs/ppm/gal"
+          "symbol": "0.000224",
+          "description": "Ounces of sodium bicarbonate needed per ppm per gallon (1.4 lbs per 10,000 gal per 10 ppm)",
+          "unit": "oz/ppm/gal"
         }
       ],
-      "explanation": "Total alkalinity (TA) is the pool's buffering capacity — it resists pH changes. Low TA causes pH to swing wildly with minor additions. High TA makes it difficult to lower pH.\n\n- To raise alkalinity: sodium bicarbonate (baking soda). 1.5 lbs per 10,000 gallons raises TA by approximately 10 ppm.\n- To lower alkalinity: muriatic acid. Adding acid lowers both pH and alkalinity. To specifically lower TA without driving pH too far down, add acid with the pump off, then aerate to bring pH back up.\n- The 0.0012 constant is equivalent to 1.5 lbs raising TA by 10 ppm in 10,000 gallons.",
-      "workedExample": "Pool: 18,000 gallons. Current TA: 60 ppm. Target TA: 100 ppm.\n\n- TA increase needed = 100 − 60 = 40 ppm\n- Dose = 40 × 18,000 × 0.0012\n- Dose = 40 × 21.6 = 864 oz... let's convert\n\nUsing the simpler rule: 1.5 lbs per 10,000 gal per 10 ppm:\n- For 40 ppm increase: 1.5 × 4 = 6 lbs per 10,000 gal\n- For 18,000 gal: 6 × 1.8 = 10.8 lbs\n\nAdd approximately 10–11 lbs of sodium bicarbonate. Split into two additions if needed, waiting 4–6 hours between tests.",
+      "explanation": "Total alkalinity (TA) is the pool's buffering capacity — it resists pH changes. Low TA causes pH to swing wildly with minor additions. High TA makes it difficult to lower pH.\n\n- To raise alkalinity: sodium bicarbonate (baking soda). 1.4 lbs per 10,000 gallons raises TA by approximately 10 ppm, matching published pool-operator dosage tables (Indiana Department of Health's \"Water Chemistry Adjustment Guide,\" adapted from the National Swimming Pool Foundation Pool & Spa Operator Handbook).\n- To lower alkalinity: muriatic acid. Adding acid lowers both pH and alkalinity. To specifically lower TA without driving pH too far down, add acid with the pump off, then aerate to bring pH back up.\n- The 0.000224 constant is equivalent to 1.4 lbs (22.4 oz) raising TA by 10 ppm in 10,000 gallons.",
+      "workedExample": "Pool: 18,000 gallons. Current TA: 60 ppm. Target TA: 100 ppm.\n\n- TA increase needed = 100 − 60 = 40 ppm\n- Dose = 40 × 18,000 × 0.000224 = 161.3 oz = 10.1 lbs\n\nAdd approximately 10 lbs of sodium bicarbonate. Split into two additions if needed, waiting 4–6 hours between tests.",
       "limitations": "Sodium bicarbonate also causes a slight pH increase — usually 0.1 to 0.2 pH units for typical doses. Recheck and adjust pH after alkalinity correction if needed. TA should be stabilised before making pH adjustments.",
       "relatedCalculators": [
         "/calculators/pool-alkalinity-calculator"
@@ -290,9 +291,10 @@
       "ogTitle": "Pool Alkalinity Adjustment Formula",
       "ogDescription": "Calculate sodium bicarbonate dose to raise pool total alkalinity.",
       "readingTime": "3 min read",
-      "lastReviewed": "2026-06-01",
+      "lastReviewed": "2026-08-28",
       "references": [
-        "Taylor Technologies — Pool/Spa Water Chemistry Reference"
+        "Taylor Technologies — Pool/Spa Water Chemistry Reference",
+        "Indiana Department of Health, Environmental Public Health Division — Adjusting Chemical Levels in a Swimming Pool, accessed 2026-08-28"
       ]
     },
     {
@@ -471,7 +473,7 @@
       "slug": "formulas/lsi-formula",
       "title": "Langelier Saturation Index (LSI) Formula",
       "category": "water-balance",
-      "equation": "LSI = pH + TF + CF + AF − 12.1",
+      "equation": "LSI = pH + TF + CHF + TAF − 12.1",
       "variables": [
         {
           "symbol": "pH",
@@ -480,28 +482,28 @@
         },
         {
           "symbol": "TF",
-          "description": "Temperature Factor — from lookup table by water temperature",
+          "description": "Temperature Factor — from the site's water-balance lookup table, by water temperature",
           "unit": "factor"
         },
         {
-          "symbol": "CF",
-          "description": "Calcium Factor — from lookup table by calcium hardness level",
+          "symbol": "CHF",
+          "description": "Calcium Hardness Factor — from the site's water-balance lookup table, by calcium hardness level",
           "unit": "factor"
         },
         {
-          "symbol": "AF",
-          "description": "Alkalinity Factor — from lookup table by total alkalinity level",
+          "symbol": "TAF",
+          "description": "Total Alkalinity Factor — from the site's water-balance lookup table, by total alkalinity level (using CYA-corrected TA)",
           "unit": "factor"
         },
         {
           "symbol": "12.1",
-          "description": "Constant representing the saturation pCa + pAlk at equilibrium",
+          "description": "TDS constant for standard pools (~1,000 ppm TDS); use 12.2 for saltwater pools (~3,200 ppm TDS)",
           "unit": "constant"
         }
       ],
-      "explanation": "The Langelier Saturation Index (LSI) measures whether pool water is corrosive, balanced, or scaling. A score of 0 means the water is perfectly balanced. Negative LSI means the water is corrosive — it will dissolve plaster, grout, and metal. Positive LSI means the water is scale-forming — calcium carbonate will precipitate on surfaces.\n\nThe three lookup factors:\n- Temperature Factor (TF): higher temperature → higher TF (water more prone to scaling at heat)\n- Calcium Factor (CF): higher calcium hardness → higher CF\n- Alkalinity Factor (AF): higher alkalinity → higher AF\n\nAll three factors are found from standard LSI lookup tables, which convert each parameter into a logarithmic index value.",
-      "workedExample": "Pool conditions: pH 7.4, temp 80°F, calcium hardness 300 ppm, total alkalinity 100 ppm.\n\n- pH = 7.4\n- TF at 80°F = 0.6 (from table)\n- CF at 300 ppm = 1.8 (from table)\n- AF at 100 ppm = 1.9 (from table)\n- LSI = 7.4 + 0.6 + 1.8 + 1.9 − 12.1 = 1.6\n\nActually: let's use typical table values.\n- pHs (saturation pH) ≈ 9.6 for these conditions\n- LSI = 7.4 − 9.6 = −2.2?\n\nUsing the simplified additive form:\n- LSI = pH + TF + CF + AF − 12.1\n- LSI = 7.4 + 0.6 + 1.9 + 2.0 − 12.1 = −0.2\n\nAn LSI of −0.2 is within the acceptable range (−0.3 to +0.5). This water is very slightly corrosive but within normal operating parameters.",
-      "limitations": "The LSI is a thermodynamic equilibrium model — it predicts tendency, not certainty. Other factors including TDS, flow rate, surface type, and chemical inhibitors affect actual scaling or corrosion in practice. The LSI is most useful as a diagnostic check and should be calculated at the actual pool water temperature.",
+      "explanation": "The Langelier Saturation Index (LSI) measures whether pool water is corrosive, balanced, or scaling. A score of 0 means the water is perfectly balanced. Negative LSI means the water is corrosive — it will dissolve plaster, grout, and metal. Positive LSI means the water is scale-forming — calcium carbonate will precipitate on surfaces.\n\nThe three lookup factors:\n- Temperature Factor (TF): higher temperature → higher TF (water more prone to scaling at heat)\n- Calcium Hardness Factor (CHF): higher calcium hardness → higher CHF\n- Total Alkalinity Factor (TAF): higher alkalinity → higher TAF\n\nAll three factors are read from this site's own water-balance lookup tables (sourced from Taylor Technologies' Pool/Spa Water Chemistry reference; see the /reference/datasets/water-balance dataset page), not invented for this page. This site does not currently offer an interactive LSI calculator — this page explains the formula and its inputs only. See the Limitations section below.",
+      "workedExample": "Pool conditions: pH 7.5, water temperature 76°F, calcium hardness 300 ppm, total alkalinity 100 ppm (standard, non-saltwater pool).\n\nReading directly from the water-balance lookup tables:\n- TF at 76°F = 0.6\n- CHF at 300 ppm = 2.1\n- TAF at 100 ppm = 2.0\n\nLSI = pH + TF + CHF + TAF − 12.1\nLSI = 7.5 + 0.6 + 2.1 + 2.0 − 12.1 = 0.1\n\nAn LSI of 0.1 is within the site's balanced target range (−0.3 to +0.5) — this water is essentially in equilibrium, neither notably corrosive nor scale-forming.",
+      "limitations": "The LSI is a thermodynamic equilibrium model — it predicts tendency, not certainty. Other factors including TDS, flow rate, surface type, and chemical inhibitors affect actual scaling or corrosion in practice. The LSI is most useful as a diagnostic check and should be calculated at the actual pool water temperature. This site's lookup tables only include values at fixed intervals (see /reference/datasets/water-balance); intermediate readings require interpolation, which this page does not attempt. No interactive LSI calculator exists on this site -- computing LSI currently requires manually reading all three factors from the published lookup tables, as shown above.",
       "relatedCalculators": [
         "/calculators/chemical-calculator"
       ],
@@ -527,7 +529,7 @@
       "ogTitle": "Langelier Saturation Index (LSI) Formula",
       "ogDescription": "Calculate and interpret the LSI to determine if your pool water is balanced, corrosive, or scale-forming.",
       "readingTime": "4 min read",
-      "lastReviewed": "2026-06-01",
+      "lastReviewed": "2026-08-28",
       "references": [
         "Langelier, W.F. — The Analytical Control of Anti-Corrosion Water Treatment, Journal AWWA, 1936",
         "Taylor Technologies — Pool/Spa Water Chemistry Reference"

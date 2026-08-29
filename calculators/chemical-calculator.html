@@ -314,6 +314,8 @@
     
     
     
+    
+    
     <p class="re-test">Re-test water after 20–30 minutes with pump running.</p>
     </div>
 
@@ -516,10 +518,10 @@ These tools are designed to help maintain safe chlorine, pH, and total alkalinit
         <dt>Formula Version</dt><dd>2026.07</dd>
         <dt>Dataset Version</dt><dd>2026.07</dd>
         <dt>Knowledge Graph</dt><dd>2026.07</dd>
-        <dt>Last Reviewed</dt><dd>2026-08-18</dd>
+        <dt>Last Reviewed</dt><dd>2026-08-28</dd>
         <dt>Confidence</dt><dd><span class="confidence-badge confidence-limited" style="background:#8a3a00;color:#ffffff" title="Value derived from sparse sources, editorial interpretation, or emerging guidance not yet widely adopted. May vary significantly between manufacturers, regions, or pool conditions.">! Limited</span></dd>
-        <dt>Formulas Used</dt><dd><a href="/methodology/formula-selection" title="Free Chlorine Dosage">Free Chlorine Dosage</a>, <a href="/methodology/formula-selection" title="pH Adjustment Dosage">pH Adjustment Dosage</a>, <a href="/methodology/formula-selection" title="Total Alkalinity Adjustment">Total Alkalinity Adjustment</a>, <a href="/methodology/formula-selection" title="Langelier Saturation Index (LSI)">Langelier Saturation Index (LSI)</a>, <a href="/methodology/formula-selection" title="Calcium Hardness Dosage">Calcium Hardness Dosage</a></dd>
-        <dt>Dataset Sources</dt><dd><a href="/reference/datasets/chemical-ranges">chemical-ranges</a>, <a href="/reference/datasets/dosage-matrices">dosage-matrices</a>, <a href="/reference/datasets/water-balance">water-balance</a>, <a href="/reference/datasets/conversion-factors">conversion-factors</a></dd>
+        <dt>Formulas Used</dt><dd><a href="/methodology/formula-selection" title="Free Chlorine Dosage">Free Chlorine Dosage</a>, <a href="/methodology/formula-selection" title="pH Adjustment Dosage">pH Adjustment Dosage</a></dd>
+        <dt>Dataset Sources</dt><dd><a href="/reference/datasets/chemical-ranges">chemical-ranges</a>, <a href="/reference/datasets/dosage-matrices">dosage-matrices</a>, <a href="/reference/datasets/conversion-factors">conversion-factors</a></dd>
       </dl>
       <div class="trust-panel__links">
         <a href="/methodology/calculation-methodology">Methodology</a>
@@ -528,7 +530,7 @@ These tools are designed to help maintain safe chlorine, pH, and total alkalinit
         <a href="/methodology/rounding-policy">Rounding Policy</a>
         <a href="/revisions">Revision History</a>
       </div>
-      <p class="trust-panel__note"><em>Multi-parameter calculator combining formulas of differing confidence: LSI (very-high, pure chemistry equation) and target ranges for pH/FC/TA/CH (independently supported) are reliable; the chlorine/alkalinity/calcium-hardness dosing coefficients are not independently verified. pH uses a linear approximation, already self-disclosed as a simplification.</em></p>
+      <p class="trust-panel__note"><em>Computes a chlorine dose and a pH dose only. The free-chlorine and pH target ranges are CDC-supported; the chlorine dosing coefficient is not independently verified (pH uses a linear approximation, already self-disclosed as a simplification). This calculator reads total alkalinity as optional context only -- it does NOT compute an alkalinity dose, a calcium-hardness dose, or the Langelier Saturation Index (LSI), despite earlier trust-panel text claiming otherwise; Phase 7S corrected this. See /formulas/lsi-formula for the LSI formula and its lookup tables, which currently require manual calculation.</em></p>
     </div>
   </details>
 </aside>
@@ -546,7 +548,7 @@ These tools are designed to help maintain safe chlorine, pH, and total alkalinit
 <!-- chemistry-sources:end -->
 </main>
 
-                                                                                                                                                                                                                                                                                                  <footer class="site-footer">
+                                                                                                                                                                                                                                                                                                      <footer class="site-footer">
     <nav class="footer-nav">
       <a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a>
       <a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a>

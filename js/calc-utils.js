@@ -8,7 +8,31 @@
   var GAL_PER_CUBIC_FT = 7.48052;
   var GAL_PER_CUBIC_M = 264.17;
 
-  /** Chlorine: liquid 10% — ounces = (gallons × ppm) / 128000 */
+  /**
+   * Chlorine: liquid 10% — ounces = (gallons x ppm) / 749.4
+   * Phase 7S correction (was /128000, ~166x too low — see
+   * reports/phase-7s/LIQUID-CHLORINE-AUDIT.md). Derived from the standard
+   * pool-industry mass-balance relationship (1 ppm x 10,000 gal requires
+   * ~1.334 oz of 100%-available-chlorine product, using 8.34 lb/gal water
+   * density), divided by 10% product strength: divisor = 1,000,000 x 0.10
+   * / (8.34 x 16) = 749.4. Independently confirmed against the Indiana
+   * Department of Health "Water Chemistry Adjustment Guide" (adapted from
+   * the National Swimming Pool Foundation Pool & Spa Operator Handbook),
+   * source in-doh-chemical-adjustment-2021.
+   *
+   * Tablets (trichlor, ~90% available chlorine) — ounces = (gallons x
+   * ppm) / 6666.7. Phase 7S correction (was /12000). Derived the same way:
+   * divisor = 1,000,000 x 0.06666 (per the government table's own stated
+   * 1.5 oz/10,000gal/1ppm trichlor figure, i.e. 10000/1.5=6666.7 directly)
+   * — matches this site's own dosage-matrices.json trichlor-tablets-90pct
+   * record (1.5 oz), which was already correct and simply not wired into
+   * this function.
+   *
+   * Granular/generic shock divisor (10000) is UNCHANGED — the underlying
+   * product/strength assumption is unspecified/ambiguous (no single
+   * product this generically maps to was found in the government table),
+   * so it remains REQUIRES_EXPERT_REVIEW rather than corrected.
+   */
   function calculateChlorine(gallons, currentPpm, targetPpm, type) {
     var g = parseFloat(gallons) || 0;
     var cur = parseFloat(currentPpm) || 0;
@@ -16,10 +40,10 @@
     var ppm = tgt - cur;
     if (g <= 0 || ppm <= 0) return { ounces: 0, ppm: 0 };
     var ounces = 0;
-    if (type === 'liquid') ounces = (g * ppm) / 128000;
+    if (type === 'liquid') ounces = (g * ppm) / 749.4;
     else if (type === 'granular' || type === 'shock') ounces = (g * ppm) / 10000;
-    else if (type === 'tablets') ounces = (g * ppm) / 12000;
-    else ounces = (g * ppm) / 128000;
+    else if (type === 'tablets') ounces = (g * ppm) / 6666.7;
+    else ounces = (g * ppm) / 749.4;
     return { ounces: ounces, ppm: ppm };
   }
 

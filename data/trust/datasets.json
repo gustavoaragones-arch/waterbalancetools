@@ -172,29 +172,21 @@
       "urlPath": "/calculators/chemical-calculator",
       "formulaIds": [
         "formula-chlorine-dose",
-        "formula-ph-adjustment",
-        "formula-alkalinity-adjustment",
-        "formula-lsi",
-        "formula-calcium-hardness-dose"
+        "formula-ph-adjustment"
       ],
       "datasetDependencies": [
         "chemical-ranges",
         "dosage-matrices",
-        "water-balance",
         "conversion-factors"
       ],
       "entityDependencies": [
         "free-chlorine",
-        "ph",
-        "alkalinity",
-        "calcium-hardness",
-        "cyanuric-acid",
-        "lsi"
+        "ph"
       ],
       "confidenceLevel": "limited",
       "version": "2026.07",
-      "lastReviewed": "2026-08-18",
-      "notes": "Multi-parameter calculator combining formulas of differing confidence: LSI (very-high, pure chemistry equation) and target ranges for pH/FC/TA/CH (independently supported) are reliable; the chlorine/alkalinity/calcium-hardness dosing coefficients are not independently verified. pH uses a linear approximation, already self-disclosed as a simplification."
+      "lastReviewed": "2026-08-28",
+      "notes": "Computes a chlorine dose and a pH dose only. The free-chlorine and pH target ranges are CDC-supported; the chlorine dosing coefficient is not independently verified (pH uses a linear approximation, already self-disclosed as a simplification). This calculator reads total alkalinity as optional context only -- it does NOT compute an alkalinity dose, a calcium-hardness dose, or the Langelier Saturation Index (LSI), despite earlier trust-panel text claiming otherwise; Phase 7S corrected this. See /formulas/lsi-formula for the LSI formula and its lookup tables, which currently require manual calculation."
     },
     {
       "id": "hot-tub-chlorine-calculator",

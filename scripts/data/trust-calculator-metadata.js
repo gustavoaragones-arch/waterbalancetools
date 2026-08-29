@@ -111,17 +111,23 @@ module.exports = [
     id: 'chemical-calculator',
     name: 'All-in-One Chemical Calculator',
     urlPath: '/calculators/chemical-calculator',
-    formulaIds: ['formula-chlorine-dose', 'formula-ph-adjustment', 'formula-alkalinity-adjustment', 'formula-lsi', 'formula-calcium-hardness-dose'],
-    datasetDependencies: ['chemical-ranges', 'dosage-matrices', 'water-balance', 'conversion-factors'],
-    entityDependencies: ['free-chlorine', 'ph', 'alkalinity', 'calcium-hardness', 'cyanuric-acid', 'lsi'],
-    // Corrected Phase 7F.3 -- composite calculator; several of its
-    // component formulas (chlorine, alkalinity, calcium hardness dosing)
-    // were downgraded, so the calculator as a whole is reported at their
-    // level rather than its strongest component's (LSI, very-high).
+    // Phase 7S: corrected to match what this page's actual JS
+    // (js/calculator.js, invoked from this page's inline <script>) computes
+    // and displays -- verified by reading the full submit handler. It
+    // computes and outputs ONLY a chlorine dose and a pH dose. It reads
+    // total alkalinity as an optional informational input but never uses it
+    // in a calculation or output; it does not compute or display an
+    // alkalinity dose, a calcium-hardness dose, or an LSI value at all.
+    // Previously listed 'formula-alkalinity-adjustment',
+    // 'formula-calcium-hardness-dose', and 'formula-lsi' -- all three were
+    // false capability claims. See reports/phase-7s/LSI-AUDIT.md.
+    formulaIds: ['formula-chlorine-dose', 'formula-ph-adjustment'],
+    datasetDependencies: ['chemical-ranges', 'dosage-matrices', 'conversion-factors'],
+    entityDependencies: ['free-chlorine', 'ph'],
     confidenceLevel: 'limited',
     version: '2026.07',
-    lastReviewed: '2026-08-18',
-    notes: 'Multi-parameter calculator combining formulas of differing confidence: LSI (very-high, pure chemistry equation) and target ranges for pH/FC/TA/CH (independently supported) are reliable; the chlorine/alkalinity/calcium-hardness dosing coefficients are not independently verified. pH uses a linear approximation, already self-disclosed as a simplification.',
+    lastReviewed: '2026-08-28',
+    notes: 'Computes a chlorine dose and a pH dose only. The free-chlorine and pH target ranges are CDC-supported; the chlorine dosing coefficient is not independently verified (pH uses a linear approximation, already self-disclosed as a simplification). This calculator reads total alkalinity as optional context only -- it does NOT compute an alkalinity dose, a calcium-hardness dose, or the Langelier Saturation Index (LSI), despite earlier trust-panel text claiming otherwise; Phase 7S corrected this. See /formulas/lsi-formula for the LSI formula and its lookup tables, which currently require manual calculation.',
   },
   {
     id: 'hot-tub-chlorine-calculator',

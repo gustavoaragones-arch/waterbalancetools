@@ -1,0 +1,98 @@
+{
+  "phase": "7S",
+  "title": "Calculator Formula & Computational Integrity Audit",
+  "baseline_commit": "219a57d47ee27497cbc14d0340adc2f4825a3970",
+  "formulas_audited": 13,
+  "formulas_resolved": [
+    { "id": "formula-02", "name": "Liquid chlorine", "disposition": "RESOLVED", "category": "IMPLEMENTATION_ERROR+DOCUMENTATION_ERROR" },
+    { "id": "formula-05", "name": "Alkalinity", "disposition": "RESOLVED", "category": "DOCUMENTATION_ERROR" },
+    { "id": "formula-09", "name": "LSI documentation", "disposition": "RESOLVED", "category": "DOCUMENTATION_ERROR" },
+    { "id": "tablets-divisor", "name": "Trichlor tablets divisor", "disposition": "RESOLVED", "category": "IMPLEMENTATION_ERROR" },
+    { "id": "trust-panel-claims", "name": "chemical-calculator.html false LSI/alkalinity/calcium-hardness claims", "disposition": "RESOLVED", "category": "DOCUMENTATION_ERROR" }
+  ],
+  "formulas_unresolved": [
+    { "id": "formula-04", "name": "pH adjustment", "disposition": "REQUIRES_EXPERT_REVIEW" },
+    { "id": "granular-shock-divisor", "name": "Generic granular/shock chlorine divisor", "disposition": "REQUIRES_EXPERT_REVIEW" },
+    { "id": "formula-03", "name": "Shock (cal-hypo) formula unit-labeling bug", "disposition": "REQUIRES_EXPERT_REVIEW" }
+  ],
+  "architectural_gaps": [
+    "Interactive LSI calculator (data layer exists, computation/UI layer does not)",
+    "Shock calculator breakpoint-chlorination combined-chlorine input"
+  ],
+  "production_files_changed": [
+    "js/calc-utils.js",
+    "js/calculator.js",
+    "scripts/data/formulas-data.js",
+    "scripts/data/dataset-dosage-matrices.js",
+    "scripts/data/trust-calculator-metadata.js",
+    "scripts/data/chemistry-sources.js",
+    "calculators/chemical-calculator.html",
+    "data/formulas.json",
+    "data/datasets/dosage-matrices.json",
+    "data/trust/datasets.json",
+    "formulas/liquid-chlorine-formula.html",
+    "formulas/alkalinity-formula.html",
+    "formulas/lsi-formula.html",
+    "reference/datasets/dosage-matrices/index.html",
+    "reference/datasets/water-balance/index.html"
+  ],
+  "evidence_sources_added": 1,
+  "total_evidence_sources": 20,
+  "incidents": [
+    {
+      "name": "data/academy.json near-data-loss",
+      "cause": "scripts/populate-data.js regenerated academy.json from 8 source files, silently dropping 2 articles that existed only as direct JSON edits",
+      "status": "fully remediated within phase",
+      "articles_restored": 2
+    }
+  ],
+  "discoveries_out_of_scope": [
+    {
+      "name": "Sitewide latent template/injector drift",
+      "pages_affected": 225,
+      "status": "discovered, excluded from this phase's diff via selective revert to 219a57d baseline, flagged for a future dedicated phase"
+    }
+  ],
+  "validators": {
+    "validate-phase-7s.js": "PASS",
+    "test-phase-7s.js": "17/17 PASS",
+    "validate-phase-7h.js": "PASS",
+    "validate-phase-7i.js": "PASS",
+    "validate-phase-7k.js": "PASS",
+    "validate-phase-7m.js": "PASS",
+    "validate-phase-7n.js": "PASS",
+    "validate-phase-7o.js": "PASS",
+    "validate-phase-7p.js": "FAIL (expected -- stale baseline guards calculator files this phase is authorized to change)",
+    "validate-phase-7q.js": "FAIL (expected -- stale baseline)",
+    "validate-phase-7r.js": "FAIL (expected -- stale baseline)",
+    "test-phase-7q.js": "PASS",
+    "test-phase-7r.js": "FAIL (expected -- stale baseline)",
+    "check-broken-links.js": "PASS (526 pages, 0 issues)"
+  },
+  "reproducibility": "generate-formulas.js, generate-datasets.js, generate-trust.js each run twice; byte-identical outputs both times",
+  "forensic_audit_metric_drift": "none (P0/P1/P2/P3 counts, action counts, cannibalization risk, broken links all identical before/after; only timestamp/commit metadata differed)",
+  "scope_control_verified": true,
+  "post_submission_correction": {
+    "issue": "in-doh-chemical-adjustment-2021 accessed_date and related lastReviewed/reference dates recorded as 2026-08-29, a future date relative to the project clock (2026-08-28) at time of work",
+    "directed_by": "Phase 7S Director Assessment",
+    "corrected_to": "2026-08-28",
+    "verification_method": "session's own environment metadata (currentDate context read 2026-08-28 throughout Phase 7S implementation)",
+    "files_corrected": [
+      "scripts/data/chemistry-sources.js",
+      "scripts/data/formulas-data.js",
+      "scripts/data/trust-calculator-metadata.js",
+      "reports/phase-7s/LIQUID-CHLORINE-AUDIT.md",
+      "data/formulas.json",
+      "data/trust/datasets.json",
+      "formulas/alkalinity-formula.html",
+      "formulas/liquid-chlorine-formula.html",
+      "formulas/lsi-formula.html",
+      "calculators/chemical-calculator.html"
+    ],
+    "formula_or_classification_changed": false,
+    "revalidated": true
+  },
+  "decision": "PASS WITH REVIEW QUEUE",
+  "director_disposition": "CONDITIONAL APPROVAL -- date correction applied and revalidated; authorized for commit/push",
+  "next_phase_authorized": false
+}
