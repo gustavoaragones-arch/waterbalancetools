@@ -343,6 +343,79 @@ const SOURCES = [
     topics: ['chlorine', 'shock_treatment', 'total_alkalinity', 'calcium_hardness', 'cyanuric_acid', 'dosing_math'],
     notes: 'States the base dosing relationship "1.0 ppm equals about .083 lbs of chemical per 10,000 gallons of water... or 1.3 oz per 10,000 gallons" for 100%-strength product, footnoted as ".083 Pounds of Chemical = 1 ppm x (10,000 gallons treated / 120,000)... since 120,000 gallons weighs 1 million pounds" -- the standard pool-industry mass-balance derivation, independently reproduced in LIQUID-CHLORINE-AUDIT.md using the more precise 8.34 lb/gal water-density constant. Its own "Water Chemistry Adjustment Guide" table (adapted from the National Swimming Pool Foundation Pool & Spa Operator Handbook) states Sodium Hypochlorite (12%): 10.7 fl.oz. per 1 ppm per 10,000 gallons; Sodium Bicarbonate: 1.4 lbs per 10 ppm total-alkalinity increase per 10,000 gallons; Trichlor: 1.5 oz per 1 ppm per 10,000 gallons; Calcium Hypochlorite (67%): 2 oz per 1 ppm per 10,000 gallons. Does not give a pH-specific acid-dose-per-pH-unit figure independent of total alkalinity (pH adjustment via acid is TA-coupled, not a standalone linear relationship this source models).',
   },
+  {
+    // Phase 7T: PHTA's own "Water Chemistry Adjustment Guide" (Appendix
+    // B-2 of the PHTA "Pool & Spa Management" reference text) -- the
+    // primary-source table that the Indiana DOH document
+    // (in-doh-chemical-adjustment-2021) explicitly credits as its own
+    // source lineage ("adapted from the National Swimming Pool Foundation
+    // Pool & Spa Operator Handbook", PHTA's predecessor-era publisher).
+    // Fetched as a PDF and read in full (6 pages) on 2026-08-29. Every
+    // chlorine-product figure in this table (chlorine gas 1.3, cal-hypo
+    // 67% 2oz, sodium hypochlorite 12% 10.7fl.oz, lithium hypochlorite
+    // 3.8oz, dichlor 62%/56% 2.1/2.4oz, trichlor 1.5oz, sodium bicarbonate
+    // 1.4lbs) matches in-doh-chemical-adjustment-2021 exactly, confirming
+    // that document's fidelity to this one. Used to resolve the P0
+    // formula-03 (calcium hypochlorite shock) audit -- see
+    // reports/phase-7t/FORMULA-03-AUDIT.md. Also used as corroborating
+    // (not sole) evidence for the shock-divisor and shock-architecture
+    // audits: no product in this table has a dosing coefficient of "1.0",
+    // reconfirming Phase 7S's finding that the generic shock calculator's
+    // implicit 1oz/10,000gal/1ppm assumption matches no named product.
+    // Critically, its own "Increase/Decrease pH" table row contains NO
+    // dosing figure -- it reads only "For more information on pH
+    // adjustments, see the pH Adjustment Testing section in the Chemical
+    // Testing chapter" -- i.e. PHTA's own authoritative dosing-table
+    // format deliberately excludes pH from formula-based dosing and defers
+    // to an empirical test procedure. See reports/phase-7t/PH-AUDIT.md.
+    id: 'phta-water-chemistry-adjustment-guide-2021',
+    organization: 'Pool & Hot Tub Alliance (PHTA)',
+    title: 'Pool & Spa Management -- Appendix B: Water Chemistry Guidelines & Worksheets (B-1 Water Chemistry Guidelines, B-2 Water Chemistry Adjustment Guide, B-4 Conversion & Calculation Guide)',
+    url: 'https://www.phta.org/pub/?id=C2C6DCB4-1866-DAAC-99FB-F3F6E7B592FA',
+    source_type: 'professional_standard',
+    authority_level: 'primary',
+    publication_date: '2021',
+    last_updated: null,
+    accessed_date: '2026-08-29',
+    topics: ['chlorine', 'shock_treatment', 'total_alkalinity', 'calcium_hardness', 'cyanuric_acid', 'ph', 'dosing_math'],
+    notes: 'A 6-page excerpt (pages 259-264 of the source text) covering B-1 (target-range table), B-2 (the dosing table itself), B-3 (blank worksheets), and B-4 (unit conversions and volume formulas). B-2\'s pH row explicitly defers to a separate testing-based section rather than stating a dosing figure -- read as a direct signal that PHTA\'s own authoritative reference does not treat pH adjustment as a simple ppm-based dosing formula the way it treats chlorine, alkalinity, calcium hardness, and CYA. The B-1 table confirms PHTA/ANSI target ranges (pH 7.2-7.8, ideal 7.4-7.6; TA 60-180 ppm, ideal 80-100 or 100-120 depending on sanitizer type) consistent with this site\'s existing range architecture.',
+  },
+  {
+    // Phase 7T: PHTA's "Alkalinity" fact sheet (May 2021). Read for the
+    // pH/PH-4t audit and to check for corroboration or conflict with
+    // Phase 7S's alkalinity resolution. Its own prose states "Approximately
+    // 1.5 pounds of sodium bicarbonate (100%) will raise the total
+    // alkalinity of 10,000 gallons of water by 10 ppm" -- 0.1 lb higher
+    // than the 1.4 lbs figure in in-doh-chemical-adjustment-2021 and in
+    // this same organization's OWN Water Chemistry Adjustment Guide table
+    // (phta-water-chemistry-adjustment-guide-2021), which states 1.4 lbs.
+    // This is a genuine internal PHTA inconsistency between a fact sheet's
+    // prose (1.5) and PHTA's own authoritative practitioner dosing table
+    // (1.4) -- documented in reports/phase-7t/REVIEW-QUEUE.md. Per the
+    // Phase 7T mandate ("do not reopen a resolved Phase 7S decision unless
+    // new evidence directly demonstrates that decision was materially
+    // wrong"), a ~7% difference between a fact sheet's rounded prose figure
+    // and this same organization's own more specific dosing table does not
+    // meet that bar, especially since the table (the more specific,
+    // purpose-built source for this exact question) reconfirms 1.4 lbs.
+    // Also supplies the Cyanuric Acid Correction Factor table used to
+    // calculate carbonate alkalinity from total alkalinity -- direct
+    // primary-source confirmation that CYA confounds a simple TA reading,
+    // supporting the PH-AUDIT.md finding that a defensible pH-dosing model
+    // needs more state than pH + volume alone. Fetched as a PDF and read
+    // in full (3 pages) on 2026-08-29.
+    id: 'phta-alkalinity-fact-sheet-2021',
+    organization: 'Pool & Hot Tub Alliance (PHTA), Recreational Water Quality Committee',
+    title: 'Fact Sheet: Alkalinity',
+    url: 'https://www.phta.org/pub/?id=ea5e2253-1866-daac-99fb-ddddeab0439d',
+    source_type: 'professional_standard',
+    authority_level: 'primary',
+    publication_date: '2021-05',
+    last_updated: null,
+    accessed_date: '2026-08-29',
+    topics: ['total_alkalinity', 'ph', 'cyanuric_acid', 'lsi', 'dosing_math'],
+    notes: 'States "Approximately 2.1 pounds of sodium bisulfate (94%) or 1.6 pints of muriatic acid (31%) will reduce the total alkalinity of 10,000 gallons of water by 10 ppm" and "Approximately 1.5 pounds of sodium bicarbonate (100%) will raise the total alkalinity of 10,000 gallons of water by 10 ppm." Provides a Cyanuric Acid Correction Factor table (pH 7.0-8.0 -> factor 0.23-0.36) for computing carbonate alkalinity from total alkalinity, confirming CYA measurably confounds a raw TA reading and must be accounted for in any complete water-balance or acid-demand model, not just pH and TA alone.',
+  },
 ];
 
 const SOURCES_BY_ID = Object.fromEntries(SOURCES.map((s) => [s.id, s]));
