@@ -297,6 +297,29 @@ const SOURCES = [
     topics: ['chlorine', 'calcium_hardness', 'chemical_mixing_safety'],
     notes: 'States "0.8 ppm of calcium hardness is added to the water for each ppm of available chlorine added" when using calcium hypochlorite -- directly supports and quantifies this site\'s existing "it does add calcium" claim. Also states routine sanitizing FAC target of 1.0-4.0 ppm (pools) / 2.0-5.0 ppm (spas) when using this product specifically, and that calcium hypochlorite "shall not be mixed with other pool chemicals including other chlorinating agents" (corroborates, from an independent industry-standard source, the trichlor/cal-hypo mixing hazard already cited via manufacturer SDS documents). Explicitly defers shock-treatment/superchlorination dosage to product labels rather than stating a ppm figure -- does NOT resolve the routine-maintenance shock disagreement.',
   },
+  {
+    // Phase 7R Priority A: a genuine government/public-health-authority
+    // source (state health department), the highest tier in this
+    // project's evidence hierarchy, found while re-investigating the
+    // routine-shock disagreement. Fetched as a PDF and read in full (all
+    // 12 pages) on 2026-08-28. Does NOT resolve the 2-5ppm-vs-10-20ppm
+    // general residential shock disagreement (it states no general
+    // absolute ppm target at all) -- but it DOES directly and almost
+    // verbatim confirm the site's separately-modeled breakpoint-rule-of-
+    // thumb claim (10x combined chlorine), which had been REQUIRES_REVIEW
+    // with zero source_ids since Phase 7E.
+    id: 'in-doh-breakpoint-chlorination-2022',
+    organization: 'Indiana Department of Health, Environmental Public Health Division',
+    title: 'How To Shock The Pool (Chlorinate To Breakpoint)',
+    url: 'https://www.in.gov/health/eph/files/How-To-Shock-The-Pool-2022.pdf',
+    source_type: 'government_public_health',
+    authority_level: 'primary',
+    publication_date: '2022',
+    last_updated: null,
+    accessed_date: '2026-08-28',
+    topics: ['shock_treatment', 'breakpoint_chlorination', 'combined_chlorine'],
+    notes: 'States: "The breakpoint chlorination value is 10 times the combined chlorine (CC) level." Gives full worked calculations (liquid and granular chlorine) all built on this same 10x ratio, consistent throughout the document. Explicitly a ratio/rule, not an absolute ppm target -- confirms the site\'s existing range-shock-breakpoint-rule-of-thumb architecture (minimum/maximum/target all null, unit "multiplier_of_combined_chlorine") was modeled correctly. Document is written for regulated/public pool operations (cites Indiana pool code 410 IAC 6-2.1 throughout) but the underlying chemistry (chlorine-to-ammonia reaction stoichiometry) is general, not facility-type-specific. Does NOT state a general residential "shock to N ppm" absolute target -- the routine-maintenance 2-5ppm-vs-10-20ppm disagreement remains unresolved by this source.',
+  },
 ];
 
 const SOURCES_BY_ID = Object.fromEntries(SOURCES.map((s) => [s.id, s]));

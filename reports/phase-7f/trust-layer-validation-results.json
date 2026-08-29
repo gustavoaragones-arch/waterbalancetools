@@ -3,9 +3,11 @@
   "files_scanned": 553,
   "violations_found": 0,
   "violations": [],
-  "warnings_count": 3,
+  "warnings_count": 5,
   "warnings": [
+    "entities/breakpoint-chlorination.html: renders a source-citation block outside the known, individually-reviewed Tier-1 set -- verify it has a real, reviewed source mapping before treating it as established.",
     "entities/calcium-hypochlorite.html: renders a source-citation block outside the known, individually-reviewed Tier-1 set -- verify it has a real, reviewed source mapping before treating it as established.",
+    "entities/combined-chlorine.html: renders a source-citation block outside the known, individually-reviewed Tier-1 set -- verify it has a real, reviewed source mapping before treating it as established.",
     "entities/cover.html: renders a source-citation block outside the known, individually-reviewed Tier-1 set -- verify it has a real, reviewed source mapping before treating it as established.",
     "entities/water-replacement.html: renders a source-citation block outside the known, individually-reviewed Tier-1 set -- verify it has a real, reviewed source mapping before treating it as established."
   ]

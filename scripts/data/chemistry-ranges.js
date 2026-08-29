@@ -242,9 +242,9 @@ const RANGES = [
     environment: 'pool', sanitizer: 'chlorine', scenario: 'shock',
     minimum: null, maximum: null, target: null, unit: 'multiplier_of_combined_chlorine',
     temperature_context: 'general',
-    source_ids: [],
-    rationale: 'Widely repeated industry rule of thumb: dose free chlorine to approximately 10x the current combined-chlorine reading to reach breakpoint chlorination. This is a heuristic, not a CDC/MAHC numeric standard, and its applicability depends on the combined-chlorine reading being reasonably accurate.',
-    status: 'REQUIRES_REVIEW', reviewed_by: null, reviewed_date: '2026-08-18',
+    source_ids: ['in-doh-breakpoint-chlorination-2022'],
+    rationale: 'Dose free chlorine to approximately 10x the current combined-chlorine reading to reach breakpoint chlorination. Confirmed by the Indiana Department of Health (Phase 7R): "The breakpoint chlorination value is 10 times the combined chlorine (CC) level," with full worked calculations built on the same ratio. Its applicability still depends on the combined-chlorine reading being reasonably accurate (CC = TC - FC via DPD test).',
+    status: 'SUPPORTED', reviewed_by: null, reviewed_date: '2026-08-29',
   },
   {
     id: 'range-shock-cdc-fecal-incident-response',

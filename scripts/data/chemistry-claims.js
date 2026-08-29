@@ -106,7 +106,11 @@ const CLAIMS = [
     claim_id: 'claim-shock-breakpoint-rule',
     parameter_id: 'shock_treatment', context: { environment: 'pool', sanitizer: 'chlorine', scenario: 'shock' },
     claim_text: 'To reach breakpoint chlorination, dose free chlorine to approximately 10x the current combined chlorine reading.',
-    range_id: 'range-shock-breakpoint-rule-of-thumb', source_ids: [], status: 'REQUIRES_REVIEW',
+    // Phase 7R: upgraded from REQUIRES_REVIEW -- Indiana Department of
+    // Health (government/public-health authority, read in full) states
+    // "The breakpoint chlorination value is 10 times the combined
+    // chlorine (CC) level," an almost verbatim match.
+    range_id: 'range-shock-breakpoint-rule-of-thumb', source_ids: ['in-doh-breakpoint-chlorination-2022'], status: 'SUPPORTED',
   },
   {
     // Added Phase 7E.1 (Step 3): distinct claim family for the public-pool

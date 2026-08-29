@@ -260,7 +260,13 @@ const ENTITY_CITATIONS = {
   },
   'shock-treatment': {
     claimIds: ['claim-shock-algae-recovery-green'],
-    note: 'The source below supports the 30 ppm green-algae-recovery figure specifically. The routine-maintenance (10 ppm) and breakpoint-rule (10x combined chlorine) figures above are common industry guidance without a confirmed primary source and remain under review.',
+    // Phase 7R: added in-doh-breakpoint-chlorination-2022, which now
+    // supports the breakpoint-rule (10x combined chlorine) figure. The
+    // routine-maintenance 10 ppm figure remains genuinely uncited -- see
+    // reports/phase-7r/RESEARCH.md (that source explicitly states no
+    // general absolute ppm target, only the breakpoint ratio).
+    sourceIds: ['in-doh-breakpoint-chlorination-2022'],
+    note: 'The sources below support the 30 ppm green-algae-recovery figure and the 10x-combined-chlorine breakpoint-rule figure specifically. The routine-maintenance (10 ppm) figure above remains common industry guidance without a confirmed primary source and stays under review -- see the Phase 7R research log for why this specific gap remains genuinely unresolved.',
   },
   'vinyl-pool': {
     sourceIds: ['cffa-vinyl-liner-bleaching'],
@@ -276,6 +282,14 @@ const ENTITY_CITATIONS = {
   'calcium-hypochlorite': {
     sourceIds: ['phta-calcium-hypochlorite-fact-sheet-2021'],
     note: 'The source below directly supports and quantifies the calcium-addition claim (0.8 ppm calcium hardness per ppm of available chlorine added) and states this product must not be mixed with other chlorinating agents, independently corroborating (from an industry-standard fact sheet, distinct from the manufacturer SDS documents already cited on entities/trichlor-tablets.html) the trichlor/cal-hypo mixing hazard. It does not address the pre-dissolving/liner-bleaching claim above, which remains uncited on this page.',
+  },
+  'combined-chlorine': {
+    sourceIds: ['in-doh-breakpoint-chlorination-2022'],
+    note: 'The source below directly defines combined chlorine as CC = TC - FC and states its own state pool code requires breakpoint superchlorination when combined chlorine reaches 0.5 ppm -- both figures above match this exactly.',
+  },
+  'breakpoint-chlorination': {
+    sourceIds: ['in-doh-breakpoint-chlorination-2022'],
+    note: 'The source below directly states "the breakpoint chlorination value is 10 times the combined chlorine (CC) level," matching the 10x figure above, with full worked calculations built on the same ratio.',
   },
 };
 

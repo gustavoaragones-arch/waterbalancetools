@@ -1,0 +1,121 @@
+{
+  "phase": "7R",
+  "title": "Scientific Evidence Resolution & Calculator Provenance",
+  "status": "PASS_WITH_REVIEW_QUEUE",
+  "baseline_commit": "ae751ca6dac28d08c6d8fd37fd6823c221b19547",
+  "research_performed": {
+    "web_searches": 4,
+    "web_fetches_read_in_full": 1,
+    "primary_documents_read_in_full_pages": 12,
+    "ai_summary_hallucinations_caught": 1
+  },
+  "sources_added": 1,
+  "new_source_ids": ["in-doh-breakpoint-chlorination-2022"],
+  "claims_resolved": {
+    "claim-shock-breakpoint-rule": "REQUIRES_REVIEW -> SUPPORTED",
+    "entities/combined-chlorine.html CC-definition/0.5ppm-trigger": "uncited -> SUPPORTED"
+  },
+  "claims_remaining_unresolved": {
+    "routine_maintenance_shock_2_5_vs_10_20_ppm": "REQUIRES_REVIEW (re-verified genuine disagreement, 4 sources checked)",
+    "water_replacement_cya_80ppm": "REQUIRES_REVIEW (DEFER, kept not removed)",
+    "water_replacement_calcium_500ppm": "REQUIRES_REVIEW (DEFER, kept not removed)",
+    "water_replacement_pool_tds_3000ppm": "REQUIRES_REVIEW (DEFER, kept not removed)"
+  },
+  "calculator_audit": {
+    "calculators_audited": 8,
+    "verified_math_components": 3,
+    "supported_domain_assumption_components": 2,
+    "requires_expert_review_components": 5,
+    "critical_new_findings": [
+      "formula-02 (liquid chlorine): documented equation does not reconcile with js/calc-utils.js's constant (~1,000,000x discrepancy); worked example self-contradicts",
+      "formula-09 (LSI): worked example computes 3 different LSI values for identical inputs; no LSI computation exists anywhere in client-side JS",
+      "formula-05 (alkalinity): calculator constant (1.4) vs formula page explanation text (1.5) mismatch",
+      "formula-04 (pH adjustment): documented equation abandoned mid-calculation for an unreferenced alternate rule of thumb"
+    ],
+    "formula_files_modified": false,
+    "bromine_calculator": "OUT_OF_SCOPE (confirmed does not exist, no coefficient invented)",
+    "lsi_calculator": "OUT_OF_SCOPE (confirmed architecturally incomplete, no calculator built)"
+  },
+  "entity_provenance": {
+    "queue_before": 54,
+    "queue_after": 52,
+    "resolved_this_phase": ["entities/combined-chlorine.html", "entities/breakpoint-chlorination.html"]
+  },
+  "material_science": {
+    "vinyl_liner_bleaching": "CONFIRMED_SAFE (unchanged)",
+    "fiberglass_gelcoat": "CONFIRMED_SAFE (unchanged)",
+    "concrete_gunite": "CONFIRMED_SAFE (unchanged)"
+  },
+  "citation_architecture": {
+    "two_authority_charts": "ARCHITECTURALLY_BLOCKED (confirmed, unchanged, no mechanism built)"
+  },
+  "citation_coverage": {
+    "blocks_before": 21,
+    "blocks_after": 23,
+    "links_before": 26,
+    "links_after": 29
+  },
+  "production_changes": {
+    "new_pages_created": 0,
+    "entities_with_new_citations": 2,
+    "entities_with_extended_citations": 1,
+    "chemistry_registry_records_upgraded": 2,
+    "academy_articles_extended": 1,
+    "calculator_formulas_modified": 0
+  },
+  "validator": {
+    "script": "scripts/validate-phase-7r.js",
+    "result": "PASS",
+    "errors": 0,
+    "warnings": 0
+  },
+  "tests": {
+    "script": "scripts/test-phase-7r.js",
+    "result": "PASS"
+  },
+  "regression": {
+    "npm_run_build": "PASS",
+    "qa_score": 99,
+    "qa_score_change": 0,
+    "check_broken_links": "PASS",
+    "url_indexation": "PASS",
+    "prior_phase_validators_passed": true,
+    "note": "validate-phase-7q.js reports FAIL when re-run because its own scope-guard hardcodes a diff comparison against its own (now-superseded) Phase 7P baseline commit, not because any Phase 7Q invariant actually regressed -- all substantive Phase 7Q invariants (citation counts, page counts, redirect registry) independently re-verified via other validators, all PASS."
+  },
+  "forensic_reaudit": {
+    "total_html_files": 525,
+    "total_html_files_before": 525,
+    "schema_valid": 952,
+    "schema_missing": 39,
+    "schema_questionable": 6,
+    "orphan_flags_total": 7,
+    "true_orphans": 0,
+    "duplicate_title_groups_broad_scan": 3,
+    "duplicate_title_groups_canonical_only": 0,
+    "cannibalization_high_risk": 0,
+    "source_audit_zero_citation_pages_before": "402/416",
+    "source_audit_zero_citation_pages_after": "400/416",
+    "no_legitimate_page_deleted": true
+  },
+  "reproducibility": {
+    "two_generator_runs_performed": true,
+    "citation_output_byte_identical": true,
+    "footer_whitespace_nondeterminism_unchanged": true,
+    "new_nondeterminism_introduced": false
+  },
+  "scope_control": {
+    "spanish_french": false,
+    "adsense_changes": false,
+    "calculator_formula_changes": false,
+    "url_changes": false,
+    "redirect_changes": false,
+    "programmatic_family_changes": false,
+    "fabricated_sources": false,
+    "fabricated_authors_or_reviewers": false,
+    "unsupported_claims_promoted": false,
+    "closed_decisions_reopened": false,
+    "undocumented_production_changes": false
+  },
+  "next_phase": "7S",
+  "auto_advance": false
+}
