@@ -416,6 +416,64 @@ const SOURCES = [
     topics: ['total_alkalinity', 'ph', 'cyanuric_acid', 'lsi', 'dosing_math'],
     notes: 'States "Approximately 2.1 pounds of sodium bisulfate (94%) or 1.6 pints of muriatic acid (31%) will reduce the total alkalinity of 10,000 gallons of water by 10 ppm" and "Approximately 1.5 pounds of sodium bicarbonate (100%) will raise the total alkalinity of 10,000 gallons of water by 10 ppm." Provides a Cyanuric Acid Correction Factor table (pH 7.0-8.0 -> factor 0.23-0.36) for computing carbonate alkalinity from total alkalinity, confirming CYA measurably confounds a raw TA reading and must be accounted for in any complete water-balance or acid-demand model, not just pH and TA alone.',
   },
+  {
+    // Phase 7U: LaMotte Company's own "Acid Demand Index for Total
+    // Alkalinity Adjustment" (product code 1546, dated 08.08.2022) --
+    // manufacturer technical documentation, tier 3 in the evidence
+    // hierarchy. A real, published, volume-scaled table converting a
+    // measured acid-demand-index reading (from an alkalinity test, not a
+    // pH test) directly to a muriatic-acid or dry-acid dose, with 2
+    // fully-worked volume-scaling examples (additive across volume-basis
+    // columns, e.g. 10,000 + 20,000 gal = 30,000 gal by summing the two
+    // column doses). Fetched as a PDF and read in full (2 pages) on
+    // 2026-08-29. Used in the pH-architecture decision (Phase 7U) as
+    // corroborating evidence that a "measured index -> volume-scaled
+    // table" architecture is a real, standard, manufacturer-published
+    // pattern in this exact product category -- NOT as direct evidence for
+    // a pH-target dosing table, since this specific table answers "how
+    // much acid to lower total alkalinity to 80-120 ppm," not "how much
+    // acid to move pH from X to Y."
+    id: 'lamotte-acid-demand-index-2022',
+    organization: 'LaMotte Company',
+    title: 'Acid Demand Index for Total Alkalinity Adjustment (Code 1546)',
+    url: 'https://lamotte.com/wp-content/uploads/2025/08/1546.pdf',
+    source_type: 'manufacturer_technical_document',
+    authority_level: 'primary',
+    publication_date: '2022-08-08',
+    last_updated: null,
+    accessed_date: '2026-08-29',
+    topics: ['total_alkalinity', 'ph', 'dosing_math', 'acid_demand_test'],
+    notes: 'States: "The Acid Demand Index below states the amount of Muriatic Acid (Hydrochloric Acid, 31%) required to reduce high alkalinity in pool or spa water to the optimum range of 80-120 ppm CaCO3. Use the table in conjunction with the alkalinity test result." Provides a full ppm-by-volume lookup table (alkalinity readings 120-480 ppm x pool volumes 100 gal-50M gal) and 2 fully-worked examples demonstrating additive volume scaling. Also gives weight/volume conversions (pints to fl oz, dry-acid lb equivalents) and pool-volume formulas for rectangular/round/oval shapes. Does not address pH-target dosing directly -- this is a total-alkalinity-reduction table, a related but distinct water-balance parameter.',
+  },
+  {
+    // Phase 7U: Taylor Technologies K-1005 residential test kit instruction
+    // card -- manufacturer technical documentation, tier 3. Fetched as a
+    // PDF and read in full (2 pages) on 2026-08-29. Confirms the Acid
+    // Demand Test / Base Demand Test procedure is a real, standard,
+    // manufacturer-documented methodology (add reagent dropwise to a
+    // pH-tested sample, count drops until color matches the target pH),
+    // and confirms the breakpoint-chlorination rule ("Superchlorinate to
+    // breakpoint... Dosage equals 10 times the amount of CC") independently
+    // of the Phase 7R Indiana DOH source. Does NOT contain the drops-to-
+    // dose conversion table itself -- the card explicitly defers to "See
+    // treatment tables [on the reverse of the physical card] or go to
+    // website" (www.swim-care.com), neither of which this session could
+    // fetch and read in full. Used in the pH-architecture decision (Phase
+    // 7U) to confirm the acid-demand-test methodology is real and
+    // manufacturer-endorsed, but NOT as evidence for a specific drops-to-
+    // ounces scaling relationship, which remains unsourced.
+    id: 'taylor-k1005-instruction-manual-2012',
+    organization: 'Taylor Technologies, Inc.',
+    title: 'K-1005 Residential Test Kit Instruction Card',
+    url: 'https://www.novatech-usa.com/pdf/Taylor%20K-1005%20Instruction%20Manual.pdf',
+    source_type: 'manufacturer_technical_document',
+    authority_level: 'primary',
+    publication_date: '2012-06',
+    last_updated: null,
+    accessed_date: '2026-08-29',
+    topics: ['ph', 'total_alkalinity', 'calcium_hardness', 'cyanuric_acid', 'chlorine', 'breakpoint_chlorination', 'acid_demand_test'],
+    notes: 'States the Acid Demand Test procedure verbatim: "1. Use treated sample from pH test. 2. Add R-0015 dropwise. After each drop, count, mix, and compare with color standards until desired pH is matched. See treatment tables to continue." Also states: "Superchlorinate to breakpoint to eliminate CC. Dosage equals 10 times the amount of CC" -- independent corroboration of the breakpoint-chlorination rule already SUPPORTED via Phase 7R\'s Indiana DOH source. Card is dated "6/12" (June 2012) on its face; this document\'s continued availability and consistency with contemporary PHTA/Indiana DOH guidance is the basis for treating it as still-current industry practice, not as evidence of a 2012-specific standard.',
+  },
 ];
 
 const SOURCES_BY_ID = Object.fromEntries(SOURCES.map((s) => [s.id, s]));
