@@ -19,6 +19,10 @@ https://waterbalancetools.com/academy/fundamentals/how-temperature-changes-water
 https://waterbalancetools.com/academy/fundamentals/how-water-balance-works,academy/fundamentals/how-water-balance-works.html,Article,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/academy/fundamentals/how-water-balance-works,academy/fundamentals/how-water-balance-works.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/academy/fundamentals/,academy/fundamentals/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/academy/fundamentals/indoor-pool-chemistry,academy/fundamentals/indoor-pool-chemistry.html,Article,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/academy/fundamentals/indoor-pool-chemistry,academy/fundamentals/indoor-pool-chemistry.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/academy/fundamentals/new-pool-startup-chemistry,academy/fundamentals/new-pool-startup-chemistry.html,Article,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/academy/fundamentals/new-pool-startup-chemistry,academy/fundamentals/new-pool-startup-chemistry.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/academy/fundamentals/pool-vs-hot-tub-chemistry,academy/fundamentals/pool-vs-hot-tub-chemistry.html,Article,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/academy/fundamentals/pool-vs-hot-tub-chemistry,academy/fundamentals/pool-vs-hot-tub-chemistry.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/academy/fundamentals/the-four-core-water-tests,academy/fundamentals/the-four-core-water-tests.html,Article,VALID,No issues detected against structural checks performed.
@@ -29,7 +33,7 @@ https://waterbalancetools.com/academy/fundamentals/why-water-testing-matters,aca
 https://waterbalancetools.com/academy/fundamentals/why-water-testing-matters,academy/fundamentals/why-water-testing-matters.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/academy/hot-tubs/daily-spa-maintenance,academy/hot-tubs/daily-spa-maintenance.html,Article,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/academy/hot-tubs/daily-spa-maintenance,academy/hot-tubs/daily-spa-maintenance.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/academy/hot-tubs/,academy/hot-tubs/index.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""Hot Tubs &amp; Spas"" does not match H1 ""Hot Tubs & Spas""."
+https://waterbalancetools.com/academy/hot-tubs/,academy/hot-tubs/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/academy/hot-tubs/monthly-spa-maintenance,academy/hot-tubs/monthly-spa-maintenance.html,Article,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/academy/hot-tubs/monthly-spa-maintenance,academy/hot-tubs/monthly-spa-maintenance.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/academy/hot-tubs/refilling-your-hot-tub,academy/hot-tubs/refilling-your-hot-tub.html,Article,VALID,No issues detected against structural checks performed.
@@ -40,7 +44,7 @@ https://waterbalancetools.com/academy/hot-tubs/weekly-spa-maintenance,academy/ho
 https://waterbalancetools.com/academy/hot-tubs/weekly-spa-maintenance,academy/hot-tubs/weekly-spa-maintenance.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/academy/hot-tubs/winter-spa-care,academy/hot-tubs/winter-spa-care.html,Article,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/academy/hot-tubs/winter-spa-care,academy/hot-tubs/winter-spa-care.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/academy/,academy/index.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""Academy"" does not match H1 ""Pool & Hot Tub Chemistry Academy""."
+https://waterbalancetools.com/academy/,academy/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/academy/sanitizers/breakpoint-chlorination,academy/sanitizers/breakpoint-chlorination.html,Article,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/academy/sanitizers/breakpoint-chlorination,academy/sanitizers/breakpoint-chlorination.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/academy/sanitizers/bromine-vs-chlorine,academy/sanitizers/bromine-vs-chlorine.html,Article,VALID,No issues detected against structural checks performed.
@@ -114,42 +118,42 @@ https://waterbalancetools.com/audit/google/,audit/google/index.html,(none),MISSI
 https://waterbalancetools.com/audit/google/priority-report,audit/google/priority-report.html,(none),MISSING,No JSON-LD found on this page.
 https://waterbalancetools.com/audit/google/search-console-helper,audit/google/search-console-helper.html,(none),MISSING,No JSON-LD found on this page.
 https://waterbalancetools.com/audit/google/weak-pages,audit/google/weak-pages.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/calculators/chemical-calculator,calculators/chemical-calculator.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""Pool &amp; Hot Tub Chemical Calculator"" does not match H1 ""Pool & Hot Tub Chemical Calculator""."
-https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator,calculators/hot-tub-chlorine-calculator.html,HowTo,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/calculators/chemical-calculator,calculators/chemical-calculator.html,WebApplication,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/calculators/chemical-calculator,calculators/chemical-calculator.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator,calculators/hot-tub-chlorine-calculator.html,WebApplication,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator,calculators/hot-tub-chlorine-calculator.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/calculators/hot-tub-ph-calculator,calculators/hot-tub-ph-calculator.html,HowTo,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/calculators/hot-tub-ph-calculator,calculators/hot-tub-ph-calculator.html,WebApplication,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/hot-tub-ph-calculator,calculators/hot-tub-ph-calculator.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/calculators/hot-tub-shock-calculator,calculators/hot-tub-shock-calculator.html,HowTo,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/calculators/hot-tub-shock-calculator,calculators/hot-tub-shock-calculator.html,WebApplication,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/hot-tub-shock-calculator,calculators/hot-tub-shock-calculator.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/,calculators/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/,calculators/index.html,CollectionPage,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/calculators/pool-alkalinity-calculator,calculators/pool-alkalinity-calculator.html,HowTo,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/calculators/pool-alkalinity-calculator,calculators/pool-alkalinity-calculator.html,WebApplication,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/pool-alkalinity-calculator,calculators/pool-alkalinity-calculator.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/pool-chlorine-calculator,calculators/pool-chlorine-calculator.html,WebApplication,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/calculators/pool-chlorine-calculator,calculators/pool-chlorine-calculator.html,FAQPage,QUESTIONABLE,FAQPage schema declares 2 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/calculators/pool-chlorine-calculator,calculators/pool-chlorine-calculator.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/pool-chlorine-calculator,calculators/pool-chlorine-calculator.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/calculators/pool-chlorine-calculator,calculators/pool-chlorine-calculator.html,HowTo,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator,calculators/pool-cyanuric-acid-calculator.html,HowTo,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator,calculators/pool-cyanuric-acid-calculator.html,WebApplication,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator,calculators/pool-cyanuric-acid-calculator.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/calculators/pool-ph-calculator,calculators/pool-ph-calculator.html,HowTo,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/calculators/pool-ph-calculator,calculators/pool-ph-calculator.html,WebApplication,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/pool-ph-calculator,calculators/pool-ph-calculator.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/calculators/pool-shock-calculator,calculators/pool-shock-calculator.html,HowTo,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/calculators/pool-shock-calculator,calculators/pool-shock-calculator.html,WebApplication,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/pool-shock-calculator,calculators/pool-shock-calculator.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/calculators/pool-turnover-rate-calculator,calculators/pool-turnover-rate-calculator.html,HowTo,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/calculators/pool-turnover-rate-calculator,calculators/pool-turnover-rate-calculator.html,WebApplication,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/pool-turnover-rate-calculator,calculators/pool-turnover-rate-calculator.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/calculators/pool-volume-calculator,calculators/pool-volume-calculator.html,HowTo,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/calculators/pool-volume-calculator,calculators/pool-volume-calculator.html,WebApplication,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/pool-volume-calculator,calculators/pool-volume-calculator.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/calculators/saltwater-pool-salt-calculator,calculators/saltwater-pool-salt-calculator.html,HowTo,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/calculators/saltwater-pool-salt-calculator,calculators/saltwater-pool-salt-calculator.html,WebApplication,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/saltwater-pool-salt-calculator,calculators/saltwater-pool-salt-calculator.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/calculators/spa-volume-calculator,calculators/spa-volume-calculator.html,HowTo,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/calculators/spa-volume-calculator,calculators/spa-volume-calculator.html,WebApplication,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/spa-volume-calculator,calculators/spa-volume-calculator.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/calculators/volume-calculator,calculators/volume-calculator.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/charts/hot-tub-chemical-levels-chart,charts/hot-tub-chemical-levels-chart.html,FAQPage,QUESTIONABLE,FAQPage schema declares 1 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/charts/hot-tub-chemical-levels-chart,charts/hot-tub-chemical-levels-chart.html,FAQPage,QUESTIONABLE,FAQPage schema declares 1 question(s) but no visible .faq-item/.paa-item elements found -- possible visible/schema mismatch.
 https://waterbalancetools.com/charts/hot-tub-chemical-levels-chart,charts/hot-tub-chemical-levels-chart.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/charts/,charts/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/charts/,charts/index.html,CollectionPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/charts/pool-chemical-levels-chart,charts/pool-chemical-levels-chart.html,WebPage,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/charts/pool-chemical-levels-chart,charts/pool-chemical-levels-chart.html,FAQPage,QUESTIONABLE,FAQPage schema declares 2 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/charts/pool-chemical-levels-chart,charts/pool-chemical-levels-chart.html,FAQPage,QUESTIONABLE,FAQPage schema declares 2 question(s) but no visible .faq-item/.paa-item elements found -- possible visible/schema mismatch.
 https://waterbalancetools.com/charts/pool-chemical-levels-chart,charts/pool-chemical-levels-chart.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/charts/pool-water-balance-chart,charts/pool-water-balance-chart.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/comparisons/chlorine-vs-bromine-hot-tub,comparisons/chlorine-vs-bromine-hot-tub.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
@@ -161,12 +165,18 @@ https://waterbalancetools.com/comparisons/liquid-chlorine-vs-tablets,comparisons
 https://waterbalancetools.com/comparisons/pool-shock-vs-chlorine,comparisons/pool-shock-vs-chlorine.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/comparisons/salt-water-pool-vs-chlorine-pool,comparisons/salt-water-pool-vs-chlorine-pool.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/comparisons/saltwater-pool-vs-chlorine,comparisons/saltwater-pool-vs-chlorine.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/editorial/content-standards/,editorial/content-standards/index.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/editorial/correction-policy/,editorial/correction-policy/index.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/editorial/editorial-policy/,editorial/editorial-policy/index.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/editorial/,editorial/index.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/editorial/review-process/,editorial/review-process/index.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/editorial/update-policy/,editorial/update-policy/index.html,(none),MISSING,No JSON-LD found on this page.
+https://waterbalancetools.com/editorial/content-standards/,editorial/content-standards/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/editorial/content-standards/,editorial/content-standards/index.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/editorial/correction-policy/,editorial/correction-policy/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/editorial/correction-policy/,editorial/correction-policy/index.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/editorial/editorial-policy/,editorial/editorial-policy/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/editorial/editorial-policy/,editorial/editorial-policy/index.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/editorial/,editorial/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/editorial/,editorial/index.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/editorial/review-process/,editorial/review-process/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/editorial/review-process/,editorial/review-process/index.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/editorial/update-policy/,editorial/update-policy/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/editorial/update-policy/,editorial/update-policy/index.html,WebPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/entities/algae,entities/algae.html,DefinedTerm,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/entities/algae,entities/algae.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/entities/alkalinity,entities/alkalinity.html,DefinedTerm,VALID,No issues detected against structural checks performed.
@@ -381,7 +391,7 @@ https://waterbalancetools.com/formulas/alkalinity-formula,formulas/alkalinity-fo
 https://waterbalancetools.com/formulas/alkalinity-formula,formulas/alkalinity-formula.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/formulas/cya-formula,formulas/cya-formula.html,HowTo,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/formulas/cya-formula,formulas/cya-formula.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/formulas/,formulas/index.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""Formula Library"" does not match H1 ""Pool Chemistry Formula Library""."
+https://waterbalancetools.com/formulas/,formulas/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/formulas/liquid-chlorine-formula,formulas/liquid-chlorine-formula.html,HowTo,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/formulas/liquid-chlorine-formula,formulas/liquid-chlorine-formula.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/formulas/lsi-formula,formulas/lsi-formula.html,HowTo,VALID,No issues detected against structural checks performed.
@@ -480,7 +490,7 @@ https://waterbalancetools.com/glossary/green-algae,glossary/green-algae.html,Def
 https://waterbalancetools.com/glossary/green-algae,glossary/green-algae.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/glossary/hypochlorous-acid,glossary/hypochlorous-acid.html,DefinedTerm,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/glossary/hypochlorous-acid,glossary/hypochlorous-acid.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/glossary/,glossary/index.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""Glossary"" does not match H1 ""Pool & Hot Tub Water Chemistry Glossary""."
+https://waterbalancetools.com/glossary/,glossary/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/glossary/iron,glossary/iron.html,DefinedTerm,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/glossary/iron,glossary/iron.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/glossary/langelier-saturation-index,glossary/langelier-saturation-index.html,DefinedTerm,VALID,No issues detected against structural checks performed.
@@ -615,7 +625,8 @@ https://waterbalancetools.com/guides/chlorine/how-often-should-i-shock-my-pool,g
 https://waterbalancetools.com/guides/chlorine/,guides/chlorine/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/chlorine/,guides/chlorine/index.html,CollectionPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/chlorine/why-pool-chlorine-disappears-overnight,guides/chlorine/why-pool-chlorine-disappears-overnight.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/guides/chlorine/why-pool-wont-hold-chlorine,guides/chlorine/why-pool-wont-hold-chlorine.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""Why Pool Won't Hold Chlorine: Causes and Fixes"" does not match H1 ""Why Pool Won't Hold Chlorine""."
+https://waterbalancetools.com/guides/chlorine/why-pool-wont-hold-chlorine,guides/chlorine/why-pool-wont-hold-chlorine.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/guides/edge-cases/evaporation-effect-on-pool-chemistry,guides/edge-cases/evaporation-effect-on-pool-chemistry.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/edge-cases/high-cya-chlorine-lock,guides/edge-cases/high-cya-chlorine-lock.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/edge-cases/,guides/edge-cases/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/edge-cases/,guides/edge-cases/index.html,CollectionPage,VALID,No issues detected against structural checks performed.
@@ -637,35 +648,35 @@ https://waterbalancetools.com/guides/,guides/index.html,CollectionPage,VALID,No 
 https://waterbalancetools.com/guides/ph-guide,guides/ph-guide.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/ph/can-you-swim-in-high-ph-water,guides/ph/can-you-swim-in-high-ph-water.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/ph/does-rain-lower-pool-ph,guides/ph/does-rain-lower-pool-ph.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/guides/ph/how-to-lower-pool-ph,guides/ph/how-to-lower-pool-ph.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""How to Lower Pool pH: Step-by-Step Guide"" does not match H1 ""How to Lower Pool pH""."
+https://waterbalancetools.com/guides/ph/how-to-lower-pool-ph,guides/ph/how-to-lower-pool-ph.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/ph/,guides/ph/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/ph/,guides/ph/index.html,CollectionPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/ph/what-causes-high-pool-ph,guides/ph/what-causes-high-pool-ph.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/ph/why-pool-ph-keeps-rising,guides/ph/why-pool-ph-keeps-rising.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/pool-chemistry-basics,guides/pool-chemistry-basics.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/questions/can-rain-affect-pool-chemistry,guides/questions/can-rain-affect-pool-chemistry.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/guides/questions/can-rain-affect-pool-chemistry,guides/questions/can-rain-affect-pool-chemistry.html,FAQPage,QUESTIONABLE,FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/guides/questions/can-rain-affect-pool-chemistry,guides/questions/can-rain-affect-pool-chemistry.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/questions/can-you-swim-after-shocking-a-pool,guides/questions/can-you-swim-after-shocking-a-pool.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/guides/questions/can-you-swim-after-shocking-a-pool,guides/questions/can-you-swim-after-shocking-a-pool.html,FAQPage,QUESTIONABLE,FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/guides/questions/can-you-swim-after-shocking-a-pool,guides/questions/can-you-swim-after-shocking-a-pool.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/questions/,guides/questions/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/questions/,guides/questions/index.html,CollectionPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/questions/why-does-hot-tub-water-smell,guides/questions/why-does-hot-tub-water-smell.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/guides/questions/why-does-hot-tub-water-smell,guides/questions/why-does-hot-tub-water-smell.html,FAQPage,QUESTIONABLE,FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/guides/questions/why-does-hot-tub-water-smell,guides/questions/why-does-hot-tub-water-smell.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/questions/why-does-pool-water-turn-cloudy,guides/questions/why-does-pool-water-turn-cloudy.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/guides/questions/why-does-pool-water-turn-cloudy,guides/questions/why-does-pool-water-turn-cloudy.html,FAQPage,QUESTIONABLE,FAQPage schema declares 5 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/guides/questions/why-does-pool-water-turn-cloudy,guides/questions/why-does-pool-water-turn-cloudy.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/questions/why-is-my-hot-tub-foamy,guides/questions/why-is-my-hot-tub-foamy.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/guides/questions/why-is-my-hot-tub-foamy,guides/questions/why-is-my-hot-tub-foamy.html,FAQPage,QUESTIONABLE,FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/guides/questions/why-is-my-hot-tub-foamy,guides/questions/why-is-my-hot-tub-foamy.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/questions/why-is-my-pool-green-but-chlorine-is-high,guides/questions/why-is-my-pool-green-but-chlorine-is-high.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/guides/questions/why-is-my-pool-green-but-chlorine-is-high,guides/questions/why-is-my-pool-green-but-chlorine-is-high.html,FAQPage,QUESTIONABLE,FAQPage schema declares 3 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/guides/questions/why-is-my-pool-green-but-chlorine-is-high,guides/questions/why-is-my-pool-green-but-chlorine-is-high.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/seasonal/closing-pool-chemistry-winter,guides/seasonal/closing-pool-chemistry-winter.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/seasonal/,guides/seasonal/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/seasonal/,guides/seasonal/index.html,CollectionPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/seasonal/opening-pool-chemistry-checklist,guides/seasonal/opening-pool-chemistry-checklist.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/seasonal/summer-high-chlorine-demand,guides/seasonal/summer-high-chlorine-demand.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/guides/seasonal/winter-pool-maintenance-chemistry,guides/seasonal/winter-pool-maintenance-chemistry.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/hot-tub-chemical-levels-chart,hot-tub-chemical-levels-chart.html,FAQPage,QUESTIONABLE,FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/hot-tub-chemical-levels-chart,hot-tub-chemical-levels-chart.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/hot-tub-chemical-levels-chart,hot-tub-chemical-levels-chart.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/hot-tub-chlorine-levels-chart,hot-tub-chlorine-levels-chart.html,FAQPage,QUESTIONABLE,FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/hot-tub-chlorine-levels-chart,hot-tub-chlorine-levels-chart.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/hot-tub-chlorine-levels-chart,hot-tub-chlorine-levels-chart.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/,index.html,Organization,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/,index.html,WebSite,VALID,No issues detected against structural checks performed.
@@ -674,36 +685,48 @@ https://waterbalancetools.com/legal/,legal/index.html,BreadcrumbList,VALID,No is
 https://waterbalancetools.com/legal/,legal/index.html,CollectionPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/legal/legal,legal/legal.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/legal/ownership,legal/ownership.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/maintenance/how-often-add-chlorine-pool,maintenance/how-often-add-chlorine-pool.html,FAQPage,QUESTIONABLE,FAQPage schema declares 1 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/maintenance/how-often-add-chlorine-pool,maintenance/how-often-add-chlorine-pool.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/maintenance/how-often-add-chlorine-pool,maintenance/how-often-add-chlorine-pool.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/maintenance/how-to-balance-pool-water,maintenance/how-to-balance-pool-water.html,HowTo,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/maintenance/how-to-balance-pool-water,maintenance/how-to-balance-pool-water.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/maintenance/how-to-fix-cloudy-hot-tub,maintenance/how-to-fix-cloudy-hot-tub.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/maintenance/,maintenance/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/maintenance/,maintenance/index.html,CollectionPage,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/methodology/calculation-assumptions/,methodology/calculation-assumptions/index.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/methodology/calculation-methodology/,methodology/calculation-methodology/index.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/methodology/confidence-system/,methodology/confidence-system/index.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/methodology/formula-selection/,methodology/formula-selection/index.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/methodology/,methodology/index.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/methodology/known-limitations/,methodology/known-limitations/index.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/methodology/precision-policy/,methodology/precision-policy/index.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/methodology/rounding-policy/,methodology/rounding-policy/index.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/pool-alkalinity-levels-chart,pool-alkalinity-levels-chart.html,FAQPage,QUESTIONABLE,FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/methodology/calculation-assumptions/,methodology/calculation-assumptions/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/methodology/calculation-assumptions/,methodology/calculation-assumptions/index.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/methodology/calculation-methodology/,methodology/calculation-methodology/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/methodology/calculation-methodology/,methodology/calculation-methodology/index.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/methodology/confidence-system/,methodology/confidence-system/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/methodology/confidence-system/,methodology/confidence-system/index.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/methodology/formula-selection/,methodology/formula-selection/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/methodology/formula-selection/,methodology/formula-selection/index.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/methodology/,methodology/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/methodology/,methodology/index.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/methodology/known-limitations/,methodology/known-limitations/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/methodology/known-limitations/,methodology/known-limitations/index.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/methodology/precision-policy/,methodology/precision-policy/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/methodology/precision-policy/,methodology/precision-policy/index.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/methodology/rounding-policy/,methodology/rounding-policy/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/methodology/rounding-policy/,methodology/rounding-policy/index.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/pool-alkalinity-levels-chart,pool-alkalinity-levels-chart.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/pool-alkalinity-levels-chart,pool-alkalinity-levels-chart.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/pool-chemical-levels-chart,pool-chemical-levels-chart.html,FAQPage,QUESTIONABLE,FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/pool-chemical-levels-chart,pool-chemical-levels-chart.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/pool-chemical-levels-chart,pool-chemical-levels-chart.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/pool-chemistry-system,pool-chemistry-system.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""Pool Chemistry System"" does not match H1 ""Pool Chemistry System: How All Parameters Work Together""."
-https://waterbalancetools.com/pool-chlorine-levels-chart,pool-chlorine-levels-chart.html,FAQPage,QUESTIONABLE,FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/pool-chemistry-system,pool-chemistry-system.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/pool-chlorine-levels-chart,pool-chlorine-levels-chart.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/pool-chlorine-levels-chart,pool-chlorine-levels-chart.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/pool-cya-levels-chart,pool-cya-levels-chart.html,FAQPage,QUESTIONABLE,FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/pool-cya-levels-chart,pool-cya-levels-chart.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/pool-cya-levels-chart,pool-cya-levels-chart.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/pool-ph-levels-chart,pool-ph-levels-chart.html,FAQPage,QUESTIONABLE,FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/pool-ph-levels-chart,pool-ph-levels-chart.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/pool-ph-levels-chart,pool-ph-levels-chart.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/printable/maintenance-checklist,printable/maintenance-checklist.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/printables/airbnb-pool-turnover-checklist,printables/airbnb-pool-turnover-checklist.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/printables/hot-tub-maintenance-log,printables/hot-tub-maintenance-log.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/printables/pool-maintenance-checklist,printables/pool-maintenance-checklist.html,(none),MISSING,No JSON-LD found on this page.
+https://waterbalancetools.com/printable/maintenance-checklist,printable/maintenance-checklist.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/printable/maintenance-checklist,printable/maintenance-checklist.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/printables/airbnb-pool-turnover-checklist,printables/airbnb-pool-turnover-checklist.html,WebPage,QUESTIONABLE,"schema url ""https://waterbalancetools.com/printables/airbnb-pool-turnover-checklist"" does not match canonical ""https://waterbalancetools.com/resources/airbnb-pool-turnover-checklist""."
+https://waterbalancetools.com/printables/airbnb-pool-turnover-checklist,printables/airbnb-pool-turnover-checklist.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/printables/hot-tub-maintenance-log,printables/hot-tub-maintenance-log.html,WebPage,QUESTIONABLE,"schema url ""https://waterbalancetools.com/printables/hot-tub-maintenance-log"" does not match canonical ""https://waterbalancetools.com/resources/hot-tub-maintenance-log""."
+https://waterbalancetools.com/printables/hot-tub-maintenance-log,printables/hot-tub-maintenance-log.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/printables/pool-maintenance-checklist,printables/pool-maintenance-checklist.html,WebPage,QUESTIONABLE,"schema url ""https://waterbalancetools.com/printables/pool-maintenance-checklist"" does not match canonical ""https://waterbalancetools.com/resources/pool-maintenance-checklist""."
+https://waterbalancetools.com/printables/pool-maintenance-checklist,printables/pool-maintenance-checklist.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/programmatic/behavior/how-often-to-shock-pool,programmatic/behavior/how-often-to-shock-pool.html,WebApplication,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/programmatic/behavior/how-often-to-shock-pool,programmatic/behavior/how-often-to-shock-pool.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/programmatic/behavior/how-often-to-shock-pool,programmatic/behavior/how-often-to-shock-pool.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
@@ -855,30 +878,31 @@ https://waterbalancetools.com/programmatic/shock/how-much-shock-for-5000-gallon-
 https://waterbalancetools.com/programmatic/shock/how-much-shock-for-5000-gallon-pool,programmatic/shock/how-much-shock-for-5000-gallon-pool.html,HowTo,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/programmatic/shock/,programmatic/shock/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/programmatic/shock/,programmatic/shock/index.html,CollectionPage,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/provenance/,provenance/index.html,(none),MISSING,No JSON-LD found on this page.
+https://waterbalancetools.com/provenance/,provenance/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/provenance/,provenance/index.html,WebPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/qa/certification,qa/certification.html,(none),MISSING,No JSON-LD found on this page.
 https://waterbalancetools.com/qa/,qa/index.html,(none),MISSING,No JSON-LD found on this page.
 https://waterbalancetools.com/reference/alkalinity-table,reference/alkalinity-table.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/calcium-hardness-explained,reference/calcium-hardness-explained.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/reference/calcium-hardness-explained,reference/calcium-hardness-explained.html,DefinedTerm,QUESTIONABLE,"schema name ""Calcium Hardness"" does not match H1 ""Calcium Hardness in Pools Explained""."
-https://waterbalancetools.com/reference/calcium-hardness-explained,reference/calcium-hardness-explained.html,FAQPage,QUESTIONABLE,FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
-https://waterbalancetools.com/reference/calculator-directory,reference/calculator-directory.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""Pool &amp; Spa Calculator Directory"" does not match H1 ""Pool & Spa Calculator Directory""."
+https://waterbalancetools.com/reference/calcium-hardness-explained,reference/calcium-hardness-explained.html,DefinedTerm,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/reference/calcium-hardness-explained,reference/calcium-hardness-explained.html,FAQPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/reference/calculator-directory,reference/calculator-directory.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/chemical-compatibility,reference/chemical-compatibility.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/chemical-conversion-tables,reference/chemical-conversion-tables.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/chemical-safety,reference/chemical-safety.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/chemical-storage-guide,reference/chemical-storage-guide.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/chlorine-effectiveness-chart,reference/chlorine-effectiveness-chart.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/chlorine-explained,reference/chlorine-explained.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/reference/chlorine-explained,reference/chlorine-explained.html,DefinedTerm,QUESTIONABLE,"schema name ""Chlorine"" does not match H1 ""Chlorine in Pools Explained""."
-https://waterbalancetools.com/reference/chlorine-explained,reference/chlorine-explained.html,FAQPage,QUESTIONABLE,FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/reference/chlorine-explained,reference/chlorine-explained.html,DefinedTerm,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/reference/chlorine-explained,reference/chlorine-explained.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/combined-chlorine-explained,reference/combined-chlorine-explained.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/reference/combined-chlorine-explained,reference/combined-chlorine-explained.html,DefinedTerm,QUESTIONABLE,"schema name ""Combined Chlorine"" does not match H1 ""Combined Chlorine (Chloramines) Explained""."
-https://waterbalancetools.com/reference/combined-chlorine-explained,reference/combined-chlorine-explained.html,FAQPage,QUESTIONABLE,FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/reference/combined-chlorine-explained,reference/combined-chlorine-explained.html,DefinedTerm,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/reference/combined-chlorine-explained,reference/combined-chlorine-explained.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/common-pool-chemistry-mistakes,reference/common-pool-chemistry-mistakes.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/cya-matrix,reference/cya-matrix.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/cyanuric-acid-explained,reference/cyanuric-acid-explained.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/reference/cyanuric-acid-explained,reference/cyanuric-acid-explained.html,DefinedTerm,QUESTIONABLE,"schema name ""Cyanuric Acid"" does not match H1 ""Cyanuric Acid (CYA / Stabilizer) Explained""."
-https://waterbalancetools.com/reference/cyanuric-acid-explained,reference/cyanuric-acid-explained.html,FAQPage,QUESTIONABLE,FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/reference/cyanuric-acid-explained,reference/cyanuric-acid-explained.html,DefinedTerm,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/reference/cyanuric-acid-explained,reference/cyanuric-acid-explained.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/datasets/chemical-properties/,reference/datasets/chemical-properties/index.html,(none),MISSING,No JSON-LD found on this page.
 https://waterbalancetools.com/reference/datasets/chemical-ranges/,reference/datasets/chemical-ranges/index.html,(none),MISSING,No JSON-LD found on this page.
 https://waterbalancetools.com/reference/datasets/compatibility/,reference/datasets/compatibility/index.html,(none),MISSING,No JSON-LD found on this page.
@@ -898,39 +922,43 @@ https://waterbalancetools.com/reference/datasets/water-problems/,reference/datas
 https://waterbalancetools.com/reference/emergency-recovery,reference/emergency-recovery.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/filter-comparison,reference/filter-comparison.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/free-chlorine-explained,reference/free-chlorine-explained.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/reference/free-chlorine-explained,reference/free-chlorine-explained.html,DefinedTerm,QUESTIONABLE,"schema name ""Free Chlorine"" does not match H1 ""Free Chlorine Explained""."
-https://waterbalancetools.com/reference/free-chlorine-explained,reference/free-chlorine-explained.html,FAQPage,QUESTIONABLE,FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/reference/free-chlorine-explained,reference/free-chlorine-explained.html,DefinedTerm,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/reference/free-chlorine-explained,reference/free-chlorine-explained.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/ideal-pool-levels,reference/ideal-pool-levels.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/reference/ideal-spa-levels,reference/ideal-spa-levels.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""Ideal Spa &amp; Hot Tub Chemical Levels"" does not match H1 ""Ideal Spa & Hot Tub Chemical Levels""."
-https://waterbalancetools.com/reference/,reference/index.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""Reference"" does not match H1 ""Pool Chemistry Reference""."
+https://waterbalancetools.com/reference/ideal-spa-levels,reference/ideal-spa-levels.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/reference/,reference/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/ph-table,reference/ph-table.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/pool-chemical-timeline,reference/pool-chemical-timeline.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/pool-chemicals-explained,reference/pool-chemicals-explained.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/pool-chemistry-reference,reference/pool-chemistry-reference.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/reference/pool-shape-guide,reference/pool-shape-guide.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""Pool Shape &amp; Volume Calculation Guide"" does not match H1 ""Pool Shape & Volume Calculation Guide""."
+https://waterbalancetools.com/reference/pool-shape-guide,reference/pool-shape-guide.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/pool-volume-reference,reference/pool-volume-reference.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/printable-resources-index,reference/printable-resources-index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/pump-sizing,reference/pump-sizing.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/reference/recommended-water-temperature,reference/recommended-water-temperature.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""Recommended Pool &amp; Spa Water Temperature"" does not match H1 ""Recommended Pool & Spa Water Temperature""."
+https://waterbalancetools.com/reference/recommended-water-temperature,reference/recommended-water-temperature.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/salt-matrix,reference/salt-matrix.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/salt-water-generator-explained,reference/salt-water-generator-explained.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/reference/salt-water-generator-explained,reference/salt-water-generator-explained.html,DefinedTerm,QUESTIONABLE,"schema name ""Salt Water Generator"" does not match H1 ""Salt Water Generator (SWG) Explained""."
-https://waterbalancetools.com/reference/salt-water-generator-explained,reference/salt-water-generator-explained.html,FAQPage,QUESTIONABLE,FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/reference/salt-water-generator-explained,reference/salt-water-generator-explained.html,DefinedTerm,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/reference/salt-water-generator-explained,reference/salt-water-generator-explained.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/shock-dosage-matrix,reference/shock-dosage-matrix.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/shock-treatment-explained,reference/shock-treatment-explained.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/reference/shock-treatment-explained,reference/shock-treatment-explained.html,DefinedTerm,QUESTIONABLE,"schema name ""Pool Shock Treatment"" does not match H1 ""Pool Shock Treatment Explained""."
-https://waterbalancetools.com/reference/shock-treatment-explained,reference/shock-treatment-explained.html,FAQPage,QUESTIONABLE,FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
-https://waterbalancetools.com/reference/testing-frequency,reference/testing-frequency.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""Pool &amp; Spa Testing Frequency Guide"" does not match H1 ""Pool & Spa Testing Frequency Guide""."
+https://waterbalancetools.com/reference/shock-treatment-explained,reference/shock-treatment-explained.html,DefinedTerm,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/reference/shock-treatment-explained,reference/shock-treatment-explained.html,FAQPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/reference/testing-frequency,reference/testing-frequency.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/total-alkalinity-explained,reference/total-alkalinity-explained.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/reference/total-alkalinity-explained,reference/total-alkalinity-explained.html,DefinedTerm,QUESTIONABLE,"schema name ""Total Alkalinity"" does not match H1 ""Total Alkalinity Explained""."
-https://waterbalancetools.com/reference/total-alkalinity-explained,reference/total-alkalinity-explained.html,FAQPage,QUESTIONABLE,FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/reference/total-alkalinity-explained,reference/total-alkalinity-explained.html,DefinedTerm,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/reference/total-alkalinity-explained,reference/total-alkalinity-explained.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/vacation-rental-maintenance-schedule,reference/vacation-rental-maintenance-schedule.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/water-balance-checklist,reference/water-balance-checklist.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reference/water-replacement-guidelines,reference/water-replacement-guidelines.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/releases/1.0.0,releases/1.0.0.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/releases/1.1.0,releases/1.1.0.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/releases/compatibility,releases/compatibility.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/releases/,releases/index.html,(none),MISSING,No JSON-LD found on this page.
+https://waterbalancetools.com/releases/1.0.0,releases/1.0.0.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/releases/1.0.0,releases/1.0.0.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/releases/1.1.0,releases/1.1.0.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/releases/1.1.0,releases/1.1.0.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/releases/compatibility,releases/compatibility.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/releases/compatibility,releases/compatibility.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/releases/,releases/index.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""Releases"" does not match H1 ""Release History""."
+https://waterbalancetools.com/releases/,releases/index.html,WebPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/reports/accessibility,reports/accessibility.html,(none),MISSING,No JSON-LD found on this page.
 https://waterbalancetools.com/reports/ai-readiness,reports/ai-readiness.html,(none),MISSING,No JSON-LD found on this page.
 https://waterbalancetools.com/reports/architecture,reports/architecture.html,(none),MISSING,No JSON-LD found on this page.
@@ -949,7 +977,7 @@ https://waterbalancetools.com/resources/airbnb-pool-turnover-checklist,resources
 https://waterbalancetools.com/resources/hot-tub-maintenance-log,resources/hot-tub-maintenance-log.html,HowTo,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/resources/hot-tub-maintenance-log,resources/hot-tub-maintenance-log.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/resources/,resources/index.html,CollectionPage,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/resources/,resources/index.html,BreadcrumbList,QUESTIONABLE,"Breadcrumb last item ""Free Pool &amp; Hot Tub Printable Resources"" does not match H1 ""Free Pool & Hot Tub Printable Resources""."
+https://waterbalancetools.com/resources/,resources/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/resources/pool-chemical-log-sheet,resources/pool-chemical-log-sheet.html,HowTo,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/resources/pool-chemical-log-sheet,resources/pool-chemical-log-sheet.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/resources/pool-closing-checklist,resources/pool-closing-checklist.html,HowTo,VALID,No issues detected against structural checks performed.
@@ -962,8 +990,9 @@ https://waterbalancetools.com/resources/pool-shock-log,resources/pool-shock-log.
 https://waterbalancetools.com/resources/pool-shock-log,resources/pool-shock-log.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/resources/water-test-log,resources/water-test-log.html,HowTo,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/resources/water-test-log,resources/water-test-log.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
-https://waterbalancetools.com/revisions/,revisions/index.html,(none),MISSING,No JSON-LD found on this page.
-https://waterbalancetools.com/salt-water-pool-chemical-levels-chart,salt-water-pool-chemical-levels-chart.html,FAQPage,QUESTIONABLE,FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch.
+https://waterbalancetools.com/revisions/,revisions/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/revisions/,revisions/index.html,WebPage,VALID,No issues detected against structural checks performed.
+https://waterbalancetools.com/salt-water-pool-chemical-levels-chart,salt-water-pool-chemical-levels-chart.html,FAQPage,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/salt-water-pool-chemical-levels-chart,salt-water-pool-chemical-levels-chart.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/search/,search/index.html,BreadcrumbList,VALID,No issues detected against structural checks performed.
 https://waterbalancetools.com/tools/,tools/index.html,(none),MISSING,No JSON-LD found on this page.

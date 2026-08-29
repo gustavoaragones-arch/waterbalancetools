@@ -242,6 +242,22 @@ const SOURCES = [
     topics: ['water_temperature', 'hot_tub', 'safety'],
     notes: 'Section 5.7.4.7.2: "The maximum temperature for an AQUATIC VENUE is 104 F (40C)." Document identifies itself as the 5th Edition (year 2024 per the page), but no exact publication day/month was shown -- publication_date left null rather than guessed, per this project\'s established policy of not inventing dates.',
   },
+  {
+    // Phase 7P: supports the new academy/fundamentals/new-pool-startup-chemistry
+    // page (fresh-fill / newly-plastered pool startup sequence) -- fetched
+    // and read in full (not a search-snippet paraphrase) on 2026-08-28.
+    id: 'phta-fresh-fill-startup-fact-sheet',
+    organization: 'Pool & Hot Tub Alliance (PHTA), Recreational Water Quality Committee',
+    title: 'Fresh Fill Water Start-Up for Plastered Pools (PHTA Fact Sheet)',
+    url: 'https://www.phta.org/pub/?id=33925d23-1866-daac-99fb-dbf23704fd63',
+    source_type: 'industry_standard',
+    authority_level: 'professional',
+    publication_date: '2021-03',
+    last_updated: null,
+    accessed_date: '2026-08-28',
+    topics: ['ph', 'total_alkalinity', 'calcium_hardness', 'cyanuric_acid', 'chlorine', 'new_plaster_startup'],
+    notes: 'PHTA fact sheet presenting the National Plasterers Council (NPC) 28-day fresh-fill start-up procedure for plaster (marble/quartz/pebble/glassbead) pools: staged alkalinity (80-100 ppm) then pH (7.2-7.6) then calcium hardness (80-100 ppm Day 1, 100-150 ppm Day 2, minimum 200 ppm Day 4); no chlorine for 48 hours, then Free Chlorine to 1.5-3 ppm on Day 3; CYA introduced 30-50 ppm beginning Day 4 via skimmer over a minimum of 3 days; no salt addition within 30 days for SWG pools; no heater until manufacturer-specified (normally 2-4 weeks); brushing at least twice daily until plaster dust is removed. Explicitly distinct from routine seasonal reopening of an already-cured pool.',
+  },
 ];
 
 const SOURCES_BY_ID = Object.fromEntries(SOURCES.map((s) => [s.id, s]));

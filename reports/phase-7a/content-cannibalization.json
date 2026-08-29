@@ -1,5 +1,16 @@
 [
   {
+    "page_a": "https://waterbalancetools.com/calculators/pool-volume-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/volume-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.475,
+    "risk": "MEDIUM",
+    "current_differentiation": "same format",
+    "recommended_action": "STRENGTHEN DIFFERENTIATION"
+  },
+  {
     "page_a": "https://waterbalancetools.com/calculators/pool-turnover-rate-calculator",
     "page_b": "https://waterbalancetools.com/calculators/pool-volume-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
@@ -121,23 +132,12 @@
     "recommended_action": "STRENGTHEN DIFFERENTIATION"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/hot-tub-ph-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-turnover-rate-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.365,
-    "risk": "MEDIUM",
-    "current_differentiation": "same format",
-    "recommended_action": "STRENGTHEN DIFFERENTIATION"
-  },
-  {
     "page_a": "https://waterbalancetools.com/calculators/pool-turnover-rate-calculator",
     "page_b": "https://waterbalancetools.com/calculators/volume-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.365,
+    "similarity": 0.366,
     "risk": "MEDIUM",
     "current_differentiation": "same format",
     "recommended_action": "STRENGTHEN DIFFERENTIATION"
@@ -148,7 +148,18 @@
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.364,
+    "similarity": 0.366,
+    "risk": "MEDIUM",
+    "current_differentiation": "same format",
+    "recommended_action": "STRENGTHEN DIFFERENTIATION"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/hot-tub-ph-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-turnover-rate-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.365,
     "risk": "MEDIUM",
     "current_differentiation": "same format",
     "recommended_action": "STRENGTHEN DIFFERENTIATION"
@@ -319,23 +330,12 @@
     "recommended_action": "STRENGTHEN DIFFERENTIATION"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/pool-alkalinity-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.328,
-    "risk": "MEDIUM",
-    "current_differentiation": "same format",
-    "recommended_action": "STRENGTHEN DIFFERENTIATION"
-  },
-  {
     "page_a": "https://waterbalancetools.com/calculators/hot-tub-ph-calculator",
     "page_b": "https://waterbalancetools.com/calculators/volume-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.325,
+    "similarity": 0.327,
     "risk": "MEDIUM",
     "current_differentiation": "same format",
     "recommended_action": "STRENGTHEN DIFFERENTIATION"
@@ -346,29 +346,7 @@
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.323,
-    "risk": "MEDIUM",
-    "current_differentiation": "same format",
-    "recommended_action": "STRENGTHEN DIFFERENTIATION"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.32,
-    "risk": "MEDIUM",
-    "current_differentiation": "same format",
-    "recommended_action": "STRENGTHEN DIFFERENTIATION"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/saltwater-pool-salt-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.317,
+    "similarity": 0.324,
     "risk": "MEDIUM",
     "current_differentiation": "same format",
     "recommended_action": "STRENGTHEN DIFFERENTIATION"
@@ -385,19 +363,8 @@
     "recommended_action": "STRENGTHEN DIFFERENTIATION"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-turnover-rate-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.314,
-    "risk": "MEDIUM",
-    "current_differentiation": "same format",
-    "recommended_action": "STRENGTHEN DIFFERENTIATION"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/hot-tub-shock-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+    "page_a": "https://waterbalancetools.com/calculators/pool-alkalinity-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/volume-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
@@ -408,18 +375,18 @@
   },
   {
     "page_a": "https://waterbalancetools.com/calculators/pool-alkalinity-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/volume-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.308,
+    "similarity": 0.303,
     "risk": "MEDIUM",
     "current_differentiation": "same format",
     "recommended_action": "STRENGTHEN DIFFERENTIATION"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/hot-tub-ph-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+    "page_a": "https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/volume-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
@@ -429,56 +396,34 @@
     "recommended_action": "STRENGTHEN DIFFERENTIATION"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/pool-volume-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/volume-calculator",
+    "page_a": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.473,
-    "risk": "LOW",
-    "current_differentiation": "RESOLVED -- one URL is noindex + 301-redirected to the other; only one remains indexable",
-    "recommended_action": "UNCHANGED"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/hot-tub-ph-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.3,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/volume-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.3,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.292,
+    "similarity": 0.297,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
   },
   {
     "page_a": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/spa-volume-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/saltwater-pool-salt-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.292,
+    "similarity": 0.294,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-turnover-rate-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.291,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -489,7 +434,62 @@
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.288,
+    "similarity": 0.289,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/hot-tub-shock-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.287,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.279,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/hot-tub-ph-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.277,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/hot-tub-ph-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.276,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/spa-volume-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.271,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -500,18 +500,7 @@
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.283,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/volume-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.254,
+    "similarity": 0.263,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -528,6 +517,17 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
+    "page_a": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/volume-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.237,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
     "page_a": "https://waterbalancetools.com/calculators/pool-alkalinity-calculator",
     "page_b": "https://waterbalancetools.com/calculators/pool-shock-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
@@ -539,23 +539,12 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/pool-alkalinity-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.225,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-ph-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.215,
+    "similarity": 0.222,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -572,45 +561,12 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-turnover-rate-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.213,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
     "page_a": "https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator",
     "page_b": "https://waterbalancetools.com/calculators/hot-tub-shock-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
     "similarity": 0.212,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/saltwater-pool-salt-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.212,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/spa-volume-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.211,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -627,12 +583,12 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/hot-tub-shock-calculator",
+    "page_a": "https://waterbalancetools.com/calculators/pool-alkalinity-calculator",
     "page_b": "https://waterbalancetools.com/calculators/pool-ph-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.21,
+    "similarity": 0.208,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -649,34 +605,12 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-volume-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.207,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
     "page_a": "https://waterbalancetools.com/calculators/hot-tub-ph-calculator",
     "page_b": "https://waterbalancetools.com/calculators/pool-shock-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
     "similarity": 0.206,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/hot-tub-shock-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.199,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -693,23 +627,12 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+    "page_a": "https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-ph-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.198,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/volume-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.198,
+    "similarity": 0.199,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -726,8 +649,19 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
+    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
     "page_b": "https://waterbalancetools.com/calculators/pool-turnover-rate-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.197,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/saltwater-pool-salt-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
@@ -737,23 +671,23 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-alkalinity-calculator",
+    "page_a": "https://waterbalancetools.com/calculators/hot-tub-shock-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-ph-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.194,
+    "similarity": 0.195,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/spa-volume-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.194,
+    "similarity": 0.195,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -781,8 +715,8 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/saltwater-pool-salt-calculator",
+    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-volume-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
@@ -814,17 +748,6 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.189,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
     "page_a": "https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator",
     "page_b": "https://waterbalancetools.com/calculators/pool-volume-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
@@ -847,23 +770,34 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-volume-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.186,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
     "page_a": "https://waterbalancetools.com/calculators/pool-shock-calculator",
     "page_b": "https://waterbalancetools.com/calculators/pool-volume-calculator",
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
     "similarity": 0.185,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.184,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/volume-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.184,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -885,29 +819,7 @@
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.181,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/hot-tub-ph-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.177,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/spa-volume-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.175,
+    "similarity": 0.182,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -918,7 +830,84 @@
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.174,
+    "similarity": 0.175,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/hot-tub-shock-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.173,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-turnover-rate-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.17,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-alkalinity-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.168,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/saltwater-pool-salt-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.166,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.164,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-volume-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.162,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.162,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -929,40 +918,7 @@
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.169,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-shock-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.154,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-ph-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.15,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator",
-    "page_b": "https://waterbalancetools.com/calculators/pool-shock-calculator",
-    "shared_intent": "calculator hub (exhaustive pairwise)",
-    "page_a_type": "calculator",
-    "page_b_type": "calculator",
-    "similarity": 0.15,
+    "similarity": 0.156,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -973,7 +929,51 @@
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.145,
+    "similarity": 0.155,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/hot-tub-ph-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.153,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/chemical-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/spa-volume-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.152,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.15,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+    "page_b": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+    "shared_intent": "calculator hub (exhaustive pairwise)",
+    "page_a_type": "calculator",
+    "page_b_type": "calculator",
+    "similarity": 0.146,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -984,7 +984,7 @@
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.145,
+    "similarity": 0.138,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -995,7 +995,7 @@
     "shared_intent": "calculator hub (exhaustive pairwise)",
     "page_a_type": "calculator",
     "page_b_type": "calculator",
-    "similarity": 0.145,
+    "similarity": 0.131,
     "risk": "LOW",
     "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
@@ -1012,30 +1012,8 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/charts/pool-water-balance-chart",
-    "page_b": "https://waterbalancetools.com/pool-ph-levels-chart",
-    "shared_intent": "chart hub (exhaustive pairwise)",
-    "page_a_type": "chart",
-    "page_b_type": "chart",
-    "similarity": 0.082,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
     "page_a": "https://waterbalancetools.com/charts/pool-chemical-levels-chart",
     "page_b": "https://waterbalancetools.com/charts/pool-water-balance-chart",
-    "shared_intent": "chart hub (exhaustive pairwise)",
-    "page_a_type": "chart",
-    "page_b_type": "chart",
-    "similarity": 0.079,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/pool-chlorine-levels-chart",
-    "page_b": "https://waterbalancetools.com/pool-ph-levels-chart",
     "shared_intent": "chart hub (exhaustive pairwise)",
     "page_a_type": "chart",
     "page_b_type": "chart",
@@ -1056,61 +1034,6 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/charts/pool-water-balance-chart",
-    "page_b": "https://waterbalancetools.com/pool-chemical-levels-chart",
-    "shared_intent": "chart hub (exhaustive pairwise)",
-    "page_a_type": "chart",
-    "page_b_type": "chart",
-    "similarity": 0.076,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/charts/pool-chemical-levels-chart",
-    "page_b": "https://waterbalancetools.com/pool-chemical-levels-chart",
-    "shared_intent": "pool chemical",
-    "page_a_type": "chart",
-    "page_b_type": "chart",
-    "similarity": 0.075,
-    "risk": "LOW",
-    "current_differentiation": "same format, different cluster",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/pool-chemical-levels-chart",
-    "page_b": "https://waterbalancetools.com/pool-ph-levels-chart",
-    "shared_intent": "chart hub (exhaustive pairwise)",
-    "page_a_type": "chart",
-    "page_b_type": "chart",
-    "similarity": 0.075,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/charts/pool-chemical-levels-chart",
-    "page_b": "https://waterbalancetools.com/pool-ph-levels-chart",
-    "shared_intent": "chart hub (exhaustive pairwise)",
-    "page_a_type": "chart",
-    "page_b_type": "chart",
-    "similarity": 0.074,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/charts/pool-water-balance-chart",
-    "page_b": "https://waterbalancetools.com/pool-chlorine-levels-chart",
-    "shared_intent": "chart hub (exhaustive pairwise)",
-    "page_a_type": "chart",
-    "page_b_type": "chart",
-    "similarity": 0.074,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
     "page_a": "https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator",
     "page_b": "https://waterbalancetools.com/guides/hot-tub/hot-tub-chlorine-too-high",
     "shared_intent": "hot tub chlorine",
@@ -1122,25 +1045,14 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/pool-chemical-levels-chart",
-    "page_b": "https://waterbalancetools.com/pool-chlorine-levels-chart",
-    "shared_intent": "chart hub (exhaustive pairwise)",
-    "page_a_type": "chart",
-    "page_b_type": "chart",
-    "similarity": 0.069,
-    "risk": "LOW",
-    "current_differentiation": "same format",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/charts/pool-chemical-levels-chart",
-    "page_b": "https://waterbalancetools.com/pool-chlorine-levels-chart",
-    "shared_intent": "chart hub (exhaustive pairwise)",
-    "page_a_type": "chart",
-    "page_b_type": "chart",
+    "page_a": "https://waterbalancetools.com/guides/ph/does-rain-lower-pool-ph",
+    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-to-7-4",
+    "shared_intent": "pool ph",
+    "page_a_type": "guide",
+    "page_b_type": "programmatic-longtail",
     "similarity": 0.068,
     "risk": "LOW",
-    "current_differentiation": "same format",
+    "current_differentiation": "different formats (guide vs programmatic-longtail)",
     "recommended_action": "KEEP SEPARATE"
   },
   {
@@ -1189,6 +1101,17 @@
   },
   {
     "page_a": "https://waterbalancetools.com/guides/ph-guide",
+    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4",
+    "shared_intent": "pool ph",
+    "page_a_type": "guide",
+    "page_b_type": "programmatic-longtail",
+    "similarity": 0.062,
+    "risk": "LOW",
+    "current_differentiation": "different formats (guide vs programmatic-longtail)",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/guides/ph-guide",
     "page_b": "https://waterbalancetools.com/guides/ph/does-rain-lower-pool-ph",
     "shared_intent": "pool ph",
     "page_a_type": "guide",
@@ -1199,14 +1122,47 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/guides/ph/does-rain-lower-pool-ph",
-    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-to-7-4",
+    "page_a": "https://waterbalancetools.com/guides/ph-guide",
+    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2",
     "shared_intent": "pool ph",
     "page_a_type": "guide",
     "page_b_type": "programmatic-longtail",
     "similarity": 0.061,
     "risk": "LOW",
     "current_differentiation": "different formats (guide vs programmatic-longtail)",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/guides/ph/does-rain-lower-pool-ph",
+    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4",
+    "shared_intent": "pool ph",
+    "page_a_type": "guide",
+    "page_b_type": "programmatic-longtail",
+    "similarity": 0.061,
+    "risk": "LOW",
+    "current_differentiation": "different formats (guide vs programmatic-longtail)",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/guides/ph/what-causes-high-pool-ph",
+    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-to-7-4",
+    "shared_intent": "pool ph",
+    "page_a_type": "guide",
+    "page_b_type": "programmatic-longtail",
+    "similarity": 0.06,
+    "risk": "LOW",
+    "current_differentiation": "different formats (guide vs programmatic-longtail)",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/charts/pool-water-balance-chart",
+    "page_b": "https://waterbalancetools.com/pool-ph-levels-chart",
+    "shared_intent": "chart hub (exhaustive pairwise)",
+    "page_a_type": "chart",
+    "page_b_type": "chart",
+    "similarity": 0.06,
+    "risk": "LOW",
+    "current_differentiation": "same format",
     "recommended_action": "KEEP SEPARATE"
   },
   {
@@ -1218,6 +1174,28 @@
     "similarity": 0.059,
     "risk": "LOW",
     "current_differentiation": "same format, different cluster",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/guides/ph-guide",
+    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-to-7-4",
+    "shared_intent": "pool ph",
+    "page_a_type": "guide",
+    "page_b_type": "programmatic-longtail",
+    "similarity": 0.059,
+    "risk": "LOW",
+    "current_differentiation": "different formats (guide vs programmatic-longtail)",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/guides/ph/does-rain-lower-pool-ph",
+    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2",
+    "shared_intent": "pool ph",
+    "page_a_type": "guide",
+    "page_b_type": "programmatic-longtail",
+    "similarity": 0.059,
+    "risk": "LOW",
+    "current_differentiation": "different formats (guide vs programmatic-longtail)",
     "recommended_action": "KEEP SEPARATE"
   },
   {
@@ -1232,155 +1210,34 @@
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
-    "page_b": "https://waterbalancetools.com/guides/ph-guide",
-    "shared_intent": "pool ph",
-    "page_a_type": "calculator",
-    "page_b_type": "guide",
-    "similarity": 0.057,
-    "risk": "LOW",
-    "current_differentiation": "different formats (calculator vs guide)",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
-    "page_b": "https://waterbalancetools.com/guides/chlorine/why-pool-chlorine-disappears-overnight",
-    "shared_intent": "pool chlorine",
-    "page_a_type": "calculator",
-    "page_b_type": "guide",
-    "similarity": 0.056,
-    "risk": "LOW",
-    "current_differentiation": "different formats (calculator vs guide)",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
-    "page_b": "https://waterbalancetools.com/guides/ph/what-causes-high-pool-ph",
-    "shared_intent": "pool ph",
-    "page_a_type": "calculator",
-    "page_b_type": "guide",
-    "similarity": 0.056,
-    "risk": "LOW",
-    "current_differentiation": "different formats (calculator vs guide)",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator",
-    "page_b": "https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons",
-    "shared_intent": "hot tub chemical",
-    "page_a_type": "calculator",
-    "page_b_type": "programmatic-longtail",
-    "similarity": 0.056,
-    "risk": "LOW",
-    "current_differentiation": "different formats (calculator vs programmatic-longtail)",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/guides/ph/does-rain-lower-pool-ph",
-    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4",
-    "shared_intent": "pool ph",
-    "page_a_type": "guide",
-    "page_b_type": "programmatic-longtail",
-    "similarity": 0.055,
-    "risk": "LOW",
-    "current_differentiation": "different formats (guide vs programmatic-longtail)",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/guides/ph-guide",
-    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4",
-    "shared_intent": "pool ph",
-    "page_a_type": "guide",
-    "page_b_type": "programmatic-longtail",
-    "similarity": 0.054,
-    "risk": "LOW",
-    "current_differentiation": "different formats (guide vs programmatic-longtail)",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/guides/ph/what-causes-high-pool-ph",
-    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-to-7-4",
-    "shared_intent": "pool ph",
-    "page_a_type": "guide",
-    "page_b_type": "programmatic-longtail",
-    "similarity": 0.054,
-    "risk": "LOW",
-    "current_differentiation": "different formats (guide vs programmatic-longtail)",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/guides/ph-guide",
-    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2",
-    "shared_intent": "pool ph",
-    "page_a_type": "guide",
-    "page_b_type": "programmatic-longtail",
-    "similarity": 0.053,
-    "risk": "LOW",
-    "current_differentiation": "different formats (guide vs programmatic-longtail)",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/guides/ph/does-rain-lower-pool-ph",
-    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2",
-    "shared_intent": "pool ph",
-    "page_a_type": "guide",
-    "page_b_type": "programmatic-longtail",
-    "similarity": 0.053,
-    "risk": "LOW",
-    "current_differentiation": "different formats (guide vs programmatic-longtail)",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
-    "page_b": "https://waterbalancetools.com/guides/chlorine-guide",
-    "shared_intent": "pool chlorine",
-    "page_a_type": "calculator",
-    "page_b_type": "guide",
-    "similarity": 0.052,
-    "risk": "LOW",
-    "current_differentiation": "different formats (calculator vs guide)",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
     "page_a": "https://waterbalancetools.com/guides/ph/why-pool-ph-keeps-rising",
     "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4",
     "shared_intent": "pool ph",
     "page_a_type": "guide",
     "page_b_type": "programmatic-longtail",
-    "similarity": 0.052,
+    "similarity": 0.057,
     "risk": "LOW",
     "current_differentiation": "different formats (guide vs programmatic-longtail)",
     "recommended_action": "KEEP SEPARATE"
   },
   {
-    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
-    "page_b": "https://waterbalancetools.com/guides/ph/does-rain-lower-pool-ph",
-    "shared_intent": "pool ph",
-    "page_a_type": "calculator",
-    "page_b_type": "guide",
-    "similarity": 0.051,
+    "page_a": "https://waterbalancetools.com/charts/pool-chemical-levels-chart",
+    "page_b": "https://waterbalancetools.com/pool-chemical-levels-chart",
+    "shared_intent": "pool chemical",
+    "page_a_type": "chart",
+    "page_b_type": "chart",
+    "similarity": 0.057,
     "risk": "LOW",
-    "current_differentiation": "different formats (calculator vs guide)",
+    "current_differentiation": "same format, different cluster",
     "recommended_action": "KEEP SEPARATE"
   },
   {
     "page_a": "https://waterbalancetools.com/guides/ph-guide",
-    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-to-7-4",
+    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-8-to-7-5",
     "shared_intent": "pool ph",
     "page_a_type": "guide",
     "page_b_type": "programmatic-longtail",
-    "similarity": 0.051,
-    "risk": "LOW",
-    "current_differentiation": "different formats (guide vs programmatic-longtail)",
-    "recommended_action": "KEEP SEPARATE"
-  },
-  {
-    "page_a": "https://waterbalancetools.com/guides/ph/how-to-lower-pool-ph",
-    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2",
-    "shared_intent": "pool ph",
-    "page_a_type": "guide",
-    "page_b_type": "programmatic-longtail",
-    "similarity": 0.051,
+    "similarity": 0.056,
     "risk": "LOW",
     "current_differentiation": "different formats (guide vs programmatic-longtail)",
     "recommended_action": "KEEP SEPARATE"
@@ -1391,7 +1248,18 @@
     "shared_intent": "pool ph",
     "page_a_type": "guide",
     "page_b_type": "programmatic-longtail",
-    "similarity": 0.05,
+    "similarity": 0.056,
+    "risk": "LOW",
+    "current_differentiation": "different formats (guide vs programmatic-longtail)",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/guides/ph/how-to-lower-pool-ph",
+    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2",
+    "shared_intent": "pool ph",
+    "page_a_type": "guide",
+    "page_b_type": "programmatic-longtail",
+    "similarity": 0.056,
     "risk": "LOW",
     "current_differentiation": "different formats (guide vs programmatic-longtail)",
     "recommended_action": "KEEP SEPARATE"
@@ -1402,9 +1270,75 @@
     "shared_intent": "pool ph",
     "page_a_type": "guide",
     "page_b_type": "programmatic-longtail",
-    "similarity": 0.05,
+    "similarity": 0.056,
     "risk": "LOW",
     "current_differentiation": "different formats (guide vs programmatic-longtail)",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/charts/pool-chemical-levels-chart",
+    "page_b": "https://waterbalancetools.com/pool-ph-levels-chart",
+    "shared_intent": "chart hub (exhaustive pairwise)",
+    "page_a_type": "chart",
+    "page_b_type": "chart",
+    "similarity": 0.056,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/charts/pool-water-balance-chart",
+    "page_b": "https://waterbalancetools.com/pool-chemical-levels-chart",
+    "shared_intent": "chart hub (exhaustive pairwise)",
+    "page_a_type": "chart",
+    "page_b_type": "chart",
+    "similarity": 0.056,
+    "risk": "LOW",
+    "current_differentiation": "same format",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/guides/ph/what-causes-high-pool-ph",
+    "page_b": "https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-8-to-7-5",
+    "shared_intent": "pool ph",
+    "page_a_type": "guide",
+    "page_b_type": "programmatic-longtail",
+    "similarity": 0.054,
+    "risk": "LOW",
+    "current_differentiation": "different formats (guide vs programmatic-longtail)",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+    "page_b": "https://waterbalancetools.com/guides/chlorine/why-pool-chlorine-disappears-overnight",
+    "shared_intent": "pool chlorine",
+    "page_a_type": "calculator",
+    "page_b_type": "guide",
+    "similarity": 0.053,
+    "risk": "LOW",
+    "current_differentiation": "different formats (calculator vs guide)",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+    "page_b": "https://waterbalancetools.com/guides/ph-guide",
+    "shared_intent": "pool ph",
+    "page_a_type": "calculator",
+    "page_b_type": "guide",
+    "similarity": 0.053,
+    "risk": "LOW",
+    "current_differentiation": "different formats (calculator vs guide)",
+    "recommended_action": "KEEP SEPARATE"
+  },
+  {
+    "page_a": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+    "page_b": "https://waterbalancetools.com/guides/ph/what-causes-high-pool-ph",
+    "shared_intent": "pool ph",
+    "page_a_type": "calculator",
+    "page_b_type": "guide",
+    "similarity": 0.053,
+    "risk": "LOW",
+    "current_differentiation": "different formats (calculator vs guide)",
     "recommended_action": "KEEP SEPARATE"
   },
   {
@@ -1424,7 +1358,7 @@
     "shared_intent": "water balance",
     "page_a_type": "academy-article",
     "page_b_type": "academy-article",
-    "similarity": 0.023,
+    "similarity": 0.022,
     "risk": "LOW",
     "current_differentiation": "same format, different cluster",
     "recommended_action": "KEEP SEPARATE"

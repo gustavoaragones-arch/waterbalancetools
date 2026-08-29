@@ -1,7 +1,7 @@
 # Crawl Review
 
-Generated: 2026-08-23T23:44:03.372Z
-Total pages scored: 521
+Generated: 2026-08-29T01:33:50.315Z
+Total pages scored: 522
 Top-tier pages: 23
 Low-priority pages: 150
 

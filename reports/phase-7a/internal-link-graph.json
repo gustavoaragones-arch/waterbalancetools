@@ -14,7 +14,7 @@
       "url": "https://waterbalancetools.com/about/",
       "page_type": "trust",
       "cluster": "about",
-      "inbound": 459,
+      "inbound": 462,
       "outbound": 25,
       "depth": 1
     },
@@ -86,8 +86,8 @@
       "url": "https://waterbalancetools.com/academy/fundamentals/how-temperature-changes-water-chemistry",
       "page_type": "academy-article",
       "cluster": "academy/fundamentals",
-      "inbound": 10,
-      "outbound": 34,
+      "inbound": 12,
+      "outbound": 36,
       "depth": 3
     },
     {
@@ -95,8 +95,8 @@
       "url": "https://waterbalancetools.com/academy/fundamentals/how-water-balance-works",
       "page_type": "academy-article",
       "cluster": "academy/fundamentals",
-      "inbound": 15,
-      "outbound": 36,
+      "inbound": 17,
+      "outbound": 38,
       "depth": 3
     },
     {
@@ -104,17 +104,35 @@
       "url": "https://waterbalancetools.com/academy/fundamentals/",
       "page_type": "academy-article",
       "cluster": "academy/fundamentals",
-      "inbound": 7,
-      "outbound": 28,
+      "inbound": 9,
+      "outbound": 30,
       "depth": 2
+    },
+    {
+      "id": "academy/fundamentals/indoor-pool-chemistry.html",
+      "url": "https://waterbalancetools.com/academy/fundamentals/indoor-pool-chemistry",
+      "page_type": "academy-article",
+      "cluster": "academy/fundamentals",
+      "inbound": 9,
+      "outbound": 38,
+      "depth": 3
+    },
+    {
+      "id": "academy/fundamentals/new-pool-startup-chemistry.html",
+      "url": "https://waterbalancetools.com/academy/fundamentals/new-pool-startup-chemistry",
+      "page_type": "academy-article",
+      "cluster": "academy/fundamentals",
+      "inbound": 9,
+      "outbound": 40,
+      "depth": 3
     },
     {
       "id": "academy/fundamentals/pool-vs-hot-tub-chemistry.html",
       "url": "https://waterbalancetools.com/academy/fundamentals/pool-vs-hot-tub-chemistry",
       "page_type": "academy-article",
       "cluster": "academy/fundamentals",
-      "inbound": 12,
-      "outbound": 36,
+      "inbound": 14,
+      "outbound": 38,
       "depth": 3
     },
     {
@@ -122,8 +140,8 @@
       "url": "https://waterbalancetools.com/academy/fundamentals/the-four-core-water-tests",
       "page_type": "academy-article",
       "cluster": "academy/fundamentals",
-      "inbound": 16,
-      "outbound": 38,
+      "inbound": 18,
+      "outbound": 40,
       "depth": 3
     },
     {
@@ -131,8 +149,8 @@
       "url": "https://waterbalancetools.com/academy/fundamentals/understanding-pool-water-chemistry",
       "page_type": "academy-article",
       "cluster": "academy/fundamentals",
-      "inbound": 17,
-      "outbound": 39,
+      "inbound": 19,
+      "outbound": 41,
       "depth": 3
     },
     {
@@ -140,8 +158,8 @@
       "url": "https://waterbalancetools.com/academy/fundamentals/why-water-testing-matters",
       "page_type": "academy-article",
       "cluster": "academy/fundamentals",
-      "inbound": 9,
-      "outbound": 33,
+      "inbound": 10,
+      "outbound": 35,
       "depth": 3
     },
     {
@@ -212,7 +230,7 @@
       "url": "https://waterbalancetools.com/academy/",
       "page_type": "academy-hub",
       "cluster": "academy",
-      "inbound": 459,
+      "inbound": 462,
       "outbound": 39,
       "depth": 1
     },
@@ -239,7 +257,7 @@
       "url": "https://waterbalancetools.com/academy/sanitizers/combined-chlorine-explained",
       "page_type": "academy-article",
       "cluster": "academy/sanitizers",
-      "inbound": 15,
+      "inbound": 16,
       "outbound": 34,
       "depth": 3
     },
@@ -348,7 +366,7 @@
       "page_type": "academy-article",
       "cluster": "academy/troubleshooting",
       "inbound": 12,
-      "outbound": 45,
+      "outbound": 46,
       "depth": 3
     },
     {
@@ -482,7 +500,7 @@
       "url": "https://waterbalancetools.com/academy/water-balance/understanding-calcium-hardness",
       "page_type": "academy-article",
       "cluster": "academy/water-balance",
-      "inbound": 17,
+      "inbound": 18,
       "outbound": 32,
       "depth": 3
     },
@@ -491,7 +509,7 @@
       "url": "https://waterbalancetools.com/academy/water-balance/understanding-cyanuric-acid",
       "page_type": "academy-article",
       "cluster": "academy/water-balance",
-      "inbound": 19,
+      "inbound": 20,
       "outbound": 34,
       "depth": 3
     },
@@ -509,7 +527,7 @@
       "url": "https://waterbalancetools.com/academy/water-balance/understanding-ph",
       "page_type": "academy-article",
       "cluster": "academy/water-balance",
-      "inbound": 23,
+      "inbound": 24,
       "outbound": 37,
       "depth": 3
     },
@@ -536,8 +554,8 @@
       "url": "https://waterbalancetools.com/all-pages",
       "page_type": "crawl-hub",
       "cluster": "root",
-      "inbound": 466,
-      "outbound": 185,
+      "inbound": 469,
+      "outbound": 187,
       "depth": 1
     },
     {
@@ -608,7 +626,7 @@
       "url": "https://waterbalancetools.com/calculators/chemical-calculator",
       "page_type": "calculator",
       "cluster": "calculators",
-      "inbound": 464,
+      "inbound": 467,
       "outbound": 71,
       "depth": 1
     },
@@ -653,7 +671,7 @@
       "url": "https://waterbalancetools.com/calculators/pool-alkalinity-calculator",
       "page_type": "calculator",
       "cluster": "calculators",
-      "inbound": 99,
+      "inbound": 100,
       "outbound": 60,
       "depth": 1
     },
@@ -662,7 +680,7 @@
       "url": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
       "page_type": "calculator",
       "cluster": "calculators",
-      "inbound": 468,
+      "inbound": 471,
       "outbound": 62,
       "depth": 1
     },
@@ -671,7 +689,7 @@
       "url": "https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator",
       "page_type": "calculator",
       "cluster": "calculators",
-      "inbound": 79,
+      "inbound": 80,
       "outbound": 61,
       "depth": 1
     },
@@ -680,7 +698,7 @@
       "url": "https://waterbalancetools.com/calculators/pool-ph-calculator",
       "page_type": "calculator",
       "cluster": "calculators",
-      "inbound": 467,
+      "inbound": 470,
       "outbound": 62,
       "depth": 1
     },
@@ -689,7 +707,7 @@
       "url": "https://waterbalancetools.com/calculators/pool-shock-calculator",
       "page_type": "calculator",
       "cluster": "calculators",
-      "inbound": 467,
+      "inbound": 470,
       "outbound": 63,
       "depth": 1
     },
@@ -707,7 +725,7 @@
       "url": "https://waterbalancetools.com/calculators/pool-volume-calculator",
       "page_type": "calculator",
       "cluster": "calculators",
-      "inbound": 466,
+      "inbound": 469,
       "outbound": 62,
       "depth": 1
     },
@@ -716,7 +734,7 @@
       "url": "https://waterbalancetools.com/calculators/saltwater-pool-salt-calculator",
       "page_type": "calculator",
       "cluster": "calculators",
-      "inbound": 32,
+      "inbound": 33,
       "outbound": 61,
       "depth": 2
     },
@@ -734,7 +752,7 @@
       "url": "https://waterbalancetools.com/calculators/volume-calculator",
       "page_type": "calculator",
       "cluster": "calculators",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 63,
       "depth": 2
     },
@@ -743,9 +761,9 @@
       "url": "https://waterbalancetools.com/charts/hot-tub-chemical-levels-chart",
       "page_type": "chart",
       "cluster": "charts",
-      "inbound": 3,
+      "inbound": 0,
       "outbound": 29,
-      "depth": 3
+      "depth": null
     },
     {
       "id": "charts/index.html",
@@ -761,9 +779,9 @@
       "url": "https://waterbalancetools.com/charts/pool-chemical-levels-chart",
       "page_type": "chart",
       "cluster": "charts",
-      "inbound": 8,
+      "inbound": 0,
       "outbound": 33,
-      "depth": 3
+      "depth": null
     },
     {
       "id": "charts/pool-water-balance-chart.html",
@@ -806,7 +824,7 @@
       "url": "https://waterbalancetools.com/comparisons/",
       "page_type": "comparison-hub",
       "cluster": "comparisons",
-      "inbound": 9,
+      "inbound": 8,
       "outbound": 74,
       "depth": 2
     },
@@ -2904,7 +2922,7 @@
       "page_type": "guide",
       "cluster": "guides",
       "inbound": 52,
-      "outbound": 44,
+      "outbound": 45,
       "depth": 2
     },
     {
@@ -2912,7 +2930,7 @@
       "url": "https://waterbalancetools.com/guides/chlorine/chlorine-too-high-after-shocking",
       "page_type": "guide",
       "cluster": "guides/chlorine",
-      "inbound": 12,
+      "inbound": 15,
       "outbound": 32,
       "depth": 2
     },
@@ -2948,7 +2966,7 @@
       "url": "https://waterbalancetools.com/guides/chlorine/why-pool-chlorine-disappears-overnight",
       "page_type": "guide",
       "cluster": "guides/chlorine",
-      "inbound": 14,
+      "inbound": 12,
       "outbound": 32,
       "depth": 2
     },
@@ -2959,6 +2977,15 @@
       "cluster": "guides/chlorine",
       "inbound": 13,
       "outbound": 32,
+      "depth": 2
+    },
+    {
+      "id": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+      "url": "https://waterbalancetools.com/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "page_type": "guide",
+      "cluster": "guides/edge-cases",
+      "inbound": 3,
+      "outbound": 31,
       "depth": 2
     },
     {
@@ -2975,8 +3002,8 @@
       "url": "https://waterbalancetools.com/guides/edge-cases/",
       "page_type": "guide",
       "cluster": "guides/edge-cases",
-      "inbound": 9,
-      "outbound": 69,
+      "inbound": 10,
+      "outbound": 72,
       "depth": 2
     },
     {
@@ -2984,7 +3011,7 @@
       "url": "https://waterbalancetools.com/guides/edge-cases/over-shocking-pool-effects",
       "page_type": "guide",
       "cluster": "guides/edge-cases",
-      "inbound": 11,
+      "inbound": 10,
       "outbound": 31,
       "depth": 2
     },
@@ -2993,7 +3020,7 @@
       "url": "https://waterbalancetools.com/guides/edge-cases/pool-temperature-effect-chlorine",
       "page_type": "guide",
       "cluster": "guides/edge-cases",
-      "inbound": 9,
+      "inbound": 10,
       "outbound": 31,
       "depth": 2
     },
@@ -3002,7 +3029,7 @@
       "url": "https://waterbalancetools.com/guides/edge-cases/rain-effect-on-pool-chemistry",
       "page_type": "guide",
       "cluster": "guides/edge-cases",
-      "inbound": 9,
+      "inbound": 7,
       "outbound": 31,
       "depth": 2
     },
@@ -3011,7 +3038,7 @@
       "url": "https://waterbalancetools.com/guides/edge-cases/swimming-after-shocking-pool",
       "page_type": "guide",
       "cluster": "guides/edge-cases",
-      "inbound": 8,
+      "inbound": 10,
       "outbound": 32,
       "depth": 2
     },
@@ -3056,7 +3083,7 @@
       "url": "https://waterbalancetools.com/guides/hot-tub/hot-tub-chlorine-too-low",
       "page_type": "guide",
       "cluster": "guides/hot-tub",
-      "inbound": 7,
+      "inbound": 5,
       "outbound": 31,
       "depth": 2
     },
@@ -3065,7 +3092,7 @@
       "url": "https://waterbalancetools.com/guides/hot-tub/hot-tub-ph-too-low",
       "page_type": "guide",
       "cluster": "guides/hot-tub",
-      "inbound": 9,
+      "inbound": 11,
       "outbound": 31,
       "depth": 2
     },
@@ -3092,7 +3119,7 @@
       "url": "https://waterbalancetools.com/guides/",
       "page_type": "guide-hub",
       "cluster": "guides",
-      "inbound": 48,
+      "inbound": 49,
       "outbound": 87,
       "depth": 2
     },
@@ -3110,7 +3137,7 @@
       "url": "https://waterbalancetools.com/guides/ph/can-you-swim-in-high-ph-water",
       "page_type": "guide",
       "cluster": "guides/ph",
-      "inbound": 29,
+      "inbound": 28,
       "outbound": 33,
       "depth": 2
     },
@@ -3155,7 +3182,7 @@
       "url": "https://waterbalancetools.com/guides/ph/why-pool-ph-keeps-rising",
       "page_type": "guide",
       "cluster": "guides/ph",
-      "inbound": 10,
+      "inbound": 11,
       "outbound": 33,
       "depth": 2
     },
@@ -3164,7 +3191,7 @@
       "url": "https://waterbalancetools.com/guides/pool-chemistry-basics",
       "page_type": "guide",
       "cluster": "guides",
-      "inbound": 466,
+      "inbound": 469,
       "outbound": 20,
       "depth": 1
     },
@@ -3254,8 +3281,8 @@
       "url": "https://waterbalancetools.com/guides/seasonal/opening-pool-chemistry-checklist",
       "page_type": "guide",
       "cluster": "guides/seasonal",
-      "inbound": 5,
-      "outbound": 34,
+      "inbound": 6,
+      "outbound": 35,
       "depth": 2
     },
     {
@@ -3281,7 +3308,7 @@
       "url": "https://waterbalancetools.com/hot-tub-chemical-levels-chart",
       "page_type": "chart",
       "cluster": "root",
-      "inbound": 10,
+      "inbound": 13,
       "outbound": 24,
       "depth": 2
     },
@@ -3299,7 +3326,7 @@
       "url": "https://waterbalancetools.com/",
       "page_type": "homepage",
       "cluster": "root",
-      "inbound": 495,
+      "inbound": 498,
       "outbound": 44,
       "depth": 0
     },
@@ -3317,7 +3344,7 @@
       "url": "https://waterbalancetools.com/legal/legal",
       "page_type": "legal",
       "cluster": "legal",
-      "inbound": 465,
+      "inbound": 468,
       "outbound": 19,
       "depth": 1
     },
@@ -3326,7 +3353,7 @@
       "url": "https://waterbalancetools.com/legal/ownership",
       "page_type": "legal",
       "cluster": "legal",
-      "inbound": 465,
+      "inbound": 468,
       "outbound": 19,
       "depth": 1
     },
@@ -3335,9 +3362,9 @@
       "url": "https://waterbalancetools.com/maintenance/how-often-add-chlorine-pool",
       "page_type": "maintenance-guide",
       "cluster": "maintenance",
-      "inbound": 2,
+      "inbound": 3,
       "outbound": 25,
-      "depth": 5
+      "depth": 3
     },
     {
       "id": "maintenance/how-to-balance-pool-water.html",
@@ -3353,9 +3380,9 @@
       "url": "https://waterbalancetools.com/maintenance/how-to-fix-cloudy-hot-tub",
       "page_type": "maintenance-guide",
       "cluster": "maintenance",
-      "inbound": 2,
+      "inbound": 3,
       "outbound": 26,
-      "depth": 5
+      "depth": 4
     },
     {
       "id": "maintenance/index.html",
@@ -3452,7 +3479,7 @@
       "url": "https://waterbalancetools.com/pool-chemical-levels-chart",
       "page_type": "chart",
       "cluster": "root",
-      "inbound": 466,
+      "inbound": 469,
       "outbound": 24,
       "depth": 1
     },
@@ -3506,7 +3533,7 @@
       "url": "https://waterbalancetools.com/printables/airbnb-pool-turnover-checklist",
       "page_type": "printable",
       "cluster": "printables",
-      "inbound": 1,
+      "inbound": 0,
       "outbound": 17,
       "depth": null
     },
@@ -3515,7 +3542,7 @@
       "url": "https://waterbalancetools.com/printables/hot-tub-maintenance-log",
       "page_type": "printable",
       "cluster": "printables",
-      "inbound": 1,
+      "inbound": 0,
       "outbound": 15,
       "depth": null
     },
@@ -3524,7 +3551,7 @@
       "url": "https://waterbalancetools.com/printables/pool-maintenance-checklist",
       "page_type": "printable",
       "cluster": "printables",
-      "inbound": 2,
+      "inbound": 0,
       "outbound": 17,
       "depth": null
     },
@@ -3668,7 +3695,7 @@
       "url": "https://waterbalancetools.com/programmatic/chlorine/",
       "page_type": "programmatic-subhub",
       "cluster": "programmatic/chlorine",
-      "inbound": 17,
+      "inbound": 16,
       "outbound": 80,
       "depth": 2
     },
@@ -3677,7 +3704,7 @@
       "url": "https://waterbalancetools.com/programmatic/explanations/",
       "page_type": "programmatic-subhub",
       "cluster": "programmatic/explanations",
-      "inbound": 10,
+      "inbound": 9,
       "outbound": 63,
       "depth": 2
     },
@@ -3704,7 +3731,7 @@
       "url": "https://waterbalancetools.com/programmatic/explanations/why-shower-before-pool",
       "page_type": "programmatic-longtail",
       "cluster": "programmatic/explanations",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 33,
       "depth": 2
     },
@@ -3758,7 +3785,7 @@
       "url": "https://waterbalancetools.com/programmatic/hot-tubs/",
       "page_type": "programmatic-subhub",
       "cluster": "programmatic/hot-tubs",
-      "inbound": 11,
+      "inbound": 10,
       "outbound": 69,
       "depth": 2
     },
@@ -3767,7 +3794,7 @@
       "url": "https://waterbalancetools.com/programmatic/",
       "page_type": "programmatic-hub",
       "cluster": "programmatic",
-      "inbound": 45,
+      "inbound": 44,
       "outbound": 78,
       "depth": 3
     },
@@ -3940,7 +3967,7 @@
       "cluster": "qa",
       "inbound": 3,
       "outbound": 0,
-      "depth": null
+      "depth": 4
     },
     {
       "id": "qa/index.html",
@@ -3949,7 +3976,7 @@
       "cluster": "qa",
       "inbound": 15,
       "outbound": 13,
-      "depth": null
+      "depth": 3
     },
     {
       "id": "reference/alkalinity-table.html",
@@ -4073,7 +4100,7 @@
       "url": "https://waterbalancetools.com/reference/datasets/chemical-properties/",
       "page_type": "dataset-page",
       "cluster": "reference/datasets",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 7,
       "depth": 3
     },
@@ -4082,7 +4109,7 @@
       "url": "https://waterbalancetools.com/reference/datasets/chemical-ranges/",
       "page_type": "dataset-page",
       "cluster": "reference/datasets",
-      "inbound": 21,
+      "inbound": 22,
       "outbound": 17,
       "depth": 2
     },
@@ -4091,7 +4118,7 @@
       "url": "https://waterbalancetools.com/reference/datasets/compatibility/",
       "page_type": "dataset-page",
       "cluster": "reference/datasets",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 7,
       "depth": 3
     },
@@ -4100,7 +4127,7 @@
       "url": "https://waterbalancetools.com/reference/datasets/confidence-levels/",
       "page_type": "dataset-page",
       "cluster": "reference/datasets",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 7,
       "depth": 3
     },
@@ -4280,7 +4307,7 @@
       "url": "https://waterbalancetools.com/reference/pool-chemical-timeline",
       "page_type": "reference-page",
       "cluster": "reference",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 20,
       "depth": 2
     },
@@ -4289,7 +4316,7 @@
       "url": "https://waterbalancetools.com/reference/pool-chemicals-explained",
       "page_type": "reference-page",
       "cluster": "reference",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 38,
       "depth": 2
     },
@@ -4298,7 +4325,7 @@
       "url": "https://waterbalancetools.com/reference/pool-chemistry-reference",
       "page_type": "reference-page",
       "cluster": "reference",
-      "inbound": 10,
+      "inbound": 11,
       "outbound": 57,
       "depth": 1
     },
@@ -4307,7 +4334,7 @@
       "url": "https://waterbalancetools.com/reference/pool-shape-guide",
       "page_type": "reference-page",
       "cluster": "reference",
-      "inbound": 4,
+      "inbound": 5,
       "outbound": 20,
       "depth": 2
     },
@@ -4316,7 +4343,7 @@
       "url": "https://waterbalancetools.com/reference/pool-volume-reference",
       "page_type": "reference-page",
       "cluster": "reference",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 21,
       "depth": 2
     },
@@ -4397,7 +4424,7 @@
       "url": "https://waterbalancetools.com/reference/total-alkalinity-explained",
       "page_type": "reference-page",
       "cluster": "reference",
-      "inbound": 24,
+      "inbound": 25,
       "outbound": 34,
       "depth": 2
     },
@@ -4435,7 +4462,7 @@
       "cluster": "releases",
       "inbound": 1,
       "outbound": 12,
-      "depth": null
+      "depth": 3
     },
     {
       "id": "releases/1.1.0.html",
@@ -4444,7 +4471,7 @@
       "cluster": "releases",
       "inbound": 1,
       "outbound": 12,
-      "depth": null
+      "depth": 3
     },
     {
       "id": "releases/compatibility.html",
@@ -4453,16 +4480,16 @@
       "cluster": "releases",
       "inbound": 3,
       "outbound": 3,
-      "depth": null
+      "depth": 3
     },
     {
       "id": "releases/index.html",
       "url": "https://waterbalancetools.com/releases/",
       "page_type": "release-notes",
       "cluster": "releases",
-      "inbound": 3,
+      "inbound": 4,
       "outbound": 14,
-      "depth": null
+      "depth": 2
     },
     {
       "id": "reports/accessibility.html",
@@ -4471,7 +4498,7 @@
       "cluster": "reports",
       "inbound": 1,
       "outbound": 1,
-      "depth": null
+      "depth": 4
     },
     {
       "id": "reports/ai-readiness.html",
@@ -4480,7 +4507,7 @@
       "cluster": "reports",
       "inbound": 1,
       "outbound": 1,
-      "depth": null
+      "depth": 4
     },
     {
       "id": "reports/architecture.html",
@@ -4489,7 +4516,7 @@
       "cluster": "reports",
       "inbound": 1,
       "outbound": 1,
-      "depth": null
+      "depth": 4
     },
     {
       "id": "reports/calculators.html",
@@ -4498,7 +4525,7 @@
       "cluster": "reports",
       "inbound": 1,
       "outbound": 1,
-      "depth": null
+      "depth": 4
     },
     {
       "id": "reports/content.html",
@@ -4507,7 +4534,7 @@
       "cluster": "reports",
       "inbound": 1,
       "outbound": 1,
-      "depth": null
+      "depth": 4
     },
     {
       "id": "reports/datasets.html",
@@ -4516,7 +4543,7 @@
       "cluster": "reports",
       "inbound": 1,
       "outbound": 1,
-      "depth": null
+      "depth": 4
     },
     {
       "id": "reports/entities.html",
@@ -4525,7 +4552,7 @@
       "cluster": "reports",
       "inbound": 1,
       "outbound": 1,
-      "depth": null
+      "depth": 4
     },
     {
       "id": "reports/indexing-intelligence.html",
@@ -4534,7 +4561,7 @@
       "cluster": "reports",
       "inbound": 1,
       "outbound": 1,
-      "depth": null
+      "depth": 4
     },
     {
       "id": "reports/links.html",
@@ -4543,7 +4570,7 @@
       "cluster": "reports",
       "inbound": 1,
       "outbound": 1,
-      "depth": null
+      "depth": 4
     },
     {
       "id": "reports/mobile.html",
@@ -4552,7 +4579,7 @@
       "cluster": "reports",
       "inbound": 1,
       "outbound": 1,
-      "depth": null
+      "depth": 4
     },
     {
       "id": "reports/performance.html",
@@ -4561,7 +4588,7 @@
       "cluster": "reports",
       "inbound": 1,
       "outbound": 1,
-      "depth": null
+      "depth": 4
     },
     {
       "id": "reports/schema.html",
@@ -4570,7 +4597,7 @@
       "cluster": "reports",
       "inbound": 1,
       "outbound": 1,
-      "depth": null
+      "depth": 4
     },
     {
       "id": "reports/seo.html",
@@ -4579,14 +4606,14 @@
       "cluster": "reports",
       "inbound": 1,
       "outbound": 1,
-      "depth": null
+      "depth": 4
     },
     {
       "id": "resources/airbnb-pool-turnover-checklist.html",
       "url": "https://waterbalancetools.com/resources/airbnb-pool-turnover-checklist",
       "page_type": "resource",
       "cluster": "resources",
-      "inbound": 43,
+      "inbound": 44,
       "outbound": 27,
       "depth": 1
     },
@@ -4595,7 +4622,7 @@
       "url": "https://waterbalancetools.com/resources/hot-tub-maintenance-log",
       "page_type": "resource",
       "cluster": "resources",
-      "inbound": 50,
+      "inbound": 51,
       "outbound": 27,
       "depth": 1
     },
@@ -4604,7 +4631,7 @@
       "url": "https://waterbalancetools.com/resources/",
       "page_type": "resource-hub",
       "cluster": "resources",
-      "inbound": 459,
+      "inbound": 462,
       "outbound": 39,
       "depth": 1
     },
@@ -4631,7 +4658,7 @@
       "url": "https://waterbalancetools.com/resources/pool-maintenance-checklist",
       "page_type": "resource",
       "cluster": "resources",
-      "inbound": 73,
+      "inbound": 75,
       "outbound": 27,
       "depth": 1
     },
@@ -4658,7 +4685,7 @@
       "url": "https://waterbalancetools.com/resources/water-test-log",
       "page_type": "resource",
       "cluster": "resources",
-      "inbound": 48,
+      "inbound": 50,
       "outbound": 27,
       "depth": 1
     },
@@ -4685,7 +4712,7 @@
       "url": "https://waterbalancetools.com/search/",
       "page_type": "utility",
       "cluster": "search",
-      "inbound": 459,
+      "inbound": 462,
       "outbound": 18,
       "depth": 1
     },
@@ -4745,6 +4772,14 @@
       "to": "about/index.html"
     },
     {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "about/index.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
+      "to": "about/index.html"
+    },
+    {
       "from": "academy/fundamentals/pool-vs-hot-tub-chemistry.html",
       "to": "about/index.html"
     },
@@ -5961,6 +5996,10 @@
       "to": "about/index.html"
     },
     {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+      "to": "about/index.html"
+    },
+    {
       "from": "guides/edge-cases/high-cya-chlorine-lock.html",
       "to": "about/index.html"
     },
@@ -6873,6 +6912,14 @@
       "to": "academy/fundamentals/how-temperature-changes-water-chemistry.html"
     },
     {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "academy/fundamentals/how-temperature-changes-water-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
+      "to": "academy/fundamentals/how-temperature-changes-water-chemistry.html"
+    },
+    {
       "from": "academy/fundamentals/pool-vs-hot-tub-chemistry.html",
       "to": "academy/fundamentals/how-temperature-changes-water-chemistry.html"
     },
@@ -6910,6 +6957,14 @@
     },
     {
       "from": "academy/fundamentals/index.html",
+      "to": "academy/fundamentals/how-water-balance-works.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "academy/fundamentals/how-water-balance-works.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
       "to": "academy/fundamentals/how-water-balance-works.html"
     },
     {
@@ -6973,6 +7028,14 @@
       "to": "academy/fundamentals/index.html"
     },
     {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "academy/fundamentals/index.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
+      "to": "academy/fundamentals/index.html"
+    },
+    {
       "from": "academy/fundamentals/pool-vs-hot-tub-chemistry.html",
       "to": "academy/fundamentals/index.html"
     },
@@ -6994,6 +7057,78 @@
     },
     {
       "from": "academy/fundamentals/how-temperature-changes-water-chemistry.html",
+      "to": "academy/fundamentals/indoor-pool-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/how-water-balance-works.html",
+      "to": "academy/fundamentals/indoor-pool-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/index.html",
+      "to": "academy/fundamentals/indoor-pool-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
+      "to": "academy/fundamentals/indoor-pool-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/pool-vs-hot-tub-chemistry.html",
+      "to": "academy/fundamentals/indoor-pool-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/the-four-core-water-tests.html",
+      "to": "academy/fundamentals/indoor-pool-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/understanding-pool-water-chemistry.html",
+      "to": "academy/fundamentals/indoor-pool-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/why-water-testing-matters.html",
+      "to": "academy/fundamentals/indoor-pool-chemistry.html"
+    },
+    {
+      "from": "entities/maintenance-checklist.html",
+      "to": "academy/fundamentals/indoor-pool-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/how-temperature-changes-water-chemistry.html",
+      "to": "academy/fundamentals/new-pool-startup-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/how-water-balance-works.html",
+      "to": "academy/fundamentals/new-pool-startup-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/index.html",
+      "to": "academy/fundamentals/new-pool-startup-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "academy/fundamentals/new-pool-startup-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/pool-vs-hot-tub-chemistry.html",
+      "to": "academy/fundamentals/new-pool-startup-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/the-four-core-water-tests.html",
+      "to": "academy/fundamentals/new-pool-startup-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/understanding-pool-water-chemistry.html",
+      "to": "academy/fundamentals/new-pool-startup-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/why-water-testing-matters.html",
+      "to": "academy/fundamentals/new-pool-startup-chemistry.html"
+    },
+    {
+      "from": "guides/seasonal/opening-pool-chemistry-checklist.html",
+      "to": "academy/fundamentals/new-pool-startup-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/how-temperature-changes-water-chemistry.html",
       "to": "academy/fundamentals/pool-vs-hot-tub-chemistry.html"
     },
     {
@@ -7002,6 +7137,14 @@
     },
     {
       "from": "academy/fundamentals/index.html",
+      "to": "academy/fundamentals/pool-vs-hot-tub-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "academy/fundamentals/pool-vs-hot-tub-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
       "to": "academy/fundamentals/pool-vs-hot-tub-chemistry.html"
     },
     {
@@ -7050,6 +7193,14 @@
     },
     {
       "from": "academy/fundamentals/index.html",
+      "to": "academy/fundamentals/the-four-core-water-tests.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "academy/fundamentals/the-four-core-water-tests.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
       "to": "academy/fundamentals/the-four-core-water-tests.html"
     },
     {
@@ -7114,6 +7265,14 @@
     },
     {
       "from": "academy/fundamentals/index.html",
+      "to": "academy/fundamentals/understanding-pool-water-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "academy/fundamentals/understanding-pool-water-chemistry.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
       "to": "academy/fundamentals/understanding-pool-water-chemistry.html"
     },
     {
@@ -7185,6 +7344,14 @@
       "to": "academy/fundamentals/why-water-testing-matters.html"
     },
     {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "academy/fundamentals/why-water-testing-matters.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
+      "to": "academy/fundamentals/why-water-testing-matters.html"
+    },
+    {
       "from": "academy/fundamentals/pool-vs-hot-tub-chemistry.html",
       "to": "academy/fundamentals/why-water-testing-matters.html"
     },
@@ -7198,10 +7365,6 @@
     },
     {
       "from": "academy/testing/how-often-to-test-water.html",
-      "to": "academy/fundamentals/why-water-testing-matters.html"
-    },
-    {
-      "from": "entities/maintenance-checklist.html",
       "to": "academy/fundamentals/why-water-testing-matters.html"
     },
     {
@@ -7542,6 +7705,14 @@
     },
     {
       "from": "academy/fundamentals/index.html",
+      "to": "academy/index.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "academy/index.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
       "to": "academy/index.html"
     },
     {
@@ -8757,6 +8928,10 @@
       "to": "academy/index.html"
     },
     {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+      "to": "academy/index.html"
+    },
+    {
       "from": "guides/edge-cases/high-cya-chlorine-lock.html",
       "to": "academy/index.html"
     },
@@ -9443,6 +9618,10 @@
     {
       "from": "glossary/sanitizer.html",
       "to": "academy/sanitizers/bromine-vs-chlorine.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "academy/sanitizers/combined-chlorine-explained.html"
     },
     {
       "from": "academy/sanitizers/breakpoint-chlorination.html",
@@ -10713,6 +10892,10 @@
       "to": "academy/water-balance/understanding-calcium-hardness.html"
     },
     {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
+      "to": "academy/water-balance/understanding-calcium-hardness.html"
+    },
+    {
       "from": "academy/fundamentals/the-four-core-water-tests.html",
       "to": "academy/water-balance/understanding-calcium-hardness.html"
     },
@@ -10782,6 +10965,10 @@
     },
     {
       "from": "academy/equipment/salt-systems.html",
+      "to": "academy/water-balance/understanding-cyanuric-acid.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
       "to": "academy/water-balance/understanding-cyanuric-acid.html"
     },
     {
@@ -10922,6 +11109,10 @@
     },
     {
       "from": "academy/equipment/salt-systems.html",
+      "to": "academy/water-balance/understanding-ph.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
       "to": "academy/water-balance/understanding-ph.html"
     },
     {
@@ -11182,6 +11373,14 @@
     },
     {
       "from": "academy/fundamentals/index.html",
+      "to": "all-pages.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "all-pages.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
       "to": "all-pages.html"
     },
     {
@@ -12394,6 +12593,10 @@
     },
     {
       "from": "guides/chlorine/why-pool-wont-hold-chlorine.html",
+      "to": "all-pages.html"
+    },
+    {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
       "to": "all-pages.html"
     },
     {
@@ -13073,6 +13276,14 @@
       "to": "calculators/chemical-calculator.html"
     },
     {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "calculators/chemical-calculator.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
+      "to": "calculators/chemical-calculator.html"
+    },
+    {
       "from": "academy/fundamentals/pool-vs-hot-tub-chemistry.html",
       "to": "calculators/chemical-calculator.html"
     },
@@ -14282,6 +14493,10 @@
     },
     {
       "from": "guides/chlorine/why-pool-wont-hold-chlorine.html",
+      "to": "calculators/chemical-calculator.html"
+    },
+    {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
       "to": "calculators/chemical-calculator.html"
     },
     {
@@ -15977,6 +16192,10 @@
       "to": "calculators/pool-alkalinity-calculator.html"
     },
     {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
+      "to": "calculators/pool-alkalinity-calculator.html"
+    },
+    {
       "from": "academy/fundamentals/the-four-core-water-tests.html",
       "to": "calculators/pool-alkalinity-calculator.html"
     },
@@ -16410,6 +16629,14 @@
     },
     {
       "from": "academy/fundamentals/index.html",
+      "to": "calculators/pool-chlorine-calculator.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "calculators/pool-chlorine-calculator.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
       "to": "calculators/pool-chlorine-calculator.html"
     },
     {
@@ -17622,6 +17849,10 @@
     },
     {
       "from": "guides/chlorine/why-pool-wont-hold-chlorine.html",
+      "to": "calculators/pool-chlorine-calculator.html"
+    },
+    {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
       "to": "calculators/pool-chlorine-calculator.html"
     },
     {
@@ -18377,6 +18608,10 @@
       "to": "calculators/pool-cyanuric-acid-calculator.html"
     },
     {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+      "to": "calculators/pool-cyanuric-acid-calculator.html"
+    },
+    {
       "from": "guides/edge-cases/high-cya-chlorine-lock.html",
       "to": "calculators/pool-cyanuric-acid-calculator.html"
     },
@@ -18598,6 +18833,14 @@
     },
     {
       "from": "academy/fundamentals/index.html",
+      "to": "calculators/pool-ph-calculator.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "calculators/pool-ph-calculator.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
       "to": "calculators/pool-ph-calculator.html"
     },
     {
@@ -19813,6 +20056,10 @@
       "to": "calculators/pool-ph-calculator.html"
     },
     {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+      "to": "calculators/pool-ph-calculator.html"
+    },
+    {
       "from": "guides/edge-cases/high-cya-chlorine-lock.html",
       "to": "calculators/pool-ph-calculator.html"
     },
@@ -20466,6 +20713,14 @@
     },
     {
       "from": "academy/fundamentals/index.html",
+      "to": "calculators/pool-shock-calculator.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "calculators/pool-shock-calculator.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
       "to": "calculators/pool-shock-calculator.html"
     },
     {
@@ -21678,6 +21933,10 @@
     },
     {
       "from": "guides/chlorine/why-pool-wont-hold-chlorine.html",
+      "to": "calculators/pool-shock-calculator.html"
+    },
+    {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
       "to": "calculators/pool-shock-calculator.html"
     },
     {
@@ -22469,6 +22728,14 @@
       "to": "calculators/pool-volume-calculator.html"
     },
     {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "calculators/pool-volume-calculator.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
+      "to": "calculators/pool-volume-calculator.html"
+    },
+    {
       "from": "academy/fundamentals/pool-vs-hot-tub-chemistry.html",
       "to": "calculators/pool-volume-calculator.html"
     },
@@ -23681,6 +23948,10 @@
       "to": "calculators/pool-volume-calculator.html"
     },
     {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+      "to": "calculators/pool-volume-calculator.html"
+    },
+    {
       "from": "guides/edge-cases/high-cya-chlorine-lock.html",
       "to": "calculators/pool-volume-calculator.html"
     },
@@ -24389,6 +24660,10 @@
       "to": "calculators/saltwater-pool-salt-calculator.html"
     },
     {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+      "to": "calculators/saltwater-pool-salt-calculator.html"
+    },
+    {
       "from": "pool-chemistry-system.html",
       "to": "calculators/saltwater-pool-salt-calculator.html"
     },
@@ -24533,22 +24808,6 @@
       "to": "calculators/volume-calculator.html"
     },
     {
-      "from": "printable/maintenance-checklist.html",
-      "to": "calculators/volume-calculator.html"
-    },
-    {
-      "from": "comparisons/chlorine-vs-bromine-hot-tub.html",
-      "to": "charts/hot-tub-chemical-levels-chart.html"
-    },
-    {
-      "from": "maintenance/how-to-fix-cloudy-hot-tub.html",
-      "to": "charts/hot-tub-chemical-levels-chart.html"
-    },
-    {
-      "from": "printables/hot-tub-maintenance-log.html",
-      "to": "charts/hot-tub-chemical-levels-chart.html"
-    },
-    {
       "from": "charts/hot-tub-chemical-levels-chart.html",
       "to": "charts/index.html"
     },
@@ -24559,38 +24818,6 @@
     {
       "from": "charts/pool-water-balance-chart.html",
       "to": "charts/index.html"
-    },
-    {
-      "from": "charts/pool-water-balance-chart.html",
-      "to": "charts/pool-chemical-levels-chart.html"
-    },
-    {
-      "from": "comparisons/saltwater-pool-vs-chlorine.html",
-      "to": "charts/pool-chemical-levels-chart.html"
-    },
-    {
-      "from": "maintenance/how-often-add-chlorine-pool.html",
-      "to": "charts/pool-chemical-levels-chart.html"
-    },
-    {
-      "from": "maintenance/how-to-balance-pool-water.html",
-      "to": "charts/pool-chemical-levels-chart.html"
-    },
-    {
-      "from": "printables/airbnb-pool-turnover-checklist.html",
-      "to": "charts/pool-chemical-levels-chart.html"
-    },
-    {
-      "from": "printables/pool-maintenance-checklist.html",
-      "to": "charts/pool-chemical-levels-chart.html"
-    },
-    {
-      "from": "reference/common-pool-chemistry-mistakes.html",
-      "to": "charts/pool-chemical-levels-chart.html"
-    },
-    {
-      "from": "reference/pool-chemicals-explained.html",
-      "to": "charts/pool-chemical-levels-chart.html"
     },
     {
       "from": "charts/index.html",
@@ -24766,10 +24993,6 @@
     },
     {
       "from": "comparisons/saltwater-pool-vs-chlorine.html",
-      "to": "comparisons/index.html"
-    },
-    {
-      "from": "programmatic/explanations/why-shower-before-pool.html",
       "to": "comparisons/index.html"
     },
     {
@@ -32365,7 +32588,19 @@
       "to": "guides/chlorine/chlorine-too-high-after-shocking.html"
     },
     {
-      "from": "programmatic/explanations/why-ph-affects-chlorine.html",
+      "from": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
+      "to": "guides/chlorine/chlorine-too-high-after-shocking.html"
+    },
+    {
+      "from": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
+      "to": "guides/chlorine/chlorine-too-high-after-shocking.html"
+    },
+    {
+      "from": "programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html",
+      "to": "guides/chlorine/chlorine-too-high-after-shocking.html"
+    },
+    {
+      "from": "programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons.html",
       "to": "guides/chlorine/chlorine-too-high-after-shocking.html"
     },
     {
@@ -32485,7 +32720,7 @@
       "to": "guides/chlorine/how-often-should-i-shock-my-pool.html"
     },
     {
-      "from": "programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons.html",
+      "from": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
       "to": "guides/chlorine/how-often-should-i-shock-my-pool.html"
     },
     {
@@ -32601,19 +32836,11 @@
       "to": "guides/chlorine/why-pool-chlorine-disappears-overnight.html"
     },
     {
-      "from": "programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html",
-      "to": "guides/chlorine/why-pool-chlorine-disappears-overnight.html"
-    },
-    {
-      "from": "programmatic/problems/high-chlorine-how-to-lower.html",
-      "to": "guides/chlorine/why-pool-chlorine-disappears-overnight.html"
-    },
-    {
-      "from": "programmatic/shock/how-much-shock-for-10000-gallon-pool.html",
-      "to": "guides/chlorine/why-pool-chlorine-disappears-overnight.html"
-    },
-    {
       "from": "programmatic/shock/how-much-shock-for-15000-gallon-pool.html",
+      "to": "guides/chlorine/why-pool-chlorine-disappears-overnight.html"
+    },
+    {
+      "from": "programmatic/shock/how-much-shock-for-20000-gallon-pool.html",
       "to": "guides/chlorine/why-pool-chlorine-disappears-overnight.html"
     },
     {
@@ -32686,6 +32913,18 @@
     },
     {
       "from": "all-pages.html",
+      "to": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html"
+    },
+    {
+      "from": "guides/edge-cases/index.html",
+      "to": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html"
+    },
+    {
+      "from": "programmatic/explanations/why-shower-before-pool.html",
+      "to": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html"
+    },
+    {
+      "from": "all-pages.html",
       "to": "guides/edge-cases/high-cya-chlorine-lock.html"
     },
     {
@@ -32717,23 +32956,23 @@
       "to": "guides/edge-cases/high-cya-chlorine-lock.html"
     },
     {
+      "from": "programmatic/behavior/how-often-to-test-pool-water.html",
+      "to": "guides/edge-cases/high-cya-chlorine-lock.html"
+    },
+    {
       "from": "programmatic/behavior/when-to-add-chlorine.html",
       "to": "guides/edge-cases/high-cya-chlorine-lock.html"
     },
     {
-      "from": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
+      "from": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
       "to": "guides/edge-cases/high-cya-chlorine-lock.html"
     },
     {
-      "from": "programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html",
+      "from": "programmatic/ph/how-to-adjust-ph-from-7-to-7-4.html",
       "to": "guides/edge-cases/high-cya-chlorine-lock.html"
     },
     {
-      "from": "programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html",
-      "to": "guides/edge-cases/high-cya-chlorine-lock.html"
-    },
-    {
-      "from": "programmatic/shock/how-much-shock-for-20000-gallon-pool.html",
+      "from": "programmatic/problems/low-alkalinity-symptoms.html",
       "to": "guides/edge-cases/high-cya-chlorine-lock.html"
     },
     {
@@ -32754,6 +32993,10 @@
     },
     {
       "from": "all-pages.html",
+      "to": "guides/edge-cases/index.html"
+    },
+    {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
       "to": "guides/edge-cases/index.html"
     },
     {
@@ -32813,15 +33056,11 @@
       "to": "guides/edge-cases/over-shocking-pool-effects.html"
     },
     {
+      "from": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
+      "to": "guides/edge-cases/over-shocking-pool-effects.html"
+    },
+    {
       "from": "programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons.html",
-      "to": "guides/edge-cases/over-shocking-pool-effects.html"
-    },
-    {
-      "from": "programmatic/problems/green-pool-how-much-chlorine.html",
-      "to": "guides/edge-cases/over-shocking-pool-effects.html"
-    },
-    {
-      "from": "programmatic/shock/how-much-shock-for-30000-gallon-pool.html",
       "to": "guides/edge-cases/over-shocking-pool-effects.html"
     },
     {
@@ -32857,11 +33096,15 @@
       "to": "guides/edge-cases/pool-temperature-effect-chlorine.html"
     },
     {
-      "from": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
+      "from": "programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html",
       "to": "guides/edge-cases/pool-temperature-effect-chlorine.html"
     },
     {
-      "from": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
+      "from": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
+      "to": "guides/edge-cases/pool-temperature-effect-chlorine.html"
+    },
+    {
+      "from": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
       "to": "guides/edge-cases/pool-temperature-effect-chlorine.html"
     },
     {
@@ -32889,19 +33132,11 @@
       "to": "guides/edge-cases/rain-effect-on-pool-chemistry.html"
     },
     {
-      "from": "programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons.html",
-      "to": "guides/edge-cases/rain-effect-on-pool-chemistry.html"
-    },
-    {
-      "from": "programmatic/problems/low-alkalinity-symptoms.html",
+      "from": "programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html",
       "to": "guides/edge-cases/rain-effect-on-pool-chemistry.html"
     },
     {
       "from": "programmatic/shock/how-much-shock-for-25000-gallon-pool.html",
-      "to": "guides/edge-cases/rain-effect-on-pool-chemistry.html"
-    },
-    {
-      "from": "programmatic/shock/how-much-shock-for-5000-gallon-pool.html",
       "to": "guides/edge-cases/rain-effect-on-pool-chemistry.html"
     },
     {
@@ -32921,15 +33156,23 @@
       "to": "guides/edge-cases/swimming-after-shocking-pool.html"
     },
     {
-      "from": "programmatic/behavior/how-often-to-shock-pool.html",
-      "to": "guides/edge-cases/swimming-after-shocking-pool.html"
-    },
-    {
       "from": "programmatic/behavior/when-to-add-chlorine.html",
       "to": "guides/edge-cases/swimming-after-shocking-pool.html"
     },
     {
+      "from": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
+      "to": "guides/edge-cases/swimming-after-shocking-pool.html"
+    },
+    {
+      "from": "programmatic/explanations/why-shower-before-pool.html",
+      "to": "guides/edge-cases/swimming-after-shocking-pool.html"
+    },
+    {
       "from": "programmatic/problems/cloudy-pool-fix.html",
+      "to": "guides/edge-cases/swimming-after-shocking-pool.html"
+    },
+    {
+      "from": "programmatic/shock/how-much-shock-for-10000-gallon-pool.html",
       "to": "guides/edge-cases/swimming-after-shocking-pool.html"
     },
     {
@@ -33097,11 +33340,11 @@
       "to": "guides/hot-tub/hot-tub-chlorine-too-high.html"
     },
     {
-      "from": "programmatic/behavior/how-often-to-test-pool-water.html",
+      "from": "programmatic/behavior/when-to-add-chlorine.html",
       "to": "guides/hot-tub/hot-tub-chlorine-too-high.html"
     },
     {
-      "from": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
+      "from": "programmatic/explanations/why-ph-affects-chlorine.html",
       "to": "guides/hot-tub/hot-tub-chlorine-too-high.html"
     },
     {
@@ -33121,15 +33364,7 @@
       "to": "guides/hot-tub/hot-tub-chlorine-too-low.html"
     },
     {
-      "from": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
-      "to": "guides/hot-tub/hot-tub-chlorine-too-low.html"
-    },
-    {
-      "from": "programmatic/explanations/why-shower-before-pool.html",
-      "to": "guides/hot-tub/hot-tub-chlorine-too-low.html"
-    },
-    {
-      "from": "programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4.html",
+      "from": "programmatic/problems/green-pool-how-much-chlorine.html",
       "to": "guides/hot-tub/hot-tub-chlorine-too-low.html"
     },
     {
@@ -33157,7 +33392,7 @@
       "to": "guides/hot-tub/hot-tub-ph-too-low.html"
     },
     {
-      "from": "programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html",
+      "from": "programmatic/explanations/what-is-pool-alkalinity.html",
       "to": "guides/hot-tub/hot-tub-ph-too-low.html"
     },
     {
@@ -33165,7 +33400,15 @@
       "to": "guides/hot-tub/hot-tub-ph-too-low.html"
     },
     {
-      "from": "programmatic/ph/how-to-adjust-ph-from-7-to-7-4.html",
+      "from": "programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons.html",
+      "to": "guides/hot-tub/hot-tub-ph-too-low.html"
+    },
+    {
+      "from": "programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4.html",
+      "to": "guides/hot-tub/hot-tub-ph-too-low.html"
+    },
+    {
+      "from": "programmatic/shock/how-much-shock-for-15000-gallon-pool.html",
       "to": "guides/hot-tub/hot-tub-ph-too-low.html"
     },
     {
@@ -33322,6 +33565,10 @@
     },
     {
       "from": "guides/chlorine/why-pool-wont-hold-chlorine.html",
+      "to": "guides/index.html"
+    },
+    {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
       "to": "guides/index.html"
     },
     {
@@ -33601,10 +33848,6 @@
       "to": "guides/ph/can-you-swim-in-high-ph-water.html"
     },
     {
-      "from": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
-      "to": "guides/ph/can-you-swim-in-high-ph-water.html"
-    },
-    {
       "from": "programmatic/explanations/why-shower-before-pool.html",
       "to": "guides/ph/can-you-swim-in-high-ph-water.html"
     },
@@ -33669,6 +33912,10 @@
       "to": "guides/ph/does-rain-lower-pool-ph.html"
     },
     {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+      "to": "guides/ph/does-rain-lower-pool-ph.html"
+    },
+    {
       "from": "guides/edge-cases/over-shocking-pool-effects.html",
       "to": "guides/ph/does-rain-lower-pool-ph.html"
     },
@@ -33689,15 +33936,7 @@
       "to": "guides/ph/does-rain-lower-pool-ph.html"
     },
     {
-      "from": "programmatic/behavior/when-to-add-chlorine.html",
-      "to": "guides/ph/does-rain-lower-pool-ph.html"
-    },
-    {
       "from": "programmatic/explanations/what-is-pool-alkalinity.html",
-      "to": "guides/ph/does-rain-lower-pool-ph.html"
-    },
-    {
-      "from": "programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons.html",
       "to": "guides/ph/does-rain-lower-pool-ph.html"
     },
     {
@@ -33706,6 +33945,10 @@
     },
     {
       "from": "programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html",
+      "to": "guides/ph/does-rain-lower-pool-ph.html"
+    },
+    {
+      "from": "programmatic/problems/high-chlorine-how-to-lower.html",
       "to": "guides/ph/does-rain-lower-pool-ph.html"
     },
     {
@@ -33849,15 +34092,19 @@
       "to": "guides/ph/why-pool-ph-keeps-rising.html"
     },
     {
-      "from": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
+      "from": "programmatic/behavior/how-often-to-shock-pool.html",
       "to": "guides/ph/why-pool-ph-keeps-rising.html"
     },
     {
-      "from": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
+      "from": "programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons.html",
       "to": "guides/ph/why-pool-ph-keeps-rising.html"
     },
     {
       "from": "programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2.html",
+      "to": "guides/ph/why-pool-ph-keeps-rising.html"
+    },
+    {
+      "from": "programmatic/shock/how-much-shock-for-30000-gallon-pool.html",
       "to": "guides/ph/why-pool-ph-keeps-rising.html"
     },
     {
@@ -33910,6 +34157,14 @@
     },
     {
       "from": "academy/fundamentals/index.html",
+      "to": "guides/pool-chemistry-basics.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "guides/pool-chemistry-basics.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
       "to": "guides/pool-chemistry-basics.html"
     },
     {
@@ -35129,6 +35384,10 @@
       "to": "guides/pool-chemistry-basics.html"
     },
     {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+      "to": "guides/pool-chemistry-basics.html"
+    },
+    {
       "from": "guides/edge-cases/high-cya-chlorine-lock.html",
       "to": "guides/pool-chemistry-basics.html"
     },
@@ -35953,6 +36212,10 @@
       "to": "guides/seasonal/index.html"
     },
     {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
+      "to": "guides/seasonal/opening-pool-chemistry-checklist.html"
+    },
+    {
       "from": "all-pages.html",
       "to": "guides/seasonal/opening-pool-chemistry-checklist.html"
     },
@@ -36029,6 +36292,10 @@
       "to": "hot-tub-chemical-levels-chart.html"
     },
     {
+      "from": "comparisons/chlorine-vs-bromine-hot-tub.html",
+      "to": "hot-tub-chemical-levels-chart.html"
+    },
+    {
       "from": "entities/bromine.html",
       "to": "hot-tub-chemical-levels-chart.html"
     },
@@ -36053,7 +36320,15 @@
       "to": "hot-tub-chemical-levels-chart.html"
     },
     {
+      "from": "maintenance/how-to-fix-cloudy-hot-tub.html",
+      "to": "hot-tub-chemical-levels-chart.html"
+    },
+    {
       "from": "pool-chemistry-system.html",
+      "to": "hot-tub-chemical-levels-chart.html"
+    },
+    {
+      "from": "printables/hot-tub-maintenance-log.html",
       "to": "hot-tub-chemical-levels-chart.html"
     },
     {
@@ -36122,6 +36397,14 @@
     },
     {
       "from": "academy/fundamentals/index.html",
+      "to": "index.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "index.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
       "to": "index.html"
     },
     {
@@ -37365,6 +37648,10 @@
       "to": "index.html"
     },
     {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+      "to": "index.html"
+    },
+    {
       "from": "guides/edge-cases/high-cya-chlorine-lock.html",
       "to": "index.html"
     },
@@ -38109,6 +38396,14 @@
       "to": "legal/legal.html"
     },
     {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "legal/legal.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
+      "to": "legal/legal.html"
+    },
+    {
       "from": "academy/fundamentals/pool-vs-hot-tub-chemistry.html",
       "to": "legal/legal.html"
     },
@@ -39322,6 +39617,10 @@
     },
     {
       "from": "guides/chlorine/why-pool-wont-hold-chlorine.html",
+      "to": "legal/legal.html"
+    },
+    {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
       "to": "legal/legal.html"
     },
     {
@@ -39969,6 +40268,14 @@
       "to": "legal/ownership.html"
     },
     {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "legal/ownership.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
+      "to": "legal/ownership.html"
+    },
+    {
       "from": "academy/fundamentals/pool-vs-hot-tub-chemistry.html",
       "to": "legal/ownership.html"
     },
@@ -41182,6 +41489,10 @@
     },
     {
       "from": "guides/chlorine/why-pool-wont-hold-chlorine.html",
+      "to": "legal/ownership.html"
+    },
+    {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
       "to": "legal/ownership.html"
     },
     {
@@ -41785,6 +42096,10 @@
       "to": "legal/ownership.html"
     },
     {
+      "from": "guides/chlorine-guide.html",
+      "to": "maintenance/how-often-add-chlorine-pool.html"
+    },
+    {
       "from": "maintenance/index.html",
       "to": "maintenance/how-often-add-chlorine-pool.html"
     },
@@ -41819,6 +42134,10 @@
     {
       "from": "tools/index.html",
       "to": "maintenance/how-to-balance-pool-water.html"
+    },
+    {
+      "from": "academy/troubleshooting/cloudy-water.html",
+      "to": "maintenance/how-to-fix-cloudy-hot-tub.html"
     },
     {
       "from": "maintenance/index.html",
@@ -42370,6 +42689,14 @@
     },
     {
       "from": "academy/fundamentals/index.html",
+      "to": "pool-chemical-levels-chart.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "pool-chemical-levels-chart.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
       "to": "pool-chemical-levels-chart.html"
     },
     {
@@ -43586,6 +43913,10 @@
     },
     {
       "from": "guides/chlorine/why-pool-wont-hold-chlorine.html",
+      "to": "pool-chemical-levels-chart.html"
+    },
+    {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
       "to": "pool-chemical-levels-chart.html"
     },
     {
@@ -44429,22 +44760,6 @@
       "to": "printable/maintenance-checklist.html"
     },
     {
-      "from": "tools/index.html",
-      "to": "printables/airbnb-pool-turnover-checklist.html"
-    },
-    {
-      "from": "tools/index.html",
-      "to": "printables/hot-tub-maintenance-log.html"
-    },
-    {
-      "from": "printables/airbnb-pool-turnover-checklist.html",
-      "to": "printables/pool-maintenance-checklist.html"
-    },
-    {
-      "from": "tools/index.html",
-      "to": "printables/pool-maintenance-checklist.html"
-    },
-    {
       "from": "all-pages.html",
       "to": "programmatic/behavior/how-often-to-shock-pool.html"
     },
@@ -45297,10 +45612,6 @@
       "to": "programmatic/chlorine/index.html"
     },
     {
-      "from": "calculators/volume-calculator.html",
-      "to": "programmatic/chlorine/index.html"
-    },
-    {
       "from": "guides/questions/why-does-pool-water-turn-cloudy.html",
       "to": "programmatic/chlorine/index.html"
     },
@@ -45362,10 +45673,6 @@
     },
     {
       "from": "all-pages.html",
-      "to": "programmatic/explanations/index.html"
-    },
-    {
-      "from": "calculators/volume-calculator.html",
       "to": "programmatic/explanations/index.html"
     },
     {
@@ -45554,10 +45861,6 @@
     },
     {
       "from": "all-pages.html",
-      "to": "programmatic/explanations/why-shower-before-pool.html"
-    },
-    {
-      "from": "calculators/volume-calculator.html",
       "to": "programmatic/explanations/why-shower-before-pool.html"
     },
     {
@@ -45813,10 +46116,6 @@
       "to": "programmatic/hot-tubs/index.html"
     },
     {
-      "from": "calculators/volume-calculator.html",
-      "to": "programmatic/hot-tubs/index.html"
-    },
-    {
       "from": "guides/seasonal/closing-pool-chemistry-winter.html",
       "to": "programmatic/hot-tubs/index.html"
     },
@@ -45851,10 +46150,6 @@
     {
       "from": "tools/index.html",
       "to": "programmatic/hot-tubs/index.html"
-    },
-    {
-      "from": "calculators/volume-calculator.html",
-      "to": "programmatic/index.html"
     },
     {
       "from": "programmatic/behavior/how-often-to-shock-pool.html",
@@ -47597,6 +47892,10 @@
       "to": "reference/cyanuric-acid-explained.html"
     },
     {
+      "from": "calculators/volume-calculator.html",
+      "to": "reference/datasets/chemical-properties/index.html"
+    },
+    {
       "from": "guides/seasonal/opening-pool-chemistry-checklist.html",
       "to": "reference/datasets/chemical-properties/index.html"
     },
@@ -47657,6 +47956,10 @@
       "to": "reference/datasets/chemical-ranges/index.html"
     },
     {
+      "from": "calculators/volume-calculator.html",
+      "to": "reference/datasets/chemical-ranges/index.html"
+    },
+    {
       "from": "formulas/alkalinity-formula.html",
       "to": "reference/datasets/chemical-ranges/index.html"
     },
@@ -47701,6 +48004,10 @@
       "to": "reference/datasets/chemical-ranges/index.html"
     },
     {
+      "from": "calculators/volume-calculator.html",
+      "to": "reference/datasets/compatibility/index.html"
+    },
+    {
       "from": "guides/edge-cases/rain-effect-on-pool-chemistry.html",
       "to": "reference/datasets/compatibility/index.html"
     },
@@ -47719,6 +48026,10 @@
     {
       "from": "reference/datasets/index.html",
       "to": "reference/datasets/compatibility/index.html"
+    },
+    {
+      "from": "calculators/volume-calculator.html",
+      "to": "reference/datasets/confidence-levels/index.html"
     },
     {
       "from": "guides/edge-cases/rain-effect-on-pool-chemistry.html",
@@ -48677,6 +48988,10 @@
       "to": "reference/pool-chemical-timeline.html"
     },
     {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+      "to": "reference/pool-chemical-timeline.html"
+    },
+    {
       "from": "reference/index.html",
       "to": "reference/pool-chemical-timeline.html"
     },
@@ -48686,6 +49001,10 @@
     },
     {
       "from": "all-pages.html",
+      "to": "reference/pool-chemicals-explained.html"
+    },
+    {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
       "to": "reference/pool-chemicals-explained.html"
     },
     {
@@ -48737,6 +49056,10 @@
       "to": "reference/pool-chemistry-reference.html"
     },
     {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+      "to": "reference/pool-chemistry-reference.html"
+    },
+    {
       "from": "index.html",
       "to": "reference/pool-chemistry-reference.html"
     },
@@ -48754,6 +49077,10 @@
     },
     {
       "from": "entities/gallons.html",
+      "to": "reference/pool-shape-guide.html"
+    },
+    {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
       "to": "reference/pool-shape-guide.html"
     },
     {
@@ -48778,6 +49105,10 @@
     },
     {
       "from": "entities/swimming-pool.html",
+      "to": "reference/pool-volume-reference.html"
+    },
+    {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
       "to": "reference/pool-volume-reference.html"
     },
     {
@@ -49053,6 +49384,10 @@
       "to": "reference/total-alkalinity-explained.html"
     },
     {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+      "to": "reference/total-alkalinity-explained.html"
+    },
+    {
       "from": "guides/edge-cases/over-shocking-pool-effects.html",
       "to": "reference/total-alkalinity-explained.html"
     },
@@ -49199,6 +49534,10 @@
     {
       "from": "releases/index.html",
       "to": "releases/compatibility.html"
+    },
+    {
+      "from": "all-pages.html",
+      "to": "releases/index.html"
     },
     {
       "from": "releases/1.0.0.html",
@@ -49437,6 +49776,10 @@
       "to": "resources/airbnb-pool-turnover-checklist.html"
     },
     {
+      "from": "tools/index.html",
+      "to": "resources/airbnb-pool-turnover-checklist.html"
+    },
+    {
       "from": "academy/fundamentals/pool-vs-hot-tub-chemistry.html",
       "to": "resources/hot-tub-maintenance-log.html"
     },
@@ -49637,6 +49980,10 @@
       "to": "resources/hot-tub-maintenance-log.html"
     },
     {
+      "from": "tools/index.html",
+      "to": "resources/hot-tub-maintenance-log.html"
+    },
+    {
       "from": "404.html",
       "to": "resources/index.html"
     },
@@ -49682,6 +50029,14 @@
     },
     {
       "from": "academy/fundamentals/index.html",
+      "to": "resources/index.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "resources/index.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
       "to": "resources/index.html"
     },
     {
@@ -50898,6 +51253,10 @@
     },
     {
       "from": "guides/chlorine/why-pool-wont-hold-chlorine.html",
+      "to": "resources/index.html"
+    },
+    {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
       "to": "resources/index.html"
     },
     {
@@ -52021,6 +52380,10 @@
       "to": "resources/pool-maintenance-checklist.html"
     },
     {
+      "from": "printables/airbnb-pool-turnover-checklist.html",
+      "to": "resources/pool-maintenance-checklist.html"
+    },
+    {
       "from": "programmatic/behavior/index.html",
       "to": "resources/pool-maintenance-checklist.html"
     },
@@ -52054,6 +52417,10 @@
     },
     {
       "from": "resources/index.html",
+      "to": "resources/pool-maintenance-checklist.html"
+    },
+    {
+      "from": "tools/index.html",
       "to": "resources/pool-maintenance-checklist.html"
     },
     {
@@ -52291,6 +52658,14 @@
     {
       "from": "resources/index.html",
       "to": "resources/pool-shock-log.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "resources/water-test-log.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
+      "to": "resources/water-test-log.html"
     },
     {
       "from": "academy/fundamentals/the-four-core-water-tests.html",
@@ -52642,6 +53017,14 @@
     },
     {
       "from": "academy/fundamentals/index.html",
+      "to": "search/index.html"
+    },
+    {
+      "from": "academy/fundamentals/indoor-pool-chemistry.html",
+      "to": "search/index.html"
+    },
+    {
+      "from": "academy/fundamentals/new-pool-startup-chemistry.html",
       "to": "search/index.html"
     },
     {
@@ -53858,6 +54241,10 @@
     },
     {
       "from": "guides/chlorine/why-pool-wont-hold-chlorine.html",
+      "to": "search/index.html"
+    },
+    {
+      "from": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
       "to": "search/index.html"
     },
     {

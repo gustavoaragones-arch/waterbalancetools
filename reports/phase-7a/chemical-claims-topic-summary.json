@@ -1,43 +1,43 @@
 [
   {
     "topic": "general",
-    "distinct_ranges_found": 80,
-    "ranges": "1ppm | 3ppm | 85ppm | 100% | 65–80% | 70°f | 3–5ppm | 98–104°f | 80°f | 1–3ppm | 5ppm | 30–50ppm | 0.8ppm | 2.5ppm | 2ppm | 500ppm | 100–104°f | 80–100ppm | 150ppm | 70% | 10–12.5% | 0.6ppm | 0.5ppm | 100ppm | 90ppm | 3.5ppm | 1.5ppm | 8ppm | 4ppm | 400ppm | 10ppm | 80ppm | 90% | 90°f | 80–120ppm | 0–0ppm | 0ppm | 30–100ppm | 0.5–1ppm | 000ppm | 40ppm | 6ppm | 30-50ppm | 10% | 1-3ppm | 65% | 200–400ppm | 150–250ppm | 56% | 0.2ppm | 30ppm | 60–90% | 25% | 50% | 6.7ppm | 10–20% | 0.5–1.0ppm | 50–80% | 78–84°f | 32°f | 20ppm | 15–20% | 2–3ppm | 4–5ppm | 120ppm | 80–90ppm | 77°f | 104°f | 10–15% | 2.00ppm | 60–80ppm | 20–30% | 1mg/l | 1500ppm | 78–82°f | 77–79°f | 82–84°f | 50°f | 1000ppm | 73%"
+    "distinct_ranges_found": 90,
+    "ranges": "1ppm | 3ppm | 85ppm | 100% | 65–80% | 70°f | 3–5ppm | 98–104°f | 80°f | 1–3ppm | 5ppm | 30–50ppm | 0.8ppm | 2.5ppm | 2ppm | 500ppm | 100–104°f | 80–100ppm | 150ppm | 70% | 10–12.5% | 0.6ppm | 0.5ppm | 100ppm | 90ppm | 3.5ppm | 1.5ppm | 8ppm | 4ppm | 400ppm | 10ppm | 80ppm | 90% | 90°f | 80–120ppm | 1to3ppm | 58% | 200–400ppm | 0–0ppm | 0.3ppm | 0ppm | 95% | 10% | 30–100ppm | 20–30% | 0.5–1ppm | 200ppm | 80% | 56–62% | 104°f | 78–84°f | 000ppm | 98-100% | 25–29°c | 1mg/l | 50% | 25–50% | 40ppm | 6ppm | 30-50ppm | 1-3ppm | 65% | 150–250ppm | 56% | 0.2ppm | 30ppm | 60–90% | 25% | 6.7ppm | 10–20% | 0.5–1.0ppm | 50–80% | 32°f | 20ppm | 15–20% | 2–3ppm | 4–5ppm | 120ppm | 80–90ppm | 77°f | 10–15% | 2.00ppm | 60–80ppm | 1500ppm | 78–82°f | 77–79°f | 82–84°f | 50°f | 1000ppm | 73%"
   },
   {
     "topic": "ph",
-    "distinct_ranges_found": 54,
-    "ranges": "80–100ppm | 10°f | 68°f | 22% | 80–120ppm | 3ppm | 3–5ppm | 2ppm | 10–12.5% | 0.5ppm | 10ppm | 0.8ppm | 100ppm | 250ppm | 480ppm | 90ppm | 2.5ppm | 30ppm | 55% | 28% | 120ppm | 60ppm | 50ppm | 10% | 1–3ppm | 100–104°f | 10–12% | 60–80ppm | 30–50ppm | 80°f | 100% | 31.5% | 150ppm | 20–30ppm | 67% | 31.45% | 93.2% | 200ppm | 20% | 31% | 80–90ppm | 10–20% | 5ppm | 1ppm | 60% | 0.2ppm | 0.05ppm | 500ppm | 77°f | 90% | 50% | 104°f | 85°f | 400ppm"
+    "distinct_ranges_found": 55,
+    "ranges": "80–100ppm | 10°f | 68°f | 22% | 80–120ppm | 3ppm | 3–5ppm | 2ppm | 10–12.5% | 0.5ppm | 10ppm | 0.8ppm | 100ppm | 250ppm | 480ppm | 90ppm | 2.5ppm | 30ppm | 55% | 28% | 120ppm | 60ppm | 50ppm | 10% | 1–3ppm | 100–104°f | 10–12% | 60–80ppm | 30–50ppm | 10°c | 67% | 80°f | 100% | 31.5% | 150ppm | 20–30ppm | 31.45% | 93.2% | 200ppm | 20% | 31% | 80–90ppm | 10–20% | 5ppm | 1ppm | 60% | 0.2ppm | 0.05ppm | 500ppm | 77°f | 90% | 50% | 104°f | 85°f | 400ppm"
   },
   {
     "topic": "free chlorine",
-    "distinct_ranges_found": 35,
-    "ranges": "1–3ppm | 3ppm | 5ppm | 67% | 1.0ppm | 0.5ppm | 0.9ppm | 2.0ppm | 1ppm | 22% | 10–30ppm | 1-3ppm | 3–5ppm | 3–6ppm | 65% | 0–0ppm | 30–50ppm | 30–100ppm | 0.5–1ppm | 400ppm | 78–84°f | 10% | 30ppm | 5–15ppm | 65–73% | 0ppm | 56% | 6.5ppm | 10ppm | 90% | 0.5–1.0ppm | 85–90°f | 60% | 80–120ppm | 75–90%"
+    "distinct_ranges_found": 36,
+    "ranges": "1.5-3ppm | 1–3ppm | 3ppm | 5ppm | 67% | 1.0ppm | 0.5ppm | 0.9ppm | 2.0ppm | 1ppm | 22% | 10–30ppm | 1-3ppm | 3–5ppm | 3–6ppm | 65% | 0–0ppm | 30–50ppm | 30–100ppm | 0.5–1ppm | 400ppm | 10ppm | 78–84°f | 10% | 30ppm | 5–15ppm | 65–73% | 0ppm | 56% | 6.5ppm | 90% | 0.5–1.0ppm | 85–90°f | 60% | 80–120ppm | 75–90%"
   },
   {
     "topic": "shock",
-    "distinct_ranges_found": 26,
-    "ranges": "0.5ppm | 65–73% | 10ppm | 30ppm | 10% | 5ppm | 10–30ppm | 1–3ppm | 65% | 56–62% | 20–30ppm | 5–15ppm | 0ppm | 0.2ppm | 6.5ppm | 10–12.5% | 60°f | 1ppm | 30–50ppm | 3–5ppm | 100ppm | 10–20ppm | 8–15ppm | 85°f | 50ppm | 10–15ppm"
+    "distinct_ranges_found": 27,
+    "ranges": "0.5ppm | 65–73% | 10ppm | 30ppm | 10% | 5ppm | 10–30ppm | 1–3ppm | 65% | 56–62% | 6–7ppm | 20–30ppm | 5–15ppm | 0ppm | 0.2ppm | 6.5ppm | 10–12.5% | 60°f | 1ppm | 30–50ppm | 3–5ppm | 100ppm | 10–20ppm | 8–15ppm | 85°f | 50ppm | 10–15ppm"
   },
   {
     "topic": "salt",
     "distinct_ranges_found": 19,
-    "ranges": "400ppm | 60–80ppm | 300ppm | 750ppm | 99.8% | 000ppm | 200ppm | 800ppm | 12ppm | 1–3ppm | 500ppm | 30–50ppm | 100ppm | 30% | 10% | 73% | 31.45% | 100% | 3200ppm"
-  },
-  {
-    "topic": "total alkalinity",
-    "distinct_ranges_found": 13,
-    "ranges": "80–120ppm | 120ppm | 1–3ppm | 80-120ppm | 31.45% | 200–400ppm | 95% | 60ppm | 6.7ppm | 93.2% | 150ppm | 80–90ppm | 80–100ppm"
+    "ranges": "400ppm | 60–80ppm | 300ppm | 750ppm | 99.8% | 200ppm | 000ppm | 800ppm | 12ppm | 1–3ppm | 500ppm | 30–50ppm | 100ppm | 30% | 10% | 73% | 31.45% | 100% | 3200ppm"
   },
   {
     "topic": "calcium hardness",
-    "distinct_ranges_found": 11,
-    "ranges": "80–120ppm | 200–400ppm | 150ppm | 80–100ppm | 400ppm | 500ppm | 60–70% | 3–5ppm | 300ppm | 77% | 80ppm"
+    "distinct_ranges_found": 14,
+    "ranges": "80–120ppm | 80-100ppm | 200–400ppm | 150ppm | 80–100ppm | 400ppm | 500ppm | 10ppm | 150–250ppm | 60–70% | 3–5ppm | 300ppm | 77% | 80ppm"
+  },
+  {
+    "topic": "total alkalinity",
+    "distinct_ranges_found": 14,
+    "ranges": "80–120ppm | 80-100ppm | 120ppm | 1–3ppm | 80-120ppm | 31.45% | 200–400ppm | 95% | 60ppm | 6.7ppm | 93.2% | 150ppm | 80–90ppm | 80–100ppm"
   },
   {
     "topic": "cyanuric acid",
-    "distinct_ranges_found": 11,
-    "ranges": "80ppm | 3ppm | 90% | 1-3ppm | 30–50ppm | 30-50ppm | 10–30ppm | 1–3ppm | 20ppm | 25% | 30ppm"
+    "distinct_ranges_found": 12,
+    "ranges": "200ppm | 30-50ppm | 80ppm | 3ppm | 90% | 1-3ppm | 30–50ppm | 10–30ppm | 1–3ppm | 20ppm | 25% | 30ppm"
   },
   {
     "topic": "algae",

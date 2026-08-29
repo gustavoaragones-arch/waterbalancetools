@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T23:44:00.026Z",
+  "generatedAt": "2026-08-29T01:33:48.371Z",
   "rulesVersion": "1.0",
   "rules": [
     {
@@ -292,6 +292,14 @@
     },
     {
       "url": "/academy/fundamentals/indoor-pool-chemistry",
+      "pageType": "academy",
+      "crawlTier": "Tier 2",
+      "hub": "/academy/fundamentals",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (academy)."
+    },
+    {
+      "url": "/academy/fundamentals/new-pool-startup-chemistry",
       "pageType": "academy",
       "crawlTier": "Tier 2",
       "hub": "/academy/fundamentals",

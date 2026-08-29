@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T23:44:00.886Z",
+  "generatedAt": "2026-08-29T01:33:48.779Z",
   "rationale": {
     "homepage": "Top-level discovery and authority distribution.",
     "calculators": "Primary transactional pages with highest SEO/business impact.",
@@ -2209,6 +2209,14 @@
     },
     {
       "from": "/academy/fundamentals/how-temperature-changes-water-chemistry",
+      "to": "/academy/fundamentals/new-pool-startup-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/how-temperature-changes-water-chemistry",
       "to": "/academy/fundamentals/indoor-pool-chemistry",
       "fromType": "academy",
       "toType": "academy",
@@ -2482,6 +2490,14 @@
     {
       "from": "/academy/fundamentals/how-water-balance-works",
       "to": "/academy/fundamentals/why-water-testing-matters",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/how-water-balance-works",
+      "to": "/academy/fundamentals/new-pool-startup-chemistry",
       "fromType": "academy",
       "toType": "academy",
       "weight": 50,
@@ -2777,6 +2793,14 @@
     },
     {
       "from": "/academy/fundamentals",
+      "to": "/academy/fundamentals/new-pool-startup-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals",
       "to": "/academy/fundamentals/indoor-pool-chemistry",
       "fromType": "academy",
       "toType": "academy",
@@ -3017,6 +3041,14 @@
     },
     {
       "from": "/academy/fundamentals/indoor-pool-chemistry",
+      "to": "/academy/fundamentals/new-pool-startup-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/indoor-pool-chemistry",
       "to": "/academy/fundamentals/indoor-pool-chemistry",
       "fromType": "academy",
       "toType": "academy",
@@ -3176,6 +3208,326 @@
       "reason": "academy to other authority flow"
     },
     {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/",
+      "fromType": "academy",
+      "toType": "homepage",
+      "weight": 30,
+      "reason": "academy to homepage authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/calculators/chemical-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/resources",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "academy",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "academy to chart authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/academy",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "academy",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "academy to guide authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/about",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/search",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/",
+      "fromType": "academy",
+      "toType": "homepage",
+      "weight": 30,
+      "reason": "academy to homepage authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/academy",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/academy/fundamentals",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/academy/fundamentals/understanding-pool-water-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/academy/fundamentals/how-water-balance-works",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/academy/fundamentals/the-four-core-water-tests",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/academy/fundamentals/pool-vs-hot-tub-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/academy/fundamentals/how-temperature-changes-water-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/academy/fundamentals/why-water-testing-matters",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/academy/fundamentals/new-pool-startup-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/academy/fundamentals/indoor-pool-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/calculators/pool-ph-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/calculators/pool-alkalinity-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/calculators/pool-chlorine-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/calculators/pool-ph-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/calculators/pool-alkalinity-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/calculators/pool-chlorine-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "academy",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "academy to chart authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/resources/water-test-log",
+      "fromType": "academy",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "academy to resource authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/academy/fundamentals/how-water-balance-works",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/academy/fundamentals/understanding-pool-water-chemistry",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/academy/water-balance/understanding-calcium-hardness",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/guides/seasonal/opening-pool-chemistry-checklist",
+      "fromType": "academy",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "academy to guide authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/calculators/pool-volume-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/calculators/pool-chlorine-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/calculators/pool-shock-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/calculators/pool-ph-calculator",
+      "fromType": "academy",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "academy to calculator authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "academy",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "academy to chart authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "academy",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "academy to guide authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/all-pages",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/legal/ownership",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/new-pool-startup-chemistry",
+      "to": "/legal/legal",
+      "fromType": "academy",
+      "toType": "other",
+      "weight": 30,
+      "reason": "academy to other authority flow"
+    },
+    {
       "from": "/academy/fundamentals/pool-vs-hot-tub-chemistry",
       "to": "/",
       "fromType": "academy",
@@ -3306,6 +3658,14 @@
     {
       "from": "/academy/fundamentals/pool-vs-hot-tub-chemistry",
       "to": "/academy/fundamentals/why-water-testing-matters",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/pool-vs-hot-tub-chemistry",
+      "to": "/academy/fundamentals/new-pool-startup-chemistry",
       "fromType": "academy",
       "toType": "academy",
       "weight": 50,
@@ -3602,6 +3962,14 @@
     {
       "from": "/academy/fundamentals/the-four-core-water-tests",
       "to": "/academy/fundamentals/why-water-testing-matters",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/the-four-core-water-tests",
+      "to": "/academy/fundamentals/new-pool-startup-chemistry",
       "fromType": "academy",
       "toType": "academy",
       "weight": 50,
@@ -3914,6 +4282,14 @@
     {
       "from": "/academy/fundamentals/understanding-pool-water-chemistry",
       "to": "/academy/fundamentals/why-water-testing-matters",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/understanding-pool-water-chemistry",
+      "to": "/academy/fundamentals/new-pool-startup-chemistry",
       "fromType": "academy",
       "toType": "academy",
       "weight": 50,
@@ -4234,6 +4610,14 @@
     {
       "from": "/academy/fundamentals/why-water-testing-matters",
       "to": "/academy/fundamentals/why-water-testing-matters",
+      "fromType": "academy",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "academy to academy authority flow"
+    },
+    {
+      "from": "/academy/fundamentals/why-water-testing-matters",
+      "to": "/academy/fundamentals/new-pool-startup-chemistry",
       "fromType": "academy",
       "toType": "academy",
       "weight": 50,
@@ -95078,6 +95462,14 @@
       "toType": "guide",
       "weight": 30,
       "reason": "guide to guide authority flow"
+    },
+    {
+      "from": "/guides/seasonal/opening-pool-chemistry-checklist",
+      "to": "/academy/fundamentals/new-pool-startup-chemistry",
+      "fromType": "guide",
+      "toType": "academy",
+      "weight": 50,
+      "reason": "guide to academy authority flow"
     },
     {
       "from": "/guides/seasonal/opening-pool-chemistry-checklist",

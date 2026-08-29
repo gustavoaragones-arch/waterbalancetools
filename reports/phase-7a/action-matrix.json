@@ -120,6 +120,26 @@
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
+    "url": "https://waterbalancetools.com/academy/fundamentals/indoor-pool-chemistry",
+    "file_path": "academy/fundamentals/indoor-pool-chemistry.html",
+    "page_type": "academy-article",
+    "cluster": "academy/fundamentals",
+    "overall_quality_score": 2,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
+  },
+  {
+    "url": "https://waterbalancetools.com/academy/fundamentals/new-pool-startup-chemistry",
+    "file_path": "academy/fundamentals/new-pool-startup-chemistry.html",
+    "page_type": "academy-article",
+    "cluster": "academy/fundamentals",
+    "overall_quality_score": 2.2,
+    "action": "IMPROVE",
+    "priority": "P3",
+    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+  },
+  {
     "url": "https://waterbalancetools.com/academy/fundamentals/pool-vs-hot-tub-chemistry",
     "file_path": "academy/fundamentals/pool-vs-hot-tub-chemistry.html",
     "page_type": "academy-article",
@@ -674,10 +694,10 @@
     "file_path": "calculators/chemical-calculator.html",
     "page_type": "calculator",
     "cluster": "calculators",
-    "overall_quality_score": 2.6,
-    "action": "IMPROVE",
+    "overall_quality_score": 2.7,
+    "action": "KEEP",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "overall_quality_score=2.7 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator",
@@ -685,9 +705,9 @@
     "page_type": "calculator",
     "cluster": "calculators",
     "overall_quality_score": 2.5,
-    "action": "IMPROVE",
+    "action": "KEEP",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "overall_quality_score=2.5 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/calculators/hot-tub-ph-calculator",
@@ -734,10 +754,10 @@
     "file_path": "calculators/pool-chlorine-calculator.html",
     "page_type": "calculator",
     "cluster": "calculators",
-    "overall_quality_score": 2.2,
-    "action": "IMPROVE",
+    "overall_quality_score": 2.4,
+    "action": "KEEP",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "overall_quality_score=2.4 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator",
@@ -755,9 +775,9 @@
     "page_type": "calculator",
     "cluster": "calculators",
     "overall_quality_score": 2.5,
-    "action": "IMPROVE",
+    "action": "KEEP",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "overall_quality_score=2.5 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/calculators/pool-shock-calculator",
@@ -765,9 +785,9 @@
     "page_type": "calculator",
     "cluster": "calculators",
     "overall_quality_score": 2.6,
-    "action": "IMPROVE",
+    "action": "KEEP",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/calculators/pool-turnover-rate-calculator",
@@ -817,7 +837,7 @@
     "overall_quality_score": 2.1,
     "action": "IMPROVE",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG;CANONICAL_MISMATCH."
+    "evidence": "On-page SEO issues: CANONICAL_MISMATCH."
   },
   {
     "url": "https://waterbalancetools.com/charts/hot-tub-chemical-levels-chart",
@@ -846,8 +866,8 @@
     "cluster": "charts",
     "overall_quality_score": 2.1,
     "action": "IMPROVE",
-    "priority": "P3",
-    "evidence": "On-page SEO issues: CANONICAL_MISMATCH."
+    "priority": "P2",
+    "evidence": "Orphan page: 0 incoming internal links found in the generated HTML."
   },
   {
     "url": "https://waterbalancetools.com/charts/pool-water-balance-chart",
@@ -1004,7 +1024,7 @@
     "file_path": "entities/algae.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1024,7 +1044,7 @@
     "file_path": "entities/automatic-chlorinator.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
+    "overall_quality_score": 1.9,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1034,7 +1054,7 @@
     "file_path": "entities/backwashing.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.7,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1044,7 +1064,7 @@
     "file_path": "entities/baking-soda.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.8,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1065,26 +1085,26 @@
     "page_type": "entity",
     "cluster": "entities",
     "overall_quality_score": 1.7,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=114 -- thin content risk for AdSense/quality."
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/breakpoint-chlorination",
     "file_path": "entities/breakpoint-chlorination.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
-    "action": "IMPROVE",
+    "overall_quality_score": 1.8,
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/bromine",
     "file_path": "entities/bromine.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
+    "overall_quality_score": 1.8,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1094,17 +1114,17 @@
     "file_path": "entities/calcium-chloride.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=139 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.8,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/calcium-hardness",
     "file_path": "entities/calcium-hardness.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
+    "overall_quality_score": 1.8,
     "action": "IMPROVE",
     "priority": "P2",
     "evidence": "repetition_score=0: page shares several exact boilerplate paragraph/FAQ/table blocks with sibling pages despite otherwise original prose (originality_score=3) -- see programmatic-duplication.csv for family \"entities\"."
@@ -1114,7 +1134,7 @@
     "file_path": "entities/calcium-hypochlorite.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
+    "overall_quality_score": 1.8,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1124,10 +1144,10 @@
     "file_path": "entities/cartridge-filter.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.4,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "overall_quality_score=1.4 across the 10-dimension rubric."
+    "overall_quality_score": 1.5,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/cdc",
@@ -1137,7 +1157,7 @@
     "overall_quality_score": 1.6,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=115 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=139 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/entities/chemical-feeder",
@@ -1145,29 +1165,29 @@
     "page_type": "entity",
     "cluster": "entities",
     "overall_quality_score": 1.5,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=116 -- thin content risk for AdSense/quality."
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/chemical-log",
     "file_path": "entities/chemical-log.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
-    "action": "IMPROVE",
+    "overall_quality_score": 1.6,
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/closing-checklist",
     "file_path": "entities/closing-checklist.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=112 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=142 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/entities/cloudy-water",
@@ -1184,7 +1204,7 @@
     "file_path": "entities/combined-chlorine.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
+    "overall_quality_score": 1.8,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1194,7 +1214,7 @@
     "file_path": "entities/commercial-pool.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1204,7 +1224,7 @@
     "file_path": "entities/concrete-pool.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.7,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1214,17 +1234,17 @@
     "file_path": "entities/copper.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=146 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.8,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/corrosion",
     "file_path": "entities/corrosion.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.7,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1234,17 +1254,17 @@
     "file_path": "entities/cover.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=141 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.8,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/cyanuric-acid",
     "file_path": "entities/cyanuric-acid.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.8,
+    "overall_quality_score": 1.9,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1254,10 +1274,10 @@
     "file_path": "entities/de-filter.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.4,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "overall_quality_score=1.4 across the 10-dimension rubric."
+    "overall_quality_score": 1.5,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/emergency-reference",
@@ -1265,46 +1285,46 @@
     "page_type": "entity",
     "cluster": "entities",
     "overall_quality_score": 1.5,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/epa",
     "file_path": "entities/epa.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=86 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=128 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/entities/eye-irritation",
     "file_path": "entities/eye-irritation.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=144 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.7,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/fiberglass-pool",
     "file_path": "entities/fiberglass-pool.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.3,
-    "action": "MERGE",
-    "priority": "P1",
-    "evidence": "originality_score=1 (near-duplicate of a sibling page's body text) -- see programmatic-duplication.csv for family \"entities\"."
+    "overall_quality_score": 1.5,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/filtration",
     "file_path": "entities/filtration.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1314,7 +1334,7 @@
     "file_path": "entities/flow-rate.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1324,17 +1344,17 @@
     "file_path": "entities/foaming.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=133 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.6,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/free-chlorine",
     "file_path": "entities/free-chlorine.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
+    "overall_quality_score": 1.8,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1344,7 +1364,7 @@
     "file_path": "entities/gallons.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.8,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1354,7 +1374,7 @@
     "file_path": "entities/green-water.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.7,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1364,27 +1384,27 @@
     "file_path": "entities/heater.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=144 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.6,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/high-chlorine",
     "file_path": "entities/high-chlorine.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=124 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.9,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/high-ph",
     "file_path": "entities/high-ph.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.7,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1405,9 +1425,9 @@
     "page_type": "entity",
     "cluster": "entities",
     "overall_quality_score": 1.7,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=131 -- thin content risk for AdSense/quality."
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/",
@@ -1425,19 +1445,19 @@
     "page_type": "entity",
     "cluster": "entities",
     "overall_quality_score": 1.6,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=132 -- thin content risk for AdSense/quality."
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/iron",
     "file_path": "entities/iron.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=127 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.7,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/lamotte",
@@ -1447,14 +1467,14 @@
     "overall_quality_score": 1.6,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=95 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=125 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/entities/liquid-chlorine",
     "file_path": "entities/liquid-chlorine.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
+    "overall_quality_score": 1.9,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1464,17 +1484,17 @@
     "file_path": "entities/liters.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=105 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.6,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/low-chlorine",
     "file_path": "entities/low-chlorine.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.7,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1484,7 +1504,7 @@
     "file_path": "entities/low-ph.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1504,10 +1524,10 @@
     "file_path": "entities/maintenance-checklist.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.4,
+    "overall_quality_score": 1.5,
     "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "overall_quality_score=1.4 across the 10-dimension rubric."
+    "priority": "P3",
+    "evidence": "On-page SEO issues: DUPLICATE_TITLE(2x)."
   },
   {
     "url": "https://waterbalancetools.com/entities/maintenance-log",
@@ -1517,7 +1537,7 @@
     "overall_quality_score": 1.6,
     "action": "IMPROVE",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "On-page SEO issues: DUPLICATE_TITLE(2x)."
   },
   {
     "url": "https://waterbalancetools.com/entities/manganese",
@@ -1525,9 +1545,9 @@
     "page_type": "entity",
     "cluster": "entities",
     "overall_quality_score": 1.7,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=113 -- thin content risk for AdSense/quality."
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/muriatic-acid",
@@ -1544,37 +1564,37 @@
     "file_path": "entities/nsf.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.7,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=93 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=120 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/entities/opening-checklist",
     "file_path": "entities/opening-checklist.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=113 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.6,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/orp",
     "file_path": "entities/orp.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=139 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.7,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/outdoor-pool",
     "file_path": "entities/outdoor-pool.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1584,20 +1604,20 @@
     "file_path": "entities/oxidation.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=144 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.6,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/ozone",
     "file_path": "entities/ozone.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=137 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.8,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/ph",
@@ -1614,17 +1634,17 @@
     "file_path": "entities/phosphate.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=135 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.7,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/phta",
     "file_path": "entities/phta.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
+    "overall_quality_score": 1.8,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1634,27 +1654,27 @@
     "file_path": "entities/pool-opening.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.4,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "overall_quality_score=1.4 across the 10-dimension rubric."
+    "overall_quality_score": 1.6,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/pool-salt",
     "file_path": "entities/pool-salt.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=143 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.9,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/ppm",
     "file_path": "entities/ppm.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.7,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1664,7 +1684,7 @@
     "file_path": "entities/pump.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.7,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1674,7 +1694,7 @@
     "file_path": "entities/salt-chlorinator.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
+    "overall_quality_score": 1.8,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1684,7 +1704,7 @@
     "file_path": "entities/salt.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
+    "overall_quality_score": 1.8,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1694,7 +1714,7 @@
     "file_path": "entities/saltwater-pool.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.7,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1724,7 +1744,7 @@
     "file_path": "entities/scaling.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.7,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1734,7 +1754,7 @@
     "file_path": "entities/shock-treatment.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.8,
+    "overall_quality_score": 1.9,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1745,26 +1765,26 @@
     "page_type": "entity",
     "cluster": "entities",
     "overall_quality_score": 1.6,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=107 -- thin content risk for AdSense/quality."
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/skin-irritation",
     "file_path": "entities/skin-irritation.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.4,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "overall_quality_score=1.4 across the 10-dimension rubric."
+    "overall_quality_score": 1.7,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/soda-ash",
     "file_path": "entities/soda-ash.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.7,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1774,7 +1794,7 @@
     "file_path": "entities/sodium-dichlor.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
+    "overall_quality_score": 1.9,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1784,17 +1804,17 @@
     "file_path": "entities/stabilizer.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
-    "action": "IMPROVE",
+    "overall_quality_score": 1.8,
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/strong-chlorine-smell",
     "file_path": "entities/strong-chlorine-smell.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.7,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1804,7 +1824,7 @@
     "file_path": "entities/swim-spa.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1825,16 +1845,16 @@
     "page_type": "entity",
     "cluster": "entities",
     "overall_quality_score": 1.7,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=127 -- thin content risk for AdSense/quality."
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/temperature",
     "file_path": "entities/temperature.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
+    "overall_quality_score": 1.8,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1854,7 +1874,7 @@
     "file_path": "entities/total-chlorine.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.7,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1864,17 +1884,17 @@
     "file_path": "entities/total-dissolved-solids.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
-    "action": "IMPROVE",
+    "overall_quality_score": 1.9,
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/trichlor-tablets",
     "file_path": "entities/trichlor-tablets.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.7,
+    "overall_quality_score": 1.9,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1884,7 +1904,7 @@
     "file_path": "entities/turnover-time.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -1894,40 +1914,40 @@
     "file_path": "entities/unit-celsius.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.8,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=93 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=105 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/entities/unit-days",
     "file_path": "entities/unit-days.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=112 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=130 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/entities/unit-fahrenheit",
     "file_path": "entities/unit-fahrenheit.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.8,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=109 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=126 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/entities/unit-gallons",
     "file_path": "entities/unit-gallons.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=106 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=129 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/entities/unit-hours",
@@ -1935,29 +1955,29 @@
     "page_type": "entity",
     "cluster": "entities",
     "overall_quality_score": 1.6,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=133 -- thin content risk for AdSense/quality."
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/unit-liters",
     "file_path": "entities/unit-liters.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.7,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=100 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=116 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/entities/unit-mg-l",
     "file_path": "entities/unit-mg-l.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.7,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=90 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=117 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/entities/unit-minutes",
@@ -1967,64 +1987,64 @@
     "overall_quality_score": 1.6,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=119 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=133 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/entities/unit-months",
     "file_path": "entities/unit-months.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=126 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=135 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/entities/unit-ppm",
     "file_path": "entities/unit-ppm.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=122 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=139 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/entities/unit-weeks",
     "file_path": "entities/unit-weeks.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=114 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=126 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/entities/vacation-rental-checklist",
     "file_path": "entities/vacation-rental-checklist.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.4,
+    "overall_quality_score": 1.6,
     "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "overall_quality_score=1.4 across the 10-dimension rubric."
+    "priority": "P3",
+    "evidence": "On-page SEO issues: DUPLICATE_TITLE(2x)."
   },
   {
     "url": "https://waterbalancetools.com/entities/vinyl-pool",
     "file_path": "entities/vinyl-pool.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.3,
-    "action": "MERGE",
-    "priority": "P1",
-    "evidence": "originality_score=1 (near-duplicate of a sibling page's body text) -- see programmatic-duplication.csv for family \"entities\"."
+    "overall_quality_score": 1.6,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/water-replacement",
     "file_path": "entities/water-replacement.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.7,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -2034,17 +2054,17 @@
     "file_path": "entities/water-test-sheet.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
-    "action": "IMPROVE",
-    "priority": "P2",
-    "evidence": "word_count=138 -- thin content risk for AdSense/quality."
+    "overall_quality_score": 1.6,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/entities/winterization",
     "file_path": "entities/winterization.html",
     "page_type": "entity",
     "cluster": "entities",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.6,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -2255,9 +2275,9 @@
     "page_type": "glossary-term",
     "cluster": "glossary",
     "overall_quality_score": 1.8,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/glossary/breakpoint-dose",
@@ -2545,9 +2565,9 @@
     "page_type": "glossary-term",
     "cluster": "glossary",
     "overall_quality_score": 1.8,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/glossary/green-algae",
@@ -2595,9 +2615,9 @@
     "page_type": "glossary-term",
     "cluster": "glossary",
     "overall_quality_score": 1.8,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/glossary/main-drain",
@@ -2665,9 +2685,9 @@
     "page_type": "glossary-term",
     "cluster": "glossary",
     "overall_quality_score": 1.7,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/glossary/oto-test",
@@ -2775,9 +2795,9 @@
     "page_type": "glossary-term",
     "cluster": "glossary",
     "overall_quality_score": 1.8,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/glossary/pool-maintenance-schedule",
@@ -2785,9 +2805,9 @@
     "page_type": "glossary-term",
     "cluster": "glossary",
     "overall_quality_score": 1.7,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/glossary/pool-pump",
@@ -3125,9 +3145,9 @@
     "page_type": "glossary-term",
     "cluster": "glossary",
     "overall_quality_score": 1.8,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/glossary/water-temperature",
@@ -3288,6 +3308,16 @@
     "action": "IMPROVE",
     "priority": "P3",
     "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+  },
+  {
+    "url": "https://waterbalancetools.com/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+    "file_path": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+    "page_type": "guide",
+    "cluster": "guides/edge-cases",
+    "overall_quality_score": 1.8,
+    "action": "UNCHANGED",
+    "priority": "P3",
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/guides/edge-cases/high-cya-chlorine-lock",
@@ -3454,30 +3484,30 @@
     "file_path": "guides/ph/can-you-swim-in-high-ph-water.html",
     "page_type": "guide",
     "cluster": "guides/ph",
-    "overall_quality_score": 2.5,
+    "overall_quality_score": 2.6,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.5 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/guides/ph/does-rain-lower-pool-ph",
     "file_path": "guides/ph/does-rain-lower-pool-ph.html",
     "page_type": "guide",
     "cluster": "guides/ph",
-    "overall_quality_score": 2.4,
+    "overall_quality_score": 2.5,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.4 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.5 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/guides/ph/how-to-lower-pool-ph",
     "file_path": "guides/ph/how-to-lower-pool-ph.html",
     "page_type": "guide",
     "cluster": "guides/ph",
-    "overall_quality_score": 2.5,
+    "overall_quality_score": 2.6,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.5 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/guides/ph/",
@@ -3494,20 +3524,20 @@
     "file_path": "guides/ph/what-causes-high-pool-ph.html",
     "page_type": "guide",
     "cluster": "guides/ph",
-    "overall_quality_score": 2.5,
+    "overall_quality_score": 2.6,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.5 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/guides/ph/why-pool-ph-keeps-rising",
     "file_path": "guides/ph/why-pool-ph-keeps-rising.html",
     "page_type": "guide",
     "cluster": "guides/ph",
-    "overall_quality_score": 2.5,
+    "overall_quality_score": 2.6,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.5 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/guides/pool-chemistry-basics",
@@ -3524,20 +3554,20 @@
     "file_path": "guides/questions/can-rain-affect-pool-chemistry.html",
     "page_type": "question-page",
     "cluster": "guides/questions",
-    "overall_quality_score": 2.5,
+    "overall_quality_score": 2.6,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.5 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/guides/questions/can-you-swim-after-shocking-a-pool",
     "file_path": "guides/questions/can-you-swim-after-shocking-a-pool.html",
     "page_type": "question-page",
     "cluster": "guides/questions",
-    "overall_quality_score": 2.5,
+    "overall_quality_score": 2.6,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.5 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/guides/questions/",
@@ -3554,40 +3584,40 @@
     "file_path": "guides/questions/why-does-hot-tub-water-smell.html",
     "page_type": "question-page",
     "cluster": "guides/questions",
-    "overall_quality_score": 2.5,
+    "overall_quality_score": 2.6,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.5 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/guides/questions/why-does-pool-water-turn-cloudy",
     "file_path": "guides/questions/why-does-pool-water-turn-cloudy.html",
     "page_type": "question-page",
     "cluster": "guides/questions",
-    "overall_quality_score": 2.5,
+    "overall_quality_score": 2.6,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.5 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/guides/questions/why-is-my-hot-tub-foamy",
     "file_path": "guides/questions/why-is-my-hot-tub-foamy.html",
     "page_type": "question-page",
     "cluster": "guides/questions",
-    "overall_quality_score": 2.5,
+    "overall_quality_score": 2.6,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.5 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/guides/questions/why-is-my-pool-green-but-chlorine-is-high",
     "file_path": "guides/questions/why-is-my-pool-green-but-chlorine-is-high.html",
     "page_type": "question-page",
     "cluster": "guides/questions",
-    "overall_quality_score": 2.5,
+    "overall_quality_score": 2.6,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.5 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/guides/seasonal/closing-pool-chemistry-winter",
@@ -3644,7 +3674,7 @@
     "file_path": "hot-tub-chemical-levels-chart.html",
     "page_type": "chart",
     "cluster": "root",
-    "overall_quality_score": 2.6,
+    "overall_quality_score": 2.7,
     "action": "IMPROVE",
     "priority": "P3",
     "evidence": "On-page SEO issues: TITLE_TOO_LONG."
@@ -3654,10 +3684,10 @@
     "file_path": "hot-tub-chlorine-levels-chart.html",
     "page_type": "chart",
     "cluster": "root",
-    "overall_quality_score": 2.7,
+    "overall_quality_score": 2.8,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.7 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.8 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/",
@@ -3704,10 +3734,10 @@
     "file_path": "maintenance/how-often-add-chlorine-pool.html",
     "page_type": "maintenance-guide",
     "cluster": "maintenance",
-    "overall_quality_score": 1.9,
-    "action": "UNCHANGED",
+    "overall_quality_score": 2.3,
+    "action": "KEEP",
     "priority": "P3",
-    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
+    "evidence": "overall_quality_score=2.3 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/maintenance/how-to-balance-pool-water",
@@ -3824,17 +3854,17 @@
     "file_path": "pool-alkalinity-levels-chart.html",
     "page_type": "chart",
     "cluster": "root",
-    "overall_quality_score": 2.5,
+    "overall_quality_score": 2.6,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.5 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/pool-chemical-levels-chart",
     "file_path": "pool-chemical-levels-chart.html",
     "page_type": "chart",
     "cluster": "root",
-    "overall_quality_score": 2,
+    "overall_quality_score": 2.4,
     "action": "IMPROVE",
     "priority": "P3",
     "evidence": "On-page SEO issues: TITLE_TOO_LONG."
@@ -3854,7 +3884,7 @@
     "file_path": "pool-chlorine-levels-chart.html",
     "page_type": "chart",
     "cluster": "root",
-    "overall_quality_score": 2.1,
+    "overall_quality_score": 2.5,
     "action": "IMPROVE",
     "priority": "P3",
     "evidence": "On-page SEO issues: TITLE_TOO_LONG."
@@ -3864,20 +3894,20 @@
     "file_path": "pool-cya-levels-chart.html",
     "page_type": "chart",
     "cluster": "root",
-    "overall_quality_score": 2.5,
+    "overall_quality_score": 2.6,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.5 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/pool-ph-levels-chart",
     "file_path": "pool-ph-levels-chart.html",
     "page_type": "chart",
     "cluster": "root",
-    "overall_quality_score": 2,
-    "action": "UNCHANGED",
+    "overall_quality_score": 2.4,
+    "action": "KEEP",
     "priority": "P3",
-    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
+    "evidence": "overall_quality_score=2.4 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/printable/maintenance-checklist",
@@ -4074,7 +4104,7 @@
     "file_path": "programmatic/chlorine/index.html",
     "page_type": "programmatic-subhub",
     "cluster": "programmatic/chlorine",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.7,
     "action": "IMPROVE",
     "priority": "P2",
     "evidence": "repetition_score=0: page shares several exact boilerplate paragraph/FAQ/table blocks with sibling pages despite otherwise original prose (originality_score=3) -- see programmatic-duplication.csv for family \"programmatic/chlorine\"."
@@ -4124,20 +4154,20 @@
     "file_path": "programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons.html",
     "page_type": "programmatic-longtail",
     "cluster": "programmatic/hot-tubs",
-    "overall_quality_score": 2,
+    "overall_quality_score": 2.1,
     "action": "MERGE",
     "priority": "P1",
-    "evidence": "originality_score=0 (near-duplicate of a sibling page's body text) -- see programmatic-duplication.csv for family \"programmatic/hot-tubs\"."
+    "evidence": "originality_score=1 (near-duplicate of a sibling page's body text) -- see programmatic-duplication.csv for family \"programmatic/hot-tubs\"."
   },
   {
     "url": "https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons",
     "file_path": "programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons.html",
     "page_type": "programmatic-longtail",
     "cluster": "programmatic/hot-tubs",
-    "overall_quality_score": 2,
+    "overall_quality_score": 2.1,
     "action": "MERGE",
     "priority": "P1",
-    "evidence": "originality_score=0 (near-duplicate of a sibling page's body text) -- see programmatic-duplication.csv for family \"programmatic/hot-tubs\"."
+    "evidence": "originality_score=1 (near-duplicate of a sibling page's body text) -- see programmatic-duplication.csv for family \"programmatic/hot-tubs\"."
   },
   {
     "url": "https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons",
@@ -4154,20 +4184,20 @@
     "file_path": "programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons.html",
     "page_type": "programmatic-longtail",
     "cluster": "programmatic/hot-tubs",
-    "overall_quality_score": 2,
+    "overall_quality_score": 2.1,
     "action": "MERGE",
     "priority": "P1",
-    "evidence": "originality_score=0 (near-duplicate of a sibling page's body text) -- see programmatic-duplication.csv for family \"programmatic/hot-tubs\"."
+    "evidence": "originality_score=1 (near-duplicate of a sibling page's body text) -- see programmatic-duplication.csv for family \"programmatic/hot-tubs\"."
   },
   {
     "url": "https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons",
     "file_path": "programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons.html",
     "page_type": "programmatic-longtail",
     "cluster": "programmatic/hot-tubs",
-    "overall_quality_score": 2,
+    "overall_quality_score": 2.1,
     "action": "MERGE",
     "priority": "P1",
-    "evidence": "originality_score=0 (near-duplicate of a sibling page's body text) -- see programmatic-duplication.csv for family \"programmatic/hot-tubs\"."
+    "evidence": "originality_score=1 (near-duplicate of a sibling page's body text) -- see programmatic-duplication.csv for family \"programmatic/hot-tubs\"."
   },
   {
     "url": "https://waterbalancetools.com/programmatic/hot-tubs/",
@@ -4274,7 +4304,7 @@
     "file_path": "programmatic/problems/index.html",
     "page_type": "programmatic-subhub",
     "cluster": "programmatic/problems",
-    "overall_quality_score": 2,
+    "overall_quality_score": 1.9,
     "action": "UNCHANGED",
     "priority": "P3",
     "evidence": "No P0/P1/P2 signal triggered by this audit pass."
@@ -4404,10 +4434,10 @@
     "file_path": "reference/calcium-hardness-explained.html",
     "page_type": "reference-page",
     "cluster": "reference",
-    "overall_quality_score": 2.6,
+    "overall_quality_score": 2.7,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.7 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/reference/calculator-directory",
@@ -4474,20 +4504,20 @@
     "file_path": "reference/chlorine-explained.html",
     "page_type": "reference-page",
     "cluster": "reference",
-    "overall_quality_score": 2.6,
+    "overall_quality_score": 2.7,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.7 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/reference/combined-chlorine-explained",
     "file_path": "reference/combined-chlorine-explained.html",
     "page_type": "reference-page",
     "cluster": "reference",
-    "overall_quality_score": 2.6,
+    "overall_quality_score": 2.7,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.7 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/reference/common-pool-chemistry-mistakes",
@@ -4505,19 +4535,19 @@
     "page_type": "reference-page",
     "cluster": "reference",
     "overall_quality_score": 2.3,
-    "action": "IMPROVE",
+    "action": "KEEP",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "overall_quality_score=2.3 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/reference/cyanuric-acid-explained",
     "file_path": "reference/cyanuric-acid-explained.html",
     "page_type": "reference-page",
     "cluster": "reference",
-    "overall_quality_score": 2.6,
+    "overall_quality_score": 2.7,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.7 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/reference/datasets/chemical-properties/",
@@ -4525,9 +4555,9 @@
     "page_type": "dataset-page",
     "cluster": "reference/datasets",
     "overall_quality_score": 2.1,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/reference/datasets/chemical-ranges/",
@@ -4555,9 +4585,9 @@
     "page_type": "dataset-page",
     "cluster": "reference/datasets",
     "overall_quality_score": 2,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/reference/datasets/conversion-factors/",
@@ -4565,9 +4595,9 @@
     "page_type": "dataset-page",
     "cluster": "reference/datasets",
     "overall_quality_score": 2.1,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/reference/datasets/dosage-matrices/",
@@ -4595,9 +4625,9 @@
     "page_type": "dataset-page",
     "cluster": "reference/datasets",
     "overall_quality_score": 1.8,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/reference/datasets/maintenance-schedules/",
@@ -4605,9 +4635,9 @@
     "page_type": "dataset-page",
     "cluster": "reference/datasets",
     "overall_quality_score": 2.1,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/reference/datasets/pool-types/",
@@ -4625,9 +4655,9 @@
     "page_type": "dataset-page",
     "cluster": "reference/datasets",
     "overall_quality_score": 2.1,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/reference/datasets/testing-frequency/",
@@ -4635,9 +4665,9 @@
     "page_type": "dataset-page",
     "cluster": "reference/datasets",
     "overall_quality_score": 2.1,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/reference/datasets/units/",
@@ -4665,9 +4695,9 @@
     "page_type": "dataset-page",
     "cluster": "reference/datasets",
     "overall_quality_score": 2,
-    "action": "IMPROVE",
+    "action": "UNCHANGED",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "No P0/P1/P2 signal triggered by this audit pass."
   },
   {
     "url": "https://waterbalancetools.com/reference/datasets/water-problems/",
@@ -4704,10 +4734,10 @@
     "file_path": "reference/free-chlorine-explained.html",
     "page_type": "reference-page",
     "cluster": "reference",
-    "overall_quality_score": 2.6,
+    "overall_quality_score": 2.7,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.7 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/reference/ideal-pool-levels",
@@ -4725,9 +4755,9 @@
     "page_type": "reference-page",
     "cluster": "reference",
     "overall_quality_score": 2.2,
-    "action": "IMPROVE",
+    "action": "KEEP",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "overall_quality_score=2.2 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/reference/",
@@ -4745,9 +4775,9 @@
     "page_type": "reference-page",
     "cluster": "reference",
     "overall_quality_score": 2.3,
-    "action": "IMPROVE",
+    "action": "KEEP",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "overall_quality_score=2.3 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/reference/pool-chemical-timeline",
@@ -4785,9 +4815,9 @@
     "page_type": "reference-page",
     "cluster": "reference",
     "overall_quality_score": 2.2,
-    "action": "IMPROVE",
+    "action": "KEEP",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "overall_quality_score=2.2 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/reference/pool-volume-reference",
@@ -4825,9 +4855,9 @@
     "page_type": "reference-page",
     "cluster": "reference",
     "overall_quality_score": 2.3,
-    "action": "IMPROVE",
+    "action": "KEEP",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "overall_quality_score=2.3 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/reference/salt-matrix",
@@ -4844,10 +4874,10 @@
     "file_path": "reference/salt-water-generator-explained.html",
     "page_type": "reference-page",
     "cluster": "reference",
-    "overall_quality_score": 2.6,
+    "overall_quality_score": 2.7,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.7 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/reference/shock-dosage-matrix",
@@ -4864,10 +4894,10 @@
     "file_path": "reference/shock-treatment-explained.html",
     "page_type": "reference-page",
     "cluster": "reference",
-    "overall_quality_score": 2.6,
+    "overall_quality_score": 2.7,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.7 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/reference/testing-frequency",
@@ -4875,19 +4905,19 @@
     "page_type": "reference-page",
     "cluster": "reference",
     "overall_quality_score": 2.2,
-    "action": "IMPROVE",
+    "action": "KEEP",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "overall_quality_score=2.2 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/reference/total-alkalinity-explained",
     "file_path": "reference/total-alkalinity-explained.html",
     "page_type": "reference-page",
     "cluster": "reference",
-    "overall_quality_score": 2.6,
+    "overall_quality_score": 2.7,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.7 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/reference/vacation-rental-maintenance-schedule",
@@ -4895,9 +4925,9 @@
     "page_type": "reference-page",
     "cluster": "reference",
     "overall_quality_score": 2.2,
-    "action": "IMPROVE",
+    "action": "KEEP",
     "priority": "P3",
-    "evidence": "On-page SEO issues: TITLE_TOO_LONG."
+    "evidence": "overall_quality_score=2.2 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/reference/water-balance-checklist",
@@ -4964,10 +4994,10 @@
     "file_path": "reports/accessibility.html",
     "page_type": "internal-dashboard",
     "cluster": "reports",
-    "overall_quality_score": 1.5,
+    "overall_quality_score": 1.1,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=109 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=71 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/reports/ai-readiness",
@@ -4984,10 +5014,10 @@
     "file_path": "reports/architecture.html",
     "page_type": "internal-dashboard",
     "cluster": "reports",
-    "overall_quality_score": 1.6,
+    "overall_quality_score": 1.7,
     "action": "IMPROVE",
     "priority": "P2",
-    "evidence": "word_count=114 -- thin content risk for AdSense/quality."
+    "evidence": "word_count=115 -- thin content risk for AdSense/quality."
   },
   {
     "url": "https://waterbalancetools.com/reports/calculators",
@@ -5194,10 +5224,10 @@
     "file_path": "salt-water-pool-chemical-levels-chart.html",
     "page_type": "chart",
     "cluster": "root",
-    "overall_quality_score": 2.6,
+    "overall_quality_score": 2.7,
     "action": "KEEP",
     "priority": "P3",
-    "evidence": "overall_quality_score=2.6 -- strong across the rubric."
+    "evidence": "overall_quality_score=2.7 -- strong across the rubric."
   },
   {
     "url": "https://waterbalancetools.com/search/",

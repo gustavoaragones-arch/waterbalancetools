@@ -11,6 +11,8 @@ https://waterbalancetools.com/academy/equipment/sand-vs-cartridge-filters,academ
 https://waterbalancetools.com/academy/fundamentals/how-temperature-changes-water-chemistry,academy/fundamentals/how-temperature-changes-water-chemistry.html,How Temperature Changes Water Chemistry | Academy | WaterBalanceTools,69,129,1,true,TITLE_TOO_LONG
 https://waterbalancetools.com/academy/fundamentals/how-water-balance-works,academy/fundamentals/how-water-balance-works.html,How Water Balance Works | Academy | WaterBalanceTools,53,143,1,true,none
 https://waterbalancetools.com/academy/fundamentals/,academy/fundamentals/index.html,Fundamentals | Academy | WaterBalanceTools,42,67,1,true,none
+https://waterbalancetools.com/academy/fundamentals/indoor-pool-chemistry,academy/fundamentals/indoor-pool-chemistry.html,Indoor Pool Chemistry | Academy | WaterBalanceTools,51,149,1,true,none
+https://waterbalancetools.com/academy/fundamentals/new-pool-startup-chemistry,academy/fundamentals/new-pool-startup-chemistry.html,New Pool Startup Chemistry (Fresh Fill & New Plaster) | Academy | WaterBalanceTools,83,160,1,true,TITLE_TOO_LONG
 https://waterbalancetools.com/academy/fundamentals/pool-vs-hot-tub-chemistry,academy/fundamentals/pool-vs-hot-tub-chemistry.html,Pool vs. Hot Tub Chemistry | Academy | WaterBalanceTools,56,145,1,true,none
 https://waterbalancetools.com/academy/fundamentals/the-four-core-water-tests,academy/fundamentals/the-four-core-water-tests.html,The Four Core Water Tests | Academy | WaterBalanceTools,55,121,1,true,none
 https://waterbalancetools.com/academy/fundamentals/understanding-pool-water-chemistry,academy/fundamentals/understanding-pool-water-chemistry.html,Understanding Pool Water Chemistry | Academy | WaterBalanceTools,64,105,1,true,none
@@ -66,21 +68,21 @@ https://waterbalancetools.com/audit/google/,audit/google/index.html,Google Index
 https://waterbalancetools.com/audit/google/priority-report,audit/google/priority-report.html,Priority Report | WaterBalanceTools,35,60,1,true,none
 https://waterbalancetools.com/audit/google/search-console-helper,audit/google/search-console-helper.html,Search Console Helper | WaterBalanceTools,41,61,1,true,none
 https://waterbalancetools.com/audit/google/weak-pages,audit/google/weak-pages.html,Weak Pages | WaterBalanceTools,30,62,1,true,none
-https://waterbalancetools.com/calculators/chemical-calculator,calculators/chemical-calculator.html,Pool Chemical Calculator (Exact Levels in 30 Seconds) | WaterBalanceTools,73,156,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator,calculators/hot-tub-chlorine-calculator.html,Hot Tub Chemical Calculator (Safe Levels in 30 Seconds) | WaterBalanceTools,75,154,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/calculators/chemical-calculator,calculators/chemical-calculator.html,Pool Chemical Calculator (Exact Levels Fast) | WaterBalanceTools,64,156,1,true,none
+https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator,calculators/hot-tub-chlorine-calculator.html,Hot Tub Chlorine Calculator (30-Second Check) | WaterBalanceTools,65,154,1,true,none
 https://waterbalancetools.com/calculators/hot-tub-ph-calculator,calculators/hot-tub-ph-calculator.html,Hot Tub pH Calculator | WaterBalanceTools,41,109,1,true,none
 https://waterbalancetools.com/calculators/hot-tub-shock-calculator,calculators/hot-tub-shock-calculator.html,Hot Tub Shock Calculator | WaterBalanceTools,44,94,1,true,none
 https://waterbalancetools.com/calculators/,calculators/index.html,Calculators Hub | WaterBalanceTools,35,80,1,true,none
 https://waterbalancetools.com/calculators/pool-alkalinity-calculator,calculators/pool-alkalinity-calculator.html,Pool Alkalinity Calculator | WaterBalanceTools,46,120,1,true,none
-https://waterbalancetools.com/calculators/pool-chlorine-calculator,calculators/pool-chlorine-calculator.html,Pool Chlorine Calculator (Ounces from Volume + ppm) | WaterBalanceTools,71,160,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/calculators/pool-chlorine-calculator,calculators/pool-chlorine-calculator.html,Pool Chlorine Calculator (Oz by Volume) | WaterBalanceTools,59,160,1,true,none
 https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator,calculators/pool-cyanuric-acid-calculator.html,Pool Cyanuric Acid Calculator | WaterBalanceTools,49,112,1,true,none
-https://waterbalancetools.com/calculators/pool-ph-calculator,calculators/pool-ph-calculator.html,Pool pH Calculator (Hit 7.2–7.6 Without Overshoot) | WaterBalanceTools,70,153,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/calculators/pool-shock-calculator,calculators/pool-shock-calculator.html,Pool Shock Calculator (10–30 ppm Dose in 30 Seconds) | WaterBalanceTools,72,160,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/calculators/pool-ph-calculator,calculators/pool-ph-calculator.html,Pool pH Calculator (Target 7.2–7.6) | WaterBalanceTools,55,153,1,true,none
+https://waterbalancetools.com/calculators/pool-shock-calculator,calculators/pool-shock-calculator.html,Pool Shock Calculator (10–30 ppm Dose) | WaterBalanceTools,58,160,1,true,none
 https://waterbalancetools.com/calculators/pool-turnover-rate-calculator,calculators/pool-turnover-rate-calculator.html,Pool Turnover Rate Calculator | WaterBalanceTools,49,114,1,true,none
 https://waterbalancetools.com/calculators/pool-volume-calculator,calculators/pool-volume-calculator.html,Pool Volume Calculator (calculators) | WaterBalanceTools,56,102,1,true,none
 https://waterbalancetools.com/calculators/saltwater-pool-salt-calculator,calculators/saltwater-pool-salt-calculator.html,Saltwater Pool Salt Calculator | WaterBalanceTools,50,120,1,true,none
 https://waterbalancetools.com/calculators/spa-volume-calculator,calculators/spa-volume-calculator.html,Spa Volume Calculator | WaterBalanceTools,41,96,1,true,none
-https://waterbalancetools.com/calculators/volume-calculator,calculators/volume-calculator.html,Pool Volume Calculator (calculators) (calculators) | WaterBalanceTools,70,91,1,true,TITLE_TOO_LONG;CANONICAL_MISMATCH
+https://waterbalancetools.com/calculators/volume-calculator,calculators/volume-calculator.html,Pool Volume Calculator | WaterBalanceTools,42,91,1,true,CANONICAL_MISMATCH
 https://waterbalancetools.com/charts/hot-tub-chemical-levels-chart,charts/hot-tub-chemical-levels-chart.html,Hot Tub Chemical Levels Chart | WaterBalanceTools,49,85,1,true,CANONICAL_MISMATCH
 https://waterbalancetools.com/charts/,charts/index.html,Charts Hub | WaterBalanceTools,30,80,1,true,none
 https://waterbalancetools.com/charts/pool-chemical-levels-chart,charts/pool-chemical-levels-chart.html,Pool Chemical Levels Chart | WaterBalanceTools,46,123,1,true,CANONICAL_MISMATCH
@@ -99,111 +101,111 @@ https://waterbalancetools.com/editorial/editorial-policy/,editorial/editorial-po
 https://waterbalancetools.com/editorial/,editorial/index.html,Editorial Framework | WaterBalanceTools,39,141,1,true,none
 https://waterbalancetools.com/editorial/review-process/,editorial/review-process/index.html,Review Process | WaterBalanceTools,34,103,1,true,none
 https://waterbalancetools.com/editorial/update-policy/,editorial/update-policy/index.html,Update Policy | WaterBalanceTools,33,79,1,true,none
-https://waterbalancetools.com/entities/algae,entities/algae.html,Algae — Pool Chemistry Entity | WaterBalanceTools,49,80,1,true,none
-https://waterbalancetools.com/entities/alkalinity,entities/alkalinity.html,Total Alkalinity — Pool Chemistry Entity | WaterBalanceTools,60,57,1,true,none
-https://waterbalancetools.com/entities/automatic-chlorinator,entities/automatic-chlorinator.html,Automatic Chlorinator — Pool Chemistry Entity | WaterBalanceTools,65,99,1,true,none
-https://waterbalancetools.com/entities/backwashing,entities/backwashing.html,Backwashing — Pool Chemistry Entity | WaterBalanceTools,55,82,1,true,none
-https://waterbalancetools.com/entities/baking-soda,entities/baking-soda.html,Baking Soda — Pool Chemistry Entity | WaterBalanceTools,55,85,1,true,none
-https://waterbalancetools.com/entities/balancing,entities/balancing.html,Water Balancing — Pool Chemistry Entity | WaterBalanceTools,59,102,1,true,none
-https://waterbalancetools.com/entities/biguanide,entities/biguanide.html,Biguanide — Pool Chemistry Entity | WaterBalanceTools,53,102,1,true,none
-https://waterbalancetools.com/entities/breakpoint-chlorination,entities/breakpoint-chlorination.html,Breakpoint Chlorination — Pool Chemistry Entity | WaterBalanceTools,67,78,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/entities/bromine,entities/bromine.html,Bromine — Pool Chemistry Entity | WaterBalanceTools,51,99,1,true,none
-https://waterbalancetools.com/entities/calcium-chloride,entities/calcium-chloride.html,Calcium Chloride — Pool Chemistry Entity | WaterBalanceTools,60,45,1,true,META_DESCRIPTION_TOO_SHORT
-https://waterbalancetools.com/entities/calcium-hardness,entities/calcium-hardness.html,Calcium Hardness — Pool Chemistry Entity | WaterBalanceTools,60,95,1,true,none
-https://waterbalancetools.com/entities/calcium-hypochlorite,entities/calcium-hypochlorite.html,Calcium Hypochlorite — Pool Chemistry Entity | WaterBalanceTools,64,84,1,true,none
-https://waterbalancetools.com/entities/cartridge-filter,entities/cartridge-filter.html,Cartridge Filter — Pool Chemistry Entity | WaterBalanceTools,60,104,1,true,none
-https://waterbalancetools.com/entities/cdc,entities/cdc.html,CDC — Pool Chemistry Entity | WaterBalanceTools,47,112,1,true,none
-https://waterbalancetools.com/entities/chemical-feeder,entities/chemical-feeder.html,Chemical Feeder — Pool Chemistry Entity | WaterBalanceTools,59,74,1,true,none
-https://waterbalancetools.com/entities/chemical-log,entities/chemical-log.html,Pool Chemical Log Sheet — Pool Chemistry Entity | WaterBalanceTools,67,85,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/entities/closing-checklist,entities/closing-checklist.html,Pool Closing Checklist — Pool Chemistry Entity | WaterBalanceTools,66,58,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/entities/cloudy-water,entities/cloudy-water.html,Cloudy Water — Pool Chemistry Entity | WaterBalanceTools,56,94,1,true,none
-https://waterbalancetools.com/entities/combined-chlorine,entities/combined-chlorine.html,Combined Chlorine — Pool Chemistry Entity | WaterBalanceTools,61,88,1,true,none
-https://waterbalancetools.com/entities/commercial-pool,entities/commercial-pool.html,Commercial Pool — Pool Chemistry Entity | WaterBalanceTools,59,85,1,true,none
-https://waterbalancetools.com/entities/concrete-pool,entities/concrete-pool.html,Concrete Pool — Pool Chemistry Entity | WaterBalanceTools,57,85,1,true,none
-https://waterbalancetools.com/entities/copper,entities/copper.html,Copper — Pool Chemistry Entity | WaterBalanceTools,50,107,1,true,none
-https://waterbalancetools.com/entities/corrosion,entities/corrosion.html,Corrosion — Pool Chemistry Entity | WaterBalanceTools,53,80,1,true,none
-https://waterbalancetools.com/entities/cover,entities/cover.html,Pool Cover — Pool Chemistry Entity | WaterBalanceTools,54,91,1,true,none
-https://waterbalancetools.com/entities/cyanuric-acid,entities/cyanuric-acid.html,Cyanuric Acid — Pool Chemistry Entity | WaterBalanceTools,57,82,1,true,none
-https://waterbalancetools.com/entities/de-filter,entities/de-filter.html,DE Filter — Pool Chemistry Entity | WaterBalanceTools,53,97,1,true,none
-https://waterbalancetools.com/entities/emergency-reference,entities/emergency-reference.html,Emergency Recovery Reference — Pool Chemistry Entity | WaterBalanceTools,72,74,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/entities/epa,entities/epa.html,EPA — Pool Chemistry Entity | WaterBalanceTools,47,88,1,true,none
-https://waterbalancetools.com/entities/eye-irritation,entities/eye-irritation.html,Eye Irritation — Pool Chemistry Entity | WaterBalanceTools,58,61,1,true,none
-https://waterbalancetools.com/entities/fiberglass-pool,entities/fiberglass-pool.html,Fiberglass Pool — Pool Chemistry Entity | WaterBalanceTools,59,85,1,true,none
-https://waterbalancetools.com/entities/filtration,entities/filtration.html,Filtration — Pool Chemistry Entity | WaterBalanceTools,54,73,1,true,none
-https://waterbalancetools.com/entities/flow-rate,entities/flow-rate.html,Flow Rate — Pool Chemistry Entity | WaterBalanceTools,53,78,1,true,none
-https://waterbalancetools.com/entities/foaming,entities/foaming.html,Foaming — Pool Chemistry Entity | WaterBalanceTools,51,91,1,true,none
-https://waterbalancetools.com/entities/free-chlorine,entities/free-chlorine.html,Free Chlorine — Pool Chemistry Entity | WaterBalanceTools,57,66,1,true,none
-https://waterbalancetools.com/entities/gallons,entities/gallons.html,Gallons — Pool Chemistry Entity | WaterBalanceTools,51,64,1,true,none
-https://waterbalancetools.com/entities/green-water,entities/green-water.html,Green Water — Pool Chemistry Entity | WaterBalanceTools,55,77,1,true,none
-https://waterbalancetools.com/entities/heater,entities/heater.html,Pool Heater — Pool Chemistry Entity | WaterBalanceTools,55,86,1,true,none
-https://waterbalancetools.com/entities/high-chlorine,entities/high-chlorine.html,High Chlorine — Pool Chemistry Entity | WaterBalanceTools,57,89,1,true,none
-https://waterbalancetools.com/entities/high-ph,entities/high-ph.html,High pH — Pool Chemistry Entity | WaterBalanceTools,51,87,1,true,none
-https://waterbalancetools.com/entities/hot-tub,entities/hot-tub.html,Hot Tub — Pool Chemistry Entity | WaterBalanceTools,51,75,1,true,none
-https://waterbalancetools.com/entities/hydrogen-peroxide,entities/hydrogen-peroxide.html,Hydrogen Peroxide — Pool Chemistry Entity | WaterBalanceTools,61,87,1,true,none
+https://waterbalancetools.com/entities/algae,entities/algae.html,Algae | WaterBalanceTools,25,80,1,true,none
+https://waterbalancetools.com/entities/alkalinity,entities/alkalinity.html,Total Alkalinity | WaterBalanceTools,36,57,1,true,none
+https://waterbalancetools.com/entities/automatic-chlorinator,entities/automatic-chlorinator.html,Automatic Chlorinator | WaterBalanceTools,41,99,1,true,none
+https://waterbalancetools.com/entities/backwashing,entities/backwashing.html,Backwashing | WaterBalanceTools,31,82,1,true,none
+https://waterbalancetools.com/entities/baking-soda,entities/baking-soda.html,Baking Soda | WaterBalanceTools,31,85,1,true,none
+https://waterbalancetools.com/entities/balancing,entities/balancing.html,Water Balancing | WaterBalanceTools,35,102,1,true,none
+https://waterbalancetools.com/entities/biguanide,entities/biguanide.html,Biguanide | WaterBalanceTools,29,102,1,true,none
+https://waterbalancetools.com/entities/breakpoint-chlorination,entities/breakpoint-chlorination.html,Breakpoint Chlorination | WaterBalanceTools,43,78,1,true,none
+https://waterbalancetools.com/entities/bromine,entities/bromine.html,Bromine | WaterBalanceTools,27,99,1,true,none
+https://waterbalancetools.com/entities/calcium-chloride,entities/calcium-chloride.html,Calcium Chloride | WaterBalanceTools,36,86,1,true,none
+https://waterbalancetools.com/entities/calcium-hardness,entities/calcium-hardness.html,Calcium Hardness | WaterBalanceTools,36,95,1,true,none
+https://waterbalancetools.com/entities/calcium-hypochlorite,entities/calcium-hypochlorite.html,Calcium Hypochlorite | WaterBalanceTools,40,84,1,true,none
+https://waterbalancetools.com/entities/cartridge-filter,entities/cartridge-filter.html,Cartridge Filter | WaterBalanceTools,36,104,1,true,none
+https://waterbalancetools.com/entities/cdc,entities/cdc.html,CDC | WaterBalanceTools,23,112,1,true,none
+https://waterbalancetools.com/entities/chemical-feeder,entities/chemical-feeder.html,Chemical Feeder | WaterBalanceTools,35,74,1,true,none
+https://waterbalancetools.com/entities/chemical-log,entities/chemical-log.html,Pool Chemical Log Sheet | WaterBalanceTools,43,85,1,true,none
+https://waterbalancetools.com/entities/closing-checklist,entities/closing-checklist.html,Pool Closing Checklist | WaterBalanceTools,42,58,1,true,none
+https://waterbalancetools.com/entities/cloudy-water,entities/cloudy-water.html,Cloudy Water | WaterBalanceTools,32,94,1,true,none
+https://waterbalancetools.com/entities/combined-chlorine,entities/combined-chlorine.html,Combined Chlorine | WaterBalanceTools,37,88,1,true,none
+https://waterbalancetools.com/entities/commercial-pool,entities/commercial-pool.html,Commercial Pool | WaterBalanceTools,35,85,1,true,none
+https://waterbalancetools.com/entities/concrete-pool,entities/concrete-pool.html,Concrete Pool | WaterBalanceTools,33,85,1,true,none
+https://waterbalancetools.com/entities/copper,entities/copper.html,Copper | WaterBalanceTools,26,107,1,true,none
+https://waterbalancetools.com/entities/corrosion,entities/corrosion.html,Corrosion | WaterBalanceTools,29,80,1,true,none
+https://waterbalancetools.com/entities/cover,entities/cover.html,Pool Cover | WaterBalanceTools,30,91,1,true,none
+https://waterbalancetools.com/entities/cyanuric-acid,entities/cyanuric-acid.html,Cyanuric Acid | WaterBalanceTools,33,82,1,true,none
+https://waterbalancetools.com/entities/de-filter,entities/de-filter.html,DE Filter | WaterBalanceTools,29,97,1,true,none
+https://waterbalancetools.com/entities/emergency-reference,entities/emergency-reference.html,Emergency Recovery Reference | WaterBalanceTools,48,74,1,true,none
+https://waterbalancetools.com/entities/epa,entities/epa.html,EPA | WaterBalanceTools,23,88,1,true,none
+https://waterbalancetools.com/entities/eye-irritation,entities/eye-irritation.html,Eye Irritation | WaterBalanceTools,34,61,1,true,none
+https://waterbalancetools.com/entities/fiberglass-pool,entities/fiberglass-pool.html,Fiberglass Pool | WaterBalanceTools,35,85,1,true,none
+https://waterbalancetools.com/entities/filtration,entities/filtration.html,Filtration | WaterBalanceTools,30,73,1,true,none
+https://waterbalancetools.com/entities/flow-rate,entities/flow-rate.html,Flow Rate | WaterBalanceTools,29,78,1,true,none
+https://waterbalancetools.com/entities/foaming,entities/foaming.html,Foaming | WaterBalanceTools,27,91,1,true,none
+https://waterbalancetools.com/entities/free-chlorine,entities/free-chlorine.html,Free Chlorine | WaterBalanceTools,33,66,1,true,none
+https://waterbalancetools.com/entities/gallons,entities/gallons.html,Gallons | WaterBalanceTools,27,64,1,true,none
+https://waterbalancetools.com/entities/green-water,entities/green-water.html,Green Water | WaterBalanceTools,31,77,1,true,none
+https://waterbalancetools.com/entities/heater,entities/heater.html,Pool Heater | WaterBalanceTools,31,86,1,true,none
+https://waterbalancetools.com/entities/high-chlorine,entities/high-chlorine.html,High Chlorine | WaterBalanceTools,33,89,1,true,none
+https://waterbalancetools.com/entities/high-ph,entities/high-ph.html,High pH | WaterBalanceTools,27,87,1,true,none
+https://waterbalancetools.com/entities/hot-tub,entities/hot-tub.html,Hot Tub | WaterBalanceTools,27,75,1,true,none
+https://waterbalancetools.com/entities/hydrogen-peroxide,entities/hydrogen-peroxide.html,Hydrogen Peroxide | WaterBalanceTools,37,87,1,true,none
 https://waterbalancetools.com/entities/,entities/index.html,Entity Graph — Pool Chemistry Knowledge Base | WaterBalanceTools,64,160,1,true,none
-https://waterbalancetools.com/entities/indoor-pool,entities/indoor-pool.html,Indoor Pool — Pool Chemistry Entity | WaterBalanceTools,55,77,1,true,none
-https://waterbalancetools.com/entities/iron,entities/iron.html,Iron — Pool Chemistry Entity | WaterBalanceTools,48,78,1,true,none
-https://waterbalancetools.com/entities/lamotte,entities/lamotte.html,LaMotte — Pool Chemistry Entity | WaterBalanceTools,51,92,1,true,none
-https://waterbalancetools.com/entities/liquid-chlorine,entities/liquid-chlorine.html,Liquid Chlorine — Pool Chemistry Entity | WaterBalanceTools,59,87,1,true,none
-https://waterbalancetools.com/entities/liters,entities/liters.html,Liters — Pool Chemistry Entity | WaterBalanceTools,50,66,1,true,none
-https://waterbalancetools.com/entities/low-chlorine,entities/low-chlorine.html,Low Chlorine — Pool Chemistry Entity | WaterBalanceTools,56,82,1,true,none
-https://waterbalancetools.com/entities/low-ph,entities/low-ph.html,Low pH — Pool Chemistry Entity | WaterBalanceTools,50,81,1,true,none
-https://waterbalancetools.com/entities/lsi,entities/lsi.html,Langelier Saturation Index — Pool Chemistry Entity | WaterBalanceTools,70,84,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/entities/maintenance-checklist,entities/maintenance-checklist.html,Pool Maintenance Checklist — Pool Chemistry Entity | WaterBalanceTools,70,97,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/entities/maintenance-log,entities/maintenance-log.html,Hot Tub Maintenance Log — Pool Chemistry Entity | WaterBalanceTools,67,97,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/entities/manganese,entities/manganese.html,Manganese — Pool Chemistry Entity | WaterBalanceTools,53,69,1,true,none
-https://waterbalancetools.com/entities/muriatic-acid,entities/muriatic-acid.html,Muriatic Acid — Pool Chemistry Entity | WaterBalanceTools,57,79,1,true,none
-https://waterbalancetools.com/entities/nsf,entities/nsf.html,NSF International — Pool Chemistry Entity | WaterBalanceTools,61,87,1,true,none
-https://waterbalancetools.com/entities/opening-checklist,entities/opening-checklist.html,Pool Opening Checklist — Pool Chemistry Entity | WaterBalanceTools,66,59,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/entities/orp,entities/orp.html,ORP — Pool Chemistry Entity | WaterBalanceTools,47,89,1,true,none
-https://waterbalancetools.com/entities/outdoor-pool,entities/outdoor-pool.html,Outdoor Pool — Pool Chemistry Entity | WaterBalanceTools,56,87,1,true,none
-https://waterbalancetools.com/entities/oxidation,entities/oxidation.html,Oxidation — Pool Chemistry Entity | WaterBalanceTools,53,97,1,true,none
-https://waterbalancetools.com/entities/ozone,entities/ozone.html,Ozone — Pool Chemistry Entity | WaterBalanceTools,49,95,1,true,none
-https://waterbalancetools.com/entities/ph,entities/ph.html,pH — Pool Chemistry Entity | WaterBalanceTools,46,89,1,true,none
-https://waterbalancetools.com/entities/phosphate,entities/phosphate.html,Phosphate — Pool Chemistry Entity | WaterBalanceTools,53,61,1,true,none
-https://waterbalancetools.com/entities/phta,entities/phta.html,PHTA — Pool Chemistry Entity | WaterBalanceTools,48,100,1,true,none
-https://waterbalancetools.com/entities/pool-opening,entities/pool-opening.html,Pool Opening — Pool Chemistry Entity | WaterBalanceTools,56,70,1,true,none
-https://waterbalancetools.com/entities/pool-salt,entities/pool-salt.html,Pool Salt — Pool Chemistry Entity | WaterBalanceTools,53,71,1,true,none
-https://waterbalancetools.com/entities/ppm,entities/ppm.html,Parts Per Million — Pool Chemistry Entity | WaterBalanceTools,61,70,1,true,none
-https://waterbalancetools.com/entities/pump,entities/pump.html,Pool Pump — Pool Chemistry Entity | WaterBalanceTools,53,107,1,true,none
-https://waterbalancetools.com/entities/salt-chlorinator,entities/salt-chlorinator.html,Salt Chlorinator — Pool Chemistry Entity | WaterBalanceTools,60,96,1,true,none
-https://waterbalancetools.com/entities/salt,entities/salt.html,Salt — Pool Chemistry Entity | WaterBalanceTools,48,92,1,true,none
-https://waterbalancetools.com/entities/saltwater-pool,entities/saltwater-pool.html,Saltwater Pool — Pool Chemistry Entity | WaterBalanceTools,58,96,1,true,none
-https://waterbalancetools.com/entities/sand-filter,entities/sand-filter.html,Sand Filter — Pool Chemistry Entity | WaterBalanceTools,55,67,1,true,none
-https://waterbalancetools.com/entities/sanitizing,entities/sanitizing.html,Sanitizing — Pool Chemistry Entity | WaterBalanceTools,54,81,1,true,none
-https://waterbalancetools.com/entities/scaling,entities/scaling.html,Scaling — Pool Chemistry Entity | WaterBalanceTools,51,93,1,true,none
-https://waterbalancetools.com/entities/shock-treatment,entities/shock-treatment.html,Shock Treatment — Pool Chemistry Entity | WaterBalanceTools,59,111,1,true,none
-https://waterbalancetools.com/entities/skimmer,entities/skimmer.html,Skimmer — Pool Chemistry Entity | WaterBalanceTools,51,89,1,true,none
-https://waterbalancetools.com/entities/skin-irritation,entities/skin-irritation.html,Skin Irritation — Pool Chemistry Entity | WaterBalanceTools,59,89,1,true,none
-https://waterbalancetools.com/entities/soda-ash,entities/soda-ash.html,Soda Ash — Pool Chemistry Entity | WaterBalanceTools,52,50,1,true,none
-https://waterbalancetools.com/entities/sodium-dichlor,entities/sodium-dichlor.html,Dichlor — Pool Chemistry Entity | WaterBalanceTools,51,88,1,true,none
-https://waterbalancetools.com/entities/stabilizer,entities/stabilizer.html,Stabilizer / CYA Granules — Pool Chemistry Entity | WaterBalanceTools,69,80,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/entities/strong-chlorine-smell,entities/strong-chlorine-smell.html,Strong Chlorine Smell — Pool Chemistry Entity | WaterBalanceTools,65,67,1,true,none
-https://waterbalancetools.com/entities/swim-spa,entities/swim-spa.html,Swim Spa — Pool Chemistry Entity | WaterBalanceTools,52,73,1,true,none
-https://waterbalancetools.com/entities/swimming-pool,entities/swimming-pool.html,Swimming Pool — Pool Chemistry Entity | WaterBalanceTools,57,77,1,true,none
-https://waterbalancetools.com/entities/taylor-technologies,entities/taylor-technologies.html,Taylor Technologies — Pool Chemistry Entity | WaterBalanceTools,63,125,1,true,none
-https://waterbalancetools.com/entities/temperature,entities/temperature.html,Temperature — Pool Chemistry Entity | WaterBalanceTools,55,90,1,true,none
-https://waterbalancetools.com/entities/testing,entities/testing.html,Water Testing — Pool Chemistry Entity | WaterBalanceTools,57,93,1,true,none
-https://waterbalancetools.com/entities/total-chlorine,entities/total-chlorine.html,Total Chlorine — Pool Chemistry Entity | WaterBalanceTools,58,61,1,true,none
-https://waterbalancetools.com/entities/total-dissolved-solids,entities/total-dissolved-solids.html,Total Dissolved Solids — Pool Chemistry Entity | WaterBalanceTools,66,67,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/entities/trichlor-tablets,entities/trichlor-tablets.html,Trichlor Tablets — Pool Chemistry Entity | WaterBalanceTools,60,100,1,true,none
-https://waterbalancetools.com/entities/turnover-time,entities/turnover-time.html,Turnover Time — Pool Chemistry Entity | WaterBalanceTools,57,91,1,true,none
-https://waterbalancetools.com/entities/unit-celsius,entities/unit-celsius.html,°C — Pool Chemistry Entity | WaterBalanceTools,46,67,1,true,none
-https://waterbalancetools.com/entities/unit-days,entities/unit-days.html,Days — Pool Chemistry Entity | WaterBalanceTools,48,79,1,true,none
-https://waterbalancetools.com/entities/unit-fahrenheit,entities/unit-fahrenheit.html,°F — Pool Chemistry Entity | WaterBalanceTools,46,97,1,true,none
-https://waterbalancetools.com/entities/unit-gallons,entities/unit-gallons.html,US Gallons — Pool Chemistry Entity | WaterBalanceTools,54,82,1,true,none
-https://waterbalancetools.com/entities/unit-hours,entities/unit-hours.html,Hours — Pool Chemistry Entity | WaterBalanceTools,49,69,1,true,none
-https://waterbalancetools.com/entities/unit-liters,entities/unit-liters.html,Liters — Pool Chemistry Entity (entities) | WaterBalanceTools,61,46,1,true,META_DESCRIPTION_TOO_SHORT
-https://waterbalancetools.com/entities/unit-mg-l,entities/unit-mg-l.html,mg/L — Pool Chemistry Entity | WaterBalanceTools,48,73,1,true,none
-https://waterbalancetools.com/entities/unit-minutes,entities/unit-minutes.html,Minutes — Pool Chemistry Entity | WaterBalanceTools,51,90,1,true,none
-https://waterbalancetools.com/entities/unit-months,entities/unit-months.html,Months — Pool Chemistry Entity | WaterBalanceTools,50,90,1,true,none
-https://waterbalancetools.com/entities/unit-ppm,entities/unit-ppm.html,ppm — Pool Chemistry Entity | WaterBalanceTools,47,71,1,true,none
-https://waterbalancetools.com/entities/unit-weeks,entities/unit-weeks.html,Weeks — Pool Chemistry Entity | WaterBalanceTools,49,78,1,true,none
-https://waterbalancetools.com/entities/vacation-rental-checklist,entities/vacation-rental-checklist.html,Airbnb Pool Turnover Checklist — Pool Chemistry Entity | WaterBalanceTools,74,109,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/entities/vinyl-pool,entities/vinyl-pool.html,Vinyl Pool — Pool Chemistry Entity | WaterBalanceTools,54,75,1,true,none
-https://waterbalancetools.com/entities/water-replacement,entities/water-replacement.html,Water Replacement — Pool Chemistry Entity | WaterBalanceTools,61,101,1,true,none
-https://waterbalancetools.com/entities/water-test-sheet,entities/water-test-sheet.html,Water Test Log — Pool Chemistry Entity | WaterBalanceTools,58,85,1,true,none
-https://waterbalancetools.com/entities/winterization,entities/winterization.html,Winterization — Pool Chemistry Entity | WaterBalanceTools,57,81,1,true,none
+https://waterbalancetools.com/entities/indoor-pool,entities/indoor-pool.html,Indoor Pool | WaterBalanceTools,31,77,1,true,none
+https://waterbalancetools.com/entities/iron,entities/iron.html,Iron | WaterBalanceTools,24,78,1,true,none
+https://waterbalancetools.com/entities/lamotte,entities/lamotte.html,LaMotte | WaterBalanceTools,27,92,1,true,none
+https://waterbalancetools.com/entities/liquid-chlorine,entities/liquid-chlorine.html,Liquid Chlorine | WaterBalanceTools,35,87,1,true,none
+https://waterbalancetools.com/entities/liters,entities/liters.html,Liters | WaterBalanceTools,26,66,1,true,none
+https://waterbalancetools.com/entities/low-chlorine,entities/low-chlorine.html,Low Chlorine | WaterBalanceTools,32,82,1,true,none
+https://waterbalancetools.com/entities/low-ph,entities/low-ph.html,Low pH | WaterBalanceTools,26,81,1,true,none
+https://waterbalancetools.com/entities/lsi,entities/lsi.html,Langelier Saturation Index | WaterBalanceTools,46,84,1,true,none
+https://waterbalancetools.com/entities/maintenance-checklist,entities/maintenance-checklist.html,Pool Maintenance Checklist | WaterBalanceTools,46,97,1,true,DUPLICATE_TITLE(2x)
+https://waterbalancetools.com/entities/maintenance-log,entities/maintenance-log.html,Hot Tub Maintenance Log | WaterBalanceTools,43,97,1,true,DUPLICATE_TITLE(2x)
+https://waterbalancetools.com/entities/manganese,entities/manganese.html,Manganese | WaterBalanceTools,29,69,1,true,none
+https://waterbalancetools.com/entities/muriatic-acid,entities/muriatic-acid.html,Muriatic Acid | WaterBalanceTools,33,79,1,true,none
+https://waterbalancetools.com/entities/nsf,entities/nsf.html,NSF International | WaterBalanceTools,37,87,1,true,none
+https://waterbalancetools.com/entities/opening-checklist,entities/opening-checklist.html,Pool Opening Checklist | WaterBalanceTools,42,59,1,true,none
+https://waterbalancetools.com/entities/orp,entities/orp.html,ORP | WaterBalanceTools,23,89,1,true,none
+https://waterbalancetools.com/entities/outdoor-pool,entities/outdoor-pool.html,Outdoor Pool | WaterBalanceTools,32,87,1,true,none
+https://waterbalancetools.com/entities/oxidation,entities/oxidation.html,Oxidation | WaterBalanceTools,29,97,1,true,none
+https://waterbalancetools.com/entities/ozone,entities/ozone.html,Ozone | WaterBalanceTools,25,95,1,true,none
+https://waterbalancetools.com/entities/ph,entities/ph.html,pH | WaterBalanceTools,22,89,1,true,none
+https://waterbalancetools.com/entities/phosphate,entities/phosphate.html,Phosphate | WaterBalanceTools,29,61,1,true,none
+https://waterbalancetools.com/entities/phta,entities/phta.html,PHTA | WaterBalanceTools,24,100,1,true,none
+https://waterbalancetools.com/entities/pool-opening,entities/pool-opening.html,Pool Opening | WaterBalanceTools,32,70,1,true,none
+https://waterbalancetools.com/entities/pool-salt,entities/pool-salt.html,Pool Salt | WaterBalanceTools,29,71,1,true,none
+https://waterbalancetools.com/entities/ppm,entities/ppm.html,Parts Per Million | WaterBalanceTools,37,70,1,true,none
+https://waterbalancetools.com/entities/pump,entities/pump.html,Pool Pump | WaterBalanceTools,29,107,1,true,none
+https://waterbalancetools.com/entities/salt-chlorinator,entities/salt-chlorinator.html,Salt Chlorinator | WaterBalanceTools,36,96,1,true,none
+https://waterbalancetools.com/entities/salt,entities/salt.html,Salt | WaterBalanceTools,24,92,1,true,none
+https://waterbalancetools.com/entities/saltwater-pool,entities/saltwater-pool.html,Saltwater Pool | WaterBalanceTools,34,96,1,true,none
+https://waterbalancetools.com/entities/sand-filter,entities/sand-filter.html,Sand Filter | WaterBalanceTools,31,67,1,true,none
+https://waterbalancetools.com/entities/sanitizing,entities/sanitizing.html,Sanitizing | WaterBalanceTools,30,81,1,true,none
+https://waterbalancetools.com/entities/scaling,entities/scaling.html,Scaling | WaterBalanceTools,27,93,1,true,none
+https://waterbalancetools.com/entities/shock-treatment,entities/shock-treatment.html,Shock Treatment | WaterBalanceTools,35,111,1,true,none
+https://waterbalancetools.com/entities/skimmer,entities/skimmer.html,Skimmer | WaterBalanceTools,27,89,1,true,none
+https://waterbalancetools.com/entities/skin-irritation,entities/skin-irritation.html,Skin Irritation | WaterBalanceTools,35,89,1,true,none
+https://waterbalancetools.com/entities/soda-ash,entities/soda-ash.html,Soda Ash | WaterBalanceTools,28,50,1,true,none
+https://waterbalancetools.com/entities/sodium-dichlor,entities/sodium-dichlor.html,Dichlor | WaterBalanceTools,27,88,1,true,none
+https://waterbalancetools.com/entities/stabilizer,entities/stabilizer.html,Stabilizer / CYA Granules | WaterBalanceTools,45,80,1,true,none
+https://waterbalancetools.com/entities/strong-chlorine-smell,entities/strong-chlorine-smell.html,Strong Chlorine Smell | WaterBalanceTools,41,67,1,true,none
+https://waterbalancetools.com/entities/swim-spa,entities/swim-spa.html,Swim Spa | WaterBalanceTools,28,73,1,true,none
+https://waterbalancetools.com/entities/swimming-pool,entities/swimming-pool.html,Swimming Pool | WaterBalanceTools,33,77,1,true,none
+https://waterbalancetools.com/entities/taylor-technologies,entities/taylor-technologies.html,Taylor Technologies | WaterBalanceTools,39,125,1,true,none
+https://waterbalancetools.com/entities/temperature,entities/temperature.html,Temperature | WaterBalanceTools,31,90,1,true,none
+https://waterbalancetools.com/entities/testing,entities/testing.html,Water Testing | WaterBalanceTools,33,93,1,true,none
+https://waterbalancetools.com/entities/total-chlorine,entities/total-chlorine.html,Total Chlorine | WaterBalanceTools,34,61,1,true,none
+https://waterbalancetools.com/entities/total-dissolved-solids,entities/total-dissolved-solids.html,Total Dissolved Solids | WaterBalanceTools,42,67,1,true,none
+https://waterbalancetools.com/entities/trichlor-tablets,entities/trichlor-tablets.html,Trichlor Tablets | WaterBalanceTools,36,100,1,true,none
+https://waterbalancetools.com/entities/turnover-time,entities/turnover-time.html,Turnover Time | WaterBalanceTools,33,91,1,true,none
+https://waterbalancetools.com/entities/unit-celsius,entities/unit-celsius.html,°C | WaterBalanceTools,22,67,1,true,none
+https://waterbalancetools.com/entities/unit-days,entities/unit-days.html,Days | WaterBalanceTools,24,79,1,true,none
+https://waterbalancetools.com/entities/unit-fahrenheit,entities/unit-fahrenheit.html,°F | WaterBalanceTools,22,97,1,true,none
+https://waterbalancetools.com/entities/unit-gallons,entities/unit-gallons.html,US Gallons | WaterBalanceTools,30,82,1,true,none
+https://waterbalancetools.com/entities/unit-hours,entities/unit-hours.html,Hours | WaterBalanceTools,25,69,1,true,none
+https://waterbalancetools.com/entities/unit-liters,entities/unit-liters.html,Metric Liters | WaterBalanceTools,33,157,1,true,none
+https://waterbalancetools.com/entities/unit-mg-l,entities/unit-mg-l.html,mg/L | WaterBalanceTools,24,73,1,true,none
+https://waterbalancetools.com/entities/unit-minutes,entities/unit-minutes.html,Minutes | WaterBalanceTools,27,90,1,true,none
+https://waterbalancetools.com/entities/unit-months,entities/unit-months.html,Months | WaterBalanceTools,26,90,1,true,none
+https://waterbalancetools.com/entities/unit-ppm,entities/unit-ppm.html,ppm | WaterBalanceTools,23,71,1,true,none
+https://waterbalancetools.com/entities/unit-weeks,entities/unit-weeks.html,Weeks | WaterBalanceTools,25,78,1,true,none
+https://waterbalancetools.com/entities/vacation-rental-checklist,entities/vacation-rental-checklist.html,Airbnb Pool Turnover Checklist | WaterBalanceTools,50,109,1,true,DUPLICATE_TITLE(2x)
+https://waterbalancetools.com/entities/vinyl-pool,entities/vinyl-pool.html,Vinyl Pool | WaterBalanceTools,30,75,1,true,none
+https://waterbalancetools.com/entities/water-replacement,entities/water-replacement.html,Water Replacement | WaterBalanceTools,37,101,1,true,none
+https://waterbalancetools.com/entities/water-test-sheet,entities/water-test-sheet.html,Water Test Log | WaterBalanceTools,34,85,1,true,none
+https://waterbalancetools.com/entities/winterization,entities/winterization.html,Winterization | WaterBalanceTools,33,81,1,true,none
 https://waterbalancetools.com/formulas/alkalinity-formula,formulas/alkalinity-formula.html,Total Alkalinity Adjustment Formula | Formula Library | WaterBalanceTools,73,122,1,true,TITLE_TOO_LONG
 https://waterbalancetools.com/formulas/cya-formula,formulas/cya-formula.html,CYA (Cyanuric Acid) Dose Formula | Formula Library | WaterBalanceTools,70,108,1,true,TITLE_TOO_LONG
 https://waterbalancetools.com/formulas/,formulas/index.html,Pool Chemistry Formula Library | WaterBalanceTools,50,160,1,true,none
@@ -214,107 +216,107 @@ https://waterbalancetools.com/formulas/pool-volume-formula,formulas/pool-volume-
 https://waterbalancetools.com/formulas/salt-formula,formulas/salt-formula.html,Salt Pool Formula | Formula Library | WaterBalanceTools,55,112,1,true,none
 https://waterbalancetools.com/formulas/shock-formula,formulas/shock-formula.html,Pool Shock Formula | Formula Library | WaterBalanceTools,56,132,1,true,none
 https://waterbalancetools.com/formulas/turnover-formula,formulas/turnover-formula.html,Pool Turnover Rate Formula | Formula Library | WaterBalanceTools,64,125,1,true,none
-https://waterbalancetools.com/glossary/aggressive-water,glossary/aggressive-water.html,Aggressive Water: Definition | Glossary | WaterBalanceTools,59,132,1,true,none
-https://waterbalancetools.com/glossary/algae-bloom,glossary/algae-bloom.html,Algae Bloom: Definition | Glossary | WaterBalanceTools,54,160,1,true,none
-https://waterbalancetools.com/glossary/algaecide,glossary/algaecide.html,Algaecide: Definition | Glossary | WaterBalanceTools,52,160,1,true,none
-https://waterbalancetools.com/glossary/ammonia,glossary/ammonia.html,Ammonia (Pool Water): Definition | Glossary | WaterBalanceTools,63,160,1,true,none
-https://waterbalancetools.com/glossary/backwashing,glossary/backwashing.html,Backwashing: Definition | Glossary | WaterBalanceTools,54,160,1,true,none
-https://waterbalancetools.com/glossary/bather-load,glossary/bather-load.html,Bather Load: Definition | Glossary | WaterBalanceTools,54,160,1,true,none
-https://waterbalancetools.com/glossary/bcdmh,glossary/bcdmh.html,BCDMH: Definition | Glossary | WaterBalanceTools,48,160,1,true,none
-https://waterbalancetools.com/glossary/bicarbonate-alkalinity,glossary/bicarbonate-alkalinity.html,Bicarbonate Alkalinity: Definition | Glossary | WaterBalanceTools,65,160,1,true,none
-https://waterbalancetools.com/glossary/biofilm,glossary/biofilm.html,Biofilm: Definition | Glossary | WaterBalanceTools,50,160,1,true,none
-https://waterbalancetools.com/glossary/black-algae,glossary/black-algae.html,Black Algae: Definition | Glossary | WaterBalanceTools,54,160,1,true,none
-https://waterbalancetools.com/glossary/breakpoint-chlorination,glossary/breakpoint-chlorination.html,Breakpoint Chlorination: Definition | Glossary | WaterBalanceTools,66,160,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/glossary/breakpoint-dose,glossary/breakpoint-dose.html,Breakpoint Dose: Definition | Glossary | WaterBalanceTools,58,160,1,true,none
-https://waterbalancetools.com/glossary/bromine,glossary/bromine.html,Bromine: Definition | Glossary | WaterBalanceTools,50,160,1,true,none
-https://waterbalancetools.com/glossary/calcium-hardness,glossary/calcium-hardness.html,Calcium Hardness: Definition | Glossary | WaterBalanceTools,59,160,1,true,none
-https://waterbalancetools.com/glossary/calcium-hypochlorite,glossary/calcium-hypochlorite.html,Calcium Hypochlorite: Definition | Glossary | WaterBalanceTools,63,160,1,true,none
-https://waterbalancetools.com/glossary/carbon-dioxide,glossary/carbon-dioxide.html,Carbon Dioxide: Definition | Glossary | WaterBalanceTools,57,160,1,true,none
-https://waterbalancetools.com/glossary/cartridge-filter,glossary/cartridge-filter.html,Cartridge Filter: Definition | Glossary | WaterBalanceTools,59,160,1,true,none
-https://waterbalancetools.com/glossary/chemical-compatibility,glossary/chemical-compatibility.html,Chemical Compatibility: Definition | Glossary | WaterBalanceTools,65,160,1,true,none
-https://waterbalancetools.com/glossary/chemical-log,glossary/chemical-log.html,Chemical Log: Definition | Glossary | WaterBalanceTools,55,160,1,true,none
-https://waterbalancetools.com/glossary/chemical-storage,glossary/chemical-storage.html,Chemical Storage: Definition | Glossary | WaterBalanceTools,59,160,1,true,none
-https://waterbalancetools.com/glossary/chloramine,glossary/chloramine.html,Chloramine: Definition | Glossary | WaterBalanceTools,53,160,1,true,none
-https://waterbalancetools.com/glossary/chlorine-demand,glossary/chlorine-demand.html,Chlorine Demand: Definition | Glossary | WaterBalanceTools,58,160,1,true,none
-https://waterbalancetools.com/glossary/chlorine-stabilizer,glossary/chlorine-stabilizer.html,Chlorine Stabilizer: Definition | Glossary | WaterBalanceTools,62,160,1,true,none
-https://waterbalancetools.com/glossary/clarifier,glossary/clarifier.html,Clarifier: Definition | Glossary | WaterBalanceTools,52,160,1,true,none
-https://waterbalancetools.com/glossary/closing-chemical-kit,glossary/closing-chemical-kit.html,Closing Chemical Kit: Definition | Glossary | WaterBalanceTools,63,160,1,true,none
-https://waterbalancetools.com/glossary/colorimetric-test,glossary/colorimetric-test.html,Colorimetric Test: Definition | Glossary | WaterBalanceTools,60,160,1,true,none
-https://waterbalancetools.com/glossary/combined-chlorine,glossary/combined-chlorine.html,Combined Chlorine: Definition | Glossary | WaterBalanceTools,60,160,1,true,none
-https://waterbalancetools.com/glossary/conductivity,glossary/conductivity.html,Conductivity: Definition | Glossary | WaterBalanceTools,55,160,1,true,none
-https://waterbalancetools.com/glossary/copper,glossary/copper.html,Copper (Pool Water): Definition | Glossary | WaterBalanceTools,62,160,1,true,none
-https://waterbalancetools.com/glossary/cyanuric-acid,glossary/cyanuric-acid.html,Cyanuric Acid: Definition | Glossary | WaterBalanceTools,56,160,1,true,none
-https://waterbalancetools.com/glossary/de-filter,glossary/de-filter.html,DE Filter: Definition | Glossary | WaterBalanceTools,52,160,1,true,none
-https://waterbalancetools.com/glossary/dead-algae,glossary/dead-algae.html,Dead Algae: Definition | Glossary | WaterBalanceTools,53,160,1,true,none
-https://waterbalancetools.com/glossary/dichlor,glossary/dichlor.html,Dichlor: Definition | Glossary | WaterBalanceTools,50,160,1,true,none
-https://waterbalancetools.com/glossary/dilution,glossary/dilution.html,Dilution: Definition | Glossary | WaterBalanceTools,51,160,1,true,none
-https://waterbalancetools.com/glossary/dpd-test,glossary/dpd-test.html,DPD Test: Definition | Glossary | WaterBalanceTools,51,160,1,true,none
-https://waterbalancetools.com/glossary/evaporation,glossary/evaporation.html,Evaporation: Definition | Glossary | WaterBalanceTools,54,160,1,true,none
-https://waterbalancetools.com/glossary/filter-pressure,glossary/filter-pressure.html,Filter Pressure: Definition | Glossary | WaterBalanceTools,58,160,1,true,none
-https://waterbalancetools.com/glossary/flocculant,glossary/flocculant.html,Flocculant: Definition | Glossary | WaterBalanceTools,53,160,1,true,none
-https://waterbalancetools.com/glossary/free-chlorine,glossary/free-chlorine.html,Free Chlorine: Definition | Glossary | WaterBalanceTools,56,160,1,true,none
-https://waterbalancetools.com/glossary/gpm,glossary/gpm.html,GPM (Gallons Per Minute): Definition | Glossary | WaterBalanceTools,67,160,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/glossary/green-algae,glossary/green-algae.html,Green Algae: Definition | Glossary | WaterBalanceTools,54,160,1,true,none
-https://waterbalancetools.com/glossary/hypochlorous-acid,glossary/hypochlorous-acid.html,Hypochlorous Acid: Definition | Glossary | WaterBalanceTools,60,160,1,true,none
+https://waterbalancetools.com/glossary/aggressive-water,glossary/aggressive-water.html,Aggressive Water | Glossary | WaterBalanceTools,47,132,1,true,none
+https://waterbalancetools.com/glossary/algae-bloom,glossary/algae-bloom.html,Algae Bloom | Glossary | WaterBalanceTools,42,160,1,true,none
+https://waterbalancetools.com/glossary/algaecide,glossary/algaecide.html,Algaecide | Glossary | WaterBalanceTools,40,160,1,true,none
+https://waterbalancetools.com/glossary/ammonia,glossary/ammonia.html,Ammonia (Pool Water) | Glossary | WaterBalanceTools,51,160,1,true,none
+https://waterbalancetools.com/glossary/backwashing,glossary/backwashing.html,Backwashing | Glossary | WaterBalanceTools,42,160,1,true,none
+https://waterbalancetools.com/glossary/bather-load,glossary/bather-load.html,Bather Load | Glossary | WaterBalanceTools,42,160,1,true,none
+https://waterbalancetools.com/glossary/bcdmh,glossary/bcdmh.html,BCDMH | Glossary | WaterBalanceTools,36,160,1,true,none
+https://waterbalancetools.com/glossary/bicarbonate-alkalinity,glossary/bicarbonate-alkalinity.html,Bicarbonate Alkalinity | Glossary | WaterBalanceTools,53,160,1,true,none
+https://waterbalancetools.com/glossary/biofilm,glossary/biofilm.html,Biofilm | Glossary | WaterBalanceTools,38,160,1,true,none
+https://waterbalancetools.com/glossary/black-algae,glossary/black-algae.html,Black Algae | Glossary | WaterBalanceTools,42,160,1,true,none
+https://waterbalancetools.com/glossary/breakpoint-chlorination,glossary/breakpoint-chlorination.html,Breakpoint Chlorination | Glossary | WaterBalanceTools,54,160,1,true,none
+https://waterbalancetools.com/glossary/breakpoint-dose,glossary/breakpoint-dose.html,Breakpoint Dose | Glossary | WaterBalanceTools,46,160,1,true,none
+https://waterbalancetools.com/glossary/bromine,glossary/bromine.html,Bromine | Glossary | WaterBalanceTools,38,160,1,true,none
+https://waterbalancetools.com/glossary/calcium-hardness,glossary/calcium-hardness.html,Calcium Hardness | Glossary | WaterBalanceTools,47,160,1,true,none
+https://waterbalancetools.com/glossary/calcium-hypochlorite,glossary/calcium-hypochlorite.html,Calcium Hypochlorite | Glossary | WaterBalanceTools,51,160,1,true,none
+https://waterbalancetools.com/glossary/carbon-dioxide,glossary/carbon-dioxide.html,Carbon Dioxide | Glossary | WaterBalanceTools,45,160,1,true,none
+https://waterbalancetools.com/glossary/cartridge-filter,glossary/cartridge-filter.html,Cartridge Filter | Glossary | WaterBalanceTools,47,160,1,true,none
+https://waterbalancetools.com/glossary/chemical-compatibility,glossary/chemical-compatibility.html,Chemical Compatibility | Glossary | WaterBalanceTools,53,160,1,true,none
+https://waterbalancetools.com/glossary/chemical-log,glossary/chemical-log.html,Chemical Log | Glossary | WaterBalanceTools,43,160,1,true,none
+https://waterbalancetools.com/glossary/chemical-storage,glossary/chemical-storage.html,Chemical Storage | Glossary | WaterBalanceTools,47,160,1,true,none
+https://waterbalancetools.com/glossary/chloramine,glossary/chloramine.html,Chloramine | Glossary | WaterBalanceTools,41,160,1,true,none
+https://waterbalancetools.com/glossary/chlorine-demand,glossary/chlorine-demand.html,Chlorine Demand | Glossary | WaterBalanceTools,46,160,1,true,none
+https://waterbalancetools.com/glossary/chlorine-stabilizer,glossary/chlorine-stabilizer.html,Chlorine Stabilizer | Glossary | WaterBalanceTools,50,160,1,true,none
+https://waterbalancetools.com/glossary/clarifier,glossary/clarifier.html,Clarifier | Glossary | WaterBalanceTools,40,160,1,true,none
+https://waterbalancetools.com/glossary/closing-chemical-kit,glossary/closing-chemical-kit.html,Closing Chemical Kit | Glossary | WaterBalanceTools,51,160,1,true,none
+https://waterbalancetools.com/glossary/colorimetric-test,glossary/colorimetric-test.html,Colorimetric Test | Glossary | WaterBalanceTools,48,160,1,true,none
+https://waterbalancetools.com/glossary/combined-chlorine,glossary/combined-chlorine.html,Combined Chlorine | Glossary | WaterBalanceTools,48,160,1,true,none
+https://waterbalancetools.com/glossary/conductivity,glossary/conductivity.html,Conductivity | Glossary | WaterBalanceTools,43,160,1,true,none
+https://waterbalancetools.com/glossary/copper,glossary/copper.html,Copper (Pool Water) | Glossary | WaterBalanceTools,50,160,1,true,none
+https://waterbalancetools.com/glossary/cyanuric-acid,glossary/cyanuric-acid.html,Cyanuric Acid | Glossary | WaterBalanceTools,44,160,1,true,none
+https://waterbalancetools.com/glossary/de-filter,glossary/de-filter.html,DE Filter | Glossary | WaterBalanceTools,40,160,1,true,none
+https://waterbalancetools.com/glossary/dead-algae,glossary/dead-algae.html,Dead Algae | Glossary | WaterBalanceTools,41,160,1,true,none
+https://waterbalancetools.com/glossary/dichlor,glossary/dichlor.html,Dichlor | Glossary | WaterBalanceTools,38,160,1,true,none
+https://waterbalancetools.com/glossary/dilution,glossary/dilution.html,Dilution | Glossary | WaterBalanceTools,39,160,1,true,none
+https://waterbalancetools.com/glossary/dpd-test,glossary/dpd-test.html,DPD Test | Glossary | WaterBalanceTools,39,160,1,true,none
+https://waterbalancetools.com/glossary/evaporation,glossary/evaporation.html,Evaporation | Glossary | WaterBalanceTools,42,160,1,true,none
+https://waterbalancetools.com/glossary/filter-pressure,glossary/filter-pressure.html,Filter Pressure | Glossary | WaterBalanceTools,46,160,1,true,none
+https://waterbalancetools.com/glossary/flocculant,glossary/flocculant.html,Flocculant | Glossary | WaterBalanceTools,41,160,1,true,none
+https://waterbalancetools.com/glossary/free-chlorine,glossary/free-chlorine.html,Free Chlorine | Glossary | WaterBalanceTools,44,160,1,true,none
+https://waterbalancetools.com/glossary/gpm,glossary/gpm.html,GPM (Gallons Per Minute) | Glossary | WaterBalanceTools,55,160,1,true,none
+https://waterbalancetools.com/glossary/green-algae,glossary/green-algae.html,Green Algae | Glossary | WaterBalanceTools,42,160,1,true,none
+https://waterbalancetools.com/glossary/hypochlorous-acid,glossary/hypochlorous-acid.html,Hypochlorous Acid | Glossary | WaterBalanceTools,48,160,1,true,none
 https://waterbalancetools.com/glossary/,glossary/index.html,Pool Chemistry Glossary | WaterBalanceTools,43,131,1,true,none
-https://waterbalancetools.com/glossary/iron,glossary/iron.html,Iron (Pool Water): Definition | Glossary | WaterBalanceTools,60,160,1,true,none
-https://waterbalancetools.com/glossary/langelier-saturation-index,glossary/langelier-saturation-index.html,Langelier Saturation Index: Definition | Glossary | WaterBalanceTools,69,160,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/glossary/main-drain,glossary/main-drain.html,Main Drain: Definition | Glossary | WaterBalanceTools,53,160,1,true,none
-https://waterbalancetools.com/glossary/metal-sequestrant,glossary/metal-sequestrant.html,Metal Sequestrant: Definition | Glossary | WaterBalanceTools,60,160,1,true,none
-https://waterbalancetools.com/glossary/multiport-valve,glossary/multiport-valve.html,Multiport Valve: Definition | Glossary | WaterBalanceTools,58,160,1,true,none
-https://waterbalancetools.com/glossary/muriatic-acid,glossary/muriatic-acid.html,Muriatic Acid: Definition | Glossary | WaterBalanceTools,56,160,1,true,none
-https://waterbalancetools.com/glossary/mustard-algae,glossary/mustard-algae.html,Mustard Algae: Definition | Glossary | WaterBalanceTools,56,160,1,true,none
-https://waterbalancetools.com/glossary/opening-chemical-kit,glossary/opening-chemical-kit.html,Opening Chemical Kit: Definition | Glossary | WaterBalanceTools,63,160,1,true,none
-https://waterbalancetools.com/glossary/orp,glossary/orp.html,ORP (Oxidation-Reduction Potential): Definition | Glossary | WaterBalanceTools,78,160,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/glossary/oto-test,glossary/oto-test.html,OTO Test: Definition | Glossary | WaterBalanceTools,51,160,1,true,none
-https://waterbalancetools.com/glossary/oxidizer,glossary/oxidizer.html,Oxidizer: Definition | Glossary | WaterBalanceTools,51,160,1,true,none
-https://waterbalancetools.com/glossary/ozone,glossary/ozone.html,Ozone: Definition | Glossary | WaterBalanceTools,48,160,1,true,none
-https://waterbalancetools.com/glossary/partial-drain,glossary/partial-drain.html,Partial Drain: Definition | Glossary | WaterBalanceTools,56,160,1,true,none
-https://waterbalancetools.com/glossary/parts-per-million,glossary/parts-per-million.html,Parts Per Million: Definition | Glossary | WaterBalanceTools,60,160,1,true,none
-https://waterbalancetools.com/glossary/ph-bounce,glossary/ph-bounce.html,pH Bounce: Definition | Glossary | WaterBalanceTools,52,160,1,true,none
-https://waterbalancetools.com/glossary/ph-increaser,glossary/ph-increaser.html,pH Increaser: Definition | Glossary | WaterBalanceTools,55,160,1,true,none
-https://waterbalancetools.com/glossary/ph,glossary/ph.html,pH: Definition | Glossary | WaterBalanceTools,45,160,1,true,none
-https://waterbalancetools.com/glossary/phosphates,glossary/phosphates.html,Phosphates: Definition | Glossary | WaterBalanceTools,53,160,1,true,none
-https://waterbalancetools.com/glossary/pink-slime,glossary/pink-slime.html,Pink Slime: Definition | Glossary | WaterBalanceTools,53,160,1,true,none
-https://waterbalancetools.com/glossary/pool-chemistry-reference,glossary/pool-chemistry-reference.html,Pool Chemistry Reference: Definition | Glossary | WaterBalanceTools,67,160,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/glossary/pool-maintenance-schedule,glossary/pool-maintenance-schedule.html,Pool Maintenance Schedule: Definition | Glossary | WaterBalanceTools,68,160,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/glossary/pool-pump,glossary/pool-pump.html,Pool Pump: Definition | Glossary | WaterBalanceTools,52,160,1,true,none
-https://waterbalancetools.com/glossary/pool-safety-equipment,glossary/pool-safety-equipment.html,Pool Safety Equipment: Definition | Glossary | WaterBalanceTools,64,160,1,true,none
-https://waterbalancetools.com/glossary/pool-shock-schedule,glossary/pool-shock-schedule.html,Pool Shock Schedule: Definition | Glossary | WaterBalanceTools,62,160,1,true,none
-https://waterbalancetools.com/glossary/pool-turnover-rate,glossary/pool-turnover-rate.html,Pool Turnover Rate: Definition | Glossary | WaterBalanceTools,61,160,1,true,none
-https://waterbalancetools.com/glossary/pool-volume-reference,glossary/pool-volume-reference.html,Pool Volume Reference: Definition | Glossary | WaterBalanceTools,64,160,1,true,none
-https://waterbalancetools.com/glossary/pool-volume,glossary/pool-volume.html,Pool Volume: Definition | Glossary | WaterBalanceTools,54,160,1,true,none
-https://waterbalancetools.com/glossary/pressure-gauge,glossary/pressure-gauge.html,Pressure Gauge: Definition | Glossary | WaterBalanceTools,57,160,1,true,none
-https://waterbalancetools.com/glossary/pump-turnover,glossary/pump-turnover.html,Pump Turnover: Definition | Glossary | WaterBalanceTools,56,160,1,true,none
-https://waterbalancetools.com/glossary/reagent,glossary/reagent.html,Reagent: Definition | Glossary | WaterBalanceTools,50,160,1,true,none
-https://waterbalancetools.com/glossary/return-jet,glossary/return-jet.html,Return Jet: Definition | Glossary | WaterBalanceTools,53,160,1,true,none
-https://waterbalancetools.com/glossary/salt-chlorination,glossary/salt-chlorination.html,Salt Chlorination: Definition | Glossary | WaterBalanceTools,60,160,1,true,none
-https://waterbalancetools.com/glossary/sand-filter,glossary/sand-filter.html,Sand Filter: Definition | Glossary | WaterBalanceTools,54,160,1,true,none
-https://waterbalancetools.com/glossary/sanitizer,glossary/sanitizer.html,Sanitizer: Definition | Glossary | WaterBalanceTools,52,160,1,true,none
-https://waterbalancetools.com/glossary/saturated-ph,glossary/saturated-ph.html,Saturated pH: Definition | Glossary | WaterBalanceTools,55,160,1,true,none
-https://waterbalancetools.com/glossary/saturation-index,glossary/saturation-index.html,Saturation Index: Definition | Glossary | WaterBalanceTools,59,160,1,true,none
-https://waterbalancetools.com/glossary/scale-inhibitor,glossary/scale-inhibitor.html,Scale Inhibitor: Definition | Glossary | WaterBalanceTools,58,160,1,true,none
-https://waterbalancetools.com/glossary/scaling-water,glossary/scaling-water.html,Scaling Water: Definition | Glossary | WaterBalanceTools,56,117,1,true,none
-https://waterbalancetools.com/glossary/shock-dosage,glossary/shock-dosage.html,Shock Dosage: Definition | Glossary | WaterBalanceTools,55,160,1,true,none
-https://waterbalancetools.com/glossary/shock,glossary/shock.html,Shock: Definition | Glossary | WaterBalanceTools,48,160,1,true,none
-https://waterbalancetools.com/glossary/skimmer,glossary/skimmer.html,Skimmer: Definition | Glossary | WaterBalanceTools,50,160,1,true,none
-https://waterbalancetools.com/glossary/sodium-bicarbonate,glossary/sodium-bicarbonate.html,Sodium Bicarbonate: Definition | Glossary | WaterBalanceTools,61,160,1,true,none
-https://waterbalancetools.com/glossary/sodium-bisulfate,glossary/sodium-bisulfate.html,Sodium Bisulfate: Definition | Glossary | WaterBalanceTools,59,160,1,true,none
-https://waterbalancetools.com/glossary/sodium-carbonate,glossary/sodium-carbonate.html,Sodium Carbonate: Definition | Glossary | WaterBalanceTools,59,160,1,true,none
-https://waterbalancetools.com/glossary/sodium-hypochlorite,glossary/sodium-hypochlorite.html,Sodium Hypochlorite: Definition | Glossary | WaterBalanceTools,62,160,1,true,none
-https://waterbalancetools.com/glossary/superchlorination,glossary/superchlorination.html,Superchlorination: Definition | Glossary | WaterBalanceTools,60,160,1,true,none
-https://waterbalancetools.com/glossary/test-strip,glossary/test-strip.html,Test Strip: Definition | Glossary | WaterBalanceTools,53,160,1,true,none
-https://waterbalancetools.com/glossary/total-alkalinity,glossary/total-alkalinity.html,Total Alkalinity: Definition | Glossary | WaterBalanceTools,59,160,1,true,none
-https://waterbalancetools.com/glossary/total-chlorine,glossary/total-chlorine.html,Total Chlorine: Definition | Glossary | WaterBalanceTools,57,160,1,true,none
-https://waterbalancetools.com/glossary/total-dissolved-solids,glossary/total-dissolved-solids.html,Total Dissolved Solids: Definition | Glossary | WaterBalanceTools,65,160,1,true,none
-https://waterbalancetools.com/glossary/total-hardness,glossary/total-hardness.html,Total Hardness: Definition | Glossary | WaterBalanceTools,57,160,1,true,none
-https://waterbalancetools.com/glossary/trichlor,glossary/trichlor.html,Trichlor: Definition | Glossary | WaterBalanceTools,51,160,1,true,none
-https://waterbalancetools.com/glossary/turbidity,glossary/turbidity.html,Turbidity: Definition | Glossary | WaterBalanceTools,52,160,1,true,none
-https://waterbalancetools.com/glossary/uv-sanitization,glossary/uv-sanitization.html,UV Sanitization: Definition | Glossary | WaterBalanceTools,58,160,1,true,none
-https://waterbalancetools.com/glossary/water-balance-checklist,glossary/water-balance-checklist.html,Water Balance Checklist: Definition | Glossary | WaterBalanceTools,66,160,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/glossary/water-temperature,glossary/water-temperature.html,Water Temperature: Definition | Glossary | WaterBalanceTools,60,160,1,true,none
-https://waterbalancetools.com/glossary/water-test-log,glossary/water-test-log.html,Water Test Log: Definition | Glossary | WaterBalanceTools,57,160,1,true,none
-https://waterbalancetools.com/glossary/winterization,glossary/winterization.html,Winterization: Definition | Glossary | WaterBalanceTools,56,160,1,true,none
+https://waterbalancetools.com/glossary/iron,glossary/iron.html,Iron (Pool Water) | Glossary | WaterBalanceTools,48,160,1,true,none
+https://waterbalancetools.com/glossary/langelier-saturation-index,glossary/langelier-saturation-index.html,Langelier Saturation Index | Glossary | WaterBalanceTools,57,160,1,true,none
+https://waterbalancetools.com/glossary/main-drain,glossary/main-drain.html,Main Drain | Glossary | WaterBalanceTools,41,160,1,true,none
+https://waterbalancetools.com/glossary/metal-sequestrant,glossary/metal-sequestrant.html,Metal Sequestrant | Glossary | WaterBalanceTools,48,160,1,true,none
+https://waterbalancetools.com/glossary/multiport-valve,glossary/multiport-valve.html,Multiport Valve | Glossary | WaterBalanceTools,46,160,1,true,none
+https://waterbalancetools.com/glossary/muriatic-acid,glossary/muriatic-acid.html,Muriatic Acid | Glossary | WaterBalanceTools,44,160,1,true,none
+https://waterbalancetools.com/glossary/mustard-algae,glossary/mustard-algae.html,Mustard Algae | Glossary | WaterBalanceTools,44,160,1,true,none
+https://waterbalancetools.com/glossary/opening-chemical-kit,glossary/opening-chemical-kit.html,Opening Chemical Kit | Glossary | WaterBalanceTools,51,160,1,true,none
+https://waterbalancetools.com/glossary/orp,glossary/orp.html,ORP (Oxidation-Reduction Potential) | WaterBalanceTools,55,160,1,true,none
+https://waterbalancetools.com/glossary/oto-test,glossary/oto-test.html,OTO Test | Glossary | WaterBalanceTools,39,160,1,true,none
+https://waterbalancetools.com/glossary/oxidizer,glossary/oxidizer.html,Oxidizer | Glossary | WaterBalanceTools,39,160,1,true,none
+https://waterbalancetools.com/glossary/ozone,glossary/ozone.html,Ozone | Glossary | WaterBalanceTools,36,160,1,true,none
+https://waterbalancetools.com/glossary/partial-drain,glossary/partial-drain.html,Partial Drain | Glossary | WaterBalanceTools,44,160,1,true,none
+https://waterbalancetools.com/glossary/parts-per-million,glossary/parts-per-million.html,Parts Per Million | Glossary | WaterBalanceTools,48,160,1,true,none
+https://waterbalancetools.com/glossary/ph-bounce,glossary/ph-bounce.html,pH Bounce | Glossary | WaterBalanceTools,40,160,1,true,none
+https://waterbalancetools.com/glossary/ph-increaser,glossary/ph-increaser.html,pH Increaser | Glossary | WaterBalanceTools,43,160,1,true,none
+https://waterbalancetools.com/glossary/ph,glossary/ph.html,pH | Glossary | WaterBalanceTools,33,160,1,true,none
+https://waterbalancetools.com/glossary/phosphates,glossary/phosphates.html,Phosphates | Glossary | WaterBalanceTools,41,160,1,true,none
+https://waterbalancetools.com/glossary/pink-slime,glossary/pink-slime.html,Pink Slime | Glossary | WaterBalanceTools,41,160,1,true,none
+https://waterbalancetools.com/glossary/pool-chemistry-reference,glossary/pool-chemistry-reference.html,Pool Chemistry Reference | Glossary | WaterBalanceTools,55,160,1,true,none
+https://waterbalancetools.com/glossary/pool-maintenance-schedule,glossary/pool-maintenance-schedule.html,Pool Maintenance Schedule | Glossary | WaterBalanceTools,56,160,1,true,none
+https://waterbalancetools.com/glossary/pool-pump,glossary/pool-pump.html,Pool Pump | Glossary | WaterBalanceTools,40,160,1,true,none
+https://waterbalancetools.com/glossary/pool-safety-equipment,glossary/pool-safety-equipment.html,Pool Safety Equipment | Glossary | WaterBalanceTools,52,160,1,true,none
+https://waterbalancetools.com/glossary/pool-shock-schedule,glossary/pool-shock-schedule.html,Pool Shock Schedule | Glossary | WaterBalanceTools,50,160,1,true,none
+https://waterbalancetools.com/glossary/pool-turnover-rate,glossary/pool-turnover-rate.html,Pool Turnover Rate | Glossary | WaterBalanceTools,49,160,1,true,none
+https://waterbalancetools.com/glossary/pool-volume-reference,glossary/pool-volume-reference.html,Pool Volume Reference | Glossary | WaterBalanceTools,52,160,1,true,none
+https://waterbalancetools.com/glossary/pool-volume,glossary/pool-volume.html,Pool Volume | Glossary | WaterBalanceTools,42,160,1,true,none
+https://waterbalancetools.com/glossary/pressure-gauge,glossary/pressure-gauge.html,Pressure Gauge | Glossary | WaterBalanceTools,45,160,1,true,none
+https://waterbalancetools.com/glossary/pump-turnover,glossary/pump-turnover.html,Pump Turnover | Glossary | WaterBalanceTools,44,160,1,true,none
+https://waterbalancetools.com/glossary/reagent,glossary/reagent.html,Reagent | Glossary | WaterBalanceTools,38,160,1,true,none
+https://waterbalancetools.com/glossary/return-jet,glossary/return-jet.html,Return Jet | Glossary | WaterBalanceTools,41,160,1,true,none
+https://waterbalancetools.com/glossary/salt-chlorination,glossary/salt-chlorination.html,Salt Chlorination | Glossary | WaterBalanceTools,48,160,1,true,none
+https://waterbalancetools.com/glossary/sand-filter,glossary/sand-filter.html,Sand Filter | Glossary | WaterBalanceTools,42,160,1,true,none
+https://waterbalancetools.com/glossary/sanitizer,glossary/sanitizer.html,Sanitizer | Glossary | WaterBalanceTools,40,160,1,true,none
+https://waterbalancetools.com/glossary/saturated-ph,glossary/saturated-ph.html,Saturated pH | Glossary | WaterBalanceTools,43,160,1,true,none
+https://waterbalancetools.com/glossary/saturation-index,glossary/saturation-index.html,Saturation Index | Glossary | WaterBalanceTools,47,160,1,true,none
+https://waterbalancetools.com/glossary/scale-inhibitor,glossary/scale-inhibitor.html,Scale Inhibitor | Glossary | WaterBalanceTools,46,160,1,true,none
+https://waterbalancetools.com/glossary/scaling-water,glossary/scaling-water.html,Scaling Water | Glossary | WaterBalanceTools,44,117,1,true,none
+https://waterbalancetools.com/glossary/shock-dosage,glossary/shock-dosage.html,Shock Dosage | Glossary | WaterBalanceTools,43,160,1,true,none
+https://waterbalancetools.com/glossary/shock,glossary/shock.html,Shock | Glossary | WaterBalanceTools,36,160,1,true,none
+https://waterbalancetools.com/glossary/skimmer,glossary/skimmer.html,Skimmer | Glossary | WaterBalanceTools,38,160,1,true,none
+https://waterbalancetools.com/glossary/sodium-bicarbonate,glossary/sodium-bicarbonate.html,Sodium Bicarbonate | Glossary | WaterBalanceTools,49,160,1,true,none
+https://waterbalancetools.com/glossary/sodium-bisulfate,glossary/sodium-bisulfate.html,Sodium Bisulfate | Glossary | WaterBalanceTools,47,160,1,true,none
+https://waterbalancetools.com/glossary/sodium-carbonate,glossary/sodium-carbonate.html,Sodium Carbonate | Glossary | WaterBalanceTools,47,160,1,true,none
+https://waterbalancetools.com/glossary/sodium-hypochlorite,glossary/sodium-hypochlorite.html,Sodium Hypochlorite | Glossary | WaterBalanceTools,50,160,1,true,none
+https://waterbalancetools.com/glossary/superchlorination,glossary/superchlorination.html,Superchlorination | Glossary | WaterBalanceTools,48,160,1,true,none
+https://waterbalancetools.com/glossary/test-strip,glossary/test-strip.html,Test Strip | Glossary | WaterBalanceTools,41,160,1,true,none
+https://waterbalancetools.com/glossary/total-alkalinity,glossary/total-alkalinity.html,Total Alkalinity | Glossary | WaterBalanceTools,47,160,1,true,none
+https://waterbalancetools.com/glossary/total-chlorine,glossary/total-chlorine.html,Total Chlorine | Glossary | WaterBalanceTools,45,160,1,true,none
+https://waterbalancetools.com/glossary/total-dissolved-solids,glossary/total-dissolved-solids.html,Total Dissolved Solids | Glossary | WaterBalanceTools,53,160,1,true,none
+https://waterbalancetools.com/glossary/total-hardness,glossary/total-hardness.html,Total Hardness | Glossary | WaterBalanceTools,45,160,1,true,none
+https://waterbalancetools.com/glossary/trichlor,glossary/trichlor.html,Trichlor | Glossary | WaterBalanceTools,39,160,1,true,none
+https://waterbalancetools.com/glossary/turbidity,glossary/turbidity.html,Turbidity | Glossary | WaterBalanceTools,40,160,1,true,none
+https://waterbalancetools.com/glossary/uv-sanitization,glossary/uv-sanitization.html,UV Sanitization | Glossary | WaterBalanceTools,46,160,1,true,none
+https://waterbalancetools.com/glossary/water-balance-checklist,glossary/water-balance-checklist.html,Water Balance Checklist | Glossary | WaterBalanceTools,54,160,1,true,none
+https://waterbalancetools.com/glossary/water-temperature,glossary/water-temperature.html,Water Temperature | Glossary | WaterBalanceTools,48,160,1,true,none
+https://waterbalancetools.com/glossary/water-test-log,glossary/water-test-log.html,Water Test Log | Glossary | WaterBalanceTools,45,160,1,true,none
+https://waterbalancetools.com/glossary/winterization,glossary/winterization.html,Winterization | Glossary | WaterBalanceTools,44,160,1,true,none
 https://waterbalancetools.com/guides/advanced/chlorine-breakdown-sunlight,guides/advanced/chlorine-breakdown-sunlight.html,"Chlorine Breakdown in Sunlight (UV, CYA &amp; Dosing) | WaterBalanceTools",73,92,1,true,TITLE_TOO_LONG
 https://waterbalancetools.com/guides/advanced/chlorine-vs-saltwater,guides/advanced/chlorine-vs-saltwater.html,Chlorine vs Saltwater Pools (How Sanitizing Actually Works) | WaterBalanceTools,79,117,1,true,TITLE_TOO_LONG
 https://waterbalancetools.com/guides/advanced/cya-stabilizer-explained,guides/advanced/cya-stabilizer-explained.html,CYA Stabilizer Explained (Chlorine Protection vs Lock-In) | WaterBalanceTools,77,103,1,true,TITLE_TOO_LONG
@@ -328,6 +330,7 @@ https://waterbalancetools.com/guides/chlorine/how-often-should-i-shock-my-pool,g
 https://waterbalancetools.com/guides/chlorine/,guides/chlorine/index.html,Chlorine Guides Hub | WaterBalanceTools,39,75,1,true,none
 https://waterbalancetools.com/guides/chlorine/why-pool-chlorine-disappears-overnight,guides/chlorine/why-pool-chlorine-disappears-overnight.html,Why Pool Chlorine Disappears Overnight | WaterBalanceTools,58,129,1,true,none
 https://waterbalancetools.com/guides/chlorine/why-pool-wont-hold-chlorine,guides/chlorine/why-pool-wont-hold-chlorine.html,Why Pool Won't Hold Chlorine: Causes and Fixes | WaterBalanceTools,66,133,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/guides/edge-cases/evaporation-effect-on-pool-chemistry,guides/edge-cases/evaporation-effect-on-pool-chemistry.html,Does Evaporation Affect Pool Chemistry? | WaterBalanceTools,59,139,1,true,none
 https://waterbalancetools.com/guides/edge-cases/high-cya-chlorine-lock,guides/edge-cases/high-cya-chlorine-lock.html,High CYA Chlorine Lock (Why FC Reads Fine But Water Fails) | WaterBalanceTools,78,116,1,true,TITLE_TOO_LONG
 https://waterbalancetools.com/guides/edge-cases/,guides/edge-cases/index.html,Edge Cases Guides Hub | WaterBalanceTools,41,65,1,true,none
 https://waterbalancetools.com/guides/edge-cases/over-shocking-pool-effects,guides/edge-cases/over-shocking-pool-effects.html,Over-Shocking a Pool: Effects &amp; What to Do | WaterBalanceTools,66,113,1,true,TITLE_TOO_LONG
@@ -388,52 +391,52 @@ https://waterbalancetools.com/pool-chlorine-levels-chart,pool-chlorine-levels-ch
 https://waterbalancetools.com/pool-cya-levels-chart,pool-cya-levels-chart.html,Pool CYA (Cyanuric Acid) Levels Chart | WaterBalanceTools,57,130,1,true,none
 https://waterbalancetools.com/pool-ph-levels-chart,pool-ph-levels-chart.html,Pool pH Levels Chart (7.2–7.6 + Fix Order) | WaterBalanceTools,62,110,1,true,none
 https://waterbalancetools.com/printable/maintenance-checklist,printable/maintenance-checklist.html,Maintenance Checklist | WaterBalanceTools,41,84,1,true,none
-https://waterbalancetools.com/printables/airbnb-pool-turnover-checklist,printables/airbnb-pool-turnover-checklist.html,Airbnb Pool Turnover Checklist | WaterBalanceTools,50,124,1,true,none
-https://waterbalancetools.com/printables/hot-tub-maintenance-log,printables/hot-tub-maintenance-log.html,Hot Tub Maintenance Log (Printable) | WaterBalanceTools,55,80,1,true,none
-https://waterbalancetools.com/printables/pool-maintenance-checklist,printables/pool-maintenance-checklist.html,Pool Maintenance Checklist (Printable) | WaterBalanceTools,58,90,1,true,none
-https://waterbalancetools.com/programmatic/behavior/how-often-to-shock-pool,programmatic/behavior/how-often-to-shock-pool.html,How Often to Shock a Pool (Weekly Guide) | Pool Water Chemistry Guide | WaterBalanceTools,89,93,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/behavior/how-often-to-test-pool-water,programmatic/behavior/how-often-to-test-pool-water.html,How Often to Test Pool Water (Simple Schedule) | Pool Water Chemistry Guide | WaterBalanceTools,95,85,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/printables/airbnb-pool-turnover-checklist,printables/airbnb-pool-turnover-checklist.html,Airbnb Pool Turnover Checklist | WaterBalanceTools,50,124,1,true,DUPLICATE_TITLE(2x);CANONICAL_MISMATCH
+https://waterbalancetools.com/printables/hot-tub-maintenance-log,printables/hot-tub-maintenance-log.html,Hot Tub Maintenance Log | WaterBalanceTools,43,80,1,true,DUPLICATE_TITLE(2x);CANONICAL_MISMATCH
+https://waterbalancetools.com/printables/pool-maintenance-checklist,printables/pool-maintenance-checklist.html,Pool Maintenance Checklist | WaterBalanceTools,46,90,1,true,DUPLICATE_TITLE(2x);CANONICAL_MISMATCH
+https://waterbalancetools.com/programmatic/behavior/how-often-to-shock-pool,programmatic/behavior/how-often-to-shock-pool.html,How Often to Shock a Pool (Weekly Guide) | WaterBalanceTools,60,93,1,true,none
+https://waterbalancetools.com/programmatic/behavior/how-often-to-test-pool-water,programmatic/behavior/how-often-to-test-pool-water.html,How Often to Test Pool Water (Simple Schedule) | WaterBalanceTools,66,85,1,true,TITLE_TOO_LONG
 https://waterbalancetools.com/programmatic/behavior/,programmatic/behavior/index.html,Programmatic Behavior Hub | WaterBalanceTools,45,73,1,true,none
-https://waterbalancetools.com/programmatic/behavior/when-to-add-chlorine,programmatic/behavior/when-to-add-chlorine.html,When to Add Chlorine to a Pool (Best Time) | Pool Water Chemistry Guide | WaterBalanceTools,91,82,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html,How Much Chlorine for 10000 Gallon Pool (Exact Dose) | Pool Water Chemistry Guide | WaterBalanceTools,101,112,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html,How Much Chlorine for 12000 Gallon Pool (Exact Dose) | Pool Water Chemistry Guide | WaterBalanceTools,101,112,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html,How Much Chlorine for 15000 Gallon Pool (Exact Dose) | Pool Water Chemistry Guide | WaterBalanceTools,101,112,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html,How Much Chlorine for 18000 Gallon Pool (Exact Dose) | Pool Water Chemistry Guide | WaterBalanceTools,101,112,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html,How Much Chlorine for 20000 Gallon Pool (Exact Dose) | Pool Water Chemistry Guide | WaterBalanceTools,101,112,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html,How Much Chlorine for 25000 Gallon Pool (Exact Dose) | Pool Water Chemistry Guide | WaterBalanceTools,101,112,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html,How Much Chlorine for 30000 Gallon Pool (Exact Dose) | Pool Water Chemistry Guide | WaterBalanceTools,101,112,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html,How Much Chlorine for 5000 Gallon Pool (Exact Dose) | Pool Water Chemistry Guide | WaterBalanceTools,100,111,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html,How Much Chlorine for 7000 Gallon Pool (Exact Dose) | Pool Water Chemistry Guide | WaterBalanceTools,100,111,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html,How Much Chlorine for 8000 Gallon Pool (Exact Dose) | Pool Water Chemistry Guide | WaterBalanceTools,100,111,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html,How Much Chlorine for 9000 Gallon Pool (Exact Dose) | Pool Water Chemistry Guide | WaterBalanceTools,100,111,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/programmatic/behavior/when-to-add-chlorine,programmatic/behavior/when-to-add-chlorine.html,When to Add Chlorine to a Pool (Best Time) | WaterBalanceTools,62,82,1,true,none
+https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html,How Much Chlorine for 10000 Gallon Pool | WaterBalanceTools,59,112,1,true,none
+https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html,How Much Chlorine for 12000 Gallon Pool | WaterBalanceTools,59,112,1,true,none
+https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html,How Much Chlorine for 15000 Gallon Pool | WaterBalanceTools,59,112,1,true,none
+https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html,How Much Chlorine for 18000 Gallon Pool | WaterBalanceTools,59,112,1,true,none
+https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html,How Much Chlorine for 20000 Gallon Pool | WaterBalanceTools,59,112,1,true,none
+https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html,How Much Chlorine for 25000 Gallon Pool | WaterBalanceTools,59,112,1,true,none
+https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html,How Much Chlorine for 30000 Gallon Pool | WaterBalanceTools,59,112,1,true,none
+https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html,How Much Chlorine for 5000 Gallon Pool | WaterBalanceTools,58,111,1,true,none
+https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html,How Much Chlorine for 7000 Gallon Pool | WaterBalanceTools,58,111,1,true,none
+https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html,How Much Chlorine for 8000 Gallon Pool | WaterBalanceTools,58,111,1,true,none
+https://waterbalancetools.com/programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool,programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html,How Much Chlorine for 9000 Gallon Pool | WaterBalanceTools,58,111,1,true,none
 https://waterbalancetools.com/programmatic/chlorine/,programmatic/chlorine/index.html,Programmatic Chlorine Hub | WaterBalanceTools,45,66,1,true,none
 https://waterbalancetools.com/programmatic/explanations/,programmatic/explanations/index.html,Programmatic Explanations Hub | WaterBalanceTools,49,68,1,true,none
-https://waterbalancetools.com/programmatic/explanations/what-is-pool-alkalinity,programmatic/explanations/what-is-pool-alkalinity.html,What Is Total Alkalinity (Pool Basics) | Pool Water Chemistry Guide | WaterBalanceTools,87,85,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/explanations/why-ph-affects-chlorine,programmatic/explanations/why-ph-affects-chlorine.html,Why pH Affects Chlorine (Pool Science) | Pool Water Chemistry Guide | WaterBalanceTools,87,88,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/explanations/why-shower-before-pool,programmatic/explanations/why-shower-before-pool.html,Why Shower Before Swimming (Pool Chemistry) | Pool Water Chemistry Guide | WaterBalanceTools,92,109,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons,programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons.html,Hot Tub Chemicals for 200 Gallons (Dosing Guide) | Pool Water Chemistry Guide | WaterBalanceTools,97,113,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons,programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons.html,Hot Tub Chemicals for 300 Gallons (Dosing Guide) | Pool Water Chemistry Guide | WaterBalanceTools,97,113,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons,programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html,Hot Tub Chemicals for 400 Gallons (Dosing Guide) | Pool Water Chemistry Guide | WaterBalanceTools,97,113,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons,programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons.html,Hot Tub Chemicals for 500 Gallons (Dosing Guide) | Pool Water Chemistry Guide | WaterBalanceTools,97,113,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons,programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons.html,Hot Tub Chemicals for 600 Gallons (Dosing Guide) | Pool Water Chemistry Guide | WaterBalanceTools,97,113,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/programmatic/explanations/what-is-pool-alkalinity,programmatic/explanations/what-is-pool-alkalinity.html,What Is Total Alkalinity (Pool Basics) | WaterBalanceTools,58,85,1,true,none
+https://waterbalancetools.com/programmatic/explanations/why-ph-affects-chlorine,programmatic/explanations/why-ph-affects-chlorine.html,Why pH Affects Chlorine (Pool Science) | WaterBalanceTools,58,88,1,true,none
+https://waterbalancetools.com/programmatic/explanations/why-shower-before-pool,programmatic/explanations/why-shower-before-pool.html,Why Shower Before Swimming (Pool Chemistry) | WaterBalanceTools,63,109,1,true,none
+https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons,programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons.html,Hot Tub Chemicals for 200 Gallons | WaterBalanceTools,53,113,1,true,none
+https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons,programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons.html,Hot Tub Chemicals for 300 Gallons | WaterBalanceTools,53,113,1,true,none
+https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons,programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html,Hot Tub Chemicals for 400 Gallons | WaterBalanceTools,53,113,1,true,none
+https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons,programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons.html,Hot Tub Chemicals for 500 Gallons | WaterBalanceTools,53,113,1,true,none
+https://waterbalancetools.com/programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons,programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons.html,Hot Tub Chemicals for 600 Gallons | WaterBalanceTools,53,113,1,true,none
 https://waterbalancetools.com/programmatic/hot-tubs/,programmatic/hot-tubs/index.html,Programmatic Hot Tub Hub | WaterBalanceTools,44,61,1,true,none
 https://waterbalancetools.com/programmatic/,programmatic/index.html,Programmatic Hub | WaterBalanceTools,36,71,1,true,none
-https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2,programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2.html,How to Adjust Pool pH from 6.8 to 7.2 (Safe Steps) | Pool Water Chemistry Guide | WaterBalanceTools,99,90,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4,programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4.html,How to Adjust Pool pH from 7.8 to 7.4 (Safe Steps) | Pool Water Chemistry Guide | WaterBalanceTools,99,90,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-to-7-4,programmatic/ph/how-to-adjust-ph-from-7-to-7-4.html,How to Adjust Pool pH from 7 to 7.4 (Safe Steps) | Pool Water Chemistry Guide | WaterBalanceTools,97,88,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-8-to-7-5,programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html,How to Adjust Pool pH from 8 to 7.5 (Safe Steps) | Pool Water Chemistry Guide | WaterBalanceTools,97,88,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2,programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2.html,How to Adjust Pool pH from 6.8 to 7.2 | WaterBalanceTools,57,90,1,true,none
+https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4,programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4.html,How to Adjust Pool pH from 7.8 to 7.4 | WaterBalanceTools,57,90,1,true,none
+https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-7-to-7-4,programmatic/ph/how-to-adjust-ph-from-7-to-7-4.html,How to Adjust Pool pH from 7 to 7.4 | WaterBalanceTools,55,88,1,true,none
+https://waterbalancetools.com/programmatic/ph/how-to-adjust-ph-from-8-to-7-5,programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html,How to Adjust Pool pH from 8 to 7.5 | WaterBalanceTools,55,88,1,true,none
 https://waterbalancetools.com/programmatic/ph/,programmatic/ph/index.html,Programmatic pH Hub | WaterBalanceTools,39,58,1,true,none
-https://waterbalancetools.com/programmatic/problems/cloudy-pool-fix,programmatic/problems/cloudy-pool-fix.html,Cloudy Pool Fix (Clear Water Fast) | Pool Water Chemistry Guide | WaterBalanceTools,83,119,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/problems/green-pool-how-much-chlorine,programmatic/problems/green-pool-how-much-chlorine.html,Fix a Green Pool Fast (Chlorine Guide) | Pool Water Chemistry Guide | WaterBalanceTools,87,112,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/problems/high-chlorine-how-to-lower,programmatic/problems/high-chlorine-how-to-lower.html,How to Lower High Chlorine Fast (Safe Method) | Pool Water Chemistry Guide | WaterBalanceTools,94,99,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/programmatic/problems/cloudy-pool-fix,programmatic/problems/cloudy-pool-fix.html,Cloudy Pool Fix (Clear Water Fast) | WaterBalanceTools,54,119,1,true,none
+https://waterbalancetools.com/programmatic/problems/green-pool-how-much-chlorine,programmatic/problems/green-pool-how-much-chlorine.html,Fix a Green Pool Fast (Chlorine Guide) | WaterBalanceTools,58,112,1,true,none
+https://waterbalancetools.com/programmatic/problems/high-chlorine-how-to-lower,programmatic/problems/high-chlorine-how-to-lower.html,How to Lower High Chlorine Fast (Safe Method) | WaterBalanceTools,65,99,1,true,none
 https://waterbalancetools.com/programmatic/problems/,programmatic/problems/index.html,Programmatic Problems Hub | WaterBalanceTools,45,73,1,true,none
-https://waterbalancetools.com/programmatic/problems/low-alkalinity-symptoms,programmatic/problems/low-alkalinity-symptoms.html,Low Alkalinity Symptoms (Fix TA Safely) | Pool Water Chemistry Guide | WaterBalanceTools,88,109,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/shock/how-much-shock-for-10000-gallon-pool,programmatic/shock/how-much-shock-for-10000-gallon-pool.html,How Much Shock for 10000 Gallon Pool (Exact Ounces) | Pool Water Chemistry Guide | WaterBalanceTools,100,102,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/shock/how-much-shock-for-15000-gallon-pool,programmatic/shock/how-much-shock-for-15000-gallon-pool.html,How Much Shock for 15000 Gallon Pool (Exact Ounces) | Pool Water Chemistry Guide | WaterBalanceTools,100,102,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/shock/how-much-shock-for-20000-gallon-pool,programmatic/shock/how-much-shock-for-20000-gallon-pool.html,How Much Shock for 20000 Gallon Pool (Exact Ounces) | Pool Water Chemistry Guide | WaterBalanceTools,100,102,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/shock/how-much-shock-for-25000-gallon-pool,programmatic/shock/how-much-shock-for-25000-gallon-pool.html,How Much Shock for 25000 Gallon Pool (Exact Ounces) | Pool Water Chemistry Guide | WaterBalanceTools,100,102,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/shock/how-much-shock-for-30000-gallon-pool,programmatic/shock/how-much-shock-for-30000-gallon-pool.html,How Much Shock for 30000 Gallon Pool (Exact Ounces) | Pool Water Chemistry Guide | WaterBalanceTools,100,102,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/programmatic/shock/how-much-shock-for-5000-gallon-pool,programmatic/shock/how-much-shock-for-5000-gallon-pool.html,How Much Shock for 5000 Gallon Pool (Exact Ounces) | Pool Water Chemistry Guide | WaterBalanceTools,99,101,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/programmatic/problems/low-alkalinity-symptoms,programmatic/problems/low-alkalinity-symptoms.html,Low Alkalinity Symptoms (Fix TA Safely) | WaterBalanceTools,59,109,1,true,none
+https://waterbalancetools.com/programmatic/shock/how-much-shock-for-10000-gallon-pool,programmatic/shock/how-much-shock-for-10000-gallon-pool.html,How Much Shock for 10000 Gallon Pool | WaterBalanceTools,56,102,1,true,none
+https://waterbalancetools.com/programmatic/shock/how-much-shock-for-15000-gallon-pool,programmatic/shock/how-much-shock-for-15000-gallon-pool.html,How Much Shock for 15000 Gallon Pool | WaterBalanceTools,56,102,1,true,none
+https://waterbalancetools.com/programmatic/shock/how-much-shock-for-20000-gallon-pool,programmatic/shock/how-much-shock-for-20000-gallon-pool.html,How Much Shock for 20000 Gallon Pool | WaterBalanceTools,56,102,1,true,none
+https://waterbalancetools.com/programmatic/shock/how-much-shock-for-25000-gallon-pool,programmatic/shock/how-much-shock-for-25000-gallon-pool.html,How Much Shock for 25000 Gallon Pool | WaterBalanceTools,56,102,1,true,none
+https://waterbalancetools.com/programmatic/shock/how-much-shock-for-30000-gallon-pool,programmatic/shock/how-much-shock-for-30000-gallon-pool.html,How Much Shock for 30000 Gallon Pool | WaterBalanceTools,56,102,1,true,none
+https://waterbalancetools.com/programmatic/shock/how-much-shock-for-5000-gallon-pool,programmatic/shock/how-much-shock-for-5000-gallon-pool.html,How Much Shock for 5000 Gallon Pool | WaterBalanceTools,55,101,1,true,none
 https://waterbalancetools.com/programmatic/shock/,programmatic/shock/index.html,Programmatic Shock Hub | WaterBalanceTools,42,62,1,true,none
 https://waterbalancetools.com/provenance/,provenance/index.html,Data Provenance | WaterBalanceTools,35,64,1,true,none
 https://waterbalancetools.com/qa/certification,qa/certification.html,Certification | WaterBalanceTools QA,36,0,1,false,MISSING_META_DESCRIPTION
@@ -449,46 +452,46 @@ https://waterbalancetools.com/reference/chlorine-effectiveness-chart,reference/c
 https://waterbalancetools.com/reference/chlorine-explained,reference/chlorine-explained.html,Chlorine in Pools Explained | WaterBalanceTools,47,152,1,true,none
 https://waterbalancetools.com/reference/combined-chlorine-explained,reference/combined-chlorine-explained.html,Combined Chlorine (Chloramines) Explained | WaterBalanceTools,61,160,1,true,none
 https://waterbalancetools.com/reference/common-pool-chemistry-mistakes,reference/common-pool-chemistry-mistakes.html,Common Pool Chemistry Mistakes | WaterBalanceTools,50,132,1,true,none
-https://waterbalancetools.com/reference/cya-matrix,reference/cya-matrix.html,CYA Level and Minimum Free Chlorine Matrix | Reference | WaterBalanceTools,74,112,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/reference/cya-matrix,reference/cya-matrix.html,CYA & Minimum Free Chlorine Matrix | WaterBalanceTools,54,112,1,true,none
 https://waterbalancetools.com/reference/cyanuric-acid-explained,reference/cyanuric-acid-explained.html,Cyanuric Acid (CYA / Stabilizer) Explained | WaterBalanceTools,62,145,1,true,none
-https://waterbalancetools.com/reference/datasets/chemical-properties/,reference/datasets/chemical-properties/index.html,Chemical Properties | WaterBalanceTools Datasets | WaterBalanceTools,68,80,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/reference/datasets/chemical-ranges/,reference/datasets/chemical-ranges/index.html,Chemical Ranges | WaterBalanceTools Datasets | WaterBalanceTools,64,78,1,true,none
-https://waterbalancetools.com/reference/datasets/compatibility/,reference/datasets/compatibility/index.html,Compatibility | WaterBalanceTools Datasets | WaterBalanceTools,62,60,1,true,none
-https://waterbalancetools.com/reference/datasets/confidence-levels/,reference/datasets/confidence-levels/index.html,Confidence Levels | WaterBalanceTools Datasets | WaterBalanceTools,66,68,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/reference/datasets/conversion-factors/,reference/datasets/conversion-factors/index.html,Conversion Factors | WaterBalanceTools Datasets | WaterBalanceTools,67,70,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/reference/datasets/dosage-matrices/,reference/datasets/dosage-matrices/index.html,Dosage Matrices | WaterBalanceTools Datasets | WaterBalanceTools,64,61,1,true,none
-https://waterbalancetools.com/reference/datasets/hot-tub-ranges/,reference/datasets/hot-tub-ranges/index.html,Hot Tub Ranges | WaterBalanceTools Datasets | WaterBalanceTools,63,46,1,true,META_DESCRIPTION_TOO_SHORT
-https://waterbalancetools.com/reference/datasets/,reference/datasets/index.html,Canonical Datasets | WaterBalanceTools Datasets | WaterBalanceTools,67,117,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/reference/datasets/maintenance-schedules/,reference/datasets/maintenance-schedules/index.html,Maintenance Schedules | WaterBalanceTools Datasets | WaterBalanceTools,70,55,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/reference/datasets/pool-types/,reference/datasets/pool-types/index.html,Pool Types | WaterBalanceTools Datasets | WaterBalanceTools,59,60,1,true,none
-https://waterbalancetools.com/reference/datasets/temperature-guidelines/,reference/datasets/temperature-guidelines/index.html,Temperature Guidelines | WaterBalanceTools Datasets | WaterBalanceTools,71,59,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/reference/datasets/testing-frequency/,reference/datasets/testing-frequency/index.html,Testing Frequency | WaterBalanceTools Datasets | WaterBalanceTools,66,56,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/reference/datasets/units/,reference/datasets/units/index.html,Units | WaterBalanceTools Datasets | WaterBalanceTools,54,73,1,true,none
-https://waterbalancetools.com/reference/datasets/version/,reference/datasets/version/index.html,Version Registry | WaterBalanceTools Datasets | WaterBalanceTools,65,63,1,true,none
-https://waterbalancetools.com/reference/datasets/water-balance/,reference/datasets/water-balance/index.html,Water Balance (LSI) | WaterBalanceTools Datasets | WaterBalanceTools,68,60,1,true,TITLE_TOO_LONG
-https://waterbalancetools.com/reference/datasets/water-problems/,reference/datasets/water-problems/index.html,Water Problems | WaterBalanceTools Datasets | WaterBalanceTools,63,78,1,true,none
+https://waterbalancetools.com/reference/datasets/chemical-properties/,reference/datasets/chemical-properties/index.html,Chemical Properties | Datasets | WaterBalanceTools,50,80,1,true,none
+https://waterbalancetools.com/reference/datasets/chemical-ranges/,reference/datasets/chemical-ranges/index.html,Chemical Ranges | Datasets | WaterBalanceTools,46,78,1,true,none
+https://waterbalancetools.com/reference/datasets/compatibility/,reference/datasets/compatibility/index.html,Compatibility | Datasets | WaterBalanceTools,44,60,1,true,none
+https://waterbalancetools.com/reference/datasets/confidence-levels/,reference/datasets/confidence-levels/index.html,Confidence Levels | Datasets | WaterBalanceTools,48,68,1,true,none
+https://waterbalancetools.com/reference/datasets/conversion-factors/,reference/datasets/conversion-factors/index.html,Conversion Factors | Datasets | WaterBalanceTools,49,70,1,true,none
+https://waterbalancetools.com/reference/datasets/dosage-matrices/,reference/datasets/dosage-matrices/index.html,Dosage Matrices | Datasets | WaterBalanceTools,46,61,1,true,none
+https://waterbalancetools.com/reference/datasets/hot-tub-ranges/,reference/datasets/hot-tub-ranges/index.html,Hot Tub Ranges | Datasets | WaterBalanceTools,45,46,1,true,META_DESCRIPTION_TOO_SHORT
+https://waterbalancetools.com/reference/datasets/,reference/datasets/index.html,Canonical Datasets | Datasets | WaterBalanceTools,49,117,1,true,none
+https://waterbalancetools.com/reference/datasets/maintenance-schedules/,reference/datasets/maintenance-schedules/index.html,Maintenance Schedules | Datasets | WaterBalanceTools,52,55,1,true,none
+https://waterbalancetools.com/reference/datasets/pool-types/,reference/datasets/pool-types/index.html,Pool Types | Datasets | WaterBalanceTools,41,60,1,true,none
+https://waterbalancetools.com/reference/datasets/temperature-guidelines/,reference/datasets/temperature-guidelines/index.html,Temperature Guidelines | Datasets | WaterBalanceTools,53,59,1,true,none
+https://waterbalancetools.com/reference/datasets/testing-frequency/,reference/datasets/testing-frequency/index.html,Testing Frequency | Datasets | WaterBalanceTools,48,56,1,true,none
+https://waterbalancetools.com/reference/datasets/units/,reference/datasets/units/index.html,Units | Datasets | WaterBalanceTools,36,73,1,true,none
+https://waterbalancetools.com/reference/datasets/version/,reference/datasets/version/index.html,Version Registry | Datasets | WaterBalanceTools,47,63,1,true,none
+https://waterbalancetools.com/reference/datasets/water-balance/,reference/datasets/water-balance/index.html,Water Balance (LSI) | Datasets | WaterBalanceTools,50,60,1,true,none
+https://waterbalancetools.com/reference/datasets/water-problems/,reference/datasets/water-problems/index.html,Water Problems | Datasets | WaterBalanceTools,45,78,1,true,none
 https://waterbalancetools.com/reference/emergency-recovery,reference/emergency-recovery.html,Emergency Pool Recovery Protocol | Reference | WaterBalanceTools,64,117,1,true,none
 https://waterbalancetools.com/reference/filter-comparison,reference/filter-comparison.html,Pool Filter Type Comparison | Reference | WaterBalanceTools,59,129,1,true,none
 https://waterbalancetools.com/reference/free-chlorine-explained,reference/free-chlorine-explained.html,Free Chlorine Explained | WaterBalanceTools,43,146,1,true,none
 https://waterbalancetools.com/reference/ideal-pool-levels,reference/ideal-pool-levels.html,Ideal Pool Chemical Levels | Reference | WaterBalanceTools,58,139,1,true,none
-https://waterbalancetools.com/reference/ideal-spa-levels,reference/ideal-spa-levels.html,Ideal Spa & Hot Tub Chemical Levels | Reference | WaterBalanceTools,67,120,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/reference/ideal-spa-levels,reference/ideal-spa-levels.html,Ideal Spa & Hot Tub Chemical Levels | WaterBalanceTools,55,120,1,true,none
 https://waterbalancetools.com/reference/,reference/index.html,Pool Chemistry Reference | WaterBalanceTools,44,150,1,true,none
-https://waterbalancetools.com/reference/ph-table,reference/ph-table.html,Pool pH Adjustment Reference Table | Reference | WaterBalanceTools,66,101,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/reference/ph-table,reference/ph-table.html,Pool pH Adjustment Reference Table | WaterBalanceTools,54,101,1,true,none
 https://waterbalancetools.com/reference/pool-chemical-timeline,reference/pool-chemical-timeline.html,Pool Chemical Timeline | Reference | WaterBalanceTools,54,106,1,true,none
 https://waterbalancetools.com/reference/pool-chemicals-explained,reference/pool-chemicals-explained.html,Pool Chemicals Explained | WaterBalanceTools,44,115,1,true,none
 https://waterbalancetools.com/reference/pool-chemistry-reference,reference/pool-chemistry-reference.html,Pool Chemistry Reference Guide | WaterBalanceTools,50,149,1,true,none
-https://waterbalancetools.com/reference/pool-shape-guide,reference/pool-shape-guide.html,Pool Shape & Volume Calculation Guide | Reference | WaterBalanceTools,69,106,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/reference/pool-shape-guide,reference/pool-shape-guide.html,Pool Shape & Volume Guide | Reference | WaterBalanceTools,57,106,1,true,none
 https://waterbalancetools.com/reference/pool-volume-reference,reference/pool-volume-reference.html,Pool Volume Quick Reference | Reference | WaterBalanceTools,59,84,1,true,none
 https://waterbalancetools.com/reference/printable-resources-index,reference/printable-resources-index.html,Printable Pool Resources Index | Reference | WaterBalanceTools,62,107,1,true,none
 https://waterbalancetools.com/reference/pump-sizing,reference/pump-sizing.html,Pool Pump Sizing Guide | Reference | WaterBalanceTools,54,125,1,true,none
-https://waterbalancetools.com/reference/recommended-water-temperature,reference/recommended-water-temperature.html,Recommended Pool & Spa Water Temperature | Reference | WaterBalanceTools,72,142,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/reference/recommended-water-temperature,reference/recommended-water-temperature.html,Recommended Pool & Spa Water Temperature | WaterBalanceTools,60,142,1,true,none
 https://waterbalancetools.com/reference/salt-matrix,reference/salt-matrix.html,Salt Pool Level Reference Matrix | Reference | WaterBalanceTools,64,121,1,true,none
 https://waterbalancetools.com/reference/salt-water-generator-explained,reference/salt-water-generator-explained.html,Salt Water Generator (SWG) Explained | WaterBalanceTools,56,160,1,true,none
 https://waterbalancetools.com/reference/shock-dosage-matrix,reference/shock-dosage-matrix.html,Shock Dosage Matrix | Reference | WaterBalanceTools,51,119,1,true,none
 https://waterbalancetools.com/reference/shock-treatment-explained,reference/shock-treatment-explained.html,Pool Shock Treatment Explained | WaterBalanceTools,50,147,1,true,none
-https://waterbalancetools.com/reference/testing-frequency,reference/testing-frequency.html,Pool & Spa Testing Frequency Guide | Reference | WaterBalanceTools,66,82,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/reference/testing-frequency,reference/testing-frequency.html,Pool & Spa Testing Frequency Guide | WaterBalanceTools,54,82,1,true,none
 https://waterbalancetools.com/reference/total-alkalinity-explained,reference/total-alkalinity-explained.html,Total Alkalinity Explained | WaterBalanceTools,46,139,1,true,none
-https://waterbalancetools.com/reference/vacation-rental-maintenance-schedule,reference/vacation-rental-maintenance-schedule.html,Vacation Rental Pool Maintenance Schedule | Reference | WaterBalanceTools,73,131,1,true,TITLE_TOO_LONG
+https://waterbalancetools.com/reference/vacation-rental-maintenance-schedule,reference/vacation-rental-maintenance-schedule.html,Vacation Rental Pool Maintenance Schedule | WaterBalanceTools,61,131,1,true,none
 https://waterbalancetools.com/reference/water-balance-checklist,reference/water-balance-checklist.html,Complete Water Balance Checklist | Reference | WaterBalanceTools,64,121,1,true,none
 https://waterbalancetools.com/reference/water-replacement-guidelines,reference/water-replacement-guidelines.html,Pool Water Replacement Guidelines | Reference | WaterBalanceTools,65,118,1,true,none
 https://waterbalancetools.com/releases/1.0.0,releases/1.0.0.html,Release 1.0.0 — Foundation | WaterBalanceTools,46,55,1,true,none

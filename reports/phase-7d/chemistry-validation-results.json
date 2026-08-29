@@ -1,14 +1,15 @@
 {
-  "timestamp": "2026-08-23T23:44:10.629Z",
+  "timestamp": "2026-08-29T01:33:54.510Z",
   "parameters": 15,
   "ranges": 25,
-  "sources": 15,
+  "sources": 16,
   "claims": 19,
   "errors": [],
   "warnings": [
     "Source \"clevelandclinic-pool-chemical-safety\" is not referenced by any parameter, range, or claim (orphan source)",
     "Source \"aquamagazine-hasa-superchlorination-2020\" is not referenced by any parameter, range, or claim (orphan source)",
     "Source \"cffa-vinyl-liner-bleaching\" is not referenced by any parameter, range, or claim (orphan source)",
+    "Source \"phta-fresh-fill-startup-fact-sheet\" is not referenced by any parameter, range, or claim (orphan source)",
     "Range \"range-ph-hottub-bromine-routine\" is not referenced by any canonical claim (orphan range)",
     "Range \"range-ph-pool-narrow-operational\" is not referenced by any canonical claim (orphan range)",
     "Range \"range-ta-public-pool-standard\" is not referenced by any canonical claim (orphan range)",

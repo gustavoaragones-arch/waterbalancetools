@@ -121,6 +121,26 @@
       "flags": "none"
     },
     {
+      "url": "https://waterbalancetools.com/academy/fundamentals/indoor-pool-chemistry",
+      "file_path": "academy/fundamentals/indoor-pool-chemistry.html",
+      "canonical": "https://waterbalancetools.com/academy/fundamentals/indoor-pool-chemistry",
+      "robots": "index, follow",
+      "indexability": "INDEXABLE",
+      "sitemap_presence": true,
+      "redirect_status": "none",
+      "flags": "none"
+    },
+    {
+      "url": "https://waterbalancetools.com/academy/fundamentals/new-pool-startup-chemistry",
+      "file_path": "academy/fundamentals/new-pool-startup-chemistry.html",
+      "canonical": "https://waterbalancetools.com/academy/fundamentals/new-pool-startup-chemistry",
+      "robots": "index, follow",
+      "indexability": "INDEXABLE",
+      "sitemap_presence": true,
+      "redirect_status": "none",
+      "flags": "none"
+    },
+    {
       "url": "https://waterbalancetools.com/academy/fundamentals/pool-vs-hot-tub-chemistry",
       "file_path": "academy/fundamentals/pool-vs-hot-tub-chemistry.html",
       "canonical": "https://waterbalancetools.com/academy/fundamentals/pool-vs-hot-tub-chemistry",
@@ -3291,6 +3311,16 @@
       "flags": "none"
     },
     {
+      "url": "https://waterbalancetools.com/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "file_path": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+      "canonical": "https://waterbalancetools.com/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+      "robots": "index, follow",
+      "indexability": "INDEXABLE",
+      "sitemap_presence": true,
+      "redirect_status": "none",
+      "flags": "none"
+    },
+    {
       "url": "https://waterbalancetools.com/guides/edge-cases/high-cya-chlorine-lock",
       "file_path": "guides/edge-cases/high-cya-chlorine-lock.html",
       "canonical": "https://waterbalancetools.com/guides/edge-cases/high-cya-chlorine-lock",
@@ -3893,32 +3923,32 @@
     {
       "url": "https://waterbalancetools.com/printables/airbnb-pool-turnover-checklist",
       "file_path": "printables/airbnb-pool-turnover-checklist.html",
-      "canonical": "https://waterbalancetools.com/printables/airbnb-pool-turnover-checklist",
-      "robots": "index, follow",
-      "indexability": "INDEXABLE",
-      "sitemap_presence": true,
-      "redirect_status": "none",
-      "flags": "none"
+      "canonical": "https://waterbalancetools.com/resources/airbnb-pool-turnover-checklist",
+      "robots": "noindex, follow",
+      "indexability": "NOINDEX",
+      "sitemap_presence": false,
+      "redirect_status": "HAS_LEGACY_REDIRECT_SOURCE_COLLISION",
+      "flags": "CANONICAL_POINTS_ELSEWHERE;HAS_LEGACY_REDIRECT_SOURCE_COLLISION"
     },
     {
       "url": "https://waterbalancetools.com/printables/hot-tub-maintenance-log",
       "file_path": "printables/hot-tub-maintenance-log.html",
-      "canonical": "https://waterbalancetools.com/printables/hot-tub-maintenance-log",
-      "robots": "index, follow",
-      "indexability": "INDEXABLE",
-      "sitemap_presence": true,
-      "redirect_status": "none",
-      "flags": "none"
+      "canonical": "https://waterbalancetools.com/resources/hot-tub-maintenance-log",
+      "robots": "noindex, follow",
+      "indexability": "NOINDEX",
+      "sitemap_presence": false,
+      "redirect_status": "HAS_LEGACY_REDIRECT_SOURCE_COLLISION",
+      "flags": "CANONICAL_POINTS_ELSEWHERE;HAS_LEGACY_REDIRECT_SOURCE_COLLISION"
     },
     {
       "url": "https://waterbalancetools.com/printables/pool-maintenance-checklist",
       "file_path": "printables/pool-maintenance-checklist.html",
-      "canonical": "https://waterbalancetools.com/printables/pool-maintenance-checklist",
-      "robots": "index, follow",
-      "indexability": "INDEXABLE",
-      "sitemap_presence": true,
-      "redirect_status": "none",
-      "flags": "none"
+      "canonical": "https://waterbalancetools.com/resources/pool-maintenance-checklist",
+      "robots": "noindex, follow",
+      "indexability": "NOINDEX",
+      "sitemap_presence": false,
+      "redirect_status": "HAS_LEGACY_REDIRECT_SOURCE_COLLISION",
+      "flags": "CANONICAL_POINTS_ELSEWHERE;HAS_LEGACY_REDIRECT_SOURCE_COLLISION"
     },
     {
       "url": "https://waterbalancetools.com/programmatic/behavior/how-often-to-shock-pool",

@@ -4,44 +4,44 @@
       "family": "programmatic/hot-tubs",
       "page_count": 6,
       "risk": "HIGH",
-      "avg_pairwise_similarity": 0.711,
+      "avg_pairwise_similarity": 0.629,
       "high_similarity_pairs": 10,
-      "repeated_paragraph_blocks": 25,
-      "repeated_headings": 18,
-      "repeated_faqs": 3,
+      "repeated_paragraph_blocks": 15,
+      "repeated_headings": 14,
+      "repeated_faqs": 0,
       "repeated_tables": 0
     },
     {
       "family": "programmatic/shock",
       "page_count": 7,
       "risk": "HIGH",
-      "avg_pairwise_similarity": 0.689,
+      "avg_pairwise_similarity": 0.621,
       "high_similarity_pairs": 15,
-      "repeated_paragraph_blocks": 23,
-      "repeated_headings": 18,
-      "repeated_faqs": 3,
+      "repeated_paragraph_blocks": 15,
+      "repeated_headings": 15,
+      "repeated_faqs": 0,
       "repeated_tables": 0
     },
     {
       "family": "programmatic/chlorine",
       "page_count": 12,
       "risk": "HIGH",
-      "avg_pairwise_similarity": 0.651,
+      "avg_pairwise_similarity": 0.565,
       "high_similarity_pairs": 55,
-      "repeated_paragraph_blocks": 26,
-      "repeated_headings": 18,
-      "repeated_faqs": 3,
+      "repeated_paragraph_blocks": 17,
+      "repeated_headings": 15,
+      "repeated_faqs": 1,
       "repeated_tables": 0
     },
     {
       "family": "programmatic/ph",
       "page_count": 5,
-      "risk": "HIGH",
-      "avg_pairwise_similarity": 0.579,
-      "high_similarity_pairs": 5,
-      "repeated_paragraph_blocks": 31,
-      "repeated_headings": 20,
-      "repeated_faqs": 5,
+      "risk": "MEDIUM",
+      "avg_pairwise_similarity": 0.488,
+      "high_similarity_pairs": 2,
+      "repeated_paragraph_blocks": 23,
+      "repeated_headings": 16,
+      "repeated_faqs": 2,
       "repeated_tables": 1
     },
     {
@@ -56,32 +56,32 @@
       "repeated_tables": 1
     },
     {
+      "family": "reports",
+      "page_count": 13,
+      "risk": "MEDIUM",
+      "avg_pairwise_similarity": 0.272,
+      "high_similarity_pairs": 0,
+      "repeated_paragraph_blocks": 1,
+      "repeated_headings": 6,
+      "repeated_faqs": 0,
+      "repeated_tables": 2
+    },
+    {
       "family": "calculators",
       "page_count": 15,
       "risk": "MEDIUM",
-      "avg_pairwise_similarity": 0.279,
+      "avg_pairwise_similarity": 0.271,
       "high_similarity_pairs": 0,
-      "repeated_paragraph_blocks": 4,
+      "repeated_paragraph_blocks": 5,
       "repeated_headings": 19,
       "repeated_faqs": 0,
       "repeated_tables": 0
     },
     {
-      "family": "reports",
-      "page_count": 13,
-      "risk": "MEDIUM",
-      "avg_pairwise_similarity": 0.262,
-      "high_similarity_pairs": 0,
-      "repeated_paragraph_blocks": 1,
-      "repeated_headings": 6,
-      "repeated_faqs": 0,
-      "repeated_tables": 3
-    },
-    {
       "family": "guides",
       "page_count": 7,
       "risk": "LOW",
-      "avg_pairwise_similarity": 0.227,
+      "avg_pairwise_similarity": 0.226,
       "high_similarity_pairs": 0,
       "repeated_paragraph_blocks": 4,
       "repeated_headings": 2,
@@ -92,10 +92,10 @@
       "family": "entities",
       "page_count": 105,
       "risk": "LOW",
-      "avg_pairwise_similarity": 0.225,
-      "high_similarity_pairs": 1,
-      "repeated_paragraph_blocks": 46,
-      "repeated_headings": 198,
+      "avg_pairwise_similarity": 0.2,
+      "high_similarity_pairs": 0,
+      "repeated_paragraph_blocks": 45,
+      "repeated_headings": 200,
       "repeated_faqs": 0,
       "repeated_tables": 0
     },
@@ -156,11 +156,11 @@
     },
     {
       "family": "academy/fundamentals",
-      "page_count": 7,
+      "page_count": 9,
       "risk": "LOW",
       "avg_pairwise_similarity": 0,
       "high_similarity_pairs": 0,
-      "repeated_paragraph_blocks": 4,
+      "repeated_paragraph_blocks": 5,
       "repeated_headings": 8,
       "repeated_faqs": 0,
       "repeated_tables": 0
@@ -299,7 +299,7 @@
     },
     {
       "family": "guides/edge-cases",
-      "page_count": 6,
+      "page_count": 7,
       "risk": "LOW",
       "avg_pairwise_similarity": 0,
       "high_similarity_pairs": 0,
@@ -432,605 +432,577 @@
   ],
   "pairwise_high_similarity": [
     {
-      "family": "entities",
-      "page_a": "entities/fiberglass-pool.html",
-      "page_b": "entities/vinyl-pool.html",
-      "jaccard_similarity": 0.623,
-      "risk": "HIGH"
-    },
-    {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html",
-      "jaccard_similarity": 0.718,
+      "jaccard_similarity": 0.646,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
-      "jaccard_similarity": 0.704,
+      "jaccard_similarity": 0.62,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
+      "jaccard_similarity": 0.615,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html",
-      "jaccard_similarity": 0.702,
+      "jaccard_similarity": 0.609,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
-      "jaccard_similarity": 0.7,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
-      "jaccard_similarity": 0.696,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html",
-      "jaccard_similarity": 0.689,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
-      "jaccard_similarity": 0.688,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html",
-      "jaccard_similarity": 0.687,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
-      "jaccard_similarity": 0.682,
+      "jaccard_similarity": 0.607,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
-      "jaccard_similarity": 0.68,
+      "jaccard_similarity": 0.604,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
+      "jaccard_similarity": 0.603,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html",
-      "jaccard_similarity": 0.677,
+      "jaccard_similarity": 0.6,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
+      "jaccard_similarity": 0.599,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html",
+      "jaccard_similarity": 0.596,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html",
+      "jaccard_similarity": 0.596,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
-      "jaccard_similarity": 0.677,
+      "jaccard_similarity": 0.59,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
-      "jaccard_similarity": 0.675,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
-      "jaccard_similarity": 0.669,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
-      "jaccard_similarity": 0.666,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html",
-      "jaccard_similarity": 0.664,
+      "jaccard_similarity": 0.587,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
-      "jaccard_similarity": 0.664,
+      "jaccard_similarity": 0.587,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html",
+      "jaccard_similarity": 0.584,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
-      "jaccard_similarity": 0.663,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
-      "jaccard_similarity": 0.661,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html",
-      "jaccard_similarity": 0.657,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
-      "jaccard_similarity": 0.656,
+      "jaccard_similarity": 0.581,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
-      "jaccard_similarity": 0.654,
+      "jaccard_similarity": 0.578,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
+      "jaccard_similarity": 0.578,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html",
+      "jaccard_similarity": 0.577,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
+      "jaccard_similarity": 0.575,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html",
-      "jaccard_similarity": 0.654,
+      "jaccard_similarity": 0.574,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html",
-      "jaccard_similarity": 0.653,
+      "jaccard_similarity": 0.573,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
+      "jaccard_similarity": 0.571,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
+      "jaccard_similarity": 0.571,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
-      "jaccard_similarity": 0.653,
+      "jaccard_similarity": 0.569,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
+      "jaccard_similarity": 0.567,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
+      "jaccard_similarity": 0.565,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
+      "jaccard_similarity": 0.559,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html",
-      "jaccard_similarity": 0.652,
+      "jaccard_similarity": 0.559,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
-      "jaccard_similarity": 0.649,
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
+      "jaccard_similarity": 0.556,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html",
-      "jaccard_similarity": 0.646,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
-      "jaccard_similarity": 0.645,
+      "jaccard_similarity": 0.555,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
-      "jaccard_similarity": 0.644,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
-      "jaccard_similarity": 0.642,
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html",
+      "jaccard_similarity": 0.553,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
-      "jaccard_similarity": 0.639,
+      "jaccard_similarity": 0.548,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
+      "jaccard_similarity": 0.548,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
-      "jaccard_similarity": 0.639,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
-      "jaccard_similarity": 0.637,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
-      "jaccard_similarity": 0.635,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
-      "jaccard_similarity": 0.633,
+      "jaccard_similarity": 0.548,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html",
-      "jaccard_similarity": 0.633,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
-      "jaccard_similarity": 0.632,
+      "jaccard_similarity": 0.548,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html",
-      "jaccard_similarity": 0.632,
+      "jaccard_similarity": 0.547,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
+      "jaccard_similarity": 0.544,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
+      "jaccard_similarity": 0.543,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
+      "jaccard_similarity": 0.541,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
+      "jaccard_similarity": 0.54,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
+      "jaccard_similarity": 0.539,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
-      "jaccard_similarity": 0.632,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
-      "jaccard_similarity": 0.63,
+      "jaccard_similarity": 0.539,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
+      "jaccard_similarity": 0.538,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
+      "jaccard_similarity": 0.538,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
-      "jaccard_similarity": 0.63,
+      "jaccard_similarity": 0.536,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html",
+      "jaccard_similarity": 0.534,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
-      "jaccard_similarity": 0.628,
+      "jaccard_similarity": 0.533,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html",
-      "jaccard_similarity": 0.627,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
-      "jaccard_similarity": 0.626,
+      "jaccard_similarity": 0.533,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
-      "jaccard_similarity": 0.626,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html",
-      "jaccard_similarity": 0.625,
+      "jaccard_similarity": 0.532,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
-      "jaccard_similarity": 0.624,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool.html",
-      "jaccard_similarity": 0.623,
+      "jaccard_similarity": 0.531,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html",
+      "page_b": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
+      "jaccard_similarity": 0.53,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/chlorine",
+      "page_a": "programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
-      "jaccard_similarity": 0.618,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html",
-      "jaccard_similarity": 0.617,
+      "jaccard_similarity": 0.525,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool.html",
-      "jaccard_similarity": 0.616,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
-      "jaccard_similarity": 0.615,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/chlorine",
-      "page_a": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
-      "page_b": "programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool.html",
-      "jaccard_similarity": 0.615,
+      "jaccard_similarity": 0.524,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/chlorine",
       "page_a": "programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool.html",
       "page_b": "programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool.html",
-      "jaccard_similarity": 0.613,
+      "jaccard_similarity": 0.518,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/hot-tubs",
+      "page_a": "programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons.html",
+      "page_b": "programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons.html",
+      "jaccard_similarity": 0.701,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/hot-tubs",
       "page_a": "programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons.html",
       "page_b": "programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons.html",
-      "jaccard_similarity": 0.77,
-      "risk": "CRITICAL"
-    },
-    {
-      "family": "programmatic/hot-tubs",
-      "page_a": "programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons.html",
-      "page_b": "programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons.html",
-      "jaccard_similarity": 0.761,
-      "risk": "CRITICAL"
+      "jaccard_similarity": 0.697,
+      "risk": "HIGH"
     },
     {
       "family": "programmatic/hot-tubs",
       "page_a": "programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html",
       "page_b": "programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons.html",
-      "jaccard_similarity": 0.74,
+      "jaccard_similarity": 0.664,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/hot-tubs",
       "page_a": "programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons.html",
       "page_b": "programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html",
-      "jaccard_similarity": 0.728,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/hot-tubs",
-      "page_a": "programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons.html",
-      "page_b": "programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons.html",
-      "jaccard_similarity": 0.707,
+      "jaccard_similarity": 0.64,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/hot-tubs",
       "page_a": "programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html",
       "page_b": "programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons.html",
-      "jaccard_similarity": 0.702,
+      "jaccard_similarity": 0.625,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/hot-tubs",
+      "page_a": "programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons.html",
+      "page_b": "programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons.html",
+      "jaccard_similarity": 0.618,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/hot-tubs",
       "page_a": "programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons.html",
       "page_b": "programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html",
-      "jaccard_similarity": 0.695,
+      "jaccard_similarity": 0.608,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/hot-tubs",
       "page_a": "programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons.html",
       "page_b": "programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons.html",
-      "jaccard_similarity": 0.675,
+      "jaccard_similarity": 0.586,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/hot-tubs",
       "page_a": "programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons.html",
       "page_b": "programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons.html",
-      "jaccard_similarity": 0.673,
+      "jaccard_similarity": 0.584,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/hot-tubs",
       "page_a": "programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons.html",
       "page_b": "programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons.html",
-      "jaccard_similarity": 0.659,
+      "jaccard_similarity": 0.571,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/ph",
       "page_a": "programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2.html",
       "page_b": "programmatic/ph/how-to-adjust-ph-from-7-to-7-4.html",
-      "jaccard_similarity": 0.723,
+      "jaccard_similarity": 0.653,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/ph",
       "page_a": "programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4.html",
       "page_b": "programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html",
-      "jaccard_similarity": 0.67,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/ph",
-      "page_a": "programmatic/ph/how-to-adjust-ph-from-7-to-7-4.html",
-      "page_b": "programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html",
-      "jaccard_similarity": 0.533,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/ph",
-      "page_a": "programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4.html",
-      "page_b": "programmatic/ph/how-to-adjust-ph-from-7-to-7-4.html",
-      "jaccard_similarity": 0.532,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/ph",
-      "page_a": "programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2.html",
-      "page_b": "programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4.html",
-      "jaccard_similarity": 0.531,
+      "jaccard_similarity": 0.575,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/shock",
       "page_a": "programmatic/shock/how-much-shock-for-10000-gallon-pool.html",
       "page_b": "programmatic/shock/how-much-shock-for-20000-gallon-pool.html",
-      "jaccard_similarity": 0.727,
+      "jaccard_similarity": 0.66,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/shock",
+      "page_a": "programmatic/shock/how-much-shock-for-15000-gallon-pool.html",
+      "page_b": "programmatic/shock/how-much-shock-for-25000-gallon-pool.html",
+      "jaccard_similarity": 0.633,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/shock",
       "page_a": "programmatic/shock/how-much-shock-for-15000-gallon-pool.html",
       "page_b": "programmatic/shock/how-much-shock-for-30000-gallon-pool.html",
-      "jaccard_similarity": 0.703,
+      "jaccard_similarity": 0.633,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/shock",
+      "page_a": "programmatic/shock/how-much-shock-for-20000-gallon-pool.html",
+      "page_b": "programmatic/shock/how-much-shock-for-25000-gallon-pool.html",
+      "jaccard_similarity": 0.632,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/shock",
       "page_a": "programmatic/shock/how-much-shock-for-20000-gallon-pool.html",
       "page_b": "programmatic/shock/how-much-shock-for-30000-gallon-pool.html",
-      "jaccard_similarity": 0.701,
+      "jaccard_similarity": 0.632,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/shock",
       "page_a": "programmatic/shock/how-much-shock-for-25000-gallon-pool.html",
       "page_b": "programmatic/shock/how-much-shock-for-30000-gallon-pool.html",
-      "jaccard_similarity": 0.701,
+      "jaccard_similarity": 0.631,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/shock",
       "page_a": "programmatic/shock/how-much-shock-for-15000-gallon-pool.html",
-      "page_b": "programmatic/shock/how-much-shock-for-25000-gallon-pool.html",
-      "jaccard_similarity": 0.699,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/shock",
-      "page_a": "programmatic/shock/how-much-shock-for-20000-gallon-pool.html",
-      "page_b": "programmatic/shock/how-much-shock-for-25000-gallon-pool.html",
-      "jaccard_similarity": 0.698,
+      "page_b": "programmatic/shock/how-much-shock-for-20000-gallon-pool.html",
+      "jaccard_similarity": 0.63,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/shock",
       "page_a": "programmatic/shock/how-much-shock-for-10000-gallon-pool.html",
       "page_b": "programmatic/shock/how-much-shock-for-15000-gallon-pool.html",
-      "jaccard_similarity": 0.696,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/shock",
-      "page_a": "programmatic/shock/how-much-shock-for-15000-gallon-pool.html",
-      "page_b": "programmatic/shock/how-much-shock-for-20000-gallon-pool.html",
-      "jaccard_similarity": 0.696,
+      "jaccard_similarity": 0.629,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/shock",
       "page_a": "programmatic/shock/how-much-shock-for-10000-gallon-pool.html",
       "page_b": "programmatic/shock/how-much-shock-for-25000-gallon-pool.html",
-      "jaccard_similarity": 0.692,
+      "jaccard_similarity": 0.625,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/shock",
       "page_a": "programmatic/shock/how-much-shock-for-10000-gallon-pool.html",
       "page_b": "programmatic/shock/how-much-shock-for-30000-gallon-pool.html",
-      "jaccard_similarity": 0.691,
+      "jaccard_similarity": 0.621,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/shock",
       "page_a": "programmatic/shock/how-much-shock-for-25000-gallon-pool.html",
       "page_b": "programmatic/shock/how-much-shock-for-5000-gallon-pool.html",
-      "jaccard_similarity": 0.689,
+      "jaccard_similarity": 0.611,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/shock",
       "page_a": "programmatic/shock/how-much-shock-for-15000-gallon-pool.html",
       "page_b": "programmatic/shock/how-much-shock-for-5000-gallon-pool.html",
-      "jaccard_similarity": 0.67,
+      "jaccard_similarity": 0.603,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/shock",
       "page_a": "programmatic/shock/how-much-shock-for-10000-gallon-pool.html",
       "page_b": "programmatic/shock/how-much-shock-for-5000-gallon-pool.html",
-      "jaccard_similarity": 0.665,
-      "risk": "HIGH"
-    },
-    {
-      "family": "programmatic/shock",
-      "page_a": "programmatic/shock/how-much-shock-for-30000-gallon-pool.html",
-      "page_b": "programmatic/shock/how-much-shock-for-5000-gallon-pool.html",
-      "jaccard_similarity": 0.657,
+      "jaccard_similarity": 0.597,
       "risk": "HIGH"
     },
     {
       "family": "programmatic/shock",
       "page_a": "programmatic/shock/how-much-shock-for-20000-gallon-pool.html",
       "page_b": "programmatic/shock/how-much-shock-for-5000-gallon-pool.html",
-      "jaccard_similarity": 0.654,
+      "jaccard_similarity": 0.588,
+      "risk": "HIGH"
+    },
+    {
+      "family": "programmatic/shock",
+      "page_a": "programmatic/shock/how-much-shock-for-30000-gallon-pool.html",
+      "page_b": "programmatic/shock/how-much-shock-for-5000-gallon-pool.html",
+      "jaccard_similarity": 0.587,
       "risk": "HIGH"
     }
   ]

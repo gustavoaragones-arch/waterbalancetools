@@ -1,0 +1,142 @@
+{
+  "phase": "7P",
+  "title": "Search-Demand Gap Validation & Topical Expansion",
+  "status": "PASS",
+  "baseline_commit": "67fb7704f248c574727bcd087c880c4003c508da",
+  "gaps_revalidated": 8,
+  "gap_classifications": {
+    "CREATE": 1,
+    "DEFER": 2,
+    "REJECT": 5
+  },
+  "pages_created": 1,
+  "created_pages": [
+    {
+      "url": "/academy/fundamentals/new-pool-startup-chemistry",
+      "title": "New Pool Startup Chemistry (Fresh Fill & New Plaster)",
+      "generator": "data/academy.json + scripts/generate-academy.js",
+      "primary_source": "PHTA Recreational Water Quality Committee, Fresh Fill Water Start-Up for Plastered Pools (March 2021), read in full via WebFetch on 2026-08-28"
+    }
+  ],
+  "external_research": {
+    "web_searches_performed": 3,
+    "web_fetches_performed": 2,
+    "sources_read_in_full": 1,
+    "sources_attempted_but_inaccessible": 1,
+    "new_sources_registered_in_chemistry_sources_js": 1
+  },
+  "cannibalization_check": {
+    "pairs_reviewed": 1,
+    "high_risk_found": 0,
+    "differentiation_link_added": "guides/seasonal/opening-pool-chemistry-checklist.html -> academy/fundamentals/new-pool-startup-chemistry"
+  },
+  "content_inventory": {
+    "total_production_pages_before": 493,
+    "total_production_pages_after": 494,
+    "canonical_indexable_pages_before": 477,
+    "canonical_indexable_pages_after": 478
+  },
+  "crawl_simulation": {
+    "canonical_pages": 478,
+    "discovered": 478,
+    "undiscovered": 0
+  },
+  "citation_coverage": {
+    "knowledge_sources_real_blocks": 18,
+    "knowledge_sources_real_links": 23,
+    "unchanged_from_baseline": true,
+    "new_page_citation_style": "plain-text knowledge-sources (matches existing academy convention)"
+  },
+  "qa_summary": {
+    "overall_score": 99,
+    "score_change_vs_baseline": 0,
+    "errors": 0,
+    "warnings": 6,
+    "regression": false
+  },
+  "validator": {
+    "script": "scripts/validate-phase-7p.js",
+    "canonical_pages_scanned": 478,
+    "pages_created_validated": 1,
+    "duplicate_title_groups": 0,
+    "duplicate_description_groups": 0,
+    "errors": 0,
+    "warnings": 0,
+    "result": "PASS"
+  },
+  "regression": {
+    "npm_run_build": "PASS",
+    "validate_chemistry_knowledge": "PASS",
+    "validate_chemistry_extraction": "PASS",
+    "validate_chemistry_extraction_v2": "PASS",
+    "validate_chemistry_evidence_dataset": "PASS",
+    "validate_provenance": "PASS",
+    "validate_provenance_resolution": "PASS",
+    "validate_trust_layer": "PASS",
+    "validate_trust": "PASS",
+    "validate_editorial_decisions": "PASS",
+    "validate_programmatic_quality": "PASS",
+    "validate_schema_content_consistency": "PASS",
+    "validate_entity_provenance": "PASS",
+    "validate_citation_coverage": "PASS",
+    "validate_phase_7h": "PASS",
+    "validate_phase_7i": "PASS",
+    "validate_phase_7k": "PASS",
+    "validate_phase_7m": "PASS",
+    "validate_phase_7n": "PASS",
+    "validate_phase_7o": "PASS",
+    "validate_phase_7p": "PASS",
+    "validate_url_engine": "PASS",
+    "validate_url_indexation": "PASS",
+    "check_broken_links": "PASS",
+    "test_url_engine": "PASS",
+    "test_url_policy": "PASS"
+  },
+  "forensic_reaudit": {
+    "total_html_files": 525,
+    "total_html_files_before": 524,
+    "schema_valid": 952,
+    "schema_missing": 39,
+    "schema_questionable": 6,
+    "schema_questionable_before": 3,
+    "schema_questionable_delta_explained": "3 new QUESTIONABLE flags are the 3 printables/* redirect sources converted in Phase 7O.1 (noindex pages, same pattern as the 2 pre-existing chart redirect sources) -- not caused by this phase, and not the new page created this phase.",
+    "orphan_flags_total": 7,
+    "orphan_flags_before": 4,
+    "orphan_flags_delta_explained": "Exactly the 3 printables/* redirect sources added in Phase 7O.1 (0 inbound links by design, same status as the 2 pre-existing chart redirect sources) -- not caused by this phase.",
+    "true_orphans": 0,
+    "duplicate_title_groups_broad_scan": 3,
+    "duplicate_title_groups_canonical_indexable_only": 0,
+    "duplicate_title_note": "The 3 broad-scan duplicate-title groups are each a noindex printables/* redirect source sharing literal title text with its corresponding indexable entities/* page -- pre-existing since Phase 7O.1 (confirmed via git show on commit 67fb770), not introduced by this phase, and not a real SEO duplicate since one side of each pair is noindex.",
+    "duplicate_description_groups": 0,
+    "cannibalization_high_risk": 0,
+    "no_legitimate_page_deleted": true
+  },
+  "reproducibility": {
+    "two_build_comparison_performed": true,
+    "new_page_byte_identical_across_builds": true,
+    "footer_whitespace_nondeterminism_files_production_content": 168,
+    "footer_whitespace_nondeterminism_files_before": 171,
+    "qa_dashboard_timestamp_files_separately_identified": 18,
+    "footprint_expanded_by_this_phase": false,
+    "note": "Total raw diff count (186) is higher than the historically-quoted ~171 only because this phase's comparison additionally swept reports/qa/templates/search dashboards, which carry a deliberate live build timestamp and were not previously counted in the production-content-page figure. The production-content-page slice (entities/guides/calculators/reference-dominated) remains the same category composition as Phase 7M/7N/7O."
+  },
+  "scope_control": {
+    "spanish_french": false,
+    "calculator_formula_changes": false,
+    "programmatic_family_restructuring": false,
+    "printables_resources_reopened": false,
+    "url_architecture_changed_unnecessarily": false,
+    "fabricated_search_volume": false,
+    "fabricated_gsc_data": false,
+    "fabricated_authors_or_reviewers": false,
+    "fabricated_citations": false,
+    "mass_page_creation": false,
+    "doorway_pages": false,
+    "keyword_variant_pages": false,
+    "sitemap_priority_manipulation": false,
+    "pages_created_solely_for_word_count": false,
+    "broad_chemistry_content_rewrites": false
+  },
+  "next_phase": "7Q",
+  "auto_advance": false
+}

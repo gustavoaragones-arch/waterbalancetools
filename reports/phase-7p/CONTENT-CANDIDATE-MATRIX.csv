@@ -1,0 +1,9 @@
+candidate,A_distinct_intent,B_evidence_availability,C_topical_fit,D_architectural_fit,E_differentiation,F_evergreen_resilience,G_aeo_usefulness,H_internal_link_opportunity,I_maintenance_feasibility,J_cannibalization_risk_reverse_scored,total_of_50,classification,notes
+first-fill/newly-plastered pool chemistry,5,5,5,5,5,4,5,4,4,5,47,CREATE,"Only candidate clearing every gate with a primary industry-standard source read in full. Score is an editorial aid, not a ranking justification on its own -- see SEARCH-GAP-REVALIDATION.csv for the actual reasoning."
+covered-pool chemistry,3,1,3,3,2,4,2,2,3,2,25,DEFER,Low B (evidence) is the deciding factor -- dominant search sources are vendor marketing content without independently verifiable numbers.
+dichlor dedicated article,1,3,4,3,1,5,2,2,4,1,26,REJECT,Low A and E -- no distinct question beyond what the entity page already answers.
+calcium hypochlorite dedicated article,1,3,4,3,1,5,2,2,4,1,26,REJECT,Same reasoning as dichlor.
+salt-pool week-to-week chemistry management,1,4,4,3,1,4,2,1,3,1,24,REJECT,Lowest A of all candidates -- direct re-read confirmed the intent is already substantively answered on academy/equipment/salt-systems.html.
+water-replacement / full-drain-refill chemistry,3,2,3,3,3,4,3,2,3,3,29,DEFER,Real but narrow gap; existing site thresholds likely already cover most of what a new page would say.
+bromine dosing calculator,4,2,4,2,4,5,3,3,3,3,33,REJECT (this phase),D and B both depressed by the Step 25 scope prohibition and the missing verified dosing constant -- blocked regardless of demand.
+standalone LSI calculator,3,3,4,1,2,5,3,2,2,2,27,REJECT (this phase),Lowest D of all candidates -- this is a routing/architecture decision, not a content decision.

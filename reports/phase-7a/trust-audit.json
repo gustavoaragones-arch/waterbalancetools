@@ -42,7 +42,7 @@
     {
       "file_path": "legal/index.html",
       "exists": true,
-      "word_count": 258,
+      "word_count": 246,
       "explains_what_site_does": false,
       "names_operator_entity": true,
       "has_contact_method": false,
@@ -170,6 +170,6 @@
   "missing_sitewide_signals": [
     "named_author_or_reviewer"
   ],
-  "pages_with_zero_external_sources": 413,
-  "total_major_factual_pages": 413
+  "pages_with_zero_external_sources": 416,
+  "total_major_factual_pages": 416
 }

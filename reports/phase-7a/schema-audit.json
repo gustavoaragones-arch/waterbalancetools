@@ -140,6 +140,34 @@
     "detail": "No issues detected against structural checks performed."
   },
   {
+    "url": "https://waterbalancetools.com/academy/fundamentals/indoor-pool-chemistry",
+    "file_path": "academy/fundamentals/indoor-pool-chemistry.html",
+    "schema_type": "Article",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/academy/fundamentals/indoor-pool-chemistry",
+    "file_path": "academy/fundamentals/indoor-pool-chemistry.html",
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/academy/fundamentals/new-pool-startup-chemistry",
+    "file_path": "academy/fundamentals/new-pool-startup-chemistry.html",
+    "schema_type": "Article",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/academy/fundamentals/new-pool-startup-chemistry",
+    "file_path": "academy/fundamentals/new-pool-startup-chemistry.html",
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
     "url": "https://waterbalancetools.com/academy/fundamentals/pool-vs-hot-tub-chemistry",
     "file_path": "academy/fundamentals/pool-vs-hot-tub-chemistry.html",
     "schema_type": "Article",
@@ -213,8 +241,8 @@
     "url": "https://waterbalancetools.com/academy/hot-tubs/",
     "file_path": "academy/hot-tubs/index.html",
     "schema_type": "BreadcrumbList",
-    "status": "QUESTIONABLE",
-    "detail": "Breadcrumb last item \"Hot Tubs &amp; Spas\" does not match H1 \"Hot Tubs & Spas\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/academy/hot-tubs/monthly-spa-maintenance",
@@ -290,8 +318,8 @@
     "url": "https://waterbalancetools.com/academy/",
     "file_path": "academy/index.html",
     "schema_type": "BreadcrumbList",
-    "status": "QUESTIONABLE",
-    "detail": "Breadcrumb last item \"Academy\" does not match H1 \"Pool & Hot Tub Chemistry Academy\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/academy/sanitizers/breakpoint-chlorination",
@@ -807,14 +835,21 @@
   {
     "url": "https://waterbalancetools.com/calculators/chemical-calculator",
     "file_path": "calculators/chemical-calculator.html",
+    "schema_type": "WebApplication",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/calculators/chemical-calculator",
+    "file_path": "calculators/chemical-calculator.html",
     "schema_type": "BreadcrumbList",
-    "status": "QUESTIONABLE",
-    "detail": "Breadcrumb last item \"Pool &amp; Hot Tub Chemical Calculator\" does not match H1 \"Pool & Hot Tub Chemical Calculator\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator",
     "file_path": "calculators/hot-tub-chlorine-calculator.html",
-    "schema_type": "HowTo",
+    "schema_type": "WebApplication",
     "status": "VALID",
     "detail": "No issues detected against structural checks performed."
   },
@@ -828,7 +863,7 @@
   {
     "url": "https://waterbalancetools.com/calculators/hot-tub-ph-calculator",
     "file_path": "calculators/hot-tub-ph-calculator.html",
-    "schema_type": "HowTo",
+    "schema_type": "WebApplication",
     "status": "VALID",
     "detail": "No issues detected against structural checks performed."
   },
@@ -842,7 +877,7 @@
   {
     "url": "https://waterbalancetools.com/calculators/hot-tub-shock-calculator",
     "file_path": "calculators/hot-tub-shock-calculator.html",
-    "schema_type": "HowTo",
+    "schema_type": "WebApplication",
     "status": "VALID",
     "detail": "No issues detected against structural checks performed."
   },
@@ -870,7 +905,7 @@
   {
     "url": "https://waterbalancetools.com/calculators/pool-alkalinity-calculator",
     "file_path": "calculators/pool-alkalinity-calculator.html",
-    "schema_type": "HowTo",
+    "schema_type": "WebApplication",
     "status": "VALID",
     "detail": "No issues detected against structural checks performed."
   },
@@ -892,8 +927,8 @@
     "url": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
     "file_path": "calculators/pool-chlorine-calculator.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 2 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
@@ -903,16 +938,9 @@
     "detail": "No issues detected against structural checks performed."
   },
   {
-    "url": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
-    "file_path": "calculators/pool-chlorine-calculator.html",
-    "schema_type": "HowTo",
-    "status": "VALID",
-    "detail": "No issues detected against structural checks performed."
-  },
-  {
     "url": "https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator",
     "file_path": "calculators/pool-cyanuric-acid-calculator.html",
-    "schema_type": "HowTo",
+    "schema_type": "WebApplication",
     "status": "VALID",
     "detail": "No issues detected against structural checks performed."
   },
@@ -926,7 +954,7 @@
   {
     "url": "https://waterbalancetools.com/calculators/pool-ph-calculator",
     "file_path": "calculators/pool-ph-calculator.html",
-    "schema_type": "HowTo",
+    "schema_type": "WebApplication",
     "status": "VALID",
     "detail": "No issues detected against structural checks performed."
   },
@@ -940,7 +968,7 @@
   {
     "url": "https://waterbalancetools.com/calculators/pool-shock-calculator",
     "file_path": "calculators/pool-shock-calculator.html",
-    "schema_type": "HowTo",
+    "schema_type": "WebApplication",
     "status": "VALID",
     "detail": "No issues detected against structural checks performed."
   },
@@ -954,7 +982,7 @@
   {
     "url": "https://waterbalancetools.com/calculators/pool-turnover-rate-calculator",
     "file_path": "calculators/pool-turnover-rate-calculator.html",
-    "schema_type": "HowTo",
+    "schema_type": "WebApplication",
     "status": "VALID",
     "detail": "No issues detected against structural checks performed."
   },
@@ -968,7 +996,7 @@
   {
     "url": "https://waterbalancetools.com/calculators/pool-volume-calculator",
     "file_path": "calculators/pool-volume-calculator.html",
-    "schema_type": "HowTo",
+    "schema_type": "WebApplication",
     "status": "VALID",
     "detail": "No issues detected against structural checks performed."
   },
@@ -982,7 +1010,7 @@
   {
     "url": "https://waterbalancetools.com/calculators/saltwater-pool-salt-calculator",
     "file_path": "calculators/saltwater-pool-salt-calculator.html",
-    "schema_type": "HowTo",
+    "schema_type": "WebApplication",
     "status": "VALID",
     "detail": "No issues detected against structural checks performed."
   },
@@ -996,7 +1024,7 @@
   {
     "url": "https://waterbalancetools.com/calculators/spa-volume-calculator",
     "file_path": "calculators/spa-volume-calculator.html",
-    "schema_type": "HowTo",
+    "schema_type": "WebApplication",
     "status": "VALID",
     "detail": "No issues detected against structural checks performed."
   },
@@ -1019,7 +1047,7 @@
     "file_path": "charts/hot-tub-chemical-levels-chart.html",
     "schema_type": "FAQPage",
     "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 1 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "detail": "FAQPage schema declares 1 question(s) but no visible .faq-item/.paa-item elements found -- possible visible/schema mismatch."
   },
   {
     "url": "https://waterbalancetools.com/charts/hot-tub-chemical-levels-chart",
@@ -1054,7 +1082,7 @@
     "file_path": "charts/pool-chemical-levels-chart.html",
     "schema_type": "FAQPage",
     "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 2 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "detail": "FAQPage schema declares 2 question(s) but no visible .faq-item/.paa-item elements found -- possible visible/schema mismatch."
   },
   {
     "url": "https://waterbalancetools.com/charts/pool-chemical-levels-chart",
@@ -1136,44 +1164,86 @@
   {
     "url": "https://waterbalancetools.com/editorial/content-standards/",
     "file_path": "editorial/content-standards/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/editorial/content-standards/",
+    "file_path": "editorial/content-standards/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/editorial/correction-policy/",
     "file_path": "editorial/correction-policy/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/editorial/correction-policy/",
+    "file_path": "editorial/correction-policy/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/editorial/editorial-policy/",
     "file_path": "editorial/editorial-policy/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/editorial/editorial-policy/",
+    "file_path": "editorial/editorial-policy/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/editorial/",
     "file_path": "editorial/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/editorial/",
+    "file_path": "editorial/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/editorial/review-process/",
     "file_path": "editorial/review-process/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/editorial/review-process/",
+    "file_path": "editorial/review-process/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/editorial/update-policy/",
     "file_path": "editorial/update-policy/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/editorial/update-policy/",
+    "file_path": "editorial/update-policy/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/entities/algae",
@@ -2677,8 +2747,8 @@
     "url": "https://waterbalancetools.com/formulas/",
     "file_path": "formulas/index.html",
     "schema_type": "BreadcrumbList",
-    "status": "QUESTIONABLE",
-    "detail": "Breadcrumb last item \"Formula Library\" does not match H1 \"Pool Chemistry Formula Library\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/formulas/liquid-chlorine-formula",
@@ -3370,8 +3440,8 @@
     "url": "https://waterbalancetools.com/glossary/",
     "file_path": "glossary/index.html",
     "schema_type": "BreadcrumbList",
-    "status": "QUESTIONABLE",
-    "detail": "Breadcrumb last item \"Glossary\" does not match H1 \"Pool & Hot Tub Water Chemistry Glossary\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/glossary/iron",
@@ -4315,8 +4385,15 @@
     "url": "https://waterbalancetools.com/guides/chlorine/why-pool-wont-hold-chlorine",
     "file_path": "guides/chlorine/why-pool-wont-hold-chlorine.html",
     "schema_type": "BreadcrumbList",
-    "status": "QUESTIONABLE",
-    "detail": "Breadcrumb last item \"Why Pool Won't Hold Chlorine: Causes and Fixes\" does not match H1 \"Why Pool Won't Hold Chlorine\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+    "file_path": "guides/edge-cases/evaporation-effect-on-pool-chemistry.html",
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/guides/edge-cases/high-cya-chlorine-lock",
@@ -4469,8 +4546,8 @@
     "url": "https://waterbalancetools.com/guides/ph/how-to-lower-pool-ph",
     "file_path": "guides/ph/how-to-lower-pool-ph.html",
     "schema_type": "BreadcrumbList",
-    "status": "QUESTIONABLE",
-    "detail": "Breadcrumb last item \"How to Lower Pool pH: Step-by-Step Guide\" does not match H1 \"How to Lower Pool pH\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/guides/ph/",
@@ -4518,8 +4595,8 @@
     "url": "https://waterbalancetools.com/guides/questions/can-rain-affect-pool-chemistry",
     "file_path": "guides/questions/can-rain-affect-pool-chemistry.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/guides/questions/can-you-swim-after-shocking-a-pool",
@@ -4532,8 +4609,8 @@
     "url": "https://waterbalancetools.com/guides/questions/can-you-swim-after-shocking-a-pool",
     "file_path": "guides/questions/can-you-swim-after-shocking-a-pool.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/guides/questions/",
@@ -4560,8 +4637,8 @@
     "url": "https://waterbalancetools.com/guides/questions/why-does-hot-tub-water-smell",
     "file_path": "guides/questions/why-does-hot-tub-water-smell.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/guides/questions/why-does-pool-water-turn-cloudy",
@@ -4574,8 +4651,8 @@
     "url": "https://waterbalancetools.com/guides/questions/why-does-pool-water-turn-cloudy",
     "file_path": "guides/questions/why-does-pool-water-turn-cloudy.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 5 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/guides/questions/why-is-my-hot-tub-foamy",
@@ -4588,8 +4665,8 @@
     "url": "https://waterbalancetools.com/guides/questions/why-is-my-hot-tub-foamy",
     "file_path": "guides/questions/why-is-my-hot-tub-foamy.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/guides/questions/why-is-my-pool-green-but-chlorine-is-high",
@@ -4602,8 +4679,8 @@
     "url": "https://waterbalancetools.com/guides/questions/why-is-my-pool-green-but-chlorine-is-high",
     "file_path": "guides/questions/why-is-my-pool-green-but-chlorine-is-high.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 3 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/guides/seasonal/closing-pool-chemistry-winter",
@@ -4651,8 +4728,8 @@
     "url": "https://waterbalancetools.com/hot-tub-chemical-levels-chart",
     "file_path": "hot-tub-chemical-levels-chart.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/hot-tub-chemical-levels-chart",
@@ -4665,8 +4742,8 @@
     "url": "https://waterbalancetools.com/hot-tub-chlorine-levels-chart",
     "file_path": "hot-tub-chlorine-levels-chart.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/hot-tub-chlorine-levels-chart",
@@ -4728,8 +4805,8 @@
     "url": "https://waterbalancetools.com/maintenance/how-often-add-chlorine-pool",
     "file_path": "maintenance/how-often-add-chlorine-pool.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 1 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/maintenance/how-often-add-chlorine-pool",
@@ -4776,65 +4853,121 @@
   {
     "url": "https://waterbalancetools.com/methodology/calculation-assumptions/",
     "file_path": "methodology/calculation-assumptions/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/methodology/calculation-assumptions/",
+    "file_path": "methodology/calculation-assumptions/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/methodology/calculation-methodology/",
     "file_path": "methodology/calculation-methodology/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/methodology/calculation-methodology/",
+    "file_path": "methodology/calculation-methodology/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/methodology/confidence-system/",
     "file_path": "methodology/confidence-system/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/methodology/confidence-system/",
+    "file_path": "methodology/confidence-system/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/methodology/formula-selection/",
     "file_path": "methodology/formula-selection/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/methodology/formula-selection/",
+    "file_path": "methodology/formula-selection/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/methodology/",
     "file_path": "methodology/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/methodology/",
+    "file_path": "methodology/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/methodology/known-limitations/",
     "file_path": "methodology/known-limitations/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/methodology/known-limitations/",
+    "file_path": "methodology/known-limitations/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/methodology/precision-policy/",
     "file_path": "methodology/precision-policy/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/methodology/precision-policy/",
+    "file_path": "methodology/precision-policy/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/methodology/rounding-policy/",
     "file_path": "methodology/rounding-policy/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/methodology/rounding-policy/",
+    "file_path": "methodology/rounding-policy/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/pool-alkalinity-levels-chart",
     "file_path": "pool-alkalinity-levels-chart.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/pool-alkalinity-levels-chart",
@@ -4847,8 +4980,8 @@
     "url": "https://waterbalancetools.com/pool-chemical-levels-chart",
     "file_path": "pool-chemical-levels-chart.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/pool-chemical-levels-chart",
@@ -4861,15 +4994,15 @@
     "url": "https://waterbalancetools.com/pool-chemistry-system",
     "file_path": "pool-chemistry-system.html",
     "schema_type": "BreadcrumbList",
-    "status": "QUESTIONABLE",
-    "detail": "Breadcrumb last item \"Pool Chemistry System\" does not match H1 \"Pool Chemistry System: How All Parameters Work Together\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/pool-chlorine-levels-chart",
     "file_path": "pool-chlorine-levels-chart.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/pool-chlorine-levels-chart",
@@ -4882,8 +5015,8 @@
     "url": "https://waterbalancetools.com/pool-cya-levels-chart",
     "file_path": "pool-cya-levels-chart.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/pool-cya-levels-chart",
@@ -4896,8 +5029,8 @@
     "url": "https://waterbalancetools.com/pool-ph-levels-chart",
     "file_path": "pool-ph-levels-chart.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/pool-ph-levels-chart",
@@ -4909,30 +5042,58 @@
   {
     "url": "https://waterbalancetools.com/printable/maintenance-checklist",
     "file_path": "printable/maintenance-checklist.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/printable/maintenance-checklist",
+    "file_path": "printable/maintenance-checklist.html",
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/printables/airbnb-pool-turnover-checklist",
     "file_path": "printables/airbnb-pool-turnover-checklist.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "WebPage",
+    "status": "QUESTIONABLE",
+    "detail": "schema url \"https://waterbalancetools.com/printables/airbnb-pool-turnover-checklist\" does not match canonical \"https://waterbalancetools.com/resources/airbnb-pool-turnover-checklist\"."
+  },
+  {
+    "url": "https://waterbalancetools.com/printables/airbnb-pool-turnover-checklist",
+    "file_path": "printables/airbnb-pool-turnover-checklist.html",
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/printables/hot-tub-maintenance-log",
     "file_path": "printables/hot-tub-maintenance-log.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "WebPage",
+    "status": "QUESTIONABLE",
+    "detail": "schema url \"https://waterbalancetools.com/printables/hot-tub-maintenance-log\" does not match canonical \"https://waterbalancetools.com/resources/hot-tub-maintenance-log\"."
+  },
+  {
+    "url": "https://waterbalancetools.com/printables/hot-tub-maintenance-log",
+    "file_path": "printables/hot-tub-maintenance-log.html",
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/printables/pool-maintenance-checklist",
     "file_path": "printables/pool-maintenance-checklist.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "WebPage",
+    "status": "QUESTIONABLE",
+    "detail": "schema url \"https://waterbalancetools.com/printables/pool-maintenance-checklist\" does not match canonical \"https://waterbalancetools.com/resources/pool-maintenance-checklist\"."
+  },
+  {
+    "url": "https://waterbalancetools.com/printables/pool-maintenance-checklist",
+    "file_path": "printables/pool-maintenance-checklist.html",
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/programmatic/behavior/how-often-to-shock-pool",
@@ -5994,9 +6155,16 @@
   {
     "url": "https://waterbalancetools.com/provenance/",
     "file_path": "provenance/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/provenance/",
+    "file_path": "provenance/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/qa/certification",
@@ -6030,22 +6198,22 @@
     "url": "https://waterbalancetools.com/reference/calcium-hardness-explained",
     "file_path": "reference/calcium-hardness-explained.html",
     "schema_type": "DefinedTerm",
-    "status": "QUESTIONABLE",
-    "detail": "schema name \"Calcium Hardness\" does not match H1 \"Calcium Hardness in Pools Explained\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/calcium-hardness-explained",
     "file_path": "reference/calcium-hardness-explained.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/calculator-directory",
     "file_path": "reference/calculator-directory.html",
     "schema_type": "BreadcrumbList",
-    "status": "QUESTIONABLE",
-    "detail": "Breadcrumb last item \"Pool &amp; Spa Calculator Directory\" does not match H1 \"Pool & Spa Calculator Directory\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/chemical-compatibility",
@@ -6093,15 +6261,15 @@
     "url": "https://waterbalancetools.com/reference/chlorine-explained",
     "file_path": "reference/chlorine-explained.html",
     "schema_type": "DefinedTerm",
-    "status": "QUESTIONABLE",
-    "detail": "schema name \"Chlorine\" does not match H1 \"Chlorine in Pools Explained\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/chlorine-explained",
     "file_path": "reference/chlorine-explained.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/combined-chlorine-explained",
@@ -6114,15 +6282,15 @@
     "url": "https://waterbalancetools.com/reference/combined-chlorine-explained",
     "file_path": "reference/combined-chlorine-explained.html",
     "schema_type": "DefinedTerm",
-    "status": "QUESTIONABLE",
-    "detail": "schema name \"Combined Chlorine\" does not match H1 \"Combined Chlorine (Chloramines) Explained\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/combined-chlorine-explained",
     "file_path": "reference/combined-chlorine-explained.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/common-pool-chemistry-mistakes",
@@ -6149,15 +6317,15 @@
     "url": "https://waterbalancetools.com/reference/cyanuric-acid-explained",
     "file_path": "reference/cyanuric-acid-explained.html",
     "schema_type": "DefinedTerm",
-    "status": "QUESTIONABLE",
-    "detail": "schema name \"Cyanuric Acid\" does not match H1 \"Cyanuric Acid (CYA / Stabilizer) Explained\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/cyanuric-acid-explained",
     "file_path": "reference/cyanuric-acid-explained.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/datasets/chemical-properties/",
@@ -6296,15 +6464,15 @@
     "url": "https://waterbalancetools.com/reference/free-chlorine-explained",
     "file_path": "reference/free-chlorine-explained.html",
     "schema_type": "DefinedTerm",
-    "status": "QUESTIONABLE",
-    "detail": "schema name \"Free Chlorine\" does not match H1 \"Free Chlorine Explained\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/free-chlorine-explained",
     "file_path": "reference/free-chlorine-explained.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/ideal-pool-levels",
@@ -6317,15 +6485,15 @@
     "url": "https://waterbalancetools.com/reference/ideal-spa-levels",
     "file_path": "reference/ideal-spa-levels.html",
     "schema_type": "BreadcrumbList",
-    "status": "QUESTIONABLE",
-    "detail": "Breadcrumb last item \"Ideal Spa &amp; Hot Tub Chemical Levels\" does not match H1 \"Ideal Spa & Hot Tub Chemical Levels\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/",
     "file_path": "reference/index.html",
     "schema_type": "BreadcrumbList",
-    "status": "QUESTIONABLE",
-    "detail": "Breadcrumb last item \"Reference\" does not match H1 \"Pool Chemistry Reference\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/ph-table",
@@ -6359,8 +6527,8 @@
     "url": "https://waterbalancetools.com/reference/pool-shape-guide",
     "file_path": "reference/pool-shape-guide.html",
     "schema_type": "BreadcrumbList",
-    "status": "QUESTIONABLE",
-    "detail": "Breadcrumb last item \"Pool Shape &amp; Volume Calculation Guide\" does not match H1 \"Pool Shape & Volume Calculation Guide\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/pool-volume-reference",
@@ -6387,8 +6555,8 @@
     "url": "https://waterbalancetools.com/reference/recommended-water-temperature",
     "file_path": "reference/recommended-water-temperature.html",
     "schema_type": "BreadcrumbList",
-    "status": "QUESTIONABLE",
-    "detail": "Breadcrumb last item \"Recommended Pool &amp; Spa Water Temperature\" does not match H1 \"Recommended Pool & Spa Water Temperature\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/salt-matrix",
@@ -6408,15 +6576,15 @@
     "url": "https://waterbalancetools.com/reference/salt-water-generator-explained",
     "file_path": "reference/salt-water-generator-explained.html",
     "schema_type": "DefinedTerm",
-    "status": "QUESTIONABLE",
-    "detail": "schema name \"Salt Water Generator\" does not match H1 \"Salt Water Generator (SWG) Explained\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/salt-water-generator-explained",
     "file_path": "reference/salt-water-generator-explained.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/shock-dosage-matrix",
@@ -6436,22 +6604,22 @@
     "url": "https://waterbalancetools.com/reference/shock-treatment-explained",
     "file_path": "reference/shock-treatment-explained.html",
     "schema_type": "DefinedTerm",
-    "status": "QUESTIONABLE",
-    "detail": "schema name \"Pool Shock Treatment\" does not match H1 \"Pool Shock Treatment Explained\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/shock-treatment-explained",
     "file_path": "reference/shock-treatment-explained.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/testing-frequency",
     "file_path": "reference/testing-frequency.html",
     "schema_type": "BreadcrumbList",
-    "status": "QUESTIONABLE",
-    "detail": "Breadcrumb last item \"Pool &amp; Spa Testing Frequency Guide\" does not match H1 \"Pool & Spa Testing Frequency Guide\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/total-alkalinity-explained",
@@ -6464,15 +6632,15 @@
     "url": "https://waterbalancetools.com/reference/total-alkalinity-explained",
     "file_path": "reference/total-alkalinity-explained.html",
     "schema_type": "DefinedTerm",
-    "status": "QUESTIONABLE",
-    "detail": "schema name \"Total Alkalinity\" does not match H1 \"Total Alkalinity Explained\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/total-alkalinity-explained",
     "file_path": "reference/total-alkalinity-explained.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 6 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reference/vacation-rental-maintenance-schedule",
@@ -6498,30 +6666,58 @@
   {
     "url": "https://waterbalancetools.com/releases/1.0.0",
     "file_path": "releases/1.0.0.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/releases/1.0.0",
+    "file_path": "releases/1.0.0.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/releases/1.1.0",
     "file_path": "releases/1.1.0.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/releases/1.1.0",
+    "file_path": "releases/1.1.0.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/releases/compatibility",
     "file_path": "releases/compatibility.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/releases/compatibility",
+    "file_path": "releases/compatibility.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/releases/",
     "file_path": "releases/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "QUESTIONABLE",
+    "detail": "Breadcrumb last item \"Releases\" does not match H1 \"Release History\"."
+  },
+  {
+    "url": "https://waterbalancetools.com/releases/",
+    "file_path": "releases/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/reports/accessibility",
@@ -6653,8 +6849,8 @@
     "url": "https://waterbalancetools.com/resources/",
     "file_path": "resources/index.html",
     "schema_type": "BreadcrumbList",
-    "status": "QUESTIONABLE",
-    "detail": "Breadcrumb last item \"Free Pool &amp; Hot Tub Printable Resources\" does not match H1 \"Free Pool & Hot Tub Printable Resources\"."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/resources/pool-chemical-log-sheet",
@@ -6743,16 +6939,23 @@
   {
     "url": "https://waterbalancetools.com/revisions/",
     "file_path": "revisions/index.html",
-    "schema_type": "(none)",
-    "status": "MISSING",
-    "detail": "No JSON-LD found on this page."
+    "schema_type": "BreadcrumbList",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
+  },
+  {
+    "url": "https://waterbalancetools.com/revisions/",
+    "file_path": "revisions/index.html",
+    "schema_type": "WebPage",
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/salt-water-pool-chemical-levels-chart",
     "file_path": "salt-water-pool-chemical-levels-chart.html",
     "schema_type": "FAQPage",
-    "status": "QUESTIONABLE",
-    "detail": "FAQPage schema declares 4 question(s) but no visible .faq-item elements found -- possible visible/schema mismatch."
+    "status": "VALID",
+    "detail": "No issues detected against structural checks performed."
   },
   {
     "url": "https://waterbalancetools.com/salt-water-pool-chemical-levels-chart",

@@ -1,8 +1,8 @@
 {
   "status": "PASS",
-  "pages_scanned": 538,
-  "schema_pages_checked": 477,
-  "a11y_pages_checked": 511,
+  "pages_scanned": 539,
+  "schema_pages_checked": 478,
+  "a11y_pages_checked": 512,
   "faq_schema_pages_total": 0,
   "known_dispositioned_findings": 3,
   "violations_found": 0,
