@@ -53,18 +53,15 @@
         "formula-ph-adjustment"
       ],
       "datasetDependencies": [
-        "chemical-ranges",
-        "dosage-matrices"
+        "chemical-ranges"
       ],
       "entityDependencies": [
-        "ph",
-        "muriatic-acid",
-        "soda-ash"
+        "ph"
       ],
       "confidenceLevel": "moderate",
       "version": "2026.07",
-      "lastReviewed": "2026-07-01",
-      "notes": "Linear pH adjustment approximation. Most accurate within ±0.5 pH units of target."
+      "lastReviewed": "2026-08-29",
+      "notes": "Provides pH direction and a qualitative adjustment-size (small/moderate/substantial) based on how far current pH is from target -- it does NOT calculate a chemical dose. A precise dose depends on total alkalinity, cyanuric acid, and product concentration, none of which this tool collects (see reports/phase-7t/PH-AUDIT.md and reports/phase-7u/PH-ARCHITECTURE-DECISION.md). Use the recommended product's label instructions, add incrementally, and retest 30-60 minutes after each addition before adding more."
     },
     {
       "id": "pool-alkalinity-calculator",
@@ -185,8 +182,8 @@
       ],
       "confidenceLevel": "limited",
       "version": "2026.07",
-      "lastReviewed": "2026-08-28",
-      "notes": "Computes a chlorine dose and a pH dose only. The free-chlorine and pH target ranges are CDC-supported; the chlorine dosing coefficient is not independently verified (pH uses a linear approximation, already self-disclosed as a simplification). This calculator reads total alkalinity as optional context only -- it does NOT compute an alkalinity dose, a calcium-hardness dose, or the Langelier Saturation Index (LSI), despite earlier trust-panel text claiming otherwise; Phase 7S corrected this. See /formulas/lsi-formula for the LSI formula and its lookup tables, which currently require manual calculation."
+      "lastReviewed": "2026-08-29",
+      "notes": "Computes a chlorine dose (numeric) and pH direction/adjustment-size guidance (qualitative, not a dose) -- see pool-ph-calculator's trust panel for why pH does not get a numeric dose. The free-chlorine and pH target ranges are CDC-supported; the chlorine dosing coefficient is not independently verified. This calculator reads total alkalinity as optional context only -- it does NOT compute an alkalinity dose, a calcium-hardness dose, or the Langelier Saturation Index (LSI), despite earlier trust-panel text claiming otherwise; Phase 7S corrected this. See /formulas/lsi-formula for the LSI formula and its lookup tables, which currently require manual calculation."
     },
     {
       "id": "hot-tub-chlorine-calculator",
@@ -217,8 +214,7 @@
         "formula-ph-adjustment"
       ],
       "datasetDependencies": [
-        "chemical-ranges",
-        "dosage-matrices"
+        "chemical-ranges"
       ],
       "entityDependencies": [
         "ph",
@@ -226,7 +222,8 @@
       ],
       "confidenceLevel": "moderate",
       "version": "2026.07",
-      "lastReviewed": "2026-07-01"
+      "lastReviewed": "2026-08-29",
+      "notes": "Provides pH direction and a qualitative adjustment-size (small/moderate/substantial) based on how far current pH is from target -- it does NOT calculate a chemical dose. A precise dose depends on total alkalinity, cyanuric acid, and product concentration, none of which this tool collects (see reports/phase-7t/PH-AUDIT.md and reports/phase-7u/PH-ARCHITECTURE-DECISION.md). Use the recommended product's label instructions, add incrementally, and retest 30-60 minutes after each addition before adding more."
     },
     {
       "id": "hot-tub-shock-calculator",

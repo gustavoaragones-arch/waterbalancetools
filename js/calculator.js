@@ -67,24 +67,29 @@
   }
 
   /**
-   * pH increaser: ounces = (gallons / 10000) * phDifference * 6
-   * (simplified estimation when current_ph < target_ph)
+   * pH: qualitative direction/magnitude guidance only -- NOT a chemical
+   * dose. Phase 7V replaces the prior phIncreaserOunces/phReducerOunces
+   * numeric estimates (diff * 6 / diff * 5 ounces), which had no
+   * traceable derivation -- see js/calc-utils.js's calculatePHAdjustment
+   * (identical logic, kept in sync per the established duplicate-
+   * implementation pattern) and reports/phase-7v/PH-IMPLEMENTATION.md.
+   *
+   * Returns { direction: 'balanced'|'raise'|'lower', magnitude:
+   * null|'small'|'moderate'|'substantial', diff }. phDifference here is
+   * the signed (target - current) delta, matching calc-utils.js.
    */
-  function phIncreaserOunces(gallons, phDifference) {
+  function evaluatePHGuidance(gallons, phDifference) {
     var g = parseFloat(gallons) || 0;
-    var d = parseFloat(phDifference) || 0;
-    if (g <= 0 || d <= 0) return 0;
-    return (g / 10000) * d * 6;
-  }
-
-  /**
-   * pH reducer: similar scaling (sodium bisulfate / dry acid)
-   */
-  function phReducerOunces(gallons, phDifference) {
-    var g = parseFloat(gallons) || 0;
-    var d = parseFloat(phDifference) || 0;
-    if (g <= 0 || d <= 0) return 0;
-    return (g / 10000) * d * 5;
+    var diff = parseFloat(phDifference) || 0;
+    if (g <= 0) return { direction: null, magnitude: null, diff: 0 };
+    var absDiff = Math.abs(diff);
+    if (absDiff < 0.05) return { direction: 'balanced', magnitude: null, diff: diff };
+    var direction = diff > 0 ? 'raise' : 'lower';
+    var magnitude;
+    if (absDiff < 0.2) magnitude = 'small';
+    else if (absDiff < 0.5) magnitude = 'moderate';
+    else magnitude = 'substantial';
+    return { direction: direction, magnitude: magnitude, diff: diff };
   }
 
   function getDefaults(waterType) {
@@ -111,8 +116,7 @@
     DEFAULTS: DEFAULTS,
     chlorineNeededPpm: chlorineNeededPpm,
     chlorineOuncesForType: chlorineOuncesForType,
-    phIncreaserOunces: phIncreaserOunces,
-    phReducerOunces: phReducerOunces,
+    evaluatePHGuidance: evaluatePHGuidance,
     getDefaults: getDefaults,
     getTargetChlorine: getTargetChlorine,
     getTargetPh: getTargetPh

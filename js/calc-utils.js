@@ -47,24 +47,39 @@
     return { ounces: ounces, ppm: ppm };
   }
 
-  /** pH: increaser or reducer in ounces (simplified estimation) */
+  /**
+   * pH: qualitative direction/magnitude guidance only -- NOT a chemical
+   * dose. Phase 7V replaces the prior numeric estimate (diff * 6 or * 5
+   * ounces), which Phase 7T/7U established has no traceable derivation or
+   * authoritative source: pH adjustment is a carbonate-buffered titration
+   * problem, not a linear ppm-mass-balance relationship, and a defensible
+   * numeric dose requires total alkalinity (and likely cyanuric acid) as
+   * inputs this calculator does not collect -- see
+   * reports/phase-7u/PH-ARCHITECTURE-DECISION.md (Option A, approved) and
+   * reports/phase-7v/PH-IMPLEMENTATION.md for the full rationale.
+   *
+   * Returns direction ('balanced' | 'raise' | 'lower') and, when not
+   * balanced, a magnitude tier ('small' | 'moderate' | 'substantial')
+   * based purely on how far current pH is from target on the pH scale.
+   * The magnitude tiers are a readability aid over the input distance,
+   * not a validated dosing threshold -- no source establishes (or is
+   * claimed to establish) that these bands correspond to a specific
+   * chemical quantity.
+   */
   function calculatePHAdjustment(gallons, currentPh, targetPh) {
     var g = parseFloat(gallons) || 0;
     var cur = parseFloat(currentPh) || 0;
     var tgt = parseFloat(targetPh) || 0;
-    if (g <= 0) return { ounces: 0, direction: null, diff: 0 };
+    if (g <= 0) return { valid: false, direction: null, magnitude: null, diff: 0 };
     var diff = tgt - cur;
-    if (Math.abs(diff) < 0.05) return { ounces: 0, direction: null, diff: 0 };
-    var ounces = 0;
-    var direction = null;
-    if (diff > 0) {
-      direction = 'increaser';
-      ounces = (g / 10000) * diff * 6;
-    } else {
-      direction = 'reducer';
-      ounces = (g / 10000) * Math.abs(diff) * 5;
-    }
-    return { ounces: ounces, direction: direction, diff: diff };
+    var absDiff = Math.abs(diff);
+    if (absDiff < 0.05) return { valid: true, direction: 'balanced', magnitude: null, diff: diff };
+    var direction = diff > 0 ? 'raise' : 'lower';
+    var magnitude;
+    if (absDiff < 0.2) magnitude = 'small';
+    else if (absDiff < 0.5) magnitude = 'moderate';
+    else magnitude = 'substantial';
+    return { valid: true, direction: direction, magnitude: magnitude, diff: diff };
   }
 
   /** Shock: granular shock to reach target ppm (e.g. 10 ppm) */

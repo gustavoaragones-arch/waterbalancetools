@@ -423,12 +423,12 @@ ${faqItems([
         <tr><td>30,000 gal</td><td>~12 oz</td><td>~30 oz</td></tr>
       </tbody>
     </table>
-    <p><em>These are starting estimates. Always use the pH calculator for your exact readings.</em></p>
+    <p><em>These are starting estimates only -- your pool's actual dose depends on total alkalinity and other factors. The pH calculator gives direction and adjustment-size guidance, not an exact dose; add incrementally and retest.</em></p>
     <h2>Step-by-step process</h2>
     <ol>
       <li><strong>Test first</strong> — measure current pH and total alkalinity.</li>
       <li><strong>Check TA</strong> — if TA is above 120 ppm, lower it first by adding acid in front of a return jet and letting the pool aerate. Repeat until TA reaches 80–100 ppm.</li>
-      <li><strong>Calculate dose</strong> — use the pool pH calculator for exact amounts.</li>
+      <li><strong>Check direction and size</strong> — use the pool pH calculator, then add product per its label instructions.</li>
       <li><strong>Dilute the acid</strong> — always add acid to water (never water to acid). Use a plastic bucket.</li>
       <li><strong>Add with pump running</strong> — pour slowly near a return jet, not in one spot on the pool surface.</li>
       <li><strong>Wait 4–6 hours</strong>, then retest. Make another small adjustment if needed.</li>

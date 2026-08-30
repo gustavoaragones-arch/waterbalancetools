@@ -90,27 +90,36 @@ module.exports = [
     slug: 'formulas/ph-adjustment-formula',
     title: 'pH Adjustment Formula',
     category: 'ph',
-    equation: 'Acid dose (fl oz) = ΔpH × Volume (gal) × (0.0833 ÷ Acid Concentration %)',
+    // Phase 7V: implements the Option A architecture approved in
+    // reports/phase-7u/PH-ARCHITECTURE-DECISION.md. The prior equation
+    // (0.0833 / Acid%) was never implemented by any live calculator, and
+    // its own worked example abandoned the calculation mid-formula before
+    // switching to an unrelated, uncited rule of thumb -- see
+    // reports/phase-7t/PH-AUDIT.md. This record is NOT a new formula; it
+    // explains why no single dosing equation is published here, and
+    // documents the calculator's actual (qualitative) behavior.
+    equation: 'No single validated dosing equation is published here. Unlike liquid chlorine or alkalinity, pH adjustment is a carbonate-buffered titration problem: the acid or base needed for a given pH change depends materially on total alkalinity (and, more weakly, cyanuric acid) -- neither of which a two-input pH/volume calculator can account for. Professional water-chemistry references that publish exact dosing tables for chlorine, alkalinity, and calcium hardness deliberately do not publish an equivalent fixed table for pH, and instead direct users to an empirical acid-demand test.',
     variables: [
-      { symbol: 'ΔpH', description: 'Desired pH decrease (current pH minus target pH)', unit: 'pH units' },
-      { symbol: 'Volume', description: 'Pool volume in gallons', unit: 'gallons' },
-      { symbol: '0.0833', description: 'Approximation constant for 100% acid per 10,000 gal per pH unit at TA ≈ 100 ppm', unit: 'constant' },
-      { symbol: 'Acid Concentration %', description: 'Concentration of acid product as a decimal (e.g. 0.315 for 31.5% muriatic acid)', unit: 'decimal' },
+      { symbol: 'ΔpH', description: 'How far current pH is from target -- determines direction (raise/lower) and this calculator\'s qualitative magnitude tier (small/moderate/substantial)', unit: 'pH units' },
+      { symbol: 'Volume', description: 'Pool volume in gallons -- relevant to any real dose, but not sufficient on its own without the factors below', unit: 'gallons' },
+      { symbol: 'Total alkalinity', description: 'The primary buffering factor: higher TA requires proportionally more acid or base for the same pH change. Not collected by this site\'s pH calculators.', unit: 'ppm' },
+      { symbol: 'Cyanuric acid', description: 'Contributes a smaller, secondary buffering effect that can confound a raw TA reading. Not collected by this site\'s pH calculators.', unit: 'ppm' },
+      { symbol: 'Product concentration', description: 'Which acid or base and at what strength -- required for any specific real-world dose. Not asked by this site\'s pH calculators, which remain product-independent.', unit: '%' },
     ],
-    explanation: 'pH adjustment dose depends on three factors: the amount of pH change required, the pool volume, and the total alkalinity — which acts as a buffer that resists pH change. Higher alkalinity means more acid is needed for the same pH change.\n\n- To lower pH: use muriatic acid (31.5% or 20%) or dry acid (sodium bisulfate).\n- To raise pH: use sodium carbonate (soda ash) — approximately 6 oz per 10,000 gallons per 0.2 pH unit increase.\n- Pre-dilute muriatic acid in a bucket of pool water before adding.\n- Add near a return jet to prevent concentrated acid from sitting on the pool surface.',
-    workedExample: 'Pool: 15,000 gallons. Current pH: 7.8. Target pH: 7.4. Using 31.5% muriatic acid. TA is 100 ppm (typical).\n\n- ΔpH = 7.8 − 7.4 = 0.4\n- Constant for 31.5% acid: 0.0833 ÷ 0.315 = 0.264\n- Dose = 0.4 × 15,000 × 0.264 ÷ 10,000\n\nAlternatively, a commonly used rule-of-thumb: 31.5% muriatic acid drops pH by 0.2 per 10,000 gal using approximately 10 fl oz. For 0.4 pH units on 15,000 gal:\n- Base dose for 0.4 on 10,000 gal ≈ 20 fl oz\n- Scale for 15,000 gal: 20 × 1.5 = 30 fl oz\n\nStart with 25–30 fl oz (about 3–4 cups), wait 30–60 minutes, then retest.',
-    limitations: 'These are starting-dose approximations. Total alkalinity has a major effect on how much pH shifts per dose of acid — high alkalinity significantly increases the required dose. Pools with alkalinity above 150 ppm may need 2–3× the estimated dose for the same pH change. Always add incrementally and retest.',
+    explanation: 'pH adjustment is different from chlorine, alkalinity, or calcium hardness dosing: those are straightforward mass-balance relationships (a fixed amount of product changes the parameter by a predictable amount per gallon), so this site publishes formulas and calculators for them. pH is not -- the same acid dose produces a different pH change depending on the water\'s total alkalinity, because alkalinity buffers (resists) pH change. A pool with high alkalinity needs meaningfully more acid for the same pH drop than a pool with low alkalinity.\n\nBecause this site\'s pH calculators do not collect total alkalinity (or cyanuric acid, or a product concentration), they cannot responsibly compute a precise chemical quantity. Instead, the calculators tell you the direction your pH needs to move and a qualitative sense of how far off you are (a small, moderate, or substantial adjustment), then direct you to your chosen product\'s label instructions, added incrementally with retesting between additions -- the same practice professional water-testing guidance recommends when a fixed dosing table is not available.\n\nThe professionally rigorous alternative is an acid-demand test: a test-kit procedure (add a reagent dropwise to a water sample until it reaches your target pH, then scale the drop count to your pool\'s volume using the reagent manufacturer\'s own conversion table) that empirically measures the combined effect of pH, alkalinity, cyanuric acid, and temperature without needing to model them individually. This site does not yet offer an acid-demand-test calculator -- the specific pH-target scaling table needed to build one responsibly has not yet been sourced (see Limitations).',
+    workedExample: 'Pool: 15,000 gallons. Current pH: 7.8. Target pH: 7.4.\n\nThis calculator does not compute a chemical quantity for this scenario. It reports:\n- Direction: pH needs to be lowered (current pH is above target).\n- Magnitude: a moderate adjustment (0.4 pH units from target).\n- Guidance: add a pH reducer product per its label instructions, a little at a time, and retest 30–60 minutes after each addition before adding more.\n\nThis is the calculator\'s actual, complete output for this input -- not an abbreviated version of a numeric result. See the explanation above for why no ounce or pound figure is given.',
+    limitations: 'No validated closed-form formula or manufacturer dosing table for pH-target acid/base dosing (as distinct from total-alkalinity dosing, for which a validated table does exist and is used by the alkalinity formula) was found as of this writing. If a future review locates and fully verifies such a source -- particularly a pH-keyed acid-demand-test scaling table from a test-kit manufacturer -- this page and the underlying calculators may be updated to reflect it. Until then, treat the qualitative guidance here as a starting point: always follow your specific product\'s label instructions, add incrementally, and retest before adding more.',
     relatedCalculators: ['/calculators/pool-ph-calculator'],
     relatedGlossary: ['ph', 'total-alkalinity', 'muriatic-acid', 'soda-ash'],
     relatedTopics: ['formulas/alkalinity-formula'],
-    keywords: ['pH adjustment formula pool', 'how much acid to lower pool pH', 'muriatic acid dose calculator'],
-    seoTitle: 'Pool pH Adjustment Formula — How Much Acid to Lower pH',
-    metaDescription: 'Learn the pool pH adjustment formula. Calculate muriatic acid or soda ash dose with a worked example.',
+    keywords: ['pH adjustment pool', 'why is there no pH dosing formula', 'how to adjust pool pH safely'],
+    seoTitle: 'Pool pH Adjustment — Why There\'s No Simple Dosing Formula',
+    metaDescription: 'Why pool pH adjustment can\'t be reduced to a simple ounces-per-gallon formula the way chlorine and alkalinity can, and what to do instead.',
     ogTitle: 'Pool pH Adjustment Formula',
-    ogDescription: 'Calculate the correct acid or soda ash dose to adjust your pool pH.',
-    readingTime: '3 min read',
-    lastReviewed: '2026-06-01',
-    references: ['Taylor Technologies — Pool/Spa Water Chemistry Reference'],
+    ogDescription: 'Understand why pH adjustment needs more than gallons and a target reading, and how to safely raise or lower your pool\'s pH.',
+    readingTime: '4 min read',
+    lastReviewed: '2026-08-29',
+    references: ['Taylor Technologies — Pool/Spa Water Chemistry Reference', 'Pool & Hot Tub Alliance — Pool & Spa Management, Appendix B: Water Chemistry Adjustment Guide, 2021', 'Pool & Hot Tub Alliance — Fact Sheet: Alkalinity, May 2021', 'Taylor Technologies — K-1005 Residential Test Kit Instruction Card', 'LaMotte Company — Acid Demand Index for Total Alkalinity Adjustment, 2022'],
   },
   {
     id: 'formula-05',
