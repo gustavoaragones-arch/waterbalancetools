@@ -336,7 +336,7 @@ const chlorineGuides = [
       <li><strong>FC = 0, TC = 1 ppm</strong> — All chlorine is combined; no free chlorine. Shock immediately.</li>
     </ul>
     <h2>How to eliminate combined chlorine</h2>
-    <p>Raise FC to at least <strong>10× the CC reading</strong> in a single dose. This is breakpoint chlorination. The shock dose oxidizes chloramines and drives CC to near zero. Use the shock calculator for your exact pool size.</p>
+    <p>Raise FC to at least <strong>10× the CC reading</strong> in a single dose. This is breakpoint chlorination — it destroys chloramines chemically, rather than diluting or masking them. <strong>The Pool Shock Calculator does not read a combined-chlorine value or calculate a breakpoint dose automatically</strong>: it offers flat FC-increase presets (5, 10, 15, or 20 ppm) for a chosen chlorine product. To use it for breakpoint chlorination, first calculate your own target (10 × your CC reading, added to your current FC), then select the closest calculator preset, or apply the <a href="${BASE}formulas/shock-formula.html">shock dose formula</a> directly for an exact figure using a non-stabilized product such as liquid chlorine or calcium hypochlorite.</p>
     <h2>Calculator</h2>
     <p><a href="${BASE}calculators/pool-shock-calculator.html" class="btn btn-primary">Pool Shock Calculator</a> · <a href="${BASE}calculators/chemical-calculator.html">Full Chemical Calculator</a></p>
     <p>Reference: <a href="${BASE}pool-chlorine-levels-chart.html">Pool Chlorine Levels Chart</a></p>`

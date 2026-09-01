@@ -105,7 +105,7 @@ function buildPage(volume) {
   const faqList = [
     {
       q: 'How much shock for a ' + g + ' gallon pool?',
-      a: 'A standard shock (about a 10 ppm chlorine raise) for a ' + g + '-gallon pool is roughly ' + standardOz + ' oz of granular shock. Recovering from a green algae bloom calls for a much stronger breakpoint dose, about 30 ppm (roughly ' + algaeOz + ' oz, or ' + algaeLb + ' lb). Confirm with the calculator using your actual current reading.'
+      a: 'A standard shock (about a 10 ppm chlorine raise) for a ' + g + '-gallon pool is roughly ' + standardOz + ' oz of granular shock -- select the 10 ppm preset on the Pool Shock Calculator for a dose specific to your product. Recovering from a green algae bloom calls for a much stronger breakpoint dose, about 30 ppm (roughly ' + algaeOz + ' oz, or ' + algaeLb + ' lb, for 65% calcium hypochlorite) -- that is above the calculator\'s highest preset (20 ppm), so treat this as a reference figure and confirm against your product\'s label.'
     },
     {
       q: 'Is a ' + g + ' gallon pool considered small, medium, or large?',

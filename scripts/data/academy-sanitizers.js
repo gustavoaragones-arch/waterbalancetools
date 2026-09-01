@@ -136,7 +136,7 @@ module.exports = [
       {
         id: 'calculating-the-dose',
         h2: 'Calculating the Dose',
-        body: 'Step 1: Test both free chlorine and total chlorine using a DPD test kit. Step 2: Calculate combined chlorine (CC = Total - Free). Step 3: Multiply CC by 10 to find the ppm of free chlorine you need to add. Step 4: Add the current free chlorine reading to get the target free chlorine level. Step 5: Use the pool shock calculator to determine how many pounds of shock product are needed to raise free chlorine to that target level based on your pool volume. Always use a non-stabilised shock (calcium hypochlorite or lithium hypochlorite) for breakpoint chlorination.'
+        body: 'Step 1: Test both free chlorine and total chlorine using a DPD test kit. Step 2: Calculate combined chlorine (CC = Total - Free). Step 3: Multiply CC by 10 to find the ppm of free chlorine you need to add. Step 4: Add the current free chlorine reading to get the target free chlorine level. Step 5: The pool shock calculator does not accept a combined-chlorine reading or compute this target automatically -- it offers flat FC-increase presets (5, 10, 15, or 20 ppm) for a chosen product. Select the closest preset, or apply the shock dose formula directly (target ppm increase x pool volume x 0.013344 / product\'s available-chlorine %) for an exact figure. Always use a non-stabilised shock (calcium hypochlorite or lithium hypochlorite) for breakpoint chlorination.'
       },
       {
         id: 'executing-breakpoint',
@@ -147,7 +147,7 @@ module.exports = [
     examples: [
       {
         title: 'Breakpoint Calculation',
-        body: 'Pool test results: FC 2.0 ppm, TC 2.8 ppm. CC = 2.8 - 2.0 = 0.8 ppm. Breakpoint target = 0.8 x 10 = 8 ppm of FC to add. Target FC level = existing 2.0 + 8.0 = 10.0 ppm. For a 15,000-gallon pool, the shock calculator shows approximately 4.5 lbs of calcium hypochlorite (65% concentration) will raise FC by 8 ppm. Add after dark, run the pump overnight, and test in the morning.'
+        body: 'Pool test results: FC 2.0 ppm, TC 2.8 ppm. CC = 2.8 - 2.0 = 0.8 ppm. Breakpoint target = 0.8 x 10 = 8 ppm of FC to add. Target FC level = existing 2.0 + 8.0 = 10.0 ppm. For a 15,000-gallon pool using 65% calcium hypochlorite, the shock dose formula (8 ppm x 15,000 gal x 0.013344 / 65) gives approximately 1.54 lbs to raise FC by 8 ppm. Add after dark, run the pump overnight, and test in the morning.'
       }
     ],
     commonMistakes: [
@@ -251,7 +251,7 @@ module.exports = [
     examples: [
       {
         title: 'Weekly Shock Routine',
-        body: 'Every Friday evening, a pool owner tests their 20,000-gallon pool (FC 2.5, TC 3.1, so CC 0.6 ppm). The CC is above 0.5 ppm. They calculate a dose to raise FC by 6 ppm (10 x 0.6 = 6): the shock calculator indicates 3.5 lbs of 65% cal-hypo. They pre-dissolve it in a bucket, broadcast after dark, and run the pump overnight. Saturday morning FC reads 3.0 ppm — normal. The pool is clean, clear, and ready for the weekend.'
+        body: 'Every Friday evening, a pool owner tests their 20,000-gallon pool (FC 2.5, TC 3.1, so CC 0.6 ppm). The CC is above 0.5 ppm. They calculate a dose to raise FC by 6 ppm (10 x 0.6 = 6): the shock dose formula (6 ppm x 20,000 gal x 0.013344 / 65) gives approximately 1.54 lbs of 65% cal-hypo. They pre-dissolve it in a bucket, broadcast after dark, and run the pump overnight. Saturday morning FC reads 3.0 ppm — normal. The pool is clean, clear, and ready for the weekend.'
       }
     ],
     commonMistakes: [

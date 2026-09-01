@@ -192,13 +192,13 @@ module.exports = [
       {
         id: 'the-fix',
         h2: 'Eliminating the Smell',
-        body: 'The only effective treatment for chloramine odour is breakpoint chlorination — adding enough free chlorine to reach 10 times the combined chlorine level. At breakpoint, chloramines are chemically destroyed. Calculate the dose using the shock calculator (combined chlorine x 10 x pool volume factor), add the full dose after dark, run the pump continuously overnight, and test free chlorine the following morning. The smell will be gone once breakpoint has been reached and FC returns to normal range. Adding algaecides, fragrance products, or pH adjustments will not address the odour.'
+        body: 'The only effective treatment for chloramine odour is breakpoint chlorination — adding enough free chlorine to reach 10 times the combined chlorine level. At breakpoint, chloramines are chemically destroyed. The shock calculator does not read a combined-chlorine value or run this calculation itself; work out your target (10 x your CC reading) by hand, then either select the closest calculator preset (5, 10, 15, or 20 ppm) for your product or apply the shock dose formula directly for an exact figure. Add the full dose after dark, run the pump continuously overnight, and test free chlorine the following morning. The smell will be gone once breakpoint has been reached and FC returns to normal range. Adding algaecides, fragrance products, or pH adjustments will not address the odour.'
       }
     ],
     examples: [
       {
         title: 'Fixing Pool Party Aftermath',
-        body: 'After a pool party, the water smells strongly and guests are complaining of red eyes. Test: FC 1.5 ppm, TC 2.8 ppm, CC 1.3 ppm — well above threshold. Breakpoint requires adding 13 ppm of FC (10 x 1.3). The pool volume is 20,000 gallons. The shock calculator shows approximately 8 lbs of cal-hypo is needed. Added after sunset, pump running overnight. Next morning: no smell, no eye complaints, FC 4.5 ppm (still slightly elevated), CC 0.0 ppm. Water is clear and fresh.'
+        body: 'After a pool party, the water smells strongly and guests are complaining of red eyes. Test: FC 1.5 ppm, TC 2.8 ppm, CC 1.3 ppm — well above threshold. Breakpoint requires adding 13 ppm of FC (10 x 1.3). The pool volume is 20,000 gallons, using 65% cal-hypo. The shock dose formula (13 ppm x 20,000 gal x 0.013344 / 65) gives approximately 3.34 lbs of cal-hypo needed — above the calculator\'s highest preset (20 ppm), so this figure is applied manually rather than read from a preset. Added after sunset, pump running overnight. Next morning: no smell, no eye complaints, FC 4.5 ppm (still slightly elevated), CC 0.0 ppm. Water is clear and fresh.'
       }
     ],
     commonMistakes: [

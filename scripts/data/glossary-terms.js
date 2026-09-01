@@ -954,7 +954,7 @@ module.exports = [
 
   { id: 'gl-096', slug: 'glossary/breakpoint-dose', term: 'Breakpoint Dose',
     definition: 'The breakpoint dose is the specific amount of free chlorine that must be added to destroy all combined chlorine in pool water.',
-    explanation: 'Breakpoint dose = 10 × (combined chlorine reading in ppm). If CC = 0.8 ppm, breakpoint dose = 8 ppm of additional FC. The current FC level must be added to the breakpoint dose to determine the total target FC: if current FC is 1.5 ppm and breakpoint dose is 8 ppm, target FC = 9.5 ppm. Use the shock calculator to determine how many pounds of product are needed to reach this target for a specific pool volume.',
+    explanation: 'Breakpoint dose = 10 × (combined chlorine reading in ppm). If CC = 0.8 ppm, breakpoint dose = 8 ppm of additional FC. The current FC level must be added to the breakpoint dose to determine the total target FC: if current FC is 1.5 ppm and breakpoint dose is 8 ppm, target FC = 9.5 ppm. The shock calculator does not accept a combined-chlorine reading or compute this target itself -- select the closest available preset (5, 10, 15, or 20 ppm) for your product, or apply the shock dose formula directly for an exact figure.',
     whyItMatters: 'Calculating the exact breakpoint dose prevents under-dosing (which fails to destroy chloramines and wastes product) and over-dosing (which extends re-entry wait time).',
     typicalValues: 'Breakpoint dose = 10 × CC; typical: 5–15 ppm of additional FC',
     relatedCalculators: ['/calculators/pool-shock-calculator'],
