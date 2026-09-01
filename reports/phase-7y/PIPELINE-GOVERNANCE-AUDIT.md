@@ -1,0 +1,26 @@
+# Phase 7Y -- Pipeline Governance Audit
+
+## Existing controls inventoried
+
+- **CI**: none. `find .github -type f` returned no results -- there is no GitHub Actions workflow or any other CI configuration in the repository.
+- **Pre-commit hooks**: none. `.git/hooks/` contains only the default Git sample hooks (all named `*.sample`, none active).
+- **Build gates**: extensive, but entirely *within* `npm run build` (`run-all-generators.js`) -- see `BUILD-PIPELINE.md` for the full list (URL-engine validation, hub validation, generated-output validation, dataset/entity/trust validation, broken-link check, URL-indexation validation, chemistry-knowledge structural validation, versioning validation). These all run automatically on every build and would catch many classes of defect (malformed data, broken links, schema violations) -- but **none of them compares `scripts/data/*.js` against `data/*.json`**, because `populate-data.js` (the only script that connects those two tiers) is outside the pipeline these gates run inside.
+- **Duplicate-ID checks**: `validate-chemistry-knowledge.js` checks structural integrity of the chemistry-evidence family (parameters/ranges/sources/claims) but does not check academy/glossary/reference/formulas ids. No dedicated duplicate-id validator exists for any family; every duplicate-id check performed in this phase (`RECORD-INTEGRITY-AUDIT.csv`) was written fresh, ad hoc, for this audit.
+- **Orphan-output checks**: none. No script currently checks whether every `data/academy.json` record maps to a live `scripts/data/academy-*.js` entry.
+- **Source/generated diff checks**: none, anywhere in the repository, for any family.
+- **Phase-specific validators** (`validate-phase-7*.js`, ~24 of them): each checks its own phase's specific production-scope boundaries (e.g., "did this phase touch a forbidden file") by diffing against that phase's own baseline commit. None of them is a *general*, phase-independent guard -- they are single-use, and by design go stale/fail predictably once a later phase makes further authorized changes (the well-documented "stale self-referential baseline" pattern noted in every phase since 7S). They are not a substitute for a standing pipeline-integrity gate.
+
+## What is missing
+
+1. **A source-vs-JSON consistency gate** for the 4 `populate-data.js` families (academy, formulas, glossary, reference), run automatically as part of `npm run build`, that fails the build (or at minimum warns loudly) if `data/*.json` contains any record not traceable to its corresponding `scripts/data/*.js` source file. This is the single control that would have caught the fund-07/fund-08 issue at the moment it was introduced (Phase 7M), rather than 5 phases and roughly 3-4 months of possible drift later (per `lastReviewed: '2026-06-01'` metadata on the affected records, if that field is trustworthy, versus this discovery in late August).
+2. **A duplicate-id/duplicate-slug guard**, general-purpose, run across every family with an id/slug scheme, not just chemistry-knowledge. Would have caught the Phase 7M `fund-06` collision at commit time instead of requiring Phase 7Q to discover it by symptom (a mis-linked entity page).
+3. **A documentation fix** to `populate-data.js`'s own header comment, which currently instructs future editors to do the exact thing that causes this class of defect (edit the JSON directly). This is arguably the highest-leverage, lowest-risk single fix available, since it requires no code change, only correcting a statement that has been factually wrong (self-contradicted by the script's own behavior) since Phase 5A.
+4. **Any CI at all.** Every gate currently in the repository only runs when a human (or an agent, per phase instructions) manually invokes `npm run build` or a specific validator. Nothing enforces that this happens before a commit is made or pushed.
+
+## Read-only-validator judgment call (Section 13)
+
+Section 13 permits "a tiny read-only validator... necessary to prove the finding," preferring documentation of the missing control over implementing a new global guard. This phase's `scripts/validate-phase-7y.js` (required regardless, per Section 16) serves exactly this proving role: it independently re-checks the academy source/JSON relationship, duplicate ids/slugs, and the fund-07/fund-08 state, and would fail if those facts changed. It is **phase-scoped** (checks this phase's own findings, like every prior `validate-phase-7N.js`), not a proposed permanent general-purpose pipeline gate -- building that general gate is Recommendation 1 above, explicitly left to a future, separately-authorized phase per Section 6 ("Do NOT... build" a decision; this phase is investigative).
+
+## Recommendation summary (non-binding; no action taken this phase)
+
+Highest leverage, in rough priority order: (1) fix `populate-data.js`'s header comment to state the true, single authoritative tier and remove the contradiction; (2) add a source-vs-JSON consistency check to the build pipeline for the 4 `populate-data.js` families; (3) add a general duplicate-id/slug guard; (4) resolve the fund-07/fund-08 disposition using the evidence gathered in this phase (see `REVIEW-QUEUE.md` Section C); (5) consider whether any CI is warranted at all, independent of this specific defect.

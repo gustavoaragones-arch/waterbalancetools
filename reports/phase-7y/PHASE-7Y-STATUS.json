@@ -1,0 +1,72 @@
+{
+  "phase": "7Y",
+  "title": "Source/Data Pipeline Integrity & Academy Desynchronization Audit",
+  "baseline": {
+    "head": "e959f8d448b707f392d736f0269fef72b7b81699",
+    "origin_main": "e959f8d448b707f392d736f0269fef72b7b81699",
+    "branch": "main",
+    "working_tree_clean_at_start": true,
+    "prior_commit": "Phase 7X: content alignment & breakpoint-claim reconciliation"
+  },
+  "central_finding": {
+    "family": "academy",
+    "orphaned_records": ["fund-07", "fund-08"],
+    "total_records": 50,
+    "source_backed_records": 48,
+    "root_cause": "populate-data.js's own header comment (present since Phase 5A, unmodified) instructs editors to treat data/academy.json as the permanent source of truth and edit it directly, while the script's mechanical behavior unconditionally overwrites that same file from scripts/data/academy-*.js on every run",
+    "introduced_by": ["Phase 7M (commit a6e7881)", "Phase 7P (commit 2a3a682)"],
+    "partially_patched_by": "Phase 7Q (commit ae751ca) -- fixed an id collision symptom, not the root cause",
+    "discovered_by": "Phase 7X (regenerating academy.json for unrelated content edits)",
+    "fully_traced_by": "Phase 7Y (this phase)"
+  },
+  "scope_of_desync": {
+    "isolated_to_academy": true,
+    "same_architectural_exposure_but_currently_clean": ["formulas", "glossary", "reference"],
+    "confirmed_clean_different_architecture": ["entities", "datasets", "trust", "chemistry_evidence", "programmatic_clusters_x7", "authority_guides"],
+    "unrelated_low_risk_finding": "3 dead legacy JSON files (chlorine-dosage.json, ph-adjustment.json, shock-dosage.json) with zero live readers, containing formulas already removed from live calculators"
+  },
+  "populate_data_js": {
+    "modified_this_phase": false,
+    "safe_for_automatic_build_use": false,
+    "reason": "would silently delete fund-07 and fund-08 on next run",
+    "deterministic": true,
+    "invoked_by_npm_run_build": false
+  },
+  "build_order": {
+    "safe": "mostly",
+    "known_issue": "generate-hubs.js runs before generate-navigation.js (documented since Phase 7V), requires 2 build passes to converge",
+    "issue_related_to_academy_desync": false
+  },
+  "sitewide_template_drift": {
+    "related_to_academy_desync": false,
+    "classification": "C - independent infrastructure debt",
+    "evidence": "clean npm run build with populate-data.js never invoked touched 241 files, dominated by entities/ (105) and calculators/ (15)",
+    "fixed_this_phase": false
+  },
+  "production_changes": {
+    "count": 0,
+    "files_modified": []
+  },
+  "validator": {
+    "script": "scripts/validate-phase-7y.js",
+    "result": "PASS",
+    "errors": 0,
+    "warnings": 0
+  },
+  "test_suite": {
+    "script": "scripts/test-phase-7y.js",
+    "result": "PASS"
+  },
+  "reproducibility": {
+    "populate_data_js_isolated_determinism": "confirmed byte-identical across 2 runs in an isolated temp directory",
+    "build_drift_experiment": "reverted, not re-run, per no-broad-regeneration rule"
+  },
+  "review_queue_categories": ["A", "B", "C", "D", "E", "F", "G"],
+  "final_status": "PASS WITH REVIEW QUEUE",
+  "phase_7z_recommendation": "Decision-and-remediation phase: fix populate-data.js documentation, decide and execute fund-07/fund-08 disposition, consider a source-vs-JSON consistency validator, fix the 3 minor record-integrity findings",
+  "git_protocol": {
+    "commit": false,
+    "push": false,
+    "begin_phase_7z": false
+  }
+}
