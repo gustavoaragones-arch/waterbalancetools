@@ -6,15 +6,15 @@
   <link rel="canonical" href="https://waterbalancetools.com/calculators/hot-tub-shock-calculator">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hot tub shock calculator. Enter spa gallons and shock type to get shock dosage. Free and fast.">
-  <title>Hot Tub Shock Calculator | WaterBalanceTools</title>
-  <meta property="og:title" content="Hot Tub Shock Calculator | WaterBalanceTools">
-  <meta property="og:description" content="Calculate shock dosage for your hot tub or spa.">
+  <meta name="description" content="Hot tub shock calculator. Enter spa gallons, target ppm, and shock product for a product-specific dose. Free and fast.">
+  <title>Hot Tub Shock Calculator (By Product) | WaterBalanceTools</title>
+  <meta property="og:title" content="Hot Tub Shock Calculator (By Product) | WaterBalanceTools">
+  <meta property="og:description" content="Calculate product-specific shock dosage for your hot tub or spa.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="../style.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3974004697476579" crossorigin="anonymous"></script>
   <script src="/js/result-renderer.js" defer></script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Hot Tub Shock Calculator","url":"https://waterbalancetools.com/calculators/hot-tub-shock-calculator","applicationCategory":"CalculatorApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Calculate shock dosage for your hot tub or spa.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Hot Tub Shock Calculator","url":"https://waterbalancetools.com/calculators/hot-tub-shock-calculator","applicationCategory":"CalculatorApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Calculate product-specific shock dosage for your hot tub or spa.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":"https://waterbalancetools.com"},
@@ -42,7 +42,7 @@
 </style>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Hot Tub Shock Calculator | WaterBalanceTools">
-  <meta name="twitter:description" content="Hot tub shock calculator. Enter spa gallons and shock type to get shock dosage. Free and fast.">
+  <meta name="twitter:description" content="Hot tub shock calculator. Enter spa gallons, target ppm, and shock product for a product-specific dose. Free and fast.">
   <meta name="last-updated" content="2026-06-29">
   <meta name="content-version" content="v5B.6">
 </head>
@@ -82,7 +82,7 @@
   <main class="container">
     <section class="hero hero-compact">
       <h1>Hot Tub Shock Calculator</h1>
-    <p class="hero-sub">Calculate shock dosage for your hot tub based on volume and shock type.</p>
+    <p class="hero-sub">Calculate shock dosage for your hot tub based on volume, shock strength, and product.</p>
       <div class="calc-hero-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 46c0-11 8-20 20-20s20 9 20 20" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M8 46h48" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M20 24v-5M32 22v-7M44 24v-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="2 2"/></svg></div>
     </section>
 
@@ -94,11 +94,21 @@
         <input type="number" id="volume" min="1" step="1" placeholder="e.g. 400">
       </div>
       <div class="form-group">
-        <label for="strength">Shock type / strength</label>
+        <label for="strength">Shock strength (target ppm increase)</label>
         <select id="strength">
           <option value="5">Light (5 ppm)</option>
           <option value="10" selected>Standard (10 ppm)</option>
           <option value="15">Heavy (15 ppm)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="product">Shock product</label>
+        <select id="product">
+          <option value="liquid-chlorine-10pct">Liquid Chlorine (10%)</option>
+          <option value="liquid-chlorine-12pct">Liquid Chlorine (12.5%)</option>
+          <option value="calcium-hypochlorite-65pct" selected>Calcium Hypochlorite (65%)</option>
+          <option value="calcium-hypochlorite-73pct">Calcium Hypochlorite (73%)</option>
+          <option value="unknown">I don't know my product</option>
         </select>
       </div>
       <button type="submit" class="btn btn-primary">Calculate</button>
@@ -245,10 +255,10 @@ These tools are designed to help maintain safe chlorine, pH, and total alkalinit
     </summary>
     <div class="trust-panel__body">
       <dl class="trust-panel__grid">
-        <dt>Formula Version</dt><dd>2026.07</dd>
+        <dt>Formula Version</dt><dd>2026.09</dd>
         <dt>Dataset Version</dt><dd>2026.07</dd>
         <dt>Knowledge Graph</dt><dd>2026.07</dd>
-        <dt>Last Reviewed</dt><dd>2026-08-18</dd>
+        <dt>Last Reviewed</dt><dd>2026-08-29</dd>
         <dt>Confidence</dt><dd><span class="confidence-badge confidence-limited" style="background:#8a3a00;color:#ffffff" title="Value derived from sparse sources, editorial interpretation, or emerging guidance not yet widely adopted. May vary significantly between manufacturers, regions, or pool conditions.">! Limited</span></dd>
         <dt>Formulas Used</dt><dd><a href="/methodology/formula-selection" title="Shock Treatment Dosage">Shock Treatment Dosage</a></dd>
         <dt>Dataset Sources</dt><dd><a href="/reference/datasets/chemical-ranges">chemical-ranges</a>, <a href="/reference/datasets/dosage-matrices">dosage-matrices</a></dd>
@@ -260,12 +270,12 @@ These tools are designed to help maintain safe chlorine, pH, and total alkalinit
         <a href="/methodology/rounding-policy">Rounding Policy</a>
         <a href="/revisions">Revision History</a>
       </div>
-      <p class="trust-panel__note"><em>No confirmed primary source for a general shock-FC target; see reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md.</em></p>
+      <p class="trust-panel__note"><em>Dose is now product-specific: select a shock product (liquid chlorine or calcium hypochlorite -- the 4 products this site's dataset lists as hot-tub-appropriate) and the calculator applies the approved mass-balance formula using that product's dataset-verified available-chlorine percentage, plus safety notes. Does not read combined chlorine and does not compute a breakpoint-chlorination dose. The "I don't know my product" option gives qualitative guidance only, with no numeric dose.</em></p>
     </div>
   </details>
 </aside>
 </main>
-                                                                                                                                                                                                                                                                                                  <footer class="site-footer">
+                                                                                                                                                                                                                                                                                                            <footer class="site-footer">
     <nav class="footer-nav">
       <a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a>
       <a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a>
@@ -290,11 +300,20 @@ These tools are designed to help maintain safe chlorine, pH, and total alkalinit
         e.preventDefault();
         var vol = document.getElementById('volume').value;
         var ppm = document.getElementById('strength').value;
-        var r = window.WaterBalance.calcUtils.calculateShock(vol, ppm);
+        var productId = document.getElementById('product').value;
         var el = document.getElementById('result');
         var text = document.getElementById('result-text');
         if (!vol || parseFloat(vol) <= 0) { text.textContent = 'Enter valid hot tub gallons.'; el.classList.remove('hidden'); return; }
-        text.textContent = 'Add ' + r.ounces.toFixed(1) + ' oz shock. Run jets 15–20 min. Re-test before using tub.';
+        if (productId === 'unknown') {
+          text.textContent = 'Select your shock product above for a specific amount -- the correct dose varies substantially by product and strength. In general: follow your product label’s instructions, add gradually, run jets 15–20 minutes, and re-test before using the tub.';
+          el.classList.remove('hidden');
+          return;
+        }
+        var r = window.WaterBalance.calcUtils.calculateShockByProduct(vol, ppm, productId);
+        if (!r.valid) { text.textContent = 'Enter valid hot tub gallons and select a product.'; el.classList.remove('hidden'); return; }
+        var msg = 'Add ' + r.ounces.toFixed(1) + ' oz ' + r.product.label + '. Run jets 15–20 min. Re-test before using tub.';
+        if (r.product.mixingWarning) msg += ' ' + r.product.mixingWarning;
+        text.textContent = msg;
         el.classList.remove('hidden');
       };
     })();

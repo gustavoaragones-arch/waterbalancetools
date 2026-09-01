@@ -25,27 +25,56 @@
       {"@type":"ListItem","position":2,"name":"Formula Library","item":"https://waterbalancetools.com/formulas"},
       {"@type":"ListItem","position":3,"name":"Pool Shock Formula"}]}
 </script>
+<style>
+.trust-panel{margin:2rem 0;border:1px solid #d0dde8;border-radius:8px;background:#f8fbff;font-size:.875rem}
+.trust-panel details summary{list-style:none;cursor:pointer;padding:.875rem 1.25rem;display:flex;align-items:center;gap:.75rem;user-select:none}
+.trust-panel details summary::-webkit-details-marker{display:none}
+.trust-panel details[open] summary{border-bottom:1px solid #d0dde8}
+.trust-panel__icon{font-size:1.1rem;flex-shrink:0}
+.trust-panel__confidence{margin-left:auto}
+.trust-panel__body{padding:1.25rem}
+.trust-panel__grid{display:grid;grid-template-columns:max-content 1fr;gap:.35rem 1rem;margin:0 0 1rem}
+.trust-panel__grid dt{color:#666;font-weight:500}
+.trust-panel__grid dd{margin:0;color:#222}
+.trust-panel__links{display:flex;gap:1rem;flex-wrap:wrap}
+.trust-panel__links a{color:#0073aa;font-size:.8rem}
+.trust-panel__note{margin:.75rem 0 0;padding:.5rem .75rem;background:#fffde7;border-radius:4px;font-size:.8rem;color:#555}
+.confidence-badge{display:inline-flex;align-items:center;gap:.3em;padding:2px 8px;border-radius:12px;font-size:.75rem;font-weight:600;white-space:nowrap}
+.version-badge{display:inline-flex;align-items:center;gap:.4em;background:#f0f4f8;border:1px solid #c8d8e8;border-radius:4px;padding:2px 8px;font-size:.72rem;color:#445;margin-left:.75rem;vertical-align:middle}
+.formula-panel,.dataset-panel{border:1px solid #e0e0e0;border-radius:6px;padding:1rem 1.25rem;background:#fff;margin:1.5rem 0;font-size:.875rem}
+.formula-panel h3,.dataset-panel h3{margin:0 0 .75rem;font-size:.9rem;color:#0073aa;text-transform:uppercase;letter-spacing:.04em}
+</style>
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Pool Shock Formula | Formula Library | WaterBalanceTools">
+  <meta property="og:description" content="Learn the pool shock formula. Calculate exactly how much calcium hypochlorite to add for maintenance, breakpoint, or algae recovery.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pool Shock Formula | Formula Library | WaterBalanceTools">
+  <meta name="twitter:description" content="Learn the pool shock formula. Calculate exactly how much calcium hypochlorite to add for maintenance, breakpoint, or algae recovery.">
+  <meta name="last-updated" content="2026-06-29">
+  <meta name="content-version" content="v5B.6">
 </head>
 <body class="knowledge-page formula-page">
-  <header class="site-header">
-    <a href="/" class="logo-link">
-      <img src="/public/logo.svg" alt="WaterBalanceTools" class="logo" width="185" height="56">
-    </a>
-    <nav class="nav" id="site-nav" aria-label="Primary navigation">
-      <a href="/calculators/chemical-calculator">Calculator</a>
-      <a href="/resources/">Resources</a>
-      <a href="/pool-chemical-levels-chart">Charts</a>
-      <a href="/academy/">Academy</a>
-      <a href="/guides/pool-chemistry-basics">Guides</a>
-      <a href="/about/">About</a>
-    </nav>
-    <div class="nav-end">
-      <a href="/search/" class="nav-search" aria-label="Search site">
-        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <header class="site-header" data-canonical-nav="v4">
+    <div class="site-header__inner container">
+      <a href="/" class="logo-link">
+        <img src="/public/logo.svg" alt="WaterBalanceTools" class="logo" width="185" height="56">
       </a>
-      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span><span></span>
-      </button>
+      <nav class="nav" id="site-nav" aria-label="Primary navigation">
+        <a href="/calculators/chemical-calculator">Calculator</a>
+        <a href="/resources">Resources</a>
+        <a href="/pool-chemical-levels-chart">Charts</a>
+        <a href="/academy">Academy</a>
+        <a href="/guides/pool-chemistry-basics">Guides</a>
+        <a href="/about">About</a>
+      </nav>
+      <div class="nav-end" style="display:flex;align-items:center;gap:.5rem;">
+        <a href="/search" class="nav-search" aria-label="Search site" style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;">
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -122,11 +151,13 @@
 <li>Calcium hypochlorite (cal-hypo) comes in 65% and 73% available chlorine strengths.</li>
 <li>The dosing math is identical in kind to liquid chlorine (formula-02) — the same mass of 100%-available chlorine is needed per ppm per gallon regardless of whether the product is liquid or dry; only the available-chlorine percentage changes. At 65% cal-hypo this works out to about 2.05 oz per 10,000 gallons per 1 ppm, consistent with the Pool &amp; Hot Tub Alliance's own &quot;Water Chemistry Adjustment Guide&quot; (2 oz per 10,000 gal per 1 ppm for 67% cal-hypo) and this site's own dosage-matrices dataset (2.0 oz for 65%, 1.8 oz for 73%).</li>
 </ul>
+<p>**As of Phase 7W, this equation is directly implemented** by the Pool Shock Calculator, Hot Tub Shock Calculator, and the granular-chlorine options on the All-in-One Chemical Calculator: the user selects a specific product (liquid chlorine, calcium hypochlorite, sodium dichlor, or trichlor tablets), and the calculator applies this formula using that product's dataset-verified available-chlorine percentage. This replaces a prior generic, unsupported divisor that corresponded to no real product (see Phase 7T's SHOCK-DIVISOR-AUDIT.md).</p>
+<p>**What the live calculators do NOT compute:** a breakpoint-chlorination dose (10× combined chlorine) -- the preset ppm values (5/10/15/20) are flat target-FC-increase amounts a user chooses directly, not a value derived from a measured combined-chlorine reading, and the calculators do not collect combined chlorine as an input. A &quot;generic/unspecified product&quot; option is also not offered as a numeric calculation -- Phase 7T/7U established that no single divisor is defensible across products, so users who do not know their product receive qualitative guidance only, with no ounce or pound figure.</p>
 </section>
 
 <section id="limitations">
 <h2>Limitations &amp; Notes</h2>
-<p>Calcium hypochlorite increases calcium hardness — significant doses can raise hardness noticeably, especially in smaller pools or spas. Using cal-hypo repeatedly in a pool with already-high calcium can contribute to scaling. Consider sodium hypochlorite (liquid chlorine) for routine shocking in pools with high calcium hardness. The 0.013344 constant assumes 8.34 lb/gal water density and treats the product's labeled available-chlorine percentage as active-ingredient-by-weight; PHTA's own Calcium Hypochlorite fact sheet notes exact dosage depends on the specific product and directs users to the product label for precise amounts — treat this as a starting dose, not an exact figure.</p>
+<p>Calcium hypochlorite increases calcium hardness — significant doses can raise hardness noticeably, especially in smaller pools or spas. Using cal-hypo repeatedly in a pool with already-high calcium can contribute to scaling. Consider sodium hypochlorite (liquid chlorine) for routine shocking in pools with high calcium hardness. Sodium dichlor and trichlor add cyanuric acid with repeated use; trichlor is also acidic. Calcium hypochlorite must not be mixed with trichlor or other chlorinating agents (mixing hazard). The 0.013344 constant assumes 8.34 lb/gal water density and treats the product's labeled available-chlorine percentage as active-ingredient-by-weight; PHTA's own Calcium Hypochlorite fact sheet notes exact dosage depends on the specific product and directs users to the product label for precise amounts — treat this as a starting dose, not an exact figure. A generic/unspecified-product dose remains REQUIRES_EXPERT_REVIEW: no single divisor is defensible across products (Phase 7T `SHOCK-DIVISOR-AUDIT.md`), which is why the live calculators require a specific product selection for a numeric result. Breakpoint-chlorination dosing (10× combined chlorine) is a distinct, unimplemented use case -- see Phase 7T `SHOCK-ARCHITECTURE-AUDIT.md` and Phase 7U `SHOCK-ARCHITECTURE-DECISION.md`.</p>
 </section>
 
 
@@ -148,9 +179,28 @@
 
       </div>
     </div>
-  </main>
+  
+<!-- formula-panel: inject-trust-panels.js -->
+<aside class="formula-panel">
+  <h3>Formula Details</h3>
+  <dl class="trust-panel__grid">
+    <dt>Formula</dt><dd><code>dose (oz) = targetPpmIncrease × volume_gal × 0.013344 / product.activePercent</code></dd>
+    <dt>Version</dt><dd>2026.09</dd>
+    <dt>Confidence</dt><dd><span class="confidence-badge confidence-limited" style="background:#8a3a00;color:#ffffff" title="Value derived from sparse sources, editorial interpretation, or emerging guidance not yet widely adopted. May vary significantly between manufacturers, regions, or pool conditions.">! Limited</span></dd>
+    <dt>Last Reviewed</dt><dd>2026-08-29</dd>
+    <dt>Dataset Sources</dt><dd><a href="/reference/datasets/chemical-ranges">chemical-ranges</a>, <a href="/reference/datasets/dosage-matrices">dosage-matrices</a></dd>
+    <dt>Used By</dt><dd><a href="/calculators/pool-shock-calculator">Pool Shock Calculator</a>, <a href="/calculators/hot-tub-shock-calculator">Hot Tub Shock Calculator</a></dd>
+  </dl>
+  <div class="trust-panel__links">
+    <a href="/methodology/formula-selection">Formula Selection Policy</a>
+    <a href="/methodology/calculation-assumptions">Assumptions</a>
+    <a href="/revisions">Revision History</a>
+  </div>
+  <p class="trust-panel__note"><em>The product-specific dosing coefficient is now derived from the approved mass-balance formula and cross-validated against PHTA's Water Chemistry Adjustment Guide (see reports/phase-7t/SHOCK-DIVISOR-AUDIT.md, reports/phase-7u/SHOCK-ARCHITECTURE-DECISION.md). The preset ppm targets (5/10/15/20) remain a flat FC-increase UX choice, not a breakpoint (10x combined chlorine) calculation -- no confirmed primary source establishes a general residential shock-FC target, and this calculator does not read the user's actual combined-chlorine reading. See reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md.</em></p>
+</aside>
+</main>
 
-    <footer class="site-footer">
+      <footer class="site-footer">
     <nav class="footer-nav">
       <a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a>
       <a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a>
@@ -164,6 +214,9 @@
     </nav>
     <p class="footer-copy">&copy; 2026 Albor Digital LLC. All rights reserved.</p>
     <p class="footer-note">WaterBalanceTools.com is an independent educational website owned and operated by Albor Digital LLC.</p>
+<!-- platform-footer-badge:start -->
+<p class="platform-footer-version">Platform version: v1.0.0 (Foundation) · Production Certified</p>
+<!-- platform-footer-badge:end -->
   </footer>
 
   <script src="/js/nav.js" defer></script>

@@ -6,15 +6,15 @@
   <link rel="canonical" href="https://waterbalancetools.com/calculators/pool-shock-calculator">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pool shock calculator: granular shock ounces from gallons + target ppm (10–30). For combined chlorine, pH, and alkalinity dosing, use the main Pool Chemical ...">
-  <title>Pool Shock Calculator (10–30 ppm Dose) | WaterBalanceTools</title>
-  <meta property="og:title" content="Pool Shock Calculator (10–30 ppm Dose) | WaterBalanceTools">
-  <meta property="og:description" content="Pool shock calculator for granular ounces by volume and ppm raise. Full water balance: main Pool Chemical Calculator.">
+  <meta name="description" content="Pool shock calculator: select your shock product (liquid, cal-hypo, dichlor, or trichlor) for a product-specific dose from gallons + target ppm (5–20). For c...">
+  <title>Pool Shock Calculator (Product-Specific Dose) | WaterBalanceTools</title>
+  <meta property="og:title" content="Pool Shock Calculator (Product-Specific Dose) | WaterBalanceTools">
+  <meta property="og:description" content="Pool shock calculator: product-specific ounces by volume, ppm raise, and shock product. Full water balance: main Pool Chemical Calculator.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="../style.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3974004697476579" crossorigin="anonymous"></script>
   <script src="/js/result-renderer.js" defer></script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Pool Shock Calculator","url":"https://waterbalancetools.com/calculators/pool-shock-calculator","applicationCategory":"CalculatorApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Pool shock calculator for granular ounces by volume and ppm raise.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Pool Shock Calculator","url":"https://waterbalancetools.com/calculators/pool-shock-calculator","applicationCategory":"CalculatorApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Pool shock calculator: product-specific ounces by volume, ppm raise, and shock product.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":"https://waterbalancetools.com"},
@@ -41,8 +41,8 @@
 .formula-panel h3,.dataset-panel h3{margin:0 0 .75rem;font-size:.9rem;color:#0073aa;text-transform:uppercase;letter-spacing:.04em}
 </style>
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Pool Shock Calculator (10–30 ppm Dose) | WaterBalanceTools">
-  <meta name="twitter:description" content="Pool shock calculator: granular shock ounces from gallons + target ppm (10–30). For combined chlorine, pH, and alkalinity dosing, use the main Pool Chemical ...">
+  <meta name="twitter:title" content="Pool Shock Calculator (Product-Specific Dose) | WaterBalanceTools">
+  <meta name="twitter:description" content="Pool shock calculator: select your shock product for a product-specific dose from gallons + target ppm. For combined chlorine, pH, and alkalinity dosing, use the main Pool Chemical ...">
   <meta name="last-updated" content="2026-06-29">
   <meta name="content-version" content="v5B.6">
 </head>
@@ -82,7 +82,7 @@
   <main class="container">
     <section class="hero hero-compact">
       <h1>Pool Shock Calculator</h1>
-    <p class="hero-sub">Calculate how much shock your pool needs based on volume and shock strength.</p>
+    <p class="hero-sub">Calculate how much shock your pool needs based on volume, shock strength, and product.</p>
       <div class="calc-hero-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 10h20M26 10v18L14 52h36L38 28V10" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 44q5-4 12 0t12 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
     </section>
 
@@ -94,12 +94,24 @@
         <input type="number" id="volume" min="1" step="1" placeholder="e.g. 15000">
       </div>
       <div class="form-group">
-        <label for="strength">Shock strength (target ppm)</label>
+        <label for="strength">Shock strength (target ppm increase)</label>
         <select id="strength">
           <option value="5">Light (5 ppm)</option>
           <option value="10" selected>Standard (10 ppm)</option>
           <option value="15">Heavy (15 ppm)</option>
           <option value="20">Double shock (20 ppm)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="product">Shock product</label>
+        <select id="product">
+          <option value="liquid-chlorine-10pct">Liquid Chlorine (10%)</option>
+          <option value="liquid-chlorine-12pct">Liquid Chlorine (12.5%)</option>
+          <option value="calcium-hypochlorite-65pct" selected>Calcium Hypochlorite (65%)</option>
+          <option value="calcium-hypochlorite-73pct">Calcium Hypochlorite (73%)</option>
+          <option value="sodium-dichlor-56pct">Sodium Dichlor (56%)</option>
+          <option value="trichlor-tablets-90pct">Trichlor Tablets (90%)</option>
+          <option value="unknown">I don't know my product</option>
         </select>
       </div>
       <button type="submit" class="btn btn-primary">Calculate</button>
@@ -291,10 +303,10 @@ These tools are designed to help maintain safe chlorine, pH, and total alkalinit
     </summary>
     <div class="trust-panel__body">
       <dl class="trust-panel__grid">
-        <dt>Formula Version</dt><dd>2026.07</dd>
+        <dt>Formula Version</dt><dd>2026.09</dd>
         <dt>Dataset Version</dt><dd>2026.07</dd>
         <dt>Knowledge Graph</dt><dd>2026.07</dd>
-        <dt>Last Reviewed</dt><dd>2026-08-18</dd>
+        <dt>Last Reviewed</dt><dd>2026-08-29</dd>
         <dt>Confidence</dt><dd><span class="confidence-badge confidence-limited" style="background:#8a3a00;color:#ffffff" title="Value derived from sparse sources, editorial interpretation, or emerging guidance not yet widely adopted. May vary significantly between manufacturers, regions, or pool conditions.">! Limited</span></dd>
         <dt>Formulas Used</dt><dd><a href="/methodology/formula-selection" title="Shock Treatment Dosage">Shock Treatment Dosage</a></dd>
         <dt>Dataset Sources</dt><dd><a href="/reference/datasets/chemical-ranges">chemical-ranges</a>, <a href="/reference/datasets/dosage-matrices">dosage-matrices</a></dd>
@@ -306,12 +318,12 @@ These tools are designed to help maintain safe chlorine, pH, and total alkalinit
         <a href="/methodology/rounding-policy">Rounding Policy</a>
         <a href="/revisions">Revision History</a>
       </div>
-      <p class="trust-panel__note"><em>Breakpoint chlorination target (10x combined chlorine) is an industry rule of thumb, not independently confirmed by a primary source. This calculator also does not read the user's actual combined-chlorine reading.</em></p>
+      <p class="trust-panel__note"><em>Dose is now product-specific: select a shock product (liquid chlorine, calcium hypochlorite, sodium dichlor, or trichlor) and the calculator applies the approved mass-balance formula (0.013344 x ppm x gallons / available-chlorine%) using that product's dataset-verified available-chlorine percentage, plus that product's safety notes (mixing hazards, CYA/calcium contribution). This calculator still does not read the user's actual combined-chlorine reading and does not compute a breakpoint-chlorination (10x CC) dose -- the preset ppm values (5/10/15/20) are flat target-FC-increase amounts, not breakpoint targets. The "I don't know my product" option gives qualitative guidance only, with no numeric dose.</em></p>
     </div>
   </details>
 </aside>
 </main>
-                                                                                                                                                                                                                                                                                                  <footer class="site-footer">
+                                                                                                                                                                                                                                                                                                            <footer class="site-footer">
     <nav class="footer-nav">
       <a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a>
       <a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a>
@@ -336,11 +348,20 @@ These tools are designed to help maintain safe chlorine, pH, and total alkalinit
         e.preventDefault();
         var vol = document.getElementById('volume').value;
         var ppm = document.getElementById('strength').value;
-        var r = window.WaterBalance.calcUtils.calculateShock(vol, ppm);
+        var productId = document.getElementById('product').value;
         var el = document.getElementById('result');
         var text = document.getElementById('result-text');
         if (!vol || parseFloat(vol) <= 0) { text.textContent = 'Enter valid pool gallons.'; el.classList.remove('hidden'); return; }
-        text.textContent = 'Add ' + r.ounces.toFixed(1) + ' oz (' + r.pounds.toFixed(2) + ' lb) granular shock. Run pump 4–6 hours. Re-test before swimming.';
+        if (productId === 'unknown') {
+          text.textContent = 'Select your shock product above for a specific amount -- the correct dose varies substantially by product and strength. In general: follow your product label’s instructions, add gradually with the pump running, run the pump 4–6 hours, and re-test before swimming.';
+          el.classList.remove('hidden');
+          return;
+        }
+        var r = window.WaterBalance.calcUtils.calculateShockByProduct(vol, ppm, productId);
+        if (!r.valid) { text.textContent = 'Enter valid pool gallons and select a product.'; el.classList.remove('hidden'); return; }
+        var msg = 'Add ' + r.ounces.toFixed(1) + ' oz (' + r.pounds.toFixed(2) + ' lb) ' + r.product.label + '. Run pump 4–6 hours. Re-test before swimming.';
+        if (r.product.mixingWarning) msg += ' ' + r.product.mixingWarning;
+        text.textContent = msg;
         el.classList.remove('hidden');
       };
     })();

@@ -49,22 +49,33 @@ module.exports = {
     {
       id: 'formula-shock-dose',
       name: 'Shock Treatment Dosage',
-      version: '2026.07',
-      formula: 'shockTarget = max(10 × combinedChlorine, shockMinFC); dose = (shockTarget − currentFC) × volume_gal × coefficient / 10000',
-      variables: { combinedChlorine: 'Combined chlorine (ppm)', shockMinFC: 'Minimum shock FC for pool type (from chemical-ranges)', currentFC: 'Current free chlorine (ppm)', volume_gal: 'Pool volume (gallons)', coefficient: 'Product coefficient from dosage-matrices' },
+      version: '2026.09',
+      // Phase 7W: this record previously described a breakpoint-style
+      // formula (shockTarget = max(10 x combinedChlorine, shockMinFC))
+      // that the live calculator never implemented -- it was a stale,
+      // aspirational description, not a reflection of actual behavior
+      // (the calculator has always used a flat preset ppm increase, never
+      // read combinedChlorine). Corrected to describe what is now
+      // actually implemented: a product-specific mass-balance dose. See
+      // reports/phase-7w/SHOCK-IMPLEMENTATION.md.
+      formula: 'dose (oz) = targetPpmIncrease × volume_gal × 0.013344 / product.activePercent',
+      variables: { targetPpmIncrease: 'Selected preset FC increase (5/10/15/20 ppm) -- NOT a breakpoint/combined-chlorine-derived target', volume_gal: 'Pool or hot tub volume (gallons)', 'product.activePercent': 'Available-chlorine % of the selected product, from dataset-dosage-matrices.js' },
       datasetDependencies: ['chemical-ranges', 'dosage-matrices'],
-      entityDependencies: ['free-chlorine', 'combined-chlorine', 'shock-treatment'],
+      entityDependencies: ['free-chlorine', 'shock-treatment'],
       calculatorIds: ['pool-shock-calculator', 'hot-tub-shock-calculator'],
       formulaPageId: 'formula-03',
       // Corrected Phase 7F.3: Phase 7E found no confirmed general
       // residential shock-target source (see
-      // reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md) and Phase 7D
-      // flagged this calculator for not reading the user's actual
-      // combined-chlorine value (no real 10x-CC breakpoint logic).
+      // reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md). Phase 7W:
+      // implements the Option B product-selector architecture, resolving
+      // the product-coefficient half of this record's prior limitation
+      // for the 6 supported products; the "no confirmed general
+      // residential shock-FC target" limitation for the preset ppm values
+      // themselves is unchanged and remains disclosed.
       confidenceLevel: 'limited',
       sourceCategory: 'internal-dataset',
-      notes: 'No confirmed primary source for a general residential shock-FC target; the "10x combined chlorine" breakpoint concept it approximates is an industry rule of thumb, not independently confirmed. See reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md.',
-      lastReviewed: '2026-08-18',
+      notes: 'The product-specific dosing coefficient is now derived from the approved mass-balance formula and cross-validated against PHTA\'s Water Chemistry Adjustment Guide (see reports/phase-7t/SHOCK-DIVISOR-AUDIT.md, reports/phase-7u/SHOCK-ARCHITECTURE-DECISION.md). The preset ppm targets (5/10/15/20) remain a flat FC-increase UX choice, not a breakpoint (10x combined chlorine) calculation -- no confirmed primary source establishes a general residential shock-FC target, and this calculator does not read the user\'s actual combined-chlorine reading. See reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md.',
+      lastReviewed: '2026-08-29',
     },
     {
       id: 'formula-ph-adjustment',

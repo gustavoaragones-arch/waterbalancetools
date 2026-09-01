@@ -82,13 +82,91 @@
     return { valid: true, direction: direction, magnitude: magnitude, diff: diff };
   }
 
-  /** Shock: granular shock to reach target ppm (e.g. 10 ppm) */
-  function calculateShock(gallons, targetPpm) {
+  /**
+   * Shock: product-specific dose via the approved mass-balance formula.
+   * Phase 7W implements the Option B architecture approved in
+   * reports/phase-7u/SHOCK-ARCHITECTURE-DECISION.md, replacing the prior
+   * calculateShock(gallons, targetPpm) generic divisor (oz =
+   * gallons*ppm/10000), which Phase 7T/7U established corresponds to no
+   * real chlorine product (implies a physically impossible 133.44%-
+   * available product) -- see reports/phase-7t/SHOCK-DIVISOR-AUDIT.md.
+   *
+   * SHOCK_PRODUCTS mirrors the chlorine-relevant records in
+   * scripts/data/dataset-dosage-matrices.js (activePercent,
+   * cyaContribution, calciumContributionPpmPerOz, and notes copied
+   * verbatim from that file -- keep in sync if that file changes). Dose
+   * is computed directly from activePercent using the same 0.013344
+   * mass-balance constant already approved for liquid chlorine
+   * (formula-02, Phase 7S) and calcium hypochlorite (formula-03, Phase
+   * 7T), rather than a pre-rounded coefficient, so the two stay
+   * traceably consistent.
+   */
+  var SHOCK_PRODUCTS = {
+    'liquid-chlorine-10pct': {
+      label: 'Liquid Chlorine (10%)',
+      activePercent: 10,
+      outputUnit: 'oz',
+      cyaContribution: 0,
+      notes: 'No CYA accumulation. Degrades ~30% per 60 days at room temperature.',
+    },
+    'liquid-chlorine-12pct': {
+      label: 'Liquid Chlorine (12.5%)',
+      activePercent: 12.5,
+      outputUnit: 'oz',
+      cyaContribution: 0,
+      notes: 'Higher concentration. More economical. Same active ingredient as 10%.',
+    },
+    'calcium-hypochlorite-65pct': {
+      label: 'Calcium Hypochlorite (65%)',
+      activePercent: 65,
+      outputUnit: 'oz',
+      cyaContribution: 0,
+      calciumContributionPpmPerOz: 0.39,
+      mixingWarning: 'Do not mix with trichlor or other chlorinating agents.',
+      notes: 'Pre-dissolve in water before adding. Do not add to skimmer. Adds calcium hardness -- relevant at high CH.',
+    },
+    'calcium-hypochlorite-73pct': {
+      label: 'Calcium Hypochlorite (73%)',
+      activePercent: 73,
+      outputUnit: 'oz',
+      cyaContribution: 0,
+      mixingWarning: 'Do not mix with trichlor or other chlorinating agents.',
+      notes: 'Higher concentration calcium hypochlorite. Same handling precautions as 65%.',
+    },
+    'sodium-dichlor-56pct': {
+      label: 'Sodium Dichlor (56%)',
+      activePercent: 56,
+      outputUnit: 'oz',
+      cyaContribution: 0.9,
+      cyaContributionUnit: 'ppm CYA per oz per 10k gal',
+      notes: 'Adds ~0.9 ppm CYA per oz per 10,000 gal. Use sparingly to avoid CYA accumulation. Dissolves rapidly.',
+    },
+    'trichlor-tablets-90pct': {
+      label: 'Trichlor Tablets (90%)',
+      activePercent: 90,
+      outputUnit: 'oz',
+      cyaContribution: 0.6,
+      cyaContributionUnit: 'ppm CYA per oz per 10k gal',
+      mixingWarning: 'Do not mix with calcium hypochlorite or other chlorinating agents.',
+      notes: 'Slow-dissolving. pH ~2.9, adds acidity over time. CYA accumulates with routine use.',
+    },
+  };
+
+  /**
+   * Hot tubs: only products the dataset's supportedPoolTypes lists as
+   * hot-tub-appropriate (dichlor and trichlor are outdoor/residential-pool
+   * only in dataset-dosage-matrices.js).
+   */
+  var SHOCK_PRODUCTS_HOT_TUB = ['liquid-chlorine-10pct', 'liquid-chlorine-12pct', 'calcium-hypochlorite-65pct', 'calcium-hypochlorite-73pct'];
+
+  function calculateShockByProduct(gallons, targetPpm, productId) {
     var g = parseFloat(gallons) || 0;
-    var ppm = parseFloat(targetPpm) || 10;
-    if (g <= 0) return { ounces: 0, pounds: 0 };
-    var oz = (g * ppm) / 10000;
-    return { ounces: oz, pounds: oz / 16 };
+    var ppm = parseFloat(targetPpm) || 0;
+    if (g <= 0 || ppm <= 0) return { valid: false };
+    var product = SHOCK_PRODUCTS[productId];
+    if (!product) return { valid: false };
+    var oz = (ppm * g * 0.013344) / product.activePercent;
+    return { valid: true, ounces: oz, pounds: oz / 16, product: product, productId: productId };
   }
 
   /** Pool volume by shape. Returns { gallons, liters }. */
@@ -176,7 +254,9 @@
     GAL_PER_CUBIC_M: GAL_PER_CUBIC_M,
     calculateChlorine: calculateChlorine,
     calculatePHAdjustment: calculatePHAdjustment,
-    calculateShock: calculateShock,
+    calculateShockByProduct: calculateShockByProduct,
+    SHOCK_PRODUCTS: SHOCK_PRODUCTS,
+    SHOCK_PRODUCTS_HOT_TUB: SHOCK_PRODUCTS_HOT_TUB,
     calculatePoolVolume: calculatePoolVolume,
     calculateSpaVolume: calculateSpaVolume,
     calculateSalt: calculateSalt,

@@ -24,14 +24,22 @@ module.exports = [
     urlPath: '/calculators/pool-shock-calculator',
     formulaIds: ['formula-shock-dose'],
     datasetDependencies: ['chemical-ranges', 'dosage-matrices'],
-    entityDependencies: ['free-chlorine', 'combined-chlorine', 'shock-treatment'],
+    // Phase 7W: 'combined-chlorine' removed -- the product-selector
+    // implementation still does not collect or use a combined-chlorine
+    // reading (breakpoint dosing remains explicitly out of scope, per
+    // reports/phase-7u/SHOCK-ARCHITECTURE-DECISION.md Option E, rejected).
+    entityDependencies: ['free-chlorine', 'shock-treatment'],
     // Corrected Phase 7F.3 -- no confirmed primary source for a general
     // residential shock-FC target; see
-    // reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md.
+    // reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md. Phase 7W:
+    // implements the Option B product-selector architecture approved in
+    // reports/phase-7u/SHOCK-ARCHITECTURE-DECISION.md -- the generic,
+    // unsupported divisor is no longer the live calculation basis for the
+    // 6 selectable products; see reports/phase-7w/SHOCK-IMPLEMENTATION.md.
     confidenceLevel: 'limited',
-    version: '2026.07',
-    lastReviewed: '2026-08-18',
-    notes: 'Breakpoint chlorination target (10x combined chlorine) is an industry rule of thumb, not independently confirmed by a primary source. This calculator also does not read the user\'s actual combined-chlorine reading.',
+    version: '2026.09',
+    lastReviewed: '2026-08-29',
+    notes: 'Dose is now product-specific: select a shock product (liquid chlorine, calcium hypochlorite, sodium dichlor, or trichlor) and the calculator applies the approved mass-balance formula (0.013344 x ppm x gallons / available-chlorine%) using that product\'s dataset-verified available-chlorine percentage, plus that product\'s safety notes (mixing hazards, CYA/calcium contribution). This calculator still does not read the user\'s actual combined-chlorine reading and does not compute a breakpoint-chlorination (10x CC) dose -- the preset ppm values (5/10/15/20) are flat target-FC-increase amounts, not breakpoint targets. The "I don\'t know my product" option gives qualitative guidance only, with no numeric dose.',
   },
   {
     id: 'pool-ph-calculator',
@@ -131,13 +139,18 @@ module.exports = [
     // the same qualitative direction/magnitude guidance as
     // pool-ph-calculator/hot-tub-ph-calculator (js/calculator.js's
     // evaluatePHGuidance). Notes corrected accordingly.
-    formulaIds: ['formula-chlorine-dose', 'formula-ph-adjustment'],
+    // Phase 7W: the "Granular" chlorine-type options were converted from
+    // a single generic (unsupported-divisor) choice into 3 specific
+    // products (calcium hypochlorite 65%/73%, sodium dichlor 56%), using
+    // the same approved mass-balance formula as formula-03 -- see
+    // reports/phase-7w/SHOCK-IMPLEMENTATION.md. formula-shock-dose added.
+    formulaIds: ['formula-chlorine-dose', 'formula-shock-dose', 'formula-ph-adjustment'],
     datasetDependencies: ['chemical-ranges', 'dosage-matrices', 'conversion-factors'],
     entityDependencies: ['free-chlorine', 'ph'],
     confidenceLevel: 'limited',
-    version: '2026.07',
+    version: '2026.09',
     lastReviewed: '2026-08-29',
-    notes: 'Computes a chlorine dose (numeric) and pH direction/adjustment-size guidance (qualitative, not a dose) -- see pool-ph-calculator\'s trust panel for why pH does not get a numeric dose. The free-chlorine and pH target ranges are CDC-supported; the chlorine dosing coefficient is not independently verified. This calculator reads total alkalinity as optional context only -- it does NOT compute an alkalinity dose, a calcium-hardness dose, or the Langelier Saturation Index (LSI), despite earlier trust-panel text claiming otherwise; Phase 7S corrected this. See /formulas/lsi-formula for the LSI formula and its lookup tables, which currently require manual calculation.',
+    notes: 'Computes a chlorine dose (numeric) and pH direction/adjustment-size guidance (qualitative, not a dose) -- see pool-ph-calculator\'s trust panel for why pH does not get a numeric dose. The free-chlorine and pH target ranges are CDC-supported. "Liquid" and "Chlorine tablets" use the Phase 7S-approved product-specific constants; the 3 "Granular" options (calcium hypochlorite 65%/73%, sodium dichlor 56%) use the same approved mass-balance formula as the shock calculators (Phase 7W), each with its own dataset-verified available-chlorine percentage. This calculator reads total alkalinity as optional context only -- it does NOT compute an alkalinity dose, a calcium-hardness dose, or the Langelier Saturation Index (LSI), despite earlier trust-panel text claiming otherwise; Phase 7S corrected this. See /formulas/lsi-formula for the LSI formula and its lookup tables, which currently require manual calculation.',
   },
   {
     id: 'hot-tub-chlorine-calculator',
@@ -172,12 +185,19 @@ module.exports = [
     urlPath: '/calculators/hot-tub-shock-calculator',
     formulaIds: ['formula-shock-dose'],
     datasetDependencies: ['chemical-ranges', 'dosage-matrices'],
-    entityDependencies: ['free-chlorine', 'combined-chlorine', 'hot-tub', 'shock-treatment'],
+    // Phase 7W: 'combined-chlorine' removed, same reason as
+    // pool-shock-calculator (see that entry's comment).
+    entityDependencies: ['free-chlorine', 'hot-tub', 'shock-treatment'],
     // Corrected Phase 7F.3 -- see trust-formulas.js formula-shock-dose.
+    // Phase 7W: implements the Option B product-selector architecture
+    // (4 products supported for hot tubs, per dataset-dosage-matrices.js's
+    // own supportedPoolTypes -- dichlor/trichlor are outdoor/residential-
+    // pool only in that dataset) -- see
+    // reports/phase-7w/SHOCK-IMPLEMENTATION.md.
     confidenceLevel: 'limited',
-    version: '2026.07',
-    lastReviewed: '2026-08-18',
-    notes: 'No confirmed primary source for a general shock-FC target; see reports/phase-7e-1/SHOCK-CLAIM-FAMILY-DECISION.md.',
+    version: '2026.09',
+    lastReviewed: '2026-08-29',
+    notes: 'Dose is now product-specific: select a shock product (liquid chlorine or calcium hypochlorite -- the 4 products this site\'s dataset lists as hot-tub-appropriate) and the calculator applies the approved mass-balance formula using that product\'s dataset-verified available-chlorine percentage, plus safety notes. Does not read combined chlorine and does not compute a breakpoint-chlorination dose. The "I don\'t know my product" option gives qualitative guidance only, with no numeric dose.',
   },
   {
     id: 'spa-volume-calculator',

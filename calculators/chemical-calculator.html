@@ -151,8 +151,10 @@
           <label for="chlorine-type">Chlorine type</label>
           <select id="chlorine-type" name="chlorineType">
             <option value="liquid">Liquid chlorine (10%)</option>
-            <option value="granular">Granular shock</option>
-            <option value="tablets">Chlorine tablets</option>
+            <option value="tablets">Chlorine tablets (trichlor)</option>
+            <option value="calcium-hypochlorite-65pct">Granular: Calcium Hypochlorite (65%)</option>
+            <option value="calcium-hypochlorite-73pct">Granular: Calcium Hypochlorite (73%)</option>
+            <option value="sodium-dichlor-56pct">Granular: Sodium Dichlor (56%)</option>
           </select>
         </div>
         <div class="form-group">
@@ -172,6 +174,11 @@
     <div id="output-panel" class="output-panel hidden">
       <h3>Recommendations</h3>
       <div id="output-content"></div>
+    
+    
+    
+    
+    
     
     
     
@@ -522,12 +529,12 @@ These tools are designed to help maintain safe chlorine, pH, and total alkalinit
     </summary>
     <div class="trust-panel__body">
       <dl class="trust-panel__grid">
-        <dt>Formula Version</dt><dd>2026.07</dd>
+        <dt>Formula Version</dt><dd>2026.09</dd>
         <dt>Dataset Version</dt><dd>2026.07</dd>
         <dt>Knowledge Graph</dt><dd>2026.07</dd>
         <dt>Last Reviewed</dt><dd>2026-08-29</dd>
         <dt>Confidence</dt><dd><span class="confidence-badge confidence-limited" style="background:#8a3a00;color:#ffffff" title="Value derived from sparse sources, editorial interpretation, or emerging guidance not yet widely adopted. May vary significantly between manufacturers, regions, or pool conditions.">! Limited</span></dd>
-        <dt>Formulas Used</dt><dd><a href="/methodology/formula-selection" title="Free Chlorine Dosage">Free Chlorine Dosage</a>, <a href="/methodology/formula-selection" title="pH Adjustment Dosage">pH Adjustment Dosage</a></dd>
+        <dt>Formulas Used</dt><dd><a href="/methodology/formula-selection" title="Free Chlorine Dosage">Free Chlorine Dosage</a>, <a href="/methodology/formula-selection" title="Shock Treatment Dosage">Shock Treatment Dosage</a>, <a href="/methodology/formula-selection" title="pH Adjustment Dosage">pH Adjustment Dosage</a></dd>
         <dt>Dataset Sources</dt><dd><a href="/reference/datasets/chemical-ranges">chemical-ranges</a>, <a href="/reference/datasets/dosage-matrices">dosage-matrices</a>, <a href="/reference/datasets/conversion-factors">conversion-factors</a></dd>
       </dl>
       <div class="trust-panel__links">
@@ -537,7 +544,7 @@ These tools are designed to help maintain safe chlorine, pH, and total alkalinit
         <a href="/methodology/rounding-policy">Rounding Policy</a>
         <a href="/revisions">Revision History</a>
       </div>
-      <p class="trust-panel__note"><em>Computes a chlorine dose (numeric) and pH direction/adjustment-size guidance (qualitative, not a dose) -- see pool-ph-calculator's trust panel for why pH does not get a numeric dose. The free-chlorine and pH target ranges are CDC-supported; the chlorine dosing coefficient is not independently verified. This calculator reads total alkalinity as optional context only -- it does NOT compute an alkalinity dose, a calcium-hardness dose, or the Langelier Saturation Index (LSI), despite earlier trust-panel text claiming otherwise; Phase 7S corrected this. See /formulas/lsi-formula for the LSI formula and its lookup tables, which currently require manual calculation.</em></p>
+      <p class="trust-panel__note"><em>Computes a chlorine dose (numeric) and pH direction/adjustment-size guidance (qualitative, not a dose) -- see pool-ph-calculator's trust panel for why pH does not get a numeric dose. The free-chlorine and pH target ranges are CDC-supported. "Liquid" and "Chlorine tablets" use the Phase 7S-approved product-specific constants; the 3 "Granular" options (calcium hypochlorite 65%/73%, sodium dichlor 56%) use the same approved mass-balance formula as the shock calculators (Phase 7W), each with its own dataset-verified available-chlorine percentage. This calculator reads total alkalinity as optional context only -- it does NOT compute an alkalinity dose, a calcium-hardness dose, or the Langelier Saturation Index (LSI), despite earlier trust-panel text claiming otherwise; Phase 7S corrected this. See /formulas/lsi-formula for the LSI formula and its lookup tables, which currently require manual calculation.</em></p>
     </div>
   </details>
 </aside>
@@ -555,7 +562,7 @@ These tools are designed to help maintain safe chlorine, pH, and total alkalinit
 <!-- chemistry-sources:end -->
 </main>
 
-                                                                                                                                                                                                                                                                                                                    <footer class="site-footer">
+                                                                                                                                                                                                                                                                                                                              <footer class="site-footer">
     <nav class="footer-nav">
       <a href="/calculators/pool-volume-calculator">Pool Volume Calculator</a>
       <a href="/calculators/pool-chlorine-calculator">Pool Chlorine Calculator</a>
@@ -652,7 +659,20 @@ These tools are designed to help maintain safe chlorine, pH, and total alkalinit
 
         var targetMid = (targetClMin + targetClMax) / 2;
         var ppmNeeded = window.WaterBalance.calculator.chlorineNeededPpm(currentCl, targetMid);
-        var chlorineOz = window.WaterBalance.calculator.chlorineOuncesForType(gallons, ppmNeeded, chlorineType);
+        // Phase 7W: granular products (calcium hypochlorite, sodium
+        // dichlor) use the approved mass-balance formula via
+        // granularChlorineOuncesForProduct, replacing the prior generic
+        // granularShockOunces divisor -- see
+        // reports/phase-7w/SHOCK-IMPLEMENTATION.md. 'liquid'/'tablets'
+        // are unchanged (already product-specific since Phase 7S).
+        var chlorineOz = 0;
+        var granularResult = null;
+        if (chlorineType === 'liquid' || chlorineType === 'tablets') {
+          chlorineOz = window.WaterBalance.calculator.chlorineOuncesForType(gallons, ppmNeeded, chlorineType);
+        } else {
+          granularResult = window.WaterBalance.calculator.granularChlorineOuncesForProduct(gallons, ppmNeeded, chlorineType);
+          if (granularResult.valid) chlorineOz = granularResult.ounces;
+        }
 
         // Phase 7V: pH guidance is qualitative (direction + magnitude), not a
         // numeric dose -- see js/calculator.js's evaluatePHGuidance and
@@ -672,8 +692,12 @@ These tools are designed to help maintain safe chlorine, pH, and total alkalinit
           if (chlorineType === 'tablets') {
             var tablets = Math.max(0.5, Math.round(chlorineOz / 3 * 2) / 2);
             lines.push('Add: ' + tablets + ' chlorine tablet(s) (approx ' + chlorineOz.toFixed(1) + ' oz equivalent)');
-          } else {
-            lines.push('Add: ' + chlorineOz.toFixed(1) + ' oz ' + (chlorineType === 'liquid' ? 'liquid chlorine' : 'granular shock'));
+          } else if (chlorineType === 'liquid') {
+            lines.push('Add: ' + chlorineOz.toFixed(1) + ' oz liquid chlorine');
+          } else if (granularResult && granularResult.valid) {
+            var granularLine = 'Add: ' + chlorineOz.toFixed(1) + ' oz ' + granularResult.product.label;
+            if (granularResult.product.mixingWarning) granularLine += ' -- ' + granularResult.product.mixingWarning;
+            lines.push(granularLine);
           }
         } else {
           lines.push('Chlorine is in range. No chlorine addition needed.');
