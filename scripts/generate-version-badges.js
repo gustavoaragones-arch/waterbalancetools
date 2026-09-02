@@ -48,12 +48,21 @@ function esc(str) {
     .replace(/>/g, '&gt;');
 }
 
+// Both upsert* functions below strip their own marker-delimited block with
+// a regex that also consumes any whitespace immediately preceding
+// markerStart -- the insertion side always adds that block as "\n" +
+// markerStart + ... + markerEnd, so without also consuming that same
+// leading "\n" on removal, every strip+reinsert cycle left one dangling
+// blank line behind, growing without bound across builds (one of several
+// instances of this same anti-pattern found sitewide -- see
+// docs/PHASE-8A-TEMPLATE-INJECTOR-REMEDIATION.md).
+
 function upsertBadgeAfterH1(filePath, badgeHtml) {
   if (!fs.existsSync(filePath)) return false;
   const html = fs.readFileSync(filePath, 'utf8');
   const markerStart = '<!-- platform-version-badge:start -->';
   const markerEnd = '<!-- platform-version-badge:end -->';
-  let next = html.replace(new RegExp(`${markerStart}[\\s\\S]*?${markerEnd}`, 'g'), '');
+  let next = html.replace(new RegExp(`\\s*${markerStart}[\\s\\S]*?${markerEnd}`, 'g'), '');
   const h1Match = next.match(/<h1[^>]*>[\s\S]*?<\/h1>/i);
   if (!h1Match) return false;
   next = next.replace(h1Match[0], `${h1Match[0]}\n${markerStart}${badgeHtml}${markerEnd}`);
@@ -70,7 +79,7 @@ function upsertFooterBadge(filePath, footerBadge) {
 
   const markerStart = '<!-- platform-footer-badge:start -->';
   const markerEnd = '<!-- platform-footer-badge:end -->';
-  let next = html.replace(new RegExp(`${markerStart}[\\s\\S]*?${markerEnd}`, 'g'), '');
+  let next = html.replace(new RegExp(`\\s*${markerStart}[\\s\\S]*?${markerEnd}`, 'g'), '');
   if (/<p[^>]*class="footer-note"[^>]*>[\s\S]*?<\/p>/i.test(next)) {
     next = next.replace(/<p[^>]*class="footer-note"[^>]*>[\s\S]*?<\/p>/i, (m) => `${m}\n${markerStart}${footerBadge}${markerEnd}`);
   } else if (/<footer\b[^>]*class="site-footer[^"]*"[^>]*>/i.test(next)) {

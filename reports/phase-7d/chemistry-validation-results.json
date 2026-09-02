@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-08-29T03:03:31.050Z",
+  "timestamp": "2026-09-02T13:15:44.187Z",
   "parameters": 15,
   "ranges": 25,
-  "sources": 19,
+  "sources": 24,
   "claims": 19,
   "errors": [],
   "warnings": [
@@ -12,6 +12,11 @@
     "Source \"phta-fresh-fill-startup-fact-sheet\" is not referenced by any parameter, range, or claim (orphan source)",
     "Source \"phta-water-conservation-droughts-2021\" is not referenced by any parameter, range, or claim (orphan source)",
     "Source \"phta-calcium-hypochlorite-fact-sheet-2021\" is not referenced by any parameter, range, or claim (orphan source)",
+    "Source \"in-doh-chemical-adjustment-2021\" is not referenced by any parameter, range, or claim (orphan source)",
+    "Source \"phta-water-chemistry-adjustment-guide-2021\" is not referenced by any parameter, range, or claim (orphan source)",
+    "Source \"phta-alkalinity-fact-sheet-2021\" is not referenced by any parameter, range, or claim (orphan source)",
+    "Source \"lamotte-acid-demand-index-2022\" is not referenced by any parameter, range, or claim (orphan source)",
+    "Source \"taylor-k1005-instruction-manual-2012\" is not referenced by any parameter, range, or claim (orphan source)",
     "Range \"range-ph-hottub-bromine-routine\" is not referenced by any canonical claim (orphan range)",
     "Range \"range-ph-pool-narrow-operational\" is not referenced by any canonical claim (orphan range)",
     "Range \"range-ta-public-pool-standard\" is not referenced by any canonical claim (orphan range)",

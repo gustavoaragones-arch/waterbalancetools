@@ -118,10 +118,33 @@ require(path.join(__dirname, 'restructure-calculator-pages.js'));
 // ── Step 9: Canonical footer ──────────────────────────────────────────────────
 require(path.join(__dirname, 'inject-footer.js'));
 
+// ── Phase 8B: pre-hub navigation refresh ──────────────────────────────────────
+// generate-hubs.js (below) reads data/navigation.json to build hub-to-leaf
+// cross-links (titles/descriptions/URLs of calculators, guides, entities,
+// etc.). Every leaf page above this line is already in its final,
+// current-build form, so navigation.json can be safely and correctly
+// rebuilt from them right now. Without this, generate-hubs.js read
+// whatever navigation.json happened to be left on disk from a PAST build
+// (data/navigation.json is a committed, persistent file, not deleted
+// between builds) -- stale by definition, and in practice stale by
+// multiple phases' worth of renamed titles, requiring a second full
+// `npm run build` to converge. Run via execSync (a genuinely separate
+// process), not require(), because require() caches module execution --
+// requiring the same script path a second time later in this file (the
+// pre-existing call below) would otherwise be a silent no-op. See
+// docs/PHASE-8B-HUB-NAVIGATION-CONVERGENCE.md.
+console.log('Running generate-navigation.js (pre-hub refresh)...');
+execSync('node scripts/generate-navigation.js', { cwd: root, stdio: 'inherit' });
+
 // ── Phase 5B.8 Part 3: Hub architecture generation ───────────────────────────
 require(path.join(__dirname, 'generate-hubs.js'));
 
 // ── Step 10: Navigation index ─────────────────────────────────────────────────
+// Final, authoritative write: re-walks every page INCLUDING the hub pages
+// just generated above, so the persisted data/navigation.json (consumed by
+// breadcrumbs, search, and related-content) reflects the fully-finalized
+// site, hub pages included -- not just the leaf pages the pre-hub refresh
+// above needed.
 require(path.join(__dirname, 'generate-navigation.js'));
 
 // ── Step 11: Breadcrumbs ──────────────────────────────────────────────────────

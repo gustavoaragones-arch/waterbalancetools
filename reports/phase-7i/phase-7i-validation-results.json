@@ -11,7 +11,7 @@
     },
     {
       "rule": "H1_TITLE_POSSIBLE_MISMATCH",
-      "detail": "calculators/chemical-calculator.html: H1 \"pool & hot tub chemical calculator\" not found in title \"pool chemical calculator (exact levels fast) | waterbalancetools\""
+      "detail": "calculators/chemical-calculator.html: H1 \"pool & hot tub chemical calculator\" not found in title \"pool chemical calculator (chlorine and ph) | waterbalancetools\""
     }
   ]
 }

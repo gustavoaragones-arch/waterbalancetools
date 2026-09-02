@@ -18,9 +18,18 @@ const AD_MID = '\n    <div class="ad ad-mid"><!-- AdSense --></div>';
 const AD_BOTTOM = '\n    <div class="ad ad-bottom"><!-- AdSense --></div>';
 const AD_RESULT = '\n    <div class="ad ad-result"><!-- AdSense --></div>';
 
-/** Strip our ad placeholders (idempotent re-run). */
+/**
+ * Strip our ad placeholders (idempotent re-run). Consumes any whitespace
+ * immediately preceding the placeholder too -- each AD_* constant supplies
+ * its own leading "\n    " separator on insertion, so without also
+ * consuming that same whitespace on removal, a strip+reinsert cycle leaves
+ * one dangling blank line behind every time this script runs, growing
+ * without bound across builds (root cause of part of the sitewide
+ * template/injector drift -- see
+ * docs/PHASE-8A-TEMPLATE-INJECTOR-REMEDIATION.md).
+ */
 function stripAds(html) {
-  return html.replace(/<div class="ad ad-[^"]*"[^>]*>\s*(?:<!--[\s\S]*?-->\s*)?<\/div>\s*/g, '');
+  return html.replace(/\s*<div class="ad ad-[^"]*"[^>]*>\s*(?:<!--[\s\S]*?-->\s*)?<\/div>\s*/g, '');
 }
 
 function ensureAdsenseLoader(html) {

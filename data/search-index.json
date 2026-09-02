@@ -11,13 +11,13 @@
   },
   {
     "url": "/calculators/chemical-calculator",
-    "title": "Pool Chemical Calculator (Exact Levels Fast)",
-    "description": "Calculate exact chlorine, pH, and alkalinity doses in seconds—enter gallons + test readings. Avoid over-treatment, cut guesswork, and keep water swim-ready.",
+    "title": "Pool Chemical Calculator (Chlorine and pH)",
+    "description": "Get a chlorine dose and pH adjustment guidance in seconds—enter gallons + test readings. Avoid over-treatment, cut guesswork, and keep water swim-ready.",
     "h1": "Pool & Hot Tub Chemical Calculator",
     "category": "Calculators",
     "readingTime": null,
     "updated": null,
-    "keywords": "pool chemical calculator exact levels fast hot tub"
+    "keywords": "pool chemical calculator chlorine and hot tub"
   },
   {
     "url": "/calculators/hot-tub-chlorine-calculator",
@@ -32,7 +32,7 @@
   {
     "url": "/calculators/hot-tub-ph-calculator",
     "title": "Hot Tub pH Calculator",
-    "description": "Hot tub pH calculator. Enter spa gallons and current pH to get pH increaser or reducer amount. Free and fast.",
+    "description": "Find out whether to raise or lower your hot tub's pH and by how much (small, moderate, or substantial adjustment)—plus safe, incremental dosing guidance.",
     "h1": "Hot Tub pH Calculator",
     "category": "Calculators",
     "readingTime": null,
@@ -41,13 +41,13 @@
   },
   {
     "url": "/calculators/hot-tub-shock-calculator",
-    "title": "Hot Tub Shock Calculator",
-    "description": "Hot tub shock calculator. Enter spa gallons and shock type to get shock dosage. Free and fast.",
+    "title": "Hot Tub Shock Calculator (By Product)",
+    "description": "Hot tub shock calculator. Enter spa gallons, target ppm, and shock product for a product-specific dose. Free and fast.",
     "h1": "Hot Tub Shock Calculator",
     "category": "Calculators",
     "readingTime": null,
     "updated": null,
-    "keywords": "hot tub shock calculator"
+    "keywords": "hot tub shock calculator product"
   },
   {
     "url": "/calculators/pool-alkalinity-calculator",
@@ -82,7 +82,7 @@
   {
     "url": "/calculators/pool-ph-calculator",
     "title": "Pool pH Calculator (Target 7.2–7.6)",
-    "description": "Turn pH + gallon readings into exact increaser or reducer ounces in 30 seconds. Fewer wild swings, safer water for skin, liner, and chlorine performance.",
+    "description": "Find out whether to raise or lower your pool's pH and by how much (small, moderate, or substantial adjustment)—plus safe, incremental dosing guidance.",
     "h1": "Pool pH Calculator",
     "category": "Calculators",
     "readingTime": null,
@@ -91,13 +91,13 @@
   },
   {
     "url": "/calculators/pool-shock-calculator",
-    "title": "Pool Shock Calculator (10–30 ppm Dose)",
-    "description": "Pool shock calculator: granular shock ounces from gallons + target ppm (10–30). For combined chlorine, pH, and alkalinity dosing, use the main Pool Chemical ...",
+    "title": "Pool Shock Calculator (Product-Specific Dose)",
+    "description": "Pool shock calculator: select your shock product (liquid, cal-hypo, dichlor, or trichlor) for a product-specific dose from gallons + target ppm (5–20). For c...",
     "h1": "Pool Shock Calculator",
     "category": "Calculators",
     "readingTime": null,
     "updated": null,
-    "keywords": "pool shock calculator ppm dose"
+    "keywords": "pool shock calculator product specific dose"
   },
   {
     "url": "/calculators/pool-turnover-rate-calculator",
@@ -856,7 +856,7 @@
     "h1": "Total Alkalinity Adjustment Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
-    "updated": "2026-06-01",
+    "updated": "2026-08-28",
     "keywords": "total alkalinity adjustment formula"
   },
   {
@@ -876,7 +876,7 @@
     "h1": "Liquid Chlorine Dose Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
-    "updated": "2026-06-01",
+    "updated": "2026-08-28",
     "keywords": "liquid chlorine dose formula"
   },
   {
@@ -886,17 +886,17 @@
     "h1": "Langelier Saturation Index (LSI) Formula",
     "category": "Formula Library",
     "readingTime": "4 min read",
-    "updated": "2026-06-01",
+    "updated": "2026-08-28",
     "keywords": "langelier saturation index lsi formula"
   },
   {
     "url": "/formulas/ph-adjustment-formula",
     "title": "pH Adjustment Formula",
-    "description": "Learn the pool pH adjustment formula. Calculate muriatic acid or soda ash dose with a worked example.",
+    "description": "Why pool pH adjustment can't be reduced to a simple ounces-per-gallon formula the way chlorine and alkalinity can, and what to do instead.",
     "h1": "pH Adjustment Formula",
     "category": "Formula Library",
-    "readingTime": "3 min read",
-    "updated": "2026-06-01",
+    "readingTime": "4 min read",
+    "updated": "2026-08-29",
     "keywords": "adjustment formula"
   },
   {
@@ -926,7 +926,7 @@
     "h1": "Pool Shock Formula",
     "category": "Formula Library",
     "readingTime": "3 min read",
-    "updated": "2026-06-01",
+    "updated": "2026-08-29",
     "keywords": "pool shock formula"
   },
   {

@@ -155,6 +155,16 @@ ${groups}
  * Extract the first HTML block matching openRe from html.
  * Uses depth-counting against closeTag to find the matching end tag.
  * Returns { block, rest } — rest has the block removed.
+ *
+ * `rest` also has any whitespace-only run immediately preceding the block
+ * removed (the block itself is unaffected -- only `rest`'s boundary moves).
+ * Without this, every pluck() left a one-line blank remnant behind in
+ * `mainContent` at the exact spot the block used to occupy; since
+ * `mainContent`'s final leftover is discarded but each *subsequent* ex()
+ * call keeps operating on that same string, the very next section
+ * extracted after this one would silently absorb that remnant as if it
+ * were its own trailing content -- one extra blank line, every single
+ * build, forever. See docs/PHASE-8A-TEMPLATE-INJECTOR-REMEDIATION.md.
  */
 function pluck(html, openRe, closeTag) {
   openRe.lastIndex = 0;
@@ -162,6 +172,10 @@ function pluck(html, openRe, closeTag) {
   if (!m) return { block: '', rest: html };
 
   const startIdx = m.index;
+  let removeFrom = startIdx;
+  while (removeFrom > 0 && /[ \t]/.test(html[removeFrom - 1])) removeFrom--;
+  while (removeFrom > 0 && html[removeFrom - 1] === '\n') removeFrom--;
+
   const closeStr = '</' + closeTag + '>';
   const openLow  = '<' + closeTag.toLowerCase();
 
@@ -182,15 +196,22 @@ function pluck(html, openRe, closeTag) {
   }
 
   const block = html.slice(startIdx, pos);
-  const rest  = html.slice(0, startIdx) + html.slice(pos);
+  const rest  = html.slice(0, removeFrom) + html.slice(pos);
   return { block, rest };
 }
 
-/** Pluck an inline element matched by a plain regex (no nesting). */
+/**
+ * Pluck an inline element matched by a plain regex (no nesting). Same
+ * leading-whitespace-in-`rest`-only cleanup as pluck() above, and for the
+ * same reason.
+ */
 function pluckInline(html, re) {
   const m = re.exec(html);
   if (!m) return { block: '', rest: html };
-  return { block: m[0], rest: html.slice(0, m.index) + html.slice(m.index + m[0].length) };
+  let removeFrom = m.index;
+  while (removeFrom > 0 && /[ \t]/.test(html[removeFrom - 1])) removeFrom--;
+  while (removeFrom > 0 && html[removeFrom - 1] === '\n') removeFrom--;
+  return { block: m[0], rest: html.slice(0, removeFrom) + html.slice(m.index + m[0].length) };
 }
 
 // ── Main restructure ──────────────────────────────────────────────────────────
@@ -247,6 +268,18 @@ function restructureFile(fileName) {
   ex('calcForm', /<form\s/i, 'form');
   // Output/results panel
   ex('outputPanel', /<div\s[^>]*id="(?:output-panel|result)"[^>]*>/i, 'div');
+  // Trust/formula/dataset panels (inject-trust-panels.js) and the external
+  // chemistry-sources citation block (phase-7e/inject-calculator-sources.js).
+  // Neither was previously in this whitelist, so every build silently
+  // discarded them here and relied on those two marker-guarded injectors
+  // -- which both run later in the pipeline -- to notice the marker was
+  // gone and recreate the block from scratch. Preserving them here means
+  // they survive unchanged when already correct, exactly like every other
+  // named section above.
+  ex('trustPanel',   /<!--\s*trust-panel:[^>]*-->\s*<aside\s[^>]*class="trust-panel[^"]*"[^>]*>/i,   'aside');
+  ex('formulaPanel', /<!--\s*formula-panel:[^>]*-->\s*<aside\s[^>]*class="formula-panel[^"]*"[^>]*>/i, 'aside');
+  ex('datasetPanel', /<!--\s*dataset-panel:[^>]*-->\s*<aside\s[^>]*class="dataset-panel[^"]*"[^>]*>/i, 'aside');
+  exInline('chemistrySources', /<!-- chemistry-sources:start -->[\s\S]*?<!-- chemistry-sources:end -->/i);
 
   // Inline elements
   exInline('updated', /<p\s+class="updated">[^<]*<\/p>/i);
@@ -301,6 +334,14 @@ function restructureFile(fileName) {
     B.adBottom,
     B.credibility,
     B.updated,
+    // Both injected via a plain "</main>" replace (inject-trust-panels.js,
+    // then phase-7e/inject-calculator-sources.js, in that pipeline order),
+    // so they land last, immediately before </main> -- preserved in the
+    // same relative order here.
+    B.trustPanel,
+    B.formulaPanel,
+    B.datasetPanel,
+    B.chemistrySources,
   ].filter(Boolean);
 
   const newMainContent = '\n    ' + parts.join('\n\n    ') + '\n\n  ';

@@ -28,7 +28,12 @@ function injectFreshnessBlock(filePath, title, items) {
   const markerEnd = '<!-- indexing-freshness:end -->';
   const list = items.map((i) => `<li><a href="${urlEngine.href(i.url)}">${i.url}</a></li>`).join('');
   const block = `${markerStart}<section class="indexing-freshness"><h2>${title}</h2><ul>${list}</ul></section>${markerEnd}`;
-  let next = html.replace(new RegExp(`${markerStart}[\\s\\S]*?${markerEnd}`, 'g'), '');
+  // Strip both the marked block AND the trailing "\n" the insertion below
+  // concatenates after markerEnd (outside the marker pair, so a strip that
+  // only removed markerStart..markerEnd would leave that "\n" behind every
+  // time, growing by one blank line per build -- see
+  // docs/PHASE-8A-TEMPLATE-INJECTOR-REMEDIATION.md).
+  let next = html.replace(new RegExp(`\\s*${markerStart}[\\s\\S]*?${markerEnd}\\s*`, 'g'), '\n');
   if (next.includes('</main>')) next = next.replace('</main>', `${block}\n</main>`);
   if (next !== html) fs.writeFileSync(filePath, next, 'utf8');
 }

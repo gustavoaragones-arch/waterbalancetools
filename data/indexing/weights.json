@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T03:03:23.760Z",
+  "generatedAt": "2026-09-02T13:15:10.578Z",
   "rationale": {
     "homepage": "Top-level discovery and authority distribution.",
     "calculators": "Primary transactional pages with highest SEO/business impact.",
@@ -18385,6 +18385,94 @@
     },
     {
       "from": "/calculators/chemical-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/chemical-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/chemical-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/chemical-calculator",
+      "to": "/reference/datasets/chemical-ranges",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/chemical-calculator",
+      "to": "/reference/datasets/dosage-matrices",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/chemical-calculator",
+      "to": "/reference/datasets/conversion-factors",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/chemical-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/chemical-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/chemical-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/chemical-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/chemical-calculator",
+      "to": "/revisions",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
+    },
+    {
+      "from": "/calculators/chemical-calculator",
       "to": "/calculators/pool-volume-calculator",
       "fromType": "calculator",
       "toType": "calculator",
@@ -18809,6 +18897,70 @@
     },
     {
       "from": "/calculators/hot-tub-chlorine-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-chlorine-calculator",
+      "to": "/reference/datasets/chemical-ranges",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-chlorine-calculator",
+      "to": "/reference/datasets/dosage-matrices",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-chlorine-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-chlorine-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-chlorine-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-chlorine-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-chlorine-calculator",
+      "to": "/revisions",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-chlorine-calculator",
       "to": "/calculators/pool-volume-calculator",
       "fromType": "calculator",
       "toType": "calculator",
@@ -19225,6 +19377,62 @@
     },
     {
       "from": "/calculators/hot-tub-ph-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-ph-calculator",
+      "to": "/reference/datasets/chemical-ranges",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-ph-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-ph-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-ph-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-ph-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-ph-calculator",
+      "to": "/revisions",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-ph-calculator",
       "to": "/calculators/pool-volume-calculator",
       "fromType": "calculator",
       "toType": "calculator",
@@ -19622,6 +19830,70 @@
       "toType": "guide",
       "weight": 30,
       "reason": "calculator to guide authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-shock-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-shock-calculator",
+      "to": "/reference/datasets/chemical-ranges",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-shock-calculator",
+      "to": "/reference/datasets/dosage-matrices",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-shock-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-shock-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-shock-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-shock-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/hot-tub-shock-calculator",
+      "to": "/revisions",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
     },
     {
       "from": "/calculators/hot-tub-shock-calculator",
@@ -20665,6 +20937,70 @@
     },
     {
       "from": "/calculators/pool-alkalinity-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-alkalinity-calculator",
+      "to": "/reference/datasets/chemical-ranges",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/pool-alkalinity-calculator",
+      "to": "/reference/datasets/dosage-matrices",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/pool-alkalinity-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-alkalinity-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-alkalinity-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-alkalinity-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-alkalinity-calculator",
+      "to": "/revisions",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
+    },
+    {
+      "from": "/calculators/pool-alkalinity-calculator",
       "to": "/calculators/pool-volume-calculator",
       "fromType": "calculator",
       "toType": "calculator",
@@ -21070,6 +21406,78 @@
       "toType": "guide",
       "weight": 30,
       "reason": "calculator to guide authority flow"
+    },
+    {
+      "from": "/calculators/pool-chlorine-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-chlorine-calculator",
+      "to": "/reference/datasets/chemical-ranges",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/pool-chlorine-calculator",
+      "to": "/reference/datasets/dosage-matrices",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/pool-chlorine-calculator",
+      "to": "/reference/datasets/conversion-factors",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/pool-chlorine-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-chlorine-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-chlorine-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-chlorine-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-chlorine-calculator",
+      "to": "/revisions",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
     },
     {
       "from": "/calculators/pool-chlorine-calculator",
@@ -21481,6 +21889,70 @@
     },
     {
       "from": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/reference/datasets/chemical-ranges",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/reference/datasets/dosage-matrices",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/revisions",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
+    },
+    {
+      "from": "/calculators/pool-cyanuric-acid-calculator",
       "to": "/calculators/pool-volume-calculator",
       "fromType": "calculator",
       "toType": "calculator",
@@ -21870,6 +22342,62 @@
       "toType": "guide",
       "weight": 30,
       "reason": "calculator to guide authority flow"
+    },
+    {
+      "from": "/calculators/pool-ph-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-ph-calculator",
+      "to": "/reference/datasets/chemical-ranges",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/pool-ph-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-ph-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-ph-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-ph-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-ph-calculator",
+      "to": "/revisions",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
     },
     {
       "from": "/calculators/pool-ph-calculator",
@@ -22305,6 +22833,70 @@
     },
     {
       "from": "/calculators/pool-shock-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-shock-calculator",
+      "to": "/reference/datasets/chemical-ranges",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/pool-shock-calculator",
+      "to": "/reference/datasets/dosage-matrices",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/pool-shock-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-shock-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-shock-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-shock-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-shock-calculator",
+      "to": "/revisions",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
+    },
+    {
+      "from": "/calculators/pool-shock-calculator",
       "to": "/calculators/pool-volume-calculator",
       "fromType": "calculator",
       "toType": "calculator",
@@ -22710,6 +23302,70 @@
       "toType": "guide",
       "weight": 30,
       "reason": "calculator to guide authority flow"
+    },
+    {
+      "from": "/calculators/pool-turnover-rate-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-turnover-rate-calculator",
+      "to": "/reference/datasets/units",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/pool-turnover-rate-calculator",
+      "to": "/reference/datasets/conversion-factors",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/pool-turnover-rate-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-turnover-rate-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-turnover-rate-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-turnover-rate-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-turnover-rate-calculator",
+      "to": "/revisions",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
     },
     {
       "from": "/calculators/pool-turnover-rate-calculator",
@@ -23129,6 +23785,70 @@
     },
     {
       "from": "/calculators/pool-volume-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-volume-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-volume-calculator",
+      "to": "/reference/datasets/conversion-factors",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/pool-volume-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-volume-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-volume-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-volume-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/pool-volume-calculator",
+      "to": "/revisions",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
+    },
+    {
+      "from": "/calculators/pool-volume-calculator",
       "to": "/calculators/pool-volume-calculator",
       "fromType": "calculator",
       "toType": "calculator",
@@ -23537,6 +24257,70 @@
     },
     {
       "from": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/reference/datasets/chemical-ranges",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/reference/datasets/dosage-matrices",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/revisions",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
+    },
+    {
+      "from": "/calculators/saltwater-pool-salt-calculator",
       "to": "/calculators/pool-volume-calculator",
       "fromType": "calculator",
       "toType": "calculator",
@@ -23942,6 +24726,62 @@
       "toType": "guide",
       "weight": 30,
       "reason": "calculator to guide authority flow"
+    },
+    {
+      "from": "/calculators/spa-volume-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/spa-volume-calculator",
+      "to": "/reference/datasets/conversion-factors",
+      "fromType": "calculator",
+      "toType": "reference",
+      "weight": 60,
+      "reason": "calculator to reference authority flow"
+    },
+    {
+      "from": "/calculators/spa-volume-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/spa-volume-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/spa-volume-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/spa-volume-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "calculator",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "calculator to documentation authority flow"
+    },
+    {
+      "from": "/calculators/spa-volume-calculator",
+      "to": "/revisions",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
     },
     {
       "from": "/calculators/spa-volume-calculator",
@@ -84198,6 +85038,14 @@
       "toType": "guide",
       "weight": 30,
       "reason": "guide to guide authority flow"
+    },
+    {
+      "from": "/guides/chlorine/free-chlorine-vs-total-chlorine",
+      "to": "/formulas/shock-formula",
+      "fromType": "guide",
+      "toType": "formula",
+      "weight": 30,
+      "reason": "guide to formula authority flow"
     },
     {
       "from": "/guides/chlorine/free-chlorine-vs-total-chlorine",
