@@ -51,7 +51,7 @@ module.exports = [
       'Using flocculant without planning to vacuum to waste — flocculant sinks particles to the bottom where they will cloud up again if disturbed.'
     ],
     relatedCalculators: ['/calculators/pool-chlorine-calculator', '/calculators/pool-shock-calculator'],
-    relatedResources: ['/resources/pool-maintenance-checklist'],
+    relatedResources: ['/resources/pool-maintenance-checklist', '/maintenance/how-to-fix-cloudy-hot-tub'],
     relatedTopics: ['academy/troubleshooting/green-water', 'academy/sanitizers/shock-treatments-explained', 'academy/water-balance/understanding-ph'],
     relatedFormulas: ['formulas/shock-formula'],
     relatedGlossary: ['glossary/turbidity', 'glossary/clarifier', 'glossary/flocculant', 'glossary/free-chlorine'],

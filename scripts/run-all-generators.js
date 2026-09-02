@@ -76,6 +76,18 @@ require(path.join(__dirname, 'generate-redirects.js'));
 // ── Step 2: Resources ─────────────────────────────────────────────────────────
 require(path.join(__dirname, 'generate-resource-pages.js'));
 
+// ── Phase 7Z: source/data consistency gate ────────────────────────────────────
+// Validates that data/{academy,formulas,glossary,reference}.json agree with
+// their authoritative scripts/data/*.js sources BEFORE the generators below
+// render HTML from them. This does NOT regenerate the JSON (populate-data.js
+// is intentionally not part of this pipeline -- see its own header comment
+// and reports/phase-7y/POPULATE-DATA-AUDIT.md); it only fails the build if
+// they have drifted apart, so a stray hand-edit to the JSON (or a source
+// edit that was never propagated via `node scripts/populate-data.js`) is
+// caught here instead of silently reaching production.
+console.log('Running validate-source-data-consistency.js...');
+execSync('node scripts/validate-source-data-consistency.js', { cwd: root, stdio: 'inherit' });
+
 // ── Steps 3–6: Knowledge platform content generators ─────────────────────────
 require(path.join(__dirname, 'generate-academy.js'));
 require(path.join(__dirname, 'generate-formulas.js'));

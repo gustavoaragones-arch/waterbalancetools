@@ -1,5 +1,5 @@
 'use strict';
-// Academy – Water Chemistry Fundamentals (6 articles)
+// Academy – Water Chemistry Fundamentals (8 articles)
 
 const src = 'Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022';
 const src2 = 'Taylor Technologies — Pool/Spa Water Chemistry Reference';
@@ -319,5 +319,132 @@ module.exports = [
     relatedFormulas: [],
     relatedGlossary: ['glossary/free-chlorine', 'glossary/combined-chlorine', 'glossary/chlorine-demand'],
     sources: [src, src3]
+  },
+  {
+    id: 'fund-07',
+    slug: 'academy/fundamentals/new-pool-startup-chemistry',
+    title: 'New Pool Startup Chemistry (Fresh Fill & New Plaster)',
+    description: 'The staged, day-by-day water chemistry sequence for filling a brand-new pool or a freshly plastered pool, from the National Plasterers Council\'s 28-day start-up procedure.',
+    summary: 'A newly filled or freshly plastered pool needs a different chemistry sequence than reopening an existing pool for the season. This guide follows the staged, day-by-day start-up procedure published by the National Plasterers Council (NPC) via the Pool & Hot Tub Alliance (PHTA).',
+    category: 'fundamentals',
+    readingTime: '7 min read',
+    lastReviewed: '2026-08-28',
+    keywords: [
+      'new pool startup chemistry',
+      'fresh fill pool chemistry',
+      'new plaster pool chemistry',
+      'pool start-up procedure'
+    ],
+    overview: 'Filling a pool for the first time, or refilling one after fresh plaster, marble, quartz, pebble, or glassbead resurfacing, calls for a different water-chemistry sequence than reopening an already-cured pool each season. Fresh plaster is vulnerable during its first weeks: chemicals added in the wrong order or too early can etch or discolor the surface. This guide follows the 28-day fresh-fill start-up procedure published by the National Plasterers Council (NPC) via the Pool & Hot Tub Alliance (PHTA), which is distinct from the seasonal reopening checklist used for a pool that has already cured.',
+    keyFacts: [
+      'Do not add chlorine for the first 48 hours after filling; sanitizer is introduced gradually starting Day 3, once alkalinity and pH are balanced.',
+      'Total alkalinity is balanced first (80-100 ppm), then pH (7.2-7.6), then calcium hardness in stages — never add calcium hardness increaser and alkalinity increaser at the same time.',
+      'Cyanuric acid is not introduced until Day 4 at the earliest, added slowly through the skimmer over a minimum of 3 days.',
+      'Brush the entire pool surface at least twice daily until all plaster dust is removed — undissolved dust can settle and etch the new finish.'
+    ],
+    sections: [
+      {
+        id: 'why-different-from-reopening',
+        h2: 'Why This Is Different From Reopening a Pool',
+        body: 'Reopening an existing pool for the season means restoring balance to water that has already cured against the pool\'s surface for years. A fresh fill or a newly plastered pool is different: the plaster itself is still curing and chemically reactive for its first 28 days, and the fill water has not yet been tested or balanced at all. Adding chlorine or shock immediately, or adjusting chemistry out of the recommended order, is a common cause of etched, mottled, or discolored new plaster. The sequence below (alkalinity, then pH, then calcium hardness, then chlorine, then cyanuric acid) exists specifically to protect a curing surface, not just to reach target ranges quickly.'
+      },
+      {
+        id: 'day-1-3',
+        h2: 'Days 1-3: Alkalinity, pH, and the First Chlorine',
+        body: 'Before filling, test the fill water itself for pH, total alkalinity, calcium hardness, and metals. On Day 1, adjust total alkalinity to 80-100 ppm, then pH to 7.2-7.6. Begin raising calcium hardness in small increments (roughly 10-pound doses of calcium chloride, several hours apart, never at the same time as an alkalinity adjustment) toward 80-100 ppm on Day 1 and 100-150 ppm on Day 2. Run the pump and filter continuously for at least the first 72 hours to clear plaster dust. Do not add chlorine for the first 48 hours. On Day 3, once alkalinity, pH, and calcium hardness are on track, add chlorine gradually to bring free chlorine to 1.5-3 ppm.'
+      },
+      {
+        id: 'day-4-28',
+        h2: 'Days 4-28: Calcium Hardness, Cyanuric Acid, and Ongoing Care',
+        body: 'By Day 4, calcium hardness should be at least 200 ppm. This is also the earliest point to begin adding cyanuric acid, brought to 30-50 ppm slowly through the skimmer (with the skimmer and pump baskets removed) over a minimum of 3 days — concentrated CYA added too quickly can discolor pigmented plaster finishes. Continue brushing the entire surface at least twice daily and testing frequently through Day 7, tapering to about once a week once plaster dust is fully removed and a normal cleaning routine is in place. Keep records of every test and chemical addition. For saltwater pools, do not add salt within the first 30 days; for any pool, do not run the heater until the plaster manufacturer\'s recommended waiting period has passed (commonly 2-4 weeks), and do not shock the pool during this 28-day window.'
+      }
+    ],
+    examples: [
+      {
+        title: 'A Typical Fresh-Fill Sequence',
+        body: 'A newly plastered 18,000-gallon pool is filled with municipal water. Day 1 testing shows total alkalinity at 140 ppm (high) and pH at 7.9; muriatic acid is pre-diluted in a bucket and added to bring alkalinity to about 95 ppm, then pH to 7.4. Calcium hardness starts at 40 ppm, so calcium chloride is added in 10-pound doses over Day 1 and Day 2, reaching 120 ppm. The pump runs continuously and the surface is brushed twice daily. On Day 3, with alkalinity and pH holding, chlorine is added gradually to reach 2 ppm free chlorine. By Day 4, calcium hardness has reached 210 ppm, and CYA is introduced through the skimmer over the next 3 days to reach about 40 ppm. No shock, salt, or heater use occurs during this period.'
+      }
+    ],
+    commonMistakes: [
+      'Adding chlorine or shock immediately after filling instead of waiting the required 48 hours — this is one of the most common causes of new-plaster etching.',
+      'Adding calcium hardness increaser and alkalinity increaser at the same time instead of spacing them out.',
+      'Skipping or reducing brushing frequency once the water looks clear, even though plaster dust is still settling.',
+      'Treating this sequence as interchangeable with the seasonal opening-pool checklist — a newly plastered surface is still curing and needs the staged order above, not a quick balance-and-swim routine.'
+    ],
+    relatedCalculators: [
+      '/calculators/pool-ph-calculator',
+      '/calculators/pool-alkalinity-calculator',
+      '/calculators/pool-chlorine-calculator'
+    ],
+    relatedCharts: ['/pool-chemical-levels-chart'],
+    relatedResources: ['/resources/water-test-log'],
+    relatedTopics: [
+      'academy/fundamentals/how-water-balance-works',
+      'academy/fundamentals/understanding-pool-water-chemistry',
+      'academy/water-balance/understanding-calcium-hardness',
+      'guides/seasonal/opening-pool-chemistry-checklist'
+    ],
+    relatedFormulas: ['formulas/alkalinity-formula', 'formulas/ph-adjustment-formula'],
+    relatedGlossary: ['glossary/total-alkalinity', 'glossary/calcium-hardness', 'glossary/cyanuric-acid', 'glossary/ph'],
+    sources: [
+      'Pool & Hot Tub Alliance (PHTA), Recreational Water Quality Committee — Fresh Fill Water Start-Up for Plastered Pools, March 2021 (procedure developed by the National Plasterers Council)'
+    ]
+  },
+  {
+    id: 'fund-08',
+    slug: 'academy/fundamentals/indoor-pool-chemistry',
+    title: 'Indoor Pool Chemistry',
+    description: 'Why indoor pools need different chemistry management than outdoor pools: no CYA, more aggressive chloramine control, and ventilation-driven pH drift.',
+    summary: 'Indoor pools face a chemistry problem outdoor pools don\'t: without sunlight to break down chlorine, stabilizer becomes unnecessary and even counterproductive, while chloramine vapor and rising pH become the dominant issues instead.',
+    category: 'fundamentals',
+    readingTime: '6 min read',
+    lastReviewed: '2026-08-22',
+    keywords: ['indoor pool chemistry', 'indoor pool chlorine', 'indoor pool ventilation', 'indoor pool CYA'],
+    overview: 'Indoor pools run on the same underlying chemistry as outdoor pools, but two outdoor variables disappear indoors: sunlight and open-air ventilation. Removing UV exposure changes how chlorine should be managed; removing natural air exchange changes how chloramines and pH behave. An indoor pool that is dosed and tested like an outdoor pool will typically end up with chlorine that lingers too long relative to demand, and air quality complaints that a pool-side chlorine test alone won\'t explain.',
+    keyFacts: [
+      'Cyanuric acid protects chlorine from UV degradation -- indoors, there is no UV to protect against, so CYA provides no benefit and only suppresses chlorine\'s effective strength.',
+      'Chloramines (combined chlorine) accumulate more noticeably indoors because there is far less air movement to carry the vapor away.',
+      'pH tends to drift upward indoors as dissolved CO2 escapes into the enclosed air faster than it\'s replenished, an effect that is muted outdoors by constant air exchange.',
+      'Continuous, dedicated ventilation of the pool enclosure is the primary tool for indoor air quality -- it is an equipment/HVAC issue as much as a water-chemistry one.'
+    ],
+    sections: [
+      {
+        id: 'why-no-cya-indoors',
+        h2: 'Why Cyanuric Acid Doesn\'t Belong Indoors',
+        body: 'Cyanuric acid (CYA) exists to solve one specific problem: sunlight destroys unprotected chlorine within a couple of hours. Indoors, that problem doesn\'t exist -- chlorine loss is driven by bather demand and chloramine formation, not UV. Adding CYA to an indoor pool doesn\'t protect anything; it simply buffers hypochlorous acid the same way it does outdoors, making the same free-chlorine reading less effective at killing pathogens. Because indoor pools have no reason to carry stabilizer, an indoor pool with measurable CYA usually means fill water, a shared filtration system with an outdoor body of water, or dichlor/trichlor products (which both add CYA as a byproduct) being used out of habit rather than need. Liquid chlorine or cal-hypo -- neither of which adds CYA -- are the more appropriate sanitizer choice for a CYA-free indoor pool.'
+      },
+      {
+        id: 'chloramines-indoors',
+        h2: 'Chloramines Build Up Faster Without Airflow',
+        body: 'Combined chlorine (chloramines) forms whenever free chlorine reacts with bather waste -- sweat, urine, and personal care products -- and it is a weak disinfectant that off-gasses as an irritant vapor. Outdoors, that vapor disperses into open air. Indoors, in an enclosed volume with limited air exchange, the same chloramine production concentrates near the water surface, which is why indoor pool complaints (eye and throat irritation, a strong \'chlorine smell\' that is actually a sign of too little effective sanitizer, not too much) are more common than outdoor ones even at similar combined-chlorine readings. The fix on the water-chemistry side is the same as anywhere: breakpoint-chlorinate to destroy chloramines rather than trying to mask the smell with more routine dosing. See the combined chlorine guide for the underlying mechanism.'
+      },
+      {
+        id: 'ph-co2-indoors',
+        h2: 'pH Drift and CO2 Off-Gassing',
+        body: 'Pool water holds dissolved carbon dioxide, and as CO2 escapes to the air, pH rises. Outdoors, wind and open sky keep this exchange roughly in equilibrium. Indoors, if the air handling system isn\'t purpose-built for a pool enclosure, CO2 can escape the water faster than it\'s replenished, and indoor pools commonly see pH creep upward between tests even with no chemical added. This is a mechanical/HVAC interaction, not a dosing error, so the practical response is more frequent pH testing and smaller, more frequent acid corrections rather than one large correction sized for an outdoor pool\'s typical drift rate.'
+      },
+      {
+        id: 'ventilation-is-not-optional',
+        h2: 'Ventilation Is Part of the Chemistry Program',
+        body: 'For an indoor pool, air handling is not a comfort feature layered on top of water chemistry -- it is one of the controls that determines what the water chemistry needs to do. Continuous fresh-air exchange over the pool surface removes chloramine vapor before it concentrates, moderates the CO2/pH dynamic described above, and protects the building structure from the moisture and corrosive vapor a poorly ventilated pool enclosure produces. A facility with strong ventilation can run closer to standard target ranges; one without it will fight both chloramine buildup and pH drift regardless of how carefully the water itself is dosed.'
+      }
+    ],
+    commonMistakes: [
+      'Using dichlor or trichlor tablets indoors out of habit, silently building up CYA that serves no purpose in a UV-free environment.',
+      'Treating a strong chlorine smell as a sign to add more chlorine, when it usually signals chloramines and calls for breakpoint chlorination instead.',
+      'Testing pH on the same schedule as an outdoor pool, missing the faster CO2-driven drift that indoor enclosures can produce.',
+      'Attributing air-quality complaints entirely to water chemistry when inadequate ventilation is the primary driver.'
+    ],
+    relatedCalculators: ['/calculators/pool-chlorine-calculator', '/calculators/pool-ph-calculator'],
+    relatedCharts: ['/pool-chemical-levels-chart'],
+    relatedResources: ['/resources/water-test-log'],
+    relatedTopics: [
+      'academy/sanitizers/combined-chlorine-explained',
+      'academy/water-balance/understanding-cyanuric-acid',
+      'academy/water-balance/understanding-ph',
+      'academy/fundamentals/how-temperature-changes-water-chemistry'
+    ],
+    relatedFormulas: ['formulas/liquid-chlorine-formula', 'formulas/ph-adjustment-formula'],
+    relatedGlossary: ['glossary/cyanuric-acid', 'glossary/combined-chlorine', 'glossary/ph']
   }
 ];

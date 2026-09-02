@@ -160,7 +160,7 @@ module.exports = [
     relatedTopics: ['academy/sanitizers/combined-chlorine-explained', 'academy/sanitizers/shock-treatments-explained', 'academy/sanitizers/understanding-free-chlorine'],
     relatedFormulas: ['formulas/shock-formula'],
     relatedGlossary: ['glossary/breakpoint-chlorination', 'glossary/combined-chlorine', 'glossary/superchlorination', 'glossary/calcium-hypochlorite'],
-    sources: [src, src2]
+    sources: [src, src2, 'Indiana Department of Health, Environmental Public Health Division — How To Shock The Pool (Chlorinate To Breakpoint), 2022']
   },
   {
     id: 'san-04',
