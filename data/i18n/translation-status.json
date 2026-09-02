@@ -1,0 +1,70 @@
+{
+  "_comment": "Phase 8D translation-completeness model (docs/PHASE-8D-MULTILINGUAL-ARCHITECTURE.md, spec Section 24). This is a STATUS tracker, not a content store -- it never holds translated text. It is deliberately seeded with only the 8 representative content-type fixtures required by spec Section 31 (proving the architecture can distinguish English identity from Spanish identity), NOT with every English page on the site. Populating the remaining ~500 English content units is explicit future-phase work (Spanish rollout), not part of Phase 8D. Every 'es' entry below is 'missing' by design -- Phase 8D creates zero Spanish content, and js/i18n/hreflang.js refuses to emit an alternate for anything not 'translated', so this file cannot cause a false hreflang relationship no matter how it is consumed.",
+  "_generated": "2026-09-02",
+  "units": [
+    {
+      "contentId": "calculator:pool-volume",
+      "category": "calculator",
+      "languages": {
+        "en": { "status": "translated", "url": "/calculators/pool-volume-calculator" },
+        "es": { "status": "missing", "url": "/es/calculators/pool-volume-calculator" }
+      }
+    },
+    {
+      "contentId": "academy:fund-01",
+      "category": "academy",
+      "languages": {
+        "en": { "status": "translated", "url": "/academy/fundamentals/understanding-pool-water-chemistry" },
+        "es": { "status": "missing", "url": "/es/academy/fundamentals/understanding-pool-water-chemistry" }
+      }
+    },
+    {
+      "contentId": "glossary:free-chlorine",
+      "category": "glossary",
+      "languages": {
+        "en": { "status": "translated", "url": "/glossary/free-chlorine" },
+        "es": { "status": "missing", "url": "/es/glossary/free-chlorine" }
+      }
+    },
+    {
+      "contentId": "formula:pool-volume",
+      "category": "formula",
+      "languages": {
+        "en": { "status": "translated", "url": "/formulas/pool-volume-formula" },
+        "es": { "status": "missing", "url": "/es/formulas/pool-volume-formula" }
+      }
+    },
+    {
+      "contentId": "reference:ideal-pool-levels",
+      "category": "reference",
+      "languages": {
+        "en": { "status": "translated", "url": "/reference/ideal-pool-levels" },
+        "es": { "status": "missing", "url": "/es/reference/ideal-pool-levels" }
+      }
+    },
+    {
+      "contentId": "guide:ph-can-you-swim-in-high-ph-water",
+      "category": "guide",
+      "languages": {
+        "en": { "status": "translated", "url": "/guides/ph/can-you-swim-in-high-ph-water" },
+        "es": { "status": "missing", "url": "/es/guides/ph/can-you-swim-in-high-ph-water" }
+      }
+    },
+    {
+      "contentId": "entity:algae",
+      "category": "entity",
+      "languages": {
+        "en": { "status": "translated", "url": "/entities/algae" },
+        "es": { "status": "missing", "url": "/es/entities/algae" }
+      }
+    },
+    {
+      "contentId": "programmatic:chlorine-10000-gallon",
+      "category": "programmatic",
+      "languages": {
+        "en": { "status": "translated", "url": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool" },
+        "es": { "status": "missing", "url": "/es/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool" }
+      }
+    }
+  ]
+}
