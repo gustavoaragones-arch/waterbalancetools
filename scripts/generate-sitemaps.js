@@ -76,7 +76,11 @@ function toCleanPath(rel) {
 }
 
 function getCategory(cleanPath) {
-  const first = cleanPath.split('/')[0];
+  // Phase 8E: strip a leading language segment (e.g. "es/") before
+  // categorizing, so a localized page gets the same priority/changefreq
+  // as its English equivalent rather than falling through to "other".
+  const { rest } = urlPolicy.stripLanguageSegment(cleanPath);
+  const first = rest.split('/')[0];
   const map = {
     calculators: 'calculators', guides: 'guides', charts: 'charts',
     resources: 'resources', academy: 'academy', formulas: 'formulas',

@@ -18,6 +18,7 @@
 const fs = require('fs');
 const path = require('path');
 const urlEngine = require('../js/url/url-engine');
+const { getNonDefaultLanguages } = require('../js/i18n/languages');
 
 const ROOT = path.join(__dirname, '..');
 
@@ -80,8 +81,48 @@ function normalize(relPath) {
   return relPath.replace(/\\/g, '/').replace(/^\.\//, '');
 }
 
+/**
+ * stripLanguageSegment(relPath) -- Phase 8E: removes a leading language
+ * path segment (e.g. "es/") if present, using js/i18n/languages.js as the
+ * single source of truth for which prefixes are recognized (never a
+ * second, competing language list). Returns { lang, rest }. For any path
+ * without a recognized language prefix (all pre-Phase-8E English paths),
+ * `lang` is null and `rest` equals the input unchanged -- this function
+ * is purely additive and does not alter classification for any existing
+ * English path.
+ */
+function stripLanguageSegment(relPath) {
+  const clean = normalize(relPath);
+  const parts = clean.split('/');
+  if (parts.length > 1) {
+    for (const lang of getNonDefaultLanguages()) {
+      const seg = lang.pathPrefix.replace(/^\//, '');
+      if (parts[0] === seg) {
+        return { lang: lang.code, rest: parts.slice(1).join('/') };
+      }
+    }
+  }
+  return { lang: null, rest: clean };
+}
+
 function topDir(relPath) {
   const parts = normalize(relPath).split('/');
+  return parts.length > 1 ? parts[0] : null;
+}
+
+/**
+ * contentTopDir(relPath) -- like topDir(), but resolves the category
+ * directory AFTER stripping any leading language segment, so
+ * "es/calculators/x.html" classifies as "calculators", not "es". Used
+ * internally by isNonPage/isInternalTooling/isProductionPage so a
+ * translated page is classified exactly like its English equivalent.
+ * topDir() itself is left unchanged for its one other caller
+ * (scripts/phase-7p/build-content-inventory.js) and for backward
+ * compatibility.
+ */
+function contentTopDir(relPath) {
+  const { rest } = stripLanguageSegment(relPath);
+  const parts = rest.split('/');
   return parts.length > 1 ? parts[0] : null;
 }
 
@@ -102,13 +143,13 @@ function isLegacyUrl(relPath) {
 }
 
 function isNonPage(relPath) {
-  const dir = topDir(relPath);
+  const dir = contentTopDir(relPath);
   if (dir && NON_PAGE_DIRS.has(dir)) return true;
   return false;
 }
 
 function isInternalTooling(relPath) {
-  const dir = topDir(relPath);
+  const dir = contentTopDir(relPath);
   return !!(dir && INTERNAL_TOOLING_DIRS.has(dir));
 }
 
@@ -122,11 +163,16 @@ function isProductionPage(relPath) {
   if (isNonPage(clean)) return false;
   if (isRedirectSource(clean)) return false;
 
-  const dir = topDir(clean);
+  const { lang, rest } = stripLanguageSegment(clean);
+  const dir = contentTopDir(clean);
   if (dir === null) {
-    // root-level file
-    if (ROOT_UTILITY_FILES.has(clean)) return false;
-    return ROOT_PRODUCTION_FILES.has(clean);
+    // Root-level file, possibly under a language prefix (e.g. es/index.html).
+    // Phase 8E does not authorize any language-root-level page yet -- fail
+    // closed for those rather than silently matching an English-only
+    // ROOT_PRODUCTION_FILES entry by bare filename.
+    if (lang) return false;
+    if (ROOT_UTILITY_FILES.has(rest)) return false;
+    return ROOT_PRODUCTION_FILES.has(rest);
   }
   if (INTERNAL_TOOLING_DIRS.has(dir)) return false;
   if (PRODUCTION_CONTENT_DIRS.has(dir)) return true;
@@ -214,5 +260,7 @@ module.exports = {
   canonicalOf,
   expectedCanonicalFor,
   topDir,
+  contentTopDir,
+  stripLanguageSegment,
   normalize,
 };

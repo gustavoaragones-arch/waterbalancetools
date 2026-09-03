@@ -21,6 +21,15 @@ const urlPolicy = require('./url-policy');
 const SKIP_DIRS = new Set([
   'node_modules', '.git', 'assets', 'js', 'functions',
   'data', 'lib', 'scripts', 'partials', 'templates',
+  // Phase 8E: the Spanish production cluster (es/) is deliberately not
+  // wired into data/navigation.json yet -- this file feeds breadcrumbs,
+  // search, and related-content generation, none of which are
+  // language-aware in this phase, so an indexed /es/ page risks a stray
+  // English-labeled related-content link pointing at Spanish content (or
+  // vice versa). Each Spanish page authors its own breadcrumb directly
+  // (see scripts/generate-spanish-cluster.js) and needs no entry here.
+  // See docs/PHASE-8E-SPANISH-ROLLOUT.md, known limitations.
+  'es',
 ]);
 
 // ── HTML metadata extractor ───────────────────────────────────────────────────

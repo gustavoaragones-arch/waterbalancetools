@@ -259,6 +259,42 @@ execSync('node scripts/generate-version-badges.js', { cwd: root, stdio: 'inherit
 console.log('Running validate-versioning.js...');
 execSync('node scripts/validate-versioning.js', { cwd: root, stdio: 'inherit' });
 
+// ── Phase 8E: Spanish production cluster (first-language rollout) ────────────
+// Reads the now-fully-finalized English calculator pages above (trust
+// panels, chemistry-sources block, footer, version badge -- every
+// upstream injector has now run) as its structural/functional source, and
+// writes the translated es/calculators/ cluster. Positioned this late
+// deliberately: the translation data in
+// scripts/data/i18n-es/cluster-translations.js targets the FINAL injected
+// text (e.g. the footer's "Platform version: ..." badge, only written by
+// generate-version-badges.js just above), so running any earlier throws
+// (the generator asserts every expected English string is actually
+// present -- see generate-spanish-cluster.js). inject-i18n-cluster.js then
+// adds reciprocal hreflang + a language-switcher link to both the English
+// and Spanish files, data-driven from data/i18n/translation-status.json.
+//
+// Because this runs after the Step 16 sitemap generation and Phase 7C
+// indexation gate above, both are re-run here (execSync -- a genuinely
+// separate process, since require()-ing the same script path twice in one
+// process is a silent no-op, per the identical Phase 8B finding for
+// generate-navigation.js) so the new /es/ pages are correctly included in
+// THIS build's sitemap and validated for indexation, not deferred to a
+// second build. The earlier calls above are left in place unchanged --
+// they still serve the English-only site correctly on their own.
+//
+// The Spanish cluster is NOT added to data/navigation.json / the search
+// index / hub navigation in this phase -- see
+// docs/PHASE-8E-SPANISH-ROLLOUT.md (known limitations). Only the sitemap
+// and hreflang/canonical relationships are wired end-to-end.
+require(path.join(__dirname, 'generate-spanish-cluster.js'));
+require(path.join(__dirname, 'inject-i18n-cluster.js'));
+
+console.log('Running generate-sitemaps.js (post-i18n refresh)...');
+execSync('node scripts/generate-sitemaps.js', { cwd: root, stdio: 'inherit' });
+
+console.log('Running validate-url-indexation.js (post-i18n refresh)...');
+execSync('node scripts/validate-url-indexation.js', { cwd: root, stdio: 'inherit' });
+
 // Legacy flat tools index (kept for backward compat)
 console.log('Running generate-tools-index.js...');
 execSync('node scripts/generate-tools-index.js', { cwd: root, stdio: 'inherit' });

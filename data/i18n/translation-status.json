@@ -1,13 +1,45 @@
 {
-  "_comment": "Phase 8D translation-completeness model (docs/PHASE-8D-MULTILINGUAL-ARCHITECTURE.md, spec Section 24). This is a STATUS tracker, not a content store -- it never holds translated text. It is deliberately seeded with only the 8 representative content-type fixtures required by spec Section 31 (proving the architecture can distinguish English identity from Spanish identity), NOT with every English page on the site. Populating the remaining ~500 English content units is explicit future-phase work (Spanish rollout), not part of Phase 8D. Every 'es' entry below is 'missing' by design -- Phase 8D creates zero Spanish content, and js/i18n/hreflang.js refuses to emit an alternate for anything not 'translated', so this file cannot cause a false hreflang relationship no matter how it is consumed.",
+  "_comment": "Phase 8D established this translation-completeness model (docs/PHASE-8D-MULTILINGUAL-ARCHITECTURE.md, spec Section 24) with 8 representative fixtures, all 'missing' in es. Phase 8E (docs/PHASE-8E-SPANISH-ROLLOUT.md) activated the first real Spanish production cluster: the 5 pool calculator units below moved from 'missing' to 'translated' only after their Spanish pages were generated, validated (schema-valid, non-broken links, self-referential canonical, correct html lang), and confirmed reproducible via scripts/generate-spanish-cluster.js. The remaining fixtures (academy/glossary/formula/reference/guide/entity/programmatic) are still 'missing' -- Phase 8E did not touch them, per its explicit single-cluster scope. This is a STATUS tracker, not a content store -- it never holds translated text.",
   "_generated": "2026-09-02",
   "units": [
+    {
+      "contentId": "calculator:chemical",
+      "category": "calculator",
+      "languages": {
+        "en": { "status": "translated", "url": "/calculators/chemical-calculator" },
+        "es": { "status": "translated", "url": "/es/calculators/chemical-calculator" }
+      }
+    },
     {
       "contentId": "calculator:pool-volume",
       "category": "calculator",
       "languages": {
         "en": { "status": "translated", "url": "/calculators/pool-volume-calculator" },
-        "es": { "status": "missing", "url": "/es/calculators/pool-volume-calculator" }
+        "es": { "status": "translated", "url": "/es/calculators/pool-volume-calculator" }
+      }
+    },
+    {
+      "contentId": "calculator:pool-chlorine",
+      "category": "calculator",
+      "languages": {
+        "en": { "status": "translated", "url": "/calculators/pool-chlorine-calculator" },
+        "es": { "status": "translated", "url": "/es/calculators/pool-chlorine-calculator" }
+      }
+    },
+    {
+      "contentId": "calculator:pool-ph",
+      "category": "calculator",
+      "languages": {
+        "en": { "status": "translated", "url": "/calculators/pool-ph-calculator" },
+        "es": { "status": "translated", "url": "/es/calculators/pool-ph-calculator" }
+      }
+    },
+    {
+      "contentId": "calculator:pool-shock",
+      "category": "calculator",
+      "languages": {
+        "en": { "status": "translated", "url": "/calculators/pool-shock-calculator" },
+        "es": { "status": "translated", "url": "/es/calculators/pool-shock-calculator" }
       }
     },
     {
