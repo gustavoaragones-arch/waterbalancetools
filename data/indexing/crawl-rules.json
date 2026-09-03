@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T13:15:10.242Z",
+  "generatedAt": "2026-09-03T01:45:23.441Z",
   "rulesVersion": "1.0",
   "rules": [
     {
@@ -113,6 +113,78 @@
       "hub": "/calculators/spa-volume-calculator",
       "indexable": true,
       "reason": "Assigned from URL taxonomy (calculator)."
+    },
+    {
+      "url": "/es/calculators/chemical-calculator",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/calculators",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/calculators/hot-tub-chlorine-calculator",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/calculators",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/calculators/hot-tub-ph-calculator",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/calculators",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/calculators/hot-tub-shock-calculator",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/calculators",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/calculators/pool-chlorine-calculator",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/calculators",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/calculators/pool-ph-calculator",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/calculators",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/calculators/pool-shock-calculator",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/calculators",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/calculators/pool-volume-calculator",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/calculators",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/calculators/spa-volume-calculator",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/calculators",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
     },
     {
       "url": "/charts",

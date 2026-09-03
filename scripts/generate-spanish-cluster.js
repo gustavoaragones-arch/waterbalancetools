@@ -38,10 +38,15 @@ const CLUSTER_FILES = [
   'pool-chlorine-calculator.html',
   'pool-ph-calculator.html',
   'pool-shock-calculator.html',
+  // Phase 8G: hot-tub/spa cluster.
+  'hot-tub-chlorine-calculator.html',
+  'hot-tub-ph-calculator.html',
+  'hot-tub-shock-calculator.html',
+  'spa-volume-calculator.html',
 ];
 const CLUSTER_SET = new Set(CLUSTER_FILES);
 
-function applyReplacements(html, pairs, fileLabel) {
+function applyReplacements(html, pairs, fileLabel, optionalPairs) {
   let out = html;
   // Apply longer, more specific strings before shorter ones they may
   // contain (e.g. a JS-block sentence vs. the same sentence used
@@ -57,6 +62,20 @@ function applyReplacements(html, pairs, fileLabel) {
       );
     }
     out = out.split(find).join(replace);
+  }
+  // Optional pairs (e.g. the related-calculators grid's cross-link to
+  // ANOTHER cluster member, class="calc-card" non-active form): applied
+  // only when present. A page never contains the non-active card for
+  // ITSELF (its own card is always the "--active" variant, handled by a
+  // separate, per-file, strictly-required rule), so these cannot use the
+  // strict "must be found" assertion across all 9 cluster files -- each
+  // is legitimately absent on exactly the one file that IS that
+  // calculator. Still applied longest-first for the same reason as above.
+  if (optionalPairs) {
+    const sortedOptional = optionalPairs.slice().sort((a, b) => b[0].length - a[0].length);
+    for (const [find, replace] of sortedOptional) {
+      if (out.includes(find)) out = out.split(find).join(replace);
+    }
   }
   return out;
 }
@@ -122,8 +141,10 @@ function generate() {
     // SHARED and per-file rules are combined into one pool and sorted
     // together by length (see applyReplacements) so a shared rule can
     // never partially clobber a longer per-file match, or vice versa.
+    // SHARED_OPTIONAL (Phase 8G) holds rules that are legitimately absent
+    // on some cluster files -- see applyReplacements' optionalPairs.
     const allPairs = translations[file].concat(translations.SHARED);
-    let html = applyReplacements(html0, allPairs, file);
+    let html = applyReplacements(html0, allPairs, file, translations.SHARED_OPTIONAL || []);
     html = rewriteRelativeLinks(html);
 
     if (!html.includes('<html lang="en">')) {

@@ -1,5 +1,5 @@
 {
-  "_comment": "Phase 8D established this translation-completeness model (docs/PHASE-8D-MULTILINGUAL-ARCHITECTURE.md, spec Section 24) with 8 representative fixtures, all 'missing' in es. Phase 8E (docs/PHASE-8E-SPANISH-ROLLOUT.md) activated the first real Spanish production cluster: the 5 pool calculator units below moved from 'missing' to 'translated' only after their Spanish pages were generated, validated (schema-valid, non-broken links, self-referential canonical, correct html lang), and confirmed reproducible via scripts/generate-spanish-cluster.js. The remaining fixtures (academy/glossary/formula/reference/guide/entity/programmatic) are still 'missing' -- Phase 8E did not touch them, per its explicit single-cluster scope. This is a STATUS tracker, not a content store -- it never holds translated text.",
+  "_comment": "Phase 8D established this translation-completeness model (docs/PHASE-8D-MULTILINGUAL-ARCHITECTURE.md, spec Section 24) with 8 representative fixtures, all 'missing' in es. Phase 8E (docs/PHASE-8E-SPANISH-ROLLOUT.md) activated the first real Spanish production cluster: the 5 pool calculator units below moved from 'missing' to 'translated' only after their Spanish pages were generated, validated (schema-valid, non-broken links, self-referential canonical, correct html lang), and confirmed reproducible via scripts/generate-spanish-cluster.js. Phase 8G (docs/PHASE-8G-SPANISH-SPA-CLUSTER.md) added the 4 hot-tub/spa calculator units below under the identical validate-before-flip discipline. The remaining fixtures (academy/glossary/formula/reference/guide/entity/programmatic) are still 'missing' -- neither phase touched them, per their explicit single-cluster scope. This is a STATUS tracker, not a content store -- it never holds translated text.",
   "_generated": "2026-09-02",
   "units": [
     {
@@ -40,6 +40,38 @@
       "languages": {
         "en": { "status": "translated", "url": "/calculators/pool-shock-calculator" },
         "es": { "status": "translated", "url": "/es/calculators/pool-shock-calculator" }
+      }
+    },
+    {
+      "contentId": "calculator:hot-tub-chlorine",
+      "category": "calculator",
+      "languages": {
+        "en": { "status": "translated", "url": "/calculators/hot-tub-chlorine-calculator" },
+        "es": { "status": "translated", "url": "/es/calculators/hot-tub-chlorine-calculator" }
+      }
+    },
+    {
+      "contentId": "calculator:hot-tub-ph",
+      "category": "calculator",
+      "languages": {
+        "en": { "status": "translated", "url": "/calculators/hot-tub-ph-calculator" },
+        "es": { "status": "translated", "url": "/es/calculators/hot-tub-ph-calculator" }
+      }
+    },
+    {
+      "contentId": "calculator:hot-tub-shock",
+      "category": "calculator",
+      "languages": {
+        "en": { "status": "translated", "url": "/calculators/hot-tub-shock-calculator" },
+        "es": { "status": "translated", "url": "/es/calculators/hot-tub-shock-calculator" }
+      }
+    },
+    {
+      "contentId": "calculator:spa-volume",
+      "category": "calculator",
+      "languages": {
+        "en": { "status": "translated", "url": "/calculators/spa-volume-calculator" },
+        "es": { "status": "translated", "url": "/es/calculators/spa-volume-calculator" }
       }
     },
     {

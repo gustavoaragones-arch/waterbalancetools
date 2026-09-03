@@ -26,7 +26,7 @@
   {
     "url": "/calculators/hot-tub-chlorine-calculator",
     "lang": "en",
-    "contentId": null,
+    "contentId": "calculator:hot-tub-chlorine",
     "title": "Hot Tub Chlorine Calculator (30-Second Check)",
     "description": "Hit 3–5 ppm sanitizer in seconds: enter spa gallons + test strip readings for exact chlorine ounces. Avoid over-chlorination, rash risk, and cover damage.",
     "h1": "Hot Tub Chlorine Calculator",
@@ -38,7 +38,7 @@
   {
     "url": "/calculators/hot-tub-ph-calculator",
     "lang": "en",
-    "contentId": null,
+    "contentId": "calculator:hot-tub-ph",
     "title": "Hot Tub pH Calculator",
     "description": "Find out whether to raise or lower your hot tub's pH and by how much (small, moderate, or substantial adjustment)—plus safe, incremental dosing guidance.",
     "h1": "Hot Tub pH Calculator",
@@ -50,7 +50,7 @@
   {
     "url": "/calculators/hot-tub-shock-calculator",
     "lang": "en",
-    "contentId": null,
+    "contentId": "calculator:hot-tub-shock",
     "title": "Hot Tub Shock Calculator (By Product)",
     "description": "Hot tub shock calculator. Enter spa gallons, target ppm, and shock product for a product-specific dose. Free and fast.",
     "h1": "Hot Tub Shock Calculator",
@@ -158,7 +158,7 @@
   {
     "url": "/calculators/spa-volume-calculator",
     "lang": "en",
-    "contentId": null,
+    "contentId": "calculator:spa-volume",
     "title": "Spa Volume Calculator",
     "description": "Spa volume calculator. Enter diameter and depth to get hot tub volume in gallons. Free and fast.",
     "h1": "Spa Volume Calculator",
@@ -178,6 +178,42 @@
     "readingTime": null,
     "updated": null,
     "keywords": "calculadora mica piscina cloro spa"
+  },
+  {
+    "url": "/es/calculators/hot-tub-chlorine-calculator",
+    "lang": "es",
+    "contentId": "calculator:hot-tub-chlorine",
+    "title": "Calculadora de Cloro para Spa (Revisión de 30 Segundos)",
+    "description": "Alcance 3–5 ppm de sanitizante en segundos: ingrese los galones del spa y los resultados de la tira reactiva para obtener las onzas exactas de cloro. Evite el exceso de cloración, el riesgo de irritación y el daño a la cubierta.",
+    "h1": "Calculadora de Cloro para Spa",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculadora cloro para spa revisi segundos"
+  },
+  {
+    "url": "/es/calculators/hot-tub-ph-calculator",
+    "lang": "es",
+    "contentId": "calculator:hot-tub-ph",
+    "title": "Calculadora de pH para Spa",
+    "description": "Descubra si debe subir o bajar el pH de su spa y en qué medida (ajuste pequeño, moderado o sustancial), además de orientación segura para la dosificación incremental.",
+    "h1": "Calculadora de pH para Spa",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculadora para spa"
+  },
+  {
+    "url": "/es/calculators/hot-tub-shock-calculator",
+    "lang": "es",
+    "contentId": "calculator:hot-tub-shock",
+    "title": "Calculadora de Choque para Spa (Por Producto)",
+    "description": "Calculadora de choque para spa. Ingrese los galones del spa, el ppm objetivo y el producto de choque para obtener una dosis específica. Gratis y rápida.",
+    "h1": "Calculadora de Choque para Spa",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculadora choque para spa por producto"
   },
   {
     "url": "/es/calculators/pool-chlorine-calculator",
@@ -226,6 +262,18 @@
     "readingTime": null,
     "updated": null,
     "keywords": "calculadora volumen piscina calculators"
+  },
+  {
+    "url": "/es/calculators/spa-volume-calculator",
+    "lang": "es",
+    "contentId": "calculator:spa-volume",
+    "title": "Calculadora de Volumen del Spa",
+    "description": "Calculadora de volumen del spa. Ingrese el diámetro y la profundidad para obtener el volumen en galones. Gratis y rápida.",
+    "h1": "Calculadora de Volumen del Spa",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculadora volumen del spa"
   },
   {
     "url": "/charts",

@@ -105,19 +105,16 @@ const SHARED = [
   ['Pool Calculators (5)', 'Calculadoras de Piscina (5)'],
   ['Hot Tub Calculators (3)', 'Calculadoras de Spa (3)'],
   ['Water Chemistry (5)', 'Química del Agua (5)'],
-  ['>Pool Chemical Calculator<', '>Calculadora Química de Piscina<'],
-  ['>Pool Chlorine Calculator<', '>Calculadora de Cloro para Piscina<'],
-  ['>Pool pH Calculator<', '>Calculadora de pH para Piscina<'],
-  ['>Pool Shock Calculator<', '>Calculadora de Choque para Piscina<'],
-  ['>Pool Volume Calculator<', '>Calculadora de Volumen de Piscina<'],
-  ['>Hot Tub Chlorine Calculator<', '>Calculadora de Cloro para Spa<'],
-  ['>Hot Tub pH Calculator<', '>Calculadora de pH para Spa<'],
-  ['>Hot Tub Shock Calculator<', '>Calculadora de Choque para Spa<'],
+  // Related-calculators grid: NON-active cards are handled by
+  // SHARED_OPTIONAL below (see its own comment) since each rule is
+  // legitimately absent on exactly the one file that IS that calculator.
+  // Still-untranslated Water Chemistry group members: text only, href
+  // correctly stays English (explicit fallback -- no Spanish equivalent
+  // exists yet for these 4).
   ['>Salt Calculator<', '>Calculadora de Sal<'],
   ['>Alkalinity Calculator<', '>Calculadora de Alcalinidad<'],
   ['>CYA Calculator<', '>Calculadora de Ácido Cianúrico<'],
   ['>Turnover Rate Calculator<', '>Calculadora de Tasa de Recirculación<'],
-  ['>Spa Volume Calculator<', '>Calculadora de Volumen de Spa<'],
 
   // Related tools / guides section chrome (headings + generic labels)
   ['Related Pool Chemistry Tools', 'Herramientas Relacionadas de Química de Piscina'],
@@ -129,6 +126,28 @@ const SHARED = [
 
   // Common form / result chrome
   ['>Calculate<', '>Calcular<'],
+];
+
+// Phase 8G: related-calculators grid, NON-active cards (class="calc-card",
+// no "--active" modifier) -- href AND text rewritten together so a
+// now-translated cluster member is linked Spanish -> Spanish (spec
+// Section 23) instead of falling back to English merely because the grid
+// component doesn't otherwise distinguish translated from untranslated
+// siblings. Each page's own ACTIVE (self-referencing) card uses a
+// separate, per-file, strictly-required rule instead (see each
+// XXX_CALCULATOR array above) -- these entries are optional (applied only
+// when present) because each is legitimately absent on exactly the one
+// file that IS that calculator (which instead has the "--active" form).
+const SHARED_OPTIONAL = [
+  ['<a href="/calculators/chemical-calculator" class="calc-card">Pool Chemical Calculator</a>', '<a href="/es/calculators/chemical-calculator" class="calc-card">Calculadora Química de Piscina</a>'],
+  ['<a href="/calculators/pool-chlorine-calculator" class="calc-card">Pool Chlorine Calculator</a>', '<a href="/es/calculators/pool-chlorine-calculator" class="calc-card">Calculadora de Cloro para Piscina</a>'],
+  ['<a href="/calculators/pool-ph-calculator" class="calc-card">Pool pH Calculator</a>', '<a href="/es/calculators/pool-ph-calculator" class="calc-card">Calculadora de pH para Piscina</a>'],
+  ['<a href="/calculators/pool-shock-calculator" class="calc-card">Pool Shock Calculator</a>', '<a href="/es/calculators/pool-shock-calculator" class="calc-card">Calculadora de Choque para Piscina</a>'],
+  ['<a href="/calculators/pool-volume-calculator" class="calc-card">Pool Volume Calculator</a>', '<a href="/es/calculators/pool-volume-calculator" class="calc-card">Calculadora de Volumen de Piscina</a>'],
+  ['<a href="/calculators/hot-tub-chlorine-calculator" class="calc-card">Hot Tub Chlorine Calculator</a>', '<a href="/es/calculators/hot-tub-chlorine-calculator" class="calc-card">Calculadora de Cloro para Spa</a>'],
+  ['<a href="/calculators/hot-tub-ph-calculator" class="calc-card">Hot Tub pH Calculator</a>', '<a href="/es/calculators/hot-tub-ph-calculator" class="calc-card">Calculadora de pH para Spa</a>'],
+  ['<a href="/calculators/hot-tub-shock-calculator" class="calc-card">Hot Tub Shock Calculator</a>', '<a href="/es/calculators/hot-tub-shock-calculator" class="calc-card">Calculadora de Choque para Spa</a>'],
+  ['<a href="/calculators/spa-volume-calculator" class="calc-card">Spa Volume Calculator</a>', '<a href="/es/calculators/spa-volume-calculator" class="calc-card">Calculadora de Volumen de Spa</a>'],
 ];
 
 // ---------------------------------------------------------------------
@@ -158,6 +177,7 @@ const MODERATE_CONFIDENCE_TOOLTIP = [
 
 const CHEMICAL_CALCULATOR = [
   LIMITED_CONFIDENCE_TOOLTIP,
+  ['<a href="/calculators/chemical-calculator" class="calc-card calc-card--active">Pool Chemical Calculator</a>', '<a href="/es/calculators/chemical-calculator" class="calc-card calc-card--active">Calculadora Química de Piscina</a>'],
   ['>Liquid chlorine (10%)<', '>Cloro líquido (10%)<'],
   SOURCES_HEADING,
   GOV_AUTHORITY_LABEL,
@@ -319,6 +339,7 @@ const CHEMICAL_CALCULATOR = [
 const POOL_VOLUME_CALCULATOR = [
   ['<h2>Result</h2>', '<h2>Resultado</h2>'],
   VERY_HIGH_CONFIDENCE_TOOLTIP,
+  ['<a href="/calculators/pool-volume-calculator" class="calc-card calc-card--active">Pool Volume Calculator</a>', '<a href="/es/calculators/pool-volume-calculator" class="calc-card calc-card--active">Calculadora de Volumen de Piscina</a>'],
   ['Pool Volume Calculator (calculators) | WaterBalanceTools', 'Calculadora de Volumen de Piscina (calculators) | WaterBalanceTools'],
   ['Pool volume calculator. Rectangular, circular, and oval shapes. Get gallons and liters. Free and fast.', 'Calculadora de volumen de piscina. Formas rectangular, circular y ovalada. Obtenga galones y litros. Gratis y rápida.'],
   ['Pool Volume Calculator | WaterBalanceTools', 'Calculadora de Volumen de Piscina | WaterBalanceTools'],
@@ -379,6 +400,7 @@ const POOL_VOLUME_CALCULATOR = [
 const POOL_CHLORINE_CALCULATOR = [
   ['<h2>Result</h2>', '<h2>Resultado</h2>'],
   LIMITED_CONFIDENCE_TOOLTIP,
+  ['<a href="/calculators/pool-chlorine-calculator" class="calc-card calc-card--active">Pool Chlorine Calculator</a>', '<a href="/es/calculators/pool-chlorine-calculator" class="calc-card calc-card--active">Calculadora de Cloro para Piscina</a>'],
   ['>Liquid chlorine (10%)<', '>Cloro líquido (10%)<'],
   SOURCES_HEADING,
   GOV_AUTHORITY_LABEL,
@@ -452,6 +474,7 @@ const POOL_CHLORINE_CALCULATOR = [
 const POOL_PH_CALCULATOR = [
   ['<h2>Result</h2>', '<h2>Resultado</h2>'],
   MODERATE_CONFIDENCE_TOOLTIP,
+  ['<a href="/calculators/pool-ph-calculator" class="calc-card calc-card--active">Pool pH Calculator</a>', '<a href="/es/calculators/pool-ph-calculator" class="calc-card calc-card--active">Calculadora de pH para Piscina</a>'],
   SOURCES_HEADING,
   GOV_AUTHORITY_LABEL,
   ['Pool pH Calculator (Target 7.2–7.6) | WaterBalanceTools', 'Calculadora de pH para Piscina (Objetivo 7.2–7.6) | WaterBalanceTools'],
@@ -541,6 +564,7 @@ const POOL_PH_CALCULATOR = [
 const POOL_SHOCK_CALCULATOR = [
   ['<h2>Result</h2>', '<h2>Resultado</h2>'],
   LIMITED_CONFIDENCE_TOOLTIP,
+  ['<a href="/calculators/pool-shock-calculator" class="calc-card calc-card--active">Pool Shock Calculator</a>', '<a href="/es/calculators/pool-shock-calculator" class="calc-card calc-card--active">Calculadora de Choque para Piscina</a>'],
   ['Pool Shock Calculator (Product-Specific Dose) | WaterBalanceTools', 'Calculadora de Choque para Piscina (Dosis por Producto) | WaterBalanceTools'],
   [
     'Pool shock calculator: select your shock product (liquid, cal-hypo, dichlor, or trichlor) for a product-specific dose from gallons + target ppm (5–20). For c...',
@@ -634,11 +658,280 @@ const POOL_SHOCK_CALCULATOR = [
   ],
 ];
 
+// =======================================================================
+// Phase 8G: hot-tub/spa cluster. Canonical concept term is "spa" (per
+// Phase 8F's terminology model -- this site's hot-tub calculators concern
+// a continuously-filtered, chemically-treated vessel, matching "spa", not
+// the drain-after-use "bañera/tina de hidromasaje" bathroom fixture).
+// "jacuzzi"/"yacusi" are never used as the primary/canonical term here;
+// they are reserved as search/lexical variants only (see docs/PHASE-8G-
+// SPANISH-SPA-CLUSTER.md Section "page-specific SEO decision" for the
+// explicit per-page terminology record required by spec Section 31).
+// =======================================================================
+
+const HOT_TUB_CHLORINE_CALCULATOR = [
+  LIMITED_CONFIDENCE_TOOLTIP,
+  ['<a href="/calculators/hot-tub-chlorine-calculator" class="calc-card calc-card--active">Hot Tub Chlorine Calculator</a>', '<a href="/es/calculators/hot-tub-chlorine-calculator" class="calc-card calc-card--active">Calculadora de Cloro para Spa</a>'],
+  SOURCES_HEADING,
+  GOV_AUTHORITY_LABEL,
+  SEE_ASSUMPTIONS_LINK,
+  ['>Liquid chlorine (10%)<', '>Cloro líquido (10%)<'],
+  ['Hot Tub Chlorine Calculator (30-Second Check) | WaterBalanceTools', 'Calculadora de Cloro para Spa (Revisión de 30 Segundos) | WaterBalanceTools'],
+  [
+    'Hit 3–5 ppm sanitizer in seconds: enter spa gallons + test strip readings for exact chlorine ounces. Avoid over-chlorination, rash risk, and cover damage.',
+    'Alcance 3–5 ppm de sanitizante en segundos: ingrese los galones del spa y los resultados de la tira reactiva para obtener las onzas exactas de cloro. Evite el exceso de cloración, el riesgo de irritación y el daño a la cubierta.',
+  ],
+  [
+    'Hit 3–5 ppm sanitizer in seconds: exact chlorine ounces from gallons + test readings. Safer soaks, fewer chemistry mistakes.',
+    'Alcance 3–5 ppm de sanitizante en segundos: onzas exactas de cloro según los galones y los resultados de las pruebas. Baños más seguros, menos errores químicos.',
+  ],
+  ['"name":"Hot Tub Chlorine Calculator"', '"name":"Calculadora de Cloro para Spa"'],
+  ['Hot Tub Chlorine Calculator</span>', 'Calculadora de Cloro para Spa</span>'],
+  ['<h1>Hot Tub Chlorine Calculator</h1>', '<h1>Calculadora de Cloro para Spa</h1>'],
+  ['Calculate exactly how much chlorine your hot tub needs.', 'Calcule exactamente cuánto cloro necesita su spa.'],
+  ['<label for="volume">Hot tub gallons</label>', '<label for="volume">Galones del spa</label>'],
+  ['<label for="current">Current chlorine (ppm)</label>', '<label for="current">Cloro actual (ppm)</label>'],
+  ['<label for="target">Target chlorine (ppm)</label>', '<label for="target">Cloro objetivo (ppm)</label>'],
+  ['<label for="type">Chlorine type</label>', '<label for="type">Tipo de cloro</label>'],
+  ['>Granular shock<', '>Choque granular<'],
+  ['>Chlorine tablets<', '>Tabletas de cloro<'],
+  ['<strong>Safe chlorine:</strong> 3–5 ppm', '<strong>Cloro seguro:</strong> 3–5 ppm'],
+  ['<strong>Safe pH:</strong> 7.2–7.8', '<strong>pH seguro:</strong> 7.2–7.8'],
+  ['<strong>Reference:</strong> <a href="/hot-tub-chemical-levels-chart">Hot Tub Chemical Levels Guide</a>', '<strong>Referencia:</strong> <a href="/hot-tub-chemical-levels-chart">Guía de Niveles Químicos del Spa</a>'],
+  ['<h2>Quick Answers</h2>', '<h2>Respuestas Rápidas</h2>'],
+  ['<h3>What should hot tub chlorine be?</h3><p>Keep hot tub chlorine between 3–5 ppm. Levels below may allow bacteria growth while high chlorine may irritate skin and eyes.</p>',
+   '<h3>¿Cuál debe ser el nivel de cloro del spa?</h3><p>Mantenga el cloro del spa entre 3–5 ppm. Niveles inferiores pueden permitir el crecimiento de bacterias, mientras que un cloro alto puede irritar la piel y los ojos.</p>'],
+  ['<h3>How often should I test?</h3><p>Test before use and several times weekly. After heavy use or refills, test again before soaking.</p>',
+   '<h3>¿Con qué frecuencia debo analizar el agua?</h3><p>Analice antes de usar el spa y varias veces por semana. Después de un uso intenso o de rellenar, vuelva a analizar antes de sumergirse.</p>'],
+  ['<h2>Quick tips</h2>', '<h2>Consejos Rápidos</h2>'],
+  ['<strong>Ideal chlorine for hot tubs:</strong> 3–5 ppm. Run jets 15–20 minutes after adding chemicals, then re-test.',
+   '<strong>Cloro ideal para spas:</strong> 3–5 ppm. Haga funcionar los chorros 15–20 minutos después de agregar los productos químicos y luego vuelva a analizar.'],
+  ['<h2>People Also Ask</h2>', '<h2>Preguntas Frecuentes de Otros Usuarios</h2>'],
+  ['<summary>What chlorine is too high in a hot tub?</summary>\n        <p>Above about 5 ppm free chlorine often causes odor, skin or eye irritation, and can stress covers and plastics. If readings exceed 5 ppm, pause adding sanitizer, run jets with the cover open, and retest after circulation before soaking.</p>',
+   '<summary>¿Qué nivel de cloro es demasiado alto en un spa?</summary>\n        <p>Por encima de aproximadamente 5 ppm, el cloro libre suele causar olor, irritación de la piel o los ojos, y puede afectar las cubiertas y los plásticos. Si las lecturas superan las 5 ppm, deje de agregar sanitizante, haga funcionar los chorros con la cubierta abierta y vuelva a analizar después de la circulación antes de sumergirse.</p>'],
+  ['<summary>Can I use pool chlorine in a hot tub?</summary>\n        <p>Many pool chlorine products work in spas if label allows spa use, but dosing differs because volume is small. Use this calculator with your exact gallons—never pour a full pool-sized dose into a hot tub.</p>',
+   '<summary>¿Puedo usar cloro de piscina en un spa?</summary>\n        <p>Muchos productos de cloro para piscina funcionan en spas si la etiqueta permite su uso en spas, pero la dosificación es diferente porque el volumen es pequeño. Use esta calculadora con sus galones exactos; nunca vierta una dosis del tamaño de una piscina en un spa.</p>'],
+  ['<summary>Should I shock a hot tub weekly?</summary>\n        <p>Weekly shock is common for heavy use, but test first. Shock when combined chlorine is high, water smells, or after a drain-and-refill party—not on a fixed calendar if sanitizer already reads high.</p>',
+   '<summary>¿Debo aplicar choque al spa semanalmente?</summary>\n        <p>El choque semanal es común con uso intenso, pero analice primero. Aplique choque cuando el cloro combinado esté alto, el agua tenga olor, o después de vaciar y rellenar tras una reunión; no según un calendario fijo si el sanitizante ya está alto.</p>'],
+  ['<summary>Why does hot tub chlorine disappear?</summary>\n        <p>Heat, aeration, and bather load burn sanitizer faster than a pool. Low pH, high cyanuric acid, or biofilm on filters can also make chlorine seem to vanish—test pH and clean filters when levels drop quickly.</p>',
+   '<summary>¿Por qué desaparece el cloro del spa?</summary>\n        <p>El calor, la aireación y la cantidad de bañistas consumen el sanitizante más rápido que en una piscina. Un pH bajo, un ácido cianúrico alto o el biofilm en los filtros también pueden hacer que el cloro parezca desaparecer; analice el pH y limpie los filtros cuando los niveles bajen rápidamente.</p>'],
+  ['<summary>How often should I test hot tub chlorine?</summary>\n        <p>Test before each soak when possible and at least several times per week. After refills, storms of use, or when water smells, test again the same day before adding more chemical.</p>',
+   '<summary>¿Con qué frecuencia debo analizar el cloro del spa?</summary>\n        <p>Analice antes de cada uso cuando sea posible y al menos varias veces por semana. Después de rellenar, un uso intenso o cuando el agua tenga olor, vuelva a analizar el mismo día antes de agregar más producto.</p>'],
+  ['<summary>What pH should a hot tub stay at?</summary>\n        <p>Most spas target 7.2–7.8 pH. In range, chlorine works better and equipment is less stressed. Pair pH checks with sanitizer tests—fixing only chlorine while pH drifts often wastes product.</p>',
+   '<summary>¿En qué pH debe mantenerse un spa?</summary>\n        <p>La mayoría de los spas apuntan a un pH de 7.2–7.8. Dentro de este rango, el cloro funciona mejor y el equipo sufre menos desgaste. Combine las pruebas de pH con las de sanitizante; corregir solo el cloro mientras el pH varía suele desperdiciar producto.</p>'],
+  ['<li><a href="/reference/pool-chemistry-reference">Pool chemistry reference</a></li>', '<li><a href="/reference/pool-chemistry-reference">Referencia de química de piscina</a></li>'],
+  ['<li><a href="../programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html">Hot tub chemicals for 400 gal</a></li>', '<li><a href="../programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html">Productos químicos para spa de 400 gal</a></li>'],
+  ['<li><a href="../programmatic/behavior/how-often-to-test-pool-water.html">How often to test pool water</a></li>', '<li><a href="../programmatic/behavior/how-often-to-test-pool-water.html">Con qué frecuencia analizar el agua de la piscina</a></li>'],
+  ['<li><a href="../programmatic/problems/high-chlorine-how-to-lower.html">High chlorine: lower safely</a></li>', '<li><a href="../programmatic/problems/high-chlorine-how-to-lower.html">Cloro alto: cómo bajarlo con seguridad</a></li>'],
+  ['<li><a href="../programmatic/problems/cloudy-pool-fix.html">Cloudy pool fix</a></li>', '<li><a href="../programmatic/problems/cloudy-pool-fix.html">Solución para piscina turbia</a></li>'],
+  ['<li><a href="../guides/hot-tub/hot-tub-ph-too-low.html">Hot Tub Ph Too Low</a></li>', '<li><a href="../guides/hot-tub/hot-tub-ph-too-low.html">pH del spa demasiado bajo</a></li>'],
+  ['<li><a href="../guides/hot-tub/how-often-to-shock-a-hot-tub.html">How Often To Shock A Hot Tub</a></li>', '<li><a href="../guides/hot-tub/how-often-to-shock-a-hot-tub.html">Con qué frecuencia aplicar choque al spa</a></li>'],
+  ['<li><a href="../guides/hot-tub/index.html">Index</a></li>', '<li><a href="../guides/hot-tub/index.html">Índice</a></li>'],
+  ['<li><a href="../guides/questions/why-does-hot-tub-water-smell.html">Why Does Hot Tub Water Smell</a></li>', '<li><a href="../guides/questions/why-does-hot-tub-water-smell.html">Por qué huele el agua del spa</a></li>'],
+  ['<li><a href="../guides/questions/why-is-my-hot-tub-foamy.html">Why Is My Hot Tub Foamy</a></li>', '<li><a href="../guides/questions/why-is-my-hot-tub-foamy.html">Por qué mi spa tiene espuma</a></li>'],
+  ['<li><a href="../guides/ph/does-rain-lower-pool-ph.html">Does Rain Lower Pool Ph</a></li>', '<li><a href="../guides/ph/does-rain-lower-pool-ph.html">La lluvia reduce el pH de la piscina</a></li>'],
+  ['<li><a href="../reference/total-alkalinity-explained.html">Total Alkalinity Explained</a></li>', '<li><a href="../reference/total-alkalinity-explained.html">Alcalinidad Total Explicada</a></li>'],
+  ['<li><a href="chemical-calculator.html">Full pool chemical calculator</a></li>', '<li><a href="chemical-calculator.html">Calculadora química de piscina completa</a></li>'],
+  ['<li><a href="../guides/hot-tub-chemistry.html">Hot tub chemistry (hub)</a></li>', '<li><a href="../guides/hot-tub-chemistry.html">Química del spa (guía central)</a></li>'],
+  [
+    'The target range this calculator doses toward (3-5 ppm) is supported by the source below. The dosing formula\'s product-concentration assumptions have not been independently verified against a specific manufacturer reference --',
+    'El rango objetivo hacia el que dosifica esta calculadora (3-5 ppm) cuenta con el respaldo de la fuente a continuación. Los supuestos de concentración de producto de la fórmula de dosificación no han sido verificados de forma independiente contra una referencia específica de fabricante;',
+  ],
+  [
+    '<em>Target range (3-5 ppm) is CDC-supported. Dosage coefficient from dosage-matrices.json is not independently verified against a manufacturer/regulatory reference.</em>',
+    '<em>El rango objetivo (3-5 ppm) cuenta con el respaldo de los CDC. El coeficiente de dosificación de dosage-matrices.json no está verificado de forma independiente contra una referencia de fabricante/regulatoria.</em>',
+  ],
+  // Inline JS display-text
+  ["text.textContent = 'Enter valid hot tub gallons.'; el.classList.remove('hidden'); return; }",
+   "text.textContent = 'Ingrese galones de spa válidos.'; el.classList.remove('hidden'); return; }"],
+  ["if (r.ppm <= 0) { text.textContent = 'Target must be higher than current. No addition needed.'; el.classList.remove('hidden'); return; }",
+   "if (r.ppm <= 0) { text.textContent = 'El objetivo debe ser mayor que el actual. No se necesita agregar.'; el.classList.remove('hidden'); return; }"],
+  ["text.textContent = 'Add ' + r.ounces.toFixed(1) + ' oz chlorine. Run jets 20 min, then re-test.';",
+   "text.textContent = 'Agregue ' + r.ounces.toFixed(1) + ' oz de cloro. Haga funcionar los chorros 20 min y luego vuelva a analizar.';"],
+];
+
+const HOT_TUB_PH_CALCULATOR = [
+  MODERATE_CONFIDENCE_TOOLTIP,
+  ['<h2>Result</h2>', '<h2>Resultado</h2>'],
+  ['<a href="/calculators/hot-tub-ph-calculator" class="calc-card calc-card--active">Hot Tub pH Calculator</a>', '<a href="/es/calculators/hot-tub-ph-calculator" class="calc-card calc-card--active">Calculadora de pH para Spa</a>'],
+  ['Hot Tub pH Calculator | WaterBalanceTools', 'Calculadora de pH para Spa | WaterBalanceTools'],
+  [
+    "Find out whether to raise or lower your hot tub's pH and by how much (small, moderate, or substantial adjustment)—plus safe, incremental dosing guidance.",
+    'Descubra si debe subir o bajar el pH de su spa y en qué medida (ajuste pequeño, moderado o sustancial), además de orientación segura para la dosificación incremental.',
+  ],
+  [
+    'Get pH direction and adjustment-size guidance for your hot tub, plus safe incremental dosing steps.',
+    'Obtenga la dirección del pH y orientación sobre la magnitud del ajuste para su spa, además de pasos seguros de dosificación incremental.',
+  ],
+  ['"name":"Hot Tub pH Calculator"', '"name":"Calculadora de pH para Spa"'],
+  ['Hot Tub pH Calculator</span>', 'Calculadora de pH para Spa</span>'],
+  [
+    "Find out whether to raise or lower your hot tub's pH and by how much—plus safe, incremental dosing guidance.",
+    'Descubra si debe subir o bajar el pH de su spa y en qué medida, además de orientación segura para la dosificación incremental.',
+  ],
+  ['<h1>Hot Tub pH Calculator</h1>', '<h1>Calculadora de pH para Spa</h1>'],
+  ["Find out whether your hot tub's pH needs to go up or down, and roughly by how much.", 'Descubra si el pH de su spa necesita subir o bajar, y aproximadamente en qué medida.'],
+  ['<label for="volume">Hot tub gallons</label>', '<label for="volume">Galones del spa</label>'],
+  ['<label for="current">Current pH</label>', '<label for="current">pH actual</label>'],
+  ['<label for="target">Target pH</label>', '<label for="target">pH objetivo</label>'],
+  ['<h2>Quick tips</h2>', '<h2>Consejos Rápidos</h2>'],
+  ['<strong>Ideal hot tub pH:</strong> 7.2–7.8. Run jets after adding chemicals, then re-test.', '<strong>pH ideal del spa:</strong> 7.2–7.8. Haga funcionar los chorros después de agregar los productos químicos y luego vuelva a analizar.'],
+  ['<li><a href="../programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4.html">Adjust pool pH 7.8 → 7.4</a></li>', '<li><a href="../programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4.html">Ajustar el pH de la piscina 7.8 → 7.4</a></li>'],
+  ['<li><a href="../programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html">Hot tub chemicals for 400 gal</a></li>', '<li><a href="../programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html">Productos químicos para spa de 400 gal</a></li>'],
+  ['<li><a href="../programmatic/explanations/why-ph-affects-chlorine.html">Why pH affects chlorine</a></li>', '<li><a href="../programmatic/explanations/why-ph-affects-chlorine.html">Por qué el pH afecta al cloro</a></li>'],
+  ['<li><a href="../programmatic/problems/cloudy-pool-fix.html">Cloudy pool fix</a></li>', '<li><a href="../programmatic/problems/cloudy-pool-fix.html">Solución para piscina turbia</a></li>'],
+  ['<li><a href="../programmatic/problems/low-alkalinity-symptoms.html">Low alkalinity symptoms</a></li>', '<li><a href="../programmatic/problems/low-alkalinity-symptoms.html">Síntomas de alcalinidad baja</a></li>'],
+  ['<li><a href="../programmatic/explanations/why-ph-affects-chlorine.html">Why Ph Affects Chlorine</a></li>', '<li><a href="../programmatic/explanations/why-ph-affects-chlorine.html">Por qué el pH afecta al cloro</a></li>'],
+  ['<li><a href="../programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2.html">Adjust pH 6.8 → 7.2</a></li>', '<li><a href="../programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2.html">Ajustar pH 6.8 → 7.2</a></li>'],
+  ['<li><a href="../programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4.html">Adjust pH 7.8 → 7.4</a></li>', '<li><a href="../programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4.html">Ajustar pH 7.8 → 7.4</a></li>'],
+  ['<li><a href="../programmatic/ph/how-to-adjust-ph-from-7-to-7-4.html">Adjust pH 7 → 7.4</a></li>', '<li><a href="../programmatic/ph/how-to-adjust-ph-from-7-to-7-4.html">Ajustar pH 7 → 7.4</a></li>'],
+  ['<li><a href="../programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html">Adjust pH 8 → 7.5</a></li>', '<li><a href="../programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html">Ajustar pH 8 → 7.5</a></li>'],
+  ['<li><a href="../reference/alkalinity-table.html">Alkalinity Table</a></li>', '<li><a href="../reference/alkalinity-table.html">Tabla de Alcalinidad</a></li>'],
+  ['<li><a href="../comparisons/chlorine-vs-bromine-hot-tub.html">Chlorine Vs Bromine Hot Tub</a></li>', '<li><a href="../comparisons/chlorine-vs-bromine-hot-tub.html">Cloro vs. Bromo para Spa</a></li>'],
+  ['<li><a href="pool-ph-calculator.html">Pool pH adjustment calculator</a></li>', '<li><a href="pool-ph-calculator.html">Calculadora de ajuste de pH para piscina</a></li>'],
+  ['<li><a href="../guides/ph-guide.html">pH guide (hub)</a></li>', '<li><a href="../guides/ph-guide.html">Guía de pH (guía central)</a></li>'],
+  // Inline JS display-text
+  ["var MAGNITUDE_TEXT = { small: 'a small adjustment', moderate: 'a moderate adjustment', substantial: 'a substantial adjustment' };",
+   "var MAGNITUDE_TEXT = { small: 'un ajuste pequeño', moderate: 'un ajuste moderado', substantial: 'un ajuste sustancial' };"],
+  ["if (!r.valid) { text.textContent = 'Enter valid hot tub gallons.'; el.classList.remove('hidden'); return; }",
+   "if (!r.valid) { text.textContent = 'Ingrese galones de spa válidos.'; el.classList.remove('hidden'); return; }"],
+  ["if (r.direction === 'balanced') { text.textContent = 'Your pH is already at (or very close to) your target. No adjustment is indicated.'; el.classList.remove('hidden'); return; }",
+   "if (r.direction === 'balanced') { text.textContent = 'Su pH ya está en (o muy cerca de) su objetivo. No se indica ningún ajuste.'; el.classList.remove('hidden'); return; }"],
+  ["var verb = r.direction === 'raise' ? 'raised' : 'lowered';", "var verb = r.direction === 'raise' ? 'elevado' : 'reducido';"],
+  ["var product = r.direction === 'raise' ? 'pH increaser' : 'pH reducer';", "var product = r.direction === 'raise' ? 'elevador de pH' : 'reductor de pH';"],
+  [
+    "text.textContent = 'pH needs to be ' + verb + ' (' + MAGNITUDE_TEXT[r.magnitude] + '). Add ' + product + ' per the product label’s instructions, a little at a time. Run jets 20 minutes, then retest 30–60 minutes after each addition before adding more.';",
+    "text.textContent = 'El pH debe ser ' + verb + ' (' + MAGNITUDE_TEXT[r.magnitude] + '). Agregue ' + product + ' según las instrucciones de la etiqueta del producto, poco a poco. Haga funcionar los chorros 20 minutos y vuelva a analizar 30–60 minutos después de cada adición antes de agregar más.';",
+  ],
+];
+
+const HOT_TUB_SHOCK_CALCULATOR = [
+  LIMITED_CONFIDENCE_TOOLTIP,
+  ['<h2>Result</h2>', '<h2>Resultado</h2>'],
+  ['<a href="/calculators/hot-tub-shock-calculator" class="calc-card calc-card--active">Hot Tub Shock Calculator</a>', '<a href="/es/calculators/hot-tub-shock-calculator" class="calc-card calc-card--active">Calculadora de Choque para Spa</a>'],
+  ['Hot Tub Shock Calculator (By Product) | WaterBalanceTools', 'Calculadora de Choque para Spa (Por Producto) | WaterBalanceTools'],
+  [
+    'Hot tub shock calculator. Enter spa gallons, target ppm, and shock product for a product-specific dose. Free and fast.',
+    'Calculadora de choque para spa. Ingrese los galones del spa, el ppm objetivo y el producto de choque para obtener una dosis específica. Gratis y rápida.',
+  ],
+  [
+    'Calculate product-specific shock dosage for your hot tub or spa.',
+    'Calcule la dosis de choque específica del producto para su spa.',
+  ],
+  ['"name":"Hot Tub Shock Calculator"', '"name":"Calculadora de Choque para Spa"'],
+  ['Hot Tub Shock Calculator</span>', 'Calculadora de Choque para Spa</span>'],
+  [
+    'Hot Tub Shock Calculator | WaterBalanceTools',
+    'Calculadora de Choque para Spa | WaterBalanceTools',
+  ],
+  ['<h1>Hot Tub Shock Calculator</h1>', '<h1>Calculadora de Choque para Spa</h1>'],
+  ['Calculate shock dosage for your hot tub based on volume, shock strength, and product.', 'Calcule la dosis de choque para su spa según el volumen, la intensidad del choque y el producto.'],
+  ['<label for="volume">Hot tub gallons</label>', '<label for="volume">Galones del spa</label>'],
+  ['<label for="strength">Shock strength (target ppm increase)</label>', '<label for="strength">Intensidad del choque (aumento objetivo en ppm)</label>'],
+  ['>Light (5 ppm)<', '>Ligero (5 ppm)<'],
+  ['>Standard (10 ppm)<', '>Estándar (10 ppm)<'],
+  ['>Heavy (15 ppm)<', '>Intenso (15 ppm)<'],
+  ['<label for="product">Shock product</label>', '<label for="product">Producto de choque</label>'],
+  ['>Liquid Chlorine (10%)<', '>Cloro Líquido (10%)<'],
+  ['>Liquid Chlorine (12.5%)<', '>Cloro Líquido (12.5%)<'],
+  ['>Calcium Hypochlorite (65%)<', '>Hipoclorito de Calcio (65%)<'],
+  ['>Calcium Hypochlorite (73%)<', '>Hipoclorito de Calcio (73%)<'],
+  ["I don't know my product", 'No sé cuál es mi producto'],
+  ['<h2>Quick tips</h2>', '<h2>Consejos Rápidos</h2>'],
+  ['<strong>When to shock a hot tub:</strong> Weekly or after heavy use. Use spa shock (MPS or chlorine). Run jets 15–20 minutes. Wait until chlorine drops to 3–5 ppm before using.',
+   '<strong>Cuándo aplicar choque a un spa:</strong> Semanalmente o después de un uso intenso. Use choque para spa (MPS o cloro). Haga funcionar los chorros 15–20 minutos. Espere hasta que el cloro baje a 3–5 ppm antes de usarlo.'],
+  ['<li><a href="../programmatic/shock/how-much-shock-for-10000-gallon-pool.html">Shock ounces for 10,000 gal</a></li>', '<li><a href="../programmatic/shock/how-much-shock-for-10000-gallon-pool.html">Onzas de choque para 10,000 gal</a></li>'],
+  ['<li><a href="../programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html">Hot tub chemicals for 400 gal</a></li>', '<li><a href="../programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html">Productos químicos para spa de 400 gal</a></li>'],
+  ['<li><a href="../programmatic/behavior/when-to-add-chlorine.html">When to add chlorine</a></li>', '<li><a href="../programmatic/behavior/when-to-add-chlorine.html">Cuándo agregar cloro</a></li>'],
+  ['<li><a href="../programmatic/problems/green-pool-how-much-chlorine.html">Green pool: chlorine &amp; shock</a></li>', '<li><a href="../programmatic/problems/green-pool-how-much-chlorine.html">Piscina verde: cloro y choque</a></li>'],
+  ['<li><a href="../programmatic/problems/cloudy-pool-fix.html">Cloudy pool fix</a></li>', '<li><a href="../programmatic/problems/cloudy-pool-fix.html">Solución para piscina turbia</a></li>'],
+  ['<li><a href="../programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons.html">Hot tub chemicals — 600 gal</a></li>', '<li><a href="../programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons.html">Productos químicos para spa — 600 gal</a></li>'],
+  ['<li><a href="../reference/ideal-spa-levels.html">Ideal Spa Levels</a></li>', '<li><a href="../reference/ideal-spa-levels.html">Niveles Ideales del Spa</a></li>'],
+  ['<li><a href="spa-volume-calculator.html">Spa Volume Calculator</a></li>', '<li><a href="spa-volume-calculator.html">Calculadora de Volumen del Spa</a></li>'],
+  ['<li><a href="../comparisons/chlorine-vs-bromine-hot-tub.html">Chlorine Vs Bromine Hot Tub</a></li>', '<li><a href="../comparisons/chlorine-vs-bromine-hot-tub.html">Cloro vs. Bromo para Spa</a></li>'],
+  ['<li><a href="../guides/hot-tub/hot-tub-alkalinity-too-high.html">Hot Tub Alkalinity Too High</a></li>', '<li><a href="../guides/hot-tub/hot-tub-alkalinity-too-high.html">Alcalinidad del Spa Demasiado Alta</a></li>'],
+  ['<li><a href="pool-cyanuric-acid-calculator.html">Pool Cyanuric Acid Calculator</a></li>', '<li><a href="pool-cyanuric-acid-calculator.html">Calculadora de Ácido Cianúrico para Piscina</a></li>'],
+  ['<li><a href="../programmatic/explanations/what-is-pool-alkalinity.html">What Is Pool Alkalinity</a></li>', '<li><a href="../programmatic/explanations/what-is-pool-alkalinity.html">Qué es la alcalinidad de la piscina</a></li>'],
+  ['<li><a href="hot-tub-chlorine-calculator.html">Hot tub chlorine calculator</a></li>', '<li><a href="hot-tub-chlorine-calculator.html">Calculadora de cloro para spa</a></li>'],
+  ['<li><a href="../guides/hot-tub-chemistry.html">Hot tub chemistry (hub)</a></li>', '<li><a href="../guides/hot-tub-chemistry.html">Química del spa (guía central)</a></li>'],
+  [
+    '<em>Dose is now product-specific: select a shock product (liquid chlorine or calcium hypochlorite -- the 4 products this site\'s dataset lists as hot-tub-appropriate) and the calculator applies the approved mass-balance formula using that product\'s dataset-verified available-chlorine percentage, plus safety notes. Does not read combined chlorine and does not compute a breakpoint-chlorination dose. The "I don\'t know my product" option gives qualitative guidance only, with no numeric dose.</em>',
+    '<em>La dosis ahora es específica por producto: seleccione un producto de choque (cloro líquido o hipoclorito de calcio; los 4 productos que el conjunto de datos de este sitio indica como adecuados para spa) y la calculadora aplica la fórmula de balance de masa aprobada usando el porcentaje de cloro disponible de ese producto verificado en el conjunto de datos, además de notas de seguridad. No lee el cloro combinado ni calcula una dosis de cloración de ruptura. La opción "No sé cuál es mi producto" ofrece únicamente orientación cualitativa, sin una dosis numérica.</em>',
+  ],
+  // Structural: load the shared Spanish product-label lookup (Section 18)
+  // before the inline script that now calls it. Purely additive -- does
+  // not touch js/calc-utils.js.
+  [
+    '<script src="../js/calc-utils.js"></script>\n  <script>',
+    '<script src="../js/calc-utils.js"></script>\n  <script src="/js/i18n/es-product-labels.js"></script>\n  <script>',
+  ],
+  // Inline JS display-text -- product.label/mixingWarning localized via the
+  // shared window.WaterBalance.esProductLabels lookup (spec Section 18),
+  // never by modifying js/calc-utils.js itself.
+  ["if (!vol || parseFloat(vol) <= 0) { text.textContent = 'Enter valid hot tub gallons.'; el.classList.remove('hidden'); return; }",
+   "if (!vol || parseFloat(vol) <= 0) { text.textContent = 'Ingrese galones de spa válidos.'; el.classList.remove('hidden'); return; }"],
+  [
+    "text.textContent = 'Select your shock product above for a specific amount -- the correct dose varies substantially by product and strength. In general: follow your product label’s instructions, add gradually, run jets 15–20 minutes, and re-test before using the tub.';",
+    "text.textContent = 'Seleccione su producto de choque arriba para obtener una cantidad específica; la dosis correcta varía sustancialmente según el producto y la intensidad. En general: siga las instrucciones de la etiqueta de su producto, agregue gradualmente, haga funcionar los chorros 15–20 minutos y vuelva a analizar antes de usar el spa.';",
+  ],
+  ["if (!r.valid) { text.textContent = 'Enter valid hot tub gallons and select a product.'; el.classList.remove('hidden'); return; }",
+   "if (!r.valid) { text.textContent = 'Ingrese galones de spa válidos y seleccione un producto.'; el.classList.remove('hidden'); return; }"],
+  [
+    "var msg = 'Add ' + r.ounces.toFixed(1) + ' oz ' + r.product.label + '. Run jets 15–20 min. Re-test before using tub.';",
+    "var esLabels = window.WaterBalance.esProductLabels;\n        var msg = 'Agregue ' + r.ounces.toFixed(1) + ' oz de ' + esLabels.label(r.product.label) + '. Haga funcionar los chorros 15–20 min. Vuelva a analizar antes de usar el spa.';",
+  ],
+  [
+    "if (r.product.mixingWarning) msg += ' ' + r.product.mixingWarning;",
+    "if (r.product.mixingWarning) msg += ' ' + esLabels.warning(r.product.mixingWarning);",
+  ],
+];
+
+const SPA_VOLUME_CALCULATOR = [
+  VERY_HIGH_CONFIDENCE_TOOLTIP,
+  ['<h2>Result</h2>', '<h2>Resultado</h2>'],
+  ['<a href="/calculators/spa-volume-calculator" class="calc-card calc-card--active">Spa Volume Calculator</a>', '<a href="/es/calculators/spa-volume-calculator" class="calc-card calc-card--active">Calculadora de Volumen del Spa</a>'],
+  ['Spa Volume Calculator | WaterBalanceTools', 'Calculadora de Volumen del Spa | WaterBalanceTools'],
+  ['Spa volume calculator. Enter diameter and depth to get hot tub volume in gallons. Free and fast.', 'Calculadora de volumen del spa. Ingrese el diámetro y la profundidad para obtener el volumen en galones. Gratis y rápida.'],
+  ['Calculate spa or hot tub volume in gallons from diameter and depth.', 'Calcule el volumen de su spa en galones a partir del diámetro y la profundidad.'],
+  ['"name":"Spa Volume Calculator"', '"name":"Calculadora de Volumen del Spa"'],
+  ['Spa Volume Calculator</span>', 'Calculadora de Volumen del Spa</span>'],
+  ['<h1>Spa Volume Calculator</h1>', '<h1>Calculadora de Volumen del Spa</h1>'],
+  ['Calculate hot tub or spa volume from diameter and depth. Result in gallons.', 'Calcule el volumen de su spa a partir del diámetro y la profundidad. Resultado en galones.'],
+  ['<label for="diameter">Diameter (ft)</label>', '<label for="diameter">Diámetro (pies)</label>'],
+  ['<label for="depth">Depth (ft)</label>', '<label for="depth">Profundidad (pies)</label>'],
+  ['Use in Chemical Calculator', 'Usar en la Calculadora Química'],
+  ['<h2>Quick tips</h2>', '<h2>Consejos Rápidos</h2>'],
+  ['Most round spas: measure inside diameter and water depth in feet. Typical hot tubs are 300–500 gallons.', 'La mayoría de los spas redondos: mida el diámetro interior y la profundidad del agua en pies. Los spas típicos tienen entre 300 y 500 galones.'],
+  ['<li><a href="../programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html">Hot tub chemicals for 400 gal</a></li>', '<li><a href="../programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons.html">Productos químicos para spa de 400 gal</a></li>'],
+  ['<li><a href="../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html">Chlorine dose for 10,000 gal</a></li>', '<li><a href="../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html">Dosis de cloro para 10,000 gal</a></li>'],
+  ['<li><a href="../programmatic/behavior/how-often-to-test-pool-water.html">How often to test pool water</a></li>', '<li><a href="../programmatic/behavior/how-often-to-test-pool-water.html">Con qué frecuencia analizar el agua de la piscina</a></li>'],
+  ['<li><a href="../programmatic/problems/cloudy-pool-fix.html">Cloudy pool fix</a></li>', '<li><a href="../programmatic/problems/cloudy-pool-fix.html">Solución para piscina turbia</a></li>'],
+  ['<li><a href="../programmatic/problems/high-chlorine-how-to-lower.html">High chlorine: lower safely</a></li>', '<li><a href="../programmatic/problems/high-chlorine-how-to-lower.html">Cloro alto: cómo bajarlo con seguridad</a></li>'],
+  ['<li><a href="../reference/ideal-spa-levels.html">Ideal Spa Levels</a></li>', '<li><a href="../reference/ideal-spa-levels.html">Niveles Ideales del Spa</a></li>'],
+  ['<li><a href="hot-tub-shock-calculator.html">Hot Tub Shock Calculator</a></li>', '<li><a href="hot-tub-shock-calculator.html">Calculadora de Choque para Spa</a></li>'],
+  ['<li><a href="../comparisons/chlorine-vs-bromine-hot-tub.html">Chlorine Vs Bromine Hot Tub</a></li>', '<li><a href="../comparisons/chlorine-vs-bromine-hot-tub.html">Cloro vs. Bromo para Spa</a></li>'],
+  ['<li><a href="../guides/hot-tub/hot-tub-alkalinity-too-high.html">Hot Tub Alkalinity Too High</a></li>', '<li><a href="../guides/hot-tub/hot-tub-alkalinity-too-high.html">Alcalinidad del Spa Demasiado Alta</a></li>'],
+  ['<li><a href="../guides/ph/can-you-swim-in-high-ph-water.html">Can You Swim In High Ph Water</a></li>', '<li><a href="../guides/ph/can-you-swim-in-high-ph-water.html">Se puede nadar en agua con pH alto</a></li>'],
+  ['<li><a href="../reference/alkalinity-table.html">Alkalinity Table</a></li>', '<li><a href="../reference/alkalinity-table.html">Tabla de Alcalinidad</a></li>'],
+  ['<li><a href="hot-tub-chlorine-calculator.html">Hot tub chlorine calculator</a></li>', '<li><a href="hot-tub-chlorine-calculator.html">Calculadora de cloro para spa</a></li>'],
+  ['<li><a href="../guides/hot-tub-chemistry.html">Hot tub chemistry (hub)</a></li>', '<li><a href="../guides/hot-tub-chemistry.html">Química del spa (guía central)</a></li>'],
+  // Inline JS display-text
+  ["if (!gal || gal <= 0) { text.textContent = 'Enter valid diameter and depth.'; el.classList.remove('hidden'); return; }",
+   "if (!gal || gal <= 0) { text.textContent = 'Ingrese un diámetro y una profundidad válidos.'; el.classList.remove('hidden'); return; }"],
+  ["text.textContent = 'Volume: ' + Math.round(gal).toLocaleString() + ' gallons';",
+   "text.textContent = 'Volumen: ' + Math.round(gal).toLocaleString() + ' galones';"],
+];
+
 module.exports = {
   SHARED,
+  SHARED_OPTIONAL,
   'chemical-calculator.html': CHEMICAL_CALCULATOR,
   'pool-volume-calculator.html': POOL_VOLUME_CALCULATOR,
   'pool-chlorine-calculator.html': POOL_CHLORINE_CALCULATOR,
   'pool-ph-calculator.html': POOL_PH_CALCULATOR,
   'pool-shock-calculator.html': POOL_SHOCK_CALCULATOR,
+  'hot-tub-chlorine-calculator.html': HOT_TUB_CHLORINE_CALCULATOR,
+  'hot-tub-ph-calculator.html': HOT_TUB_PH_CALCULATOR,
+  'hot-tub-shock-calculator.html': HOT_TUB_SHOCK_CALCULATOR,
+  'spa-volume-calculator.html': SPA_VOLUME_CALCULATOR,
 };
