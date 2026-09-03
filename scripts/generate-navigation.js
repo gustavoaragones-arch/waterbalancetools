@@ -16,21 +16,36 @@ const fs   = require('fs');
 const path = require('path');
 const { walkHtml, ROOT, buildUrl } = require('./template-utils');
 const urlPolicy = require('./url-policy');
+const translationStatus = require('../js/i18n/translation-status');
+const { detectLanguageFromPath, stripLanguagePrefix } = require('../js/i18n/locale-url');
+const { getDefaultLanguage } = require('../js/i18n/languages');
 
 // Directories whose HTML we skip when building the nav index
 const SKIP_DIRS = new Set([
   'node_modules', '.git', 'assets', 'js', 'functions',
   'data', 'lib', 'scripts', 'partials', 'templates',
-  // Phase 8E: the Spanish production cluster (es/) is deliberately not
-  // wired into data/navigation.json yet -- this file feeds breadcrumbs,
-  // search, and related-content generation, none of which are
-  // language-aware in this phase, so an indexed /es/ page risks a stray
-  // English-labeled related-content link pointing at Spanish content (or
-  // vice versa). Each Spanish page authors its own breadcrumb directly
-  // (see scripts/generate-spanish-cluster.js) and needs no entry here.
-  // See docs/PHASE-8E-SPANISH-ROLLOUT.md, known limitations.
-  'es',
 ]);
+
+// Phase 8F: es/ is no longer directory-skipped outright (Phase 8E's blanket
+// skip was too broad -- see docs/PHASE-8F-SPANISH-REGIONAL-SEO.md, spec
+// Section 12: "Do NOT simply remove 'es' from SKIP_DIRS. Instead, design
+// the correct rule.") Per-URL eligibility instead: a /es/ page is indexed
+// only when data/i18n/translation-status.json reports it "translated" for
+// es -- an untranslated /es/ page (should one ever exist on disk, e.g. a
+// stale leftover) can never leak into navigation.json, while a genuinely
+// translated one participates like any English page, tagged with its own
+// `lang`. English pages are entirely unaffected (this check is a no-op for
+// any URL without the /es prefix).
+function buildTranslatedEsUrlSet() {
+  const set = new Set();
+  for (const unit of translationStatus.getAllUnits()) {
+    const es = unit.languages.es;
+    if (es && es.status === 'translated') set.add(es.url);
+  }
+  return set;
+}
+const TRANSLATED_ES_URLS = buildTranslatedEsUrlSet();
+const DEFAULT_LANG = getDefaultLanguage().code;
 
 // ── HTML metadata extractor ───────────────────────────────────────────────────
 
@@ -51,7 +66,12 @@ function toCleanUrl(relPath) {
 }
 
 function urlToCategory(url) {
-  const first = url.replace(/^\//, '').split('/')[0];
+  // Phase 8F: categorize by the URL's content path, ignoring any leading
+  // language segment, so /es/calculators/x categorizes as "calculators"
+  // exactly like /calculators/x (mirrors the same fix already made to
+  // generate-sitemaps.js's getCategory() in Phase 8E).
+  const { path: pathNoLang } = stripLanguagePrefix(url);
+  const first = pathNoLang.replace(/^\//, '').split('/')[0];
   const map = {
     calculators: 'calculators', guides: 'guides', charts: 'charts',
     resources: 'resources', academy: 'academy', formulas: 'formulas',
@@ -115,6 +135,13 @@ for (const fullPath of walk(ROOT)) {
   if (urlPolicy.isRedirectSource(relPath)) continue;
   const url = toCleanUrl(relPath);
   if (seen.has(url)) continue;
+
+  const lang = detectLanguageFromPath(url);
+  // Phase 8F eligibility gate: a non-default-language URL is indexed only
+  // when translation-status.json reports it "translated" -- see the
+  // TRANSLATED_ES_URLS comment above. Default-language (English) URLs are
+  // never subject to this check.
+  if (lang !== DEFAULT_LANG && !TRANSLATED_ES_URLS.has(url)) continue;
   seen.add(url);
 
   const html  = fs.readFileSync(fullPath, 'utf8');
@@ -124,6 +151,7 @@ for (const fullPath of walk(ROOT)) {
 
   pages.push({
     url,
+    lang,
     title:              meta.title || meta.h1 || url,
     description:        meta.description,
     category:           cat,

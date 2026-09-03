@@ -1,0 +1,162 @@
+{
+  "_comment": "Phase 8F Spanish regional terminology model (docs/PHASE-8F-SPANISH-REGIONAL-SEO.md). This is a SEO/lexical data source, not a translation-content store and not a second translation-status system -- it records which Spanish TERM to prefer for a given semantic concept, in a given region, for a given use (SEO metadata, natural body copy, FAQ, internal-link anchor), backed by cited evidence. It does not decide whether a page exists in Spanish (see data/i18n/translation-status.json for that). Regions where no material distinction was found are intentionally left undifferentiated -- see Section 3 of the docs: 'Do not force a country-level distinction when the evidence does not support one.'",
+  "_generated": "2026-09-03",
+  "regions": [
+    { "code": "neutral", "name": "Neutral / International Spanish" },
+    { "code": "ES", "name": "Spain" },
+    { "code": "MX", "name": "Mexico" },
+    { "code": "AR", "name": "Argentina" },
+    { "code": "UY", "name": "Uruguay" },
+    { "code": "CL", "name": "Chile" },
+    { "code": "CO", "name": "Colombia" }
+  ],
+  "regionStatusValues": ["preferred", "common", "recognized", "secondary", "avoid-for-this-region"],
+  "concepts": [
+    {
+      "concept": "pool",
+      "domain": "product",
+      "canonicalTerm": "piscina",
+      "notes": "The three-way piscina/alberca/pileta distinction is the clearest, best-evidenced regional split found. Do not collapse into one string; do not stuff all three into running body copy (see docs Section 6).",
+      "variants": [
+        {
+          "term": "piscina",
+          "regionStatus": { "neutral": "preferred", "ES": "preferred", "MX": "recognized", "AR": "recognized", "UY": "recognized", "CL": "preferred", "CO": "preferred" },
+          "seoSuitability": "high",
+          "naturalLanguageSuitability": "high",
+          "confidence": "high",
+          "evidence": ["RAE: 'construcción que contiene agua... destinada al baño'", "https://dle.rae.es (piscina)", "https://piscinasinfo.com/blog/piscina-pileta-alberca-te-lo-contamos-aqui/"]
+        },
+        {
+          "term": "alberca",
+          "regionStatus": { "MX": "preferred", "neutral": "avoid-for-this-region" },
+          "seoSuitability": "high",
+          "naturalLanguageSuitability": "high",
+          "confidence": "high",
+          "notes": "Classified by the Academia Mexicana de la Lengua as a synchronic Mexicanism ('piscina deportiva'); dominant in Mexico across registers, including construction-industry usage.",
+          "evidence": ["Academia Mexicana de la Lengua, Diccionario breve de mexicanismos: https://academia.org.mx/consultas/obras-de-consulta-en-linea/diccionario-breve-de-mexicanismos-de-guido-gomez-de-silva/item/alberca", "https://construccionalbercas.com.mx/como-se-le-dice-a-la-piscina-en-mexico/"]
+        },
+        {
+          "term": "pileta",
+          "regionStatus": { "AR": "preferred", "UY": "preferred", "neutral": "avoid-for-this-region" },
+          "seoSuitability": "high",
+          "naturalLanguageSuitability": "high",
+          "confidence": "high",
+          "notes": "Rioplatense term (Argentina, Uruguay, and to a lesser extent Paraguay). Also colloquially means 'sink' in general Spanish -- disambiguate with pool-specific surrounding context (e.g. 'pileta de natación') where ambiguity is possible outside a clearly pool-related page.",
+          "evidence": ["AsiHablamos.com, Diccionario Latinoamericano: https://www.asihablamos.com/word/palabra/Pileta.php", "Real Academia Española, DLE (pileta, regional marks Arg./Bol./Par./Ur.): https://dle.rae.es/pileta"]
+        }
+      ]
+    },
+    {
+      "concept": "swimming_pool_formal",
+      "domain": "descriptor",
+      "canonicalTerm": "piscina de natación",
+      "notes": "A more formal/technical qualifier, useful for disambiguating 'pileta' from its 'sink' sense or for higher-register copy; not a regional variant of 'pool' itself.",
+      "variants": [
+        { "term": "piscina de natación", "regionStatus": { "neutral": "recognized" }, "seoSuitability": "medium", "naturalLanguageSuitability": "medium", "confidence": "medium", "evidence": ["general usage, low regional variation observed"] }
+      ]
+    },
+    {
+      "concept": "residential_pool",
+      "domain": "descriptor",
+      "canonicalTerm": "piscina residencial",
+      "variants": [
+        { "term": "piscina residencial", "regionStatus": { "neutral": "recognized" }, "seoSuitability": "medium", "naturalLanguageSuitability": "medium", "confidence": "medium", "evidence": ["general commercial usage, no material regional split found"] },
+        { "term": "piscina particular", "regionStatus": { "ES": "recognized" }, "seoSuitability": "medium", "naturalLanguageSuitability": "medium", "confidence": "low", "evidence": ["general commercial usage in Spain"] }
+      ]
+    },
+    {
+      "concept": "heated_pool",
+      "domain": "descriptor",
+      "canonicalTerm": "piscina climatizada",
+      "variants": [
+        { "term": "piscina climatizada", "regionStatus": { "neutral": "recognized" }, "seoSuitability": "medium", "naturalLanguageSuitability": "medium", "confidence": "medium", "evidence": ["general commercial usage, no material regional split found"] }
+      ]
+    },
+    {
+      "concept": "hot_tub",
+      "domain": "product",
+      "canonicalTerm": "spa",
+      "notes": "IMPORTANT content-accuracy finding, not just a stylistic choice: 'bañera de hidromasaje'/'tina de hidromasaje' (used as the primary term on Jacuzzi(R)'s own es-mx/es-es sites) name a DIFFERENT, smaller product -- an indoor, 1-2 person bathroom fixture with no continuous filtration, drained after each use. WaterBalanceTools' hot-tub calculators concern a continuously-filled, filtered, heated, chemically-treated multi-person vessel that actually needs ongoing chlorine/pH management -- that is the 'spa' concept below, matching this site's existing Phase 8E Spanish copy ('Spa / Jacuzzi', 'Calculadora ... para Spa'), which this research confirms was already correct. See the separate 'hydromassage_bathtub' concept for the drain-after-use fixture, kept intentionally distinct so it is never substituted for 'hot tub' in a chemistry-maintenance context.",
+      "relatedButDistinctConcept": "hydromassage_bathtub",
+      "variants": [
+        {
+          "term": "spa",
+          "regionStatus": { "neutral": "preferred", "ES": "preferred", "MX": "common", "AR": "common", "UY": "common", "CL": "preferred", "CO": "common" },
+          "seoSuitability": "high",
+          "naturalLanguageSuitability": "high",
+          "confidence": "high",
+          "evidence": ["Jacuzzi(R) Spain's own site uses 'spa' as its primary category label: https://www.jacuzzi.com/es-es/spas", "Jacuzzi Chile uses 'spa' as its primary category: https://jacuzzi.cl/categoria/spa/", "https://www.webdelhidromasaje.com/es/info/diferencias-spa-jacuzzi-exterior-banera-hidromasaje/"]
+        },
+        {
+          "term": "jacuzzi",
+          "isTrademark": true,
+          "regionStatus": { "neutral": "secondary", "MX": "common", "AR": "common", "CL": "common", "ES": "recognized" },
+          "seoSuitability": "high",
+          "naturalLanguageSuitability": "low",
+          "confidence": "high",
+          "notes": "Registered trademark (RAE confirms: 'jacuzzi... Marca reg.'), genericized in everyday Latin American usage to the point of being applied even to unrelated products (bañeras de hidromasaje sold colloquially as 'jacuzzis'). Model as a high-value SEARCH/lexical variant for matching real user queries -- never as the canonical or primary body-copy term.",
+          "evidence": ["RAE, DLE: https://dle.rae.es/jacuzzi", "RAE, Diccionario panhispánico de dudas (yacusi): https://www.rae.es/dpd/yacusi", "https://piscinasenpanama.com/2021/10/23/spa-banera-de-hidromasaje-o-jacuzzi-cual-es-la-diferencia/"]
+        },
+        {
+          "term": "yacusi",
+          "isTrademark": true,
+          "regionStatus": { "neutral": "secondary" },
+          "seoSuitability": "low",
+          "naturalLanguageSuitability": "low",
+          "confidence": "medium",
+          "notes": "RAE-recommended Hispanicized spelling of 'jacuzzi'. Rare in real-world search/commercial usage compared to 'jacuzzi' itself; kept for completeness and dictionary-correctness, not as an SEO priority.",
+          "evidence": ["RAE, Diccionario panhispánico de dudas: https://www.rae.es/dpd/yacusi"]
+        },
+        {
+          "term": "hidromasaje",
+          "regionStatus": { "neutral": "recognized" },
+          "seoSuitability": "medium",
+          "naturalLanguageSuitability": "medium",
+          "confidence": "medium",
+          "notes": "Generic descriptor for the water-jet massage function itself; in real usage typically appears adjectivally ('spa de hidromasaje', 'bañera de hidromasaje') rather than standing alone as the product name.",
+          "evidence": ["https://www.hidromasajeseca.com/blog/spa/diferencias-entre-spa-y-banera-de-hidromasaje"]
+        }
+      ]
+    },
+    {
+      "concept": "hydromassage_bathtub",
+      "domain": "product",
+      "canonicalTerm": "bañera de hidromasaje",
+      "notes": "Deliberately modeled as DISTINCT from 'hot_tub' above, not a regional synonym of it. An indoor, 1-2 person bathroom fixture without a continuous filtration/heating cycle, drained after each use. Not relevant to WaterBalanceTools' chemistry-maintenance calculators; kept in this file only so a future page/content generator can positively recognize the term and avoid mis-mapping it onto the hot_tub concept.",
+      "variants": [
+        { "term": "bañera de hidromasaje", "regionStatus": { "ES": "preferred", "neutral": "recognized" }, "seoSuitability": "n/a", "naturalLanguageSuitability": "n/a", "confidence": "high", "evidence": ["https://www.leroymerlin.es/ideas-y-consejos/consejos/diferencia-entre-jacuzzi-y-banera-de-hidromasaje.html", "Jacuzzi(R) Spain: https://www.jacuzzi.com/es-es/ba%C3%B1eras-con-hidromasaje"] },
+        { "term": "tina de hidromasaje", "regionStatus": { "MX": "preferred", "neutral": "recognized" }, "seoSuitability": "n/a", "naturalLanguageSuitability": "n/a", "confidence": "high", "evidence": ["Jacuzzi(R) Mexico: https://www.jacuzzi.com/es-mx/hot-tub-installation.html"] }
+      ]
+    },
+    { "concept": "chlorine", "domain": "chemistry", "canonicalTerm": "cloro", "variants": [ { "term": "cloro", "regionStatus": { "neutral": "preferred" }, "seoSuitability": "high", "naturalLanguageSuitability": "high", "confidence": "high", "evidence": ["standard chemistry usage, no material regional variation found across ES/MX/AR/UY/CL/CO sources reviewed"] } ] },
+    { "concept": "free_chlorine", "domain": "chemistry", "canonicalTerm": "cloro libre", "variants": [ { "term": "cloro libre", "regionStatus": { "neutral": "preferred" }, "seoSuitability": "high", "naturalLanguageSuitability": "high", "confidence": "high", "evidence": ["https://ps-water.es/que-es-el-cloro-libre/", "https://hannachile.com/2024/05/10/cloro-libre-en-piscinas/", "https://manejatupiscina.com/2025/05/09/que-es-el-cloro-libre-y-cloro-total-en-piscinas-y-como-controlarlos/"] } ] },
+    { "concept": "combined_chlorine", "domain": "chemistry", "canonicalTerm": "cloro combinado", "variants": [ { "term": "cloro combinado", "regionStatus": { "neutral": "preferred" }, "seoSuitability": "high", "naturalLanguageSuitability": "high", "confidence": "high", "evidence": ["https://invermanpool.com/diferencia-cloro-libre-cloro-total-y-cloraminas-organicas/"] } ] },
+    { "concept": "total_chlorine", "domain": "chemistry", "canonicalTerm": "cloro total", "variants": [ { "term": "cloro total", "regionStatus": { "neutral": "preferred" }, "seoSuitability": "high", "naturalLanguageSuitability": "high", "confidence": "high", "evidence": ["https://limpiafondos10.com/piscinas/cloro-libre-cloro-total/", "https://www.todopiscinas.es/cloro-libre-vs-cloro-total/"] } ] },
+    {
+      "concept": "shock_treatment",
+      "domain": "chemistry",
+      "canonicalTerm": "choque de cloro",
+      "notes": "Two near-equally-used forms found ('choque de cloro' and 'cloración de choque'/'supercloración'); no clear regional split evidenced, both recognized as neutral. Kept as two variants rather than forced into one.",
+      "variants": [
+        { "term": "choque de cloro", "regionStatus": { "neutral": "preferred" }, "seoSuitability": "high", "naturalLanguageSuitability": "high", "confidence": "medium", "evidence": ["general commercial/technical usage across sources reviewed"] },
+        { "term": "cloración de choque", "regionStatus": { "neutral": "recognized" }, "seoSuitability": "high", "naturalLanguageSuitability": "medium", "confidence": "medium", "evidence": ["general commercial/technical usage across sources reviewed"] }
+      ]
+    },
+    { "concept": "ph", "domain": "chemistry", "canonicalTerm": "pH", "variants": [ { "term": "pH", "regionStatus": { "neutral": "preferred" }, "seoSuitability": "high", "naturalLanguageSuitability": "high", "confidence": "high", "evidence": ["standard chemistry notation, unvaried across all regions reviewed"] } ] },
+    { "concept": "total_alkalinity", "domain": "chemistry", "canonicalTerm": "alcalinidad total", "variants": [ { "term": "alcalinidad total", "regionStatus": { "neutral": "preferred" }, "seoSuitability": "high", "naturalLanguageSuitability": "high", "confidence": "high", "evidence": ["general technical usage, no material regional variation found"] } ] },
+    { "concept": "calcium_hardness", "domain": "chemistry", "canonicalTerm": "dureza cálcica", "variants": [ { "term": "dureza cálcica", "regionStatus": { "neutral": "preferred" }, "seoSuitability": "high", "naturalLanguageSuitability": "high", "confidence": "high", "evidence": ["https://www.fluidra.com/es/soluciones-comerciales/inspiracion/blog/dureza-del-agua/", "https://blog.orendatech.com/blog-espanol/entender-dureza-del-calcio"] } ] },
+    {
+      "concept": "cyanuric_acid",
+      "domain": "chemistry",
+      "canonicalTerm": "ácido cianúrico",
+      "variants": [
+        { "term": "ácido cianúrico", "regionStatus": { "neutral": "preferred" }, "seoSuitability": "high", "naturalLanguageSuitability": "high", "confidence": "high", "evidence": ["https://iopool.com/es-es/blogs/consejos-para-la-piscina/piscina-acido-cianurico", "https://www.mantenimientos-piscinas-madrid.es/acido-isocianurico-en-piscinas/"] },
+        { "term": "estabilizador", "regionStatus": { "neutral": "common" }, "seoSuitability": "high", "naturalLanguageSuitability": "high", "confidence": "medium", "notes": "Common informal/functional name for the same concept (also 'estabilizador de cloro' / 'acondicionador de piscinas'); listed as its own concept below since it is sometimes searched independently of the chemical name.", "evidence": ["https://manejatupiscina.com/2025/05/09/que-es-el-acido-cianurico-o-estabilizador-y-como-se-controla-en-piscinas/"] }
+      ]
+    },
+    { "concept": "stabilizer", "domain": "chemistry", "canonicalTerm": "estabilizador", "notes": "Functional synonym of cyanuric_acid above; kept separate because it is commonly searched/used on its own.", "variants": [ { "term": "estabilizador", "regionStatus": { "neutral": "preferred" }, "seoSuitability": "high", "naturalLanguageSuitability": "high", "confidence": "medium", "evidence": ["https://grupopiscinas.com/blog-de-piscinas/virtudes-e-inconvenientes-acido-cianurico/"] } ] },
+    { "concept": "disinfectant", "domain": "chemistry", "canonicalTerm": "desinfectante", "variants": [ { "term": "desinfectante", "regionStatus": { "neutral": "preferred" }, "seoSuitability": "high", "naturalLanguageSuitability": "high", "confidence": "high", "evidence": ["general technical usage, no material regional variation found"] } ] },
+    { "concept": "pool_volume", "domain": "chemistry", "canonicalTerm": "volumen de la piscina", "variants": [ { "term": "volumen de la piscina", "regionStatus": { "neutral": "preferred" }, "seoSuitability": "high", "naturalLanguageSuitability": "high", "confidence": "high", "evidence": ["general technical usage; regional pool-noun variants (alberca/pileta) apply here via the 'pool' concept's own substitution, not a separate regional split for 'volumen'"] }, { "term": "capacidad de la piscina", "regionStatus": { "neutral": "recognized" }, "seoSuitability": "medium", "naturalLanguageSuitability": "medium", "confidence": "low", "evidence": ["general commercial usage"] } ] },
+    { "concept": "water_treatment", "domain": "chemistry", "canonicalTerm": "tratamiento del agua", "variants": [ { "term": "tratamiento del agua", "regionStatus": { "neutral": "preferred" }, "seoSuitability": "high", "naturalLanguageSuitability": "high", "confidence": "high", "evidence": ["general technical usage, no material regional variation found"] } ] }
+  ]
+}

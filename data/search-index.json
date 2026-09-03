@@ -1,6 +1,8 @@
 [
   {
     "url": "/calculators",
+    "lang": "en",
+    "contentId": null,
     "title": "Calculators Hub",
     "description": "All pool and hot tub calculators organized by use-case and maintenance workflow.",
     "h1": "Calculators Hub",
@@ -11,6 +13,8 @@
   },
   {
     "url": "/calculators/chemical-calculator",
+    "lang": "en",
+    "contentId": "calculator:chemical",
     "title": "Pool Chemical Calculator (Chlorine and pH)",
     "description": "Get a chlorine dose and pH adjustment guidance in seconds—enter gallons + test readings. Avoid over-treatment, cut guesswork, and keep water swim-ready.",
     "h1": "Pool & Hot Tub Chemical Calculator",
@@ -21,6 +25,8 @@
   },
   {
     "url": "/calculators/hot-tub-chlorine-calculator",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Chlorine Calculator (30-Second Check)",
     "description": "Hit 3–5 ppm sanitizer in seconds: enter spa gallons + test strip readings for exact chlorine ounces. Avoid over-chlorination, rash risk, and cover damage.",
     "h1": "Hot Tub Chlorine Calculator",
@@ -31,6 +37,8 @@
   },
   {
     "url": "/calculators/hot-tub-ph-calculator",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub pH Calculator",
     "description": "Find out whether to raise or lower your hot tub's pH and by how much (small, moderate, or substantial adjustment)—plus safe, incremental dosing guidance.",
     "h1": "Hot Tub pH Calculator",
@@ -41,6 +49,8 @@
   },
   {
     "url": "/calculators/hot-tub-shock-calculator",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Shock Calculator (By Product)",
     "description": "Hot tub shock calculator. Enter spa gallons, target ppm, and shock product for a product-specific dose. Free and fast.",
     "h1": "Hot Tub Shock Calculator",
@@ -51,6 +61,8 @@
   },
   {
     "url": "/calculators/pool-alkalinity-calculator",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Alkalinity Calculator",
     "description": "Pool alkalinity calculator. Enter pool gallons and current alkalinity to get alkalinity increaser amount. Free and fast.",
     "h1": "Pool Alkalinity Calculator",
@@ -61,6 +73,8 @@
   },
   {
     "url": "/calculators/pool-chlorine-calculator",
+    "lang": "en",
+    "contentId": "calculator:pool-chlorine",
     "title": "Pool Chlorine Calculator (Oz by Volume)",
     "description": "Pool chlorine calculator: gallons + ppm in → exact liquid or granular ounces out. For pH, alkalinity, and combined dosing, use the main Pool Chemical Calcula...",
     "h1": "Pool Chlorine Calculator",
@@ -71,6 +85,8 @@
   },
   {
     "url": "/calculators/pool-cyanuric-acid-calculator",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Cyanuric Acid Calculator",
     "description": "Pool cyanuric acid (CYA) calculator. Enter pool gallons and current CYA to get stabilizer amount. Free and fast.",
     "h1": "Pool Cyanuric Acid Calculator",
@@ -81,6 +97,8 @@
   },
   {
     "url": "/calculators/pool-ph-calculator",
+    "lang": "en",
+    "contentId": "calculator:pool-ph",
     "title": "Pool pH Calculator (Target 7.2–7.6)",
     "description": "Find out whether to raise or lower your pool's pH and by how much (small, moderate, or substantial adjustment)—plus safe, incremental dosing guidance.",
     "h1": "Pool pH Calculator",
@@ -91,6 +109,8 @@
   },
   {
     "url": "/calculators/pool-shock-calculator",
+    "lang": "en",
+    "contentId": "calculator:pool-shock",
     "title": "Pool Shock Calculator (Product-Specific Dose)",
     "description": "Pool shock calculator: select your shock product (liquid, cal-hypo, dichlor, or trichlor) for a product-specific dose from gallons + target ppm (5–20). For c...",
     "h1": "Pool Shock Calculator",
@@ -101,6 +121,8 @@
   },
   {
     "url": "/calculators/pool-turnover-rate-calculator",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Turnover Rate Calculator",
     "description": "Pool turnover rate calculator. Enter pool volume and pump flow rate to get hours for full turnover. Free and fast.",
     "h1": "Pool Turnover Rate Calculator",
@@ -111,6 +133,8 @@
   },
   {
     "url": "/calculators/pool-volume-calculator",
+    "lang": "en",
+    "contentId": "calculator:pool-volume",
     "title": "Pool Volume Calculator (calculators)",
     "description": "Pool volume calculator. Rectangular, circular, and oval shapes. Get gallons and liters. Free and fast.",
     "h1": "Pool Volume Calculator",
@@ -121,6 +145,8 @@
   },
   {
     "url": "/calculators/saltwater-pool-salt-calculator",
+    "lang": "en",
+    "contentId": null,
     "title": "Saltwater Pool Salt Calculator",
     "description": "Saltwater pool salt calculator. Enter pool gallons and current salt level to get pounds of salt required. Free and fast.",
     "h1": "Saltwater Pool Salt Calculator",
@@ -131,6 +157,8 @@
   },
   {
     "url": "/calculators/spa-volume-calculator",
+    "lang": "en",
+    "contentId": null,
     "title": "Spa Volume Calculator",
     "description": "Spa volume calculator. Enter diameter and depth to get hot tub volume in gallons. Free and fast.",
     "h1": "Spa Volume Calculator",
@@ -140,7 +168,69 @@
     "keywords": "spa volume calculator"
   },
   {
+    "url": "/es/calculators/chemical-calculator",
+    "lang": "es",
+    "contentId": "calculator:chemical",
+    "title": "Calculadora Química de Piscina (Cloro y pH)",
+    "description": "Obtenga una dosis de cloro y orientación para ajustar el pH en segundos: ingrese los galones y los resultados de sus pruebas. Evite el sobretratamiento, elimine las conjeturas y mantenga el agua lista para nadar.",
+    "h1": "Calculadora Química de Piscina y Spa",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculadora mica piscina cloro spa"
+  },
+  {
+    "url": "/es/calculators/pool-chlorine-calculator",
+    "lang": "es",
+    "contentId": "calculator:pool-chlorine",
+    "title": "Calculadora de Cloro para Piscina (Oz por Volumen)",
+    "description": "Calculadora de cloro para piscina: galones + ppm → onzas exactas de cloro líquido o granular. Para pH, alcalinidad y dosificación combinada, use la Calculadora Química principal...",
+    "h1": "Calculadora de Cloro para Piscina",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculadora cloro para piscina por volumen"
+  },
+  {
+    "url": "/es/calculators/pool-ph-calculator",
+    "lang": "es",
+    "contentId": "calculator:pool-ph",
+    "title": "Calculadora de pH para Piscina (Objetivo 7.2–7.6)",
+    "description": "Descubra si debe subir o bajar el pH de su piscina y en qué medida (ajuste pequeño, moderado o sustancial), además de orientación segura para la dosificación incremental.",
+    "h1": "Calculadora de pH para Piscina",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculadora para piscina objetivo"
+  },
+  {
+    "url": "/es/calculators/pool-shock-calculator",
+    "lang": "es",
+    "contentId": "calculator:pool-shock",
+    "title": "Calculadora de Choque para Piscina (Dosis por Producto)",
+    "description": "Calculadora de choque para piscina: seleccione su producto de choque (líquido, hipoclorito de calcio, dicloro o tricloro) para una dosis específica según galones + ppm objetivo (5–20). Para c...",
+    "h1": "Calculadora de Choque para Piscina",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculadora choque para piscina dosis por producto"
+  },
+  {
+    "url": "/es/calculators/pool-volume-calculator",
+    "lang": "es",
+    "contentId": "calculator:pool-volume",
+    "title": "Calculadora de Volumen de Piscina (calculators)",
+    "description": "Calculadora de volumen de piscina. Formas rectangular, circular y ovalada. Obtenga galones y litros. Gratis y rápida.",
+    "h1": "Calculadora de Volumen de Piscina",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculadora volumen piscina calculators"
+  },
+  {
     "url": "/charts",
+    "lang": "en",
+    "contentId": null,
     "title": "Charts Hub",
     "description": "Visual range charts for pool and spa chemistry with supporting calculator paths.",
     "h1": "Charts Hub",
@@ -151,6 +241,8 @@
   },
   {
     "url": "/charts/pool-water-balance-chart",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Water Balance Chart",
     "description": "How pH, alkalinity, and chlorine work together in pool water balance. Simple diagram and explanation.",
     "h1": "Pool Water Balance Chart",
@@ -161,6 +253,8 @@
   },
   {
     "url": "/resources",
+    "lang": "en",
+    "contentId": null,
     "title": "Free Pool &amp; Hot Tub Printable Resources",
     "description": "Free printable checklists, log sheets, and maintenance forms for pool and hot tub owners. Download or print for free — no signup required.",
     "h1": "Free Pool & Hot Tub Printable Resources",
@@ -171,6 +265,8 @@
   },
   {
     "url": "/resources/airbnb-pool-turnover-checklist",
+    "lang": "en",
+    "contentId": null,
     "title": "Vacation Rental Pool Turnover Checklist",
     "description": "Free printable Airbnb and vacation rental pool turnover checklist. Quick between-guest pool inspection and chemical check. Download or print for free.",
     "h1": "Vacation Rental Pool Turnover Checklist",
@@ -181,6 +277,8 @@
   },
   {
     "url": "/resources/hot-tub-maintenance-log",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Maintenance Log",
     "description": "Free printable hot tub maintenance log. Track chemical readings, water tests, and maintenance tasks. Download or print for free.",
     "h1": "Hot Tub Maintenance Log",
@@ -191,6 +289,8 @@
   },
   {
     "url": "/resources/pool-chemical-log-sheet",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemical Log Sheet",
     "description": "Free printable pool chemical log sheet. Track chlorine, pH, alkalinity additions and water test results. Download or print for free.",
     "h1": "Pool Chemical Log Sheet",
@@ -201,6 +301,8 @@
   },
   {
     "url": "/resources/pool-closing-checklist",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Closing Checklist",
     "description": "Free printable pool closing / winterization checklist. Step-by-step guide to closing your pool for winter. Download or print for free.",
     "h1": "Pool Closing Checklist",
@@ -211,6 +313,8 @@
   },
   {
     "url": "/resources/pool-maintenance-checklist",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Maintenance Checklist",
     "description": "Free printable pool maintenance checklist. Weekly, monthly, and seasonal pool care tasks. Download or print for free.",
     "h1": "Pool Maintenance Checklist",
@@ -221,6 +325,8 @@
   },
   {
     "url": "/resources/pool-opening-checklist",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Opening Checklist",
     "description": "Free printable pool opening checklist for spring. Step-by-step guide to opening your pool. Download or print for free.",
     "h1": "Pool Opening Checklist",
@@ -231,6 +337,8 @@
   },
   {
     "url": "/resources/pool-shock-log",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Shock Treatment Log",
     "description": "Free printable pool shock treatment log. Track shock doses, product used, and water clarity results. Download or print for free.",
     "h1": "Pool Shock Treatment Log",
@@ -241,6 +349,8 @@
   },
   {
     "url": "/resources/water-test-log",
+    "lang": "en",
+    "contentId": null,
     "title": "Water Test Log",
     "description": "Free printable water test log for pool and hot tub. Record chlorine, pH, alkalinity, hardness, and CYA readings. Download or print for free.",
     "h1": "Water Test Log",
@@ -251,6 +361,8 @@
   },
   {
     "url": "/academy",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool &amp; Hot Tub Chemistry Academy",
     "description": "Learn pool and hot tub water chemistry with structured guides covering pH, chlorine, alkalinity, troubleshooting, and more.",
     "h1": "Pool & Hot Tub Chemistry Academy",
@@ -261,6 +373,8 @@
   },
   {
     "url": "/academy/equipment",
+    "lang": "en",
+    "contentId": null,
     "title": "Equipment",
     "description": "Pumps, filters, heaters, automation, and maintenance tips.",
     "h1": "Equipment",
@@ -271,6 +385,8 @@
   },
   {
     "url": "/academy/equipment/automatic-chlorinators",
+    "lang": "en",
+    "contentId": null,
     "title": "Automatic Chlorinators",
     "description": "Learn how automatic chlorine feeders work, the difference between inline and offline feeders, how to set the feed rate, and compatibility considerations.",
     "h1": "Automatic Chlorinators",
@@ -281,6 +397,8 @@
   },
   {
     "url": "/academy/equipment/pool-filters",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Filters: How They Work",
     "description": "Learn how pool filters work, the three main filter types, what they remove from water, and how to maintain them correctly.",
     "h1": "Pool Filters: How They Work",
@@ -291,6 +409,8 @@
   },
   {
     "url": "/academy/equipment/pool-pumps",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Pumps: Sizing and Turnover",
     "description": "Learn how to size a pool pump correctly, calculate turnover rate, and understand why variable speed pumps save energy while improving water quality.",
     "h1": "Pool Pumps: Sizing and Turnover",
@@ -301,6 +421,8 @@
   },
   {
     "url": "/academy/equipment/pool-skimmers",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Skimmers",
     "description": "Learn how pool skimmers work, why correct water level is essential for skimmer performance, and how to maintain them.",
     "h1": "Pool Skimmers",
@@ -311,6 +433,8 @@
   },
   {
     "url": "/academy/equipment/salt-systems",
+    "lang": "en",
+    "contentId": null,
     "title": "Salt Chlorinator Systems",
     "description": "Learn how salt chlorinator systems generate chlorine from dissolved salt, what they require in terms of water chemistry, and how to maintain the salt cell.",
     "h1": "Salt Chlorinator Systems",
@@ -321,6 +445,8 @@
   },
   {
     "url": "/academy/equipment/sand-vs-cartridge-filters",
+    "lang": "en",
+    "contentId": null,
     "title": "Sand Filters vs. Cartridge Filters",
     "description": "Compare sand and cartridge pool filters on filtration quality, water usage, maintenance requirements, and which is the better choice for your pool.",
     "h1": "Sand Filters vs. Cartridge Filters",
@@ -331,6 +457,8 @@
   },
   {
     "url": "/academy/fundamentals",
+    "lang": "en",
+    "contentId": null,
     "title": "Fundamentals",
     "description": "Core water chemistry concepts every pool owner needs to understand.",
     "h1": "Fundamentals",
@@ -341,6 +469,8 @@
   },
   {
     "url": "/academy/fundamentals/how-temperature-changes-water-chemistry",
+    "lang": "en",
+    "contentId": null,
     "title": "How Temperature Changes Water Chemistry",
     "description": "Learn how rising water temperature affects chlorine demand, pH stability, calcium solubility, and the Langelier Saturation Index.",
     "h1": "How Temperature Changes Water Chemistry",
@@ -351,6 +481,8 @@
   },
   {
     "url": "/academy/fundamentals/how-water-balance-works",
+    "lang": "en",
+    "contentId": null,
     "title": "How Water Balance Works",
     "description": "Understand what balanced pool water means, how the Langelier Saturation Index works, and why balance protects your pool surfaces and equipment.",
     "h1": "How Water Balance Works",
@@ -361,6 +493,8 @@
   },
   {
     "url": "/academy/fundamentals/indoor-pool-chemistry",
+    "lang": "en",
+    "contentId": null,
     "title": "Indoor Pool Chemistry",
     "description": "Why indoor pools need different chemistry management than outdoor pools: no CYA, more aggressive chloramine control, and ventilation-driven pH drift.",
     "h1": "Indoor Pool Chemistry",
@@ -371,6 +505,8 @@
   },
   {
     "url": "/academy/fundamentals/new-pool-startup-chemistry",
+    "lang": "en",
+    "contentId": null,
     "title": "New Pool Startup Chemistry (Fresh Fill & New Plaster)",
     "description": "The staged, day-by-day water chemistry sequence for filling a brand-new pool or a freshly plastered pool, from the National Plasterers Council's 28-day start...",
     "h1": "New Pool Startup Chemistry (Fresh Fill & New Plaster)",
@@ -381,6 +517,8 @@
   },
   {
     "url": "/academy/fundamentals/pool-vs-hot-tub-chemistry",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool vs. Hot Tub Chemistry",
     "description": "Understand how hot tub water chemistry differs from pool chemistry, including tighter target ranges, faster depletion, and more frequent testing.",
     "h1": "Pool vs. Hot Tub Chemistry",
@@ -391,6 +529,8 @@
   },
   {
     "url": "/academy/fundamentals/the-four-core-water-tests",
+    "lang": "en",
+    "contentId": null,
     "title": "The Four Core Water Tests",
     "description": "Learn which four water tests every pool owner must run, what each measures, and the target ranges for pools and hot tubs.",
     "h1": "The Four Core Water Tests",
@@ -401,6 +541,8 @@
   },
   {
     "url": "/academy/fundamentals/understanding-pool-water-chemistry",
+    "lang": "en",
+    "contentId": "academy:fund-01",
     "title": "Understanding Pool Water Chemistry",
     "description": "Learn the four core water chemistry parameters that every pool owner needs to maintain safe, clear water.",
     "h1": "Understanding Pool Water Chemistry",
@@ -411,6 +553,8 @@
   },
   {
     "url": "/academy/fundamentals/why-water-testing-matters",
+    "lang": "en",
+    "contentId": null,
     "title": "Why Water Testing Matters",
     "description": "Understand why regular water testing is the most cost-effective pool maintenance habit and what happens when testing is skipped.",
     "h1": "Why Water Testing Matters",
@@ -421,6 +565,8 @@
   },
   {
     "url": "/academy/hot-tubs",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tubs &amp; Spas",
     "description": "Hot tub chemistry, maintenance schedules, and water care.",
     "h1": "Hot Tubs & Spas",
@@ -431,6 +577,8 @@
   },
   {
     "url": "/academy/hot-tubs/daily-spa-maintenance",
+    "lang": "en",
+    "contentId": null,
     "title": "Daily Spa Maintenance",
     "description": "Learn the five-minute daily hot tub maintenance routine that prevents chemistry problems and keeps the water safe for every soak.",
     "h1": "Daily Spa Maintenance",
@@ -441,6 +589,8 @@
   },
   {
     "url": "/academy/hot-tubs/monthly-spa-maintenance",
+    "lang": "en",
+    "contentId": null,
     "title": "Monthly Spa Maintenance",
     "description": "Learn the monthly hot tub maintenance tasks including deep filter cleaning, full water test, and what to check to keep the system running efficiently.",
     "h1": "Monthly Spa Maintenance",
@@ -451,6 +601,8 @@
   },
   {
     "url": "/academy/hot-tubs/refilling-your-hot-tub",
+    "lang": "en",
+    "contentId": null,
     "title": "Refilling Your Hot Tub",
     "description": "Learn how to drain, clean, and refill a hot tub correctly, and how to set up the chemistry of fresh water before the first soak.",
     "h1": "Refilling Your Hot Tub",
@@ -461,6 +613,8 @@
   },
   {
     "url": "/academy/hot-tubs/shock-after-heavy-use",
+    "lang": "en",
+    "contentId": null,
     "title": "Shocking a Hot Tub After Heavy Use",
     "description": "Learn when and how to shock a hot tub after parties, heavy bather load, or other events that rapidly deplete sanitiser and create combined chlorine.",
     "h1": "Shocking a Hot Tub After Heavy Use",
@@ -471,6 +625,8 @@
   },
   {
     "url": "/academy/hot-tubs/weekly-spa-maintenance",
+    "lang": "en",
+    "contentId": null,
     "title": "Weekly Spa Maintenance",
     "description": "Learn the complete weekly hot tub maintenance routine including full water testing, filter rinse, and chemical balancing.",
     "h1": "Weekly Spa Maintenance",
@@ -481,6 +637,8 @@
   },
   {
     "url": "/academy/hot-tubs/winter-spa-care",
+    "lang": "en",
+    "contentId": null,
     "title": "Winter Spa Care",
     "description": "Learn how to care for a hot tub during winter, whether you keep it running or winterize it, including chemical adjustments and freeze protection.",
     "h1": "Winter Spa Care",
@@ -491,6 +649,8 @@
   },
   {
     "url": "/academy/sanitizers",
+    "lang": "en",
+    "contentId": null,
     "title": "Sanitizers",
     "description": "Chlorine, bromine, salt, and alternative sanitization methods.",
     "h1": "Sanitizers",
@@ -501,6 +661,8 @@
   },
   {
     "url": "/academy/sanitizers/breakpoint-chlorination",
+    "lang": "en",
+    "contentId": null,
     "title": "Breakpoint Chlorination",
     "description": "Learn what breakpoint chlorination is, how to calculate the dose needed to destroy combined chlorine, and how to execute it correctly.",
     "h1": "Breakpoint Chlorination",
@@ -511,6 +673,8 @@
   },
   {
     "url": "/academy/sanitizers/bromine-vs-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Bromine vs. Chlorine",
     "description": "Compare bromine and chlorine as pool and hot tub sanitizers, including effectiveness, cost, pH effects, and when each is the better choice.",
     "h1": "Bromine vs. Chlorine",
@@ -521,6 +685,8 @@
   },
   {
     "url": "/academy/sanitizers/combined-chlorine-explained",
+    "lang": "en",
+    "contentId": null,
     "title": "Combined Chlorine Explained",
     "description": "Learn what combined chlorine is, why it forms in pools, how to measure it, and why it causes the irritating pool smell many people mistake for too much chlor...",
     "h1": "Combined Chlorine Explained",
@@ -531,6 +697,8 @@
   },
   {
     "url": "/academy/sanitizers/liquid-chlorine-vs-tablets",
+    "lang": "en",
+    "contentId": null,
     "title": "Liquid Chlorine vs. Tablets",
     "description": "Compare liquid chlorine (sodium hypochlorite) and chlorine tablets (trichlor/dichlor) to decide which is right for your pool.",
     "h1": "Liquid Chlorine vs. Tablets",
@@ -541,6 +709,8 @@
   },
   {
     "url": "/academy/sanitizers/shock-treatments-explained",
+    "lang": "en",
+    "contentId": null,
     "title": "Shock Treatments Explained",
     "description": "Learn what pool shock is, when to shock your pool, which shock product to use, and how to do it correctly.",
     "h1": "Shock Treatments Explained",
@@ -551,6 +721,8 @@
   },
   {
     "url": "/academy/sanitizers/understanding-free-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Understanding Free Chlorine",
     "description": "Learn what free chlorine is, how it kills pathogens, why pH controls its effectiveness, and how to maintain the right level in your pool.",
     "h1": "Understanding Free Chlorine",
@@ -561,6 +733,8 @@
   },
   {
     "url": "/academy/testing",
+    "lang": "en",
+    "contentId": null,
     "title": "Testing",
     "description": "How to test pool water accurately and interpret results.",
     "h1": "Testing",
@@ -571,6 +745,8 @@
   },
   {
     "url": "/academy/testing/common-testing-mistakes",
+    "lang": "en",
+    "contentId": null,
     "title": "Common Pool Water Testing Mistakes",
     "description": "Avoid the most common pool water testing errors that lead to incorrect results, unnecessary chemical additions, and ongoing chemistry problems.",
     "h1": "Common Pool Water Testing Mistakes",
@@ -581,6 +757,8 @@
   },
   {
     "url": "/academy/testing/digital-pool-testers",
+    "lang": "en",
+    "contentId": null,
     "title": "Digital Pool Testers",
     "description": "Learn about digital pool testing devices, including photometers and ORP/pH probes, their accuracy, maintenance requirements, and which are worth buying.",
     "h1": "Digital Pool Testers",
@@ -591,6 +769,8 @@
   },
   {
     "url": "/academy/testing/how-often-to-test-water",
+    "lang": "en",
+    "contentId": null,
     "title": "How Often to Test Pool Water",
     "description": "Learn the recommended pool water testing frequency for pools and hot tubs, and which parameters need to be tested daily, weekly, or monthly.",
     "h1": "How Often to Test Pool Water",
@@ -601,6 +781,8 @@
   },
   {
     "url": "/academy/testing/understanding-test-results",
+    "lang": "en",
+    "contentId": null,
     "title": "Understanding Test Results",
     "description": "Learn how to interpret pool water test results, prioritise which parameters to address first, and decide when results require immediate action.",
     "h1": "Understanding Test Results",
@@ -611,6 +793,8 @@
   },
   {
     "url": "/academy/testing/using-liquid-test-kits",
+    "lang": "en",
+    "contentId": null,
     "title": "Using Liquid Test Kits",
     "description": "Learn how to use a liquid drop test kit for pool water, the difference between DPD and OTO tests, and how to get accurate results.",
     "h1": "Using Liquid Test Kits",
@@ -621,6 +805,8 @@
   },
   {
     "url": "/academy/testing/using-test-strips",
+    "lang": "en",
+    "contentId": null,
     "title": "Using Test Strips",
     "description": "Learn how to use pool test strips correctly, what each pad measures, and how to read results accurately to avoid common errors.",
     "h1": "Using Test Strips",
@@ -631,6 +817,8 @@
   },
   {
     "url": "/academy/troubleshooting",
+    "lang": "en",
+    "contentId": null,
     "title": "Troubleshooting",
     "description": "Diagnosing and fixing cloudy water, algae, staining, and more.",
     "h1": "Troubleshooting",
@@ -641,6 +829,8 @@
   },
   {
     "url": "/academy/troubleshooting/cloudy-water",
+    "lang": "en",
+    "contentId": null,
     "title": "Cloudy Pool Water: Causes and Solutions",
     "description": "Learn the four main causes of cloudy pool water and the step-by-step process to diagnose and clear it correctly.",
     "h1": "Cloudy Pool Water: Causes and Solutions",
@@ -651,6 +841,8 @@
   },
   {
     "url": "/academy/troubleshooting/corrosion",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Corrosion: Causes and Prevention",
     "description": "Learn what causes corrosion in pools and hot tubs, how to identify it, and how to stop it by correcting water chemistry.",
     "h1": "Pool Corrosion: Causes and Prevention",
@@ -661,6 +853,8 @@
   },
   {
     "url": "/academy/troubleshooting/foaming-hot-tubs",
+    "lang": "en",
+    "contentId": null,
     "title": "Foaming Hot Tubs: Causes and Solutions",
     "description": "Learn what causes hot tub foam, how to identify whether it is from chemistry or organics, and how to eliminate it permanently.",
     "h1": "Foaming Hot Tubs: Causes and Solutions",
@@ -671,6 +865,8 @@
   },
   {
     "url": "/academy/troubleshooting/green-water",
+    "lang": "en",
+    "contentId": null,
     "title": "Green Pool Water: How to Fix It",
     "description": "Learn what causes green pool water, how to tell different types of algae apart, and the step-by-step protocol to restore clear, safe water.",
     "h1": "Green Pool Water: How to Fix It",
@@ -681,6 +877,8 @@
   },
   {
     "url": "/academy/troubleshooting/scaling",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Scaling: Causes and Prevention",
     "description": "Learn what causes calcium scale deposits in pools and hot tubs, where scaling typically appears, and how to prevent and remove it.",
     "h1": "Pool Scaling: Causes and Prevention",
@@ -691,6 +889,8 @@
   },
   {
     "url": "/academy/troubleshooting/strong-chlorine-smell",
+    "lang": "en",
+    "contentId": null,
     "title": "Strong Chlorine Smell: What It Really Means",
     "description": "Understand why a strong chlorine smell in a pool or hot tub indicates combined chlorine (chloramines), not excess free chlorine, and how to fix it.",
     "h1": "Strong Chlorine Smell: What It Really Means",
@@ -701,6 +901,8 @@
   },
   {
     "url": "/academy/vacation-rentals",
+    "lang": "en",
+    "contentId": null,
     "title": "Vacation Rentals",
     "description": "Pool and hot tub management for Airbnb and short-term rentals.",
     "h1": "Vacation Rentals",
@@ -711,6 +913,8 @@
   },
   {
     "url": "/academy/vacation-rentals/chemical-log-sheets",
+    "lang": "en",
+    "contentId": null,
     "title": "Chemical Log Sheets for Vacation Rentals",
     "description": "Learn what a pool chemical log should record, why documentation protects vacation rental owners, and how to set up an effective logging system.",
     "h1": "Chemical Log Sheets for Vacation Rentals",
@@ -721,6 +925,8 @@
   },
   {
     "url": "/academy/vacation-rentals/emergency-water-recovery",
+    "lang": "en",
+    "contentId": null,
     "title": "Emergency Water Recovery for Vacation Rentals",
     "description": "Learn the step-by-step emergency protocol for recovering a pool or hot tub that has gone critically out of range between guest stays.",
     "h1": "Emergency Water Recovery for Vacation Rentals",
@@ -731,6 +937,8 @@
   },
   {
     "url": "/academy/vacation-rentals/guest-safety",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Guest Safety for Vacation Rentals",
     "description": "Learn the safety requirements, equipment, signage, and communication steps that protect vacation rental guests and limit owner liability.",
     "h1": "Pool Guest Safety for Vacation Rentals",
@@ -741,6 +949,8 @@
   },
   {
     "url": "/academy/vacation-rentals/maintenance-schedule",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Maintenance Schedule for Vacation Rentals",
     "description": "Build a structured maintenance schedule for a vacation rental pool or hot tub that accounts for variable guest occupancy and seasonal chemistry changes.",
     "h1": "Pool Maintenance Schedule for Vacation Rentals",
@@ -751,6 +961,8 @@
   },
   {
     "url": "/academy/vacation-rentals/turnover-checklist",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Turnover Checklist for Vacation Rentals",
     "description": "A step-by-step turnover checklist for Airbnb and vacation rental pool and hot tub management between guest stays.",
     "h1": "Pool Turnover Checklist for Vacation Rentals",
@@ -761,6 +973,8 @@
   },
   {
     "url": "/academy/vacation-rentals/weekly-inspection",
+    "lang": "en",
+    "contentId": null,
     "title": "Weekly Pool Inspection for Vacation Rentals",
     "description": "Learn the comprehensive weekly inspection protocol for vacation rental pools that catches chemistry, equipment, and safety problems before guests experience ...",
     "h1": "Weekly Pool Inspection for Vacation Rentals",
@@ -771,6 +985,8 @@
   },
   {
     "url": "/academy/water-balance",
+    "lang": "en",
+    "contentId": null,
     "title": "Water Balance",
     "description": "Balancing pH, alkalinity, hardness, and stabilizer for clear water.",
     "h1": "Water Balance",
@@ -781,6 +997,8 @@
   },
   {
     "url": "/academy/water-balance/understanding-calcium-hardness",
+    "lang": "en",
+    "contentId": null,
     "title": "Understanding Calcium Hardness",
     "description": "Learn what calcium hardness is, why it matters for pool surfaces and equipment, and how to adjust it correctly.",
     "h1": "Understanding Calcium Hardness",
@@ -791,6 +1009,8 @@
   },
   {
     "url": "/academy/water-balance/understanding-cyanuric-acid",
+    "lang": "en",
+    "contentId": null,
     "title": "Understanding Cyanuric Acid",
     "description": "Learn what cyanuric acid (CYA) does in pool water, the ideal CYA range, and how to manage buildup over time.",
     "h1": "Understanding Cyanuric Acid",
@@ -801,6 +1021,8 @@
   },
   {
     "url": "/academy/water-balance/understanding-lsi",
+    "lang": "en",
+    "contentId": null,
     "title": "Understanding the Langelier Saturation Index",
     "description": "Learn how the Langelier Saturation Index (LSI) measures water balance and why it is the most complete indicator of whether pool water is corrosive or scaling.",
     "h1": "Understanding the Langelier Saturation Index",
@@ -811,6 +1033,8 @@
   },
   {
     "url": "/academy/water-balance/understanding-ph",
+    "lang": "en",
+    "contentId": null,
     "title": "Understanding pH in Pool Water",
     "description": "Learn what pH measures, why pool water pH must be between 7.2 and 7.6, and how to raise or lower it correctly.",
     "h1": "Understanding pH in Pool Water",
@@ -821,6 +1045,8 @@
   },
   {
     "url": "/academy/water-balance/understanding-total-alkalinity",
+    "lang": "en",
+    "contentId": null,
     "title": "Understanding Total Alkalinity",
     "description": "Learn what total alkalinity is, why it acts as a pH buffer, and how to raise or lower alkalinity in your pool.",
     "h1": "Understanding Total Alkalinity",
@@ -831,6 +1057,8 @@
   },
   {
     "url": "/academy/water-balance/water-balance-order",
+    "lang": "en",
+    "contentId": null,
     "title": "Water Balance Order: The Correct Sequence",
     "description": "Learn the correct order for adjusting pool water chemistry parameters, and why adding chemicals in the wrong sequence creates more problems than it solves.",
     "h1": "Water Balance Order: The Correct Sequence",
@@ -841,6 +1069,8 @@
   },
   {
     "url": "/formulas",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemistry Formula Library",
     "description": "The complete pool chemistry formula library — chlorine dosing, pH adjustment, alkalinity, CYA, calcium hardness, and more. Every formula explained with worke...",
     "h1": "Pool Chemistry Formula Library",
@@ -851,6 +1081,8 @@
   },
   {
     "url": "/formulas/alkalinity-formula",
+    "lang": "en",
+    "contentId": null,
     "title": "Total Alkalinity Adjustment Formula",
     "description": "Calculate the exact amount of sodium bicarbonate needed to raise your pool's total alkalinity with the alkalinity formula.",
     "h1": "Total Alkalinity Adjustment Formula",
@@ -861,6 +1093,8 @@
   },
   {
     "url": "/formulas/cya-formula",
+    "lang": "en",
+    "contentId": null,
     "title": "CYA (Cyanuric Acid) Dose Formula",
     "description": "Calculate the correct cyanuric acid (stabilizer) dose for your pool with the CYA formula and worked example.",
     "h1": "CYA (Cyanuric Acid) Dose Formula",
@@ -871,6 +1105,8 @@
   },
   {
     "url": "/formulas/liquid-chlorine-formula",
+    "lang": "en",
+    "contentId": null,
     "title": "Liquid Chlorine Dose Formula",
     "description": "Learn how to calculate the correct liquid chlorine dose for your pool size. Includes worked example and limitations.",
     "h1": "Liquid Chlorine Dose Formula",
@@ -881,6 +1117,8 @@
   },
   {
     "url": "/formulas/lsi-formula",
+    "lang": "en",
+    "contentId": null,
     "title": "Langelier Saturation Index (LSI) Formula",
     "description": "Understand the Langelier Saturation Index formula. Learn what LSI measures, how to calculate it, and what the score means for your pool.",
     "h1": "Langelier Saturation Index (LSI) Formula",
@@ -891,6 +1129,8 @@
   },
   {
     "url": "/formulas/ph-adjustment-formula",
+    "lang": "en",
+    "contentId": null,
     "title": "pH Adjustment Formula",
     "description": "Why pool pH adjustment can't be reduced to a simple ounces-per-gallon formula the way chlorine and alkalinity can, and what to do instead.",
     "h1": "pH Adjustment Formula",
@@ -901,6 +1141,8 @@
   },
   {
     "url": "/formulas/pool-volume-formula",
+    "lang": "en",
+    "contentId": "formula:pool-volume",
     "title": "Pool Volume Formula",
     "description": "Learn the pool volume formula with worked examples. Calculate pool gallons for rectangular, oval, circular, and irregular-shaped pools.",
     "h1": "Pool Volume Formula",
@@ -911,6 +1153,8 @@
   },
   {
     "url": "/formulas/salt-formula",
+    "lang": "en",
+    "contentId": null,
     "title": "Salt Pool Formula",
     "description": "Calculate how many pounds of pool salt to add using the salt formula. Includes worked example for any pool size.",
     "h1": "Salt Pool Formula",
@@ -921,6 +1165,8 @@
   },
   {
     "url": "/formulas/shock-formula",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Shock Formula",
     "description": "Learn the pool shock formula. Calculate exactly how much calcium hypochlorite to add for maintenance, breakpoint, or algae recovery.",
     "h1": "Pool Shock Formula",
@@ -931,6 +1177,8 @@
   },
   {
     "url": "/formulas/turnover-formula",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Turnover Rate Formula",
     "description": "Calculate your pool's turnover rate with the turnover formula. Find required pump run time and verify filtration is adequate.",
     "h1": "Pool Turnover Rate Formula",
@@ -941,6 +1189,8 @@
   },
   {
     "url": "/glossary",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemistry Glossary",
     "description": "Definitions for pool and hot tub water chemistry terms — free chlorine, pH, total alkalinity, CYA, calcium hardness, LSI, and more.",
     "h1": "Pool & Hot Tub Water Chemistry Glossary",
@@ -951,6 +1201,8 @@
   },
   {
     "url": "/glossary/aggressive-water",
+    "lang": "en",
+    "contentId": null,
     "title": "Aggressive Water",
     "description": "Aggressive (corrosive) water has an LSI below -0. Plain-language definition with target values and related pool chemistry resources.",
     "h1": "Aggressive Water",
@@ -961,6 +1213,8 @@
   },
   {
     "url": "/glossary/algae-bloom",
+    "lang": "en",
+    "contentId": null,
     "title": "Algae Bloom",
     "description": "An algae bloom is the rapid, visible multiplication of algae in pool water, resulting in green, cloudy, or discolored water. Plain-language definition with t...",
     "h1": "Algae Bloom",
@@ -971,6 +1225,8 @@
   },
   {
     "url": "/glossary/algaecide",
+    "lang": "en",
+    "contentId": null,
     "title": "Algaecide",
     "description": "An algaecide is a chemical product that prevents algae growth or assists in killing established algae in pool water. Plain-language definition with target va...",
     "h1": "Algaecide",
@@ -981,6 +1237,8 @@
   },
   {
     "url": "/glossary/ammonia",
+    "lang": "en",
+    "contentId": null,
     "title": "Ammonia (Pool Water)",
     "description": "Ammonia in pool water is the primary nitrogen source for chloramine formation, introduced by bather waste including sweat and urine. Plain-language definitio...",
     "h1": "Ammonia (Pool Water)",
@@ -991,6 +1249,8 @@
   },
   {
     "url": "/glossary/backwashing",
+    "lang": "en",
+    "contentId": null,
     "title": "Backwashing",
     "description": "Backwashing is the process of reversing water flow through a sand or DE filter to flush accumulated debris out of the filter media to waste. Plain-language d...",
     "h1": "Backwashing",
@@ -1001,6 +1261,8 @@
   },
   {
     "url": "/glossary/bather-load",
+    "lang": "en",
+    "contentId": null,
     "title": "Bather Load",
     "description": "Bather load refers to the number and duration of swimmers in a pool, which affects chlorine consumption and organic contamination levels. Plain-language defi...",
     "h1": "Bather Load",
@@ -1011,6 +1273,8 @@
   },
   {
     "url": "/glossary/bcdmh",
+    "lang": "en",
+    "contentId": null,
     "title": "BCDMH",
     "description": "BCDMH (1-bromo-3-chloro-5,5-dimethylhydantoin) is the most common active ingredient in bromine tablets for hot tubs and spas. Plain-language definition with ...",
     "h1": "BCDMH",
@@ -1021,6 +1285,8 @@
   },
   {
     "url": "/glossary/bicarbonate-alkalinity",
+    "lang": "en",
+    "contentId": null,
     "title": "Bicarbonate Alkalinity",
     "description": "Bicarbonate alkalinity is the portion of total alkalinity contributed by bicarbonate ions (HCO3-), which is the dominant form in properly maintained pool wat...",
     "h1": "Bicarbonate Alkalinity",
@@ -1031,6 +1297,8 @@
   },
   {
     "url": "/glossary/biofilm",
+    "lang": "en",
+    "contentId": null,
     "title": "Biofilm",
     "description": "Biofilm is a protective matrix of bacteria and organic material that establishes on pool and spa plumbing surfaces. Plain-language definition with target val...",
     "h1": "Biofilm",
@@ -1041,6 +1309,8 @@
   },
   {
     "url": "/glossary/black-algae",
+    "lang": "en",
+    "contentId": null,
     "title": "Black Algae",
     "description": "Black algae is a stubborn, deeply rooted algae species that forms black or dark blue-green spots on pool plaster surfaces. Plain-language definition with tar...",
     "h1": "Black Algae",
@@ -1051,6 +1321,8 @@
   },
   {
     "url": "/glossary/breakpoint-chlorination",
+    "lang": "en",
+    "contentId": null,
     "title": "Breakpoint Chlorination",
     "description": "Breakpoint chlorination is the process of adding enough free chlorine to destroy all combined chlorine (chloramines) in pool water. Plain-language definition...",
     "h1": "Breakpoint Chlorination",
@@ -1061,6 +1333,8 @@
   },
   {
     "url": "/glossary/breakpoint-dose",
+    "lang": "en",
+    "contentId": null,
     "title": "Breakpoint Dose",
     "description": "The breakpoint dose is the specific amount of free chlorine that must be added to destroy all combined chlorine in pool water. Plain-language definition with...",
     "h1": "Breakpoint Dose",
@@ -1071,6 +1345,8 @@
   },
   {
     "url": "/glossary/bromine",
+    "lang": "en",
+    "contentId": null,
     "title": "Bromine",
     "description": "Bromine is a halogen sanitiser used in pool and spa water that forms hypobromous acid (HOBr) as its active disinfectant form. Plain-language definition with ...",
     "h1": "Bromine",
@@ -1081,6 +1357,8 @@
   },
   {
     "url": "/glossary/calcium-hardness",
+    "lang": "en",
+    "contentId": null,
     "title": "Calcium Hardness",
     "description": "Calcium hardness measures the concentration of dissolved calcium ions in pool water, expressed in ppm. Plain-language definition with target values and relat...",
     "h1": "Calcium Hardness",
@@ -1091,6 +1369,8 @@
   },
   {
     "url": "/glossary/calcium-hypochlorite",
+    "lang": "en",
+    "contentId": null,
     "title": "Calcium Hypochlorite",
     "description": "Calcium hypochlorite is a granular chlorine compound used primarily as pool shock, with approximately 65–73% available chlorine. Plain-language definition wi...",
     "h1": "Calcium Hypochlorite",
@@ -1101,6 +1381,8 @@
   },
   {
     "url": "/glossary/carbon-dioxide",
+    "lang": "en",
+    "contentId": null,
     "title": "Carbon Dioxide",
     "description": "Carbon dioxide (CO2) in pool water forms carbonic acid, which influences pH and contributes to the natural downward pH drift in some systems. Plain-language ...",
     "h1": "Carbon Dioxide",
@@ -1111,6 +1393,8 @@
   },
   {
     "url": "/glossary/cartridge-filter",
+    "lang": "en",
+    "contentId": null,
     "title": "Cartridge Filter",
     "description": "A cartridge filter is a pool filter type that uses a pleated polyester element to capture particles as water passes from outside to inside the element. Plain...",
     "h1": "Cartridge Filter",
@@ -1121,6 +1405,8 @@
   },
   {
     "url": "/glossary/chemical-compatibility",
+    "lang": "en",
+    "contentId": null,
     "title": "Chemical Compatibility",
     "description": "Chemical compatibility refers to the safety of mixing or sequentially adding pool chemicals to water without dangerous reactions. Plain-language definition w...",
     "h1": "Chemical Compatibility",
@@ -1131,6 +1417,8 @@
   },
   {
     "url": "/glossary/chemical-log",
+    "lang": "en",
+    "contentId": null,
     "title": "Chemical Log",
     "description": "A chemical log is a written or digital record of every pool water test result and chemical addition, used for maintenance tracking and liability documentatio...",
     "h1": "Chemical Log",
@@ -1141,6 +1429,8 @@
   },
   {
     "url": "/glossary/chemical-storage",
+    "lang": "en",
+    "contentId": null,
     "title": "Chemical Storage",
     "description": "Chemical storage refers to the safe storage of pool and spa chemicals to prevent degradation, accidents, and dangerous reactions. Plain-language definition w...",
     "h1": "Chemical Storage",
@@ -1151,6 +1441,8 @@
   },
   {
     "url": "/glossary/chloramine",
+    "lang": "en",
+    "contentId": null,
     "title": "Chloramine",
     "description": "Chloramines are compounds formed when free chlorine reacts with nitrogen-containing compounds in pool water. Plain-language definition with target values and...",
     "h1": "Chloramine",
@@ -1161,6 +1453,8 @@
   },
   {
     "url": "/glossary/chlorine-demand",
+    "lang": "en",
+    "contentId": null,
     "title": "Chlorine Demand",
     "description": "Chlorine demand is the total amount of chlorine consumed by all reactions in pool water before a free chlorine residual can be established. Plain-language de...",
     "h1": "Chlorine Demand",
@@ -1171,6 +1465,8 @@
   },
   {
     "url": "/glossary/chlorine-stabilizer",
+    "lang": "en",
+    "contentId": null,
     "title": "Chlorine Stabilizer",
     "description": "Chlorine stabilizer is another name for cyanuric acid (CYA), used as a synonym especially in product marketing. Plain-language definition with target values ...",
     "h1": "Chlorine Stabilizer",
@@ -1181,6 +1477,8 @@
   },
   {
     "url": "/glossary/clarifier",
+    "lang": "en",
+    "contentId": null,
     "title": "Clarifier",
     "description": "A pool clarifier is a coagulant product that causes fine suspended particles to clump together into larger particles that the filter can capture. Plain-langu...",
     "h1": "Clarifier",
@@ -1191,6 +1489,8 @@
   },
   {
     "url": "/glossary/closing-chemical-kit",
+    "lang": "en",
+    "contentId": null,
     "title": "Closing Chemical Kit",
     "description": "A pool closing chemical kit contains the chemicals needed to balance and protect pool water during winter dormancy. Plain-language definition with target val...",
     "h1": "Closing Chemical Kit",
@@ -1201,6 +1501,8 @@
   },
   {
     "url": "/glossary/colorimetric-test",
+    "lang": "en",
+    "contentId": null,
     "title": "Colorimetric Test",
     "description": "A colorimetric test measures water chemistry by observing the colour change of a reagent added to a water sample. Plain-language definition with target value...",
     "h1": "Colorimetric Test",
@@ -1211,6 +1513,8 @@
   },
   {
     "url": "/glossary/combined-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Combined Chlorine",
     "description": "Combined chlorine is the portion of total chlorine that has reacted with nitrogen compounds and is no longer an effective sanitiser. Plain-language definitio...",
     "h1": "Combined Chlorine",
@@ -1221,6 +1525,8 @@
   },
   {
     "url": "/glossary/conductivity",
+    "lang": "en",
+    "contentId": null,
     "title": "Conductivity",
     "description": "Conductivity is a measure of water's ability to conduct electricity, which increases with the concentration of dissolved ions. Plain-language definition with...",
     "h1": "Conductivity",
@@ -1231,6 +1537,8 @@
   },
   {
     "url": "/glossary/copper",
+    "lang": "en",
+    "contentId": null,
     "title": "Copper (Pool Water)",
     "description": "Copper is a dissolved metal found in some pool water that causes blue-green staining when oxidised. Plain-language definition with target values and related ...",
     "h1": "Copper (Pool Water)",
@@ -1241,6 +1549,8 @@
   },
   {
     "url": "/glossary/cyanuric-acid",
+    "lang": "en",
+    "contentId": null,
     "title": "Cyanuric Acid",
     "description": "Cyanuric acid is a stabilizing compound that forms a reversible bond with free chlorine in pool water, protecting it from UV degradation. Plain-language defi...",
     "h1": "Cyanuric Acid",
@@ -1251,6 +1561,8 @@
   },
   {
     "url": "/glossary/de-filter",
+    "lang": "en",
+    "contentId": null,
     "title": "DE Filter",
     "description": "A DE (diatomaceous earth) filter uses diatomaceous earth powder coated on internal grids to filter pool water to 3–5 micron fineness. Plain-language definiti...",
     "h1": "DE Filter",
@@ -1261,6 +1573,8 @@
   },
   {
     "url": "/glossary/dead-algae",
+    "lang": "en",
+    "contentId": null,
     "title": "Dead Algae",
     "description": "Dead algae is killed algae cells that remain suspended or settled in pool water after shock treatment, causing grey or white cloudiness. Plain-language defin...",
     "h1": "Dead Algae",
@@ -1271,6 +1585,8 @@
   },
   {
     "url": "/glossary/dichlor",
+    "lang": "en",
+    "contentId": null,
     "title": "Dichlor",
     "description": "Dichlor (sodium dichloroisocyanurate) is a fast-dissolving stabilised chlorine product that adds both free chlorine and cyanuric acid to pool water. Plain-la...",
     "h1": "Dichlor",
@@ -1281,6 +1597,8 @@
   },
   {
     "url": "/glossary/dilution",
+    "lang": "en",
+    "contentId": null,
     "title": "Dilution",
     "description": "Dilution refers to the reduction in chemical concentration in pool water caused by adding water (rain, refill, splash-out). Plain-language definition with ta...",
     "h1": "Dilution",
@@ -1291,6 +1609,8 @@
   },
   {
     "url": "/glossary/dpd-test",
+    "lang": "en",
+    "contentId": null,
     "title": "DPD Test",
     "description": "DPD (N,N-diethyl-p-phenylenediamine) is the standard reagent used in liquid test kits to measure free chlorine and total chlorine. Plain-language definition ...",
     "h1": "DPD Test",
@@ -1301,6 +1621,8 @@
   },
   {
     "url": "/glossary/evaporation",
+    "lang": "en",
+    "contentId": null,
     "title": "Evaporation",
     "description": "Evaporation is the loss of water from a pool's surface as water molecules escape into the air, which concentrates dissolved chemicals and raises TDS. Plain-l...",
     "h1": "Evaporation",
@@ -1311,6 +1633,8 @@
   },
   {
     "url": "/glossary/filter-pressure",
+    "lang": "en",
+    "contentId": null,
     "title": "Filter Pressure",
     "description": "Filter pressure is the water pressure reading on the filter pressure gauge, measured in psi (pounds per square inch). Plain-language definition with target v...",
     "h1": "Filter Pressure",
@@ -1321,6 +1645,8 @@
   },
   {
     "url": "/glossary/flocculant",
+    "lang": "en",
+    "contentId": null,
     "title": "Flocculant",
     "description": "A pool flocculant is a coagulating agent that causes all suspended particles to clump and sink to the pool floor for vacuuming to waste. Plain-language defin...",
     "h1": "Flocculant",
@@ -1331,6 +1657,8 @@
   },
   {
     "url": "/glossary/free-chlorine",
+    "lang": "en",
+    "contentId": "glossary:free-chlorine",
     "title": "Free Chlorine",
     "description": "Free chlorine is the concentration of active, unsaturated chlorine available in pool water to sanitise and disinfect. Plain-language definition with target v...",
     "h1": "Free Chlorine",
@@ -1341,6 +1669,8 @@
   },
   {
     "url": "/glossary/gpm",
+    "lang": "en",
+    "contentId": null,
     "title": "GPM (Gallons Per Minute)",
     "description": "GPM is the unit measuring the flow rate of water through a pool pump or other equipment. Plain-language definition with target values and related pool chemis...",
     "h1": "GPM (Gallons Per Minute)",
@@ -1351,6 +1681,8 @@
   },
   {
     "url": "/glossary/green-algae",
+    "lang": "en",
+    "contentId": null,
     "title": "Green Algae",
     "description": "Green algae is the most common pool algae species, causing water to turn green or teal and surfaces to become slippery. Plain-language definition with target...",
     "h1": "Green Algae",
@@ -1361,6 +1693,8 @@
   },
   {
     "url": "/glossary/hypochlorous-acid",
+    "lang": "en",
+    "contentId": null,
     "title": "Hypochlorous Acid",
     "description": "Hypochlorous acid (HOCl) is the active, bactericidal form of chlorine in pool water, responsible for killing pathogens. Plain-language definition with target...",
     "h1": "Hypochlorous Acid",
@@ -1371,6 +1705,8 @@
   },
   {
     "url": "/glossary/iron",
+    "lang": "en",
+    "contentId": null,
     "title": "Iron (Pool Water)",
     "description": "Iron in pool water is a dissolved metal that can cause reddish-brown staining when oxidised by chlorine or shock treatment. Plain-language definition with ta...",
     "h1": "Iron (Pool Water)",
@@ -1381,6 +1717,8 @@
   },
   {
     "url": "/glossary/langelier-saturation-index",
+    "lang": "en",
+    "contentId": null,
     "title": "Langelier Saturation Index",
     "description": "The Langelier Saturation Index is a calculated number that predicts whether pool water is in equilibrium with calcium carbonate, tending to corrode, or tendi...",
     "h1": "Langelier Saturation Index",
@@ -1391,6 +1729,8 @@
   },
   {
     "url": "/glossary/main-drain",
+    "lang": "en",
+    "contentId": null,
     "title": "Main Drain",
     "description": "The main drain is the fitting at the lowest point of a pool that allows the pool to be completely drained and provides a second suction point for the pump. P...",
     "h1": "Main Drain",
@@ -1401,6 +1741,8 @@
   },
   {
     "url": "/glossary/metal-sequestrant",
+    "lang": "en",
+    "contentId": null,
     "title": "Metal Sequestrant",
     "description": "A metal sequestrant is a pool chemical that binds dissolved metals (iron, copper, manganese) to prevent them from staining pool surfaces. Plain-language defi...",
     "h1": "Metal Sequestrant",
@@ -1411,6 +1753,8 @@
   },
   {
     "url": "/glossary/multiport-valve",
+    "lang": "en",
+    "contentId": null,
     "title": "Multiport Valve",
     "description": "A multiport valve is the control valve on a sand or DE filter that selects between filter, backwash, rinse, waste, and other operational modes. Plain-languag...",
     "h1": "Multiport Valve",
@@ -1421,6 +1765,8 @@
   },
   {
     "url": "/glossary/muriatic-acid",
+    "lang": "en",
+    "contentId": null,
     "title": "Muriatic Acid",
     "description": "Muriatic acid (dilute hydrochloric acid) is the most commonly used chemical for lowering pool pH and total alkalinity. Plain-language definition with target ...",
     "h1": "Muriatic Acid",
@@ -1431,6 +1777,8 @@
   },
   {
     "url": "/glossary/mustard-algae",
+    "lang": "en",
+    "contentId": null,
     "title": "Mustard Algae",
     "description": "Mustard algae is a yellow-brown pool algae species that brushes off easily but quickly returns, caused by a chlorine-resistant strain. Plain-language definit...",
     "h1": "Mustard Algae",
@@ -1441,6 +1789,8 @@
   },
   {
     "url": "/glossary/opening-chemical-kit",
+    "lang": "en",
+    "contentId": null,
     "title": "Opening Chemical Kit",
     "description": "A pool opening chemical kit is a package of chemicals assembled for spring pool opening, typically including shock, algaecide, and stain prevention. Plain-la...",
     "h1": "Opening Chemical Kit",
@@ -1451,6 +1801,8 @@
   },
   {
     "url": "/glossary/orp",
+    "lang": "en",
+    "contentId": null,
     "title": "ORP (Oxidation-Reduction Potential)",
     "description": "ORP is the electrical potential of water measured in millivolts that indicates the overall oxidising capacity of the water. Plain-language definition with ta...",
     "h1": "ORP (Oxidation-Reduction Potential)",
@@ -1461,6 +1813,8 @@
   },
   {
     "url": "/glossary/oto-test",
+    "lang": "en",
+    "contentId": null,
     "title": "OTO Test",
     "description": "OTO (orthotolidine) is an older test reagent that measures total chlorine by producing a yellow colour in chlorinated water. Plain-language definition with t...",
     "h1": "OTO Test",
@@ -1471,6 +1825,8 @@
   },
   {
     "url": "/glossary/oxidizer",
+    "lang": "en",
+    "contentId": null,
     "title": "Oxidizer",
     "description": "An oxidizer is a chemical that destroys organic contaminants in pool water through oxidation, without necessarily adding sanitiser residual. Plain-language d...",
     "h1": "Oxidizer",
@@ -1481,6 +1837,8 @@
   },
   {
     "url": "/glossary/ozone",
+    "lang": "en",
+    "contentId": null,
     "title": "Ozone",
     "description": "Ozone (O3) is a powerful oxidiser used in pool systems to reduce organic contamination, chlorine demand, and chloramine formation. Plain-language definition ...",
     "h1": "Ozone",
@@ -1491,6 +1849,8 @@
   },
   {
     "url": "/glossary/partial-drain",
+    "lang": "en",
+    "contentId": null,
     "title": "Partial Drain",
     "description": "A partial drain is the process of removing a portion of pool water and replacing it with fresh water to dilute accumulated dissolved compounds. Plain-languag...",
     "h1": "Partial Drain",
@@ -1501,6 +1861,8 @@
   },
   {
     "url": "/glossary/parts-per-million",
+    "lang": "en",
+    "contentId": null,
     "title": "Parts Per Million",
     "description": "Parts per million (ppm) is the unit used to express the concentration of dissolved substances in pool water, equivalent to milligrams per liter (mg/L). Plain...",
     "h1": "Parts Per Million",
@@ -1511,6 +1873,8 @@
   },
   {
     "url": "/glossary/ph",
+    "lang": "en",
+    "contentId": null,
     "title": "pH",
     "description": "pH measures the concentration of hydrogen ions in water on a logarithmic scale from 0 (most acidic) to 14 (most alkaline), with 7. Plain-language definition ...",
     "h1": "pH",
@@ -1521,6 +1885,8 @@
   },
   {
     "url": "/glossary/ph-bounce",
+    "lang": "en",
+    "contentId": null,
     "title": "pH Bounce",
     "description": "pH bounce is the condition where pool water pH swings rapidly and unpredictably, typically caused by insufficient total alkalinity. Plain-language definition...",
     "h1": "pH Bounce",
@@ -1531,6 +1897,8 @@
   },
   {
     "url": "/glossary/ph-increaser",
+    "lang": "en",
+    "contentId": null,
     "title": "pH Increaser",
     "description": "pH increaser is a pool product that raises water pH, typically sodium carbonate (soda ash) or sodium bicarbonate. Plain-language definition with target value...",
     "h1": "pH Increaser",
@@ -1541,6 +1909,8 @@
   },
   {
     "url": "/glossary/phosphates",
+    "lang": "en",
+    "contentId": null,
     "title": "Phosphates",
     "description": "Phosphates are nutrients present in pool water that can promote algae growth when free chlorine is inadequate. Plain-language definition with target values a...",
     "h1": "Phosphates",
@@ -1551,6 +1921,8 @@
   },
   {
     "url": "/glossary/pink-slime",
+    "lang": "en",
+    "contentId": null,
     "title": "Pink Slime",
     "description": "Pink slime is a pink or orange bacterial growth caused by Serratia marcescens or Methylobacterium species, commonly seen in hot tubs and pool fittings. Plain...",
     "h1": "Pink Slime",
@@ -1561,6 +1933,8 @@
   },
   {
     "url": "/glossary/pool-chemistry-reference",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemistry Reference",
     "description": "A pool chemistry reference is a compiled table of target ranges, typical values, and adjustment guides for all major pool water parameters. Plain-language de...",
     "h1": "Pool Chemistry Reference",
@@ -1571,6 +1945,8 @@
   },
   {
     "url": "/glossary/pool-maintenance-schedule",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Maintenance Schedule",
     "description": "A pool maintenance schedule is a written plan covering daily, weekly, monthly, and seasonal maintenance tasks for pool chemistry and equipment. Plain-languag...",
     "h1": "Pool Maintenance Schedule",
@@ -1581,6 +1957,8 @@
   },
   {
     "url": "/glossary/pool-pump",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Pump",
     "description": "A pool pump is the mechanical device that circulates water through the filter, heater, and chlorinator, maintaining water movement and filtration. Plain-lang...",
     "h1": "Pool Pump",
@@ -1591,6 +1969,8 @@
   },
   {
     "url": "/glossary/pool-safety-equipment",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Safety Equipment",
     "description": "Pool safety equipment includes the physical devices required to assist in pool emergency response: life ring, reaching pole, first aid kit, and emergency sig...",
     "h1": "Pool Safety Equipment",
@@ -1601,6 +1981,8 @@
   },
   {
     "url": "/glossary/pool-shock-schedule",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Shock Schedule",
     "description": "A pool shock schedule is the planned frequency and timing of pool shock treatments throughout the swimming season. Plain-language definition with target valu...",
     "h1": "Pool Shock Schedule",
@@ -1611,6 +1993,8 @@
   },
   {
     "url": "/glossary/pool-turnover-rate",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Turnover Rate",
     "description": "Pool turnover rate is the time required for the pool pump to circulate the entire pool volume through the filtration system once. Plain-language definition w...",
     "h1": "Pool Turnover Rate",
@@ -1621,6 +2005,8 @@
   },
   {
     "url": "/glossary/pool-volume",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Volume",
     "description": "Pool volume is the total capacity of a pool in gallons, used as the basis for all chemical dose calculations. Plain-language definition with target values an...",
     "h1": "Pool Volume",
@@ -1631,6 +2017,8 @@
   },
   {
     "url": "/glossary/pool-volume-reference",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Volume Reference",
     "description": "A pool volume reference is a pre-calculated table of approximate volumes for common pool dimensions, used for quick dose estimation. Plain-language definitio...",
     "h1": "Pool Volume Reference",
@@ -1641,6 +2029,8 @@
   },
   {
     "url": "/glossary/pressure-gauge",
+    "lang": "en",
+    "contentId": null,
     "title": "Pressure Gauge",
     "description": "A pressure gauge on the pool filter measures water pressure inside the filter housing in psi, indicating filter cleanliness and flow resistance. Plain-langua...",
     "h1": "Pressure Gauge",
@@ -1651,6 +2041,8 @@
   },
   {
     "url": "/glossary/pump-turnover",
+    "lang": "en",
+    "contentId": null,
     "title": "Pump Turnover",
     "description": "Pump turnover is the number of times the entire pool volume passes through the filter in a 24-hour period. Plain-language definition with target values and r...",
     "h1": "Pump Turnover",
@@ -1661,6 +2053,8 @@
   },
   {
     "url": "/glossary/reagent",
+    "lang": "en",
+    "contentId": null,
     "title": "Reagent",
     "description": "A reagent is a chemical used in a water test kit that reacts with the parameter being measured to produce a measurable colour change. Plain-language definiti...",
     "h1": "Reagent",
@@ -1671,6 +2065,8 @@
   },
   {
     "url": "/glossary/return-jet",
+    "lang": "en",
+    "contentId": null,
     "title": "Return Jet",
     "description": "Return jets are the fittings in a pool wall through which filtered and treated water is returned to the pool. Plain-language definition with target values an...",
     "h1": "Return Jet",
@@ -1681,6 +2077,8 @@
   },
   {
     "url": "/glossary/salt-chlorination",
+    "lang": "en",
+    "contentId": null,
     "title": "Salt Chlorination",
     "description": "Salt chlorination (salt water generation) is a system that produces free chlorine continuously by electrolyzing dissolved sodium chloride in pool water. Plai...",
     "h1": "Salt Chlorination",
@@ -1691,6 +2089,8 @@
   },
   {
     "url": "/glossary/sand-filter",
+    "lang": "en",
+    "contentId": null,
     "title": "Sand Filter",
     "description": "A sand filter is a pool filter type that passes water through a bed of specially graded silica sand to capture particles. Plain-language definition with targ...",
     "h1": "Sand Filter",
@@ -1701,6 +2101,8 @@
   },
   {
     "url": "/glossary/sanitizer",
+    "lang": "en",
+    "contentId": null,
     "title": "Sanitizer",
     "description": "A sanitizer is a chemical agent that reduces microbial contamination in pool water to safe levels for human contact. Plain-language definition with target va...",
     "h1": "Sanitizer",
@@ -1711,6 +2113,8 @@
   },
   {
     "url": "/glossary/saturated-ph",
+    "lang": "en",
+    "contentId": null,
     "title": "Saturated pH",
     "description": "Saturated pH (pHs) is the theoretical pH at which pool water would be exactly in equilibrium with calcium carbonate, used in LSI calculation. Plain-language ...",
     "h1": "Saturated pH",
@@ -1721,6 +2125,8 @@
   },
   {
     "url": "/glossary/saturation-index",
+    "lang": "en",
+    "contentId": null,
     "title": "Saturation Index",
     "description": "A saturation index is a calculated value predicting whether pool water will dissolve minerals (negative index) or deposit them as scale (positive index). Pla...",
     "h1": "Saturation Index",
@@ -1731,6 +2137,8 @@
   },
   {
     "url": "/glossary/scale-inhibitor",
+    "lang": "en",
+    "contentId": null,
     "title": "Scale Inhibitor",
     "description": "A scale inhibitor is a pool product that prevents calcium carbonate from precipitating onto pool surfaces, tile, and equipment. Plain-language definition wit...",
     "h1": "Scale Inhibitor",
@@ -1741,6 +2149,8 @@
   },
   {
     "url": "/glossary/scaling-water",
+    "lang": "en",
+    "contentId": null,
     "title": "Scaling Water",
     "description": "Scaling water has an LSI above +0. Plain-language definition with target values and related pool chemistry resources.",
     "h1": "Scaling Water",
@@ -1751,6 +2161,8 @@
   },
   {
     "url": "/glossary/shock",
+    "lang": "en",
+    "contentId": null,
     "title": "Shock",
     "description": "Shock is the practice of adding a large dose of chlorine or oxidizer to pool water to reach breakpoint chlorination, kill algae, or reset water clarity. Plai...",
     "h1": "Shock",
@@ -1761,6 +2173,8 @@
   },
   {
     "url": "/glossary/shock-dosage",
+    "lang": "en",
+    "contentId": null,
     "title": "Shock Dosage",
     "description": "Shock dosage refers to the amount of shock product required to raise free chlorine to the target level for the pool volume and treatment goal. Plain-language...",
     "h1": "Shock Dosage",
@@ -1771,6 +2185,8 @@
   },
   {
     "url": "/glossary/skimmer",
+    "lang": "en",
+    "contentId": null,
     "title": "Skimmer",
     "description": "A skimmer is a pool fitting built into the pool wall at the water surface that draws in surface water and floating debris for filtration. Plain-language defi...",
     "h1": "Skimmer",
@@ -1781,6 +2197,8 @@
   },
   {
     "url": "/glossary/sodium-bicarbonate",
+    "lang": "en",
+    "contentId": null,
     "title": "Sodium Bicarbonate",
     "description": "Sodium bicarbonate (baking soda) is the standard chemical for raising total alkalinity in pool water. Plain-language definition with target values and relate...",
     "h1": "Sodium Bicarbonate",
@@ -1791,6 +2209,8 @@
   },
   {
     "url": "/glossary/sodium-bisulfate",
+    "lang": "en",
+    "contentId": null,
     "title": "Sodium Bisulfate",
     "description": "Sodium bisulfate (dry acid) is a granular acid used to lower pool pH and total alkalinity as a safer alternative to liquid muriatic acid. Plain-language defi...",
     "h1": "Sodium Bisulfate",
@@ -1801,6 +2221,8 @@
   },
   {
     "url": "/glossary/sodium-carbonate",
+    "lang": "en",
+    "contentId": null,
     "title": "Sodium Carbonate",
     "description": "Sodium carbonate (soda ash) is used to raise pool water pH with minimal effect on total alkalinity. Plain-language definition with target values and related ...",
     "h1": "Sodium Carbonate",
@@ -1811,6 +2233,8 @@
   },
   {
     "url": "/glossary/sodium-hypochlorite",
+    "lang": "en",
+    "contentId": null,
     "title": "Sodium Hypochlorite",
     "description": "Sodium hypochlorite is liquid chlorine — a solution of sodium and hypochlorite ions used to sanitise and shock pool water. Plain-language definition with tar...",
     "h1": "Sodium Hypochlorite",
@@ -1821,6 +2245,8 @@
   },
   {
     "url": "/glossary/superchlorination",
+    "lang": "en",
+    "contentId": null,
     "title": "Superchlorination",
     "description": "Superchlorination is the practice of raising free chlorine to 10 ppm or higher to destroy chloramines, kill algae, or clear severely compromised water. Plain...",
     "h1": "Superchlorination",
@@ -1831,6 +2257,8 @@
   },
   {
     "url": "/glossary/test-strip",
+    "lang": "en",
+    "contentId": null,
     "title": "Test Strip",
     "description": "A test strip is a plastic strip with reagent-impregnated pads that produce colour changes when dipped in pool water, indicating chemical concentrations. Plai...",
     "h1": "Test Strip",
@@ -1841,6 +2269,8 @@
   },
   {
     "url": "/glossary/total-alkalinity",
+    "lang": "en",
+    "contentId": null,
     "title": "Total Alkalinity",
     "description": "Total alkalinity measures the water's ability to resist changes in pH, expressed as the total concentration of alkaline compounds (bicarbonate, carbonate, hy...",
     "h1": "Total Alkalinity",
@@ -1851,6 +2281,8 @@
   },
   {
     "url": "/glossary/total-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Total Chlorine",
     "description": "Total chlorine is the sum of free chlorine and combined chlorine in pool water. Plain-language definition with target values and related pool chemistry resou...",
     "h1": "Total Chlorine",
@@ -1861,6 +2293,8 @@
   },
   {
     "url": "/glossary/total-dissolved-solids",
+    "lang": "en",
+    "contentId": null,
     "title": "Total Dissolved Solids",
     "description": "Total dissolved solids measures the total concentration of all dissolved substances in pool water, expressed in ppm. Plain-language definition with target va...",
     "h1": "Total Dissolved Solids",
@@ -1871,6 +2305,8 @@
   },
   {
     "url": "/glossary/total-hardness",
+    "lang": "en",
+    "contentId": null,
     "title": "Total Hardness",
     "description": "Total hardness measures all divalent mineral ions in water (calcium and magnesium), while pool chemistry specifically uses only calcium hardness. Plain-langu...",
     "h1": "Total Hardness",
@@ -1881,6 +2317,8 @@
   },
   {
     "url": "/glossary/trichlor",
+    "lang": "en",
+    "contentId": null,
     "title": "Trichlor",
     "description": "Trichlor (trichloroisocyanuric acid) is a slow-dissolving stabilised chlorine tablet that delivers free chlorine and cyanuric acid simultaneously. Plain-lang...",
     "h1": "Trichlor",
@@ -1891,6 +2329,8 @@
   },
   {
     "url": "/glossary/turbidity",
+    "lang": "en",
+    "contentId": null,
     "title": "Turbidity",
     "description": "Turbidity is the cloudiness or haziness of pool water caused by suspended fine particles that scatter light. Plain-language definition with target values and...",
     "h1": "Turbidity",
@@ -1901,6 +2341,8 @@
   },
   {
     "url": "/glossary/uv-sanitization",
+    "lang": "en",
+    "contentId": null,
     "title": "UV Sanitization",
     "description": "UV sanitization uses ultraviolet light to inactivate microorganisms in pool water as it passes through a UV chamber in the equipment line. Plain-language def...",
     "h1": "UV Sanitization",
@@ -1911,6 +2353,8 @@
   },
   {
     "url": "/glossary/water-balance-checklist",
+    "lang": "en",
+    "contentId": null,
     "title": "Water Balance Checklist",
     "description": "A water balance checklist is a sequential list of tests and adjustments that ensures all pool chemistry parameters are brought into range in the correct orde...",
     "h1": "Water Balance Checklist",
@@ -1921,6 +2365,8 @@
   },
   {
     "url": "/glossary/water-temperature",
+    "lang": "en",
+    "contentId": null,
     "title": "Water Temperature",
     "description": "Water temperature affects chlorine demand, chemical reaction rates, calcium solubility, and the Langelier Saturation Index. Plain-language definition with ta...",
     "h1": "Water Temperature",
@@ -1931,6 +2377,8 @@
   },
   {
     "url": "/glossary/water-test-log",
+    "lang": "en",
+    "contentId": null,
     "title": "Water Test Log",
     "description": "A water test log is a record sheet for documenting pool or hot tub water test results over time. Plain-language definition with target values and related poo...",
     "h1": "Water Test Log",
@@ -1941,6 +2389,8 @@
   },
   {
     "url": "/glossary/winterization",
+    "lang": "en",
+    "contentId": null,
     "title": "Winterization",
     "description": "Winterization is the process of preparing a pool or hot tub for winter shutdown, including draining, blowing out plumbing lines, and protecting equipment fro...",
     "h1": "Winterization",
@@ -1951,6 +2401,8 @@
   },
   {
     "url": "/reference",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemistry Reference",
     "description": "Reference tables, target ranges, and chemical data for pool and hot tub water chemistry. Ideal ranges for chlorine, pH, alkalinity, hardness, and CYA.",
     "h1": "Pool Chemistry Reference",
@@ -1961,6 +2413,8 @@
   },
   {
     "url": "/reference/alkalinity-table",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Alkalinity Adjustment Table",
     "description": "Reference table for how much sodium bicarbonate to add to raise total alkalinity and how much acid to add to lower it.",
     "h1": "Pool Alkalinity Adjustment Table",
@@ -1971,6 +2425,8 @@
   },
   {
     "url": "/reference/calcium-hardness-explained",
+    "lang": "en",
+    "contentId": null,
     "title": "Calcium Hardness in Pools Explained",
     "description": "Calcium hardness in pools explained: ideal range 200–400 ppm, what low and high calcium does to surfaces and water, and how to adjust it safely.",
     "h1": "Calcium Hardness in Pools Explained",
@@ -1981,6 +2437,8 @@
   },
   {
     "url": "/reference/calculator-directory",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool & Spa Calculator Directory",
     "description": "Complete directory of all pool and spa calculators on WaterBalanceTools, organized by category.",
     "h1": "Pool & Spa Calculator Directory",
@@ -1991,6 +2449,8 @@
   },
   {
     "url": "/reference/chemical-compatibility",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemical Compatibility Guide",
     "description": "Reference guide for which pool chemicals are compatible and which combinations must never be mixed.",
     "h1": "Pool Chemical Compatibility Guide",
@@ -2001,6 +2461,8 @@
   },
   {
     "url": "/reference/chemical-conversion-tables",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemical Conversion Tables",
     "description": "Conversion tables for common pool chemistry measurements including ounces to grams, gallons to liters, and ppm conversions.",
     "h1": "Pool Chemical Conversion Tables",
@@ -2011,6 +2473,8 @@
   },
   {
     "url": "/reference/chemical-safety",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemical Safety Guide",
     "description": "Essential safety guidelines for handling, adding, and storing pool chemicals — including what to do in case of exposure.",
     "h1": "Pool Chemical Safety Guide",
@@ -2021,6 +2485,8 @@
   },
   {
     "url": "/reference/chemical-storage-guide",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemical Storage Guide",
     "description": "Safe storage requirements for pool and spa chemicals, including temperature limits, separation rules, and container requirements.",
     "h1": "Pool Chemical Storage Guide",
@@ -2031,6 +2497,8 @@
   },
   {
     "url": "/reference/chlorine-effectiveness-chart",
+    "lang": "en",
+    "contentId": null,
     "title": "Chlorine Effectiveness vs. pH",
     "description": "Reference chart showing the percentage of free chlorine in its active form (hypochlorous acid) at different pH levels.",
     "h1": "Chlorine Effectiveness vs. pH",
@@ -2041,6 +2509,8 @@
   },
   {
     "url": "/reference/chlorine-explained",
+    "lang": "en",
+    "contentId": null,
     "title": "Chlorine in Pools Explained",
     "description": "Chlorine in pools explained: free chlorine vs combined chlorine vs total chlorine, ideal ranges 1–3 ppm, what causes it to drop, and how to maintain it.",
     "h1": "Chlorine in Pools Explained",
@@ -2051,6 +2521,8 @@
   },
   {
     "url": "/reference/combined-chlorine-explained",
+    "lang": "en",
+    "contentId": null,
     "title": "Combined Chlorine (Chloramines) Explained",
     "description": "Combined chlorine (chloramines) explained: what causes it, why it causes pool smell and eye irritation, the 0.5 ppm limit, and how to eliminate it with break...",
     "h1": "Combined Chlorine (Chloramines) Explained",
@@ -2061,6 +2533,8 @@
   },
   {
     "url": "/reference/common-pool-chemistry-mistakes",
+    "lang": "en",
+    "contentId": null,
     "title": "Common Pool Chemistry Mistakes",
     "description": "Common pool chemistry mistakes: too much chlorine, ignoring alkalinity, wrong pH adjustment. How to avoid them with our calculators.",
     "h1": "Common Pool Chemistry Mistakes",
@@ -2071,6 +2545,8 @@
   },
   {
     "url": "/reference/cya-matrix",
+    "lang": "en",
+    "contentId": null,
     "title": "CYA & Minimum Free Chlorine Matrix",
     "description": "Reference table showing the minimum free chlorine required at each CYA level to maintain effective sanitisation.",
     "h1": "CYA & Minimum Free Chlorine Matrix",
@@ -2081,6 +2557,8 @@
   },
   {
     "url": "/reference/cyanuric-acid-explained",
+    "lang": "en",
+    "contentId": null,
     "title": "Cyanuric Acid (CYA / Stabilizer) Explained",
     "description": "Cyanuric acid (CYA) explained: how pool stabilizer protects chlorine from UV, ideal range 30–50 ppm, what chlorine lock is, and how to lower CYA.",
     "h1": "Cyanuric Acid (CYA / Stabilizer) Explained",
@@ -2091,6 +2569,8 @@
   },
   {
     "url": "/reference/emergency-recovery",
+    "lang": "en",
+    "contentId": null,
     "title": "Emergency Pool Recovery Protocol",
     "description": "Step-by-step emergency recovery protocol for pools and hot tubs discovered with severely compromised water chemistry.",
     "h1": "Emergency Pool Recovery Protocol",
@@ -2101,6 +2581,8 @@
   },
   {
     "url": "/reference/filter-comparison",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Filter Type Comparison",
     "description": "Side-by-side comparison of sand, cartridge, and DE pool filters across filtration quality, maintenance, cost, and best use cases.",
     "h1": "Pool Filter Type Comparison",
@@ -2111,6 +2593,8 @@
   },
   {
     "url": "/reference/free-chlorine-explained",
+    "lang": "en",
+    "contentId": null,
     "title": "Free Chlorine Explained",
     "description": "Free chlorine explained: what it is, why it's the only active sanitizer, how pH affects it, target range 1–3 ppm, and how to test and maintain it.",
     "h1": "Free Chlorine Explained",
@@ -2121,6 +2605,8 @@
   },
   {
     "url": "/reference/ideal-pool-levels",
+    "lang": "en",
+    "contentId": "reference:ideal-pool-levels",
     "title": "Ideal Pool Chemical Levels",
     "description": "Complete reference table for target ranges of all pool water chemistry parameters — chlorine, pH, alkalinity, hardness, CYA, salt, and ORP.",
     "h1": "Ideal Pool Chemical Levels",
@@ -2131,6 +2617,8 @@
   },
   {
     "url": "/reference/ideal-spa-levels",
+    "lang": "en",
+    "contentId": null,
     "title": "Ideal Spa & Hot Tub Chemical Levels",
     "description": "Target ranges for all hot tub and spa water chemistry parameters — chlorine, bromine, pH, alkalinity, hardness, and TDS.",
     "h1": "Ideal Spa & Hot Tub Chemical Levels",
@@ -2141,6 +2629,8 @@
   },
   {
     "url": "/reference/ph-table",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool pH Adjustment Reference Table",
     "description": "Reference table for how much muriatic acid or soda ash to add to adjust pool pH by common increments.",
     "h1": "Pool pH Adjustment Reference Table",
@@ -2151,6 +2641,8 @@
   },
   {
     "url": "/reference/pool-chemical-timeline",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemical Timeline",
     "description": "Reference guide for how long to wait between chemical additions and before retesting or allowing swimming.",
     "h1": "Pool Chemical Timeline",
@@ -2161,6 +2653,8 @@
   },
   {
     "url": "/reference/pool-chemicals-explained",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemicals Explained",
     "description": "Pool chemicals explained: chlorine, pH increaser, pH reducer, shock, stabilizer. What they do and when to use them.",
     "h1": "Pool Chemicals Explained",
@@ -2171,6 +2665,8 @@
   },
   {
     "url": "/reference/pool-chemistry-reference",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemistry Reference Guide",
     "description": "Pool chemistry reference: ideal ranges for chlorine, pH, alkalinity, calcium, CYA, shock, and temperature—with low/high effects and calculator links.",
     "h1": "Pool Chemistry Reference Guide",
@@ -2181,6 +2677,8 @@
   },
   {
     "url": "/reference/pool-shape-guide",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Shape & Volume Guide",
     "description": "How to calculate pool volume for different pool shapes: rectangular, L-shaped, oval, kidney, and freeform.",
     "h1": "Pool Shape & Volume Guide",
@@ -2191,6 +2689,8 @@
   },
   {
     "url": "/reference/pool-volume-reference",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Volume Quick Reference",
     "description": "Pre-calculated pool volumes for common rectangular, oval, and round pool dimensions.",
     "h1": "Pool Volume Quick Reference",
@@ -2201,6 +2701,8 @@
   },
   {
     "url": "/reference/printable-resources-index",
+    "lang": "en",
+    "contentId": null,
     "title": "Printable Pool Resources Index",
     "description": "Index of all free printable pool and spa maintenance resources available for download on WaterBalanceTools.",
     "h1": "Printable Pool Resources Index",
@@ -2211,6 +2713,8 @@
   },
   {
     "url": "/reference/pump-sizing",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Pump Sizing Guide",
     "description": "Reference guide for calculating the required GPM and selecting the correct pump size for any pool volume and turnover target.",
     "h1": "Pool Pump Sizing Guide",
@@ -2221,6 +2725,8 @@
   },
   {
     "url": "/reference/recommended-water-temperature",
+    "lang": "en",
+    "contentId": null,
     "title": "Recommended Pool & Spa Water Temperature",
     "description": "Recommended temperature ranges for pools, hot tubs, and therapy spas, with safety guidelines and the effect of temperature on water chemistry.",
     "h1": "Recommended Pool & Spa Water Temperature",
@@ -2231,6 +2737,8 @@
   },
   {
     "url": "/reference/salt-matrix",
+    "lang": "en",
+    "contentId": null,
     "title": "Salt Pool Level Reference Matrix",
     "description": "Reference table for how many pounds of pool salt are needed to raise salt level by any increment for common pool volumes.",
     "h1": "Salt Pool Level Reference Matrix",
@@ -2241,6 +2749,8 @@
   },
   {
     "url": "/reference/salt-water-generator-explained",
+    "lang": "en",
+    "contentId": null,
     "title": "Salt Water Generator (SWG) Explained",
     "description": "Salt water generator explained: how electrolytic chlorine generation works, salt levels 2700–3400 ppm, chemistry management, pros and cons vs traditional chl...",
     "h1": "Salt Water Generator (SWG) Explained",
@@ -2251,6 +2761,8 @@
   },
   {
     "url": "/reference/shock-dosage-matrix",
+    "lang": "en",
+    "contentId": null,
     "title": "Shock Dosage Matrix",
     "description": "Reference matrix for pool shock dosage by pool volume and treatment goal — maintenance, breakpoint, and algae recovery.",
     "h1": "Shock Dosage Matrix",
@@ -2261,6 +2773,8 @@
   },
   {
     "url": "/reference/shock-treatment-explained",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Shock Treatment Explained",
     "description": "Pool shock treatment explained: what it is, types of shock, how breakpoint chlorination works, when to shock, and how long to wait before swimming.",
     "h1": "Pool Shock Treatment Explained",
@@ -2271,6 +2785,8 @@
   },
   {
     "url": "/reference/testing-frequency",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool & Spa Testing Frequency Guide",
     "description": "Reference guide for how often to test each pool and spa water chemistry parameter.",
     "h1": "Pool & Spa Testing Frequency Guide",
@@ -2281,6 +2797,8 @@
   },
   {
     "url": "/reference/total-alkalinity-explained",
+    "lang": "en",
+    "contentId": null,
     "title": "Total Alkalinity Explained",
     "description": "Total alkalinity explained: how it buffers pH, ideal range 80–120 ppm, symptoms of low and high TA, and how to raise or lower it correctly.",
     "h1": "Total Alkalinity Explained",
@@ -2291,6 +2809,8 @@
   },
   {
     "url": "/reference/vacation-rental-maintenance-schedule",
+    "lang": "en",
+    "contentId": null,
     "title": "Vacation Rental Pool Maintenance Schedule",
     "description": "Complete maintenance schedule for vacation rental pool and hot tub management, covering daily, turnover, weekly, and monthly tasks.",
     "h1": "Vacation Rental Pool Maintenance Schedule",
@@ -2301,6 +2821,8 @@
   },
   {
     "url": "/reference/water-balance-checklist",
+    "lang": "en",
+    "contentId": null,
     "title": "Complete Water Balance Checklist",
     "description": "Step-by-step checklist for balancing pool or hot tub water chemistry from scratch or after a significant chemistry event.",
     "h1": "Complete Water Balance Checklist",
@@ -2311,6 +2833,8 @@
   },
   {
     "url": "/reference/water-replacement-guidelines",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Water Replacement Guidelines",
     "description": "Reference guide for when to replace pool or hot tub water, including CYA, TDS, hardness, and other trigger conditions.",
     "h1": "Pool Water Replacement Guidelines",
@@ -2321,6 +2845,8 @@
   },
   {
     "url": "/guides",
+    "lang": "en",
+    "contentId": null,
     "title": "Guides Hub",
     "description": "Guided explanations organized into practical problem-solving clusters.",
     "h1": "Guides Hub",
@@ -2331,6 +2857,8 @@
   },
   {
     "url": "/guides/advanced",
+    "lang": "en",
+    "contentId": null,
     "title": "Advanced Guides Hub",
     "description": "Advanced chemistry scenarios and deeper technical interpretation guides.",
     "h1": "Advanced Guides Hub",
@@ -2341,6 +2869,8 @@
   },
   {
     "url": "/guides/advanced/chlorine-breakdown-sunlight",
+    "lang": "en",
+    "contentId": null,
     "title": "Chlorine Breakdown in Sunlight (UV, CYA &amp; Dosing)",
     "description": "UV destroys free chlorine quickly unless CYA buffers it—here’s the mechanism and what to do.",
     "h1": "Chlorine Breakdown in Sunlight",
@@ -2351,6 +2881,8 @@
   },
   {
     "url": "/guides/advanced/chlorine-vs-saltwater",
+    "lang": "en",
+    "contentId": null,
     "title": "Chlorine vs Saltwater Pools (How Sanitizing Actually Works)",
     "description": "Saltwater pools still make chlorine—here’s how salt systems differ from manual chlorination, dosing, and maintenance.",
     "h1": "Chlorine Pools vs Saltwater Pools: What’s Actually Different?",
@@ -2361,6 +2893,8 @@
   },
   {
     "url": "/guides/advanced/cya-stabilizer-explained",
+    "lang": "en",
+    "contentId": null,
     "title": "CYA Stabilizer Explained (Chlorine Protection vs Lock-In)",
     "description": "CYA (cyanuric acid) protects chlorine from UV—but high CYA dulls sanitizing power. Here’s how it works.",
     "h1": "Cyanuric Acid (CYA): Stabilizer Explained",
@@ -2371,6 +2905,8 @@
   },
   {
     "url": "/guides/advanced/pool-chemistry-balance-explained",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemistry Balance Explained (pH, TA, Calcium &amp; Sanitizer)",
     "description": "Pool water balance means pH, alkalinity, calcium, and sanitizer work together—learn LSI-style reasoning without the fluff.",
     "h1": "Pool Chemistry Balance Explained",
@@ -2381,6 +2917,8 @@
   },
   {
     "url": "/guides/alkalinity-guide",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Alkalinity Guide",
     "description": "Total alkalinity as a pH buffer, ideal range, and adjustment tools.",
     "h1": "Pool Alkalinity Guide",
@@ -2391,6 +2929,8 @@
   },
   {
     "url": "/guides/chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Chlorine Guides Hub",
     "description": "Chlorine-specific troubleshooting, dosing, and maintenance decision guides.",
     "h1": "Chlorine Guides Hub",
@@ -2401,6 +2941,8 @@
   },
   {
     "url": "/guides/chlorine-guide",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chlorine Guide",
     "description": "Sanitizer levels, shock, green pool recovery, and chlorine dosing for pools.",
     "h1": "Pool Chlorine Guide",
@@ -2411,6 +2953,8 @@
   },
   {
     "url": "/guides/chlorine/chlorine-too-high-after-shocking",
+    "lang": "en",
+    "contentId": null,
     "title": "Chlorine Too High After Shocking: What to Do",
     "description": "Pool chlorine too high after shocking? Wait 24–48 hours, run the pump, and let UV reduce FC naturally. Exact steps by FC level inside.",
     "h1": "Chlorine Too High After Shocking: What to Do",
@@ -2421,6 +2965,8 @@
   },
   {
     "url": "/guides/chlorine/free-chlorine-vs-total-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Free Chlorine vs Total Chlorine Explained",
     "description": "Free chlorine is the active sanitizer; total chlorine = free + combined. How to interpret readings, combined chlorine limits, and when to shock.",
     "h1": "Free Chlorine vs Total Chlorine Explained",
@@ -2431,6 +2977,8 @@
   },
   {
     "url": "/guides/chlorine/how-often-should-i-shock-my-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Often Should I Shock My Pool?",
     "description": "How often to shock a pool: weekly in swim season, after heavy use, after rain, or when FC drops. Full schedule + troubleshooting table.",
     "h1": "How Often Should I Shock My Pool?",
@@ -2441,6 +2989,8 @@
   },
   {
     "url": "/guides/chlorine/why-pool-chlorine-disappears-overnight",
+    "lang": "en",
+    "contentId": null,
     "title": "Why Pool Chlorine Disappears Overnight",
     "description": "Chlorine disappearing overnight usually means algae, high organic load, or chlorine demand. Diagnosis table and fix steps inside.",
     "h1": "Why Pool Chlorine Disappears Overnight",
@@ -2451,6 +3001,8 @@
   },
   {
     "url": "/guides/chlorine/why-pool-wont-hold-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Why Pool Won't Hold Chlorine: Causes and Fixes",
     "description": "Pool won't hold chlorine? Common causes: low CYA, algae, high phosphates, or high organic load. Diagnosis table and step-by-step fix.",
     "h1": "Why Pool Won't Hold Chlorine",
@@ -2461,6 +3013,8 @@
   },
   {
     "url": "/guides/edge-cases",
+    "lang": "en",
+    "contentId": null,
     "title": "Edge Cases Guides Hub",
     "description": "Low-frequency but high-impact pool chemistry edge-case playbooks.",
     "h1": "Edge Cases Guides Hub",
@@ -2471,6 +3025,8 @@
   },
   {
     "url": "/guides/edge-cases/evaporation-effect-on-pool-chemistry",
+    "lang": "en",
+    "contentId": null,
     "title": "Does Evaporation Affect Pool Chemistry?",
     "description": "Does evaporation affect pool chemistry? Yes—it concentrates CYA, salt, calcium, and TDS as pure water leaves and top-off water replaces it.",
     "h1": "Evaporation's Effect on Pool Chemistry",
@@ -2481,6 +3037,8 @@
   },
   {
     "url": "/guides/edge-cases/high-cya-chlorine-lock",
+    "lang": "en",
+    "contentId": null,
     "title": "High CYA Chlorine Lock (Why FC Reads Fine But Water Fails)",
     "description": "Why chlorine stops working when CYA is high: less active sanitizer per ppm reading—fix with dilution and FC targets.",
     "h1": "High CYA and “Chlorine Lock”",
@@ -2491,6 +3049,8 @@
   },
   {
     "url": "/guides/edge-cases/over-shocking-pool-effects",
+    "lang": "en",
+    "contentId": null,
     "title": "Over-Shocking a Pool: Effects &amp; What to Do",
     "description": "What happens if you over-shock a pool? Very high FC, equipment and liner stress, long wait times before swimming.",
     "h1": "Over-Shocking a Pool: Effects",
@@ -2501,6 +3061,8 @@
   },
   {
     "url": "/guides/edge-cases/pool-temperature-effect-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Temperature Effect on Chlorine (Warmer Water, Faster Demand)",
     "description": "Warmer water increases chlorine consumption—here’s why and how to adjust dosing.",
     "h1": "How Pool Temperature Affects Chlorine",
@@ -2511,6 +3073,8 @@
   },
   {
     "url": "/guides/edge-cases/rain-effect-on-pool-chemistry",
+    "lang": "en",
+    "contentId": null,
     "title": "Does Rain Affect Pool Chemistry? (Dilution, pH &amp; Chlorine)",
     "description": "Does rain affect pool chemistry? Yes—dilution, debris, and pH shift can change FC, alkalinity, and clarity.",
     "h1": "Rain’s Effect on Pool Chemistry",
@@ -2521,6 +3085,8 @@
   },
   {
     "url": "/guides/edge-cases/swimming-after-shocking-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Long After Shocking a Pool Can You Swim? (Safe Wait Times)",
     "description": "How long after shocking a pool can you swim? Wait until FC is back in range and the product label says it’s safe—often hours, sometimes overnight.",
     "h1": "Swimming After Shocking a Pool",
@@ -2531,6 +3097,8 @@
   },
   {
     "url": "/guides/hot-tub",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Guides Hub",
     "description": "Hot tub-specific chemistry and maintenance troubleshooting guides.",
     "h1": "Hot Tub Guides Hub",
@@ -2541,6 +3109,8 @@
   },
   {
     "url": "/guides/hot-tub-chemistry",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Chemistry Guide",
     "description": "Spa volume, chlorine or bromine context, and hot-tub dosing tables.",
     "h1": "Hot Tub Chemistry",
@@ -2551,6 +3121,8 @@
   },
   {
     "url": "/guides/hot-tub-maintenance",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Maintenance Guide",
     "description": "Hot tub and spa maintenance guide: daily and weekly tasks, water chemistry, and draining.",
     "h1": "Hot Tub Maintenance",
@@ -2561,6 +3133,8 @@
   },
   {
     "url": "/guides/hot-tub/hot-tub-alkalinity-too-high",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Alkalinity Too High: What to Do",
     "description": "Hot tub total alkalinity too high? Above 150 ppm causes cloudy water, scale, and pH that won't stay down. Step-by-step fix.",
     "h1": "Hot Tub Alkalinity Too High: What to Do",
@@ -2571,6 +3145,8 @@
   },
   {
     "url": "/guides/hot-tub/hot-tub-chlorine-too-high",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Chlorine Too High: What to Do",
     "description": "Hot tub chlorine too high? FC above 10 ppm causes irritation. Steps to lower it fast: remove cover, run jets, or dilute. Full guide.",
     "h1": "Hot Tub Chlorine Too High: What to Do",
@@ -2581,6 +3157,8 @@
   },
   {
     "url": "/guides/hot-tub/hot-tub-chlorine-too-low",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Chlorine Too Low: Causes and Fix",
     "description": "Hot tub chlorine too low? Below 1 ppm, bacteria can grow in minutes at spa temperatures. Causes, fast fix, and prevention guide.",
     "h1": "Hot Tub Chlorine Too Low: Causes and Fix",
@@ -2591,6 +3169,8 @@
   },
   {
     "url": "/guides/hot-tub/hot-tub-ph-too-low",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub pH Too Low: Causes and Fix",
     "description": "Hot tub pH too low? Below 7.2 corrodes equipment, irritates skin, and destabilizes chlorine. Step-by-step fix with dose guide.",
     "h1": "Hot Tub pH Too Low: Causes and Fix",
@@ -2601,6 +3181,8 @@
   },
   {
     "url": "/guides/hot-tub/how-often-to-shock-a-hot-tub",
+    "lang": "en",
+    "contentId": null,
     "title": "How Often to Shock a Hot Tub",
     "description": "How often to shock a hot tub: weekly minimum, after every 2–3 soaks, or when water looks dull. Shock schedule and product guide.",
     "h1": "How Often to Shock a Hot Tub",
@@ -2611,6 +3193,8 @@
   },
   {
     "url": "/guides/ph",
+    "lang": "en",
+    "contentId": null,
     "title": "pH Guides Hub",
     "description": "pH and alkalinity stabilization guides, from diagnostics to correction workflows.",
     "h1": "pH Guides Hub",
@@ -2621,6 +3205,8 @@
   },
   {
     "url": "/guides/ph-guide",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool pH Guide",
     "description": "Ideal pH range, how acid and base moves pH, and links to adjustment guides.",
     "h1": "Pool pH Guide",
@@ -2631,6 +3217,8 @@
   },
   {
     "url": "/guides/ph/can-you-swim-in-high-ph-water",
+    "lang": "en",
+    "contentId": "guide:ph-can-you-swim-in-high-ph-water",
     "title": "Can You Swim in High pH Pool Water?",
     "description": "Can you swim in high pH water? pH 7.8–8.0 is uncomfortable; above 8.0 risks irritation and drastically reduced chlorine. Full guidance inside.",
     "h1": "Can You Swim in High pH Pool Water?",
@@ -2641,6 +3229,8 @@
   },
   {
     "url": "/guides/ph/does-rain-lower-pool-ph",
+    "lang": "en",
+    "contentId": null,
     "title": "Does Rain Lower Pool pH?",
     "description": "Does rain lower pool pH? Rainwater is acidic (pH ~5.6) but the effect on pool pH depends on pool volume, TA, and how much rain fell.",
     "h1": "Does Rain Lower Pool pH?",
@@ -2651,6 +3241,8 @@
   },
   {
     "url": "/guides/ph/how-to-lower-pool-ph",
+    "lang": "en",
+    "contentId": null,
     "title": "How to Lower Pool pH: Step-by-Step Guide",
     "description": "How to lower pool pH with muriatic acid or dry acid. Safe dose table, step-by-step instructions, and how to avoid over-correcting.",
     "h1": "How to Lower Pool pH",
@@ -2661,6 +3253,8 @@
   },
   {
     "url": "/guides/ph/what-causes-high-pool-ph",
+    "lang": "en",
+    "contentId": null,
     "title": "What Causes High Pool pH?",
     "description": "High pool pH causes: CO2 off-gassing, high alkalinity, algae, aeration, SWG systems, and high-pH fill water. Fix guide and FAQ.",
     "h1": "What Causes High Pool pH?",
@@ -2671,6 +3265,8 @@
   },
   {
     "url": "/guides/ph/why-pool-ph-keeps-rising",
+    "lang": "en",
+    "contentId": null,
     "title": "Why Pool pH Keeps Rising",
     "description": "Pool pH keeps rising? Causes include CO2 off-gassing, aeration, algae, and high alkalinity. Fix guide and FAQ inside.",
     "h1": "Why Pool pH Keeps Rising",
@@ -2681,6 +3277,8 @@
   },
   {
     "url": "/guides/pool-chemistry-basics",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemistry Basics",
     "description": "Learn the basics of pool chemistry: chlorine, pH, and alkalinity for safe and clear pool water.",
     "h1": "Pool Chemistry Basics",
@@ -2691,6 +3289,8 @@
   },
   {
     "url": "/guides/questions",
+    "lang": "en",
+    "contentId": null,
     "title": "Questions Guides Hub",
     "description": "Question-driven guide collection mapped to common search intents.",
     "h1": "Questions Guides Hub",
@@ -2701,6 +3301,8 @@
   },
   {
     "url": "/guides/questions/can-rain-affect-pool-chemistry",
+    "lang": "en",
+    "contentId": null,
     "title": "Can Rain Affect Pool Chemistry?",
     "description": "Can rain affect pool chemistry? Yes — rain dilutes chlorine, pH, alkalinity, and CYA while introducing organic debris. What to test and fix after rain.",
     "h1": "Can Rain Affect Pool Chemistry?",
@@ -2711,6 +3313,8 @@
   },
   {
     "url": "/guides/questions/can-you-swim-after-shocking-a-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "Can You Swim After Shocking a Pool?",
     "description": "Can you swim after shocking a pool? Wait until FC drops below 5 ppm — usually 8–24 hours. Wait times by shock dose, and how to speed up FC reduction.",
     "h1": "Can You Swim After Shocking a Pool?",
@@ -2721,6 +3325,8 @@
   },
   {
     "url": "/guides/questions/why-does-hot-tub-water-smell",
+    "lang": "en",
+    "contentId": null,
     "title": "Why Does Hot Tub Water Smell?",
     "description": "Why does hot tub water smell? Usually combined chlorine or bacteria. Causes table and step-by-step fix for chemical odor, sulfur smell, and musty odor.",
     "h1": "Why Does Hot Tub Water Smell?",
@@ -2731,6 +3337,8 @@
   },
   {
     "url": "/guides/questions/why-does-pool-water-turn-cloudy",
+    "lang": "en",
+    "contentId": null,
     "title": "Why Does Pool Water Turn Cloudy?",
     "description": "Why does pool water turn cloudy? Causes include low chlorine, high pH, poor filtration, algae, and heavy rain. Diagnosis steps and fix guide.",
     "h1": "Why Does Pool Water Turn Cloudy?",
@@ -2741,6 +3349,8 @@
   },
   {
     "url": "/guides/questions/why-is-my-hot-tub-foamy",
+    "lang": "en",
+    "contentId": null,
     "title": "Why Is My Hot Tub Foamy?",
     "description": "Why is my hot tub foamy? Causes: body products, low calcium hardness, high TDS, detergent in swimwear. Fix guide and long-term prevention.",
     "h1": "Why Is My Hot Tub Foamy?",
@@ -2751,6 +3361,8 @@
   },
   {
     "url": "/guides/questions/why-is-my-pool-green-but-chlorine-is-high",
+    "lang": "en",
+    "contentId": null,
     "title": "Why Is My Pool Green But Chlorine Is High?",
     "description": "Pool green but chlorine is high? Usually high pH making chlorine ineffective, CYA chlorine lock, or dead algae still in water. Diagnosis and fix guide.",
     "h1": "Why Is My Pool Green But Chlorine Is High?",
@@ -2761,6 +3373,8 @@
   },
   {
     "url": "/guides/seasonal",
+    "lang": "en",
+    "contentId": null,
     "title": "Seasonal Guides Hub",
     "description": "Seasonal opening, summer, and winter maintenance guide collection.",
     "h1": "Seasonal Guides Hub",
@@ -2771,6 +3385,8 @@
   },
   {
     "url": "/guides/seasonal/closing-pool-chemistry-winter",
+    "lang": "en",
+    "contentId": null,
     "title": "Closing Pool Chemistry for Winter (Balance, Shock &amp; Winterize)",
     "description": "Winter pool closing chemicals: balance water, shock, optional algaecide per label—then winterize equipment.",
     "h1": "Closing Pool Chemistry for Winter",
@@ -2781,6 +3397,8 @@
   },
   {
     "url": "/guides/seasonal/opening-pool-chemistry-checklist",
+    "lang": "en",
+    "contentId": null,
     "title": "Opening Pool Chemistry Checklist (Start-Up Chemicals Order)",
     "description": "Opening pool chemistry: remove winter cover debris, circulate, test, balance, then sanitize—use this checklist.",
     "h1": "Opening Pool Chemistry Checklist",
@@ -2791,6 +3409,8 @@
   },
   {
     "url": "/guides/seasonal/summer-high-chlorine-demand",
+    "lang": "en",
+    "contentId": null,
     "title": "Summer High Chlorine Demand (Heat, Sun &amp; Load)",
     "description": "Summer high chlorine demand: heat, sun, and bather load raise daily FC loss—test more often and dose smarter.",
     "h1": "Summer High Chlorine Demand",
@@ -2801,6 +3421,8 @@
   },
   {
     "url": "/guides/seasonal/winter-pool-maintenance-chemistry",
+    "lang": "en",
+    "contentId": null,
     "title": "Winter Pool Maintenance Chemistry (Mild &amp; Cold Climates)",
     "description": "Winter pool maintenance chemistry for mild climates: test monthly, keep FC non-zero where water isn’t frozen, manage leaves.",
     "h1": "Winter Pool Maintenance Chemistry",
@@ -2811,6 +3433,8 @@
   },
   {
     "url": "/comparisons",
+    "lang": "en",
+    "contentId": null,
     "title": "Comparisons Hub",
     "description": "Side-by-side comparisons for core chemistry products and maintenance paths.",
     "h1": "Comparisons Hub",
@@ -2821,6 +3445,8 @@
   },
   {
     "url": "/comparisons/chlorine-vs-bromine",
+    "lang": "en",
+    "contentId": null,
     "title": "Chlorine vs Bromine: Which Is Better for Your Pool?",
     "description": "Chlorine vs bromine comparison: cost, temperature stability, UV stability, odor, and best use cases. Which is better for pools vs hot tubs?",
     "h1": "Chlorine vs Bromine: Which Is Better for Your Pool?",
@@ -2831,6 +3457,8 @@
   },
   {
     "url": "/comparisons/chlorine-vs-bromine-hot-tub",
+    "lang": "en",
+    "contentId": null,
     "title": "Chlorine vs Bromine for Hot Tubs",
     "description": "Chlorine vs bromine for hot tubs: which sanitizer is better for spas? Compare pros, cons, and maintenance.",
     "h1": "Chlorine vs Bromine for Hot Tubs",
@@ -2841,6 +3469,8 @@
   },
   {
     "url": "/comparisons/free-chlorine-vs-total-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Free Chlorine vs Total Chlorine: What's the Difference?",
     "description": "Free chlorine vs total chlorine explained: FC sanitizes, TC = FC + combined chlorine. How to interpret test results and when CC above 0.5 ppm requires action.",
     "h1": "Free Chlorine vs Total Chlorine: What's the Difference?",
@@ -2851,6 +3481,8 @@
   },
   {
     "url": "/comparisons/liquid-chlorine-vs-tablets",
+    "lang": "en",
+    "contentId": null,
     "title": "Liquid Chlorine vs Chlorine Tablets: Which Is Better?",
     "description": "Liquid chlorine vs tablets: pH impact, CYA buildup, cost, speed, and SWG compatibility compared. When to use each for pools.",
     "h1": "Liquid Chlorine vs Chlorine Tablets: Which Is Better?",
@@ -2861,6 +3493,8 @@
   },
   {
     "url": "/comparisons/pool-shock-vs-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Shock vs Chlorine: What's the Difference?",
     "description": "Pool shock vs regular chlorine: how they differ in purpose, concentration, frequency, and when to use each. They work together, not as alternatives.",
     "h1": "Pool Shock vs Chlorine: What's the Difference?",
@@ -2871,6 +3505,8 @@
   },
   {
     "url": "/comparisons/salt-water-pool-vs-chlorine-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "Salt Water Pool vs Chlorine Pool: Full Comparison",
     "description": "Salt water pool vs traditional chlorine pool: upfront cost, ongoing cost, water feel, chemistry management, pH behavior, and which is better for your situation.",
     "h1": "Salt Water Pool vs Chlorine Pool: Full Comparison",
@@ -2881,6 +3517,8 @@
   },
   {
     "url": "/comparisons/saltwater-pool-vs-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Saltwater Pool vs Chlorine Pool",
     "description": "Saltwater pool vs chlorine pool: maintenance, cost, and chemistry compared.",
     "h1": "Saltwater Pool vs Chlorine Pool",
@@ -2891,6 +3529,8 @@
   },
   {
     "url": "/methodology",
+    "lang": "en",
+    "contentId": null,
     "title": "Calculation Methodology (methodology)",
     "description": "How WaterBalanceTools calculates pool chemistry recommendations. Data flow, formula selection, rounding, precision, and known limitations.",
     "h1": "Calculation Methodology",
@@ -2901,6 +3541,8 @@
   },
   {
     "url": "/methodology/calculation-assumptions",
+    "lang": "en",
+    "contentId": null,
     "title": "Calculation Assumptions",
     "description": "The assumptions, ideal conditions, and limitations built into WaterBalanceTools pool chemistry calculations.",
     "h1": "Calculation Assumptions",
@@ -2911,6 +3553,8 @@
   },
   {
     "url": "/methodology/calculation-methodology",
+    "lang": "en",
+    "contentId": null,
     "title": "Calculation Methodology",
     "description": "How WaterBalanceTools builds pool chemistry calculators: data flow from canonical datasets through entities to calculator outputs.",
     "h1": "Calculation Methodology",
@@ -2921,6 +3565,8 @@
   },
   {
     "url": "/methodology/confidence-system",
+    "lang": "en",
+    "contentId": null,
     "title": "Confidence System",
     "description": "How WaterBalanceTools uses confidence levels to communicate the strength of its pool chemistry recommendations.",
     "h1": "Confidence System",
@@ -2931,6 +3577,8 @@
   },
   {
     "url": "/methodology/formula-selection",
+    "lang": "en",
+    "contentId": null,
     "title": "Formula Selection",
     "description": "How WaterBalanceTools selects the formulas and equations used in its pool chemistry calculators.",
     "h1": "Formula Selection",
@@ -2941,6 +3589,8 @@
   },
   {
     "url": "/methodology/known-limitations",
+    "lang": "en",
+    "contentId": null,
     "title": "Known Limitations",
     "description": "Documented limitations of WaterBalanceTools pool chemistry calculators.",
     "h1": "Known Limitations",
@@ -2951,6 +3601,8 @@
   },
   {
     "url": "/methodology/precision-policy",
+    "lang": "en",
+    "contentId": null,
     "title": "Precision Policy",
     "description": "Floating-point handling, measurement uncertainty, and precision limitations of WaterBalanceTools calculators.",
     "h1": "Precision Policy",
@@ -2961,6 +3613,8 @@
   },
   {
     "url": "/methodology/rounding-policy",
+    "lang": "en",
+    "contentId": null,
     "title": "Rounding Policy",
     "description": "How WaterBalanceTools rounds calculator results and chemical dosages.",
     "h1": "Rounding Policy",
@@ -2971,6 +3625,8 @@
   },
   {
     "url": "/provenance",
+    "lang": "en",
+    "contentId": null,
     "title": "Data Provenance",
     "description": "Provenance for all canonical datasets used on WaterBalanceTools.",
     "h1": "Data Provenance",
@@ -2981,6 +3637,8 @@
   },
   {
     "url": "/revisions",
+    "lang": "en",
+    "contentId": null,
     "title": "Revision History",
     "description": "Complete revision history for WaterBalanceTools datasets, formulas, and calculators.",
     "h1": "Revision History",
@@ -2991,6 +3649,8 @@
   },
   {
     "url": "/about",
+    "lang": "en",
+    "contentId": null,
     "title": "About WaterBalanceTools",
     "description": "WaterBalanceTools is an independent pool and hot tub water chemistry reference, owned and operated by Albor Digital LLC.",
     "h1": "About WaterBalanceTools",
@@ -3001,6 +3661,8 @@
   },
   {
     "url": "/",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool & Hot Tub Chemical Calculator",
     "description": "Free pool and hot tub chemical calculator. Calculate chlorine and pH adjustments for pools and spas instantly.",
     "h1": "Pool & Hot Tub Chemical Calculator",
@@ -3011,6 +3673,8 @@
   },
   {
     "url": "/all-pages",
+    "lang": "en",
+    "contentId": null,
     "title": "All Pool Chemistry Pages",
     "description": "Complete list of WaterBalanceTools pool chemistry calculators, guides, and topic pages—flat crawl hub.",
     "h1": "All Pool Chemistry Pages",
@@ -3021,6 +3685,8 @@
   },
   {
     "url": "/entities",
+    "lang": "en",
+    "contentId": null,
     "title": "Entity Graph — Pool Chemistry Knowledge Base",
     "description": "The canonical pool chemistry entity graph: 104 entities covering chemicals, measurements, equipment, processes, problems, and pool types. The semantic backbo...",
     "h1": "Pool Chemistry Entity Graph",
@@ -3031,6 +3697,8 @@
   },
   {
     "url": "/entities/algae",
+    "lang": "en",
+    "contentId": "entity:algae",
     "title": "Algae",
     "description": "Plant-like organisms that grow in pool water when free chlorine is insufficient.",
     "h1": "Algae",
@@ -3041,6 +3709,8 @@
   },
   {
     "url": "/entities/alkalinity",
+    "lang": "en",
+    "contentId": null,
     "title": "Total Alkalinity",
     "description": "The capacity of water to resist pH changes — a pH buffer.",
     "h1": "Total Alkalinity",
@@ -3051,6 +3721,8 @@
   },
   {
     "url": "/entities/automatic-chlorinator",
+    "lang": "en",
+    "contentId": null,
     "title": "Automatic Chlorinator",
     "description": "An inline or offline device that dispenses trichlor tablets continuously to maintain free chlorine.",
     "h1": "Automatic Chlorinator",
@@ -3061,6 +3733,8 @@
   },
   {
     "url": "/entities/backwashing",
+    "lang": "en",
+    "contentId": null,
     "title": "Backwashing",
     "description": "Reversing water flow through a sand or DE filter to flush trapped debris to waste.",
     "h1": "Backwashing",
@@ -3071,6 +3745,8 @@
   },
   {
     "url": "/entities/baking-soda",
+    "lang": "en",
+    "contentId": null,
     "title": "Baking Soda",
     "description": "Sodium bicarbonate — the standard product for raising total alkalinity in pool water.",
     "h1": "Baking Soda",
@@ -3081,6 +3757,8 @@
   },
   {
     "url": "/entities/balancing",
+    "lang": "en",
+    "contentId": null,
     "title": "Water Balancing",
     "description": "The process of adjusting all chemistry parameters to achieve a stable, non-corrosive, non-scaling LSI.",
     "h1": "Water Balancing",
@@ -3091,6 +3769,8 @@
   },
   {
     "url": "/entities/biguanide",
+    "lang": "en",
+    "contentId": null,
     "title": "Biguanide",
     "description": "A chlorine-free sanitizer system using polyhexamethylene biguanide (PHMB) as the primary disinfectant.",
     "h1": "Biguanide",
@@ -3101,6 +3781,8 @@
   },
   {
     "url": "/entities/breakpoint-chlorination",
+    "lang": "en",
+    "contentId": null,
     "title": "Breakpoint Chlorination",
     "description": "Adding chlorine at 10× the combined chlorine level to destroy all chloramines.",
     "h1": "Breakpoint Chlorination",
@@ -3111,6 +3793,8 @@
   },
   {
     "url": "/entities/bromine",
+    "lang": "en",
+    "contentId": null,
     "title": "Bromine",
     "description": "A halogen sanitizer commonly used in hot tubs that remains effective at higher pH and temperatures.",
     "h1": "Bromine",
@@ -3121,6 +3805,8 @@
   },
   {
     "url": "/entities/calcium-chloride",
+    "lang": "en",
+    "contentId": null,
     "title": "Calcium Chloride",
     "description": "Calcium chloride (CaCl₂) is the chemical used to raise calcium hardness in pool water.",
     "h1": "Calcium Chloride",
@@ -3131,6 +3817,8 @@
   },
   {
     "url": "/entities/calcium-hardness",
+    "lang": "en",
+    "contentId": null,
     "title": "Calcium Hardness",
     "description": "The concentration of dissolved calcium in pool water, affecting scaling and corrosion tendency.",
     "h1": "Calcium Hardness",
@@ -3141,6 +3829,8 @@
   },
   {
     "url": "/entities/calcium-hypochlorite",
+    "lang": "en",
+    "contentId": null,
     "title": "Calcium Hypochlorite",
     "description": "Granular or tablet pool shock available at 65% or 73% available chlorine (cal-hypo).",
     "h1": "Calcium Hypochlorite",
@@ -3151,6 +3841,8 @@
   },
   {
     "url": "/entities/cartridge-filter",
+    "lang": "en",
+    "contentId": null,
     "title": "Cartridge Filter",
     "description": "A filter using pleated polyester cartridges to trap particles down to 10–15 microns without backwashing.",
     "h1": "Cartridge Filter",
@@ -3161,6 +3853,8 @@
   },
   {
     "url": "/entities/cdc",
+    "lang": "en",
+    "contentId": null,
     "title": "CDC",
     "description": "Centers for Disease Control and Prevention — a key authority on healthy swimming and recreational water illness.",
     "h1": "CDC",
@@ -3171,6 +3865,8 @@
   },
   {
     "url": "/entities/chemical-feeder",
+    "lang": "en",
+    "contentId": null,
     "title": "Chemical Feeder",
     "description": "A device that automatically dispenses pool chemicals at a controlled rate.",
     "h1": "Chemical Feeder",
@@ -3181,6 +3877,8 @@
   },
   {
     "url": "/entities/chemical-log",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemical Log Sheet",
     "description": "A printable log for tracking pool chemical inventory, purchases, and usage over time.",
     "h1": "Pool Chemical Log Sheet",
@@ -3191,6 +3889,8 @@
   },
   {
     "url": "/entities/closing-checklist",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Closing Checklist",
     "description": "A printable step-by-step checklist for winterizing a pool.",
     "h1": "Pool Closing Checklist",
@@ -3201,6 +3901,8 @@
   },
   {
     "url": "/entities/cloudy-water",
+    "lang": "en",
+    "contentId": null,
     "title": "Cloudy Water",
     "description": "Water that lacks clarity due to suspended particles, chemical imbalance, or filtration issues.",
     "h1": "Cloudy Water",
@@ -3211,6 +3913,8 @@
   },
   {
     "url": "/entities/combined-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Combined Chlorine",
     "description": "Chlorine that has reacted with contaminants and is no longer effective for sanitization.",
     "h1": "Combined Chlorine",
@@ -3221,6 +3925,8 @@
   },
   {
     "url": "/entities/commercial-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "Commercial Pool",
     "description": "A public or semi-public pool subject to health department regulations and inspection.",
     "h1": "Commercial Pool",
@@ -3231,6 +3937,8 @@
   },
   {
     "url": "/entities/concrete-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "Concrete Pool",
     "description": "A plastered or pebbled concrete pool requiring higher calcium hardness (200–400 ppm).",
     "h1": "Concrete Pool",
@@ -3241,6 +3949,8 @@
   },
   {
     "url": "/entities/copper",
+    "lang": "en",
+    "contentId": null,
     "title": "Copper",
     "description": "A metal that can enter pool water from ionizers, algaecides, or corroded equipment, causing green staining.",
     "h1": "Copper",
@@ -3251,6 +3961,8 @@
   },
   {
     "url": "/entities/corrosion",
+    "lang": "en",
+    "contentId": null,
     "title": "Corrosion",
     "description": "Damage to pool surfaces and metal equipment caused by corrosive (low LSI) water.",
     "h1": "Corrosion",
@@ -3261,6 +3973,8 @@
   },
   {
     "url": "/entities/cover",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Cover",
     "description": "A cover that reduces evaporation, heat loss, debris entry, and UV degradation of chemicals.",
     "h1": "Pool Cover",
@@ -3271,6 +3985,8 @@
   },
   {
     "url": "/entities/cyanuric-acid",
+    "lang": "en",
+    "contentId": null,
     "title": "Cyanuric Acid",
     "description": "A chemical stabilizer that protects chlorine from UV degradation in outdoor pools.",
     "h1": "Cyanuric Acid",
@@ -3281,6 +3997,8 @@
   },
   {
     "url": "/entities/de-filter",
+    "lang": "en",
+    "contentId": null,
     "title": "DE Filter",
     "description": "A diatomaceous earth filter offering the finest filtration (3–5 microns) of any pool filter type.",
     "h1": "DE Filter",
@@ -3291,6 +4009,8 @@
   },
   {
     "url": "/entities/emergency-reference",
+    "lang": "en",
+    "contentId": null,
     "title": "Emergency Recovery Reference",
     "description": "A printable quick-reference for emergency pool and spa recovery scenarios.",
     "h1": "Emergency Recovery Reference",
@@ -3301,6 +4021,8 @@
   },
   {
     "url": "/entities/epa",
+    "lang": "en",
+    "contentId": null,
     "title": "EPA",
     "description": "U.S. Environmental Protection Agency — regulates disinfectants including pool chemicals.",
     "h1": "EPA",
@@ -3311,6 +4033,8 @@
   },
   {
     "url": "/entities/eye-irritation",
+    "lang": "en",
+    "contentId": null,
     "title": "Eye Irritation",
     "description": "Swimmer eye irritation caused by chloramines or pH imbalance.",
     "h1": "Eye Irritation",
@@ -3321,6 +4045,8 @@
   },
   {
     "url": "/entities/fiberglass-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "Fiberglass Pool",
     "description": "A pre-molded pool with a smooth fiberglass surface requiring moderate calcium levels.",
     "h1": "Fiberglass Pool",
@@ -3331,6 +4057,8 @@
   },
   {
     "url": "/entities/filtration",
+    "lang": "en",
+    "contentId": null,
     "title": "Filtration",
     "description": "The continuous mechanical removal of suspended particles from pool water.",
     "h1": "Filtration",
@@ -3341,6 +4069,8 @@
   },
   {
     "url": "/entities/flow-rate",
+    "lang": "en",
+    "contentId": null,
     "title": "Flow Rate",
     "description": "The volume of water the pump moves per minute — a key factor in turnover rate.",
     "h1": "Flow Rate",
@@ -3351,6 +4081,8 @@
   },
   {
     "url": "/entities/foaming",
+    "lang": "en",
+    "contentId": null,
     "title": "Foaming",
     "description": "Persistent foam on pool or spa water surface caused by surfactants, high TDS, or algaecide.",
     "h1": "Foaming",
@@ -3361,6 +4093,8 @@
   },
   {
     "url": "/entities/free-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Free Chlorine",
     "description": "The active, unsaturated chlorine available to sanitize pool water.",
     "h1": "Free Chlorine",
@@ -3371,6 +4105,8 @@
   },
   {
     "url": "/entities/gallons",
+    "lang": "en",
+    "contentId": null,
     "title": "Gallons",
     "description": "US liquid gallon — the standard unit of pool volume measurement.",
     "h1": "Gallons",
@@ -3381,6 +4117,8 @@
   },
   {
     "url": "/entities/green-water",
+    "lang": "en",
+    "contentId": null,
     "title": "Green Water",
     "description": "Pool water discolored green by algae bloom due to insufficient free chlorine.",
     "h1": "Green Water",
@@ -3391,6 +4129,8 @@
   },
   {
     "url": "/entities/heater",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Heater",
     "description": "A device that raises water temperature using gas, electric heat pump, or solar energy.",
     "h1": "Pool Heater",
@@ -3401,6 +4141,8 @@
   },
   {
     "url": "/entities/high-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "High Chlorine",
     "description": "Free chlorine above 5 ppm causing bleaching, eye/skin irritation, and swimmer discomfort.",
     "h1": "High Chlorine",
@@ -3411,6 +4153,8 @@
   },
   {
     "url": "/entities/high-ph",
+    "lang": "en",
+    "contentId": null,
     "title": "High pH",
     "description": "Pool water pH above 7.8, reducing chlorine effectiveness and promoting scale formation.",
     "h1": "High pH",
@@ -3421,6 +4165,8 @@
   },
   {
     "url": "/entities/hot-tub",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub",
     "description": "A small, heated pool (75–500 gallons) used for relaxation and hydrotherapy.",
     "h1": "Hot Tub",
@@ -3431,6 +4177,8 @@
   },
   {
     "url": "/entities/hydrogen-peroxide",
+    "lang": "en",
+    "contentId": null,
     "title": "Hydrogen Peroxide",
     "description": "An oxidizer used in non-chlorine pool systems and as an emergency chlorine neutralizer.",
     "h1": "Hydrogen Peroxide",
@@ -3441,6 +4189,8 @@
   },
   {
     "url": "/entities/indoor-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "Indoor Pool",
     "description": "A pool housed inside a building, requiring ventilation management and no CYA.",
     "h1": "Indoor Pool",
@@ -3451,6 +4201,8 @@
   },
   {
     "url": "/entities/iron",
+    "lang": "en",
+    "contentId": null,
     "title": "Iron",
     "description": "A metal dissolved in pool water that causes rust-brown staining when oxidized.",
     "h1": "Iron",
@@ -3461,6 +4213,8 @@
   },
   {
     "url": "/entities/lamotte",
+    "lang": "en",
+    "contentId": null,
     "title": "LaMotte",
     "description": "LaMotte Company — manufacturer of professional water testing equipment for pool and spa use.",
     "h1": "LaMotte",
@@ -3471,6 +4225,8 @@
   },
   {
     "url": "/entities/liquid-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Liquid Chlorine",
     "description": "Sodium hypochlorite solution (10–12.5%) — the most commonly used liquid pool sanitizer.",
     "h1": "Liquid Chlorine",
@@ -3481,6 +4237,8 @@
   },
   {
     "url": "/entities/liters",
+    "lang": "en",
+    "contentId": null,
     "title": "Liters",
     "description": "SI unit of volume — 1 US gallon equals approximately 3.785 liters.",
     "h1": "Liters",
@@ -3491,6 +4249,8 @@
   },
   {
     "url": "/entities/low-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Low Chlorine",
     "description": "Free chlorine below the minimum effective level for the current CYA concentration.",
     "h1": "Low Chlorine",
@@ -3501,6 +4261,8 @@
   },
   {
     "url": "/entities/low-ph",
+    "lang": "en",
+    "contentId": null,
     "title": "Low pH",
     "description": "Pool water pH below 7.2, causing corrosion, eye irritation, and equipment damage.",
     "h1": "Low pH",
@@ -3511,6 +4273,8 @@
   },
   {
     "url": "/entities/lsi",
+    "lang": "en",
+    "contentId": null,
     "title": "Langelier Saturation Index",
     "description": "A composite score indicating whether water is balanced, corrosive, or scale-forming.",
     "h1": "Langelier Saturation Index",
@@ -3521,6 +4285,8 @@
   },
   {
     "url": "/entities/maintenance-checklist",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Maintenance Checklist",
     "description": "A printable weekly pool maintenance checklist covering testing, cleaning, and chemical additions.",
     "h1": "Pool Maintenance Checklist",
@@ -3531,6 +4297,8 @@
   },
   {
     "url": "/entities/maintenance-log",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Maintenance Log",
     "description": "A printable log for recording hot tub and spa water tests, chemical additions, and service notes.",
     "h1": "Hot Tub Maintenance Log",
@@ -3541,6 +4309,8 @@
   },
   {
     "url": "/entities/manganese",
+    "lang": "en",
+    "contentId": null,
     "title": "Manganese",
     "description": "A dissolved metal that causes black or purple staining in pool water.",
     "h1": "Manganese",
@@ -3551,6 +4321,8 @@
   },
   {
     "url": "/entities/muriatic-acid",
+    "lang": "en",
+    "contentId": null,
     "title": "Muriatic Acid",
     "description": "Hydrochloric acid (31.45%) used to lower pH and total alkalinity in pool water.",
     "h1": "Muriatic Acid",
@@ -3561,6 +4333,8 @@
   },
   {
     "url": "/entities/nsf",
+    "lang": "en",
+    "contentId": null,
     "title": "NSF International",
     "description": "NSF International — certifies pool and spa equipment and chemicals to safety standards.",
     "h1": "NSF International",
@@ -3571,6 +4345,8 @@
   },
   {
     "url": "/entities/opening-checklist",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Opening Checklist",
     "description": "A printable step-by-step checklist for spring pool opening.",
     "h1": "Pool Opening Checklist",
@@ -3581,6 +4357,8 @@
   },
   {
     "url": "/entities/orp",
+    "lang": "en",
+    "contentId": null,
     "title": "ORP",
     "description": "Oxidation-Reduction Potential — an electrical measurement of water's sanitizing capacity.",
     "h1": "ORP",
@@ -3591,6 +4369,8 @@
   },
   {
     "url": "/entities/outdoor-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "Outdoor Pool",
     "description": "A pool exposed to direct sunlight and weather, requiring CYA stabilization of chlorine.",
     "h1": "Outdoor Pool",
@@ -3601,6 +4381,8 @@
   },
   {
     "url": "/entities/oxidation",
+    "lang": "en",
+    "contentId": null,
     "title": "Oxidation",
     "description": "The chemical destruction of organic compounds, combined chlorine, and contaminants in pool water.",
     "h1": "Oxidation",
@@ -3611,6 +4393,8 @@
   },
   {
     "url": "/entities/ozone",
+    "lang": "en",
+    "contentId": null,
     "title": "Ozone",
     "description": "A powerful oxidizer generated on-site and injected into pool water as a supplemental sanitizer.",
     "h1": "Ozone",
@@ -3621,6 +4405,8 @@
   },
   {
     "url": "/entities/ph",
+    "lang": "en",
+    "contentId": null,
     "title": "pH",
     "description": "The measure of hydrogen ion concentration indicating acidity or alkalinity of pool water.",
     "h1": "pH",
@@ -3631,6 +4417,8 @@
   },
   {
     "url": "/entities/phosphate",
+    "lang": "en",
+    "contentId": null,
     "title": "Phosphate",
     "description": "A nutrient compound in pool water that can fuel algae growth.",
     "h1": "Phosphate",
@@ -3641,6 +4429,8 @@
   },
   {
     "url": "/entities/phta",
+    "lang": "en",
+    "contentId": null,
     "title": "PHTA",
     "description": "Pool &amp; Hot Tub Alliance — the primary industry trade association for pool and spa professionals.",
     "h1": "PHTA",
@@ -3651,6 +4441,8 @@
   },
   {
     "url": "/entities/pool-opening",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Opening",
     "description": "The spring start-up process to prepare a pool for the swimming season.",
     "h1": "Pool Opening",
@@ -3661,6 +4453,8 @@
   },
   {
     "url": "/entities/pool-salt",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Salt",
     "description": "High-purity sodium chloride (99.8%+) for use in saltwater pool systems.",
     "h1": "Pool Salt",
@@ -3671,6 +4465,8 @@
   },
   {
     "url": "/entities/ppm",
+    "lang": "en",
+    "contentId": null,
     "title": "Parts Per Million",
     "description": "The standard unit for measuring chemical concentrations in pool water.",
     "h1": "Parts Per Million",
@@ -3681,6 +4477,8 @@
   },
   {
     "url": "/entities/pump",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Pump",
     "description": "The motor and impeller assembly that circulates water through the filtration and chemical treatment system.",
     "h1": "Pool Pump",
@@ -3691,6 +4489,8 @@
   },
   {
     "url": "/entities/salt",
+    "lang": "en",
+    "contentId": null,
     "title": "Salt",
     "description": "Sodium chloride dissolved in pool water to enable chlorine generation by a salt chlorinator.",
     "h1": "Salt",
@@ -3701,6 +4501,8 @@
   },
   {
     "url": "/entities/salt-chlorinator",
+    "lang": "en",
+    "contentId": null,
     "title": "Salt Chlorinator",
     "description": "An electrolytic cell that converts dissolved salt into hypochlorous acid to sanitize pool water.",
     "h1": "Salt Chlorinator",
@@ -3711,6 +4513,8 @@
   },
   {
     "url": "/entities/saltwater-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "Saltwater Pool",
     "description": "A pool that uses a salt chlorinator to generate chlorine on-site from dissolved sodium chloride.",
     "h1": "Saltwater Pool",
@@ -3721,6 +4525,8 @@
   },
   {
     "url": "/entities/sand-filter",
+    "lang": "en",
+    "contentId": null,
     "title": "Sand Filter",
     "description": "A filter using silica sand to trap particles down to 20–40 microns.",
     "h1": "Sand Filter",
@@ -3731,6 +4537,8 @@
   },
   {
     "url": "/entities/sanitizing",
+    "lang": "en",
+    "contentId": null,
     "title": "Sanitizing",
     "description": "Maintaining an adequate residual disinfectant to destroy pathogens in pool water.",
     "h1": "Sanitizing",
@@ -3741,6 +4549,8 @@
   },
   {
     "url": "/entities/scaling",
+    "lang": "en",
+    "contentId": null,
     "title": "Scaling",
     "description": "White or grey mineral deposits on pool surfaces and equipment caused by over-saturated water.",
     "h1": "Scaling",
@@ -3751,6 +4561,8 @@
   },
   {
     "url": "/entities/shock-treatment",
+    "lang": "en",
+    "contentId": null,
     "title": "Shock Treatment",
     "description": "Adding a large dose of chlorine or non-chlorine oxidizer to destroy combined chlorine, algae, and contaminants.",
     "h1": "Shock Treatment",
@@ -3761,6 +4573,8 @@
   },
   {
     "url": "/entities/skimmer",
+    "lang": "en",
+    "contentId": null,
     "title": "Skimmer",
     "description": "A wall-mounted intake that removes floating debris from the pool surface before it sinks.",
     "h1": "Skimmer",
@@ -3771,6 +4585,8 @@
   },
   {
     "url": "/entities/skin-irritation",
+    "lang": "en",
+    "contentId": null,
     "title": "Skin Irritation",
     "description": "Swimmer skin irritation caused by pH imbalance, chloramines, or high disinfectant levels.",
     "h1": "Skin Irritation",
@@ -3781,6 +4597,8 @@
   },
   {
     "url": "/entities/soda-ash",
+    "lang": "en",
+    "contentId": null,
     "title": "Soda Ash",
     "description": "Sodium carbonate — used to raise pH in pool water.",
     "h1": "Soda Ash",
@@ -3791,6 +4609,8 @@
   },
   {
     "url": "/entities/sodium-dichlor",
+    "lang": "en",
+    "contentId": null,
     "title": "Dichlor",
     "description": "A stabilized granular shock (56–62% available chlorine) that adds both chlorine and CYA.",
     "h1": "Dichlor",
@@ -3801,6 +4621,8 @@
   },
   {
     "url": "/entities/stabilizer",
+    "lang": "en",
+    "contentId": null,
     "title": "Stabilizer / CYA Granules",
     "description": "Granular cyanuric acid product used to raise CYA to the target stabilizer level.",
     "h1": "Stabilizer / CYA Granules",
@@ -3811,6 +4633,8 @@
   },
   {
     "url": "/entities/strong-chlorine-smell",
+    "lang": "en",
+    "contentId": null,
     "title": "Strong Chlorine Smell",
     "description": "A pungent chlorine odor caused by chloramines, not excess chlorine.",
     "h1": "Strong Chlorine Smell",
@@ -3821,6 +4645,8 @@
   },
   {
     "url": "/entities/swim-spa",
+    "lang": "en",
+    "contentId": null,
     "title": "Swim Spa",
     "description": "A larger spa (12–20 ft) with jets for swimming in place and hydrotherapy.",
     "h1": "Swim Spa",
@@ -3831,6 +4657,8 @@
   },
   {
     "url": "/entities/swimming-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "Swimming Pool",
     "description": "A permanent or above-ground body of water designed for recreational swimming.",
     "h1": "Swimming Pool",
@@ -3841,6 +4669,8 @@
   },
   {
     "url": "/entities/taylor-technologies",
+    "lang": "en",
+    "contentId": null,
     "title": "Taylor Technologies",
     "description": "Taylor Technologies — manufacturer of professional pool test kits and the standard reference for pool chemistry calculations.",
     "h1": "Taylor Technologies",
@@ -3851,6 +4681,8 @@
   },
   {
     "url": "/entities/temperature",
+    "lang": "en",
+    "contentId": null,
     "title": "Temperature",
     "description": "Water temperature in °F or °C, affecting chemical reactions, chlorine demand, and comfort.",
     "h1": "Temperature",
@@ -3861,6 +4693,8 @@
   },
   {
     "url": "/entities/testing",
+    "lang": "en",
+    "contentId": null,
     "title": "Water Testing",
     "description": "Measuring pool water chemistry parameters using test strips, liquid kits, or digital testers.",
     "h1": "Water Testing",
@@ -3871,6 +4705,8 @@
   },
   {
     "url": "/entities/total-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Total Chlorine",
     "description": "The sum of free chlorine and combined chlorine in pool water.",
     "h1": "Total Chlorine",
@@ -3881,6 +4717,8 @@
   },
   {
     "url": "/entities/total-dissolved-solids",
+    "lang": "en",
+    "contentId": null,
     "title": "Total Dissolved Solids",
     "description": "The cumulative concentration of all dissolved matter in pool water.",
     "h1": "Total Dissolved Solids",
@@ -3891,6 +4729,8 @@
   },
   {
     "url": "/entities/trichlor-tablets",
+    "lang": "en",
+    "contentId": null,
     "title": "Trichlor Tablets",
     "description": "Stabilized chlorine tablets (90% available chlorine) for use in automatic chlorinators and floaters.",
     "h1": "Trichlor Tablets",
@@ -3901,6 +4741,8 @@
   },
   {
     "url": "/entities/turnover-time",
+    "lang": "en",
+    "contentId": null,
     "title": "Turnover Time",
     "description": "The time required for the pump to circulate the entire pool volume through the filter once.",
     "h1": "Turnover Time",
@@ -3911,6 +4753,8 @@
   },
   {
     "url": "/entities/unit-celsius",
+    "lang": "en",
+    "contentId": null,
     "title": "°C",
     "description": "Degrees Celsius — the SI temperature unit used in metric countries.",
     "h1": "°C",
@@ -3921,6 +4765,8 @@
   },
   {
     "url": "/entities/unit-days",
+    "lang": "en",
+    "contentId": null,
     "title": "Days",
     "description": "Unit of time — used for maintenance scheduling and chemical activity timelines.",
     "h1": "Days",
@@ -3931,6 +4777,8 @@
   },
   {
     "url": "/entities/unit-fahrenheit",
+    "lang": "en",
+    "contentId": null,
     "title": "°F",
     "description": "Degrees Fahrenheit — the standard temperature unit for pool and spa temperature in North America.",
     "h1": "°F",
@@ -3941,6 +4789,8 @@
   },
   {
     "url": "/entities/unit-gallons",
+    "lang": "en",
+    "contentId": null,
     "title": "US Gallons",
     "description": "US liquid gallon — the primary volume unit for pool calculations in North America.",
     "h1": "US Gallons",
@@ -3951,6 +4801,8 @@
   },
   {
     "url": "/entities/unit-hours",
+    "lang": "en",
+    "contentId": null,
     "title": "Hours",
     "description": "Unit of time — used for turnover rate and pump run time calculations.",
     "h1": "Hours",
@@ -3961,6 +4813,8 @@
   },
   {
     "url": "/entities/unit-liters",
+    "lang": "en",
+    "contentId": null,
     "title": "Metric Liters",
     "description": "1 liter = 0.2642 US gallons = 1,000 milliliters. Used in metric countries for pool volume measurement. Chemical concentrations in mg/L are equivalent to ppm.",
     "h1": "Metric Liters",
@@ -3971,6 +4825,8 @@
   },
   {
     "url": "/entities/unit-mg-l",
+    "lang": "en",
+    "contentId": null,
     "title": "mg/L",
     "description": "Milligrams per liter — numerically identical to ppm in aqueous solutions.",
     "h1": "mg/L",
@@ -3981,6 +4837,8 @@
   },
   {
     "url": "/entities/unit-minutes",
+    "lang": "en",
+    "contentId": null,
     "title": "Minutes",
     "description": "Unit of time — used for pump turnover calculation and wait times after chemical additions.",
     "h1": "Minutes",
@@ -3991,6 +4849,8 @@
   },
   {
     "url": "/entities/unit-months",
+    "lang": "en",
+    "contentId": null,
     "title": "Months",
     "description": "Unit of time — used for seasonal maintenance intervals and hot tub water change schedules.",
     "h1": "Months",
@@ -4001,6 +4861,8 @@
   },
   {
     "url": "/entities/unit-ppm",
+    "lang": "en",
+    "contentId": null,
     "title": "ppm",
     "description": "Parts per million — the standard concentration unit for pool chemistry.",
     "h1": "ppm",
@@ -4011,6 +4873,8 @@
   },
   {
     "url": "/entities/unit-weeks",
+    "lang": "en",
+    "contentId": null,
     "title": "Weeks",
     "description": "Unit of time — used for maintenance scheduling (weekly testing, weekly shock).",
     "h1": "Weeks",
@@ -4021,6 +4885,8 @@
   },
   {
     "url": "/entities/vacation-rental-checklist",
+    "lang": "en",
+    "contentId": null,
     "title": "Airbnb Pool Turnover Checklist",
     "description": "A printable turnover checklist for vacation rental pool inspection and chemistry verification between guests.",
     "h1": "Airbnb Pool Turnover Checklist",
@@ -4031,6 +4897,8 @@
   },
   {
     "url": "/entities/vinyl-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "Vinyl Pool",
     "description": "A pool with a vinyl liner surface requiring lower calcium hardness targets.",
     "h1": "Vinyl Pool",
@@ -4041,6 +4909,8 @@
   },
   {
     "url": "/entities/water-replacement",
+    "lang": "en",
+    "contentId": null,
     "title": "Water Replacement",
     "description": "Partially or completely draining and refilling pool or spa water to reduce dissolved compound levels.",
     "h1": "Water Replacement",
@@ -4051,6 +4921,8 @@
   },
   {
     "url": "/entities/water-test-sheet",
+    "lang": "en",
+    "contentId": null,
     "title": "Water Test Log",
     "description": "A printable log for recording water test results over time to track chemistry trends.",
     "h1": "Water Test Log",
@@ -4061,6 +4933,8 @@
   },
   {
     "url": "/entities/winterization",
+    "lang": "en",
+    "contentId": null,
     "title": "Winterization",
     "description": "The process of closing a pool or hot tub for the winter to prevent freeze damage.",
     "h1": "Winterization",
@@ -4071,6 +4945,8 @@
   },
   {
     "url": "/hot-tub-chemical-levels-chart",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Chemical Levels Chart (All Parameters)",
     "description": "Hot tub chemical levels chart: ideal chlorine, pH, alkalinity, and calcium hardness ranges for spas, plus CDC guidance on cyanuric acid. Quick reference tabl...",
     "h1": "Hot Tub Chemical Levels Chart",
@@ -4081,6 +4957,8 @@
   },
   {
     "url": "/hot-tub-chlorine-levels-chart",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Chlorine Levels Chart",
     "description": "Hot tub chlorine levels chart: ideal 3–5 ppm, safe swim threshold, what too high and too low means for health and equipment.",
     "h1": "Hot Tub Chlorine Levels Chart",
@@ -4091,6 +4969,8 @@
   },
   {
     "url": "/legal",
+    "lang": "en",
+    "contentId": null,
     "title": "Legal Hub",
     "description": "Ownership, legal, and policy pages for compliance and transparency.",
     "h1": "Legal Hub",
@@ -4101,6 +4981,8 @@
   },
   {
     "url": "/legal/legal",
+    "lang": "en",
+    "contentId": null,
     "title": "Legal Information",
     "description": "Terms of use, privacy, disclaimer, and cookies for WaterBalanceTools.com.",
     "h1": "Legal Information",
@@ -4111,6 +4993,8 @@
   },
   {
     "url": "/legal/ownership",
+    "lang": "en",
+    "contentId": null,
     "title": "Ownership &amp; Operator Information",
     "description": "Ownership and operator information for WaterBalanceTools.com — Albor Digital LLC.",
     "h1": "WaterBalanceTools Ownership",
@@ -4121,6 +5005,8 @@
   },
   {
     "url": "/maintenance",
+    "lang": "en",
+    "contentId": null,
     "title": "Maintenance Hub",
     "description": "Maintenance workflows and recurring service procedures.",
     "h1": "Maintenance Hub",
@@ -4131,6 +5017,8 @@
   },
   {
     "url": "/maintenance/how-often-add-chlorine-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Often to Add Chlorine to a Pool",
     "description": "How often to add chlorine to a pool. Testing frequency, daily vs weekly dosing, and when to shock.",
     "h1": "How Often to Add Chlorine to a Pool",
@@ -4141,6 +5029,8 @@
   },
   {
     "url": "/maintenance/how-to-balance-pool-water",
+    "lang": "en",
+    "contentId": null,
     "title": "How to Balance Pool Water",
     "description": "How to balance pool water: test, adjust pH, chlorine, and alkalinity. Step-by-step guide with calculator links.",
     "h1": "How to Balance Pool Water",
@@ -4151,6 +5041,8 @@
   },
   {
     "url": "/maintenance/how-to-fix-cloudy-hot-tub",
+    "lang": "en",
+    "contentId": null,
     "title": "How to Fix Cloudy Hot Tub Water",
     "description": "How to fix cloudy hot tub water: low sanitizer, high alkalinity, dirty filters. Step-by-step with calculator links.",
     "h1": "How to Fix Cloudy Hot Tub Water",
@@ -4161,6 +5053,8 @@
   },
   {
     "url": "/pool-alkalinity-levels-chart",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Alkalinity Levels Chart",
     "description": "Pool total alkalinity levels chart: ideal 80–120 ppm. What happens if low or high, and how alkalinity affects pH stability.",
     "h1": "Pool Alkalinity Levels Chart",
@@ -4171,6 +5065,8 @@
   },
   {
     "url": "/pool-chemical-levels-chart",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemical Levels Chart (Ideal Ranges + Next Steps)",
     "description": "Pool chemical levels chart: ideal ppm for chlorine, pH, alkalinity, calcium, and CYA—plus what to do next. Free reference.",
     "h1": "Pool chemical levels chart",
@@ -4181,6 +5077,8 @@
   },
   {
     "url": "/pool-chemistry-system",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chemistry System: How All Parameters Work Together",
     "description": "Pool chemistry system: how all 8 parameters (chlorine, pH, alkalinity, CYA, calcium hardness, combined chlorine, shock, and salt) work together to keep pool ...",
     "h1": "Pool Chemistry System: How All Parameters Work Together",
@@ -4191,6 +5089,8 @@
   },
   {
     "url": "/pool-chlorine-levels-chart",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool Chlorine Levels Chart (1–3 ppm + Shock Targets)",
     "description": "Pool chlorine levels chart: 1–3 ppm targets, shock ranges, and CYA context—free table + calculator links.",
     "h1": "Pool chlorine levels chart",
@@ -4201,6 +5101,8 @@
   },
   {
     "url": "/pool-cya-levels-chart",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool CYA (Cyanuric Acid) Levels Chart",
     "description": "Pool CYA levels chart: ideal range 30–50 ppm, what is too high, and how CYA affects chlorine effectiveness. Quick reference table.",
     "h1": "Pool CYA (Cyanuric Acid) Levels Chart",
@@ -4211,6 +5113,8 @@
   },
   {
     "url": "/pool-ph-levels-chart",
+    "lang": "en",
+    "contentId": null,
     "title": "Pool pH Levels Chart (7.2–7.6 + Fix Order)",
     "description": "Pool pH levels chart: 7.2–7.6 target, what high and low pH do to chlorine and equipment—plus calculator links.",
     "h1": "Pool pH levels chart",
@@ -4221,6 +5125,8 @@
   },
   {
     "url": "/programmatic",
+    "lang": "en",
+    "contentId": null,
     "title": "Programmatic Hub",
     "description": "Programmatic knowledge pages grouped by recurring calculation patterns.",
     "h1": "Programmatic Hub",
@@ -4231,6 +5137,8 @@
   },
   {
     "url": "/programmatic/behavior",
+    "lang": "en",
+    "contentId": null,
     "title": "Programmatic Behavior Hub",
     "description": "Behavior and schedule-oriented pages for maintenance frequency decisions.",
     "h1": "Programmatic Behavior Hub",
@@ -4241,6 +5149,8 @@
   },
   {
     "url": "/programmatic/behavior/how-often-to-shock-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Often to Shock a Pool (Weekly Guide)",
     "description": "Shock on a smart schedule—after parties, storms, or algae risk. Avoid guesswork with testing.",
     "h1": "How Often Should You Shock a Pool?",
@@ -4251,6 +5161,8 @@
   },
   {
     "url": "/programmatic/behavior/how-often-to-test-pool-water",
+    "lang": "en",
+    "contentId": null,
     "title": "How Often to Test Pool Water (Simple Schedule)",
     "description": "Test chlorine and pH several times weekly—catch drift before it becomes a costly fix.",
     "h1": "How Often Should You Test Pool Water?",
@@ -4261,6 +5173,8 @@
   },
   {
     "url": "/programmatic/behavior/when-to-add-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "When to Add Chlorine to a Pool (Best Time)",
     "description": "Add chlorine when readings fall below target—often evening dosing reduces UV loss.",
     "h1": "When Should You Add Chlorine to a Pool?",
@@ -4271,6 +5185,8 @@
   },
   {
     "url": "/programmatic/chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Programmatic Chlorine Hub",
     "description": "Programmatic chlorine dosing pages grouped by volume and scenario.",
     "h1": "Programmatic Chlorine Hub",
@@ -4281,6 +5197,8 @@
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool",
+    "lang": "en",
+    "contentId": "programmatic:chlorine-10000-gallon",
     "title": "How Much Chlorine for 10000 Gallon Pool",
     "description": "Get exact ounces for a 10,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 10,000 Gallon Pool?",
@@ -4291,6 +5209,8 @@
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-12000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Chlorine for 12000 Gallon Pool",
     "description": "Get exact ounces for a 12,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 12,000 Gallon Pool?",
@@ -4301,6 +5221,8 @@
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-15000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Chlorine for 15000 Gallon Pool",
     "description": "Get exact ounces for a 15,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 15,000 Gallon Pool?",
@@ -4311,6 +5233,8 @@
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-18000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Chlorine for 18000 Gallon Pool",
     "description": "Get exact ounces for a 18,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 18,000 Gallon Pool?",
@@ -4321,6 +5245,8 @@
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-20000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Chlorine for 20000 Gallon Pool",
     "description": "Get exact ounces for a 20,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 20,000 Gallon Pool?",
@@ -4331,6 +5257,8 @@
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-25000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Chlorine for 25000 Gallon Pool",
     "description": "Get exact ounces for a 25,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 25,000 Gallon Pool?",
@@ -4341,6 +5269,8 @@
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-30000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Chlorine for 30000 Gallon Pool",
     "description": "Get exact ounces for a 30,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 30,000 Gallon Pool?",
@@ -4351,6 +5281,8 @@
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-5000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Chlorine for 5000 Gallon Pool",
     "description": "Get exact ounces for a 5,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 5,000 Gallon Pool?",
@@ -4361,6 +5293,8 @@
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-7000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Chlorine for 7000 Gallon Pool",
     "description": "Get exact ounces for a 7,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 7,000 Gallon Pool?",
@@ -4371,6 +5305,8 @@
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-8000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Chlorine for 8000 Gallon Pool",
     "description": "Get exact ounces for a 8,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 8,000 Gallon Pool?",
@@ -4381,6 +5317,8 @@
   },
   {
     "url": "/programmatic/chlorine/how-much-chlorine-for-9000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Chlorine for 9000 Gallon Pool",
     "description": "Get exact ounces for a 9,000-gallon pool. Use the free calculator and avoid over-chlorination—safe dosing fast.",
     "h1": "How Much Chlorine Do You Need for a 9,000 Gallon Pool?",
@@ -4391,6 +5329,8 @@
   },
   {
     "url": "/programmatic/explanations",
+    "lang": "en",
+    "contentId": null,
     "title": "Programmatic Explanations Hub",
     "description": "Conceptual explanation pages that support calculator interpretation.",
     "h1": "Programmatic Explanations Hub",
@@ -4401,6 +5341,8 @@
   },
   {
     "url": "/programmatic/explanations/what-is-pool-alkalinity",
+    "lang": "en",
+    "contentId": null,
     "title": "What Is Total Alkalinity (Pool Basics)",
     "description": "Total alkalinity buffers pH—learn what it means and how to keep water balance stable.",
     "h1": "What Is Total Alkalinity in a Pool?",
@@ -4411,6 +5353,8 @@
   },
   {
     "url": "/programmatic/explanations/why-ph-affects-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Why pH Affects Chlorine (Pool Science)",
     "description": "Understand pH balance and sanitizer—fix pH first, then fine-tune chlorine levels safely.",
     "h1": "Why Does pH Affect Chlorine Effectiveness?",
@@ -4421,6 +5365,8 @@
   },
   {
     "url": "/programmatic/explanations/why-shower-before-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "Why Shower Before Swimming (Pool Chemistry)",
     "description": "Reduce chloramines and sanitizer load—quick facts on pool water chemistry and bather-introduced contaminants.",
     "h1": "Why Should You Shower Before Entering a Pool?",
@@ -4431,6 +5377,8 @@
   },
   {
     "url": "/programmatic/hot-tubs",
+    "lang": "en",
+    "contentId": null,
     "title": "Programmatic Hot Tub Hub",
     "description": "Programmatic hot tub chemistry pages organized by spa volume.",
     "h1": "Programmatic Hot Tub Hub",
@@ -4441,6 +5389,8 @@
   },
   {
     "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-200-gallons",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Chemicals for 200 Gallons",
     "description": "Sanitizer dosing for a 200-gallon spa. Get exact chlorine reference and calculators—safe hot tub water chemistry.",
     "h1": "What Chemicals Do You Need for a 200 Gallon Hot Tub?",
@@ -4451,6 +5401,8 @@
   },
   {
     "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-300-gallons",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Chemicals for 300 Gallons",
     "description": "Sanitizer dosing for a 300-gallon spa. Get exact chlorine reference and calculators—safe hot tub water chemistry.",
     "h1": "What Chemicals Do You Need for a 300 Gallon Hot Tub?",
@@ -4461,6 +5413,8 @@
   },
   {
     "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-400-gallons",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Chemicals for 400 Gallons",
     "description": "Sanitizer dosing for a 400-gallon spa. Get exact chlorine reference and calculators—safe hot tub water chemistry.",
     "h1": "What Chemicals Do You Need for a 400 Gallon Hot Tub?",
@@ -4471,6 +5425,8 @@
   },
   {
     "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-500-gallons",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Chemicals for 500 Gallons",
     "description": "Sanitizer dosing for a 500-gallon spa. Get exact chlorine reference and calculators—safe hot tub water chemistry.",
     "h1": "What Chemicals Do You Need for a 500 Gallon Hot Tub?",
@@ -4481,6 +5437,8 @@
   },
   {
     "url": "/programmatic/hot-tubs/hot-tub-chemicals-for-600-gallons",
+    "lang": "en",
+    "contentId": null,
     "title": "Hot Tub Chemicals for 600 Gallons",
     "description": "Sanitizer dosing for a 600-gallon spa. Get exact chlorine reference and calculators—safe hot tub water chemistry.",
     "h1": "What Chemicals Do You Need for a 600 Gallon Hot Tub?",
@@ -4491,6 +5449,8 @@
   },
   {
     "url": "/programmatic/ph",
+    "lang": "en",
+    "contentId": null,
     "title": "Programmatic pH Hub",
     "description": "Programmatic pH adjustment pages and correction scenarios.",
     "h1": "Programmatic pH Hub",
@@ -4501,6 +5461,8 @@
   },
   {
     "url": "/programmatic/ph/how-to-adjust-ph-from-6-8-to-7-2",
+    "lang": "en",
+    "contentId": null,
     "title": "How to Adjust Pool pH from 6.8 to 7.2",
     "description": "Adjust pool pH from 6.8 to 7.2. Use the calculator for exact ounces and stable pH balance.",
     "h1": "How Do You Adjust Pool pH from 6.8 to 7.2?",
@@ -4511,6 +5473,8 @@
   },
   {
     "url": "/programmatic/ph/how-to-adjust-ph-from-7-8-to-7-4",
+    "lang": "en",
+    "contentId": null,
     "title": "How to Adjust Pool pH from 7.8 to 7.4",
     "description": "Adjust pool pH from 7.8 to 7.4. Use the calculator for exact ounces and stable pH balance.",
     "h1": "How Do You Adjust Pool pH from 7.8 to 7.4?",
@@ -4521,6 +5485,8 @@
   },
   {
     "url": "/programmatic/ph/how-to-adjust-ph-from-7-to-7-4",
+    "lang": "en",
+    "contentId": null,
     "title": "How to Adjust Pool pH from 7 to 7.4",
     "description": "Adjust pool pH from 7 to 7.4. Use the calculator for exact ounces and stable pH balance.",
     "h1": "How Do You Adjust Pool pH from 7 to 7.4?",
@@ -4531,6 +5497,8 @@
   },
   {
     "url": "/programmatic/ph/how-to-adjust-ph-from-8-to-7-5",
+    "lang": "en",
+    "contentId": null,
     "title": "How to Adjust Pool pH from 8 to 7.5",
     "description": "Adjust pool pH from 8 to 7.5. Use the calculator for exact ounces and stable pH balance.",
     "h1": "How Do You Adjust Pool pH from 8 to 7.5?",
@@ -4541,6 +5509,8 @@
   },
   {
     "url": "/programmatic/problems",
+    "lang": "en",
+    "contentId": null,
     "title": "Programmatic Problems Hub",
     "description": "Problem-resolution playbooks generated from recurring chemistry failures.",
     "h1": "Programmatic Problems Hub",
@@ -4551,6 +5521,8 @@
   },
   {
     "url": "/programmatic/problems/cloudy-pool-fix",
+    "lang": "en",
+    "contentId": null,
     "title": "Cloudy Pool Fix (Clear Water Fast)",
     "description": "Clear cloudy water with filtration, pH balance, and targeted chemistry. Practical steps—test before you dump chemicals.",
     "h1": "How Do You Fix a Cloudy Pool?",
@@ -4561,6 +5533,8 @@
   },
   {
     "url": "/programmatic/problems/green-pool-how-much-chlorine",
+    "lang": "en",
+    "contentId": null,
     "title": "Fix a Green Pool Fast (Chlorine Guide)",
     "description": "Shock algae with the right chlorine dose and filtration. Step-by-step guide plus calculators—clear water faster.",
     "h1": "How Much Chlorine Do You Need to Fix a Green Pool?",
@@ -4571,6 +5545,8 @@
   },
   {
     "url": "/programmatic/problems/high-chlorine-how-to-lower",
+    "lang": "en",
+    "contentId": null,
     "title": "How to Lower High Chlorine Fast (Safe Method)",
     "description": "Bring high chlorine down safely with dilution, time, and circulation. Know when you can swim again.",
     "h1": "How Do You Lower High Chlorine in a Pool?",
@@ -4581,6 +5557,8 @@
   },
   {
     "url": "/programmatic/problems/low-alkalinity-symptoms",
+    "lang": "en",
+    "contentId": null,
     "title": "Low Alkalinity Symptoms (Fix TA Safely)",
     "description": "Spot low total alkalinity early—stop pH bounce and protect surfaces. Dosing steps plus alkalinity calculator.",
     "h1": "What Are the Symptoms of Low Alkalinity in a Pool?",
@@ -4591,6 +5569,8 @@
   },
   {
     "url": "/programmatic/shock",
+    "lang": "en",
+    "contentId": null,
     "title": "Programmatic Shock Hub",
     "description": "Programmatic shock dosing pages by pool volume and event type.",
     "h1": "Programmatic Shock Hub",
@@ -4601,6 +5581,8 @@
   },
   {
     "url": "/programmatic/shock/how-much-shock-for-10000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Shock for 10000 Gallon Pool",
     "description": "Get granular shock ounces for a 10,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
     "h1": "How Much Shock Do You Need for a 10,000 Gallon Pool?",
@@ -4611,6 +5593,8 @@
   },
   {
     "url": "/programmatic/shock/how-much-shock-for-15000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Shock for 15000 Gallon Pool",
     "description": "Get granular shock ounces for a 15,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
     "h1": "How Much Shock Do You Need for a 15,000 Gallon Pool?",
@@ -4621,6 +5605,8 @@
   },
   {
     "url": "/programmatic/shock/how-much-shock-for-20000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Shock for 20000 Gallon Pool",
     "description": "Get granular shock ounces for a 20,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
     "h1": "How Much Shock Do You Need for a 20,000 Gallon Pool?",
@@ -4631,6 +5617,8 @@
   },
   {
     "url": "/programmatic/shock/how-much-shock-for-25000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Shock for 25000 Gallon Pool",
     "description": "Get granular shock ounces for a 25,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
     "h1": "How Much Shock Do You Need for a 25,000 Gallon Pool?",
@@ -4641,6 +5629,8 @@
   },
   {
     "url": "/programmatic/shock/how-much-shock-for-30000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Shock for 30000 Gallon Pool",
     "description": "Get granular shock ounces for a 30,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
     "h1": "How Much Shock Do You Need for a 30,000 Gallon Pool?",
@@ -4651,6 +5641,8 @@
   },
   {
     "url": "/programmatic/shock/how-much-shock-for-5000-gallon-pool",
+    "lang": "en",
+    "contentId": null,
     "title": "How Much Shock for 5000 Gallon Pool",
     "description": "Get granular shock ounces for a 5,000-gallon pool. Fast dosing table plus calculator—avoid guesswork.",
     "h1": "How Much Shock Do You Need for a 5,000 Gallon Pool?",
@@ -4661,6 +5653,8 @@
   },
   {
     "url": "/releases",
+    "lang": "en",
+    "contentId": null,
     "title": "Releases",
     "description": "Canonical WaterBalanceTools release history with semantic versions and certification status.",
     "h1": "Release History",
@@ -4671,6 +5665,8 @@
   },
   {
     "url": "/releases/1.0.0",
+    "lang": "en",
+    "contentId": null,
     "title": "Release 1.0.0 — Foundation",
     "description": "Release notes for WaterBalanceTools 1.0.0 (Foundation).",
     "h1": "Release 1.0.0 — Foundation",
@@ -4681,6 +5677,8 @@
   },
   {
     "url": "/releases/1.1.0",
+    "lang": "en",
+    "contentId": null,
     "title": "Release 1.1.0 — Explorer",
     "description": "Release notes for WaterBalanceTools 1.1.0 (Explorer).",
     "h1": "Release 1.1.0 — Explorer",
@@ -4691,6 +5689,8 @@
   },
   {
     "url": "/releases/compatibility",
+    "lang": "en",
+    "contentId": null,
     "title": "Compatibility Matrix",
     "description": "Platform and subsystem compatibility matrix for WaterBalanceTools releases.",
     "h1": "Platform Compatibility Matrix",
@@ -4701,6 +5701,8 @@
   },
   {
     "url": "/salt-water-pool-chemical-levels-chart",
+    "lang": "en",
+    "contentId": null,
     "title": "Salt Water Pool Chemical Levels Chart",
     "description": "Salt water pool chemical levels chart: ideal salt ppm, chlorine, pH, TA, CYA, and calcium. SWG-specific targets and maintenance guide.",
     "h1": "Salt Water Pool Chemical Levels Chart",
@@ -4711,6 +5713,8 @@
   },
   {
     "url": "/search",
+    "lang": "en",
+    "contentId": null,
     "title": "Search",
     "description": "Search pool and hot tub water chemistry guides, calculators, formulas, and resources on WaterBalanceTools.",
     "h1": "Search WaterBalanceTools",
@@ -4721,6 +5725,8 @@
   },
   {
     "url": "/tools",
+    "lang": "en",
+    "contentId": null,
     "title": "All Pool & Hot Tub Tools",
     "description": "All pool and hot tub calculators and dosage guides. Pool chlorine, shock, pH, volume, and hot tub tools.",
     "h1": "All Pool & Hot Tub Tools",
@@ -4731,6 +5737,8 @@
   },
   {
     "url": "/editorial",
+    "lang": "en",
+    "contentId": null,
     "title": "Editorial Framework",
     "description": "How WaterBalanceTools creates, reviews, and maintains pool chemistry content. Editorial standards, review processes, and correction policies.",
     "h1": "Editorial Framework",
@@ -4741,6 +5749,8 @@
   },
   {
     "url": "/editorial/content-standards",
+    "lang": "en",
+    "contentId": null,
     "title": "Content Standards",
     "description": "Standards for accuracy, clarity, and completeness applied to all WaterBalanceTools content.",
     "h1": "Content Standards",
@@ -4751,6 +5761,8 @@
   },
   {
     "url": "/editorial/correction-policy",
+    "lang": "en",
+    "contentId": null,
     "title": "Correction Policy",
     "description": "How WaterBalanceTools handles corrections and updates to pool chemistry content.",
     "h1": "Correction Policy",
@@ -4761,6 +5773,8 @@
   },
   {
     "url": "/editorial/editorial-policy",
+    "lang": "en",
+    "contentId": null,
     "title": "Editorial Policy",
     "description": "The editorial policy governing how WaterBalanceTools selects, produces, and publishes pool chemistry content.",
     "h1": "Editorial Policy",
@@ -4771,6 +5785,8 @@
   },
   {
     "url": "/editorial/review-process",
+    "lang": "en",
+    "contentId": null,
     "title": "Review Process",
     "description": "How WaterBalanceTools reviews and maintains the accuracy of its pool chemistry calculators and content.",
     "h1": "Review Process",
@@ -4781,6 +5797,8 @@
   },
   {
     "url": "/editorial/update-policy",
+    "lang": "en",
+    "contentId": null,
     "title": "Update Policy",
     "description": "How WaterBalanceTools updates its content, datasets, and calculators over time.",
     "h1": "Update Policy",

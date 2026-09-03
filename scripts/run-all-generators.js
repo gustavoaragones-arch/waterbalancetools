@@ -282,12 +282,23 @@ execSync('node scripts/validate-versioning.js', { cwd: root, stdio: 'inherit' })
 // second build. The earlier calls above are left in place unchanged --
 // they still serve the English-only site correctly on their own.
 //
-// The Spanish cluster is NOT added to data/navigation.json / the search
-// index / hub navigation in this phase -- see
-// docs/PHASE-8E-SPANISH-ROLLOUT.md (known limitations). Only the sitemap
-// and hreflang/canonical relationships are wired end-to-end.
+// Phase 8F: generate-navigation.js and generate-search-index.js are now
+// language-aware (each gates a non-default-language URL on
+// data/i18n/translation-status.json reporting it "translated" -- an
+// untranslated /es/ page can never leak in, see
+// docs/PHASE-8F-SPANISH-REGIONAL-SEO.md Section 12-14), so both are
+// re-run here too, in dependency order (navigation before search-index,
+// since the search index reads navigation.json), via execSync for the
+// same reason as generate-sitemaps.js below: require()-ing the same
+// script path twice in one process is a silent no-op.
 require(path.join(__dirname, 'generate-spanish-cluster.js'));
 require(path.join(__dirname, 'inject-i18n-cluster.js'));
+
+console.log('Running generate-navigation.js (post-i18n refresh)...');
+execSync('node scripts/generate-navigation.js', { cwd: root, stdio: 'inherit' });
+
+console.log('Running generate-search-index.js (post-i18n refresh)...');
+execSync('node scripts/generate-search-index.js', { cwd: root, stdio: 'inherit' });
 
 console.log('Running generate-sitemaps.js (post-i18n refresh)...');
 execSync('node scripts/generate-sitemaps.js', { cwd: root, stdio: 'inherit' });

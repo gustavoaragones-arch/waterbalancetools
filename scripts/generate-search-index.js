@@ -17,6 +17,9 @@ const fs   = require('fs');
 const path = require('path');
 const { ROOT, buildUrl } = require('./template-utils');
 const urlPolicy = require('./url-policy');
+const translationStatus = require('../js/i18n/translation-status');
+const { detectLanguageFromPath, stripLanguagePrefix } = require('../js/i18n/locale-url');
+const { getDefaultLanguage } = require('../js/i18n/languages');
 
 const DATA_DIR = path.join(ROOT, 'data');
 
@@ -26,6 +29,34 @@ const SKIP_DIRS = new Set([
   'node_modules', '.git', 'assets', 'js', 'functions', 'data', 'lib',
   'scripts', 'partials', 'templates',
 ]);
+
+// Phase 8F: same eligibility rule as generate-navigation.js -- a /es/
+// document is indexed only when translation-status.json reports it
+// "translated", and always carries its own `lang` + `contentId` (when
+// known), so a client-side search UI can distinguish an English document
+// from its Spanish counterpart instead of silently merging them just
+// because they happen to share a URL prefix. See
+// docs/PHASE-8F-SPANISH-REGIONAL-SEO.md.
+function buildTranslatedEsUrlSet() {
+  const set = new Set();
+  for (const unit of translationStatus.getAllUnits()) {
+    const es = unit.languages.es;
+    if (es && es.status === 'translated') set.add(es.url);
+  }
+  return set;
+}
+function buildContentIdByUrl() {
+  const map = new Map();
+  for (const unit of translationStatus.getAllUnits()) {
+    for (const code of Object.keys(unit.languages)) {
+      map.set(unit.languages[code].url, unit.contentId);
+    }
+  }
+  return map;
+}
+const TRANSLATED_ES_URLS = buildTranslatedEsUrlSet();
+const CONTENT_ID_BY_URL = buildContentIdByUrl();
+const DEFAULT_LANG = getDefaultLanguage().code;
 const SKIP_PATHS = [
   /^programmatic\/templates/,
   /^templates\//,
@@ -61,7 +92,12 @@ function toCleanUrl(relPath) {
 }
 
 function urlToCategory(url) {
-  const seg = url.replace(/^\//, '').split('/')[0];
+  // Phase 8F: strip a leading language segment before categorizing, so
+  // /es/calculators/x categorizes as "Calculators" like /calculators/x
+  // (same fix already applied to generate-sitemaps.js and
+  // generate-navigation.js).
+  const { path: pathNoLang } = stripLanguagePrefix(url);
+  const seg = pathNoLang.replace(/^\//, '').split('/')[0];
   const MAP = {
     calculators:'Calculators', guides:'Guides', charts:'Charts',
     resources:'Resources', academy:'Academy', formulas:'Formula Library',
@@ -105,6 +141,10 @@ function walk(dir) {
 
     const url = toCleanUrl(relPath);
     if (seen.has(url)) continue;
+
+    const lang = detectLanguageFromPath(url);
+    // Phase 8F eligibility gate -- see TRANSLATED_ES_URLS comment above.
+    if (lang !== DEFAULT_LANG && !TRANSLATED_ES_URLS.has(url)) continue;
     seen.add(url);
 
     const html  = fs.readFileSync(full, 'utf8');
@@ -118,6 +158,8 @@ function walk(dir) {
 
     index.push({
       url,
+      lang,
+      contentId:   CONTENT_ID_BY_URL.get(url) || null,
       title:       title || h1 || url,
       description: desc,
       h1,
