@@ -43,6 +43,11 @@ const CLUSTER_FILES = [
   'hot-tub-ph-calculator.html',
   'hot-tub-shock-calculator.html',
   'spa-volume-calculator.html',
+  // Phase 8I: remaining Water Chemistry cluster members.
+  'pool-alkalinity-calculator.html',
+  'pool-cyanuric-acid-calculator.html',
+  'pool-turnover-rate-calculator.html',
+  'saltwater-pool-salt-calculator.html',
 ];
 const CLUSTER_SET = new Set(CLUSTER_FILES);
 

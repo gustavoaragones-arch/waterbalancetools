@@ -62,7 +62,7 @@
   {
     "url": "/calculators/pool-alkalinity-calculator",
     "lang": "en",
-    "contentId": null,
+    "contentId": "calculator:pool-alkalinity",
     "title": "Pool Alkalinity Calculator",
     "description": "Pool alkalinity calculator. Enter pool gallons and current alkalinity to get alkalinity increaser amount. Free and fast.",
     "h1": "Pool Alkalinity Calculator",
@@ -86,7 +86,7 @@
   {
     "url": "/calculators/pool-cyanuric-acid-calculator",
     "lang": "en",
-    "contentId": null,
+    "contentId": "calculator:pool-cyanuric-acid",
     "title": "Pool Cyanuric Acid Calculator",
     "description": "Pool cyanuric acid (CYA) calculator. Enter pool gallons and current CYA to get stabilizer amount. Free and fast.",
     "h1": "Pool Cyanuric Acid Calculator",
@@ -122,7 +122,7 @@
   {
     "url": "/calculators/pool-turnover-rate-calculator",
     "lang": "en",
-    "contentId": null,
+    "contentId": "calculator:pool-turnover-rate",
     "title": "Pool Turnover Rate Calculator",
     "description": "Pool turnover rate calculator. Enter pool volume and pump flow rate to get hours for full turnover. Free and fast.",
     "h1": "Pool Turnover Rate Calculator",
@@ -146,7 +146,7 @@
   {
     "url": "/calculators/saltwater-pool-salt-calculator",
     "lang": "en",
-    "contentId": null,
+    "contentId": "calculator:saltwater-pool-salt",
     "title": "Saltwater Pool Salt Calculator",
     "description": "Saltwater pool salt calculator. Enter pool gallons and current salt level to get pounds of salt required. Free and fast.",
     "h1": "Saltwater Pool Salt Calculator",
@@ -216,6 +216,18 @@
     "keywords": "calculadora choque para spa por producto"
   },
   {
+    "url": "/es/calculators/pool-alkalinity-calculator",
+    "lang": "es",
+    "contentId": "calculator:pool-alkalinity",
+    "title": "Calculadora de Alcalinidad para Piscina",
+    "description": "Calculadora de alcalinidad para piscina. Ingrese los galones de la piscina y la alcalinidad actual para obtener la cantidad de incrementador de alcalinidad. Gratis y rápida.",
+    "h1": "Calculadora de Alcalinidad para Piscina",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculadora alcalinidad para piscina"
+  },
+  {
     "url": "/es/calculators/pool-chlorine-calculator",
     "lang": "es",
     "contentId": "calculator:pool-chlorine",
@@ -226,6 +238,18 @@
     "readingTime": null,
     "updated": null,
     "keywords": "calculadora cloro para piscina por volumen"
+  },
+  {
+    "url": "/es/calculators/pool-cyanuric-acid-calculator",
+    "lang": "es",
+    "contentId": "calculator:pool-cyanuric-acid",
+    "title": "Calculadora de Ácido Cianúrico para Piscina",
+    "description": "Calculadora de ácido cianúrico (CYA) para piscina. Ingrese los galones de la piscina y el CYA actual para obtener la cantidad de estabilizador. Gratis y rápida.",
+    "h1": "Calculadora de Ácido Cianúrico para Piscina",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculadora cido cian rico para piscina"
   },
   {
     "url": "/es/calculators/pool-ph-calculator",
@@ -252,6 +276,18 @@
     "keywords": "calculadora choque para piscina dosis por producto"
   },
   {
+    "url": "/es/calculators/pool-turnover-rate-calculator",
+    "lang": "es",
+    "contentId": "calculator:pool-turnover-rate",
+    "title": "Calculadora de Tasa de Recirculación para Piscina",
+    "description": "Calculadora de tasa de recirculación para piscina. Ingrese el volumen de la piscina y el caudal de la bomba para obtener las horas necesarias para una recirculación completa. Gratis y rápida.",
+    "h1": "Calculadora de Tasa de Recirculación para Piscina",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculadora tasa recirculaci para piscina"
+  },
+  {
     "url": "/es/calculators/pool-volume-calculator",
     "lang": "es",
     "contentId": "calculator:pool-volume",
@@ -262,6 +298,18 @@
     "readingTime": null,
     "updated": null,
     "keywords": "calculadora volumen piscina calculators"
+  },
+  {
+    "url": "/es/calculators/saltwater-pool-salt-calculator",
+    "lang": "es",
+    "contentId": "calculator:saltwater-pool-salt",
+    "title": "Calculadora de Sal para Piscina de Agua Salada",
+    "description": "Calculadora de sal para piscina de agua salada. Ingrese los galones de la piscina y el nivel de sal actual para obtener las libras de sal necesarias. Gratis y rápida.",
+    "h1": "Calculadora de Sal para Piscina de Agua Salada",
+    "category": "Calculators",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calculadora sal para piscina agua salada"
   },
   {
     "url": "/es/calculators/spa-volume-calculator",

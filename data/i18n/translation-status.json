@@ -1,5 +1,5 @@
 {
-  "_comment": "Phase 8D established this translation-completeness model (docs/PHASE-8D-MULTILINGUAL-ARCHITECTURE.md, spec Section 24) with 8 representative fixtures, all 'missing' in es. Phase 8E (docs/PHASE-8E-SPANISH-ROLLOUT.md) activated the first real Spanish production cluster: the 5 pool calculator units below moved from 'missing' to 'translated' only after their Spanish pages were generated, validated (schema-valid, non-broken links, self-referential canonical, correct html lang), and confirmed reproducible via scripts/generate-spanish-cluster.js. Phase 8G (docs/PHASE-8G-SPANISH-SPA-CLUSTER.md) added the 4 hot-tub/spa calculator units below under the identical validate-before-flip discipline. The remaining fixtures (academy/glossary/formula/reference/guide/entity/programmatic) are still 'missing' -- neither phase touched them, per their explicit single-cluster scope. This is a STATUS tracker, not a content store -- it never holds translated text.",
+  "_comment": "Phase 8D established this translation-completeness model (docs/PHASE-8D-MULTILINGUAL-ARCHITECTURE.md, spec Section 24) with 8 representative fixtures, all 'missing' in es. Phase 8E (docs/PHASE-8E-SPANISH-ROLLOUT.md) activated the first real Spanish production cluster: the 5 pool calculator units below moved from 'missing' to 'translated' only after their Spanish pages were generated, validated (schema-valid, non-broken links, self-referential canonical, correct html lang), and confirmed reproducible via scripts/generate-spanish-cluster.js. Phase 8G (docs/PHASE-8G-SPANISH-SPA-CLUSTER.md) added the 4 hot-tub/spa calculator units below under the identical validate-before-flip discipline. Phase 8I (docs/PHASE-8I-SPANISH-CALCULATOR-EXPANSION.md) added the remaining 4 Water Chemistry cluster units under the same discipline, completing the site's 'Water Chemistry (5)' related-calculators navigation group in Spanish. The remaining fixtures (academy/glossary/formula/reference/guide/entity/programmatic) are still 'missing' -- no calculator-cluster phase has touched them, per their explicit single-cluster scope. This is a STATUS tracker, not a content store -- it never holds translated text.",
   "_generated": "2026-09-02",
   "units": [
     {
@@ -72,6 +72,38 @@
       "languages": {
         "en": { "status": "translated", "url": "/calculators/spa-volume-calculator" },
         "es": { "status": "translated", "url": "/es/calculators/spa-volume-calculator" }
+      }
+    },
+    {
+      "contentId": "calculator:pool-alkalinity",
+      "category": "calculator",
+      "languages": {
+        "en": { "status": "translated", "url": "/calculators/pool-alkalinity-calculator" },
+        "es": { "status": "translated", "url": "/es/calculators/pool-alkalinity-calculator" }
+      }
+    },
+    {
+      "contentId": "calculator:pool-cyanuric-acid",
+      "category": "calculator",
+      "languages": {
+        "en": { "status": "translated", "url": "/calculators/pool-cyanuric-acid-calculator" },
+        "es": { "status": "translated", "url": "/es/calculators/pool-cyanuric-acid-calculator" }
+      }
+    },
+    {
+      "contentId": "calculator:pool-turnover-rate",
+      "category": "calculator",
+      "languages": {
+        "en": { "status": "translated", "url": "/calculators/pool-turnover-rate-calculator" },
+        "es": { "status": "translated", "url": "/es/calculators/pool-turnover-rate-calculator" }
+      }
+    },
+    {
+      "contentId": "calculator:saltwater-pool-salt",
+      "category": "calculator",
+      "languages": {
+        "en": { "status": "translated", "url": "/calculators/saltwater-pool-salt-calculator" },
+        "es": { "status": "translated", "url": "/es/calculators/saltwater-pool-salt-calculator" }
       }
     },
     {

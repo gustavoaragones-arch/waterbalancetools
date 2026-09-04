@@ -105,16 +105,10 @@ const SHARED = [
   ['Pool Calculators (5)', 'Calculadoras de Piscina (5)'],
   ['Hot Tub Calculators (3)', 'Calculadoras de Spa (3)'],
   ['Water Chemistry (5)', 'Química del Agua (5)'],
-  // Related-calculators grid: NON-active cards are handled by
-  // SHARED_OPTIONAL below (see its own comment) since each rule is
-  // legitimately absent on exactly the one file that IS that calculator.
-  // Still-untranslated Water Chemistry group members: text only, href
-  // correctly stays English (explicit fallback -- no Spanish equivalent
-  // exists yet for these 4).
-  ['>Salt Calculator<', '>Calculadora de Sal<'],
-  ['>Alkalinity Calculator<', '>Calculadora de Alcalinidad<'],
-  ['>CYA Calculator<', '>Calculadora de Ácido Cianúrico<'],
-  ['>Turnover Rate Calculator<', '>Calculadora de Tasa de Recirculación<'],
+  // Related-calculators grid: NON-active cards (all 13 cluster members as
+  // of Phase 8I) are handled by SHARED_OPTIONAL below (see its own
+  // comment) since each rule is legitimately absent on exactly the one
+  // file that IS that calculator.
 
   // Related tools / guides section chrome (headings + generic labels)
   ['Related Pool Chemistry Tools', 'Herramientas Relacionadas de Química de Piscina'],
@@ -148,6 +142,11 @@ const SHARED_OPTIONAL = [
   ['<a href="/calculators/hot-tub-ph-calculator" class="calc-card">Hot Tub pH Calculator</a>', '<a href="/es/calculators/hot-tub-ph-calculator" class="calc-card">Calculadora de pH para Spa</a>'],
   ['<a href="/calculators/hot-tub-shock-calculator" class="calc-card">Hot Tub Shock Calculator</a>', '<a href="/es/calculators/hot-tub-shock-calculator" class="calc-card">Calculadora de Choque para Spa</a>'],
   ['<a href="/calculators/spa-volume-calculator" class="calc-card">Spa Volume Calculator</a>', '<a href="/es/calculators/spa-volume-calculator" class="calc-card">Calculadora de Volumen de Spa</a>'],
+  // Phase 8I: the 4 newly-translated Water Chemistry cluster members.
+  ['<a href="/calculators/saltwater-pool-salt-calculator" class="calc-card">Salt Calculator</a>', '<a href="/es/calculators/saltwater-pool-salt-calculator" class="calc-card">Calculadora de Sal</a>'],
+  ['<a href="/calculators/pool-alkalinity-calculator" class="calc-card">Alkalinity Calculator</a>', '<a href="/es/calculators/pool-alkalinity-calculator" class="calc-card">Calculadora de Alcalinidad</a>'],
+  ['<a href="/calculators/pool-cyanuric-acid-calculator" class="calc-card">CYA Calculator</a>', '<a href="/es/calculators/pool-cyanuric-acid-calculator" class="calc-card">Calculadora de Ácido Cianúrico</a>'],
+  ['<a href="/calculators/pool-turnover-rate-calculator" class="calc-card">Turnover Rate Calculator</a>', '<a href="/es/calculators/pool-turnover-rate-calculator" class="calc-card">Calculadora de Tasa de Recirculación</a>'],
 ];
 
 // ---------------------------------------------------------------------
@@ -922,6 +921,222 @@ const SPA_VOLUME_CALCULATOR = [
    "text.textContent = 'Volumen: ' + Math.round(gal).toLocaleString() + ' galones';"],
 ];
 
+// ---------------------------------------------------------------------
+// Phase 8I: Water Chemistry cluster expansion (the 4 remaining members
+// of the site's own existing "Water Chemistry (5)" related-calculators
+// navigation group -- spa-volume-calculator, the 5th member, was already
+// translated in Phase 8G). None of these 4 pages has a chemistry-sources
+// block, and none of their calc-utils.js functions (calculateAlkalinity,
+// calculateCYA, calculateTurnover, calculateSalt) returns a dataset-driven
+// English display string (no SHOCK_PRODUCTS-style label/warning object),
+// so no shared-calculator-string mechanism (cf. js/i18n/es-product-labels.js)
+// is needed for this cluster -- see docs/PHASE-8I-SPANISH-CALCULATOR-EXPANSION.md
+// Section on the calculator-specific string audit.
+// ---------------------------------------------------------------------
+
+const POOL_ALKALINITY_CALCULATOR = [
+  LIMITED_CONFIDENCE_TOOLTIP,
+  ['<h2>Result</h2>', '<h2>Resultado</h2>'],
+  ['<a href="/calculators/pool-alkalinity-calculator" class="calc-card calc-card--active">Alkalinity Calculator</a>', '<a href="/es/calculators/pool-alkalinity-calculator" class="calc-card calc-card--active">Calculadora de Alcalinidad</a>'],
+  ['Pool Alkalinity Calculator | WaterBalanceTools', 'Calculadora de Alcalinidad para Piscina | WaterBalanceTools'],
+  [
+    'Pool alkalinity calculator. Enter pool gallons and current alkalinity to get alkalinity increaser amount. Free and fast.',
+    'Calculadora de alcalinidad para piscina. Ingrese los galones de la piscina y la alcalinidad actual para obtener la cantidad de incrementador de alcalinidad. Gratis y rápida.',
+  ],
+  [
+    'Calculate how much alkalinity increaser your pool needs.',
+    'Calcule cuánto incrementador de alcalinidad necesita su piscina.',
+  ],
+  ['"name":"Pool Alkalinity Calculator"', '"name":"Calculadora de Alcalinidad para Piscina"'],
+  ['Pool Alkalinity Calculator</span>', 'Calculadora de Alcalinidad para Piscina</span>'],
+  ['<h1>Pool Alkalinity Calculator</h1>', '<h1>Calculadora de Alcalinidad para Piscina</h1>'],
+  ['Calculate how much alkalinity increaser (sodium bicarbonate) your pool needs.', 'Calcule cuánto incrementador de alcalinidad (bicarbonato de sodio) necesita su piscina.'],
+  ['<label for="volume">Pool gallons</label>', '<label for="volume">Galones de la piscina</label>'],
+  ['<label for="current">Current alkalinity (ppm)</label>', '<label for="current">Alcalinidad actual (ppm)</label>'],
+  ['<label for="target">Target alkalinity (ppm)</label>', '<label for="target">Alcalinidad objetivo (ppm)</label>'],
+  ['<h2>Quick tips</h2>', '<h2>Consejos Rápidos</h2>'],
+  ['<strong>Ideal total alkalinity:</strong> 80–120 ppm. It buffers pH. Adjust alkalinity before making large pH changes.',
+   '<strong>Alcalinidad total ideal:</strong> 80–120 ppm. Actúa como amortiguador del pH. Ajuste la alcalinidad antes de hacer grandes cambios de pH.'],
+  ['<li><a href="/reference/pool-chemistry-reference">Pool chemistry reference</a></li>', '<li><a href="/reference/pool-chemistry-reference">Referencia de química de piscina</a></li>'],
+  ['<li><a href="../programmatic/explanations/what-is-pool-alkalinity.html">What is pool alkalinity</a></li>', '<li><a href="../programmatic/explanations/what-is-pool-alkalinity.html">Qué es la alcalinidad de la piscina</a></li>'],
+  ['<li><a href="../programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html">Lower pool pH 8.0 → 7.5</a></li>', '<li><a href="../programmatic/ph/how-to-adjust-ph-from-8-to-7-5.html">Bajar el pH de la piscina 8.0 → 7.5</a></li>'],
+  ['<li><a href="../programmatic/problems/low-alkalinity-symptoms.html">Low alkalinity symptoms</a></li>', '<li><a href="../programmatic/problems/low-alkalinity-symptoms.html">Síntomas de alcalinidad baja</a></li>'],
+  ['<li><a href="../programmatic/problems/cloudy-pool-fix.html">Cloudy pool fix</a></li>', '<li><a href="../programmatic/problems/cloudy-pool-fix.html">Solución para piscina turbia</a></li>'],
+  ['<li><a href="../reference/total-alkalinity-explained.html">Total Alkalinity Explained</a></li>', '<li><a href="../reference/total-alkalinity-explained.html">Alcalinidad Total Explicada</a></li>'],
+  ['<li><a href="../programmatic/explanations/what-is-pool-alkalinity.html">What Is Pool Alkalinity</a></li>', '<li><a href="../programmatic/explanations/what-is-pool-alkalinity.html">Qué Es la Alcalinidad de la Piscina</a></li>'],
+  ['<li><a href="../programmatic/problems/low-alkalinity-symptoms.html">Low Alkalinity Symptoms</a></li>', '<li><a href="../programmatic/problems/low-alkalinity-symptoms.html">Síntomas de Alcalinidad Baja</a></li>'],
+  ['<li><a href="../reference/alkalinity-table.html">Alkalinity Table</a></li>', '<li><a href="../reference/alkalinity-table.html">Tabla de Alcalinidad</a></li>'],
+  ['<li><a href="../guides/ph/can-you-swim-in-high-ph-water.html">Can You Swim In High Ph Water</a></li>', '<li><a href="../guides/ph/can-you-swim-in-high-ph-water.html">Se puede nadar en agua con pH alto</a></li>'],
+  ['<li><a href="../comparisons/chlorine-vs-bromine-hot-tub.html">Chlorine Vs Bromine Hot Tub</a></li>', '<li><a href="../comparisons/chlorine-vs-bromine-hot-tub.html">Cloro vs. Bromo para Spa</a></li>'],
+  ['<li><a href="chemical-calculator.html">Full pool chemical calculator</a></li>', '<li><a href="chemical-calculator.html">Calculadora química de piscina completa</a></li>'],
+  ['<li><a href="../guides/alkalinity-guide.html">Alkalinity guide (hub)</a></li>', '<li><a href="../guides/alkalinity-guide.html">Guía de alcalinidad (guía central)</a></li>'],
+  ['title="Total Alkalinity Adjustment">Total Alkalinity Adjustment</a>', 'title="Ajuste de Alcalinidad Total">Ajuste de Alcalinidad Total</a>'],
+  [
+    '<em>Target range (80-120 ppm) is independently supported (PHTA fact sheet). Baking soda coefficient (24 oz per 10 ppm per 10,000 gal) is not independently verified.</em>',
+    '<em>El rango objetivo (80-120 ppm) cuenta con respaldo independiente (ficha técnica de la PHTA). El coeficiente de bicarbonato de sodio (24 oz por cada 10 ppm por cada 10,000 gal) no está verificado de forma independiente.</em>',
+  ],
+  // Inline JS display-text
+  ["if (!g || parseFloat(g) <= 0) { text.textContent = 'Enter valid pool gallons.'; el.classList.remove('hidden'); return; }",
+   "if (!g || parseFloat(g) <= 0) { text.textContent = 'Ingrese galones de piscina válidos.'; el.classList.remove('hidden'); return; }"],
+  ["if (r.ppm <= 0) { text.textContent = 'Target should be higher than current. No addition needed.'; el.classList.remove('hidden'); return; }",
+   "if (r.ppm <= 0) { text.textContent = 'El objetivo debe ser mayor que el valor actual. No se necesita agregar nada.'; el.classList.remove('hidden'); return; }"],
+  [
+    "text.textContent = 'Add ' + r.ounces.toFixed(0) + ' oz (' + r.pounds.toFixed(2) + ' lb) alkalinity increaser. Re-test after a few hours.';",
+    "text.textContent = 'Agregue ' + r.ounces.toFixed(0) + ' oz (' + r.pounds.toFixed(2) + ' lb) de incrementador de alcalinidad. Vuelva a analizar después de unas horas.';",
+  ],
+];
+
+const POOL_CYANURIC_ACID_CALCULATOR = [
+  LIMITED_CONFIDENCE_TOOLTIP,
+  ['<h2>Result</h2>', '<h2>Resultado</h2>'],
+  ['<a href="/calculators/pool-cyanuric-acid-calculator" class="calc-card calc-card--active">CYA Calculator</a>', '<a href="/es/calculators/pool-cyanuric-acid-calculator" class="calc-card calc-card--active">Calculadora de Ácido Cianúrico</a>'],
+  ['Pool Cyanuric Acid Calculator | WaterBalanceTools', 'Calculadora de Ácido Cianúrico para Piscina | WaterBalanceTools'],
+  [
+    'Pool cyanuric acid (CYA) calculator. Enter pool gallons and current CYA to get stabilizer amount. Free and fast.',
+    'Calculadora de ácido cianúrico (CYA) para piscina. Ingrese los galones de la piscina y el CYA actual para obtener la cantidad de estabilizador. Gratis y rápida.',
+  ],
+  [
+    'Calculate how much cyanuric acid (stabilizer) your pool needs.',
+    'Calcule cuánto ácido cianúrico (estabilizador) necesita su piscina.',
+  ],
+  ['"name":"Pool Cyanuric Acid Calculator"', '"name":"Calculadora de Ácido Cianúrico para Piscina"'],
+  ['Pool Cyanuric Acid Calculator</span>', 'Calculadora de Ácido Cianúrico para Piscina</span>'],
+  ['<h1>Pool Cyanuric Acid Calculator</h1>', '<h1>Calculadora de Ácido Cianúrico para Piscina</h1>'],
+  ['Calculate how much stabilizer (cyanuric acid) your pool needs to reach target CYA.', 'Calcule cuánto estabilizador (ácido cianúrico) necesita su piscina para alcanzar el CYA objetivo.'],
+  ['<label for="volume">Pool gallons</label>', '<label for="volume">Galones de la piscina</label>'],
+  ['<label for="current">Current CYA (ppm)</label>', '<label for="current">CYA actual (ppm)</label>'],
+  ['<label for="target">Target CYA (ppm)</label>', '<label for="target">CYA objetivo (ppm)</label>'],
+  ['<h2>Quick tips</h2>', '<h2>Consejos Rápidos</h2>'],
+  ['<strong>Ideal CYA:</strong> 30–50 ppm for outdoor pools. Too high reduces chlorine effectiveness; too low lets chlorine burn off quickly. Add stabilizer slowly and re-test after a few days.',
+   '<strong>CYA ideal:</strong> 30–50 ppm para piscinas exteriores. Un nivel demasiado alto reduce la eficacia del cloro; uno demasiado bajo hace que el cloro se degrade rápidamente. Agregue el estabilizador lentamente y vuelva a analizar después de unos días.'],
+  ['<li><a href="../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html">Chlorine dose for 10,000 gal</a></li>', '<li><a href="../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html">Dosis de cloro para 10,000 gal</a></li>'],
+  ['<li><a href="../programmatic/shock/how-much-shock-for-10000-gallon-pool.html">Shock ounces for 10,000 gal</a></li>', '<li><a href="../programmatic/shock/how-much-shock-for-10000-gallon-pool.html">Onzas de choque para 10,000 gal</a></li>'],
+  ['<li><a href="../programmatic/explanations/why-ph-affects-chlorine.html">Why pH affects chlorine</a></li>', '<li><a href="../programmatic/explanations/why-ph-affects-chlorine.html">Por qué el pH afecta al cloro</a></li>'],
+  ['<li><a href="../programmatic/problems/green-pool-how-much-chlorine.html">Green pool: chlorine &amp; shock</a></li>', '<li><a href="../programmatic/problems/green-pool-how-much-chlorine.html">Piscina verde: cloro y choque</a></li>'],
+  ['<li><a href="../programmatic/problems/high-chlorine-how-to-lower.html">High chlorine: lower safely</a></li>', '<li><a href="../programmatic/problems/high-chlorine-how-to-lower.html">Cloro alto: cómo bajarlo con seguridad</a></li>'],
+  ['<li><a href="../guides/ph/does-rain-lower-pool-ph.html">Does Rain Lower Pool Ph</a></li>', '<li><a href="../guides/ph/does-rain-lower-pool-ph.html">La Lluvia Baja el pH de la Piscina</a></li>'],
+  ['<li><a href="../guides/ph/how-to-lower-pool-ph.html">How To Lower Pool Ph</a></li>', '<li><a href="../guides/ph/how-to-lower-pool-ph.html">Cómo Bajar el pH de la Piscina</a></li>'],
+  ['<li><a href="../guides/ph/index.html">Index</a></li>', '<li><a href="../guides/ph/index.html">Índice</a></li>'],
+  ['<li><a href="../guides/ph/what-causes-high-pool-ph.html">What Causes High Pool Ph</a></li>', '<li><a href="../guides/ph/what-causes-high-pool-ph.html">Qué Causa el pH Alto en la Piscina</a></li>'],
+  ['<li><a href="../guides/ph/why-pool-ph-keeps-rising.html">Why Pool Ph Keeps Rising</a></li>', '<li><a href="../guides/ph/why-pool-ph-keeps-rising.html">Por Qué el pH de la Piscina Sigue Subiendo</a></li>'],
+  ['<li><a href="../programmatic/explanations/what-is-pool-alkalinity.html">What Is Pool Alkalinity</a></li>', '<li><a href="../programmatic/explanations/what-is-pool-alkalinity.html">Qué Es la Alcalinidad de la Piscina</a></li>'],
+  ['<li><a href="hot-tub-shock-calculator.html">Hot Tub Shock Calculator</a></li>', '<li><a href="hot-tub-shock-calculator.html">Calculadora de Choque para Spa</a></li>'],
+  ['<li><a href="pool-ph-calculator.html">Pool pH adjustment calculator</a></li>', '<li><a href="pool-ph-calculator.html">Calculadora de ajuste de pH para piscina</a></li>'],
+  ['<li><a href="../guides/ph-guide.html">pH guide (hub)</a></li>', '<li><a href="../guides/ph-guide.html">Guía de pH (guía central)</a></li>'],
+  ['title="Cyanuric Acid Adjustment">Cyanuric Acid Adjustment</a>', 'title="Ajuste de Ácido Cianúrico">Ajuste de Ácido Cianúrico</a>'],
+  [
+    '<em>Neither the 30-50 ppm target range nor the dosing coefficient has a confirmed primary source (see chemistry-claims.js claim-cya-routine-outdoor). CYA dissolves slowly -- allow 24-48 hours for equilibration before retesting.</em>',
+    '<em>Ni el rango objetivo de 30-50 ppm ni el coeficiente de dosificación cuentan con una fuente primaria confirmada (véase chemistry-claims.js claim-cya-routine-outdoor). El CYA se disuelve lentamente: espere de 24 a 48 horas para su equilibración antes de volver a analizar.</em>',
+  ],
+  // Inline JS display-text
+  ["if (!g || parseFloat(g) <= 0) { text.textContent = 'Enter valid pool gallons.'; el.classList.remove('hidden'); return; }",
+   "if (!g || parseFloat(g) <= 0) { text.textContent = 'Ingrese galones de piscina válidos.'; el.classList.remove('hidden'); return; }"],
+  ["if (r.ppm <= 0) { text.textContent = 'Target should be higher than current CYA. No addition needed.'; el.classList.remove('hidden'); return; }",
+   "if (r.ppm <= 0) { text.textContent = 'El objetivo debe ser mayor que el CYA actual. No se necesita agregar nada.'; el.classList.remove('hidden'); return; }"],
+  [
+    "text.textContent = 'Add ' + r.ounces.toFixed(0) + ' oz stabilizer (cyanuric acid). Dissolve in a sock or add to skimmer. Re-test in a few days.';",
+    "text.textContent = 'Agregue ' + r.ounces.toFixed(0) + ' oz de estabilizador (ácido cianúrico). Disuélvalo en una media o agréguelo al skimmer. Vuelva a analizar en unos días.';",
+  ],
+];
+
+const POOL_TURNOVER_RATE_CALCULATOR = [
+  VERY_HIGH_CONFIDENCE_TOOLTIP,
+  ['<h2>Result</h2>', '<h2>Resultado</h2>'],
+  ['<a href="/calculators/pool-turnover-rate-calculator" class="calc-card calc-card--active">Turnover Rate Calculator</a>', '<a href="/es/calculators/pool-turnover-rate-calculator" class="calc-card calc-card--active">Calculadora de Tasa de Recirculación</a>'],
+  ['Pool Turnover Rate Calculator | WaterBalanceTools', 'Calculadora de Tasa de Recirculación para Piscina | WaterBalanceTools'],
+  [
+    'Pool turnover rate calculator. Enter pool volume and pump flow rate to get hours for full turnover. Free and fast.',
+    'Calculadora de tasa de recirculación para piscina. Ingrese el volumen de la piscina y el caudal de la bomba para obtener las horas necesarias para una recirculación completa. Gratis y rápida.',
+  ],
+  [
+    'Calculate how many hours your pump needs for one full pool turnover.',
+    'Calcule cuántas horas necesita su bomba para una recirculación completa de la piscina.',
+  ],
+  ['"name":"Pool Turnover Rate Calculator"', '"name":"Calculadora de Tasa de Recirculación para Piscina"'],
+  ['Pool Turnover Rate Calculator</span>', 'Calculadora de Tasa de Recirculación para Piscina</span>'],
+  ['<h1>Pool Turnover Rate Calculator</h1>', '<h1>Calculadora de Tasa de Recirculación para Piscina</h1>'],
+  ['Calculate hours required for one full pool turnover (volume ÷ flow rate).', 'Calcule las horas necesarias para una recirculación completa de la piscina (volumen ÷ caudal).'],
+  ['<label for="volume">Pool volume (gallons)</label>', '<label for="volume">Volumen de la piscina (galones)</label>'],
+  ['<label for="flow">Pump flow rate (GPH)</label>', '<label for="flow">Caudal de la bomba (GPH)</label>'],
+  ['<small>If you have GPM, multiply by 60 to get GPH.</small>', '<small>Si tiene el valor en GPM, multiplíquelo por 60 para obtener GPH.</small>'],
+  ['<h2>Quick tips</h2>', '<h2>Consejos Rápidos</h2>'],
+  ['<strong>Turnover:</strong> One full turnover = all pool water passing through the filter once. Many pools aim for 1–2 turnovers per day. Check your pump’s flow rate on the label or manual.',
+   '<strong>Recirculación:</strong> Una recirculación completa equivale a que toda el agua de la piscina pase una vez por el filtro. Muchas piscinas buscan de 1 a 2 recirculaciones por día. Consulte el caudal de su bomba en la etiqueta o el manual.'],
+  ['<li><a href="../programmatic/behavior/how-often-to-test-pool-water.html">How often to test pool water</a></li>', '<li><a href="../programmatic/behavior/how-often-to-test-pool-water.html">Con qué frecuencia analizar el agua de la piscina</a></li>'],
+  ['<li><a href="../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html">Chlorine dose for 10,000 gal</a></li>', '<li><a href="../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html">Dosis de cloro para 10,000 gal</a></li>'],
+  ['<li><a href="../programmatic/shock/how-much-shock-for-10000-gallon-pool.html">Shock ounces for 10,000 gal</a></li>', '<li><a href="../programmatic/shock/how-much-shock-for-10000-gallon-pool.html">Onzas de choque para 10,000 gal</a></li>'],
+  ['<li><a href="../programmatic/problems/cloudy-pool-fix.html">Cloudy pool fix</a></li>', '<li><a href="../programmatic/problems/cloudy-pool-fix.html">Solución para piscina turbia</a></li>'],
+  ['<li><a href="../programmatic/problems/green-pool-how-much-chlorine.html">Green pool: chlorine &amp; shock</a></li>', '<li><a href="../programmatic/problems/green-pool-how-much-chlorine.html">Piscina verde: cloro y choque</a></li>'],
+  ['<li><a href="../reference/pool-volume-reference.html">Pool Volume Reference</a></li>', '<li><a href="../reference/pool-volume-reference.html">Referencia de Volumen de Piscina</a></li>'],
+  ['<li><a href="../reference/printable-resources-index.html">Printable Resources Index</a></li>', '<li><a href="../reference/printable-resources-index.html">Índice de Recursos Imprimibles</a></li>'],
+  ['<li><a href="../reference/pump-sizing.html">Pump Sizing</a></li>', '<li><a href="../reference/pump-sizing.html">Dimensionamiento de la Bomba</a></li>'],
+  ['<li><a href="../reference/recommended-water-temperature.html">Recommended Water Temperature</a></li>', '<li><a href="../reference/recommended-water-temperature.html">Temperatura del Agua Recomendada</a></li>'],
+  ['<li><a href="../reference/salt-matrix.html">Salt Matrix</a></li>', '<li><a href="../reference/salt-matrix.html">Matriz de Sal</a></li>'],
+  ['<li><a href="pool-cyanuric-acid-calculator.html">Pool Cyanuric Acid Calculator</a></li>', '<li><a href="pool-cyanuric-acid-calculator.html">Calculadora de Ácido Cianúrico para Piscina</a></li>'],
+  ['<li><a href="../programmatic/explanations/what-is-pool-alkalinity.html">What Is Pool Alkalinity</a></li>', '<li><a href="../programmatic/explanations/what-is-pool-alkalinity.html">Qué Es la Alcalinidad de la Piscina</a></li>'],
+  ['<li><a href="chemical-calculator.html">Full pool chemical calculator</a></li>', '<li><a href="chemical-calculator.html">Calculadora química de piscina completa</a></li>'],
+  ['<li><a href="../guides/pool-chemistry-basics.html">Pool chemistry basics (hub)</a></li>', '<li><a href="../guides/pool-chemistry-basics.html">Fundamentos de química de piscina (guía central)</a></li>'],
+  ['title="Pool Turnover Rate">Pool Turnover Rate</a>', 'title="Tasa de Recirculación de la Piscina">Tasa de Recirculación de la Piscina</a>'],
+  // Inline JS display-text
+  ["if (!hours || hours <= 0) { text.textContent = 'Enter valid volume and flow rate (GPH).'; el.classList.remove('hidden'); return; }",
+   "if (!hours || hours <= 0) { text.textContent = 'Ingrese un volumen y un caudal (GPH) válidos.'; el.classList.remove('hidden'); return; }"],
+  ["text.textContent = 'One full turnover: ' + hours.toFixed(1) + ' hours.';",
+   "text.textContent = 'Una recirculación completa: ' + hours.toFixed(1) + ' horas.';"],
+];
+
+const SALTWATER_POOL_SALT_CALCULATOR = [
+  LIMITED_CONFIDENCE_TOOLTIP,
+  ['<h2>Result</h2>', '<h2>Resultado</h2>'],
+  ['<a href="/calculators/saltwater-pool-salt-calculator" class="calc-card calc-card--active">Salt Calculator</a>', '<a href="/es/calculators/saltwater-pool-salt-calculator" class="calc-card calc-card--active">Calculadora de Sal</a>'],
+  ['Saltwater Pool Salt Calculator | WaterBalanceTools', 'Calculadora de Sal para Piscina de Agua Salada | WaterBalanceTools'],
+  [
+    'Saltwater pool salt calculator. Enter pool gallons and current salt level to get pounds of salt required. Free and fast.',
+    'Calculadora de sal para piscina de agua salada. Ingrese los galones de la piscina y el nivel de sal actual para obtener las libras de sal necesarias. Gratis y rápida.',
+  ],
+  [
+    'Calculate how much salt to add to your saltwater pool.',
+    'Calcule cuánta sal debe agregar a su piscina de agua salada.',
+  ],
+  ['"name":"Saltwater Pool Salt Calculator"', '"name":"Calculadora de Sal para Piscina de Agua Salada"'],
+  ['Saltwater Pool Salt Calculator</span>', 'Calculadora de Sal para Piscina de Agua Salada</span>'],
+  ['<h1>Saltwater Pool Salt Calculator</h1>', '<h1>Calculadora de Sal para Piscina de Agua Salada</h1>'],
+  ['Calculate how much salt to add to reach your target salt level.', 'Calcule cuánta sal debe agregar para alcanzar su nivel de sal objetivo.'],
+  ['<label for="volume">Pool gallons</label>', '<label for="volume">Galones de la piscina</label>'],
+  ['<label for="current">Current salt (ppm)</label>', '<label for="current">Sal actual (ppm)</label>'],
+  ['<label for="target">Target salt (ppm)</label>', '<label for="target">Sal objetivo (ppm)</label>'],
+  ['<h2>Quick tips</h2>', '<h2>Consejos Rápidos</h2>'],
+  ['<strong>Typical salt level:</strong> 2,700–3,400 ppm (check your salt cell manual). Use pool-grade salt only. Add in the deep end and run pump for 24 hours. Re-test after salt dissolves.',
+   '<strong>Nivel de sal típico:</strong> 2,700–3,400 ppm (consulte el manual de su celda salina). Use únicamente sal de grado para piscinas. Agréguela en la parte más profunda y haga funcionar la bomba durante 24 horas. Vuelva a analizar después de que la sal se disuelva.'],
+  ['<li><a href="../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html">Chlorine dose for 10,000 gal</a></li>', '<li><a href="../programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool.html">Dosis de cloro para 10,000 gal</a></li>'],
+  ['<li><a href="../programmatic/behavior/when-to-add-chlorine.html">When to add chlorine</a></li>', '<li><a href="../programmatic/behavior/when-to-add-chlorine.html">Cuándo agregar cloro</a></li>'],
+  ['<li><a href="../programmatic/behavior/how-often-to-test-pool-water.html">How often to test pool water</a></li>', '<li><a href="../programmatic/behavior/how-often-to-test-pool-water.html">Con qué frecuencia analizar el agua de la piscina</a></li>'],
+  ['<li><a href="../programmatic/problems/green-pool-how-much-chlorine.html">Green pool: chlorine &amp; shock</a></li>', '<li><a href="../programmatic/problems/green-pool-how-much-chlorine.html">Piscina verde: cloro y choque</a></li>'],
+  ['<li><a href="../programmatic/problems/high-chlorine-how-to-lower.html">High chlorine: lower safely</a></li>', '<li><a href="../programmatic/problems/high-chlorine-how-to-lower.html">Cloro alto: cómo bajarlo con seguridad</a></li>'],
+  ['<li><a href="../guides/seasonal/index.html">Index</a></li>', '<li><a href="../guides/seasonal/index.html">Índice</a></li>'],
+  ['<li><a href="../guides/seasonal/opening-pool-chemistry-checklist.html">Opening Pool Chemistry Checklist</a></li>', '<li><a href="../guides/seasonal/opening-pool-chemistry-checklist.html">Lista de Verificación Química para la Apertura de la Piscina</a></li>'],
+  ['<li><a href="../guides/seasonal/winter-pool-maintenance-chemistry.html">Winter Pool Maintenance Chemistry</a></li>', '<li><a href="../guides/seasonal/winter-pool-maintenance-chemistry.html">Química de Mantenimiento Invernal de la Piscina</a></li>'],
+  ['<li><a href="../programmatic/behavior/how-often-to-test-pool-water.html">How Often To Test Pool Water</a></li>', '<li><a href="../programmatic/behavior/how-often-to-test-pool-water.html">Con Qué Frecuencia Analizar el Agua de la Piscina</a></li>'],
+  ['<li><a href="../programmatic/behavior/index.html">Index — 1</a></li>', '<li><a href="../programmatic/behavior/index.html">Índice — 1</a></li>'],
+  ['<li><a href="pool-ph-calculator.html">Pool pH adjustment calculator</a></li>', '<li><a href="pool-ph-calculator.html">Calculadora de ajuste de pH para piscina</a></li>'],
+  ['<li><a href="../programmatic/problems/low-alkalinity-symptoms.html">Low Alkalinity Symptoms</a></li>', '<li><a href="../programmatic/problems/low-alkalinity-symptoms.html">Síntomas de Alcalinidad Baja</a></li>'],
+  ['<li><a href="chemical-calculator.html">Full pool chemical calculator</a></li>', '<li><a href="chemical-calculator.html">Calculadora química de piscina completa</a></li>'],
+  ['<li><a href="../guides/pool-chemistry-basics.html">Pool chemistry basics (hub)</a></li>', '<li><a href="../guides/pool-chemistry-basics.html">Fundamentos de química de piscina (guía central)</a></li>'],
+  ['title="Salt Level Adjustment">Salt Level Adjustment</a>', 'title="Ajuste del Nivel de Sal">Ajuste del Nivel de Sal</a>'],
+  [
+    "<em>Salt targets are equipment/manufacturer-specific; no manufacturer-independent primary source was confirmed for the target range or dosing coefficient. Verify against your system's manufacturer spec.</em>",
+    '<em>Los niveles objetivo de sal son específicos del equipo/fabricante; no se confirmó una fuente primaria independiente del fabricante para el rango objetivo ni para el coeficiente de dosificación. Verifique con la especificación del fabricante de su sistema.</em>',
+  ],
+  // Inline JS display-text
+  ["if (!g || parseFloat(g) <= 0) { text.textContent = 'Enter valid pool gallons.'; el.classList.remove('hidden'); return; }",
+   "if (!g || parseFloat(g) <= 0) { text.textContent = 'Ingrese galones de piscina válidos.'; el.classList.remove('hidden'); return; }"],
+  ["if (r.ppm <= 0) { text.textContent = 'Target should be higher than current salt. No addition needed.'; el.classList.remove('hidden'); return; }",
+   "if (r.ppm <= 0) { text.textContent = 'El objetivo debe ser mayor que el nivel de sal actual. No se necesita agregar nada.'; el.classList.remove('hidden'); return; }"],
+  [
+    "text.textContent = 'Add ' + r.pounds.toFixed(1) + ' lb pool salt. Run pump 24 hours and re-test.';",
+    "text.textContent = 'Agregue ' + r.pounds.toFixed(1) + ' lb de sal para piscina. Haga funcionar la bomba durante 24 horas y vuelva a analizar.';",
+  ],
+];
+
 module.exports = {
   SHARED,
   SHARED_OPTIONAL,
@@ -934,4 +1149,8 @@ module.exports = {
   'hot-tub-ph-calculator.html': HOT_TUB_PH_CALCULATOR,
   'hot-tub-shock-calculator.html': HOT_TUB_SHOCK_CALCULATOR,
   'spa-volume-calculator.html': SPA_VOLUME_CALCULATOR,
+  'pool-alkalinity-calculator.html': POOL_ALKALINITY_CALCULATOR,
+  'pool-cyanuric-acid-calculator.html': POOL_CYANURIC_ACID_CALCULATOR,
+  'pool-turnover-rate-calculator.html': POOL_TURNOVER_RATE_CALCULATOR,
+  'saltwater-pool-salt-calculator.html': SALTWATER_POOL_SALT_CALCULATOR,
 };

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T01:45:23.441Z",
+  "generatedAt": "2026-09-04T17:54:24.757Z",
   "rulesVersion": "1.0",
   "rules": [
     {
@@ -147,7 +147,23 @@
       "reason": "Assigned from URL taxonomy (other)."
     },
     {
+      "url": "/es/calculators/pool-alkalinity-calculator",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/calculators",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
       "url": "/es/calculators/pool-chlorine-calculator",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/calculators",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/calculators/pool-cyanuric-acid-calculator",
       "pageType": "other",
       "crawlTier": "Tier 3",
       "hub": "/es/calculators",
@@ -171,7 +187,23 @@
       "reason": "Assigned from URL taxonomy (other)."
     },
     {
+      "url": "/es/calculators/pool-turnover-rate-calculator",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/calculators",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
       "url": "/es/calculators/pool-volume-calculator",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/calculators",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/calculators/saltwater-pool-salt-calculator",
       "pageType": "other",
       "crawlTier": "Tier 3",
       "hub": "/es/calculators",

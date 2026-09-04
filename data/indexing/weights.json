@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T01:45:23.854Z",
+  "generatedAt": "2026-09-04T17:54:25.143Z",
   "rationale": {
     "homepage": "Top-level discovery and authority distribution.",
     "calculators": "Primary transactional pages with highest SEO/business impact.",
@@ -20697,6 +20697,14 @@
     },
     {
       "from": "/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-alkalinity-calculator",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
+    },
+    {
+      "from": "/calculators/pool-alkalinity-calculator",
       "to": "/",
       "fromType": "calculator",
       "toType": "homepage",
@@ -21650,6 +21658,14 @@
     {
       "from": "/calculators/pool-cyanuric-acid-calculator",
       "to": "/search",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
+    },
+    {
+      "from": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-cyanuric-acid-calculator",
       "fromType": "calculator",
       "toType": "other",
       "weight": 30,
@@ -23089,6 +23105,14 @@
     },
     {
       "from": "/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-turnover-rate-calculator",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
+    },
+    {
+      "from": "/calculators/pool-turnover-rate-calculator",
       "to": "/",
       "fromType": "calculator",
       "toType": "homepage",
@@ -24042,6 +24066,14 @@
     {
       "from": "/calculators/saltwater-pool-salt-calculator",
       "to": "/search",
+      "fromType": "calculator",
+      "toType": "other",
+      "weight": 30,
+      "reason": "calculator to other authority flow"
+    },
+    {
+      "from": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/saltwater-pool-salt-calculator",
       "fromType": "calculator",
       "toType": "other",
       "weight": 30,
@@ -61265,35 +61297,35 @@
     },
     {
       "from": "/es/calculators/chemical-calculator",
-      "to": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/saltwater-pool-salt-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/chemical-calculator",
-      "to": "/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-alkalinity-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/chemical-calculator",
-      "to": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-cyanuric-acid-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/chemical-calculator",
-      "to": "/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-turnover-rate-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/chemical-calculator",
@@ -61382,14 +61414,6 @@
       "toType": "reference",
       "weight": 55,
       "reason": "other to reference authority flow"
-    },
-    {
-      "from": "/es/calculators/chemical-calculator",
-      "to": "/calculators/pool-cyanuric-acid-calculator",
-      "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
     },
     {
       "from": "/es/calculators/chemical-calculator",
@@ -61785,35 +61809,35 @@
     },
     {
       "from": "/es/calculators/hot-tub-chlorine-calculator",
-      "to": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/saltwater-pool-salt-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/hot-tub-chlorine-calculator",
-      "to": "/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-alkalinity-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/hot-tub-chlorine-calculator",
-      "to": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-cyanuric-acid-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/hot-tub-chlorine-calculator",
-      "to": "/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-turnover-rate-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/hot-tub-chlorine-calculator",
@@ -62273,35 +62297,35 @@
     },
     {
       "from": "/es/calculators/hot-tub-ph-calculator",
-      "to": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/saltwater-pool-salt-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/hot-tub-ph-calculator",
-      "to": "/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-alkalinity-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/hot-tub-ph-calculator",
-      "to": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-cyanuric-acid-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/hot-tub-ph-calculator",
-      "to": "/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-turnover-rate-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/hot-tub-ph-calculator",
@@ -62753,35 +62777,35 @@
     },
     {
       "from": "/es/calculators/hot-tub-shock-calculator",
-      "to": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/saltwater-pool-salt-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/hot-tub-shock-calculator",
-      "to": "/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-alkalinity-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/hot-tub-shock-calculator",
-      "to": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-cyanuric-acid-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/hot-tub-shock-calculator",
-      "to": "/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-turnover-rate-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/hot-tub-shock-calculator",
@@ -62862,14 +62886,6 @@
       "toType": "guide",
       "weight": 30,
       "reason": "other to guide authority flow"
-    },
-    {
-      "from": "/es/calculators/hot-tub-shock-calculator",
-      "to": "/calculators/pool-cyanuric-acid-calculator",
-      "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
     },
     {
       "from": "/es/calculators/hot-tub-shock-calculator",
@@ -63017,6 +63033,486 @@
     },
     {
       "from": "/es/calculators/hot-tub-shock-calculator",
+      "to": "/legal/legal",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/",
+      "fromType": "other",
+      "toType": "homepage",
+      "weight": 30,
+      "reason": "other to homepage authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/chemical-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/resources",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/academy",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/about",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/search",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/calculators/pool-alkalinity-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/",
+      "fromType": "other",
+      "toType": "homepage",
+      "weight": 30,
+      "reason": "other to homepage authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/calculators",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/resources/pool-maintenance-checklist",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/resources/hot-tub-maintenance-log",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/resources/pool-chemical-log-sheet",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/resources/airbnb-pool-turnover-checklist",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/pool-chlorine-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/pool-ph-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/chemical-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-chlorine-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-ph-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-shock-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-volume-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/hot-tub-chlorine-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/hot-tub-ph-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/hot-tub-shock-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/saltwater-pool-salt-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-alkalinity-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-cyanuric-acid-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-turnover-rate-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/spa-volume-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/reference/pool-chemistry-reference",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/programmatic/explanations/what-is-pool-alkalinity",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/programmatic/ph/how-to-adjust-ph-from-8-to-7-5",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/programmatic/problems/low-alkalinity-symptoms",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/programmatic/problems/cloudy-pool-fix",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/reference/total-alkalinity-explained",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/programmatic/explanations/what-is-pool-alkalinity",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/programmatic/problems/low-alkalinity-symptoms",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/reference/alkalinity-table",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/guides/ph/can-you-swim-in-high-ph-water",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/comparisons/chlorine-vs-bromine-hot-tub",
+      "fromType": "other",
+      "toType": "comparison",
+      "weight": 30,
+      "reason": "other to comparison authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/guides/alkalinity-guide",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/reference/datasets/chemical-ranges",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/reference/datasets/dosage-matrices",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/revisions",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/calculators/pool-volume-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/calculators/pool-chlorine-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/calculators/pool-shock-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/calculators/pool-ph-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/all-pages",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
+      "to": "/legal/ownership",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-alkalinity-calculator",
       "to": "/legal/legal",
       "fromType": "other",
       "toType": "other",
@@ -63233,35 +63729,35 @@
     },
     {
       "from": "/es/calculators/pool-chlorine-calculator",
-      "to": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/saltwater-pool-salt-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-chlorine-calculator",
-      "to": "/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-alkalinity-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-chlorine-calculator",
-      "to": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-cyanuric-acid-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-chlorine-calculator",
-      "to": "/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-turnover-rate-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-chlorine-calculator",
@@ -63350,14 +63846,6 @@
       "toType": "comparison",
       "weight": 30,
       "reason": "other to comparison authority flow"
-    },
-    {
-      "from": "/es/calculators/pool-chlorine-calculator",
-      "to": "/calculators/pool-cyanuric-acid-calculator",
-      "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
     },
     {
       "from": "/es/calculators/pool-chlorine-calculator",
@@ -63520,6 +64008,486 @@
       "reason": "other to other authority flow"
     },
     {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/",
+      "fromType": "other",
+      "toType": "homepage",
+      "weight": 30,
+      "reason": "other to homepage authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/chemical-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/resources",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/academy",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/about",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/search",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/calculators/pool-cyanuric-acid-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/",
+      "fromType": "other",
+      "toType": "homepage",
+      "weight": 30,
+      "reason": "other to homepage authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/calculators",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/resources/pool-maintenance-checklist",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/resources/hot-tub-maintenance-log",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/resources/pool-chemical-log-sheet",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/resources/airbnb-pool-turnover-checklist",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/pool-chlorine-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/pool-ph-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/chemical-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-chlorine-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-ph-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-shock-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-volume-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/hot-tub-chlorine-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/hot-tub-ph-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/hot-tub-shock-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/saltwater-pool-salt-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-alkalinity-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-cyanuric-acid-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-turnover-rate-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/spa-volume-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/programmatic/shock/how-much-shock-for-10000-gallon-pool",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/programmatic/explanations/why-ph-affects-chlorine",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/programmatic/problems/green-pool-how-much-chlorine",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/programmatic/problems/high-chlorine-how-to-lower",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/guides/ph/does-rain-lower-pool-ph",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/guides/ph/how-to-lower-pool-ph",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/guides/ph",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/guides/ph/what-causes-high-pool-ph",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/guides/ph/why-pool-ph-keeps-rising",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/programmatic/explanations/what-is-pool-alkalinity",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/guides/ph-guide",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/reference/datasets/chemical-ranges",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/reference/datasets/dosage-matrices",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/revisions",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/calculators/pool-volume-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/calculators/pool-chlorine-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/calculators/pool-shock-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/calculators/pool-ph-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/all-pages",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/legal/ownership",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-cyanuric-acid-calculator",
+      "to": "/legal/legal",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
       "from": "/es/calculators/pool-ph-calculator",
       "to": "/",
       "fromType": "other",
@@ -63737,35 +64705,35 @@
     },
     {
       "from": "/es/calculators/pool-ph-calculator",
-      "to": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/saltwater-pool-salt-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-ph-calculator",
-      "to": "/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-alkalinity-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-ph-calculator",
-      "to": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-cyanuric-acid-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-ph-calculator",
-      "to": "/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-turnover-rate-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-ph-calculator",
@@ -63838,22 +64806,6 @@
       "toType": "reference",
       "weight": 55,
       "reason": "other to reference authority flow"
-    },
-    {
-      "from": "/es/calculators/pool-ph-calculator",
-      "to": "/calculators/pool-cyanuric-acid-calculator",
-      "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
-    },
-    {
-      "from": "/es/calculators/pool-ph-calculator",
-      "to": "/calculators/pool-alkalinity-calculator",
-      "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
     },
     {
       "from": "/es/calculators/pool-ph-calculator",
@@ -64217,35 +65169,35 @@
     },
     {
       "from": "/es/calculators/pool-shock-calculator",
-      "to": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/saltwater-pool-salt-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-shock-calculator",
-      "to": "/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-alkalinity-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-shock-calculator",
-      "to": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-cyanuric-acid-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-shock-calculator",
-      "to": "/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-turnover-rate-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-shock-calculator",
@@ -64496,6 +65448,486 @@
       "reason": "other to other authority flow"
     },
     {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/",
+      "fromType": "other",
+      "toType": "homepage",
+      "weight": 30,
+      "reason": "other to homepage authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/chemical-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/resources",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/academy",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/about",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/search",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/calculators/pool-turnover-rate-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/",
+      "fromType": "other",
+      "toType": "homepage",
+      "weight": 30,
+      "reason": "other to homepage authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/calculators",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/resources/pool-maintenance-checklist",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/resources/hot-tub-maintenance-log",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/resources/pool-chemical-log-sheet",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/resources/airbnb-pool-turnover-checklist",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/pool-chlorine-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/pool-ph-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/chemical-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-chlorine-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-ph-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-shock-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-volume-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/hot-tub-chlorine-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/hot-tub-ph-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/hot-tub-shock-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/saltwater-pool-salt-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-alkalinity-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-cyanuric-acid-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-turnover-rate-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/spa-volume-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/programmatic/behavior/how-often-to-test-pool-water",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/programmatic/shock/how-much-shock-for-10000-gallon-pool",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/programmatic/problems/cloudy-pool-fix",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/programmatic/problems/green-pool-how-much-chlorine",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/reference/pool-volume-reference",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/reference/printable-resources-index",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/reference/pump-sizing",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/reference/recommended-water-temperature",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/reference/salt-matrix",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/programmatic/explanations/what-is-pool-alkalinity",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/reference/datasets/units",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/reference/datasets/conversion-factors",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/revisions",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/calculators/pool-volume-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/calculators/pool-chlorine-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/calculators/pool-shock-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/calculators/pool-ph-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/all-pages",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/legal/ownership",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/pool-turnover-rate-calculator",
+      "to": "/legal/legal",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
       "from": "/es/calculators/pool-volume-calculator",
       "to": "/",
       "fromType": "other",
@@ -64705,35 +66137,35 @@
     },
     {
       "from": "/es/calculators/pool-volume-calculator",
-      "to": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/saltwater-pool-salt-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-volume-calculator",
-      "to": "/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-alkalinity-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-volume-calculator",
-      "to": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-cyanuric-acid-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-volume-calculator",
-      "to": "/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-turnover-rate-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/pool-volume-calculator",
@@ -64984,6 +66416,486 @@
       "reason": "other to other authority flow"
     },
     {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/",
+      "fromType": "other",
+      "toType": "homepage",
+      "weight": 30,
+      "reason": "other to homepage authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/chemical-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/resources",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/academy",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/about",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/search",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/calculators/saltwater-pool-salt-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/",
+      "fromType": "other",
+      "toType": "homepage",
+      "weight": 30,
+      "reason": "other to homepage authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/calculators",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/resources/pool-maintenance-checklist",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/resources/hot-tub-maintenance-log",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/resources/pool-chemical-log-sheet",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/resources/airbnb-pool-turnover-checklist",
+      "fromType": "other",
+      "toType": "resource",
+      "weight": 30,
+      "reason": "other to resource authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/pool-chlorine-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/pool-ph-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/chemical-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/pool-chlorine-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/pool-ph-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/pool-shock-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/pool-volume-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/hot-tub-chlorine-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/hot-tub-ph-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/hot-tub-shock-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/saltwater-pool-salt-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/pool-alkalinity-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/pool-cyanuric-acid-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/pool-turnover-rate-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/spa-volume-calculator",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/programmatic/behavior/when-to-add-chlorine",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/programmatic/behavior/how-often-to-test-pool-water",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/programmatic/problems/green-pool-how-much-chlorine",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/programmatic/problems/high-chlorine-how-to-lower",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/guides/seasonal",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/guides/seasonal/opening-pool-chemistry-checklist",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/guides/seasonal/winter-pool-maintenance-chemistry",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/programmatic/behavior/how-often-to-test-pool-water",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/programmatic/behavior",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/programmatic/problems/low-alkalinity-symptoms",
+      "fromType": "other",
+      "toType": "programmatic",
+      "weight": 30,
+      "reason": "other to programmatic authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/methodology/formula-selection",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/reference/datasets/chemical-ranges",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/reference/datasets/dosage-matrices",
+      "fromType": "other",
+      "toType": "reference",
+      "weight": 55,
+      "reason": "other to reference authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/methodology/calculation-methodology",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/methodology/calculation-assumptions",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/methodology/known-limitations",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/methodology/rounding-policy",
+      "fromType": "other",
+      "toType": "documentation",
+      "weight": 30,
+      "reason": "other to documentation authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/revisions",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/calculators/pool-volume-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/calculators/pool-chlorine-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/calculators/pool-shock-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/calculators/pool-ph-calculator",
+      "fromType": "other",
+      "toType": "calculator",
+      "weight": 65,
+      "reason": "other to calculator authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/pool-chemical-levels-chart",
+      "fromType": "other",
+      "toType": "chart",
+      "weight": 30,
+      "reason": "other to chart authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/guides/pool-chemistry-basics",
+      "fromType": "other",
+      "toType": "guide",
+      "weight": 30,
+      "reason": "other to guide authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/all-pages",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/legal/ownership",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
+      "from": "/es/calculators/saltwater-pool-salt-calculator",
+      "to": "/legal/legal",
+      "fromType": "other",
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
+    },
+    {
       "from": "/es/calculators/spa-volume-calculator",
       "to": "/",
       "fromType": "other",
@@ -65193,35 +67105,35 @@
     },
     {
       "from": "/es/calculators/spa-volume-calculator",
-      "to": "/calculators/saltwater-pool-salt-calculator",
+      "to": "/es/calculators/saltwater-pool-salt-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/spa-volume-calculator",
-      "to": "/calculators/pool-alkalinity-calculator",
+      "to": "/es/calculators/pool-alkalinity-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/spa-volume-calculator",
-      "to": "/calculators/pool-cyanuric-acid-calculator",
+      "to": "/es/calculators/pool-cyanuric-acid-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/spa-volume-calculator",
-      "to": "/calculators/pool-turnover-rate-calculator",
+      "to": "/es/calculators/pool-turnover-rate-calculator",
       "fromType": "other",
-      "toType": "calculator",
-      "weight": 65,
-      "reason": "other to calculator authority flow"
+      "toType": "other",
+      "weight": 30,
+      "reason": "other to other authority flow"
     },
     {
       "from": "/es/calculators/spa-volume-calculator",
