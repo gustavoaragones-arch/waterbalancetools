@@ -15,6 +15,8 @@ const {
   fill, template, partial, SITE_HEADER, SITE_FOOTER, esc,
   buildBreadcrumb, buildTermContent, writeFile, ROOT, href, canonicalUrl,
 } = require('./template-utils');
+const { htmlLangAttr } = require('../js/i18n/html-lang');
+const { getLocalizedCanonical } = require('../js/i18n/locale-url');
 
 const data = require(path.join(ROOT, 'data', 'glossary.json'));
 const GLOSSARY_DIR = path.join(ROOT, 'glossary');
@@ -95,7 +97,8 @@ ${SITE_FOOTER}
 
 // ── Individual term page ──────────────────────────────────────────────────────
 
-function generateTerm(term) {
+function generateTerm(term, locale) {
+  const effectiveLocale = locale || 'en';
   const tpl = template('glossary-template.html');
   const bc = buildBreadcrumb(term.slug, term.term || term.title);
 
@@ -117,6 +120,8 @@ function generateTerm(term) {
 
   return fill(tpl, {
     SLUG:              term.slug,
+    HTML_LANG_ATTR:    htmlLangAttr(effectiveLocale),
+    CANONICAL_URL:     getLocalizedCanonical('/' + term.slug, effectiveLocale),
     PAGE_TITLE:        pageTitle,
     H1_TITLE:          term.term || term.title,
     META_DESCRIPTION:  `${defFirstSentence}. Plain-language definition with target values and related pool chemistry resources.`,
@@ -134,7 +139,7 @@ function generateTerm(term) {
     }),
     DEFINITION:         esc(term.definition || ''),
     TARGET_RANGE_BLOCK: targetRangeBlock,
-    CONTENT:            buildTermContent(term),
+    CONTENT:            buildTermContent(term, locale),
     SIDEBAR:            '',
     RELATED_TOOLS:      '',
     RELATED_TOPICS:     '',

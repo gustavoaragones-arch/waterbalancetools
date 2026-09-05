@@ -18,6 +18,8 @@ const {
   fill, template, partial, SITE_HEADER, SITE_FOOTER, esc,
   buildBreadcrumb, buildRefContent, writeFile, ROOT, href, canonicalUrl, buildUrl,
 } = require('./template-utils');
+const { htmlLangAttr } = require('../js/i18n/html-lang');
+const { getLocalizedCanonical } = require('../js/i18n/locale-url');
 
 const data = require(path.join(ROOT, 'data', 'reference.json'));
 const REF_DIR = path.join(ROOT, 'reference');
@@ -104,7 +106,8 @@ ${SITE_FOOTER}
 
 // ── Individual reference page ─────────────────────────────────────────────────
 
-function generateRefPage(page) {
+function generateRefPage(page, locale) {
+  const effectiveLocale = locale || 'en';
   const tpl = template('reference-template.html');
   const bc = buildBreadcrumb(buildUrl(page.slug), page.title);
   // Drop the "| Reference" segment only when the full title would exceed
@@ -115,6 +118,8 @@ function generateRefPage(page) {
 
   return fill(tpl, {
     SLUG:              page.slug,
+    HTML_LANG_ATTR:    htmlLangAttr(effectiveLocale),
+    CANONICAL_URL:     getLocalizedCanonical('/' + page.slug, effectiveLocale),
     PAGE_TITLE:        pageTitle,
     H1_TITLE:          page.title,
     META_DESCRIPTION:  page.description,
@@ -130,7 +135,7 @@ function generateRefPage(page) {
       SUMMARY:       esc(page.summary || ''),
       CHIPS:         '<a href="#overview" class="knowledge-chip">Overview</a>',
     }),
-    CONTENT:           buildRefContent(page),
+    CONTENT:           buildRefContent(page, effectiveLocale),
     SIDEBAR:           '',
     RELATED_TOOLS:     '',
     RELATED_TOPICS:    '',

@@ -14,6 +14,35 @@ const urlEngine = require('../js/url/url-engine');
 
 const ROOT = path.join(__dirname, '..');
 
+/**
+ * localizedHref(link, locale, targetFamilyHint) — Phase 8M language-aware
+ * replacement for a bare href(link) call at a relationship-rendering call
+ * site (relatedCalculators/relatedArticles/relatedFormulas/relatedGlossary
+ * etc.). Routes the raw relationship value through
+ * js/i18n/related-link-resolver.js's resolveRelatedLink(), which resolves
+ * it to a stable (family, nativeId) pair and applies Policy A (English
+ * fallback when untranslated or when locale is the default 'en').
+ *
+ * Falls back to the exact, unchanged href(link) behavior whenever the
+ * resolver cannot place the reference in its content index -- this
+ * includes families the resolver does not yet index (Academy, Entities)
+ * and the pre-existing, documented Phase 8L data gap (13 dangling
+ * formulas.json relatedGlossary slugs). This fallback is what guarantees
+ * locale 'en' (the only locale any production generator run actually
+ * uses today) produces byte-identical output to the pre-Phase-8M
+ * behavior in every case, proven in scripts/test-phase-8m.js.
+ */
+function localizedHref(link, locale, targetFamilyHint) {
+  let resolver;
+  try {
+    resolver = require('../js/i18n/related-link-resolver');
+  } catch (e) {
+    return href(link);
+  }
+  const result = resolver.resolveRelatedLink({ raw: link, locale: locale || 'en', targetFamilyHint: targetFamilyHint });
+  return result.resolved ? result.url : href(link);
+}
+
 function href(value) {
   return urlEngine.href(value);
 }
@@ -370,7 +399,7 @@ function buildFormulaContent(formula) {
 /**
  * Build glossary term detail HTML.
  */
-function buildTermContent(term) {
+function buildTermContent(term, locale) {
   let html = '';
   if (term.explanation) {
     html += `<section id="details">\n<h2>In Plain Language</h2>\n${renderBody(term.explanation)}\n</section>\n\n`;
@@ -382,11 +411,16 @@ function buildTermContent(term) {
     html += `<section id="typical-values">\n<h2>Typical Values</h2>\n<div class="knowledge-callout"><span class="knowledge-callout-icon">&#127919;</span><div>${esc(term.typicalValues)}</div></div>\n</section>\n\n`;
   }
 
-  // Related article links
+  // Related article links -- Phase 8M: routed through localizedHref() so a
+  // future Spanish rendering resolves a translated target to its Spanish
+  // URL (Policy A: falls back to the English target when untranslated,
+  // never suppresses the link). locale defaults to 'en', for which
+  // localizedHref() is proven byte-identical to the previous bare
+  // href(link) call (scripts/test-phase-8m.js).
   const relatedItems = [
-    ...(term.relatedCalculators || []).map(link => ({ href: href(link), label: titleCase(href(link).split('/').pop()) })),
-    ...(term.relatedArticles || []).map(slug => ({ href: href(slug), label: titleCase(href(slug).split('/').pop()) })),
-    ...(term.relatedFormulas || []).map(slug => ({ href: href(slug), label: titleCase(href(slug).split('/').pop()) })),
+    ...(term.relatedCalculators || []).map(link => ({ href: localizedHref(link, locale), label: titleCase(href(link).split('/').pop()) })),
+    ...(term.relatedArticles || []).map(slug => ({ href: localizedHref(slug, locale, 'academy'), label: titleCase(href(slug).split('/').pop()) })),
+    ...(term.relatedFormulas || []).map(slug => ({ href: localizedHref(slug, locale, 'formula'), label: titleCase(href(slug).split('/').pop()) })),
   ];
   if (relatedItems.length > 0) {
     const cards = relatedItems.slice(0, 6).map(item =>
@@ -400,7 +434,7 @@ function buildTermContent(term) {
 /**
  * Build reference page content from tables / checklists / notes.
  */
-function buildRefContent(page) {
+function buildRefContent(page, locale) {
   let html = '';
   if (page.overview) {
     html += `<section id="overview">\n${renderBody(page.overview)}\n</section>\n\n`;
@@ -430,12 +464,15 @@ function buildRefContent(page) {
     for (const n of page.notes) html += `<li>${esc(n)}</li>\n`;
     html += `</ul>\n</section>\n\n`;
   }
-  // Related
+  // Related -- Phase 8M: routed through localizedHref() (see buildTermContent
+  // for the byte-identity-at-locale-'en' guarantee this relies on). The
+  // visible label still derives from the ORIGINAL href(link) so link text
+  // never accidentally changes to a Spanish slug segment.
   const relCalcs = (page.relatedCalculators || []);
   if (relCalcs.length > 0) {
     const cards = relCalcs.map(link => {
-      const normalizedHref = href(link);
-      return `<a href="${normalizedHref}" class="knowledge-card"><div class="knowledge-card-title">${esc(titleCase(normalizedHref.split('/').pop()))}</div></a>`;
+      const normalizedHref = localizedHref(link, locale);
+      return `<a href="${normalizedHref}" class="knowledge-card"><div class="knowledge-card-title">${esc(titleCase(href(link).split('/').pop()))}</div></a>`;
     }
     ).join('\n');
     html += `<section class="related-calculators">\n<h2>Related Calculators</h2>\n<div class="related-calcs-cards">\n${cards}\n</div>\n</section>\n\n`;
@@ -451,9 +488,9 @@ function buildRefContent(page) {
 /**
  * Build a Related Calculators / Resources section from an article's relationship arrays.
  */
-function buildRelatedTools(article) {
+function buildRelatedTools(article, locale) {
   const all = [
-    ...(article.relatedCalculators || []).map(link => ({ href: href(link), label: titleCase(href(link).split('/').pop()) })),
+    ...(article.relatedCalculators || []).map(link => ({ href: localizedHref(link, locale), label: titleCase(href(link).split('/').pop()) })),
     ...(article.relatedCharts || []).map(link => ({ href: href(link), label: titleCase(href(link).split('/').pop()) })),
     ...(article.relatedResources || []).map(link => ({ href: href(link), label: titleCase(href(link).split('/').pop()) })),
   ];

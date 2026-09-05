@@ -16,6 +16,8 @@ const {
   buildBreadcrumb, buildFormulaContent, buildRelatedTools,
   buildRelatedTopics, renderBody, writeFile, ROOT, href, canonicalUrl,
 } = require('./template-utils');
+const { htmlLangAttr } = require('../js/i18n/html-lang');
+const { getLocalizedCanonical } = require('../js/i18n/locale-url');
 
 const data = require(path.join(ROOT, 'data', 'formulas.json'));
 const FORMULAS_DIR = path.join(ROOT, 'formulas');
@@ -84,7 +86,8 @@ ${SITE_FOOTER}
 
 // ── Individual formula page ───────────────────────────────────────────────────
 
-function generateFormula(formula) {
+function generateFormula(formula, locale) {
+  const effectiveLocale = locale || 'en';
   const tpl = template('formula-template.html');
   const bc = buildBreadcrumb(formula.slug, formula.title);
 
@@ -100,6 +103,8 @@ function generateFormula(formula) {
 
   return fill(tpl, {
     SLUG:              formula.slug,
+    HTML_LANG_ATTR:    htmlLangAttr(effectiveLocale),
+    CANONICAL_URL:     getLocalizedCanonical('/' + formula.slug, effectiveLocale),
     PAGE_TITLE:        `${formula.title} | Formula Library | WaterBalanceTools`,
     H1_TITLE:          formula.title,
     META_DESCRIPTION:  formula.metaDescription,
@@ -120,7 +125,7 @@ function generateFormula(formula) {
     EXAMPLE:           formula.workedExample ? renderBody(formula.workedExample) : (formula.example || ''),
     CONTENT:           buildFormulaContent(formula),
     SIDEBAR:           '',
-    RELATED_TOOLS:     buildRelatedTools(formula),
+    RELATED_TOOLS:     buildRelatedTools(formula, effectiveLocale),
     RELATED_TOPICS:    buildRelatedTopics(
       (formula.relatedFormulas || []),
       relatedFormulas.map(f => ({ slug: f.slug, title: f.title, summary: f.summary }))

@@ -1,5 +1,5 @@
 {
-  "_comment": "Phase 8D established this translation-completeness model (docs/PHASE-8D-MULTILINGUAL-ARCHITECTURE.md, spec Section 24) with 8 representative fixtures, all 'missing' in es. Phase 8E (docs/PHASE-8E-SPANISH-ROLLOUT.md) activated the first real Spanish production cluster: the 5 pool calculator units below moved from 'missing' to 'translated' only after their Spanish pages were generated, validated (schema-valid, non-broken links, self-referential canonical, correct html lang), and confirmed reproducible via scripts/generate-spanish-cluster.js. Phase 8G (docs/PHASE-8G-SPANISH-SPA-CLUSTER.md) added the 4 hot-tub/spa calculator units below under the identical validate-before-flip discipline. Phase 8I (docs/PHASE-8I-SPANISH-CALCULATOR-EXPANSION.md) added the remaining 4 Water Chemistry cluster units under the same discipline, completing the site's 'Water Chemistry (5)' related-calculators navigation group in Spanish. The remaining fixtures (academy/glossary/formula/reference/guide/entity/programmatic) are still 'missing' -- no calculator-cluster phase has touched them, per their explicit single-cluster scope. This is a STATUS tracker, not a content store -- it never holds translated text.",
+  "_comment": "Phase 8D established this translation-completeness model (docs/PHASE-8D-MULTILINGUAL-ARCHITECTURE.md, spec Section 24) with 8 representative fixtures, all 'missing' in es. Phase 8E (docs/PHASE-8E-SPANISH-ROLLOUT.md) activated the first real Spanish production cluster: the 5 pool calculator units below moved from 'missing' to 'translated' only after their Spanish pages were generated, validated (schema-valid, non-broken links, self-referential canonical, correct html lang), and confirmed reproducible via scripts/generate-spanish-cluster.js. Phase 8G (docs/PHASE-8G-SPANISH-SPA-CLUSTER.md) added the 4 hot-tub/spa calculator units below under the identical validate-before-flip discipline. Phase 8I (docs/PHASE-8I-SPANISH-CALCULATOR-EXPANSION.md) added the remaining 4 Water Chemistry cluster units under the same discipline, completing the site's 'Water Chemistry (5)' related-calculators navigation group in Spanish. Phase 8L (docs/PHASE-8L-SPANISH-REFERENCE-LOCALIZATION-ARCHITECTURE.md) audited the 7 remaining non-calculator fixtures and decided that glossary/formula/reference content IDs must reuse each source record's own native id field rather than a slug-derived name. Phase 8M (docs/PHASE-8M-CORE-REFERENCE-LOCALIZATION-IMPLEMENTATION.md) applied that migration to the 3 non-conforming fixtures ('_migratedFrom' records the pre-migration contentId; 'en'/'es' status values were carried over unchanged, still 'missing' in es -- this migration renamed an identity key, it did not translate anything). academy:fund-01 and entity:algae already matched the native-ID convention and were left unchanged. guide:ph-can-you-swim-in-high-ph-water and programmatic:chlorine-10000-gallon have no external native-ID data source and were left unchanged. This is a STATUS tracker, not a content store -- it never holds translated text.",
   "_generated": "2026-09-02",
   "units": [
     {
@@ -115,24 +115,30 @@
       }
     },
     {
-      "contentId": "glossary:free-chlorine",
+      "contentId": "glossary:gl-001",
       "category": "glossary",
+      "_migratedFrom": "glossary:free-chlorine",
+      "_nativeSourceId": "gl-001",
       "languages": {
         "en": { "status": "translated", "url": "/glossary/free-chlorine" },
         "es": { "status": "missing", "url": "/es/glossary/free-chlorine" }
       }
     },
     {
-      "contentId": "formula:pool-volume",
+      "contentId": "formula:formula-01",
       "category": "formula",
+      "_migratedFrom": "formula:pool-volume",
+      "_nativeSourceId": "formula-01",
       "languages": {
         "en": { "status": "translated", "url": "/formulas/pool-volume-formula" },
         "es": { "status": "missing", "url": "/es/formulas/pool-volume-formula" }
       }
     },
     {
-      "contentId": "reference:ideal-pool-levels",
+      "contentId": "reference:ref-01",
       "category": "reference",
+      "_migratedFrom": "reference:ideal-pool-levels",
+      "_nativeSourceId": "ref-01",
       "languages": {
         "en": { "status": "translated", "url": "/reference/ideal-pool-levels" },
         "es": { "status": "missing", "url": "/es/reference/ideal-pool-levels" }

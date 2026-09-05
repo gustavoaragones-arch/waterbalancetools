@@ -1238,7 +1238,7 @@
   {
     "url": "/formulas/pool-volume-formula",
     "lang": "en",
-    "contentId": "formula:pool-volume",
+    "contentId": "formula:formula-01",
     "title": "Pool Volume Formula",
     "description": "Learn the pool volume formula with worked examples. Calculate pool gallons for rectangular, oval, circular, and irregular-shaped pools.",
     "h1": "Pool Volume Formula",
@@ -1754,7 +1754,7 @@
   {
     "url": "/glossary/free-chlorine",
     "lang": "en",
-    "contentId": "glossary:free-chlorine",
+    "contentId": "glossary:gl-001",
     "title": "Free Chlorine",
     "description": "Free chlorine is the concentration of active, unsaturated chlorine available in pool water to sanitise and disinfect. Plain-language definition with target v...",
     "h1": "Free Chlorine",
@@ -2702,7 +2702,7 @@
   {
     "url": "/reference/ideal-pool-levels",
     "lang": "en",
-    "contentId": "reference:ideal-pool-levels",
+    "contentId": "reference:ref-01",
     "title": "Ideal Pool Chemical Levels",
     "description": "Complete reference table for target ranges of all pool water chemistry parameters — chlorine, pH, alkalinity, hardness, CYA, salt, and ORP.",
     "h1": "Ideal Pool Chemical Levels",
