@@ -1,0 +1,727 @@
+{
+  "_comment": "Phase 8L deterministic candidate manifest for the Spanish glossary first-wave. This file contains NO translated prose -- only native content IDs, English source URLs, and qualifying-calculator cross-references, computed by the rule: a glossary record qualifies if its relatedCalculators field references at least one of the 13 Phase 8I Spanish-translated calculators. Regenerate by re-running the selection logic in docs/PHASE-8L-SPANISH-REFERENCE-LOCALIZATION-ARCHITECTURE.md Section 7 / scripts/test-phase-8l.js against data/glossary.json and data/i18n/translation-status.json.",
+  "_generatedFromCommit": "7e71120bec3d5337d18013697110685e892219ec",
+  "rule": "relatedCalculators contains >= 1 URL corresponding to a calculator with languages.es.status === \"translated\" in data/i18n/translation-status.json",
+  "totalGlossaryTerms": 100,
+  "qualifyingCount": 54,
+  "nonQualifyingCount": 46,
+  "candidates": [
+    {
+      "nativeId": "gl-001",
+      "englishUrl": "https://waterbalancetools.com/glossary/free-chlorine",
+      "title": "Free Chlorine",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-chlorine",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-chlorine-calculator"
+        },
+        {
+          "contentId": "calculator:hot-tub-chlorine",
+          "englishUrl": "https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/hot-tub-chlorine-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 2 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-002",
+      "englishUrl": "https://waterbalancetools.com/glossary/combined-chlorine",
+      "title": "Combined Chlorine",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-003",
+      "englishUrl": "https://waterbalancetools.com/glossary/total-chlorine",
+      "title": "Total Chlorine",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:chemical",
+          "englishUrl": "https://waterbalancetools.com/calculators/chemical-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/chemical-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-004",
+      "englishUrl": "https://waterbalancetools.com/glossary/breakpoint-chlorination",
+      "title": "Breakpoint Chlorination",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-005",
+      "englishUrl": "https://waterbalancetools.com/glossary/sanitizer",
+      "title": "Sanitizer",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-chlorine",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-chlorine-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-006",
+      "englishUrl": "https://waterbalancetools.com/glossary/oxidizer",
+      "title": "Oxidizer",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:hot-tub-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/hot-tub-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/hot-tub-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-007",
+      "englishUrl": "https://waterbalancetools.com/glossary/shock",
+      "title": "Shock",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-008",
+      "englishUrl": "https://waterbalancetools.com/glossary/ph",
+      "title": "pH",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-ph",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-ph-calculator"
+        },
+        {
+          "contentId": "calculator:hot-tub-ph",
+          "englishUrl": "https://waterbalancetools.com/calculators/hot-tub-ph-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/hot-tub-ph-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 2 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-009",
+      "englishUrl": "https://waterbalancetools.com/glossary/total-alkalinity",
+      "title": "Total Alkalinity",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-alkalinity",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-alkalinity-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-alkalinity-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-010",
+      "englishUrl": "https://waterbalancetools.com/glossary/calcium-hardness",
+      "title": "Calcium Hardness",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:chemical",
+          "englishUrl": "https://waterbalancetools.com/calculators/chemical-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/chemical-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-011",
+      "englishUrl": "https://waterbalancetools.com/glossary/cyanuric-acid",
+      "title": "Cyanuric Acid",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-cyanuric-acid",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-cyanuric-acid-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-012",
+      "englishUrl": "https://waterbalancetools.com/glossary/langelier-saturation-index",
+      "title": "Langelier Saturation Index",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:chemical",
+          "englishUrl": "https://waterbalancetools.com/calculators/chemical-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/chemical-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-017",
+      "englishUrl": "https://waterbalancetools.com/glossary/pump-turnover",
+      "title": "Pump Turnover",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-turnover-rate",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-turnover-rate-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-turnover-rate-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-021",
+      "englishUrl": "https://waterbalancetools.com/glossary/superchlorination",
+      "title": "Superchlorination",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-022",
+      "englishUrl": "https://waterbalancetools.com/glossary/chloramine",
+      "title": "Chloramine",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-023",
+      "englishUrl": "https://waterbalancetools.com/glossary/dichlor",
+      "title": "Dichlor",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-chlorine",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-chlorine-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-024",
+      "englishUrl": "https://waterbalancetools.com/glossary/trichlor",
+      "title": "Trichlor",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-chlorine",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-chlorine-calculator"
+        },
+        {
+          "contentId": "calculator:pool-cyanuric-acid",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-cyanuric-acid-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 2 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-025",
+      "englishUrl": "https://waterbalancetools.com/glossary/calcium-hypochlorite",
+      "title": "Calcium Hypochlorite",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-026",
+      "englishUrl": "https://waterbalancetools.com/glossary/sodium-hypochlorite",
+      "title": "Sodium Hypochlorite",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-chlorine",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-chlorine-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-chlorine-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-027",
+      "englishUrl": "https://waterbalancetools.com/glossary/bromine",
+      "title": "Bromine",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:hot-tub-chlorine",
+          "englishUrl": "https://waterbalancetools.com/calculators/hot-tub-chlorine-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/hot-tub-chlorine-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-029",
+      "englishUrl": "https://waterbalancetools.com/glossary/salt-chlorination",
+      "title": "Salt Chlorination",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:saltwater-pool-salt",
+          "englishUrl": "https://waterbalancetools.com/calculators/saltwater-pool-salt-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/saltwater-pool-salt-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-032",
+      "englishUrl": "https://waterbalancetools.com/glossary/muriatic-acid",
+      "title": "Muriatic Acid",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-ph",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-ph-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-033",
+      "englishUrl": "https://waterbalancetools.com/glossary/sodium-carbonate",
+      "title": "Sodium Carbonate",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-ph",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-ph-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-034",
+      "englishUrl": "https://waterbalancetools.com/glossary/sodium-bicarbonate",
+      "title": "Sodium Bicarbonate",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-alkalinity",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-alkalinity-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-alkalinity-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-035",
+      "englishUrl": "https://waterbalancetools.com/glossary/sodium-bisulfate",
+      "title": "Sodium Bisulfate",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-ph",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-ph-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-036",
+      "englishUrl": "https://waterbalancetools.com/glossary/ph-bounce",
+      "title": "pH Bounce",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-alkalinity",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-alkalinity-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-alkalinity-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-037",
+      "englishUrl": "https://waterbalancetools.com/glossary/chlorine-stabilizer",
+      "title": "Chlorine Stabilizer",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-cyanuric-acid",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-cyanuric-acid-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-cyanuric-acid-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-038",
+      "englishUrl": "https://waterbalancetools.com/glossary/hypochlorous-acid",
+      "title": "Hypochlorous Acid",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-ph",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-ph-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-039",
+      "englishUrl": "https://waterbalancetools.com/glossary/algae-bloom",
+      "title": "Algae Bloom",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-040",
+      "englishUrl": "https://waterbalancetools.com/glossary/green-algae",
+      "title": "Green Algae",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-041",
+      "englishUrl": "https://waterbalancetools.com/glossary/black-algae",
+      "title": "Black Algae",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-042",
+      "englishUrl": "https://waterbalancetools.com/glossary/mustard-algae",
+      "title": "Mustard Algae",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-053",
+      "englishUrl": "https://waterbalancetools.com/glossary/parts-per-million",
+      "title": "Parts Per Million",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:chemical",
+          "englishUrl": "https://waterbalancetools.com/calculators/chemical-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/chemical-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-056",
+      "englishUrl": "https://waterbalancetools.com/glossary/chlorine-demand",
+      "title": "Chlorine Demand",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-057",
+      "englishUrl": "https://waterbalancetools.com/glossary/pool-volume",
+      "title": "Pool Volume",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-volume",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-volume-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-volume-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-058",
+      "englishUrl": "https://waterbalancetools.com/glossary/pool-pump",
+      "title": "Pool Pump",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-turnover-rate",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-turnover-rate-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-turnover-rate-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-060",
+      "englishUrl": "https://waterbalancetools.com/glossary/gpm",
+      "title": "GPM (Gallons Per Minute)",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-turnover-rate",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-turnover-rate-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-turnover-rate-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-061",
+      "englishUrl": "https://waterbalancetools.com/glossary/aggressive-water",
+      "title": "Aggressive Water",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:chemical",
+          "englishUrl": "https://waterbalancetools.com/calculators/chemical-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/chemical-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-062",
+      "englishUrl": "https://waterbalancetools.com/glossary/scaling-water",
+      "title": "Scaling Water",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:chemical",
+          "englishUrl": "https://waterbalancetools.com/calculators/chemical-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/chemical-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-068",
+      "englishUrl": "https://waterbalancetools.com/glossary/dilution",
+      "title": "Dilution",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-volume",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-volume-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-volume-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-072",
+      "englishUrl": "https://waterbalancetools.com/glossary/saturation-index",
+      "title": "Saturation Index",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:chemical",
+          "englishUrl": "https://waterbalancetools.com/calculators/chemical-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/chemical-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-074",
+      "englishUrl": "https://waterbalancetools.com/glossary/partial-drain",
+      "title": "Partial Drain",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-volume",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-volume-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-volume-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-075",
+      "englishUrl": "https://waterbalancetools.com/glossary/pool-turnover-rate",
+      "title": "Pool Turnover Rate",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-turnover-rate",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-turnover-rate-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-turnover-rate-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-080",
+      "englishUrl": "https://waterbalancetools.com/glossary/opening-chemical-kit",
+      "title": "Opening Chemical Kit",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:chemical",
+          "englishUrl": "https://waterbalancetools.com/calculators/chemical-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/chemical-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-081",
+      "englishUrl": "https://waterbalancetools.com/glossary/closing-chemical-kit",
+      "title": "Closing Chemical Kit",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-085",
+      "englishUrl": "https://waterbalancetools.com/glossary/conductivity",
+      "title": "Conductivity",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:saltwater-pool-salt",
+          "englishUrl": "https://waterbalancetools.com/calculators/saltwater-pool-salt-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/saltwater-pool-salt-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-086",
+      "englishUrl": "https://waterbalancetools.com/glossary/shock-dosage",
+      "title": "Shock Dosage",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-087",
+      "englishUrl": "https://waterbalancetools.com/glossary/pool-volume-reference",
+      "title": "Pool Volume Reference",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-volume",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-volume-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-volume-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-089",
+      "englishUrl": "https://waterbalancetools.com/glossary/saturated-ph",
+      "title": "Saturated pH",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:chemical",
+          "englishUrl": "https://waterbalancetools.com/calculators/chemical-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/chemical-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-090",
+      "englishUrl": "https://waterbalancetools.com/glossary/water-balance-checklist",
+      "title": "Water Balance Checklist",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:chemical",
+          "englishUrl": "https://waterbalancetools.com/calculators/chemical-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/chemical-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-091",
+      "englishUrl": "https://waterbalancetools.com/glossary/pool-chemistry-reference",
+      "title": "Pool Chemistry Reference",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:chemical",
+          "englishUrl": "https://waterbalancetools.com/calculators/chemical-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/chemical-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-093",
+      "englishUrl": "https://waterbalancetools.com/glossary/pool-shock-schedule",
+      "title": "Pool Shock Schedule",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-096",
+      "englishUrl": "https://waterbalancetools.com/glossary/breakpoint-dose",
+      "title": "Breakpoint Dose",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-shock",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-shock-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-shock-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    },
+    {
+      "nativeId": "gl-100",
+      "englishUrl": "https://waterbalancetools.com/glossary/ph-increaser",
+      "title": "pH Increaser",
+      "qualifyingCalculators": [
+        {
+          "contentId": "calculator:pool-ph",
+          "englishUrl": "https://waterbalancetools.com/calculators/pool-ph-calculator",
+          "spanishUrl": "https://waterbalancetools.com/es/calculators/pool-ph-calculator"
+        }
+      ],
+      "reason": "relatedCalculators references 1 already-Spanish calculator(s)"
+    }
+  ]
+}
