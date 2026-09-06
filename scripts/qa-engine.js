@@ -542,8 +542,19 @@ function runContentAudit(ctx) {
       .replace(/<script[\s\S]*?<\/script>/gi, ' ')
       .replace(/<style[\s\S]*?<\/style>/gi, ' ')
       .replace(/<[^>]+>/g, ' ');
-    if (/\bTODO\b|lorem ipsum/ig.test(textOnly)) placeholder++;
-    if (!/Last updated|last reviewed|lastUpdated/i.test(html)) missingUpdated++;
+    // TODO must stay case-SENSITIVE (real placeholder markers are always
+    // written in caps, "TODO:"/"TODO -") -- Phase 8N found that matching
+    // it case-insensitively false-flags the common Spanish word "todo"
+    // ("all"/"everything"), which appears legitimately throughout real
+    // Spanish prose (es/glossary, es/formulas, es/reference). "lorem
+    // ipsum" has no legitimate natural-language use in any language, so
+    // it stays case-insensitive.
+    if (/\bTODO\b/.test(textOnly) || /lorem ipsum/i.test(textOnly)) placeholder++;
+    // Phase 8N: Spanish pages render this as "Última revisión:" (a real
+    // translation, not a different feature) -- an English-only regex here
+    // would flag all 88 Phase 8N pages as missing an update date they
+    // genuinely have. Recognize the Spanish phrase too.
+    if (!/Last updated|last reviewed|lastUpdated|última revisión/i.test(html)) missingUpdated++;
     if (!/version-badge|Version/i.test(html)) missingVersion++;
     const paras = [...html.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)].map((m) => m[1].replace(/<[^>]+>/g, '').trim()).filter((t) => t.length > 40);
     paras.forEach((t) => {

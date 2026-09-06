@@ -3,7 +3,7 @@
 
 module.exports = [
   {
-    id: 'ref-01',
+    id: 'ref-01', es: {"title":"Niveles Químicos Ideales para Piscinas","description":"Tabla de referencia completa con los rangos objetivo de todos los parámetros de la química del agua de piscina — cloro, pH, alcalinidad, dureza, CYA, sal y ORP.","summary":"Rangos objetivo para todos los parámetros principales de la química de la piscina en una sola tabla de referencia rápida.","overview":"Estos rangos objetivo reflejan la orientación actual de la industria, según la Pool & Hot Tub Alliance y Taylor Technologies. Todos los parámetros interactúan entre sí — corríjalos en orden: primero la alcalinidad, luego el pH y después el cloro.","notes":["Espere de 4 a 6 horas después de ajustar la alcalinidad antes de analizar y ajustar el pH.","El CYA no puede reducirse químicamente — un drenaje parcial es el único remedio.","El cloro combinado por encima de 0.5 ppm requiere tratamiento de choque."],"tables":[{"title":"Parámetros Principales"},{"title":"Chemical to Raise or Lower"}]},
     slug: 'reference/ideal-pool-levels',
     title: 'Ideal Pool Chemical Levels',
     description: 'Complete reference table for target ranges of all pool water chemistry parameters — chlorine, pH, alkalinity, hardness, CYA, salt, and ORP.',
@@ -47,7 +47,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022'],
   },
   {
-    id: 'ref-02',
+    id: 'ref-02', es: {"title":"Niveles Químicos Ideales para Spas y Hot Tubs","description":"Rangos objetivo para todos los parámetros de la química del agua de hot tubs y spas — cloro, bromo, pH, alcalinidad, dureza y TDS.","summary":"Los objetivos del hot tub difieren de los objetivos de la piscina debido a las temperaturas más altas, el menor volumen y la mayor concentración de bañistas.","overview":"La química del agua del hot tub tiene rangos aceptables más estrechos que la de la piscina. Analice el agua antes de cada uso.","notes":["El CYA no se recomienda para hot tubs cubiertos o de interior — no se necesita protección contra los rayos UV.","Cambie el agua del hot tub cada 3 a 4 meses, o cuando el TDS supere los 1,500 ppm por encima del valor inicial.","Analice el agua antes de cada uso — la química del hot tub cambia en cuestión de horas."],"tables":[{"title":"Parámetros del Spa / Hot Tub"}]},
     slug: 'reference/ideal-spa-levels',
     title: 'Ideal Spa & Hot Tub Chemical Levels',
     description: 'Target ranges for all hot tub and spa water chemistry parameters — chlorine, bromine, pH, alkalinity, hardness, and TDS.',
@@ -78,7 +78,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022'],
   },
   {
-    id: 'ref-03',
+    id: 'ref-03', es: {"title":"Temperatura Recomendada del Agua para Piscinas y Spas","description":"Rangos de temperatura recomendados para piscinas, hot tubs y spas terapéuticos, con pautas de seguridad y el efecto de la temperatura en la química del agua.","summary":"La temperatura del agua afecta tanto la comodidad como la química. Esta referencia cubre los rangos seguros para distintos usos.","overview":"La temperatura del agua es a la vez un ajuste de comodidad y una variable química. Las temperaturas más altas aceleran la demanda de cloro, el desvío del pH y la tendencia a formar incrustaciones.","notes":["Temperatura máxima segura para hot tub según la CPSC y la PHTA: 104°F (40°C).","El uso del hot tub por encima de 104°F puede causar hipertermia en cuestión de minutos."],"tables":[{"title":"Temperaturas Recomendadas según el Uso"},{"title":"Temperature Effect on Chemistry"}]},
     slug: 'reference/recommended-water-temperature',
     title: 'Recommended Pool & Spa Water Temperature',
     description: 'Recommended temperature ranges for pools, hot tubs, and therapy spas, with safety guidelines and the effect of temperature on water chemistry.',
@@ -118,7 +118,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022', 'CDC — Healthy Swimming Guidelines'],
   },
   {
-    id: 'ref-04',
+    id: 'ref-04', es: {"title":"Guía de Compatibilidad de Productos Químicos para Piscina","description":"Guía de referencia sobre qué productos químicos de piscina son compatibles y qué combinaciones nunca deben mezclarse.","summary":"Los productos químicos de piscina, si se almacenan o manipulan incorrectamente, pueden reaccionar de forma peligrosa. Esta guía muestra qué productos son compatibles y cuáles deben mantenerse separados.","overview":"Nunca mezcle productos químicos de piscina directamente. Predisuelva siempre cada producto por separado en agua limpia y agréguelos a la piscina en momentos y lugares diferentes.","notes":["Siempre agregue los productos químicos al agua, nunca el agua al producto químico.","Use protección ocular y guantes al manipular cualquier producto químico de piscina.","Guarde los productos químicos en sus envases originales, con las tapas bien cerradas.","Mantenga accesibles las Hojas de Datos de Seguridad (SDS) de todos los productos almacenados."],"tables":[{"title":"Combinaciones Peligrosas (NUNCA Mezclar)"},{"title":"Separation Requirements for Storage"}]},
     slug: 'reference/chemical-compatibility',
     title: 'Pool Chemical Compatibility Guide',
     description: 'Reference guide for which pool chemicals are compatible and which combinations must never be mixed.',
@@ -157,7 +157,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022', 'OSHA — Chemical Safety Standards'],
   },
   {
-    id: 'ref-05',
+    id: 'ref-05', es: {"title":"Matriz de Dosificación de Choque","description":"Matriz de referencia para la dosis de choque de la piscina según el volumen y el objetivo del tratamiento — mantenimiento, ruptura y recuperación de algas.","summary":"Referencia rápida de cuántas libras de hipoclorito de calcio (65%) se necesitan para aplicar choque a una piscina según el volumen y el propósito.","overview":"Estas dosis son para hipoclorito de calcio (cal-hipo) al 65%. Ajuste proporcionalmente para otras concentraciones. Siempre agregue el producto predisuelto a la piscina, nunca al skimmer.","notes":["Las dosis usan la fórmula de balance de masa aprobada en todo el sitio (aumento en ppm × galones × 0.013344 ÷ 65) para hipoclorito de calcio al 65%. Una dosis de ruptura es 10 veces la lectura de cloro combinado (CC), por lo que un CC de 1 ppm requiere el mismo aumento de 10 ppm de cloro libre que una dosis de mantenimiento de rutina — las dos columnas de dosis de la izquierda muestran la misma cifra por esa razón, no por un error. La dosis para piscina verde apunta a un aumento de 30 ppm de cloro libre. Estas cifras son una referencia manual; la calculadora de choque en vivo ofrece valores preestablecidos fijos (5, 10, 15 o 20 ppm) en lugar del rango completo que se muestra aquí.","Predisuelva el choque granular en un balde de agua antes de agregarlo a la piscina.","Agréguelo después del anochecer. Haga funcionar la bomba toda la noche. No permita nadar hasta que el cloro libre baje de 5 ppm.","Para cal-hipo al 73%, multiplique las dosis por 0.89."],"tables":[{"title":"Dosis de Choque con Cal-Hipo (65%) según el Volumen de la Piscina"}]},
     slug: 'reference/shock-dosage-matrix',
     title: 'Shock Dosage Matrix',
     description: 'Reference matrix for pool shock dosage by pool volume and treatment goal — maintenance, breakpoint, and algae recovery.',
@@ -188,7 +188,7 @@ module.exports = [
     sources: ['Taylor Technologies — Pool/Spa Water Chemistry Reference'],
   },
   {
-    id: 'ref-06',
+    id: 'ref-06', es: {"title":"Matriz de Referencia de Nivel de Sal para Piscina","description":"Tabla de referencia sobre cuántas libras de sal para piscina se necesitan para subir el nivel de sal en cualquier incremento, para volúmenes de piscina comunes.","summary":"Referencia rápida: libras de sal para piscina necesarias para subir la concentración de sal del nivel actual al objetivo, para cualquier tamaño de piscina.","overview":"Cada celda muestra las libras de cloruro de sodio (sal para piscina) necesarias para subir la sal en ese incremento, para ese volumen de piscina.","notes":["La sal para piscina se vende en bolsas de 40 lb — redondee hacia arriba a la bolsa más cercana.","La sal no se evapora; el nivel solo baja por dilución (lluvia, salpicaduras, retrolavado).","Siempre verifique con tiras de prueba de sal o con el controlador del sistema después de que se disuelva."],"tables":[{"title":"Libras de Sal para Piscina a Agregar (según volumen de piscina y aumento objetivo)"},{"title":"Salt Level Reference for Common Systems"}]},
     slug: 'reference/salt-matrix',
     title: 'Salt Pool Level Reference Matrix',
     description: 'Reference table for how many pounds of pool salt are needed to raise salt level by any increment for common pool volumes.',
@@ -227,7 +227,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022'],
   },
   {
-    id: 'ref-07',
+    id: 'ref-07', es: {"title":"Matriz de CYA y Cloro Libre Mínimo","description":"Tabla de referencia que muestra el cloro libre mínimo requerido en cada nivel de CYA para mantener una sanitización eficaz.","summary":"A medida que el CYA aumenta, el cloro libre mínimo debe aumentar proporcionalmente. Esta matriz muestra el piso de cloro libre en cada nivel de CYA.","overview":"El CYA protege al cloro de los rayos UV, pero reduce su actividad. El cloro libre mínimo para mantener una sanitización eficaz debe aumentar a medida que sube el CYA. El estándar de 1 ppm de cloro libre solo es apropiado cuando el CYA está por debajo de 30 ppm.","notes":["Estos mínimos son para piscinas al aire libre con luz solar directa.","Las piscinas interiores y los spas cubiertos no requieren CYA.","CYA por encima de 100 ppm: planifique un drenaje parcial del 40–50% y relleno."],"tables":[{"title":"Cloro Libre Mínimo según el Nivel de CYA (orientación de PHTA / Taylor)"}]},
     slug: 'reference/cya-matrix',
     title: 'CYA & Minimum Free Chlorine Matrix',
     description: 'Reference table showing the minimum free chlorine required at each CYA level to maintain effective sanitisation.',
@@ -260,7 +260,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022', 'Taylor Technologies — Pool/Spa Water Chemistry Reference'],
   },
   {
-    id: 'ref-08',
+    id: 'ref-08', es: {"title":"Tabla de Ajuste de Alcalinidad para Piscina","description":"Tabla de referencia sobre cuánto bicarbonato de sodio agregar para subir la alcalinidad total y cuánto ácido agregar para bajarla.","summary":"Referencia rápida de dosis de ajuste de alcalinidad usando bicarbonato de sodio (para subir) o ácido muriático (para bajar), según el volumen de la piscina.","overview":"La alcalinidad debe ajustarse antes que el pH. Agregue los productos en incrementos y analice el agua después de cada adición. Espere de 4 a 6 horas antes de volver a analizar.","notes":["Bajar la TA también baja el pH — airee el agua después de agregar ácido para ayudar a que el pH se recupere.","Agregue el bicarbonato de sodio esparciéndolo por el perímetro de la piscina.","Espere de 4 a 6 horas antes de volver a analizar la alcalinidad."],"tables":[{"title":"Bicarbonato de Sodio para Subir la Alcalinidad (1.5 lb sube la TA 10 ppm por cada 10,000 gal)"},{"title":"Muriatic Acid (31.45%) to Lower Alkalinity"}]},
     slug: 'reference/alkalinity-table',
     title: 'Pool Alkalinity Adjustment Table',
     description: 'Reference table for how much sodium bicarbonate to add to raise total alkalinity and how much acid to add to lower it.',
@@ -296,7 +296,7 @@ module.exports = [
     sources: ['Taylor Technologies — Pool/Spa Water Chemistry Reference'],
   },
   {
-    id: 'ref-09',
+    id: 'ref-09', es: {"title":"Tabla de Referencia de Ajuste de pH para Piscina","description":"Tabla de referencia sobre cuánto ácido muriático o carbonato de sodio agregar para ajustar el pH de la piscina en incrementos comunes.","summary":"Dosis de referencia rápida para subir y bajar el pH de la piscina. La dosis de ajuste de pH depende en gran medida de la alcalinidad total.","overview":"Las dosis de ajuste de pH son aproximadas — la alcalinidad total afecta significativamente la cantidad de producto químico necesaria para un cambio de pH determinado. Siempre corrija primero la alcalinidad.","notes":["Estas son dosis iniciales aproximadas. Siempre agregue el producto de forma incremental y vuelva a analizar.","Una alcalinidad alta (por encima de 150 ppm) hace que el pH sea mucho más difícil de bajar — puede requerir de 2 a 3 veces estas dosis.","Predisuelva el carbonato de sodio en un balde de agua antes de agregarlo, para evitar una turbidez blanquecina."],"tables":[{"title":"Ácido Muriático (31.45%) para Bajar el pH — TA entre 80 y 120 ppm"},{"title":"Sodium Carbonate (Soda Ash) to Raise pH — TA at 80–120 ppm"}]},
     slug: 'reference/ph-table',
     title: 'Pool pH Adjustment Reference Table',
     description: 'Reference table for how much muriatic acid or soda ash to add to adjust pool pH by common increments.',
@@ -332,7 +332,7 @@ module.exports = [
     sources: ['Taylor Technologies — Pool/Spa Water Chemistry Reference'],
   },
   {
-    id: 'ref-10',
+    id: 'ref-10', es: {"title":"Eficacia del Cloro según el pH","description":"Gráfico de referencia que muestra el porcentaje de cloro libre en su forma activa (ácido hipocloroso) a distintos niveles de pH.","summary":"A pH 7.2, dos tercios de su cloro está activo. A pH 8.0, solo una quinta parte lo está. Esta tabla muestra exactamente cuánto cloro efectivo tiene a cualquier pH.","overview":"La proporción de cloro libre en su forma activa (ácido hipocloroso, HOCl) está determinada completamente por el pH. Esta tabla muestra la fracción efectiva en cada nivel de pH.","notes":["El HOCl es de 40 a 80 veces más eficaz que el OCl- como desinfectante.","Mantenga el pH entre 7.2 y 7.6 para conservar el cloro en su máxima eficacia.","A pH 8.0, necesitaría 3 veces el cloro libre para lograr el mismo nivel de HOCl activo que a pH 7.2."],"tables":[{"title":"Porcentaje de HOCl a Distintos Niveles de pH (a 77°F / 25°C)"}]},
     slug: 'reference/chlorine-effectiveness-chart',
     title: 'Chlorine Effectiveness vs. pH',
     description: 'Reference chart showing the percentage of free chlorine in its active form (hypochlorous acid) at different pH levels.',
@@ -363,7 +363,7 @@ module.exports = [
     sources: ['White, G.C. — Handbook of Chlorination and Alternative Disinfectants', 'Taylor Technologies — Pool/Spa Water Chemistry Reference'],
   },
   {
-    id: 'ref-11',
+    id: 'ref-11', es: {"title":"Cronología de Productos Químicos para Piscina","description":"Guía de referencia sobre cuánto tiempo esperar entre adiciones de productos químicos y antes de volver a analizar el agua o permitir el uso de la piscina.","summary":"Después de agregar cualquier producto químico a la piscina, esperar el tiempo correcto antes de volver a analizar o de permitir el ingreso es esencial para obtener resultados precisos y garantizar la seguridad de los bañistas.","overview":"Nunca agregue varios productos químicos al mismo tiempo, y nunca asuma que un producto se ha dispersado por completo sin esperar el tiempo recomendado y hacer funcionar la bomba.","notes":["Siempre haga funcionar la bomba durante el tiempo de espera para asegurar una distribución uniforme.","El reingreso después de un choque es seguro cuando el cloro libre analiza por debajo de 5 ppm — no basándose únicamente en el tiempo transcurrido.","Nunca agregue dos productos químicos a la piscina al mismo tiempo."],"tables":[{"title":"Tiempos de Espera después de Agregar Productos Químicos"}]},
     slug: 'reference/pool-chemical-timeline',
     title: 'Pool Chemical Timeline',
     description: 'Reference guide for how long to wait between chemical additions and before retesting or allowing swimming.',
@@ -395,7 +395,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022'],
   },
   {
-    id: 'ref-12',
+    id: 'ref-12', es: {"title":"Comparación de Tipos de Filtros para Piscina","description":"Comparación directa de filtros de piscina de arena, cartucho y tierra diatomácea (DE) según la calidad de filtración, el mantenimiento, el costo y los mejores usos.","summary":"Los filtros de arena, cartucho y DE tienen ventajas y desventajas distintas. Esta comparación le ayuda a elegir el tipo de filtro correcto para su piscina.","overview":"Los tres tipos principales de filtros de piscina difieren significativamente en calidad de filtración, requisitos de mantenimiento, consumo de agua y costo.","notes":["Todos los tipos de filtro funcionan bien cuando se dimensionan y mantienen correctamente.","El modo de falla más común es hacer funcionar cualquier filtro más allá del umbral de limpieza."],"tables":[{"title":"Comparación de Filtros de Piscina"}]},
     slug: 'reference/filter-comparison',
     title: 'Pool Filter Type Comparison',
     description: 'Side-by-side comparison of sand, cartridge, and DE pool filters across filtration quality, maintenance, cost, and best use cases.',
@@ -427,7 +427,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022'],
   },
   {
-    id: 'ref-13',
+    id: 'ref-13', es: {"title":"Guía de Dimensionamiento de la Bomba de Piscina","description":"Guía de referencia para calcular el GPM requerido y seleccionar el tamaño de bomba correcto para cualquier volumen de piscina y objetivo de recirculación.","summary":"El dimensionamiento de la bomba de piscina comienza con el volumen de la piscina y el tiempo de recirculación objetivo. Esta guía muestra el GPM requerido para tamaños de piscina comunes.","overview":"El caudal de bomba correcto (GPM) es igual al volumen de la piscina dividido entre el tiempo de recirculación objetivo en minutos.","notes":["Siempre verifique el GPM real a la presión de descarga de su sistema — las capacidades de la bomba se indican a presión de descarga cero.","Las bombas de velocidad variable deben seleccionarse para el caudal máximo requerido, y luego programarse a velocidades más bajas para la filtración de rutina."],"tables":[{"title":"GPM Requerido según el Volumen de la Piscina y el Objetivo de Recirculación"},{"title":"Approximate Pump Output by Horsepower"}]},
     slug: 'reference/pump-sizing',
     title: 'Pool Pump Sizing Guide',
     description: 'Reference guide for calculating the required GPM and selecting the correct pump size for any pool volume and turnover target.',
@@ -468,7 +468,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022'],
   },
   {
-    id: 'ref-14',
+    id: 'ref-14', es: {"title":"Pautas de Reemplazo del Agua de la Piscina","description":"Guía de referencia sobre cuándo reemplazar el agua de la piscina o el hot tub, incluyendo el CYA, el TDS, la dureza y otras condiciones que lo justifican.","summary":"Sepa cuándo el agua de su piscina o hot tub necesita reemplazarse total o parcialmente. Esta guía cubre todos los factores químicos y físicos que lo indican.","overview":"El reemplazo del agua de la piscina puede ser parcial (para diluir compuestos específicos) o completo (cuando el agua ya no es recuperable de forma económica). Los hot tubs requieren un cambio completo de agua cada 3 a 4 meses.","notes":["Los drenajes parciales se calculan por porcentaje: un drenaje del 25% elimina el 25% de todos los compuestos disueltos.","Ante la duda sobre la calidad del agua del hot tub, un drenaje completo siempre es la opción más segura."],"tables":[{"title":"Condiciones que Justifican un Drenaje Parcial"},{"title":"Hot Tub Water Change Schedule"}]},
     slug: 'reference/water-replacement-guidelines',
     title: 'Pool Water Replacement Guidelines',
     description: 'Reference guide for when to replace pool or hot tub water, including CYA, TDS, hardness, and other trigger conditions.',
@@ -507,7 +507,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022'],
   },
   {
-    id: 'ref-15',
+    id: 'ref-15', es: {"title":"Referencia Rápida de Volumen de Piscina","description":"Volúmenes de piscina precalculados para dimensiones comunes de piscinas rectangulares, ovaladas y redondas.","summary":"Tabla de consulta rápida para el volumen aproximado de la piscina en galones, según dimensiones comunes.","overview":"Estos son volúmenes aproximados a profundidad promedio. Use la calculadora de volumen de piscina para obtener resultados precisos según sus dimensiones específicas.","notes":["Use la calculadora de volumen de piscina para dimensiones exactas.","Profundidad promedio = (extremo bajo + extremo profundo) ÷ 2 para piscinas con pendiente gradual."],"tables":[{"title":"Volúmenes de Piscina Rectangular (a 4.5 pies de profundidad promedio)"},{"title":"Round / Circular Pool Volumes (at 4.5 ft depth)"},{"title":"Hot Tub / Spa Volumes"}]},
     slug: 'reference/pool-volume-reference',
     title: 'Pool Volume Quick Reference',
     description: 'Pre-calculated pool volumes for common rectangular, oval, and round pool dimensions.',
@@ -557,7 +557,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022'],
   },
   {
-    id: 'ref-16',
+    id: 'ref-16', es: {"title":"Guía de Forma y Volumen de Piscina","description":"Cómo calcular el volumen de la piscina según distintas formas: rectangular, en forma de L, ovalada, riñón y de forma libre.","summary":"El cálculo correcto del volumen depende de la forma de la piscina. Esta guía muestra la fórmula y el método para cada forma común.","overview":"Cada forma de piscina tiene una fórmula de volumen. Para formas irregulares, divida la piscina en secciones, calcule cada sección y súmelas.","notes":["Un error del 10% en el volumen produce un error del 10% en cada dosis química.","Use la calculadora de volumen de piscina para un cálculo guiado paso a paso.","Si tiene dudas sobre la forma de la piscina, divídala en más secciones para mayor precisión."],"tables":[{"title":"Fórmula de Volumen según la Forma de la Piscina"}]},
     slug: 'reference/pool-shape-guide',
     title: 'Pool Shape & Volume Guide',
     description: 'How to calculate pool volume for different pool shapes: rectangular, L-shaped, oval, kidney, and freeform.',
@@ -586,7 +586,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022'],
   },
   {
-    id: 'ref-17',
+    id: 'ref-17', es: {"title":"Guía de Almacenamiento de Productos Químicos para Piscina","description":"Requisitos de almacenamiento seguro para productos químicos de piscina y spa, incluyendo límites de temperatura, reglas de separación y requisitos de envases.","summary":"Los productos químicos de piscina deben almacenarse correctamente para conservar su eficacia y evitar reacciones peligrosas. Esta guía cubre el almacenamiento seguro de todos los productos comunes de piscina.","overview":"El almacenamiento inadecuado de productos químicos es una de las principales causas de incendios, incidentes de exposición a gases y degradación de productos relacionados con piscinas.","notes":[],"tables":[{"title":"Requisitos de Almacenamiento según el Tipo de Producto"}],"checklists":[{"title":"Lista de Verificación de Seguridad en el Almacenamiento","items":["Almacene todos los productos químicos en sus envases originales y etiquetados, con las tapas bien cerradas.","Mantenga los productos de cloro al menos a 10 pies de distancia de los productos ácidos.","Almacene en un área fresca y ventilada — nunca bajo luz solar directa ni en un auto o maletero caliente.","Proteja contra el acceso no autorizado, especialmente de niños e invitados.","Mantenga accesibles las Hojas de Datos de Seguridad (SDS).","Inspeccione los envases mensualmente para detectar daños, fugas o hinchazón.","Deseche los productos degradados según las normas locales de residuos peligrosos."]}]},
     slug: 'reference/chemical-storage-guide',
     title: 'Pool Chemical Storage Guide',
     description: 'Safe storage requirements for pool and spa chemicals, including temperature limits, separation rules, and container requirements.',
@@ -631,7 +631,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022', 'OSHA — Chemical Safety Standards'],
   },
   {
-    id: 'ref-18',
+    id: 'ref-18', es: {"title":"Guía de Seguridad para Productos Químicos de Piscina","description":"Pautas de seguridad esenciales para manipular, agregar y almacenar productos químicos de piscina — incluyendo qué hacer en caso de exposición.","summary":"Los productos químicos de piscina son eficaces, pero requieren un manejo cuidadoso. Esta guía cubre el equipo de protección personal, las reglas de mezcla segura y la respuesta ante emergencias.","overview":"La mayoría de los accidentes con productos químicos de piscina se pueden prevenir con prácticas básicas de seguridad. Los incidentes más peligrosos involucran la mezcla de cloro y ácido, y el almacenamiento de productos cerca de materiales inflamables.","notes":["Mantenga visible el número del Centro de Toxicología (EE. UU.: 1-800-222-1222) cerca del área de la piscina.","Mantenga las hojas de datos de seguridad (SDS) de todos los productos químicos de piscina en un lugar accesible."],"checklists":[{"title":"Equipo de Protección Personal (EPP)","items":["Lentes o gafas de seguridad — obligatorios al manipular cualquier producto químico de piscina.","Guantes resistentes a productos químicos (nitrilo o goma) — obligatorios para ácido líquido y choque.","Pantalones largos y calzado cerrado — recomendados para toda manipulación de productos químicos.","Trabaje en un área bien ventilada o al aire libre — evite respirar los vapores químicos.","Nunca manipule productos químicos de piscina en espacios cerrados."]},{"title":"Prácticas Seguras para Agregar Productos Químicos","items":["Siempre agregue los productos químicos al agua, nunca el agua al producto — evita salpicaduras y reacciones violentas.","Predisuelva los productos granulares en un balde con agua de la piscina antes de agregarlos.","Agregue los productos cerca de los retornos de agua con la bomba en funcionamiento, para una distribución uniforme.","Nunca agregue dos productos químicos a la piscina al mismo tiempo ni en el mismo lugar.","Espere al menos 30 minutos entre distintas adiciones de productos químicos.","Nunca agregue productos químicos directamente en la canasta del skimmer.","Mida con cuidado — use tazas medidoras o una balanza; nunca calcule a ojo."]},{"title":"Respuesta ante Emergencias","items":["Exposición ocular: enjuague de inmediato con abundante agua durante al menos 15 minutos; busque atención médica.","Exposición en la piel: quítese la ropa contaminada; enjuague la piel con agua durante 15 minutos.","Inhalación (vapores químicos): traslade a la persona a un área con aire fresco de inmediato; busque atención médica si la respiración es difícil.","Ingestión: no induzca el vómito; llame de inmediato al Centro de Toxicología (1-800-222-1222 en EE. UU.).","Incendio por reacción química: evacúe y llame al 911; no intente apagar incendios químicos sin capacitación."]}]},
     slug: 'reference/chemical-safety',
     title: 'Pool Chemical Safety Guide',
     description: 'Essential safety guidelines for handling, adding, and storing pool chemicals — including what to do in case of exposure.',
@@ -679,7 +679,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022', 'CPSC — Pool Chemical Safety'],
   },
   {
-    id: 'ref-19',
+    id: 'ref-19', es: {"title":"Guía de Frecuencia de Análisis para Piscinas y Spas","description":"Guía de referencia sobre con qué frecuencia analizar cada parámetro de la química del agua de la piscina y el spa.","summary":"No todos los parámetros de la piscina necesitan la misma frecuencia de análisis. Esta guía especifica el calendario de pruebas recomendado para cada parámetro.","overview":"La frecuencia de análisis debe coincidir con la velocidad a la que cambia cada parámetro. El cloro libre y el pH cambian rápidamente; la dureza y el CYA cambian lentamente.","notes":["Analice el agua después de cualquier tormenta importante — la lluvia diluye todos los parámetros de forma proporcional.","Analice de inmediato si la claridad del agua cambia inesperadamente.","Analice después de cualquier adición grande de productos químicos para verificar que el ajuste funcionó correctamente."],"tables":[{"title":"Frecuencia de Análisis Recomendada"}]},
     slug: 'reference/testing-frequency',
     title: 'Pool & Spa Testing Frequency Guide',
     description: 'Reference guide for how often to test each pool and spa water chemistry parameter.',
@@ -709,7 +709,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022'],
   },
   {
-    id: 'ref-20',
+    id: 'ref-20', es: {"title":"Lista de Verificación Completa de Balance del Agua","description":"Lista de verificación paso a paso para balancear la química del agua de la piscina o el hot tub desde cero, o después de un evento químico importante.","summary":"Una lista de verificación imprimible, paso a paso, para el balance completo del agua en el orden correcto.","overview":"Siga estos pasos en orden. No omita pasos ni combine ajustes.","notes":["Siempre ajuste la alcalinidad antes que el pH.","Siempre ajuste el pH antes que el cloro.","La verificación final con el LSI asegura que todos los parámetros funcionen bien en conjunto."],"checklists":[{"title":"Procedimiento Completo de Balance del Agua","items":["Paso 1: Analice todos los parámetros — cloro libre, cloro total, cloro combinado, pH, alcalinidad total, dureza cálcica, CYA.","Paso 2: Registre todas las lecturas en su bitácora de análisis de agua.","Paso 3: Ajuste la alcalinidad total a 80–120 ppm. Use bicarbonato de sodio para subir; ácido muriático para bajar.","Paso 4: Espere de 4 a 6 horas. Mantenga la bomba en funcionamiento continuo.","Paso 5: Vuelva a analizar la alcalinidad y el pH.","Paso 6: Ajuste el pH a 7.2–7.6 si es necesario. Use carbonato de sodio para subir; ácido muriático para bajar.","Paso 7: Espere 2 horas. Mantenga la bomba en funcionamiento continuo.","Paso 8: Ajuste la dureza cálcica si es necesario. Use cloruro de calcio para subir; un drenaje parcial para bajar.","Paso 9: Ajuste el CYA si es necesario (solo piscinas al aire libre). Use ácido cianúrico para subir; un drenaje parcial para bajar.","Paso 10: Ajuste el cloro libre a 1–3 ppm usando cloro líquido o choque de cal-hipo.","Paso 11: Calcule y registre el LSI a la temperatura actual del agua.","Paso 12: Verifique que todos los parámetros estén dentro de rango. Documente el balance completado."]}]},
     slug: 'reference/water-balance-checklist',
     title: 'Complete Water Balance Checklist',
     description: 'Step-by-step checklist for balancing pool or hot tub water chemistry from scratch or after a significant chemistry event.',
@@ -742,7 +742,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022'],
   },
   {
-    id: 'ref-21',
+    id: 'ref-21', es: {"title":"Calendario de Mantenimiento para Piscinas de Alquiler Vacacional","description":"Calendario de mantenimiento completo para la gestión de piscinas y hot tubs en propiedades de alquiler vacacional, cubriendo tareas diarias, de cambio de huéspedes, semanales y mensuales.","summary":"Un calendario de mantenimiento completo e imprimible para gestionar la química de la piscina o el spa en una propiedad de alquiler vacacional.","overview":"Este calendario garantiza una gestión constante de la piscina en propiedades de alquiler vacacional, sin importar la frecuencia de huéspedes ni el nivel de ocupación.","notes":["Registre todos los análisis y tratamientos en la bitácora química de la piscina.","El análisis previo al cambio de huéspedes garantiza que la piscina esté lista para los que llegan.","Cierre la piscina a los huéspedes si el cloro libre está por debajo de 1 ppm (piscina) o 3 ppm (hot tub) hasta corregirlo."],"tables":[{"title":"Frecuencia de Tareas y Responsabilidad"}]},
     slug: 'reference/vacation-rental-maintenance-schedule',
     title: 'Vacation Rental Pool Maintenance Schedule',
     description: 'Complete maintenance schedule for vacation rental pool and hot tub management, covering daily, turnover, weekly, and monthly tasks.',
@@ -776,7 +776,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022'],
   },
   {
-    id: 'ref-22',
+    id: 'ref-22', es: {"title":"Protocolo de Recuperación de Emergencia para Piscinas","description":"Protocolo de recuperación de emergencia, paso a paso, para piscinas y hot tubs con la química del agua gravemente comprometida.","summary":"Cuando una piscina se encuentra verde, turbia o sin cloro, este protocolo de recuperación restablece agua segura en 24 a 72 horas.","overview":"Las emergencias de piscina requieren un tratamiento sistemático en el orden correcto. Apurar el proceso u omitir pasos aumenta el tiempo de recuperación.","notes":["Nunca permita el ingreso de huéspedes a la piscina durante la recuperación.","Registre el evento y todas las acciones correctivas.","Si la recuperación toma más de 72 horas, considere si es necesario un drenaje parcial."],"checklists":[{"title":"Evaluación Inicial","items":["Cierre la piscina a todos los usuarios de inmediato.","Analice: cloro libre, cloro total, cloro combinado, pH, alcalinidad total, CYA, y anote el color y la claridad del agua.","Identifique la causa probable: falla de la bomba, alimentador vacío, CYA alto, período prolongado sin mantenimiento.","Fotografíe el estado actual (para fines de responsabilidad).","Verifique que la bomba esté funcionando y que el filtro opere a presión normal."]},{"title":"Recuperación de Piscina Verde (Brote de Algas)","items":["Paso 1: Baje el pH a 7.2 usando ácido muriático — esto maximiza la actividad del cloro.","Paso 2: Cepille vigorosamente todas las superficies de la piscina para romper la biopelícula de algas.","Paso 3: Agregue choque hasta alcanzar 30 ppm de cloro libre — por encima del valor preestablecido más alto de la calculadora de choque (20 ppm), así que aplique directamente la fórmula de dosis de choque para obtener una cifra exacta.","Paso 4: Haga funcionar el filtro de forma continua durante 24 horas.","Paso 5: Analice el cloro libre cada 4 a 6 horas. Si está por debajo de 10 ppm, agregue más cloro para mantenerlo en 10 ppm o más.","Paso 6: Cuando el agua se torne gris blanquecina, aspire las algas muertas hacia el desagüe. Haga un retrolavado del filtro.","Paso 7: Continúe filtrando hasta que el cloro libre baje naturalmente a 5 ppm o menos.","Paso 8: Realice un análisis de balance completo y corrija todos los parámetros.","Paso 9: Fotografíe el agua recuperada y registre el evento.","Paso 10: Identifique la causa raíz y ajuste el mantenimiento para evitar que se repita."]},{"title":"Agua Moderadamente Comprometida (Turbia, CC Alto)","items":["Paso 1: Analice y registre todos los parámetros.","Paso 2: Ajuste el pH a 7.2–7.4.","Paso 3: Aplique choque hasta 10 ppm de cloro libre.","Paso 4: Agregue clarificador una vez corregida la química.","Paso 5: Haga funcionar el filtro durante 24 horas.","Paso 6: Vuelva a analizar y balancee todos los parámetros."]}]},
     slug: 'reference/emergency-recovery',
     title: 'Emergency Pool Recovery Protocol',
     description: 'Step-by-step emergency recovery protocol for pools and hot tubs discovered with severely compromised water chemistry.',
@@ -828,7 +828,7 @@ module.exports = [
     sources: ['Pool & Hot Tub Alliance — Pool & Spa Operator Handbook, 2022'],
   },
   {
-    id: 'ref-23',
+    id: 'ref-23', es: {"title":"Tablas de Conversión de Productos Químicos para Piscina","description":"Tablas de conversión para medidas comunes de la química de piscina, incluyendo onzas a gramos, galones a litros y conversiones de ppm.","summary":"Referencia rápida de conversión para las unidades de la química de la piscina — onzas líquidas, libras, litros, galones y ppm.","overview":"Estas conversiones son útiles al comparar productos vendidos en distintas unidades, o al dosificar a partir de una fuente internacional.","notes":["En todo este sitio se usan galones estadounidenses — 1 galón estadounidense = 0.8327 galones imperiales."],"tables":[{"title":"Conversiones de Volumen"},{"title":"Weight Conversions"},{"title":"Concentration Conversions"}]},
     slug: 'reference/chemical-conversion-tables',
     title: 'Pool Chemical Conversion Tables',
     description: 'Conversion tables for common pool chemistry measurements including ounces to grams, gallons to liters, and ppm conversions.',
@@ -876,7 +876,7 @@ module.exports = [
     sources: [],
   },
   {
-    id: 'ref-24',
+    id: 'ref-24', es: {"title":"Índice de Recursos Imprimibles para Piscina","description":"Índice de todos los recursos imprimibles gratuitos de mantenimiento de piscina y spa disponibles para descargar en WaterBalanceTools.","summary":"Todas las bitácoras, listas de verificación y hojas de referencia imprimibles, disponibles para descarga gratuita — organizadas según el uso.","overview":"Estos recursos imprimibles gratuitos ayudan a los propietarios de piscinas y spas a mantener registros consistentes y seguir las mejores prácticas.","notes":[],"tables":[{"title":"Recursos Imprimibles Disponibles"}]},
     slug: 'reference/printable-resources-index',
     title: 'Printable Pool Resources Index',
     description: 'Index of all free printable pool and spa maintenance resources available for download on WaterBalanceTools.',
@@ -906,7 +906,7 @@ module.exports = [
     sources: [],
   },
   {
-    id: 'ref-25',
+    id: 'ref-25', es: {"title":"Directorio de Calculadoras para Piscina y Spa","description":"Directorio completo de todas las calculadoras de piscina y spa de WaterBalanceTools, organizado por categoría.","summary":"Todas las calculadoras de química de piscina y spa en un solo lugar — encuentre la calculadora adecuada para cualquier dosis química o medición de la piscina.","overview":"WaterBalanceTools ofrece calculadoras gratuitas para todos los cálculos comunes de química de piscina y spa. Todas las calculadoras se basan en fórmulas publicadas de la industria.","notes":["Todas las calculadoras son gratuitas y no requieren cuenta ni inicio de sesión.","Guarde la Calculadora Química como su herramienta de referencia para el balance integral del agua."],"tables":[{"title":"Calculadoras de Química de Piscina"},{"title":"Hot Tub & Spa Calculators"}]},
     slug: 'reference/calculator-directory',
     title: 'Pool & Spa Calculator Directory',
     description: 'Complete directory of all pool and spa calculators on WaterBalanceTools, organized by category.',

@@ -17,6 +17,7 @@ const path = require('path');
 const {
   fill, template, partial, SITE_HEADER, SITE_FOOTER, esc,
   buildBreadcrumb, buildRefContent, writeFile, ROOT, href, canonicalUrl, buildUrl,
+  localizeRecord, chrome,
 } = require('./template-utils');
 const { htmlLangAttr } = require('../js/i18n/html-lang');
 const { getLocalizedCanonical } = require('../js/i18n/locale-url');
@@ -109,33 +110,53 @@ ${SITE_FOOTER}
 function generateRefPage(page, locale) {
   const effectiveLocale = locale || 'en';
   const tpl = template('reference-template.html');
-  const bc = buildBreadcrumb(buildUrl(page.slug), page.title);
+  // Phase 8N: localizeRecord() overlays page.es (title/description/
+  // summary/overview/notes/checklists, and per-table titles only --
+  // headers/rows stay English, a documented scope limitation) for
+  // locale 'es'.
+  const p = localizeRecord(page, effectiveLocale);
+  const bc = buildBreadcrumb(buildUrl(page.slug), p.title, effectiveLocale);
+
   // Drop the "| Reference" segment only when the full title would exceed
   // the 65-char SEO threshold -- keeps the category marker on every page
   // where it fits, per Phase 7I (7 of ~70 reference titles needed this).
-  const titleWithCategory = `${page.title} | Reference | WaterBalanceTools`;
-  const pageTitle = titleWithCategory.length <= 65 ? titleWithCategory : `${page.title} | WaterBalanceTools`;
+  const categoryLabel = effectiveLocale === 'es' ? 'Referencia' : 'Reference';
+  const titleWithCategory = `${p.title} | ${categoryLabel} | WaterBalanceTools`;
+  const pageTitle = titleWithCategory.length <= 65 ? titleWithCategory : `${p.title} | WaterBalanceTools`;
 
   return fill(tpl, {
     SLUG:              page.slug,
     HTML_LANG_ATTR:    htmlLangAttr(effectiveLocale),
     CANONICAL_URL:     getLocalizedCanonical('/' + page.slug, effectiveLocale),
     PAGE_TITLE:        pageTitle,
-    H1_TITLE:          page.title,
-    META_DESCRIPTION:  page.description,
+    H1_TITLE:          p.title,
+    META_DESCRIPTION:  p.description,
     LAST_REVIEWED:     page.lastReviewed || '2026-06-01',
     BREADCRUMB:        bc.nav,
     BREADCRUMB_SCHEMA: bc.schema,
+    ARIA_PRIMARY_NAV:    chrome('ariaPrimaryNav', effectiveLocale),
+    NAV_CALCULATOR_HREF: chrome('navCalculatorHref', effectiveLocale),
+    NAV_CALCULATOR_LABEL: chrome('navCalculatorLabel', effectiveLocale),
+    NAV_RESOURCES:       chrome('navResources', effectiveLocale),
+    NAV_CHARTS:          chrome('navCharts', effectiveLocale),
+    NAV_ACADEMY:         chrome('navAcademy', effectiveLocale),
+    NAV_GUIDES:          chrome('navGuides', effectiveLocale),
+    NAV_ABOUT:           chrome('navAbout', effectiveLocale),
+    ARIA_SEARCH:         chrome('ariaSearch', effectiveLocale),
+    ARIA_OPEN_MENU:      chrome('ariaOpenMenu', effectiveLocale),
+    LAST_REVIEWED_LABEL: chrome('lastReviewedLabel', effectiveLocale),
     HERO: fill(partial('knowledge-hero.html'), {
-      BADGE:         'Reference',
+      BADGE:         categoryLabel,
       BADGE_CLASS:   'knowledge-badge--reference',
-      READING_TIME:  page.readingTime || '2 min read',
+      READING_TIME:  page.readingTime || (effectiveLocale === 'es' ? '2 min de lectura' : '2 min read'),
       LAST_REVIEWED: page.lastReviewed || '2026-06-01',
-      TITLE:         esc(page.title),
-      SUMMARY:       esc(page.summary || ''),
-      CHIPS:         '<a href="#overview" class="knowledge-chip">Overview</a>',
+      TITLE:         esc(p.title),
+      SUMMARY:       esc(p.summary || ''),
+      CHIPS:         effectiveLocale === 'es'
+        ? '<a href="#overview" class="knowledge-chip">Resumen</a>'
+        : '<a href="#overview" class="knowledge-chip">Overview</a>',
     }),
-    CONTENT:           buildRefContent(page, effectiveLocale),
+    CONTENT:           buildRefContent(p, effectiveLocale),
     SIDEBAR:           '',
     RELATED_TOOLS:     '',
     RELATED_TOPICS:    '',
@@ -160,3 +181,7 @@ for (const page of (data.pages || [])) {
 }
 
 console.log(`generate-reference: wrote ${written} files (${(data.pages || []).length} new reference pages)`);
+
+// Phase 8N: exported so scripts/generate-spanish-knowledge-cluster.js can
+// call generateRefPage(page, 'es') without a second implementation.
+module.exports = { generateRefPage, data };

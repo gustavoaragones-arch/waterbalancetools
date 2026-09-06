@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T17:54:24.757Z",
+  "generatedAt": "2026-09-06T00:28:36.710Z",
   "rulesVersion": "1.0",
   "rules": [
     {
@@ -779,6 +779,78 @@
       "reason": "Assigned from URL taxonomy (academy)."
     },
     {
+      "url": "/es/formulas/alkalinity-formula",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/formulas",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/formulas/cya-formula",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/formulas",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/formulas/liquid-chlorine-formula",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/formulas",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/formulas/lsi-formula",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/formulas",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/formulas/ph-adjustment-formula",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/formulas",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/formulas/pool-volume-formula",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/formulas",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/formulas/salt-formula",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/formulas",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/formulas/shock-formula",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/formulas",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/formulas/turnover-formula",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/formulas",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
       "url": "/formulas",
       "pageType": "other",
       "crawlTier": "Tier 3",
@@ -857,6 +929,438 @@
       "hub": "/formulas/turnover-formula",
       "indexable": true,
       "reason": "Assigned from URL taxonomy (formula)."
+    },
+    {
+      "url": "/es/glossary/aggressive-water",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/algae-bloom",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/black-algae",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/breakpoint-chlorination",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/breakpoint-dose",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/bromine",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/calcium-hardness",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/calcium-hypochlorite",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/chloramine",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/chlorine-demand",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/chlorine-stabilizer",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/closing-chemical-kit",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/combined-chlorine",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/conductivity",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/cyanuric-acid",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/dichlor",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/dilution",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/free-chlorine",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/gpm",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/green-algae",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/hypochlorous-acid",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/langelier-saturation-index",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/muriatic-acid",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/mustard-algae",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/opening-chemical-kit",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/oxidizer",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/partial-drain",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/parts-per-million",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/ph",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/ph-bounce",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/ph-increaser",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/pool-chemistry-reference",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/pool-pump",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/pool-shock-schedule",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/pool-turnover-rate",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/pool-volume",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/pool-volume-reference",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/pump-turnover",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/salt-chlorination",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/sanitizer",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/saturated-ph",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/saturation-index",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/scaling-water",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/shock",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/shock-dosage",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/sodium-bicarbonate",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/sodium-bisulfate",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/sodium-carbonate",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/sodium-hypochlorite",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/superchlorination",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/total-alkalinity",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/total-chlorine",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/trichlor",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/glossary/water-balance-checklist",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/glossary",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
     },
     {
       "url": "/glossary",
@@ -1665,6 +2169,206 @@
       "hub": "/glossary/winterization",
       "indexable": true,
       "reason": "Assigned from URL taxonomy (glossary)."
+    },
+    {
+      "url": "/es/reference/alkalinity-table",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/calculator-directory",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/chemical-compatibility",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/chemical-conversion-tables",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/chemical-safety",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/chemical-storage-guide",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/chlorine-effectiveness-chart",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/cya-matrix",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/emergency-recovery",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/filter-comparison",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/ideal-pool-levels",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/ideal-spa-levels",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/ph-table",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/pool-chemical-timeline",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/pool-shape-guide",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/pool-volume-reference",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/printable-resources-index",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/pump-sizing",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/recommended-water-temperature",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/salt-matrix",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/shock-dosage-matrix",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/testing-frequency",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/vacation-rental-maintenance-schedule",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/water-balance-checklist",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
+    },
+    {
+      "url": "/es/reference/water-replacement-guidelines",
+      "pageType": "other",
+      "crawlTier": "Tier 3",
+      "hub": "/es/reference",
+      "indexable": true,
+      "reason": "Assigned from URL taxonomy (other)."
     },
     {
       "url": "/reference",

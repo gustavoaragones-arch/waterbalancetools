@@ -16,19 +16,19 @@
     <a href="/" class="logo-link">
       <img src="/public/logo.svg" alt="WaterBalanceTools" class="logo" width="185" height="56">
     </a>
-    <nav class="nav" id="site-nav" aria-label="Primary navigation">
-      <a href="/calculators/chemical-calculator">Calculator</a>
-      <a href="/resources/">Resources</a>
-      <a href="/pool-chemical-levels-chart">Charts</a>
-      <a href="/academy/">Academy</a>
-      <a href="/guides/pool-chemistry-basics">Guides</a>
-      <a href="/about/">About</a>
+    <nav class="nav" id="site-nav" aria-label="{{ARIA_PRIMARY_NAV}}">
+      <a href="{{NAV_CALCULATOR_HREF}}">{{NAV_CALCULATOR_LABEL}}</a>
+      <a href="/resources/">{{NAV_RESOURCES}}</a>
+      <a href="/pool-chemical-levels-chart">{{NAV_CHARTS}}</a>
+      <a href="/academy/">{{NAV_ACADEMY}}</a>
+      <a href="/guides/pool-chemistry-basics">{{NAV_GUIDES}}</a>
+      <a href="/about/">{{NAV_ABOUT}}</a>
     </nav>
     <div class="nav-end">
-      <a href="/search/" class="nav-search" aria-label="Search site">
+      <a href="/search/" class="nav-search" aria-label="{{ARIA_SEARCH}}">
         <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
       </a>
-      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="{{ARIA_OPEN_MENU}}" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -49,7 +49,7 @@
         {{RELATED_TOOLS}}
         {{RELATED_TOPICS}}
         {{KNOWLEDGE_FOOTER}}
-        <p class="knowledge-sources"><em>Last reviewed: {{LAST_REVIEWED}}</em></p>
+        <p class="knowledge-sources"><em>{{LAST_REVIEWED_LABEL}} {{LAST_REVIEWED}}</em></p>
       </div>
     </div>
 

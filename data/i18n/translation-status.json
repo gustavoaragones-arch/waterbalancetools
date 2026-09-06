@@ -1,117 +1,201 @@
 {
-  "_comment": "Phase 8D established this translation-completeness model (docs/PHASE-8D-MULTILINGUAL-ARCHITECTURE.md, spec Section 24) with 8 representative fixtures, all 'missing' in es. Phase 8E (docs/PHASE-8E-SPANISH-ROLLOUT.md) activated the first real Spanish production cluster: the 5 pool calculator units below moved from 'missing' to 'translated' only after their Spanish pages were generated, validated (schema-valid, non-broken links, self-referential canonical, correct html lang), and confirmed reproducible via scripts/generate-spanish-cluster.js. Phase 8G (docs/PHASE-8G-SPANISH-SPA-CLUSTER.md) added the 4 hot-tub/spa calculator units below under the identical validate-before-flip discipline. Phase 8I (docs/PHASE-8I-SPANISH-CALCULATOR-EXPANSION.md) added the remaining 4 Water Chemistry cluster units under the same discipline, completing the site's 'Water Chemistry (5)' related-calculators navigation group in Spanish. Phase 8L (docs/PHASE-8L-SPANISH-REFERENCE-LOCALIZATION-ARCHITECTURE.md) audited the 7 remaining non-calculator fixtures and decided that glossary/formula/reference content IDs must reuse each source record's own native id field rather than a slug-derived name. Phase 8M (docs/PHASE-8M-CORE-REFERENCE-LOCALIZATION-IMPLEMENTATION.md) applied that migration to the 3 non-conforming fixtures ('_migratedFrom' records the pre-migration contentId; 'en'/'es' status values were carried over unchanged, still 'missing' in es -- this migration renamed an identity key, it did not translate anything). academy:fund-01 and entity:algae already matched the native-ID convention and were left unchanged. guide:ph-can-you-swim-in-high-ph-water and programmatic:chlorine-10000-gallon have no external native-ID data source and were left unchanged. This is a STATUS tracker, not a content store -- it never holds translated text.",
-  "_generated": "2026-09-02",
+  "_comment": "Phase 8D established this translation-completeness model (docs/PHASE-8D-MULTILINGUAL-ARCHITECTURE.md, spec Section 24) with 8 representative fixtures, all 'missing' in es. Phase 8E (docs/PHASE-8E-SPANISH-ROLLOUT.md) activated the first real Spanish production cluster: the 5 pool calculator units below moved from 'missing' to 'translated' only after their Spanish pages were generated, validated (schema-valid, non-broken links, self-referential canonical, correct html lang), and confirmed reproducible via scripts/generate-spanish-cluster.js. Phase 8G (docs/PHASE-8G-SPANISH-SPA-CLUSTER.md) added the 4 hot-tub/spa calculator units below under the identical validate-before-flip discipline. Phase 8I (docs/PHASE-8I-SPANISH-CALCULATOR-EXPANSION.md) added the remaining 4 Water Chemistry cluster units under the same discipline, completing the site's 'Water Chemistry (5)' related-calculators navigation group in Spanish. Phase 8L (docs/PHASE-8L-SPANISH-REFERENCE-LOCALIZATION-ARCHITECTURE.md) audited the 7 remaining non-calculator fixtures and decided that glossary/formula/reference content IDs must reuse each source record's own native id field rather than a slug-derived name. Phase 8M (docs/PHASE-8M-CORE-REFERENCE-LOCALIZATION-IMPLEMENTATION.md) applied that migration to the 3 non-conforming fixtures ('_migratedFrom' records the pre-migration contentId; 'en'/'es' status values were carried over unchanged, still 'missing' in es -- this migration renamed an identity key, it did not translate anything). academy:fund-01 and entity:algae already matched the native-ID convention and were left unchanged. guide:ph-can-you-swim-in-high-ph-water and programmatic:chlorine-10000-gallon have no external native-ID data source and were left unchanged. This is a STATUS tracker, not a content store -- it never holds translated text. Phase 8N (docs/PHASE-8N-SPANISH-CORE-REFERENCE-PRODUCTION.md) activated the first real Spanish production cluster for Glossary/Formulas/Reference: the pre-existing glossary:gl-001, formula:formula-01, and reference:ref-01 units (migrated-but-untranslated since Phase 8M) moved to es: translated in place, and 85 new native-ID units were added (53 glossary, 8 formula, 24 reference) -- all only after their Spanish pages were generated, validated, and confirmed reproducible via scripts/generate-spanish-knowledge-cluster.js. This is a controlled first cluster, not complete Spanish coverage of these three families: 46 glossary terms, and every legacy/noindex Reference page, remain es: missing or out of scope.",
+  "_generated": "2026-09-06",
   "units": [
     {
       "contentId": "calculator:chemical",
       "category": "calculator",
       "languages": {
-        "en": { "status": "translated", "url": "/calculators/chemical-calculator" },
-        "es": { "status": "translated", "url": "/es/calculators/chemical-calculator" }
+        "en": {
+          "status": "translated",
+          "url": "/calculators/chemical-calculator"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/calculators/chemical-calculator"
+        }
       }
     },
     {
       "contentId": "calculator:pool-volume",
       "category": "calculator",
       "languages": {
-        "en": { "status": "translated", "url": "/calculators/pool-volume-calculator" },
-        "es": { "status": "translated", "url": "/es/calculators/pool-volume-calculator" }
+        "en": {
+          "status": "translated",
+          "url": "/calculators/pool-volume-calculator"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/calculators/pool-volume-calculator"
+        }
       }
     },
     {
       "contentId": "calculator:pool-chlorine",
       "category": "calculator",
       "languages": {
-        "en": { "status": "translated", "url": "/calculators/pool-chlorine-calculator" },
-        "es": { "status": "translated", "url": "/es/calculators/pool-chlorine-calculator" }
+        "en": {
+          "status": "translated",
+          "url": "/calculators/pool-chlorine-calculator"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/calculators/pool-chlorine-calculator"
+        }
       }
     },
     {
       "contentId": "calculator:pool-ph",
       "category": "calculator",
       "languages": {
-        "en": { "status": "translated", "url": "/calculators/pool-ph-calculator" },
-        "es": { "status": "translated", "url": "/es/calculators/pool-ph-calculator" }
+        "en": {
+          "status": "translated",
+          "url": "/calculators/pool-ph-calculator"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/calculators/pool-ph-calculator"
+        }
       }
     },
     {
       "contentId": "calculator:pool-shock",
       "category": "calculator",
       "languages": {
-        "en": { "status": "translated", "url": "/calculators/pool-shock-calculator" },
-        "es": { "status": "translated", "url": "/es/calculators/pool-shock-calculator" }
+        "en": {
+          "status": "translated",
+          "url": "/calculators/pool-shock-calculator"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/calculators/pool-shock-calculator"
+        }
       }
     },
     {
       "contentId": "calculator:hot-tub-chlorine",
       "category": "calculator",
       "languages": {
-        "en": { "status": "translated", "url": "/calculators/hot-tub-chlorine-calculator" },
-        "es": { "status": "translated", "url": "/es/calculators/hot-tub-chlorine-calculator" }
+        "en": {
+          "status": "translated",
+          "url": "/calculators/hot-tub-chlorine-calculator"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/calculators/hot-tub-chlorine-calculator"
+        }
       }
     },
     {
       "contentId": "calculator:hot-tub-ph",
       "category": "calculator",
       "languages": {
-        "en": { "status": "translated", "url": "/calculators/hot-tub-ph-calculator" },
-        "es": { "status": "translated", "url": "/es/calculators/hot-tub-ph-calculator" }
+        "en": {
+          "status": "translated",
+          "url": "/calculators/hot-tub-ph-calculator"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/calculators/hot-tub-ph-calculator"
+        }
       }
     },
     {
       "contentId": "calculator:hot-tub-shock",
       "category": "calculator",
       "languages": {
-        "en": { "status": "translated", "url": "/calculators/hot-tub-shock-calculator" },
-        "es": { "status": "translated", "url": "/es/calculators/hot-tub-shock-calculator" }
+        "en": {
+          "status": "translated",
+          "url": "/calculators/hot-tub-shock-calculator"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/calculators/hot-tub-shock-calculator"
+        }
       }
     },
     {
       "contentId": "calculator:spa-volume",
       "category": "calculator",
       "languages": {
-        "en": { "status": "translated", "url": "/calculators/spa-volume-calculator" },
-        "es": { "status": "translated", "url": "/es/calculators/spa-volume-calculator" }
+        "en": {
+          "status": "translated",
+          "url": "/calculators/spa-volume-calculator"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/calculators/spa-volume-calculator"
+        }
       }
     },
     {
       "contentId": "calculator:pool-alkalinity",
       "category": "calculator",
       "languages": {
-        "en": { "status": "translated", "url": "/calculators/pool-alkalinity-calculator" },
-        "es": { "status": "translated", "url": "/es/calculators/pool-alkalinity-calculator" }
+        "en": {
+          "status": "translated",
+          "url": "/calculators/pool-alkalinity-calculator"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/calculators/pool-alkalinity-calculator"
+        }
       }
     },
     {
       "contentId": "calculator:pool-cyanuric-acid",
       "category": "calculator",
       "languages": {
-        "en": { "status": "translated", "url": "/calculators/pool-cyanuric-acid-calculator" },
-        "es": { "status": "translated", "url": "/es/calculators/pool-cyanuric-acid-calculator" }
+        "en": {
+          "status": "translated",
+          "url": "/calculators/pool-cyanuric-acid-calculator"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/calculators/pool-cyanuric-acid-calculator"
+        }
       }
     },
     {
       "contentId": "calculator:pool-turnover-rate",
       "category": "calculator",
       "languages": {
-        "en": { "status": "translated", "url": "/calculators/pool-turnover-rate-calculator" },
-        "es": { "status": "translated", "url": "/es/calculators/pool-turnover-rate-calculator" }
+        "en": {
+          "status": "translated",
+          "url": "/calculators/pool-turnover-rate-calculator"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/calculators/pool-turnover-rate-calculator"
+        }
       }
     },
     {
       "contentId": "calculator:saltwater-pool-salt",
       "category": "calculator",
       "languages": {
-        "en": { "status": "translated", "url": "/calculators/saltwater-pool-salt-calculator" },
-        "es": { "status": "translated", "url": "/es/calculators/saltwater-pool-salt-calculator" }
+        "en": {
+          "status": "translated",
+          "url": "/calculators/saltwater-pool-salt-calculator"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/calculators/saltwater-pool-salt-calculator"
+        }
       }
     },
     {
       "contentId": "academy:fund-01",
       "category": "academy",
       "languages": {
-        "en": { "status": "translated", "url": "/academy/fundamentals/understanding-pool-water-chemistry" },
-        "es": { "status": "missing", "url": "/es/academy/fundamentals/understanding-pool-water-chemistry" }
+        "en": {
+          "status": "translated",
+          "url": "/academy/fundamentals/understanding-pool-water-chemistry"
+        },
+        "es": {
+          "status": "missing",
+          "url": "/es/academy/fundamentals/understanding-pool-water-chemistry"
+        }
       }
     },
     {
@@ -120,8 +204,14 @@
       "_migratedFrom": "glossary:free-chlorine",
       "_nativeSourceId": "gl-001",
       "languages": {
-        "en": { "status": "translated", "url": "/glossary/free-chlorine" },
-        "es": { "status": "missing", "url": "/es/glossary/free-chlorine" }
+        "en": {
+          "status": "translated",
+          "url": "/glossary/free-chlorine"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/free-chlorine"
+        }
       }
     },
     {
@@ -130,8 +220,14 @@
       "_migratedFrom": "formula:pool-volume",
       "_nativeSourceId": "formula-01",
       "languages": {
-        "en": { "status": "translated", "url": "/formulas/pool-volume-formula" },
-        "es": { "status": "missing", "url": "/es/formulas/pool-volume-formula" }
+        "en": {
+          "status": "translated",
+          "url": "/formulas/pool-volume-formula"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/formulas/pool-volume-formula"
+        }
       }
     },
     {
@@ -140,32 +236,1246 @@
       "_migratedFrom": "reference:ideal-pool-levels",
       "_nativeSourceId": "ref-01",
       "languages": {
-        "en": { "status": "translated", "url": "/reference/ideal-pool-levels" },
-        "es": { "status": "missing", "url": "/es/reference/ideal-pool-levels" }
+        "en": {
+          "status": "translated",
+          "url": "/reference/ideal-pool-levels"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/ideal-pool-levels"
+        }
       }
     },
     {
       "contentId": "guide:ph-can-you-swim-in-high-ph-water",
       "category": "guide",
       "languages": {
-        "en": { "status": "translated", "url": "/guides/ph/can-you-swim-in-high-ph-water" },
-        "es": { "status": "missing", "url": "/es/guides/ph/can-you-swim-in-high-ph-water" }
+        "en": {
+          "status": "translated",
+          "url": "/guides/ph/can-you-swim-in-high-ph-water"
+        },
+        "es": {
+          "status": "missing",
+          "url": "/es/guides/ph/can-you-swim-in-high-ph-water"
+        }
       }
     },
     {
       "contentId": "entity:algae",
       "category": "entity",
       "languages": {
-        "en": { "status": "translated", "url": "/entities/algae" },
-        "es": { "status": "missing", "url": "/es/entities/algae" }
+        "en": {
+          "status": "translated",
+          "url": "/entities/algae"
+        },
+        "es": {
+          "status": "missing",
+          "url": "/es/entities/algae"
+        }
       }
     },
     {
       "contentId": "programmatic:chlorine-10000-gallon",
       "category": "programmatic",
       "languages": {
-        "en": { "status": "translated", "url": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool" },
-        "es": { "status": "missing", "url": "/es/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool" }
+        "en": {
+          "status": "translated",
+          "url": "/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool"
+        },
+        "es": {
+          "status": "missing",
+          "url": "/es/programmatic/chlorine/how-much-chlorine-for-10000-gallon-pool"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-002",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/combined-chlorine"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/combined-chlorine"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-003",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/total-chlorine"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/total-chlorine"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-004",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/breakpoint-chlorination"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/breakpoint-chlorination"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-005",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/sanitizer"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/sanitizer"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-006",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/oxidizer"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/oxidizer"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-007",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/shock"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/shock"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-008",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/ph"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/ph"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-009",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/total-alkalinity"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/total-alkalinity"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-010",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/calcium-hardness"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/calcium-hardness"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-011",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/cyanuric-acid"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/cyanuric-acid"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-012",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/langelier-saturation-index"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/langelier-saturation-index"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-017",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/pump-turnover"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/pump-turnover"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-021",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/superchlorination"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/superchlorination"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-022",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/chloramine"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/chloramine"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-023",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/dichlor"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/dichlor"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-024",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/trichlor"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/trichlor"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-025",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/calcium-hypochlorite"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/calcium-hypochlorite"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-026",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/sodium-hypochlorite"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/sodium-hypochlorite"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-027",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/bromine"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/bromine"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-029",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/salt-chlorination"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/salt-chlorination"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-032",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/muriatic-acid"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/muriatic-acid"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-033",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/sodium-carbonate"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/sodium-carbonate"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-034",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/sodium-bicarbonate"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/sodium-bicarbonate"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-035",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/sodium-bisulfate"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/sodium-bisulfate"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-036",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/ph-bounce"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/ph-bounce"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-037",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/chlorine-stabilizer"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/chlorine-stabilizer"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-038",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/hypochlorous-acid"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/hypochlorous-acid"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-039",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/algae-bloom"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/algae-bloom"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-040",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/green-algae"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/green-algae"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-041",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/black-algae"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/black-algae"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-042",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/mustard-algae"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/mustard-algae"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-053",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/parts-per-million"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/parts-per-million"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-056",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/chlorine-demand"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/chlorine-demand"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-057",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/pool-volume"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/pool-volume"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-058",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/pool-pump"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/pool-pump"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-060",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/gpm"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/gpm"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-061",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/aggressive-water"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/aggressive-water"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-062",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/scaling-water"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/scaling-water"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-068",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/dilution"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/dilution"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-072",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/saturation-index"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/saturation-index"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-074",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/partial-drain"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/partial-drain"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-075",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/pool-turnover-rate"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/pool-turnover-rate"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-080",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/opening-chemical-kit"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/opening-chemical-kit"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-081",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/closing-chemical-kit"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/closing-chemical-kit"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-085",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/conductivity"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/conductivity"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-086",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/shock-dosage"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/shock-dosage"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-087",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/pool-volume-reference"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/pool-volume-reference"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-089",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/saturated-ph"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/saturated-ph"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-090",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/water-balance-checklist"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/water-balance-checklist"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-091",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/pool-chemistry-reference"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/pool-chemistry-reference"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-093",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/pool-shock-schedule"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/pool-shock-schedule"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-096",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/breakpoint-dose"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/breakpoint-dose"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-100",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/ph-increaser"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/ph-increaser"
+        }
+      }
+    },
+    {
+      "contentId": "formula:formula-02",
+      "category": "formula",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/formulas/liquid-chlorine-formula"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/formulas/liquid-chlorine-formula"
+        }
+      }
+    },
+    {
+      "contentId": "formula:formula-03",
+      "category": "formula",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/formulas/shock-formula"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/formulas/shock-formula"
+        }
+      }
+    },
+    {
+      "contentId": "formula:formula-04",
+      "category": "formula",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/formulas/ph-adjustment-formula"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/formulas/ph-adjustment-formula"
+        }
+      }
+    },
+    {
+      "contentId": "formula:formula-05",
+      "category": "formula",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/formulas/alkalinity-formula"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/formulas/alkalinity-formula"
+        }
+      }
+    },
+    {
+      "contentId": "formula:formula-06",
+      "category": "formula",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/formulas/salt-formula"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/formulas/salt-formula"
+        }
+      }
+    },
+    {
+      "contentId": "formula:formula-07",
+      "category": "formula",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/formulas/cya-formula"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/formulas/cya-formula"
+        }
+      }
+    },
+    {
+      "contentId": "formula:formula-08",
+      "category": "formula",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/formulas/turnover-formula"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/formulas/turnover-formula"
+        }
+      }
+    },
+    {
+      "contentId": "formula:formula-09",
+      "category": "formula",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/formulas/lsi-formula"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/formulas/lsi-formula"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-02",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/ideal-spa-levels"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/ideal-spa-levels"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-03",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/recommended-water-temperature"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/recommended-water-temperature"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-04",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/chemical-compatibility"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/chemical-compatibility"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-05",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/shock-dosage-matrix"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/shock-dosage-matrix"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-06",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/salt-matrix"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/salt-matrix"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-07",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/cya-matrix"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/cya-matrix"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-08",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/alkalinity-table"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/alkalinity-table"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-09",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/ph-table"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/ph-table"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-10",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/chlorine-effectiveness-chart"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/chlorine-effectiveness-chart"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-11",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/pool-chemical-timeline"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/pool-chemical-timeline"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-12",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/filter-comparison"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/filter-comparison"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-13",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/pump-sizing"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/pump-sizing"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-14",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/water-replacement-guidelines"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/water-replacement-guidelines"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-15",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/pool-volume-reference"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/pool-volume-reference"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-16",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/pool-shape-guide"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/pool-shape-guide"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-17",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/chemical-storage-guide"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/chemical-storage-guide"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-18",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/chemical-safety"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/chemical-safety"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-19",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/testing-frequency"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/testing-frequency"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-20",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/water-balance-checklist"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/water-balance-checklist"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-21",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/vacation-rental-maintenance-schedule"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/vacation-rental-maintenance-schedule"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-22",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/emergency-recovery"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/emergency-recovery"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-23",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/chemical-conversion-tables"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/chemical-conversion-tables"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-24",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/printable-resources-index"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/printable-resources-index"
+        }
+      }
+    },
+    {
+      "contentId": "reference:ref-25",
+      "category": "reference",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/reference/calculator-directory"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/reference/calculator-directory"
+        }
       }
     }
   ]

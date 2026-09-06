@@ -211,10 +211,6 @@ execSync('node scripts/validate-entities.js', { cwd: root, stdio: 'inherit' });
 console.log('Running validate-trust.js...');
 execSync('node scripts/validate-trust.js', { cwd: root, stdio: 'inherit' });
 
-// ── Phase 5B.5: QA and launch readiness ───────────────────────────────────────
-console.log('Running generate-qa-report.js...');
-execSync('node scripts/generate-qa-report.js', { cwd: root, stdio: 'inherit' });
-
 // ── Step 14: Validate internal links (fail-fast gate) ────────────────────────
 console.log('Running check-broken-links.js...');
 execSync('node scripts/check-broken-links.js', { cwd: root, stdio: 'inherit' });
@@ -292,7 +288,35 @@ execSync('node scripts/validate-versioning.js', { cwd: root, stdio: 'inherit' })
 // same reason as generate-sitemaps.js below: require()-ing the same
 // script path twice in one process is a silent no-op.
 require(path.join(__dirname, 'generate-spanish-cluster.js'));
+
+// ── Phase 8N: Spanish Glossary/Formulas/Reference production cluster ────────
+// Renders directly from each record's embedded `es` object (Phase 8L/8M
+// data model) via the SAME generateTerm/generateFormula/generateRefPage
+// functions used for English -- not a second rendering path. Must run
+// after generate-glossary.js/generate-formulas.js/generate-reference.js
+// above (already the case: those are required near the top of this file)
+// and before inject-i18n-cluster.js below, which is what actually wires
+// the hreflang + language-switcher pair into both the new Spanish files
+// and their English counterparts, data-driven from
+// data/i18n/translation-status.json exactly as it already does for the
+// Phase 8E calculator cluster.
+require(path.join(__dirname, 'generate-spanish-knowledge-cluster.js'));
+
 require(path.join(__dirname, 'inject-i18n-cluster.js'));
+
+// Phase 8N: normalize-seo-metadata.js (required near the top of this file,
+// well before the Spanish knowledge cluster above exists on disk) fills in
+// og/twitter/robots/last-updated/content-version meta tags using
+// ensureMeta()'s idempotent "add only if missing" logic. Run via execSync
+// (a genuinely separate process -- requiring the same script path twice in
+// this process is a silent no-op, the same reason generate-navigation.js
+// below is) so the 88 new es/glossary|formulas|reference files -- which
+// did not exist yet at its first, earlier run -- actually get these tags
+// too, reading title/description straight off each file's own already-
+// correct Spanish <title>/<meta name="description">, never overwriting
+// them with English text.
+console.log('Running normalize-seo-metadata.js (post-i18n refresh)...');
+execSync('node scripts/normalize-seo-metadata.js', { cwd: root, stdio: 'inherit' });
 
 console.log('Running generate-navigation.js (post-i18n refresh)...');
 execSync('node scripts/generate-navigation.js', { cwd: root, stdio: 'inherit' });
@@ -305,6 +329,29 @@ execSync('node scripts/generate-sitemaps.js', { cwd: root, stdio: 'inherit' });
 
 console.log('Running validate-url-indexation.js (post-i18n refresh)...');
 execSync('node scripts/validate-url-indexation.js', { cwd: root, stdio: 'inherit' });
+
+// ── Phase 5B.5: QA and launch readiness ───────────────────────────────────────
+// Phase 8N: moved here from its original position immediately after
+// validate-trust.js (now just above the "Spanish production cluster"
+// section). generate-glossary.js/generate-formulas.js/generate-reference.js
+// rewrite their pages wholesale from data+template on every build (unlike
+// calculators, which are edited in place), so any earlier position sees a
+// build in the narrow window where the Phase 8N Spanish pages exist on
+// disk but their English counterparts have just been rewritten plain,
+// with inject-i18n-cluster.js's hreflang/switcher not yet re-added --
+// qa-engine.js's orphan-page audit (an inbound-internal-link count) reads
+// that transient state as ~88 orphaned pages and fails the release gate
+// on every build after the very first one, not just the first. Running
+// it after the Spanish cluster + i18n injection + nav/search/sitemap
+// refresh above means it always scores the fully-finalized site. The
+// only downstream consumer of qa-summary.json positioned BEFORE this new
+// spot, generate-version-badges.js (its cosmetic "QA nn/100" footer
+// badge), now reads the previous build's score for one cycle --
+// the same one-run-behind staleness generate-hubs.js's own
+// qa-summary.json read has always had (see its own comment), not a new
+// problem this move introduces.
+console.log('Running generate-qa-report.js...');
+execSync('node scripts/generate-qa-report.js', { cwd: root, stdio: 'inherit' });
 
 // Legacy flat tools index (kept for backward compat)
 console.log('Running generate-tools-index.js...');

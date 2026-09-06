@@ -178,6 +178,19 @@ const DIR_LABELS = {
   'academy/vacation-rentals':   'Vacation Rentals',
 };
 
+// Phase 8N: Spanish breadcrumb labels for the three hub segments this
+// phase's production cluster (Glossary/Formulas/Reference) can generate a
+// breadcrumb trail under. Hrefs for these hub crumbs are NOT translated
+// (the hub index pages themselves remain English-only, Policy A) --
+// only the visible/schema label text changes, matching the precedent
+// already shipped for the Spanish calculator cluster (breadcrumb reads
+// "Calculadoras" while linking to the English /calculators/ hub).
+const ES_DIR_LABELS = {
+  glossary:  'Glosario',
+  formulas:  'Fórmulas',
+  reference: 'Referencia',
+};
+
 /**
  * Build the breadcrumb <nav> for a clean URL path like
  * "academy/fundamentals/understanding-ph".
@@ -185,17 +198,18 @@ const DIR_LABELS = {
  * @param {string} cleanPath  - root-relative path without leading slash or .html
  * @param {string} pageTitle  - human-readable title of the leaf page
  */
-function buildBreadcrumb(cleanPath, pageTitle) {
+function buildBreadcrumb(cleanPath, pageTitle, locale) {
   const normalizedPath = buildUrl(cleanPath || '/');
   const segments = normalizedPath.replace(/^\//, '').split('/').filter(Boolean);
   if (!segments.length) return '';
 
-  const crumbs = [{ href: href('/'), label: 'Home' }];
+  const isEs = locale === 'es';
+  const crumbs = [{ href: href('/'), label: isEs ? 'Inicio' : 'Home' }];
   let cumulative = '';
   for (let i = 0; i < segments.length - 1; i++) {
     cumulative += (i === 0 ? '' : '/') + segments[i];
     const check = i > 0 ? cumulative : segments[i];
-    const label = DIR_LABELS[check] || DIR_LABELS[segments[i]] || titleCase(segments[i]);
+    const label = (isEs && ES_DIR_LABELS[check]) || DIR_LABELS[check] || DIR_LABELS[segments[i]] || titleCase(segments[i]);
     crumbs.push({ href: href(cumulative), label });
   }
   // Leaf — current page
@@ -228,7 +242,8 @@ function buildBreadcrumb(cleanPath, pageTitle) {
     return liHtml;
   }).join('\n');
 
-  const nav = `<nav class="breadcrumb" aria-label="Breadcrumb">\n  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList" style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:.15rem">\n${items}\n  </ol>\n</nav>`;
+  const navAriaLabel = isEs ? 'Ruta de navegación' : 'Breadcrumb';
+  const nav = `<nav class="breadcrumb" aria-label="${navAriaLabel}">\n  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList" style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:.15rem">\n${items}\n  </ol>\n</nav>`;
   return { nav, schema };
 }
 
@@ -378,18 +393,91 @@ function buildArticleContent(article) {
 }
 
 /**
+ * Phase 8N: static UI-chrome strings for the Glossary/Formulas/Reference
+ * content builders and their surrounding templates, keyed by an English
+ * label used only as a lookup id (never rendered). Every consumer below
+ * falls back to the 'en' entry when locale isn't 'es', so this dictionary
+ * is additive -- it changes output only for locale === 'es' call sites,
+ * never for the existing English generation path.
+ */
+const ES_CHROME = {
+  ariaPrimaryNav:     { en: 'Primary navigation',  es: 'Navegación principal' },
+  ariaSearch:         { en: 'Search site',          es: 'Buscar en el sitio' },
+  ariaOpenMenu:       { en: 'Open menu',             es: 'Abrir menú' },
+  navResources:       { en: 'Resources',             es: 'Recursos' },
+  navCharts:          { en: 'Charts',                es: 'Gráficos' },
+  navAcademy:         { en: 'Academy',               es: 'Academia' },
+  navGuides:          { en: 'Guides',                es: 'Guías' },
+  navAbout:           { en: 'About',                 es: 'Acerca de' },
+  navCalculatorLabel: { en: 'Calculator',            es: 'Calculadora' },
+  navCalculatorHref:  { en: '/calculators/chemical-calculator', es: '/es/calculators/chemical-calculator' },
+  definitionLabel:    { en: 'Definition',            es: 'Definición' },
+  inPlainLanguage:    { en: 'In Plain Language',     es: 'En Términos Sencillos' },
+  whyItMatters:       { en: 'Why It Matters',        es: 'Por Qué Es Importante' },
+  typicalValues:      { en: 'Typical Values',        es: 'Valores Típicos' },
+  relatedResources:   { en: 'Related Resources',     es: 'Recursos Relacionados' },
+  relatedCalculators: { en: 'Related Calculators',   es: 'Calculadoras Relacionadas' },
+  relatedToolsHeading:{ en: 'Related Calculators &amp; Resources', es: 'Calculadoras y Recursos Relacionados' },
+  relatedTopics:      { en: 'Related Topics',        es: 'Temas Relacionados' },
+  notes:              { en: 'Notes',                 es: 'Notas' },
+  sources:            { en: 'Sources:',              es: 'Fuentes:' },
+  howFormulaWorks:    { en: 'How This Formula Works', es: 'Cómo Funciona Esta Fórmula' },
+  limitationsNotes:   { en: 'Limitations &amp; Notes', es: 'Limitaciones y Notas' },
+  theFormula:         { en: 'The Formula',           es: 'La Fórmula' },
+  symbolHeader:       { en: 'Symbol',                es: 'Símbolo' },
+  descriptionHeader:  { en: 'Description',           es: 'Descripción' },
+  unitHeader:         { en: 'Unit',                  es: 'Unidad' },
+  workedExampleHeading:{ en: 'Worked Example',       es: 'Ejemplo Resuelto' },
+  exampleLabel:       { en: 'Example',                es: 'Ejemplo' },
+  lastReviewedLabel:  { en: 'Last reviewed:',         es: 'Última revisión:' },
+};
+
+function chrome(key, locale) {
+  const entry = ES_CHROME[key];
+  if (!entry) throw new Error(`chrome(): unknown UI-chrome key "${key}"`);
+  return locale === 'es' ? entry.es : entry.en;
+}
+
+/**
+ * Phase 8N: merges a record's nested `es` override object (the embedded
+ * Spanish data model established in Phase 8L/8M) over its English fields
+ * for locale 'es', returning the record unchanged for every other locale
+ * -- this is the single place that decides "which language's text does a
+ * generator see," so generateTerm/generateFormula/generateRefPage never
+ * branch on locale themselves for plain text fields.
+ *
+ * Reference pages are a special case: `es.tables` only carries translated
+ * `title` strings (Phase 8N deliberately left `headers`/`rows` as
+ * English structured data -- see docs/PHASE-8N-*.md's documented scope
+ * limitation), so tables are merged element-by-element rather than
+ * wholesale-replaced, preserving the English headers/rows under a
+ * localized title.
+ */
+function localizeRecord(record, locale) {
+  if (locale !== 'es' || !record || !record.es) return record;
+  const merged = Object.assign({}, record, record.es);
+  if (Array.isArray(record.es.tables) && Array.isArray(record.tables)) {
+    merged.tables = record.tables.map((tbl, i) => {
+      const esTbl = record.es.tables[i];
+      return esTbl && esTbl.title ? Object.assign({}, tbl, { title: esTbl.title }) : tbl;
+    });
+  }
+  return merged;
+}
+
+/**
  * Build formula explanation/limitations HTML.
  */
-function buildFormulaContent(formula) {
+function buildFormulaContent(formula, locale) {
   let html = '';
   if (formula.explanation) {
-    html += `<section id="explanation">\n<h2>How This Formula Works</h2>\n${renderBody(formula.explanation)}\n</section>\n\n`;
+    html += `<section id="explanation">\n<h2>${chrome('howFormulaWorks', locale)}</h2>\n${renderBody(formula.explanation)}\n</section>\n\n`;
   }
   if (formula.limitations) {
-    html += `<section id="limitations">\n<h2>Limitations &amp; Notes</h2>\n${renderBody(formula.limitations)}\n</section>\n\n`;
+    html += `<section id="limitations">\n<h2>${chrome('limitationsNotes', locale)}</h2>\n${renderBody(formula.limitations)}\n</section>\n\n`;
   }
   if ((formula.sources || []).length > 0) {
-    html += `<div class="knowledge-sources"><strong>Sources:</strong><ol>`;
+    html += `<div class="knowledge-sources"><strong>${chrome('sources', locale)}</strong><ol>`;
     for (const s of formula.sources) html += `<li>${esc(s)}</li>`;
     html += `</ol></div>\n`;
   }
@@ -402,13 +490,13 @@ function buildFormulaContent(formula) {
 function buildTermContent(term, locale) {
   let html = '';
   if (term.explanation) {
-    html += `<section id="details">\n<h2>In Plain Language</h2>\n${renderBody(term.explanation)}\n</section>\n\n`;
+    html += `<section id="details">\n<h2>${chrome('inPlainLanguage', locale)}</h2>\n${renderBody(term.explanation)}\n</section>\n\n`;
   }
   if (term.whyItMatters) {
-    html += `<section id="why-it-matters">\n<h2>Why It Matters</h2>\n${renderBody(term.whyItMatters)}\n</section>\n\n`;
+    html += `<section id="why-it-matters">\n<h2>${chrome('whyItMatters', locale)}</h2>\n${renderBody(term.whyItMatters)}\n</section>\n\n`;
   }
   if (term.typicalValues) {
-    html += `<section id="typical-values">\n<h2>Typical Values</h2>\n<div class="knowledge-callout"><span class="knowledge-callout-icon">&#127919;</span><div>${esc(term.typicalValues)}</div></div>\n</section>\n\n`;
+    html += `<section id="typical-values">\n<h2>${chrome('typicalValues', locale)}</h2>\n<div class="knowledge-callout"><span class="knowledge-callout-icon">&#127919;</span><div>${esc(term.typicalValues)}</div></div>\n</section>\n\n`;
   }
 
   // Related article links -- Phase 8M: routed through localizedHref() so a
@@ -426,7 +514,7 @@ function buildTermContent(term, locale) {
     const cards = relatedItems.slice(0, 6).map(item =>
       `<a href="${item.href}" class="knowledge-card"><div class="knowledge-card-title">${esc(item.label)}</div></a>`
     ).join('\n');
-    html += `<section class="related-topics">\n<h2>Related Resources</h2>\n<div class="knowledge-grid knowledge-grid--2col">\n${cards}\n</div>\n</section>\n\n`;
+    html += `<section class="related-topics">\n<h2>${chrome('relatedResources', locale)}</h2>\n<div class="knowledge-grid knowledge-grid--2col">\n${cards}\n</div>\n</section>\n\n`;
   }
   return html;
 }
@@ -460,7 +548,7 @@ function buildRefContent(page, locale) {
     html += `</ul>\n</section>\n\n`;
   }
   if ((page.notes || []).length > 0) {
-    html += `<section id="notes">\n<h2>Notes</h2>\n<ul>\n`;
+    html += `<section id="notes">\n<h2>${chrome('notes', locale)}</h2>\n<ul>\n`;
     for (const n of page.notes) html += `<li>${esc(n)}</li>\n`;
     html += `</ul>\n</section>\n\n`;
   }
@@ -475,10 +563,10 @@ function buildRefContent(page, locale) {
       return `<a href="${normalizedHref}" class="knowledge-card"><div class="knowledge-card-title">${esc(titleCase(href(link).split('/').pop()))}</div></a>`;
     }
     ).join('\n');
-    html += `<section class="related-calculators">\n<h2>Related Calculators</h2>\n<div class="related-calcs-cards">\n${cards}\n</div>\n</section>\n\n`;
+    html += `<section class="related-calculators">\n<h2>${chrome('relatedCalculators', locale)}</h2>\n<div class="related-calcs-cards">\n${cards}\n</div>\n</section>\n\n`;
   }
   if ((page.sources || []).length > 0) {
-    html += `<div class="knowledge-sources"><strong>Sources:</strong><ol>`;
+    html += `<div class="knowledge-sources"><strong>${chrome('sources', locale)}</strong><ol>`;
     for (const s of page.sources) html += `<li>${esc(s)}</li>`;
     html += `</ol></div>\n`;
   }
@@ -498,7 +586,7 @@ function buildRelatedTools(article, locale) {
   const cards = all.slice(0, 6).map(item =>
     `<a href="${item.href}" class="knowledge-card"><div class="knowledge-card-title">${esc(item.label)}</div></a>`
   ).join('\n');
-  return `<section id="related-tools" class="related-calculators">\n<h2>Related Calculators &amp; Resources</h2>\n<div class="related-calcs-cards">\n${cards}\n</div>\n</section>\n`;
+  return `<section id="related-tools" class="related-calculators">\n<h2>${chrome('relatedToolsHeading', locale)}</h2>\n<div class="related-calcs-cards">\n${cards}\n</div>\n</section>\n`;
 }
 
 /**
@@ -506,7 +594,7 @@ function buildRelatedTools(article, locale) {
  * @param {string[]} slugs
  * @param {object[]} allArticles  — full articles array for label/summary lookup
  */
-function buildRelatedTopics(slugs, allArticles) {
+function buildRelatedTopics(slugs, allArticles, locale) {
   if (!slugs || slugs.length === 0) return '';
   const cards = slugs.slice(0, 6).map(slug => {
     const topicHref = href(slug);
@@ -518,7 +606,7 @@ function buildRelatedTopics(slugs, allArticles) {
       (desc ? `<p class="knowledge-card-desc">${esc(desc)}</p>` : '') +
       `</a>`;
   }).join('\n');
-  return `<section id="related-topics" class="related-topics">\n<h2>Related Topics</h2>\n<div class="knowledge-grid knowledge-grid--2col">\n${cards}\n</div>\n</section>\n`;
+  return `<section id="related-topics" class="related-topics">\n<h2>${chrome('relatedTopics', locale)}</h2>\n<div class="knowledge-grid knowledge-grid--2col">\n${cards}\n</div>\n</section>\n`;
 }
 
 /**
@@ -572,6 +660,10 @@ module.exports = {
   buildRelatedTools,
   buildRelatedTopics,
   buildAcademySidebar,
+  localizeRecord,
+  chrome,
+  ES_CHROME,
+  ES_DIR_LABELS,
   titleCase,
   esc,
   slugToTitle,

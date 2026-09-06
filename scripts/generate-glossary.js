@@ -14,6 +14,7 @@ const path = require('path');
 const {
   fill, template, partial, SITE_HEADER, SITE_FOOTER, esc,
   buildBreadcrumb, buildTermContent, writeFile, ROOT, href, canonicalUrl,
+  localizeRecord, chrome,
 } = require('./template-utils');
 const { htmlLangAttr } = require('../js/i18n/html-lang');
 const { getLocalizedCanonical } = require('../js/i18n/locale-url');
@@ -100,13 +101,19 @@ ${SITE_FOOTER}
 function generateTerm(term, locale) {
   const effectiveLocale = locale || 'en';
   const tpl = template('glossary-template.html');
-  const bc = buildBreadcrumb(term.slug, term.term || term.title);
+  // Phase 8N: for locale 'es', localizeRecord() overlays the term's
+  // embedded `es` object (term/definition/explanation/whyItMatters/
+  // typicalValues/abbreviation) onto the English record; structural
+  // fields absent from `es` (slug, relatedCalculators, etc.) pass through
+  // unchanged. For locale 'en' this returns `term` untouched.
+  const t = localizeRecord(term, effectiveLocale);
+  const bc = buildBreadcrumb(term.slug, t.term || t.title, effectiveLocale);
 
-  const targetRangeBlock = (term.typicalValues || term.targetRange)
-    ? `<div class="knowledge-callout"><span class="knowledge-callout-icon">&#127919;</span><div><strong>Typical Values:</strong> ${esc(term.typicalValues || term.targetRange)}</div></div>`
+  const targetRangeBlock = (t.typicalValues || t.targetRange)
+    ? `<div class="knowledge-callout"><span class="knowledge-callout-icon">&#127919;</span><div><strong>${chrome('typicalValues', effectiveLocale)}:</strong> ${esc(t.typicalValues || t.targetRange)}</div></div>`
     : '';
 
-  const defFirstSentence = (term.definition || '').split('.')[0];
+  const defFirstSentence = (t.definition || '').split('.')[0];
 
   // Shorter title (Phase 7I): "Term: Definition | Glossary | WaterBalanceTools"
   // pushed 7 of 100 glossary titles past the 65-char SEO threshold with
@@ -114,32 +121,50 @@ function generateTerm(term, locale) {
   // thing). Must still end in the literal "| WaterBalanceTools" suffix --
   // scripts/normalize-seo-metadata.js appends it to any title that doesn't,
   // which would otherwise double it up.
-  const termName = term.term || term.title;
-  const titleWithCategory = `${termName} | Glossary | WaterBalanceTools`;
+  const termName = t.term || t.title;
+  const categoryLabel = effectiveLocale === 'es' ? 'Glosario' : 'Glossary';
+  const titleWithCategory = `${termName} | ${categoryLabel} | WaterBalanceTools`;
   const pageTitle = titleWithCategory.length <= 65 ? titleWithCategory : `${termName} | WaterBalanceTools`;
+  const metaDescription = effectiveLocale === 'es'
+    ? `${defFirstSentence}. Definición en español con valores objetivo y recursos relacionados sobre química de piscinas.`
+    : `${defFirstSentence}. Plain-language definition with target values and related pool chemistry resources.`;
 
   return fill(tpl, {
     SLUG:              term.slug,
     HTML_LANG_ATTR:    htmlLangAttr(effectiveLocale),
     CANONICAL_URL:     getLocalizedCanonical('/' + term.slug, effectiveLocale),
     PAGE_TITLE:        pageTitle,
-    H1_TITLE:          term.term || term.title,
-    META_DESCRIPTION:  `${defFirstSentence}. Plain-language definition with target values and related pool chemistry resources.`,
+    H1_TITLE:          termName,
+    META_DESCRIPTION:  metaDescription,
     LAST_REVIEWED:     term.lastReviewed || '2026-06-01',
     BREADCRUMB:        bc.nav,
     BREADCRUMB_SCHEMA: bc.schema,
+    ARIA_PRIMARY_NAV:    chrome('ariaPrimaryNav', effectiveLocale),
+    NAV_CALCULATOR_HREF: chrome('navCalculatorHref', effectiveLocale),
+    NAV_CALCULATOR_LABEL: chrome('navCalculatorLabel', effectiveLocale),
+    NAV_RESOURCES:       chrome('navResources', effectiveLocale),
+    NAV_CHARTS:          chrome('navCharts', effectiveLocale),
+    NAV_ACADEMY:         chrome('navAcademy', effectiveLocale),
+    NAV_GUIDES:          chrome('navGuides', effectiveLocale),
+    NAV_ABOUT:           chrome('navAbout', effectiveLocale),
+    ARIA_SEARCH:         chrome('ariaSearch', effectiveLocale),
+    ARIA_OPEN_MENU:      chrome('ariaOpenMenu', effectiveLocale),
+    DEFINITION_LABEL:    chrome('definitionLabel', effectiveLocale),
+    LAST_REVIEWED_LABEL: chrome('lastReviewedLabel', effectiveLocale),
     HERO: fill(partial('knowledge-hero.html'), {
-      BADGE:         'Glossary',
+      BADGE:         effectiveLocale === 'es' ? 'Glosario' : 'Glossary',
       BADGE_CLASS:   'knowledge-badge--glossary',
-      READING_TIME:  '2 min read',
+      READING_TIME:  effectiveLocale === 'es' ? '2 min de lectura' : '2 min read',
       LAST_REVIEWED: term.lastReviewed || '2026-06-01',
-      TITLE:         esc(term.term || term.title),
+      TITLE:         esc(termName),
       SUMMARY:       esc(defFirstSentence + '.'),
-      CHIPS:         '<a href="#definition" class="knowledge-chip">Definition</a><a href="#details" class="knowledge-chip">Details</a><a href="#typical-values" class="knowledge-chip">Values</a>',
+      CHIPS:         effectiveLocale === 'es'
+        ? '<a href="#definition" class="knowledge-chip">Definición</a><a href="#details" class="knowledge-chip">Detalles</a><a href="#typical-values" class="knowledge-chip">Valores</a>'
+        : '<a href="#definition" class="knowledge-chip">Definition</a><a href="#details" class="knowledge-chip">Details</a><a href="#typical-values" class="knowledge-chip">Values</a>',
     }),
-    DEFINITION:         esc(term.definition || ''),
+    DEFINITION:         esc(t.definition || ''),
     TARGET_RANGE_BLOCK: targetRangeBlock,
-    CONTENT:            buildTermContent(term, locale),
+    CONTENT:            buildTermContent(t, locale),
     SIDEBAR:            '',
     RELATED_TOOLS:      '',
     RELATED_TOPICS:     '',
@@ -164,3 +189,8 @@ for (const term of (data.terms || [])) {
 }
 
 console.log(`generate-glossary: wrote ${written} files (${(data.terms || []).length} terms)`);
+
+// Phase 8N: exported so scripts/generate-spanish-knowledge-cluster.js can
+// call generateTerm(term, 'es') for the approved Spanish-cluster terms
+// without a second implementation of glossary-page rendering.
+module.exports = { generateTerm, data };

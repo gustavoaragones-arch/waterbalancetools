@@ -1,20 +1,20 @@
 # Hub Topology Audit
 
-- Generated: 2026-09-04T17:54:35.868Z
+- Generated: 2026-09-06T00:28:36.622Z
 - Total hubs: 21
-- Linked directories: 72
+- Linked directories: 71
 - Hub health score: 100/100
 
 ## Hubs
 
 | Hub | Child Pages | Inbound | Outbound | Depth |
 |---|---:|---:|---:|---:|
-| /calculators | 61 | 51 | 87 | 1 |
-| /charts | 38 | 4 | 58 | 1 |
+| /calculators | 61 | 50 | 79 | 1 |
+| /charts | 38 | 3 | 56 | 1 |
 | /comparisons | 56 | 8 | 74 | 1 |
-| /guides | 61 | 50 | 87 | 1 |
-| /guides/advanced | 47 | 10 | 66 | 2 |
-| /guides/chlorine | 50 | 17 | 69 | 2 |
+| /guides | 61 | 49 | 79 | 1 |
+| /guides/advanced | 47 | 9 | 66 | 2 |
+| /guides/chlorine | 50 | 16 | 69 | 2 |
 | /guides/edge-cases | 53 | 9 | 72 | 2 |
 | /guides/hot-tub | 50 | 13 | 69 | 2 |
 | /guides/ph | 50 | 9 | 69 | 2 |
@@ -33,7 +33,7 @@
 
 ## Topology Findings
 
-- Directories with backing hubs: 72/72
+- Directories with backing hubs: 71/71
 - Pages deeper than 4 clicks (path-depth proxy): 0
-- Relationship density (hub outbound avg): 69.86
+- Relationship density (hub outbound avg): 69.00
 

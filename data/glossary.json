@@ -3,6 +3,14 @@
   "terms": [
     {
       "id": "gl-001",
+      "es": {
+        "term": "Cloro Libre",
+        "definition": "El cloro libre es la concentración de cloro activo y no combinado disponible en el agua de la piscina para sanitizar y desinfectar.",
+        "explanation": "El cloro libre existe en dos formas: ácido hipocloroso (HOCl) e ion hipoclorito (OCl-). El ácido hipocloroso es la forma bactericida — a pH 7.2, aproximadamente el 67% del cloro libre está en esta forma efectiva. El cloro libre se consume por la luz UV, los contaminantes orgánicos y el propio acto de sanitización. Debe reponerse regularmente.",
+        "whyItMatters": "Un cloro libre insuficiente permite que se establezcan bacterias y algas. Un exceso de cloro libre irrita a los bañistas. Ambos extremos se pueden evitar con análisis regulares.",
+        "abbreviation": "FC",
+        "typicalValues": "Piscinas: 1–3 ppm; Hot tubs: 3–5 ppm; Mínimo seguro: 1.0 ppm"
+      },
       "slug": "glossary/free-chlorine",
       "term": "Free Chlorine",
       "abbreviation": "FC",
@@ -24,6 +32,14 @@
     },
     {
       "id": "gl-002",
+      "es": {
+        "term": "Cloro Combinado",
+        "definition": "El cloro combinado es la parte del cloro total que ha reaccionado con compuestos de nitrógeno y ya no es un sanitizante eficaz.",
+        "explanation": "El cloro combinado está formado principalmente por cloraminas — compuestos que se forman cuando el cloro libre reacciona con el amoníaco y el nitrógeno orgánico de los bañistas. Las cloraminas son de 40 a 80 veces más débiles que el cloro libre como desinfectantes. También son la principal causa del olor característico de la piscina y de la irritación ocular, a menudo atribuidos erróneamente a un exceso de cloro.",
+        "whyItMatters": "Un cloro combinado por encima de 0.5 ppm indica la necesidad de un tratamiento de choque. Señala que el cloro libre se está agotando más rápido de lo que puede sanitizar.",
+        "abbreviation": "CC",
+        "typicalValues": "Objetivo: 0 ppm; Umbral de acción: 0.5 ppm; Se calcula como: Cloro Total menos Cloro Libre"
+      },
       "slug": "glossary/combined-chlorine",
       "term": "Combined Chlorine",
       "abbreviation": "CC",
@@ -44,6 +60,14 @@
     },
     {
       "id": "gl-003",
+      "es": {
+        "term": "Cloro Total",
+        "definition": "El cloro total es la suma del cloro libre y el cloro combinado en el agua de la piscina.",
+        "explanation": "El cloro total se mide con pruebas DPD-3 o pruebas OTO. Indica la cantidad total de compuestos relacionados con el cloro en el agua, pero no distingue entre el sanitizante activo (cloro libre) y los subproductos inactivos (cloro combinado). Cuando el cloro libre es igual al cloro total, no hay cloro combinado en el agua.",
+        "whyItMatters": "El cloro total por sí solo no es una cifra útil para la gestión — necesita el cloro libre y el cloro combinado por separado. Sin embargo, el cloro combinado solo puede calcularse si se tienen ambas lecturas, libre y total.",
+        "abbreviation": "TC",
+        "typicalValues": "Debe ser igual o muy cercano al Cloro Libre (FC) en agua bien mantenida"
+      },
       "slug": "glossary/total-chlorine",
       "term": "Total Chlorine",
       "abbreviation": "TC",
@@ -62,6 +86,13 @@
     },
     {
       "id": "gl-004",
+      "es": {
+        "term": "Cloración de Ruptura",
+        "definition": "La cloración de ruptura es el proceso de agregar suficiente cloro libre para destruir todo el cloro combinado (cloraminas) en el agua de la piscina.",
+        "explanation": "El punto de ruptura ocurre cuando se agrega cloro libre en aproximadamente 10 veces el nivel de cloro combinado. Por debajo del punto de ruptura, agregar cloro aumenta temporalmente el cloro combinado antes de destruirlo. En el punto de ruptura y más allá, las cloraminas se destruyen químicamente y el cloro libre sube bruscamente. Por eso las dosis de choque parciales pueden empeorar el problema de cloraminas antes de finalmente mejorarlo.",
+        "whyItMatters": "La cloración de ruptura es la única forma confiable de eliminar las cloraminas del agua de la piscina. Sin ella, el cloro combinado se acumula, causando olor persistente, irritación y una sanitización reducida.",
+        "typicalValues": "Dosis requerida: 10 veces la lectura de cloro combinado en ppm"
+      },
       "slug": "glossary/breakpoint-chlorination",
       "term": "Breakpoint Chlorination",
       "definition": "Breakpoint chlorination is the process of adding enough free chlorine to destroy all combined chlorine (chloramines) in pool water.",
@@ -81,6 +112,13 @@
     },
     {
       "id": "gl-005",
+      "es": {
+        "term": "Sanitizante",
+        "definition": "Un sanitizante es un agente químico que reduce la contaminación microbiana del agua de la piscina a niveles seguros para el contacto humano.",
+        "explanation": "En aplicaciones de piscinas y spas, los sanitizantes principales son el cloro y el bromo. Los sanitizantes actúan oxidando y destruyendo las paredes celulares de bacterias, virus y algas al contacto. Los sanitizantes secundarios (UV, ozono) pueden reducir los niveles de cloro requeridos, pero no reemplazan el sanitizante residual que protege el agua entre tratamientos.",
+        "whyItMatters": "Sin un sanitizante eficaz a un nivel adecuado, el agua de la piscina puede transmitir enfermedades relacionadas con el agua recreativa en cuestión de horas tras la contaminación.",
+        "typicalValues": "Cloro: 1–3 ppm (piscinas); Bromo: 3–6 ppm"
+      },
       "slug": "glossary/sanitizer",
       "term": "Sanitizer",
       "definition": "A sanitizer is a chemical agent that reduces microbial contamination in pool water to safe levels for human contact.",
@@ -101,6 +139,13 @@
     },
     {
       "id": "gl-006",
+      "es": {
+        "term": "Oxidante",
+        "definition": "Un oxidante es un producto químico que destruye contaminantes orgánicos en el agua de la piscina mediante oxidación, sin necesariamente agregar sanitizante residual.",
+        "explanation": "El monopersulfato de potasio (MPS, choque sin cloro) es un oxidante común en piscinas. Destruye compuestos orgánicos como aceites corporales, sudor y precursores de cloraminas sin elevar el cloro libre. El cloro mismo es tanto sanitizante como oxidante. Los oxidantes se usan en hot tubs después de cada uso y en piscinas para complementar el choque semanal.",
+        "whyItMatters": "La oxidación regular evita la acumulación orgánica que de otro modo agotaría el cloro y contribuiría a la formación de cloraminas.",
+        "typicalValues": "MPS (choque sin cloro): siga la dosis indicada en la etiqueta del producto"
+      },
       "slug": "glossary/oxidizer",
       "term": "Oxidizer",
       "definition": "An oxidizer is a chemical that destroys organic contaminants in pool water through oxidation, without necessarily adding sanitiser residual.",
@@ -118,6 +163,13 @@
     },
     {
       "id": "gl-007",
+      "es": {
+        "term": "Choque",
+        "definition": "El choque es la práctica de agregar una dosis grande de cloro u oxidante al agua de la piscina para alcanzar la cloración de ruptura, eliminar algas o restablecer la claridad del agua.",
+        "explanation": "Los productos de choque para piscina suelen ser hipoclorito de calcio (65–73% de cloro disponible), dicloroisocianurato de sodio (dicloro) o hipoclorito de sodio en alta concentración. El choque eleva el cloro libre a 10 ppm o más — muy por encima del rango normal de mantenimiento. El choque sin cloro (MPS) se usa específicamente para oxidar materia orgánica sin elevar el cloro libre.",
+        "whyItMatters": "El choque semanal es una práctica de mantenimiento preventivo que destruye las cloraminas y oxida los contaminantes orgánicos antes de que se acumulen a niveles problemáticos.",
+        "typicalValues": "Objetivo de choque estándar: 10 ppm de FC; Recuperación de piscina verde: 30 ppm de FC"
+      },
       "slug": "glossary/shock",
       "term": "Shock",
       "definition": "Shock is the practice of adding a large dose of chlorine or oxidizer to pool water to reach breakpoint chlorination, kill algae, or reset water clarity.",
@@ -137,6 +189,13 @@
     },
     {
       "id": "gl-008",
+      "es": {
+        "term": "pH",
+        "definition": "El pH mide la concentración de iones de hidrógeno en el agua en una escala logarítmica de 0 (más ácido) a 14 (más alcalino), siendo 7.0 el valor neutro.",
+        "explanation": "El pH del agua de la piscina controla directamente la proporción de cloro en su forma activa (ácido hipocloroso). A pH 7.2, aproximadamente el 67% del cloro libre está activo. A pH 8.0, solo el 22% lo está. El pH también afecta la comodidad de los bañistas (las lágrimas humanas tienen un pH de 7.4), la corrosión de superficies (pH bajo) y la formación de incrustaciones (pH alto). El pH tiende a subir naturalmente en las piscinas a medida que el CO2 se libera desde la superficie del agua.",
+        "whyItMatters": "Todos los demás parámetros de la química del agua se ven afectados por el pH. Es la variable de control maestra en la gestión de la piscina.",
+        "typicalValues": "Piscinas: 7.2–7.6; Hot tubs: 7.2–7.8; Nunca por encima de 8.0"
+      },
       "slug": "glossary/ph",
       "term": "pH",
       "definition": "pH measures the concentration of hydrogen ions in water on a logarithmic scale from 0 (most acidic) to 14 (most alkaline), with 7.0 being neutral.",
@@ -157,6 +216,14 @@
     },
     {
       "id": "gl-009",
+      "es": {
+        "term": "Alcalinidad Total",
+        "definition": "La alcalinidad total mide la capacidad del agua para resistir cambios de pH, expresada como la concentración total de compuestos alcalinos (bicarbonato, carbonato, hidróxido) en ppm.",
+        "explanation": "La alcalinidad total actúa como amortiguador de pH. Cuando la TA está en rango (80–120 ppm), el pH cambia lentamente después de adiciones químicas o factores ambientales. Cuando la TA es demasiado baja (por debajo de 60 ppm), el pH oscila de forma impredecible — una condición llamada rebote de pH. Cuando la TA es demasiado alta (por encima de 200 ppm), el pH se estanca cerca de 8.0 y es muy difícil de bajar.",
+        "whyItMatters": "La alcalinidad es la base de una gestión estable del pH. Corrija primero la alcalinidad, y los ajustes de pH se vuelven mucho más predecibles y duraderos.",
+        "abbreviation": "TA",
+        "typicalValues": "Piscinas y hot tubs: 80–120 ppm; Por debajo de 60 ppm: tome acción; Por encima de 200 ppm: reduzca"
+      },
       "slug": "glossary/total-alkalinity",
       "term": "Total Alkalinity",
       "abbreviation": "TA",
@@ -177,6 +244,14 @@
     },
     {
       "id": "gl-010",
+      "es": {
+        "term": "Dureza Cálcica",
+        "definition": "La dureza cálcica mide la concentración de iones de calcio disueltos en el agua de la piscina, expresada en ppm.",
+        "explanation": "La dureza cálcica determina si el agua es agresiva (subsaturada, disolverá calcio de las superficies) o incrustante (sobresaturada, depositará carbonato de calcio). Junto con el pH, la temperatura y la alcalinidad, determina el Índice de Saturación de Langelier. Las piscinas de yeso requieren una dureza más alta (200–400 ppm) para proteger las superficies. El vinilo y la fibra de vidrio toleran niveles más bajos (150–250 ppm).",
+        "whyItMatters": "Una dureza baja corroe las superficies de yeso y el equipo. Una dureza alta deposita incrustaciones de calcio en calentadores, tuberías y azulejos.",
+        "abbreviation": "CH",
+        "typicalValues": "Piscinas de yeso: 200–400 ppm; Vinilo/fibra de vidrio: 150–250 ppm; Hot tubs: 150–250 ppm"
+      },
       "slug": "glossary/calcium-hardness",
       "term": "Calcium Hardness",
       "abbreviation": "CH",
@@ -197,6 +272,14 @@
     },
     {
       "id": "gl-011",
+      "es": {
+        "term": "Ácido Cianúrico",
+        "definition": "El ácido cianúrico es un compuesto estabilizador que forma un enlace reversible con el cloro libre en el agua de la piscina, protegiéndolo de la degradación por rayos UV.",
+        "explanation": "Sin CYA, el cloro libre de una piscina al aire libre se destruye por la luz solar directa en 2 a 3 horas. El CYA forma un enlace temporal con las moléculas de cloro, ralentizando su degradación por UV. Sin embargo, el CYA también reduce moderadamente la velocidad de sanitización del cloro. Por encima de 80 ppm, el efecto se vuelve lo suficientemente significativo como para que las dosis normales de cloro brinden una sanitización inadecuada.",
+        "whyItMatters": "El CYA es esencial para piscinas al aire libre que usan cloro, pero debe mantenerse por debajo de 80 ppm. No se puede reducir salvo por dilución (drenaje parcial).",
+        "abbreviation": "CYA",
+        "typicalValues": "Piscinas estándar: 30–50 ppm; Piscinas salinas: 60–80 ppm; Nunca por encima de 100 ppm en piscinas normales"
+      },
       "slug": "glossary/cyanuric-acid",
       "term": "Cyanuric Acid",
       "abbreviation": "CYA",
@@ -217,6 +300,14 @@
     },
     {
       "id": "gl-012",
+      "es": {
+        "term": "Índice de Saturación de Langelier",
+        "definition": "El Índice de Saturación de Langelier es un valor calculado que predice si el agua de la piscina está en equilibrio con el carbonato de calcio, tiende a corroer o tiende a formar incrustaciones.",
+        "explanation": "LSI = pH + Factor de Temperatura + Factor de Calcio + Factor de Alcalinidad − 12.1. Un resultado de 0.0 es el balance perfecto. Los valores negativos indican agua agresiva (corrosiva); los valores positivos indican tendencia a formar incrustaciones. El rango objetivo es de −0.3 a +0.3. La temperatura es un factor importante — la misma química produce un LSI más alto a 90°F que a 70°F.",
+        "whyItMatters": "El LSI es el indicador más completo del balance del agua. Tiene en cuenta todas las variables principales y predice tanto el daño al equipo (corrosión) como el daño a las superficies (incrustaciones).",
+        "abbreviation": "LSI",
+        "typicalValues": "Objetivo: −0.3 a +0.3; 0.0 = balance perfecto"
+      },
       "slug": "glossary/langelier-saturation-index",
       "term": "Langelier Saturation Index",
       "abbreviation": "LSI",
@@ -299,6 +390,13 @@
     },
     {
       "id": "gl-017",
+      "es": {
+        "term": "Recirculación de la Bomba",
+        "definition": "La recirculación de la bomba es la cantidad de veces que todo el volumen de la piscina pasa por el filtro en un período de 24 horas.",
+        "explanation": "Una recirculación significa que todo el volumen de la piscina se ha filtrado una vez. El estándar mínimo de la industria es una recirculación cada 8 horas (3 recirculaciones por día). Más recirculaciones significan mejor filtración y distribución química. Las bombas de velocidad variable pueden lograr más recirculaciones al día con un menor costo energético, funcionando a velocidades más bajas durante períodos más largos.",
+        "whyItMatters": "Una tasa de recirculación insuficiente es una de las causas más comunes de agua turbia persistente y problemas de algas, sin importar que la química sea correcta.",
+        "typicalValues": "Mínimo: 1 recirculación cada 8 horas; Recomendado: 1–2 recirculaciones por día; Piscinas comerciales: a menudo 4–6 recirculaciones por día"
+      },
       "slug": "glossary/pump-turnover",
       "term": "Pump Turnover",
       "definition": "Pump turnover is the number of times the entire pool volume passes through the filter in a 24-hour period.",
@@ -363,6 +461,13 @@
     },
     {
       "id": "gl-021",
+      "es": {
+        "term": "Supercloración",
+        "definition": "La supercloración es la práctica de elevar el cloro libre a 10 ppm o más para destruir cloraminas, eliminar algas o recuperar agua gravemente comprometida.",
+        "explanation": "La supercloración y la cloración de ruptura están estrechamente relacionadas — ambas implican agregar suficiente cloro para destruir el cloro combinado. La supercloración a veces se usa como un término más amplio para cualquier tratamiento de cloro en dosis alta. Después de la supercloración, la piscina debe cerrarse a los bañistas hasta que el cloro libre baje de 5 ppm, típicamente en 24 horas con la bomba en funcionamiento.",
+        "whyItMatters": "La supercloración es una de las herramientas más eficaces para recuperar una piscina de algas, turbidez o cloro combinado alto.",
+        "typicalValues": "FC objetivo: 10 ppm (mínimo); Piscina verde: 30 ppm"
+      },
       "slug": "glossary/superchlorination",
       "term": "Superchlorination",
       "definition": "Superchlorination is the practice of raising free chlorine to 10 ppm or higher to destroy chloramines, kill algae, or clear severely compromised water.",
@@ -382,6 +487,13 @@
     },
     {
       "id": "gl-022",
+      "es": {
+        "term": "Cloramina",
+        "definition": "Las cloraminas son compuestos que se forman cuando el cloro libre reacciona con compuestos nitrogenados en el agua de la piscina. Son la principal causa del olor de la piscina y la irritación ocular.",
+        "explanation": "Las principales cloraminas en el agua de la piscina son la monocloramina (NH2Cl), la dicloramina (NHCl2) y el tricloruro de nitrógeno (NCl3). La monocloramina es relativamente leve. La dicloramina y el tricloruro de nitrógeno son volátiles y muy irritantes. Todas las cloraminas son desinfectantes mucho menos eficaces que el cloro libre. El cloro combinado es la suma de todas las especies de cloraminas en el agua de la piscina.",
+        "whyItMatters": "Las cloraminas son la causa directa de los síntomas que la mayoría de las personas atribuyen a un exceso de cloro: ojos rojos, irritación de la piel y un fuerte olor químico.",
+        "typicalValues": "Umbral de acción: 0.5 ppm de cloro combinado"
+      },
       "slug": "glossary/chloramine",
       "term": "Chloramine",
       "definition": "Chloramines are compounds formed when free chlorine reacts with nitrogen-containing compounds in pool water. They are the primary cause of pool odour and eye irritation.",
@@ -401,6 +513,13 @@
     },
     {
       "id": "gl-023",
+      "es": {
+        "term": "Dicloro",
+        "definition": "El dicloro (dicloroisocianurato de sodio) es un producto de cloro estabilizado de disolución rápida que agrega tanto cloro libre como ácido cianúrico al agua de la piscina.",
+        "explanation": "El dicloro contiene aproximadamente 56% de cloro disponible y cerca de 33% de CYA por peso. Se disuelve muy rápido — más rápido que el tricloro — lo que lo hace útil para aumentos rápidos de FC. Sin embargo, cada libra de dicloro agrega una cantidad significativa de CYA. El uso repetido como sanitizante principal o producto de choque lleva a la acumulación de CYA. El dicloro se usa mejor con moderación para aumentos rápidos de cloro, en lugar de como producto principal o de choque.",
+        "whyItMatters": "Muchos propietarios de piscinas usan choque de dicloro repetidamente sin analizar el CYA, lo que lleva a una acumulación que eventualmente hace que la piscina no pueda sanitizarse.",
+        "typicalValues": "Cloro disponible: ~56%; CYA agregado: ~33% del peso del producto"
+      },
       "slug": "glossary/dichlor",
       "term": "Dichlor",
       "definition": "Dichlor (sodium dichloroisocyanurate) is a fast-dissolving stabilised chlorine product that adds both free chlorine and cyanuric acid to pool water.",
@@ -420,6 +539,13 @@
     },
     {
       "id": "gl-024",
+      "es": {
+        "term": "Tricloro",
+        "definition": "El tricloro (ácido tricloroisocianúrico) es una tableta de cloro estabilizado de disolución lenta que entrega cloro libre y ácido cianúrico simultáneamente.",
+        "explanation": "Las tabletas de tricloro contienen aproximadamente 90% de cloro disponible y son fuertemente ácidas (pH ~2.8 en solución). Cada tableta agrega CYA a medida que se disuelve. Usado como sanitizante principal, el tricloro es muy conveniente pero lleva a una acumulación de CYA durante la temporada. También baja el pH, requiriendo correcciones de pH más frecuentes. El tricloro no es adecuado como producto de choque porque la adición de CYA hace poco práctico aplicar tratamientos de dosis alta.",
+        "whyItMatters": "El tricloro es el producto sanitizante para piscinas más utilizado, pero su aporte de CYA suele monitorearse poco, lo que provoca el problema de gestión de piscinas a largo plazo más común.",
+        "typicalValues": "Cloro disponible: ~90%; CYA: ~58% por peso; pH en solución: ~2.8"
+      },
       "slug": "glossary/trichlor",
       "term": "Trichlor",
       "definition": "Trichlor (trichloroisocyanuric acid) is a slow-dissolving stabilised chlorine tablet that delivers free chlorine and cyanuric acid simultaneously.",
@@ -440,6 +566,14 @@
     },
     {
       "id": "gl-025",
+      "es": {
+        "term": "Hipoclorito de Calcio",
+        "definition": "El hipoclorito de calcio es un compuesto de cloro granular usado principalmente como choque para piscina, con aproximadamente 65–73% de cloro disponible.",
+        "explanation": "El cal-hipo es el producto de choque granular estándar para piscinas. Se disuelve por completo y agrega calcio al agua (relevante en zonas con dureza ya alta). No agrega CYA, lo que lo hace ideal para la cloración de ruptura y el choque regular. Predisuélvalo en un balde de agua antes de agregarlo a la piscina — nunca lo agregue directamente en el skimmer, ya que puede corroer el equipo.",
+        "whyItMatters": "El cal-hipo es el producto de choque más eficaz y económico para el mantenimiento regular de la piscina. Comprender su aporte de calcio ayuda a prevenir incrustaciones en zonas con agua dura.",
+        "abbreviation": "Cal-Hipo",
+        "typicalValues": "Cloro disponible: 65–73%; No agrega CYA; Agrega calcio"
+      },
       "slug": "glossary/calcium-hypochlorite",
       "term": "Calcium Hypochlorite",
       "abbreviation": "Cal-Hypo",
@@ -460,6 +594,13 @@
     },
     {
       "id": "gl-026",
+      "es": {
+        "term": "Hipoclorito de Sodio",
+        "definition": "El hipoclorito de sodio es cloro líquido — una solución de iones de sodio e hipoclorito usada para sanitizar y aplicar choque al agua de la piscina.",
+        "explanation": "El hipoclorito de sodio de grado piscina se vende típicamente a una concentración de 10–12.5%. Sube el pH ligeramente con cada adición y no agrega CYA. Se degrada con el tiempo, perdiendo potencia después de 60 días de almacenamiento. El cloro líquido es el producto preferido para la sanitización regular cuando el CYA ya está en el rango objetivo, y para el tratamiento de choque porque no está estabilizado.",
+        "whyItMatters": "El cloro líquido es el sanitizante profesional más común para piscinas. Comprender su degradación ayuda a evitar errores de dosificación por producto vencido.",
+        "typicalValues": "Concentración: 10–12.5% (grado piscina); Vida útil: 60 días a temperatura ambiente"
+      },
       "slug": "glossary/sodium-hypochlorite",
       "term": "Sodium Hypochlorite",
       "definition": "Sodium hypochlorite is liquid chlorine — a solution of sodium and hypochlorite ions used to sanitise and shock pool water.",
@@ -479,6 +620,13 @@
     },
     {
       "id": "gl-027",
+      "es": {
+        "term": "Bromo",
+        "definition": "El bromo es un sanitizante halógeno usado en el agua de piscinas y spas que forma ácido hipobromoso (HOBr) como su forma desinfectante activa.",
+        "explanation": "El bromo funciona de manera similar al cloro, pero con diferencias clave: es más estable a altas temperaturas (preferido para hot tubs), se mantiene eficaz en un rango de pH más amplio (7.0–8.0), y el bromo consumido (bromuros) puede reactivarse agregando un oxidante. A diferencia del cloro, el bromo no puede estabilizarse contra los rayos UV, lo que lo hace poco práctico para piscinas al aire libre con luz solar directa. Objetivo de bromo: 3–6 ppm (en comparación con 1–3 ppm para el cloro).",
+        "whyItMatters": "El bromo es el sanitizante preferido para spas y hot tubs de interior. Su estabilidad a altas temperaturas lo hace más eficaz que el cloro en estas aplicaciones.",
+        "typicalValues": "Hot tubs y spas: 3–6 ppm; Piscinas de interior: 3–6 ppm"
+      },
       "slug": "glossary/bromine",
       "term": "Bromine",
       "definition": "Bromine is a halogen sanitiser used in pool and spa water that forms hypobromous acid (HOBr) as its active disinfectant form.",
@@ -511,6 +659,13 @@
     },
     {
       "id": "gl-029",
+      "es": {
+        "term": "Cloración Salina",
+        "definition": "La cloración salina (generación de agua salada) es un sistema que produce cloro libre de forma continua mediante la electrólisis del cloruro de sodio disuelto en el agua de la piscina.",
+        "explanation": "Los clorinadores salinos usan una célula salina de titanio para dividir las moléculas de cloruro de sodio con una corriente de bajo voltaje, produciendo ácido hipocloroso en la superficie de la célula. La piscina sigue usando la química del cloro — solo que lo genera a partir de sal en lugar de agregarlo manualmente. Las piscinas salinas todavía requieren gestión de pH, alcalinidad y dureza. Las células salinas forman incrustaciones de calcio y deben limpiarse cada 3 a 4 meses.",
+        "whyItMatters": "La cloración salina reduce la necesidad de adiciones regulares de cloro, pero no elimina la gestión de la química del agua.",
+        "typicalValues": "Nivel de sal: 2,700–3,400 ppm; CYA para piscinas salinas: 60–80 ppm"
+      },
       "slug": "glossary/salt-chlorination",
       "term": "Salt Chlorination",
       "definition": "Salt chlorination (salt water generation) is a system that produces free chlorine continuously by electrolyzing dissolved sodium chloride in pool water.",
@@ -558,6 +713,13 @@
     },
     {
       "id": "gl-032",
+      "es": {
+        "term": "Ácido Muriático",
+        "definition": "El ácido muriático (ácido clorhídrico diluido) es el producto químico más usado para bajar el pH y la alcalinidad total de la piscina.",
+        "explanation": "El ácido muriático de grado piscina se vende a una concentración aproximada de 31.45% (20 Baumé). Es un ácido fuerte que debe manipularse con el equipo de protección adecuado (protección ocular, guantes resistentes a ácidos). Siempre agregue el ácido al agua (nunca el agua al ácido) para evitar salpicaduras. Después de agregar ácido muriático a la piscina, permita de 30 a 60 minutos de circulación de la bomba antes de volver a analizar el pH.",
+        "whyItMatters": "El ácido muriático es el reductor de pH y de alcalinidad más económico y eficaz para piscinas.",
+        "typicalValues": "Concentración: 31.45% (grado piscina); pH en solución: fuertemente ácido (0.1–0.5)"
+      },
       "slug": "glossary/muriatic-acid",
       "term": "Muriatic Acid",
       "definition": "Muriatic acid (dilute hydrochloric acid) is the most commonly used chemical for lowering pool pH and total alkalinity.",
@@ -577,6 +739,13 @@
     },
     {
       "id": "gl-033",
+      "es": {
+        "term": "Carbonato de Sodio",
+        "definition": "El carbonato de sodio (carbonato de sosa) se usa para subir el pH del agua de la piscina con un efecto mínimo en la alcalinidad total.",
+        "explanation": "El carbonato de sosa (Na2CO3) se disuelve rápidamente en el agua de la piscina y sube el pH más rápido que el bicarbonato de sodio. Su efecto principal es la elevación del pH; su aporte a la alcalinidad es menor que el del bicarbonato de sodio. Es el producto preferido cuando el pH necesita subir sin aumentar significativamente la TA. Disuélvalo en un balde de agua antes de agregarlo a la piscina para evitar la turbidez blanquecina que dejan los gránulos sin disolver.",
+        "whyItMatters": "El carbonato de sodio es el producto estándar para subir el pH de la piscina sin sobrecorregir la alcalinidad.",
+        "typicalValues": "Sube el pH aproximadamente 0.2 unidades por libra por cada 10,000 galones"
+      },
       "slug": "glossary/sodium-carbonate",
       "term": "Sodium Carbonate",
       "definition": "Sodium carbonate (soda ash) is used to raise pool water pH with minimal effect on total alkalinity.",
@@ -596,6 +765,13 @@
     },
     {
       "id": "gl-034",
+      "es": {
+        "term": "Bicarbonato de Sodio",
+        "definition": "El bicarbonato de sodio (bicarbonato) es el producto químico estándar para subir la alcalinidad total en el agua de la piscina.",
+        "explanation": "El bicarbonato de sodio (NaHCO3) se disuelve lentamente en el agua de la piscina y sube principalmente la alcalinidad total, con un efecto modesto en el pH. Es el producto más seguro y práctico para aumentar la TA. Una libra sube la TA aproximadamente 6.7 ppm por cada 10,000 galones. Espárzalo por el perímetro de la piscina con la bomba en funcionamiento, espere de 4 a 6 horas y vuelva a analizar antes de agregar más.",
+        "whyItMatters": "El bicarbonato de sodio es el primer ajuste químico en la secuencia correcta de balance del agua, ya que estabiliza el pH y hace que los ajustes posteriores sean más predecibles.",
+        "typicalValues": "Sube la TA 6.7 ppm por libra por cada 10,000 galones; efecto mínimo en el pH"
+      },
       "slug": "glossary/sodium-bicarbonate",
       "term": "Sodium Bicarbonate",
       "definition": "Sodium bicarbonate (baking soda) is the standard chemical for raising total alkalinity in pool water.",
@@ -615,6 +791,13 @@
     },
     {
       "id": "gl-035",
+      "es": {
+        "term": "Bisulfato de Sodio",
+        "definition": "El bisulfato de sodio (ácido seco) es un ácido granular usado para bajar el pH y la alcalinidad total de la piscina, como alternativa más segura al ácido muriático líquido.",
+        "explanation": "El bisulfato de sodio se vende como Reductor de pH o Ácido Seco. Es menos peligroso de manipular que el ácido muriático y no produce vapores. Sin embargo, es más costoso por dosis efectiva. Al disolverse en agua, produce ácido sulfúrico, que tiene el mismo efecto en la química de la piscina que el ácido muriático. Predisuélvalo en un balde de agua antes de agregarlo a la piscina.",
+        "whyItMatters": "El ácido seco es el reductor de pH preferido para aplicaciones donde manipular ácido líquido no es práctico o donde la seguridad del almacenamiento químico es una preocupación.",
+        "typicalValues": "Pureza: 93.2% NaHSO4; Baja el pH de forma similar al ácido muriático, pero a un mayor costo por dosis efectiva"
+      },
       "slug": "glossary/sodium-bisulfate",
       "term": "Sodium Bisulfate",
       "definition": "Sodium bisulfate (dry acid) is a granular acid used to lower pool pH and total alkalinity as a safer alternative to liquid muriatic acid.",
@@ -634,6 +817,13 @@
     },
     {
       "id": "gl-036",
+      "es": {
+        "term": "Rebote de pH",
+        "definition": "El rebote de pH es la condición en la que el pH del agua de la piscina oscila de forma rápida e impredecible, típicamente causada por una alcalinidad total insuficiente.",
+        "explanation": "Cuando la alcalinidad total está por debajo de 60 ppm, la capacidad amortiguadora del agua es inadecuada. Pequeñas adiciones de ácido o base, la lluvia, o incluso la actividad de los bañistas, pueden hacer que el pH oscile entre 0.5 y 1.0 unidades. El síntoma es un pH que se corrigió ayer pero que hoy vuelve a estar fuera de rango. La solución siempre es subir primero la alcalinidad total a 80–120 ppm, lo que estabiliza el sistema amortiguador.",
+        "whyItMatters": "El rebote de pH es frustrante y desperdicia producto. Comprender la causa raíz (alcalinidad baja) evita semanas de persecución infructuosa del pH.",
+        "typicalValues": "Ocurre cuando la TA está por debajo de 60 ppm"
+      },
       "slug": "glossary/ph-bounce",
       "term": "pH Bounce",
       "definition": "pH bounce is the condition where pool water pH swings rapidly and unpredictably, typically caused by insufficient total alkalinity.",
@@ -653,6 +843,13 @@
     },
     {
       "id": "gl-037",
+      "es": {
+        "term": "Estabilizador de Cloro",
+        "definition": "Estabilizador de cloro es otro nombre para el ácido cianúrico (CYA), usado como sinónimo especialmente en el marketing de productos.",
+        "explanation": "Los términos estabilizador, acondicionador y ácido cianúrico se refieren todos al mismo compuesto (C3H3N3O3). Las etiquetas de los productos suelen usar el término comercial estabilizador en lugar del nombre químico. Cuando la etiqueta de un producto indica que contiene estabilizador, está agregando CYA al agua. Esta distinción importa al monitorear la acumulación de CYA, ya que tanto los productos estabilizadores explícitos como las tabletas de cloro estabilizado (tricloro, dicloro) contribuyen a los niveles de CYA.",
+        "whyItMatters": "Reconocer que estabilizador y CYA son lo mismo evita la adición accidental excesiva de CYA proveniente de varias fuentes de producto.",
+        "typicalValues": "Objetivo: 30–50 ppm (piscinas estándar); 60–80 ppm (piscinas salinas)"
+      },
       "slug": "glossary/chlorine-stabilizer",
       "term": "Chlorine Stabilizer",
       "definition": "Chlorine stabilizer is another name for cyanuric acid (CYA), used as a synonym especially in product marketing.",
@@ -672,6 +869,14 @@
     },
     {
       "id": "gl-038",
+      "es": {
+        "term": "Ácido Hipocloroso",
+        "definition": "El ácido hipocloroso (HOCl) es la forma activa y bactericida del cloro en el agua de la piscina, responsable de eliminar patógenos.",
+        "explanation": "Cuando el cloro se disuelve en agua, forma tanto HOCl como OCl- (ion hipoclorito). El HOCl es aproximadamente 80 veces más eficaz como desinfectante que el OCl-. La proporción de HOCl está controlada completamente por el pH — a pH 7.2, cerca del 67% es HOCl; a pH 8.0, solo el 22% es HOCl. Por eso un pH alto reduce drásticamente la eficacia del cloro incluso cuando la lectura de cloro libre total es adecuada.",
+        "whyItMatters": "Comprender el HOCl explica por qué la gestión del pH es inseparable de la gestión del cloro en las piscinas.",
+        "abbreviation": "HOCl",
+        "typicalValues": "A pH 7.2: ~67% del FC es HOCl; a pH 7.4: ~55%; a pH 7.6: ~40%; a pH 8.0: ~22%"
+      },
       "slug": "glossary/hypochlorous-acid",
       "term": "Hypochlorous Acid",
       "abbreviation": "HOCl",
@@ -692,6 +897,13 @@
     },
     {
       "id": "gl-039",
+      "es": {
+        "term": "Brote de Algas",
+        "definition": "Un brote de algas es la multiplicación rápida y visible de algas en el agua de la piscina, que da como resultado agua verde, turbia o descolorida.",
+        "explanation": "Los brotes de algas comienzan cuando el cloro libre cae por debajo del mínimo eficaz (a menudo por debajo de 1 ppm, o por debajo del mínimo ajustado por CYA en piscinas estabilizadas) durante más de 24 horas. El agua tibia, la luz solar y los nutrientes de los bañistas aceleran el desarrollo del brote. El alga verde es la más común. El alga negra es más resistente y se establece como una biopelícula en las superficies de la piscina.",
+        "whyItMatters": "Los brotes de algas hacen que el agua no sea segura para nadar y requieren de 24 a 72 horas de tratamiento intensivo para eliminarse.",
+        "typicalValues": "Dosis de choque para un brote activo: 30 ppm de FC; Prevención: mantenga el FC por encima de 1 ppm en todo momento"
+      },
       "slug": "glossary/algae-bloom",
       "term": "Algae Bloom",
       "definition": "An algae bloom is the rapid, visible multiplication of algae in pool water, resulting in green, cloudy, or discolored water.",
@@ -711,6 +923,13 @@
     },
     {
       "id": "gl-040",
+      "es": {
+        "term": "Alga Verde",
+        "definition": "El alga verde es la especie de alga más común en piscinas, y hace que el agua se torne verde o azul verdosa y que las superficies se vuelvan resbaladizas.",
+        "explanation": "El alga verde (Chlorophyta) flota libremente en el agua cuando comienza a brotar y se deposita en las superficies a medida que madura. Se elimina manteniendo un cloro libre adecuado, pero forma una biopelícula que debe cepillarse físicamente antes del tratamiento de choque para permitir que el cloro penetre. El alga verde se vuelve gris blanquecina al morir — esta materia muerta debe filtrarse o aspirarse.",
+        "whyItMatters": "El alga verde es la emergencia de piscina más común. Conocer el protocolo de tratamiento correcto evita semanas de tratamiento ineficaz.",
+        "typicalValues": "Dosis de eliminación: 30 ppm de FC (brote activo); Mantenga 1–3 ppm de FC para prevenir"
+      },
       "slug": "glossary/green-algae",
       "term": "Green Algae",
       "definition": "Green algae is the most common pool algae species, causing water to turn green or teal and surfaces to become slippery.",
@@ -730,6 +949,13 @@
     },
     {
       "id": "gl-041",
+      "es": {
+        "term": "Alga Negra",
+        "definition": "El alga negra es una especie de alga persistente y profundamente arraigada que forma manchas negras o verde azuladas oscuras en las superficies de yeso de la piscina.",
+        "explanation": "A pesar de su nombre, el alga negra es una cianobacteria y no un alga verdadera. Forma una capa protectora externa (vaina) que resiste los niveles normales de cloro. El tratamiento requiere cepillar físicamente las manchas con fuerza usando un cepillo de cerdas duras para romper la capa protectora, y luego mantener niveles de FC muy altos (20–30 ppm) durante varios días. El alga negra a menudo reaparece si no se trata por completo.",
+        "whyItMatters": "El alga negra es la más difícil de eliminar de todas las algas de piscina y a menudo indica un déficit de cloro prolongado.",
+        "typicalValues": "Tratamiento: 20–30 ppm de FC mantenido durante 3 a 5 días; requiere cepillado vigoroso"
+      },
       "slug": "glossary/black-algae",
       "term": "Black Algae",
       "definition": "Black algae is a stubborn, deeply rooted algae species that forms black or dark blue-green spots on pool plaster surfaces.",
@@ -749,6 +975,13 @@
     },
     {
       "id": "gl-042",
+      "es": {
+        "term": "Alga Mostaza",
+        "definition": "El alga mostaza es una especie de alga de color amarillo pardo en piscinas que se cepilla fácilmente pero regresa rápido, causada por una cepa resistente al cloro.",
+        "explanation": "El alga mostaza (variantes de Phaeophyta) se deposita como una sustancia polvorienta de color amarillo o mostaza en las paredes y el piso de la piscina, particularmente en áreas sombreadas. Se cepilla con facilidad y puede confundirse con arena o polen. Sin embargo, reaparece en pocos días sin un tratamiento sostenido de cloro alto. Es resistente a los niveles normales de cloro, pero se trata eficazmente con una supercloración completa de 30 ppm de FC y el tratamiento simultáneo de todo el equipo que estuvo en contacto con el agua.",
+        "whyItMatters": "El alga mostaza a menudo se confunde con suciedad o arena, lo que lleva a tratamientos repetidos e ineficaces. Reconocerla permite un tratamiento de choque específico.",
+        "typicalValues": "Tratamiento: 30 ppm de FC; lave toda la ropa de baño y el equipo durante el tratamiento"
+      },
       "slug": "glossary/mustard-algae",
       "term": "Mustard Algae",
       "definition": "Mustard algae is a yellow-brown pool algae species that brushes off easily but quickly returns, caused by a chlorine-resistant strain.",
@@ -916,6 +1149,14 @@
     },
     {
       "id": "gl-053",
+      "es": {
+        "term": "Partes Por Millón",
+        "definition": "Partes por millón (ppm) es la unidad usada para expresar la concentración de sustancias disueltas en el agua de la piscina, equivalente a miligramos por litro (mg/L).",
+        "explanation": "Un ppm equivale a un miligramo de sustancia por litro de agua, o una parte de sustancia por cada millón de partes de agua en peso. Para la gestión de piscinas, el ppm se usa para expresar el cloro, los efectos de los productos de ajuste de pH, la dureza cálcica, la alcalinidad, el CYA y las concentraciones de sal. Todas las lecturas de los kits de prueba y los rangos objetivo de la piscina se expresan en ppm.",
+        "whyItMatters": "Comprender el ppm como unidad de medida es un requisito previo para interpretar todos los resultados de las pruebas de química de la piscina y los cálculos de dosis químicas.",
+        "abbreviation": "ppm",
+        "typicalValues": "FC: 1–3 ppm; TA: 80–120 ppm; CH: 200–400 ppm; Sal: 2,700–3,400 ppm"
+      },
       "slug": "glossary/parts-per-million",
       "term": "Parts Per Million",
       "abbreviation": "ppm",
@@ -966,6 +1207,13 @@
     },
     {
       "id": "gl-056",
+      "es": {
+        "term": "Demanda de Cloro",
+        "definition": "La demanda de cloro es la cantidad total de cloro consumido por todas las reacciones en el agua de la piscina antes de que se pueda establecer un residual de cloro libre.",
+        "explanation": "Cuando el agua de la piscina no tiene cloro libre, pero al agregar cloro no se produce un residual (el FC marca cero inmediatamente después de la dosis), el agua tiene una demanda de cloro alta. Esto puede ser causado por contaminación orgánica intensa, algas, cloro combinado alto o CYA muy alto. La demanda debe satisfacerse completamente antes de que persista un residual de cloro libre. Alcanzar la cloración de ruptura satisface la demanda causada por el cloro combinado.",
+        "whyItMatters": "Comprender la demanda de cloro explica por qué agregar cloro a algunas piscinas parece no producir resultados — la demanda debe satisfacerse antes de que se acumule el residual.",
+        "typicalValues": "La demanda se satisface por completo cuando la lectura de FC permanece estable entre 15 y 30 minutos después de la adición"
+      },
       "slug": "glossary/chlorine-demand",
       "term": "Chlorine Demand",
       "definition": "Chlorine demand is the total amount of chlorine consumed by all reactions in pool water before a free chlorine residual can be established.",
@@ -985,6 +1233,13 @@
     },
     {
       "id": "gl-057",
+      "es": {
+        "term": "Volumen de Piscina",
+        "definition": "El volumen de piscina es la capacidad total de una piscina en galones, usada como base para todos los cálculos de dosis químicas.",
+        "explanation": "El volumen de la piscina se calcula a partir de sus dimensiones y forma. Para piscinas rectangulares: Largo × Ancho × Profundidad Promedio × 7.48. Para piscinas circulares: π × r² × Profundidad × 7.48. Los errores de volumen de incluso un 10% se traducen directamente en errores equivalentes en cada dosis química. Conocer el volumen exacto de la piscina es el requisito previo más importante para una gestión correcta.",
+        "whyItMatters": "Cada cálculo de dosis química requiere el volumen de la piscina como dato de entrada. Una estimación incorrecta del volumen hace que todas las dosis químicas resulten proporcionalmente erróneas.",
+        "typicalValues": "Piscinas residenciales: 8,000–40,000 galones; Hot tubs: 200–600 galones"
+      },
       "slug": "glossary/pool-volume",
       "term": "Pool Volume",
       "definition": "Pool volume is the total capacity of a pool in gallons, used as the basis for all chemical dose calculations.",
@@ -1004,6 +1259,13 @@
     },
     {
       "id": "gl-058",
+      "es": {
+        "term": "Bomba de Piscina",
+        "definition": "Una bomba de piscina es el dispositivo mecánico que hace circular el agua a través del filtro, el calentador y el clorinador, manteniendo el movimiento del agua y la filtración.",
+        "explanation": "Las bombas de piscina crean succión al girar un impulsor que extrae agua del skimmer y el drenaje principal, la empuja a través del filtro y otros equipos, y la devuelve a la piscina por los retornos. El dimensionamiento de la bomba debe coincidir con el volumen de la piscina y la resistencia de las tuberías para lograr una tasa de recirculación adecuada. Las bombas de velocidad variable pueden ajustar su velocidad para ahorrar energía mientras mantienen una circulación adecuada.",
+        "whyItMatters": "La bomba es el corazón del sistema de la piscina. Sin una circulación adecuada, ningún tratamiento químico puede mantener la calidad del agua.",
+        "typicalValues": "Piscinas residenciales: 0.75–2 HP; Velocidad variable: 600–3,450 RPM"
+      },
       "slug": "glossary/pool-pump",
       "term": "Pool Pump",
       "definition": "A pool pump is the mechanical device that circulates water through the filter, heater, and chlorinator, maintaining water movement and filtration.",
@@ -1038,6 +1300,13 @@
     },
     {
       "id": "gl-060",
+      "es": {
+        "term": "GPM (Galones Por Minuto)",
+        "definition": "GPM es la unidad que mide el caudal del agua a través de una bomba de piscina u otro equipo.",
+        "explanation": "GPM (galones por minuto) es la especificación clave para dimensionar bombas de piscina y tuberías. El GPM de una bomba a una presión de descarga específica del sistema determina qué tan rápido puede lograr una recirculación de la piscina. Las piscinas más grandes requieren bombas de mayor GPM para lograr el mismo tiempo de recirculación. La resistencia de las tuberías (presión de descarga) reduce el GPM real por debajo del máximo teórico de la bomba.",
+        "whyItMatters": "El GPM es la unidad de caudal fundamental usada en el dimensionamiento de bombas, los cálculos de recirculación y las especificaciones de equipo.",
+        "typicalValues": "Piscinas residenciales: 40–80 GPM; Hot tubs: 80–120 GPM (para los chorros)"
+      },
       "slug": "glossary/gpm",
       "term": "GPM (Gallons Per Minute)",
       "definition": "GPM is the unit measuring the flow rate of water through a pool pump or other equipment.",
@@ -1057,6 +1326,13 @@
     },
     {
       "id": "gl-061",
+      "es": {
+        "term": "Agua Agresiva",
+        "definition": "El agua agresiva (corrosiva) tiene un LSI por debajo de −0.3, lo que significa que está subsaturada de carbonato de calcio y disolverá minerales de las superficies y el equipo de la piscina.",
+        "explanation": "El agua agresiva ataca el calcio de las superficies de yeso, graba el concreto, corroe el equipo metálico y desgasta la lechada. Las causas principales son el pH bajo, la dureza cálcica baja y la alcalinidad total baja. El agua dulce blanda recién agregada (bajo contenido mineral) es inherentemente agresiva. La solución es subir el pH, la alcalinidad y/o la dureza cálcica hasta que el LSI alcance el rango aceptable de −0.3 a +0.3.",
+        "whyItMatters": "El agua agresiva causa daños permanentes en las superficies y corrosión del equipo. La corrección temprana evita reparaciones costosas.",
+        "typicalValues": "Un LSI por debajo de −0.3 indica agua agresiva; por debajo de −0.5 es preocupante; por debajo de −1.0 es un problema grave"
+      },
       "slug": "glossary/aggressive-water",
       "term": "Aggressive Water",
       "definition": "Aggressive (corrosive) water has an LSI below -0.3, meaning it is under-saturated with calcium carbonate and will dissolve minerals from pool surfaces and equipment.",
@@ -1076,6 +1352,13 @@
     },
     {
       "id": "gl-062",
+      "es": {
+        "term": "Agua Incrustante",
+        "definition": "El agua incrustante tiene un LSI por encima de +0.3, lo que significa que está sobresaturada de carbonato de calcio y depositará incrustaciones en las superficies y el equipo.",
+        "explanation": "El agua sobresaturada deposita carbonato de calcio como incrustaciones cristalinas blancas o grises en las líneas de azulejos, los elementos del calentador, las células salinas, las tuberías y las superficies de la piscina. Las causas principales son el pH alto, la dureza cálcica alta y la temperatura alta. Prevenir las incrustaciones requiere mantener el LSI por debajo de +0.3 mediante la gestión del pH, la gestión de la dureza cálcica y el uso de productos inhibidores de incrustaciones en casos límite.",
+        "whyItMatters": "Las incrustaciones en los elementos del calentador actúan como aislante, causando sobrecalentamiento y fallas prematuras. Las incrustaciones en las células salinas reducen la eficiencia de generación de cloro.",
+        "typicalValues": "Un LSI por encima de +0.3 indica tendencia a formar incrustaciones; por encima de +0.5 es motivo de preocupación"
+      },
       "slug": "glossary/scaling-water",
       "term": "Scaling Water",
       "definition": "Scaling water has an LSI above +0.3, meaning it is over-saturated with calcium carbonate and will deposit scale on surfaces and equipment.",
@@ -1170,6 +1453,13 @@
     },
     {
       "id": "gl-068",
+      "es": {
+        "term": "Dilución",
+        "definition": "La dilución se refiere a la reducción en la concentración química del agua de la piscina causada por la adición de agua (lluvia, relleno, salpicaduras).",
+        "explanation": "La dilución reduce todos los productos químicos disueltos de forma proporcional. Una dilución del 10% (reemplazar el 10% del volumen de la piscina con agua nueva) reduce todos los parámetros en un 10%. La dilución es la única forma de reducir el CYA, la dureza cálcica, los sólidos disueltos totales (TDS) y la sal. La dilución por lluvia es significativa después de tormentas fuertes — una lluvia de una pulgada agrega aproximadamente 600 galones de agua con química casi nula por cada 1,000 pies cuadrados de superficie de piscina, lo que puede cambiar significativamente la TA y la dureza en una piscina pequeña.",
+        "whyItMatters": "Comprender la dilución ayuda a explicar por qué los parámetros bajan después de lluvias intensas y por qué los drenajes parciales son la única forma de reducir ciertos parámetros.",
+        "typicalValues": "Porcentaje de dilución = (agua agregada) ÷ (volumen total de la piscina) × 100"
+      },
       "slug": "glossary/dilution",
       "term": "Dilution",
       "definition": "Dilution refers to the reduction in chemical concentration in pool water caused by adding water (rain, refill, splash-out).",
@@ -1232,6 +1522,13 @@
     },
     {
       "id": "gl-072",
+      "es": {
+        "term": "Índice de Saturación",
+        "definition": "Un índice de saturación es un valor calculado que predice si el agua de la piscina disolverá minerales (índice negativo) o los depositará como incrustaciones (índice positivo).",
+        "explanation": "El Índice de Saturación de Langelier (LSI) es el índice de saturación estándar para el agua de piscina. El Índice de Estabilidad de Ryznar (RSI) es otra versión que usa criterios de interpretación ligeramente distintos. Ambos miden la misma tendencia fundamental del agua a corroer o formar incrustaciones. El LSI es el más utilizado en la industria de piscinas.",
+        "whyItMatters": "Los índices de saturación ofrecen una forma unificada de evaluar el balance del agua, teniendo en cuenta la interacción de todos los parámetros de balance simultáneamente.",
+        "typicalValues": "Objetivo de LSI: −0.3 a +0.3"
+      },
       "slug": "glossary/saturation-index",
       "term": "Saturation Index",
       "definition": "A saturation index is a calculated value predicting whether pool water will dissolve minerals (negative index) or deposit them as scale (positive index).",
@@ -1266,6 +1563,13 @@
     },
     {
       "id": "gl-074",
+      "es": {
+        "term": "Drenaje Parcial",
+        "definition": "Un drenaje parcial es el proceso de retirar una parte del agua de la piscina y reemplazarla con agua nueva para diluir los compuestos disueltos acumulados.",
+        "explanation": "Los drenajes parciales se usan para reducir el CYA, la dureza cálcica, los TDS y la sal, que no pueden bajarse mediante tratamiento químico. Un drenaje parcial del 25% reduce todos los compuestos disueltos en un 25%. Un drenaje del 50% los reduce en un 50%. Por ejemplo, si el CYA está en 100 ppm y el objetivo es 50 ppm, un drenaje del 50% lo devuelve al objetivo. El agua de relleno nueva típicamente vuelve a aportar una pequeña cantidad de esos compuestos, según la calidad del agua de la llave.",
+        "whyItMatters": "Los drenajes parciales son el único método para reducir el CYA, los TDS y otros compuestos acumulados en el agua de la piscina.",
+        "typicalValues": "Un drenaje parcial del 25% elimina el 25% de todos los compuestos disueltos; el momento depende de la temporada y del motivo"
+      },
       "slug": "glossary/partial-drain",
       "term": "Partial Drain",
       "definition": "A partial drain is the process of removing a portion of pool water and replacing it with fresh water to dilute accumulated dissolved compounds.",
@@ -1283,6 +1587,13 @@
     },
     {
       "id": "gl-075",
+      "es": {
+        "term": "Tasa de Recirculación de Piscina",
+        "definition": "La tasa de recirculación de la piscina es el tiempo requerido para que la bomba haga circular todo el volumen de la piscina a través del sistema de filtración una vez.",
+        "explanation": "Tasa de recirculación = Volumen de la piscina ÷ GPM de la bomba = tiempo para una filtración completa de toda el agua de la piscina. El mínimo de la industria es una recirculación completa cada 8 horas. Las piscinas con alta carga de bañistas se benefician de 2 a 3 recirculaciones por día. Las bombas de velocidad variable permiten tiempos de funcionamiento más largos a caudal reducido, logrando más recirculaciones a un menor costo energético.",
+        "whyItMatters": "La tasa de recirculación determina directamente la calidad del agua. Una recirculación insuficiente es una causa principal de agua turbia persistente y dificultad en la gestión de la química.",
+        "typicalValues": "Mínimo: 8 horas por recirculación; Óptimo: 4–6 horas por recirculación (2–3 veces al día)"
+      },
       "slug": "glossary/pool-turnover-rate",
       "term": "Pool Turnover Rate",
       "definition": "Pool turnover rate is the time required for the pool pump to circulate the entire pool volume through the filtration system once.",
@@ -1364,6 +1675,13 @@
     },
     {
       "id": "gl-080",
+      "es": {
+        "term": "Kit Químico de Apertura",
+        "definition": "Un kit químico de apertura de piscina es un paquete de productos químicos preparado para la apertura de la piscina en primavera, que típicamente incluye choque, alguicida y prevención de manchas.",
+        "explanation": "Los kits de apertura suelen contener: cloro de choque (hipoclorito de calcio), alguicida (dosis inicial), inhibidor de manchas e incrustaciones, y a veces un clarificador y tiras de prueba. Ofrecen un punto de partida conveniente para la química de la temporada de apertura, pero no deben sustituir un análisis completo del agua — las necesidades químicas reales dependen por completo de la química del agua con la que se está abriendo la piscina.",
+        "whyItMatters": "Los kits de apertura son un producto de conveniencia. Usar uno sin analizar primero el agua puede llevar a agregar productos que no se necesitan y a omitir ajustes que sí se necesitan.",
+        "typicalValues": "Úselo como punto de partida; verifique todos los parámetros con un análisis de agua antes y después de la apertura"
+      },
       "slug": "glossary/opening-chemical-kit",
       "term": "Opening Chemical Kit",
       "definition": "A pool opening chemical kit is a package of chemicals assembled for spring pool opening, typically including shock, algaecide, and stain prevention.",
@@ -1381,6 +1699,13 @@
     },
     {
       "id": "gl-081",
+      "es": {
+        "term": "Kit Químico de Cierre",
+        "definition": "Un kit químico de cierre de piscina contiene los productos químicos necesarios para balancear y proteger el agua de la piscina durante el reposo invernal.",
+        "explanation": "Los kits de cierre suelen incluir: choque, alguicida (fórmula de invierno), inhibidor de manchas, y a veces un dispensador flotante de cloro. El objetivo es dejar la piscina en reposo con agua balanceada que resista las algas y las incrustaciones durante meses de inactividad. La invernización requiere un balance correcto de pH y alcalinidad, una dosis de alguicida, y suficiente cloro para mantener un residual durante varias semanas.",
+        "whyItMatters": "Un cierre químico adecuado evita brotes severos de algas que de otro modo se desarrollarían durante el invierno, y que requerirían una costosa recuperación en primavera.",
+        "typicalValues": "Analice y balancee la química por completo antes de agregar los productos del kit de cierre"
+      },
       "slug": "glossary/closing-chemical-kit",
       "term": "Closing Chemical Kit",
       "definition": "A pool closing chemical kit contains the chemicals needed to balance and protect pool water during winter dormancy.",
@@ -1441,6 +1766,13 @@
     },
     {
       "id": "gl-085",
+      "es": {
+        "term": "Conductividad",
+        "definition": "La conductividad es una medida de la capacidad del agua para conducir electricidad, que aumenta con la concentración de iones disueltos.",
+        "explanation": "Un TDS más alto en el agua de la piscina aumenta la conductividad eléctrica. En piscinas salinas, la conductividad es una medida secundaria de la concentración de sal. Algunos dispositivos digitales de análisis de agua miden la conductividad como indicador indirecto del TDS o del nivel de sal. La conductividad se mide en microsiemens por centímetro (µS/cm) o milisiemens por centímetro (mS/cm). Los medidores de sal de las piscinas salinas a menudo en realidad miden la conductividad y convierten la lectura en una concentración estimada de sal.",
+        "whyItMatters": "Los medidores de sal basados en conductividad son comunes en las piscinas salinas. Comprender cómo funcionan ayuda a interpretar sus lecturas correctamente.",
+        "typicalValues": "Objetivo en piscina salina: aproximadamente 5,000–6,000 µS/cm (corresponde a ~3,000–3,400 ppm de sal)"
+      },
       "slug": "glossary/conductivity",
       "term": "Conductivity",
       "definition": "Conductivity is a measure of water's ability to conduct electricity, which increases with the concentration of dissolved ions.",
@@ -1458,6 +1790,13 @@
     },
     {
       "id": "gl-086",
+      "es": {
+        "term": "Dosis de Choque",
+        "definition": "La dosis de choque se refiere a la cantidad de producto de choque necesaria para elevar el cloro libre al nivel objetivo, según el volumen de la piscina y el objetivo del tratamiento.",
+        "explanation": "El choque de mantenimiento estándar eleva el FC a 10 ppm. El choque de recuperación para piscinas verdes apunta a 30 ppm. La dosis depende de: el volumen de la piscina (en galones), el aumento objetivo de FC (en ppm), y el porcentaje de cloro disponible del producto. Use la calculadora de choque para piscina para calcular la dosis exacta. Predisuelva el choque granular en un balde de agua antes de agregarlo a la piscina.",
+        "whyItMatters": "Una dosis de choque insuficiente no alcanza el punto de ruptura y desperdicia producto. Una dosis excesiva retrasa el reingreso y agrega calcio innecesario (en el caso del cal-hipo).",
+        "typicalValues": "Mantenimiento: 1 lb de cal-hipo por cada 10,000 gal sube el FC en ~6.5 ppm; Piscina verde: se necesitan varias dosis"
+      },
       "slug": "glossary/shock-dosage",
       "term": "Shock Dosage",
       "definition": "Shock dosage refers to the amount of shock product required to raise free chlorine to the target level for the pool volume and treatment goal.",
@@ -1477,6 +1816,13 @@
     },
     {
       "id": "gl-087",
+      "es": {
+        "term": "Referencia de Volumen de Piscina",
+        "definition": "Una referencia de volumen de piscina es una tabla precalculada de volúmenes aproximados para dimensiones comunes de piscina, usada para una estimación rápida de dosis.",
+        "explanation": "Las referencias de volumen de piscina permiten estimaciones rápidas sin realizar el cálculo completo. Una piscina de 12×24 pies con 5 pies de profundidad promedio contiene aproximadamente 10,800 galones. Una piscina de 16×32 pies a 5 pies contiene aproximadamente 19,200 galones. Estos valores de referencia deben verificarse contra las dimensiones reales de la piscina para una dosificación química precisa.",
+        "whyItMatters": "Las referencias rápidas de volumen ayudan a los propietarios de piscinas a tomar decisiones de dosificación inmediatas cuando no pueden medir la piscina con precisión.",
+        "typicalValues": "Piscina común: 10,000–25,000 galones; Hot tubs: 250–500 galones"
+      },
       "slug": "glossary/pool-volume-reference",
       "term": "Pool Volume Reference",
       "definition": "A pool volume reference is a pre-calculated table of approximate volumes for common pool dimensions, used for quick dose estimation.",
@@ -1513,6 +1859,14 @@
     },
     {
       "id": "gl-089",
+      "es": {
+        "term": "pH Saturado",
+        "definition": "El pH saturado (pHs) es el pH teórico al cual el agua de la piscina estaría exactamente en equilibrio con el carbonato de calcio, usado en el cálculo del LSI.",
+        "explanation": "El pHs es el pH al cual el agua está exactamente saturada de carbonato de calcio, dada su temperatura, dureza cálcica y alcalinidad actuales. El LSI se calcula como: LSI = pH − pHs. Si el pH real está por encima del pHs, el agua está sobresaturada (LSI positivo). Si está por debajo, subsaturada (LSI negativo). El pHs se calcula a partir de la temperatura, la dureza cálcica y la alcalinidad total.",
+        "whyItMatters": "El pHs es el concepto central en el cálculo del LSI. Comprenderlo muestra por qué subir el pH a 7.8 en agua tibia y dura crea un riesgo grave de incrustaciones.",
+        "abbreviation": "pHs",
+        "typicalValues": "pHs para piscinas típicas: 7.5–8.0 según la dureza, la alcalinidad y la temperatura"
+      },
       "slug": "glossary/saturated-ph",
       "term": "Saturated pH",
       "abbreviation": "pHs",
@@ -1533,6 +1887,13 @@
     },
     {
       "id": "gl-090",
+      "es": {
+        "term": "Lista de Verificación de Balance del Agua",
+        "definition": "Una lista de verificación de balance del agua es una secuencia de pruebas y ajustes que asegura que todos los parámetros de la química de la piscina se lleven al rango en el orden correcto.",
+        "explanation": "Una lista de verificación de balance del agua típicamente cubre: 1) Analizar todos los parámetros. 2) Ajustar la alcalinidad total a 80–120 ppm. 3) Volver a analizar y ajustar el pH a 7.2–7.6. 4) Ajustar la dureza cálcica al rango. 5) Ajustar el cloro y el CYA al objetivo. 6) Calcular y verificar el LSI. 7) Documentar todas las pruebas y adiciones. Seguir la lista evita el error común de agregar varios productos químicos al mismo tiempo o en el orden incorrecto.",
+        "whyItMatters": "Una lista de verificación escrita asegura que no se omita nada y que los ajustes se realicen en la secuencia correcta.",
+        "typicalValues": "TA → pH → CH → FC/CYA (este orden)"
+      },
       "slug": "glossary/water-balance-checklist",
       "term": "Water Balance Checklist",
       "definition": "A water balance checklist is a sequential list of tests and adjustments that ensures all pool chemistry parameters are brought into range in the correct order.",
@@ -1550,6 +1911,13 @@
     },
     {
       "id": "gl-091",
+      "es": {
+        "term": "Referencia de Química de Piscina",
+        "definition": "Una referencia de química de piscina es una tabla compilada de rangos objetivo, valores típicos y guías de ajuste para todos los parámetros principales del agua de la piscina.",
+        "explanation": "Las referencias de química de piscina compilan los rangos objetivo de FC (1–3 ppm), pH (7.2–7.6), TA (80–120 ppm), CH (200–400 ppm para yeso), CYA (30–50 ppm), sal (2,700–3,400 ppm) y otros parámetros en un solo formato de referencia rápida. También indican qué producto químico usar para subir o bajar cada parámetro.",
+        "whyItMatters": "Una guía de referencia física o digital cerca de la piscina permite tomar decisiones rápidas sin tener que recordar todos los rangos objetivo.",
+        "typicalValues": "Resume todos los objetivos de parámetros en un solo lugar"
+      },
       "slug": "glossary/pool-chemistry-reference",
       "term": "Pool Chemistry Reference",
       "definition": "A pool chemistry reference is a compiled table of target ranges, typical values, and adjustment guides for all major pool water parameters.",
@@ -1582,6 +1950,13 @@
     },
     {
       "id": "gl-093",
+      "es": {
+        "term": "Calendario de Choque para Piscina",
+        "definition": "Un calendario de choque para piscina es la frecuencia y el momento planificados de los tratamientos de choque a lo largo de la temporada de natación.",
+        "explanation": "Un calendario de choque típico: aplique choque una vez por semana, la misma noche (después de que la bomba haya funcionado durante el día para la distribución química, y antes de la noche cuando no hay UV). Aplique choque de inmediato después de cualquier carga alta de bañistas, tormenta, o una lectura de cloro combinado por encima de 0.5 ppm. Use de 1 a 2 lb de cal-hipo por cada 10,000 galones para el mantenimiento semanal; dosis más altas para situaciones de recuperación.",
+        "whyItMatters": "Un calendario de choque regular evita la acumulación de cloraminas y detecta problemas de química antes de que se conviertan en emergencias.",
+        "typicalValues": "Mantenimiento semanal: choque hasta 10 ppm de FC; Recuperación de emergencia: choque hasta 30 ppm de FC"
+      },
       "slug": "glossary/pool-shock-schedule",
       "term": "Pool Shock Schedule",
       "definition": "A pool shock schedule is the planned frequency and timing of pool shock treatments throughout the swimming season.",
@@ -1631,6 +2006,13 @@
     },
     {
       "id": "gl-096",
+      "es": {
+        "term": "Dosis de Ruptura",
+        "definition": "La dosis de ruptura es la cantidad específica de cloro libre que debe agregarse para destruir todo el cloro combinado en el agua de la piscina.",
+        "explanation": "Dosis de ruptura = 10 × (lectura de cloro combinado en ppm). Si el CC = 0.8 ppm, la dosis de ruptura = 8 ppm de FC adicional. El nivel actual de FC debe sumarse a la dosis de ruptura para determinar el FC objetivo total: si el FC actual es 1.5 ppm y la dosis de ruptura es 8 ppm, el FC objetivo = 9.5 ppm. La calculadora de choque no acepta una lectura de cloro combinado ni calcula este objetivo por sí misma — seleccione el valor preestablecido disponible más cercano (5, 10, 15 o 20 ppm) para su producto, o aplique directamente la fórmula de dosis de choque para obtener una cifra exacta.",
+        "whyItMatters": "Calcular la dosis de ruptura exacta evita la subdosificación (que no logra destruir las cloraminas y desperdicia producto) y la sobredosificación (que extiende el tiempo de espera para el reingreso).",
+        "typicalValues": "Dosis de ruptura = 10 × CC; típico: 5–15 ppm de FC adicional"
+      },
       "slug": "glossary/breakpoint-dose",
       "term": "Breakpoint Dose",
       "definition": "The breakpoint dose is the specific amount of free chlorine that must be added to destroy all combined chlorine in pool water.",
@@ -1695,6 +2077,13 @@
     },
     {
       "id": "gl-100",
+      "es": {
+        "term": "Elevador de pH",
+        "definition": "El elevador de pH es un producto para piscina que sube el pH del agua, típicamente carbonato de sodio (carbonato de sosa) o bicarbonato de sodio.",
+        "explanation": "El elevador de pH (carbonato de sosa) se usa cuando el pH de la piscina cae por debajo de 7.2. El carbonato de sodio (Na2CO3) sube el pH rápidamente con un aumento modesto de la alcalinidad. El bicarbonato de sodio sube principalmente la alcalinidad y, en segundo lugar, el pH — se usa cuando ambos necesitan subir. Predisuélvalo en agua antes de agregarlo a la piscina para evitar la turbidez blanquecina. Agréguelo cerca de los retornos con la bomba en funcionamiento y vuelva a analizar después de 2 a 4 horas.",
+        "whyItMatters": "Un pH bajo (por debajo de 7.2) reduce la comodidad del cloro, corroe las superficies e irrita a los bañistas. Una corrección pronta con elevador de pH es importante.",
+        "typicalValues": "Sube el pH aproximadamente 0.2 por libra por cada 10,000 galones; disuélvalo antes de agregarlo"
+      },
       "slug": "glossary/ph-increaser",
       "term": "pH Increaser",
       "definition": "pH increaser is a pool product that raises water pH, typically sodium carbonate (soda ash) or sodium bicarbonate.",

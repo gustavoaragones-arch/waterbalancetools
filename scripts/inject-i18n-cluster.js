@@ -70,7 +70,15 @@ function injectSwitcher(html, links, currentCode) {
   let out = html.replace(SWITCHER_STRIP_RE, '');
   const block = buildSwitcherBlock(links, currentCode);
   if (!block) return out;
-  const searchLinkRe = /(<a href="\/search\/"[^>]*>[\s\S]*?<\/a>)/;
+  // Phase 8N: the calculator pages this anchor was originally written
+  // against keep a trailing slash ("/search/") through their final
+  // post-processing pass, but the knowledge-platform families this phase
+  // adds (glossary/formulas/reference, and academy before them) resolve
+  // it without one ("/search") via the shared url-engine's own
+  // normalization -- both are the same link. Matching either form keeps
+  // the exact fail-fast guarantee (still throws if neither is present)
+  // while recognizing both of the site's own valid representations.
+  const searchLinkRe = /(<a href="\/search\/?"[^>]*>[\s\S]*?<\/a>)/;
   const m = out.match(searchLinkRe);
   if (!m) throw new Error('inject-i18n-cluster: no search nav link found to anchor language switcher injection');
   return out.replace(searchLinkRe, m[1] + block);
