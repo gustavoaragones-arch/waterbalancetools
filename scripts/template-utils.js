@@ -439,19 +439,28 @@ function chrome(key, locale) {
 }
 
 /**
- * Phase 8N: merges a record's nested `es` override object (the embedded
+ * Phase 8N/8O: merges a record's nested `es` override object (the embedded
  * Spanish data model established in Phase 8L/8M) over its English fields
  * for locale 'es', returning the record unchanged for every other locale
  * -- this is the single place that decides "which language's text does a
  * generator see," so generateTerm/generateFormula/generateRefPage never
  * branch on locale themselves for plain text fields.
  *
- * Reference pages are a special case: `es.tables` only carries translated
- * `title` strings (Phase 8N deliberately left `headers`/`rows` as
- * English structured data -- see docs/PHASE-8N-*.md's documented scope
- * limitation), so tables are merged element-by-element rather than
- * wholesale-replaced, preserving the English headers/rows under a
- * localized title.
+ * Reference pages are a special case: each `es.tables[i]` entry is merged
+ * element-by-element (never wholesale-replaced) so a table's numeric
+ * `headers`/`rows` cells can only ever come from the record actually
+ * providing them for that field. Phase 8N populated `title` only,
+ * leaving `headers`/`rows` to fall through to the English source; Phase
+ * 8O added full `headers`/`rows` translations (numeric values, units,
+ * thresholds, and URL cells copied through byte-identical -- see
+ * docs/PHASE-8O-*.md Section 5) but the same per-field fallback still
+ * applies to any future table that is only partially localized.
+ *
+ * Formulas are a parallel special case: `es.variables[i]` is merged by
+ * index with `symbol`/`unit` always taken from the English source
+ * (never from `es`), so a translated variable description can never
+ * accidentally alter a machine-readable symbol or unit -- the
+ * mathematical-identity-preservation guarantee Phase 8M/8O require.
  */
 function localizeRecord(record, locale) {
   if (locale !== 'es' || !record || !record.es) return record;
@@ -459,7 +468,22 @@ function localizeRecord(record, locale) {
   if (Array.isArray(record.es.tables) && Array.isArray(record.tables)) {
     merged.tables = record.tables.map((tbl, i) => {
       const esTbl = record.es.tables[i];
-      return esTbl && esTbl.title ? Object.assign({}, tbl, { title: esTbl.title }) : tbl;
+      if (!esTbl) return tbl;
+      return {
+        title: esTbl.title || tbl.title,
+        headers: Array.isArray(esTbl.headers) ? esTbl.headers : tbl.headers,
+        rows: Array.isArray(esTbl.rows) ? esTbl.rows : tbl.rows,
+      };
+    });
+  }
+  if (Array.isArray(record.es.variables) && Array.isArray(record.variables)) {
+    merged.variables = record.variables.map((v, i) => {
+      const esVar = record.es.variables[i];
+      return {
+        symbol: v.symbol,
+        description: (esVar && esVar.description) || v.description,
+        unit: v.unit,
+      };
     });
   }
   return merged;

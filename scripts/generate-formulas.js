@@ -19,6 +19,7 @@ const {
 } = require('./template-utils');
 const { htmlLangAttr } = require('../js/i18n/html-lang');
 const { getLocalizedCanonical } = require('../js/i18n/locale-url');
+const { localizeEquation } = require('../js/i18n/formula-equation-model');
 
 const data = require(path.join(ROOT, 'data', 'formulas.json'));
 const FORMULAS_DIR = path.join(ROOT, 'formulas');
@@ -90,24 +91,36 @@ ${SITE_FOOTER}
 function generateFormula(formula, locale) {
   const effectiveLocale = locale || 'en';
   const tpl = template('formula-template.html');
-  // Phase 8N: localizeRecord() overlays formula.es (title/explanation/
-  // workedExample/limitations/SEO fields) for locale 'es'. `equation` and
-  // `variables` are never present in `es` and so always pass through
-  // untouched -- the mathematical-identity-preservation guarantee this
-  // phase requires (see js/i18n/formula-equation-model.js). The variable
-  // table's Symbol/Description/Unit rows are a documented, deliberate
-  // scope limitation: descriptions stay English (see
-  // docs/PHASE-8N-SPANISH-CORE-REFERENCE-PRODUCTION.md).
+  // Phase 8N/8O: localizeRecord() overlays formula.es (title/explanation/
+  // workedExample/limitations/SEO fields, and -- as of Phase 8O --
+  // variables[].description) for locale 'es'. `equation` and
+  // variables[].symbol/unit are never sourced from `es` (localizeRecord's
+  // per-index merge always takes them from the English record), so they
+  // pass through untouched -- the mathematical-identity-preservation
+  // guarantee this phase requires (see js/i18n/formula-equation-model.js).
   const f = localizeRecord(formula, effectiveLocale);
   const bc = buildBreadcrumb(formula.slug, f.title, effectiveLocale);
 
-  const variableRows = (formula.variables || [])
+  const variableRows = (f.variables || [])
     .map(v =>
       `<tr><td><code>${esc(v.symbol)}</code></td>` +
       `<td>${esc(v.description)}</td>` +
       `<td>${esc(v.unit || '')}</td></tr>`
     )
     .join('\n              ');
+
+  // Phase 8O: the on-page equation display localizes only 'label'/'prose'
+  // tokens via the structured model's localizeEquation(), using
+  // formula.es.equationLabels as the translation lookup (falling back to
+  // the English label text for any label not present in the map, so a
+  // gap never renders literal undefined/blank text). Every
+  // 'operator'/'constant'/'variable'/'unit'/'punct' token is copied
+  // through by the model itself and can never be altered here.
+  const equationLabels = (formula.es && formula.es.equationLabels) || {};
+  const localizedEquation = effectiveLocale === 'es'
+    ? localizeEquation(formula.id, (text) => (Object.prototype.hasOwnProperty.call(equationLabels, text) ? equationLabels[text] : text))
+    : null;
+  const displayEquation = localizedEquation || formula.equation || '';
 
   const relatedFormulas = (data.formulas || []).filter(ff => ff.slug !== formula.slug);
   const categoryLabel = effectiveLocale === 'es' ? 'Fórmulas' : 'Formula Library';
@@ -150,7 +163,7 @@ function generateFormula(formula, locale) {
         ? '<a href="#formula" class="knowledge-chip">Fórmula</a><a href="#example" class="knowledge-chip">Ejemplo</a><a href="#explanation" class="knowledge-chip">Explicación</a>'
         : '<a href="#formula" class="knowledge-chip">Formula</a><a href="#example" class="knowledge-chip">Example</a><a href="#explanation" class="knowledge-chip">Explanation</a>',
     }),
-    EQUATION:          esc(formula.equation || ''),
+    EQUATION:          esc(displayEquation),
     VARIABLE_ROWS:     variableRows,
     EXAMPLE:           f.workedExample ? renderBody(f.workedExample) : (f.example || ''),
     CONTENT:           buildFormulaContent(f, effectiveLocale),

@@ -1416,6 +1416,90 @@
     "keywords": "brote algas"
   },
   {
+    "url": "/es/glossary/algaecide",
+    "lang": "es",
+    "contentId": "glossary:gl-044",
+    "title": "Alguicida",
+    "description": "Un alguicida es un producto químico que previene el crecimiento de algas o ayuda a eliminar algas ya establecidas en el agua de la piscina. Definición en esp...",
+    "h1": "Alguicida",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "alguicida"
+  },
+  {
+    "url": "/es/glossary/ammonia",
+    "lang": "es",
+    "contentId": "glossary:gl-084",
+    "title": "Amoníaco (Agua de Piscina)",
+    "description": "El amoníaco en el agua de la piscina es la principal fuente de nitrógeno para la formación de cloraminas, introducido por los desechos de los bañistas, inclu...",
+    "h1": "Amoníaco (Agua de Piscina)",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "amon aco agua piscina"
+  },
+  {
+    "url": "/es/glossary/backwashing",
+    "lang": "es",
+    "contentId": "glossary:gl-016",
+    "title": "Retrolavado",
+    "description": "El retrolavado es el proceso de invertir el flujo de agua a través de un filtro de arena o DE para expulsar los residuos acumulados en el medio filtrante hac...",
+    "h1": "Retrolavado",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "retrolavado"
+  },
+  {
+    "url": "/es/glossary/bather-load",
+    "lang": "es",
+    "contentId": "glossary:gl-055",
+    "title": "Carga de Bañistas",
+    "description": "La carga de bañistas se refiere a la cantidad y duración de nadadores en una piscina, lo cual afecta el consumo de cloro y los niveles de contaminación orgán...",
+    "h1": "Carga de Bañistas",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "carga istas"
+  },
+  {
+    "url": "/es/glossary/bcdmh",
+    "lang": "es",
+    "contentId": "glossary:gl-028",
+    "title": "BCDMH",
+    "description": "El BCDMH (1-bromo-3-cloro-5,5-dimetilhidantoína) es el ingrediente activo más común en las tabletas de bromo para spas. Definición en español con valores obj...",
+    "h1": "BCDMH",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "bcdmh"
+  },
+  {
+    "url": "/es/glossary/bicarbonate-alkalinity",
+    "lang": "es",
+    "contentId": "glossary:gl-088",
+    "title": "Alcalinidad de Bicarbonato",
+    "description": "La alcalinidad de bicarbonato es la parte de la alcalinidad total aportada por los iones de bicarbonato (HCO3-), que es la forma dominante en el agua de pisc...",
+    "h1": "Alcalinidad de Bicarbonato",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "alcalinidad bicarbonato"
+  },
+  {
+    "url": "/es/glossary/biofilm",
+    "lang": "es",
+    "contentId": "glossary:gl-043",
+    "title": "Biopelícula",
+    "description": "La biopelícula es una matriz protectora de bacterias y material orgánico que se establece en las superficies de la tubería de piscinas y spas. Definición en ...",
+    "h1": "Biopelícula",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "biopel cula"
+  },
+  {
     "url": "/es/glossary/black-algae",
     "lang": "es",
     "contentId": "glossary:gl-041",
@@ -1488,6 +1572,66 @@
     "keywords": "hipoclorito calcio"
   },
   {
+    "url": "/es/glossary/carbon-dioxide",
+    "lang": "es",
+    "contentId": "glossary:gl-083",
+    "title": "Dióxido de Carbono",
+    "description": "El dióxido de carbono (CO2) en el agua de la piscina forma ácido carbónico, lo que influye en el pH y contribuye a la deriva natural del pH hacia abajo en al...",
+    "h1": "Dióxido de Carbono",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "xido carbono"
+  },
+  {
+    "url": "/es/glossary/cartridge-filter",
+    "lang": "es",
+    "contentId": "glossary:gl-019",
+    "title": "Filtro de Cartucho",
+    "description": "Un filtro de cartucho es un tipo de filtro de piscina que usa un elemento plisado de poliéster para capturar partículas a medida que el agua pasa del exterio...",
+    "h1": "Filtro de Cartucho",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "filtro cartucho"
+  },
+  {
+    "url": "/es/glossary/chemical-compatibility",
+    "lang": "es",
+    "contentId": "glossary:gl-082",
+    "title": "Compatibilidad Química",
+    "description": "La compatibilidad química se refiere a la seguridad de mezclar o agregar secuencialmente productos químicos para piscina al agua sin causar reacciones peligr...",
+    "h1": "Compatibilidad Química",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "compatibilidad mica"
+  },
+  {
+    "url": "/es/glossary/chemical-log",
+    "lang": "es",
+    "contentId": "glossary:gl-092",
+    "title": "Registro Químico",
+    "description": "Un registro químico es un documento escrito o digital de cada resultado de prueba de agua y adición química de la piscina, usado para el seguimiento del mant...",
+    "h1": "Registro Químico",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "registro mico"
+  },
+  {
+    "url": "/es/glossary/chemical-storage",
+    "lang": "es",
+    "contentId": "glossary:gl-098",
+    "title": "Almacenamiento Químico",
+    "description": "El almacenamiento químico se refiere al almacenamiento seguro de productos químicos para piscina y spa, con el fin de evitar la degradación, los accidentes y...",
+    "h1": "Almacenamiento Químico",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "almacenamiento mico"
+  },
+  {
     "url": "/es/glossary/chloramine",
     "lang": "es",
     "contentId": "glossary:gl-022",
@@ -1524,6 +1668,18 @@
     "keywords": "estabilizador cloro"
   },
   {
+    "url": "/es/glossary/clarifier",
+    "lang": "es",
+    "contentId": "glossary:gl-045",
+    "title": "Clarificador",
+    "description": "Un clarificador de piscina es un producto coagulante que hace que las partículas finas en suspensión se agrupen en partículas más grandes que el filtro pueda...",
+    "h1": "Clarificador",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "clarificador"
+  },
+  {
     "url": "/es/glossary/closing-chemical-kit",
     "lang": "es",
     "contentId": "glossary:gl-081",
@@ -1534,6 +1690,18 @@
     "readingTime": null,
     "updated": null,
     "keywords": "kit mico cierre"
+  },
+  {
+    "url": "/es/glossary/colorimetric-test",
+    "lang": "es",
+    "contentId": "glossary:gl-097",
+    "title": "Prueba Colorimétrica",
+    "description": "Una prueba colorimétrica mide la química del agua observando el cambio de color de un reactivo agregado a una muestra de agua. Definición en español con valo...",
+    "h1": "Prueba Colorimétrica",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "prueba colorim trica"
   },
   {
     "url": "/es/glossary/combined-chlorine",
@@ -1560,6 +1728,18 @@
     "keywords": "conductividad"
   },
   {
+    "url": "/es/glossary/copper",
+    "lang": "es",
+    "contentId": "glossary:gl-066",
+    "title": "Cobre (Agua de Piscina)",
+    "description": "El cobre es un metal disuelto presente en algunas aguas de piscina que causa manchas azul-verdosas al oxidarse. Definición en español con valores objetivo y ...",
+    "h1": "Cobre (Agua de Piscina)",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "cobre agua piscina"
+  },
+  {
     "url": "/es/glossary/cyanuric-acid",
     "lang": "es",
     "contentId": "glossary:gl-011",
@@ -1570,6 +1750,30 @@
     "readingTime": null,
     "updated": null,
     "keywords": "cido cian rico"
+  },
+  {
+    "url": "/es/glossary/de-filter",
+    "lang": "es",
+    "contentId": "glossary:gl-059",
+    "title": "Filtro DE",
+    "description": "Un filtro DE (tierra de diatomeas) usa polvo de tierra de diatomeas recubierto sobre rejillas internas para filtrar el agua de la piscina con una finura de 3...",
+    "h1": "Filtro DE",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "filtro"
+  },
+  {
+    "url": "/es/glossary/dead-algae",
+    "lang": "es",
+    "contentId": "glossary:gl-079",
+    "title": "Algas Muertas",
+    "description": "Las algas muertas son células de algas eliminadas que permanecen en suspensión o asentadas en el agua de la piscina después del tratamiento de choque, causan...",
+    "h1": "Algas Muertas",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "algas muertas"
   },
   {
     "url": "/es/glossary/dichlor",
@@ -1594,6 +1798,54 @@
     "readingTime": null,
     "updated": null,
     "keywords": "diluci"
+  },
+  {
+    "url": "/es/glossary/dpd-test",
+    "lang": "es",
+    "contentId": "glossary:gl-049",
+    "title": "Prueba DPD",
+    "description": "El DPD (N,N-dietil-p-fenilendiamina) es el reactivo estándar usado en los kits de prueba líquidos para medir el cloro libre y el cloro total. Definición en e...",
+    "h1": "Prueba DPD",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "prueba dpd"
+  },
+  {
+    "url": "/es/glossary/evaporation",
+    "lang": "es",
+    "contentId": "glossary:gl-073",
+    "title": "Evaporación",
+    "description": "La evaporación es la pérdida de agua desde la superficie de una piscina a medida que las moléculas de agua escapan al aire, lo que concentra los productos qu...",
+    "h1": "Evaporación",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "evaporaci"
+  },
+  {
+    "url": "/es/glossary/filter-pressure",
+    "lang": "es",
+    "contentId": "glossary:gl-015",
+    "title": "Presión del Filtro",
+    "description": "La presión del filtro es la lectura de presión del agua en el manómetro del filtro, medida en psi (libras por pulgada cuadrada). Definición en español con va...",
+    "h1": "Presión del Filtro",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "presi del filtro"
+  },
+  {
+    "url": "/es/glossary/flocculant",
+    "lang": "es",
+    "contentId": "glossary:gl-046",
+    "title": "Floculante",
+    "description": "Un floculante de piscina es un agente coagulante que hace que todas las partículas en suspensión se agrupen y se hundan en el fondo de la piscina para ser as...",
+    "h1": "Floculante",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "floculante"
   },
   {
     "url": "/es/glossary/free-chlorine",
@@ -1644,6 +1896,18 @@
     "keywords": "cido hipocloroso"
   },
   {
+    "url": "/es/glossary/iron",
+    "lang": "es",
+    "contentId": "glossary:gl-065",
+    "title": "Hierro (Agua de Piscina)",
+    "description": "El hierro en el agua de la piscina es un metal disuelto que puede causar manchas de color marrón rojizo al oxidarse por el cloro o el tratamiento de choque. ...",
+    "h1": "Hierro (Agua de Piscina)",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "hierro agua piscina"
+  },
+  {
     "url": "/es/glossary/langelier-saturation-index",
     "lang": "es",
     "contentId": "glossary:gl-012",
@@ -1654,6 +1918,42 @@
     "readingTime": null,
     "updated": null,
     "keywords": "ndice saturaci langelier"
+  },
+  {
+    "url": "/es/glossary/main-drain",
+    "lang": "es",
+    "contentId": "glossary:gl-070",
+    "title": "Drenaje Principal",
+    "description": "El drenaje principal es el accesorio ubicado en el punto más bajo de una piscina que permite vaciarla por completo y proporciona un segundo punto de succión ...",
+    "h1": "Drenaje Principal",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "drenaje principal"
+  },
+  {
+    "url": "/es/glossary/metal-sequestrant",
+    "lang": "es",
+    "contentId": "glossary:gl-047",
+    "title": "Secuestrante de Metales",
+    "description": "Un secuestrante de metales es un producto químico para piscina que se une a los metales disueltos (hierro, cobre, manganeso) para evitar que manchen las supe...",
+    "h1": "Secuestrante de Metales",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "secuestrante metales"
+  },
+  {
+    "url": "/es/glossary/multiport-valve",
+    "lang": "es",
+    "contentId": "glossary:gl-069",
+    "title": "Válvula Multipuerto",
+    "description": "Una válvula multipuerto es la válvula de control en un filtro de arena o DE que selecciona entre los modos de filtrado, retrolavado, enjuague, desecho y otro...",
+    "h1": "Válvula Multipuerto",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "lvula multipuerto"
   },
   {
     "url": "/es/glossary/muriatic-acid",
@@ -1692,6 +1992,30 @@
     "keywords": "kit mico apertura"
   },
   {
+    "url": "/es/glossary/orp",
+    "lang": "es",
+    "contentId": "glossary:gl-013",
+    "title": "ORP (Potencial de Oxidación-Reducción)",
+    "description": "El ORP es el potencial eléctrico del agua medido en milivoltios, que indica la capacidad oxidante general del agua. Definición en español con valores objetiv...",
+    "h1": "ORP (Potencial de Oxidación-Reducción)",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "orp potencial oxidaci reducci"
+  },
+  {
+    "url": "/es/glossary/oto-test",
+    "lang": "es",
+    "contentId": "glossary:gl-050",
+    "title": "Prueba OTO",
+    "description": "El OTO (ortotolidina) es un reactivo de prueba más antiguo que mide el cloro total al producir un color amarillo en agua clorada. Definición en español con v...",
+    "h1": "Prueba OTO",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "prueba oto"
+  },
+  {
     "url": "/es/glossary/oxidizer",
     "lang": "es",
     "contentId": "glossary:gl-006",
@@ -1702,6 +2026,18 @@
     "readingTime": null,
     "updated": null,
     "keywords": "oxidante"
+  },
+  {
+    "url": "/es/glossary/ozone",
+    "lang": "es",
+    "contentId": "glossary:gl-031",
+    "title": "Ozono",
+    "description": "El ozono (O3) es un oxidante potente usado en sistemas de piscina para reducir la contaminación orgánica, la demanda de cloro y la formación de cloraminas. D...",
+    "h1": "Ozono",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "ozono"
   },
   {
     "url": "/es/glossary/partial-drain",
@@ -1764,6 +2100,30 @@
     "keywords": "elevador"
   },
   {
+    "url": "/es/glossary/phosphates",
+    "lang": "es",
+    "contentId": "glossary:gl-064",
+    "title": "Fosfatos",
+    "description": "Los fosfatos son nutrientes presentes en el agua de la piscina que pueden promover el crecimiento de algas cuando el cloro libre es inadecuado. Definición en...",
+    "h1": "Fosfatos",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "fosfatos"
+  },
+  {
+    "url": "/es/glossary/pink-slime",
+    "lang": "es",
+    "contentId": "glossary:gl-076",
+    "title": "Limo Rosado",
+    "description": "El limo rosado es un crecimiento bacteriano rosado o anaranjado causado por especies de Serratia marcescens o Methylobacterium, comúnmente observado en spas ...",
+    "h1": "Limo Rosado",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "limo rosado"
+  },
+  {
     "url": "/es/glossary/pool-chemistry-reference",
     "lang": "es",
     "contentId": "glossary:gl-091",
@@ -1776,6 +2136,18 @@
     "keywords": "referencia mica piscina"
   },
   {
+    "url": "/es/glossary/pool-maintenance-schedule",
+    "lang": "es",
+    "contentId": "glossary:gl-095",
+    "title": "Calendario de Mantenimiento de la Piscina",
+    "description": "Un calendario de mantenimiento de la piscina es un plan escrito que cubre las tareas diarias, semanales, mensuales y estacionales de química y equipo de la p...",
+    "h1": "Calendario de Mantenimiento de la Piscina",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "calendario mantenimiento piscina"
+  },
+  {
     "url": "/es/glossary/pool-pump",
     "lang": "es",
     "contentId": "glossary:gl-058",
@@ -1786,6 +2158,18 @@
     "readingTime": null,
     "updated": null,
     "keywords": "bomba piscina"
+  },
+  {
+    "url": "/es/glossary/pool-safety-equipment",
+    "lang": "es",
+    "contentId": "glossary:gl-099",
+    "title": "Equipo de Seguridad para Piscina",
+    "description": "El equipo de seguridad para piscina incluye los dispositivos físicos necesarios para asistir en la respuesta a emergencias en la piscina: salvavidas, pértiga...",
+    "h1": "Equipo de Seguridad para Piscina",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "equipo seguridad para piscina"
   },
   {
     "url": "/es/glossary/pool-shock-schedule",
@@ -1836,6 +2220,18 @@
     "keywords": "referencia volumen piscina"
   },
   {
+    "url": "/es/glossary/pressure-gauge",
+    "lang": "es",
+    "contentId": "glossary:gl-078",
+    "title": "Manómetro",
+    "description": "Un manómetro en el filtro de la piscina mide la presión del agua dentro de la carcasa del filtro en psi, indicando la limpieza del filtro y la resistencia al...",
+    "h1": "Manómetro",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "man metro"
+  },
+  {
     "url": "/es/glossary/pump-turnover",
     "lang": "es",
     "contentId": "glossary:gl-017",
@@ -1848,6 +2244,30 @@
     "keywords": "recirculaci bomba"
   },
   {
+    "url": "/es/glossary/reagent",
+    "lang": "es",
+    "contentId": "glossary:gl-052",
+    "title": "Reactivo",
+    "description": "Un reactivo es un producto químico usado en un kit de prueba de agua que reacciona con el parámetro medido para producir un cambio de color medible. Definici...",
+    "h1": "Reactivo",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "reactivo"
+  },
+  {
+    "url": "/es/glossary/return-jet",
+    "lang": "es",
+    "contentId": "glossary:gl-071",
+    "title": "Boquilla de Retorno",
+    "description": "Las boquillas de retorno son los accesorios en la pared de la piscina a través de los cuales el agua filtrada y tratada regresa a la piscina. Definición en e...",
+    "h1": "Boquilla de Retorno",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "boquilla retorno"
+  },
+  {
     "url": "/es/glossary/salt-chlorination",
     "lang": "es",
     "contentId": "glossary:gl-029",
@@ -1858,6 +2278,18 @@
     "readingTime": null,
     "updated": null,
     "keywords": "cloraci salina"
+  },
+  {
+    "url": "/es/glossary/sand-filter",
+    "lang": "es",
+    "contentId": "glossary:gl-020",
+    "title": "Filtro de Arena",
+    "description": "Un filtro de arena es un tipo de filtro de piscina que hace pasar el agua a través de un lecho de arena de sílice especialmente calibrada para capturar partí...",
+    "h1": "Filtro de Arena",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "filtro arena"
   },
   {
     "url": "/es/glossary/sanitizer",
@@ -1896,6 +2328,18 @@
     "keywords": "ndice saturaci"
   },
   {
+    "url": "/es/glossary/scale-inhibitor",
+    "lang": "es",
+    "contentId": "glossary:gl-048",
+    "title": "Inhibidor de Incrustaciones",
+    "description": "Un inhibidor de incrustaciones es un producto para piscina que evita que el carbonato de calcio precipite sobre las superficies, los azulejos y el equipo de ...",
+    "h1": "Inhibidor de Incrustaciones",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "inhibidor incrustaciones"
+  },
+  {
     "url": "/es/glossary/scaling-water",
     "lang": "es",
     "contentId": "glossary:gl-062",
@@ -1930,6 +2374,18 @@
     "readingTime": null,
     "updated": null,
     "keywords": "dosis choque"
+  },
+  {
+    "url": "/es/glossary/skimmer",
+    "lang": "es",
+    "contentId": "glossary:gl-018",
+    "title": "Skimmer",
+    "description": "Un skimmer es un accesorio de la piscina integrado en la pared a nivel de la superficie del agua que absorbe el agua superficial y los residuos flotantes par...",
+    "h1": "Skimmer",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "skimmer"
   },
   {
     "url": "/es/glossary/sodium-bicarbonate",
@@ -1992,6 +2448,18 @@
     "keywords": "supercloraci"
   },
   {
+    "url": "/es/glossary/test-strip",
+    "lang": "es",
+    "contentId": "glossary:gl-051",
+    "title": "Tira Reactiva",
+    "description": "Una tira reactiva es una tira de plástico con almohadillas impregnadas de reactivo que producen cambios de color al sumergirse en el agua de la piscina, indi...",
+    "h1": "Tira Reactiva",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "tira reactiva"
+  },
+  {
     "url": "/es/glossary/total-alkalinity",
     "lang": "es",
     "contentId": "glossary:gl-009",
@@ -2016,6 +2484,30 @@
     "keywords": "cloro total"
   },
   {
+    "url": "/es/glossary/total-dissolved-solids",
+    "lang": "es",
+    "contentId": "glossary:gl-014",
+    "title": "Sólidos Disueltos Totales",
+    "description": "Los sólidos disueltos totales miden la concentración total de todas las sustancias disueltas en el agua de la piscina, expresada en ppm. Definición en españo...",
+    "h1": "Sólidos Disueltos Totales",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "lidos disueltos totales"
+  },
+  {
+    "url": "/es/glossary/total-hardness",
+    "lang": "es",
+    "contentId": "glossary:gl-063",
+    "title": "Dureza Total",
+    "description": "La dureza total mide todos los iones minerales divalentes en el agua (calcio y magnesio), mientras que la química de piscinas usa específicamente solo la dur...",
+    "h1": "Dureza Total",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "dureza total"
+  },
+  {
     "url": "/es/glossary/trichlor",
     "lang": "es",
     "contentId": "glossary:gl-024",
@@ -2028,6 +2520,30 @@
     "keywords": "tricloro"
   },
   {
+    "url": "/es/glossary/turbidity",
+    "lang": "es",
+    "contentId": "glossary:gl-054",
+    "title": "Turbidez",
+    "description": "La turbidez es la nubosidad o falta de transparencia del agua de la piscina causada por partículas finas en suspensión que dispersan la luz. Definición en es...",
+    "h1": "Turbidez",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "turbidez"
+  },
+  {
+    "url": "/es/glossary/uv-sanitization",
+    "lang": "es",
+    "contentId": "glossary:gl-030",
+    "title": "Sanitización UV",
+    "description": "La sanitización UV usa luz ultravioleta para inactivar microorganismos en el agua de la piscina a medida que pasa por una cámara UV en la línea de equipos. D...",
+    "h1": "Sanitización UV",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "sanitizaci"
+  },
+  {
     "url": "/es/glossary/water-balance-checklist",
     "lang": "es",
     "contentId": "glossary:gl-090",
@@ -2038,6 +2554,42 @@
     "readingTime": null,
     "updated": null,
     "keywords": "lista verificaci balance del agua"
+  },
+  {
+    "url": "/es/glossary/water-temperature",
+    "lang": "es",
+    "contentId": "glossary:gl-077",
+    "title": "Temperatura del Agua",
+    "description": "La temperatura del agua afecta la demanda de cloro, las velocidades de reacción química, la solubilidad del calcio y el Índice de Saturación de Langelier. De...",
+    "h1": "Temperatura del Agua",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "temperatura del agua"
+  },
+  {
+    "url": "/es/glossary/water-test-log",
+    "lang": "es",
+    "contentId": "glossary:gl-094",
+    "title": "Registro de Análisis del Agua",
+    "description": "Un registro de análisis del agua es una hoja de registro para documentar los resultados de las pruebas de agua de la piscina o el spa a lo largo del tiempo. ...",
+    "h1": "Registro de Análisis del Agua",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "registro lisis del agua"
+  },
+  {
+    "url": "/es/glossary/winterization",
+    "lang": "es",
+    "contentId": "glossary:gl-067",
+    "title": "Invernización",
+    "description": "La invernización es el proceso de preparar una piscina o spa para el cierre invernal, incluyendo el drenaje, la purga de las líneas de tubería y la protecció...",
+    "h1": "Invernización",
+    "category": "Glossary",
+    "readingTime": null,
+    "updated": null,
+    "keywords": "invernizaci"
   },
   {
     "url": "/glossary",
@@ -2078,7 +2630,7 @@
   {
     "url": "/glossary/algaecide",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-044",
     "title": "Algaecide",
     "description": "An algaecide is a chemical product that prevents algae growth or assists in killing established algae in pool water. Plain-language definition with target va...",
     "h1": "Algaecide",
@@ -2090,7 +2642,7 @@
   {
     "url": "/glossary/ammonia",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-084",
     "title": "Ammonia (Pool Water)",
     "description": "Ammonia in pool water is the primary nitrogen source for chloramine formation, introduced by bather waste including sweat and urine. Plain-language definitio...",
     "h1": "Ammonia (Pool Water)",
@@ -2102,7 +2654,7 @@
   {
     "url": "/glossary/backwashing",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-016",
     "title": "Backwashing",
     "description": "Backwashing is the process of reversing water flow through a sand or DE filter to flush accumulated debris out of the filter media to waste. Plain-language d...",
     "h1": "Backwashing",
@@ -2114,7 +2666,7 @@
   {
     "url": "/glossary/bather-load",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-055",
     "title": "Bather Load",
     "description": "Bather load refers to the number and duration of swimmers in a pool, which affects chlorine consumption and organic contamination levels. Plain-language defi...",
     "h1": "Bather Load",
@@ -2126,7 +2678,7 @@
   {
     "url": "/glossary/bcdmh",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-028",
     "title": "BCDMH",
     "description": "BCDMH (1-bromo-3-chloro-5,5-dimethylhydantoin) is the most common active ingredient in bromine tablets for hot tubs and spas. Plain-language definition with ...",
     "h1": "BCDMH",
@@ -2138,7 +2690,7 @@
   {
     "url": "/glossary/bicarbonate-alkalinity",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-088",
     "title": "Bicarbonate Alkalinity",
     "description": "Bicarbonate alkalinity is the portion of total alkalinity contributed by bicarbonate ions (HCO3-), which is the dominant form in properly maintained pool wat...",
     "h1": "Bicarbonate Alkalinity",
@@ -2150,7 +2702,7 @@
   {
     "url": "/glossary/biofilm",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-043",
     "title": "Biofilm",
     "description": "Biofilm is a protective matrix of bacteria and organic material that establishes on pool and spa plumbing surfaces. Plain-language definition with target val...",
     "h1": "Biofilm",
@@ -2234,7 +2786,7 @@
   {
     "url": "/glossary/carbon-dioxide",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-083",
     "title": "Carbon Dioxide",
     "description": "Carbon dioxide (CO2) in pool water forms carbonic acid, which influences pH and contributes to the natural downward pH drift in some systems. Plain-language ...",
     "h1": "Carbon Dioxide",
@@ -2246,7 +2798,7 @@
   {
     "url": "/glossary/cartridge-filter",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-019",
     "title": "Cartridge Filter",
     "description": "A cartridge filter is a pool filter type that uses a pleated polyester element to capture particles as water passes from outside to inside the element. Plain...",
     "h1": "Cartridge Filter",
@@ -2258,7 +2810,7 @@
   {
     "url": "/glossary/chemical-compatibility",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-082",
     "title": "Chemical Compatibility",
     "description": "Chemical compatibility refers to the safety of mixing or sequentially adding pool chemicals to water without dangerous reactions. Plain-language definition w...",
     "h1": "Chemical Compatibility",
@@ -2270,7 +2822,7 @@
   {
     "url": "/glossary/chemical-log",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-092",
     "title": "Chemical Log",
     "description": "A chemical log is a written or digital record of every pool water test result and chemical addition, used for maintenance tracking and liability documentatio...",
     "h1": "Chemical Log",
@@ -2282,7 +2834,7 @@
   {
     "url": "/glossary/chemical-storage",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-098",
     "title": "Chemical Storage",
     "description": "Chemical storage refers to the safe storage of pool and spa chemicals to prevent degradation, accidents, and dangerous reactions. Plain-language definition w...",
     "h1": "Chemical Storage",
@@ -2330,7 +2882,7 @@
   {
     "url": "/glossary/clarifier",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-045",
     "title": "Clarifier",
     "description": "A pool clarifier is a coagulant product that causes fine suspended particles to clump together into larger particles that the filter can capture. Plain-langu...",
     "h1": "Clarifier",
@@ -2354,7 +2906,7 @@
   {
     "url": "/glossary/colorimetric-test",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-097",
     "title": "Colorimetric Test",
     "description": "A colorimetric test measures water chemistry by observing the colour change of a reagent added to a water sample. Plain-language definition with target value...",
     "h1": "Colorimetric Test",
@@ -2390,7 +2942,7 @@
   {
     "url": "/glossary/copper",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-066",
     "title": "Copper (Pool Water)",
     "description": "Copper is a dissolved metal found in some pool water that causes blue-green staining when oxidised. Plain-language definition with target values and related ...",
     "h1": "Copper (Pool Water)",
@@ -2414,7 +2966,7 @@
   {
     "url": "/glossary/de-filter",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-059",
     "title": "DE Filter",
     "description": "A DE (diatomaceous earth) filter uses diatomaceous earth powder coated on internal grids to filter pool water to 3–5 micron fineness. Plain-language definiti...",
     "h1": "DE Filter",
@@ -2426,7 +2978,7 @@
   {
     "url": "/glossary/dead-algae",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-079",
     "title": "Dead Algae",
     "description": "Dead algae is killed algae cells that remain suspended or settled in pool water after shock treatment, causing grey or white cloudiness. Plain-language defin...",
     "h1": "Dead Algae",
@@ -2462,7 +3014,7 @@
   {
     "url": "/glossary/dpd-test",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-049",
     "title": "DPD Test",
     "description": "DPD (N,N-diethyl-p-phenylenediamine) is the standard reagent used in liquid test kits to measure free chlorine and total chlorine. Plain-language definition ...",
     "h1": "DPD Test",
@@ -2474,7 +3026,7 @@
   {
     "url": "/glossary/evaporation",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-073",
     "title": "Evaporation",
     "description": "Evaporation is the loss of water from a pool's surface as water molecules escape into the air, which concentrates dissolved chemicals and raises TDS. Plain-l...",
     "h1": "Evaporation",
@@ -2486,7 +3038,7 @@
   {
     "url": "/glossary/filter-pressure",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-015",
     "title": "Filter Pressure",
     "description": "Filter pressure is the water pressure reading on the filter pressure gauge, measured in psi (pounds per square inch). Plain-language definition with target v...",
     "h1": "Filter Pressure",
@@ -2498,7 +3050,7 @@
   {
     "url": "/glossary/flocculant",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-046",
     "title": "Flocculant",
     "description": "A pool flocculant is a coagulating agent that causes all suspended particles to clump and sink to the pool floor for vacuuming to waste. Plain-language defin...",
     "h1": "Flocculant",
@@ -2558,7 +3110,7 @@
   {
     "url": "/glossary/iron",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-065",
     "title": "Iron (Pool Water)",
     "description": "Iron in pool water is a dissolved metal that can cause reddish-brown staining when oxidised by chlorine or shock treatment. Plain-language definition with ta...",
     "h1": "Iron (Pool Water)",
@@ -2582,7 +3134,7 @@
   {
     "url": "/glossary/main-drain",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-070",
     "title": "Main Drain",
     "description": "The main drain is the fitting at the lowest point of a pool that allows the pool to be completely drained and provides a second suction point for the pump. P...",
     "h1": "Main Drain",
@@ -2594,7 +3146,7 @@
   {
     "url": "/glossary/metal-sequestrant",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-047",
     "title": "Metal Sequestrant",
     "description": "A metal sequestrant is a pool chemical that binds dissolved metals (iron, copper, manganese) to prevent them from staining pool surfaces. Plain-language defi...",
     "h1": "Metal Sequestrant",
@@ -2606,7 +3158,7 @@
   {
     "url": "/glossary/multiport-valve",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-069",
     "title": "Multiport Valve",
     "description": "A multiport valve is the control valve on a sand or DE filter that selects between filter, backwash, rinse, waste, and other operational modes. Plain-languag...",
     "h1": "Multiport Valve",
@@ -2654,7 +3206,7 @@
   {
     "url": "/glossary/orp",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-013",
     "title": "ORP (Oxidation-Reduction Potential)",
     "description": "ORP is the electrical potential of water measured in millivolts that indicates the overall oxidising capacity of the water. Plain-language definition with ta...",
     "h1": "ORP (Oxidation-Reduction Potential)",
@@ -2666,7 +3218,7 @@
   {
     "url": "/glossary/oto-test",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-050",
     "title": "OTO Test",
     "description": "OTO (orthotolidine) is an older test reagent that measures total chlorine by producing a yellow colour in chlorinated water. Plain-language definition with t...",
     "h1": "OTO Test",
@@ -2690,7 +3242,7 @@
   {
     "url": "/glossary/ozone",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-031",
     "title": "Ozone",
     "description": "Ozone (O3) is a powerful oxidiser used in pool systems to reduce organic contamination, chlorine demand, and chloramine formation. Plain-language definition ...",
     "h1": "Ozone",
@@ -2762,7 +3314,7 @@
   {
     "url": "/glossary/phosphates",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-064",
     "title": "Phosphates",
     "description": "Phosphates are nutrients present in pool water that can promote algae growth when free chlorine is inadequate. Plain-language definition with target values a...",
     "h1": "Phosphates",
@@ -2774,7 +3326,7 @@
   {
     "url": "/glossary/pink-slime",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-076",
     "title": "Pink Slime",
     "description": "Pink slime is a pink or orange bacterial growth caused by Serratia marcescens or Methylobacterium species, commonly seen in hot tubs and pool fittings. Plain...",
     "h1": "Pink Slime",
@@ -2798,7 +3350,7 @@
   {
     "url": "/glossary/pool-maintenance-schedule",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-095",
     "title": "Pool Maintenance Schedule",
     "description": "A pool maintenance schedule is a written plan covering daily, weekly, monthly, and seasonal maintenance tasks for pool chemistry and equipment. Plain-languag...",
     "h1": "Pool Maintenance Schedule",
@@ -2822,7 +3374,7 @@
   {
     "url": "/glossary/pool-safety-equipment",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-099",
     "title": "Pool Safety Equipment",
     "description": "Pool safety equipment includes the physical devices required to assist in pool emergency response: life ring, reaching pole, first aid kit, and emergency sig...",
     "h1": "Pool Safety Equipment",
@@ -2882,7 +3434,7 @@
   {
     "url": "/glossary/pressure-gauge",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-078",
     "title": "Pressure Gauge",
     "description": "A pressure gauge on the pool filter measures water pressure inside the filter housing in psi, indicating filter cleanliness and flow resistance. Plain-langua...",
     "h1": "Pressure Gauge",
@@ -2906,7 +3458,7 @@
   {
     "url": "/glossary/reagent",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-052",
     "title": "Reagent",
     "description": "A reagent is a chemical used in a water test kit that reacts with the parameter being measured to produce a measurable colour change. Plain-language definiti...",
     "h1": "Reagent",
@@ -2918,7 +3470,7 @@
   {
     "url": "/glossary/return-jet",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-071",
     "title": "Return Jet",
     "description": "Return jets are the fittings in a pool wall through which filtered and treated water is returned to the pool. Plain-language definition with target values an...",
     "h1": "Return Jet",
@@ -2942,7 +3494,7 @@
   {
     "url": "/glossary/sand-filter",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-020",
     "title": "Sand Filter",
     "description": "A sand filter is a pool filter type that passes water through a bed of specially graded silica sand to capture particles. Plain-language definition with targ...",
     "h1": "Sand Filter",
@@ -2990,7 +3542,7 @@
   {
     "url": "/glossary/scale-inhibitor",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-048",
     "title": "Scale Inhibitor",
     "description": "A scale inhibitor is a pool product that prevents calcium carbonate from precipitating onto pool surfaces, tile, and equipment. Plain-language definition wit...",
     "h1": "Scale Inhibitor",
@@ -3038,7 +3590,7 @@
   {
     "url": "/glossary/skimmer",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-018",
     "title": "Skimmer",
     "description": "A skimmer is a pool fitting built into the pool wall at the water surface that draws in surface water and floating debris for filtration. Plain-language defi...",
     "h1": "Skimmer",
@@ -3110,7 +3662,7 @@
   {
     "url": "/glossary/test-strip",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-051",
     "title": "Test Strip",
     "description": "A test strip is a plastic strip with reagent-impregnated pads that produce colour changes when dipped in pool water, indicating chemical concentrations. Plai...",
     "h1": "Test Strip",
@@ -3146,7 +3698,7 @@
   {
     "url": "/glossary/total-dissolved-solids",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-014",
     "title": "Total Dissolved Solids",
     "description": "Total dissolved solids measures the total concentration of all dissolved substances in pool water, expressed in ppm. Plain-language definition with target va...",
     "h1": "Total Dissolved Solids",
@@ -3158,7 +3710,7 @@
   {
     "url": "/glossary/total-hardness",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-063",
     "title": "Total Hardness",
     "description": "Total hardness measures all divalent mineral ions in water (calcium and magnesium), while pool chemistry specifically uses only calcium hardness. Plain-langu...",
     "h1": "Total Hardness",
@@ -3182,7 +3734,7 @@
   {
     "url": "/glossary/turbidity",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-054",
     "title": "Turbidity",
     "description": "Turbidity is the cloudiness or haziness of pool water caused by suspended fine particles that scatter light. Plain-language definition with target values and...",
     "h1": "Turbidity",
@@ -3194,7 +3746,7 @@
   {
     "url": "/glossary/uv-sanitization",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-030",
     "title": "UV Sanitization",
     "description": "UV sanitization uses ultraviolet light to inactivate microorganisms in pool water as it passes through a UV chamber in the equipment line. Plain-language def...",
     "h1": "UV Sanitization",
@@ -3218,7 +3770,7 @@
   {
     "url": "/glossary/water-temperature",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-077",
     "title": "Water Temperature",
     "description": "Water temperature affects chlorine demand, chemical reaction rates, calcium solubility, and the Langelier Saturation Index. Plain-language definition with ta...",
     "h1": "Water Temperature",
@@ -3230,7 +3782,7 @@
   {
     "url": "/glossary/water-test-log",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-094",
     "title": "Water Test Log",
     "description": "A water test log is a record sheet for documenting pool or hot tub water test results over time. Plain-language definition with target values and related poo...",
     "h1": "Water Test Log",
@@ -3242,7 +3794,7 @@
   {
     "url": "/glossary/winterization",
     "lang": "en",
-    "contentId": null,
+    "contentId": "glossary:gl-067",
     "title": "Winterization",
     "description": "Winterization is the process of preparing a pool or hot tub for winter shutdown, including draining, blowing out plumbing lines, and protecting equipment fro...",
     "h1": "Winterization",

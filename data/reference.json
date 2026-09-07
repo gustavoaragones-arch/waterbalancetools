@@ -15,10 +15,126 @@
         ],
         "tables": [
           {
-            "title": "Parámetros Principales"
+            "title": "Parámetros Principales",
+            "headers": [
+              "Parámetro",
+              "Mínimo",
+              "Rango Ideal",
+              "Máximo",
+              "Unidad"
+            ],
+            "rows": [
+              [
+                "Cloro Libre",
+                "1.0",
+                "1–3",
+                "5",
+                "ppm"
+              ],
+              [
+                "Cloro Combinado",
+                "0",
+                "0",
+                "0.5",
+                "ppm"
+              ],
+              [
+                "pH",
+                "7.2",
+                "7.2–7.6",
+                "7.8",
+                "pH units"
+              ],
+              [
+                "Alcalinidad Total",
+                "60",
+                "80–120",
+                "180",
+                "ppm"
+              ],
+              [
+                "Dureza Cálcica (yeso)",
+                "150",
+                "200–400",
+                "500",
+                "ppm"
+              ],
+              [
+                "Dureza Cálcica (vinilo/fibra de vidrio)",
+                "100",
+                "150–250",
+                "400",
+                "ppm"
+              ],
+              [
+                "Ácido Cianúrico (piscinas estándar)",
+                "20",
+                "30–50",
+                "80",
+                "ppm"
+              ],
+              [
+                "Ácido Cianúrico (piscinas salinas)",
+                "40",
+                "60–80",
+                "100",
+                "ppm"
+              ],
+              [
+                "ORP",
+                "600",
+                "650–750",
+                "—",
+                "mV"
+              ],
+              [
+                "TDS (piscinas sin sal)",
+                "0",
+                "N/D",
+                "2,000",
+                "ppm"
+              ]
+            ]
           },
           {
-            "title": "Chemical to Raise or Lower"
+            "title": "Producto Químico para Subir o Bajar",
+            "headers": [
+              "Parámetro",
+              "Para Subir Use",
+              "Para Bajar Use"
+            ],
+            "rows": [
+              [
+                "Cloro Libre",
+                "Cloro líquido, cal-hipo, tricloro",
+                "Tiosulfato de sodio (solo emergencias)"
+              ],
+              [
+                "pH",
+                "Carbonato de sodio (carbonato de sosa)",
+                "Ácido muriático o bisulfato de sodio"
+              ],
+              [
+                "Alcalinidad Total",
+                "Bicarbonato de sodio",
+                "Ácido muriático (airee después)"
+              ],
+              [
+                "Dureza Cálcica",
+                "Cloruro de calcio",
+                "Solo drenaje parcial y relleno"
+              ],
+              [
+                "CYA",
+                "Gránulos de ácido cianúrico",
+                "Solo drenaje parcial y relleno"
+              ],
+              [
+                "Sal",
+                "Cloruro de sodio (sal para piscina)",
+                "Solo drenaje parcial y relleno"
+              ]
+            ]
           }
         ]
       },
@@ -184,7 +300,79 @@
         ],
         "tables": [
           {
-            "title": "Parámetros del Spa / Hot Tub"
+            "title": "Parámetros del Spa / Hot Tub",
+            "headers": [
+              "Parámetro",
+              "Mínimo",
+              "Rango Ideal",
+              "Máximo",
+              "Unidad"
+            ],
+            "rows": [
+              [
+                "Cloro Libre",
+                "2.0",
+                "3–5",
+                "10",
+                "ppm"
+              ],
+              [
+                "Bromo",
+                "3.0",
+                "3–6",
+                "8",
+                "ppm"
+              ],
+              [
+                "Cloro Combinado",
+                "0",
+                "0",
+                "0.5",
+                "ppm"
+              ],
+              [
+                "pH",
+                "7.2",
+                "7.2–7.8",
+                "8.0",
+                "pH units"
+              ],
+              [
+                "Alcalinidad Total",
+                "60",
+                "80–120",
+                "150",
+                "ppm"
+              ],
+              [
+                "Dureza Cálcica",
+                "100",
+                "150–250",
+                "350",
+                "ppm"
+              ],
+              [
+                "CYA",
+                "0",
+                "No se requiere (interior)",
+                "30",
+                "ppm"
+              ],
+              [
+                "TDS sobre el nivel base",
+                "0",
+                "<1,000",
+                "1,500",
+                "ppm"
+              ],
+              [
+                "Temperatura",
+                "98",
+                "100–104",
+                "104",
+                "°F"
+              ]
+            ]
           }
         ]
       },
@@ -303,10 +491,106 @@
         ],
         "tables": [
           {
-            "title": "Temperaturas Recomendadas según el Uso"
+            "title": "Temperaturas Recomendadas según el Uso",
+            "headers": [
+              "Aplicación",
+              "Mínimo (°F)",
+              "Rango Ideal (°F)",
+              "Máximo (°F)",
+              "Notas"
+            ],
+            "rows": [
+              [
+                "Piscina recreativa (adultos)",
+                "72",
+                "78–84",
+                "90",
+                "Por encima de 90°F aumenta el riesgo de deshidratación"
+              ],
+              [
+                "Natación de carriles / competencia",
+                "77",
+                "78–82",
+                "85",
+                "Las temperaturas más frescas favorecen la resistencia"
+              ],
+              [
+                "Piscina infantil",
+                "80",
+                "82–86",
+                "90",
+                "Los niños pequeños se enfrían más rápido"
+              ],
+              [
+                "Spa (adultos)",
+                "98",
+                "100–102",
+                "104",
+                "Máximo según PHTA/CDC: 104°F"
+              ],
+              [
+                "Terapéutico / hidroterapia",
+                "98",
+                "100–104",
+                "104",
+                "Consulte a un proveedor de salud"
+              ],
+              [
+                "Mujeres embarazadas / personas mayores",
+                "—",
+                "Por debajo de 100",
+                "100",
+                "Pauta de seguridad, no absoluta"
+              ],
+              [
+                "Bebés menores de 3 años",
+                "—",
+                "No recomendado",
+                "—",
+                "Los spas no son seguros para bebés"
+              ]
+            ]
           },
           {
-            "title": "Temperature Effect on Chemistry"
+            "title": "Efecto de la Temperatura en la Química",
+            "headers": [
+              "Temperatura (°F)",
+              "Tasa de Agotamiento de Cloro",
+              "Tasa de Deriva del pH",
+              "Efecto en el LSI"
+            ],
+            "rows": [
+              [
+                "70",
+                "Baja",
+                "Baja",
+                "Referencia"
+              ],
+              [
+                "80",
+                "Moderada",
+                "Moderada",
+                "+0.1 vs 70°F"
+              ],
+              [
+                "90",
+                "Alta",
+                "Alta",
+                "+0.2 vs 70°F"
+              ],
+              [
+                "100 (spa)",
+                "Muy Alta",
+                "Muy Alta",
+                "+0.3 a +0.4 vs 70°F"
+              ],
+              [
+                "104 (máx. spa)",
+                "Extrema",
+                "Extrema",
+                "+0.4 a +0.5 vs 70°F"
+              ]
+            ]
           }
         ]
       },
@@ -453,10 +737,79 @@
         ],
         "tables": [
           {
-            "title": "Combinaciones Peligrosas (NUNCA Mezclar)"
+            "title": "Combinaciones Peligrosas (NUNCA Mezclar)",
+            "headers": [
+              "Producto Químico A",
+              "Producto Químico B",
+              "Riesgo de Reacción"
+            ],
+            "rows": [
+              [
+                "Cloro (cualquiera)",
+                "Ácido muriático",
+                "Gas cloro — potencialmente letal"
+              ],
+              [
+                "Choque de cal-hipo",
+                "Tabletas de tricloro",
+                "Riesgo de incendio y explosión"
+              ],
+              [
+                "Choque de cal-hipo",
+                "Choque de dicloro",
+                "Riesgo de incendio y explosión"
+              ],
+              [
+                "Cloro",
+                "Alguicida (quat)",
+                "Espuma y eficacia reducida"
+              ],
+              [
+                "Choque de cloro",
+                "Peróxido de hidrógeno",
+                "Reacción violenta, riesgo de incendio"
+              ],
+              [
+                "Permanganato de potasio",
+                "Cualquier cloro",
+                "Reacción violenta, riesgo de incendio"
+              ]
+            ]
           },
           {
-            "title": "Separation Requirements for Storage"
+            "title": "Requisitos de Separación para el Almacenamiento",
+            "headers": [
+              "Categoría",
+              "Almacenar Separado De",
+              "Notas"
+            ],
+            "rows": [
+              [
+                "Productos de cloro (cualquiera)",
+                "Ácidos (muriático, ácido seco)",
+                "Separación mínima de 10 pies; contenedores separados y con llave"
+              ],
+              [
+                "Productos de cloro",
+                "Inflamables, orgánicos",
+                "Oxidante — puede incendiar materiales inflamables"
+              ],
+              [
+                "Ácidos",
+                "Bases (carbonato de sosa, bicarbonato)",
+                "Almacenamiento separado; reacción de neutralización"
+              ],
+              [
+                "Todos los productos de piscina",
+                "Alimentos, productos domésticos",
+                "Almacenamiento dedicado, con llave y ventilado"
+              ],
+              [
+                "Todos los productos de piscina",
+                "Fuentes de calor y luz solar directa",
+                "Acelera la degradación"
+              ]
+            ]
           }
         ]
       },
@@ -576,7 +929,69 @@
         ],
         "tables": [
           {
-            "title": "Dosis de Choque con Cal-Hipo (65%) según el Volumen de la Piscina"
+            "title": "Dosis de Choque con Cal-Hipo (65%) según el Volumen de la Piscina",
+            "headers": [
+              "Volumen de la Piscina",
+              "Mantenimiento / Ruptura CC 1 ppm (aumento de 10 ppm)",
+              "Ruptura CC 2 ppm (aumento de 20 ppm)",
+              "Piscina Verde (aumento de 30 ppm)"
+            ],
+            "rows": [
+              [
+                "5,000 gal",
+                "0.64 lb",
+                "1.28 lb",
+                "1.92 lb"
+              ],
+              [
+                "8,000 gal",
+                "1.03 lb",
+                "2.05 lb",
+                "3.08 lb"
+              ],
+              [
+                "10,000 gal",
+                "1.28 lb",
+                "2.57 lb",
+                "3.85 lb"
+              ],
+              [
+                "12,000 gal",
+                "1.54 lb",
+                "3.08 lb",
+                "4.62 lb"
+              ],
+              [
+                "15,000 gal",
+                "1.92 lb",
+                "3.85 lb",
+                "5.77 lb"
+              ],
+              [
+                "18,000 gal",
+                "2.31 lb",
+                "4.62 lb",
+                "6.93 lb"
+              ],
+              [
+                "20,000 gal",
+                "2.57 lb",
+                "5.13 lb",
+                "7.70 lb"
+              ],
+              [
+                "25,000 gal",
+                "3.21 lb",
+                "6.42 lb",
+                "9.62 lb"
+              ],
+              [
+                "30,000 gal",
+                "3.85 lb",
+                "7.70 lb",
+                "11.54 lb"
+              ]
+            ]
           }
         ]
       },
@@ -686,10 +1101,108 @@
         ],
         "tables": [
           {
-            "title": "Libras de Sal para Piscina a Agregar (según volumen de piscina y aumento objetivo)"
+            "title": "Libras de Sal para Piscina a Agregar (según volumen de piscina y aumento objetivo)",
+            "headers": [
+              "Volumen de la Piscina",
+              "+200 ppm",
+              "+400 ppm",
+              "+600 ppm",
+              "+800 ppm",
+              "+1,000 ppm"
+            ],
+            "rows": [
+              [
+                "10,000 gal",
+                "17 lb",
+                "33 lb",
+                "50 lb",
+                "67 lb",
+                "83 lb"
+              ],
+              [
+                "12,000 gal",
+                "20 lb",
+                "40 lb",
+                "60 lb",
+                "80 lb",
+                "100 lb"
+              ],
+              [
+                "15,000 gal",
+                "25 lb",
+                "50 lb",
+                "75 lb",
+                "100 lb",
+                "125 lb"
+              ],
+              [
+                "18,000 gal",
+                "30 lb",
+                "60 lb",
+                "90 lb",
+                "120 lb",
+                "150 lb"
+              ],
+              [
+                "20,000 gal",
+                "33 lb",
+                "67 lb",
+                "100 lb",
+                "133 lb",
+                "167 lb"
+              ],
+              [
+                "25,000 gal",
+                "42 lb",
+                "83 lb",
+                "125 lb",
+                "167 lb",
+                "208 lb"
+              ],
+              [
+                "30,000 gal",
+                "50 lb",
+                "100 lb",
+                "150 lb",
+                "200 lb",
+                "250 lb"
+              ]
+            ]
           },
           {
-            "title": "Salt Level Reference for Common Systems"
+            "title": "Referencia de Nivel de Sal para Sistemas Comunes",
+            "headers": [
+              "Tipo de Sistema Salino",
+              "ppm Mínimo",
+              "ppm Ideal",
+              "ppm Máximo"
+            ],
+            "rows": [
+              [
+                "Hayward AquaRite",
+                "2,700",
+                "3,200",
+                "3,400"
+              ],
+              [
+                "Pentair IntelliChlor",
+                "3,000",
+                "3,500",
+                "4,000"
+              ],
+              [
+                "Jandy TruClear",
+                "3,000",
+                "3,500",
+                "4,000"
+              ],
+              [
+                "Genérico / la mayoría de los sistemas",
+                "2,700",
+                "3,000–3,400",
+                "3,500"
+              ]
+            ]
           }
         ]
       },
@@ -837,7 +1350,69 @@
         ],
         "tables": [
           {
-            "title": "Cloro Libre Mínimo según el Nivel de CYA (orientación de PHTA / Taylor)"
+            "title": "Cloro Libre Mínimo según el Nivel de CYA (orientación de PHTA / Taylor)",
+            "headers": [
+              "Nivel de CYA (ppm)",
+              "FC Mínimo (ppm)",
+              "Notas"
+            ],
+            "rows": [
+              [
+                "0",
+                "0.5",
+                "Sin estabilizar — el cloro se agota en horas al aire libre"
+              ],
+              [
+                "10",
+                "0.5",
+                "Baja estabilización"
+              ],
+              [
+                "20",
+                "1.0",
+                "Recomendación mínima para piscina al aire libre"
+              ],
+              [
+                "30",
+                "1.5",
+                "Mínimo estándar para piscinas estabilizadas"
+              ],
+              [
+                "40",
+                "2.0",
+                "Objetivo común de química de piscina"
+              ],
+              [
+                "50",
+                "2.5",
+                "Adecuado para cargas normales de bañistas"
+              ],
+              [
+                "60",
+                "3.0",
+                "Recomendación para piscina salina / alta exposición UV"
+              ],
+              [
+                "70",
+                "3.5",
+                "Acercándose al rango superior de gestión"
+              ],
+              [
+                "80",
+                "4.0",
+                "Límite superior; considere un drenaje parcial"
+              ],
+              [
+                "100",
+                "5.0+",
+                "Problemático — planifique un drenaje parcial"
+              ],
+              [
+                "120+",
+                "7.0+",
+                "Zona de bloqueo de cloro — se requiere drenaje parcial"
+              ]
+            ]
           }
         ]
       },
@@ -948,10 +1523,86 @@
         ],
         "tables": [
           {
-            "title": "Bicarbonato de Sodio para Subir la Alcalinidad (1.5 lb sube la TA 10 ppm por cada 10,000 gal)"
+            "title": "Bicarbonato de Sodio para Subir la Alcalinidad (1.5 lb sube la TA 10 ppm por cada 10,000 gal)",
+            "headers": [
+              "Volumen de la Piscina",
+              "+10 ppm",
+              "+20 ppm",
+              "+30 ppm",
+              "+40 ppm",
+              "+50 ppm"
+            ],
+            "rows": [
+              [
+                "8,000 gal",
+                "1.2 lb",
+                "2.4 lb",
+                "3.6 lb",
+                "4.8 lb",
+                "6.0 lb"
+              ],
+              [
+                "10,000 gal",
+                "1.5 lb",
+                "3.0 lb",
+                "4.5 lb",
+                "6.0 lb",
+                "7.5 lb"
+              ],
+              [
+                "12,000 gal",
+                "1.8 lb",
+                "3.6 lb",
+                "5.4 lb",
+                "7.2 lb",
+                "9.0 lb"
+              ],
+              [
+                "15,000 gal",
+                "2.25 lb",
+                "4.5 lb",
+                "6.75 lb",
+                "9.0 lb",
+                "11.25 lb"
+              ],
+              [
+                "20,000 gal",
+                "3.0 lb",
+                "6.0 lb",
+                "9.0 lb",
+                "12.0 lb",
+                "15.0 lb"
+              ]
+            ]
           },
           {
-            "title": "Muriatic Acid (31.45%) to Lower Alkalinity"
+            "title": "Ácido Muriático (31.45%) para Bajar la Alcalinidad",
+            "headers": [
+              "Volumen de la Piscina",
+              "-10 ppm",
+              "-20 ppm",
+              "-30 ppm"
+            ],
+            "rows": [
+              [
+                "10,000 gal",
+                "20 fl oz",
+                "40 fl oz",
+                "60 fl oz"
+              ],
+              [
+                "15,000 gal",
+                "30 fl oz",
+                "60 fl oz",
+                "90 fl oz"
+              ],
+              [
+                "20,000 gal",
+                "40 fl oz",
+                "80 fl oz",
+                "120 fl oz"
+              ]
+            ]
           }
         ]
       },
@@ -1077,10 +1728,74 @@
         ],
         "tables": [
           {
-            "title": "Ácido Muriático (31.45%) para Bajar el pH — TA entre 80 y 120 ppm"
+            "title": "Ácido Muriático (31.45%) para Bajar el pH — TA entre 80 y 120 ppm",
+            "headers": [
+              "Volumen de la Piscina",
+              "pH 7.8 → 7.4",
+              "pH 8.0 → 7.4",
+              "pH 8.2 → 7.4"
+            ],
+            "rows": [
+              [
+                "8,000 gal",
+                "8 fl oz",
+                "16 fl oz",
+                "24 fl oz"
+              ],
+              [
+                "10,000 gal",
+                "10 fl oz",
+                "20 fl oz",
+                "30 fl oz"
+              ],
+              [
+                "12,000 gal",
+                "12 fl oz",
+                "24 fl oz",
+                "36 fl oz"
+              ],
+              [
+                "15,000 gal",
+                "15 fl oz",
+                "30 fl oz",
+                "45 fl oz"
+              ],
+              [
+                "20,000 gal",
+                "20 fl oz",
+                "40 fl oz",
+                "60 fl oz"
+              ]
+            ]
           },
           {
-            "title": "Sodium Carbonate (Soda Ash) to Raise pH — TA at 80–120 ppm"
+            "title": "Carbonato de Sodio (Carbonato de Sosa) para Subir el pH — TA en 80–120 ppm",
+            "headers": [
+              "Volumen de la Piscina",
+              "pH 7.0 → 7.4",
+              "pH 7.2 → 7.4",
+              "pH 7.0 → 7.6"
+            ],
+            "rows": [
+              [
+                "10,000 gal",
+                "8 oz",
+                "4 oz",
+                "12 oz"
+              ],
+              [
+                "15,000 gal",
+                "12 oz",
+                "6 oz",
+                "18 oz"
+              ],
+              [
+                "20,000 gal",
+                "16 oz",
+                "8 oz",
+                "24 oz"
+              ]
+            ]
           }
         ]
       },
@@ -1194,7 +1909,69 @@
         ],
         "tables": [
           {
-            "title": "Porcentaje de HOCl a Distintos Niveles de pH (a 77°F / 25°C)"
+            "title": "Porcentaje de HOCl a Distintos Niveles de pH (a 77°F / 25°C)",
+            "headers": [
+              "pH",
+              "% como HOCl (Activo)",
+              "% como OCl- (Inactivo)",
+              "FC Efectivo a 2 ppm de FC Total"
+            ],
+            "rows": [
+              [
+                "6.8",
+                "90%",
+                "10%",
+                "1.80 ppm"
+              ],
+              [
+                "7.0",
+                "83%",
+                "17%",
+                "1.66 ppm"
+              ],
+              [
+                "7.2",
+                "67%",
+                "33%",
+                "1.34 ppm"
+              ],
+              [
+                "7.4",
+                "55%",
+                "45%",
+                "1.10 ppm"
+              ],
+              [
+                "7.6",
+                "40%",
+                "60%",
+                "0.80 ppm"
+              ],
+              [
+                "7.8",
+                "28%",
+                "72%",
+                "0.56 ppm"
+              ],
+              [
+                "8.0",
+                "22%",
+                "78%",
+                "0.44 ppm"
+              ],
+              [
+                "8.2",
+                "15%",
+                "85%",
+                "0.30 ppm"
+              ],
+              [
+                "8.4",
+                "10%",
+                "90%",
+                "0.20 ppm"
+              ]
+            ]
           }
         ]
       },
@@ -1305,7 +2082,75 @@
         ],
         "tables": [
           {
-            "title": "Tiempos de Espera después de Agregar Productos Químicos"
+            "title": "Tiempos de Espera después de Agregar Productos Químicos",
+            "headers": [
+              "Producto Químico",
+              "Espera Antes de Reanalizar",
+              "Espera Antes de Nadar",
+              "Notas"
+            ],
+            "rows": [
+              [
+                "Cloro líquido",
+                "30 min",
+                "15 min (si FC <5 ppm)",
+                "Mantenga la bomba en funcionamiento durante la espera"
+              ],
+              [
+                "Choque granular (cal-hipo)",
+                "2 horas",
+                "Hasta que FC < 5 ppm",
+                "Predisuelva antes de agregar"
+              ],
+              [
+                "Ácido muriático (bajar pH)",
+                "30–60 min",
+                "30 min",
+                "Agregue cerca de las boquillas de retorno"
+              ],
+              [
+                "Carbonato de sosa (subir pH)",
+                "2–4 horas",
+                "30 min",
+                "Predisuelva; puede causar turbidez"
+              ],
+              [
+                "Bicarbonato de sodio (subir TA)",
+                "4–6 horas",
+                "30 min",
+                "Permita la disolución completa"
+              ],
+              [
+                "Cloruro de calcio (subir dureza)",
+                "4–6 horas",
+                "2 horas",
+                "Reacción de calor — diluya primero"
+              ],
+              [
+                "Estabilizador de CYA",
+                "24–48 horas",
+                "30 min",
+                "Se disuelve lentamente"
+              ],
+              [
+                "Sal para piscina",
+                "24 horas",
+                "30 min",
+                "Permita la dispersión completa"
+              ],
+              [
+                "Clarificador",
+                "2–4 horas",
+                "15 min",
+                "Mantenga el filtro en funcionamiento durante la espera"
+              ],
+              [
+                "Alguicida",
+                "30 min",
+                "15 min",
+                "Siga las instrucciones de la etiqueta"
+              ]
+            ]
           }
         ]
       },
@@ -1419,7 +2264,75 @@
         ],
         "tables": [
           {
-            "title": "Comparación de Filtros de Piscina"
+            "title": "Comparación de Filtros de Piscina",
+            "headers": [
+              "Característica",
+              "Filtro de Arena",
+              "Filtro de Cartucho",
+              "Filtro DE"
+            ],
+            "rows": [
+              [
+                "Finura de filtración",
+                "20–40 micras",
+                "10–15 micras",
+                "3–5 micras"
+              ],
+              [
+                "Claridad del agua",
+                "Buena",
+                "Muy buena",
+                "Excelente"
+              ],
+              [
+                "Agua usada para limpieza",
+                "Sí (retrolavado)",
+                "Ninguna (solo enjuague)",
+                "Sí (retrolavado + recarga)"
+              ],
+              [
+                "Método de limpieza",
+                "Retrolavado",
+                "Enjuague / remojo",
+                "Retrolavado + agregar polvo DE"
+              ],
+              [
+                "Frecuencia de limpieza",
+                "Cada 2–4 semanas",
+                "Enjuague mensual",
+                "Según sea necesario + desmontaje anual"
+              ],
+              [
+                "Reemplazo del medio",
+                "Cada 5–7 años",
+                "Cada 12–18 meses",
+                "Polvo DE después de cada retrolavado"
+              ],
+              [
+                "Costo inicial",
+                "Bajo",
+                "Bajo–Medio",
+                "Medio–Alto"
+              ],
+              [
+                "Costo de mantenimiento anual",
+                "Bajo",
+                "Medio (cartucho)",
+                "Medio (polvo DE)"
+              ],
+              [
+                "Mejor para",
+                "Piscinas grandes, preferencia de bajo mantenimiento",
+                "Zonas con restricción de agua, alta claridad",
+                "Piscinas que necesitan la filtración más fina"
+              ],
+              [
+                "Desventajas",
+                "Filtración más gruesa, usa agua",
+                "Limpieza más manual",
+                "El que más mantenimiento requiere"
+              ]
+            ]
           }
         ]
       },
@@ -1532,10 +2445,98 @@
         ],
         "tables": [
           {
-            "title": "GPM Requerido según el Volumen de la Piscina y el Objetivo de Recirculación"
+            "title": "GPM Requerido según el Volumen de la Piscina y el Objetivo de Recirculación",
+            "headers": [
+              "Volumen de la Piscina",
+              "Recirculación en 6 Horas (GPM)",
+              "Recirculación en 8 Horas (GPM)",
+              "Recirculación en 10 Horas (GPM)"
+            ],
+            "rows": [
+              [
+                "8,000 gal",
+                "22",
+                "17",
+                "13"
+              ],
+              [
+                "10,000 gal",
+                "28",
+                "21",
+                "17"
+              ],
+              [
+                "12,000 gal",
+                "33",
+                "25",
+                "20"
+              ],
+              [
+                "15,000 gal",
+                "42",
+                "31",
+                "25"
+              ],
+              [
+                "18,000 gal",
+                "50",
+                "37",
+                "30"
+              ],
+              [
+                "20,000 gal",
+                "56",
+                "42",
+                "33"
+              ],
+              [
+                "25,000 gal",
+                "69",
+                "52",
+                "42"
+              ],
+              [
+                "30,000 gal",
+                "83",
+                "62",
+                "50"
+              ]
+            ]
           },
           {
-            "title": "Approximate Pump Output by Horsepower"
+            "title": "Salida Aproximada de la Bomba según la Potencia",
+            "headers": [
+              "Potencia (HP)",
+              "GPM Aproximado (a la altura de sistema típica)",
+              "Adecuado Para"
+            ],
+            "rows": [
+              [
+                "0.5 HP",
+                "25–35",
+                "Spas, piscinas sobre el suelo hasta 8,000 gal"
+              ],
+              [
+                "0.75 HP",
+                "35–45",
+                "Piscinas enterradas hasta 12,000 gal"
+              ],
+              [
+                "1.0 HP",
+                "45–55",
+                "Piscinas enterradas hasta 16,000 gal"
+              ],
+              [
+                "1.5 HP",
+                "55–70",
+                "Piscinas enterradas hasta 20,000 gal"
+              ],
+              [
+                "2.0 HP",
+                "65–85",
+                "Piscinas enterradas más grandes, 20,000–30,000 gal"
+              ]
+            ]
           }
         ]
       },
@@ -1671,10 +2672,73 @@
         ],
         "tables": [
           {
-            "title": "Condiciones que Justifican un Drenaje Parcial"
+            "title": "Condiciones que Justifican un Drenaje Parcial",
+            "headers": [
+              "Parámetro",
+              "Nivel de Activación",
+              "Acción Recomendada"
+            ],
+            "rows": [
+              [
+                "CYA",
+                "Por encima de 80 ppm",
+                "Drenaje parcial (25–50%) y relleno"
+              ],
+              [
+                "Dureza Cálcica",
+                "Por encima de 500 ppm",
+                "Drenaje parcial (25–30%) y relleno"
+              ],
+              [
+                "TDS (spas)",
+                "1,500 ppm sobre el nivel base",
+                "Cambio completo de agua"
+              ],
+              [
+                "TDS (piscinas)",
+                "Por encima de 3,000 ppm (sin sal)",
+                "Drenaje parcial (25%) y relleno"
+              ],
+              [
+                "Sal",
+                "Por debajo de 2,500 ppm o por encima de 3,500 ppm",
+                "Agregue sal (bajo) o drenaje parcial (alto)"
+              ],
+              [
+                "Dureza Cálcica (spas)",
+                "Por encima de 350 ppm",
+                "Drenaje parcial o cambio completo"
+              ]
+            ]
           },
           {
-            "title": "Hot Tub Water Change Schedule"
+            "title": "Calendario de Cambio de Agua del Spa",
+            "headers": [
+              "Nivel de Uso",
+              "Intervalo de Cambio Recomendado"
+            ],
+            "rows": [
+              [
+                "Ligero (1–2 usos/semana, 1–2 bañistas)",
+                "Cada 4 meses"
+              ],
+              [
+                "Moderado (3–5 usos/semana, 2–4 bañistas)",
+                "Cada 3 meses"
+              ],
+              [
+                "Intenso (uso diario, 4+ bañistas)",
+                "Cada 6–8 semanas"
+              ],
+              [
+                "Alquiler vacacional (múltiples huéspedes)",
+                "Cada 4–6 estadías de huéspedes, o mensual"
+              ],
+              [
+                "Siempre",
+                "Cuando el TDS supera en 1,500 ppm el nivel base"
+              ]
+            ]
           }
         ]
       },
@@ -1786,13 +2850,106 @@
         ],
         "tables": [
           {
-            "title": "Volúmenes de Piscina Rectangular (a 4.5 pies de profundidad promedio)"
+            "title": "Volúmenes de Piscina Rectangular (a 4.5 pies de profundidad promedio)",
+            "headers": [
+              "Longitud (ft)",
+              "Ancho (ft)",
+              "Volumen Aprox. (gal)"
+            ],
+            "rows": [
+              [
+                "12",
+                "24",
+                "9,700"
+              ],
+              [
+                "16",
+                "32",
+                "17,200"
+              ],
+              [
+                "18",
+                "36",
+                "21,800"
+              ],
+              [
+                "20",
+                "40",
+                "26,900"
+              ],
+              [
+                "25",
+                "50",
+                "42,000"
+              ]
+            ]
           },
           {
-            "title": "Round / Circular Pool Volumes (at 4.5 ft depth)"
+            "title": "Volúmenes de Piscinas Redondas / Circulares (a 4.5 pies de profundidad)",
+            "headers": [
+              "Diámetro (ft)",
+              "Volumen Aprox. (gal)"
+            ],
+            "rows": [
+              [
+                "12",
+                "3,800"
+              ],
+              [
+                "15",
+                "5,950"
+              ],
+              [
+                "18",
+                "8,600"
+              ],
+              [
+                "21",
+                "11,700"
+              ],
+              [
+                "24",
+                "15,300"
+              ],
+              [
+                "27",
+                "19,400"
+              ],
+              [
+                "30",
+                "23,900"
+              ]
+            ]
           },
           {
-            "title": "Hot Tub / Spa Volumes"
+            "title": "Volúmenes de Spa",
+            "headers": [
+              "Tamaño",
+              "Capacidad de Personas",
+              "Volumen Aprox. (gal)"
+            ],
+            "rows": [
+              [
+                "Pequeño",
+                "2–3",
+                "175–250"
+              ],
+              [
+                "Mediano",
+                "4–5",
+                "250–400"
+              ],
+              [
+                "Grande",
+                "6–7",
+                "400–500"
+              ],
+              [
+                "Extra Grande",
+                "8+",
+                "500–600+"
+              ]
+            ]
           }
         ]
       },
@@ -1938,7 +3095,49 @@
         ],
         "tables": [
           {
-            "title": "Fórmula de Volumen según la Forma de la Piscina"
+            "title": "Fórmula de Volumen según la Forma de la Piscina",
+            "headers": [
+              "Forma",
+              "Fórmula",
+              "Notas"
+            ],
+            "rows": [
+              [
+                "Rectangular",
+                "L × W × D × 7.48",
+                "D = profundidad promedio en pies"
+              ],
+              [
+                "Circular",
+                "π × r² × D × 7.48",
+                "r = radio (diámetro / 2)"
+              ],
+              [
+                "Ovalada",
+                "L × W × D × 7.48 × 0.89",
+                "0.89 es el factor de corrección ovalada"
+              ],
+              [
+                "Forma de L",
+                "Divida en dos rectángulos, calcule cada uno y sume",
+                "Divida en la esquina interior"
+              ],
+              [
+                "Riñón",
+                "Aproxime como longitud promedio × ancho promedio × D × 7.48 × 0.85",
+                "0.85 es el factor de aproximación para forma de riñón"
+              ],
+              [
+                "Forma libre",
+                "Divida en rectángulos aproximados, calcule cada uno y sume",
+                "Más secciones = mayor precisión"
+              ],
+              [
+                "Piscina con entrada de playa",
+                "Calcule la piscina principal + la sección de playa por separado",
+                "La sección de playa tiene profundidad variable"
+              ]
+            ]
           }
         ]
       },
@@ -2024,7 +3223,79 @@
         "notes": [],
         "tables": [
           {
-            "title": "Requisitos de Almacenamiento según el Tipo de Producto"
+            "title": "Requisitos de Almacenamiento según el Tipo de Producto",
+            "headers": [
+              "Producto",
+              "Temperatura",
+              "Humedad",
+              "Mantener Alejado De",
+              "Vida Útil"
+            ],
+            "rows": [
+              [
+                "Cloro líquido (hipoclorito de sodio)",
+                "Fresco, por debajo de 85°F",
+                "Cualquiera — sellado",
+                "Calor, luz, productos de cloro",
+                "60 días"
+              ],
+              [
+                "Hipoclorito de calcio (choque)",
+                "Fresco, seco",
+                "Baja — absorbe humedad",
+                "Ácido, inflamables, otros cloros",
+                "2+ años sellado"
+              ],
+              [
+                "Tabletas de tricloro",
+                "Fresco, seco",
+                "Baja",
+                "Cal-hipo, ácido",
+                "2+ años sellado"
+              ],
+              [
+                "Ácido muriático",
+                "Cualquiera — sellado",
+                "Cualquiera — sellado",
+                "Cloro, bases, metales",
+                "1–2 años"
+              ],
+              [
+                "Carbonato de sosa (carbonato de sodio)",
+                "Cualquiera — sellado",
+                "Baja — absorbe humedad",
+                "Ácido",
+                "1+ año sellado"
+              ],
+              [
+                "Bicarbonato de sodio",
+                "Cualquiera — sellado",
+                "Baja — absorbe humedad",
+                "Ácido",
+                "1+ año"
+              ],
+              [
+                "Ácido cianúrico",
+                "Fresco, seco",
+                "Baja",
+                "Nada específico",
+                "2+ años"
+              ],
+              [
+                "Alguicida",
+                "Fresco",
+                "Cualquiera — sellado",
+                "Cloro (algunos tipos)",
+                "1–2 años"
+              ],
+              [
+                "Sal para piscina",
+                "Cualquiera",
+                "Baja — absorbe humedad",
+                "Nada específico",
+                "Indefinida si está seca"
+              ]
+            ]
           }
         ],
         "checklists": [
@@ -2268,7 +3539,72 @@
         ],
         "tables": [
           {
-            "title": "Frecuencia de Análisis Recomendada"
+            "title": "Frecuencia de Análisis Recomendada",
+            "headers": [
+              "Parámetro",
+              "Piscina Residencial",
+              "Piscina de Alquiler Vacacional",
+              "Spa",
+              "Motivo para Pruebas Adicionales"
+            ],
+            "rows": [
+              [
+                "Cloro Libre",
+                "Dos veces por semana",
+                "En cada cambio de huéspedes",
+                "Antes de cada uso",
+                "Después de uso intenso, tormenta, clima cálido"
+              ],
+              [
+                "Cloro Combinado",
+                "Semanal",
+                "En cada cambio de huéspedes",
+                "Antes de cada uso",
+                "Después de uso intenso; si hay olor presente"
+              ],
+              [
+                "pH",
+                "Dos veces por semana",
+                "En cada cambio de huéspedes",
+                "Antes de cada uso",
+                "Después de cualquier adición química"
+              ],
+              [
+                "Alcalinidad Total",
+                "Mensual (o cuando esté estable)",
+                "Semanal",
+                "Semanal",
+                "Después de inestabilidad del pH"
+              ],
+              [
+                "Dureza Cálcica",
+                "Mensual",
+                "Mensual",
+                "Mensual",
+                "Después de un relleno significativo"
+              ],
+              [
+                "CYA",
+                "Mensual (inicio de temporada + mensual)",
+                "Mensual",
+                "N/D para spas cubiertos",
+                "Al usar tabletas estabilizadas"
+              ],
+              [
+                "Sal",
+                "Mensual (piscinas salinas)",
+                "Mensual",
+                "N/D",
+                "Después de lluvia significativa"
+              ],
+              [
+                "TDS",
+                "Trimestral",
+                "Mensual",
+                "Mensual",
+                "Cuando hay problemas de espuma o claridad"
+              ]
+            ]
           }
         ]
       },
@@ -2455,7 +3791,87 @@
         ],
         "tables": [
           {
-            "title": "Frecuencia de Tareas y Responsabilidad"
+            "title": "Frecuencia de Tareas y Responsabilidad",
+            "headers": [
+              "Tarea",
+              "Frecuencia",
+              "Responsable",
+              "¿Documentar en el Registro?"
+            ],
+            "rows": [
+              [
+                "Analizar FC y pH",
+                "En cada cambio de huéspedes",
+                "Administrador de la propiedad / servicio de piscina",
+                "Sí"
+              ],
+              [
+                "Prueba completa de agua (todos los parámetros)",
+                "Semanal",
+                "Servicio de piscina",
+                "Sí"
+              ],
+              [
+                "Tratamiento de choque",
+                "Semanal o después de uso intenso",
+                "Servicio de piscina",
+                "Sí"
+              ],
+              [
+                "Revisión de la canasta del skimmer",
+                "En cada cambio de huéspedes",
+                "Administrador de la propiedad",
+                "Anote si hay residuos abundantes"
+              ],
+              [
+                "Cepillar paredes y fondo de la piscina",
+                "Semanal",
+                "Servicio de piscina",
+                "Anote si hay algas"
+              ],
+              [
+                "Revisión de presión del filtro",
+                "Semanal",
+                "Servicio de piscina",
+                "Sí"
+              ],
+              [
+                "Limpieza del filtro / retrolavado",
+                "Cuando la presión esté 8–10 psi sobre la base",
+                "Servicio de piscina",
+                "Sí"
+              ],
+              [
+                "Revisión del equipo de seguridad",
+                "En cada cambio de huéspedes",
+                "Administrador de la propiedad",
+                "Sí"
+              ],
+              [
+                "Revisión del almacenamiento químico",
+                "Mensual",
+                "Propietario",
+                "Sí"
+              ],
+              [
+                "Prueba de CYA y dureza",
+                "Mensual",
+                "Servicio de piscina",
+                "Sí"
+              ],
+              [
+                "Inspección completa del equipo",
+                "Mensual",
+                "Servicio de piscina",
+                "Sí"
+              ],
+              [
+                "Cambio de agua (spa)",
+                "Cada 3–4 estadías de huéspedes",
+                "Servicio de piscina",
+                "Sí"
+              ]
+            ]
           }
         ]
       },
@@ -2694,13 +4110,98 @@
         ],
         "tables": [
           {
-            "title": "Conversiones de Volumen"
+            "title": "Conversiones de Volumen",
+            "headers": [
+              "De",
+              "A",
+              "Multiplicar Por"
+            ],
+            "rows": [
+              [
+                "Onzas líquidas (fl oz)",
+                "Mililitros (mL)",
+                "29.574"
+              ],
+              [
+                "Mililitros (mL)",
+                "Onzas líquidas (fl oz)",
+                "0.0338"
+              ],
+              [
+                "Cuartos (qt)",
+                "Litros (L)",
+                "0.9464"
+              ],
+              [
+                "Galones (EE. UU.)",
+                "Litros",
+                "3.785"
+              ],
+              [
+                "Litros",
+                "Galones (EE. UU.)",
+                "0.2642"
+              ]
+            ]
           },
           {
-            "title": "Weight Conversions"
+            "title": "Conversiones de Peso",
+            "headers": [
+              "De",
+              "A",
+              "Multiplicar Por"
+            ],
+            "rows": [
+              [
+                "Onzas (oz)",
+                "Gramos (g)",
+                "28.35"
+              ],
+              [
+                "Gramos (g)",
+                "Onzas (oz)",
+                "0.0353"
+              ],
+              [
+                "Libras (lb)",
+                "Kilogramos (kg)",
+                "0.4536"
+              ],
+              [
+                "Kilogramos (kg)",
+                "Libras (lb)",
+                "2.205"
+              ]
+            ]
           },
           {
-            "title": "Concentration Conversions"
+            "title": "Conversiones de Concentración",
+            "headers": [
+              "Unidad",
+              "Equivalente"
+            ],
+            "rows": [
+              [
+                "1 ppm",
+                "1 mg/L"
+              ],
+              [
+                "1 ppm",
+                "1 gramo por cada 1,000 litros"
+              ],
+              [
+                "1%",
+                "10,000 ppm"
+              ],
+              [
+                "Solución al 10%",
+                "100,000 mg/L"
+              ],
+              [
+                "1 grano/galón (gpg)",
+                "17.12 ppm"
+              ]
+            ]
           }
         ]
       },
@@ -2831,7 +4332,54 @@
         "notes": [],
         "tables": [
           {
-            "title": "Recursos Imprimibles Disponibles"
+            "title": "Recursos Imprimibles Disponibles",
+            "headers": [
+              "Recurso",
+              "Ideal Para",
+              "Enlace de Descarga"
+            ],
+            "rows": [
+              [
+                "Lista de Verificación de Mantenimiento de Piscina",
+                "Propietarios de piscinas residenciales — rutina semanal",
+                "/resources/pool-maintenance-checklist"
+              ],
+              [
+                "Registro de Análisis de Agua",
+                "Registro de todos los resultados de pruebas y adiciones químicas",
+                "/resources/water-test-log"
+              ],
+              [
+                "Hoja de Registro Químico de Piscina",
+                "Seguimiento del inventario y uso de productos químicos",
+                "/resources/pool-chemical-log-sheet"
+              ],
+              [
+                "Registro de Choque de Piscina",
+                "Documentación de tratamientos de choque y resultados",
+                "/resources/pool-shock-log"
+              ],
+              [
+                "Registro de Mantenimiento del Spa",
+                "Registro diario y semanal del spa",
+                "/resources/hot-tub-maintenance-log"
+              ],
+              [
+                "Lista de Verificación de Cambio de Huéspedes para Piscina Airbnb",
+                "Protocolo de cambio de huéspedes para piscinas de alquiler vacacional",
+                "/resources/airbnb-pool-turnover-checklist"
+              ],
+              [
+                "Lista de Verificación de Apertura de Piscina",
+                "Procedimiento de apertura de piscina en primavera",
+                "/resources/pool-opening-checklist"
+              ],
+              [
+                "Lista de Verificación de Cierre de Piscina",
+                "Procedimiento de cierre de piscina en otoño/invierno",
+                "/resources/pool-closing-checklist"
+              ]
+            ]
           }
         ]
       },
@@ -2916,10 +4464,94 @@
         ],
         "tables": [
           {
-            "title": "Calculadoras de Química de Piscina"
+            "title": "Calculadoras de Química de Piscina",
+            "headers": [
+              "Calculadora",
+              "Úsela Para",
+              "Enlace"
+            ],
+            "rows": [
+              [
+                "Calculadora Química",
+                "Herramienta integral multiparámetro de química de piscina",
+                "/calculators/chemical-calculator"
+              ],
+              [
+                "Calculadora de Cloro para Piscina",
+                "Calcule la dosis de cloro líquido para piscinas",
+                "/calculators/pool-chlorine-calculator"
+              ],
+              [
+                "Calculadora de Choque para Piscina",
+                "Calcule la dosis de choque para alcanzar el nivel objetivo de FC",
+                "/calculators/pool-shock-calculator"
+              ],
+              [
+                "Calculadora de pH para Piscina",
+                "Calcule la dosis de ácido o carbonato de sosa para ajustar el pH",
+                "/calculators/pool-ph-calculator"
+              ],
+              [
+                "Calculadora de Alcalinidad para Piscina",
+                "Calcule la dosis de bicarbonato de sodio o ácido para la TA",
+                "/calculators/pool-alkalinity-calculator"
+              ],
+              [
+                "Calculadora de CYA para Piscina",
+                "Calcule la dosis de ácido cianúrico para subir el CYA",
+                "/calculators/pool-cyanuric-acid-calculator"
+              ],
+              [
+                "Calculadora de Volumen de Piscina",
+                "Calcule el volumen de la piscina en galones",
+                "/calculators/pool-volume-calculator"
+              ],
+              [
+                "Calculadora de Tasa de Recirculación",
+                "Calcule la tasa de recirculación de la bomba y el tiempo de funcionamiento requerido",
+                "/calculators/pool-turnover-rate-calculator"
+              ],
+              [
+                "Calculadora de Sal para Piscina Salina",
+                "Calcule la dosis de sal para piscinas con clorador salino",
+                "/calculators/saltwater-pool-salt-calculator"
+              ]
+            ]
           },
           {
-            "title": "Hot Tub & Spa Calculators"
+            "title": "Calculadoras de Spa",
+            "headers": [
+              "Calculadora",
+              "Úsela Para",
+              "Enlace"
+            ],
+            "rows": [
+              [
+                "Calculadora de Cloro para Spa",
+                "Calcule la dosis de cloro para spas",
+                "/calculators/hot-tub-chlorine-calculator"
+              ],
+              [
+                "Calculadora de pH para Spa",
+                "Calcule el ajuste de pH para spas",
+                "/calculators/hot-tub-ph-calculator"
+              ],
+              [
+                "Calculadora de Choque para Spa",
+                "Calcule la dosis de choque para spas",
+                "/calculators/hot-tub-shock-calculator"
+              ],
+              [
+                "Calculadora de Volumen de Spa",
+                "Calcule el volumen del spa en galones",
+                "/calculators/spa-volume-calculator"
+              ],
+              [
+                "Calculadora de Volumen",
+                "Calculadora universal de volumen para cualquier forma",
+                "/calculators/volume-calculator"
+              ]
+            ]
           }
         ]
       },

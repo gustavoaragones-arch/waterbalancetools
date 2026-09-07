@@ -1,14 +1,18 @@
 {
   "status": "PASS",
-  "files_scanned": 553,
+  "files_scanned": 700,
   "violations_found": 0,
   "violations": [],
-  "warnings_count": 5,
+  "warnings_count": 9,
   "warnings": [
     "entities/breakpoint-chlorination.html: renders a source-citation block outside the known, individually-reviewed Tier-1 set -- verify it has a real, reviewed source mapping before treating it as established.",
     "entities/calcium-hypochlorite.html: renders a source-citation block outside the known, individually-reviewed Tier-1 set -- verify it has a real, reviewed source mapping before treating it as established.",
     "entities/combined-chlorine.html: renders a source-citation block outside the known, individually-reviewed Tier-1 set -- verify it has a real, reviewed source mapping before treating it as established.",
     "entities/cover.html: renders a source-citation block outside the known, individually-reviewed Tier-1 set -- verify it has a real, reviewed source mapping before treating it as established.",
-    "entities/water-replacement.html: renders a source-citation block outside the known, individually-reviewed Tier-1 set -- verify it has a real, reviewed source mapping before treating it as established."
+    "entities/water-replacement.html: renders a source-citation block outside the known, individually-reviewed Tier-1 set -- verify it has a real, reviewed source mapping before treating it as established.",
+    "es/calculators/chemical-calculator.html: renders a source-citation block outside the known, individually-reviewed Tier-1 set -- verify it has a real, reviewed source mapping before treating it as established.",
+    "es/calculators/hot-tub-chlorine-calculator.html: renders a source-citation block outside the known, individually-reviewed Tier-1 set -- verify it has a real, reviewed source mapping before treating it as established.",
+    "es/calculators/pool-chlorine-calculator.html: renders a source-citation block outside the known, individually-reviewed Tier-1 set -- verify it has a real, reviewed source mapping before treating it as established.",
+    "es/calculators/pool-ph-calculator.html: renders a source-citation block outside the known, individually-reviewed Tier-1 set -- verify it has a real, reviewed source mapping before treating it as established."
   ]
 }

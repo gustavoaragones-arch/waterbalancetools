@@ -1,5 +1,5 @@
 {
-  "_comment": "Phase 8D established this translation-completeness model (docs/PHASE-8D-MULTILINGUAL-ARCHITECTURE.md, spec Section 24) with 8 representative fixtures, all 'missing' in es. Phase 8E (docs/PHASE-8E-SPANISH-ROLLOUT.md) activated the first real Spanish production cluster: the 5 pool calculator units below moved from 'missing' to 'translated' only after their Spanish pages were generated, validated (schema-valid, non-broken links, self-referential canonical, correct html lang), and confirmed reproducible via scripts/generate-spanish-cluster.js. Phase 8G (docs/PHASE-8G-SPANISH-SPA-CLUSTER.md) added the 4 hot-tub/spa calculator units below under the identical validate-before-flip discipline. Phase 8I (docs/PHASE-8I-SPANISH-CALCULATOR-EXPANSION.md) added the remaining 4 Water Chemistry cluster units under the same discipline, completing the site's 'Water Chemistry (5)' related-calculators navigation group in Spanish. Phase 8L (docs/PHASE-8L-SPANISH-REFERENCE-LOCALIZATION-ARCHITECTURE.md) audited the 7 remaining non-calculator fixtures and decided that glossary/formula/reference content IDs must reuse each source record's own native id field rather than a slug-derived name. Phase 8M (docs/PHASE-8M-CORE-REFERENCE-LOCALIZATION-IMPLEMENTATION.md) applied that migration to the 3 non-conforming fixtures ('_migratedFrom' records the pre-migration contentId; 'en'/'es' status values were carried over unchanged, still 'missing' in es -- this migration renamed an identity key, it did not translate anything). academy:fund-01 and entity:algae already matched the native-ID convention and were left unchanged. guide:ph-can-you-swim-in-high-ph-water and programmatic:chlorine-10000-gallon have no external native-ID data source and were left unchanged. This is a STATUS tracker, not a content store -- it never holds translated text. Phase 8N (docs/PHASE-8N-SPANISH-CORE-REFERENCE-PRODUCTION.md) activated the first real Spanish production cluster for Glossary/Formulas/Reference: the pre-existing glossary:gl-001, formula:formula-01, and reference:ref-01 units (migrated-but-untranslated since Phase 8M) moved to es: translated in place, and 85 new native-ID units were added (53 glossary, 8 formula, 24 reference) -- all only after their Spanish pages were generated, validated, and confirmed reproducible via scripts/generate-spanish-knowledge-cluster.js. This is a controlled first cluster, not complete Spanish coverage of these three families: 46 glossary terms, and every legacy/noindex Reference page, remain es: missing or out of scope.",
+  "_comment": "Phase 8D established this translation-completeness model (docs/PHASE-8D-MULTILINGUAL-ARCHITECTURE.md, spec Section 24) with 8 representative fixtures, all 'missing' in es. Phase 8E (docs/PHASE-8E-SPANISH-ROLLOUT.md) activated the first real Spanish production cluster: the 5 pool calculator units below moved from 'missing' to 'translated' only after their Spanish pages were generated, validated (schema-valid, non-broken links, self-referential canonical, correct html lang), and confirmed reproducible via scripts/generate-spanish-cluster.js. Phase 8G (docs/PHASE-8G-SPANISH-SPA-CLUSTER.md) added the 4 hot-tub/spa calculator units below under the identical validate-before-flip discipline. Phase 8I (docs/PHASE-8I-SPANISH-CALCULATOR-EXPANSION.md) added the remaining 4 Water Chemistry cluster units under the same discipline, completing the site's 'Water Chemistry (5)' related-calculators navigation group in Spanish. Phase 8L (docs/PHASE-8L-SPANISH-REFERENCE-LOCALIZATION-ARCHITECTURE.md) audited the 7 remaining non-calculator fixtures and decided that glossary/formula/reference content IDs must reuse each source record's own native id field rather than a slug-derived name. Phase 8M (docs/PHASE-8M-CORE-REFERENCE-LOCALIZATION-IMPLEMENTATION.md) applied that migration to the 3 non-conforming fixtures ('_migratedFrom' records the pre-migration contentId; 'en'/'es' status values were carried over unchanged, still 'missing' in es -- this migration renamed an identity key, it did not translate anything). academy:fund-01 and entity:algae already matched the native-ID convention and were left unchanged. guide:ph-can-you-swim-in-high-ph-water and programmatic:chlorine-10000-gallon have no external native-ID data source and were left unchanged. This is a STATUS tracker, not a content store -- it never holds translated text. Phase 8N (docs/PHASE-8N-SPANISH-CORE-REFERENCE-PRODUCTION.md) activated the first real Spanish production cluster for Glossary/Formulas/Reference: the pre-existing glossary:gl-001, formula:formula-01, and reference:ref-01 units (migrated-but-untranslated since Phase 8M) moved to es: translated in place, and 85 new native-ID units were added (53 glossary, 8 formula, 24 reference) -- all only after their Spanish pages were generated, validated, and confirmed reproducible via scripts/generate-spanish-knowledge-cluster.js. This is a controlled first cluster, not complete Spanish coverage of these three families: 46 glossary terms, and every legacy/noindex Reference page, remain es: missing or out of scope. Phase 8O (docs/PHASE-8O-SPANISH-CORE-REFERENCE-COMPLETION.md) completed the glossary cluster: the remaining 46 glossary terms were translated and added as new native-ID units (es: translated), bringing glossary coverage to all 100 records. Phase 8O also completed formula variable/equation-label localization and full reference table header/row localization for the existing 9 formula and 25 reference units -- their translation-status entries were already es: translated from Phase 8N and did not change.",
   "_generated": "2026-09-06",
   "units": [
     {
@@ -1475,6 +1475,650 @@
         "es": {
           "status": "translated",
           "url": "/es/reference/calculator-directory"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-013",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/orp"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/orp"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-014",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/total-dissolved-solids"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/total-dissolved-solids"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-015",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/filter-pressure"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/filter-pressure"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-016",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/backwashing"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/backwashing"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-018",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/skimmer"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/skimmer"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-019",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/cartridge-filter"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/cartridge-filter"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-020",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/sand-filter"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/sand-filter"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-028",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/bcdmh"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/bcdmh"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-030",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/uv-sanitization"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/uv-sanitization"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-031",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/ozone"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/ozone"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-043",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/biofilm"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/biofilm"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-044",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/algaecide"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/algaecide"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-045",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/clarifier"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/clarifier"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-046",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/flocculant"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/flocculant"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-047",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/metal-sequestrant"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/metal-sequestrant"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-048",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/scale-inhibitor"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/scale-inhibitor"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-049",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/dpd-test"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/dpd-test"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-050",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/oto-test"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/oto-test"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-051",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/test-strip"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/test-strip"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-052",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/reagent"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/reagent"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-054",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/turbidity"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/turbidity"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-055",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/bather-load"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/bather-load"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-059",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/de-filter"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/de-filter"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-063",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/total-hardness"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/total-hardness"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-064",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/phosphates"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/phosphates"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-065",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/iron"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/iron"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-066",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/copper"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/copper"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-067",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/winterization"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/winterization"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-069",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/multiport-valve"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/multiport-valve"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-070",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/main-drain"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/main-drain"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-071",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/return-jet"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/return-jet"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-073",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/evaporation"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/evaporation"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-076",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/pink-slime"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/pink-slime"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-077",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/water-temperature"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/water-temperature"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-078",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/pressure-gauge"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/pressure-gauge"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-079",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/dead-algae"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/dead-algae"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-082",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/chemical-compatibility"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/chemical-compatibility"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-083",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/carbon-dioxide"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/carbon-dioxide"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-084",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/ammonia"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/ammonia"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-088",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/bicarbonate-alkalinity"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/bicarbonate-alkalinity"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-092",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/chemical-log"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/chemical-log"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-094",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/water-test-log"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/water-test-log"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-095",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/pool-maintenance-schedule"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/pool-maintenance-schedule"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-097",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/colorimetric-test"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/colorimetric-test"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-098",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/chemical-storage"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/chemical-storage"
+        }
+      }
+    },
+    {
+      "contentId": "glossary:gl-099",
+      "category": "glossary",
+      "languages": {
+        "en": {
+          "status": "translated",
+          "url": "/glossary/pool-safety-equipment"
+        },
+        "es": {
+          "status": "translated",
+          "url": "/es/glossary/pool-safety-equipment"
         }
       }
     }

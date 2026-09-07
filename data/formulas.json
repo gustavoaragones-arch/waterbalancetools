@@ -16,7 +16,35 @@
           "fórmula de volumen de piscina",
           "cómo calcular los galones de la piscina",
           "cálculo de volumen de piscina"
-        ]
+        ],
+        "variables": [
+          {
+            "symbol": "L",
+            "description": "Longitud de la piscina en pies",
+            "unit": "ft"
+          },
+          {
+            "symbol": "W",
+            "description": "Ancho de la piscina en pies",
+            "unit": "ft"
+          },
+          {
+            "symbol": "D",
+            "description": "Profundidad promedio en pies ((extremo poco profundo + extremo profundo) ÷ 2)",
+            "unit": "ft"
+          },
+          {
+            "symbol": "7.48",
+            "description": "Galones por pie cúbico (constante de conversión)",
+            "unit": "gal/ft³"
+          }
+        ],
+        "equationLabels": {
+          "Volume": "Volumen",
+          "Length": "Longitud",
+          "Width": "Ancho",
+          "Average Depth": "Profundidad Promedio"
+        }
       },
       "slug": "formulas/pool-volume-formula",
       "title": "Pool Volume Formula",
@@ -88,7 +116,41 @@
           "fórmula de cloro líquido",
           "cuánto cloro líquido agregar",
           "cálculo de dosis de cloro para piscina"
-        ]
+        ],
+        "variables": [
+          {
+            "symbol": "Target FC",
+            "description": "Nivel deseado de cloro libre en ppm",
+            "unit": "ppm"
+          },
+          {
+            "symbol": "Current FC",
+            "description": "Nivel actual de cloro libre medido en la prueba",
+            "unit": "ppm"
+          },
+          {
+            "symbol": "Volume",
+            "description": "Volumen de la piscina en galones",
+            "unit": "gallons"
+          },
+          {
+            "symbol": "Strength%",
+            "description": "Porcentaje de cloro disponible del producto (por ejemplo, 10 para 10%)",
+            "unit": "%"
+          },
+          {
+            "symbol": "0.013344",
+            "description": "Onzas líquidas de producto con 100% de cloro disponible necesarias por ppm por galón, derivado de la densidad del agua de 8.34 lb/gal y 16 oz/lb (véase la auditoría de cloro líquido de la Fase 7S)",
+            "unit": "constant"
+          }
+        ],
+        "equationLabels": {
+          "Fluid ounces": "Onzas líquidas",
+          "Target FC": "FC Objetivo",
+          "Current FC": "FC Actual",
+          "Pool Volume": "Volumen de la Piscina",
+          "Chlorine Strength": "Concentración de Cloro"
+        }
       },
       "slug": "formulas/liquid-chlorine-formula",
       "title": "Liquid Chlorine Dose Formula",
@@ -167,7 +229,41 @@
           "fórmula de choque para piscina",
           "cuánto choque necesita mi piscina",
           "cálculo de cloración de ruptura"
-        ]
+        ],
+        "variables": [
+          {
+            "symbol": "Target FC",
+            "description": "Nivel objetivo de cloro libre. Para la cloración de ruptura: 10× el cloro combinado. Para mantenimiento: 10 ppm. Para algas: 30 ppm.",
+            "unit": "ppm"
+          },
+          {
+            "symbol": "Current FC",
+            "description": "Cloro libre actual en ppm",
+            "unit": "ppm"
+          },
+          {
+            "symbol": "Volume",
+            "description": "Volumen de la piscina en galones",
+            "unit": "gallons"
+          },
+          {
+            "symbol": "Available Cl%",
+            "description": "Porcentaje de cloro disponible del producto de choque (por ejemplo, 65 para cal-hipo, 56 para dicloro)",
+            "unit": "%"
+          },
+          {
+            "symbol": "0.013344",
+            "description": "Onzas líquidas de producto con 100% de cloro disponible necesarias por ppm por galón, la misma constante de balance de masa usada para el cloro líquido (véase la auditoría de cloro líquido de la Fase 7S y la auditoría de la fórmula 3 de la Fase 7T)",
+            "unit": "constant"
+          }
+        ],
+        "equationLabels": {
+          "Shock dose": "Dosis de Choque",
+          "Target FC": "FC Objetivo",
+          "Current FC": "FC Actual",
+          "Volume": "Volumen",
+          "Available Chlorine": "Cloro Disponible"
+        }
       },
       "slug": "formulas/shock-formula",
       "title": "Pool Shock Formula",
@@ -248,7 +344,37 @@
           "ajuste de pH en piscina",
           "por qué no hay fórmula de dosificación de pH",
           "cómo ajustar el pH de la piscina de forma segura"
-        ]
+        ],
+        "variables": [
+          {
+            "symbol": "ΔpH",
+            "description": "Qué tan lejos está el pH actual del objetivo — determina la dirección (subir/bajar) y el nivel cualitativo de magnitud de esta calculadora (pequeño/moderado/sustancial)",
+            "unit": "pH units"
+          },
+          {
+            "symbol": "Volume",
+            "description": "Volumen de la piscina en galones — relevante para cualquier dosis real, pero no suficiente por sí solo sin los factores siguientes",
+            "unit": "gallons"
+          },
+          {
+            "symbol": "Total alkalinity",
+            "description": "El principal factor de amortiguación: una TA más alta requiere proporcionalmente más ácido o base para el mismo cambio de pH. No es recopilado por las calculadoras de pH de este sitio.",
+            "unit": "ppm"
+          },
+          {
+            "symbol": "Cyanuric acid",
+            "description": "Contribuye con un efecto de amortiguación secundario y menor que puede distorsionar una lectura bruta de TA. No es recopilado por las calculadoras de pH de este sitio.",
+            "unit": "ppm"
+          },
+          {
+            "symbol": "Product concentration",
+            "description": "Qué ácido o base y en qué concentración — necesario para cualquier dosis real específica. No es solicitado por las calculadoras de pH de este sitio, que permanecen independientes del producto.",
+            "unit": "%"
+          }
+        ],
+        "equationLabels": {
+          "No single validated dosing equation is published here. Unlike liquid chlorine or alkalinity, pH adjustment is a carbonate-buffered titration problem: the acid or base needed for a given pH change depends materially on total alkalinity (and, more weakly, cyanuric acid) -- neither of which a two-input pH/volume calculator can account for. Professional water-chemistry references that publish exact dosing tables for chlorine, alkalinity, and calcium hardness deliberately do not publish an equivalent fixed table for pH, and instead direct users to an empirical acid-demand test.": "Aquí no se publica una única ecuación de dosificación validada. A diferencia del cloro líquido o la alcalinidad, el ajuste de pH es un problema de titulación amortiguada por carbonatos: la cantidad de ácido o base necesaria para un cambio de pH determinado depende considerablemente de la alcalinidad total (y, en menor medida, del ácido cianúrico), factores que una calculadora de pH/volumen con solo dos variables de entrada no puede tener en cuenta. Las referencias profesionales de química del agua que publican tablas de dosificación exactas para cloro, alcalinidad y dureza cálcica deliberadamente no publican una tabla fija equivalente para el pH, y en su lugar remiten a los usuarios a una prueba empírica de demanda de ácido."
+        }
       },
       "slug": "formulas/ph-adjustment-formula",
       "title": "pH Adjustment Formula",
@@ -330,7 +456,29 @@
           "fórmula de alcalinidad para piscina",
           "cuánto bicarbonato agregar a la piscina",
           "calculadora de alcalinidad total"
-        ]
+        ],
+        "variables": [
+          {
+            "symbol": "TA Increase",
+            "description": "TA objetivo menos TA actual en ppm",
+            "unit": "ppm"
+          },
+          {
+            "symbol": "Volume",
+            "description": "Volumen de la piscina en galones",
+            "unit": "gallons"
+          },
+          {
+            "symbol": "0.000224",
+            "description": "Onzas de bicarbonato de sodio necesarias por ppm por galón (1.4 lb por cada 10,000 gal por cada 10 ppm)",
+            "unit": "oz/ppm/gal"
+          }
+        ],
+        "equationLabels": {
+          "Sodium bicarbonate": "Bicarbonato de Sodio",
+          "Desired TA Increase": "Aumento Deseado de TA",
+          "Volume": "Volumen"
+        }
       },
       "slug": "formulas/alkalinity-formula",
       "title": "Total Alkalinity Adjustment Formula",
@@ -398,7 +546,35 @@
           "fórmula de sal para piscina",
           "cuánta sal agregar a la piscina",
           "cálculo para piscina de agua salada"
-        ]
+        ],
+        "variables": [
+          {
+            "symbol": "Target ppm",
+            "description": "Concentración de sal deseada (típicamente 3,000–3,200 ppm)",
+            "unit": "ppm"
+          },
+          {
+            "symbol": "Current ppm",
+            "description": "Nivel actual de sal medido con tira reactiva o pantalla del sistema",
+            "unit": "ppm"
+          },
+          {
+            "symbol": "Volume",
+            "description": "Volumen de la piscina en galones",
+            "unit": "gallons"
+          },
+          {
+            "symbol": "0.0000834",
+            "description": "Libras de sal por ppm por galón (1 lb de sal por cada 120 ppm por cada 10,000 gal)",
+            "unit": "lbs/ppm/gal"
+          }
+        ],
+        "equationLabels": {
+          "Salt to add": "Sal a Agregar",
+          "Target": "Objetivo",
+          "Current": "Actual",
+          "Volume": "Volumen"
+        }
       },
       "slug": "formulas/salt-formula",
       "title": "Salt Pool Formula",
@@ -470,7 +646,35 @@
           "fórmula de CYA para piscina",
           "cuánto ácido cianúrico agregar",
           "dosis de estabilizador para piscina"
-        ]
+        ],
+        "variables": [
+          {
+            "symbol": "Target CYA",
+            "description": "Nivel deseado de ácido cianúrico en ppm (piscinas al aire libre: 30–50 ppm; piscinas salinas: 60–80 ppm)",
+            "unit": "ppm"
+          },
+          {
+            "symbol": "Current CYA",
+            "description": "Nivel actual de CYA medido con kit de prueba",
+            "unit": "ppm"
+          },
+          {
+            "symbol": "Volume",
+            "description": "Volumen de la piscina en galones",
+            "unit": "gallons"
+          },
+          {
+            "symbol": "0.000133",
+            "description": "Onzas de CYA por ppm por galón de agua de piscina",
+            "unit": "oz/ppm/gal"
+          }
+        ],
+        "equationLabels": {
+          "CYA to add": "CYA a Agregar",
+          "Target CYA": "CYA Objetivo",
+          "Current CYA": "CYA Actual",
+          "Volume": "Volumen"
+        }
       },
       "slug": "formulas/cya-formula",
       "title": "CYA (Cyanuric Acid) Dose Formula",
@@ -544,7 +748,29 @@
           "fórmula de tasa de recirculación",
           "cálculo de GPM de la bomba",
           "cuánto tiempo hacer funcionar la bomba de la piscina"
-        ]
+        ],
+        "variables": [
+          {
+            "symbol": "Volume",
+            "description": "Volumen total de la piscina en galones",
+            "unit": "gallons"
+          },
+          {
+            "symbol": "GPH",
+            "description": "Caudal de la bomba en galones por hora (GPM × 60)",
+            "unit": "gallons/hour"
+          },
+          {
+            "symbol": "Turnover Time",
+            "description": "Tiempo en horas para hacer circular todo el volumen de la piscina una vez a través del filtro",
+            "unit": "hours"
+          }
+        ],
+        "equationLabels": {
+          "Turnover Time": "Tiempo de Recirculación",
+          "Pool Volume": "Volumen de la Piscina",
+          "Pump Flow Rate": "Caudal de la Bomba"
+        }
       },
       "slug": "formulas/turnover-formula",
       "title": "Pool Turnover Rate Formula",
@@ -614,7 +840,35 @@
           "fórmula del LSI para piscina",
           "Índice de Saturación de Langelier piscina",
           "balance del agua LSI piscina"
-        ]
+        ],
+        "variables": [
+          {
+            "symbol": "pH",
+            "description": "pH medido del agua de la piscina",
+            "unit": "pH units"
+          },
+          {
+            "symbol": "TF",
+            "description": "Factor de Temperatura — de la tabla de referencia de balance del agua del sitio, según la temperatura del agua",
+            "unit": "factor"
+          },
+          {
+            "symbol": "CHF",
+            "description": "Factor de Dureza Cálcica — de la tabla de referencia de balance del agua del sitio, según el nivel de dureza cálcica",
+            "unit": "factor"
+          },
+          {
+            "symbol": "TAF",
+            "description": "Factor de Alcalinidad Total — de la tabla de referencia de balance del agua del sitio, según el nivel de alcalinidad total (usando la TA corregida por CYA)",
+            "unit": "factor"
+          },
+          {
+            "symbol": "12.1",
+            "description": "Constante de TDS para piscinas estándar (~1,000 ppm de TDS); use 12.2 para piscinas de agua salada (~3,200 ppm de TDS)",
+            "unit": "constant"
+          }
+        ],
+        "equationLabels": {}
       },
       "slug": "formulas/lsi-formula",
       "title": "Langelier Saturation Index (LSI) Formula",

@@ -2,13 +2,15 @@
 /**
  * generate-spanish-knowledge-cluster.js
  *
- * Phase 8N: generates the first Spanish production cluster for the
+ * Phase 8N launched the first Spanish production cluster for the
  * Glossary, Formula Library, and Reference families, mirroring exactly
  * how generate-spanish-cluster.js (Phase 8E) writes es/calculators/ --
  * a small, standalone generator script that writes translated output to
  * es/<family>/, run once per build, never a modification to the existing
  * English-mode generation loop in generate-glossary.js/generate-formulas.js/
- * generate-reference.js.
+ * generate-reference.js. Phase 8O completed the cluster: all 100 glossary
+ * records (not just the 54-record first wave), full formula variable/
+ * equation-label localization, and full reference table localization.
  *
  * Unlike the calculator cluster (which translates already-rendered English
  * HTML via string substitution), this cluster renders DIRECTLY from data:
@@ -18,11 +20,12 @@
  * and content headings in Phase 8N (see js/i18n/../scripts/template-utils.js
  * localizeRecord()/chrome()). No second template or rendering path exists.
  *
- * Deterministic, data-driven scope (Phase 8N Section 4 -- no hand-picked
- * file list):
- *   - Glossary: exactly the terms carrying an `es` object, cross-checked
- *     1:1 against data/i18n/es/glossary-first-wave.json's 54-candidate
- *     manifest (Phase 8L, re-verified unmodified through 8M/8N).
+ * Deterministic, data-driven scope (Phase 8O Section 2/12 -- no
+ * hand-picked file list):
+ *   - Glossary: every one of the 100 records in data/glossary.json --
+ *     the Phase 8L 54-candidate manifest was the FIRST wave only; Phase
+ *     8O completed the remaining 46, so full `es` coverage (not a
+ *     manifest cross-check) is now the correctness invariant.
  *   - Formulas: all 9 records in data/formulas.json (every formula is
  *     in-scope per the Phase 8M contract).
  *   - Reference: exactly the pages carrying an `es` object, cross-checked
@@ -31,7 +34,7 @@
  *     are structurally excluded because they have no data/reference.json
  *     record to carry an `es` object at all).
  *
- * A mismatch in any of the three cross-checks throws rather than silently
+ * A mismatch in any of these invariants throws rather than silently
  * generating a different-than-approved set -- this is a production
  * cluster, not a best-effort pass.
  *
@@ -51,31 +54,15 @@ const { generateTerm, data: glossaryData } = require('./generate-glossary');
 const { generateFormula, data: formulasData } = require('./generate-formulas');
 const { generateRefPage, data: referenceData } = require('./generate-reference');
 
-function assertManifestMatch(actualIds, manifestIds, label) {
-  const a = actualIds.slice().sort();
-  const m = manifestIds.slice().sort();
-  const missing = m.filter((id) => !a.includes(id));
-  const extra = a.filter((id) => !m.includes(id));
-  if (missing.length || extra.length) {
-    throw new Error(
-      `generate-spanish-knowledge-cluster: ${label} scope mismatch -- ` +
-      `missing from es content: ${JSON.stringify(missing)}, ` +
-      `unexpected in es content: ${JSON.stringify(extra)}`
-    );
-  }
-}
-
 function run() {
   let written = 0;
   const writtenFiles = [];
 
-  // ── Glossary: 54-record manifest cross-check ────────────────────────────
-  const manifest = require(path.join(ROOT, 'data', 'i18n', 'es', 'glossary-first-wave.json'));
-  const manifestIds = (manifest.candidates || manifest).map((c) => c.nativeId);
-  const glossaryTerms = (glossaryData.terms || []).filter((t) => t.es);
-  assertManifestMatch(glossaryTerms.map((t) => t.id), manifestIds, 'glossary');
-  if (glossaryTerms.length !== 54) {
-    throw new Error(`generate-spanish-knowledge-cluster: expected exactly 54 glossary terms with es content, found ${glossaryTerms.length}`);
+  // ── Glossary: full 100-record coverage (Phase 8O) ───────────────────────
+  const allGlossaryTerms = glossaryData.terms || [];
+  const glossaryTerms = allGlossaryTerms.filter((t) => t.es);
+  if (glossaryTerms.length !== 100 || allGlossaryTerms.length !== 100) {
+    throw new Error(`generate-spanish-knowledge-cluster: expected all 100 glossary terms to carry es content, found ${glossaryTerms.length} of ${allGlossaryTerms.length}`);
   }
   for (const term of glossaryTerms) {
     const outPath = path.join(ROOT, 'es', `${term.slug}.html`);

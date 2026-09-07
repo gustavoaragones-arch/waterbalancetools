@@ -110,10 +110,12 @@ ${SITE_FOOTER}
 function generateRefPage(page, locale) {
   const effectiveLocale = locale || 'en';
   const tpl = template('reference-template.html');
-  // Phase 8N: localizeRecord() overlays page.es (title/description/
-  // summary/overview/notes/checklists, and per-table titles only --
-  // headers/rows stay English, a documented scope limitation) for
-  // locale 'es'.
+  // Phase 8N/8O: localizeRecord() overlays page.es (title/description/
+  // summary/overview/notes/checklists, and -- as of Phase 8O -- full
+  // per-table headers/rows, with numeric values/units/thresholds/URLs
+  // copied through byte-identical from the English source) for locale
+  // 'es'. Phase 8N covered only per-table titles; Phase 8O completed the
+  // remaining table content (see docs/PHASE-8O-*.md Section 5).
   const p = localizeRecord(page, effectiveLocale);
   const bc = buildBreadcrumb(buildUrl(page.slug), p.title, effectiveLocale);
 
