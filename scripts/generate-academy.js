@@ -17,7 +17,10 @@ const {
   fill, SITE_HEADER, SITE_FOOTER, esc, titleCase,
   buildBreadcrumb, buildArticleContent, buildRelatedTools,
   buildRelatedTopics, buildAcademySidebar, writeFile, ROOT, href, canonicalUrl,
+  localizeRecord, chrome,
 } = require('./template-utils');
+const { htmlLangAttr } = require('../js/i18n/html-lang');
+const { getLocalizedCanonical } = require('../js/i18n/locale-url');
 
 const data = require(path.join(ROOT, 'data', 'academy.json'));
 const ACADEMY_DIR = path.join(ROOT, 'academy');
@@ -175,41 +178,62 @@ ${articleCards}
 
 // ── Individual article page ───────────────────────────────────────────────────
 
-function generateArticle(article) {
+function generateArticle(article, locale) {
+  const effectiveLocale = locale || 'en';
   const tpl = require('./template-utils').template('academy-template.html');
-  const bc = buildBreadcrumb(article.slug, article.title);
+  // Phase 8Q: localizeRecord() overlays article.es (title/description/
+  // summary/overview/keyFacts/sections/examples/commonMistakes -- the
+  // schema documented in docs/PHASE-8Q-ACADEMY-LOCALIZATION-ARCHITECTURE.md)
+  // for locale 'es'. No Academy record carries an `es` object yet, so
+  // this is a no-op at locale 'en' and produces byte-identical output to
+  // before this change -- see scripts/test-phase-8q.js.
+  const a = localizeRecord(article, effectiveLocale);
+  const bc = buildBreadcrumb(article.slug, a.title, effectiveLocale);
   const allArticles = data.articles || [];
-  const catArticles = allArticles.filter(a => a.category === article.category);
+  const catArticles = allArticles.filter(cat => cat.category === article.category);
 
   const heroChips = [
-    '<a href="#key-facts" class="knowledge-chip">Key Facts</a>',
-    '<a href="#examples" class="knowledge-chip">Examples</a>',
-    article.relatedCalculators?.length ? '<a href="#related-tools" class="knowledge-chip">Calculator</a>' : '',
-    article.relatedTopics?.length ? '<a href="#related-topics" class="knowledge-chip">Related</a>' : '',
+    `<a href="#key-facts" class="knowledge-chip">${chrome('academyKeyFacts', effectiveLocale)}</a>`,
+    `<a href="#examples" class="knowledge-chip">${chrome('academyExamples', effectiveLocale)}</a>`,
+    article.relatedCalculators?.length ? `<a href="#related-tools" class="knowledge-chip">${chrome('navCalculatorLabel', effectiveLocale)}</a>` : '',
+    article.relatedTopics?.length ? `<a href="#related-topics" class="knowledge-chip">${chrome('academyRelatedChip', effectiveLocale)}</a>` : '',
   ].filter(Boolean).join('\n    ');
 
   return fill(tpl, {
     SLUG:              article.slug,
-    PAGE_TITLE:        `${article.title} | Academy | WaterBalanceTools`,
-    H1_TITLE:          article.title,
-    META_DESCRIPTION:  article.description,
+    HTML_LANG_ATTR:    htmlLangAttr(effectiveLocale),
+    CANONICAL_URL:     getLocalizedCanonical('/' + article.slug, effectiveLocale),
+    PAGE_TITLE:        `${a.title} | Academy | WaterBalanceTools`,
+    H1_TITLE:          a.title,
+    META_DESCRIPTION:  a.description,
     LAST_REVIEWED:     article.lastReviewed || '2026-01-01',
     BREADCRUMB:        bc.nav,
     BREADCRUMB_SCHEMA: bc.schema,
+    ARIA_PRIMARY_NAV:    chrome('ariaPrimaryNav', effectiveLocale),
+    NAV_CALCULATOR_HREF: chrome('navCalculatorHref', effectiveLocale),
+    NAV_CALCULATOR_LABEL: chrome('navCalculatorLabel', effectiveLocale),
+    NAV_RESOURCES:       chrome('navResources', effectiveLocale),
+    NAV_CHARTS:          chrome('navCharts', effectiveLocale),
+    NAV_ACADEMY:         chrome('navAcademy', effectiveLocale),
+    NAV_GUIDES:          chrome('navGuides', effectiveLocale),
+    NAV_ABOUT:           chrome('navAbout', effectiveLocale),
+    ARIA_SEARCH:         chrome('ariaSearch', effectiveLocale),
+    ARIA_OPEN_MENU:      chrome('ariaOpenMenu', effectiveLocale),
+    LAST_REVIEWED_LABEL: chrome('lastReviewedLabel', effectiveLocale),
     HERO: fill(require('./template-utils').partial('knowledge-hero.html'), {
       BADGE:         titleCase(article.category.replace(/-/g, ' ')),
       BADGE_CLASS:   `knowledge-badge--${article.category}`,
-      READING_TIME:  article.readingTime || '5 min read',
+      READING_TIME:  article.readingTime || (effectiveLocale === 'es' ? '5 min de lectura' : '5 min read'),
       LAST_REVIEWED: article.lastReviewed || '2026-01-01',
-      TITLE:         esc(article.title),
-      SUMMARY:       esc(article.summary || ''),
+      TITLE:         esc(a.title),
+      SUMMARY:       esc(a.summary || ''),
       CHIPS:         heroChips,
     }),
-    CONTENT:           buildArticleContent(article),
+    CONTENT:           buildArticleContent(a, effectiveLocale),
     TAKEAWAYS:         '',
-    SIDEBAR:           buildAcademySidebar(article, catArticles),
-    RELATED_TOOLS:     buildRelatedTools(article),
-    RELATED_TOPICS:    buildRelatedTopics(article.relatedTopics || [], allArticles),
+    SIDEBAR:           buildAcademySidebar(a, catArticles, effectiveLocale),
+    RELATED_TOOLS:     buildRelatedTools(a, effectiveLocale),
+    RELATED_TOPICS:    buildRelatedTopics(article.relatedTopics || [], allArticles, effectiveLocale),
     KNOWLEDGE_FOOTER:  '',
     SITE_FOOTER:       SITE_FOOTER,
   });
@@ -241,3 +265,9 @@ for (const article of (data.articles || [])) {
 }
 
 console.log(`generate-academy: wrote ${written} files (${(data.articles || []).length} articles)`);
+
+// Phase 8Q: exported so a future production phase can call
+// generateArticle(article, 'es') without a second implementation,
+// mirroring generate-formulas.js/generate-glossary.js/generate-reference.js.
+// No Spanish Academy content is generated in Phase 8Q itself.
+module.exports = { generateArticle, data };

@@ -32,6 +32,12 @@ const CALCULATORS_FAMILY = 'calculator';
 const GLOSSARY_FAMILY = 'glossary';
 const FORMULA_FAMILY = 'formula';
 const REFERENCE_FAMILY = 'reference';
+// Phase 8Q: registers Academy so its relatedTopics field (intra-family
+// links between articles) can resolve through the same generic
+// mechanism, in preparation for a future Spanish Academy cluster. No
+// generator calls this with locale 'es' in Phase 8Q -- this is
+// architecture readiness only.
+const ACADEMY_FAMILY = 'academy';
 
 let indexCache = null;
 
@@ -46,6 +52,7 @@ function buildContentIndex() {
   const glossary = require(path.join(ROOT, 'data', 'glossary.json'));
   const formulas = require(path.join(ROOT, 'data', 'formulas.json'));
   const reference = require(path.join(ROOT, 'data', 'reference.json'));
+  const academy = require(path.join(ROOT, 'data', 'academy.json'));
   const status = require(path.join(ROOT, 'data', 'i18n', 'translation-status.json'));
 
   // englishUrlPath -> { family, nativeId, slug }
@@ -80,6 +87,12 @@ function buildContentIndex() {
   index(GLOSSARY_FAMILY, glossary.terms, (t) => t.id, (t) => t.slug);
   index(FORMULA_FAMILY, formulas.formulas, (t) => t.id, (t) => t.slug);
   index(REFERENCE_FAMILY, reference.pages, (t) => t.id, (t) => t.slug);
+  // Phase 8Q: same generic indexing call as the three families above --
+  // indexes every Academy article by native id AND by slug (byEnglishUrl,
+  // bySlugSuffix, byFullSlug). Purely additive: it only adds new map
+  // entries under the "academy:" family prefix and cannot collide with or
+  // alter any existing glossary/formula/reference/calculator entry.
+  index(ACADEMY_FAMILY, academy.articles, (t) => t.id, (t) => t.slug);
 
   // Calculators: derived from translation-status.json, the existing
   // authority for calculator identity (Phase 8D-8I), not from a
@@ -221,4 +234,5 @@ module.exports = {
   GLOSSARY_FAMILY,
   FORMULA_FAMILY,
   REFERENCE_FAMILY,
+  ACADEMY_FAMILY,
 };

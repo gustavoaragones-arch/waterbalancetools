@@ -343,7 +343,7 @@ function renderBody(text) {
  * Build the main content HTML for an Academy article from structured fields.
  * Order: overview → key facts box → h2 sections → examples → common mistakes → sources.
  */
-function buildArticleContent(article) {
+function buildArticleContent(article, locale) {
   let html = '';
 
   // Overview paragraph
@@ -354,7 +354,7 @@ function buildArticleContent(article) {
   // Key facts box
   if ((article.keyFacts || []).length > 0) {
     html += `<section class="knowledge-takeaways" id="key-facts">\n`;
-    html += `  <h2>Key Facts</h2>\n  <ul>\n`;
+    html += `  <h2>${chrome('academyKeyFacts', locale)}</h2>\n  <ul>\n`;
     for (const f of article.keyFacts) html += `    <li>${esc(f)}</li>\n`;
     html += `  </ul>\n</section>\n\n`;
   }
@@ -367,7 +367,7 @@ function buildArticleContent(article) {
 
   // Examples
   if ((article.examples || []).length > 0) {
-    html += `<section id="examples">\n<h2>Examples</h2>\n`;
+    html += `<section id="examples">\n<h2>${chrome('academyExamples', locale)}</h2>\n`;
     for (const ex of article.examples) {
       html += `<div class="knowledge-example">\n<strong>${esc(ex.title)}</strong>\n${renderBody(ex.body)}\n</div>\n`;
     }
@@ -376,7 +376,7 @@ function buildArticleContent(article) {
 
   // Common mistakes
   if ((article.commonMistakes || []).length > 0) {
-    html += `<section id="common-mistakes">\n<h2>Common Mistakes to Avoid</h2>\n`;
+    html += `<section id="common-mistakes">\n<h2>${chrome('academyCommonMistakes', locale)}</h2>\n`;
     html += `<div class="knowledge-warning"><span class="knowledge-warning-icon">&#9888;</span>\n<ul>\n`;
     for (const m of article.commonMistakes) html += `<li>${esc(m)}</li>\n`;
     html += `</ul></div>\n</section>\n\n`;
@@ -384,7 +384,7 @@ function buildArticleContent(article) {
 
   // Sources
   if ((article.sources || []).length > 0) {
-    html += `<div class="knowledge-sources"><strong>Sources:</strong><ol>`;
+    html += `<div class="knowledge-sources"><strong>${chrome('sources', locale)}</strong><ol>`;
     for (const s of article.sources) html += `<li>${esc(s)}</li>`;
     html += `</ol></div>\n`;
   }
@@ -430,6 +430,17 @@ const ES_CHROME = {
   workedExampleHeading:{ en: 'Worked Example',       es: 'Ejemplo Resuelto' },
   exampleLabel:       { en: 'Example',                es: 'Ejemplo' },
   lastReviewedLabel:  { en: 'Last reviewed:',         es: 'Última revisión:' },
+  // Phase 8Q: Academy content/sidebar headings. Architecture readiness
+  // only -- no generator calls chrome() with locale 'es' for Academy in
+  // Phase 8Q, and no Spanish Academy page exists yet.
+  academyKeyFacts:            { en: 'Key Facts',                  es: 'Datos Clave' },
+  academyExamples:            { en: 'Examples',                   es: 'Ejemplos' },
+  academyCommonMistakes:      { en: 'Common Mistakes to Avoid',   es: 'Errores Comunes que Evitar' },
+  academyCommonMistakesShort: { en: 'Common Mistakes',            es: 'Errores Comunes' },
+  academyInThisCategory:      { en: 'In This Category',           es: 'En Esta Categoría' },
+  academyOnThisPage:          { en: 'On This Page',                es: 'En Esta Página' },
+  academyCalculatorsHeading:  { en: 'Calculators',                es: 'Calculadoras' },
+  academyRelatedChip:         { en: 'Related',                    es: 'Relacionado' },
 };
 
 function chrome(key, locale) {
@@ -620,8 +631,14 @@ function buildRelatedTools(article, locale) {
  */
 function buildRelatedTopics(slugs, allArticles, locale) {
   if (!slugs || slugs.length === 0) return '';
+  // Phase 8Q: routed through localizedHref() -- these slugs are always
+  // full same-family paths (e.g. "academy/water-balance/understanding-ph",
+  // "formulas/pool-volume-formula"), which normalizeReference() resolves
+  // via Shape 2 (cross-family bare slug) without needing a target-family
+  // hint. locale defaults to 'en', for which localizedHref() is
+  // byte-identical to the previous bare href(slug) call.
   const cards = slugs.slice(0, 6).map(slug => {
-    const topicHref = href(slug);
+    const topicHref = localizedHref(slug, locale);
     const art = (allArticles || []).find(a => a.slug === slug);
     const label = art ? art.title : titleCase(slug.split('/').pop());
     const desc = art ? ((art.summary || '').split('.')[0] + '.') : '';
@@ -636,31 +653,36 @@ function buildRelatedTopics(slugs, allArticles, locale) {
 /**
  * Build the sidebar for an Academy article page.
  */
-function buildAcademySidebar(article, categoryArticles) {
+function buildAcademySidebar(article, categoryArticles, locale) {
   const tocItems = (article.sections || []).map(sec => {
     const id = sec.id || (sec.h2 || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     return `<li><a href="#${id}">${esc(sec.h2)}</a></li>`;
   }).join('\n');
 
+  // Phase 8Q: routed through localizedHref('academy' hint) so a future
+  // Spanish rendering resolves a sibling article to its Spanish URL when
+  // translated (Policy A: English fallback otherwise). locale defaults to
+  // 'en', for which localizedHref() is byte-identical to the previous
+  // bare href(a.slug) call.
   const catLinks = (categoryArticles || []).slice(0, 8).map(a => {
     const active = a.slug === article.slug;
-    return `<li><a href="${href(a.slug)}"${active ? ' class="active"' : ''}>${esc(a.title)}</a></li>`;
+    return `<li><a href="${localizedHref(a.slug, locale, 'academy')}"${active ? ' class="active"' : ''}>${esc(a.title)}</a></li>`;
   }).join('\n');
 
   const calcLinks = (article.relatedCalculators || []).slice(0, 4).map(link => {
-    const normalizedHref = href(link);
-    return `<li><a href="${normalizedHref}">${esc(titleCase(normalizedHref.split('/').pop()))}</a></li>`;
+    const normalizedHref = localizedHref(link, locale);
+    return `<li><a href="${normalizedHref}">${esc(titleCase(href(link).split('/').pop()))}</a></li>`;
   }
   ).join('\n');
 
   return `<aside class="knowledge-sidebar">` +
-    (catLinks ? `<div class="knowledge-sidebar-section"><h3>In This Category</h3><ul>${catLinks}</ul></div>` : '') +
-    `<div class="knowledge-sidebar-section"><h3>On This Page</h3><ul>` +
-    `<li><a href="#key-facts">Key Facts</a></li>` + tocItems +
-    ((article.examples || []).length ? '<li><a href="#examples">Examples</a></li>' : '') +
-    ((article.commonMistakes || []).length ? '<li><a href="#common-mistakes">Common Mistakes</a></li>' : '') +
+    (catLinks ? `<div class="knowledge-sidebar-section"><h3>${chrome('academyInThisCategory', locale)}</h3><ul>${catLinks}</ul></div>` : '') +
+    `<div class="knowledge-sidebar-section"><h3>${chrome('academyOnThisPage', locale)}</h3><ul>` +
+    `<li><a href="#key-facts">${chrome('academyKeyFacts', locale)}</a></li>` + tocItems +
+    ((article.examples || []).length ? `<li><a href="#examples">${chrome('academyExamples', locale)}</a></li>` : '') +
+    ((article.commonMistakes || []).length ? `<li><a href="#common-mistakes">${chrome('academyCommonMistakesShort', locale)}</a></li>` : '') +
     `</ul></div>` +
-    (calcLinks ? `<div class="knowledge-sidebar-section"><h3>Calculators</h3><ul>${calcLinks}</ul></div>` : '') +
+    (calcLinks ? `<div class="knowledge-sidebar-section"><h3>${chrome('academyCalculatorsHeading', locale)}</h3><ul>${calcLinks}</ul></div>` : '') +
     `</aside>`;
 }
 
